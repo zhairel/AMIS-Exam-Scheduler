@@ -821,6 +821,87 @@
         grid-template-columns: 1fr 1fr;
       }
     }
+
+    /* Print Styles: PRINT ONLY THE CALENDAR POSTER */
+    @media print {
+      @page {
+        size: landscape;
+        margin: 8mm;
+      }
+
+      body {
+        background: #ffffff !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .app-header,
+      .controls-container,
+      .stats-strip,
+      .modal-backdrop,
+      .click-hint,
+      .header-actions,
+      button,
+      input,
+      select {
+        display: none !important;
+      }
+
+      .main-content {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      .calendar-poster {
+        page-break-after: always !important;
+        break-after: page !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        margin-bottom: 0 !important;
+        box-shadow: none !important;
+        border: 2px solid #000000 !important;
+        border-radius: 0 !important;
+      }
+
+      .calendar-poster:last-child {
+        page-break-after: auto !important;
+        break-after: auto !important;
+      }
+
+      .poster-header {
+        background: #064e3b !important;
+        color: #ffffff !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        padding: 16px 20px !important;
+      }
+
+      .matrix-table th {
+        background: #e2e8f0 !important;
+        color: #000000 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .break-tr {
+        background: #e0f2fe !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .exam-event-card {
+        box-shadow: none !important;
+        border: 1.5px solid #64748b !important;
+        border-left-width: 6px !important;
+      }
+
+      .exam-event-card.f2f { border-left-color: #047857 !important; }
+      .exam-event-card.odl1 { border-left-color: #0369a1 !important; }
+      .exam-event-card.odl2 { border-left-color: #b45309 !important; }
+    }
   </style>
 </head>
 <body>
