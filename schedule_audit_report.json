@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T20:22:03.632963",
+  "generated_at": "2026-08-18T00:53:34.382436",
   "source_file": "OFFICIAL_CLASS_SCHEDULE_raw.json",
   "total_sections": 69,
   "total_active_class_sessions": 1401,
@@ -374,10 +374,10 @@
       "day": "Wednesday",
       "time": "01:30 PM \u2013 02:10 PM",
       "conflicting_sections": [
-        "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
-        "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX"
+        "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)"
       ],
-      "message": "Teacher 'Ustadh Abdiraheem' scheduled concurrently in ['GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)', 'GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX'] on Wednesday at 01:30 PM \u2013 02:10 PM"
+      "message": "Teacher 'Ustadh Abdiraheem' scheduled concurrently in ['GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX', 'GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)'] on Wednesday at 01:30 PM \u2013 02:10 PM"
     },
     {
       "type": "TEACHER_SCHEDULE_CONFLICT",
@@ -386,10 +386,10 @@
       "day": "Sunday",
       "time": "01:25 PM \u2013 02:10 PM",
       "conflicting_sections": [
-        "GRADE 12 - SUHAYB AR-RUMI",
-        "GRADE 11 (FACE TO FACE)"
+        "GRADE 11 (FACE TO FACE)",
+        "GRADE 12 - SUHAYB AR-RUMI"
       ],
-      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 12 - SUHAYB AR-RUMI', 'GRADE 11 (FACE TO FACE)'] on Sunday at 01:25 PM \u2013 02:10 PM"
+      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 11 (FACE TO FACE)', 'GRADE 12 - SUHAYB AR-RUMI'] on Sunday at 01:25 PM \u2013 02:10 PM"
     },
     {
       "type": "TEACHER_SCHEDULE_CONFLICT",
@@ -398,10 +398,10 @@
       "day": "Monday",
       "time": "01:25 PM \u2013 02:10 PM",
       "conflicting_sections": [
-        "GRADE 12 - SUHAYB AR-RUMI",
-        "GRADE 11 (FACE TO FACE)"
+        "GRADE 11 (FACE TO FACE)",
+        "GRADE 12 - SUHAYB AR-RUMI"
       ],
-      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 12 - SUHAYB AR-RUMI', 'GRADE 11 (FACE TO FACE)'] on Monday at 01:25 PM \u2013 02:10 PM"
+      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 11 (FACE TO FACE)', 'GRADE 12 - SUHAYB AR-RUMI'] on Monday at 01:25 PM \u2013 02:10 PM"
     },
     {
       "type": "TEACHER_SCHEDULE_CONFLICT",
@@ -410,10 +410,10 @@
       "day": "Tuesday",
       "time": "01:25 PM \u2013 02:10 PM",
       "conflicting_sections": [
-        "GRADE 12 - SUHAYB AR-RUMI",
-        "GRADE 11 (FACE TO FACE)"
+        "GRADE 11 (FACE TO FACE)",
+        "GRADE 12 - SUHAYB AR-RUMI"
       ],
-      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 12 - SUHAYB AR-RUMI', 'GRADE 11 (FACE TO FACE)'] on Tuesday at 01:25 PM \u2013 02:10 PM"
+      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 11 (FACE TO FACE)', 'GRADE 12 - SUHAYB AR-RUMI'] on Tuesday at 01:25 PM \u2013 02:10 PM"
     },
     {
       "type": "TEACHER_SCHEDULE_CONFLICT",
@@ -422,10 +422,10 @@
       "day": "Wednesday",
       "time": "01:25 PM \u2013 02:10 PM",
       "conflicting_sections": [
-        "GRADE 12 - SUHAYB AR-RUMI",
-        "GRADE 11 (FACE TO FACE)"
+        "GRADE 11 (FACE TO FACE)",
+        "GRADE 12 - SUHAYB AR-RUMI"
       ],
-      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 12 - SUHAYB AR-RUMI', 'GRADE 11 (FACE TO FACE)'] on Wednesday at 01:25 PM \u2013 02:10 PM"
+      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 11 (FACE TO FACE)', 'GRADE 12 - SUHAYB AR-RUMI'] on Wednesday at 01:25 PM \u2013 02:10 PM"
     },
     {
       "type": "TEACHER_SCHEDULE_CONFLICT",
@@ -434,10 +434,10 @@
       "day": "Thursday",
       "time": "01:25 PM \u2013 02:10 PM",
       "conflicting_sections": [
-        "GRADE 12 - SUHAYB AR-RUMI",
-        "GRADE 11 (FACE TO FACE)"
+        "GRADE 11 (FACE TO FACE)",
+        "GRADE 12 - SUHAYB AR-RUMI"
       ],
-      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 12 - SUHAYB AR-RUMI', 'GRADE 11 (FACE TO FACE)'] on Thursday at 01:25 PM \u2013 02:10 PM"
+      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 11 (FACE TO FACE)', 'GRADE 12 - SUHAYB AR-RUMI'] on Thursday at 01:25 PM \u2013 02:10 PM"
     },
     {
       "type": "TEACHER_SCHEDULE_CONFLICT",
@@ -446,10 +446,10 @@
       "day": "Monday",
       "time": "02:15 PM \u2013 03:00 PM",
       "conflicting_sections": [
-        "GRADE 12 - SUHAYB AR-RUMI",
-        "GRADE 11 (FACE TO FACE)"
+        "GRADE 11 (FACE TO FACE)",
+        "GRADE 12 - SUHAYB AR-RUMI"
       ],
-      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 12 - SUHAYB AR-RUMI', 'GRADE 11 (FACE TO FACE)'] on Monday at 02:15 PM \u2013 03:00 PM"
+      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 11 (FACE TO FACE)', 'GRADE 12 - SUHAYB AR-RUMI'] on Monday at 02:15 PM \u2013 03:00 PM"
     },
     {
       "type": "TEACHER_SCHEDULE_CONFLICT",
@@ -458,10 +458,10 @@
       "day": "Tuesday",
       "time": "05:20 PM \u2013 06:00 PM",
       "conflicting_sections": [
-        "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS"
+        "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS"
       ],
-      "message": "Teacher 'Teacher Angeleni' scheduled concurrently in ['GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS', 'GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS'] on Tuesday at 05:20 PM \u2013 06:00 PM"
+      "message": "Teacher 'Teacher Angeleni' scheduled concurrently in ['GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS', 'GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS'] on Tuesday at 05:20 PM \u2013 06:00 PM"
     },
     {
       "type": "SECTION_DOUBLE_SCHEDULED",

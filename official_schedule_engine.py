@@ -520,31 +520,23 @@ def get_subject_color(subj):
         return {'bg': '#fae8ff', 'border': '#f0abfc', 'text': '#86198f'}
     return {'bg': '#f1f5f9', 'border': '#cbd5e1', 'text': '#334155'}
 
-faculty_timetables = {}
-teacher_records_map = defaultdict(lambda: defaultdict(dict))
+def start_time_to_minutes(st):
+    if not st: return 0
+    st_str = str(st).strip()
+    parts = st_str.split(' ')
+    if len(parts) < 2: return 0
+    hm = parts[0].split(':')
+    try:
+        h = int(hm[0])
+        m = int(hm[1]) if len(hm) > 1 else 0
+    except:
+        return 0
+    ampm = parts[1].upper()
+    if ampm == 'PM' and h != 12: h += 12
+    if ampm == 'AM' and h == 12: h = 0
+    return h * 60 + m
 
-for rec in flat_schedule_records:
-    tid = rec['teacher_id']
-    if not tid: continue
-    row_id = map_time_to_row_id(rec['time'])
-    if not row_id: continue
-    day = rec['day']
-    
-    sec_short = re.sub(r'\(.*?\)', '', rec['section_name']).strip().replace('GRADE ', 'G').replace('Grade ', 'G').replace('Kinder ', 'K')
-    if 'FACE TO FACE' in rec['section_name'].upper() or 'F2F' in rec['section_name'].upper():
-        sec_short += ' (F2F)'
-        
-    teacher_records_map[tid][row_id][day] = {
-        "subject": rec['subject'],
-        "subject_id": rec['subject_id'],
-        "section": rec['section_name'],
-        "section_short": sec_short,
-        "grade": rec['grade'],
-        "shift": rec['shift'],
-        "source_cell": rec['source_cell'],
-        "source_sheet": rec['source_sheet'],
-        "raw_text": rec['raw_text']
-    }
+faculty_timetables = {}
 
 for tinfo in sorted(TEACHER_REGISTRY, key=lambda x: x['canonical_name']):
     tid = tinfo['id']
@@ -552,62 +544,107 @@ for tinfo in sorted(TEACHER_REGISTRY, key=lambda x: x['canonical_name']):
     dept = tinfo['department']
     title = tinfo['title']
     
-    t_rows_data = teacher_records_map.get(tid, {})
-    distinct_subjs = set()
-    total_class_count = 0
+    t_recs = [r for r in flat_schedule_records if r['teacher_id'] == tid]
+    distinct_subjs = sorted(list(set(r['subject'] for r in t_recs)))
+    total_class_count = len(t_recs)
+    
+    # Extract unique time slots for this specific teacher
+    unique_slots = []
+    seen_slots = set()
+    for r in t_recs:
+        t_key = (r['start_time'], r['end_time'], r['duration_minutes'], r['time'])
+        if t_key not in seen_slots:
+            seen_slots.add(t_key)
+            unique_slots.append(t_key)
+            
+    # Sort chronologically by start time
+    unique_slots.sort(key=lambda s: start_time_to_minutes(s[0] or s[3]))
     
     rows = []
-    for block in STANDARD_TIME_BLOCKS:
-        rid = block["id"]
-        b_time = block["time"]
-        is_brk = block["is_break"]
+    for s in unique_slots:
+        start_t, end_t, dur, t_str = s
+        slot_clean = str(start_t or t_str or 'slot').replace(' ', '_').replace(':', '').replace('-', '_').replace('–', '_')
+        rid = f"slot_{slot_clean}"
         
         row_data = {
             "id": rid,
-            "time": b_time,
-            "minutes": block["minutes"],
-            "is_break": is_brk,
-            "break_title": block.get("break_title", ""),
-            "shift_type": block["shift_type"],
+            "time": t_str,
+            "start_time": start_t,
+            "end_time": end_t,
+            "minutes": f"{dur} min.",
+            "duration_minutes": dur,
+            "is_break": False,
             "days": {}
         }
         
-        if is_brk:
-            for d in DAYS:
-                row_data["days"][d] = {
-                    "is_break": True,
-                    "break_title": block.get("break_title", ""),
-                    "label": block.get("break_title", "")
-                }
-        else:
-            for d in DAYS:
-                found = t_rows_data.get(rid, {}).get(d)
-                if found:
-                    total_class_count += 1
-                    subj_name = found['subject']
-                    distinct_subjs.add(subj_name)
-                    color = get_subject_color(subj_name)
+        for d in DAYS:
+            matches = [r for r in t_recs if r['day'] == d and r['time'] == t_str]
+            if len(matches) == 1:
+                rec = matches[0]
+                sec_short = re.sub(r'\(.*?\)', '', rec['section_name']).strip().replace('GRADE ', 'G').replace('Grade ', 'G').replace('Kinder ', 'K')
+                if 'FACE TO FACE' in rec['section_name'].upper() or 'F2F' in rec['section_name'].upper():
+                    sec_short += ' (F2F)'
                     
-                    row_data["days"][d] = {
-                        "occupied": True,
-                        "is_class": True,
-                        "is_break": False,
-                        "subject": subj_name,
-                        "subject_id": found['subject_id'],
-                        "section": found['section'],
-                        "section_short": found['section_short'],
-                        "grade": found['grade'],
-                        "shift": found['shift'],
-                        "label": f"{subj_name} - {found['section_short']}",
-                        "source_cell": found['source_cell'],
-                        "source_sheet": found['source_sheet'],
-                        "color": color,
-                        "bg": color['bg'],
-                        "border": color['border'],
-                        "text": color['text']
-                    }
-                else:
-                    row_data["days"][d] = None
+                color = get_subject_color(rec['subject'])
+                row_data["days"][d] = {
+                    "occupied": True,
+                    "is_class": True,
+                    "is_break": False,
+                    "has_conflict": False,
+                    "subject": rec['subject'],
+                    "subject_id": rec['subject_id'],
+                    "section": rec['section_name'],
+                    "section_short": sec_short,
+                    "grade": rec['grade'],
+                    "shift": rec['shift'],
+                    "modality": rec['shift'],
+                    "start_time": rec['start_time'],
+                    "end_time": rec['end_time'],
+                    "time": rec['time'],
+                    "duration_minutes": rec['duration_minutes'],
+                    "label": f"{rec['subject']} - {sec_short}",
+                    "source_cell": rec['source_cell'],
+                    "source_sheet": rec['source_sheet'],
+                    "color": color,
+                    "bg": color['bg'],
+                    "border": color['border'],
+                    "text": color['text']
+                }
+            elif len(matches) > 1:
+                # Multiple classes scheduled in exact same slot on the same day (Conflict!)
+                sec_shorts = []
+                for m in matches:
+                    sh = re.sub(r'\(.*?\)', '', m['section_name']).strip().replace('GRADE ', 'G').replace('Grade ', 'G').replace('Kinder ', 'K')
+                    if 'FACE TO FACE' in m['section_name'].upper() or 'F2F' in m['section_name'].upper():
+                        sh += ' (F2F)'
+                    sec_shorts.append(sh)
+                
+                row_data["days"][d] = {
+                    "occupied": True,
+                    "is_class": True,
+                    "is_break": False,
+                    "has_conflict": True,
+                    "conflict_message": "TEACHER SCHEDULE CONFLICT",
+                    "subject": matches[0]['subject'],
+                    "section": " / ".join(m['section_name'] for m in matches),
+                    "section_short": " / ".join(sec_shorts),
+                    "grade": matches[0]['grade'],
+                    "shift": matches[0]['shift'],
+                    "modality": matches[0]['shift'],
+                    "start_time": matches[0]['start_time'],
+                    "end_time": matches[0]['end_time'],
+                    "time": matches[0]['time'],
+                    "duration_minutes": matches[0]['duration_minutes'],
+                    "label": f"⚠️ CONFLICT: {matches[0]['subject']} - {' / '.join(sec_shorts)}",
+                    "classes": matches,
+                    "color": {"bg": "#fee2e2", "border": "#ef4444", "text": "#991b1b"},
+                    "bg": "#fee2e2",
+                    "border": "#ef4444",
+                    "text": "#991b1b"
+                }
+            else:
+                row_data["days"][d] = None
+                
         rows.append(row_data)
 
     faculty_timetables[tid] = {
@@ -619,7 +656,7 @@ for tinfo in sorted(TEACHER_REGISTRY, key=lambda x: x['canonical_name']):
         "title": title,
         "total_classes": total_class_count,
         "total_teaching_periods": total_class_count,
-        "subjects": sorted(list(distinct_subjs)),
+        "subjects": distinct_subjs,
         "rows": rows
     }
 
