@@ -910,7 +910,6 @@ body {
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(p.subject || p.label)}</span>
                     ${p.teacher ? `<span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(p.teacher)}</span>` : ''}
-                    <span class="cell-time-duration-pill" style="font-size:9px; font-weight:700; opacity:0.85; margin-top:2px;">${esc(timeStr)} · ${esc(p.minutes)} min</span>
                   </div>
                 </td>
               </tr>
@@ -948,7 +947,6 @@ body {
                     <div class="cell-class-inner">
                       <span class="cell-subject-sec">${esc(cell.subject)}</span>
                       ${cell.teacher ? `<span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(cell.teacher)}</span>` : ''}
-                      <span class="cell-time-duration-pill" style="font-size:9px; font-weight:700; opacity:0.85; margin-top:2px;">${esc(timeStr)} · ${esc(p.minutes)} min</span>
                     </div>
                   </td>
                 `;
