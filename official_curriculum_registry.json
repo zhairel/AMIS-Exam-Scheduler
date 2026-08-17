@@ -1,72 +1,30 @@
 {
-  "Kinder 1": {
-    "F2F": [
-      [
-        "Circle Time 1",
-        [
-          "Teacher Wendy"
-        ]
-      ],
-      [
-        "Circle Time 2",
-        [
-          "Teacher Wendy"
-        ]
-      ],
-      [
-        "Hadith",
-        [
-          "Ustadha Saliha"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadha Saliha"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Jaisam"
-        ]
-      ]
-    ],
-    "ODL_2": [
-      [
-        "Circle Time 1",
-        [
-          "Teacher Wendy"
-        ]
-      ],
-      [
-        "Circle Time 2",
-        [
-          "Teacher Wendy"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Alim Bustamante"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Hainur"
-        ]
-      ],
-      [
-        "Hadith",
-        [
-          "Ustadh Hainur"
-        ]
-      ]
-    ]
-  },
   "Grade 1": {
     "F2F": [
+      [
+        "Arabic",
+        [
+          "Teacher Sahdia"
+        ]
+      ],
+      [
+        "GMRC",
+        [
+          "Ustadha Saliha"
+        ]
+      ],
+      [
+        "Language",
+        [
+          "Teacher Sahdia"
+        ]
+      ],
+      [
+        "Makabansa",
+        [
+          "Teacher Norhydie"
+        ]
+      ],
       [
         "Math",
         [
@@ -74,27 +32,15 @@
         ]
       ],
       [
+        "Qur'an",
+        [
+          "Ustadh Obaydah"
+        ]
+      ],
+      [
         "Reading and Literacy",
         [
           "Teacher Katrina"
-        ]
-      ],
-      [
-        "Makabansa",
-        [
-          "Teacher Norhydie"
-        ]
-      ],
-      [
-        "Language",
-        [
-          "Teacher Sahdia"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Teacher Sahdia"
         ]
       ],
       [
@@ -102,31 +48,20 @@
         [
           "Ustadh Abdiraheem"
         ]
-      ],
-      [
-        "GMRC",
-        [
-          "Ustadha Saliha"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Obaydah"
-        ]
       ]
     ],
     "ODL_1": [
       [
-        "Reading and Literacy",
+        "Arabic",
         [
-          "Teacher Katrina"
+          "Ustadh Hainur"
         ]
       ],
       [
-        "Makabansa",
+        "GMRC",
         [
-          "Teacher Norhydie"
+          "Teacher Sahdia",
+          "Ustadha Saliha"
         ]
       ],
       [
@@ -136,10 +71,9 @@
         ]
       ],
       [
-        "GMRC",
+        "Makabansa",
         [
-          "Teacher Sahdia",
-          "Ustadha Saliha"
+          "Teacher Norhydie"
         ]
       ],
       [
@@ -155,9 +89,9 @@
         ]
       ],
       [
-        "Arabic",
+        "Reading and Literacy",
         [
-          "Ustadh Hainur"
+          "Teacher Katrina"
         ]
       ],
       [
@@ -169,15 +103,15 @@
     ],
     "ODL_2": [
       [
-        "Reading and Literacy",
+        "Arabic",
         [
-          "Teacher Katrina"
+          "Ustadh Hainur"
         ]
       ],
       [
-        "Makabansa",
+        "GMRC",
         [
-          "Teacher Norhydie"
+          "Teacher Sahdia"
         ]
       ],
       [
@@ -187,9 +121,9 @@
         ]
       ],
       [
-        "GMRC",
+        "Makabansa",
         [
-          "Teacher Sahdia"
+          "Teacher Norhydie"
         ]
       ],
       [
@@ -205,9 +139,587 @@
         ]
       ],
       [
+        "Reading and Literacy",
+        [
+          "Teacher Katrina"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Alim Abdul Karim"
+        ]
+      ]
+    ]
+  },
+  "Grade 10": {
+    "F2F": [],
+    "ODL_1": [
+      [
+        "Arabic",
+        [
+          "Alim Mamonas"
+        ]
+      ],
+      [
+        "ESP",
+        [
+          "Teacher Nof"
+        ]
+      ],
+      [
+        "English",
+        [
+          "Teacher Norhaima"
+        ]
+      ],
+      [
+        "Filipino",
+        [
+          "Teacher Nadzra"
+        ]
+      ],
+      [
+        "MAPEH",
+        [
+          "Sir Mohaymen"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Jhelyn"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Alim Abdulwahab"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Alim Bustamante"
+        ]
+      ],
+      [
+        "Science",
+        [
+          "Teacher Rowena"
+        ]
+      ],
+      [
+        "Social Science",
+        [
+          "Teacher Sophia"
+        ]
+      ],
+      [
+        "TLE",
+        [
+          "Teacher Angeleni"
+        ]
+      ]
+    ],
+    "ODL_2": [
+      [
+        "Arabic",
+        [
+          "Alim Mamonas"
+        ]
+      ],
+      [
+        "ESP",
+        [
+          "Teacher Nof"
+        ]
+      ],
+      [
+        "English",
+        [
+          "Teacher Norhaima"
+        ]
+      ],
+      [
+        "Filipino",
+        [
+          "Teacher Nadzra"
+        ]
+      ],
+      [
+        "MAPEH",
+        [
+          "Sir Mohaymen"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Jhelyn"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Alim Abdulwahab"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Alim Bustamante"
+        ]
+      ],
+      [
+        "Science",
+        [
+          "Teacher Rowena"
+        ]
+      ],
+      [
+        "Social Science",
+        [
+          "Teacher Sophia"
+        ]
+      ],
+      [
+        "TLE",
+        [
+          "Teacher Angeleni"
+        ]
+      ]
+    ]
+  },
+  "Grade 11": {
+    "F2F": [
+      [
+        "Arabic",
+        [
+          "Alim Mamonas"
+        ]
+      ],
+      [
+        "EC",
+        [
+          "Teacher Nadzra"
+        ]
+      ],
+      [
+        "General Biology 1",
+        [
+          "Teacher Radzmia"
+        ]
+      ],
+      [
+        "General Mathematics",
+        [
+          "Teacher Jhelyn"
+        ]
+      ],
+      [
+        "General Science",
+        [
+          "Teacher Rowena"
+        ]
+      ],
+      [
+        "LCS",
+        [
+          "Teacher Norhaima"
+        ]
+      ],
+      [
+        "PSKP",
+        [
+          "Teacher Shirehan"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Alim Dipatuan"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Alim Samsuddin"
+        ]
+      ]
+    ],
+    "ODL_1": [
+      [
+        "Arabic",
+        [
+          "Alim Mamonas"
+        ]
+      ],
+      [
+        "EC",
+        [
+          "Teacher Nadzra"
+        ]
+      ],
+      [
+        "General Biology 1",
+        [
+          "Teacher Rowena"
+        ]
+      ],
+      [
+        "General Mathematics",
+        [
+          "Teacher Jhelyn"
+        ]
+      ],
+      [
+        "General Science",
+        [
+          "Teacher Rowena"
+        ]
+      ],
+      [
+        "LCS",
+        [
+          "Teacher Norhaima"
+        ]
+      ],
+      [
+        "PSKP",
+        [
+          "Teacher Shirehan"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Alim Abdulwahab"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Alim Samsuddin"
+        ]
+      ]
+    ],
+    "ODL_2": [
+      [
+        "Arabic",
+        [
+          "Alim Mamonas"
+        ]
+      ],
+      [
+        "EC",
+        [
+          "Teacher Nadzra"
+        ]
+      ],
+      [
+        "General Biology 1",
+        [
+          "Teacher Radzmia"
+        ]
+      ],
+      [
+        "General Mathematics",
+        [
+          "Teacher Jhelyn"
+        ]
+      ],
+      [
+        "General Science",
+        [
+          "Teacher Rowena"
+        ]
+      ],
+      [
+        "LCS",
+        [
+          "Teacher Norhaima"
+        ]
+      ],
+      [
+        "PSKP",
+        [
+          "Teacher Shirehan"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Alim Abdulwahab"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Alim Samsuddin"
+        ]
+      ]
+    ]
+  },
+  "Grade 12": {
+    "F2F": [
+      [
+        "21st Century Literature",
+        [
+          "Teacher Nof"
+        ]
+      ],
+      [
+        "Arabic",
+        [
+          "Alim Mamonas"
+        ]
+      ],
+      [
+        "General Biology 1",
+        [
+          "Teacher Radzmia"
+        ]
+      ],
+      [
+        "General Physics 1",
+        [
+          "Teacher Aniah"
+        ]
+      ],
+      [
+        "MIL",
+        [
+          "Teacher Ethel"
+        ]
+      ],
+      [
+        "PE 12",
+        [
+          "Sir Mohaymen"
+        ]
+      ],
+      [
+        "Practical Research 2",
+        [
+          "Teacher Aniah"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Alim Dipatuan"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Alim Samsuddin"
+        ]
+      ]
+    ],
+    "ODL_1": [
+      [
+        "21st Century Literature",
+        [
+          "Teacher Nof"
+        ]
+      ],
+      [
+        "Arabic",
+        [
+          "Alim Mamonas"
+        ]
+      ],
+      [
+        "General Biology 1",
+        [
+          "Teacher Radzmia"
+        ]
+      ],
+      [
+        "General Physics 1",
+        [
+          "Teacher Aniah"
+        ]
+      ],
+      [
+        "MIL",
+        [
+          "Teacher Ethel"
+        ]
+      ],
+      [
+        "PE 12",
+        [
+          "Sir Mohaymen"
+        ]
+      ],
+      [
+        "Practical Research 2",
+        [
+          "Teacher Aniah"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Alim Dipatuan"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Alim Samsuddin"
+        ]
+      ]
+    ],
+    "ODL_2": []
+  },
+  "Grade 2": {
+    "F2F": [
+      [
+        "Arabic",
+        [
+          "Ustadh Obaydah"
+        ]
+      ],
+      [
+        "English",
+        [
+          "Teacher Marham"
+        ]
+      ],
+      [
+        "Filipino",
+        [
+          "Teacher Sitti Kauzar"
+        ]
+      ],
+      [
+        "GMRC",
+        [
+          "Ustadha Saliha"
+        ]
+      ],
+      [
+        "Makabansa",
+        [
+          "Teacher Monisa"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Sitti Kauzar"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Ustadh Obaydah"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Ustadh Ersahad"
+        ]
+      ]
+    ],
+    "ODL_1": [
+      [
         "Arabic",
         [
           "Ustadh Hainur"
+        ]
+      ],
+      [
+        "English",
+        [
+          "Teacher Marham"
+        ]
+      ],
+      [
+        "Filipino",
+        [
+          "Teacher Sitti Kauzar"
+        ]
+      ],
+      [
+        "GMRC",
+        [
+          "Ustadha Saliha"
+        ]
+      ],
+      [
+        "Makabansa",
+        [
+          "Teacher Monisa",
+          "Teacher Zuhora"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Sitti Kauzar"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Ustadh Obaydah"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Alim Abdul Karim"
+        ]
+      ]
+    ],
+    "ODL_2": [
+      [
+        "Arabic",
+        [
+          "Ustadh Hainur"
+        ]
+      ],
+      [
+        "English",
+        [
+          "Teacher Marham"
+        ]
+      ],
+      [
+        "Filipino",
+        [
+          "Teacher Sitti Kauzar",
+          "Teacher Zuhora"
+        ]
+      ],
+      [
+        "GMRC",
+        [
+          "Ustadha Saliha"
+        ]
+      ],
+      [
+        "Makabansa",
+        [
+          "Teacher Monisa"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Sitti Kauzar"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Ustadh Obaydah"
         ]
       ],
       [
@@ -221,21 +733,9 @@
   "Grade 3": {
     "F2F": [
       [
-        "Makabansa",
+        "Arabic",
         [
-          "Teacher Wendy"
-        ]
-      ],
-      [
-        "Science",
-        [
-          "Teacher Jerlyn"
-        ]
-      ],
-      [
-        "Math",
-        [
-          "Teacher Jerlyn"
+          "Ustadha Silfah"
         ]
       ],
       [
@@ -251,18 +751,24 @@
         ]
       ],
       [
-        "Arabic",
-        [
-          "Ustadha Silfah"
-        ]
-      ],
-      [
         "GMRC",
         [
           "Ustadha Saliha"
         ]
       ],
       [
+        "Makabansa",
+        [
+          "Teacher Wendy"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Jerlyn"
+        ]
+      ],
+      [
         "Qur'an",
         [
           "Ustadh Obaydah"
@@ -273,41 +779,105 @@
         [
           "Ustadh Ersahad"
         ]
+      ],
+      [
+        "Science",
+        [
+          "Teacher Jerlyn"
+        ]
       ]
     ],
     "ODL_1": [
+      [
+        "Arabic",
+        [
+          "Ustadh Faidh",
+          "Ustadha Silfah"
+        ]
+      ],
+      [
+        "English",
+        [
+          "Teacher Jenny",
+          "Teacher Marham"
+        ]
+      ],
+      [
+        "Filipino",
+        [
+          "Teacher Jenny",
+          "Teacher Normylah"
+        ]
+      ],
+      [
+        "GMRC",
+        [
+          "Teacher Zuhora",
+          "Ustadha Silfah"
+        ]
+      ],
+      [
+        "Makabansa",
+        [
+          "Teacher Jenny",
+          "Teacher Zara"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Jerlyn"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Ustadh Obaydah"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Alim Abdul Karim",
+          "Ustadh Ersahad",
+          "Ustadh Faidh"
+        ]
+      ],
       [
         "Science",
         [
           "Teacher Jerlyn",
           "Teacher Saimonah"
         ]
-      ],
+      ]
+    ],
+    "ODL_2": [
       [
-        "Math",
+        "Arabic",
         [
-          "Teacher Jerlyn"
+          "Ustadh Faidh",
+          "Ustadha Silfah"
         ]
       ],
       [
         "English",
         [
-          "Teacher Marham",
-          "Teacher Jenny"
-        ]
-      ],
-      [
-        "GMRC",
-        [
-          "Teacher Zuhora",
-          "Ustadha Silfah"
+          "Teacher Jenny",
+          "Teacher Marham"
         ]
       ],
       [
         "Filipino",
         [
-          "Teacher Normylah",
-          "Teacher Jenny"
+          "Teacher Jenny",
+          "Teacher Normylah"
+        ]
+      ],
+      [
+        "GMRC",
+        [
+          "Ustadha Saliha",
+          "Ustadha Silfah"
         ]
       ],
       [
@@ -318,10 +888,9 @@
         ]
       ],
       [
-        "Arabic",
+        "Math",
         [
-          "Ustadha Silfah",
-          "Ustadh Faidh"
+          "Teacher Jerlyn"
         ]
       ],
       [
@@ -333,280 +902,15 @@
       [
         "SHAF",
         [
-          "Ustadh Faidh",
           "Ustadh Ersahad",
-          "Alim Abdul Karim"
-        ]
-      ]
-    ],
-    "ODL_2": [
-      [
-        "Science",
-        [
-          "Teacher Jerlyn"
-        ]
-      ],
-      [
-        "Math",
-        [
-          "Teacher Jerlyn"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Marham",
-          "Teacher Jenny"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Normylah",
-          "Teacher Jenny"
-        ]
-      ],
-      [
-        "Makabansa",
-        [
-          "Teacher Jenny",
-          "Teacher Zara"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadha Silfah"
-        ]
-      ],
-      [
-        "GMRC",
-        [
-          "Ustadha Silfah"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Obaydah"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Ustadh Faidh",
-          "Ustadh Ersahad"
-        ]
-      ]
-    ]
-  },
-  "Grade 6": {
-    "F2F": [
-      [
-        "Science",
-        [
-          "Teacher Wendy"
-        ]
-      ],
-      [
-        "TLE",
-        [
-          "Teacher Arvin"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Jessa"
-        ]
-      ],
-      [
-        "AP",
-        [
-          "Teacher Zuhora"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Normylah"
-        ]
-      ],
-      [
-        "MAPEH",
-        [
-          "Teacher Zara"
-        ]
-      ],
-      [
-        "GMRC",
-        [
-          "Ustadha Silfah"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Ustadh Abdiraheem"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadh Ali"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
           "Ustadh Faidh"
         ]
       ],
       [
-        "Math",
-        [
-          "Ustadh Ersahad"
-        ]
-      ]
-    ],
-    "ODL_1": [
-      [
-        "Math",
-        [
-          "Teacher Katrina"
-        ]
-      ],
-      [
-        "TLE",
-        [
-          "Teacher Arvin"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Jessa"
-        ]
-      ],
-      [
         "Science",
         [
-          "Teacher Anna"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Zuhora"
-        ]
-      ],
-      [
-        "AP",
-        [
-          "Teacher Normylah"
-        ]
-      ],
-      [
-        "MAPEH",
-        [
-          "Teacher Zara"
-        ]
-      ],
-      [
-        "GMRC",
-        [
-          "Ustadha Silfah"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Ustadh Abdiraheem"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadh Ali"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Jaisam"
-        ]
-      ]
-    ],
-    "ODL_2": [
-      [
-        "Math",
-        [
-          "Teacher Katrina",
+          "Teacher Jerlyn",
           "Teacher Saimonah"
-        ]
-      ],
-      [
-        "TLE",
-        [
-          "Teacher Arvin"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Jessa"
-        ]
-      ],
-      [
-        "Science",
-        [
-          "Teacher Anna",
-          "Teacher Fhairudz"
-        ]
-      ],
-      [
-        "MAPEH",
-        [
-          "Teacher Zuhora",
-          "Teacher Zara"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Normylah"
-        ]
-      ],
-      [
-        "AP",
-        [
-          "Teacher Normylah"
-        ]
-      ],
-      [
-        "GMRC",
-        [
-          "Ustadha Silfah"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Ustadh Abdiraheem",
-          "Ustadh Faidh"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadh Ali"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Jaisam",
-          "Ustadh Obaydah"
         ]
       ]
     ]
@@ -614,13 +918,25 @@
   "Grade 4": {
     "F2F": [
       [
-        "Filipino",
+        "AP",
+        [
+          "Teacher Monisa"
+        ]
+      ],
+      [
+        "Arabic",
+        [
+          "Ustadh Ali"
+        ]
+      ],
+      [
+        "English",
         [
           "Teacher Norhydie"
         ]
       ],
       [
-        "English",
+        "Filipino",
         [
           "Teacher Norhydie"
         ]
@@ -632,33 +948,21 @@
         ]
       ],
       [
+        "MAPEH",
+        [
+          "Teacher Halnaisa"
+        ]
+      ],
+      [
         "Math",
         [
           "Teacher Arvin"
         ]
       ],
       [
-        "Science",
+        "Qur'an",
         [
-          "Teacher Junaisah"
-        ]
-      ],
-      [
-        "AP",
-        [
-          "Teacher Monisa"
-        ]
-      ],
-      [
-        "TLE",
-        [
-          "Teacher Monisa"
-        ]
-      ],
-      [
-        "MAPEH",
-        [
-          "Teacher Halnaisa"
+          "Ustadh Obaydah"
         ]
       ],
       [
@@ -668,19 +972,112 @@
         ]
       ],
       [
+        "Science",
+        [
+          "Teacher Junaisah"
+        ]
+      ],
+      [
+        "TLE",
+        [
+          "Teacher Monisa"
+        ]
+      ]
+    ],
+    "ODL_1": [
+      [
+        "AP",
+        [
+          "Teacher Monisa"
+        ]
+      ],
+      [
         "Arabic",
         [
           "Ustadh Ali"
         ]
       ],
       [
+        "English",
+        [
+          "Teacher Arvin",
+          "Teacher Jenny"
+        ]
+      ],
+      [
+        "Filipino",
+        [
+          "Teacher Monisa",
+          "Teacher Zuhora"
+        ]
+      ],
+      [
+        "GMRC",
+        [
+          "Teacher Sahdia"
+        ]
+      ],
+      [
+        "MAPEH",
+        [
+          "Teacher Halnaisa",
+          "Teacher Zuhora"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Arvin",
+          "Teacher Saimonah"
+        ]
+      ],
+      [
         "Qur'an",
         [
+          "Ustadh Faidh",
           "Ustadh Obaydah"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Ustadh Abdiraheem"
+        ]
+      ],
+      [
+        "Science",
+        [
+          "Teacher Anna",
+          "Teacher Saimonah"
+        ]
+      ],
+      [
+        "TLE",
+        [
+          "Teacher Jenny",
+          "Teacher Monisa"
         ]
       ]
     ],
     "ODL_2": [
+      [
+        "AP",
+        [
+          "Teacher Monisa"
+        ]
+      ],
+      [
+        "Arabic",
+        [
+          "Ustadh Ali"
+        ]
+      ],
+      [
+        "English",
+        [
+          "Teacher Arvin"
+        ]
+      ],
       [
         "Filipino",
         [
@@ -695,6 +1092,13 @@
         ]
       ],
       [
+        "MAPEH",
+        [
+          "Teacher Halnaisa",
+          "Teacher Zuhora"
+        ]
+      ],
+      [
         "Math",
         [
           "Teacher Arvin",
@@ -702,122 +1106,30 @@
         ]
       ],
       [
-        "English",
-        [
-          "Teacher Arvin"
-        ]
-      ],
-      [
-        "Science",
-        [
-          "Teacher Anna"
-        ]
-      ],
-      [
-        "MAPEH",
-        [
-          "Teacher Zuhora",
-          "Teacher Halnaisa"
-        ]
-      ],
-      [
-        "AP",
-        [
-          "Teacher Monisa"
-        ]
-      ],
-      [
-        "TLE",
-        [
-          "Teacher Monisa",
-          "Teacher Jenny"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Ustadh Abdiraheem"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadh Ali"
-        ]
-      ],
-      [
         "Qur'an",
         [
-          "Ustadh Obaydah",
-          "Ustadh Faidh"
-        ]
-      ]
-    ],
-    "ODL_1": [
-      [
-        "GMRC",
-        [
-          "Teacher Sahdia"
-        ]
-      ],
-      [
-        "Math",
-        [
-          "Teacher Arvin"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Arvin"
-        ]
-      ],
-      [
-        "Science",
-        [
-          "Teacher Anna"
-        ]
-      ],
-      [
-        "AP",
-        [
-          "Teacher Monisa"
-        ]
-      ],
-      [
-        "TLE",
-        [
-          "Teacher Monisa"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Monisa"
-        ]
-      ],
-      [
-        "MAPEH",
-        [
-          "Teacher Halnaisa"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Ustadh Abdiraheem"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadh Ali"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
+          "Ustadh Faidh",
           "Ustadh Obaydah"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Ustadh Abdiraheem"
+        ]
+      ],
+      [
+        "Science",
+        [
+          "Teacher Anna",
+          "Teacher Saimonah"
+        ]
+      ],
+      [
+        "TLE",
+        [
+          "Teacher Jenny",
+          "Teacher Monisa"
         ]
       ]
     ]
@@ -831,9 +1143,9 @@
         ]
       ],
       [
-        "Science",
+        "Arabic",
         [
-          "Teacher Junaisah"
+          "Ustadh Ersahad"
         ]
       ],
       [
@@ -846,6 +1158,12 @@
         "Filipino",
         [
           "Teacher Jessa"
+        ]
+      ],
+      [
+        "GMRC",
+        [
+          "Teacher Jayra"
         ]
       ],
       [
@@ -861,18 +1179,6 @@
         ]
       ],
       [
-        "TLE",
-        [
-          "Teacher Halnaisa"
-        ]
-      ],
-      [
-        "GMRC",
-        [
-          "Teacher Jayra"
-        ]
-      ],
-      [
         "Qur'an",
         [
           "Ustadh Obaydah"
@@ -885,40 +1191,32 @@
         ]
       ],
       [
-        "Arabic",
+        "Science",
         [
-          "Ustadh Ersahad"
+          "Teacher Junaisah"
+        ]
+      ],
+      [
+        "TLE",
+        [
+          "Teacher Halnaisa"
         ]
       ]
     ],
-    "ODL_2": [
+    "ODL_1": [
       [
-        "MAPEH",
+        "AP",
         [
-          "Teacher Norhydie",
+          "Teacher Keychell",
+          "Teacher Monisa",
           "Teacher Saimonah"
         ]
       ],
       [
-        "Filipino",
+        "Arabic",
         [
-          "Teacher Joanna",
-          "Teacher Jenny"
-        ]
-      ],
-      [
-        "Math",
-        [
-          "Teacher Saimonah",
-          "Teacher Hannah",
-          "Teacher Fhairudz"
-        ]
-      ],
-      [
-        "AP",
-        [
-          "Teacher Saimonah",
-          "Teacher Monisa"
+          "Alim Abdul Karim",
+          "Ustadh Faidh"
         ]
       ],
       [
@@ -928,16 +1226,10 @@
         ]
       ],
       [
-        "Science",
+        "Filipino",
         [
-          "Teacher Anna"
-        ]
-      ],
-      [
-        "TLE",
-        [
-          "Teacher Anna",
-          "Teacher Jenny"
+          "Teacher Jenny",
+          "Teacher Joanna"
         ]
       ],
       [
@@ -945,6 +1237,20 @@
         [
           "Teacher Jayra",
           "Ustadha Saliha"
+        ]
+      ],
+      [
+        "MAPEH",
+        [
+          "Teacher Keychell",
+          "Teacher Saimonah"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Fhairudz",
+          "Teacher Saimonah"
         ]
       ],
       [
@@ -958,22 +1264,37 @@
         "SHAF",
         [
           "Ustadh Faidh",
-          "Ustadh Ersahad"
+          "Ustadh Raslina"
+        ]
+      ],
+      [
+        "Science",
+        [
+          "Teacher Anna",
+          "Teacher Saimonah"
+        ]
+      ],
+      [
+        "TLE",
+        [
+          "Teacher Anna",
+          "Teacher Jenny"
+        ]
+      ]
+    ],
+    "ODL_2": [
+      [
+        "AP",
+        [
+          "Teacher Monisa",
+          "Teacher Saimonah"
         ]
       ],
       [
         "Arabic",
         [
-          "Ustadh Faidh",
-          "Ustadh Ersahad"
-        ]
-      ]
-    ],
-    "ODL_1": [
-      [
-        "Filipino",
-        [
-          "Teacher Joanna"
+          "Ustadh Ersahad",
+          "Ustadh Faidh"
         ]
       ],
       [
@@ -983,6 +1304,189 @@
         ]
       ],
       [
+        "Filipino",
+        [
+          "Teacher Jenny",
+          "Teacher Joanna"
+        ]
+      ],
+      [
+        "GMRC",
+        [
+          "Teacher Jayra",
+          "Ustadha Saliha"
+        ]
+      ],
+      [
+        "MAPEH",
+        [
+          "Teacher Norhydie",
+          "Teacher Saimonah"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Fhairudz",
+          "Teacher Saimonah"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Ustadh Jaisam",
+          "Ustadh Obaydah"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Ustadh Ersahad",
+          "Ustadh Faidh",
+          "Ustadh Hainur"
+        ]
+      ],
+      [
+        "Science",
+        [
+          "Teacher Anna",
+          "Teacher Saimonah"
+        ]
+      ],
+      [
+        "TLE",
+        [
+          "Teacher Anna",
+          "Teacher Jenny"
+        ]
+      ]
+    ]
+  },
+  "Grade 6": {
+    "F2F": [
+      [
+        "AP",
+        [
+          "Teacher Zuhora"
+        ]
+      ],
+      [
+        "Arabic",
+        [
+          "Ustadh Ali"
+        ]
+      ],
+      [
+        "English",
+        [
+          "Teacher Jessa"
+        ]
+      ],
+      [
+        "Filipino",
+        [
+          "Teacher Normylah"
+        ]
+      ],
+      [
+        "GMRC",
+        [
+          "Ustadha Silfah"
+        ]
+      ],
+      [
+        "MAPEH",
+        [
+          "Teacher Zara"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Ustadh Ersahad"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Ustadh Faidh"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Ustadh Abdiraheem"
+        ]
+      ],
+      [
+        "Science",
+        [
+          "Teacher Wendy"
+        ]
+      ],
+      [
+        "TLE",
+        [
+          "Teacher Arvin"
+        ]
+      ]
+    ],
+    "ODL_1": [
+      [
+        "AP",
+        [
+          "Teacher Normylah"
+        ]
+      ],
+      [
+        "Arabic",
+        [
+          "Ustadh Ali"
+        ]
+      ],
+      [
+        "English",
+        [
+          "Teacher Jessa"
+        ]
+      ],
+      [
+        "Filipino",
+        [
+          "Teacher Zuhora"
+        ]
+      ],
+      [
+        "GMRC",
+        [
+          "Ustadha Silfah"
+        ]
+      ],
+      [
+        "MAPEH",
+        [
+          "Teacher Zara"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Katrina"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Ustadh Jaisam"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Ustadh Abdiraheem"
+        ]
+      ],
+      [
         "Science",
         [
           "Teacher Anna"
@@ -991,355 +1495,104 @@
       [
         "TLE",
         [
-          "Teacher Anna"
+          "Teacher Arvin"
         ]
-      ],
+      ]
+    ],
+    "ODL_2": [
       [
         "AP",
         [
-          "Teacher Monisa",
-          "Teacher Keychell"
+          "Teacher Normylah"
+        ]
+      ],
+      [
+        "Arabic",
+        [
+          "Ustadh Ali",
+          "Ustadh Ersahad"
+        ]
+      ],
+      [
+        "English",
+        [
+          "Teacher Jessa"
+        ]
+      ],
+      [
+        "Filipino",
+        [
+          "Teacher Normylah"
+        ]
+      ],
+      [
+        "GMRC",
+        [
+          "Ustadha Silfah"
         ]
       ],
       [
         "MAPEH",
         [
-          "Teacher Keychell"
-        ]
-      ],
-      [
-        "Math",
-        [
-          "Teacher Hannah"
-        ]
-      ],
-      [
-        "GMRC",
-        [
-          "Teacher Jayra"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Jaisam"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Alim Abdul Karim"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Ustadh Raslina"
-        ]
-      ]
-    ]
-  },
-  "Grade 2": {
-    "F2F": [
-      [
-        "Math",
-        [
-          "Teacher Sitti Kauzar"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Sitti Kauzar"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Marham"
-        ]
-      ],
-      [
-        "Makabansa",
-        [
-          "Teacher Monisa"
-        ]
-      ],
-      [
-        "GMRC",
-        [
-          "Ustadha Saliha"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Obaydah"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadh Obaydah"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Ustadh Ersahad"
-        ]
-      ]
-    ],
-    "ODL_1": [
-      [
-        "Math",
-        [
-          "Teacher Sitti Kauzar"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Sitti Kauzar"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Marham"
-        ]
-      ],
-      [
-        "Makabansa",
-        [
-          "Teacher Zuhora",
-          "Teacher Monisa"
-        ]
-      ],
-      [
-        "GMRC",
-        [
-          "Ustadha Saliha"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadh Hainur"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Obaydah"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Alim Abdul Karim"
-        ]
-      ]
-    ],
-    "ODL_2": [
-      [
-        "Math",
-        [
-          "Teacher Sitti Kauzar"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Sitti Kauzar",
+          "Teacher Zara",
           "Teacher Zuhora"
         ]
       ],
       [
-        "English",
+        "Math",
         [
-          "Teacher Marham"
-        ]
-      ],
-      [
-        "Makabansa",
-        [
-          "Teacher Monisa"
-        ]
-      ],
-      [
-        "GMRC",
-        [
-          "Ustadha Saliha"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadh Hainur"
+          "Teacher Katrina",
+          "Teacher Saimonah"
         ]
       ],
       [
         "Qur'an",
         [
+          "Ustadh Jaisam",
           "Ustadh Obaydah"
         ]
       ],
       [
         "SHAF",
         [
-          "Alim Abdul Karim"
-        ]
-      ]
-    ]
-  },
-  "Kinder 2": {
-    "ODL_1": [
-      [
-        "Circle Time 1",
-        [
-          "Teacher Ayah",
-          "Teacher Joanna"
-        ]
-      ],
-      [
-        "Circle Time 2",
-        [
-          "Teacher Ayah",
-          "Teacher Joanna"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadha Silfah"
-        ]
-      ],
-      [
-        "Hadith",
-        [
-          "Ustadha Saliha"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Hainur"
-        ]
-      ]
-    ],
-    "ODL_2": [
-      [
-        "Circle Time 1",
-        [
-          "Teacher Ayah",
-          "Teacher Joanna",
-          "Teacher Keychell"
-        ]
-      ],
-      [
-        "Circle Time 2",
-        [
-          "Teacher Ayah",
-          "Teacher Joanna",
-          "Teacher Keychell"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadha Silfah"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Hainur"
-        ]
-      ],
-      [
-        "Hadith",
-        [
-          "Ustadh Hainur",
+          "Ustadh Abdiraheem",
           "Ustadh Faidh"
         ]
-      ]
-    ],
-    "F2F": [
+      ],
       [
-        "Circle Time 1",
+        "Science",
         [
-          "Teacher Keychell"
+          "Teacher Anna",
+          "Teacher Fhairudz"
         ]
       ],
       [
-        "Circle Time 2",
+        "TLE",
         [
-          "Teacher Keychell"
-        ]
-      ],
-      [
-        "Hadith",
-        [
-          "Ustadha Saliha"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadha Saliha"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Jaisam"
+          "Teacher Arvin"
         ]
       ]
     ]
   },
   "Grade 7": {
-    "F2F": [
+    "F2F": [],
+    "ODL_1": [
       [
-        "Math",
+        "Arabic",
         [
-          "Teacher Hannah"
-        ]
-      ],
-      [
-        "Science",
-        [
-          "Teacher Radzmia"
-        ]
-      ],
-      [
-        "TLE",
-        [
-          "Teacher Halnaisa"
-        ]
-      ],
-      [
-        "Social Science",
-        [
-          "Teacher Shirehan"
-        ]
-      ],
-      [
-        "MAPEH",
-        [
-          "Teacher Franchette"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Sophia"
+          "Ustadh Ali"
         ]
       ],
       [
         "English",
         [
           "Teacher Jayra"
+        ]
+      ],
+      [
+        "Filipino",
+        [
+          "Teacher Sophia"
         ]
       ],
       [
@@ -1349,53 +1602,9 @@
         ]
       ],
       [
-        "SHAF",
-        [
-          "Alim Samsuddin"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Jaisam"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadh Ali"
-        ]
-      ]
-    ],
-    "ODL_1": [
-      [
-        "TLE",
-        [
-          "Teacher Halnaisa"
-        ]
-      ],
-      [
-        "Social Science",
-        [
-          "Teacher Shirehan"
-        ]
-      ],
-      [
         "MAPEH",
         [
           "Teacher Franchette"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Sophia"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Jayra"
         ]
       ],
       [
@@ -1405,15 +1614,9 @@
         ]
       ],
       [
-        "Science",
+        "Qur'an",
         [
-          "Teacher Aniah"
-        ]
-      ],
-      [
-        "GMRC",
-        [
-          "Ustadha Silfah"
+          "Ustadh Jaisam"
         ]
       ],
       [
@@ -1423,23 +1626,9 @@
         ]
       ],
       [
-        "Arabic",
+        "Science",
         [
-          "Ustadh Ali"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Jaisam"
-        ]
-      ]
-    ],
-    "ODL_2": [
-      [
-        "TLE",
-        [
-          "Teacher Halnaisa"
+          "Teacher Aniah"
         ]
       ],
       [
@@ -1449,9 +1638,23 @@
         ]
       ],
       [
-        "MAPEH",
+        "TLE",
         [
-          "Teacher Franchette"
+          "Teacher Halnaisa"
+        ]
+      ]
+    ],
+    "ODL_2": [
+      [
+        "Arabic",
+        [
+          "Ustadh Ali"
+        ]
+      ],
+      [
+        "English",
+        [
+          "Teacher Jayra"
         ]
       ],
       [
@@ -1461,9 +1664,15 @@
         ]
       ],
       [
-        "English",
+        "GMRC",
         [
-          "Teacher Jayra"
+          "Ustadha Silfah"
+        ]
+      ],
+      [
+        "MAPEH",
+        [
+          "Teacher Franchette"
         ]
       ],
       [
@@ -1473,239 +1682,33 @@
         ]
       ],
       [
+        "Qur'an",
+        [
+          "Ustadh Jaisam"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Alim Samsuddin"
+        ]
+      ],
+      [
         "Science",
         [
           "Teacher Aniah"
         ]
       ],
       [
-        "GMRC",
-        [
-          "Ustadha Silfah"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Alim Samsuddin"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadh Ali"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Jaisam"
-        ]
-      ]
-    ]
-  },
-  "Grade 8": {
-    "F2F": [
-      [
-        "Math",
-        [
-          "Teacher Hannah"
-        ]
-      ],
-      [
-        "Science",
-        [
-          "Teacher Radzmia"
-        ]
-      ],
-      [
-        "TLE",
-        [
-          "Teacher Halnaisa"
-        ]
-      ],
-      [
         "Social Science",
         [
           "Teacher Shirehan"
         ]
       ],
       [
-        "MAPEH",
-        [
-          "Teacher Franchette"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Sophia"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Jayra"
-        ]
-      ],
-      [
-        "GMRC",
-        [
-          "Ustadha Silfah"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Alim Samsuddin"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Jaisam"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadh Ali"
-        ]
-      ]
-    ],
-    "ODL_1": [
-      [
-        "Math",
-        [
-          "Teacher Hannah"
-        ]
-      ],
-      [
-        "Science",
-        [
-          "Teacher Radzmia"
-        ]
-      ],
-      [
         "TLE",
         [
           "Teacher Halnaisa"
-        ]
-      ],
-      [
-        "Social Science",
-        [
-          "Teacher Shirehan"
-        ]
-      ],
-      [
-        "MAPEH",
-        [
-          "Teacher Franchette"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Sophia"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Jayra"
-        ]
-      ],
-      [
-        "Values Education",
-        [
-          "Teacher Wardah"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Alim Samsuddin"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadh Ali"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Jaisam"
-        ]
-      ]
-    ],
-    "ODL_2": [
-      [
-        "Math",
-        [
-          "Teacher Hannah"
-        ]
-      ],
-      [
-        "Science",
-        [
-          "Teacher Radzmia"
-        ]
-      ],
-      [
-        "TLE",
-        [
-          "Teacher Halnaisa"
-        ]
-      ],
-      [
-        "Social Science",
-        [
-          "Teacher Shirehan"
-        ]
-      ],
-      [
-        "MAPEH",
-        [
-          "Teacher Franchette"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Sophia"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Jayra"
-        ]
-      ],
-      [
-        "Values Education",
-        [
-          "Teacher Wardah"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Alim Samsuddin"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Ustadh Ali"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Ustadh Jaisam"
         ]
       ]
     ]
@@ -1713,39 +1716,9 @@
   "Grade 7 & 8": {
     "F2F": [
       [
-        "Math",
+        "Arabic",
         [
-          "Teacher Hannah"
-        ]
-      ],
-      [
-        "Science",
-        [
-          "Teacher Radzmia"
-        ]
-      ],
-      [
-        "TLE",
-        [
-          "Teacher Halnaisa"
-        ]
-      ],
-      [
-        "Social Science",
-        [
-          "Teacher Shirehan"
-        ]
-      ],
-      [
-        "MAPEH",
-        [
-          "Teacher Franchette"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Sophia"
+          "Ustadh Ali"
         ]
       ],
       [
@@ -1755,15 +1728,27 @@
         ]
       ],
       [
+        "Filipino",
+        [
+          "Teacher Sophia"
+        ]
+      ],
+      [
         "GMRC",
         [
           "Ustadha Silfah"
         ]
       ],
       [
-        "SHAF",
+        "MAPEH",
         [
-          "Alim Samsuddin"
+          "Teacher Franchette"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Hannah"
         ]
       ],
       [
@@ -1773,464 +1758,185 @@
         ]
       ],
       [
-        "Arabic",
+        "SHAF",
         [
-          "Ustadh Ali"
+          "Alim Samsuddin"
         ]
-      ]
-    ]
-  },
-  "Grade 11": {
-    "F2F": [
+      ],
       [
-        "General Biology 1",
+        "Science",
         [
           "Teacher Radzmia"
         ]
       ],
       [
-        "PSKP",
+        "Social Science",
         [
           "Teacher Shirehan"
         ]
       ],
       [
-        "General Mathematics",
+        "TLE",
         [
-          "Teacher Jhelyn"
+          "Teacher Halnaisa"
         ]
-      ],
-      [
-        "EC",
-        [
-          "Teacher Nadzra"
-        ]
-      ],
-      [
-        "LCS",
-        [
-          "Teacher Norhaima"
-        ]
-      ],
-      [
-        "General Science",
-        [
-          "Teacher Rowena"
-        ]
-      ],
+      ]
+    ],
+    "ODL_1": [],
+    "ODL_2": []
+  },
+  "Grade 8": {
+    "F2F": [],
+    "ODL_1": [
       [
         "Arabic",
         [
-          "Alim Mamonas"
+          "Ustadh Ali"
+        ]
+      ],
+      [
+        "English",
+        [
+          "Teacher Jayra"
+        ]
+      ],
+      [
+        "Filipino",
+        [
+          "Teacher Sophia"
+        ]
+      ],
+      [
+        "MAPEH",
+        [
+          "Teacher Franchette"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Hannah"
         ]
       ],
       [
         "Qur'an",
         [
-          "Alim Dipatuan"
+          "Ustadh Jaisam"
         ]
       ],
       [
         "SHAF",
         [
           "Alim Samsuddin"
+        ]
+      ],
+      [
+        "Science",
+        [
+          "Teacher Radzmia"
+        ]
+      ],
+      [
+        "Social Science",
+        [
+          "Teacher Shirehan"
+        ]
+      ],
+      [
+        "TLE",
+        [
+          "Teacher Halnaisa"
+        ]
+      ],
+      [
+        "Values Education",
+        [
+          "Teacher Wardah"
         ]
       ]
     ],
     "ODL_2": [
       [
-        "General Biology 1",
+        "Arabic",
+        [
+          "Ustadh Ali"
+        ]
+      ],
+      [
+        "English",
+        [
+          "Teacher Jayra"
+        ]
+      ],
+      [
+        "Filipino",
+        [
+          "Teacher Sophia"
+        ]
+      ],
+      [
+        "MAPEH",
+        [
+          "Teacher Franchette"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Hannah"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Ustadh Jaisam"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Alim Samsuddin"
+        ]
+      ],
+      [
+        "Science",
         [
           "Teacher Radzmia"
         ]
       ],
       [
-        "PSKP",
+        "Social Science",
         [
           "Teacher Shirehan"
         ]
       ],
       [
-        "General Mathematics",
+        "TLE",
         [
-          "Teacher Jhelyn"
+          "Teacher Halnaisa"
         ]
       ],
       [
-        "EC",
+        "Values Education",
         [
-          "Teacher Nadzra"
-        ]
-      ],
-      [
-        "LCS",
-        [
-          "Teacher Norhaima"
-        ]
-      ],
-      [
-        "General Science",
-        [
-          "Teacher Rowena"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Alim Mamonas"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Alim Samsuddin"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Alim Abdulwahab"
-        ]
-      ]
-    ],
-    "ODL_1": [
-      [
-        "PSKP",
-        [
-          "Teacher Shirehan"
-        ]
-      ],
-      [
-        "General Mathematics",
-        [
-          "Teacher Jhelyn"
-        ]
-      ],
-      [
-        "EC",
-        [
-          "Teacher Nadzra"
-        ]
-      ],
-      [
-        "LCS",
-        [
-          "Teacher Norhaima"
-        ]
-      ],
-      [
-        "General Science",
-        [
-          "Teacher Rowena"
-        ]
-      ],
-      [
-        "General Biology 1",
-        [
-          "Teacher Rowena"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Alim Mamonas"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Alim Samsuddin"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Alim Abdulwahab"
-        ]
-      ]
-    ]
-  },
-  "Grade 12": {
-    "F2F": [
-      [
-        "General Biology 1",
-        [
-          "Teacher Radzmia"
-        ]
-      ],
-      [
-        "MIL",
-        [
-          "Teacher Ethel"
-        ]
-      ],
-      [
-        "Practical Research 2",
-        [
-          "Teacher Aniah"
-        ]
-      ],
-      [
-        "General Physics 1",
-        [
-          "Teacher Aniah"
-        ]
-      ],
-      [
-        "21st Century Literature",
-        [
-          "Teacher Nof"
-        ]
-      ],
-      [
-        "PE 12",
-        [
-          "Sir Mohaymen"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Alim Mamonas"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Alim Dipatuan"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Alim Samsuddin"
-        ]
-      ]
-    ],
-    "ODL_1": [
-      [
-        "General Biology 1",
-        [
-          "Teacher Radzmia"
-        ]
-      ],
-      [
-        "MIL",
-        [
-          "Teacher Ethel"
-        ]
-      ],
-      [
-        "Practical Research 2",
-        [
-          "Teacher Aniah"
-        ]
-      ],
-      [
-        "General Physics 1",
-        [
-          "Teacher Aniah"
-        ]
-      ],
-      [
-        "21st Century Literature",
-        [
-          "Teacher Nof"
-        ]
-      ],
-      [
-        "PE 12",
-        [
-          "Sir Mohaymen"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Alim Mamonas"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Alim Dipatuan"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Alim Samsuddin"
+          "Teacher Wardah"
         ]
       ]
     ]
   },
   "Grade 9": {
-    "F2F": [
-      [
-        "TLE",
-        [
-          "Teacher Angeleni"
-        ]
-      ],
-      [
-        "Social Science",
-        [
-          "Teacher Sophia"
-        ]
-      ],
-      [
-        "Math",
-        [
-          "Teacher Jhelyn"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Nadzra"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Norhaima"
-        ]
-      ],
-      [
-        "ESP",
-        [
-          "Teacher Nof"
-        ]
-      ],
-      [
-        "MAPEH",
-        [
-          "Sir Mohaymen"
-        ]
-      ],
-      [
-        "Science",
-        [
-          "Teacher Rowena"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Alim Mamonas"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Alim Samsuddin"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Alim Abdulwahab"
-        ]
-      ]
-    ],
+    "F2F": [],
     "ODL_1": [
-      [
-        "TLE",
-        [
-          "Teacher Angeleni"
-        ]
-      ],
-      [
-        "Social Science",
-        [
-          "Teacher Sophia"
-        ]
-      ],
-      [
-        "Math",
-        [
-          "Teacher Jhelyn"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Nadzra"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Norhaima"
-        ]
-      ],
-      [
-        "ESP",
-        [
-          "Teacher Nof"
-        ]
-      ],
-      [
-        "MAPEH",
-        [
-          "Sir Mohaymen"
-        ]
-      ],
-      [
-        "Science",
-        [
-          "Teacher Rowena"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Alim Samsuddin"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Alim Abdulwahab"
-        ]
-      ],
       [
         "Arabic",
         [
           "Ustadh Raslina"
         ]
-      ]
-    ],
-    "ODL_2": [
-      [
-        "TLE",
-        [
-          "Teacher Angeleni"
-        ]
       ],
       [
-        "MAPEH",
+        "ESP",
         [
-          "Teacher Angeleni",
-          "Sir Mohaymen"
-        ]
-      ],
-      [
-        "Social Science",
-        [
-          "Teacher Sophia"
-        ]
-      ],
-      [
-        "Math",
-        [
-          "Teacher Jhelyn"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Nadzra"
+          "Teacher Nof"
         ]
       ],
       [
@@ -2240,9 +1946,33 @@
         ]
       ],
       [
-        "ESP",
+        "Filipino",
         [
-          "Teacher Nof"
+          "Teacher Nadzra"
+        ]
+      ],
+      [
+        "MAPEH",
+        [
+          "Sir Mohaymen"
+        ]
+      ],
+      [
+        "Math",
+        [
+          "Teacher Jhelyn"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Alim Abdulwahab"
+        ]
+      ],
+      [
+        "SHAF",
+        [
+          "Alim Samsuddin"
         ]
       ],
       [
@@ -2252,11 +1982,19 @@
         ]
       ],
       [
-        "SHAF",
+        "Social Science",
         [
-          "Alim Samsuddin"
+          "Teacher Sophia"
         ]
       ],
+      [
+        "TLE",
+        [
+          "Teacher Angeleni"
+        ]
+      ]
+    ],
+    "ODL_2": [
       [
         "Arabic",
         [
@@ -2264,37 +2002,9 @@
         ]
       ],
       [
-        "Qur'an",
+        "ESP",
         [
-          "Alim Abdulwahab"
-        ]
-      ]
-    ]
-  },
-  "Grade 10": {
-    "F2F": [
-      [
-        "TLE",
-        [
-          "Teacher Angeleni"
-        ]
-      ],
-      [
-        "Social Science",
-        [
-          "Teacher Sophia"
-        ]
-      ],
-      [
-        "Math",
-        [
-          "Teacher Jhelyn"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Nadzra"
+          "Teacher Nof"
         ]
       ],
       [
@@ -2304,27 +2014,28 @@
         ]
       ],
       [
-        "ESP",
+        "Filipino",
         [
-          "Teacher Nof"
+          "Teacher Nadzra"
         ]
       ],
       [
         "MAPEH",
         [
-          "Sir Mohaymen"
+          "Sir Mohaymen",
+          "Teacher Angeleni"
         ]
       ],
       [
-        "Science",
+        "Math",
         [
-          "Teacher Rowena"
+          "Teacher Jhelyn"
         ]
       ],
       [
-        "Arabic",
+        "Qur'an",
         [
-          "Alim Mamonas"
+          "Alim Abdulwahab"
         ]
       ],
       [
@@ -2334,17 +2045,9 @@
         ]
       ],
       [
-        "Qur'an",
+        "Science",
         [
-          "Alim Abdulwahab"
-        ]
-      ]
-    ],
-    "ODL_1": [
-      [
-        "TLE",
-        [
-          "Teacher Angeleni"
+          "Teacher Rowena"
         ]
       ],
       [
@@ -2354,125 +2057,9 @@
         ]
       ],
       [
-        "Math",
-        [
-          "Teacher Jhelyn"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Nadzra"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Norhaima"
-        ]
-      ],
-      [
-        "ESP",
-        [
-          "Teacher Nof"
-        ]
-      ],
-      [
-        "MAPEH",
-        [
-          "Sir Mohaymen"
-        ]
-      ],
-      [
-        "Science",
-        [
-          "Teacher Rowena"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Alim Mamonas"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Alim Bustamante"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Alim Abdulwahab"
-        ]
-      ]
-    ],
-    "ODL_2": [
-      [
         "TLE",
         [
           "Teacher Angeleni"
-        ]
-      ],
-      [
-        "Social Science",
-        [
-          "Teacher Sophia"
-        ]
-      ],
-      [
-        "Math",
-        [
-          "Teacher Jhelyn"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Nadzra"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Norhaima"
-        ]
-      ],
-      [
-        "ESP",
-        [
-          "Teacher Nof"
-        ]
-      ],
-      [
-        "MAPEH",
-        [
-          "Sir Mohaymen"
-        ]
-      ],
-      [
-        "Science",
-        [
-          "Teacher Rowena"
-        ]
-      ],
-      [
-        "Arabic",
-        [
-          "Alim Mamonas"
-        ]
-      ],
-      [
-        "SHAF",
-        [
-          "Alim Bustamante"
-        ]
-      ],
-      [
-        "Qur'an",
-        [
-          "Alim Abdulwahab"
         ]
       ]
     ]
@@ -2480,33 +2067,9 @@
   "Grade 9 & 10": {
     "F2F": [
       [
-        "TLE",
+        "Arabic",
         [
-          "Teacher Angeleni"
-        ]
-      ],
-      [
-        "Social Science",
-        [
-          "Teacher Sophia"
-        ]
-      ],
-      [
-        "Math",
-        [
-          "Teacher Jhelyn"
-        ]
-      ],
-      [
-        "Filipino",
-        [
-          "Teacher Nadzra"
-        ]
-      ],
-      [
-        "English",
-        [
-          "Teacher Norhaima"
+          "Alim Mamonas"
         ]
       ],
       [
@@ -2516,21 +2079,33 @@
         ]
       ],
       [
+        "English",
+        [
+          "Teacher Norhaima"
+        ]
+      ],
+      [
+        "Filipino",
+        [
+          "Teacher Nadzra"
+        ]
+      ],
+      [
         "MAPEH",
         [
           "Sir Mohaymen"
         ]
       ],
       [
-        "Science",
+        "Math",
         [
-          "Teacher Rowena"
+          "Teacher Jhelyn"
         ]
       ],
       [
-        "Arabic",
+        "Qur'an",
         [
-          "Alim Mamonas"
+          "Alim Abdulwahab"
         ]
       ],
       [
@@ -2540,9 +2115,166 @@
         ]
       ],
       [
+        "Science",
+        [
+          "Teacher Rowena"
+        ]
+      ],
+      [
+        "Social Science",
+        [
+          "Teacher Sophia"
+        ]
+      ],
+      [
+        "TLE",
+        [
+          "Teacher Angeleni"
+        ]
+      ]
+    ],
+    "ODL_1": [],
+    "ODL_2": []
+  },
+  "Kinder 1": {
+    "F2F": [
+      [
+        "Arabic",
+        [
+          "Ustadha Saliha"
+        ]
+      ],
+      [
+        "Circle Time 1",
+        [
+          "Teacher Wendy"
+        ]
+      ],
+      [
+        "Circle Time 2",
+        [
+          "Teacher Wendy"
+        ]
+      ],
+      [
+        "Hadith",
+        [
+          "Ustadha Saliha"
+        ]
+      ],
+      [
         "Qur'an",
         [
-          "Alim Abdulwahab"
+          "Ustadh Jaisam"
+        ]
+      ]
+    ],
+    "ODL_1": [],
+    "ODL_2": []
+  },
+  "Kinder 2": {
+    "F2F": [
+      [
+        "Arabic",
+        [
+          "Ustadha Saliha"
+        ]
+      ],
+      [
+        "Circle Time 1",
+        [
+          "Teacher Keychell"
+        ]
+      ],
+      [
+        "Circle Time 2",
+        [
+          "Teacher Keychell"
+        ]
+      ],
+      [
+        "Hadith",
+        [
+          "Ustadha Saliha"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Ustadh Jaisam"
+        ]
+      ]
+    ],
+    "ODL_1": [
+      [
+        "Arabic",
+        [
+          "Ustadha Silfah"
+        ]
+      ],
+      [
+        "Circle Time 1",
+        [
+          "Teacher Ayah",
+          "Teacher Joanna"
+        ]
+      ],
+      [
+        "Circle Time 2",
+        [
+          "Teacher Ayah",
+          "Teacher Joanna"
+        ]
+      ],
+      [
+        "Hadith",
+        [
+          "Ustadha Saliha"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Ustadh Hainur"
+        ]
+      ]
+    ],
+    "ODL_2": [
+      [
+        "Arabic",
+        [
+          "Ustadh Faidh",
+          "Ustadha Silfah"
+        ]
+      ],
+      [
+        "Circle Time 1",
+        [
+          "Teacher Ayah",
+          "Teacher Joanna",
+          "Teacher Keychell"
+        ]
+      ],
+      [
+        "Circle Time 2",
+        [
+          "Teacher Ayah",
+          "Teacher Joanna",
+          "Teacher Keychell"
+        ]
+      ],
+      [
+        "Hadith",
+        [
+          "Ustadh Faidh",
+          "Ustadh Hainur"
+        ]
+      ],
+      [
+        "Qur'an",
+        [
+          "Ustadh Faidh",
+          "Ustadh Hainur"
         ]
       ]
     ]

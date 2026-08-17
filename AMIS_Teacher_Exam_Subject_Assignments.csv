@@ -1,603 +1,598 @@
-﻿Teacher Name,Total Exam Load,Assigned Subject,Grade Level,Section,Gender,Modality,Shift,Examination Date,Examination Time,Room,Status
-Alim Abdul Karim,12,Arabic,Grade 5,AYYASH IBN ABI RABI'AH,,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Alim Abdul Karim,12,SHAF,Grade 8,NUAYM IBN MAS'UD (Mix),Mix,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Alim Abdul Karim,12,Arabic,Grade 11,FACE TO FACE,,F2F,Day / F2F,2026-09-02,9:05-9:45 a.m.,,OK
-Alim Abdul Karim,12,SHAF,Grade 5,AYYASH IBN ABI RABI'AH,,ODL,1st Shift,2026-09-03,02:20-03:00 p.m.,,OK
-Alim Abdul Karim,12,Arabic,Grade 11,Boys,Boys,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Alim Abdul Karim,12,SHAF,Grade 3,FACE TO FACE,,F2F,Day / F2F,2026-09-03,7:40-8:25 a.m.,,OK
-Alim Abdul Karim,12,Arabic,Grade 9,ABU HURAYRAH (Girls),Girls,ODL,1st Shift,2026-09-09,02:20-03:00 p.m.,,OK
-Alim Abdul Karim,12,Arabic,Grade 3,THABIT IBN QAYS (Boys),Boys,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Alim Abdul Karim,12,Arabic,Grade 12,SUHAYB AR-RUMI,,F2F,Day / F2F,2026-09-09,8:25-9:05 a.m.,,OK
-Alim Abdul Karim,12,Arabic,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),Girls,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Alim Abdul Karim,12,SHAF,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),Boys,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Alim Abdul Karim,12,SHAF,Grade 6,KHALEED IBN WALEED,,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Alim Abdulwahab,12,Qur'an,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),Girls,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Alim Abdulwahab,12,Qur'an,Kinder 2,UTHMAN IBN AFFAN,,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Alim Abdulwahab,12,Qur'an,Grade 1,SUHAYB AR-RUMI,,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Alim Abdulwahab,12,Qur'an,Grade 3,ZAYD IBN HARITHA (Girls),Girls,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Alim Abdulwahab,12,Qur'an,Grade 2,TALHA IBN UBAYDULLAH,,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Alim Abdulwahab,12,Qur'an,Kinder 2,UMAR IBN AL-KHATTAB,,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Alim Abdulwahab,12,Qur'an,Grade 5,AL HARITH BIN AWF,,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Alim Abdulwahab,12,Qur'an,Grade 7,USAMA IBN ZAYD (Girls),Girls,ODL,1st Shift,2026-09-09,02:20-03:00 p.m.,,OK
-Alim Abdulwahab,12,Qur'an,Grade 6,ABDULLAH IBN SALAAM,,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Alim Abdulwahab,12,Qur'an,Grade 1,SA'AD IBN ABI WAQQAAS,,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Alim Abdulwahab,12,Qur'an,Kinder 2,ABDULLAH IBN MAS'UD,,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Alim Abdulwahab,12,Qur'an,Grade 6,FACE TO FACE,,F2F,Day / F2F,2026-09-10,7:40-8:25 a.m.,,OK
-Alim Bustamante,12,SHAF,Grade 5,MUHAMMAD IBN MASLAMAH,,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Alim Bustamante,12,SHAF,Grade 2,TALHA IBN UBAYDULLAH,,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Alim Bustamante,12,Arabic,Grade 9,ABU DHARR AL GHIFARRI (Boys),Boys,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Alim Bustamante,12,SHAF,Grade 11,FACE TO FACE,,F2F,Day / F2F,2026-09-02,7:40-8:25 a.m.,,OK
-Alim Bustamante,12,SHAF,Grade 9,ABU HURAYRAH (Girls),Girls,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Alim Bustamante,12,SHAF,Grade 1,SA'AD IBN ABI WAQQAAS,,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Alim Bustamante,12,SHAF,Grade 3,SALMAN AL FARSI (Mix),Mix,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Alim Bustamante,12,SHAF,Grade 4,HASSAN IBN THABIT (Mix),Mix,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Alim Bustamante,12,SHAF,Grade 8,MU'ADH IBN JABAL (Boys),Boys,ODL,2nd Shift,2026-09-09,5:20-6:00 p.m.,,OK
-Alim Bustamante,12,SHAF,Grade 12,SUHAYB AR-RUMI,,F2F,Day / F2F,2026-09-09,7:40-8:25 a.m.,,OK
-Alim Bustamante,12,Arabic,Grade 8,SA'AD IBN MUA'DH (Girls),Girls,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Alim Bustamante,12,Arabic,Kinder 2,KHABAAB IBN ARAT,,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Alim Dipatuan,13,Qur'an,Grade 6,ABBAS IBN ABD AL-MUTTALIB,,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Alim Dipatuan,13,Qur'an,Grade 3,AMMAR IBN YASIR (Boys),Boys,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Alim Dipatuan,13,Qur'an,Grade 9,ABU JANDAL IBN SUHAYL (Girls),Girls,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Alim Dipatuan,13,Qur'an,Grade 4,FACE TO FACE,,F2F,Day / F2F,2026-09-02,7:40-8:25 a.m.,,OK
-Alim Dipatuan,13,Qur'an,Grade 4,HAKIM IBN HAZM,,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Alim Dipatuan,13,Qur'an,Grade 2,AASIM IBN THABIT,,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Alim Dipatuan,13,Qur'an,Grade 9 & 10,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-03,7:40-8:25 a.m.,,OK
-Alim Dipatuan,13,Qur'an,Grade 1,HUDHAYFAH IBN AL-YAM,,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Alim Dipatuan,13,Qur'an,Kinder 2,KHABAAB IBN ARAT,,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Alim Dipatuan,13,Qur'an,Grade 9,ABU DHARR AL GHIFARRI (Boys),Boys,ODL,2nd Shift,2026-09-09,5:20-6:00 p.m.,,OK
-Alim Dipatuan,13,Qur'an,Grade 1,FACE TO FACE,,F2F,Day / F2F,2026-09-09,7:40-8:25 a.m.,,OK
-Alim Dipatuan,13,Qur'an,Grade 12,ABU MUSA AL-ASHARI,,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Alim Dipatuan,13,Qur'an,Grade 7,ANAS IBN MALIK (Mix),Mix,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Alim Mamonas,12,Arabic,Grade 1,ALI IBN ABI TALIB,,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Alim Mamonas,12,Arabic,Kinder 2,ABDULLAH IBN MAS'UD,,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Alim Mamonas,12,Arabic,Grade 7,ANAS IBN MALIK (Mix),Mix,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Alim Mamonas,12,Arabic,Grade 9 & 10,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-02,7:40-8:25 a.m.,,OK
-Alim Mamonas,12,Arabic,Kinder 2,ABU BAKR AS-SIDEEQ,,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Alim Mamonas,12,Arabic,Grade 8,NUAYM IBN MAS'UD (Mix),Mix,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Alim Mamonas,12,Arabic,Grade 9,ABU JANDAL IBN SUHAYL (Girls),Girls,ODL,2nd Shift,2026-09-03,5:20-6:00 p.m.,,OK
-Alim Mamonas,12,Arabic,Grade 4,USAYD IBN HUDHAYR (Mix),Mix,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Alim Mamonas,12,Arabic,Grade 1,SA'AD IBN ABI WAQQAAS,,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Alim Mamonas,12,Arabic,Grade 5,MUHAMMAD IBN MASLAMAH,,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Alim Mamonas,12,Arabic,Grade 3,ZAYD IBN HARITHA (Girls),Girls,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Alim Mamonas,12,Arabic,Grade 7 & 8,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-10,8:25-9:05 a.m.,,OK
-Alim Samsuddin,12,SHAF,Grade 4,HAKIM IBN HAZM,,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Alim Samsuddin,12,SHAF,Grade 2,AASIM IBN THABIT,,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Alim Samsuddin,12,SHAF,Grade 1,FACE TO FACE,,F2F,Day / F2F,2026-09-02,8:25-9:05 a.m.,,OK
-Alim Samsuddin,12,SHAF,Grade 4,USAYD IBN HUDHAYR (Mix),Mix,ODL,1st Shift,2026-09-03,02:20-03:00 p.m.,,OK
-Alim Samsuddin,12,SHAF,Grade 10,ABU AYYUB AL-ANSARI (Boys),Boys,ODL,2nd Shift,2026-09-03,5:20-6:00 p.m.,,OK
-Alim Samsuddin,12,SHAF,Grade 2,FACE TO FACE,,F2F,Day / F2F,2026-09-03,7:40-8:25 a.m.,,OK
-Alim Samsuddin,12,SHAF,Grade 8,SA'AD IBN MUA'DH (Girls),Girls,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Alim Samsuddin,12,SHAF,Grade 9,ABU DHARR AL GHIFARRI (Boys),Boys,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Alim Samsuddin,12,SHAF,Grade 7 & 8,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-09,8:25-9:05 a.m.,,OK
-Alim Samsuddin,12,SHAF,Grade 11,Girls,Girls,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Alim Samsuddin,12,SHAF,Grade 4,IKRIMAH IBN ABI JAHL,,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Alim Samsuddin,12,SHAF,Grade 5,FACE TO FACE,,F2F,Day / F2F,2026-09-10,7:40-8:25 a.m.,,OK
-Sir Moh,6,PE 12,Grade 12,SUHAYB AR-RUMI,,F2F,Day / F2F,2026-09-02,9:05-9:45 a.m.,,OK
-Sir Moh,6,MAPEH,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),Boys,ODL,1st Shift,2026-09-03,02:20-03:00 p.m.,,OK
-Sir Moh,6,PE 12,Grade 12,ABU MUSA AL-ASHARI,,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Sir Moh,6,MAPEH,Grade 9,ABU JANDAL IBN SUHAYL (Girls),Girls,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Sir Moh,6,MAPEH,Grade 9,ABU HURAYRAH (Girls),Girls,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Sir Moh,6,MAPEH,Grade 9 & 10,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-10,7:40-8:25 a.m.,,OK
-Teacher Angeleni,7,TLE,Grade 7,USAMA IBN ZAYD (Girls),Girls,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Angeleni,7,TLE,Grade 7,ANAS IBN MALIK (Mix),Mix,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Angeleni,7,MAPEH,Grade 9,ABU DHARR AL GHIFARRI (Boys),Boys,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Angeleni,7,TLE,Grade 7 & 8,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-03,9:05-9:45 a.m.,,OK
-Teacher Angeleni,7,TLE,Grade 8,SA'AD IBN MUA'DH (Girls),Girls,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Angeleni,7,TLE,Grade 8,MU'ADH IBN JABAL (Boys),Boys,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Teacher Angeleni,7,TLE,Grade 7 & 8,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-10,7:40-8:25 a.m.,,OK
-Teacher Aniah,8,Prac. Res. 2,Grade 12,ABU MUSA AL-ASHARI,,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Teacher Aniah,8,Sci,Grade 8,MU'ADH IBN JABAL (Boys),Boys,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Aniah,8,Prac. Res. 2,Grade 12,SUHAYB AR-RUMI,,F2F,Day / F2F,2026-09-02,7:40-8:25 a.m.,,OK
-Teacher Aniah,8,Gen. Physics 1,Grade 12,ABU MUSA AL-ASHARI,,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Aniah,8,Gen. Physics 1,Grade 12,SUHAYB AR-RUMI,,F2F,Day / F2F,2026-09-03,7:40-8:25 a.m.,,OK
-Teacher Aniah,8,Soc.Sci,Grade 9,ABU HURAYRAH (Girls),Girls,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Aniah,8,Soc.Sci,Grade 8,NUAYM IBN MAS'UD (Mix),Mix,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Teacher Aniah,8,Soc.Sci,Grade 7 & 8,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-10,7:40-8:25 a.m.,,OK
-Teacher Anna,12,Science,Grade 5,AYYASH IBN ABI RABI'AH,,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Teacher Anna,12,Gen Science,Grade 11,Girls,Girls,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Anna,12,TLE,Grade 6,KHALEED IBN WALEED,,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Anna,12,TLE,Grade 5,AYYASH IBN ABI RABI'AH,,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Anna,12,TLE,Grade 10,ABU AYYUB AL-ANSARI (Boys),Boys,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Anna,12,Science,Grade 6,FACE TO FACE,,F2F,Day / F2F,2026-09-03,8:25-9:05 a.m.,,OK
-Teacher Anna,12,Science,Grade 5,HAMZA IBN ABDUL,,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Anna,12,TLE,Grade 5,MUS'AB IBN ABDUL MUTALIB,,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Anna,12,TLE,Grade 6,DIHYA IBN KHALIFAH (Girls),Girls,ODL,2nd Shift,2026-09-09,5:20-6:00 p.m.,,OK
-Teacher Anna,12,Science,Grade 5,FACE TO FACE,,F2F,Day / F2F,2026-09-09,7:40-8:25 a.m.,,OK
-Teacher Anna,12,TLE,Grade 10,UTBAH IBN GHAZWAN (Girls),Girls,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Anna,12,TLE,Grade 5,AL HARITH BIN AWF,,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Arvin,12,TLE,Grade 5,MUHAMMAD IBN MASLAMAH,,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Teacher Arvin,12,TLE,Grade 4,AZ ZUBAIR IBN AL AWWAAM,,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Arvin,12,TLE,Grade 5,JA'FAR IBN ABI TALIB (Mix),Mix,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Teacher Arvin,12,English,Grade 4,FACE TO FACE,,F2F,Day / F2F,2026-09-02,9:05-9:45 a.m.,,OK
-Teacher Arvin,12,English,Grade 4,HAKIM IBN HAZM,,ODL,1st Shift,2026-09-03,02:20-03:00 p.m.,,OK
-Teacher Arvin,12,TLE,Grade 4,USAYD IBN HUDHAYR (Mix),Mix,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Teacher Arvin,12,TLE,Grade 4,HASSAN IBN THABIT (Mix),Mix,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Arvin,12,TLE,Grade 5,HAMZA IBN ABDUL,,ODL,1st Shift,2026-09-09,02:20-03:00 p.m.,,OK
-Teacher Arvin,12,English,Grade 2,AASIM IBN THABIT,,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Teacher Arvin,12,TLE,Grade 5,FACE TO FACE,,F2F,Day / F2F,2026-09-09,9:05-9:45 a.m.,,OK
-Teacher Arvin,12,Math,Grade 3,SALMAN AL FARSI (Mix),Mix,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Teacher Arvin,12,TLE,Grade 6,FACE TO FACE,,F2F,Day / F2F,2026-09-10,8:25-9:05 a.m.,,OK
-Teacher Ayah,8,Circle Time 1,Kinder 2,UMAR IBN AL-KHATTAB,,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Ayah,8,Circle Time 1,Kinder 2,FACE TO FACE,,F2F,Day / F2F,2026-09-02,8:25-9:05 a.m.,,OK
-Teacher Ayah,8,Circle Time 2,Kinder 2,KHABAAB IBN ARAT,,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Ayah,8,Circle Time 2,Kinder 2,FACE TO FACE,,F2F,Day / F2F,2026-09-03,7:40-8:25 a.m.,,OK
-Teacher Ayah,8,Circle Time 1,Kinder 2,UTHMAN IBN AFFAN,,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Ayah,8,Circle Time 1,Kinder 1,HUSAIN IBN ALI,,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Ayah,8,Circle Time 2,Kinder 1,HUSAIN IBN ALI,,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Ayah,8,Circle Time 1,Kinder 1,FACE TO FACE,,F2F,Day / F2F,2026-09-10,7:40-8:25 a.m.,,OK
-Teacher Ethel,7,MIL,Grade 12,ABU MUSA AL-ASHARI,,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Teacher Ethel,7,Math,Grade 9,ABU JANDAL IBN SUHAYL (Girls),Girls,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Teacher Ethel,7,MIL,Grade 12,SUHAYB AR-RUMI,,F2F,Day / F2F,2026-09-02,8:25-9:05 a.m.,,OK
-Teacher Ethel,7,Math,Grade 7,USAMA IBN ZAYD (Girls),Girls,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Teacher Ethel,7,Math,Grade 7,ANAS IBN MALIK (Mix),Mix,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Ethel,7,Math,Grade 9 & 10,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-09,9:05-9:45 a.m.,,OK
-Teacher Ethel,7,Math,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),Boys,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Teacher Fhairudz,12,Science,Grade 6,ABDULLAH IBN SALAAM,,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Teacher Fhairudz,12,Sci,Grade 10,ABU AYYUB AL-ANSARI (Boys),Boys,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Fhairudz,12,Math,Grade 5,JA'FAR IBN ABI TALIB (Mix),Mix,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Fhairudz,12,Math,Grade 4,ABDUR RAHMAN IBN AWF,,ODL,1st Shift,2026-09-03,02:20-03:00 p.m.,,OK
-Teacher Fhairudz,12,Science,Grade 3,AMMAR IBN YASIR (Boys),Boys,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Teacher Fhairudz,12,Science,Grade 4,IKRIMAH IBN ABI JAHL,,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Fhairudz,12,Math,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),Girls,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Fhairudz,12,Science,Grade 6,KHALEED IBN WALEED,,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Fhairudz,12,Math,Grade 5,AL HARITH BIN AWF,,ODL,2nd Shift,2026-09-09,5:20-6:00 p.m.,,OK
-Teacher Fhairudz,12,Math,Grade 4,FACE TO FACE,,F2F,Day / F2F,2026-09-09,7:40-8:25 a.m.,,OK
-Teacher Fhairudz,12,Science,Grade 4,USAYD IBN HUDHAYR (Mix),Mix,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Teacher Fhairudz,12,Math,Grade 4,AZ ZUBAIR IBN AL AWWAAM,,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Teacher Franchette,7,MAPEH,Grade 8,SA'AD IBN MUA'DH (Girls),Girls,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Teacher Franchette,7,MAPEH,Grade 8,MU'ADH IBN JABAL (Boys),Boys,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Franchette,7,MAPEH,Grade 7 & 8,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-03,7:40-8:25 a.m.,,OK
-Teacher Franchette,7,MAPEH,Grade 8,NUAYM IBN MAS'UD (Mix),Mix,ODL,2nd Shift,2026-09-09,5:20-6:00 p.m.,,OK
-Teacher Franchette,7,MAPEH,Grade 7 & 8,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-09,8:25-9:05 a.m.,,OK
-Teacher Franchette,7,MAPEH,Grade 7,USAMA IBN ZAYD (Girls),Girls,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Franchette,7,MAPEH,Grade 7,ANAS IBN MALIK (Mix),Mix,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Teacher Hainur,13,Qur'an,Kinder 2,ABU BAKR AS-SIDEEQ,,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Teacher Hainur,13,Hadith,Kinder 2,KHABAAB IBN ARAT,,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Hainur,13,Qur'an,Grade 4,IKRIMAH IBN ABI JAHL,,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Hainur,13,Qur'an,Kinder 1,FACE TO FACE,,F2F,Day / F2F,2026-09-02,8:25-9:05 a.m.,,OK
-Teacher Hainur,13,Qur'an,Grade 5,HAMZA IBN ABDUL,,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Teacher Hainur,13,SHAF,Grade 3,ZAYD IBN HARITHA (Girls),Girls,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Hainur,13,Qur'an,Grade 5,FACE TO FACE,,F2F,Day / F2F,2026-09-03,7:40-8:25 a.m.,,OK
-Teacher Hainur,13,Qur'an,Grade 8,SA'AD IBN MUA'DH (Girls),Girls,ODL,1st Shift,2026-09-09,02:20-03:00 p.m.,,OK
-Teacher Hainur,13,Hadith,Kinder 2,ABU BAKR AS-SIDEEQ,,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Hainur,13,Qur'an,Grade 6,DIHYA IBN KHALIFAH (Girls),Girls,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Teacher Hainur,13,Qur'an,Kinder 2,FACE TO FACE,,F2F,Day / F2F,2026-09-09,7:40-8:25 a.m.,,OK
-Teacher Hainur,13,Arabic,Grade 12,ABU MUSA AL-ASHARI,,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Hainur,13,Qur'an,Grade 8,MU'ADH IBN JABAL (Boys),Boys,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Halnaisa,8,TLE,Grade 8,NUAYM IBN MAS'UD (Mix),Mix,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Halnaisa,8,MAPEH,Grade 9 & 10,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-02,9:05-9:45 a.m.,,OK
-Teacher Halnaisa,8,TLE,Grade 9,ABU JANDAL IBN SUHAYL (Girls),Girls,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Halnaisa,8,TLE,Grade 9 & 10,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-03,9:05-9:45 a.m.,,OK
-Teacher Halnaisa,8,TLE,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),Boys,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Halnaisa,8,TLE,Grade 9,ABU HURAYRAH (Girls),Girls,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Halnaisa,8,TLE,Grade 9,ABU DHARR AL GHIFARRI (Boys),Boys,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Teacher Halnaisa,8,TLE,Grade 9 & 10,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-10,7:40-8:25 a.m.,,OK
-Teacher Hannah,11,Math,Grade 4,USAYD IBN HUDHAYR (Mix),Mix,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Teacher Hannah,11,Math,Grade 5,MUHAMMAD IBN MASLAMAH,,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Hannah,11,Math,Grade 2,SAEED IBN ZAYD,,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Hannah,11,Math,Grade 10,UTBAH IBN GHAZWAN (Girls),Girls,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Hannah,11,Math,Grade 3,THABIT IBN QAYS (Boys),Boys,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Hannah,11,Math,Grade 6,FACE TO FACE,,F2F,Day / F2F,2026-09-03,9:05-9:45 a.m.,,OK
-Teacher Hannah,11,Math,Grade 2,AMR IBN AL-JAMUH,,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Hannah,11,Math,Grade 1,SUHAYB AR-RUMI,,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Teacher Hannah,11,Gen Math,Grade 11,FACE TO FACE,,F2F,Day / F2F,2026-09-09,7:40-8:25 a.m.,,OK
-Teacher Hannah,11,Math,Grade 1,ALI IBN ABI TALIB,,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Hannah,11,Gen Math,Grade 11,Boys,Boys,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Jayra,9,Values Ed.,Grade 8,SA'AD IBN MUA'DH (Girls),Girls,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Teacher Jayra,9,English,Grade 9,ABU DHARR AL GHIFARRI (Boys),Boys,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Teacher Jayra,9,ESP,Grade 9 & 10,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-02,7:40-8:25 a.m.,,OK
-Teacher Jayra,9,English,Grade 8,MU'ADH IBN JABAL (Boys),Boys,ODL,2nd Shift,2026-09-03,5:20-6:00 p.m.,,OK
-Teacher Jayra,9,English,Grade 7 & 8,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-03,8:25-9:05 a.m.,,OK
-Teacher Jayra,9,English,Grade 9,ABU JANDAL IBN SUHAYL (Girls),Girls,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Jayra,9,English,Grade 7 & 8,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-09,9:05-9:45 a.m.,,OK
-Teacher Jayra,9,English,Grade 7,USAMA IBN ZAYD (Girls),Girls,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Teacher Jayra,9,English,Grade 9,ABU HURAYRAH (Girls),Girls,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Jenny,12,English,Grade 3,SALMAN AL FARSI (Mix),Mix,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Teacher Jenny,12,English,Grade 6,ABDULLAH IBN SALAAM,,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Jenny,12,English,Grade 6,DIHYA IBN KHALIFAH (Girls),Girls,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Jenny,12,Makabansa,Grade 1,HUDHAYFAH IBN AL-YAM,,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Jenny,12,Makabansa,Grade 2,AASIM IBN THABIT,,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Jenny,12,Makabansa,Grade 1,FACE TO FACE,,F2F,Day / F2F,2026-09-03,7:40-8:25 a.m.,,OK
-Teacher Jenny,12,TLE,Grade 6,ABDULLAH IBN SALAAM,,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Jenny,12,English,Grade 10,ABU AYYUB AL-ANSARI (Boys),Boys,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Teacher Jenny,12,TLE,Grade 4,FACE TO FACE,,F2F,Day / F2F,2026-09-09,8:25-9:05 a.m.,,OK
-Teacher Jenny,12,English,Grade 5,AYYASH IBN ABI RABI'AH,,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Jenny,12,English,Grade 4,HASSAN IBN THABIT (Mix),Mix,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Teacher Jenny,12,English,Grade 2,FACE TO FACE,,F2F,Day / F2F,2026-09-10,7:40-8:25 a.m.,,OK
-Teacher Jerlyn,12,Math,Grade 1,HUDHAYFAH IBN AL-YAM,,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Teacher Jerlyn,12,Science,Grade 4,HASSAN IBN THABIT (Mix),Mix,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Jerlyn,12,Science,Grade 6,DIHYA IBN KHALIFAH (Girls),Girls,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Teacher Jerlyn,12,Math,Grade 2,FACE TO FACE,,F2F,Day / F2F,2026-09-02,7:40-8:25 a.m.,,OK
-Teacher Jerlyn,12,Gen Math,Grade 11,Girls,Girls,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Jerlyn,12,Science,Grade 3,THABIT IBN QAYS (Boys),Boys,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Jerlyn,12,Math,Grade 5,MUS'AB IBN ABDUL MUTALIB,,ODL,2nd Shift,2026-09-03,5:20-6:00 p.m.,,OK
-Teacher Jerlyn,12,Science,Grade 6,ABBAS IBN ABD AL-MUTTALIB,,ODL,1st Shift,2026-09-09,02:20-03:00 p.m.,,OK
-Teacher Jerlyn,12,Sci,Grade 10,UTBAH IBN GHAZWAN (Girls),Girls,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Jerlyn,12,Science,Grade 5,AL HARITH BIN AWF,,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Teacher Jerlyn,12,Math,Grade 2,TALHA IBN UBAYDULLAH,,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Jerlyn,12,Math,Grade 2,AASIM IBN THABIT,,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Teacher Jessa,12,English,Grade 10,UTBAH IBN GHAZWAN (Girls),Girls,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Teacher Jessa,12,English,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),Girls,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Jessa,12,English,Grade 5,MUS'AB IBN ABDUL MUTALIB,,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Jessa,12,Filipino,Grade 5,MUHAMMAD IBN MASLAMAH,,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Jessa,12,English,Grade 5,AL HARITH BIN AWF,,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Jessa,12,Filipino,Grade 5,JA'FAR IBN ABI TALIB (Mix),Mix,ODL,2nd Shift,2026-09-03,5:20-6:00 p.m.,,OK
-Teacher Jessa,12,Filipino,Grade 3,FACE TO FACE,,F2F,Day / F2F,2026-09-03,8:25-9:05 a.m.,,OK
-Teacher Jessa,12,English,Grade 6,ABBAS IBN ABD AL-MUTTALIB,,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Jessa,12,English,Grade 4,AZ ZUBAIR IBN AL AWWAAM,,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Jessa,12,Filipino,Grade 4,AZ ZUBAIR IBN AL AWWAAM,,ODL,2nd Shift,2026-09-09,5:20-6:00 p.m.,,OK
-Teacher Jessa,12,English,Grade 4,USAYD IBN HUDHAYR (Mix),Mix,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Jessa,12,English,Grade 3,THABIT IBN QAYS (Boys),Boys,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Jhelyn,8,Math,Grade 8,SA'AD IBN MUA'DH (Girls),Girls,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Jhelyn,8,Math,Grade 8,MU'ADH IBN JABAL (Boys),Boys,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Jhelyn,8,Math,Grade 7 & 8,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-02,8:25-9:05 a.m.,,OK
-Teacher Jhelyn,8,Math,Grade 9,ABU HURAYRAH (Girls),Girls,ODL,1st Shift,2026-09-03,02:20-03:00 p.m.,,OK
-Teacher Jhelyn,8,Math,Grade 8,NUAYM IBN MAS'UD (Mix),Mix,ODL,2nd Shift,2026-09-03,5:20-6:00 p.m.,,OK
-Teacher Jhelyn,8,Math,Grade 9 & 10,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-03,8:25-9:05 a.m.,,OK
-Teacher Jhelyn,8,Math,Grade 7 & 8,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-09,9:05-9:45 a.m.,,OK
-Teacher Jhelyn,8,Math,Grade 9,ABU DHARR AL GHIFARRI (Boys),Boys,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Joanna,13,Filipino,Grade 5,HAMZA IBN ABDUL,,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Joanna,13,Filipino,Grade 3,AS'AD IBN ZURARAH (Mix),Mix,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Joanna,13,Filipino,Grade 3,THABIT IBN QAYS (Boys),Boys,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Teacher Joanna,13,Filipino,Grade 6,FACE TO FACE,,F2F,Day / F2F,2026-09-02,8:25-9:05 a.m.,,OK
-Teacher Joanna,13,Filipino,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),Girls,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Joanna,13,Circle Time 1,Kinder 2,ABDULLAH IBN MAS'UD,,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Joanna,13,Filipino,Grade 4,IKRIMAH IBN ABI JAHL,,ODL,2nd Shift,2026-09-03,5:20-6:00 p.m.,,OK
-Teacher Joanna,13,Filipino,Grade 2,TALHA IBN UBAYDULLAH,,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Joanna,13,Circle Time 2,Kinder 2,ABDULLAH IBN MAS'UD,,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Joanna,13,Math,Grade 6,KHALEED IBN WALEED,,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Teacher Joanna,13,Math,Grade 4,HAKIM IBN HAZM,,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Joanna,13,Filipino,Grade 5,MUS'AB IBN ABDUL MUTALIB,,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Joanna,13,Filipino,Grade 6,DIHYA IBN KHALIFAH (Girls),Girls,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Teacher Junaisah,11,Science,Grade 4,ABDUR RAHMAN IBN AWF,,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Teacher Junaisah,11,Science,Grade 3,AS'AD IBN ZURARAH (Mix),Mix,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Junaisah,11,Gen Science,Grade 11,FACE TO FACE,,F2F,Day / F2F,2026-09-02,8:25-9:05 a.m.,,OK
-Teacher Junaisah,11,Gen Science,Grade 11,Boys,Boys,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Junaisah,11,Science,Grade 5,MUS'AB IBN ABDUL MUTALIB,,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Junaisah,11,Science,Grade 4,FACE TO FACE,,F2F,Day / F2F,2026-09-03,7:40-8:25 a.m.,,OK
-Teacher Junaisah,11,Science,Grade 4,HAKIM IBN HAZM,,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Junaisah,11,Science,Grade 3,ZAYD IBN HARITHA (Girls),Girls,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Junaisah,11,Science,Grade 3,FACE TO FACE,,F2F,Day / F2F,2026-09-09,7:40-8:25 a.m.,,OK
-Teacher Junaisah,11,Science,Grade 5,MUHAMMAD IBN MASLAMAH,,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Teacher Junaisah,11,Science,Grade 3,SALMAN AL FARSI (Mix),Mix,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Katrina,15,Reading and Literacy,Grade 1,HUDHAYFAH IBN AL-YAM,,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Katrina,15,Reading and Literacy,Grade 1,SA'AD IBN ABI WAQQAAS,,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Katrina,15,Math,Grade 3,AS'AD IBN ZURARAH (Mix),Mix,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Teacher Katrina,15,Math,Grade 1,FACE TO FACE,,F2F,Day / F2F,2026-09-02,7:40-8:25 a.m.,,OK
-Teacher Katrina,15,Math,Grade 5,AYYASH IBN ABI RABI'AH,,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Teacher Katrina,15,Math,Grade 4,HASSAN IBN THABIT (Mix),Mix,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Katrina,15,Language,Grade 1,SUHAYB AR-RUMI,,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Katrina,15,Reading and Literacy,Grade 1,ALI IBN ABI TALIB,,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Katrina,15,Language,Grade 1,ALI IBN ABI TALIB,,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Katrina,15,Reading and Literacy,Grade 1,SUHAYB AR-RUMI,,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Katrina,15,Math,Grade 5,FACE TO FACE,,F2F,Day / F2F,2026-09-09,8:25-9:05 a.m.,,OK
-Teacher Katrina,15,Language,Grade 1,HUDHAYFAH IBN AL-YAM,,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Teacher Katrina,15,Language,Grade 1,SA'AD IBN ABI WAQQAAS,,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Teacher Katrina,15,Language,Grade 1,FACE TO FACE,,F2F,Day / F2F,2026-09-10,7:40-8:25 a.m.,,OK
-Teacher Katrina,15,Reading and Literacy,Grade 1,FACE TO FACE,,F2F,Day / F2F,2026-09-10,8:25-9:05 a.m.,,OK
-Teacher Keychell,11,AP,Grade 4,USAYD IBN HUDHAYR (Mix),Mix,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Teacher Keychell,11,Circle Time 2,Kinder 2,ABU BAKR AS-SIDEEQ,,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Keychell,11,Circle Time 2,Kinder 2,UMAR IBN AL-KHATTAB,,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Keychell,11,MAPEH,Grade 4,HAKIM IBN HAZM,,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Keychell,11,AP,Grade 5,JA'FAR IBN ABI TALIB (Mix),Mix,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Keychell,11,AP,Grade 4,FACE TO FACE,,F2F,Day / F2F,2026-09-03,9:05-9:45 a.m.,,OK
-Teacher Keychell,11,AP,Grade 4,HAKIM IBN HAZM,,ODL,1st Shift,2026-09-09,02:20-03:00 p.m.,,OK
-Teacher Keychell,11,AP,Grade 5,MUS'AB IBN ABDUL MUTALIB,,ODL,2nd Shift,2026-09-09,5:20-6:00 p.m.,,OK
-Teacher Keychell,11,MAPEH,Grade 6,FACE TO FACE,,F2F,Day / F2F,2026-09-09,8:25-9:05 a.m.,,OK
-Teacher Keychell,11,Circle Time 2,Kinder 2,UTHMAN IBN AFFAN,,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Keychell,11,AP,Grade 4,AZ ZUBAIR IBN AL AWWAAM,,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Marham,12,English,Grade 4,ABDUR RAHMAN IBN AWF,,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Teacher Marham,12,English,Grade 3,ZAYD IBN HARITHA (Girls),Girls,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Marham,12,English,Grade 5,FACE TO FACE,,F2F,Day / F2F,2026-09-02,9:05-9:45 a.m.,,OK
-Teacher Marham,12,English,Grade 2,AMR IBN AL-JAMUH,,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Marham,12,English,Grade 4,IKRIMAH IBN ABI JAHL,,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Marham,12,English,Grade 6,KHALEED IBN WALEED,,ODL,2nd Shift,2026-09-03,5:20-6:00 p.m.,,OK
-Teacher Marham,12,English,Grade 6,FACE TO FACE,,F2F,Day / F2F,2026-09-03,7:40-8:25 a.m.,,OK
-Teacher Marham,12,English,Grade 5,MUHAMMAD IBN MASLAMAH,,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Marham,12,English,Grade 3,AS'AD IBN ZURARAH (Mix),Mix,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Marham,12,English,Grade 5,JA'FAR IBN ABI TALIB (Mix),Mix,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Teacher Marham,12,English,Grade 3,AMMAR IBN YASIR (Boys),Boys,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Marham,12,English,Grade 2,SAEED IBN ZAYD,,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Monisa,12,Makabansa,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),Girls,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Teacher Monisa,12,Makabansa,Grade 3,ZAYD IBN HARITHA (Girls),Girls,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Monisa,12,MAPEH,Grade 5,MUS'AB IBN ABDUL MUTALIB,,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Teacher Monisa,12,AP,Grade 6,FACE TO FACE,,F2F,Day / F2F,2026-09-02,9:05-9:45 a.m.,,OK
-Teacher Monisa,12,Filipino,Grade 6,ABBAS IBN ABD AL-MUTTALIB,,ODL,1st Shift,2026-09-03,02:20-03:00 p.m.,,OK
-Teacher Monisa,12,TLE,Grade 6,ABBAS IBN ABD AL-MUTTALIB,,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Teacher Monisa,12,MAPEH,Grade 5,AL HARITH BIN AWF,,ODL,2nd Shift,2026-09-03,5:20-6:00 p.m.,,OK
-Teacher Monisa,12,Filipino,Grade 5,AYYASH IBN ABI RABI'AH,,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Monisa,12,TLE,Grade 4,ABDUR RAHMAN IBN AWF,,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Monisa,12,TLE,Grade 4,IKRIMAH IBN ABI JAHL,,ODL,2nd Shift,2026-09-09,5:20-6:00 p.m.,,OK
-Teacher Monisa,12,TLE,Grade 4,HAKIM IBN HAZM,,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Teacher Monisa,12,MAPEH,Grade 6,KHALEED IBN WALEED,,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Nadzra,9,Filipino,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),Boys,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Teacher Nadzra,9,Filipino,Grade 8,SA'AD IBN MUA'DH (Girls),Girls,ODL,1st Shift,2026-09-03,02:20-03:00 p.m.,,OK
-Teacher Nadzra,9,Filipino,Grade 7 & 8,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-03,7:40-8:25 a.m.,,OK
-Teacher Nadzra,9,Filipino,Grade 9 & 10,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-03,9:05-9:45 a.m.,,OK
-Teacher Nadzra,9,EC,Grade 11,Girls,Girls,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Nadzra,9,Filipino,Grade 8,MU'ADH IBN JABAL (Boys),Boys,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Nadzra,9,EC,Grade 11,FACE TO FACE,,F2F,Day / F2F,2026-09-09,8:25-9:05 a.m.,,OK
-Teacher Nadzra,9,EC,Grade 11,Boys,Boys,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Teacher Nadzra,9,Filipino,Grade 7 & 8,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-10,8:25-9:05 a.m.,,OK
-Teacher Nof,7,21st Lit.,Grade 12,ABU MUSA AL-ASHARI,,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Nof,7,ESP,Grade 10,ABU AYYUB AL-ANSARI (Boys),Boys,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Nof,7,Filipino,Grade 7,USAMA IBN ZAYD (Girls),Girls,ODL,1st Shift,2026-09-03,02:20-03:00 p.m.,,OK
-Teacher Nof,7,ESP,Grade 9 & 10,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-03,8:25-9:05 a.m.,,OK
-Teacher Nof,7,Filipino,Grade 9,ABU DHARR AL GHIFARRI (Boys),Boys,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Nof,7,Filipino,Grade 9,ABU JANDAL IBN SUHAYL (Girls),Girls,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Teacher Nof,7,21st Lit.,Grade 12,SUHAYB AR-RUMI,,F2F,Day / F2F,2026-09-10,8:25-9:05 a.m.,,OK
-Teacher Norhaima,9,English,Grade 7,ANAS IBN MALIK (Mix),Mix,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Norhaima,9,LCS,Grade 11,Boys,Boys,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Norhaima,9,English,Grade 9 & 10,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-02,8:25-9:05 a.m.,,OK
-Teacher Norhaima,9,English,Grade 8,SA'AD IBN MUA'DH (Girls),Girls,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Norhaima,9,English,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),Boys,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Norhaima,9,English,Grade 9 & 10,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-09,9:05-9:45 a.m.,,OK
-Teacher Norhaima,9,LCS,Grade 11,Girls,Girls,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Norhaima,9,English,Grade 8,NUAYM IBN MAS'UD (Mix),Mix,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Norhaima,9,LCS,Grade 11,FACE TO FACE,,F2F,Day / F2F,2026-09-10,8:25-9:05 a.m.,,OK
-Teacher Norhydie,13,English,Grade 5,HAMZA IBN ABDUL,,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Teacher Norhydie,13,MAPEH,Grade 5,AYYASH IBN ABI RABI'AH,,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Norhydie,13,Filipino,Grade 5,AL HARITH BIN AWF,,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Norhydie,13,English,Grade 3,FACE TO FACE,,F2F,Day / F2F,2026-09-02,7:40-8:25 a.m.,,OK
-Teacher Norhydie,13,MAPEH,Grade 6,ABDULLAH IBN SALAAM,,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Norhydie,13,AP,Grade 6,KHALEED IBN WALEED,,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Norhydie,13,Filipino,Grade 4,FACE TO FACE,,F2F,Day / F2F,2026-09-03,8:25-9:05 a.m.,,OK
-Teacher Norhydie,13,Filipino,Grade 3,SALMAN AL FARSI (Mix),Mix,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Norhydie,13,English,Grade 2,TALHA IBN UBAYDULLAH,,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Norhydie,13,AP,Grade 4,IKRIMAH IBN ABI JAHL,,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Norhydie,13,AP,Grade 6,ABDULLAH IBN SALAAM,,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Teacher Norhydie,13,Makabansa,Grade 1,SUHAYB AR-RUMI,,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Teacher Norhydie,13,Filipino,Grade 2,FACE TO FACE,,F2F,Day / F2F,2026-09-10,8:25-9:05 a.m.,,OK
-Teacher Normylah,12,MAPEH,Grade 10,UTBAH IBN GHAZWAN (Girls),Girls,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Teacher Normylah,12,MAPEH,Grade 4,ABDUR RAHMAN IBN AWF,,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Normylah,12,Filipino,Grade 4,HASSAN IBN THABIT (Mix),Mix,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Normylah,12,AP,Grade 4,ABDUR RAHMAN IBN AWF,,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Normylah,12,Filipino,Grade 6,KHALEED IBN WALEED,,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Normylah,12,MAPEH,Grade 6,DIHYA IBN KHALIFAH (Girls),Girls,ODL,2nd Shift,2026-09-03,5:20-6:00 p.m.,,OK
-Teacher Normylah,12,MAPEH,Grade 5,FACE TO FACE,,F2F,Day / F2F,2026-09-03,8:25-9:05 a.m.,,OK
-Teacher Normylah,12,AP,Grade 6,ABBAS IBN ABD AL-MUTTALIB,,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Normylah,12,MAPEH,Grade 10,ABU AYYUB AL-ANSARI (Boys),Boys,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Normylah,12,AP,Grade 5,HAMZA IBN ABDUL,,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Teacher Normylah,12,Filipino,Grade 10,ABU AYYUB AL-ANSARI (Boys),Boys,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Teacher Normylah,12,AP,Grade 5,FACE TO FACE,,F2F,Day / F2F,2026-09-10,8:25-9:05 a.m.,,OK
-Teacher Radzmia,9,Soc.Sci,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),Boys,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Radzmia,9,Soc.Sci,Grade 9,ABU DHARR AL GHIFARRI (Boys),Boys,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Radzmia,9,Sci,Grade 7 & 8,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-02,8:25-9:05 a.m.,,OK
-Teacher Radzmia,9,Soc.Sci,Grade 7,USAMA IBN ZAYD (Girls),Girls,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Radzmia,9,Sci,Grade 8,NUAYM IBN MAS'UD (Mix),Mix,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Radzmia,9,Gen Bio 1,Grade 12,SUHAYB AR-RUMI,,F2F,Day / F2F,2026-09-03,8:25-9:05 a.m.,,OK
-Teacher Radzmia,9,Sci,Grade 7,USAMA IBN ZAYD (Girls),Girls,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Radzmia,9,Sci,Grade 9,ABU JANDAL IBN SUHAYL (Girls),Girls,ODL,2nd Shift,2026-09-09,5:20-6:00 p.m.,,OK
-Teacher Radzmia,9,Soc.Sci,Grade 9 & 10,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-10,8:25-9:05 a.m.,,OK
-Teacher Rowena,8,Gen Bio 1,Grade 11,Girls,Girls,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Teacher Rowena,8,Sci,Grade 9,ABU HURAYRAH (Girls),Girls,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Rowena,8,Sci,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),Boys,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Teacher Rowena,8,Soc.Sci,Grade 9,ABU JANDAL IBN SUHAYL (Girls),Girls,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Rowena,8,Gen Bio 1,Grade 11,FACE TO FACE,,F2F,Day / F2F,2026-09-03,7:40-8:25 a.m.,,OK
-Teacher Rowena,8,Gen Bio 1,Grade 12,ABU MUSA AL-ASHARI,,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Rowena,8,Gen Bio 1,Grade 11,Boys,Boys,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Rowena,8,Sci,Grade 9 & 10,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-10,8:25-9:05 a.m.,,OK
-Teacher Sahdia,13,GMRC,Grade 5,HAMZA IBN ABDUL,,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Teacher Sahdia,13,GMRC,Grade 4,AZ ZUBAIR IBN AL AWWAAM,,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Sahdia,13,GMRC,Grade 5,FACE TO FACE,,F2F,Day / F2F,2026-09-02,8:25-9:05 a.m.,,OK
-Teacher Sahdia,13,GMRC,Grade 1,ALI IBN ABI TALIB,,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Sahdia,13,GMRC,Grade 1,SUHAYB AR-RUMI,,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Sahdia,13,GMRC,Grade 4,HASSAN IBN THABIT (Mix),Mix,ODL,2nd Shift,2026-09-03,5:20-6:00 p.m.,,OK
-Teacher Sahdia,13,Arabic,Grade 5,FACE TO FACE,,F2F,Day / F2F,2026-09-03,9:05-9:45 a.m.,,OK
-Teacher Sahdia,13,GMRC,Grade 3,AMMAR IBN YASIR (Boys),Boys,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Sahdia,13,GMRC,Grade 2,AASIM IBN THABIT,,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Sahdia,13,GMRC,Grade 2,SAEED IBN ZAYD,,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Teacher Sahdia,13,GMRC,Grade 6,FACE TO FACE,,F2F,Day / F2F,2026-09-09,7:40-8:25 a.m.,,OK
-Teacher Sahdia,13,GMRC,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),Girls,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Sahdia,13,GMRC,Grade 1,SA'AD IBN ABI WAQQAAS,,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Saimona,12,MAPEH,Grade 6,ABBAS IBN ABD AL-MUTTALIB,,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Saimona,12,Science,Grade 5,JA'FAR IBN ABI TALIB (Mix),Mix,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Saimona,12,MAPEH,Grade 4,IKRIMAH IBN ABI JAHL,,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Teacher Saimona,12,MAPEH,Grade 4,FACE TO FACE,,F2F,Day / F2F,2026-09-02,8:25-9:05 a.m.,,OK
-Teacher Saimona,12,AP,Grade 5,MUHAMMAD IBN MASLAMAH,,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Teacher Saimona,12,Math,Grade 6,DIHYA IBN KHALIFAH (Girls),Girls,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Saimona,12,MAPEH,Grade 4,AZ ZUBAIR IBN AL AWWAAM,,ODL,2nd Shift,2026-09-03,5:20-6:00 p.m.,,OK
-Teacher Saimona,12,MAPEH,Grade 5,MUHAMMAD IBN MASLAMAH,,ODL,1st Shift,2026-09-09,02:20-03:00 p.m.,,OK
-Teacher Saimona,12,Science,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),Girls,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Saimona,12,Math,Grade 4,IKRIMAH IBN ABI JAHL,,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Teacher Saimona,12,Math,Grade 6,ABBAS IBN ABD AL-MUTTALIB,,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Saimona,12,MAPEH,Grade 5,JA'FAR IBN ABI TALIB (Mix),Mix,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Shirehan,9,Soc.Sci,Grade 8,SA'AD IBN MUA'DH (Girls),Girls,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Teacher Shirehan,9,PSKP,Grade 11,Boys,Boys,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Shirehan,9,Soc.Sci,Grade 7 & 8,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-02,9:05-9:45 a.m.,,OK
-Teacher Shirehan,9,Soc.Sci,Grade 8,MU'ADH IBN JABAL (Boys),Boys,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Shirehan,9,Soc.Sci,Grade 7,ANAS IBN MALIK (Mix),Mix,ODL,2nd Shift,2026-09-03,5:20-6:00 p.m.,,OK
-Teacher Shirehan,9,Sci,Grade 7 & 8,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-03,9:05-9:45 a.m.,,OK
-Teacher Shirehan,9,PSKP,Grade 11,Girls,Girls,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Shirehan,9,Soc.Sci,Grade 10,ABU AYYUB AL-ANSARI (Boys),Boys,ODL,2nd Shift,2026-09-09,5:20-6:00 p.m.,,OK
-Teacher Shirehan,9,PSKP,Grade 11,FACE TO FACE,,F2F,Day / F2F,2026-09-10,7:40-8:25 a.m.,,OK
-Teacher Sitti,13,Filipino,Grade 3,AMMAR IBN YASIR (Boys),Boys,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Teacher Sitti,13,Filipino,Grade 4,USAYD IBN HUDHAYR (Mix),Mix,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Sitti,13,Math,Grade 1,SA'AD IBN ABI WAQQAAS,,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Sitti,13,Filipino,Grade 5,FACE TO FACE,,F2F,Day / F2F,2026-09-02,7:40-8:25 a.m.,,OK
-Teacher Sitti,13,Filipino,Grade 10,UTBAH IBN GHAZWAN (Girls),Girls,ODL,1st Shift,2026-09-03,02:20-03:00 p.m.,,OK
-Teacher Sitti,13,Filipino,Grade 4,ABDUR RAHMAN IBN AWF,,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Teacher Sitti,13,Filipino,Grade 3,ZAYD IBN HARITHA (Girls),Girls,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Sitti,13,Filipino,Grade 4,HAKIM IBN HAZM,,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Sitti,13,Filipino,Grade 2,AMR IBN AL-JAMUH,,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Sitti,13,Math,Grade 3,ZAYD IBN HARITHA (Girls),Girls,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Teacher Sitti,13,Filipino,Grade 6,ABDULLAH IBN SALAAM,,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Sitti,13,Filipino,Grade 2,AASIM IBN THABIT,,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Sitti,13,Filipino,Grade 2,SAEED IBN ZAYD,,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Teacher Sophia,10,Filipino,Grade 9,ABU HURAYRAH (Girls),Girls,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Teacher Sophia,10,Filipino,Grade 9 & 10,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-02,8:25-9:05 a.m.,,OK
-Teacher Sophia,10,Soc.Sci,Grade 10,UTBAH IBN GHAZWAN (Girls),Girls,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Teacher Sophia,10,Sci,Grade 9,ABU DHARR AL GHIFARRI (Boys),Boys,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Sophia,10,Sci,Grade 9 & 10,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-03,7:40-8:25 a.m.,,OK
-Teacher Sophia,10,Filipino,Grade 7,ANAS IBN MALIK (Mix),Mix,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Sophia,10,Sci,Grade 7,ANAS IBN MALIK (Mix),Mix,ODL,2nd Shift,2026-09-09,5:20-6:00 p.m.,,OK
-Teacher Sophia,10,Soc.Sci,Grade 9 & 10,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-09,7:40-8:25 a.m.,,OK
-Teacher Sophia,10,Sci,Grade 8,SA'AD IBN MUA'DH (Girls),Girls,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Teacher Sophia,10,Filipino,Grade 8,NUAYM IBN MAS'UD (Mix),Mix,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Teacher Wardah,6,ESP,Grade 9,ABU HURAYRAH (Girls),Girls,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Teacher Wardah,6,Values Ed.,Grade 8,MU'ADH IBN JABAL (Boys),Boys,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Teacher Wardah,6,ESP,Grade 9,ABU DHARR AL GHIFARRI (Boys),Boys,ODL,2nd Shift,2026-09-03,5:20-6:00 p.m.,,OK
-Teacher Wardah,6,ESP,Grade 10,UTBAH IBN GHAZWAN (Girls),Girls,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Wardah,6,Values Ed.,Grade 8,NUAYM IBN MAS'UD (Mix),Mix,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Wardah,6,ESP,Grade 9,ABU JANDAL IBN SUHAYL (Girls),Girls,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Wendy,12,Math,Grade 6,ABDULLAH IBN SALAAM,,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Teacher Wendy,12,Makabansa,Grade 2,AMR IBN AL-JAMUH,,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Wendy,12,Circle Time 1,Kinder 2,KHABAAB IBN ARAT,,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Teacher Wendy,12,Circle Time 2,Kinder 1,FACE TO FACE,,F2F,Day / F2F,2026-09-02,7:40-8:25 a.m.,,OK
-Teacher Wendy,12,Math,Grade 3,AMMAR IBN YASIR (Boys),Boys,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Wendy,12,Makabansa,Grade 3,SALMAN AL FARSI (Mix),Mix,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Teacher Wendy,12,Makabansa,Grade 2,SAEED IBN ZAYD,,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Wendy,12,Math,Grade 5,HAMZA IBN ABDUL,,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Wendy,12,Science,Grade 4,AZ ZUBAIR IBN AL AWWAAM,,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Teacher Wendy,12,Math,Grade 3,FACE TO FACE,,F2F,Day / F2F,2026-09-09,8:25-9:05 a.m.,,OK
-Teacher Wendy,12,Circle Time 1,Kinder 2,ABU BAKR AS-SIDEEQ,,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Teacher Wendy,12,Math,Grade 10,ABU AYYUB AL-ANSARI (Boys),Boys,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Zara,12,Makabansa,Grade 1,ALI IBN ABI TALIB,,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Teacher Zara,12,AP,Grade 5,AL HARITH BIN AWF,,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Zara,12,AP,Grade 4,HASSAN IBN THABIT (Mix),Mix,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Teacher Zara,12,MAPEH,Grade 5,HAMZA IBN ABDUL,,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Zara,12,Makabansa,Grade 1,SA'AD IBN ABI WAQQAAS,,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Teacher Zara,12,Makabansa,Grade 2,FACE TO FACE,,F2F,Day / F2F,2026-09-03,8:25-9:05 a.m.,,OK
-Teacher Zara,12,MAPEH,Grade 4,USAYD IBN HUDHAYR (Mix),Mix,ODL,1st Shift,2026-09-09,02:20-03:00 p.m.,,OK
-Teacher Zara,12,AP,Grade 5,AYYASH IBN ABI RABI'AH,,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Teacher Zara,12,Makabansa,Grade 3,AS'AD IBN ZURARAH (Mix),Mix,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Teacher Zara,12,Makabansa,Grade 3,AMMAR IBN YASIR (Boys),Boys,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Teacher Zara,12,MAPEH,Grade 4,HASSAN IBN THABIT (Mix),Mix,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Teacher Zara,12,Makabansa,Grade 3,THABIT IBN QAYS (Boys),Boys,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Teacher Zuhora,13,Makabansa,Grade 2,TALHA IBN UBAYDULLAH,,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Teacher Zuhora,13,AP,Grade 6,DIHYA IBN KHALIFAH (Girls),Girls,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Teacher Zuhora,13,GMRC,Grade 5,AL HARITH BIN AWF,,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Teacher Zuhora,13,Makabansa,Grade 3,FACE TO FACE,,F2F,Day / F2F,2026-09-02,8:25-9:05 a.m.,,OK
-Teacher Zuhora,13,GMRC,Grade 4,USAYD IBN HUDHAYR (Mix),Mix,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Teacher Zuhora,13,GMRC,Grade 2,AMR IBN AL-JAMUH,,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Teacher Zuhora,13,GMRC,Grade 3,AS'AD IBN ZURARAH (Mix),Mix,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Teacher Zuhora,13,GMRC,Grade 4,ABDUR RAHMAN IBN AWF,,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Teacher Zuhora,13,GMRC,Grade 3,THABIT IBN QAYS (Boys),Boys,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Teacher Zuhora,13,GMRC,Grade 6,KHALEED IBN WALEED,,ODL,2nd Shift,2026-09-09,5:20-6:00 p.m.,,OK
-Teacher Zuhora,13,GMRC,Grade 1,FACE TO FACE,,F2F,Day / F2F,2026-09-09,8:25-9:05 a.m.,,OK
-Teacher Zuhora,13,GMRC,Grade 6,ABBAS IBN ABD AL-MUTTALIB,,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Teacher Zuhora,13,GMRC,Grade 3,ZAYD IBN HARITHA (Girls),Girls,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Ustadh Abdiraheem,12,SHAF,Grade 3,AMMAR IBN YASIR (Boys),Boys,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Ustadh Abdiraheem,12,SHAF,Grade 9,ABU JANDAL IBN SUHAYL (Girls),Girls,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Ustadh Abdiraheem,12,SHAF,Grade 11,Boys,Boys,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Ustadh Abdiraheem,12,SHAF,Grade 7 & 8,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-02,7:40-8:25 a.m.,,OK
-Ustadh Abdiraheem,12,SHAF,Grade 1,HUDHAYFAH IBN AL-YAM,,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Ustadh Abdiraheem,12,SHAF,Grade 2,SAEED IBN ZAYD,,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Ustadh Abdiraheem,12,SHAF,Grade 12,ABU MUSA AL-ASHARI,,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Ustadh Abdiraheem,12,SHAF,Grade 6,DIHYA IBN KHALIFAH (Girls),Girls,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Ustadh Abdiraheem,12,SHAF,Grade 9 & 10,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-09,7:40-8:25 a.m.,,OK
-Ustadh Abdiraheem,12,SHAF,Grade 1,ALI IBN ABI TALIB,,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Ustadh Abdiraheem,12,SHAF,Grade 3,AS'AD IBN ZURARAH (Mix),Mix,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Ustadh Abdiraheem,12,SHAF,Grade 4,FACE TO FACE,,F2F,Day / F2F,2026-09-10,7:40-8:25 a.m.,,OK
-Ustadh Ali,12,Arabic,Grade 11,Girls,Girls,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Ustadh Ali,12,Arabic,Grade 2,AASIM IBN THABIT,,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Ustadh Ali,12,Arabic,Grade 6,KHALEED IBN WALEED,,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Ustadh Ali,12,Arabic,Grade 6,FACE TO FACE,,F2F,Day / F2F,2026-09-02,7:40-8:25 a.m.,,OK
-Ustadh Ali,12,Arabic,Grade 6,ABBAS IBN ABD AL-MUTTALIB,,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Ustadh Ali,12,Arabic,Grade 4,AZ ZUBAIR IBN AL AWWAAM,,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Ustadh Ali,12,Arabic,Grade 3,AMMAR IBN YASIR (Boys),Boys,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Ustadh Ali,12,Arabic,Kinder 2,UMAR IBN AL-KHATTAB,,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Ustadh Ali,12,Arabic,Grade 7 & 8,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-09,7:40-8:25 a.m.,,OK
-Ustadh Ali,12,Arabic,Grade 10,UTBAH IBN GHAZWAN (Girls),Girls,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Ustadh Ali,12,Arabic,Grade 5,JA'FAR IBN ABI TALIB (Mix),Mix,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Ustadh Ali,12,Arabic,Grade 3,FACE TO FACE,,F2F,Day / F2F,2026-09-10,8:25-9:05 a.m.,,OK
-Ustadh Ersahad,12,Arabic,Grade 3,SALMAN AL FARSI (Mix),Mix,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Ustadh Ersahad,12,Arabic,Grade 4,IKRIMAH IBN ABI JAHL,,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Ustadh Ersahad,12,SHAF,Grade 4,AZ ZUBAIR IBN AL AWWAAM,,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Ustadh Ersahad,12,SHAF,Grade 9 & 10,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-02,9:05-9:45 a.m.,,OK
-Ustadh Ersahad,12,SHAF,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),Girls,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Ustadh Ersahad,12,SHAF,Grade 7,ANAS IBN MALIK (Mix),Mix,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Ustadh Ersahad,12,SHAF,Grade 4,ABDUR RAHMAN IBN AWF,,ODL,1st Shift,2026-09-09,02:20-03:00 p.m.,,OK
-Ustadh Ersahad,12,SHAF,Grade 5,MUS'AB IBN ABDUL MUTALIB,,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Ustadh Ersahad,12,Arabic,Grade 9 & 10,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-09,8:25-9:05 a.m.,,OK
-Ustadh Ersahad,12,SHAF,Grade 2,AMR IBN AL-JAMUH,,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Ustadh Ersahad,12,SHAF,Grade 5,AL HARITH BIN AWF,,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Ustadh Ersahad,12,Arabic,Grade 4,FACE TO FACE,,F2F,Day / F2F,2026-09-10,8:25-9:05 a.m.,,OK
-Ustadh Faidh,12,SHAF,Grade 6,ABBAS IBN ABD AL-MUTTALIB,,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Ustadh Faidh,12,Qur'an,Grade 6,KHALEED IBN WALEED,,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Ustadh Faidh,12,Qur'an,Grade 8,NUAYM IBN MAS'UD (Mix),Mix,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Ustadh Faidh,12,Qur'an,Grade 3,FACE TO FACE,,F2F,Day / F2F,2026-09-02,9:05-9:45 a.m.,,OK
-Ustadh Faidh,12,Qur'an,Grade 3,SALMAN AL FARSI (Mix),Mix,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Ustadh Faidh,12,Qur'an,Grade 11,Girls,Girls,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Ustadh Faidh,12,SHAF,Grade 5,JA'FAR IBN ABI TALIB (Mix),Mix,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Ustadh Faidh,12,Qur'an,Grade 10,UTBAH IBN GHAZWAN (Girls),Girls,ODL,1st Shift,2026-09-09,02:20-03:00 p.m.,,OK
-Ustadh Faidh,12,Qur'an,Grade 11,Boys,Boys,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Ustadh Faidh,12,Qur'an,Grade 9 & 10,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-09,8:25-9:05 a.m.,,OK
-Ustadh Faidh,12,Qur'an,Grade 5,AYYASH IBN ABI RABI'AH,,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Ustadh Faidh,12,Qur'an,Grade 12,SUHAYB AR-RUMI,,F2F,Day / F2F,2026-09-10,7:40-8:25 a.m.,,OK
-Ustadh Jaisam,13,Qur'an,Grade 2,AMR IBN AL-JAMUH,,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Ustadh Jaisam,13,Qur'an,Kinder 1,HUSAIN IBN ALI,,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Ustadh Jaisam,13,Qur'an,Grade 5,MUS'AB IBN ABDUL MUTALIB,,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Ustadh Jaisam,13,Qur'an,Grade 7 & 8,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-02,9:05-9:45 a.m.,,OK
-Ustadh Jaisam,13,Qur'an,Grade 9,ABU HURAYRAH (Girls),Girls,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Ustadh Jaisam,13,Qur'an,Grade 4,AZ ZUBAIR IBN AL AWWAAM,,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Ustadh Jaisam,13,Qur'an,Grade 11,FACE TO FACE,,F2F,Day / F2F,2026-09-03,8:25-9:05 a.m.,,OK
-Ustadh Jaisam,13,Qur'an,Grade 4,USAYD IBN HUDHAYR (Mix),Mix,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Ustadh Jaisam,13,Qur'an,Grade 2,SAEED IBN ZAYD,,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Ustadh Jaisam,13,Qur'an,Grade 4,HASSAN IBN THABIT (Mix),Mix,ODL,2nd Shift,2026-09-09,5:20-6:00 p.m.,,OK
-Ustadh Jaisam,13,Qur'an,Grade 7 & 8,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-09,7:40-8:25 a.m.,,OK
-Ustadh Jaisam,13,Qur'an,Grade 4,ABDUR RAHMAN IBN AWF,,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Ustadh Jaisam,13,Qur'an,Grade 3,AS'AD IBN ZURARAH (Mix),Mix,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Ustadh Muh Ali,11,Arabic,Grade 7,USAMA IBN ZAYD (Girls),Girls,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Ustadh Muh Ali,11,Arabic,Grade 1,SUHAYB AR-RUMI,,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Ustadh Muh Ali,11,Arabic,Grade 2,SAEED IBN ZAYD,,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Ustadh Muh Ali,11,Arabic,Grade 5,HAMZA IBN ABDUL,,ODL,1st Shift,2026-09-03,02:20-03:00 p.m.,,OK
-Ustadh Muh Ali,11,Arabic,Grade 3,AS'AD IBN ZURARAH (Mix),Mix,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Ustadh Muh Ali,11,Arabic,Grade 1,FACE TO FACE,,F2F,Day / F2F,2026-09-03,8:25-9:05 a.m.,,OK
-Ustadh Muh Ali,11,Arabic,Grade 6,ABDULLAH IBN SALAAM,,ODL,1st Shift,2026-09-09,02:20-03:00 p.m.,,OK
-Ustadh Muh Ali,11,Arabic,Grade 1,HUDHAYFAH IBN AL-YAM,,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Ustadh Muh Ali,11,Arabic,Grade 4,ABDUR RAHMAN IBN AWF,,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Ustadh Muh Ali,11,Arabic,Grade 8,MU'ADH IBN JABAL (Boys),Boys,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Ustadh Muh Ali,11,Arabic,Kinder 2,FACE TO FACE,,F2F,Day / F2F,2026-09-10,7:40-8:25 a.m.,,OK
-Ustadh Obaydah,13,Arabic,Kinder 2,UTHMAN IBN AFFAN,,ODL,1st Shift,2026-09-02,01:30-02:10 p.m.,,OK
-Ustadh Obaydah,13,Qur'an,Grade 3,THABIT IBN QAYS (Boys),Boys,ODL,2nd Shift,2026-09-02,3:40-4:20 p.m.,,OK
-Ustadh Obaydah,13,Qur'an,Grade 10,ABU AYYUB AL-ANSARI (Boys),Boys,ODL,2nd Shift,2026-09-02,5:20-6:00 p.m.,,OK
-Ustadh Obaydah,13,Arabic,Grade 2,FACE TO FACE,,F2F,Day / F2F,2026-09-02,8:25-9:05 a.m.,,OK
-Ustadh Obaydah,13,Qur'an,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),Boys,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Ustadh Obaydah,13,Qur'an,Grade 1,ALI IBN ABI TALIB,,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Ustadh Obaydah,13,Arabic,Grade 5,MUS'AB IBN ABDUL MUTALIB,,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Ustadh Obaydah,13,Qur'an,Grade 5,MUHAMMAD IBN MASLAMAH,,ODL,1st Shift,2026-09-09,01:30-02:10 p.m.,,OK
-Ustadh Obaydah,13,Arabic,Grade 5,AL HARITH BIN AWF,,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Ustadh Obaydah,13,Qur'an,Grade 5,JA'FAR IBN ABI TALIB (Mix),Mix,ODL,2nd Shift,2026-09-09,5:20-6:00 p.m.,,OK
-Ustadh Obaydah,13,Qur'an,Grade 2,FACE TO FACE,,F2F,Day / F2F,2026-09-09,7:40-8:25 a.m.,,OK
-Ustadh Obaydah,13,Arabic,Grade 2,AMR IBN AL-JAMUH,,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Ustadh Obaydah,13,Arabic,Grade 6,DIHYA IBN KHALIFAH (Girls),Girls,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Ustadh Raslina,11,SHAF,Grade 7,USAMA IBN ZAYD (Girls),Girls,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Ustadh Raslina,11,SHAF,Grade 10,UTBAH IBN GHAZWAN (Girls),Girls,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Ustadh Raslina,11,SHAF,Grade 3,THABIT IBN QAYS (Boys),Boys,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Ustadh Raslina,11,SHAF,Grade 6,ABDULLAH IBN SALAAM,,ODL,1st Shift,2026-09-03,02:20-03:00 p.m.,,OK
-Ustadh Raslina,11,Arabic,Grade 10,ABU AYYUB AL-ANSARI (Boys),Boys,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Ustadh Raslina,11,Arabic,Kinder 1,FACE TO FACE,,F2F,Day / F2F,2026-09-03,7:40-8:25 a.m.,,OK
-Ustadh Raslina,11,Arabic,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),Boys,ODL,1st Shift,2026-09-09,02:20-03:00 p.m.,,OK
-Ustadh Raslina,11,Arabic,Grade 4,HASSAN IBN THABIT (Mix),Mix,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Ustadh Raslina,11,SHAF,Grade 6,FACE TO FACE,,F2F,Day / F2F,2026-09-09,9:05-9:45 a.m.,,OK
-Ustadh Raslina,11,SHAF,Grade 5,HAMZA IBN ABDUL,,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Ustadh Raslina,11,SHAF,Grade 1,SUHAYB AR-RUMI,,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Ustadha Saliha,14,Arabic,Grade 4,HAKIM IBN HAZM,,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Ustadha Saliha,14,GMRC,Grade 4,HAKIM IBN HAZM,,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Ustadha Saliha,14,Hadith,Kinder 2,ABDULLAH IBN MAS'UD,,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Ustadha Saliha,14,Hadith,Kinder 2,FACE TO FACE,,F2F,Day / F2F,2026-09-02,7:40-8:25 a.m.,,OK
-Ustadha Saliha,14,GMRC,Grade 2,TALHA IBN UBAYDULLAH,,ODL,1st Shift,2026-09-03,01:30-02:10 p.m.,,OK
-Ustadha Saliha,14,Hadith,Kinder 2,UTHMAN IBN AFFAN,,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Ustadha Saliha,14,Hadith,Kinder 1,HUSAIN IBN ALI,,ODL,2nd Shift,2026-09-03,3:40-4:20 p.m.,,OK
-Ustadha Saliha,14,GMRC,Grade 5,AYYASH IBN ABI RABI'AH,,ODL,1st Shift,2026-09-09,02:20-03:00 p.m.,,OK
-Ustadha Saliha,14,GMRC,Grade 7,ANAS IBN MALIK (Mix),Mix,ODL,2nd Shift,2026-09-09,4:30-5:10 p.m.,,OK
-Ustadha Saliha,14,Hadith,Kinder 1,FACE TO FACE,,F2F,Day / F2F,2026-09-09,7:40-8:25 a.m.,,OK
-Ustadha Saliha,14,GMRC,Grade 4,FACE TO FACE,,F2F,Day / F2F,2026-09-09,9:05-9:45 a.m.,,OK
-Ustadha Saliha,14,GMRC,Grade 1,HUDHAYFAH IBN AL-YAM,,ODL,1st Shift,2026-09-10,12:40-01:20 p.m.,,OK
-Ustadha Saliha,14,Hadith,Kinder 2,UMAR IBN AL-KHATTAB,,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Ustadha Saliha,14,GMRC,Grade 5,MUS'AB IBN ABDUL MUTALIB,,ODL,2nd Shift,2026-09-10,4:30-5:10 p.m.,,OK
-Ustadha Silfah,14,GMRC,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),Boys,ODL,1st Shift,2026-09-02,02:20-03:00 p.m.,,OK
-Ustadha Silfah,14,GMRC,Grade 3,SALMAN AL FARSI (Mix),Mix,ODL,1st Shift,2026-09-02,12:40-01:20 p.m.,,OK
-Ustadha Silfah,14,Arabic,Kinder 1,HUSAIN IBN ALI,,ODL,2nd Shift,2026-09-02,4:30-5:10 p.m.,,OK
-Ustadha Silfah,14,GMRC,Grade 7 & 8,BOYS FACE TO FACE,Boys,F2F,Day / F2F,2026-09-02,7:40-8:25 a.m.,,OK
-Ustadha Silfah,14,GMRC,Grade 5,MUHAMMAD IBN MASLAMAH,,ODL,1st Shift,2026-09-03,02:20-03:00 p.m.,,OK
-Ustadha Silfah,14,GMRC,Grade 6,ABDULLAH IBN SALAAM,,ODL,1st Shift,2026-09-03,12:40-01:20 p.m.,,OK
-Ustadha Silfah,14,GMRC,Grade 6,DIHYA IBN KHALIFAH (Girls),Girls,ODL,2nd Shift,2026-09-03,4:30-5:10 p.m.,,OK
-Ustadha Silfah,14,GMRC,Grade 7 & 8,GIRLS FACE TO FACE,Girls,F2F,Day / F2F,2026-09-03,8:25-9:05 a.m.,,OK
-Ustadha Silfah,14,GMRC,Grade 7,USAMA IBN ZAYD (Girls),Girls,ODL,1st Shift,2026-09-09,12:40-01:20 p.m.,,OK
-Ustadha Silfah,14,GMRC,Grade 5,JA'FAR IBN ABI TALIB (Mix),Mix,ODL,2nd Shift,2026-09-09,3:40-4:20 p.m.,,OK
-Ustadha Silfah,14,GMRC,Grade 2,FACE TO FACE,,F2F,Day / F2F,2026-09-09,8:25-9:05 a.m.,,OK
-Ustadha Silfah,14,Arabic,Grade 2,TALHA IBN UBAYDULLAH,,ODL,1st Shift,2026-09-10,01:30-02:10 p.m.,,OK
-Ustadha Silfah,14,GMRC,Grade 4,IKRIMAH IBN ABI JAHL,,ODL,2nd Shift,2026-09-10,3:40-4:20 p.m.,,OK
-Ustadha Silfah,14,GMRC,Grade 3,FACE TO FACE,,F2F,Day / F2F,2026-09-10,7:40-8:25 a.m.,,OK
+﻿Teacher Name,Total Exam Load,Assigned Subject,Grade Level,Section,Gender,Modality,Shift,Examination Date,Examination Time,Room,Status,Conflict Flag
+Alim Abdul Karim,11,Arabic,Grade 5,HAMZA IBN ABDUL,NOT LABELED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Alim Abdul Karim,11,SHAF,Grade 2,TALHA IBN UBAYDULLAH,NOT LABELED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Alim Abdul Karim,11,SHAF,Grade 2,AASIM IBN THABIT,NOT LABELED,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Alim Abdul Karim,11,SHAF,Grade 1,SUHAYB AR-RUMI,NOT LABELED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Alim Abdul Karim,11,SHAF,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),GIRLS,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Alim Abdul Karim,11,SHAF,Grade 2,SAEED IBN ZAYD,NOT LABELED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Alim Abdul Karim,11,SHAF,Grade 1,HUDHAYFAH IBN AL-YAM,NOT LABELED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Alim Abdul Karim,11,SHAF,Grade 2,AMR IBN AL-JAMUH,NOT LABELED,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Alim Abdul Karim,11,Arabic,Grade 5,MUHAMMAD IBN MASLAMAH,NOT LABELED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Alim Abdul Karim,11,SHAF,Grade 1,ALI IBN ABI TALIB,NOT LABELED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Alim Abdul Karim,11,SHAF,Grade 1,SA'AD IBN ABI WAQQAAS,NOT LABELED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Alim Abdulwahab,9,Qur'an,Grade 10,ABU AYYUB AL-ANSARI (Boys),BOYS,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Alim Abdulwahab,9,Qur'an,Grade 10,UTBAH IBN GHAZWAN (Girls),GIRLS,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Alim Abdulwahab,9,Qur'an,Grade 9,ABU DHARR AL GHIFARRI (Boys),BOYS,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Alim Abdulwahab,9,Qur'an,Grade 9,ABU JANDAL IBN SUHAYL (Girls),GIRLS,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Alim Abdulwahab,9,Qur'an,Grade 9 & 10,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-03,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Alim Abdulwahab,9,Qur'an,Grade 11,Girls,GIRLS,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Alim Abdulwahab,9,Qur'an,Grade 11,Boys,BOYS,ODL,2nd Shift,2026-09-06,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Alim Abdulwahab,9,Qur'an,Grade 9 & 10,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-06,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Alim Abdulwahab,9,Qur'an,Grade 9,ABU HURAYRAH (Girls),GIRLS,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Alim Bustamante,2,SHAF,Grade 10,UTBAH IBN GHAZWAN (Girls),GIRLS,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Alim Bustamante,2,SHAF,Grade 10,ABU AYYUB AL-ANSARI (Boys),BOYS,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Alim Dipatuan,3,Qur'an,Grade 12,ABU MUSA AL-ASHARI,NOT LABELED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Alim Dipatuan,3,Qur'an,Grade 12,SUHAYB AR-RUMI,NOT LABELED,F2F,Day / F2F,2026-09-02,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Alim Dipatuan,3,Qur'an,Grade 11,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Alim Mamonas,9,Arabic,Grade 10,UTBAH IBN GHAZWAN (Girls),GIRLS,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Alim Mamonas,9,Arabic,Grade 11,Girls,GIRLS,ODL,1st Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Alim Mamonas,9,Arabic,Grade 9 & 10,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-02,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Alim Mamonas,9,Arabic,Grade 9 & 10,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-02,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Alim Mamonas,9,Arabic,Grade 12,SUHAYB AR-RUMI,NOT LABELED,F2F,Day / F2F,2026-09-03,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Alim Mamonas,9,Arabic,Grade 12,ABU MUSA AL-ASHARI,NOT LABELED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Alim Mamonas,9,Arabic,Grade 11,Boys,BOYS,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Alim Mamonas,9,Arabic,Grade 10,ABU AYYUB AL-ANSARI (Boys),BOYS,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Alim Mamonas,9,Arabic,Grade 11,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 7 & 8,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-02,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 12,ABU MUSA AL-ASHARI,NOT LABELED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 7,USAMA IBN ZAYD (Girls),GIRLS,ODL,1st Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 7,ANAS IBN MALIK (Mix),MIXED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 9,ABU DHARR AL GHIFARRI (Boys),BOYS,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 9 & 10,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-03,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),BOYS,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 8,SA'AD IBN MUA'DH (Girls),GIRLS,ODL,1st Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 11,Boys,BOYS,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 7 & 8,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-03,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 12,SUHAYB AR-RUMI,NOT LABELED,F2F,Day / F2F,2026-09-03,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 9,ABU HURAYRAH (Girls),GIRLS,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 11,Girls,GIRLS,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 8,NUAYM IBN MAS'UD (Mix),MIXED,ODL,2nd Shift,2026-09-06,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 11,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 9 & 10,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-06,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 8,MU'ADH IBN JABAL (Boys),BOYS,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Alim Samsuddin,18,SHAF,Grade 9,ABU JANDAL IBN SUHAYL (Girls),GIRLS,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Sir Mohaymen,8,MAPEH,Grade 10,UTBAH IBN GHAZWAN (Girls),GIRLS,ODL,1st Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Sir Mohaymen,8,MAPEH,Grade 9 & 10,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-03,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Sir Mohaymen,8,PE 12,Grade 12,ABU MUSA AL-ASHARI,NOT LABELED,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Sir Mohaymen,8,MAPEH,Grade 10,ABU AYYUB AL-ANSARI (Boys),BOYS,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Sir Mohaymen,8,PE 12,Grade 12,SUHAYB AR-RUMI,NOT LABELED,F2F,Day / F2F,2026-09-06,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Sir Mohaymen,8,MAPEH,Grade 9 & 10,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-06,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Sir Mohaymen,8,MAPEH,Grade 9,ABU HURAYRAH (Girls),GIRLS,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Sir Mohaymen,8,MAPEH,Grade 9,ABU JANDAL IBN SUHAYL (Girls),GIRLS,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Angeleni,8,TLE,Grade 10,ABU AYYUB AL-ANSARI (Boys),BOYS,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Angeleni,8,TLE,Grade 9,ABU HURAYRAH (Girls),GIRLS,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Angeleni,8,TLE,Grade 9 & 10,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-06,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Angeleni,8,TLE,Grade 9,ABU JANDAL IBN SUHAYL (Girls),GIRLS,ODL,2nd Shift,2026-09-06,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Angeleni,8,TLE,Grade 10,UTBAH IBN GHAZWAN (Girls),GIRLS,ODL,1st Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Angeleni,8,TLE,Grade 9,ABU DHARR AL GHIFARRI (Boys),BOYS,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Angeleni,8,MAPEH,Grade 9,ABU DHARR AL GHIFARRI (Boys),BOYS,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Angeleni,8,TLE,Grade 9 & 10,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-07,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Aniah,7,Science,Grade 7,ANAS IBN MALIK (Mix),MIXED,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Aniah,7,Practical Research 2,Grade 12,SUHAYB AR-RUMI,NOT LABELED,F2F,Day / F2F,2026-09-02,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Aniah,7,Science,Grade 7,USAMA IBN ZAYD (Girls),GIRLS,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Aniah,7,Practical Research 2,Grade 12,ABU MUSA AL-ASHARI,NOT LABELED,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Aniah,7,General Physics 1,Grade 12,SUHAYB AR-RUMI,NOT LABELED,F2F,Day / F2F,2026-09-06,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Aniah,7,General Physics 1,Grade 12,ABU MUSA AL-ASHARI,NOT LABELED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Aniah,7,Science,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),BOYS,ODL,1st Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Anna,15,Science,Grade 4,HAKIM IBN HAZM,NOT LABELED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Anna,15,Science,Grade 6,ABBAS IBN ABD AL-MUTTALIB,NOT LABELED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Anna,15,TLE,Grade 5,MUHAMMAD IBN MASLAMAH,NOT LABELED,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Anna,15,Science,Grade 4,AZ ZUBAIR IBN AL AWWAAM,NOT LABELED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Teacher Anna,15,TLE,Grade 5,MUS'AB IBN ABDUL MUTALIB,NOT LABELED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Teacher Anna,15,Science,Grade 6,KHALEED IBN WALEED,NOT LABELED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Teacher Anna,15,TLE,Grade 5,AL HARITH BIN AWF,NOT LABELED,ODL,2nd Shift,2026-09-03,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Anna,15,Science,Grade 6,ABDULLAH IBN SALAAM,NOT LABELED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Anna,15,Science,Grade 5,MUHAMMAD IBN MASLAMAH,NOT LABELED,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Anna,15,TLE,Grade 5,HAMZA IBN ABDUL,NOT LABELED,ODL,1st Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Anna,15,Science,Grade 4,IKRIMAH IBN ABI JAHL,NOT LABELED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Anna,15,Science,Grade 5,HAMZA IBN ABDUL,NOT LABELED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Anna,15,Science,Grade 4,ABDUR RAHMAN IBN AWF,NOT LABELED,ODL,1st Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Anna,15,Science,Grade 5,MUS'AB IBN ABDUL MUTALIB,NOT LABELED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Anna,15,Science,Grade 5,AL HARITH BIN AWF,NOT LABELED,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Arvin,15,TLE,Grade 6,ABBAS IBN ABD AL-MUTTALIB,NOT LABELED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Arvin,15,English,Grade 4,HASSAN IBN THABIT (Mix),MIXED,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Arvin,15,TLE,Grade 6,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Arvin,15,English,Grade 4,HAKIM IBN HAZM,NOT LABELED,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Arvin,15,Math,Grade 4,HAKIM IBN HAZM,NOT LABELED,ODL,1st Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Arvin,15,Math,Grade 4,IKRIMAH IBN ABI JAHL,NOT LABELED,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Arvin,15,Math,Grade 4,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Arvin,15,TLE,Grade 6,ABDULLAH IBN SALAAM,NOT LABELED,ODL,1st Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Arvin,15,Math,Grade 4,AZ ZUBAIR IBN AL AWWAAM,NOT LABELED,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Arvin,15,TLE,Grade 6,KHALEED IBN WALEED,NOT LABELED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Arvin,15,English,Grade 4,IKRIMAH IBN ABI JAHL,NOT LABELED,ODL,2nd Shift,2026-09-06,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Arvin,15,English,Grade 4,ABDUR RAHMAN IBN AWF,NOT LABELED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Arvin,15,Math,Grade 4,ABDUR RAHMAN IBN AWF,NOT LABELED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Arvin,15,English,Grade 4,AZ ZUBAIR IBN AL AWWAAM,NOT LABELED,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Arvin,15,TLE,Grade 6,DIHYA IBN KHALIFAH (Girls),GIRLS,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Ayah,4,Circle Time 2,Kinder 2,UTHMAN IBN AFFAN,NOT LABELED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Ayah,4,Circle Time 1,Kinder 2,ABDULLAH IBN MAS'UD,NOT LABELED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Ayah,4,Circle Time 1,Kinder 2,UTHMAN IBN AFFAN,NOT LABELED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Ayah,4,Circle Time 2,Kinder 2,ABDULLAH IBN MAS'UD,NOT LABELED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Ethel,5,MIL,Grade 12,ABU MUSA AL-ASHARI,NOT LABELED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Ethel,5,Math,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),BOYS,ODL,1st Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Ethel,5,MIL,Grade 12,SUHAYB AR-RUMI,NOT LABELED,F2F,Day / F2F,2026-09-03,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Ethel,5,Math,Grade 7,USAMA IBN ZAYD (Girls),GIRLS,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Ethel,5,Math,Grade 7,ANAS IBN MALIK (Mix),MIXED,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Fhairudz,6,Math,Grade 5,MUHAMMAD IBN MASLAMAH,NOT LABELED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Fhairudz,6,Science,Grade 6,DIHYA IBN KHALIFAH (Girls),GIRLS,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Fhairudz,6,Math,Grade 5,MUS'AB IBN ABDUL MUTALIB,NOT LABELED,ODL,2nd Shift,2026-09-03,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Fhairudz,6,Math,Grade 5,HAMZA IBN ABDUL,NOT LABELED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Fhairudz,6,Math,Grade 5,AL HARITH BIN AWF,NOT LABELED,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Fhairudz,6,Math,Grade 5,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Franchette,8,MAPEH,Grade 7,ANAS IBN MALIK (Mix),MIXED,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Franchette,8,MAPEH,Grade 7,USAMA IBN ZAYD (Girls),GIRLS,ODL,1st Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Franchette,8,MAPEH,Grade 7 & 8,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-03,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Franchette,8,MAPEH,Grade 8,SA'AD IBN MUA'DH (Girls),GIRLS,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Franchette,8,MAPEH,Grade 7 & 8,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-07,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Franchette,8,MAPEH,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),BOYS,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Franchette,8,MAPEH,Grade 8,NUAYM IBN MAS'UD (Mix),MIXED,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Franchette,8,MAPEH,Grade 8,MU'ADH IBN JABAL (Boys),BOYS,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Halnaisa,14,MAPEH,Grade 4,ABDUR RAHMAN IBN AWF,NOT LABELED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Halnaisa,14,TLE,Grade 8,NUAYM IBN MAS'UD (Mix),MIXED,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Halnaisa,14,MAPEH,Grade 4,IKRIMAH IBN ABI JAHL,NOT LABELED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Halnaisa,14,TLE,Grade 7 & 8,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-02,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Halnaisa,14,MAPEH,Grade 4,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Halnaisa,14,TLE,Grade 7,ANAS IBN MALIK (Mix),MIXED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Halnaisa,14,TLE,Grade 7 & 8,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-06,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Halnaisa,14,TLE,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),BOYS,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Halnaisa,14,MAPEH,Grade 4,HAKIM IBN HAZM,NOT LABELED,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Halnaisa,14,TLE,Grade 8,MU'ADH IBN JABAL (Boys),BOYS,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Halnaisa,14,TLE,Grade 8,SA'AD IBN MUA'DH (Girls),GIRLS,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Halnaisa,14,TLE,Grade 7,USAMA IBN ZAYD (Girls),GIRLS,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Halnaisa,14,MAPEH,Grade 4,AZ ZUBAIR IBN AL AWWAAM,NOT LABELED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Halnaisa,14,TLE,Grade 5,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Hannah,5,Math,Grade 8,MU'ADH IBN JABAL (Boys),BOYS,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Hannah,5,Math,Grade 8,SA'AD IBN MUA'DH (Girls),GIRLS,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Hannah,5,Math,Grade 8,NUAYM IBN MAS'UD (Mix),MIXED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Hannah,5,Math,Grade 7 & 8,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-07,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Hannah,5,Math,Grade 7 & 8,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-07,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Jayra,13,English,Grade 8,SA'AD IBN MUA'DH (Girls),GIRLS,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Jayra,13,English,Grade 7 & 8,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-02,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Jayra,13,English,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),BOYS,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Jayra,13,English,Grade 8,NUAYM IBN MAS'UD (Mix),MIXED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Jayra,13,GMRC,Grade 5,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Jayra,13,GMRC,Grade 5,MUHAMMAD IBN MASLAMAH,NOT LABELED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Jayra,13,GMRC,Grade 5,HAMZA IBN ABDUL,NOT LABELED,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Jayra,13,English,Grade 7,USAMA IBN ZAYD (Girls),GIRLS,ODL,1st Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Jayra,13,GMRC,Grade 5,MUS'AB IBN ABDUL MUTALIB,NOT LABELED,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Jayra,13,English,Grade 8,MU'ADH IBN JABAL (Boys),BOYS,ODL,2nd Shift,2026-09-06,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Jayra,13,English,Grade 7 & 8,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-06,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Jayra,13,English,Grade 7,ANAS IBN MALIK (Mix),MIXED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Teacher Jayra,13,GMRC,Grade 5,AL HARITH BIN AWF,NOT LABELED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Teacher Jenny,13,Filipino,Grade 3,SALMAN AL FARSI (Mix),MIXED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFLICT,CONFLICT
+Teacher Jenny,13,TLE,Grade 5,AYYASH IBN ABI RABI'AH,NOT LABELED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFLICT,CONFLICT
+Teacher Jenny,13,Makabansa,Grade 3,AS'AD IBN ZURARAH (Mix),MIXED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Jenny,13,English,Grade 4,USAYD IBN HUDHAYR (Mix),MIXED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Jenny,13,English,Grade 3,SALMAN AL FARSI (Mix),MIXED,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Jenny,13,TLE,Grade 4,HASSAN IBN THABIT (Mix),MIXED,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Jenny,13,Makabansa,Grade 3,SALMAN AL FARSI (Mix),MIXED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Jenny,13,Filipino,Grade 5,AYYASH IBN ABI RABI'AH,NOT LABELED,ODL,1st Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Jenny,13,TLE,Grade 5,JA'FAR IBN ABI TALIB (Mix),MIXED,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Jenny,13,Filipino,Grade 3,AS'AD IBN ZURARAH (Mix),MIXED,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Jenny,13,Filipino,Grade 5,JA'FAR IBN ABI TALIB (Mix),MIXED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Teacher Jenny,13,English,Grade 3,AS'AD IBN ZURARAH (Mix),MIXED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Teacher Jenny,13,TLE,Grade 4,USAYD IBN HUDHAYR (Mix),MIXED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Jerlyn,12,Math,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),GIRLS,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Jerlyn,12,Science,Grade 3,THABIT IBN QAYS (Boys),BOYS,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Jerlyn,12,Math,Grade 3,THABIT IBN QAYS (Boys),BOYS,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Jerlyn,12,Science,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),GIRLS,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Jerlyn,12,Math,Grade 3,ZAYD IBN HARITHA (Girls),GIRLS,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Jerlyn,12,Science,Grade 3,ZAYD IBN HARITHA (Girls),GIRLS,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Jerlyn,12,Math,Grade 3,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Jerlyn,12,Science,Grade 3,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Jerlyn,12,Math,Grade 3,AMMAR IBN YASIR (Boys),BOYS,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Jerlyn,12,Science,Grade 3,AMMAR IBN YASIR (Boys),BOYS,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Jerlyn,12,Math,Grade 3,SALMAN AL FARSI (Mix),MIXED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Jerlyn,12,Math,Grade 3,AS'AD IBN ZURARAH (Mix),MIXED,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Jessa,13,English,Grade 5,HAMZA IBN ABDUL,NOT LABELED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Jessa,13,English,Grade 5,AL HARITH BIN AWF,NOT LABELED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Jessa,13,Filipino,Grade 5,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Jessa,13,English,Grade 6,ABBAS IBN ABD AL-MUTTALIB,NOT LABELED,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Jessa,13,English,Grade 6,ABDULLAH IBN SALAAM,NOT LABELED,ODL,1st Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Jessa,13,English,Grade 5,JA'FAR IBN ABI TALIB (Mix),MIXED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Jessa,13,English,Grade 5,MUHAMMAD IBN MASLAMAH,NOT LABELED,ODL,1st Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Jessa,13,English,Grade 6,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Jessa,13,English,Grade 5,AYYASH IBN ABI RABI'AH,NOT LABELED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Jessa,13,English,Grade 5,MUS'AB IBN ABDUL MUTALIB,NOT LABELED,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Jessa,13,English,Grade 6,DIHYA IBN KHALIFAH (Girls),GIRLS,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Jessa,13,English,Grade 6,KHALEED IBN WALEED,NOT LABELED,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Jessa,13,English,Grade 5,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Jhelyn,10,General Mathematics,Grade 11,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Jhelyn,10,Math,Grade 9,ABU HURAYRAH (Girls),GIRLS,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Jhelyn,10,Math,Grade 9,ABU DHARR AL GHIFARRI (Boys),BOYS,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Jhelyn,10,Math,Grade 9 & 10,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-03,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Jhelyn,10,Math,Grade 9,ABU JANDAL IBN SUHAYL (Girls),GIRLS,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Jhelyn,10,Math,Grade 9 & 10,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-06,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Jhelyn,10,General Mathematics,Grade 11,Girls,GIRLS,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Jhelyn,10,Math,Grade 10,UTBAH IBN GHAZWAN (Girls),GIRLS,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Jhelyn,10,General Mathematics,Grade 11,Boys,BOYS,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Jhelyn,10,Math,Grade 10,ABU AYYUB AL-ANSARI (Boys),BOYS,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Joanna,12,Circle Time 1,Kinder 2,ABU BAKR AS-SIDEEQ,NOT LABELED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Joanna,12,Filipino,Grade 5,MUS'AB IBN ABDUL MUTALIB,NOT LABELED,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Joanna,12,Math,Grade 1,HUDHAYFAH IBN AL-YAM,NOT LABELED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Joanna,12,Math,Grade 1,SUHAYB AR-RUMI,NOT LABELED,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Joanna,12,Math,Grade 1,SA'AD IBN ABI WAQQAAS,NOT LABELED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Teacher Joanna,12,Circle Time 2,Kinder 2,UMAR IBN AL-KHATTAB,NOT LABELED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Teacher Joanna,12,Circle Time 2,Kinder 2,ABU BAKR AS-SIDEEQ,NOT LABELED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Joanna,12,Circle Time 1,Kinder 2,UMAR IBN AL-KHATTAB,NOT LABELED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Joanna,12,Math,Grade 1,ALI IBN ABI TALIB,NOT LABELED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Joanna,12,Filipino,Grade 5,MUHAMMAD IBN MASLAMAH,NOT LABELED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Joanna,12,Filipino,Grade 5,HAMZA IBN ABDUL,NOT LABELED,ODL,1st Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Joanna,12,Filipino,Grade 5,AL HARITH BIN AWF,NOT LABELED,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Junaisah,2,Science,Grade 4,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Junaisah,2,Science,Grade 5,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Katrina,8,Reading and Literacy,Grade 1,ALI IBN ABI TALIB,NOT LABELED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Katrina,8,Reading and Literacy,Grade 1,SA'AD IBN ABI WAQQAAS,NOT LABELED,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Katrina,8,Math,Grade 6,ABDULLAH IBN SALAAM,NOT LABELED,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Katrina,8,Reading and Literacy,Grade 1,SUHAYB AR-RUMI,NOT LABELED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Katrina,8,Math,Grade 6,KHALEED IBN WALEED,NOT LABELED,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Katrina,8,Reading and Literacy,Grade 1,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Katrina,8,Math,Grade 6,ABBAS IBN ABD AL-MUTTALIB,NOT LABELED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Katrina,8,Reading and Literacy,Grade 1,HUDHAYFAH IBN AL-YAM,NOT LABELED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Keychell,8,MAPEH,Grade 5,MUHAMMAD IBN MASLAMAH,NOT LABELED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Keychell,8,Circle Time 2,Kinder 2,KHABAAB IBN ARAT,NOT LABELED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Keychell,8,MAPEH,Grade 5,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Keychell,8,MAPEH,Grade 5,HAMZA IBN ABDUL,NOT LABELED,ODL,1st Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Keychell,8,Circle Time 1,Kinder 2,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Keychell,8,Circle Time 1,Kinder 2,KHABAAB IBN ARAT,NOT LABELED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Keychell,8,AP,Grade 5,MUHAMMAD IBN MASLAMAH,NOT LABELED,ODL,1st Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Keychell,8,Circle Time 2,Kinder 2,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Marham,10,English,Grade 2,AMR IBN AL-JAMUH,NOT LABELED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Marham,10,English,Grade 3,THABIT IBN QAYS (Boys),BOYS,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Marham,10,English,Grade 2,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Marham,10,English,Grade 2,AASIM IBN THABIT,NOT LABELED,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Marham,10,English,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),GIRLS,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Marham,10,English,Grade 2,TALHA IBN UBAYDULLAH,NOT LABELED,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Marham,10,English,Grade 3,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Marham,10,English,Grade 3,AMMAR IBN YASIR (Boys),BOYS,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Marham,10,English,Grade 3,ZAYD IBN HARITHA (Girls),GIRLS,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Marham,10,English,Grade 2,SAEED IBN ZAYD,NOT LABELED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Monisa,21,TLE,Grade 4,ABDUR RAHMAN IBN AWF,NOT LABELED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Monisa,21,AP,Grade 4,HAKIM IBN HAZM,NOT LABELED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Monisa,21,TLE,Grade 4,AZ ZUBAIR IBN AL AWWAAM,NOT LABELED,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Monisa,21,AP,Grade 5,MUS'AB IBN ABDUL MUTALIB,NOT LABELED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Monisa,21,TLE,Grade 4,IKRIMAH IBN ABI JAHL,NOT LABELED,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Monisa,21,Filipino,Grade 4,HAKIM IBN HAZM,NOT LABELED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Monisa,21,Makabansa,Grade 2,SAEED IBN ZAYD,NOT LABELED,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Monisa,21,AP,Grade 5,AL HARITH BIN AWF,NOT LABELED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Monisa,21,Makabansa,Grade 2,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Monisa,21,TLE,Grade 4,HAKIM IBN HAZM,NOT LABELED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Monisa,21,Filipino,Grade 4,ABDUR RAHMAN IBN AWF,NOT LABELED,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Monisa,21,AP,Grade 4,ABDUR RAHMAN IBN AWF,NOT LABELED,ODL,1st Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Monisa,21,Makabansa,Grade 2,AASIM IBN THABIT,NOT LABELED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Monisa,21,AP,Grade 4,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Monisa,21,Makabansa,Grade 2,AMR IBN AL-JAMUH,NOT LABELED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFLICT,CONFLICT
+Teacher Monisa,21,AP,Grade 5,HAMZA IBN ABDUL,NOT LABELED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFLICT,CONFLICT
+Teacher Monisa,21,AP,Grade 4,USAYD IBN HUDHAYR (Mix),MIXED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Monisa,21,AP,Grade 4,HASSAN IBN THABIT (Mix),MIXED,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Monisa,21,AP,Grade 4,IKRIMAH IBN ABI JAHL,NOT LABELED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Monisa,21,AP,Grade 4,AZ ZUBAIR IBN AL AWWAAM,NOT LABELED,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Monisa,21,TLE,Grade 4,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Nadzra,10,Filipino,Grade 10,ABU AYYUB AL-ANSARI (Boys),BOYS,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Nadzra,10,EC,Grade 11,Girls,GIRLS,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Nadzra,10,Filipino,Grade 9,ABU JANDAL IBN SUHAYL (Girls),GIRLS,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Nadzra,10,EC,Grade 11,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Nadzra,10,Filipino,Grade 9,ABU HURAYRAH (Girls),GIRLS,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Nadzra,10,EC,Grade 11,Boys,BOYS,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Nadzra,10,Filipino,Grade 9 & 10,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-07,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Nadzra,10,Filipino,Grade 10,UTBAH IBN GHAZWAN (Girls),GIRLS,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Nadzra,10,Filipino,Grade 9,ABU DHARR AL GHIFARRI (Boys),BOYS,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Nadzra,10,Filipino,Grade 9 & 10,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-07,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Nof,9,ESP,Grade 9,ABU JANDAL IBN SUHAYL (Girls),GIRLS,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Nof,9,ESP,Grade 9,ABU DHARR AL GHIFARRI (Boys),BOYS,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Nof,9,ESP,Grade 9 & 10,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-02,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Nof,9,ESP,Grade 9,ABU HURAYRAH (Girls),GIRLS,ODL,1st Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Nof,9,ESP,Grade 10,ABU AYYUB AL-ANSARI (Boys),BOYS,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Nof,9,ESP,Grade 9 & 10,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-03,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Nof,9,ESP,Grade 10,UTBAH IBN GHAZWAN (Girls),GIRLS,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Nof,9,21st Century Literature,Grade 12,ABU MUSA AL-ASHARI,NOT LABELED,ODL,1st Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Nof,9,21st Century Literature,Grade 12,SUHAYB AR-RUMI,NOT LABELED,F2F,Day / F2F,2026-09-07,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Norhaima,10,English,Grade 9,ABU HURAYRAH (Girls),GIRLS,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Norhaima,10,LCS,Grade 11,Boys,BOYS,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Norhaima,10,LCS,Grade 11,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Norhaima,10,LCS,Grade 11,Girls,GIRLS,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Norhaima,10,English,Grade 10,UTBAH IBN GHAZWAN (Girls),GIRLS,ODL,1st Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Norhaima,10,English,Grade 9,ABU DHARR AL GHIFARRI (Boys),BOYS,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Norhaima,10,English,Grade 9,ABU JANDAL IBN SUHAYL (Girls),GIRLS,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Norhaima,10,English,Grade 10,ABU AYYUB AL-ANSARI (Boys),BOYS,ODL,2nd Shift,2026-09-06,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Norhaima,10,English,Grade 9 & 10,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-07,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Norhaima,10,English,Grade 9 & 10,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-07,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Norhydie,12,AP,Grade 5,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Norhydie,12,Makabansa,Grade 1,HUDHAYFAH IBN AL-YAM,NOT LABELED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Norhydie,12,MAPEH,Grade 5,MUS'AB IBN ABDUL MUTALIB,NOT LABELED,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Norhydie,12,Filipino,Grade 4,AZ ZUBAIR IBN AL AWWAAM,NOT LABELED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Norhydie,12,English,Grade 4,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Norhydie,12,Makabansa,Grade 1,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Norhydie,12,Makabansa,Grade 1,ALI IBN ABI TALIB,NOT LABELED,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Norhydie,12,Makabansa,Grade 1,SA'AD IBN ABI WAQQAAS,NOT LABELED,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Norhydie,12,Makabansa,Grade 1,SUHAYB AR-RUMI,NOT LABELED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Norhydie,12,MAPEH,Grade 5,AL HARITH BIN AWF,NOT LABELED,ODL,2nd Shift,2026-09-06,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Norhydie,12,Filipino,Grade 4,IKRIMAH IBN ABI JAHL,NOT LABELED,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Norhydie,12,Filipino,Grade 4,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Normylah,12,Filipino,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),GIRLS,ODL,1st Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Normylah,12,AP,Grade 6,KHALEED IBN WALEED,NOT LABELED,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Normylah,12,Filipino,Grade 6,KHALEED IBN WALEED,NOT LABELED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Normylah,12,Filipino,Grade 3,AMMAR IBN YASIR (Boys),BOYS,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Normylah,12,Filipino,Grade 3,THABIT IBN QAYS (Boys),BOYS,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Normylah,12,AP,Grade 6,DIHYA IBN KHALIFAH (Girls),GIRLS,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Normylah,12,Filipino,Grade 6,DIHYA IBN KHALIFAH (Girls),GIRLS,ODL,2nd Shift,2026-09-03,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Normylah,12,Filipino,Grade 6,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Normylah,12,AP,Grade 6,ABBAS IBN ABD AL-MUTTALIB,NOT LABELED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Normylah,12,AP,Grade 6,ABDULLAH IBN SALAAM,NOT LABELED,ODL,1st Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Normylah,12,Filipino,Grade 3,ZAYD IBN HARITHA (Girls),GIRLS,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Normylah,12,Filipino,Grade 3,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Radzmia,9,General Biology 1,Grade 11,Boys,BOYS,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Radzmia,9,General Biology 1,Grade 11,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Radzmia,9,Science,Grade 8,NUAYM IBN MAS'UD (Mix),MIXED,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Radzmia,9,Science,Grade 8,MU'ADH IBN JABAL (Boys),BOYS,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Radzmia,9,Science,Grade 7 & 8,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-03,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Radzmia,9,General Biology 1,Grade 12,ABU MUSA AL-ASHARI,NOT LABELED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Radzmia,9,Science,Grade 8,SA'AD IBN MUA'DH (Girls),GIRLS,ODL,1st Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Radzmia,9,Science,Grade 7 & 8,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-07,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Radzmia,9,General Biology 1,Grade 12,SUHAYB AR-RUMI,NOT LABELED,F2F,Day / F2F,2026-09-07,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Rowena,11,General Biology 1,Grade 11,Girls,GIRLS,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Rowena,11,General Science,Grade 11,Girls,GIRLS,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Rowena,11,Science,Grade 9,ABU HURAYRAH (Girls),GIRLS,ODL,1st Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Rowena,11,Science,Grade 9,ABU JANDAL IBN SUHAYL (Girls),GIRLS,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Rowena,11,Science,Grade 9 & 10,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-02,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Rowena,11,Science,Grade 10,UTBAH IBN GHAZWAN (Girls),GIRLS,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Rowena,11,Science,Grade 9 & 10,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-03,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Rowena,11,General Science,Grade 11,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Rowena,11,Science,Grade 10,ABU AYYUB AL-ANSARI (Boys),BOYS,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Rowena,11,Science,Grade 9,ABU DHARR AL GHIFARRI (Boys),BOYS,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Rowena,11,General Science,Grade 11,Boys,BOYS,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Sahdia,16,GMRC,Grade 4,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Sahdia,16,GMRC,Grade 1,HUDHAYFAH IBN AL-YAM,NOT LABELED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Sahdia,16,GMRC,Grade 4,HAKIM IBN HAZM,NOT LABELED,ODL,1st Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Sahdia,16,Language,Grade 1,SA'AD IBN ABI WAQQAAS,NOT LABELED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Sahdia,16,Language,Grade 1,ALI IBN ABI TALIB,NOT LABELED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Sahdia,16,Language,Grade 1,HUDHAYFAH IBN AL-YAM,NOT LABELED,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Sahdia,16,GMRC,Grade 4,AZ ZUBAIR IBN AL AWWAAM,NOT LABELED,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Sahdia,16,GMRC,Grade 4,HASSAN IBN THABIT (Mix),MIXED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Sahdia,16,Language,Grade 1,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Sahdia,16,GMRC,Grade 4,ABDUR RAHMAN IBN AWF,NOT LABELED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Sahdia,16,GMRC,Grade 4,USAYD IBN HUDHAYR (Mix),MIXED,ODL,1st Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Sahdia,16,GMRC,Grade 1,SA'AD IBN ABI WAQQAAS,NOT LABELED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Sahdia,16,Language,Grade 1,SUHAYB AR-RUMI,NOT LABELED,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Sahdia,16,GMRC,Grade 1,SUHAYB AR-RUMI,NOT LABELED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Sahdia,16,GMRC,Grade 4,IKRIMAH IBN ABI JAHL,NOT LABELED,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Sahdia,16,Arabic,Grade 1,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Saimonah,15,Science,Grade 5,AYYASH IBN ABI RABI'AH,NOT LABELED,ODL,1st Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Saimonah,15,Science,Grade 5,JA'FAR IBN ABI TALIB (Mix),MIXED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Saimonah,15,Science,Grade 4,HASSAN IBN THABIT (Mix),MIXED,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Saimonah,15,Math,Grade 5,AYYASH IBN ABI RABI'AH,NOT LABELED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Saimonah,15,Science,Grade 4,USAYD IBN HUDHAYR (Mix),MIXED,ODL,1st Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Saimonah,15,AP,Grade 5,AYYASH IBN ABI RABI'AH,NOT LABELED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFLICT,CONFLICT
+Teacher Saimonah,15,Math,Grade 4,USAYD IBN HUDHAYR (Mix),MIXED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFLICT,CONFLICT
+Teacher Saimonah,15,Science,Grade 3,SALMAN AL FARSI (Mix),MIXED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFLICT,CONFLICT
+Teacher Saimonah,15,MAPEH,Grade 5,AYYASH IBN ABI RABI'AH,NOT LABELED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFLICT,CONFLICT
+Teacher Saimonah,15,MAPEH,Grade 5,JA'FAR IBN ABI TALIB (Mix),MIXED,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Saimonah,15,Math,Grade 6,DIHYA IBN KHALIFAH (Girls),GIRLS,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Teacher Saimonah,15,Math,Grade 4,HASSAN IBN THABIT (Mix),MIXED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Teacher Saimonah,15,AP,Grade 5,JA'FAR IBN ABI TALIB (Mix),MIXED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Teacher Saimonah,15,Science,Grade 3,AS'AD IBN ZURARAH (Mix),MIXED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Teacher Saimonah,15,Math,Grade 5,JA'FAR IBN ABI TALIB (Mix),MIXED,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Shirehan,11,Social Science,Grade 8,SA'AD IBN MUA'DH (Girls),GIRLS,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Shirehan,11,Social Science,Grade 7,USAMA IBN ZAYD (Girls),GIRLS,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Shirehan,11,PSKP,Grade 11,Boys,BOYS,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Shirehan,11,Social Science,Grade 7 & 8,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-03,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Shirehan,11,Social Science,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),BOYS,ODL,1st Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Shirehan,11,Social Science,Grade 8,MU'ADH IBN JABAL (Boys),BOYS,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Shirehan,11,Social Science,Grade 7 & 8,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-06,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Shirehan,11,PSKP,Grade 11,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Shirehan,11,PSKP,Grade 11,Girls,GIRLS,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Shirehan,11,Social Science,Grade 8,NUAYM IBN MAS'UD (Mix),MIXED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Shirehan,11,Social Science,Grade 7,ANAS IBN MALIK (Mix),MIXED,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Sitti Kauzar,9,Filipino,Grade 2,AMR IBN AL-JAMUH,NOT LABELED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Sitti Kauzar,9,Math,Grade 2,AMR IBN AL-JAMUH,NOT LABELED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Sitti Kauzar,9,Filipino,Grade 2,AASIM IBN THABIT,NOT LABELED,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Sitti Kauzar,9,Filipino,Grade 2,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Sitti Kauzar,9,Filipino,Grade 2,TALHA IBN UBAYDULLAH,NOT LABELED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Sitti Kauzar,9,Math,Grade 2,TALHA IBN UBAYDULLAH,NOT LABELED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Sitti Kauzar,9,Math,Grade 2,SAEED IBN ZAYD,NOT LABELED,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Sitti Kauzar,9,Math,Grade 2,AASIM IBN THABIT,NOT LABELED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Sitti Kauzar,9,Math,Grade 2,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Sophia,15,Social Science,Grade 9 & 10,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-02,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Sophia,15,Filipino,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),BOYS,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Sophia,15,Filipino,Grade 8,MU'ADH IBN JABAL (Boys),BOYS,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Sophia,15,Social Science,Grade 9,ABU JANDAL IBN SUHAYL (Girls),GIRLS,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Teacher Sophia,15,Filipino,Grade 7 & 8,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-02,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Sophia,15,Filipino,Grade 7 & 8,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-03,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Teacher Sophia,15,Filipino,Grade 7,ANAS IBN MALIK (Mix),MIXED,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Sophia,15,Social Science,Grade 9,ABU DHARR AL GHIFARRI (Boys),BOYS,ODL,2nd Shift,2026-09-03,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Sophia,15,Social Science,Grade 10,UTBAH IBN GHAZWAN (Girls),GIRLS,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Sophia,15,Filipino,Grade 8,SA'AD IBN MUA'DH (Girls),GIRLS,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Sophia,15,Social Science,Grade 9,ABU HURAYRAH (Girls),GIRLS,ODL,1st Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Sophia,15,Filipino,Grade 7,USAMA IBN ZAYD (Girls),GIRLS,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Sophia,15,Social Science,Grade 10,ABU AYYUB AL-ANSARI (Boys),BOYS,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Sophia,15,Filipino,Grade 8,NUAYM IBN MAS'UD (Mix),MIXED,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Sophia,15,Social Science,Grade 9 & 10,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-07,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Wardah,3,Values Education,Grade 8,SA'AD IBN MUA'DH (Girls),GIRLS,ODL,1st Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Wardah,3,Values Education,Grade 8,NUAYM IBN MAS'UD (Mix),MIXED,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Wardah,3,Values Education,Grade 8,MU'ADH IBN JABAL (Boys),BOYS,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Wendy,5,Circle Time 2,Kinder 1,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Wendy,5,Makabansa,Grade 3,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Wendy,5,Circle Time 1,Kinder 1,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Wendy,5,Math,Grade 1,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Wendy,5,Science,Grade 6,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Teacher Zara,8,Makabansa,Grade 3,AMMAR IBN YASIR (Boys),BOYS,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Zara,8,Makabansa,Grade 3,ZAYD IBN HARITHA (Girls),GIRLS,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Zara,8,MAPEH,Grade 6,ABDULLAH IBN SALAAM,NOT LABELED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Zara,8,MAPEH,Grade 6,KHALEED IBN WALEED,NOT LABELED,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Zara,8,MAPEH,Grade 6,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Teacher Zara,8,MAPEH,Grade 6,ABBAS IBN ABD AL-MUTTALIB,NOT LABELED,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Zara,8,Makabansa,Grade 3,THABIT IBN QAYS (Boys),BOYS,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Zara,8,Makabansa,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),GIRLS,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Zuhora,11,Filipino,Grade 6,ABDULLAH IBN SALAAM,NOT LABELED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Zuhora,11,Filipino,Grade 6,ABBAS IBN ABD AL-MUTTALIB,NOT LABELED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Zuhora,11,GMRC,Grade 3,SALMAN AL FARSI (Mix),MIXED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Zuhora,11,Filipino,Grade 4,USAYD IBN HUDHAYR (Mix),MIXED,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Teacher Zuhora,11,Makabansa,Grade 2,TALHA IBN UBAYDULLAH,NOT LABELED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Teacher Zuhora,11,Filipino,Grade 2,SAEED IBN ZAYD,NOT LABELED,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Zuhora,11,MAPEH,Grade 4,HASSAN IBN THABIT (Mix),MIXED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Teacher Zuhora,11,MAPEH,Grade 6,DIHYA IBN KHALIFAH (Girls),GIRLS,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Teacher Zuhora,11,MAPEH,Grade 4,USAYD IBN HUDHAYR (Mix),MIXED,ODL,1st Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Teacher Zuhora,11,Filipino,Grade 4,HASSAN IBN THABIT (Mix),MIXED,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Teacher Zuhora,11,AP,Grade 6,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadh Abdiraheem,12,SHAF,Grade 4,USAYD IBN HUDHAYR (Mix),MIXED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Abdiraheem,12,SHAF,Grade 6,ABBAS IBN ABD AL-MUTTALIB,NOT LABELED,ODL,1st Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Abdiraheem,12,SHAF,Grade 4,HASSAN IBN THABIT (Mix),MIXED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadh Abdiraheem,12,SHAF,Grade 4,AZ ZUBAIR IBN AL AWWAAM,NOT LABELED,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadh Abdiraheem,12,SHAF,Grade 1,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadh Abdiraheem,12,SHAF,Grade 4,ABDUR RAHMAN IBN AWF,NOT LABELED,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Abdiraheem,12,SHAF,Grade 4,IKRIMAH IBN ABI JAHL,NOT LABELED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadh Abdiraheem,12,SHAF,Grade 4,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Ustadh Abdiraheem,12,SHAF,Grade 6,ABDULLAH IBN SALAAM,NOT LABELED,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Abdiraheem,12,SHAF,Grade 4,HAKIM IBN HAZM,NOT LABELED,ODL,1st Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Abdiraheem,12,SHAF,Grade 6,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadh Abdiraheem,12,SHAF,Grade 6,KHALEED IBN WALEED,NOT LABELED,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 6,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),BOYS,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 6,ABDULLAH IBN SALAAM,NOT LABELED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 9,ABU DHARR AL GHIFARRI (Boys),BOYS,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 8,NUAYM IBN MAS'UD (Mix),MIXED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 7 & 8,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-02,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 4,ABDUR RAHMAN IBN AWF,NOT LABELED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 6,ABBAS IBN ABD AL-MUTTALIB,NOT LABELED,ODL,1st Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 6,KHALEED IBN WALEED,NOT LABELED,ODL,2nd Shift,2026-09-03,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 7,USAMA IBN ZAYD (Girls),GIRLS,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 4,USAYD IBN HUDHAYR (Mix),MIXED,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 4,IKRIMAH IBN ABI JAHL,NOT LABELED,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 4,AZ ZUBAIR IBN AL AWWAAM,NOT LABELED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 4,HASSAN IBN THABIT (Mix),MIXED,ODL,2nd Shift,2026-09-06,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 7 & 8,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-06,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 4,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 4,HAKIM IBN HAZM,NOT LABELED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 8,SA'AD IBN MUA'DH (Girls),GIRLS,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 7,ANAS IBN MALIK (Mix),MIXED,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 8,MU'ADH IBN JABAL (Boys),BOYS,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadh Ali,21,Arabic,Grade 9,ABU JANDAL IBN SUHAYL (Girls),GIRLS,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadh Ersahad,12,SHAF,Grade 3,AMMAR IBN YASIR (Boys),BOYS,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Ersahad,12,SHAF,Grade 3,ZAYD IBN HARITHA (Girls),GIRLS,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadh Ersahad,12,Arabic,Grade 6,DIHYA IBN KHALIFAH (Girls),GIRLS,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadh Ersahad,12,SHAF,Grade 3,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Ustadh Ersahad,12,Math,Grade 6,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Ustadh Ersahad,12,Arabic,Grade 5,AL HARITH BIN AWF,NOT LABELED,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Ersahad,12,Arabic,Grade 5,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Ustadh Ersahad,12,SHAF,Grade 5,AL HARITH BIN AWF,NOT LABELED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadh Ersahad,12,SHAF,Grade 2,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadh Ersahad,12,SHAF,Grade 5,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Ustadh Ersahad,12,SHAF,Grade 3,THABIT IBN QAYS (Boys),BOYS,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadh Ersahad,12,Arabic,Grade 5,MUS'AB IBN ABDUL MUTALIB,NOT LABELED,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadh Faidh,15,SHAF,Grade 3,SALMAN AL FARSI (Mix),MIXED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFLICT,CONFLICT
+Ustadh Faidh,15,Qur'an,Grade 4,USAYD IBN HUDHAYR (Mix),MIXED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFLICT,CONFLICT
+Ustadh Faidh,15,Arabic,Grade 5,JA'FAR IBN ABI TALIB (Mix),MIXED,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Faidh,15,Qur'an,Grade 6,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadh Faidh,15,SHAF,Grade 5,AYYASH IBN ABI RABI'AH,NOT LABELED,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Faidh,15,Arabic,Grade 5,AYYASH IBN ABI RABI'AH,NOT LABELED,ODL,1st Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Ustadh Faidh,15,SHAF,Grade 6,DIHYA IBN KHALIFAH (Girls),GIRLS,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Ustadh Faidh,15,Arabic,Grade 3,AS'AD IBN ZURARAH (Mix),MIXED,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Ustadh Faidh,15,Hadith,Kinder 2,KHABAAB IBN ARAT,NOT LABELED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Ustadh Faidh,15,SHAF,Grade 3,AS'AD IBN ZURARAH (Mix),MIXED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Ustadh Faidh,15,SHAF,Grade 5,JA'FAR IBN ABI TALIB (Mix),MIXED,ODL,2nd Shift,2026-09-03,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadh Faidh,15,Arabic,Grade 3,SALMAN AL FARSI (Mix),MIXED,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Faidh,15,Qur'an,Grade 4,HASSAN IBN THABIT (Mix),MIXED,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Faidh,15,Qur'an,Kinder 2,KHABAAB IBN ARAT,NOT LABELED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadh Faidh,15,Arabic,Kinder 2,KHABAAB IBN ARAT,NOT LABELED,ODL,2nd Shift,2026-09-07,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadh Hainur,19,Qur'an,Kinder 2,ABU BAKR AS-SIDEEQ,NOT LABELED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Hainur,19,Qur'an,Grade 1,ALI IBN ABI TALIB,NOT LABELED,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Hainur,19,Arabic,Grade 1,SUHAYB AR-RUMI,NOT LABELED,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Hainur,19,Hadith,Kinder 2,UMAR IBN AL-KHATTAB,NOT LABELED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Ustadh Hainur,19,Arabic,Grade 2,AASIM IBN THABIT,NOT LABELED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Ustadh Hainur,19,Qur'an,Kinder 2,ABDULLAH IBN MAS'UD,NOT LABELED,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadh Hainur,19,Arabic,Grade 2,TALHA IBN UBAYDULLAH,NOT LABELED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Hainur,19,Arabic,Grade 2,AMR IBN AL-JAMUH,NOT LABELED,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Hainur,19,Arabic,Grade 1,SA'AD IBN ABI WAQQAAS,NOT LABELED,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Hainur,19,Hadith,Kinder 2,ABDULLAH IBN MAS'UD,NOT LABELED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadh Hainur,19,Arabic,Grade 1,ALI IBN ABI TALIB,NOT LABELED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Hainur,19,Arabic,Grade 1,HUDHAYFAH IBN AL-YAM,NOT LABELED,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Hainur,19,Qur'an,Grade 1,SUHAYB AR-RUMI,NOT LABELED,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Hainur,19,SHAF,Grade 5,MUS'AB IBN ABDUL MUTALIB,NOT LABELED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Ustadh Hainur,19,Arabic,Grade 2,SAEED IBN ZAYD,NOT LABELED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Ustadh Hainur,19,Qur'an,Kinder 2,UMAR IBN AL-KHATTAB,NOT LABELED,ODL,2nd Shift,2026-09-06,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadh Hainur,19,Qur'an,Grade 1,HUDHAYFAH IBN AL-YAM,NOT LABELED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Hainur,19,Qur'an,Kinder 2,UTHMAN IBN AFFAN,NOT LABELED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Hainur,19,Qur'an,Grade 1,SA'AD IBN ABI WAQQAAS,NOT LABELED,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 8,SA'AD IBN MUA'DH (Girls),GIRLS,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 7,USAMA IBN ZAYD (Girls),GIRLS,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 5,AL HARITH BIN AWF,NOT LABELED,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 8,MU'ADH IBN JABAL (Boys),BOYS,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 5,MUHAMMAD IBN MASLAMAH,NOT LABELED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 5,HAMZA IBN ABDUL,NOT LABELED,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 5,MUS'AB IBN ABDUL MUTALIB,NOT LABELED,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Kinder 1,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 8,NUAYM IBN MAS'UD (Mix),MIXED,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 7,ANAS IBN MALIK (Mix),MIXED,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Kinder 2,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 7 & 8,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-06,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 6,ABDULLAH IBN SALAAM,NOT LABELED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),BOYS,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 6,ABBAS IBN ABD AL-MUTTALIB,NOT LABELED,ODL,1st Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 6,KHALEED IBN WALEED,NOT LABELED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadh Jaisam,17,Qur'an,Grade 7 & 8,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-07,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 3,SALMAN AL FARSI (Mix),MIXED,ODL,1st Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Ustadh Obaydah,23,Qur'an,Grade 4,IKRIMAH IBN ABI JAHL,NOT LABELED,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Ustadh Obaydah,23,Qur'an,Grade 6,DIHYA IBN KHALIFAH (Girls),GIRLS,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Ustadh Obaydah,23,Qur'an,Grade 2,SAEED IBN ZAYD,NOT LABELED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFLICT,CONFLICT
+Ustadh Obaydah,23,Qur'an,Grade 5,JA'FAR IBN ABI TALIB (Mix),MIXED,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadh Obaydah,23,Arabic,Grade 2,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 3,AMMAR IBN YASIR (Boys),BOYS,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 2,TALHA IBN UBAYDULLAH,NOT LABELED,ODL,1st Shift,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 4,ABDUR RAHMAN IBN AWF,NOT LABELED,ODL,1st Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 3,AS'AD IBN ZURARAH (Mix),MIXED,ODL,2nd Shift,2026-09-03,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 1,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 2,AMR IBN AL-JAMUH,NOT LABELED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),GIRLS,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFLICT,CONFLICT
+Ustadh Obaydah,23,Qur'an,Grade 5,AYYASH IBN ABI RABI'AH,NOT LABELED,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFLICT,CONFLICT
+Ustadh Obaydah,23,Qur'an,Grade 3,ZAYD IBN HARITHA (Girls),GIRLS,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 3,THABIT IBN QAYS (Boys),BOYS,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 4,AZ ZUBAIR IBN AL AWWAAM,NOT LABELED,ODL,2nd Shift,2026-09-06,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 4,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 5,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 4,HAKIM IBN HAZM,NOT LABELED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 2,AASIM IBN THABIT,NOT LABELED,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 2,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadh Obaydah,23,Qur'an,Grade 3,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Ustadh Raslina,3,Arabic,Grade 9,ABU HURAYRAH (Girls),GIRLS,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadh Raslina,3,SHAF,Grade 5,MUHAMMAD IBN MASLAMAH,NOT LABELED,ODL,1st Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadh Raslina,3,SHAF,Grade 5,HAMZA IBN ABDUL,NOT LABELED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadha Saliha,17,GMRC,Grade 5,AYYASH IBN ABI RABI'AH,NOT LABELED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFLICT,CONFLICT
+Ustadha Saliha,17,GMRC,Grade 2,TALHA IBN UBAYDULLAH,NOT LABELED,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFLICT,CONFLICT
+Ustadha Saliha,17,GMRC,Grade 3,AS'AD IBN ZURARAH (Mix),MIXED,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Ustadha Saliha,17,GMRC,Grade 2,SAEED IBN ZAYD,NOT LABELED,ODL,2nd Shift,2026-09-02,3:10 PM – 4:10 PM,,CONFLICT,CONFLICT
+Ustadha Saliha,17,Hadith,Kinder 2,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-02,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadha Saliha,17,Hadith,Kinder 2,ABU BAKR AS-SIDEEQ,NOT LABELED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadha Saliha,17,Hadith,Kinder 1,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadha Saliha,17,GMRC,Grade 5,JA'FAR IBN ABI TALIB (Mix),MIXED,ODL,2nd Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadha Saliha,17,GMRC,Grade 2,AASIM IBN THABIT,NOT LABELED,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadha Saliha,17,GMRC,Grade 2,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadha Saliha,17,GMRC,Grade 3,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Ustadha Saliha,17,Hadith,Kinder 2,UTHMAN IBN AFFAN,NOT LABELED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadha Saliha,17,GMRC,Grade 1,ALI IBN ABI TALIB,NOT LABELED,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadha Saliha,17,Arabic,Kinder 2,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,9:15 AM – 10:15 AM,,CONFIRMED,OK
+Ustadha Saliha,17,Arabic,Kinder 1,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadha Saliha,17,GMRC,Grade 2,AMR IBN AL-JAMUH,NOT LABELED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadha Saliha,17,GMRC,Grade 1,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-07,8:00 AM – 9:00 AM,,CONFIRMED,OK
+Ustadha Silfah,23,GMRC,Grade 7 & 8,GIRLS FACE TO FACE,GIRLS,F2F,Day / F2F,2026-09-02,10:25 AM – 11:25 AM,,CONFIRMED,OK
+Ustadha Silfah,23,GMRC,Grade 7,USAMA IBN ZAYD (Girls),GIRLS,ODL,1st Shift,2026-09-02,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadha Silfah,23,GMRC,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),GIRLS,ODL,1st Shift,2026-09-02,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadha Silfah,23,Arabic,Kinder 2,ABDULLAH IBN MAS'UD,NOT LABELED,ODL,2nd Shift,2026-09-02,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadha Silfah,23,GMRC,Grade 6,KHALEED IBN WALEED,NOT LABELED,ODL,2nd Shift,2026-09-02,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadha Silfah,23,Arabic,Kinder 2,UTHMAN IBN AFFAN,NOT LABELED,ODL,1st Shift,2026-09-03,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadha Silfah,23,GMRC,Grade 3,AMMAR IBN YASIR (Boys),BOYS,ODL,1st Shift,2026-09-03,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadha Silfah,23,Arabic,Grade 3,THABIT IBN QAYS (Boys),BOYS,ODL,2nd Shift,2026-09-03,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadha Silfah,23,GMRC,Grade 7,ANAS IBN MALIK (Mix),MIXED,ODL,2nd Shift,2026-09-03,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadha Silfah,23,GMRC,Grade 6,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-03,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Ustadha Silfah,23,GMRC,Grade 6,ABBAS IBN ABD AL-MUTTALIB,NOT LABELED,ODL,1st Shift,2026-09-06,12:40 PM – 1:40 PM,,CONFIRMED,OK
+Ustadha Silfah,23,GMRC,Grade 7,ABU SUFYAN IBN AL-HARITH (Boys),BOYS,ODL,1st Shift,2026-09-06,1:50 PM – 2:50 PM,,CONFIRMED,OK
+Ustadha Silfah,23,GMRC,Grade 6,DIHYA IBN KHALIFAH (Girls),GIRLS,ODL,2nd Shift,2026-09-06,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadha Silfah,23,Arabic,Grade 3,ZAYD IBN HARITHA (Girls),GIRLS,ODL,2nd Shift,2026-09-06,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadha Silfah,23,GMRC,Grade 3,ZAYD IBN HARITHA (Girls),GIRLS,ODL,2nd Shift,2026-09-06,5:30 PM – 6:30 PM,,CONFIRMED,OK
+Ustadha Silfah,23,Arabic,Grade 3,FACE TO FACE,NOT LABELED,F2F,Day / F2F,2026-09-06,9:00 AM – 10:00 AM,,CONFIRMED,OK
+Ustadha Silfah,23,Arabic,Kinder 2,ABU BAKR AS-SIDEEQ,NOT LABELED,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFLICT,CONFLICT
+Ustadha Silfah,23,Arabic,Grade 3,HABIB IBN ZAYD AL-ANSARI (Girls),GIRLS,ODL,1st Shift,2026-09-07,12:40 PM – 1:40 PM,,CONFLICT,CONFLICT
+Ustadha Silfah,23,GMRC,Grade 6,ABDULLAH IBN SALAAM,NOT LABELED,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFLICT,CONFLICT
+Ustadha Silfah,23,Arabic,Grade 3,AMMAR IBN YASIR (Boys),BOYS,ODL,1st Shift,2026-09-07,1:50 PM – 2:50 PM,,CONFLICT,CONFLICT
+Ustadha Silfah,23,GMRC,Grade 3,THABIT IBN QAYS (Boys),BOYS,ODL,2nd Shift,2026-09-07,3:10 PM – 4:10 PM,,CONFIRMED,OK
+Ustadha Silfah,23,Arabic,Kinder 2,UMAR IBN AL-KHATTAB,NOT LABELED,ODL,2nd Shift,2026-09-07,4:20 PM – 5:20 PM,,CONFIRMED,OK
+Ustadha Silfah,23,GMRC,Grade 7 & 8,BOYS FACE TO FACE,BOYS,F2F,Day / F2F,2026-09-07,9:00 AM – 10:00 AM,,CONFIRMED,OK

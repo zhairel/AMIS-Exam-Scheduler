@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="xlsx.full.min.js"></script>
+<script src="exam-data.js"></script>
 <script src="exam-parser.js"></script>
 <script src="html2canvas.min.js"></script>
 <style>
@@ -824,6 +825,8 @@ body.no-navbar {
       const saved = AMISExamEngine.loadScheduleFromStorage();
       if (saved && Array.isArray(saved.records) && saved.records.length > 0) {
         records = saved.records;
+      } else if (window.AMIS_EXAM_DATA && Array.isArray(window.AMIS_EXAM_DATA) && window.AMIS_EXAM_DATA.length > 0) {
+        records = window.AMIS_EXAM_DATA;
       } else if (window.__EXAM_SCHEDULE_DATA__) {
         records = window.__EXAM_SCHEDULE_DATA__;
       }

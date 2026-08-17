@@ -5,58 +5,58 @@ Total Exam Proctored Sessions: 597
 ==========================================================================================
 FACULTY NAME               | TOTAL | F2F  | ODL 1 | ODL 2 | PRIMARY SUBJECTS
 ------------------------------------------------------------------------------------------
-Ustadha Silfah             |    23 |    4 |     7 |    12 | Arabic, GMRC
-Ustadh Ali                 |    22 |    4 |     8 |    10 | Arabic
-Ustadh Obaydah             |    22 |    6 |     8 |     8 | Arabic, Qur'an
-Teacher Monisa             |    20 |    3 |     9 |     8 | AP, Filipino, Makabansa, TLE
+Ustadh Obaydah             |    23 |    6 |     8 |     9 | Arabic, Qur'an
+Ustadha Silfah             |    23 |    4 |    10 |     9 | Arabic, GMRC
+Teacher Monisa             |    21 |    3 |     9 |     9 | AP, Filipino, Makabansa, TLE
+Ustadh Ali                 |    21 |    4 |     8 |     9 | Arabic
+Ustadh Hainur              |    19 |    0 |     8 |    11 | Arabic, Hadith, Qur'an, SHAF
 Alim Samsuddin             |    18 |    6 |     6 |     6 | SHAF
-Teacher Anna               |    18 |    0 |    11 |     7 | Science, TLE
-Ustadh Hainur              |    18 |    0 |     8 |    10 | Arabic, Hadith, Qur'an
-Ustadh Jaisam              |    18 |    4 |     8 |     6 | Qur'an
-Teacher Sahdia             |    17 |    3 |     7 |     7 | Arabic, GMRC, Language
-Teacher Arvin              |    16 |    2 |     8 |     6 | English, Math, TLE
-Ustadha Saliha             |    16 |    7 |     4 |     5 | Arabic, GMRC, Hadith
+Ustadh Jaisam              |    17 |    4 |     7 |     6 | Qur'an
+Ustadha Saliha             |    17 |    7 |     6 |     4 | Arabic, GMRC, Hadith
+Teacher Sahdia             |    16 |    3 |     6 |     7 | Arabic, GMRC, Language
+Teacher Anna               |    15 |    0 |     8 |     7 | Science, TLE
+Teacher Arvin              |    15 |    2 |     6 |     7 | English, Math, TLE
+Teacher Saimonah           |    15 |    0 |     7 |     8 | AP, MAPEH, Math, Science
 Teacher Sophia             |    15 |    4 |     5 |     6 | Filipino, Social Science
-Teacher Halnaisa           |    14 |    4 |     6 |     4 | MAPEH, TLE
-Ustadh Faidh               |    14 |    1 |     4 |     9 | Arabic, Hadith, Qur'an, SHAF
+Ustadh Faidh               |    15 |    1 |     5 |     9 | Arabic, Hadith, Qur'an, SHAF
+Teacher Halnaisa           |    14 |    4 |     5 |     5 | MAPEH, TLE
+Teacher Jayra              |    13 |    3 |     5 |     5 | English, GMRC
+Teacher Jenny              |    13 |    0 |     7 |     6 | English, Filipino, Makabansa, TLE
 Teacher Jessa              |    13 |    3 |     5 |     5 | English, Filipino
-Teacher Normylah           |    13 |    2 |     4 |     7 | AP, Filipino
-Ustadh Abdiraheem          |    13 |    3 |     5 |     5 | SHAF
-Alim Abdul Karim           |    12 |    0 |     8 |     4 | Arabic, SHAF
-Teacher Jayra              |    12 |    3 |     6 |     3 | English, GMRC
-Teacher Jerlyn             |    12 |    2 |     4 |     6 | Math, Science
-Teacher Keychell           |    11 |    3 |     6 |     2 | AP, Circle Time 1, Circle Time 2, MAPEH
+Teacher Jerlyn             |    12 |    2 |     5 |     5 | Math, Science
+Teacher Joanna             |    12 |    0 |     6 |     6 | Circle Time 1, Circle Time 2, Filipino, Math
+Teacher Norhydie           |    12 |    4 |     2 |     6 | AP, English, Filipino, MAPEH, Makabansa
+Teacher Normylah           |    12 |    2 |     4 |     6 | AP, Filipino
+Ustadh Abdiraheem          |    12 |    3 |     5 |     4 | SHAF
+Ustadh Ersahad             |    12 |    5 |     1 |     6 | Arabic, Math, SHAF
+Alim Abdul Karim           |    11 |    0 |     7 |     4 | Arabic, SHAF
 Teacher Rowena             |    11 |    3 |     4 |     4 | General Biology 1, General Science, Science
 Teacher Shirehan           |    11 |    3 |     4 |     4 | PSKP, Social Science
 Teacher Zuhora             |    11 |    1 |     6 |     4 | AP, Filipino, GMRC, MAPEH, Makabansa
-Teacher Jenny              |    10 |    0 |     4 |     6 | English, Filipino, Makabansa, TLE
 Teacher Jhelyn             |    10 |    3 |     3 |     4 | General Mathematics, Math
-Teacher Marham             |    10 |    2 |     3 |     5 | English
+Teacher Marham             |    10 |    2 |     4 |     4 | English
 Teacher Nadzra             |    10 |    3 |     3 |     4 | EC, Filipino
 Teacher Norhaima           |    10 |    3 |     3 |     4 | English, LCS
-Teacher Norhydie           |    10 |    4 |     2 |     4 | AP, English, Filipino, Makabansa
-Teacher Saimonah           |    10 |    0 |     2 |     8 | AP, MAPEH, Math, Science
-Teacher Zara               |    10 |    1 |     4 |     5 | MAPEH, Makabansa
-Ustadh Ersahad             |    10 |    5 |     1 |     4 | Arabic, Math, SHAF
 Alim Abdulwahab            |     9 |    2 |     3 |     4 | Qur'an
 Alim Mamonas               |     9 |    4 |     3 |     2 | Arabic
-Sir Mohaymen               |     9 |    3 |     3 |     3 | MAPEH, PE 12
-Teacher Hannah             |     9 |    2 |     4 |     3 | Math
-Teacher Joanna             |     9 |    0 |     6 |     3 | Circle Time 1, Circle Time 2, Filipino, Math
-Teacher Katrina            |     9 |    1 |     4 |     4 | Math, Reading and Literacy
 Teacher Nof                |     9 |    3 |     3 |     3 | 21st Century Literature, ESP
 Teacher Radzmia            |     9 |    4 |     2 |     3 | General Biology 1, Science
 Teacher Sitti Kauzar       |     9 |    2 |     4 |     3 | Filipino, Math
+Sir Mohaymen               |     8 |    3 |     3 |     2 | MAPEH, PE 12
+Teacher Angeleni           |     8 |    2 |     2 |     4 | MAPEH, TLE
 Teacher Franchette         |     8 |    2 |     3 |     3 | MAPEH
-Teacher Angeleni           |     7 |    2 |     2 |     3 | TLE
+Teacher Katrina            |     8 |    1 |     4 |     3 | Math, Reading and Literacy
+Teacher Keychell           |     8 |    3 |     3 |     2 | AP, Circle Time 1, Circle Time 2, MAPEH
+Teacher Zara               |     8 |    1 |     4 |     3 | MAPEH, Makabansa
 Teacher Aniah              |     7 |    2 |     4 |     1 | General Physics 1, Practical Research 2, Science
-Teacher Ayah               |     6 |    0 |     3 |     3 | Circle Time 1, Circle Time 2
+Teacher Fhairudz           |     6 |    1 |     2 |     3 | Math, Science
 Teacher Ethel              |     5 |    1 |     3 |     1 | MIL, Math
+Teacher Hannah             |     5 |    2 |     1 |     2 | Math
 Teacher Wendy              |     5 |    5 |     0 |     0 | Circle Time 1, Circle Time 2, Makabansa, Math, Science
-Teacher Fhairudz           |     4 |    1 |     0 |     3 | Math, Science
-Ustadh Raslina             |     4 |    0 |     4 |     0 | Arabic, SHAF
+Teacher Ayah               |     4 |    0 |     2 |     2 | Circle Time 1, Circle Time 2
 Alim Dipatuan              |     3 |    2 |     1 |     0 | Qur'an
 Teacher Wardah             |     3 |    0 |     1 |     2 | Values Education
+Ustadh Raslina             |     3 |    0 |     3 |     0 | Arabic, SHAF
 Alim Bustamante            |     2 |    0 |     1 |     1 | SHAF
 Teacher Junaisah           |     2 |    2 |     0 |     0 | Science
 ==========================================================================================
