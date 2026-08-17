@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMIS Official Class Timetable — S.Y. 2026–2027</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --primary: #0f3d2e;
+      --primary-dark: #0a291e;
+      --primary-light: #1b5e43;
+      --accent: #c5a059;
+      --accent-light: #dfc285;
+      --accent-pale: #fcf9f2;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --border-dark: #cbd5e1;
+      
+      --subj-quran: #ecfdf5;
+      --subj-quran-border: #a7f3d0;
+      --subj-quran-text: #065f46;
+      
+      --subj-arabic: #fef3c7;
+      --subj-arabic-border: #fde68a;
+      --subj-arabic-text: #92400e;
+      
+      --subj-shaf: #ede9fe;
+      --subj-shaf-border: #ddd6fe;
+      --subj-shaf-text: #5b21b6;
+      
+      --subj-math: #eff6ff;
+      --subj-math-border: #bfdbfe;
+      --subj-math-text: #1e40af;
+      
+      --subj-science: #f0fdf4;
+      --subj-science-border: #bbf7d0;
+      --subj-science-text: #166534;
+      
+      --subj-english: #fdf2f8;
+      --subj-english-border: #fbcfe8;
+      --subj-english-text: #9d174d;
+      
+      --subj-filipino: #fff7ed;
+      --subj-filipino-border: #ffedd5;
+      --subj-filipino-text: #9a3412;
+      
+      --subj-makabansa: #f0fdfa;
+      --subj-makabansa-border: #99f6e4;
+      --subj-makabansa-text: #115e59;
+      
+      --subj-mapeh: #faf5ff;
+      --subj-mapeh-border: #f3e8ff;
+      --subj-mapeh-text: #6b21a8;
+      
+      --break-bg: #f1f5f9;
+      --break-text: #475569;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.4;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Global Navigation Bar */
+    .global-nav {
+      background: linear-gradient(135deg, #0a291e 0%, #0f3d2e 100%);
+      color: #ffffff;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .nav-brand img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 2px solid var(--accent);
+      background: #ffffff;
+    }
+
+    .brand-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .brand-sub {
+      font-size: 0.72rem;
+      color: var(--accent-light);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .nav-tab {
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #e2e8f0;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-tab:hover {
+      background: rgba(255,255,255,0.12);
+      color: #ffffff;
+    }
+
+    .nav-tab.active {
+      background: var(--accent);
+      color: #0f2e22;
+      font-weight: 700;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1440px;
+      margin: 24px auto;
+      padding: 0 20px;
+    }
+
+    /* Header Banner */
+    .page-header {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px 28px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .header-info h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.45rem;
+      color: var(--primary-dark);
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-info p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .badge-sy {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: #fef3c7;
+      color: #92400e;
+      border: 1px solid #fde68a;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .action-controls {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 16px;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #ffffff;
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-accent {
+      background: var(--accent);
+      color: #0f2e22;
+      border-color: #b38e44;
+    }
+    .btn-accent:hover {
+      background: #b59047;
+    }
+
+    .btn-outline {
+      background: #ffffff;
+      border-color: var(--border-dark);
+      color: var(--text);
+    }
+    .btn-outline:hover {
+      background: #f1f5f9;
+    }
+
+    /* Filter Strip */
+    .filter-panel {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 16px 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+      margin-bottom: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      align-items: center;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .filter-group label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+    }
+
+    .filter-select, .search-input {
+      padding: 9px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border-dark);
+      font-size: 0.85rem;
+      font-family: inherit;
+      background: #f8fafc;
+      color: var(--text);
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .filter-select:focus, .search-input:focus {
+      border-color: var(--primary);
+      background: #ffffff;
+      box-shadow: 0 0 0 3px rgba(15, 61, 46, 0.1);
+    }
+
+    /* Timetable Display Area */
+    .timetable-card {
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.04);
+      margin-bottom: 30px;
+      overflow: hidden;
+    }
+
+    .timetable-header {
+      background: linear-gradient(135deg, #0f3d2e 0%, #17543f 100%);
+      color: #ffffff;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+    }
+
+    .section-meta {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .meta-pill {
+      font-size: 0.72rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      background: rgba(255,255,255,0.15);
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    .meta-pill.accent {
+      background: var(--accent);
+      color: #0a291e;
+      border-color: var(--accent);
+    }
+
+    /* Timetable Matrix Table */
+    .timetable-wrapper {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .timetable-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.84rem;
+      text-align: left;
+    }
+
+    .timetable-table th {
+      background: #0a291e;
+      color: #ffffff;
+      padding: 10px 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      letter-spacing: 0.5px;
+      border: 1px solid #164634;
+    }
+
+    .timetable-table th.th-time { width: 140px; }
+    .timetable-table th.th-min { width: 75px; text-align: center; }
+    .timetable-table th.th-day { width: 18%; }
+
+    .timetable-table td {
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+      background: #ffffff;
+    }
+
+    .td-time {
+      font-weight: 700;
+      color: #0f172a;
+      white-space: nowrap;
+      font-size: 0.78rem;
+      background: #f8fafc !important;
+    }
+
+    .td-min {
+      text-align: center;
+      font-weight: 600;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      background: #f8fafc !important;
+    }
+
+    /* Break Row */
+    .tr-break td {
+      background: var(--break-bg) !important;
+      color: var(--break-text);
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-size: 0.74rem;
+      padding: 7px 12px;
+    }
+
+    /* Subject Cell Box */
+    .cell-slot {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      height: 100%;
+    }
+
+    .subject-pill {
+      display: block;
+      font-weight: 700;
+      font-size: 0.80rem;
+      color: #0f172a;
+      line-height: 1.25;
+    }
+
+    .teacher-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.70rem;
+      font-weight: 600;
+      color: #475569;
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+      width: fit-content;
+    }
+
+    /* Subject Categories */
+    .cat-quran { background: var(--subj-quran) !important; border-left: 3px solid #10b981; }
+    .cat-quran .subject-pill { color: var(--subj-quran-text); }
+
+    .cat-arabic { background: var(--subj-arabic) !important; border-left: 3px solid #f59e0b; }
+    .cat-arabic .subject-pill { color: var(--subj-arabic-text); }
+
+    .cat-shaf { background: var(--subj-shaf) !important; border-left: 3px solid #8b5cf6; }
+    .cat-shaf .subject-pill { color: var(--subj-shaf-text); }
+
+    .cat-math { background: var(--subj-math) !important; border-left: 3px solid #3b82f6; }
+    .cat-math .subject-pill { color: var(--subj-math-text); }
+
+    .cat-science { background: var(--subj-science) !important; border-left: 3px solid #22c55e; }
+    .cat-science .subject-pill { color: var(--subj-science-text); }
+
+    .cat-english { background: var(--subj-english) !important; border-left: 3px solid #ec4899; }
+    .cat-english .subject-pill { color: var(--subj-english-text); }
+
+    .cat-filipino { background: var(--subj-filipino) !important; border-left: 3px solid #f97316; }
+    .cat-filipino .subject-pill { color: var(--subj-filipino-text); }
+
+    .cat-makabansa { background: var(--subj-makabansa) !important; border-left: 3px solid #14b8a6; }
+    .cat-makabansa .subject-pill { color: var(--subj-makabansa-text); }
+
+    .cat-mapeh { background: var(--subj-mapeh) !important; border-left: 3px solid #a855f7; }
+    .cat-mapeh .subject-pill { color: var(--subj-mapeh-text); }
+
+    /* Print Styles */
+    @media print {
+      @page {
+        size: landscape;
+        margin: 8mm;
+      }
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+      .global-nav, .page-header, .filter-panel, .no-print {
+        display: none !important;
+      }
+      .container {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .timetable-card {
+        border: 1px solid #000000 !important;
+        box-shadow: none !important;
+        page-break-after: always;
+        margin-bottom: 20px;
+      }
+      .timetable-header {
+        background: #0f3d2e !important;
+        color: #ffffff !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .timetable-table th {
+        background: #0a291e !important;
+        color: #ffffff !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .timetable-table td {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .tr-break td {
+        background: #f1f5f9 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="global-nav">
+    <a href="index.html" class="nav-brand">
+      <img src="https://admin.amis.edu.ph/images/amis-logo.png" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><circle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%230f3d2e\' stroke=\'%23c5a059\' stroke-width=\'5\'/><text x=\'50\' y=\'58\' font-family=\'sans-serif\' font-size=\'36\' font-weight=\'bold\' fill=\'%23ffffff\' text-anchor=\'middle\'>AMIS</text></svg>'" alt="AMIS Logo">
+      <div>
+        <div class="brand-title">AL MUNAWWARA ISLAMIC SCHOOL</div>
+        <div class="brand-sub">Academic Operations & Timetables</div>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="class-schedule.html" class="nav-tab active">
+        <i class="fa-solid fa-chalkboard-user"></i> Class Schedule (Official)
+      </a>
+      <a href="faculty-timetable-print.html" class="nav-tab">
+        <i class="fa-solid fa-user-tie"></i> Faculty Timetables
+      </a>
+      <a href="index.html" class="nav-tab">
+        <i class="fa-solid fa-calendar-days"></i> Term Exam Schedule
+      </a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Header Banner -->
+    <div class="page-header">
+      <div class="header-info">
+        <h1>
+          <i class="fa-solid fa-calendar-week" style="color: var(--accent);"></i>
+          Official Weekly Class Timetable
+          <span class="badge-sy">S.Y. 2026–2027</span>
+        </h1>
+        <p>Authoritative Sunday-to-Thursday teaching periods, breaks, and teacher loads for all Elementary, JHS, and SHS sections.</p>
+      </div>
+
+      <div class="action-controls">
+        <button onclick="window.print()" class="btn btn-primary" title="Print currently filtered schedules">
+          <i class="fa-solid fa-print"></i> Print / PDF (Landscape)
+        </button>
+        <button onclick="exportCSV()" class="btn btn-outline" title="Export schedules to CSV">
+          <i class="fa-solid fa-file-excel"></i> Export CSV
+        </button>
+      </div>
+    </div>
+
+    <!-- Filter Strip -->
+    <div class="filter-panel no-print">
+      <div class="filter-group">
+        <label for="filterDept"><i class="fa-solid fa-building-columns"></i> Department</label>
+        <select id="filterDept" class="filter-select" onchange="applyFilters()">
+          <option value="all">All Departments</option>
+          <option value="Elementary">Elementary Department</option>
+          <option value="Junior High School">Junior High School</option>
+          <option value="Senior High School">Senior High School</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filterGrade"><i class="fa-solid fa-graduation-cap"></i> Grade Level</label>
+        <select id="filterGrade" class="filter-select" onchange="applyFilters()">
+          <option value="all">All Grade Levels</option>
+          <option value="Kindergarten 1">Kindergarten 1</option>
+          <option value="Kindergarten 2">Kindergarten 2</option>
+          <option value="Grade 1">Grade 1</option>
+          <option value="Grade 2">Grade 2</option>
+          <option value="Grade 3">Grade 3</option>
+          <option value="Grade 4">Grade 4</option>
+          <option value="Grade 5">Grade 5</option>
+          <option value="Grade 6">Grade 6</option>
+          <option value="Grade 7">Grade 7</option>
+          <option value="Grade 8">Grade 8</option>
+          <option value="Grade 9">Grade 9</option>
+          <option value="Grade 10">Grade 10</option>
+          <option value="Grade 11">Grade 11</option>
+          <option value="Grade 12">Grade 12</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="filterModality"><i class="fa-solid fa-clock"></i> Modality / Shift</label>
+        <select id="filterModality" class="filter-select" onchange="applyFilters()">
+          <option value="all">All Shifts & Modalities</option>
+          <option value="Face to Face">Face-to-Face (F2F)</option>
+          <option value="1st Shift">ODL 1st Shift (12:40 PM)</option>
+          <option value="2nd Shift">ODL 2nd Shift (03:10 PM / 03:40 PM)</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="searchInput"><i class="fa-solid fa-magnifying-glass"></i> Quick Search</label>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search section, subject, teacher..." oninput="applyFilters()">
+      </div>
+    </div>
+
+    <!-- Results Status Bar -->
+    <div id="resultsCount" style="margin-bottom: 16px; font-size: 0.88rem; font-weight: 700; color: var(--text-muted);" class="no-print">
+      Showing all 54 section schedules
+    </div>
+
+    <!-- Container for Rendered Schedules -->
+    <div id="schedulesContainer"></div>
+  </main>
+
+  <script src="class_schedules_data.js"></script>
+  <script>
+    const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
+
+    function getSubjectCategoryClass(subject) {
+      if (!subject) return '';
+      const s = subject.toLowerCase();
+      if (s.includes("qur'an") || s.includes("quran") || s.includes("hadith")) return 'cat-quran';
+      if (s.includes('arabic') || s.includes('lughah')) return 'cat-arabic';
+      if (s.includes('shaf') || s.includes('aqeedah') || s.includes('fiqh') || s.includes('seerah') || s.includes('gmrc') || s.includes('esp') || s.includes('values')) return 'cat-shaf';
+      if (s.includes('math') || s.includes('calculus') || s.includes('statistics')) return 'cat-math';
+      if (s.includes('science') || s.includes('sci') || s.includes('biology') || s.includes('physics') || s.includes('chemistry') || s.includes('earth')) return 'cat-science';
+      if (s.includes('english') || s.includes('reading') || s.includes('oral') || s.includes('literature') || s.includes('eapp')) return 'cat-english';
+      if (s.includes('filipino') || s.includes('kompan') || s.includes('pfpl')) return 'cat-filipino';
+      if (s.includes('makabansa') || s.includes('ap') || s.includes('soc.sci') || s.includes('philo') || s.includes('ucsp') || s.includes('drrr')) return 'cat-makabansa';
+      if (s.includes('mapeh') || s.includes('tle') || s.includes('pe') || s.includes('entrep') || s.includes('e-tech') || s.includes('cpar') || s.includes('mil')) return 'cat-mapeh';
+      return '';
+    }
+
+    function renderSchedules(data) {
+      const container = document.getElementById('schedulesContainer');
+      if (!data || data.length === 0) {
+        container.innerHTML = `
+          <div style="text-align: center; padding: 60px 20px; background: #ffffff; border-radius: 14px; border: 1px dashed #cbd5e1;">
+            <i class="fa-solid fa-calendar-xmark" style="font-size: 2.5rem; color: #94a3b8; margin-bottom: 12px;"></i>
+            <h3 style="font-size: 1.1rem; color: #475569; font-weight: 700;">No matching class schedules found</h3>
+            <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">Try adjusting your filters or search keyword.</p>
+          </div>
+        `;
+        return;
+      }
+
+      let html = '';
+      data.forEach(sec => {
+        html += `
+          <div class="timetable-card">
+            <div class="timetable-header">
+              <div class="section-title">${sec.section_name}</div>
+              <div class="section-meta">
+                <span class="meta-pill accent">${sec.department}</span>
+                <span class="meta-pill">${sec.grade_level}</span>
+                <span class="meta-pill">${sec.shift}</span>
+              </div>
+            </div>
+
+            <div class="timetable-wrapper">
+              <table class="timetable-table">
+                <thead>
+                  <tr>
+                    <th class="th-time">Time</th>
+                    <th class="th-min">Minutes</th>
+                    <th class="th-day">Sunday</th>
+                    <th class="th-day">Monday</th>
+                    <th class="th-day">Tuesday</th>
+                    <th class="th-day">Wednesday</th>
+                    <th class="th-day">Thursday</th>
+                  </tr>
+                </thead>
+                <tbody>
+        `;
+
+        sec.periods.forEach(p => {
+          // Check if break row across all days
+          const firstDay = p.days['Sunday'];
+          const isBreakRow = firstDay && firstDay.is_break;
+
+          if (isBreakRow) {
+            html += `
+              <tr class="tr-break">
+                <td class="td-time">${p.time || '-'}</td>
+                <td class="td-min">${p.minutes || '-'}</td>
+                <td colspan="5">${firstDay.label || 'BREAK / ASSEMBLY'}</td>
+              </tr>
+            `;
+          } else {
+            html += `
+              <tr>
+                <td class="td-time">${p.time || '-'}</td>
+                <td class="td-min">${p.minutes || '-'}</td>
+            `;
+
+            DAYS.forEach(day => {
+              const cell = p.days[day];
+              if (!cell) {
+                html += `<td></td>`;
+              } else if (cell.is_break) {
+                html += `<td style="background: var(--break-bg); text-align: center; font-size: 0.72rem; font-weight: 700; color: #64748b;">${cell.label}</td>`;
+              } else {
+                const catClass = getSubjectCategoryClass(cell.subject);
+                html += `
+                  <td class="${catClass}">
+                    <div class="cell-slot">
+                      <span class="subject-pill">${cell.subject || '-'}</span>
+                      ${cell.teacher ? `<span class="teacher-badge"><i class="fa-solid fa-chalkboard-user"></i> ${cell.teacher}</span>` : ''}
+                      ${cell.extra ? `<span style="font-size: 0.68rem; color: #64748b;">${cell.extra}</span>` : ''}
+                    </div>
+                  </td>
+                `;
+              }
+            });
+
+            html += `</tr>`;
+          }
+        });
+
+        html += `
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+    }
+
+    function applyFilters() {
+      const dept = document.getElementById('filterDept').value;
+      const grade = document.getElementById('filterGrade').value;
+      const modality = document.getElementById('filterModality').value;
+      const q = document.getElementById('searchInput').value.trim().toLowerCase();
+
+      const filtered = OFFICIAL_CLASS_SCHEDULES.filter(s => {
+        if (dept !== 'all' && s.department !== dept) return false;
+        if (grade !== 'all' && s.grade_level !== grade) return false;
+        if (modality !== 'all') {
+          if (modality === 'Face to Face' && !s.modality.includes('Face to Face')) return false;
+          if (modality === '1st Shift' && !s.shift.includes('1st Shift')) return false;
+          if (modality === '2nd Shift' && !s.shift.includes('2nd Shift')) return false;
+        }
+        if (q) {
+          const matchSec = s.section_name.toLowerCase().includes(q);
+          const matchSubj = s.periods.some(p => DAYS.some(d => {
+            const cell = p.days[d];
+            return cell && (
+              (cell.subject && cell.subject.toLowerCase().includes(q)) ||
+              (cell.teacher && cell.teacher.toLowerCase().includes(q))
+            );
+          }));
+          if (!matchSec && !matchSubj) return false;
+        }
+        return true;
+      });
+
+      document.getElementById('resultsCount').textContent = `Showing ${filtered.length} of ${OFFICIAL_CLASS_SCHEDULES.length} section schedules`;
+      renderSchedules(filtered);
+    }
+
+    function exportCSV() {
+      let rows = [["Section", "Department", "Grade Level", "Shift", "Time", "Minutes", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]];
+      OFFICIAL_CLASS_SCHEDULES.forEach(s => {
+        s.periods.forEach(p => {
+          let r = [
+            s.section_name,
+            s.department,
+            s.grade_level,
+            s.shift,
+            p.time,
+            p.minutes
+          ];
+          DAYS.forEach(d => {
+            const cell = p.days[d];
+            if (!cell) r.push('');
+            else if (cell.is_break) r.push(cell.label);
+            else r.push(`${cell.subject}${cell.teacher ? ' (' + cell.teacher + ')' : ''}`);
+          });
+          rows.push(r);
+        });
+      });
+
+      let csvContent = "data:text/csv;charset=utf-8," + rows.map(e => e.map(i => `"${(i || '').toString().replace(/"/g, '""')}"`).join(",")).join("\n");
+      let encodedUri = encodeURI(csvContent);
+      let link = document.createElement("a");
+      link.setAttribute("href", encodedUri);
+      link.setAttribute("download", "AMIS_Official_Class_Schedules_SY_2026-2027.csv");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    // Initial load
+    document.addEventListener('DOMContentLoaded', () => {
+      renderSchedules(OFFICIAL_CLASS_SCHEDULES);
+    });
+  </script>
+</body>
+</html>

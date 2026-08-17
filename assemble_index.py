@@ -1089,6 +1089,9 @@ html_content = f"""<!DOCTYPE html>
           <span class="status-dot"></span>
           <span>100% Conflict-Free Validated</span>
         </div>
+        <a class="btn btn-outline" href="class-schedule.html" target="_blank" style="background:#0f766e; color:#ffffff; font-weight:700; border-color:#0f766e;" title="View Official Weekly Class Schedule (Sunday-Thursday)">
+          Class Schedule (Official)
+        </a>
         <a class="btn btn-outline" href="faculty-timetable-print.html" target="_blank" title="View & Print Official Faculty Weekly Timetable Grid">
           Faculty Timetable (PDF)
         </a>
