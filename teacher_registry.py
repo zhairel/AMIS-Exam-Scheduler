@@ -89,7 +89,10 @@ TEACHER_REGISTRY = [
         "canonical_name": "Ustadh Obaydah",
         "department": "ISAL Faculty",
         "title": "ISAL Teacher",
-        "aliases": ["obaydah", "ust. obaydah", "ustadh obaydah", "ustadz obaydah", "ubaidah", "ustadh ubaidah"]
+        "aliases": [
+            "obaydah", "ust. obaydah", "ustadh obaydah", "ustadz obaydah", "ubaidah", "ustadh ubaidah",
+            "obayda", "ust. obayda", "ustadh obayda", "ustadz obayda", "ubaydah", "ust. ubaydah", "ustadh ubaydah", "ustadz ubaydah"
+        ]
     },
     {
         "id": "tchr_raffy",
@@ -266,7 +269,7 @@ TEACHER_REGISTRY = [
         "canonical_name": "Teacher Katrina",
         "department": "Elementary Faculty",
         "title": "Faculty Member",
-        "aliases": ["teacher katrina", "tchr. katrina", "tchr katrina", "katrina", "tr. katrina"]
+        "aliases": ["teacher katrina", "tchr. katrina", "tchr katrina", "katrina", "tr. katrina", "kat", "tchr. kat", "tchr kat", "teacher kat", "tr. kat"]
     },
     {
         "id": "tchr_keychell",
@@ -329,7 +332,7 @@ TEACHER_REGISTRY = [
         "canonical_name": "Teacher Normylah",
         "department": "High School Faculty",
         "title": "Faculty Member",
-        "aliases": ["teacher normylah", "tchr. normylah", "tchr normylah", "normylah", "normilah", "tr. normylah"]
+        "aliases": ["teacher normylah", "tchr. normylah", "tchr normylah", "normylah", "normilah", "tr. normylah", "normayla", "normaila", "tchr. normayla", "tchr normayla", "teacher normayla"]
     },
     {
         "id": "tchr_radzmia",
@@ -406,7 +409,7 @@ TEACHER_REGISTRY = [
         "canonical_name": "Teacher Wendy",
         "department": "Elementary Faculty",
         "title": "Faculty Member",
-        "aliases": ["teacher wendy", "tchr. wendy", "tchr wendy", "wendy", "windi", "tr. wendy"]
+        "aliases": ["teacher wendy", "tchr. wendy", "tchr wendy", "wendy", "windi", "tr. wendy", "wendelyn", "tchr. wendelyn", "tchr wendelyn", "teacher wendelyn", "wendelin", "tchr. wendelin"]
     },
     {
         "id": "tchr_zara",
@@ -436,9 +439,7 @@ def clean_key(s):
 
 for t_record in TEACHER_REGISTRY:
     tid = t_record["id"]
-    # Register canonical name
     LOOKUP_MAP[clean_key(t_record["canonical_name"])] = tid
-    # Register all aliases
     for a in t_record.get("aliases", []):
         LOOKUP_MAP[clean_key(a)] = tid
 
@@ -447,7 +448,7 @@ def resolve_teacher(raw_str):
         return None
         
     s = raw_str.strip()
-    # Check if raw_str contains 'Subject - Teacher'
+    # Check if raw_str contains 'Subject - Teacher' (e.g. 'Filipino - Tchr. Normayla', 'Math - Tchr. Kat', "Qur'an - Ust. Obayda")
     if ' - ' in s:
         parts = s.split(' - ')
         s = parts[-1].strip()

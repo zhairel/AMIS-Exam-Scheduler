@@ -18,10 +18,17 @@ sections = [s for s in class_sections if 'SECOND SEMESTER' not in s['section_nam
 print(f"Active 1st Term sections for exam scheduling: {len(sections)}")
 
 def clean_exam_subject(subj):
+    if not subj: return None
     s = subj.strip()
+    # If "Subject - Teacher" (e.g. "Filipino - Tchr. Normayla", "Math - Tchr. Kat")
+    if ' - ' in s and not any(k in s.lower() for k in ['qur', 'hadith', 'shaf']):
+        s = s.split(' - ')[0].strip()
+    elif ' — ' in s:
+        s = s.split(' — ')[0].strip()
+        
     s_low = s.lower()
     
-    if any(k in s_low for k in ['recess', 'assembly', 'lunch', 'departure', 'salah', 'transition', 'break', 'homeroom', 'aral']):
+    if any(k in s_low for k in ['recess', 'assembly', 'lunch', 'departure', 'salah', 'transition', 'break', 'homeroom', 'aral', 'consultation', 'consulatation', 'consult']):
         return None
         
     if s_low in ['ct 1', 'ct 2', 'circle time 1', 'circle time 2', 'meeting time', 'wrap-up time', 'circle time']:
@@ -87,11 +94,12 @@ for sec in sections:
                 clean_subj = clean_exam_subject(raw_subj)
                 tchr_name = p.get('teacher', '').strip()
                 tchr_id = p.get('teacher_id')
-                if not tchr_id and tchr_name:
-                    t_res = resolve_teacher(tchr_name)
-                    if t_res:
-                        tchr_id = t_res['id']
-                        tchr_name = t_res['canonical_name']
+                
+                t_res = resolve_teacher(tchr_name) or resolve_teacher(raw_subj)
+                if t_res:
+                    tchr_id = t_res['id']
+                    tchr_name = t_res['canonical_name']
+                    
                 if clean_subj:
                     if clean_subj not in sec_subjs or (not sec_subjs[clean_subj][0] and tchr_name):
                         sec_subjs[clean_subj] = (tchr_name, tchr_id)
@@ -102,11 +110,12 @@ for sec in sections:
                     clean_subj = clean_exam_subject(raw_subj)
                     tchr_name = cell.get('teacher', '').strip()
                     tchr_id = cell.get('teacher_id')
-                    if not tchr_id and tchr_name:
-                        t_res = resolve_teacher(tchr_name)
-                        if t_res:
-                            tchr_id = t_res['id']
-                            tchr_name = t_res['canonical_name']
+                    
+                    t_res = resolve_teacher(tchr_name) or resolve_teacher(raw_subj)
+                    if t_res:
+                        tchr_id = t_res['id']
+                        tchr_name = t_res['canonical_name']
+                        
                     if clean_subj:
                         if clean_subj not in sec_subjs or (not sec_subjs[clean_subj][0] and tchr_name):
                             sec_subjs[clean_subj] = (tchr_name, tchr_id)
