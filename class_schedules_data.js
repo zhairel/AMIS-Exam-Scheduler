@@ -1,11 +1,10 @@
-const OFFICIAL_CLASS_SCHEDULES = [
+window.OFFICIAL_CLASS_SCHEDULES = [
   {
     "id": "sec_1",
     "sheet": "ELEM",
-    "section_name": "FACE TO FACE",
+    "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
     "department": "Elementary",
-    "grade_level": "Grade",
-    "modality": "Face to Face",
+    "grade_level": "Kindergarten 2",
     "shift": "Morning (F2F)",
     "periods": [
       {
@@ -157,7 +156,7 @@ const OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "",
+        "time": "KINDER 1 CLASS SCHEDULE (F2F)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -168,7 +167,291 @@ const OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:00-12:40",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "SALAH",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-1:25 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Circle Time 1",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "1:25-2:10 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Jaisam",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Hadith",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Jaisam",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "2:10-2:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHORT BREAK",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "2:10-2:55 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Circle Time 2",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "03:00:00",
+        "minutes": "-",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "DEPARTURE",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_2",
+    "sheet": "ELEM",
+    "section_name": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+    "department": "Elementary",
+    "grade_level": "Kindergarten 2",
+    "shift": "ODL 1st Shift",
+    "periods": [
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Circle Time 1",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "CT 2",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadha Silfah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "CT 2",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Hadith",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "QUR'AN READING (GENERAL ASSEMBLY)",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Kinder 1 HASAN IBN ALI (1ST SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -181,13 +464,470 @@ const OFFICIAL_CLASS_SCHEDULES = [
     ]
   },
   {
-    "id": "sec_2",
+    "id": "sec_3",
+    "sheet": "ELEM",
+    "section_name": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+    "department": "Elementary",
+    "grade_level": "Kindergarten 2",
+    "shift": "ODL 1st Shift",
+    "periods": [
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Circle Time 1",
+            "teacher": "Tchr. Ayah",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "CT 2",
+            "teacher": "Tchr. Ayah",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadha Silfah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Hadith",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "CT 2",
+            "teacher": "Tchr. Ayah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_4",
+    "sheet": "ELEM",
+    "section_name": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+    "department": "Elementary",
+    "grade_level": "Kindergarten 2",
+    "shift": "ODL 2nd Shift",
+    "periods": [
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "CT 1",
+            "teacher": "Tchr. Ayah",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "CT 1",
+            "teacher": "Tchr. Ayah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadha Silfah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "CT 1",
+            "teacher": "Tchr. Ayah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "CT 1",
+            "teacher": "Tchr. Ayah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:20-6:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "CT 2",
+            "teacher": "Tchr. Ayah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "CT 1",
+            "teacher": "Tchr. Ayah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "CT 2",
+            "teacher": "Tchr. Ayah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Hadith",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Circle Time 1",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:20-6:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "CT 2",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "CT 2",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Hadith",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Bustamante",
+            "extra": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_5",
     "sheet": "ELEM",
     "section_name": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Kindergarten 2",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -335,20 +1075,89 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
-      }
-    ]
-  },
-  {
-    "id": "sec_3",
-    "sheet": "ELEM",
-    "section_name": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-    "department": "Elementary",
-    "grade_level": "Grade 1",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
-    "periods": [
+      },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -364,525 +1173,71 @@ const OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "4:30-5:10 p.m.",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
             "is_break": false,
-            "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
+            "subject": "Circle Time 1",
+            "teacher": "Tchr. Keychell",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:20-6:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "CT 2",
+            "teacher": "Tchr. Keychell",
             "extra": ""
           },
           "Monday": {
             "is_break": false,
-            "subject": "Makabansa",
-            "teacher": "Teacher Norhydie",
+            "subject": "Qur'an",
+            "teacher": "Ustadh Faidh",
             "extra": ""
           },
           "Tuesday": {
             "is_break": false,
-            "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
+            "subject": "CT 2",
+            "teacher": "Tchr. Keychell",
             "extra": ""
           },
           "Wednesday": {
             "is_break": false,
-            "subject": "Makabansa",
-            "teacher": "Teacher Norhydie",
+            "subject": "Hadith",
+            "teacher": "Ustadh Faidh",
             "extra": ""
           },
           "Thursday": {
             "is_break": false,
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadh Faidh",
             "extra": ""
           }
-        }
-      },
-      {
-        "time": "01:20-01:30 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "01:30-02:10 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Language",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Language",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10-02:20 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "02:20-03:00 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "R & L",
-            "teacher": "Teacher Kat",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "R & L",
-            "teacher": "Teacher Kat",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Kat",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00-03:30 p.m.",
-        "minutes": "30 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "HOMEROOM GUIDANCE/ARAL MATH",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      }
-    ]
-  },
-  {
-    "id": "sec_4",
-    "sheet": "ELEM",
-    "section_name": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-    "department": "Elementary",
-    "grade_level": "Grade 1",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
-    "periods": [
-      {
-        "time": "12:30-12:40 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "General Assembly",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "12:40-01:20 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Language",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Makabansa",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Language",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Makabansa",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20-01:30 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "01:30-02:10 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Kat",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10-02:20 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "02:20-03:00 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "R & L",
-            "teacher": "Teacher Kat",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "R & L",
-            "teacher": "Teacher Kat",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00-03:30 p.m.",
-        "minutes": "30 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "HOMEROOM GUIDANCE/ARAL MATH",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      }
-    ]
-  },
-  {
-    "id": "sec_5",
-    "sheet": "ELEM",
-    "section_name": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-    "department": "Elementary",
-    "grade_level": "Grade 2",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
-    "periods": [
-      {
-        "time": "12:30-12:40 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "General Assembly",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "12:40-01:20 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20-01:30 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "01:30-02:10 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10-02:20 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "02:20-03:00 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Makabansa",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Makabansa",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00-03:30 p.m.",
-        "minutes": "30 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "HOMEROOM GUIDANCE/ARAL MATH",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
         }
       }
     ]
@@ -890,14 +1245,51 @@ const OFFICIAL_CLASS_SCHEDULES = [
   {
     "id": "sec_6",
     "sheet": "ELEM",
-    "section_name": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+    "section_name": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 2",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "grade_level": "Kindergarten 1",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -913,141 +1305,116 @@ const OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "4:30-5:10 p.m.",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
             "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
+            "subject": "Circle Time 1",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:20-6:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "CT 2",
+            "teacher": "Teacher Wendy",
             "extra": ""
           },
           "Monday": {
             "is_break": false,
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
+            "subject": "CT 2",
+            "teacher": "Teacher Wendy",
             "extra": ""
           },
           "Tuesday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
-          },
-          "Thursday": {
             "is_break": false,
             "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20-01:30 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "01:30-02:10 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Makabansa",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Marham",
+            "teacher": "Ustadh Hainur",
             "extra": ""
           },
           "Wednesday": {
             "is_break": false,
-            "subject": "Makabansa",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10-02:20 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "02:20-03:00 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Sitti",
+            "subject": "Hadith",
+            "teacher": "Ustadh Hainur",
             "extra": ""
           },
           "Thursday": {
             "is_break": false,
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Alim Bustamante",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
             "extra": ""
           }
         }
@@ -1061,6 +1428,126 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "subject": "HOMEROOM GUIDANCE/ARAL MATH",
             "teacher": "",
             "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Language",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Language",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
           },
           "Monday": null,
           "Tuesday": null,
@@ -1073,11 +1560,2948 @@ const OFFICIAL_CLASS_SCHEDULES = [
   {
     "id": "sec_7",
     "sheet": "ELEM",
+    "section_name": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+    "department": "Elementary",
+    "grade_level": "Kindergarten 2",
+    "shift": "ODL 2nd Shift",
+    "periods": [
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Circle Time 1",
+            "teacher": "Tchr. Keychell",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:20-6:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "CT 2",
+            "teacher": "Tchr. Keychell",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "CT 2",
+            "teacher": "Tchr. Keychell",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Hadith",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Language",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Language",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "R & L",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "R & L",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_8",
+    "sheet": "ELEM",
+    "section_name": "KINDER 1 CLASS SCHEDULE (F2F)",
+    "department": "Elementary",
+    "grade_level": "Kindergarten 1",
+    "shift": "Morning (F2F)",
+    "periods": [
+      {
+        "time": "12:00-12:40",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "SALAH",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-1:25 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Circle Time 1",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "1:25-2:10 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Jaisam",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Hadith",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Jaisam",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "2:10-2:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHORT BREAK",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "2:10-2:55 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Circle Time 2",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "03:00:00",
+        "minutes": "-",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "DEPARTURE",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 1 (FACE TO FACE)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": {
+            "is_break": false,
+            "subject": "HG",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "8:25-9:05 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Language",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "9:05-9:45 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Reading and Literacy",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "9:45-10:00 a.m.",
+        "minutes": "15 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "RECESS",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:00-10:45 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "ARAL Math",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "ARAL Math",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_9",
+    "sheet": "ELEM",
+    "section_name": "GRADE 1 (FACE TO FACE)",
+    "department": "Elementary",
+    "grade_level": "Grade 1",
+    "shift": "Morning (F2F)",
+    "periods": [
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": {
+            "is_break": false,
+            "subject": "HG",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "8:25-9:05 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Language",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "9:05-9:45 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Reading and Literacy",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "9:45-10:00 a.m.",
+        "minutes": "15 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "RECESS",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:00-10:45 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "ARAL Math",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "ARAL Math",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "11:30:00-12:40 p.m.",
+        "minutes": "70 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-1:25 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Abdiraheem",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "1:25-2:10 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "MAKABANSA",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "2:15-3:00 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "3:00-3:30",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 2 (FACE TO FACE)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_10",
+    "sheet": "ELEM",
+    "section_name": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+    "department": "Elementary",
+    "grade_level": "Grade 1",
+    "shift": "ODL 1st Shift",
+    "periods": [
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Language",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Language",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "R & L",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "R & L",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_11",
+    "sheet": "ELEM",
+    "section_name": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+    "department": "Elementary",
+    "grade_level": "Grade 1",
+    "shift": "ODL 1st Shift",
+    "periods": [
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Language",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Language",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "R & L",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "R & L",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_12",
+    "sheet": "ELEM",
+    "section_name": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+    "department": "Elementary",
+    "grade_level": "Grade 1",
+    "shift": "ODL 2nd Shift",
+    "periods": [
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Language",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Language",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:20-6:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "R & L",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "R & L",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_13",
+    "sheet": "ELEM",
+    "section_name": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+    "department": "Elementary",
+    "grade_level": "Grade 1",
+    "shift": "ODL 2nd Shift",
+    "periods": [
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Language",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Language",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "R & L",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "R & L",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:20-6:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_14",
+    "sheet": "ELEM",
+    "section_name": "GRADE 2 (FACE TO FACE)",
+    "department": "Elementary",
+    "grade_level": "Grade 2",
+    "shift": "Morning (F2F)",
+    "periods": [
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "8:25-9:05 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "MAKABANSA",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "9:05-9:45 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Sitti",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "9:45-10:00 a.m.",
+        "minutes": "15 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "RECESS",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:00-10:45 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HG",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "11:30:00-12:40 p.m.",
+        "minutes": "70 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-1:25 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sitti",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "1:25-2:10 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "ARAL Math",
+            "teacher": "Teacher Junaisa",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "ARAL Math",
+            "teacher": "Teacher Junaisa",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "2:15-3:00 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "3:00-3:30",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 3 (FACE TO FACE)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_15",
+    "sheet": "ELEM",
+    "section_name": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+    "department": "Elementary",
+    "grade_level": "Grade 2",
+    "shift": "ODL 1st Shift",
+    "periods": [
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sitti",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Sitti",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sitti",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Sitti",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Zuhora",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Zuhora",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Silfah",
+            "extra": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_16",
+    "sheet": "ELEM",
+    "section_name": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+    "department": "Elementary",
+    "grade_level": "Grade 2",
+    "shift": "ODL 1st Shift",
+    "periods": [
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Abdul Karim",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sitti",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Sitti",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sitti",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Sitti",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Hainur",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Tchr. Normylah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Tchr. Normylah",
+            "extra": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_17",
+    "sheet": "ELEM",
     "section_name": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 2",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -1250,17 +4674,95 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
+      },
+      {
+        "time": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_8",
+    "id": "sec_18",
     "sheet": "ELEM",
     "section_name": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 2",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -1433,17 +4935,372 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
+      },
+      {
+        "time": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_9",
+    "id": "sec_19",
+    "sheet": "ELEM",
+    "section_name": "GRADE 3 (FACE TO FACE)",
+    "department": "Elementary",
+    "grade_level": "Grade 3",
+    "shift": "Morning (F2F)",
+    "periods": [
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "8:25-9:05 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "MAKABANSA",
+            "teacher": "Teacher Wendy",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "9:05-9:45 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Marham",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "9:45-10:00 a.m.",
+        "minutes": "15 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "RECESS",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:00-10:45 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Tchr. Normayla",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "HG",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "11:30:00-12:40 p.m.",
+        "minutes": "70 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-1:25 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadha Silfah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadha Silfah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "1:25-2:10 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Junaisa",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Junaisa",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "ARAL Science",
+            "teacher": "Teacher Junaisa",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ARAL Math",
+            "teacher": "Teacher Junaisa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "2:15-3:00 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Junaisa",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "ARAL Reading",
+            "teacher": "Teacher Junaisa",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "3:00-3:30",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_20",
     "sheet": "ELEM",
     "section_name": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
     "department": "Elementary",
     "grade_level": "Grade 3",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -1616,17 +5473,225 @@ const OFFICIAL_CLASS_SCHEDULES = [
           "Wednesday": null,
           "Thursday": null
         }
+      },
+      {
+        "time": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Qur'an4",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math4",
+            "teacher": "Saimona",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Fil4",
+            "teacher": "Teacher Zuhora",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "AP4",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Math4",
+            "teacher": "Saimona",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Arabic4",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "MAPEH4",
+            "teacher": "Teacher Zuhora",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF4",
+            "teacher": "Abdi",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF4",
+            "teacher": "Abdi",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "GMRC4",
+            "teacher": "Sahdia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Eng4",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Sci4",
+            "teacher": "Saimona",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "TLE4",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Sci4",
+            "teacher": "Saimona",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Eng4",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_10",
+    "id": "sec_21",
     "sheet": "ELEM",
     "section_name": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
     "department": "Elementary",
     "grade_level": "Grade 3",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -1799,17 +5864,235 @@ const OFFICIAL_CLASS_SCHEDULES = [
           "Wednesday": null,
           "Thursday": null
         }
+      },
+      {
+        "time": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Eng3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Fil3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Eng3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Fil3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "SHAF3",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Teacher Zuhora",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Sci3",
+            "teacher": "Tchr. Saimona",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF3",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Sci3",
+            "teacher": "Tchr. Saimona",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math3",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Makabansa3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math3",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Makabansa3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_11",
+    "id": "sec_22",
     "sheet": "ELEM",
     "section_name": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
     "department": "Elementary",
     "grade_level": "Grade 3",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -1986,13 +6269,12 @@ const OFFICIAL_CLASS_SCHEDULES = [
     ]
   },
   {
-    "id": "sec_12",
+    "id": "sec_23",
     "sheet": "ELEM",
     "section_name": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
     "department": "Elementary",
     "grade_level": "Grade 3",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -2165,16 +6447,1427 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
+      },
+      {
+        "time": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math3",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Fil3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math3",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "GMRC3",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English 3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:20-6:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Saimona",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Saimona",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          }
+        }
       }
     ]
   },
   {
-    "id": "sec_13",
+    "id": "sec_24",
+    "sheet": "ELEM",
+    "section_name": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+    "department": "Elementary",
+    "grade_level": "Grade 4",
+    "shift": "ODL 1st Shift",
+    "periods": [
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Qur'an4",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math4",
+            "teacher": "Saimona",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Fil4",
+            "teacher": "Teacher Zuhora",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "AP4",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Math4",
+            "teacher": "Saimona",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Arabic4",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "MAPEH4",
+            "teacher": "Teacher Zuhora",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF4",
+            "teacher": "Abdi",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF4",
+            "teacher": "Abdi",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "GMRC4",
+            "teacher": "Sahdia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Eng4",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Sci4",
+            "teacher": "Saimona",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "TLE4",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Sci4",
+            "teacher": "Saimona",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Eng4",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Abdiraheem",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Abdiraheem",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "FIL",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_25",
+    "sheet": "ELEM",
+    "section_name": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+    "department": "Elementary",
+    "grade_level": "Grade 3",
+    "shift": "ODL 1st Shift",
+    "periods": [
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Eng3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Fil3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Eng3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Fil3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "SHAF3",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Teacher Zuhora",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Sci3",
+            "teacher": "Tchr. Saimona",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF3",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Sci3",
+            "teacher": "Tchr. Saimona",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math3",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Makabansa3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math3",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Makabansa3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "FIL",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Abdiraheem",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Abdiraheem",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_26",
+    "sheet": "ELEM",
+    "section_name": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+    "department": "Elementary",
+    "grade_level": "Grade 3",
+    "shift": "ODL 2nd Shift",
+    "periods": [
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math3",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Fil3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math3",
+            "teacher": "Teacher Jerlyn",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "GMRC3",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English 3",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:20-6:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Saimona",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Saimona",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Makabansa",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Jenny",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:20-6:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Abdiraheem",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Abdiraheem",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_27",
     "sheet": "ELEM",
     "section_name": "GRADE 4 (FACE TO FACE)",
     "department": "Elementary",
     "grade_level": "Grade 4",
-    "modality": "Face to Face",
     "shift": "Morning (F2F)",
     "periods": [
       {
@@ -2458,17 +8151,657 @@ const OFFICIAL_CLASS_SCHEDULES = [
           "Wednesday": null,
           "Thursday": null
         }
+      },
+      {
+        "time": "GRADE 5 (FACE TO FACE)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Jessa",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_14",
+    "id": "sec_28",
+    "sheet": "ELEM",
+    "section_name": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+    "department": "Elementary",
+    "grade_level": "Grade 4",
+    "shift": "ODL 1st Shift",
+    "periods": [
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Abdiraheem",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Abdiraheem",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "FIL",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ust. Raslina",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ust. Raslina",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_29",
+    "sheet": "ELEM",
+    "section_name": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+    "department": "Elementary",
+    "grade_level": "Grade 4",
+    "shift": "ODL 1st Shift",
+    "periods": [
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "FIL",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Abdiraheem",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Abdiraheem",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Jessa",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ust. Raslina",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Jessa",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ust. Raslina",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Tchr. Joanna",
+            "extra": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_30",
     "sheet": "ELEM",
     "section_name": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 4",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -2641,17 +8974,376 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
+      },
+      {
+        "time": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sci5",
+            "teacher": "Saimona",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF5",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Sci5",
+            "teacher": "Saimona",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF5",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "GMRC5",
+            "teacher": "Ustadha Saliha",
+            "extra": ""
+          }
+        }
       }
     ]
   },
   {
-    "id": "sec_15",
+    "id": "sec_31",
+    "sheet": "ELEM",
+    "section_name": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+    "department": "Elementary",
+    "grade_level": "Grade 4",
+    "shift": "ODL 2nd Shift",
+    "periods": [
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Monisa",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:20-6:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Abdiraheem",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Abdiraheem",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Obaydah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Tchr. Sahdia",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_32",
     "sheet": "ELEM",
     "section_name": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
     "department": "Elementary",
     "grade_level": "Grade 4",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -2814,17 +9506,481 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
+      },
+      {
+        "time": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_16",
+    "id": "sec_33",
+    "sheet": "ELEM",
+    "section_name": "GRADE 5 (FACE TO FACE)",
+    "department": "Elementary",
+    "grade_level": "Grade 5",
+    "shift": "Morning (F2F)",
+    "periods": [
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Jessa",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "8:25-9:05 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ust. Ubaydah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ust. Ubaydah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:05-9:45 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Teacher Norhydie",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:45-10:00 a.m.",
+        "minutes": "15 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "RECESS",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:00-10:45 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "ARAL Program",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "ARAL Program",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ARAL Program",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math 5",
+            "teacher": "Tchr. Fhairudz",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "11:30:00-12:40 p.m.",
+        "minutes": "70 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-1:25 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Junaisa",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "1:25-2:10 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Tchr. Keychell",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Tchr. Keychell",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "HG",
+            "teacher": "Tchr. Jessa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "2:15-3:00 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Tchr. Jessa",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Tchr. Keychell",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Tchr. Jessa",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Tchr. Jessa",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Tchr. Jessa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "3:00-3:30",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 6 FACE TO FACE",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Tchr. Normylah",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": {
+            "is_break": false,
+            "subject": "HG",
+            "teacher": "Tchr. Normylah",
+            "extra": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_34",
     "sheet": "ELEM",
     "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 5",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -2997,17 +10153,115 @@ const OFFICIAL_CLASS_SCHEDULES = [
           "Wednesday": null,
           "Thursday": null
         }
+      },
+      {
+        "time": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Tchr. Normylah",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Jessa",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Jessa",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          }
+        }
       }
     ]
   },
   {
-    "id": "sec_17",
+    "id": "sec_35",
     "sheet": "ELEM",
     "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 5",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -3180,17 +10434,115 @@ const OFFICIAL_CLASS_SCHEDULES = [
           "Wednesday": null,
           "Thursday": null
         }
+      },
+      {
+        "time": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Anna",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Kat",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Tchr Normylah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Jessa",
+            "extra": ""
+          }
+        }
       }
     ]
   },
   {
-    "id": "sec_18",
+    "id": "sec_36",
     "sheet": "ELEM",
     "section_name": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 5",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -3353,17 +10705,95 @@ const OFFICIAL_CLASS_SCHEDULES = [
           "Wednesday": null,
           "Thursday": null
         }
+      },
+      {
+        "time": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_19",
+    "id": "sec_37",
     "sheet": "ELEM",
     "section_name": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 5",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -3536,17 +10966,95 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
+      },
+      {
+        "time": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_20",
+    "id": "sec_38",
     "sheet": "ELEM",
     "section_name": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 5",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -3723,13 +11231,12 @@ const OFFICIAL_CLASS_SCHEDULES = [
     ]
   },
   {
-    "id": "sec_21",
+    "id": "sec_39",
     "sheet": "ELEM",
     "section_name": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
     "department": "Elementary",
     "grade_level": "Grade 5",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -3896,13 +11403,319 @@ const OFFICIAL_CLASS_SCHEDULES = [
     ]
   },
   {
-    "id": "sec_22",
+    "id": "sec_40",
+    "sheet": "ELEM",
+    "section_name": "GRADE  6  FACE TO FACE",
+    "department": "Elementary",
+    "grade_level": "Grade",
+    "shift": "Morning (F2F)",
+    "periods": [
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Tchr. Normylah",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": {
+            "is_break": false,
+            "subject": "HG",
+            "teacher": "Tchr. Normylah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "8:25-9:05 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Jessa",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "9:05-9:45 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Teacher Zara",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Teacher Zuhora",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Teacher Zara",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Teacher Zara",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:45-10:00 a.m.",
+        "minutes": "15 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "RECESS",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:00-10:45 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ust. Abdi",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Silfah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Ust. Abdi",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Silfah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Silfah",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Aral",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "11:30:00-12:40 p.m.",
+        "minutes": "70 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-1:25 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Teacher Zuhora",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "AP",
+            "teacher": "Teacher Zuhora",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "1:25-2:10 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Tchr. Wendelyn",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "2:15-3:00 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Ustadh Ersahad",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Faidh",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "ARAL Program",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ARAL Program",
+            "teacher": "Teacher Arvin",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "3:00-3:30",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_41",
     "sheet": "ELEM",
     "section_name": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 6",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -4079,13 +11892,12 @@ const OFFICIAL_CLASS_SCHEDULES = [
     ]
   },
   {
-    "id": "sec_23",
+    "id": "sec_42",
     "sheet": "ELEM",
     "section_name": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 6",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -4262,13 +12074,12 @@ const OFFICIAL_CLASS_SCHEDULES = [
     ]
   },
   {
-    "id": "sec_24",
+    "id": "sec_43",
     "sheet": "ELEM",
     "section_name": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 6",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -4445,13 +12256,12 @@ const OFFICIAL_CLASS_SCHEDULES = [
     ]
   },
   {
-    "id": "sec_25",
+    "id": "sec_44",
     "sheet": "ELEM",
     "section_name": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
     "department": "Elementary",
     "grade_level": "Grade 6",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -4618,12 +12428,11 @@ const OFFICIAL_CLASS_SCHEDULES = [
     ]
   },
   {
-    "id": "sec_26",
+    "id": "sec_45",
     "sheet": "HS SCHED (NEW)",
-    "section_name": "FACE TO FACE",
-    "department": "Elementary",
-    "grade_level": "Grade",
-    "modality": "Face to Face",
+    "section_name": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+    "department": "Junior High School",
+    "grade_level": "Grade 8",
     "shift": "Morning (F2F)",
     "periods": [
       {
@@ -4977,17 +12786,79 @@ const OFFICIAL_CLASS_SCHEDULES = [
           "Wednesday": null,
           "Thursday": null
         }
+      },
+      {
+        "time": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_27",
+    "id": "sec_46",
     "sheet": "HS SCHED (NEW)",
-    "section_name": "1ST SHIFT",
-    "department": "Elementary",
-    "grade_level": "Grade",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "section_name": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+    "department": "Junior High School",
+    "grade_level": "Grade 7",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -5160,17 +13031,219 @@ const OFFICIAL_CLASS_SCHEDULES = [
           "Wednesday": null,
           "Thursday": null
         }
+      },
+      {
+        "time": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Jaisam",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Ethel",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Aniah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Ethel",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Aniah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Silfah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Tchr. Franchette",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          }
+        }
       }
     ]
   },
   {
-    "id": "sec_28",
+    "id": "sec_47",
     "sheet": "HS SCHED (NEW)",
-    "section_name": "2ND SHIFT",
-    "department": "Elementary",
-    "grade_level": "Grade",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "section_name": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+    "department": "Junior High School",
+    "grade_level": "Grade 7",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -5343,17 +13416,1322 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
+      },
+      {
+        "time": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Tchr. Franchette",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Values Ed.",
+            "teacher": "Tchr. Wardah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Hannah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Hannah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_29",
+    "id": "sec_48",
+    "sheet": "HS SCHED (NEW)",
+    "section_name": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+    "department": "Junior High School",
+    "grade_level": "Grade 7",
+    "shift": "ODL 1st Shift",
+    "periods": [
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Jaisam",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Ethel",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Aniah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Teacher Ethel",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Aniah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Silfah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Tchr. Franchette",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Hannah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Values Ed.",
+            "teacher": "Tchr. Wardah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Hannah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Tchr. Franchette",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_49",
+    "sheet": "HS SCHED (NEW)",
+    "section_name": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+    "department": "Junior High School",
+    "grade_level": "Grade 8",
+    "shift": "ODL 2nd Shift",
+    "periods": [
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Tchr. Franchette",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Values Ed.",
+            "teacher": "Tchr. Wardah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Hannah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Hannah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:20-6:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Jaisam",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Tchr. Franchette",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Jaisam",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Hannah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Hannah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_50",
+    "sheet": "HS SCHED (NEW)",
+    "section_name": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+    "department": "Junior High School",
+    "grade_level": "Grade 8",
+    "shift": "Morning (F2F)",
+    "periods": [
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HG",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "8:25-9:05 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Aral.Sci",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:05-9:45 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Aral Math",
+            "teacher": "Sir Moh",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:45-10:00 a.m.",
+        "minutes": "15 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "RECESS",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:00-10:45 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Hannah",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Hannah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Hannah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Hannah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Hannah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Silfah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Silfah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "GMRC",
+            "teacher": "Ustadha Silfah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "11:30:00-12:40 p.m.",
+        "minutes": "70 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-1:25 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Tchr. Franchette",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Tchr. Franchette",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Tchr. Franchette",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "1:25-2:10 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Teacher Halnaisa",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Jaisam",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Ustadh Jaisam",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "2:15-3:00 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Teacher Jairah",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "3:00-3:30",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_51",
     "sheet": "HS SCHED (NEW)",
     "section_name": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
     "department": "Junior High School",
     "grade_level": "Grade 8",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -5526,17 +14904,183 @@ const OFFICIAL_CLASS_SCHEDULES = [
           "Wednesday": null,
           "Thursday": null
         }
+      },
+      {
+        "time": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Tchr. Angeleni",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ust. Raslina",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Sir Moh",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_30",
+    "id": "sec_52",
     "sheet": "HS SCHED (NEW)",
     "section_name": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
     "department": "Junior High School",
     "grade_level": "Grade 8",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -5709,17 +15253,608 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
+      },
+      {
+        "time": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ESP",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          }
+        }
       }
     ]
   },
   {
-    "id": "sec_31",
+    "id": "sec_53",
+    "sheet": "HS SCHED (NEW)",
+    "section_name": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+    "department": "Junior High School",
+    "grade_level": "Grade 10",
+    "shift": "Morning (F2F)",
+    "periods": [
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "ENGLISH",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "ENGLISH",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "ENGLISH",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ENGLISH",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "8:25-9:05 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:05-9:45 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Homeroom",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:45-10:00 a.m.",
+        "minutes": "15 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "RECESS",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:00-10:45 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Aral Math",
+            "teacher": "Sir Moh",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "11:30:00-12:40 p.m.",
+        "minutes": "70 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-1:25 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "ESP",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "ESP",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "ESP",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "1:25-2:10 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Sir Moh",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Sir Moh",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Sir Moh",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "2:15-3:00 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Tchr. Angeleni",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Tchr. Angeleni",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Tchr. Angeleni",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "3:00-3:30",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_54",
     "sheet": "HS SCHED (NEW)",
     "section_name": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
     "department": "Junior High School",
     "grade_level": "Grade 9",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -5892,17 +16027,183 @@ const OFFICIAL_CLASS_SCHEDULES = [
           "Wednesday": null,
           "Thursday": null
         }
+      },
+      {
+        "time": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Tchr. Angeleni",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Bustamante",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Sir Moh",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_32",
+    "id": "sec_55",
     "sheet": "HS SCHED (NEW)",
     "section_name": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
     "department": "Junior High School",
     "grade_level": "Grade 9",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -6075,17 +16376,564 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
+      },
+      {
+        "time": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Sir Moh",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Tchr. Angeleni",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_33",
+    "id": "sec_56",
+    "sheet": "HS SCHED (NEW)",
+    "section_name": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+    "department": "Junior High School",
+    "grade_level": "Grade 9",
+    "shift": "ODL 2nd Shift",
+    "periods": [
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Sir Moh",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Ustadh Ali",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Tchr. Angeleni",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:20-6:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "ESP",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Bustamante",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Sir Moh",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_57",
     "sheet": "HS SCHED (NEW)",
     "section_name": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
     "department": "Junior High School",
     "grade_level": "Grade 10",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -6258,17 +17106,1642 @@ const OFFICIAL_CLASS_SCHEDULES = [
           "Wednesday": null,
           "Thursday": null
         }
+      },
+      {
+        "time": "GRADE 11 (1ST SHIFT GIRLS)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Gen Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "LCS",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "LCS",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "LCS",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          }
+        }
       }
     ]
   },
   {
-    "id": "sec_34",
+    "id": "sec_58",
+    "sheet": "HS SCHED (NEW)",
+    "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+    "department": "Junior High School",
+    "grade_level": "Grade 10",
+    "shift": "Morning (F2F)",
+    "periods": [
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HG",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "8:25-9:05 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:05-9:45 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Tchr. Angeleni",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Tchr. Angeleni",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Tchr. Angeleni",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:45-10:00 a.m.",
+        "minutes": "15 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "RECESS",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:00-10:45 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Sir Moh",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Sir Moh",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Sir Moh",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "ENGLISH",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "ENGLISH",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "ENGLISH",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "ENGLISH",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ENGLISH",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "11:30:00-12:40 p.m.",
+        "minutes": "70 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-1:25 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Aral Math",
+            "teacher": "Sir Moh",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "1:25-2:10 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "ESP",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "ESP",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "ESP",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "2:15-3:00 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:00-3:30",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 11 (FACE TO FACE)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_59",
+    "sheet": "HS SCHED (NEW)",
+    "section_name": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+    "department": "Junior High School",
+    "grade_level": "Grade 10",
+    "shift": "ODL 2nd Shift",
+    "periods": [
+      {
+        "time": "03:00-03:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:30-3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:40-4:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Bustamante",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "4:20-4:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "4:30-5:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "MAPEH",
+            "teacher": "Sir Moh",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "English",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Soc.Sci",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "5:10-5:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "5:20-6:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Filipino",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "TLE",
+            "teacher": "Tchr. Angeleni",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Sci",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "ESP",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "GRADE 11 (2ND SHIFT BOYS)",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "2:20-3:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "LCS",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "3:00-3:30 p.m.",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "LCS 11 2nd shift",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "HOMEROOM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": {
+            "is_break": false,
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "3:30 -3:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_60",
+    "sheet": "HS SCHED (NEW)",
+    "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+    "department": "Senior High School",
+    "grade_level": "Grade 11",
+    "shift": "ODL 1st Shift",
+    "periods": [
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "01:20-01:30 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30-02:10 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Gen Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:10-02:20 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "Transition",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "LCS",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "LCS",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "LCS",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "03:00-03:10 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "BREAK",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "03:00-03:40 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Gen Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "3:50 - 4:30 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "HOMEROOM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": {
+            "is_break": false,
+            "subject": "Gen Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-01:20 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Gen. Physics 1",
+            "teacher": "Tchr. Aniah",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Gen. Physics 1",
+            "teacher": "Tchr. Aniah",
+            "extra": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_61",
+    "sheet": "HS SCHED (NEW)",
+    "section_name": "GRADE 11 (FACE TO FACE)",
+    "department": "Senior High School",
+    "grade_level": "Grade 11",
+    "shift": "Morning (F2F)",
+    "periods": [
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "8:25-9:05 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "LCS",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "LCS",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "LCS",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "LCS",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "LCS",
+            "teacher": "Tchr. Norhaima",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:05-9:45 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Gen Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Gen Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Gen Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Gen Math",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Gen Math/HR",
+            "teacher": "Tchr. Jhelyn",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:45-10:00 a.m.",
+        "minutes": "15 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "RECESS",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:00-10:45 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "HOMEROOM",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "11:30:00-12:40 p.m.",
+        "minutes": "70 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-1:25 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "1:25-2:10 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "2:15-3:00 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Gen Bio 1",
+            "teacher": "Tchr. Radzmia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "HOMEROOM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "HOMEROOM",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "3:00-3:30",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "GRADE 12 - SUHAYB AR-RUMI",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_62",
     "sheet": "HS SCHED (NEW)",
     "section_name": "GRADE 11 (2ND SHIFT BOYS)",
     "department": "Senior High School",
     "grade_level": "Grade 11",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "2:20-3:00 p.m.",
@@ -6486,12 +18959,11 @@ const OFFICIAL_CLASS_SCHEDULES = [
     ]
   },
   {
-    "id": "sec_35",
+    "id": "sec_63",
     "sheet": "HS SCHED (NEW)",
     "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
     "department": "Senior High School",
     "grade_level": "Grade 12",
-    "modality": "Face to Face",
     "shift": "Morning (F2F)",
     "periods": [
       {
@@ -6736,12 +19208,11 @@ const OFFICIAL_CLASS_SCHEDULES = [
     ]
   },
   {
-    "id": "sec_36",
+    "id": "sec_64",
     "sheet": "HS SCHED (NEW)",
     "section_name": "GRADE 12 - SUHAYB AR-RUMI",
     "department": "Senior High School",
     "grade_level": "Grade 12",
-    "modality": "Face to Face",
     "shift": "Morning (F2F)",
     "periods": [
       {
@@ -7099,2020 +19570,12 @@ const OFFICIAL_CLASS_SCHEDULES = [
     ]
   },
   {
-    "id": "sec_37",
-    "sheet": "SHS",
-    "section_name": "GRADE 12 - SUHAYB AR-RUMI",
-    "department": "Senior High School",
-    "grade_level": "Grade 12",
-    "modality": "Face to Face",
-    "shift": "Morning (F2F)",
-    "periods": [
-      {
-        "time": "7:30-7:40 a.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "GENERAL ASSEMBLY",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "7:40-8:25 a.m.",
-        "minutes": "45 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "8:25-9:05 a.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "9:05-9:45 a.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "MIL",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "MIL",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "MIL",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "MIL",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "MIL",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "9:45-10:00 a.m.",
-        "minutes": "15 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "RECESS",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "10:00-10:45 a.m.",
-        "minutes": "45 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "21st Lit.",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "21st Lit.",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "21st Lit.",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "21st Lit.",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "21st Lit.",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "10:45:11:30 a.m.",
-        "minutes": "45 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "11:30:00-12:40 p.m.",
-        "minutes": "70 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "LUNCH and SALAH",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "12:40-1:25 p.m.",
-        "minutes": "45 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "PE 12",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Research Consultation",
-            "teacher": "",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "PE 12",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "PE 12",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "HOMEROOM",
-            "teacher": "",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "1:25-2:10 p.m.",
-        "minutes": "45 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Gen Bio 1 - Tchr. Radzmia+",
-            "teacher": "",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "2:15-3:00 p.m.",
-        "minutes": "45 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Research Consultation",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Alim Dipatuan",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Alim Dipatuan",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "3:00-3:30",
-        "minutes": "30 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "SALAH & DEPARTURE",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      }
-    ]
-  },
-  {
-    "id": "sec_38",
-    "sheet": "HS SCHED",
-    "section_name": "FACE TO FACE",
-    "department": "Elementary",
-    "grade_level": "Grade",
-    "modality": "Face to Face",
-    "shift": "Morning (F2F)",
-    "periods": [
-      {
-        "time": "7:30-7:40 a.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "GENERAL ASSEMBLY",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "7:40-8:25 a.m.",
-        "minutes": "45 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "HG",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "8:25-9:05 a.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "9:05-9:45 a.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Ahmad",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Ahmad",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Ahmad",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Ahmad",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Ahmad",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "9:45-10:00 a.m.",
-        "minutes": "15 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "RECESS",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "10:00-10:45 a.m.",
-        "minutes": "45 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "MAPEH",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Aral English",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "10:45:11:30 a.m.",
-        "minutes": "45 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "11:30:00-12:40 p.m.",
-        "minutes": "70 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "LUNCH and SALAH",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "12:40-1:25 p.m.",
-        "minutes": "45 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "1:25-2:10 p.m.",
-        "minutes": "45 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "MAPEH",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "MAPEH",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "2:15-3:00 p.m.",
-        "minutes": "45 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "GMRC",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "ARAL Math",
-            "teacher": "Teacher Ahmad",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "GMRC",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "ARAL - Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "GMRC",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "3:00-3:30",
-        "minutes": "30 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "SALAH & DEPARTURE",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      }
-    ]
-  },
-  {
-    "id": "sec_39",
-    "sheet": "HS SCHED",
-    "section_name": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
-    "department": "Junior High School",
-    "grade_level": "Grade 8",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
-    "periods": [
-      {
-        "time": "12:30-12:40 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "General Assembly",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "12:40-01:20 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Values Ed.",
-            "teacher": "Tchr. Wardah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20-01:30 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "01:30-02:10 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10-02:20 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "02:20-03:00 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "MAPEH",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00-03:30 p.m.",
-        "minutes": "30 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      }
-    ]
-  },
-  {
-    "id": "sec_40",
-    "sheet": "HS SCHED",
-    "section_name": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-    "department": "Junior High School",
-    "grade_level": "Grade 8",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
-    "periods": [
-      {
-        "time": "03:00-03:30 p.m.",
-        "minutes": "30 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "3:30-3:40 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "General Assembly",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "3:40-4:20 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Values Ed.",
-            "teacher": "Tchr. Wardah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "4:20-4:30 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "4:30-5:10 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "MAPEH",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "5:10-5:20 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "5:20-6:00 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          }
-        }
-      }
-    ]
-  },
-  {
-    "id": "sec_41",
-    "sheet": "HS SCHED",
-    "section_name": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-    "department": "Junior High School",
-    "grade_level": "Grade 8",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
-    "periods": [
-      {
-        "time": "03:00-03:30 p.m.",
-        "minutes": "30 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "3:30-3:40 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "General Assembly",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "3:40-4:20 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "MAPEH",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "4:20-4:30 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "4:30-5:10 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "5:10-5:20 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "5:20-6:00 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Values Ed.",
-            "teacher": "Tchr. Wardah",
-            "extra": ""
-          }
-        }
-      }
-    ]
-  },
-  {
-    "id": "sec_42",
-    "sheet": "HS SCHED",
-    "section_name": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-    "department": "Junior High School",
-    "grade_level": "Grade 9",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
-    "periods": [
-      {
-        "time": "12:30-12:40 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "General Assembly",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "12:40-01:20 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20-01:30 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "01:30-02:10 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "TLE",
-            "teacher": "Teacher Shanen",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10-02:20 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "02:20-03:00 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "MAPEH",
-            "teacher": "Teacher Shanen",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "ESP",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00-03:30 p.m.",
-        "minutes": "30 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      }
-    ]
-  },
-  {
-    "id": "sec_43",
-    "sheet": "HS SCHED",
-    "section_name": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-    "department": "Junior High School",
-    "grade_level": "Grade 9",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
-    "periods": [
-      {
-        "time": "03:00-03:30 p.m.",
-        "minutes": "30 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "3:30-3:40 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "General Assembly",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "3:40-4:20 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "4:20-4:30 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "4:30-5:10 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "ESP",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "5:10-5:20 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "5:20-6:00 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "TLE",
-            "teacher": "Teacher Shanen",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "MAPEH",
-            "teacher": "Teacher Shanen",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          }
-        }
-      }
-    ]
-  },
-  {
-    "id": "sec_44",
-    "sheet": "HS SCHED",
-    "section_name": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-    "department": "Junior High School",
-    "grade_level": "Grade 10",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
-    "periods": [
-      {
-        "time": "12:30-12:40 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "General Assembly",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "12:40-01:20 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Ustad Jaesam",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "ESP",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Math 10",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "TLE",
-            "teacher": "Teacher Shanen",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Math 10",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20-01:30 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "01:30-02:10 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "MAPEH",
-            "teacher": "Teacher Shanen",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10-02:20 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "02:20-03:00 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00-03:30 p.m.",
-        "minutes": "30 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      }
-    ]
-  },
-  {
-    "id": "sec_45",
-    "sheet": "HS SCHED",
-    "section_name": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-    "department": "Junior High School",
-    "grade_level": "Grade 10",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
-    "periods": [
-      {
-        "time": "03:00-03:30 p.m.",
-        "minutes": "30 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "3:30-3:40 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "General Assembly",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "3:40-4:20 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Math",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "4:20-4:30 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "4:30-5:10 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "TLE",
-            "teacher": "Teacher Shanen",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "MAPEH",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "5:10-5:20 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "5:20-6:00 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "English",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "ESP",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          }
-        }
-      }
-    ]
-  },
-  {
-    "id": "sec_46",
+    "id": "sec_85",
     "sheet": "HS SCHED",
     "section_name": "GRADE 11 (1ST SHIFT) GIRLS",
     "department": "Senior High School",
     "grade_level": "Grade 11",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -9295,17 +19758,79 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
+      },
+      {
+        "time": "GRADE 12 ABU MUSA AL- ASHARI (GIRLS) - 1ST SHIFT",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_47",
+    "id": "sec_86",
     "sheet": "HS SCHED",
     "section_name": "GRADE 11 (2ND SHIFT) BOYS",
     "department": "Senior High School",
     "grade_level": "Grade 11",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -9492,13 +20017,350 @@ const OFFICIAL_CLASS_SCHEDULES = [
     ]
   },
   {
-    "id": "sec_48",
+    "id": "sec_87",
+    "sheet": "HS SCHED",
+    "section_name": "GRADE 12 (FACE TO FACE)",
+    "department": "Senior High School",
+    "grade_level": "Grade 12",
+    "shift": "Morning (F2F)",
+    "periods": [
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "GeneraL Physics 12",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "8:25-9:05 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Biology 12",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Biology 12",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Biology 12",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Biology 12",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:05-9:45 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Practical Research 2 F2F",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Consultation Time (Research) F2F",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Practical Research 2 F2F",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Consultation Time (Research) F2F",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Practical Research 2 F2F",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:45-10:00 a.m.",
+        "minutes": "15 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "RECESS",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:00-10:45 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "UCSP",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "UCSP",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "UCSP",
+            "teacher": "Teacher Shirehan",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "MIL 12",
+            "teacher": "Teacher Thea",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "MIL 12",
+            "teacher": "Teacher Thea",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "MIL 12",
+            "teacher": "Teacher Thea",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "11:30:00-12:40 p.m.",
+        "minutes": "70 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-1:25 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "21st Literature",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "PE 12",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "21st Literature",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "PE 12",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "21st Literature",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "1:25-2:10 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Consultation Time (Research) F2F",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Consultation Time (Research) F2F",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Consultation Time (Research) F2F",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Consultation Time (Research) F2F",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "2:15-3:00 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": {
+            "is_break": false,
+            "subject": "PFPL",
+            "teacher": "Teacher Thea",
+            "extra": ""
+          },
+          "Tuesday": null,
+          "Wednesday": {
+            "is_break": false,
+            "subject": "PFPL",
+            "teacher": "Teacher Thea",
+            "extra": ""
+          },
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:00-3:30",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_88",
     "sheet": "HS SCHED",
     "section_name": "GRADE 12 ABU MUSA AL- ASHARI (GIRLS) - 1ST SHIFT",
     "department": "Senior High School",
     "grade_level": "Grade 12",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -9671,17 +20533,27 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
+      },
+      {
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_49",
+    "id": "sec_89",
     "sheet": "HS SCHED",
     "section_name": "GRADE 12 SUHAYB AR-RUMI (BOYS) - 2ND SHIFT",
     "department": "Senior High School",
     "grade_level": "Grade 12",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -9844,16 +20716,26 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
+      },
+      {
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_50",
+    "id": "sec_90",
     "sheet": "HS SCHED",
     "section_name": "GRADE 11 (FACE TO FACE) - SECOND SEMESTER",
     "department": "Senior High School",
     "grade_level": "Grade 11",
-    "modality": "Face to Face",
     "shift": "Morning (F2F)",
     "periods": [
       {
@@ -10152,17 +21034,79 @@ const OFFICIAL_CLASS_SCHEDULES = [
           "Wednesday": null,
           "Thursday": null
         }
+      },
+      {
+        "time": "GRADE 12 (FACE TO FACE) - SECOND SEMESTER",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_51",
+    "id": "sec_91",
     "sheet": "HS SCHED",
     "section_name": "GRADE 11 (1ST SHIFT) GIRLS - SECOND SEMESTER",
     "department": "Senior High School",
     "grade_level": "Grade 11",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -10345,17 +21289,79 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
+      },
+      {
+        "time": "GRADE 12 ABU MUSA AL- ASHARI (GIRLS) - 1ST SHIFT - SECOND SEMESTER",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "12:30-12:40 p.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "General Assembly",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
-    "id": "sec_52",
+    "id": "sec_92",
     "sheet": "HS SCHED",
     "section_name": "GRADE 11 (2ND SHIFT) BOYS - SECOND SEMESTER",
     "department": "Senior High School",
     "grade_level": "Grade 11",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
+    "shift": "ODL 2nd Shift",
     "periods": [
       {
         "time": "03:00-03:30 p.m.",
@@ -10538,17 +21544,441 @@ const OFFICIAL_CLASS_SCHEDULES = [
             "extra": ""
           }
         }
+      },
+      {
+        "time": "GRADE 12 SUHAYB AR-RUMI (BOYS) - 2ND SHIFT",
+        "minutes": "",
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "Time",
+        "minutes": "Minutes",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Sunday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Monday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Tuesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Wednesday",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Thursday",
+            "teacher": "",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "02:20-03:00 p.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": {
+            "is_break": false,
+            "subject": "EAPP",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Consultation Time (Research)",
+            "teacher": "",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Entrep",
+            "teacher": "Teacher Shanen",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Entrep",
+            "teacher": "Teacher Shanen",
+            "extra": ""
+          }
+        }
       }
     ]
   },
   {
-    "id": "sec_53",
+    "id": "sec_93",
+    "sheet": "HS SCHED",
+    "section_name": "GRADE 12 (FACE TO FACE) - SECOND SEMESTER",
+    "department": "Senior High School",
+    "grade_level": "Grade 12",
+    "shift": "Morning (F2F)",
+    "periods": [
+      {
+        "time": "7:30-7:40 a.m.",
+        "minutes": "10 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "7:40-8:25 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "EAPP",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "General Physics 2",
+            "teacher": "Teacher Abegail",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "EAPP",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "General Physics 2",
+            "teacher": "Teacher Abegail",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "EAPP",
+            "teacher": "Teacher Sophia",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "8:25-9:05 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Biology 2",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Biology 2",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Biology 2",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Biology 2",
+            "teacher": "Teacher Rowena",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:05-9:45 a.m.",
+        "minutes": "40 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Research/Capstone Project",
+            "teacher": "Teacher Thea",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Consultation Time (Research) F2F",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Research/Capstone Project",
+            "teacher": "Teacher Thea",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Consultation Time (Research) F2F",
+            "teacher": "",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Research/Capstone Project",
+            "teacher": "Teacher Thea",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "9:45-10:00 a.m.",
+        "minutes": "15 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "RECESS",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:00-10:45 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Entrepreneurship",
+            "teacher": "Tchr.",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "Entrepreneurship",
+            "teacher": "Tchr.",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "Entrepreneurship",
+            "teacher": "Tchr.",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "General Physics 2",
+            "teacher": "Teacher Abegail",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "General Physics 2",
+            "teacher": "Teacher Abegail",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "General Physics 2",
+            "teacher": "Teacher Abegail",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "11:30:00-12:40 p.m.",
+        "minutes": "70 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40-1:25 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": null,
+          "Monday": {
+            "is_break": false,
+            "subject": "PE",
+            "teacher": "Sir Moh",
+            "extra": ""
+          },
+          "Tuesday": null,
+          "Wednesday": {
+            "is_break": false,
+            "subject": "PE",
+            "teacher": "Sir Moh",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "CPAR",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "1:25-2:10 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "Consultation Time (Research) F2F",
+            "teacher": "",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "Consultation Time (Research) F2F",
+            "teacher": "",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "extra": ""
+          },
+          "Thursday": {
+            "is_break": false,
+            "subject": "3I's",
+            "teacher": "Teacher Thea",
+            "extra": ""
+          }
+        }
+      },
+      {
+        "time": "2:15-3:00 p.m.",
+        "minutes": "45 min.",
+        "days": {
+          "Sunday": {
+            "is_break": false,
+            "subject": "CPAR",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          },
+          "Monday": {
+            "is_break": false,
+            "subject": "3I's",
+            "teacher": "Teacher Thea",
+            "extra": ""
+          },
+          "Tuesday": {
+            "is_break": false,
+            "subject": "CPAR",
+            "teacher": "Teacher Nof",
+            "extra": ""
+          },
+          "Wednesday": {
+            "is_break": false,
+            "subject": "3I's",
+            "teacher": "Teacher Thea",
+            "extra": ""
+          },
+          "Thursday": null
+        }
+      },
+      {
+        "time": "3:00-3:30",
+        "minutes": "30 min.",
+        "days": {
+          "Sunday": {
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "subject": "",
+            "teacher": ""
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_94",
     "sheet": "HS SCHED",
     "section_name": "GRADE 12 ABU MUSA AL- ASHARI (GIRLS) - 1ST SHIFT - SECOND SEMESTER",
     "department": "Senior High School",
     "grade_level": "Grade 12",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "1st Shift",
+    "shift": "ODL 1st Shift",
     "periods": [
       {
         "time": "12:30-12:40 p.m.",
@@ -10743,203 +22173,6 @@ const OFFICIAL_CLASS_SCHEDULES = [
         }
       }
     ]
-  },
-  {
-    "id": "sec_54",
-    "sheet": "HS SCHED",
-    "section_name": "GRADE 12 SUHAYB AR-RUMI (BOYS) - 2ND SHIFT",
-    "department": "Senior High School",
-    "grade_level": "Grade 12",
-    "modality": "Online Distance Learning (ODL)",
-    "shift": "2nd Shift",
-    "periods": [
-      {
-        "time": "02:20-03:00 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": null,
-          "Monday": {
-            "is_break": false,
-            "subject": "EAPP",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Consultation Time (Research)",
-            "teacher": "",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Entrep",
-            "teacher": "Teacher Shanen",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Entrep",
-            "teacher": "Teacher Shanen",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "3:30-3:40 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "General Assembly",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "3:40-4:20 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Qur'an",
-            "teacher": "Alim Dipatuan",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Research/Capstone Project",
-            "teacher": "",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "General Physics 2",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "General Physics 2",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "4:20-4:30 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "4:30-5:10 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "Research/Capstone Project",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "PE 12",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "Biology 2",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "Biology 2",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "5:10-5:20 p.m.",
-        "minutes": "10 min.",
-        "days": {
-          "Sunday": {
-            "is_break": true,
-            "label": "Transition",
-            "subject": "",
-            "teacher": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "5:20-6:00 p.m.",
-        "minutes": "40 min.",
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "subject": "3is",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "subject": "CPAR",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "subject": "CPAR",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "subject": "EAPP",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "subject": "3is",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          }
-        }
-      }
-    ]
   }
 ];
+const OFFICIAL_CLASS_SCHEDULES = window.OFFICIAL_CLASS_SCHEDULES;

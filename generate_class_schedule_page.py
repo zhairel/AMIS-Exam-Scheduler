@@ -114,7 +114,8 @@ body {
   font-size: 13.5px;
   outline: none;
   cursor: pointer;
-  min-width: 300px;
+  min-width: 320px;
+  max-width: 450px;
 }
 
 .btn-action {
@@ -220,9 +221,9 @@ body {
 }
 
 .teacher-name-title {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 900;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -269,7 +270,7 @@ body {
   text-align: center;
   font-size: 12px;
   vertical-align: middle;
-  height: 42px;
+  height: 40px;
 }
 
 .timetable-grid tbody td.cell-time {
@@ -304,7 +305,7 @@ body {
 /* Occupied Class Cell */
 .timetable-grid tbody td.cell-class {
   font-weight: 850;
-  line-height: 1.3;
+  line-height: 1.25;
 }
 
 .cell-class-inner {
@@ -316,15 +317,15 @@ body {
 }
 
 .cell-subject-sec {
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 900;
   letter-spacing: -0.01em;
 }
 
 .cell-mod-badge {
   font-size: 10px;
-  font-weight: 700;
-  opacity: 0.9;
+  font-weight: 800;
+  opacity: 0.95;
   text-transform: uppercase;
 }
 
@@ -401,12 +402,12 @@ body {
   }
 
   .timetable-grid tbody td {
-    height: 32px !important;
+    height: 30px !important;
     padding: 4px 4px !important;
   }
 
   .cell-subject-sec {
-    font-size: 10.5px !important;
+    font-size: 10px !important;
   }
 
   .cell-mod-badge {
@@ -547,18 +548,29 @@ body {
     return { bg: '#f1f5f9', border: '#cbd5e1', text: '#1e293b' };
   }
 
-  function init() {
+  async function init() {
     if (window.OFFICIAL_CLASS_SCHEDULES && window.OFFICIAL_CLASS_SCHEDULES.length > 0) {
       SECTIONS_DATA = window.OFFICIAL_CLASS_SCHEDULES;
+    } else if (typeof OFFICIAL_CLASS_SCHEDULES !== 'undefined' && OFFICIAL_CLASS_SCHEDULES.length > 0) {
+      SECTIONS_DATA = OFFICIAL_CLASS_SCHEDULES;
+    } else {
+      try {
+        const resp = await fetch('class_schedules_data.json?v=' + Date.now());
+        if (resp.ok) {
+          SECTIONS_DATA = await resp.json();
+        }
+      } catch (e) {
+        console.warn('Failed to load JSON:', e);
+      }
     }
 
-    if (SECTIONS_DATA.length === 0) {
+    if (!SECTIONS_DATA || SECTIONS_DATA.length === 0) {
       gridBody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding:30px; color:#64748b;">No class schedule data available.</td></tr>';
       return;
     }
 
     // Populate Select Box
-    sectionSelect.innerHTML = SECTIONS_DATA.map((s, idx) => `<option value="${idx}">${esc(s.section_name)}</option>`).join('');
+    sectionSelect.innerHTML = SECTIONS_DATA.map((s, idx) => `<option value="${idx}">[${esc(s.department)}] ${esc(s.section_name)}</option>`).join('');
 
     // Check URL Param ?section=...
     const urlParams = new URLSearchParams(window.location.search);
@@ -622,7 +634,7 @@ body {
               <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
                 <div class="cell-class-inner">
                   <span class="cell-subject-sec">${esc(cell.subject)}</span>
-                  ${cell.teacher ? `<span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(cell.teacher)}</span>` : ''}
+                  ${cell.teacher ? `<span class="cell-mod-badge" style="color:${color.text};">${esc(cell.teacher)}</span>` : ''}
                   ${cell.extra ? `<span style="font-size:9.5px; opacity:0.8;">${esc(cell.extra)}</span>` : ''}
                 </div>
               </td>
@@ -637,7 +649,11 @@ body {
     gridBody.innerHTML = html;
   }
 
-  document.addEventListener('DOMContentLoaded', init);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 })();
 </script>
 </body>
@@ -647,5 +663,4 @@ body {
 with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/class-schedule.html', 'w', encoding='utf-8') as f:
     f.write(HTML_CONTENT)
 
-print("Updated class-schedule.html to match the exact existing design of faculty-timetable-print.html!")
-
+print("Regenerated class-schedule.html with robust async initialization and dataset bindings!")
