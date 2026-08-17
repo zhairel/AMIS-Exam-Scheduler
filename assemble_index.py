@@ -1078,17 +1078,13 @@ html_content = f"""<!DOCTYPE html>
   <header class="app-header">
     <div class="header-inner">
       <div class="brand-section">
-        <div class="brand-logo">A</div>
+        <img src="amis_logo.png" alt="AMIS Logo" style="width:48px; height:48px; border-radius:50%; object-fit:contain; background:#ffffff; padding:2px; box-shadow:0 3px 10px rgba(0,0,0,0.15);">
         <div class="brand-text">
           <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
-          <p>Master Term Examination Timetable • S.Y. 2026–2027 • Developed by Software Engineer Mon Zhairel Lingasa</p>
+          <p>1st Term Examination Schedule • S.Y. 2026–2027 • Approved Option C (Teacher-Priority)</p>
         </div>
       </div>
       <div class="header-actions">
-        <div class="status-badge">
-          <span class="status-dot"></span>
-          <span>100% Conflict-Free Validated</span>
-        </div>
         <a class="btn btn-outline" href="index.html" style="background:#ffffff; color:#0f172a; font-weight:700; border-color:#cbd5e1;" title="Back to Schedule Home">
           <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           Schedule Home
@@ -1096,53 +1092,11 @@ html_content = f"""<!DOCTYPE html>
         <a class="btn btn-outline" href="class-schedule.html" target="_blank" style="background:#0f766e; color:#ffffff; font-weight:700; border-color:#0f766e;" title="View Official Weekly Class Schedule (Sunday-Thursday)">
           Class Schedule (Official)
         </a>
-        <a class="btn btn-outline" href="faculty-timetable-print.html" target="_blank" title="View & Print Official Faculty Weekly Timetable Grid">
-          Faculty Timetable (PDF)
-        </a>
-        <a class="btn btn-outline" href="teacher-tracking.html" title="Open Teacher Examination & Workload Tracking">
-          Teacher Tracking
-        </a>
-        <a class="btn btn-outline" href="grade-calendar-view.html" target="_blank" title="View & Print Grade Posters">
-          Grade Posters
-        </a>
         <button class="btn btn-outline" onclick="window.print()">Print Schedule</button>
         <button class="btn btn-primary" onclick="exportMasterCSV()">Export CSV</button>
       </div>
     </div>
   </header>
-
-  <!-- Option Switcher Strip -->
-  <section class="option-switcher-container">
-    <div class="option-switcher-card">
-      <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
-        <span class="option-group-title">TIMETABLE OPTION:</span>
-        <div class="option-pills-list">
-          <button class="opt-btn active" id="btnOptA" onclick="switchOption('OPTION_A')">
-            <span class="opt-code">A</span>
-            <span class="opt-name">Current / Default</span>
-          </button>
-          <button class="opt-btn" id="btnOptB" onclick="switchOption('OPTION_B')">
-            <span class="opt-code">B</span>
-            <span class="opt-name">Modality-Aligned</span>
-            <span class="badge-rec">RECOMMENDED</span>
-          </button>
-          <button class="opt-btn" id="btnOptC" onclick="switchOption('OPTION_C')">
-            <span class="opt-code">C</span>
-            <span class="opt-name">Teacher-Priority</span>
-          </button>
-          <button class="opt-btn" id="btnOptD" onclick="switchOption('OPTION_D')">
-            <span class="opt-code">D</span>
-            <span class="opt-name">Student-Friendly</span>
-          </button>
-        </div>
-      </div>
-
-      <div style="display:flex; gap:10px;">
-        <button class="btn btn-outline" onclick="openCompareModal()">Compare All 4 Options</button>
-        <button class="btn btn-primary" id="applyOptionBtn" onclick="applyCurrentOption()">Apply Option A</button>
-      </div>
-    </div>
-  </section>
 
   <!-- Controls & Filters -->
   <section class="controls-container">
@@ -1214,10 +1168,10 @@ html_content = f"""<!DOCTYPE html>
 
   <!-- Live Stats -->
   <div class="stats-strip" id="statsStrip">
-    <div class="stat-pill pill-active-option">Active Option: <strong id="statActiveOption">OPTION A (Default)</strong></div>
-    <div class="stat-pill">Total Exam Sessions: <strong id="statTotalExams">597</strong></div>
-    <div class="stat-pill">Active Sections: <strong id="statTotalSections">63</strong></div>
-    <div class="stat-pill">Assigned Faculty: <strong id="statTotalTeachers">54</strong></div>
+    <div class="stat-pill pill-active-option">Approved Timetable: <strong id="statActiveOption">Option C (Teacher-Priority)</strong></div>
+    <div class="stat-pill">Total Exam Sessions: <strong id="statTotalExams">549</strong></div>
+    <div class="stat-pill">Active Sections: <strong id="statTotalSections">64</strong></div>
+    <div class="stat-pill">Assigned Faculty: <strong id="statTotalTeachers">61</strong></div>
     <div class="stat-pill">Dates: <strong>Sep 2, 3, 6 & 7, 2026</strong></div>
     <div class="stat-pill" style="margin-left:auto;">
       <button class="btn btn-outline" style="padding:6px 14px; font-size:13px;" onclick="resetFilters()">Reset All Filters</button>
@@ -1255,8 +1209,8 @@ html_content = f"""<!DOCTYPE html>
           </div>
         </div>
 
-        <div class="modal-sec-list" id="modalSecList">
-          <!-- Section items injected here -->
+        <div id="modalSubjectBody">
+          <!-- Injected dynamically -->
         </div>
       </div>
       <div class="modal-footer">
@@ -1295,16 +1249,16 @@ html_content = f"""<!DOCTYPE html>
     <p style="margin-top:4px; font-size:12.5px; color:#94a3b8;">100% Conflict-Free Validated • Mathematical Constraint Programming Model • S.Y. 2026–2027</p>
   </footer>
 
-  <!-- Inlined Full Multi-Option Dataset & Weekly Schedules -->
+  <!-- Inlined Full Option C Dataset & Weekly Schedules -->
   <script>
     window.AMIS_OPTIONS_DATA = {json_data_str};
-    window.AMIS_EXAM_DATA = window.AMIS_OPTIONS_DATA.OPTION_A;
+    window.AMIS_EXAM_DATA = window.AMIS_OPTIONS_DATA.OPTION_C;
     window.AMIS_TEACHER_WEEKLY_SCHEDULES = {weekly_data_str};
     const WEEKLY_SCHEDULES_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
   </script>
 
   <script>
-    let CURRENT_OPTION = 'OPTION_A';
+    let CURRENT_OPTION = 'OPTION_C';
     let ALL_DATA = [];
     let CURRENT_VIEW = 'posters';
     let CURRENT_MODAL_SUBJECT = '';

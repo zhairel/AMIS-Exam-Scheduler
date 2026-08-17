@@ -297,40 +297,40 @@ print("=======================================================")
 for opt, records in all_options.items():
     print(f"  ✓ {opt}: {len(records)} exams scheduled (0 conflicts)")
 
-# Save JSON and JS assets
+# Save JSON and JS assets using OPTION_C
 with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/options_exam_data.json', 'w') as f:
     json.dump(all_options, f, indent=2)
 
 with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/exam_data.json', 'w') as f:
-    json.dump(all_options["OPTION_A"], f, indent=2)
+    json.dump(all_options["OPTION_C"], f, indent=2)
 
 with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/exam-data.js', 'w') as f:
-    f.write(f"window.EXAM_DATA = {json.dumps(all_options['OPTION_A'], indent=2)};\n")
+    f.write(f"window.EXAM_DATA = {json.dumps(all_options['OPTION_C'], indent=2)};\n")
     f.write(f"window.OPTIONS_EXAM_DATA = {json.dumps(all_options, indent=2)};\n")
 
-# Rebuild Excel & CSV exports
+# Rebuild Excel & CSV exports for Option C
 wb_out = openpyxl.Workbook()
 ws_out = wb_out.active
-ws_out.title = "Master Exam Schedule (Opt A)"
+ws_out.title = "Exam Schedule (Option C)"
 ws_out.append(["Day Number", "Date", "Slot Number", "Time Slot", "Section Name", "Department", "Grade Level", "Shift", "Subject", "Teacher ID", "Teacher", "Duration (Mins)"])
 
-for ex in all_options["OPTION_A"]:
+for ex in all_options["OPTION_C"]:
     ws_out.append([ex['day_number'], ex['date'], ex['slot_number'], ex['time_slot'], ex['section_name'], ex['department'], ex['grade_level'], ex['shift'], ex['subject'], ex.get('teacher_id', ''), ex['teacher'], ex['duration_minutes']])
 
 xlsx_path = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/Term_Examination_Schedule_S.Y._2026-2027_Optimized.xlsx'
 wb_out.save(xlsx_path)
 
-# Export CSV
+# Export CSV for Option C
 csv_path = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/Term_Examination_Schedule_S.Y._2026-2027_Optimized.csv'
 with open(csv_path, 'w', newline='', encoding='utf-8') as f:
     writer = csv.writer(f)
     writer.writerow(["Day Number", "Date", "Slot Number", "Time Slot", "Section Name", "Department", "Grade Level", "Shift", "Subject", "Teacher ID", "Teacher", "Duration (Mins)"])
-    for ex in all_options["OPTION_A"]:
+    for ex in all_options["OPTION_C"]:
         writer.writerow([ex['day_number'], ex['date'], ex['slot_number'], ex['time_slot'], ex['section_name'], ex['department'], ex['grade_level'], ex['shift'], ex['subject'], ex.get('teacher_id', ''), ex['teacher'], ex['duration_minutes']])
 
-# Build Teacher Subject Tracking dataset
+# Build Teacher Subject Tracking dataset from Option C
 teacher_tracking = defaultdict(lambda: {"total_exams": 0, "canonical_name": "", "sessions": []})
-for ex in all_options["OPTION_A"]:
+for ex in all_options["OPTION_C"]:
     tid = ex.get('teacher_id', ex['teacher'])
     teacher_tracking[tid]["canonical_name"] = ex['teacher']
     teacher_tracking[tid]["total_exams"] += 1
@@ -339,5 +339,5 @@ for ex in all_options["OPTION_A"]:
 with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/teacher_subject_tracking.json', 'w') as f:
     json.dump(teacher_tracking, f, indent=2)
 
-print(f"Successfully saved all Exam Data Assets (JSON, JS, CSV, XLSX) with canonical teacher IDs!")
+print(f"Successfully saved all Exam Data Assets (JSON, JS, CSV, XLSX) with Option C as Master!")
 
