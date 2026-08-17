@@ -457,9 +457,7 @@ body {
 <!-- Top Navigation Toolbar with Cascading Modality & Shift Filters (Icons only, No Emojis) -->
 <header class="top-toolbar">
   <div class="brand-title">
-    <div class="brand-icon">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/></svg>
-    </div>
+    <img src="amis_logo.png" alt="AMIS Logo" style="width:38px; height:38px; border-radius:50%; object-fit:contain; background:#ffffff; padding:1px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
     <div class="brand-text">
       <h1>Official Class Timetable</h1>
       <p>S.Y. 2026–2027 • Weekly Class Program</p>
