@@ -465,6 +465,46 @@
       letter-spacing: -0.01em;
     }
 
+    .btn-poster-fullscreen {
+      background: #ffffff;
+      color: var(--brand-primary);
+      border: 1.5px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 8px 12px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      transition: var(--transition);
+    }
+
+    .btn-poster-fullscreen:hover {
+      background: #f0fdf4;
+      border-color: var(--brand-accent);
+      transform: scale(1.05);
+    }
+
+    .btn-poster-fullscreen svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    .calendar-poster.is-fullscreen {
+      position: fixed !important;
+      inset: 0 !important;
+      z-index: 99999 !important;
+      max-width: 100% !important;
+      height: 100vh !important;
+      margin: 0 !important;
+      padding: 24px 32px !important;
+      background: #ffffff !important;
+      overflow-y: auto !important;
+      border-radius: 0 !important;
+      box-sizing: border-box !important;
+    }
+
     /* Matrix Table Grid */
     .table-container {
       overflow-x: auto;
@@ -1771,7 +1811,13 @@
                 <h2>AL MUNAWWARA ISLAMIC SCHOOL</h2>
                 <p>Official Term Examination Schedule • S.Y. 2026–2027 (${OPTION_INFO[CURRENT_OPTION].code})</p>
               </div>
-              <div class="grade-badge-display">${grade}</div>
+              <div style="display:flex; align-items:center; gap:10px;">
+                <div class="grade-badge-display">${grade}</div>
+                <button class="btn-poster-fullscreen" onclick="toggleFullscreenPoster(this)" title="Fullscreen Poster" aria-label="Toggle Fullscreen">
+                  <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                  <svg class="icon-compress" viewBox="0 0 24 24" style="display:none;"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
+                </button>
+              </div>
             </div>
 
             <div class="table-container">
@@ -2122,6 +2168,47 @@
       link.click();
       document.body.removeChild(link);
     }
+
+    window.toggleFullscreenPoster = function(btn) {
+      const poster = btn.closest('.calendar-poster');
+      if (!poster) return;
+
+      const isFs = poster.classList.toggle('is-fullscreen');
+      const iconExpand = btn.querySelector('.icon-expand');
+      const iconCompress = btn.querySelector('.icon-compress');
+
+      if (isFs) {
+        if (iconExpand) iconExpand.style.display = 'none';
+        if (iconCompress) iconCompress.style.display = 'inline-block';
+        btn.setAttribute('title', 'Exit Fullscreen');
+        if (poster.requestFullscreen && !document.fullscreenElement) {
+          poster.requestFullscreen().catch(() => {});
+        }
+      } else {
+        if (iconExpand) iconExpand.style.display = 'inline-block';
+        if (iconCompress) iconCompress.style.display = 'none';
+        btn.setAttribute('title', 'Fullscreen Poster');
+        if (document.exitFullscreen && document.fullscreenElement) {
+          document.exitFullscreen().catch(() => {});
+        }
+      }
+    };
+
+    document.addEventListener('fullscreenchange', () => {
+      if (!document.fullscreenElement) {
+        document.querySelectorAll('.calendar-poster.is-fullscreen').forEach(p => {
+          p.classList.remove('is-fullscreen');
+          const btn = p.querySelector('.btn-poster-fullscreen');
+          if (btn) {
+            const iconExpand = btn.querySelector('.icon-expand');
+            const iconCompress = btn.querySelector('.icon-compress');
+            if (iconExpand) iconExpand.style.display = 'inline-block';
+            if (iconCompress) iconCompress.style.display = 'none';
+            btn.setAttribute('title', 'Fullscreen Poster');
+          }
+        });
+      }
+    });
   </script>
 </body>
 </html>
