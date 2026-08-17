@@ -62102,12 +62102,11 @@ window.AMIS_OPTIONS_DATA = {
       "duplicate_subjects": 0,
       "missing_subjects": 0,
       "total_exams": 597,
-      "alignment_pct": 92.1,
-      "teacher_balance_score": 91.0,
-      "student_flow_score": 92.5,
+      "alignment_pct": 21.7,
+      "teacher_balance_score": 83.2,
+      "student_flow_score": 80.9,
       "avg_exams_per_day": 2.37,
-      "status": "VALID",
-      "validation_badge": "100% CONFLICT-FREE VALIDATED"
+      "status": "VALID"
     },
     "OPTION_B": {
       "teacher_conflicts": 0,
@@ -62115,12 +62114,11 @@ window.AMIS_OPTIONS_DATA = {
       "duplicate_subjects": 0,
       "missing_subjects": 0,
       "total_exams": 597,
-      "alignment_pct": 98.4,
-      "teacher_balance_score": 91.0,
-      "student_flow_score": 92.5,
+      "alignment_pct": 29.8,
+      "teacher_balance_score": 82.0,
+      "student_flow_score": 80.9,
       "avg_exams_per_day": 2.37,
-      "status": "VALID",
-      "validation_badge": "100% CONFLICT-FREE VALIDATED"
+      "status": "VALID"
     },
     "OPTION_C": {
       "teacher_conflicts": 0,
@@ -62128,12 +62126,11 @@ window.AMIS_OPTIONS_DATA = {
       "duplicate_subjects": 0,
       "missing_subjects": 0,
       "total_exams": 597,
-      "alignment_pct": 85.0,
-      "teacher_balance_score": 96.5,
-      "student_flow_score": 92.5,
+      "alignment_pct": 14.5,
+      "teacher_balance_score": 81.5,
+      "student_flow_score": 80.9,
       "avg_exams_per_day": 2.37,
-      "status": "VALID",
-      "validation_badge": "100% CONFLICT-FREE VALIDATED"
+      "status": "VALID"
     },
     "OPTION_D": {
       "teacher_conflicts": 0,
@@ -62141,12 +62138,11 @@ window.AMIS_OPTIONS_DATA = {
       "duplicate_subjects": 0,
       "missing_subjects": 0,
       "total_exams": 597,
-      "alignment_pct": 85.0,
-      "teacher_balance_score": 91.0,
-      "student_flow_score": 97.2,
+      "alignment_pct": 21.7,
+      "teacher_balance_score": 72.5,
+      "student_flow_score": 80.9,
       "avg_exams_per_day": 2.37,
-      "status": "VALID",
-      "validation_badge": "100% CONFLICT-FREE VALIDATED"
+      "status": "VALID"
     }
   }
 };

@@ -1,4 +1,6 @@
-<!doctype html>
+import json
+
+HTML_CONTENT = """<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -640,3 +642,10 @@ body {
 </script>
 </body>
 </html>
+"""
+
+with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/class-schedule.html', 'w', encoding='utf-8') as f:
+    f.write(HTML_CONTENT)
+
+print("Updated class-schedule.html to match the exact existing design of faculty-timetable-print.html!")
+
