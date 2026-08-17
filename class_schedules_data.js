@@ -269,9 +269,27 @@ window.CLASS_SCHEDULES_DATA = [
             "teacher": "Ustadha Saliha",
             "is_break": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
+          "Monday": {
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
           "Thursday": {
             "label": "HG - Tchr. Sahdia",
             "subject": "HG",
@@ -327,7 +345,7 @@ window.CLASS_SCHEDULES_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -540,14 +558,32 @@ window.CLASS_SCHEDULES_DATA = [
             "teacher": "Ustadha Saliha",
             "is_break": false
           },
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Tuesday": {
+            "label": "GMRC - Ustadha Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "GMRC - Ustadha Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "GMRC - Ustadha Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          }
         }
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -785,7 +821,7 @@ window.CLASS_SCHEDULES_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1121,7 +1157,7 @@ window.CLASS_SCHEDULES_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1132,7 +1168,13 @@ window.CLASS_SCHEDULES_DATA = [
             "teacher": "Teacher Norhydie",
             "is_break": false
           },
-          "Monday": null,
+          "Monday": {
+            "label": "Filipino - Tchr. Norhydie",
+            "subject": "Filipino",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
+          },
           "Tuesday": {
             "label": "TLE - Tchr. Monisa",
             "subject": "TLE",
@@ -1147,7 +1189,13 @@ window.CLASS_SCHEDULES_DATA = [
             "teacher": "Teacher Norhydie",
             "is_break": false
           },
-          "Thursday": null
+          "Thursday": {
+            "label": "Filipino - Tchr. Norhydie",
+            "subject": "Filipino",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
+          }
         }
       },
       {
@@ -1443,7 +1491,7 @@ window.CLASS_SCHEDULES_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Math 5 - Tchr. Fhairudz",
@@ -1605,9 +1653,27 @@ window.CLASS_SCHEDULES_DATA = [
             "teacher": "Teacher Normylah",
             "is_break": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
+          "Monday": {
+            "label": "Filipino - Tchr. Normylah",
+            "subject": "Filipino",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Filipino - Tchr. Normylah",
+            "subject": "Filipino",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Filipino - Tchr. Normylah",
+            "subject": "Filipino",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
+          },
           "Thursday": {
             "label": "HG - Tchr. Normylah",
             "subject": "HG",
@@ -1727,7 +1793,7 @@ window.CLASS_SCHEDULES_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8371,7 +8437,7 @@ window.CLASS_SCHEDULES_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8705,7 +8771,7 @@ window.CLASS_SCHEDULES_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9039,7 +9105,7 @@ window.CLASS_SCHEDULES_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Science - Tchr. Rowena",
@@ -9373,7 +9439,7 @@ window.CLASS_SCHEDULES_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "ENGLISH - Tchr. Norhaima",
@@ -9611,7 +9677,7 @@ window.CLASS_SCHEDULES_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9849,7 +9915,7 @@ window.CLASS_SCHEDULES_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "21st Lit. -Tchr Nof",
@@ -11131,9 +11197,27 @@ window.CLASS_SCHEDULES_DATA = [
             "teacher": "HOMEROOM",
             "is_break": true
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
+          "Monday": {
+            "label": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher_id": null,
+            "teacher": "HOMEROOM",
+            "is_break": true
+          },
+          "Tuesday": {
+            "label": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher_id": null,
+            "teacher": "HOMEROOM",
+            "is_break": true
+          },
+          "Wednesday": {
+            "label": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher_id": null,
+            "teacher": "HOMEROOM",
+            "is_break": true
+          },
           "Thursday": {
             "label": "Gen Math - Tchr. Jhelyn",
             "subject": "Gen Math",
@@ -11403,7 +11487,13 @@ window.CLASS_SCHEDULES_DATA = [
             "teacher": "HOMEROOM",
             "is_break": true
           },
-          "Thursday": null
+          "Thursday": {
+            "label": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher_id": null,
+            "teacher": "HOMEROOM",
+            "is_break": true
+          }
         }
       }
     ]
@@ -12577,8 +12667,20 @@ window.CLASS_SCHEDULES_DATA = [
             "teacher": "HOMEROOM",
             "is_break": true
           },
-          "Tuesday": null,
-          "Wednesday": null,
+          "Tuesday": {
+            "label": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher_id": null,
+            "teacher": "HOMEROOM",
+            "is_break": true
+          },
+          "Wednesday": {
+            "label": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher_id": null,
+            "teacher": "HOMEROOM",
+            "is_break": true
+          },
           "Thursday": {
             "label": "EC - Tchr.  Nadzra",
             "subject": "EC",
@@ -12752,7 +12854,7 @@ window.CLASS_SCHEDULES_DATA = [
     "department": "Senior High School",
     "grade_level": "Grade 12",
     "shift": "F2F",
-    "total_periods": 13,
+    "total_periods": 22,
     "periods": [
       {
         "period_num": 1,
@@ -12918,7 +13020,7 @@ window.CLASS_SCHEDULES_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13095,15 +13197,112 @@ window.CLASS_SCHEDULES_DATA = [
       {
         "period_num": 13,
         "time": "SECOND SEMESTER SCHEDULE BELOW",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 14,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 15,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 16,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 17,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 18,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 19,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 20,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 21,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 22,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
       }
     ]
   },
@@ -13215,8 +13414,20 @@ window.CLASS_SCHEDULES_DATA = [
             "teacher": "Teacher Aniah",
             "is_break": false
           },
-          "Monday": null,
-          "Tuesday": null,
+          "Monday": {
+            "label": "General Chemistry 2 Tchr.  Aniah",
+            "subject": "General Chemistry 2 Tchr.  Aniah",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "General Chemistry 2 Tchr.  Aniah",
+            "subject": "General Chemistry 2 Tchr.  Aniah",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
           "Wednesday": {
             "label": "PPITTP - Tchr. Thea",
             "subject": "PPITTP",
@@ -13235,7 +13446,7 @@ window.CLASS_SCHEDULES_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13246,8 +13457,20 @@ window.CLASS_SCHEDULES_DATA = [
             "teacher": "Teacher Marie",
             "is_break": false
           },
-          "Monday": null,
-          "Tuesday": null,
+          "Monday": {
+            "label": "Prac.Res1 - Tchr. Marie",
+            "subject": "Prac.Res1",
+            "teacher_id": "tchr_marie",
+            "teacher": "Teacher Marie",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Prac.Res1 - Tchr. Marie",
+            "subject": "Prac.Res1",
+            "teacher_id": "tchr_marie",
+            "teacher": "Teacher Marie",
+            "is_break": false
+          },
           "Wednesday": {
             "label": "General Chemistry 2 Tchr.  Aniah",
             "subject": "General Chemistry 2 Tchr.  Aniah",
@@ -13255,7 +13478,13 @@ window.CLASS_SCHEDULES_DATA = [
             "teacher": "Teacher Aniah",
             "is_break": false
           },
-          "Thursday": null
+          "Thursday": {
+            "label": "General Chemistry 2 Tchr.  Aniah",
+            "subject": "General Chemistry 2 Tchr.  Aniah",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          }
         }
       },
       {
@@ -13611,7 +13840,7 @@ window.CLASS_SCHEDULES_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m. AM",
+        "time": "10:45 \u2013 11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13996,7 +14225,7 @@ window.CLASS_SCHEDULES_DATA = [
     "department": "Senior High School",
     "grade_level": "Grade 12",
     "shift": "ODL - 1ST SHIFT",
-    "total_periods": 8,
+    "total_periods": 17,
     "periods": [
       {
         "period_num": 1,
@@ -14182,15 +14411,112 @@ window.CLASS_SCHEDULES_DATA = [
       {
         "period_num": 8,
         "time": "SECOND SEMESTER SCHEDULE BELOW",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 9,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 10,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 11,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 12,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 13,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 14,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 15,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 16,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 17,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
       }
     ]
   },
@@ -14618,7 +14944,7 @@ window.CLASS_SCHEDULES_DATA = [
     "department": "Senior High School",
     "grade_level": "Grade 12",
     "shift": "ODL - 2ND SHIFT",
-    "total_periods": 8,
+    "total_periods": 17,
     "periods": [
       {
         "period_num": 1,
@@ -14792,15 +15118,112 @@ window.CLASS_SCHEDULES_DATA = [
       {
         "period_num": 8,
         "time": "SECOND SEMESTER SCHEDULE BELOW",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 9,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 10,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 11,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 12,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 13,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 14,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 15,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 16,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
+      },
+      {
+        "period_num": 17,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_merged_all_days": true,
+        "label": "SECOND SEMESTER SCHEDULE BELOW",
+        "subject": "SECOND SEMESTER SCHEDULE BELOW",
+        "teacher_id": null,
+        "teacher": "SECOND SEMESTER SCHEDULE BELOW",
+        "is_break": false
       }
     ]
   },

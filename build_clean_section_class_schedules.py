@@ -20,10 +20,10 @@ def format_time_clean(raw_t):
     s = re.sub(r'(?i)\b(a\.m\.|am)\b', 'AM', s)
     s = re.sub(r'(?i)\b(p\.m\.|pm)\b', 'PM', s)
     s = re.sub(r'(\d+:\d+)\s*-\s*(\d+:\d+)', r'\1 – \2', s)
+    s = re.sub(r'(\d+:\d+)\s*:\s*(\d+:\d+)', r'\1 – \2', s)
     
     # If no AM/PM, infer based on hour
     if 'AM' not in s and 'PM' not in s:
-        # Check start hour
         m = re.match(r'^(\d{1,2}):(\d{2})', s)
         if m:
             hh = int(m.group(1))
@@ -177,6 +177,15 @@ for tinfo in table_boxes:
     grade = tinfo['grade']
     shift = tinfo['shift']
     
+    # Precompute merged lookup for the sheet
+    merged_lookup = {}
+    for m_range in ws.merged_cells.ranges:
+        min_col, min_row, max_col, max_row = m_range.bounds
+        top_val = ws.cell(row=min_row, column=min_col).value
+        for r in range(min_row, max_row + 1):
+            for c in range(min_col, max_col + 1):
+                merged_lookup[(r, c)] = top_val
+                
     r_start = tinfo['start_row']
     r_end = tinfo['end_row']
     c_time = tinfo['time_col']
@@ -186,8 +195,8 @@ for tinfo in table_boxes:
     periods = []
     
     for r in range(r_start, r_end + 1):
-        time_raw = ws.cell(row=r, column=c_time).value
-        mins_raw = ws.cell(row=r, column=c_mins).value
+        time_raw = merged_lookup.get((r, c_time), ws.cell(row=r, column=c_time).value)
+        mins_raw = merged_lookup.get((r, c_mins), ws.cell(row=r, column=c_mins).value)
         
         if not time_raw and not mins_raw:
             continue
@@ -202,7 +211,7 @@ for tinfo in table_boxes:
         has_any_content = False
         for didx, dname in enumerate(DAYS):
             col_idx = c_days_start + didx
-            cval = ws.cell(row=r, column=col_idx).value
+            cval = merged_lookup.get((r, col_idx), ws.cell(row=r, column=col_idx).value)
             cell_parsed = parse_cell(cval)
             day_cells[dname] = cell_parsed
             if cell_parsed:
@@ -216,9 +225,6 @@ for tinfo in table_boxes:
         merged_cell_info = None
         
         if len(labels) == 5 and len(set(labels)) == 1:
-            is_merged = True
-            merged_cell_info = day_cells['Sunday']
-        elif len(labels) == 1 and day_cells['Sunday']:
             is_merged = True
             merged_cell_info = day_cells['Sunday']
             
@@ -257,5 +263,5 @@ with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/class_schedules_data.j
     f.write(f"window.CLASS_SCHEDULES_DATA = {json.dumps(all_sections_data, indent=2)};\n")
     f.write(f"const CLASS_SCHEDULES_DATA = window.CLASS_SCHEDULES_DATA;\n")
 
-print(f"Successfully generated class_schedules_data.json and class_schedules_data.js for {len(all_sections_data)} sections!")
+print(f"Successfully generated class_schedules_data.json and class_schedules_data.js for {len(all_sections_data)} sections with full merged ranges!")
 

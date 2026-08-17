@@ -6332,8 +6332,8 @@
     "canonical_name": "Teacher Aniah",
     "department": "High School Faculty",
     "title": "Faculty Member",
-    "total_classes": 32,
-    "total_teaching_periods": 32,
+    "total_classes": 33,
+    "total_teaching_periods": 33,
     "subjects": [
       "Gen. Physics 1",
       "General Chemistry 1 Tr Aniah",
@@ -6604,41 +6604,41 @@
             "occupied": true,
             "is_class": true,
             "is_break": false,
-            "subject": "Gen. Physics 1",
-            "section": "GRADE 12 - SUHAYB AR-RUMI",
-            "section_short": "G12 - SUHAYB AR-RUMI",
-            "grade": "Grade 12",
+            "subject": "General Chemistry 2 Tchr.  Aniah",
+            "section": "GRADE 11 (FACE TO FACE) - SECOND SEMESTER",
+            "section_short": "G11  - SECOND SEMESTER (F2F)",
+            "grade": "Grade 11",
             "shift": "F2F",
             "modality": "F2F",
-            "label": "Gen. Physics 1 - G12 - SUHAYB AR-RUMI",
+            "label": "General Chemistry 2 Tchr.  Aniah - G11  - SECOND SEMESTER (F2F)",
             "color": {
-              "bg": "#e0f2fe",
-              "border": "#7dd3fc",
-              "text": "#0369a1"
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#115e59"
             },
-            "bg": "#e0f2fe",
-            "border": "#7dd3fc",
-            "text": "#0369a1"
+            "bg": "#ccfbf1",
+            "border": "#5eead4",
+            "text": "#115e59"
           },
           "Tuesday": {
             "occupied": true,
             "is_class": true,
             "is_break": false,
-            "subject": "Gen. Physics 1",
-            "section": "GRADE 12 - SUHAYB AR-RUMI",
-            "section_short": "G12 - SUHAYB AR-RUMI",
-            "grade": "Grade 12",
+            "subject": "General Chemistry 2 Tchr.  Aniah",
+            "section": "GRADE 11 (FACE TO FACE) - SECOND SEMESTER",
+            "section_short": "G11  - SECOND SEMESTER (F2F)",
+            "grade": "Grade 11",
             "shift": "F2F",
             "modality": "F2F",
-            "label": "Gen. Physics 1 - G12 - SUHAYB AR-RUMI",
+            "label": "General Chemistry 2 Tchr.  Aniah - G11  - SECOND SEMESTER (F2F)",
             "color": {
-              "bg": "#e0f2fe",
-              "border": "#7dd3fc",
-              "text": "#0369a1"
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#115e59"
             },
-            "bg": "#e0f2fe",
-            "border": "#7dd3fc",
-            "text": "#0369a1"
+            "bg": "#ccfbf1",
+            "border": "#5eead4",
+            "text": "#115e59"
           },
           "Wednesday": {
             "occupied": true,
@@ -6713,7 +6713,26 @@
             "border": "#5eead4",
             "text": "#115e59"
           },
-          "Thursday": null
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "is_break": false,
+            "subject": "General Chemistry 2 Tchr.  Aniah",
+            "section": "GRADE 11 (FACE TO FACE) - SECOND SEMESTER",
+            "section_short": "G11  - SECOND SEMESTER (F2F)",
+            "grade": "Grade 11",
+            "shift": "F2F",
+            "modality": "F2F",
+            "label": "General Chemistry 2 Tchr.  Aniah - G11  - SECOND SEMESTER (F2F)",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#115e59"
+            },
+            "bg": "#ccfbf1",
+            "border": "#5eead4",
+            "text": "#115e59"
+          }
         }
       },
       {
@@ -22292,8 +22311,8 @@
     "canonical_name": "Teacher Marie",
     "department": "High School Faculty",
     "title": "Faculty Member",
-    "total_classes": 5,
-    "total_teaching_periods": 5,
+    "total_classes": 7,
+    "total_teaching_periods": 7,
     "subjects": [
       "Prac.Res1"
     ],
@@ -22456,8 +22475,46 @@
             "border": "#cbd5e1",
             "text": "#334155"
           },
-          "Monday": null,
-          "Tuesday": null,
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "is_break": false,
+            "subject": "Prac.Res1",
+            "section": "GRADE 11 (FACE TO FACE) - SECOND SEMESTER",
+            "section_short": "G11  - SECOND SEMESTER (F2F)",
+            "grade": "Grade 11",
+            "shift": "F2F",
+            "modality": "F2F",
+            "label": "Prac.Res1 - G11  - SECOND SEMESTER (F2F)",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "bg": "#f1f5f9",
+            "border": "#cbd5e1",
+            "text": "#334155"
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "is_break": false,
+            "subject": "Prac.Res1",
+            "section": "GRADE 11 (FACE TO FACE) - SECOND SEMESTER",
+            "section_short": "G11  - SECOND SEMESTER (F2F)",
+            "grade": "Grade 11",
+            "shift": "F2F",
+            "modality": "F2F",
+            "label": "Prac.Res1 - G11  - SECOND SEMESTER (F2F)",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "bg": "#f1f5f9",
+            "border": "#cbd5e1",
+            "text": "#334155"
+          },
           "Wednesday": null,
           "Thursday": null
         }
@@ -26607,8 +26664,8 @@
     "canonical_name": "Teacher Norhydie",
     "department": "Elementary Faculty",
     "title": "Faculty Member",
-    "total_classes": 27,
-    "total_teaching_periods": 27,
+    "total_classes": 29,
+    "total_teaching_periods": 29,
     "subjects": [
       "AP",
       "English",
@@ -26833,7 +26890,26 @@
             "border": "#fdba74",
             "text": "#9a3412"
           },
-          "Monday": null,
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "is_break": false,
+            "subject": "Filipino",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (F2F)",
+            "grade": "Grade 4",
+            "shift": "F2F",
+            "modality": "F2F",
+            "label": "Filipino - G4 (F2F)",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "bg": "#ffedd5",
+            "border": "#fdba74",
+            "text": "#9a3412"
+          },
           "Tuesday": null,
           "Wednesday": {
             "occupied": true,
@@ -26855,7 +26931,26 @@
             "border": "#fdba74",
             "text": "#9a3412"
           },
-          "Thursday": null
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "is_break": false,
+            "subject": "Filipino",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (F2F)",
+            "grade": "Grade 4",
+            "shift": "F2F",
+            "modality": "F2F",
+            "label": "Filipino - G4 (F2F)",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "bg": "#ffedd5",
+            "border": "#fdba74",
+            "text": "#9a3412"
+          }
         }
       },
       {
@@ -27514,8 +27609,8 @@
     "canonical_name": "Teacher Normylah",
     "department": "High School Faculty",
     "title": "Faculty Member",
-    "total_classes": 14,
-    "total_teaching_periods": 14,
+    "total_classes": 17,
+    "total_teaching_periods": 17,
     "subjects": [
       "AP",
       "Fil",
@@ -27586,9 +27681,66 @@
             "border": "#fdba74",
             "text": "#9a3412"
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "is_break": false,
+            "subject": "Filipino",
+            "section": "GRADE  6  FACE TO FACE",
+            "section_short": "G 6  FACE TO FACE (F2F)",
+            "grade": "Grade  6",
+            "shift": "F2F",
+            "modality": "F2F",
+            "label": "Filipino - G 6  FACE TO FACE (F2F)",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "bg": "#ffedd5",
+            "border": "#fdba74",
+            "text": "#9a3412"
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "is_break": false,
+            "subject": "Filipino",
+            "section": "GRADE  6  FACE TO FACE",
+            "section_short": "G 6  FACE TO FACE (F2F)",
+            "grade": "Grade  6",
+            "shift": "F2F",
+            "modality": "F2F",
+            "label": "Filipino - G 6  FACE TO FACE (F2F)",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "bg": "#ffedd5",
+            "border": "#fdba74",
+            "text": "#9a3412"
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "is_break": false,
+            "subject": "Filipino",
+            "section": "GRADE  6  FACE TO FACE",
+            "section_short": "G 6  FACE TO FACE (F2F)",
+            "grade": "Grade  6",
+            "shift": "F2F",
+            "modality": "F2F",
+            "label": "Filipino - G 6  FACE TO FACE (F2F)",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "bg": "#ffedd5",
+            "border": "#fdba74",
+            "text": "#9a3412"
+          },
           "Thursday": {
             "occupied": true,
             "is_class": true,
@@ -44768,8 +44920,8 @@
     "canonical_name": "Ustadha Saliha",
     "department": "ISAL Faculty",
     "title": "ISAL Teacher",
-    "total_classes": 27,
-    "total_teaching_periods": 27,
+    "total_classes": 33,
+    "total_teaching_periods": 33,
     "subjects": [
       "Arabic",
       "GMRC",
@@ -44841,9 +44993,66 @@
             "border": "#86efac",
             "text": "#14532d"
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "is_break": false,
+            "subject": "GMRC",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (F2F)",
+            "grade": "Grade 1",
+            "shift": "F2F",
+            "modality": "F2F",
+            "label": "GMRC - G1 (F2F)",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#14532d"
+            },
+            "bg": "#dcfce7",
+            "border": "#86efac",
+            "text": "#14532d"
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "is_break": false,
+            "subject": "GMRC",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (F2F)",
+            "grade": "Grade 1",
+            "shift": "F2F",
+            "modality": "F2F",
+            "label": "GMRC - G1 (F2F)",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#14532d"
+            },
+            "bg": "#dcfce7",
+            "border": "#86efac",
+            "text": "#14532d"
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "is_break": false,
+            "subject": "GMRC",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (F2F)",
+            "grade": "Grade 1",
+            "shift": "F2F",
+            "modality": "F2F",
+            "label": "GMRC - G1 (F2F)",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#14532d"
+            },
+            "bg": "#dcfce7",
+            "border": "#86efac",
+            "text": "#14532d"
+          },
           "Thursday": null
         }
       },
@@ -44998,9 +45207,66 @@
             "border": "#86efac",
             "text": "#14532d"
           },
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "is_break": false,
+            "subject": "GMRC",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (F2F)",
+            "grade": "Grade 2",
+            "shift": "F2F",
+            "modality": "F2F",
+            "label": "GMRC - G2 (F2F)",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#14532d"
+            },
+            "bg": "#dcfce7",
+            "border": "#86efac",
+            "text": "#14532d"
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "is_break": false,
+            "subject": "GMRC",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (F2F)",
+            "grade": "Grade 2",
+            "shift": "F2F",
+            "modality": "F2F",
+            "label": "GMRC - G2 (F2F)",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#14532d"
+            },
+            "bg": "#dcfce7",
+            "border": "#86efac",
+            "text": "#14532d"
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "is_break": false,
+            "subject": "GMRC",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (F2F)",
+            "grade": "Grade 2",
+            "shift": "F2F",
+            "modality": "F2F",
+            "label": "GMRC - G2 (F2F)",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#14532d"
+            },
+            "bg": "#dcfce7",
+            "border": "#86efac",
+            "text": "#14532d"
+          }
         }
       },
       {
