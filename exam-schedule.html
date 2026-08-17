@@ -1092,7 +1092,7 @@
         </div>
 
         <div class="search-box-wrapper">
-          <input type="text" id="searchInput" class="search-input" placeholder="Search teacher, section, subject..." oninput="onFilterChange()">
+          <input type="text" id="searchInput" class="search-input" placeholder="Search staff/faculty, section, subject..." oninput="onFilterChange()">
         </div>
       </div>
 
@@ -1135,9 +1135,9 @@
           </select>
         </div>
         <div class="filter-control">
-          <label>Teacher / Ustadh / Ustadha</label>
+          <label>Staff / Faculty</label>
           <select id="teacherSelect" class="select-dropdown" onchange="onFilterChange()">
-            <option value="">All Faculty (54)</option>
+            <option value="">All Staff / Faculty</option>
           </select>
         </div>
         <div class="filter-control">
@@ -1360,7 +1360,7 @@
       const teachers = [...new Set(ALL_DATA.map(r => r.teacher))].sort();
       const tSel = document.getElementById('teacherSelect');
       const curT = tSel.value;
-      tSel.innerHTML = '<option value="">All Faculty (' + teachers.length + ')</option>' + teachers.map(t => `<option value="${t}">${t}</option>`).join('');
+      tSel.innerHTML = '<option value="">All Staff / Faculty (' + teachers.length + ')</option>' + teachers.map(t => `<option value="${t}">${t}</option>`).join('');
       tSel.value = curT;
 
       const subjects = [...new Set(ALL_DATA.map(r => r.subject))].sort();
