@@ -933,8 +933,6 @@
       <div class="controls-top-row">
         <div class="view-tabs">
           <button class="view-tab active" id="tabPosters" onclick="switchView('posters')">Grade Posters</button>
-          <button class="view-tab" id="tabDaily" onclick="switchView('daily')">Daily Grid</button>
-          <button class="view-tab" id="tabSubjects" onclick="switchView('subjects')">Subject Directory</button>
           <button class="view-tab" id="tabFaculty" onclick="switchView('faculty')">Faculty Timetables</button>
         </div>
 
@@ -1143,8 +1141,6 @@
       CURRENT_VIEW = viewName;
       document.querySelectorAll('.view-tab').forEach(t => t.classList.remove('active'));
       if (viewName === 'posters') document.getElementById('tabPosters').classList.add('active');
-      if (viewName === 'daily') document.getElementById('tabDaily').classList.add('active');
-      if (viewName === 'subjects') document.getElementById('tabSubjects').classList.add('active');
       if (viewName === 'faculty') document.getElementById('tabFaculty').classList.add('active');
       renderCurrentView();
     }
@@ -1169,8 +1165,6 @@
       }
 
       if (CURRENT_VIEW === 'posters') renderPostersView(filtered);
-      else if (CURRENT_VIEW === 'daily') renderDailyGridView(filtered);
-      else if (CURRENT_VIEW === 'subjects') renderSubjectsView(filtered);
       else if (CURRENT_VIEW === 'faculty') renderFacultyView(filtered);
     }
 
