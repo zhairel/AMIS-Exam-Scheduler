@@ -1249,18 +1249,10 @@ html_content = f"""<!DOCTYPE html>
         </div>
       </div>
       <div class="header-actions">
-        <a class="btn btn-outline" href="index.html" style="background:#ffffff; color:#0f172a; font-weight:700; border-color:#cbd5e1;" title="Back to Schedule Home">
+        <a class="btn btn-outline" href="index.html" style="background:#ffffff; color:#0f172a; font-weight:700; border-color:#cbd5e1;" title="Back to Home">
           <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          Schedule Home
+          Back Home
         </a>
-        <a class="btn btn-outline" href="class-schedule.html" target="_blank" style="background:#0f766e; color:#ffffff; font-weight:700; border-color:#0f766e;" title="View Official Weekly Class Schedule (Sunday-Thursday)">
-          Class Schedule
-        </a>
-        <a class="btn btn-outline" href="faculty-timetable-exam.html" target="_blank" style="background:#047857; color:#ffffff; font-weight:700; border-color:#059669;" title="View Faculty Timetable — Exam Schedule">
-          Faculty Timetable (Exam)
-        </a>
-        <button class="btn btn-outline" onclick="window.print()">Print Schedule</button>
-        <button class="btn btn-primary" onclick="exportMasterCSV()">Export CSV</button>
       </div>
     </div>
   </header>
