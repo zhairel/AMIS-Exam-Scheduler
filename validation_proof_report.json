@@ -1,0 +1,98 @@
+{
+  "OPTION_A": {
+    "option": "OPTION_A",
+    "status": "100% CONFLICT-FREE • READY / VALIDATED",
+    "is_100_percent_valid": true,
+    "metrics": {
+      "teacher_conflicts": 0,
+      "section_conflicts": 0,
+      "duplicate_subjects": 0,
+      "missing_subjects": 0,
+      "invalid_teacher_assignments": 0,
+      "invalid_modality_assignments": 0,
+      "invalid_shift_assignments": 0,
+      "invalid_dates": 0,
+      "invalid_time_slots": 0,
+      "break_overlaps": 0,
+      "invalid_durations": 0,
+      "exams_after_done_for_the_day": 0,
+      "daily_capacity_violations": 0,
+      "fake_subjects": 0,
+      "total_required_assignments": 597,
+      "total_scheduled_assignments": 597,
+      "total_unique_scheduled_assignments": 597
+    }
+  },
+  "OPTION_B": {
+    "option": "OPTION_B",
+    "status": "100% CONFLICT-FREE • READY / VALIDATED",
+    "is_100_percent_valid": true,
+    "metrics": {
+      "teacher_conflicts": 0,
+      "section_conflicts": 0,
+      "duplicate_subjects": 0,
+      "missing_subjects": 0,
+      "invalid_teacher_assignments": 0,
+      "invalid_modality_assignments": 0,
+      "invalid_shift_assignments": 0,
+      "invalid_dates": 0,
+      "invalid_time_slots": 0,
+      "break_overlaps": 0,
+      "invalid_durations": 0,
+      "exams_after_done_for_the_day": 0,
+      "daily_capacity_violations": 0,
+      "fake_subjects": 0,
+      "total_required_assignments": 597,
+      "total_scheduled_assignments": 597,
+      "total_unique_scheduled_assignments": 597
+    }
+  },
+  "OPTION_C": {
+    "option": "OPTION_C",
+    "status": "100% CONFLICT-FREE • READY / VALIDATED",
+    "is_100_percent_valid": true,
+    "metrics": {
+      "teacher_conflicts": 0,
+      "section_conflicts": 0,
+      "duplicate_subjects": 0,
+      "missing_subjects": 0,
+      "invalid_teacher_assignments": 0,
+      "invalid_modality_assignments": 0,
+      "invalid_shift_assignments": 0,
+      "invalid_dates": 0,
+      "invalid_time_slots": 0,
+      "break_overlaps": 0,
+      "invalid_durations": 0,
+      "exams_after_done_for_the_day": 0,
+      "daily_capacity_violations": 0,
+      "fake_subjects": 0,
+      "total_required_assignments": 597,
+      "total_scheduled_assignments": 597,
+      "total_unique_scheduled_assignments": 597
+    }
+  },
+  "OPTION_D": {
+    "option": "OPTION_D",
+    "status": "100% CONFLICT-FREE • READY / VALIDATED",
+    "is_100_percent_valid": true,
+    "metrics": {
+      "teacher_conflicts": 0,
+      "section_conflicts": 0,
+      "duplicate_subjects": 0,
+      "missing_subjects": 0,
+      "invalid_teacher_assignments": 0,
+      "invalid_modality_assignments": 0,
+      "invalid_shift_assignments": 0,
+      "invalid_dates": 0,
+      "invalid_time_slots": 0,
+      "break_overlaps": 0,
+      "invalid_durations": 0,
+      "exams_after_done_for_the_day": 0,
+      "daily_capacity_violations": 0,
+      "fake_subjects": 0,
+      "total_required_assignments": 597,
+      "total_scheduled_assignments": 597,
+      "total_unique_scheduled_assignments": 597
+    }
+  }
+}
