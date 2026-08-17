@@ -106,7 +106,7 @@ body {
   font-family: inherit;
   outline: none;
   cursor: pointer;
-  min-width: 230px;
+  min-width: 240px;
 }
 
 .select-teacher:focus {
@@ -158,15 +158,15 @@ body {
 
 /* Main Container */
 .page-sheet-container {
-  max-width: 1400px;
-  margin: 28px auto;
+  max-width: 1440px;
+  margin: 24px auto;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
   gap: 36px;
 }
 
-/* Individual Printable Sheet */
+/* Individual Printable Sheet (A4 Landscape Formatted) */
 .timetable-sheet {
   background: #ffffff;
   border: 1.5px solid #cbd5e1;
@@ -212,7 +212,7 @@ body {
   border-left: 5px solid var(--brand-deep);
   border-radius: 6px;
   padding: 8px 14px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -236,105 +236,157 @@ body {
   color: var(--ink-secondary);
 }
 
-/* Exam 4-Day Grid */
-.exam-days-grid {
+/* 4-Day Grouped Grid */
+.exam-date-groups-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  gap: 14px;
   margin-bottom: 14px;
 }
 
-.exam-day-col {
+.exam-date-group-column {
   border: 1.5px solid #cbd5e1;
-  border-radius: 8px;
+  border-radius: 10px;
   background: #ffffff;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
-.exam-day-header {
+.exam-date-group-header {
   background: var(--brand-deep);
   color: #ffffff;
-  padding: 8px 10px;
+  padding: 10px 8px;
   text-align: center;
-  border-bottom: 1.5px solid #043828;
+  border-bottom: 2px solid #043828;
 }
 
-.day-num-title {
-  font-size: 13px;
+.header-day-badge {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a7f3d0;
+  margin-bottom: 2px;
+}
+
+.header-date-title {
+  font-size: 13.5px;
   font-weight: 900;
   letter-spacing: -0.01em;
 }
 
-.day-date-sub {
-  font-size: 10.5px;
-  opacity: 0.9;
+.header-weekday-sub {
+  font-size: 11px;
   font-weight: 700;
+  opacity: 0.9;
 }
 
-.exam-day-body {
+.exam-date-group-body {
   padding: 10px;
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   background: #f8fafc;
 }
 
-.exam-item-card {
+/* Exam Assignment Card */
+.assignment-card {
   background: #ffffff;
   border: 1.5px solid #cbd5e1;
   border-radius: 8px;
   padding: 10px 12px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.04);
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
+  transition: transform 0.1s ease;
 }
 
-.exam-item-subject {
-  font-size: 13px;
-  font-weight: 900;
-  color: var(--ink);
+.assignment-card-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 6px;
 }
 
-.exam-item-section {
+.assignment-subject {
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.assignment-grade-sec {
   font-size: 11px;
   font-weight: 800;
   color: var(--brand-deep);
+  line-height: 1.25;
 }
 
-.exam-time-badge {
+.assignment-section-full {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #475569;
+  line-height: 1.2;
+}
+
+.assignment-date-badge {
+  font-size: 10px;
+  font-weight: 800;
+  color: #0369a1;
+  background: #e0f2fe;
+  padding: 2px 6px;
+  border-radius: 4px;
   display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: fit-content;
+}
+
+.assignment-time-badge {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   background: #f1f5f9;
   border: 1px solid #cbd5e1;
-  border-radius: 5px;
-  padding: 3px 6px;
-  font-size: 10.5px;
-  font-weight: 800;
+  border-radius: 6px;
+  padding: 4px 7px;
+  font-size: 11px;
+  font-weight: 850;
   color: #1e293b;
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 .dur-pill {
   background: var(--brand-deep);
   color: #ffffff;
-  padding: 1px 5px;
-  border-radius: 3px;
+  padding: 1px 6px;
+  border-radius: 4px;
   font-size: 9.5px;
   font-weight: 900;
 }
 
-.exam-modality-tag {
+.dur-pill-hsmath {
+  background: #b91c1c;
+  color: #ffffff;
+}
+
+.assignment-footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 2px;
+  padding-top: 4px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.modality-shift-tag {
   font-size: 9.5px;
   font-weight: 800;
-  color: var(--muted);
+  color: #475569;
   text-transform: uppercase;
 }
 
@@ -343,13 +395,35 @@ body {
   font-weight: 800;
   color: #047857;
   background: #d1fae5;
-  padding: 2px 5px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.gender-badge {
+  font-size: 8.5px;
+  font-weight: 850;
+  padding: 1px 5px;
   border-radius: 3px;
-  align-self: flex-start;
+  text-transform: uppercase;
+}
+.gender-boys { background: #dbeafe; color: #1e40af; }
+.gender-girls { background: #fce7f3; color: #9d174d; }
+.gender-mixed { background: #f3e8ff; color: #6b21a8; }
+
+.conflict-alert-badge {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #f87171;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-weight: 900;
+  font-size: 9px;
+  margin-bottom: 3px;
+  text-transform: uppercase;
 }
 
 .no-exams-day {
-  padding: 24px 10px;
+  padding: 30px 10px;
   text-align: center;
   color: #94a3b8;
   font-size: 11px;
@@ -369,7 +443,7 @@ body {
   color: var(--muted);
 }
 
-/* Strict A4 Landscape Print */
+/* Strict A4 Landscape Print Engine */
 @media print {
   @page {
     size: A4 landscape;
@@ -401,6 +475,7 @@ body {
     border: 1px solid #64748b !important;
     border-radius: 0 !important;
     padding: 8px 12px !important;
+    margin: 0 0 0 0 !important;
     page-break-after: always !important;
     break-after: page !important;
     page-break-inside: avoid !important;
@@ -416,31 +491,40 @@ body {
     margin-bottom: 6px !important;
     padding-bottom: 4px !important;
   }
-  .school-header h1 { font-size: 16px !important; }
-  .school-header h2 { font-size: 12.5px !important; }
-  .school-header p { font-size: 9.5px !important; }
+  .school-header h1 { font-size: 15px !important; }
+  .school-header h2 { font-size: 12px !important; }
+  .school-header p { font-size: 9px !important; }
 
   .teacher-banner {
     padding: 4px 10px !important;
     margin-bottom: 6px !important;
   }
-  .teacher-name-title { font-size: 14px !important; }
-  .teacher-meta-tag { font-size: 9.5px !important; padding: 2px 6px !important; }
+  .teacher-name-title { font-size: 13.5px !important; }
+  .teacher-meta-tag { font-size: 9px !important; padding: 2px 6px !important; }
 
-  .exam-days-grid {
+  .exam-date-groups-grid {
     flex: 1 !important;
     gap: 8px !important;
+    margin-bottom: 6px !important;
   }
-  .exam-day-header { padding: 4px 6px !important; }
-  .day-num-title { font-size: 11px !important; }
-  .day-date-sub { font-size: 9px !important; }
-  .exam-day-body { padding: 6px !important; gap: 6px !important; }
-  .exam-item-card { padding: 6px 8px !important; }
-  .exam-item-subject { font-size: 11px !important; }
-  .exam-item-section { font-size: 9.5px !important; }
-  .exam-time-badge { font-size: 9px !important; padding: 2px 4px !important; }
-  .dur-pill { font-size: 8.5px !important; }
-  .sheet-footer { margin-top: 4px !important; padding-top: 3px !important; font-size: 8.5px !important; }
+  .exam-date-group-header { padding: 4px 4px !important; }
+  .header-day-badge { font-size: 8.5px !important; }
+  .header-date-title { font-size: 11px !important; }
+  .header-weekday-sub { font-size: 9px !important; }
+  .exam-date-group-body { padding: 4px !important; gap: 6px !important; }
+
+  .assignment-card { padding: 5px 6px !important; gap: 3px !important; }
+  .assignment-subject { font-size: 10.5px !important; }
+  .assignment-grade-sec { font-size: 9.5px !important; }
+  .assignment-section-full { font-size: 8.5px !important; }
+  .assignment-date-badge { font-size: 8px !important; padding: 1px 4px !important; }
+  .assignment-time-badge { font-size: 9px !important; padding: 2px 4px !important; }
+  .dur-pill { font-size: 8px !important; }
+  .assignment-footer-row { margin-top: 1px !important; padding-top: 2px !important; }
+  .modality-shift-tag { font-size: 8px !important; }
+  .proctor-tag { font-size: 8px !important; padding: 1px 4px !important; }
+  
+  .sheet-footer { margin-top: 4px !important; padding-top: 2px !important; font-size: 8px !important; }
 }
 </style>
 </head>
@@ -452,7 +536,7 @@ body {
     <img src="amis_logo.png" alt="AMIS Logo" class="brand-logo">
     <div class="brand-text">
       <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
-      <p>Faculty Timetable — Exam Schedule • S.Y. 2026–2027</p>
+      <p>Faculty Timetable — Exam Schedule • Dates: Sep 2, 3, 6 & 7, 2026</p>
     </div>
   </div>
 
@@ -483,19 +567,52 @@ body {
   </div>
 </header>
 
-<!-- Main Printable Landscape Sheet -->
+<!-- Main Printable Landscape Sheet Container -->
 <main class="page-sheet-container" id="sheetsContainer">
   <!-- Dynamic Faculty Exam Sheets rendered here -->
 </main>
 
 <script>
 (function() {
+  // Exact 4 Exam Days (Sep 2, Sep 3, Sep 6, Sep 7)
   const EXAM_DAYS = [
-    { day_num: 1, title: "Day 1", date_str: "Wednesday, Sep 2, 2026", short: "Sep 2" },
-    { day_num: 2, title: "Day 2", date_str: "Thursday, Sep 3, 2026", short: "Sep 3" },
-    { day_num: 3, title: "Day 3", date_str: "Sunday, Sep 6, 2026", short: "Sep 6" },
-    { day_num: 4, title: "Day 4", date_str: "Monday, Sep 7, 2026", short: "Sep 7" }
+    {
+      day_num: 1,
+      day_label: "1st Exam Day",
+      full_date: "September 2, 2026",
+      weekday: "Wednesday",
+      short_date: "Sep 2"
+    },
+    {
+      day_num: 2,
+      day_label: "2nd Exam Day",
+      full_date: "September 3, 2026",
+      weekday: "Thursday",
+      short_date: "Sep 3"
+    },
+    {
+      day_num: 3,
+      day_label: "3rd Exam Day",
+      full_date: "September 6, 2026",
+      weekday: "Sunday",
+      short_date: "Sep 6"
+    },
+    {
+      day_num: 4,
+      day_label: "4th Exam Day",
+      full_date: "September 7, 2026",
+      weekday: "Monday",
+      short_date: "Sep 7"
+    }
   ];
+
+  const GRADE_ORDER = {
+    "Kinder 1": 1, "K1": 1,
+    "Kinder 2": 2, "K2": 2,
+    "Grade 1": 3, "Grade 2": 4, "Grade 3": 5, "Grade 4": 6,
+    "Grade 5": 7, "Grade 6": 8, "Grade 7": 9, "Grade 8": 10,
+    "Grade 9": 11, "Grade 10": 12, "Grade 11": 13, "Grade 12": 14
+  };
 
   let ALL_EXAM_RECORDS = [];
   let TEACHER_NAMES = [];
@@ -662,7 +779,7 @@ body {
             <div>
               <h1 style="margin:0;">AL MUNAWWARA ISLAMIC SCHOOL</h1>
               <h2 style="margin:2px 0 0 0;">Faculty Timetable — Exam Schedule</h2>
-              <p style="margin:2px 0 0 0;">1st Term Examination S.Y. 2026–2027 • Developed by Software Engineer Mon Zhairel Lingasa</p>
+              <p style="margin:2px 0 0 0;">Dates: Sep 2, 3, 6 & 7, 2026 • 1st Term Examination S.Y. 2026–2027 • Developed by Software Engineer Mon Zhairel Lingasa</p>
             </div>
           </div>
 
@@ -671,51 +788,94 @@ body {
             <span class="teacher-meta-tag">${esc(metaStr)}</span>
           </div>
 
-          <div class="exam-days-grid">
+          <div class="exam-date-groups-grid">
       `;
 
       EXAM_DAYS.forEach(day => {
+        // Filter and sort assignments by: 1. Start Time, 2. Grade, 3. Section
         const dayExams = tExams
           .filter(r => r.day_number === day.day_num)
-          .sort((a, b) => minutes(a.time_slot || a.time) - minutes(b.time_slot || b.time));
+          .sort((a, b) => {
+            const tA = minutes(a.time_slot || a.time);
+            const tB = minutes(b.time_slot || b.time);
+            if (tA !== tB) return tA - tB;
+            const gA = GRADE_ORDER[a.grade] || 99;
+            const gB = GRADE_ORDER[b.grade] || 99;
+            if (gA !== gB) return gA - gB;
+            return (a.section_name || a.section || '').localeCompare(b.section_name || b.section || '');
+          });
 
         fullHtml += `
-          <div class="exam-day-col">
-            <div class="exam-day-header">
-              <div class="day-num-title">${day.title} • ${day.short}</div>
-              <div class="day-date-sub">${day.date_str.split(',')[0]}</div>
+          <div class="exam-date-group-column">
+            <div class="exam-date-group-header">
+              <div class="header-day-badge">${day.day_label}</div>
+              <div class="header-date-title">${day.full_date}</div>
+              <div class="header-weekday-sub">${day.weekday}</div>
             </div>
-            <div class="exam-day-body">
+            <div class="exam-date-group-body">
         `;
 
         if (dayExams.length === 0) {
           fullHtml += `
             <div class="no-exams-day">
-              No exam sessions scheduled
+              No exam sessions scheduled for ${day.full_date}
             </div>
           `;
         } else {
-          dayExams.forEach(ex => {
+          dayExams.forEach((ex, idx) => {
             const timeStr = ex.time_slot || ex.time || '';
             const dur = calcDuration(timeStr, ex.duration_minutes);
             const color = getSubjectColor(ex.subject);
-            const shiftLabel = ex.modality === 'F2F' ? 'F2F Classroom' : (ex.shift.includes('2nd') ? 'ODL 2nd Shift' : 'ODL 1st Shift');
+            const shiftLabel = ex.modality === 'F2F' ? 'F2F Classroom' : (ex.shift && ex.shift.includes('2nd') ? 'ODL 2nd Shift' : 'ODL 1st Shift');
+            const isHsMath = (ex.grade && ex.grade.includes('Grade') && parseInt(ex.grade.replace(/\D/g, ''), 10) >= 7 && ex.subject && (ex.subject.toLowerCase().includes('math') || ex.subject.toLowerCase().includes('calculus') || ex.subject.toLowerCase().includes('stat')));
+            
+            // Check for conflict on the same day
+            const hasConflict = dayExams.some((other, oIdx) => {
+              if (oIdx === idx) return false;
+              const oTime = other.time_slot || other.time || '';
+              return oTime === timeStr;
+            });
+
+            // Gender badge logic: only display if explicitly BOYS, GIRLS, or MIXED (hide if unknown)
+            const rawGender = (ex.gender || '').toUpperCase().trim();
+            let genderBadgeHtml = '';
+            if (rawGender === 'BOYS') {
+              genderBadgeHtml = `<span class="gender-badge gender-boys">Boys</span>`;
+            } else if (rawGender === 'GIRLS') {
+              genderBadgeHtml = `<span class="gender-badge gender-girls">Girls</span>`;
+            } else if (rawGender === 'MIXED') {
+              genderBadgeHtml = `<span class="gender-badge gender-mixed">Mixed</span>`;
+            }
 
             fullHtml += `
-              <div class="exam-item-card" style="border-left: 4px solid ${color.border};">
-                <div class="exam-item-subject" style="color: ${color.text};">
-                  <span>${esc(ex.subject)}</span>
+              <div class="assignment-card" style="border-left: 4px solid ${color.border};">
+                ${hasConflict ? `<div class="conflict-alert-badge">⚠️ TEACHER SCHEDULE CONFLICT</div>` : ''}
+                
+                <div class="assignment-card-header">
+                  <span class="assignment-subject" style="color: ${color.text};">${esc(ex.subject)}</span>
+                  ${genderBadgeHtml}
                 </div>
-                <div class="exam-item-section">
-                  ${esc(ex.grade)} — ${esc(cleanSecName(ex.section_name || ex.section))}
+
+                <div class="assignment-grade-sec">
+                  ${esc(ex.grade)}
                 </div>
-                <div class="exam-time-badge">
+                <div class="assignment-section-full">
+                  ${esc(ex.section_name || ex.section || '')}
+                </div>
+
+                <div class="assignment-date-badge">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M19 19H5V8H19M16 1V3H8V1H6V3H5C3.89 3 3 3.89 3 5V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V5C21 3.89 20.1 3 19 3H18V1M17 12H12V17H17V12Z"/></svg>
+                  ${day.full_date}
+                </div>
+
+                <div class="assignment-time-badge">
                   <span>${esc(timeStr)}</span>
-                  <span class="dur-pill">${dur} min</span>
+                  <span class="dur-pill ${isHsMath ? 'dur-pill-hsmath' : ''}">${dur} mins</span>
                 </div>
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px;">
-                  <span class="exam-modality-tag">${esc(shiftLabel)}</span>
-                  <span class="proctor-tag">Proctor Assigned</span>
+
+                <div class="assignment-footer-row">
+                  <span class="modality-shift-tag">${esc(shiftLabel)}</span>
+                  <span class="proctor-tag">Proctor: ${esc(teacherName)}</span>
                 </div>
               </div>
             `;
@@ -732,9 +892,11 @@ body {
           </div>
 
           <div class="sheet-footer">
-            <div style="display: flex; gap: 14px; align-items: center;">
-              <span>• HS Mathematics: <strong>120 mins (2 Hours)</strong></span>
+            <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap;">
+              <span>• Exam Dates: <strong>Sep 2, 3, 6 & 7, 2026</strong></span>
+              <span>• High School Math: <strong>120 mins (2 Hours)</strong></span>
               <span>• Elementary & HS Normal Subjects: <strong>60 mins</strong></span>
+              <span>• Qur'an Proctor: <strong>Assigned Section Qur'an Teacher</strong></span>
             </div>
             <div>
               Generated: <strong>${todayStr}</strong>
