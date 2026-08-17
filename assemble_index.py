@@ -1449,14 +1449,28 @@ html_content = f"""<!DOCTYPE html>
 
     function minutes(tStr) {{
       if (!tStr) return 0;
-      const parts = tStr.trim().split(' ');
+      const clean = tStr.trim();
+      const parts = clean.split(' ');
+      if (parts.length < 2) return 0;
       const hm = parts[0].split(':');
       let h = parseInt(hm[0], 10);
-      let m = parseInt(hm[1], 10);
+      let m = parseInt(hm[1], 10) || 0;
       const ampm = parts[1].toUpperCase();
       if (ampm === 'PM' && h !== 12) h += 12;
       if (ampm === 'AM' && h === 12) h = 0;
       return h * 60 + m;
+    }}
+
+    function calcDuration(tStr, fallback) {{
+      if (fallback && typeof fallback === 'number') return fallback;
+      if (!tStr) return 60;
+      const parts = tStr.split(/[-–]/);
+      if (parts.length < 2) return fallback || 60;
+      const m1 = minutes(parts[0].trim());
+      const m2 = minutes(parts[1].trim());
+      let diff = m2 - m1;
+      if (diff < 0) diff += 24 * 60;
+      return diff || fallback || 60;
     }}
 
     function renderPostersView(records) {{
@@ -1608,11 +1622,17 @@ html_content = f"""<!DOCTYPE html>
 
     function renderExamCardHtml(ex, typeCls) {{
       const shiftLabel = ex.modality === 'F2F' ? 'F2F Classroom' : (ex.shift.includes('2nd') ? 'ODL 2nd Shift' : 'ODL 1st Shift');
+      const timeVal = ex.time_slot || ex.time || '';
+      const durVal = calcDuration(timeVal, ex.duration_minutes);
       return `
         <div class="exam-event-card ${{typeCls}}" onclick="openSubjectModal('${{encodeURIComponent(ex.subject)}}')">
           <div class="card-subject-name">
             <span>${{ex.subject}}</span>
             <span class="click-hint">details →</span>
+          </div>
+          <div class="card-time-duration-row" style="display:flex; justify-content:space-between; align-items:center; background:rgba(0,0,0,0.04); padding:3px 7px; border-radius:5px; margin:3px 0 5px 0; font-size:11px; font-weight:800;">
+            <span style="color:#0f172a;">${{timeVal}}</span>
+            <span style="background:#064e3b; color:#ffffff; padding:1px 5px; border-radius:3px; font-size:10px; font-weight:900;">${{durVal}} min</span>
           </div>
           <div class="card-grade-gender-row">
             <span class="card-grade-label">${{ex.grade}}</span>
