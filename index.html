@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMIS Term Examination Schedule S.Y. 2026–2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="exam-data.js"></script>
+  <script src="html2canvas.min.js"></script>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-subtle: #f1f5f9;
+      --line: #e2e8f0;
+      --line-strong: #cbd5e1;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --text-light: #94a3b8;
+      
+      --brand-primary: #065f46;
+      --brand-accent: #047857;
+      --brand-light: #ecfdf5;
+      
+      --f2f-color: #059669;
+      --f2f-bg: #ecfdf5;
+      --f2f-border: #a7f3d0;
+      
+      --odl1-color: #0284c7;
+      --odl1-bg: #f0f9ff;
+      --odl1-border: #bae6fd;
+      
+      --odl2-color: #d97706;
+      --odl2-bg: #fffbeb;
+      --odl2-border: #fde68a;
+      
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 20px;
+      
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.08);
+      --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 80px;
+    }
+
+    /* Top App Bar */
+    .app-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .header-inner {
+      max-width: 1560px;
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand-section {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--brand-primary), #0f766e);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 20px;
+      box-shadow: 0 4px 12px rgba(6, 95, 70, 0.25);
+    }
+
+    .brand-text h1 {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #064e3b;
+      line-height: 1.2;
+    }
+
+    .brand-text p {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      border: 1px solid transparent;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--brand-primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #044e3b;
+      box-shadow: var(--shadow-md);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: var(--surface);
+      border-color: var(--line-strong);
+      color: var(--text);
+    }
+
+    .btn-outline:hover {
+      background: var(--surface-subtle);
+      border-color: #94a3b8;
+    }
+
+    /* Control & Filter Center */
+    .controls-container {
+      max-width: 1560px;
+      margin: 20px auto 0;
+      padding: 0 24px;
+    }
+
+    .controls-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 18px 20px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .controls-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    /* View Mode Tabs */
+    .view-tabs {
+      display: inline-flex;
+      background: var(--surface-subtle);
+      padding: 4px;
+      border-radius: var(--radius-md);
+      gap: 4px;
+      border: 1px solid var(--line);
+    }
+
+    .view-tab {
+      padding: 7px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      border: 0;
+      background: transparent;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .view-tab.active {
+      background: var(--surface);
+      color: var(--text);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .search-box-wrapper {
+      flex: 1;
+      max-width: 380px;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 9px 14px 9px 36px;
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--line);
+      font-size: 13.5px;
+      font-weight: 600;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.15s ease;
+      background: var(--surface-subtle);
+    }
+
+    .search-input:focus {
+      border-color: var(--brand-accent);
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(4, 120, 87, 0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-light);
+      pointer-events: none;
+      font-size: 14px;
+    }
+
+    /* Filter Grid */
+    .filter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      align-items: center;
+    }
+
+    .filter-control {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .filter-control label {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+    }
+
+    .select-dropdown {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--line);
+      background: var(--surface);
+      font-size: 13px;
+      font-weight: 700;
+      font-family: inherit;
+      color: var(--text);
+      outline: none;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .select-dropdown:focus {
+      border-color: var(--brand-accent);
+      box-shadow: 0 0 0 3px rgba(4, 120, 87, 0.1);
+    }
+
+    /* Stats Banner */
+    .stats-strip {
+      max-width: 1560px;
+      margin: 16px auto 0;
+      padding: 0 24px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .stat-pill {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 9999px;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-muted);
+    }
+
+    .stat-pill strong {
+      color: var(--text);
+      font-weight: 800;
+    }
+
+    /* Main View Area */
+    .main-content {
+      max-width: 1560px;
+      margin: 20px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Posters Matrix */
+    .calendar-poster {
+      background: var(--surface);
+      border-radius: var(--radius-xl);
+      border: 1.5px solid var(--line);
+      box-shadow: var(--shadow-md);
+      margin-bottom: 32px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .poster-header {
+      background: linear-gradient(135deg, #064e3b, #047857);
+      color: #fff;
+      padding: 22px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .poster-title h2 {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+
+    .poster-title p {
+      font-size: 12px;
+      font-weight: 600;
+      opacity: 0.9;
+    }
+
+    .grade-badge-display {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 0.02em;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      padding: 6px 18px;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .poster-subbar {
+      background: #f8fafc;
+      padding: 10px 28px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .legend-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .legend-dot.f2f { background: var(--f2f-color); }
+    .legend-dot.odl1 { background: var(--odl1-color); }
+    .legend-dot.odl2 { background: var(--odl2-color); }
+
+    /* Matrix Table */
+    .matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    .matrix-table th {
+      background: #f1f5f9;
+      color: var(--text);
+      font-size: 12.5px;
+      font-weight: 800;
+      padding: 12px 14px;
+      border-bottom: 1.5px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .matrix-table th.time-col {
+      width: 170px;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    .matrix-table th:last-child {
+      border-right: 0;
+    }
+
+    .date-header-title {
+      display: block;
+      font-size: 14px;
+      font-weight: 900;
+      color: #064e3b;
+    }
+
+    .date-header-sub {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .matrix-table td {
+      border-bottom: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      vertical-align: top;
+      padding: 10px;
+    }
+
+    .matrix-table td:last-child {
+      border-right: 0;
+    }
+
+    .time-td {
+      padding: 14px 18px !important;
+      background: #fafafa;
+    }
+
+    .time-slot-val {
+      display: block;
+      font-size: 14px;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.01em;
+    }
+
+    .time-slot-period {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #e2e8f0;
+      color: #475569;
+    }
+
+    /* Break Row */
+    .break-tr {
+      background: #f0fdf4;
+    }
+
+    .break-tr.recess-break {
+      background: #eff6ff;
+    }
+
+    .break-tr.salah-break {
+      background: #fefce8;
+    }
+
+    .break-time-td {
+      background: inherit;
+    }
+
+    .break-tag {
+      font-size: 9.5px;
+      font-weight: 900;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(0, 0, 0, 0.06);
+      color: #334155;
+    }
+
+    .break-banner-td {
+      text-align: center;
+      font-size: 12.5px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #1e293b;
+      padding: 10px 14px !important;
+      text-transform: uppercase;
+    }
+
+    /* Event Cards */
+    .cards-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .exam-event-card {
+      background: #ffffff;
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      border: 1.5px solid var(--line);
+      border-left-width: 5px;
+      cursor: pointer;
+      transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+    }
+
+    .exam-event-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: #94a3b8;
+    }
+
+    .exam-event-card.f2f {
+      border-left-color: var(--f2f-color);
+    }
+
+    .exam-event-card.odl1 {
+      border-left-color: var(--odl1-color);
+    }
+
+    .exam-event-card.odl2 {
+      border-left-color: var(--odl2-color);
+    }
+
+    .card-subject-name {
+      font-size: 14.5px;
+      font-weight: 900;
+      color: #0f172a;
+      line-height: 1.25;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-subject-name .click-hint {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-light);
+      opacity: 0;
+      transition: opacity 0.15s ease;
+    }
+
+    .exam-event-card:hover .card-subject-name .click-hint {
+      opacity: 1;
+    }
+
+    .card-sec-row {
+      font-size: 11.5px;
+      font-weight: 750;
+      color: var(--text-muted);
+      margin-top: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .card-teacher-row {
+      margin-top: 6px;
+      padding-top: 5px;
+      border-top: 1px dashed var(--line);
+      font-size: 12.5px;
+      font-weight: 800;
+      color: #065f46;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .empty-slot-block {
+      padding: 24px 10px;
+      text-align: center;
+      color: #cbd5e1;
+      font-size: 11.5px;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    /* Modal / Drawer for Subject Click */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .modal-backdrop.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-card {
+      background: var(--surface);
+      border-radius: var(--radius-xl);
+      max-width: 840px;
+      width: 100%;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-xl);
+      border: 1.5px solid var(--line);
+      transform: scale(0.96) translateY(10px);
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+    }
+
+    .modal-backdrop.active .modal-card {
+      transform: scale(1) translateY(0);
+    }
+
+    .modal-header {
+      background: linear-gradient(135deg, #064e3b, #0f766e);
+      color: #fff;
+      padding: 20px 26px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-header h3 {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+    }
+
+    .modal-header p {
+      font-size: 12.5px;
+      opacity: 0.9;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .modal-close-btn {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 0;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s ease;
+    }
+
+    .modal-close-btn:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    .modal-body {
+      padding: 20px 26px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .modal-stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .modal-stat-box {
+      background: var(--surface-subtle);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      text-align: center;
+    }
+
+    .modal-stat-box .val {
+      font-size: 20px;
+      font-weight: 900;
+      color: #064e3b;
+    }
+
+    .modal-stat-box .lbl {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .modal-sec-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .modal-sec-item {
+      background: var(--surface);
+      border: 1.5px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      display: grid;
+      grid-template-columns: 1.8fr 1.5fr 1.5fr 1fr;
+      align-items: center;
+      gap: 12px;
+      transition: all 0.15s ease;
+    }
+
+    .modal-sec-item:hover {
+      border-color: #94a3b8;
+      background: #fafafa;
+    }
+
+    .item-grade-sec {
+      font-size: 14px;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .item-grade-sec .mod-badge {
+      display: inline-block;
+      font-size: 10.5px;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-top: 3px;
+    }
+
+    .mod-badge.f2f { background: var(--f2f-bg); color: var(--f2f-color); border: 1px solid var(--f2f-border); }
+    .mod-badge.odl1 { background: var(--odl1-bg); color: var(--odl1-color); border: 1px solid var(--odl1-border); }
+    .mod-badge.odl2 { background: var(--odl2-bg); color: var(--odl2-color); border: 1px solid var(--odl2-border); }
+
+    .item-teacher {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #065f46;
+    }
+
+    .item-datetime {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .item-datetime span {
+      display: block;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .modal-footer {
+      padding: 14px 26px;
+      background: #f8fafc;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Subject Directory View Mode */
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .subject-card {
+      background: var(--surface);
+      border: 1.5px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 18px 20px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .subject-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--brand-accent);
+    }
+
+    .subject-card h4 {
+      font-size: 17px;
+      font-weight: 900;
+      color: #0f172a;
+    }
+
+    .subject-card-stats {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    /* Faculty Schedules View Mode */
+    .faculty-matrix {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    @media (max-width: 900px) {
+      .modal-sec-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+      .filter-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- App Bar -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-section">
+        <div class="brand-logo">A</div>
+        <div class="brand-text">
+          <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
+          <p>Master Term Examination Timetable • S.Y. 2026–2027</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>100% Conflict-Free Validated</span>
+        </div>
+        <button class="btn btn-outline" onclick="window.print()">Print</button>
+        <button class="btn btn-primary" onclick="exportMasterCSV()">Export CSV</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Controls & Filters -->
+  <section class="controls-container">
+    <div class="controls-card">
+      <div class="controls-top-row">
+        <div class="view-tabs">
+          <button class="view-tab active" id="tabPosters" onclick="switchView('posters')">
+            <span>🖼️</span> Grade Posters
+          </button>
+          <button class="view-tab" id="tabDaily" onclick="switchView('daily')">
+            <span>📅</span> Daily Grid
+          </button>
+          <button class="view-tab" id="tabSubjects" onclick="switchView('subjects')">
+            <span>📚</span> Subject Directory
+          </button>
+          <button class="view-tab" id="tabFaculty" onclick="switchView('faculty')">
+            <span>👨‍🏫</span> Faculty Timetables
+          </button>
+        </div>
+
+        <div class="search-box-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search teacher, section, subject..." oninput="onFilterChange()">
+        </div>
+      </div>
+
+      <div class="filter-grid">
+        <div class="filter-control">
+          <label>Grade Level</label>
+          <select id="gradeSelect" class="select-dropdown" onchange="onFilterChange()">
+            <option value="">All Grades (16)</option>
+          </select>
+        </div>
+        <div class="filter-control">
+          <label>Section</label>
+          <select id="sectionSelect" class="select-dropdown" onchange="onFilterChange()">
+            <option value="">All Sections (63)</option>
+          </select>
+        </div>
+        <div class="filter-control">
+          <label>Modality</label>
+          <select id="modalitySelect" class="select-dropdown" onchange="onFilterChange()">
+            <option value="">All Modalities</option>
+            <option value="F2F">F2F Classroom</option>
+            <option value="ODL">ODL (Online Distance)</option>
+          </select>
+        </div>
+        <div class="filter-control">
+          <label>Shift</label>
+          <select id="shiftSelect" class="select-dropdown" onchange="onFilterChange()">
+            <option value="">All Shifts</option>
+            <option value="1st Shift">1st Shift (Morning/Afternoon)</option>
+            <option value="2nd Shift">2nd Shift (Afternoon/Evening)</option>
+          </select>
+        </div>
+        <div class="filter-control">
+          <label>Teacher / Ustadh</label>
+          <select id="teacherSelect" class="select-dropdown" onchange="onFilterChange()">
+            <option value="">All Faculty (55)</option>
+          </select>
+        </div>
+        <div class="filter-control">
+          <label>Exam Subject</label>
+          <select id="subjectSelect" class="select-dropdown" onchange="onFilterChange()">
+            <option value="">All Subjects</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Stats -->
+  <div class="stats-strip" id="statsStrip">
+    <div class="stat-pill">Total Exam Sessions: <strong id="statTotalExams">597</strong></div>
+    <div class="stat-pill">Active Sections: <strong id="statTotalSections">63</strong></div>
+    <div class="stat-pill">Assigned Faculty: <strong id="statTotalTeachers">55</strong></div>
+    <div class="stat-pill">Dates: <strong>Sep 2, 3, 9 & 10, 2026</strong></div>
+    <div class="stat-pill" style="margin-left:auto;">
+      <button class="btn btn-outline" style="padding:4px 10px; font-size:11px;" onclick="resetFilters()">Reset All Filters</button>
+    </div>
+  </div>
+
+  <!-- Main View Container -->
+  <main class="main-content" id="mainContainer">
+    <!-- Dynamic Content injected here -->
+  </main>
+
+  <!-- Interactive Subject Modal / Drawer -->
+  <div class="modal-backdrop" id="subjectModalBackdrop" onclick="closeSubjectModal(event)">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalSubjectTitle">Subject Details</h3>
+          <p id="modalSubjectSub">Assigned Sections & Schedule Breakdown</p>
+        </div>
+        <button class="modal-close-btn" onclick="closeSubjectModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-stats-bar">
+          <div class="modal-stat-box">
+            <div class="val" id="modalStatSections">0</div>
+            <div class="lbl">Sections Taking Exam</div>
+          </div>
+          <div class="modal-stat-box">
+            <div class="val" id="modalStatTeachers">0</div>
+            <div class="lbl">Assigned Faculty</div>
+          </div>
+          <div class="modal-stat-box">
+            <div class="val" id="modalStatExams">0</div>
+            <div class="lbl">Total Sessions</div>
+          </div>
+        </div>
+
+        <div class="modal-sec-list" id="modalSecList">
+          <!-- Section items injected here -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="modalFilterSubjectBtn" onclick="filterByCurrentSubject()">Filter Calendar by this Subject</button>
+        <button class="btn btn-primary" onclick="closeSubjectModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let ALL_DATA = [];
+    let CURRENT_VIEW = 'posters';
+    let CURRENT_MODAL_SUBJECT = '';
+
+    // Initialize application
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.AMIS_EXAM_DATA && Array.isArray(window.AMIS_EXAM_DATA)) {
+        ALL_DATA = window.AMIS_EXAM_DATA;
+        initApp();
+      } else {
+        fetch('exam_data.json')
+          .then(r => r.json())
+          .then(data => {
+            ALL_DATA = data;
+            initApp();
+          })
+          .catch(err => {
+            console.error('Data load error:', err);
+          });
+      }
+    });
+
+    function cleanSecName(sec) {
+      if (!sec) return '';
+      return String(sec)
+        .replace(/\s*\((Boys|Girls|Mix|Mixed)\)/gi, '')
+        .replace(/\s*—\s*(Boys|Girls|Mix|Mixed)/gi, '')
+        .replace(/\s*-\s*(Boys|Girls|Mix|Mixed)/gi, '')
+        .replace(/\b(Boys|Girls|Mix|Mixed)\b/gi, '')
+        .trim();
+    }
+
+    function initApp() {
+      populateFilters();
+      renderCurrentView();
+    }
+
+    function populateFilters() {
+      // Grades
+      const grades = [...new Set(ALL_DATA.map(r => r.grade))].sort((a,b) => a.localeCompare(b, undefined, { numeric: true }));
+      const gradeSel = document.getElementById('gradeSelect');
+      gradeSel.innerHTML = '<option value="">All Grades (16)</option>' + grades.map(g => `<option value="${g}">${g}</option>`).join('');
+
+      // Sections
+      const sections = [...new Set(ALL_DATA.map(r => r.section))].sort();
+      const secSel = document.getElementById('sectionSelect');
+      secSel.innerHTML = '<option value="">All Sections (63)</option>' + sections.map(s => `<option value="${s}">${cleanSecName(s)}</option>`).join('');
+
+      // Teachers
+      const teachers = [...new Set(ALL_DATA.map(r => r.teacher))].sort();
+      const tSel = document.getElementById('teacherSelect');
+      tSel.innerHTML = '<option value="">All Faculty (55)</option>' + teachers.map(t => `<option value="${t}">${t}</option>`).join('');
+
+      // Subjects
+      const subjects = [...new Set(ALL_DATA.map(r => r.subject))].sort();
+      const subSel = document.getElementById('subjectSelect');
+      subSel.innerHTML = '<option value="">All Subjects (' + subjects.length + ')</option>' + subjects.map(s => `<option value="${s}">${s}</option>`).join('');
+    }
+
+    function getFilteredData() {
+      const g = document.getElementById('gradeSelect').value;
+      const s = document.getElementById('sectionSelect').value;
+      const m = document.getElementById('modalitySelect').value;
+      const sh = document.getElementById('shiftSelect').value;
+      const t = document.getElementById('teacherSelect').value;
+      const sub = document.getElementById('subjectSelect').value;
+      const q = document.getElementById('searchInput').value.trim().toLowerCase();
+
+      return ALL_DATA.filter(r => {
+        if (g && r.grade !== g) return false;
+        if (s && r.section !== s) return false;
+        if (m && r.modality !== m) return false;
+        if (sh && !r.shift.includes(sh)) return false;
+        if (t && r.teacher !== t) return false;
+        if (sub && r.subject !== sub) return false;
+        if (q) {
+          const matchStr = `${r.grade} ${r.section} ${r.subject} ${r.teacher} ${r.modality} ${r.shift} ${r.room}`.toLowerCase();
+          if (!matchStr.includes(q)) return false;
+        }
+        return true;
+      });
+    }
+
+    function onFilterChange() {
+      renderCurrentView();
+    }
+
+    function resetFilters() {
+      document.getElementById('gradeSelect').value = '';
+      document.getElementById('sectionSelect').value = '';
+      document.getElementById('modalitySelect').value = '';
+      document.getElementById('shiftSelect').value = '';
+      document.getElementById('teacherSelect').value = '';
+      document.getElementById('subjectSelect').value = '';
+      document.getElementById('searchInput').value = '';
+      renderCurrentView();
+    }
+
+    function switchView(viewName) {
+      CURRENT_VIEW = viewName;
+      document.querySelectorAll('.view-tab').forEach(t => t.classList.remove('active'));
+      if (viewName === 'posters') document.getElementById('tabPosters').classList.add('active');
+      if (viewName === 'daily') document.getElementById('tabDaily').classList.add('active');
+      if (viewName === 'subjects') document.getElementById('tabSubjects').classList.add('active');
+      if (viewName === 'faculty') document.getElementById('tabFaculty').classList.add('active');
+      renderCurrentView();
+    }
+
+    function renderCurrentView() {
+      const filtered = getFilteredData();
+      const container = document.getElementById('mainContainer');
+
+      // Update counters
+      document.getElementById('statTotalExams').innerText = filtered.length;
+      document.getElementById('statTotalSections').innerText = new Set(filtered.map(r => `${r.grade}-${r.section}`)).size;
+      document.getElementById('statTotalTeachers').innerText = new Set(filtered.map(r => r.teacher)).size;
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div style="background:#fff; border-radius:16px; padding:80px 20px; text-align:center; border:1.5px dashed var(--line);">
+            <h3 style="font-size:18px; font-weight:800; color:#475569;">No examinations match your filter criteria.</h3>
+            <p style="color:#94a3b8; font-size:13px; margin-top:6px;">Try adjusting your search keywords or resetting filters.</p>
+            <button class="btn btn-primary" style="margin-top:16px;" onclick="resetFilters()">Reset All Filters</button>
+          </div>
+        `;
+        return;
+      }
+
+      if (CURRENT_VIEW === 'posters') renderPostersView(filtered);
+      else if (CURRENT_VIEW === 'daily') renderDailyGridView(filtered);
+      else if (CURRENT_VIEW === 'subjects') renderSubjectsView(filtered);
+      else if (CURRENT_VIEW === 'faculty') renderFacultyView(filtered);
+    }
+
+    function minutes(tStr) {
+      if (!tStr) return 0;
+      const parts = tStr.trim().split(' ');
+      const hm = parts[0].split(':');
+      let h = parseInt(hm[0], 10);
+      const m = parseInt(hm[1], 10);
+      const ampm = parts[1] ? parts[1].toUpperCase() : 'AM';
+      if (ampm === 'PM' && h !== 12) h += 12;
+      if (ampm === 'AM' && h === 12) h = 0;
+      return h * 60 + m;
+    }
+
+    // ==========================================
+    // 1. Posters Matrix View
+    // ==========================================
+    function renderPostersView(records) {
+      const container = document.getElementById('mainContainer');
+      const uniqueGrades = [...new Set(records.map(r => r.grade))].sort((a,b) => a.localeCompare(b, undefined, { numeric: true }));
+      const dates = ['2026-09-02', '2026-09-03', '2026-09-09', '2026-09-10'];
+
+      container.innerHTML = uniqueGrades.map(grade => {
+        const gradeRecs = records.filter(r => r.grade === grade);
+        const uniqueSlots = [...new Set(gradeRecs.map(r => r.time))].sort((a,b) => minutes(a) - minutes(b));
+        const hasF2F = gradeRecs.some(r => r.modality === 'F2F');
+        const hasODL1 = gradeRecs.some(r => r.shift && r.shift.includes('1st'));
+        const hasODL2 = gradeRecs.some(r => r.shift && r.shift.includes('2nd'));
+
+        let timeline = uniqueSlots.map(t => ({ isBreak: false, time: t, startM: minutes(t) }));
+
+        if (hasF2F) {
+          if (grade === 'Kinder 2') {
+            timeline.push({ isBreak: true, label: 'RECESS (9:00 AM – 9:15 AM)', time: '9:00 AM – 9:15 AM', tag: 'RECESS', startM: 540 });
+          } else if (grade !== 'Kinder 1') {
+            timeline.push({ isBreak: true, label: 'RECESS (10:00 AM – 10:25 AM)', time: '10:00 AM – 10:25 AM', tag: 'RECESS', startM: 600 });
+          }
+        }
+        if (hasODL1 || (hasODL2 && !hasODL1)) {
+          timeline.push({ isBreak: true, label: 'TRANSITION AND SALAH BREAK (2:50 PM – 3:10 PM)', time: '2:50 PM – 3:10 PM', tag: 'SALAH BREAK', startM: 890 });
+        }
+
+        timeline.sort((a,b) => a.startM - b.startM);
+
+        return `
+          <div class="calendar-poster">
+            <div class="poster-header">
+              <div class="poster-title">
+                <h2>AL MUNAWWARA ISLAMIC SCHOOL</h2>
+                <p>Official Term Examination Schedule • S.Y. 2026-2027</p>
+              </div>
+              <div class="grade-badge-display">${grade.toUpperCase()}</div>
+            </div>
+
+            <div class="poster-subbar">
+              <div class="legend-group">
+                <span class="legend-item"><span class="legend-dot f2f"></span> F2F Classroom</span>
+                <span class="legend-item"><span class="legend-dot odl1"></span> ODL 1st Shift</span>
+                <span class="legend-item"><span class="legend-dot odl2"></span> ODL 2nd Shift</span>
+              </div>
+              <div>Official AMIS Master Examination Timetable</div>
+            </div>
+
+            <table class="matrix-table">
+              <thead>
+                <tr>
+                  <th class="time-col">Exam Period</th>
+                  <th><span class="date-header-title">Sep 2</span><span class="date-header-sub">Wednesday</span></th>
+                  <th><span class="date-header-title">Sep 3</span><span class="date-header-sub">Thursday</span></th>
+                  <th><span class="date-header-title">Sep 9</span><span class="date-header-sub">Wednesday</span></th>
+                  <th><span class="date-header-title">Sep 10</span><span class="date-header-sub">Thursday</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                ${timeline.map(item => {
+                  if (item.isBreak) {
+                    return `
+                      <tr class="break-tr">
+                        <td class="time-td break-time-td">
+                          <span class="time-slot-val">${item.time}</span>
+                          <span class="break-tag">${item.tag}</span>
+                        </td>
+                        <td colspan="4" class="break-banner-td">${item.label}</td>
+                      </tr>
+                    `;
+                  }
+
+                  return `
+                    <tr>
+                      <td class="time-td">
+                        <span class="time-slot-val">${item.time}</span>
+                        <span class="time-slot-period">Exam Period</span>
+                      </td>
+                      ${dates.map(d => {
+                        const cellExams = gradeRecs.filter(r => r.date === d && r.time === item.time);
+                        if (cellExams.length === 0) {
+                          return `<td><div class="empty-slot-block">No Exam</div></td>`;
+                        }
+                        return `
+                          <td>
+                            <div class="cards-stack">
+                              ${cellExams.map(ex => {
+                                const typeCls = ex.modality === 'F2F' ? 'f2f' : (ex.shift.includes('2nd') ? 'odl2' : 'odl1');
+                                return `
+                                  <div class="exam-event-card ${typeCls}" onclick="openSubjectModal('${encodeURIComponent(ex.subject)}')">
+                                    <div class="card-subject-name">
+                                      <span>${ex.subject}</span>
+                                      <span class="click-hint">view all →</span>
+                                    </div>
+                                    <div class="card-sec-row">
+                                      <span>${cleanSecName(ex.section)}</span>
+                                      ${ex.gender ? `<span style="font-size:10px; font-weight:800; color:#64748b;">• ${ex.gender}</span>` : ''}
+                                    </div>
+                                    <div class="card-teacher-row">
+                                      <span>${ex.teacher}</span>
+                                      ${ex.room ? `<span style="font-size:10.5px; background:#f1f5f9; padding:1px 5px; border-radius:4px; color:#475569;">Rm ${ex.room}</span>` : ''}
+                                    </div>
+                                  </div>
+                                `;
+                              }).join('')}
+                            </div>
+                          </td>
+                        `;
+                      }).join('')}
+                    </tr>
+                  `;
+                }).join('')}
+              </tbody>
+            </table>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // ==========================================
+    // 2. Daily Grid View
+    // ==========================================
+    function renderDailyGridView(records) {
+      const container = document.getElementById('mainContainer');
+      const dates = [
+        { date: '2026-09-02', title: 'Day 1 — September 2, 2026 (Wednesday)' },
+        { date: '2026-09-03', title: 'Day 2 — September 3, 2026 (Thursday)' },
+        { date: '2026-09-09', title: 'Day 3 — September 9, 2026 (Wednesday)' },
+        { date: '2026-09-10', title: 'Day 4 — September 10, 2026 (Thursday)' }
+      ];
+
+      container.innerHTML = dates.map(dayInfo => {
+        const dayRecs = records.filter(r => r.date === dayInfo.date);
+        const slots = [...new Set(dayRecs.map(r => r.time))].sort((a,b) => minutes(a) - minutes(b));
+
+        return `
+          <div class="calendar-poster">
+            <div class="poster-header" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
+              <div class="poster-title">
+                <h2>${dayInfo.title}</h2>
+                <p>All Modalities & Shift Examinations Schedule</p>
+              </div>
+              <div class="grade-badge-display">${dayRecs.length} Exam Sessions</div>
+            </div>
+
+            <table class="matrix-table">
+              <thead>
+                <tr>
+                  <th class="time-col">Time Slot</th>
+                  <th>F2F Classroom</th>
+                  <th>ODL 1st Shift</th>
+                  <th>ODL 2nd Shift</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${slots.map(sl => {
+                  const f2fList = dayRecs.filter(r => r.time === sl && r.modality === 'F2F');
+                  const odl1List = dayRecs.filter(r => r.time === sl && r.modality === 'ODL' && r.shift.includes('1st'));
+                  const odl2List = dayRecs.filter(r => r.time === sl && r.modality === 'ODL' && r.shift.includes('2nd'));
+
+                  return `
+                    <tr>
+                      <td class="time-td">
+                        <span class="time-slot-val">${sl}</span>
+                      </td>
+                      <td>
+                        <div class="cards-stack">
+                          ${f2fList.map(ex => renderExamCardHtml(ex, 'f2f')).join('') || '<div class="empty-slot-block">—</div>'}
+                        </div>
+                      </td>
+                      <td>
+                        <div class="cards-stack">
+                          ${odl1List.map(ex => renderExamCardHtml(ex, 'odl1')).join('') || '<div class="empty-slot-block">—</div>'}
+                        </div>
+                      </td>
+                      <td>
+                        <div class="cards-stack">
+                          ${odl2List.map(ex => renderExamCardHtml(ex, 'odl2')).join('') || '<div class="empty-slot-block">—</div>'}
+                        </div>
+                      </td>
+                    </tr>
+                  `;
+                }).join('')}
+              </tbody>
+            </table>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderExamCardHtml(ex, typeCls) {
+      return `
+        <div class="exam-event-card ${typeCls}" onclick="openSubjectModal('${encodeURIComponent(ex.subject)}')">
+          <div class="card-subject-name">
+            <span>${ex.subject}</span>
+            <span class="click-hint">details →</span>
+          </div>
+          <div class="card-sec-row">
+            <strong>${ex.grade}</strong> — ${cleanSecName(ex.section)}
+          </div>
+          <div class="card-teacher-row">
+            <span>${ex.teacher}</span>
+            ${ex.room ? `<span style="font-size:10px; background:#f1f5f9; padding:1px 5px; border-radius:4px; color:#475569;">Rm ${ex.room}</span>` : ''}
+          </div>
+        </div>
+      `;
+    }
+
+    // ==========================================
+    // 3. Subject Directory View Mode
+    // ==========================================
+    function renderSubjectsView(records) {
+      const container = document.getElementById('mainContainer');
+      const uniqueSubjects = [...new Set(records.map(r => r.subject))].sort();
+
+      container.innerHTML = `
+        <div style="margin-bottom:20px;">
+          <h2 style="font-size:20px; font-weight:900; color:#0f172a;">Official Subject Directory (${uniqueSubjects.length} Subjects)</h2>
+          <p style="font-size:13px; font-weight:600; color:var(--text-muted);">Click any subject to view all assigned individual sections, teachers, dates, and exam slots.</p>
+        </div>
+        <div class="subject-grid">
+          ${uniqueSubjects.map(sub => {
+            const subRecs = records.filter(r => r.subject === sub);
+            const tCount = new Set(subRecs.map(r => r.teacher)).size;
+            const secCount = new Set(subRecs.map(r => `${r.grade}-${r.section}`)).size;
+
+            return `
+              <div class="subject-card" onclick="openSubjectModal('${encodeURIComponent(sub)}')">
+                <div>
+                  <h4>${sub}</h4>
+                  <p style="font-size:12px; color:var(--text-muted); font-weight:600; margin-top:4px;">
+                    ${[...new Set(subRecs.map(r => r.grade))].slice(0, 3).join(', ')}${new Set(subRecs.map(r => r.grade)).size > 3 ? '...' : ''}
+                  </p>
+                </div>
+                <div class="subject-card-stats">
+                  <span><strong>${secCount}</strong> Sections</span>
+                  <span><strong>${tCount}</strong> Teachers</span>
+                  <span><strong>${subRecs.length}</strong> Exams</span>
+                </div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `;
+    }
+
+    // ==========================================
+    // 4. Faculty View Mode
+    // ==========================================
+    function renderFacultyView(records) {
+      const container = document.getElementById('mainContainer');
+      const uniqueTeachers = [...new Set(records.map(r => r.teacher))].sort();
+
+      container.innerHTML = `
+        <div class="faculty-matrix">
+          ${uniqueTeachers.map(teacher => {
+            const tRecs = records.filter(r => r.teacher === teacher).sort((a,b) => a.date.localeCompare(b.date) || minutes(a.time) - minutes(b.time));
+            const subList = [...new Set(tRecs.map(r => r.subject))];
+
+            return `
+              <div class="calendar-poster" style="margin-bottom:20px;">
+                <div class="poster-header" style="background: linear-gradient(135deg, #0f766e, #0e7490);">
+                  <div class="poster-title">
+                    <h2>${teacher}</h2>
+                    <p>${subList.join(' • ')}</p>
+                  </div>
+                  <div class="grade-badge-display">${tRecs.length} Exam Assignments</div>
+                </div>
+
+                <div style="padding:16px 20px;">
+                  <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:12px;">
+                    ${tRecs.map(ex => {
+                      const typeCls = ex.modality === 'F2F' ? 'f2f' : (ex.shift.includes('2nd') ? 'odl2' : 'odl1');
+                      return `
+                        <div class="exam-event-card ${typeCls}" onclick="openSubjectModal('${encodeURIComponent(ex.subject)}')">
+                          <div class="card-subject-name">
+                            <span>${ex.subject}</span>
+                            <span class="click-hint">view →</span>
+                          </div>
+                          <div class="card-sec-row">
+                            <strong>${ex.grade}</strong> — ${cleanSecName(ex.section)}
+                          </div>
+                          <div class="card-teacher-row" style="color:var(--text); font-size:12px;">
+                            <span>📅 ${ex.date} (${ex.dayName.slice(0,3)})</span>
+                            <span>⏰ ${ex.time}</span>
+                          </div>
+                        </div>
+                      `;
+                    }).join('')}
+                  </div>
+                </div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `;
+    }
+
+    // ==========================================
+    // Interactive Subject Modal Logic
+    // ==========================================
+    function openSubjectModal(encSubject) {
+      const subject = decodeURIComponent(encSubject);
+      CURRENT_MODAL_SUBJECT = subject;
+
+      const subRecs = ALL_DATA.filter(r => r.subject === subject).sort((a,b) => {
+        return a.date.localeCompare(b.date) || minutes(a.time) - minutes(b.time) || a.grade.localeCompare(b.grade, undefined, { numeric: true });
+      });
+
+      document.getElementById('modalSubjectTitle').innerText = subject;
+      document.getElementById('modalSubjectSub').innerText = `${subRecs.length} Active Section Assignments Across Examination Days`;
+
+      const tCount = new Set(subRecs.map(r => r.teacher)).size;
+      const secCount = new Set(subRecs.map(r => `${r.grade}-${r.section}`)).size;
+
+      document.getElementById('modalStatSections').innerText = secCount;
+      document.getElementById('modalStatTeachers').innerText = tCount;
+      document.getElementById('modalStatExams').innerText = subRecs.length;
+
+      const listContainer = document.getElementById('modalSecList');
+      listContainer.innerHTML = subRecs.map(ex => {
+        const modCls = ex.modality === 'F2F' ? 'f2f' : (ex.shift.includes('2nd') ? 'odl2' : 'odl1');
+        const modLabel = ex.modality === 'F2F' ? 'F2F Classroom' : (ex.shift.includes('2nd') ? 'ODL 2nd Shift' : 'ODL 1st Shift');
+
+        return `
+          <div class="modal-sec-item">
+            <div>
+              <div class="item-grade-sec">${ex.grade} — ${cleanSecName(ex.section)}</div>
+              <span class="mod-badge ${modCls}">${modLabel}</span>
+            </div>
+            <div>
+              <span style="font-size:11px; color:var(--text-muted); font-weight:700; display:block;">FACULTY PROCTOR</span>
+              <div class="item-teacher">${ex.teacher}</div>
+            </div>
+            <div>
+              <span style="font-size:11px; color:var(--text-muted); font-weight:700; display:block;">EXAM SCHEDULE</span>
+              <div class="item-datetime">
+                ${ex.date} (${ex.dayName.slice(0,3)})
+                <span>${ex.time}</span>
+              </div>
+            </div>
+            <div style="text-align:right;">
+              ${ex.room ? `<span class="mod-badge" style="background:#f1f5f9; color:#475569; border:1px solid var(--line);">Rm ${ex.room}</span>` : '<span style="font-size:11px; color:#94a3b8;">Online</span>'}
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('subjectModalBackdrop').classList.add('active');
+    }
+
+    function closeSubjectModal(e) {
+      if (e && e.target !== document.getElementById('subjectModalBackdrop') && !e.target.classList.contains('modal-close-btn') && e.target.tagName !== 'BUTTON') {
+        return;
+      }
+      document.getElementById('subjectModalBackdrop').classList.remove('active');
+    }
+
+    function filterByCurrentSubject() {
+      if (!CURRENT_MODAL_SUBJECT) return;
+      document.getElementById('subjectSelect').value = CURRENT_MODAL_SUBJECT;
+      closeSubjectModal();
+      switchView('posters');
+      onFilterChange();
+    }
+
+    // CSV Export
+    function exportMasterCSV() {
+      const records = getFilteredData();
+      if (records.length === 0) return;
+
+      const headers = ["date", "dayName", "examDay", "startTime", "endTime", "time", "period", "duration", "grade", "cleanSection", "modality", "shift", "subject", "teacher", "room", "status"];
+      let csvContent = "data:text/csv;charset=utf-8," + headers.join(",") + "\n";
+
+      records.forEach(r => {
+        const row = [
+          r.date,
+          r.dayName,
+          r.examDay,
+          r.startTime,
+          r.endTime,
+          `"${r.time}"`,
+          `"${r.period || ''}"`,
+          `"${r.duration || '60 minutes'}"`,
+          `"${r.grade}"`,
+          `"${cleanSecName(r.section)}"`,
+          r.modality,
+          `"${r.shift}"`,
+          `"${r.subject}"`,
+          `"${r.teacher}"`,
+          `"${r.room || ''}"`,
+          r.status || 'CONFIRMED'
+        ];
+        csvContent += row.join(",") + "\n";
+      });
+
+      const encodedUri = encodeURI(csvContent);
+      const link = document.createElement("a");
+      link.setAttribute("href", encodedUri);
+      link.setAttribute("download", "AMIS_Term_Examination_Schedule_S.Y._2026-2027.csv");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+</html>

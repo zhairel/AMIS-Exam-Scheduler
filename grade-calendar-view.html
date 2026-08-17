@@ -1,0 +1,1283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AMIS Examination Calendar & Visual Timetable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="xlsx.full.min.js"></script>
+<script src="exam-parser.js"></script>
+<script src="html2canvas.min.js"></script>
+<style>
+:root {
+  --deep: #064e3b;
+  --green: #047857;
+  --emerald: #10b981;
+  --gold: #b45309;
+  --gold-light: #fef3c7;
+  --ink: #0f172a;
+  --muted: #475569;
+  --line: #cbd5e1;
+  --line-light: #e2e8f0;
+  --bg-f2f: #f0fdf4;
+  --border-f2f: #16a34a;
+  --bg-odl1: #f0f9ff;
+  --border-odl1: #0284c7;
+  --bg-odl2: #fffbeb;
+  --border-odl2: #d97706;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0;
+  background: #f1f5f9;
+  color: var(--ink);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Sticky Top Navigation */
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #064e3b 0%, #0b3e2f 100%);
+  color: #fff;
+  padding: 12px 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  border-bottom: 3px solid #042f24;
+}
+
+.top-nav-row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.top-nav-brand {
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-nav-mark {
+  background: rgba(255,255,255,0.15);
+  border: 1.5px solid rgba(255,255,255,0.35);
+  padding: 4px 9px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.top-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Complete Filter Bar */
+.top-nav-filters {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr 0.9fr 0.9fr 1.2fr 0.8fr 1.1fr auto;
+  gap: 10px;
+  background: rgba(0,0,0,0.24);
+  padding: 10px 14px;
+  border-radius: 10px;
+  align-items: end;
+}
+
+.nav-field {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.nav-field label {
+  font-size: 9.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #cbd5e1;
+}
+
+.nav-field select, .nav-field input {
+  padding: 7px 10px;
+  border-radius: 7px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 12px;
+  outline: none;
+}
+
+.nav-field select option {
+  color: #0f172a;
+}
+
+.btn-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  transition: all 0.15s ease;
+}
+.btn-nav-primary {
+  background: #ffffff;
+  color: #064e3b;
+}
+.btn-nav-primary:hover {
+  background: #ecfdf5;
+}
+.btn-nav-outline {
+  background: rgba(255,255,255,0.12);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.btn-nav-outline:hover {
+  background: rgba(255,255,255,0.22);
+}
+
+.container {
+  max-width: 1480px;
+  margin: 24px auto 40px;
+  padding: 0 20px;
+}
+
+/* Master Calendar Poster */
+.calendar-poster {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  border: 1.5px solid var(--line);
+  overflow: hidden;
+  margin-bottom: 40px;
+  page-break-after: always;
+}
+
+/* Header */
+.poster-header {
+  background: linear-gradient(135deg, #064e3b 0%, #047857 100%);
+  color: #ffffff;
+  background: linear-gradient(135deg, #064e3b 0%, #046a38 100%);
+  color: #ffffff;
+  padding: 18px 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.poster-brand {
+  display: flex;
+  align-items: center;
+}
+
+.poster-mark {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.15);
+  border: 1.5px solid rgba(255,255,255,0.35);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-right: 14px;
+}
+
+.poster-title h1 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+}
+
+.poster-title p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  opacity: 0.92;
+  font-weight: 650;
+}
+
+.poster-grade-badge {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  text-align: right;
+}
+
+.poster-grade-badge h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.btn-poster-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #064e3b;
+  font-size: 12px;
+  font-weight: 850;
+  padding: 9px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.18);
+  transition: all 0.15s ease;
+}
+.btn-poster-download:hover {
+  background: #f0fdf4;
+  transform: translateY(-1px);
+}
+
+/* Sub-header / Legend */
+.poster-subbar {
+  background: #f8fafc;
+  padding: 11px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11.5px;
+  font-weight: 750;
+  color: var(--muted);
+  border-bottom: 1.5px solid var(--line-light);
+}
+
+.legend-group {
+  display: flex;
+  gap: 16px;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 3px;
+}
+.legend-dot.f2f { background: var(--border-f2f); }
+.legend-dot.odl1 { background: var(--border-odl1); }
+.legend-dot.odl2 { background: var(--border-odl2); }
+
+/* ======================================================== */
+/* SEPARATED CALENDAR MATRIX GRID WITH CLEAR ROW BUFFERS */
+/* ======================================================== */
+.matrix-wrapper {
+  padding: 18px 24px 24px;
+  background: #f8fafc;
+}
+
+.calendar-matrix {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px; /* Strong 12px gap between rows */
+  table-layout: fixed;
+}
+
+/* Table Header Days */
+.calendar-matrix thead th {
+  background: #ffffff;
+  padding: 12px 14px;
+  text-align: center;
+  font-weight: 800;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+}
+
+.th-time-col {
+  width: 220px;
+  min-width: 220px;
+  background: #e2e8f0 !important;
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.th-day-col {
+  width: calc((100% - 220px) / 4);
+}
+
+.th-day-title {
+  font-size: 18.5px;
+  font-weight: 900;
+  color: #064e3b;
+  display: block;
+}
+
+.th-day-meta {
+  font-size: 14px;
+  color: #475569;
+  font-weight: 750;
+  margin-top: 3px;
+  display: block;
+}
+
+/* Shift Group Band Divider */
+.shift-band-row td {
+  padding: 14px 22px;
+  font-size: 15.5px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-radius: 8px;
+  border: 1.5px solid transparent;
+}
+
+.shift-band-f2f td { background: #dcfce7; color: #14532d; border-color: #86efac; }
+.shift-band-odl1 td { background: #e0f2fe; color: #0369a1; border-color: #7dd3fc; }
+.shift-band-odl2 td { background: #fef3c7; color: #92400e; border-color: #fcd34d; }
+
+/* Official Protected Break Rows */
+.break-row td {
+  background: #f8fafc;
+  border-top: 1.5px dashed #cbd5e1;
+  border-bottom: 1.5px dashed #cbd5e1;
+  padding: 8px 12px;
+}
+.break-cell {
+  background: #f1f5f9 !important;
+  text-align: center;
+  min-height: auto !important;
+  padding: 10px 8px !important;
+}
+.break-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 850;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: #e2e8f0;
+  color: #475569;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+.break-banner {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+.break-row.recess-row .break-banner {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+.break-row.lunch-row .break-banner {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+.break-row.departure-row .break-banner {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+/* Time Axis Cell (Left Column) */
+.time-cell {
+  background: #ffffff;
+  padding: 16px 12px;
+  text-align: center;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px 0 0 10px;
+  border-right: 3px solid #475569;
+  vertical-align: middle;
+  min-height: 104px;
+}
+
+.time-val {
+  font-size: 18px;
+  font-weight: 900;
+  color: #064e3b;
+  display: block;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.time-shift-label {
+  font-size: 14px;
+  font-weight: 850;
+  color: #334155;
+  margin-top: 6px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+/* Day Exam Slot Cell */
+.slot-cell {
+  padding: 10px 12px;
+  background: #ffffff;
+  border-top: 1.5px solid #e2e8f0;
+  border-bottom: 1.5px solid #e2e8f0;
+  border-right: 1.5px solid #e2e8f0;
+  vertical-align: top;
+  min-height: 104px;
+}
+
+.slot-cell:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+/* Empty Cell - Clean, Perfectly Sized & Uniform */
+.cal-empty-slot {
+  min-height: 104px;
+  border: 1.5px dashed #cbd5e1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 750;
+  background: #f8fafc;
+  box-sizing: border-box;
+}
+
+.slot-events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Independent Exam Block Card - Perfectly Proportionate */
+.cal-event-card {
+  min-height: 104px;
+  border-radius: 10px;
+  padding: 13px 15px;
+  border: 1.5px solid #cbd5e1;
+  border-left-width: 6.5px;
+  background: #ffffff;
+  box-shadow: 0 1.5px 5px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cal-event-card.f2f {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  border-left-color: #16a34a;
+}
+.cal-event-card.odl1 {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  border-left-color: #0284c7;
+}
+.cal-event-card.odl2 {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  border-left-color: #d97706;
+}
+
+.cal-event-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.cal-event-sub {
+  font-size: 21px;
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  flex: 1;
+}
+
+.pill-gender {
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.pill-gender.pill-boys {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.pill-gender.pill-girls {
+  background: #fce7f3;
+  color: #be185d;
+  border: 1px solid #fbcfe8;
+}
+
+.pill-gender.pill-mix {
+  background: #f3e8ff;
+  color: #7e22ce;
+  border: 1px solid #e9d5ff;
+}
+
+.cal-event-sec {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.cal-grade-title {
+  font-size: 18px;
+  font-weight: 900;
+  color: #064e3b;
+  letter-spacing: -0.01em;
+  display: inline-block;
+}
+
+.cal-sec-name {
+  font-size: 15.5px;
+  font-weight: 800;
+  color: #1e293b;
+  letter-spacing: -0.01em;
+}
+
+.cal-event-tchr {
+  font-size: 17.5px;
+  font-weight: 900;
+  color: #064e3b;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1.5px dashed rgba(6, 78, 59, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pill-sm {
+  font-size: 12px;
+  font-weight: 850;
+  padding: 2px 8px;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background: rgba(255,255,255,0.9);
+}
+
+.poster-footer {
+  padding: 14px 28px;
+  background: #f8fafc;
+  border-top: 1.5px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+  .top-nav-filters { grid-template-columns: 1fr 1fr; }
+  .calendar-matrix { font-size: 11px; }
+  .th-time-col { width: 120px; }
+}
+
+@media print {
+  body { padding: 0; background: #fff; }
+  .top-nav { display: none !important; }
+  .calendar-poster { box-shadow: none; border-radius: 0; border: 1px solid #000; margin: 0 0 20px; }
+  .poster-header { background: #000 !important; color: #fff !important; }
+  .btn-poster-download { display: none !important; }
+}
+
+/* Pure poster mode for high-resolution JPG generation */
+body.no-navbar .top-nav,
+body.no-navbar .btn-poster-download {
+  display: none !important;
+}
+body.no-navbar .container {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+body.no-navbar .calendar-poster {
+  margin: 0 !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+body.no-navbar {
+  background: #ffffff !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+</style>
+</head>
+<body>
+
+<!-- Top Navigation & Filter Bar -->
+<nav class="top-nav">
+  <div class="top-nav-row1">
+    <div class="top-nav-brand">
+      <span class="top-nav-mark">AMIS</span>
+      <span>Examination Timetable & Visual Calendar UI</span>
+    </div>
+    <div class="top-nav-actions">
+      <a class="btn-nav btn-nav-primary" href="AMIS_All_Grade_Calendars_JPG.zip" download="AMIS_All_Grade_Calendars_JPG.zip">
+        Download All 16 Grades (ZIP)
+      </a>
+      <button class="btn-nav btn-nav-outline" onclick="window.print()">
+        Print / PDF
+      </button>
+      <a class="btn-nav btn-nav-outline" href="index.html">
+        ← Master Schedule
+      </a>
+    </div>
+  </div>
+
+  <!-- Complete Filter Bar with Dedicated Teacher Dropdown -->
+  <div class="top-nav-filters">
+    <div class="nav-field">
+      <label>Grade Level</label>
+      <select id="gradeNavSelect">
+        <option value="">All Grades</option>
+      </select>
+    </div>
+    <div class="nav-field">
+      <label>Teacher / Staff</label>
+      <select id="teacherNavSelect">
+        <option value="">All Teachers (55 Staff)</option>
+      </select>
+    </div>
+    <div class="nav-field">
+      <label>Modality</label>
+      <select id="modalityNavSelect">
+        <option value="">All Modalities</option>
+        <option value="F2F">F2F (Day)</option>
+        <option value="ODL">ODL (Online)</option>
+      </select>
+    </div>
+    <div class="nav-field">
+      <label>Shift</label>
+      <select id="shiftNavSelect">
+        <option value="">All Shifts</option>
+        <option value="Day / F2F">Day / F2F</option>
+        <option value="1st Shift">1st Shift</option>
+        <option value="2nd Shift">2nd Shift</option>
+      </select>
+    </div>
+    <div class="nav-field">
+      <label>Section</label>
+      <select id="sectionNavSelect">
+        <option value="">All Sections</option>
+      </select>
+    </div>
+    <div class="nav-field">
+      <label>Gender</label>
+      <select id="genderNavSelect">
+        <option value="">All Genders</option>
+        <option value="Boys">Boys</option>
+        <option value="Girls">Girls</option>
+        <option value="Mix">Mix</option>
+      </select>
+    </div>
+    <div class="nav-field">
+      <label>Search Subject</label>
+      <input id="searchNavInput" placeholder="Filter subject...">
+    </div>
+    <div>
+      <button class="btn-nav btn-nav-outline" id="btnResetFilters" style="padding: 7px 12px; margin-top: 16px;">
+        Reset
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div id="calendarsRoot"></div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m]));
+
+  let ALL_RECORDS = [];
+  const gradeNavSelect = document.getElementById('gradeNavSelect');
+  const teacherNavSelect = document.getElementById('teacherNavSelect');
+  const modalityNavSelect = document.getElementById('modalityNavSelect');
+  const shiftNavSelect = document.getElementById('shiftNavSelect');
+  const sectionNavSelect = document.getElementById('sectionNavSelect');
+  const genderNavSelect = document.getElementById('genderNavSelect');
+  const searchNavInput = document.getElementById('searchNavInput');
+  const btnResetFilters = document.getElementById('btnResetFilters');
+
+  function minutes(s) {
+    if (!s) return 9999;
+    const t = AMISExamEngine.parseTimeRange(s);
+    return t ? t.startMinutes : 9999;
+  }
+
+  function formatTimeUpper(s) {
+    if (!s) return '';
+    return String(s)
+      .replace(/a\.m\./gi, 'AM')
+      .replace(/p\.m\./gi, 'PM')
+      .replace(/\bam\b/gi, 'AM')
+      .replace(/\bpm\b/gi, 'PM')
+      .replace(/0(\d:\d\d)/g, '$1')
+      .replace(/(\d+):(\d+)-(\d+):(\d+)/g, '$1:$2 - $3:$4')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function cleanSectionName(sec) {
+    if (!sec) return '';
+    return String(sec)
+      .replace(/\s*\((Boys|Girls|Mix|Mixed)\)/gi, '')
+      .replace(/\s*—\s*(Boys|Girls|Mix|Mixed)/gi, '')
+      .replace(/\s*-\s*(Boys|Girls|Mix|Mixed)/gi, '')
+      .replace(/\b(Boys|Girls|Mix|Mixed)\b/gi, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function formatShortDate(dStr) {
+    if (!dStr) return '';
+    const d = new Date(dStr + 'T00:00:00');
+    return !isNaN(d.getTime()) ? d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : dStr;
+  }
+
+  function formatDayName(dStr) {
+    if (!dStr) return '';
+    const d = new Date(dStr + 'T00:00:00');
+    return !isNaN(d.getTime()) ? d.toLocaleDateString('en-US', { weekday: 'long' }) : '';
+  }
+
+  function getGenderPillClass(g) {
+    const s = String(g || '').toLowerCase();
+    if (s.includes('boy')) return 'pill-boys';
+    if (s.includes('girl')) return 'pill-girls';
+    return 'pill-mix';
+  }
+
+  async function init() {
+    let records = [];
+    try {
+      const resp = await fetch('exam_data.json?v=' + Date.now());
+      if (resp.ok) {
+        records = await resp.json();
+      }
+    } catch (e) {
+      console.warn('Fetch failed:', e);
+    }
+    if (!records || records.length === 0) {
+      const saved = AMISExamEngine.loadScheduleFromStorage();
+      if (saved && Array.isArray(saved.records) && saved.records.length > 0) {
+        records = saved.records;
+      } else if (window.__EXAM_SCHEDULE_DATA__) {
+        records = window.__EXAM_SCHEDULE_DATA__;
+      }
+    }
+
+    if (!records || records.length === 0) {
+      document.getElementById('calendarsRoot').innerHTML = '<div style="padding:40px;text-align:center;">No examination schedule found. Please import an Excel file on the main page.</div>';
+      return;
+    }
+
+    ALL_RECORDS = records;
+
+    const qs = new URLSearchParams(window.location.search);
+    if (qs.get('nobar') === '1' || qs.get('posterOnly') === '1') {
+      document.body.classList.add('no-navbar');
+    }
+    const filterGrade = qs.get('grade');
+    const filterTeacher = qs.get('teacher');
+    const filterMod = qs.get('modality');
+    const filterShift = qs.get('shift');
+
+    // 1. Populate Grade Selector
+    let allGrades = [...new Set(records.map(r => r.grade))].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+    gradeNavSelect.innerHTML = '<option value="">All Grades</option>' + allGrades.map(g =>
+      `<option value="${esc(g)}" ${g.toLowerCase() === (filterGrade || '').toLowerCase() ? 'selected' : ''}>${esc(g)}</option>`
+    ).join('');
+
+    // 2. Populate Teacher Selector
+    let allTeachers = [...new Set(records.map(r => r.teacher).filter(t => t && !/^(tbd|tba|none)$/i.test(t)))].sort((a, b) => a.localeCompare(b));
+    teacherNavSelect.innerHTML = '<option value="">All Teachers (' + allTeachers.length + ' Staff)</option>' + allTeachers.map(t => {
+      const count = records.filter(r => r.teacher === t).length;
+      return `<option value="${esc(t)}" ${t.toLowerCase() === (filterTeacher || '').toLowerCase() ? 'selected' : ''}>${esc(t)} (${count} exams)</option>`;
+    }).join('');
+
+    if (filterMod) modalityNavSelect.value = filterMod;
+    if (filterShift) shiftNavSelect.value = filterShift;
+
+    populateSectionFilter();
+
+    // Event Listeners
+    [gradeNavSelect, teacherNavSelect, modalityNavSelect, shiftNavSelect, sectionNavSelect, genderNavSelect].forEach(el => {
+      el.addEventListener('change', () => {
+        if (el === gradeNavSelect) populateSectionFilter();
+        renderFilteredCalendars();
+      });
+    });
+
+    searchNavInput.addEventListener('input', renderFilteredCalendars);
+
+    btnResetFilters.addEventListener('click', () => {
+      gradeNavSelect.value = '';
+      teacherNavSelect.value = '';
+      modalityNavSelect.value = '';
+      shiftNavSelect.value = '';
+      sectionNavSelect.value = '';
+      genderNavSelect.value = '';
+      searchNavInput.value = '';
+      populateSectionFilter();
+      renderFilteredCalendars();
+    });
+
+    renderFilteredCalendars();
+  }
+
+  function populateSectionFilter() {
+    const selectedGrade = gradeNavSelect.value;
+    let relevantRecords = ALL_RECORDS;
+    if (selectedGrade) {
+      relevantRecords = ALL_RECORDS.filter(r => r.grade === selectedGrade);
+    }
+    const sections = [...new Set(relevantRecords.map(r => r.section).filter(Boolean))].sort();
+    sectionNavSelect.innerHTML = '<option value="">All Sections</option>' + sections.map(s =>
+      `<option value="${esc(s)}">${esc(s)}</option>`
+    ).join('');
+  }
+
+  function renderFilteredCalendars() {
+    const gVal = gradeNavSelect.value;
+    const tVal = teacherNavSelect.value;
+    const mVal = modalityNavSelect.value;
+    const shVal = shiftNavSelect.value;
+    const secVal = sectionNavSelect.value;
+    const genVal = genderNavSelect.value;
+    const q = searchNavInput.value.trim().toLowerCase();
+
+    // Filter records
+    const filteredRecords = ALL_RECORDS.filter(r => {
+      if (gVal && r.grade !== gVal) return false;
+      if (tVal && r.teacher !== tVal) return false;
+      if (mVal && r.modality !== mVal) return false;
+      if (shVal && r.shift !== shVal) return false;
+      if (secVal && r.section !== secVal) return false;
+      if (genVal && r.gender !== genVal) return false;
+      if (q) {
+        const text = [r.grade, r.section, r.subject, r.teacher, r.modality, r.shift, r.room].join(' ').toLowerCase();
+        if (!text.includes(q)) return false;
+      }
+      return true;
+    });
+
+    const root = document.getElementById('calendarsRoot');
+
+    if (filteredRecords.length === 0) {
+      root.innerHTML = '<div style="background:#fff; border-radius:14px; padding:60px 20px; text-align:center; color:#64748b; font-weight:700;">No examination entries match the selected filters.</div>';
+      return;
+    }
+
+    const uniqueDates = [...new Set(ALL_RECORDS.map(r => r.date))].sort();
+
+    // ========================================================
+    // Case A: Specific Teacher Selected -> Individual Teacher Timetable
+    // ========================================================
+    if (tVal) {
+      const teacherRecords = filteredRecords;
+      const teacherGrades = [...new Set(teacherRecords.map(r => r.grade))];
+      const teacherSections = [...new Set(teacherRecords.map(r => `${r.grade} ${r.section}`))];
+      const teacherSubjects = [...new Set(teacherRecords.map(r => r.subject))];
+      const safeTeacher = tVal.replace(/[^a-zA-Z0-9]/g, '_');
+      const posterId = `poster_teacher_${safeTeacher}`;
+
+      // Find all unique times for this teacher
+      const uniqueTimes = [...new Set(teacherRecords.map(r => r.time))].sort((a, b) => minutes(a) - minutes(b));
+
+      root.innerHTML = `
+        <div class="calendar-poster" id="${posterId}">
+          <div class="poster-header">
+            <div class="poster-brand">
+              <div class="poster-title">
+                <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
+                <p>Teacher Examination & Proctorship Timetable • S.Y. 2026-2027</p>
+              </div>
+            </div>
+            <div class="poster-grade-badge">
+              <div>
+                <h2>${esc(tVal.toUpperCase())}</h2>
+              </div>
+              <div>
+                <button class="btn-poster-download" onclick="window.downloadPosterAsJpg('${posterId}', 'AMIS_${safeTeacher}_Exam_Schedule')">
+                  Download Teacher JPG
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="poster-subbar">
+            <div class="legend-group">
+              <span class="legend-item"><span class="legend-dot f2f"></span> F2F Day</span>
+              <span class="legend-item"><span class="legend-dot odl1"></span> ODL 1st Shift</span>
+              <span class="legend-item"><span class="legend-dot odl2"></span> ODL 2nd Shift</span>
+            </div>
+            <div>Subjects: ${esc(teacherSubjects.join(', '))}</div>
+          </div>
+
+          <div class="matrix-wrapper">
+            <table class="calendar-matrix">
+              <thead>
+                <tr>
+                  <th class="th-time-col">Time Period</th>
+                  ${uniqueDates.map(dStr => `
+                    <th class="th-day-col">
+                      <span class="th-day-title">${esc(formatShortDate(dStr))}</span>
+                      <span class="th-day-meta">${esc(formatDayName(dStr))}</span>
+                    </th>
+                  `).join('')}
+                </tr>
+              </thead>
+              <tbody>
+                ${uniqueTimes.map(timeStr => `
+                  <tr>
+                    <td class="time-cell">
+                      <span class="time-val">${esc(formatTimeUpper(timeStr))}</span>
+                      <span class="time-shift-label">${getShiftCategoryLabel(timeStr)}</span>
+                    </td>
+                    ${uniqueDates.map(dStr => {
+                      const cellExams = teacherRecords.filter(r => r.date === dStr && r.time === timeStr);
+                      if (cellExams.length === 0) {
+                        return `<td class="slot-cell"><div class="cal-empty-slot"><span>No Exam</span></div></td>`;
+                      }
+                      return `
+                        <td class="slot-cell">
+                          <div class="slot-events-list">
+                            ${cellExams.map(ex => {
+                              let typeClass = ex.modality === 'F2F' ? 'f2f' : (ex.shift.includes('2nd') ? 'odl2' : 'odl1');
+                              return `
+                                <div class="cal-event-card ${typeClass}">
+                                  <div class="cal-event-top-row">
+                                    <span class="cal-event-sub">${esc(ex.subject)}</span>
+                                    ${ex.gender ? `<span class="pill-gender ${getGenderPillClass(ex.gender)}">${esc(ex.gender)}</span>` : ''}
+                                  </div>
+                                  <div class="cal-event-sec">
+                                    <span class="cal-grade-title">${esc(ex.grade)}</span>
+                                    ${cleanSectionName(ex.section) ? `<span class="cal-sec-name">— ${esc(cleanSectionName(ex.section))}</span>` : ''}
+                                  </div>
+                                  ${ex.room ? `
+                                    <div class="cal-event-tchr" style="border-top:0; padding-top:0; margin-top:4px;">
+                                      <span class="pill-sm">Rm ${esc(ex.room)}</span>
+                                    </div>
+                                  ` : ''}
+                                </div>
+                              `;
+                            }).join('')}
+                          </div>
+                        </td>
+                      `;
+                    }).join('')}
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
+
+          <div class="poster-footer">
+            <span>Al Munawwara Islamic School • Teacher Examination Assignment System</span>
+            <span>Generated on ${new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+          </div>
+        </div>
+      `;
+      return;
+    }
+
+    // ========================================================
+    // Case B: Grade Calendar Poster (True Calendar Matrix)
+    // ========================================================
+    const uniqueGrades = [...new Set(filteredRecords.map(r => r.grade))].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+
+    root.innerHTML = uniqueGrades.map(grade => {
+      const gradeRecords = filteredRecords.filter(r => r.grade === grade);
+      const gradeSections = [...new Set(gradeRecords.map(r => r.section))];
+      const gradeTeachers = [...new Set(gradeRecords.map(r => r.teacher).filter(Boolean))];
+      const safeGrade = grade.replace(/ /g, '_').replace(/&/g, 'and');
+      const posterId = `poster_${safeGrade}`;
+
+      let filterSubtitle = '';
+      if (mVal || shVal || secVal) {
+        filterSubtitle = ` [${[mVal, shVal, secVal].filter(Boolean).join(' • ')}]`;
+      }
+
+      // Collect unique exam time slots for this grade
+      const uniqueGradeSlots = [...new Set(gradeRecords.map(r => r.time))].sort((a,b) => minutes(a) - minutes(b));
+      const hasF2F = gradeRecords.some(r => r.modality === 'F2F');
+      const hasODL1 = gradeRecords.some(r => r.shift && r.shift.includes('1st'));
+      const hasODL2 = gradeRecords.some(r => r.shift && r.shift.includes('2nd'));
+
+      // Build unified chronological timeline including official breaks
+      let timelineItems = uniqueGradeSlots.map(timeStr => ({
+        isBreak: false,
+        time: timeStr,
+        startM: minutes(timeStr)
+      }));
+
+      if (hasF2F) {
+        if (grade === 'Kinder 2') {
+          timelineItems.push({
+            isBreak: true,
+            type: 'recess',
+            label: 'RECESS (9:00 AM – 9:15 AM)',
+            time: '9:00 AM – 9:15 AM',
+            tag: 'RECESS',
+            startM: 540
+          });
+        } else if (grade !== 'Kinder 1') {
+          timelineItems.push({
+            isBreak: true,
+            type: 'recess',
+            label: 'RECESS (10:00 AM – 10:25 AM)',
+            time: '10:00 AM – 10:25 AM',
+            tag: 'RECESS',
+            startM: 600
+          });
+        }
+      }
+
+      if (hasODL1) {
+        timelineItems.push({
+          isBreak: true,
+          type: 'lunch',
+          label: 'TRANSITION AND SALAH BREAK (2:50 PM – 3:10 PM)',
+          time: '2:50 PM – 3:10 PM',
+          tag: 'SALAH BREAK',
+          startM: 890
+        });
+      }
+
+      if (hasODL2 && !hasODL1) {
+        timelineItems.push({
+          isBreak: true,
+          type: 'lunch',
+          label: 'TRANSITION AND SALAH BREAK (2:50 PM – 3:10 PM)',
+          time: '2:50 PM – 3:10 PM',
+          tag: 'SALAH BREAK',
+          startM: 890
+        });
+      }
+
+      // Sort timeline strictly chronologically
+      timelineItems.sort((a, b) => a.startM - b.startM);
+
+      return `
+        <div class="calendar-poster" id="${posterId}">
+          <div class="poster-header">
+            <div class="poster-brand">
+              <div class="poster-title">
+                <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
+                <p>Official Term Examination Schedule • S.Y. 2026-2027</p>
+              </div>
+            </div>
+            <div class="poster-grade-badge">
+              <div>
+                <h2>${esc(grade.toUpperCase())}${esc(filterSubtitle)}</h2>
+              </div>
+              <div>
+                <button class="btn-poster-download" onclick="window.downloadPosterAsJpg('${posterId}', 'AMIS_${safeGrade}_Exam_Calendar')">
+                  Download JPG
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="poster-subbar">
+            <div class="legend-group">
+              <span class="legend-item"><span class="legend-dot f2f"></span> F2F Classroom</span>
+              <span class="legend-item"><span class="legend-dot odl1"></span> ODL 1st Shift</span>
+              <span class="legend-item"><span class="legend-dot odl2"></span> ODL 2nd Shift</span>
+            </div>
+            <div>Official AMIS Master Examination Timetable</div>
+          </div>
+
+          <div class="matrix-wrapper">
+            <table class="calendar-matrix">
+              <thead>
+                <tr>
+                  <th class="th-time-col">Exam Period</th>
+                  ${uniqueDates.map(dStr => `
+                    <th class="th-day-col">
+                      <span class="th-day-title">${esc(formatShortDate(dStr))}</span>
+                      <span class="th-day-meta">${esc(formatDayName(dStr))}</span>
+                    </th>
+                  `).join('')}
+                </tr>
+              </thead>
+              <tbody>
+                ${timelineItems.map(item => {
+                  if (item.isBreak) {
+                    return `
+                      <tr class="break-row ${item.type}-row">
+                        <td class="time-cell break-cell">
+                          <span class="time-val">${esc(item.time)}</span>
+                          <span class="break-tag">${esc(item.tag)}</span>
+                        </td>
+                        <td colspan="4" class="break-banner">${esc(item.label)}</td>
+                      </tr>
+                    `;
+                  }
+
+                  const slotTime = item.time;
+                  return `
+                    <tr>
+                      <td class="time-cell">
+                        <span class="time-val">${esc(formatTimeUpper(slotTime))}</span>
+                        <span class="time-shift-label">${esc(getSlotPeriodLabel(slotTime))}</span>
+                      </td>
+                      ${uniqueDates.map(dStr => {
+                        const cellExams = gradeRecords.filter(r => r.date === dStr && r.time === slotTime).sort((a, b) => a.section.localeCompare(b.section));
+                        if (cellExams.length === 0) {
+                          return `<td class="slot-cell"><div class="cal-empty-slot"><span>No Exam</span></div></td>`;
+                        }
+                        return `
+                          <td class="slot-cell">
+                            <div class="slot-events-list">
+                              ${cellExams.map(ex => {
+                                let typeClass = ex.modality === 'F2F' ? 'f2f' : (ex.shift.includes('2nd') ? 'odl2' : 'odl1');
+                                return `
+                                  <div class="cal-event-card ${typeClass}">
+                                    <div class="cal-event-top-row">
+                                      <span class="cal-event-sub">${esc(ex.subject || 'No Subject')}</span>
+                                      ${ex.gender ? `<span class="pill-gender ${getGenderPillClass(ex.gender)}">${esc(ex.gender)}</span>` : ''}
+                                    </div>
+                                    <div class="cal-event-sec">
+                                      <span>${esc(cleanSectionName(ex.section))}</span>
+                                    </div>
+                                    <div class="cal-event-tchr">
+                                      <span>${esc(ex.teacher || 'To Confirm')}</span>
+                                      ${ex.room ? `<span class="pill-sm">Rm ${esc(ex.room)}</span>` : ''}
+                                    </div>
+                                  </div>
+                                `;
+                              }).join('')}
+                            </div>
+                          </td>
+                        `;
+                      }).join('')}
+                    </tr>
+                  `;
+                }).join('')}
+              </tbody>
+            </table>
+          </div>
+
+          <div class="poster-footer">
+            <span>Al Munawwara Islamic School • Examination Scheduling System</span>
+            <span>Generated on ${new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function getSlotPeriodLabel(timeStr) {
+    const m = minutes(timeStr);
+    if (m >= 440 && m < 500) return 'Period 1';
+    if (m >= 500 && m < 585) return 'Period 2';
+    if (m >= 585 && m < 680) return 'Period 3';
+    if (m >= 700 && m < 800) return 'Period 4';
+    if (m >= 800 && m < 880) return 'Period 5';
+    if (m >= 880 && m < 960) return 'Afternoon Period';
+    if (m >= 960 && m < 1050) return 'Evening Period 1';
+    if (m >= 1050 && m < 1120) return 'Evening Period 2';
+    return 'Evening Period 3';
+  }
+
+  function getShiftCategoryLabel(timeStr) {
+    const m = minutes(timeStr);
+    if (m >= 440 && m < 700) return 'F2F Morning';
+    if (m >= 700 && m < 900) return 'F2F / ODL 1st Shift';
+    if (m >= 900 && m < 960) return 'ODL 1st Shift';
+    return 'ODL 2nd Shift';
+  }
+
+  // Client-side 2x High Resolution JPG Download Function
+  window.downloadPosterAsJpg = function(elementId, baseName) {
+    const el = document.getElementById(elementId);
+    if (!el) return;
+
+    if (typeof html2canvas === 'undefined') {
+      const link = document.createElement('a');
+      link.href = `calendars/${baseName}.jpg`;
+      link.download = `${baseName}.jpg`;
+      link.click();
+      return;
+    }
+
+    // Hide any download buttons inside poster before capture
+    const btns = el.querySelectorAll('.btn-poster-download');
+    btns.forEach(b => b.style.display = 'none');
+
+    html2canvas(el, {
+      scale: 2.0,
+      useCORS: true,
+      backgroundColor: '#ffffff',
+      ignoreElements: element => element.classList.contains('btn-poster-download') || element.classList.contains('top-nav')
+    }).then(canvas => {
+      btns.forEach(b => b.style.display = '');
+      const imgData = canvas.toDataURL('image/jpeg', 0.95);
+      const link = document.createElement('a');
+      link.href = imgData;
+      link.download = `${baseName}.jpg`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }).catch(err => {
+      btns.forEach(b => b.style.display = '');
+      console.warn('html2canvas render error, falling back to static JPG:', err);
+      const link = document.createElement('a');
+      link.href = `calendars/${baseName}.jpg`;
+      link.download = `${baseName}.jpg`;
+      link.click();
+    });
+  };
+
+  init();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AMIS Teacher Examination Tracking</title>
+<!-- Google Fonts: Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- Offline-first SheetJS with CDN fallback -->
+<script src="xlsx.full.min.js"></script>
+<script>
+  if (typeof XLSX === 'undefined') {
+    document.write('<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"><\/script>');
+  }
+</script>
+<script src="exam-parser.js"></script>
+<style>
+:root {
+  --green: #126b4d;
+  --deep: #0b4d38;
+  --soft: #eef7f3;
+  --bg: #f3f6f5;
+  --paper: #ffffff;
+  --ink: #0f172a;
+  --ink-secondary: #334155;
+  --muted: #64748b;
+  --line: #cbd5e1;
+  --line-light: #e2e8f0;
+  --warn: #b45309;
+  --warn-bg: #fffbeb;
+  --warn-border: #fde68a;
+  --danger: #b91c1c;
+  --danger-bg: #fef2f2;
+  --danger-border: #fecaca;
+  --success: #15803d;
+  --success-bg: #f0fdf4;
+  --success-border: #bbf7d0;
+  --radius: 16px;
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 8px 24px rgba(11, 77, 56, 0.09);
+  --shadow-lg: 0 16px 44px rgba(11, 77, 56, 0.15);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.01em;
+}
+
+button, input, select { font: inherit; }
+
+header {
+  background: var(--deep);
+  color: #fff;
+  background-image: radial-gradient(circle at 90% 10%, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.shell {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 26px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mark {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+.brand h1 {
+  font-size: 18px;
+  margin: 0;
+  letter-spacing: 0.02em;
+  font-weight: 850;
+  color: #ffffff;
+}
+
+.brand p {
+  font-size: 13px;
+  margin: 3px 0 0;
+  opacity: 0.85;
+  color: #e2e8f0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  border-radius: 11px;
+  padding: 11px 18px;
+  font-weight: 800;
+  font-size: 13.5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.18s ease-in-out;
+}
+
+.btn-primary {
+  background: #ffffff;
+  color: var(--deep);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+.btn-primary:hover {
+  background: #f0fdf4;
+  transform: translateY(-1px);
+}
+
+.btn-outline-white {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+.btn-outline-white:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.hero {
+  padding: 24px 0 26px;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.hero p {
+  margin: 8px 0 0;
+  opacity: 0.9;
+  font-size: 14.5px;
+  color: #cbd5e1;
+}
+
+main {
+  padding: 26px 0 52px;
+}
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+/* Teacher Picker Toolbar */
+.picker {
+  padding: 18px 22px;
+  display: grid;
+  grid-template-columns: 2fr 1.2fr auto auto;
+  gap: 14px;
+  align-items: end;
+  background: #ffffff;
+  border-bottom: 1px solid var(--line-light);
+}
+
+.field label {
+  display: block;
+  font-size: 11px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+.field select, .field input {
+  width: 100%;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 10px 13px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 650;
+  color: var(--ink);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.field select:focus, .field input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3.5px rgba(18, 107, 77, 0.15);
+}
+
+.btn-accent {
+  background: var(--green);
+  color: #fff;
+}
+.btn-accent:hover {
+  background: var(--deep);
+}
+
+.btn-secondary {
+  border: 1.5px solid var(--line);
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 13.5px;
+  transition: all 0.15s ease;
+}
+.btn-secondary:hover {
+  background: #f1f5f9;
+}
+
+/* Dashboard */
+.dashboard {
+  display: none;
+  padding: 26px 22px;
+}
+
+.dashboard.active {
+  display: block;
+}
+
+.teacher-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.teacher-head h3 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--deep);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: -0.02em;
+}
+
+.teacher-head p {
+  margin: 6px 0 0;
+  font-size: 14.5px;
+  color: #475569;
+  font-weight: 600;
+}
+
+/* Stats */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.stat {
+  border: 1.5px solid var(--line-light);
+  border-radius: 14px;
+  padding: 16px 18px;
+  background: #f8fafc;
+}
+
+.stat b {
+  font-size: 28px;
+  color: var(--deep);
+  font-weight: 900;
+  display: block;
+  letter-spacing: -0.02em;
+}
+
+.stat span {
+  font-size: 11.5px;
+  color: var(--muted);
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 4px;
+  display: block;
+}
+
+/* Conflict Alert */
+.alert-card {
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 26px;
+  background: #ffffff;
+}
+
+.alert-card.has-conflict {
+  background: var(--danger-bg);
+  border-color: var(--danger-border);
+}
+
+.alert-card.no-conflict {
+  background: var(--success-bg);
+  border-color: var(--success-border);
+}
+
+.alert-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.alert-head b {
+  font-size: 15px;
+  font-weight: 900;
+  color: var(--deep);
+}
+
+.status-badge {
+  font-size: 12px;
+  font-weight: 850;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+.status-badge.good {
+  background: #dcfce7;
+  color: var(--success);
+  border: 1px solid var(--success-border);
+}
+.status-badge.bad {
+  background: #fee2e2;
+  color: var(--danger);
+  border: 1px solid var(--danger-border);
+}
+
+.conflict-item {
+  background: #ffffff;
+  border: 1.5px solid var(--danger-border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-top: 10px;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.conflict-item strong {
+  color: var(--danger);
+}
+
+.no-conflict-msg {
+  font-size: 14px;
+  color: var(--success);
+  font-weight: 700;
+}
+
+/* Days Grid */
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.day-card {
+  border: 1.5px solid var(--line-light);
+  border-radius: 14px;
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.day-header {
+  padding: 15px 18px;
+  background: #f8fafc;
+  border-bottom: 1.5px solid var(--line-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.day-header b {
+  font-size: 15px;
+  font-weight: 900;
+  color: var(--deep);
+}
+
+.day-header span {
+  font-size: 12px;
+  color: #475569;
+  font-weight: 800;
+  background: #e2e8f0;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.exam-item {
+  padding: 15px 18px;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.15s ease;
+}
+.exam-item:last-child {
+  border-bottom: 0;
+}
+
+.exam-item.row-f2f {
+  background: #f4faf7;
+  border-left: 4px solid #126b4d;
+}
+.exam-item.row-f2f:hover {
+  background: #ebf6f1;
+}
+
+.exam-item.row-odl-1 {
+  background: #f0f7ff;
+  border-left: 4px solid #0284c7;
+}
+.exam-item.row-odl-1:hover {
+  background: #e4f0fc;
+}
+
+.exam-item.row-odl-2 {
+  background: #fef8ee;
+  border-left: 4px solid #d97706;
+}
+.exam-item.row-odl-2:hover {
+  background: #fcf1de;
+}
+
+.exam-item.bad {
+  background: var(--danger-bg) !important;
+  border-left: 4px solid var(--danger) !important;
+}
+.exam-item.dup {
+  background: var(--warn-bg) !important;
+  border-left: 4px solid var(--warn) !important;
+}
+
+.pill-f2f {
+  background: #dcfce7 !important;
+  color: #166534 !important;
+  border: 1px solid #bbf7d0 !important;
+  font-weight: 800 !important;
+}
+
+.pill-odl-1 {
+  background: #e0f2fe !important;
+  color: #0369a1 !important;
+  border: 1px solid #bae6fd !important;
+  font-weight: 800 !important;
+}
+
+.pill-odl-2 {
+  background: #fef3c7 !important;
+  color: #92400e !important;
+  border: 1px solid #fde68a !important;
+  font-weight: 800 !important;
+}
+
+.pill-shift {
+  background: #ffffff !important;
+  color: #334155 !important;
+  border: 1px solid #cbd5e1 !important;
+  font-weight: 750 !important;
+}
+
+/* Gender Pills */
+.pill-boys {
+  background: #eff6ff !important;
+  color: #1d4ed8 !important;
+  border: 1px solid #bfdbfe !important;
+  font-weight: 850 !important;
+}
+
+.pill-girls {
+  background: #fdf2f8 !important;
+  color: #be185d !important;
+  border: 1px solid #fbcfe8 !important;
+  font-weight: 850 !important;
+}
+
+.pill-mix {
+  background: #f5f3ff !important;
+  color: #6d28d9 !important;
+  border: 1px solid #ddd6fe !important;
+  font-weight: 850 !important;
+}
+
+.exam-item .time-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exam-item .time {
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--deep);
+}
+
+.exam-item .subject {
+  font-size: 15px;
+  font-weight: 850;
+  color: #0f172a;
+  margin-top: 5px;
+}
+
+.exam-item .section {
+  font-size: 13px;
+  font-weight: 750;
+  color: #334155;
+  margin-top: 4px;
+}
+
+.exam-item .meta {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 850;
+  border-radius: 6px;
+  padding: 3px 8px;
+  margin-left: 6px;
+}
+.badge.red {
+  background: #ffe4e6;
+  color: var(--danger);
+  border: 1px solid var(--danger-border);
+}
+.badge.amber {
+  background: #fef3c7;
+  color: var(--warn);
+  border: 1px solid var(--warn-border);
+}
+
+.empty-state {
+  padding: 64px 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
+/* Drag overlay */
+#dragOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 77, 56, 0.94);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: none;
+  place-items: center;
+  color: #fff;
+  text-align: center;
+}
+#dragOverlay.active {
+  display: grid;
+}
+
+@media (max-width: 960px) {
+  .picker { grid-template-columns: 1fr 1fr; }
+  .stats { grid-template-columns: 1fr 1fr; }
+  .days-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .shell { padding: 0 14px; }
+  .picker { grid-template-columns: 1fr; }
+  .header-inner { flex-direction: column; align-items: flex-start; }
+  .header-actions { width: 100%; }
+  .header-actions .btn { flex: 1; }
+  .hero h2 { font-size: 25px; }
+}
+
+@media print {
+  body { background: #fff; }
+  .picker, .header-actions, #dragOverlay { display: none !important; }
+  .card { border: 0; box-shadow: none; }
+  header { background: #fff; color: #000; border-bottom: 2px solid #000; }
+  .mark { border-color: #000; color: #000; background: none; }
+  .hero h2, .brand h1, .brand p, .hero p { color: #000; }
+  .shell { max-width: none; padding: 0; }
+  .days-grid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div id="dragOverlay">
+  <div style="border: 3px dashed #fff; border-radius: 20px; padding: 60px 80px; background: rgba(255,255,255,0.1);">
+    <h2 style="font-size: 28px; margin: 12px 0 6px;">Drop Excel Schedule Here</h2>
+    <p style="font-size: 15px; margin: 0;">Updates all teacher tracking schedules instantly</p>
+  </div>
+</div>
+
+<header>
+  <div class="shell">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="mark">AMIS</div>
+        <div>
+          <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
+          <p>Teacher Examination Tracking</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <input type="file" id="excelFileInput" accept=".xlsx, .xls" style="display: none;">
+        <a class="btn btn-outline-white" href="grade-calendar-view.html" target="_blank" title="View & Print High-Resolution Grade Calendars">
+          Grade Calendars (JPG)
+        </a>
+        <button class="btn btn-outline-white" id="btnExportCSV" title="Download Teacher Subject Assignment Matrix as CSV">
+          Export Matrix (CSV)
+        </button>
+        <button class="btn btn-outline-white" id="btnChangeExcel">
+          Change Excel File
+        </button>
+        <a class="btn btn-primary" href="index.html">
+          ← Exam Calendar
+        </a>
+      </div>
+    </div>
+    <div class="hero">
+      <h2>Teacher Examination & Subject Assignment Tracking</h2>
+      <p>Individual teacher workload, assigned examination subjects per grade/section, time slots, and automatic conflict detection.</p>
+    </div>
+  </div>
+</header>
+
+<main class="shell">
+  <!-- View Tabs -->
+  <div style="display: flex; gap: 10px; margin-bottom: 18px;">
+    <button class="btn btn-accent" id="tabBtnTeacher" style="border-radius: 10px; padding: 10px 18px;">Individual Teacher View</button>
+    <button class="btn btn-secondary" id="tabBtnMatrix" style="border-radius: 10px; padding: 10px 18px;">Teacher-Subject Assignment Matrix (All 91 Teachers)</button>
+  </div>
+
+  <!-- Individual Teacher Section -->
+  <section class="card" id="cardTeacherView">
+    <div class="picker">
+      <div class="field">
+        <label>Select Teacher</label>
+        <select id="teacherSelect"><option value="">Choose a teacher</option></select>
+      </div>
+      <div class="field">
+        <label>Filter by Subject / Section / Date</label>
+        <input id="subFilter" placeholder="Search teacher schedule...">
+      </div>
+      <button class="btn btn-accent" id="btnOpenSchedule">View Schedule</button>
+      <button class="btn-secondary" id="btnUploadSchedule">Import File</button>
+    </div>
+
+    <div class="empty-state" id="emptyPrompt">
+      <h3>Select a Teacher</h3>
+      <p>Choose a teacher from the dropdown above or import an Excel schedule to view assignments and conflict checks.</p>
+    </div>
+
+    <div class="dashboard" id="teacherDashboard">
+      <div class="teacher-head">
+        <div>
+          <h3 id="tName">Teacher Name</h3>
+          <p id="tSubtitle">0 assigned exams across 0 exam days</p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><b id="statExams">0</b><span>Total Exams</span></div>
+        <div class="stat"><b id="statDays">0</b><span>Exam Days</span></div>
+        <div class="stat"><b id="statSections">0</b><span>Sections</span></div>
+        <div class="stat"><b id="statIssues">0</b><span>Conflicts / Issues</span></div>
+      </div>
+
+      <div class="alert-card" id="conflictCard">
+        <div class="alert-head">
+          <b id="conflictCardTitle">Automatic Schedule Check</b>
+          <span class="status-badge good" id="conflictBadge">No Conflicts</span>
+        </div>
+        <div id="conflictDetails"></div>
+      </div>
+
+      <div class="days-grid" id="daysContainer"></div>
+    </div>
+  </section>
+
+  <!-- Teacher Subject Matrix Section -->
+  <section class="card" id="cardMatrixView" style="display: none; padding: 22px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; flex-wrap: wrap; gap: 12px;">
+      <div>
+        <h3 style="margin: 0; font-size: 22px; font-weight: 900; color: var(--deep);">Teacher-Subject Examination Assignment Matrix</h3>
+        <p style="margin: 4px 0 0; font-size: 13.5px; color: var(--muted);">Track all 91 teachers, their official examination subjects, assigned grades, and workload.</p>
+      </div>
+      <div>
+        <button class="btn btn-accent" id="btnDownloadMatrixCSV">Download Matrix (CSV)</button>
+      </div>
+    </div>
+
+    <!-- Matrix Filters -->
+    <div style="display: grid; grid-template-columns: 2fr 1.5fr 1.5fr auto; gap: 12px; margin-bottom: 18px; background: #f8fafc; padding: 14px 16px; border-radius: 12px; border: 1px solid var(--line-light); align-items: end;">
+      <div class="field">
+        <label>Search Teacher</label>
+        <input id="matrixSearchTeacher" placeholder="Search teacher name...">
+      </div>
+      <div class="field">
+        <label>Filter by Subject</label>
+        <select id="matrixSubjectFilter"><option value="">All Subjects</option></select>
+      </div>
+      <div class="field">
+        <label>Filter by Grade</label>
+        <select id="matrixGradeFilter"><option value="">All Grades</option></select>
+      </div>
+      <button class="btn-secondary" id="btnResetMatrix" style="padding: 9px 16px;">Reset</button>
+    </div>
+
+    <!-- Matrix Table Container -->
+    <div style="overflow-x: auto; border: 1.5px solid var(--line-light); border-radius: 12px;">
+      <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px;">
+        <thead>
+          <tr style="background: #e2e8f0; color: var(--deep); font-weight: 850; text-transform: uppercase; font-size: 11px; letter-spacing: 0.04em;">
+            <th style="padding: 12px 16px; border-bottom: 2px solid #cbd5e1;">Teacher Name</th>
+            <th style="padding: 12px 14px; border-bottom: 2px solid #cbd5e1; text-align: center;">Exams</th>
+            <th style="padding: 12px 16px; border-bottom: 2px solid #cbd5e1;">Assigned Examination Subjects</th>
+            <th style="padding: 12px 16px; border-bottom: 2px solid #cbd5e1;">Grades & Sections</th>
+            <th style="padding: 12px 16px; border-bottom: 2px solid #cbd5e1; text-align: center;">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="matrixTableBody"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script>
+(function() {
+  'use strict';
+
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m]));
+  const norm = s => String(s || '').trim().toLowerCase().replace(/\s+/g, ' ');
+
+  let SCHEDULE_DATA = [];
+  let VALIDATION_REPORT = null;
+  let currentTeacher = '';
+
+  const teacherSelect = $('#teacherSelect');
+  const fileInput = $('#excelFileInput');
+  const btnChangeExcel = $('#btnChangeExcel');
+  const btnUploadSchedule = $('#btnUploadSchedule');
+  const dragOverlay = $('#dragOverlay');
+  const subFilter = $('#subFilter');
+
+  function init() {
+    setupDragAndDrop();
+    setupFileInput();
+
+    teacherSelect.addEventListener('change', () => {
+      if (teacherSelect.value) openTeacher(teacherSelect.value);
+    });
+    $('#btnOpenSchedule').addEventListener('click', () => {
+      if (teacherSelect.value) openTeacher(teacherSelect.value);
+    });
+    subFilter.addEventListener('input', () => {
+      if (currentTeacher) openTeacher(currentTeacher);
+    });
+
+    loadData();
+  }
+
+  function loadData() {
+    const saved = AMISExamEngine.loadScheduleFromStorage();
+    if (saved && Array.isArray(saved.records) && saved.records.length > 0) {
+      SCHEDULE_DATA = saved.records;
+      VALIDATION_REPORT = AMISExamEngine.validateAndDetectConflicts(SCHEDULE_DATA);
+      populateTeachers();
+    } else {
+      $('#emptyPrompt').innerHTML = `
+        <h3>No Examination Schedule Stored</h3>
+        <p>Please import an Excel schedule file from the main calendar page or upload directly here.</p>
+        <button class="btn btn-accent" style="margin-top: 10px;" onclick="document.querySelector('#excelFileInput').click()">
+          Import Excel Schedule
+        </button>
+      `;
+    }
+  }
+
+  function populateTeachers() {
+    const teachers = VALIDATION_REPORT.uniqueTeachers.sort((a, b) => a.localeCompare(b));
+    
+    // Check which teachers have conflicts
+    const conflictTeachers = new Set(VALIDATION_REPORT.teacherConflicts.map(c => c.teacher));
+
+    teacherSelect.innerHTML = '<option value="">Choose a teacher</option>' + teachers.map(t => {
+      const hasConflict = conflictTeachers.has(t);
+      return `<option value="${esc(t)}">${esc(t)}${hasConflict ? ' [Conflict]' : ''}</option>`;
+    }).join('');
+
+    // Check URL parameters
+    const qs = new URLSearchParams(window.location.search);
+    const requested = qs.get('teacher');
+    if (requested && teachers.some(t => norm(t) === norm(requested))) {
+      const match = teachers.find(t => norm(t) === norm(requested));
+      teacherSelect.value = match;
+      openTeacher(match);
+    }
+  }
+
+  function openTeacher(teacherName) {
+    if (!teacherName) return;
+    currentTeacher = teacherName;
+
+    // Filter exams for this teacher
+    let rows = SCHEDULE_DATA.filter(x => norm(x.teacher) === norm(teacherName));
+    
+    // Text search filter
+    const q = subFilter.value.trim().toLowerCase();
+    if (q) {
+      rows = rows.filter(x => [x.grade, x.section, x.gender, x.subject, x.date, x.day, x.time, x.room, x.modality, x.shift].join(' ').toLowerCase().includes(q));
+    }
+
+    // Sort by date then time
+    rows.sort((a, b) => {
+      const dCmp = a.date.localeCompare(b.date);
+      if (dCmp !== 0) return dCmp;
+      const tA = AMISExamEngine.parseTimeRange(a.time);
+      const tB = AMISExamEngine.parseTimeRange(b.time);
+      return (tA?.startMinutes ?? 9999) - (tB?.startMinutes ?? 9999);
+    });
+
+    // Find teacher's specific conflicts
+    const teacherConflicts = VALIDATION_REPORT.teacherConflicts.filter(c => norm(c.teacher) === norm(teacherName));
+    const reviewItems = rows.filter(x => (x.status || 'OK').toUpperCase() !== 'OK');
+    const dates = [...new Set(rows.map(x => x.date))].sort();
+    const sections = [...new Set(rows.map(x => `${x.grade} — ${x.section}`))];
+
+    // UI Updates
+    $('#emptyPrompt').style.display = 'none';
+    $('#teacherDashboard').classList.add('active');
+
+    $('#tName').textContent = teacherName;
+    $('#tSubtitle').textContent = `${rows.length} assigned examination${rows.length === 1 ? '' : 's'} across ${dates.length} examination day${dates.length === 1 ? '' : 's'}`;
+
+    $('#statExams').textContent = rows.length;
+    $('#statDays').textContent = dates.length;
+    $('#statSections').textContent = sections.length;
+    $('#statIssues').textContent = teacherConflicts.length + reviewItems.length;
+
+    // Conflict card
+    const conflictCard = $('#conflictCard');
+    const conflictBadge = $('#conflictBadge');
+    const conflictDetails = $('#conflictDetails');
+
+    if (teacherConflicts.length > 0) {
+      conflictCard.className = 'alert-card has-conflict';
+      conflictBadge.className = 'status-badge bad';
+      conflictBadge.textContent = `${teacherConflicts.length} Conflict(s) Detected`;
+      conflictDetails.innerHTML = teacherConflicts.map(c => `
+        <div class="conflict-item">
+          <strong>${esc(c.type.replace(/_/g, ' '))}:</strong> ${esc(c.message)}<br>
+          <span style="font-size: 12px; color: var(--muted);">
+            Slot A: ${esc(c.a.date)} • ${esc(c.a.time)} (${esc(c.a.grade)} ${esc(c.a.section)} - ${esc(c.a.subject)})<br>
+            Slot B: ${esc(c.b.date)} • ${esc(c.b.time)} (${esc(c.b.grade)} ${esc(c.b.section)} - ${esc(c.b.subject)})
+          </span>
+        </div>
+      `).join('');
+    } else {
+      conflictCard.className = 'alert-card no-conflict';
+      conflictBadge.className = 'status-badge good';
+      conflictBadge.textContent = 'Verified OK';
+      conflictDetails.innerHTML = '<div class="no-conflict-msg">✓ No same-time, overlapping, or duplicate examination assignments detected.</div>';
+    }
+
+    // Render Days
+    if (dates.length === 0) {
+      $('#daysContainer').innerHTML = '<div class="empty-state" style="grid-column: 1 / -1;">No scheduled examinations match your search.</div>';
+      return;
+    }
+
+    $('#daysContainer').innerHTML = dates.map(date => {
+      const d = new Date(date + 'T00:00:00');
+      const dayRows = rows.filter(x => x.date === date);
+      const formattedDate = !isNaN(d.getTime())
+        ? d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' })
+        : date;
+
+      return `
+        <div class="day-card">
+          <div class="day-header">
+            <b>${esc(formattedDate)}</b>
+            <span>${dayRows.length} exam${dayRows.length === 1 ? '' : 's'}</span>
+          </div>
+          <div>
+            ${dayRows.map(x => {
+              const xIdx = SCHEDULE_DATA.indexOf(x);
+              const isConflict = VALIDATION_REPORT.teacherConflicts.some(c => (c.aIdx === xIdx || c.bIdx === xIdx) && norm(c.teacher) === norm(teacherName));
+              const isDup = VALIDATION_REPORT.exactDuplicates.some(c => c.index === xIdx);
+              const isBad = (x.status || 'OK').toUpperCase() !== 'OK';
+
+              let modalityClass = 'row-f2f';
+              let modPillClass = 'pill-f2f';
+              const modUpper = (x.modality || '').toUpperCase();
+              const shiftUpper = (x.shift || '').toUpperCase();
+
+              if (modUpper.includes('F2F') || modUpper.includes('FACE')) {
+                modalityClass = 'row-f2f';
+                modPillClass = 'pill-f2f';
+              } else if (modUpper.includes('ODL') || modUpper.includes('ONLINE')) {
+                if (shiftUpper.includes('1ST') || shiftUpper.includes('FIRST')) {
+                  modalityClass = 'row-odl-1';
+                  modPillClass = 'pill-odl-1';
+                } else if (shiftUpper.includes('2ND') || shiftUpper.includes('SECOND')) {
+                  modalityClass = 'row-odl-2';
+                  modPillClass = 'pill-odl-2';
+                } else {
+                  modalityClass = 'row-odl-1';
+                  modPillClass = 'pill-odl-1';
+                }
+              }
+
+              let genderPill = '';
+              if (x.gender === 'Boys') {
+                genderPill = '<span class="badge pill-boys" style="margin-left: 0;">Boys</span>';
+              } else if (x.gender === 'Girls') {
+                genderPill = '<span class="badge pill-girls" style="margin-left: 0;">Girls</span>';
+              } else if (x.gender === 'Mix') {
+                genderPill = '<span class="badge pill-mix" style="margin-left: 0;">Mix</span>';
+              }
+
+              let badgeHtml = '';
+              if (isDup) badgeHtml += '<span class="badge amber">EXACT DUPLICATE</span>';
+              else if (isConflict) badgeHtml += '<span class="badge red">CONFLICT</span>';
+              if (isBad) badgeHtml += `<span class="badge amber">${esc(x.status)}</span>`;
+
+              const itemClass = isConflict ? 'exam-item bad' : isDup ? 'exam-item dup' : ('exam-item ' + modalityClass);
+
+              return `
+                <div class="${itemClass}">
+                  <div class="time-row">
+                    <span class="time">${esc(x.time || 'Time TBA')}</span>
+                    <div>${badgeHtml}</div>
+                  </div>
+                  <div class="subject">${esc(x.subject || 'No Subject')}</div>
+                  <div class="section">${esc(x.grade)} — ${esc(x.section)}</div>
+                  <div class="meta" style="display: flex; gap: 6px; align-items: center; margin-top: 6px; flex-wrap: wrap;">
+                    <span class="badge ${modPillClass}" style="margin-left: 0;">${esc(x.modality)}</span>
+                    <span class="badge pill-shift" style="margin-left: 0;">${esc(x.shift)}</span>
+                    ${genderPill}
+                    ${x.room ? `<span class="badge pill-shift" style="margin-left: 0;">Room: ${esc(x.room)}</span>` : ''}
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // Tab Switching
+  const tabBtnTeacher = $('#tabBtnTeacher');
+  const tabBtnMatrix = $('#tabBtnMatrix');
+  const cardTeacherView = $('#cardTeacherView');
+  const cardMatrixView = $('#cardMatrixView');
+
+  // Matrix Filter Elements
+  const matrixSearchTeacher = $('#matrixSearchTeacher');
+  const matrixSubjectFilter = $('#matrixSubjectFilter');
+  const matrixGradeFilter = $('#matrixGradeFilter');
+  const matrixTableBody = $('#matrixTableBody');
+  const btnResetMatrix = $('#btnResetMatrix');
+  const btnExportCSV = $('#btnExportCSV');
+  const btnDownloadMatrixCSV = $('#btnDownloadMatrixCSV');
+
+  let TEACHER_MATRIX_DATA = [];
+
+  function setupTabs() {
+    tabBtnTeacher.addEventListener('click', () => switchTab('teacher'));
+    tabBtnMatrix.addEventListener('click', () => switchTab('matrix'));
+    btnExportCSV.addEventListener('click', exportMatrixCSV);
+    btnDownloadMatrixCSV.addEventListener('click', exportMatrixCSV);
+
+    matrixSearchTeacher.addEventListener('input', renderMatrixTable);
+    matrixSubjectFilter.addEventListener('change', renderMatrixTable);
+    matrixGradeFilter.addEventListener('change', renderMatrixTable);
+
+    btnResetMatrix.addEventListener('click', () => {
+      matrixSearchTeacher.value = '';
+      matrixSubjectFilter.value = '';
+      matrixGradeFilter.value = '';
+      renderMatrixTable();
+    });
+  }
+
+  function switchTab(tab) {
+    if (tab === 'teacher') {
+      tabBtnTeacher.className = 'btn btn-accent';
+      tabBtnMatrix.className = 'btn btn-secondary';
+      cardTeacherView.style.display = 'block';
+      cardMatrixView.style.display = 'none';
+    } else {
+      tabBtnTeacher.className = 'btn btn-secondary';
+      tabBtnMatrix.className = 'btn btn-accent';
+      cardTeacherView.style.display = 'none';
+      cardMatrixView.style.display = 'block';
+      buildTeacherMatrix();
+    }
+  }
+
+  function buildTeacherMatrix() {
+    if (!SCHEDULE_DATA || SCHEDULE_DATA.length === 0) return;
+
+    const teacherMap = {};
+    for (const r of SCHEDULE_DATA) {
+      const tchr = r.teacher || 'Unassigned / To Confirm';
+      if (!teacherMap[tchr]) {
+        teacherMap[tchr] = {
+          teacher: tchr,
+          totalExams: 0,
+          subjects: new Set(),
+          grades: new Set(),
+          sections: new Set(),
+          exams: []
+        };
+      }
+      teacherMap[tchr].totalExams++;
+      if (r.subject) teacherMap[tchr].subjects.add(r.subject);
+      if (r.grade) teacherMap[tchr].grades.add(r.grade);
+      if (r.section) teacherMap[tchr].sections.add(`${r.grade} — ${r.section}`);
+      teacherMap[tchr].exams.push(r);
+    }
+
+    TEACHER_MATRIX_DATA = Object.values(teacherMap).map(t => ({
+      teacher: t.teacher,
+      totalExams: t.totalExams,
+      subjects: [...t.subjects].sort(),
+      grades: [...t.grades].sort((a, b) => a.localeCompare(b, undefined, { numeric: true })),
+      sections: [...t.sections].sort(),
+      exams: t.exams
+    })).sort((a, b) => a.teacher.localeCompare(b.teacher));
+
+    // Populate Matrix Filters
+    const allSubjects = [...new Set(SCHEDULE_DATA.map(r => r.subject).filter(Boolean))].sort();
+    matrixSubjectFilter.innerHTML = '<option value="">All Subjects</option>' + allSubjects.map(s => `<option value="${esc(s)}">${esc(s)}</option>`).join('');
+
+    const allGrades = [...new Set(SCHEDULE_DATA.map(r => r.grade).filter(Boolean))].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+    matrixGradeFilter.innerHTML = '<option value="">All Grades</option>' + allGrades.map(g => `<option value="${esc(g)}">${esc(g)}</option>`).join('');
+
+    renderMatrixTable();
+  }
+
+  function renderMatrixTable() {
+    if (!TEACHER_MATRIX_DATA || TEACHER_MATRIX_DATA.length === 0) return;
+
+    const q = matrixSearchTeacher.value.trim().toLowerCase();
+    const sFilter = matrixSubjectFilter.value;
+    const gFilter = matrixGradeFilter.value;
+
+    const filtered = TEACHER_MATRIX_DATA.filter(t => {
+      if (q && !t.teacher.toLowerCase().includes(q)) return false;
+      if (sFilter && !t.subjects.includes(sFilter)) return false;
+      if (gFilter && !t.grades.includes(gFilter)) return false;
+      return true;
+    });
+
+    if (filtered.length === 0) {
+      matrixTableBody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding:30px; color:#64748b;">No teachers match the selected criteria.</td></tr>';
+      return;
+    }
+
+    matrixTableBody.innerHTML = filtered.map((t, idx) => {
+      const isAlt = idx % 2 === 1 ? 'background: #f8fafc;' : 'background: #ffffff;';
+      return `
+        <tr style="${isAlt} border-bottom: 1px solid var(--line-light);">
+          <td style="padding: 12px 16px; font-weight: 850; color: var(--deep); vertical-align: top;">
+            ${esc(t.teacher)}
+          </td>
+          <td style="padding: 12px 14px; text-align: center; font-weight: 900; color: #0f172a; vertical-align: top;">
+            <span style="background: #e2e8f0; padding: 4px 10px; border-radius: 8px; font-size: 12.5px;">${t.totalExams}</span>
+          </td>
+          <td style="padding: 12px 16px; vertical-align: top;">
+            <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+              ${t.subjects.map(s => `<span class="badge pill-shift" style="margin: 0; font-size: 11px;">${esc(s)}</span>`).join('')}
+            </div>
+          </td>
+          <td style="padding: 12px 16px; vertical-align: top;">
+            <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+              ${t.grades.map(g => `<span class="badge pill-f2f" style="margin: 0; font-size: 11px;">${esc(g)}</span>`).join('')}
+            </div>
+            <div style="font-size: 11px; color: #64748b; margin-top: 4px;">${t.sections.length} Section(s)</div>
+          </td>
+          <td style="padding: 12px 16px; text-align: center; vertical-align: top;">
+            <button class="btn-secondary" onclick="window.viewTeacherFromMatrix('${esc(t.teacher.replace(/'/g, "\\'"))}')" style="padding: 6px 12px; font-size: 12px; border-radius: 6px;">
+              View Schedule
+            </button>
+          </td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  window.viewTeacherFromMatrix = function(name) {
+    switchTab('teacher');
+    teacherSelect.value = name;
+    openTeacher(name);
+  };
+
+  function exportMatrixCSV() {
+    if (!SCHEDULE_DATA || SCHEDULE_DATA.length === 0) {
+      alert('No schedule data loaded.');
+      return;
+    }
+
+    const headers = ['Teacher Name', 'Assigned Subject', 'Grade Level', 'Section', 'Gender', 'Modality', 'Shift', 'Examination Date', 'Examination Time', 'Room', 'Status'];
+    const rows = [headers];
+
+    for (const r of SCHEDULE_DATA) {
+      rows.push([
+        r.teacher || 'To Confirm',
+        r.subject || '',
+        r.grade || '',
+        r.section || '',
+        r.gender || '',
+        r.modality || '',
+        r.shift || '',
+        r.date || '',
+        r.time || '',
+        r.room || '',
+        r.status || 'OK'
+      ]);
+    }
+
+    const csvContent = '\uFEFF' + rows.map(e => e.map(val => `"${String(val).replace(/"/g, '""')}"`).join(',')).join('\n');
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'AMIS_Teacher_Exam_Subject_Assignments.csv';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  function setupFileInput() {
+    btnChangeExcel.addEventListener('click', () => {
+      fileInput.value = '';
+      fileInput.click();
+    });
+    btnUploadSchedule.addEventListener('click', () => {
+      fileInput.value = '';
+      fileInput.click();
+    });
+
+    fileInput.addEventListener('change', e => {
+      if (e.target.files && e.target.files.length > 0) {
+        handleFileSelect(e.target.files[0]);
+      }
+    });
+  }
+
+  function setupDragAndDrop() {
+    window.addEventListener('dragenter', e => {
+      e.preventDefault();
+      dragOverlay.classList.add('active');
+    });
+    dragOverlay.addEventListener('dragleave', e => {
+      e.preventDefault();
+      dragOverlay.classList.remove('active');
+    });
+    dragOverlay.addEventListener('dragover', e => e.preventDefault());
+    window.addEventListener('dragover', e => e.preventDefault());
+    dragOverlay.addEventListener('drop', e => {
+      e.preventDefault();
+      dragOverlay.classList.remove('active');
+      if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+        handleFileSelect(e.dataTransfer.files[0]);
+      }
+    });
+    window.addEventListener('drop', e => {
+      e.preventDefault();
+      dragOverlay.classList.remove('active');
+      if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+        handleFileSelect(e.dataTransfer.files[0]);
+      }
+    });
+  }
+
+  function handleFileSelect(file) {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      try {
+        const data = new Uint8Array(e.target.result);
+        const wb = XLSX.read(data, { type: 'array' });
+        const detected = AMISExamEngine.autoDetectWorksheet(wb, XLSX);
+        const ws = wb.Sheets[detected.sheetName];
+        const mappingInfo = AMISExamEngine.findHeaderRowAndMapping(ws, XLSX);
+        SCHEDULE_DATA = AMISExamEngine.parseWorksheet(ws, detected.sheetName, mappingInfo, XLSX);
+        VALIDATION_REPORT = AMISExamEngine.validateAndDetectConflicts(SCHEDULE_DATA);
+
+        const meta = {
+          fileName: file.name,
+          sheetName: detected.sheetName,
+          importedAt: new Date().toISOString(),
+          entriesCount: SCHEDULE_DATA.length,
+          teachersCount: VALIDATION_REPORT.teachersCount,
+          sectionsCount: VALIDATION_REPORT.sectionsCount,
+          datesCount: VALIDATION_REPORT.datesCount,
+          totalConflicts: VALIDATION_REPORT.totalConflicts
+        };
+        AMISExamEngine.saveScheduleToStorage(SCHEDULE_DATA, meta);
+
+        populateTeachers();
+        buildTeacherMatrix();
+        if (currentTeacher) {
+          openTeacher(currentTeacher);
+        } else if (VALIDATION_REPORT.uniqueTeachers.length > 0) {
+          teacherSelect.value = VALIDATION_REPORT.uniqueTeachers[0];
+          openTeacher(VALIDATION_REPORT.uniqueTeachers[0]);
+        }
+      } catch (err) {
+        alert('Failed to parse Excel file: ' + err.message);
+      }
+    };
+    reader.readAsArrayBuffer(file);
+  }
+
+  function init() {
+    setupDragAndDrop();
+    setupFileInput();
+    setupTabs();
+
+    teacherSelect.addEventListener('change', () => {
+      if (teacherSelect.value) openTeacher(teacherSelect.value);
+    });
+    $('#btnOpenSchedule').addEventListener('click', () => {
+      if (teacherSelect.value) openTeacher(teacherSelect.value);
+    });
+    subFilter.addEventListener('input', () => {
+      if (currentTeacher) openTeacher(currentTeacher);
+    });
+
+    loadData();
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>
