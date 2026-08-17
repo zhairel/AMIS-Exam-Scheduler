@@ -6,9 +6,8 @@ from collections import defaultdict
 import openpyxl
 from ortools.sat.python import cp_model
 
-from parse_all_authoritative_schedules import normalize_teacher_name
+from teacher_registry import resolve_teacher
 
-EXCEL_PATH = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/SCHEDULE SY 2026-2027 TW.xlsx'
 CLASS_DATA_PATH = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/class_schedules_data.json'
 
 with open(CLASS_DATA_PATH) as f:
@@ -66,7 +65,7 @@ def clean_exam_subject(subj):
         
     return s
 
-# Generate list of exam sessions from class timetable
+# Extract exam requirements with canonical teacher_id
 exam_items = []
 seen_pairs = set()
 
@@ -83,21 +82,33 @@ for sec in sections:
             if not p.get('is_break'):
                 raw_subj = p.get('subject') or p.get('label') or ''
                 clean_subj = clean_exam_subject(raw_subj)
-                tchr = p.get('teacher', '').strip()
+                tchr_name = p.get('teacher', '').strip()
+                tchr_id = p.get('teacher_id')
+                if not tchr_id and tchr_name:
+                    t_res = resolve_teacher(tchr_name)
+                    if t_res:
+                        tchr_id = t_res['id']
+                        tchr_name = t_res['canonical_name']
                 if clean_subj:
-                    if clean_subj not in sec_subjs or (not sec_subjs[clean_subj] and tchr):
-                        sec_subjs[clean_subj] = tchr
+                    if clean_subj not in sec_subjs or (not sec_subjs[clean_subj][0] and tchr_name):
+                        sec_subjs[clean_subj] = (tchr_name, tchr_id)
         else:
             for day, cell in (p.get('days') or {}).items():
                 if cell and not cell.get('is_break'):
                     raw_subj = cell.get('subject') or cell.get('label') or ''
                     clean_subj = clean_exam_subject(raw_subj)
-                    tchr = cell.get('teacher', '').strip()
+                    tchr_name = cell.get('teacher', '').strip()
+                    tchr_id = cell.get('teacher_id')
+                    if not tchr_id and tchr_name:
+                        t_res = resolve_teacher(tchr_name)
+                        if t_res:
+                            tchr_id = t_res['id']
+                            tchr_name = t_res['canonical_name']
                     if clean_subj:
-                        if clean_subj not in sec_subjs or (not sec_subjs[clean_subj] and tchr):
-                            sec_subjs[clean_subj] = tchr
+                        if clean_subj not in sec_subjs or (not sec_subjs[clean_subj][0] and tchr_name):
+                            sec_subjs[clean_subj] = (tchr_name, tchr_id)
                             
-    for subj, tchr in sec_subjs.items():
+    for subj, (tchr, tid) in sec_subjs.items():
         pair_key = (sname, subj)
         if pair_key not in seen_pairs:
             seen_pairs.add(pair_key)
@@ -119,6 +130,7 @@ for sec in sections:
                 'grade_level': grade,
                 'shift': shift,
                 'subject': subj,
+                'teacher_id': tid or "unassigned",
                 'teacher': tchr or "Assigned Faculty",
                 'duration_minutes': duration
             })
@@ -178,11 +190,11 @@ def solve_exam_schedule(option_name, seed=42):
 
     shift_tchr_to_sessions = defaultdict(list)
     for i, sess in enumerate(exam_items):
-        t = sess['teacher'].strip()
-        if t and t != "Assigned Faculty":
-            shift_tchr_to_sessions[(sess['shift'], t)].append(i)
+        tid = sess['teacher_id']
+        if tid and tid != "unassigned":
+            shift_tchr_to_sessions[(sess['shift'], tid)].append(i)
             
-    for (shift, t), indices in shift_tchr_to_sessions.items():
+    for (shift, tid), indices in shift_tchr_to_sessions.items():
         for i_idx, i in enumerate(indices):
             for j in indices[i_idx + 1:]:
                 s_i = exam_items[i]
@@ -250,6 +262,7 @@ def solve_exam_schedule(option_name, seed=42):
                             'grade_level': sess['grade_level'],
                             'shift': sess['shift'],
                             'subject': sess['subject'],
+                            'teacher_id': sess['teacher_id'],
                             'teacher': sess['teacher'],
                             'duration_minutes': sess['duration_minutes']
                         })
@@ -286,38 +299,32 @@ with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/exam-data.js', 'w') as
 wb_out = openpyxl.Workbook()
 ws_out = wb_out.active
 ws_out.title = "Master Exam Schedule (Opt A)"
-ws_out.append(["Day Number", "Date", "Slot Number", "Time Slot", "Section Name", "Department", "Grade Level", "Shift", "Subject", "Teacher", "Duration (Mins)"])
+ws_out.append(["Day Number", "Date", "Slot Number", "Time Slot", "Section Name", "Department", "Grade Level", "Shift", "Subject", "Teacher ID", "Teacher", "Duration (Mins)"])
 
 for ex in all_options["OPTION_A"]:
-    ws_out.append([ex['day_number'], ex['date'], ex['slot_number'], ex['time_slot'], ex['section_name'], ex['department'], ex['grade_level'], ex['shift'], ex['subject'], ex['teacher'], ex['duration_minutes']])
+    ws_out.append([ex['day_number'], ex['date'], ex['slot_number'], ex['time_slot'], ex['section_name'], ex['department'], ex['grade_level'], ex['shift'], ex['subject'], ex.get('teacher_id', ''), ex['teacher'], ex['duration_minutes']])
 
 xlsx_path = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/Term_Examination_Schedule_S.Y._2026-2027_Optimized.xlsx'
 wb_out.save(xlsx_path)
-
-# Also copy to Downloads
-downloads_xlsx = '/home/tatsuya/Downloads/Term_Examination_Schedule_S.Y._2026-2027_Optimized.xlsx'
-try:
-    wb_out.save(downloads_xlsx)
-except Exception:
-    pass
 
 # Export CSV
 csv_path = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/Term_Examination_Schedule_S.Y._2026-2027_Optimized.csv'
 with open(csv_path, 'w', newline='', encoding='utf-8') as f:
     writer = csv.writer(f)
-    writer.writerow(["Day Number", "Date", "Slot Number", "Time Slot", "Section Name", "Department", "Grade Level", "Shift", "Subject", "Teacher", "Duration (Mins)"])
+    writer.writerow(["Day Number", "Date", "Slot Number", "Time Slot", "Section Name", "Department", "Grade Level", "Shift", "Subject", "Teacher ID", "Teacher", "Duration (Mins)"])
     for ex in all_options["OPTION_A"]:
-        writer.writerow([ex['day_number'], ex['date'], ex['slot_number'], ex['time_slot'], ex['section_name'], ex['department'], ex['grade_level'], ex['shift'], ex['subject'], ex['teacher'], ex['duration_minutes']])
+        writer.writerow([ex['day_number'], ex['date'], ex['slot_number'], ex['time_slot'], ex['section_name'], ex['department'], ex['grade_level'], ex['shift'], ex['subject'], ex.get('teacher_id', ''), ex['teacher'], ex['duration_minutes']])
 
 # Build Teacher Subject Tracking dataset
-teacher_tracking = defaultdict(lambda: {"total_exams": 0, "sessions": []})
+teacher_tracking = defaultdict(lambda: {"total_exams": 0, "canonical_name": "", "sessions": []})
 for ex in all_options["OPTION_A"]:
-    t = ex['teacher']
-    teacher_tracking[t]["total_exams"] += 1
-    teacher_tracking[t]["sessions"].append(ex)
+    tid = ex.get('teacher_id', ex['teacher'])
+    teacher_tracking[tid]["canonical_name"] = ex['teacher']
+    teacher_tracking[tid]["total_exams"] += 1
+    teacher_tracking[tid]["sessions"].append(ex)
 
 with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/teacher_subject_tracking.json', 'w') as f:
     json.dump(teacher_tracking, f, indent=2)
 
-print(f"Successfully saved all Exam Data Assets (JSON, JS, CSV, XLSX) with 0 conflicts!")
+print(f"Successfully saved all Exam Data Assets (JSON, JS, CSV, XLSX) with canonical teacher IDs!")
 

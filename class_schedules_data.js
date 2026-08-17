@@ -1,554 +1,988 @@
-window.OFFICIAL_CLASS_SCHEDULES = [
+window.CLASS_SCHEDULES_DATA = [
   {
     "id": "sec_1",
-    "sheet": "ELEM",
     "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
-    "department": "Elementary",
-    "grade_level": "Kindergarten 2",
+    "department": "Kindergarten",
+    "grade_level": "Kinder 2",
     "shift": "F2F",
+    "total_periods": 9,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "07:40 AM \u2013 07:50 AM",
+        "period_num": 2,
+        "time": "07:40 \u2013 07:50 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": false,
         "label": "Meeting Time -Tchr. Keychell",
-        "subject": "Meeting Time",
-        "teacher": "Tchr. Keychell",
-        "extra": "",
-        "days": {}
+        "subject": "Meeting Time -Tchr. Keychell",
+        "teacher_id": "tchr_keychell",
+        "teacher": "Teacher Keychell",
+        "is_break": false
       },
       {
-        "time": "07:50 AM \u2013 08:25 AM",
+        "period_num": 3,
+        "time": "07:50 \u2013 08:25 a.m.",
         "minutes": "35 min.",
         "is_merged_all_days": true,
-        "is_break": false,
         "label": "Circle Time 1 - Tchr. Keychell",
         "subject": "Circle Time 1",
-        "teacher": "Tchr. Keychell",
-        "extra": "",
-        "days": {}
+        "teacher_id": "tchr_keychell",
+        "teacher": "Teacher Keychell",
+        "is_break": false
       },
       {
-        "time": "08:25 AM \u2013 09:10 AM",
+        "period_num": 4,
+        "time": "08:25 \u2013 09:10 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Hadith - Ust. Saliha",
             "subject": "Hadith",
+            "teacher_id": "tchr_saliha",
             "teacher": "Ustadha Saliha",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Arabic - Ust. Saliha",
             "subject": "Arabic",
+            "teacher_id": "tchr_saliha",
             "teacher": "Ustadha Saliha",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Qur'an - Ustadh Jaisam",
             "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
             "teacher": "Ustadh Jaisam",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Arabic - Ust. Saliha",
             "subject": "Arabic",
+            "teacher_id": "tchr_saliha",
             "teacher": "Ustadha Saliha",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Qur'an - Ustadh Jaisam",
             "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
             "teacher": "Ustadh Jaisam",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "09:10 AM \u2013 09:30 AM",
+        "period_num": 5,
+        "time": "09:10 \u2013 09:30 a.m.",
         "minutes": "20 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "SUPERVISED RECESS - Tchr. Ayah and Ustadha Saliha",
-        "subject": "SUPERVISED RECESS - Tchr. Ayah and Ustadha Saliha",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "subject": "SUPERVISED RECESS",
+        "teacher_id": "tchr_ayah",
+        "teacher": "Teacher Ayah",
+        "is_break": true
       },
       {
-        "time": "09:30 AM \u2013 10:15 AM",
+        "period_num": 6,
+        "time": "09:30 \u2013 10:15 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": true,
-        "is_break": false,
         "label": "Circle Time 2 - Tchr. Keychell",
         "subject": "Circle Time 2",
-        "teacher": "Tchr. Keychell",
-        "extra": "",
-        "days": {}
+        "teacher_id": "tchr_keychell",
+        "teacher": "Teacher Keychell",
+        "is_break": false
       },
       {
-        "time": "10:15 AM \u2013 10:30 AM",
+        "period_num": 7,
+        "time": "10:15 \u2013 10:30 a.m.",
         "minutes": "15 min.",
         "is_merged_all_days": true,
-        "is_break": false,
         "label": "Wrap-Up Time - Tchr.Keychell",
         "subject": "Wrap-Up Time",
-        "teacher": "Tchr. Keychell",
-        "extra": "",
-        "days": {}
+        "teacher_id": "tchr_keychell",
+        "teacher": "Teacher Keychell",
+        "is_break": false
       },
       {
-        "time": "10:30 AM",
-        "minutes": "-",
+        "period_num": 8,
+        "time": "10:30 a.m.",
+        "minutes": "- min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "DEPARTURE",
         "subject": "DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "DEPARTURE",
+        "is_break": true
+      },
+      {
+        "period_num": 9,
+        "time": "",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       }
     ]
   },
   {
     "id": "sec_2",
-    "sheet": "ELEM",
-    "section_name": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
-    "department": "Elementary",
-    "grade_level": "Kindergarten 2",
-    "shift": "ODL - 1ST SHIFT",
+    "section_name": "KINDER 1 CLASS SCHEDULE (F2F)",
+    "department": "Kindergarten",
+    "grade_level": "Kinder 1",
+    "shift": "F2F",
+    "total_periods": 6,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "",
-        "subject": "",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "GENERAL ASSEMBLY",
-        "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
+        "period_num": 1,
+        "time": "12:00 \u2013 12:40",
         "minutes": "40 min.",
         "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Circle Time 1 - Tchr. Joanna",
+        "label": "SALAH",
+        "subject": "SALAH",
+        "teacher_id": null,
+        "teacher": "SALAH",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "12:40 \u2013 01:25 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Circle Time 1 - Tchr. Wendy",
         "subject": "Circle Time 1",
-        "teacher": "Tchr. Joanna",
-        "extra": "",
-        "days": {}
+        "teacher_id": "tchr_wendy",
+        "teacher": "Teacher Wendy",
+        "is_break": false
       },
       {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
+        "period_num": 3,
+        "time": "01:25 \u2013 02:10 p.m.",
+        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Hainur",
+            "label": "Qur'an - Ustadh Jaisam",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "CT 2 - Tchr. Joanna",
-            "subject": "CT 2",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
+            "label": "Arabic - Ust. Saliha",
+            "subject": "Arabic",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Silfah",
-            "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "CT 2 - Tchr. Joanna",
-            "subject": "CT 2",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
             "label": "Hadith - Ust. Saliha",
             "subject": "Hadith",
+            "teacher_id": "tchr_saliha",
             "teacher": "Ustadha Saliha",
-            "extra": ""
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Qur'an - Ustadh Jaisam",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Arabic - Ust. Saliha",
+            "subject": "Arabic",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
+        "period_num": 4,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "QUR'AN READING (GENERAL ASSEMBLY)",
-        "subject": "QUR'AN READING (GENERAL ASSEMBLY)",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "SHORT BREAK",
+        "subject": "SHORT BREAK",
+        "teacher_id": null,
+        "teacher": "SHORT BREAK",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:55 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Circle Time 2 - Tchr. Wendy",
+        "subject": "Circle Time 2",
+        "teacher_id": "tchr_wendy",
+        "teacher": "Teacher Wendy",
+        "is_break": false
+      },
+      {
+        "period_num": 6,
+        "time": "03:00:00",
+        "minutes": "- min.",
+        "is_merged_all_days": true,
+        "label": "DEPARTURE",
+        "subject": "DEPARTURE",
+        "teacher_id": null,
+        "teacher": "DEPARTURE",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_3",
-    "sheet": "ELEM",
-    "section_name": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+    "section_name": "GRADE 1 (FACE TO FACE)",
     "department": "Elementary",
-    "grade_level": "Kindergarten 2",
-    "shift": "ODL - 1ST SHIFT",
+    "grade_level": "Grade 1",
+    "shift": "F2F",
+    "total_periods": 12,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": false,
-        "label": "",
-        "subject": "",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Circle Time 1 - Tchr. Ayah",
-        "subject": "Circle Time 1",
-        "teacher": "Tchr. Ayah",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
+        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "CT 2 - Tchr. Ayah",
-            "subject": "CT 2",
-            "teacher": "Tchr. Ayah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Silfah",
-            "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Hainur",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Hadith - Ust. Saliha",
-            "subject": "Hadith",
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
             "teacher": "Ustadha Saliha",
-            "extra": ""
+            "is_break": false
           },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
           "Thursday": {
-            "is_break": false,
-            "label": "CT 2 - Tchr. Ayah",
-            "subject": "CT 2",
-            "teacher": "Tchr. Ayah",
-            "extra": ""
+            "label": "HG - Tchr. Sahdia",
+            "subject": "HG",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": true,
+        "label": "Language - Tchr. Sahdia",
+        "subject": "Language",
+        "teacher_id": "tchr_sahdia",
+        "teacher": "Teacher Sahdia",
+        "is_break": false
+      },
+      {
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": true,
+        "label": "Reading and Literacy - Tchr. Katrina",
+        "subject": "Reading and Literacy",
+        "teacher_id": "tchr_katrina",
+        "teacher": "Teacher Katrina",
+        "is_break": false
+      },
+      {
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
+        "minutes": "15 min.",
+        "is_merged_all_days": true,
+        "label": "RECESS",
+        "subject": "RECESS",
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Math - Tchr. Wendy",
+        "subject": "Math",
+        "teacher_id": "tchr_wendy",
+        "teacher": "Teacher Wendy",
+        "is_break": false
+      },
+      {
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "ARAL Reading - Tchr. Kat",
+            "subject": "ARAL Reading",
+            "teacher_id": null,
+            "teacher": "ARAL Reading - Tchr. Kat",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "ARAL Math - Tchr. Wendy",
+            "subject": "ARAL Math",
+            "teacher_id": "tchr_wendy",
+            "teacher": "Teacher Wendy",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "ARAL Reading - Tchr. Kat",
+            "subject": "ARAL Reading",
+            "teacher_id": null,
+            "teacher": "ARAL Reading - Tchr. Kat",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "ARAL Math - Tchr. Wendy",
+            "subject": "ARAL Math",
+            "teacher_id": "tchr_wendy",
+            "teacher": "Teacher Wendy",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "ARAL Reading - Tchr. Kat",
+            "subject": "ARAL Reading",
+            "teacher_id": null,
+            "teacher": "ARAL Reading - Tchr. Kat",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
+        "minutes": "70 min.",
+        "is_merged_all_days": true,
+        "label": "LUNCH and SALAH",
+        "subject": "LUNCH and SALAH",
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
+      },
+      {
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "SHAF - Ust. Abdiraheem",
+        "subject": "SHAF",
+        "teacher_id": "tchr_abdiraheem",
+        "teacher": "Ustadh Abdiraheem",
+        "is_break": false
+      },
+      {
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "MAKABANSA -Teacher Norhydie",
+        "subject": "MAKABANSA -Teacher Norhydie",
+        "teacher_id": "tchr_norhydie",
+        "teacher": "Teacher Norhydie",
+        "is_break": false
+      },
+      {
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Arabic - Tchr. Sahdia",
+            "subject": "Arabic",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Qur'an - Ust. Obaydah",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Arabic - Tchr. Sahdia",
+            "subject": "Arabic",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Qur'an - Ust. Obaydah",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Arabic - Tchr. Sahdia",
+            "subject": "Arabic",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE",
-        "subject": "HOMEROOM GUIDANCE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "SALAH & DEPARTURE",
+        "subject": "SALAH & DEPARTURE",
+        "teacher_id": null,
+        "teacher": "SALAH & DEPARTURE",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_4",
-    "sheet": "ELEM",
-    "section_name": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+    "section_name": "GRADE 2 (FACE TO FACE)",
     "department": "Elementary",
-    "grade_level": "Kindergarten 2",
-    "shift": "ODL - 2ND SHIFT",
+    "grade_level": "Grade 2",
+    "shift": "F2F",
+    "total_periods": 12,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE",
-        "subject": "HOMEROOM GUIDANCE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "English - Tchr. Marham",
+        "subject": "English",
+        "teacher_id": "tchr_marham",
+        "teacher": "Teacher Marham",
+        "is_break": false
+      },
+      {
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
         "minutes": "40 min.",
+        "is_merged_all_days": true,
+        "label": "MAKABANSA - Tchr. Monisa",
+        "subject": "MAKABANSA",
+        "teacher_id": "tchr_monisa",
+        "teacher": "Teacher Monisa",
+        "is_break": false
+      },
+      {
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": true,
+        "label": "Math - Tchr. Sitti",
+        "subject": "Math",
+        "teacher_id": "tchr_sitti_kauzar",
+        "teacher": "Teacher Sitti Kauzar",
+        "is_break": false
+      },
+      {
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
+        "minutes": "15 min.",
+        "is_merged_all_days": true,
+        "label": "RECESS",
+        "subject": "RECESS",
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
+        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
-          "Sunday": null,
-          "Monday": null,
+          "Sunday": {
+            "label": "HG - Tchr. Marham",
+            "subject": "HG",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "GMRC - Ustadha Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
           "Tuesday": null,
           "Wednesday": null,
           "Thursday": null
         }
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "CT 1 - Tchr. Ayah",
-            "subject": "CT 1",
-            "teacher": "Tchr. Ayah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "CT 1 - Tchr. Ayah",
-            "subject": "CT 1",
-            "teacher": "Tchr. Ayah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Silfah",
-            "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "CT 1 - Tchr. Ayah",
-            "subject": "CT 1",
-            "teacher": "Tchr. Ayah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "CT 1 - Tchr. Ayah",
-            "subject": "CT 1",
-            "teacher": "Tchr. Ayah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Hainur",
+            "label": "Qur'an - Ust. Obaydah",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "CT 2 - Tchr. Ayah",
-            "subject": "CT 2",
-            "teacher": "Tchr. Ayah",
-            "extra": ""
+            "label": "Arabic - Ust. Obaydah",
+            "subject": "Arabic",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "CT 1 - Tchr. Ayah",
-            "subject": "CT 1",
-            "teacher": "Tchr. Ayah",
-            "extra": ""
+            "label": "Qur'an - Ust. Obaydah",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "CT 2 - Tchr. Ayah",
-            "subject": "CT 2",
-            "teacher": "Tchr. Ayah",
-            "extra": ""
+            "label": "Arabic - Ust. Obaydah",
+            "subject": "Arabic",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Hadith - Ust. Hainur",
-            "subject": "Hadith",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
+            "label": "Arabic - Ust. Obaydah",
+            "subject": "Arabic",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
           }
         }
+      },
+      {
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
+        "minutes": "70 min.",
+        "is_merged_all_days": true,
+        "label": "LUNCH and SALAH",
+        "subject": "LUNCH and SALAH",
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
+      },
+      {
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Filipino - Tchr. Sitti",
+        "subject": "Filipino",
+        "teacher_id": "tchr_sitti_kauzar",
+        "teacher": "Teacher Sitti Kauzar",
+        "is_break": false
+      },
+      {
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "ARAL Math - Tchr. Junaisa",
+            "subject": "ARAL Math",
+            "teacher_id": "tchr_junaisah",
+            "teacher": "Teacher Junaisah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "ARAL Math - Tchr. Junaisa",
+            "subject": "ARAL Math",
+            "teacher_id": "tchr_junaisah",
+            "teacher": "Teacher Junaisah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "ARAL Reading - Tchr. Marham",
+            "subject": "ARAL Reading",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "ARAL Reading - Tchr. Marham",
+            "subject": "ARAL Reading",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "ARAL Reading - Tchr. Marham",
+            "subject": "ARAL Reading",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "SALAH & DEPARTURE",
+        "subject": "SALAH & DEPARTURE",
+        "teacher_id": null,
+        "teacher": "SALAH & DEPARTURE",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_5",
-    "sheet": "ELEM",
-    "section_name": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+    "section_name": "GRADE 3 (FACE TO FACE)",
     "department": "Elementary",
-    "grade_level": "Kindergarten 2",
-    "shift": "ODL - 2ND SHIFT",
+    "grade_level": "Grade 3",
+    "shift": "F2F",
+    "total_periods": 12,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE",
-        "subject": "HOMEROOM GUIDANCE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Science - Tchr. Jerlyn",
+        "subject": "Science",
+        "teacher_id": "tchr_jerlyn",
+        "teacher": "Teacher Jerlyn",
+        "is_break": false
+      },
+      {
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
         "minutes": "40 min.",
+        "is_merged_all_days": true,
+        "label": "MAKABANSA - Tchr. Wendy",
+        "subject": "MAKABANSA",
+        "teacher_id": "tchr_wendy",
+        "teacher": "Teacher Wendy",
+        "is_break": false
+      },
+      {
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": true,
+        "label": "English - Tchr. Marham",
+        "subject": "English",
+        "teacher_id": "tchr_marham",
+        "teacher": "Teacher Marham",
+        "is_break": false
+      },
+      {
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
+        "minutes": "15 min.",
+        "is_merged_all_days": true,
+        "label": "RECESS",
+        "subject": "RECESS",
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Filipino - Tchr. Normayla",
+        "subject": "Filipino",
+        "teacher_id": null,
+        "teacher": "Filipino - Tchr. Normayla",
+        "is_break": false
+      },
+      {
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "HG - Tchr. Jerlyn",
+            "subject": "HG",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
+        "minutes": "70 min.",
+        "is_merged_all_days": true,
+        "label": "LUNCH and SALAH",
+        "subject": "LUNCH and SALAH",
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
+      },
+      {
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Arabic - Ust. Silfah",
+            "subject": "Arabic",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Arabic - Ust. Silfah",
+            "subject": "Arabic",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "ARAL Reading- Tchr. Junaisah",
+            "subject": "ARAL Reading- Tchr. Junaisah",
+            "teacher_id": "tchr_junaisah",
+            "teacher": "Teacher Junaisah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "ARAL Reading- Tchr. Junaisah",
+            "subject": "ARAL Reading- Tchr. Junaisah",
+            "teacher_id": "tchr_junaisah",
+            "teacher": "Teacher Junaisah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "ARAL Science - Tchr. Junaisah",
+            "subject": "ARAL Science",
+            "teacher_id": "tchr_junaisah",
+            "teacher": "Teacher Junaisah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Qur'an - Ust. Obaydah",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "ARAL Math - Tchr. Junaisah",
+            "subject": "ARAL Math",
+            "teacher_id": "tchr_junaisah",
+            "teacher": "Teacher Junaisah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "ARAL Reading- Tchr. Junaisah",
+            "subject": "ARAL Reading- Tchr. Junaisah",
+            "teacher_id": "tchr_junaisah",
+            "teacher": "Teacher Junaisah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Math - Tchr. Jerlyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "ARAL Reading- Tchr. Junaisah",
+            "subject": "ARAL Reading- Tchr. Junaisah",
+            "teacher_id": "tchr_junaisah",
+            "teacher": "Teacher Junaisah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Math - Tchr. Jerlyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Math - Tchr. Jerlyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
+        "minutes": "30 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": null,
@@ -556,3891 +990,4001 @@ window.OFFICIAL_CLASS_SCHEDULES = [
           "Tuesday": null,
           "Wednesday": null,
           "Thursday": null
-        }
-      },
-      {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Hainur",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Circle Time 1 - Tchr. Joanna",
-            "subject": "Circle Time 1",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Hadith - Ust. Hainur",
-            "subject": "Hadith",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Circle Time 1 - Tchr. Joanna",
-            "subject": "Circle Time 1",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Silfah",
-            "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Circle Time 1 - Tchr. Joanna",
-            "subject": "Circle Time 1",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Circle Time 2 - Tchr. Joanna",
-            "subject": "Circle Time 2",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Circle Time 1 - Tchr. Joanna",
-            "subject": "Circle Time 1",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Circle Time 2 - Tchr. Joanna",
-            "subject": "Circle Time 2",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Circle Time 1 - Tchr. Joanna",
-            "subject": "Circle Time 1",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          }
         }
       }
     ]
   },
   {
     "id": "sec_6",
-    "sheet": "ELEM",
-    "section_name": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+    "section_name": "GRADE 4 (FACE TO FACE)",
     "department": "Elementary",
-    "grade_level": "Kindergarten 1",
-    "shift": "ODL - 2ND SHIFT",
+    "grade_level": "Grade 4",
+    "shift": "F2F",
+    "total_periods": 12,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE",
-        "subject": "HOMEROOM GUIDANCE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": false,
-        "label": "",
-        "subject": "",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
-        "minutes": "40 min.",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
+        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Sunday": {
+            "label": "AP - Tchr. Monisa",
+            "subject": "AP",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "TLE - Tchr. Monisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "AP - Tchr. Monisa",
+            "subject": "AP",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "TLE - Tchr. Monisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "AP - Tchr. Monisa",
+            "subject": "AP",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          }
         }
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
         "minutes": "40 min.",
         "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Circle Time 1 - Tchr. Wendy",
-        "subject": "Circle Time 1",
-        "teacher": "Teacher Wendy",
-        "extra": "",
-        "days": {}
+        "label": "Math - Tchr. Arvin",
+        "subject": "Math",
+        "teacher_id": "tchr_arvin",
+        "teacher": "Teacher Arvin",
+        "is_break": false
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "CT 2 - Tchr. Wendy",
-            "subject": "CT 2",
-            "teacher": "Teacher Wendy",
-            "extra": ""
+            "label": "ARAL Reading - Tchr. Arvin",
+            "subject": "ARAL Reading",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "CT 2 - Tchr. Wendy",
-            "subject": "CT 2",
-            "teacher": "Teacher Wendy",
-            "extra": ""
+            "label": "SHAF - Ust. Abdiraheem",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Hainur",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
+            "label": "GMRC - Tchr. Sahdia",
+            "subject": "GMRC",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Hadith - Ust. Hainur",
-            "subject": "Hadith",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
+            "label": "SHAF - Ust. Abdiraheem",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Alim Bustamante",
-            "subject": "Arabic",
-            "teacher": "Alim Bustamante",
-            "extra": ""
+            "label": "GMRC - Tchr. Sahdia",
+            "subject": "GMRC",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
           }
         }
+      },
+      {
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
+        "minutes": "15 min.",
+        "is_merged_all_days": true,
+        "label": "RECESS",
+        "subject": "RECESS",
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Science - Tchr. Junaisah",
+        "subject": "Science",
+        "teacher_id": "tchr_junaisah",
+        "teacher": "Teacher Junaisah",
+        "is_break": false
+      },
+      {
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Filipino - Tchr. Norhydie",
+            "subject": "Filipino",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
+          },
+          "Monday": null,
+          "Tuesday": {
+            "label": "TLE - Tchr. Monisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Filipino - Tchr. Norhydie",
+            "subject": "Filipino",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
+          },
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
+        "minutes": "70 min.",
+        "is_merged_all_days": true,
+        "label": "LUNCH and SALAH",
+        "subject": "LUNCH and SALAH",
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
+      },
+      {
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Arabic - Ust. Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Qur'an - Ust. Obaydah",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "MAPEH - Tchr. Halnaisa",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Qur'an - Ust. Obaydah",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Arabic - Ust. Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "GMRC - Tchr. Sahdia",
+            "subject": "GMRC",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "MAPEH - Tchr. Halnaisa",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "ARAL Math - Tchr. Arvin",
+            "subject": "ARAL Math",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "MAPEH - Tchr. Halnaisa",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "HG - Tchr. Monisa",
+            "subject": "HG",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "English - Teacher Norhydie",
+        "subject": "English",
+        "teacher_id": "tchr_norhydie",
+        "teacher": "Teacher Norhydie",
+        "is_break": false
+      },
+      {
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "SALAH & DEPARTURE",
+        "subject": "SALAH & DEPARTURE",
+        "teacher_id": null,
+        "teacher": "SALAH & DEPARTURE",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_7",
-    "sheet": "ELEM",
-    "section_name": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+    "section_name": "GRADE 5 (FACE TO FACE)",
     "department": "Elementary",
-    "grade_level": "Kindergarten 2",
-    "shift": "ODL - 2ND SHIFT",
+    "grade_level": "Grade 5",
+    "shift": "F2F",
+    "total_periods": 12,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "",
-        "subject": "",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "03:40 PM \u2013 04:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "04:20 PM \u2013 04:30 PM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
+        "minutes": "45 min.",
         "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Circle Time 1 - Tchr. Keychell",
-        "subject": "Circle Time 1",
-        "teacher": "Tchr. Keychell",
-        "extra": "",
-        "days": {}
+        "label": "English - Tchr. Jessa",
+        "subject": "English",
+        "teacher_id": "tchr_jessa",
+        "teacher": "Teacher Jessa",
+        "is_break": false
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "CT 2 - Tchr. Keychell",
-            "subject": "CT 2",
-            "teacher": "Tchr. Keychell",
-            "extra": ""
+            "label": "GMRC - Tchr. Jayra",
+            "subject": "GMRC",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Qur'an - Us. Faidh",
+            "label": "Qur'an - Ust. Ubaydah",
             "subject": "Qur'an",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Qur'an - Ust. Ubaydah",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "CT 2 - Tchr. Keychell",
-            "subject": "CT 2",
-            "teacher": "Tchr. Keychell",
-            "extra": ""
+            "label": "GMRC - Tchr. Jayra",
+            "subject": "GMRC",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Hadith - Ust.Faidh",
-            "subject": "Hadith",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
+            "label": "Qur'an - Ust. Ubaydah",
+            "subject": "Qur'an",
+            "teacher_id": null,
+            "teacher": "Qur'an - Ust. Ubaydah",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Ustadh Faidh",
-            "subject": "Arabic",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
+            "label": "GMRC - Tchr. Jayra",
+            "subject": "GMRC",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
           }
         }
+      },
+      {
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "AP - Tchr. Norhydie",
+            "subject": "AP",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Arabic - Ust. Ersahad",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "AP - Tchr. Norhydie",
+            "subject": "AP",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Arabic - Ust. Ersahad",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "AP - Tchr. Norhydie",
+            "subject": "AP",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
+        "minutes": "15 min.",
+        "is_merged_all_days": true,
+        "label": "RECESS",
+        "subject": "RECESS",
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "ARAL Program - Tchr. Arvin",
+            "subject": "ARAL Program",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "TLE - Tchr. Halnaisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "ARAL Program - Tchr. Arvin",
+            "subject": "ARAL Program",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "TLE - Tchr. Halnaisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "ARAL Program - Tchr. Arvin",
+            "subject": "ARAL Program",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Math 5 - Tchr. Fhairudz",
+        "subject": "Math 5",
+        "teacher_id": "tchr_fhairudz",
+        "teacher": "Teacher Fhairudz",
+        "is_break": false
+      },
+      {
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
+        "minutes": "70 min.",
+        "is_merged_all_days": true,
+        "label": "LUNCH and SALAH",
+        "subject": "LUNCH and SALAH",
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
+      },
+      {
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Science - Tchr. Junaisah",
+        "subject": "Science",
+        "teacher_id": "tchr_junaisah",
+        "teacher": "Teacher Junaisah",
+        "is_break": false
+      },
+      {
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "MAPEH - Tchr. Keychell",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_keychell",
+            "teacher": "Teacher Keychell",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "MAPEH - Tchr. Keychell",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_keychell",
+            "teacher": "Teacher Keychell",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "HG - Tchr. Jessa",
+            "subject": "HG",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Filipino - Tchr. Jessa",
+            "subject": "Filipino",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "MAPEH - Tchr.  Keychell",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_keychell",
+            "teacher": "Teacher Keychell",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Filipino - Tchr. Jessa",
+            "subject": "Filipino",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Filipino - Tchr. Jessa",
+            "subject": "Filipino",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Filipino - Tchr. Jessa",
+            "subject": "Filipino",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "SALAH & DEPARTURE",
+        "subject": "SALAH & DEPARTURE",
+        "teacher_id": null,
+        "teacher": "SALAH & DEPARTURE",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_8",
-    "sheet": "ELEM",
-    "section_name": "KINDER 1 CLASS SCHEDULE (F2F)",
+    "section_name": "GRADE  6  FACE TO FACE",
     "department": "Elementary",
-    "grade_level": "Kindergarten 1",
+    "grade_level": "Grade  6",
     "shift": "F2F",
+    "total_periods": 12,
     "periods": [
       {
-        "time": "12:00 PM \u2013 12:40 PM",
-        "minutes": "40 min.",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
+        "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "SALAH",
-        "subject": "SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:25 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Circle Time 1 - Tchr. Wendy",
-        "subject": "Circle Time 1",
-        "teacher": "Teacher Wendy",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:25 PM \u2013 02:10 PM",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Qur'an - Ustadh Jaisam",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
+            "label": "Filipino - Tchr. Normylah",
+            "subject": "Filipino",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
           },
-          "Monday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Saliha",
-            "subject": "Arabic",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Hadith - Ust. Saliha",
-            "subject": "Hadith",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Qur'an - Ustadh Jaisam",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
-          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
           "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Saliha",
-            "subject": "Arabic",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
+            "label": "HG - Tchr. Normylah",
+            "subject": "HG",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
           }
         }
       },
       {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
+        "minutes": "40 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "SHORT BREAK",
-        "subject": "SHORT BREAK",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "English - Tchr. Jessa",
+        "subject": "English",
+        "teacher_id": "tchr_jessa",
+        "teacher": "Teacher Jessa",
+        "is_break": false
       },
       {
-        "time": "02:10 PM \u2013 02:55 PM",
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "MAPEH Tchr. Zara",
+            "subject": "MAPEH Tchr. Zara",
+            "teacher_id": "tchr_zara",
+            "teacher": "Teacher Zara",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "AP - Tchr. Zuhora",
+            "subject": "AP",
+            "teacher_id": "tchr_zuhora",
+            "teacher": "Teacher Zuhora",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "MAPEH Tchr. Zara",
+            "subject": "MAPEH Tchr. Zara",
+            "teacher_id": "tchr_zara",
+            "teacher": "Teacher Zara",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Math - Ust. Ersahad",
+            "subject": "Math",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "MAPEH Tchr. Zara",
+            "subject": "MAPEH Tchr. Zara",
+            "teacher_id": "tchr_zara",
+            "teacher": "Teacher Zara",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
+        "minutes": "15 min.",
+        "is_merged_all_days": true,
+        "label": "RECESS",
+        "subject": "RECESS",
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF - Ust. Abdi",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Math- Ust. Ersahad",
+            "subject": "Math- Ust. Ersahad",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "GMRC- Ust. Silfah",
+            "subject": "GMRC- Ust. Silfah",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "SHAF - Ust. Abdi",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "GMRC- Ust. Silfah",
+            "subject": "GMRC- Ust. Silfah",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "GMRC- Ust. Silfah",
+            "subject": "GMRC- Ust. Silfah",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "TLE - Tchr. Arvin",
+            "subject": "TLE",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Math- Ust. Ersahad",
+            "subject": "Math- Ust. Ersahad",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Aral  - Tchr. Arvin",
+            "subject": "Aral",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Math- Ust. Ersahad",
+            "subject": "Math- Ust. Ersahad",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
+        "minutes": "70 min.",
+        "is_merged_all_days": true,
+        "label": "LUNCH and SALAH",
+        "subject": "LUNCH and SALAH",
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
+      },
+      {
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "AP - Tchr. Zuhora",
+            "subject": "AP",
+            "teacher_id": "tchr_zuhora",
+            "teacher": "Teacher Zuhora",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Arabic Ust. Ali",
+            "subject": "Arabic Ust. Ali",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Qur'an - Ust. Faidh",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "AP - Tchr. Zuhora",
+            "subject": "AP",
+            "teacher_id": "tchr_zuhora",
+            "teacher": "Teacher Zuhora",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "TLE - Tchr. Arvin",
+            "subject": "TLE",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
         "minutes": "45 min.",
         "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Circle Time 2 - Tchr. Wendy",
-        "subject": "Circle Time 2",
-        "teacher": "Teacher Wendy",
-        "extra": "",
-        "days": {}
+        "label": "Science - Tchr. Wendelyn",
+        "subject": "Science",
+        "teacher_id": null,
+        "teacher": "Science - Tchr. Wendelyn",
+        "is_break": false
       },
       {
-        "time": "03:00 PM",
-        "minutes": "-",
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Math - Ust. Ersahad",
+            "subject": "Math",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Arabic - Ust. Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Qur'an - Ust. Faidh",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "ARAL Program - Tchr. Arvin",
+            "subject": "ARAL Program",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "ARAL Program - Tchr. Arvin",
+            "subject": "ARAL Program",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
+        "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "DEPARTURE",
-        "subject": "DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "SALAH & DEPARTURE",
+        "subject": "SALAH & DEPARTURE",
+        "teacher_id": null,
+        "teacher": "SALAH & DEPARTURE",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_9",
-    "sheet": "ELEM",
-    "section_name": "GRADE 1 (FACE TO FACE)",
-    "department": "Elementary",
-    "grade_level": "Grade 1",
-    "shift": "F2F",
+    "section_name": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+    "department": "Kindergarten",
+    "grade_level": "Kinder 2",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "GENERAL ASSEMBLY",
-        "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "07:40 AM \u2013 08:25 AM",
-        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Saliha",
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
-          },
+          "Sunday": null,
           "Monday": null,
           "Tuesday": null,
           "Wednesday": null,
-          "Thursday": {
-            "is_break": false,
-            "label": "HG - Tchr. Sahdia",
-            "subject": "HG",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
-          }
+          "Thursday": null
         }
       },
       {
-        "time": "08:25 AM \u2013 09:05 AM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Language - Tchr. Sahdia",
-        "subject": "Language",
-        "teacher": "Tchr. Sahdia",
-        "extra": "",
-        "days": {}
+        "label": "Circle Time 1 - Tchr. Joanna",
+        "subject": "Circle Time 1",
+        "teacher_id": "tchr_joanna",
+        "teacher": "Teacher Joanna",
+        "is_break": false
       },
       {
-        "time": "09:05 AM \u2013 09:45 AM",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
         "minutes": "40 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Reading and Literacy - Tchr. Katrina",
-        "subject": "Reading and Literacy",
-        "teacher": "Teacher Kat",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "09:45 AM \u2013 10:00 AM",
-        "minutes": "15 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "RECESS",
-        "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "10:00 AM \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Math - Tchr. Wendy",
-        "subject": "Math",
-        "teacher": "Teacher Wendy",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "10:45:11:30",
-        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "ARAL Reading - Tchr. Kat",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "label": "Qur'an - Ust. Hainur",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "ARAL Math - Tchr. Wendy",
-            "subject": "ARAL Math",
-            "teacher": "Teacher Wendy",
-            "extra": ""
+            "label": "CT 2 - Tchr. Joanna",
+            "subject": "CT 2",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "ARAL Reading - Tchr. Kat",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "label": "Arabic  - Ust. Silfah",
+            "subject": "Arabic",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "ARAL Math - Tchr. Wendy",
-            "subject": "ARAL Math",
-            "teacher": "Teacher Wendy",
-            "extra": ""
+            "label": "CT 2 - Tchr. Joanna",
+            "subject": "CT 2",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "ARAL Reading - Tchr. Kat",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "label": "Hadith - Ust. Saliha",
+            "subject": "Hadith",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
           }
         }
       },
       {
-        "time": "11:30 AM \u2013 12:40 PM",
-        "minutes": "70 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "LUNCH and SALAH",
-        "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:25 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "SHAF - Ust. Abdiraheem",
-        "subject": "SHAF",
-        "teacher": "Ustadh Abdiraheem",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:25 PM \u2013 02:10 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "MAKABANSA -Teacher Norhydie",
-        "subject": "MAKABANSA",
-        "teacher": "Teacher Norhydie",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:15 PM \u2013 03:00 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Tchr. Sahdia",
-            "subject": "Arabic",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obaydah",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Arabic - Tchr. Sahdia",
-            "subject": "Arabic",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obaydah",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Tchr. Sahdia",
-            "subject": "Arabic",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "SALAH & DEPARTURE",
-        "subject": "SALAH & DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "QUR'AN READING (GENERAL ASSEMBLY)",
+        "subject": "QUR'AN READING (GENERAL ASSEMBLY)",
+        "teacher_id": null,
+        "teacher": "QUR'AN READING (GENERAL ASSEMBLY)",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_10",
-    "sheet": "ELEM",
     "section_name": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 1",
     "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "GMRC - Tchr. Sahdia",
             "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Makabansa - Tchr. Norhydie",
             "subject": "Makabansa",
+            "teacher_id": "tchr_norhydie",
             "teacher": "Teacher Norhydie",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "GMRC - Tchr. Sahdia",
             "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Makabansa - Tchr. Norhydie",
             "subject": "Makabansa",
+            "teacher_id": "tchr_norhydie",
             "teacher": "Teacher Norhydie",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Arabic - Ust. Hainur",
             "subject": "Arabic",
+            "teacher_id": "tchr_hainur",
             "teacher": "Ustadh Hainur",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "01:20 PM \u2013 01:30 PM",
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "01:30 PM \u2013 02:10 PM",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "SHAF - Alim Abdul Karim",
             "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
             "teacher": "Alim Abdul Karim",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Language - Tchr. Sahdia",
             "subject": "Language",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Language - Tchr. Sahdia",
             "subject": "Language",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "SHAF - Alim Abdul Karim",
             "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
             "teacher": "Alim Abdul Karim",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
+            "teacher_id": "tchr_hainur",
             "teacher": "Ustadh Hainur",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "02:10 PM \u2013 02:20 PM",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "02:20 PM \u2013 03:00 PM",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Math - Tchr. Joanna",
             "subject": "Math",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "R & L - Tchr. Katrina",
             "subject": "R & L",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "teacher_id": "tchr_katrina",
+            "teacher": "Teacher Katrina",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Math - Tchr. Joanna",
             "subject": "Math",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "R & L - Tchr. Katrina",
             "subject": "R & L",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "teacher_id": "tchr_katrina",
+            "teacher": "Teacher Katrina",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "ARAL Reading - Tchr. Katrina",
             "subject": "ARAL Reading",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "teacher_id": "tchr_katrina",
+            "teacher": "Teacher Katrina",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
         "subject": "HOMEROOM GUIDANCE/ARAL MATH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL MATH",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_11",
-    "sheet": "ELEM",
-    "section_name": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+    "section_name": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 1",
+    "grade_level": "Grade 2",
     "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Math- Tchr. Joanna",
-            "subject": "Math",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Language - Tchr. Sahdia",
-            "subject": "Language",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Norhydie",
-            "subject": "Makabansa",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Language - Tchr. Sahdia",
-            "subject": "Language",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Norhydie",
-            "subject": "Makabansa",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
+            "label": "ARAL Reading - Tchr. Marham",
+            "subject": "ARAL Reading",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
           }
         }
       },
       {
-        "time": "01:20 PM \u2013 01:30 PM",
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "01:30 PM \u2013 02:10 PM",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Saliha",
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
+            "label": "Filipino - Tchr. Sitti",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sitti_kauzar",
+            "teacher": "Teacher Sitti Kauzar",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
+            "label": "Math - Tchr. Sitti",
+            "subject": "Math",
+            "teacher_id": "tchr_sitti_kauzar",
+            "teacher": "Teacher Sitti Kauzar",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
             "label": "Arabic - Ust. Hainur",
             "subject": "Arabic",
+            "teacher_id": "tchr_hainur",
             "teacher": "Ustadh Hainur",
-            "extra": ""
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Filipino - Tchr. Sitti",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sitti_kauzar",
+            "teacher": "Teacher Sitti Kauzar",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "ARAL Reading - Tchr. Katrina",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "label": "Math - Tchr. Sitti",
+            "subject": "Math",
+            "teacher_id": "tchr_sitti_kauzar",
+            "teacher": "Teacher Sitti Kauzar",
+            "is_break": false
           }
         }
       },
       {
-        "time": "02:10 PM \u2013 02:20 PM",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "02:20 PM \u2013 03:00 PM",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "R & L - Tchr. Katrina",
-            "subject": "R & L",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Saliha",
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
+            "label": "Makabansa - Tchr. Zuhora",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_zuhora",
+            "teacher": "Teacher Zuhora",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "R & L - Tchr. Katrina",
-            "subject": "R & L",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Hainur",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
+            "label": "Makabansa - Tchr. Zuhora",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_zuhora",
+            "teacher": "Teacher Zuhora",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Math- Tchr. Joanna",
-            "subject": "Math",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
+            "label": "Qur'an - Ust. Obaydah",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
         "subject": "HOMEROOM GUIDANCE/ARAL MATH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL MATH",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_12",
-    "sheet": "ELEM",
-    "section_name": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+    "section_name": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
     "department": "Elementary",
-    "grade_level": "Grade 1",
-    "shift": "ODL - 2ND SHIFT",
+    "grade_level": "Grade 3",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL MATH",
-        "subject": "HOMEROOM GUIDANCE/ARAL MATH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Sahdia",
-            "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "label": "Science - Tchr. Jerlyn",
+            "subject": "Science",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Norhydie",
-            "subject": "Makabansa",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
+            "label": "Math - Tchr. Jerlyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Sahdia",
-            "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "label": "Science - Tchr. Jerlyn",
+            "subject": "Science",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Norhydie",
-            "subject": "Makabansa",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
+            "label": "Math - Tchr. Jerlyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Hainur",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
+            "label": "GMRC - Ust. Silfah",
+            "subject": "GMRC",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
           }
         }
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "04:30 PM \u2013 05:10 PM",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Math - Tchr. Joanna",
-            "subject": "Math",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Language - Tchr. Sahdia",
-            "subject": "Language",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Joanna",
-            "subject": "Math",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Hainur",
+            "label": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "MAKABANSA Tchr. Zara",
+            "subject": "MAKABANSA Tchr. Zara",
+            "teacher_id": "tchr_zara",
+            "teacher": "Teacher Zara",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Language - Tchr. Sahdia",
-            "subject": "Language",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "label": "MAKABANSA Tchr. Zara",
+            "subject": "MAKABANSA Tchr. Zara",
+            "teacher_id": "tchr_zara",
+            "teacher": "Teacher Zara",
+            "is_break": false
           }
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "05:20 PM \u2013 06:00 PM",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
+            "label": "Qur'an - Ust. Obaydah",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "R & L - Tchr. Katrina",
-            "subject": "R & L",
-            "teacher": "Teacher Kat",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
             "label": "SHAF - Alim Abdul Karim",
             "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
             "teacher": "Alim Abdul Karim",
-            "extra": ""
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Filipino - Tchr. Normayla",
+            "subject": "Filipino",
+            "teacher_id": null,
+            "teacher": "Filipino - Tchr. Normayla",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "R & L - Tchr. Katrina",
-            "subject": "R & L",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "label": "Filipino - Tchr. Normayla",
+            "subject": "Filipino",
+            "teacher_id": null,
+            "teacher": "Filipino - Tchr. Normayla",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "ARAL Reading - Tchr. Katrina",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
           }
         }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_13",
-    "sheet": "ELEM",
-    "section_name": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+    "section_name": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
     "department": "Elementary",
-    "grade_level": "Grade 1",
-    "shift": "ODL - 2ND SHIFT",
+    "grade_level": "Grade 4",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL MATH",
-        "subject": "HOMEROOM GUIDANCE/ARAL MATH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Math- Tchr. Joanna",
-            "subject": "Math",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
+            "label": "Qur'an4-Faidh",
+            "subject": "Qur'an4-Faidh",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Language - Tchr. Sahdia",
-            "subject": "Language",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "label": "Math4-Saimona",
+            "subject": "Math4-Saimona",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Math- Tchr. Joanna",
-            "subject": "Math",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
+            "label": "Fil4-Zuhora",
+            "subject": "Fil4-Zuhora",
+            "teacher_id": "tchr_zuhora",
+            "teacher": "Teacher Zuhora",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "ARAL Reading - Tchr. Katrina",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "label": "AP4-Monisa",
+            "subject": "AP4-Monisa",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Language - Tchr. Sahdia",
-            "subject": "Language",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "label": "Math4-Saimona",
+            "subject": "Math4-Saimona",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
           }
         }
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
         "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       },
       {
-        "time": "04:30 PM \u2013 05:10 PM",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "R & L - Tchr. Katrina",
-            "subject": "R & L",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "label": "Arabic4-Ali",
+            "subject": "Arabic4-Ali",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
+            "label": "MAPEH4-Zuhora",
+            "subject": "MAPEH4-Zuhora",
+            "teacher_id": "tchr_zuhora",
+            "teacher": "Teacher Zuhora",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "R & L - Tchr. Katrina",
-            "subject": "R & L",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "label": "SHAF4-Abdi",
+            "subject": "SHAF4-Abdi",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
+            "label": "SHAF4-Abdi",
+            "subject": "SHAF4-Abdi",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Hainur",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
+            "label": "GMRC4-Sahdia",
+            "subject": "GMRC4-Sahdia",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
           }
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
         "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       },
       {
-        "time": "05:20 PM \u2013 06:00 PM",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Sahdia",
-            "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "label": "Eng4-Jenny",
+            "subject": "Eng4-Jenny",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Hainur",
-            "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
+            "label": "Sci4-Saimona",
+            "subject": "Sci4-Saimona",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Sahdia",
-            "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "label": "TLE4-Jenny",
+            "subject": "TLE4-Jenny",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Norhydie",
-            "subject": "Makabansa",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
+            "label": "Sci4-Saimona",
+            "subject": "Sci4-Saimona",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Norhydie",
-            "subject": "Makabansa",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
+            "label": "Eng4-Jenny",
+            "subject": "Eng4-Jenny",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
           }
         }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_14",
-    "sheet": "ELEM",
-    "section_name": "GRADE 2 (FACE TO FACE)",
+    "section_name": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 2",
-    "shift": "F2F",
+    "grade_level": "Grade 4",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "GENERAL ASSEMBLY",
-        "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "07:40 AM \u2013 08:25 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "English - Tchr. Marham",
-        "subject": "English",
-        "teacher": "Teacher Marham",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "08:25 AM \u2013 09:05 AM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "MAKABANSA - Tchr. Monisa",
-        "subject": "MAKABANSA",
-        "teacher": "Teacher Monisa",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "09:05 AM \u2013 09:45 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Math - Tchr. Sitti",
-        "subject": "Math",
-        "teacher": "Teacher Sitti",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "09:45 AM \u2013 10:00 AM",
-        "minutes": "15 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "RECESS",
-        "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "10:00 AM \u2013 10:45 AM",
-        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "HG - Tchr. Marham",
-            "subject": "HG",
-            "teacher": "Teacher Marham",
-            "extra": ""
+            "label": "AP - Tchr. Monisa",
+            "subject": "AP",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "GMRC - Ustadha Saliha",
+            "label": "Math - Tchr. Arvin",
+            "subject": "Math",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "TLE - Tchr. Monisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Math - Tchr. Arvin",
+            "subject": "Math",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "GMRC - Tchr. Sahdia",
             "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
-          },
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          }
         }
       },
       {
-        "time": "10:45:11:30",
-        "minutes": "45 min.",
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
+            "label": "SHAF - Ust. Abdiraheem",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Arabic - Ust. Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          },
+          "Tuesday": {
             "label": "Qur'an - Ust. Obaydah",
             "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
             "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Obaydah",
-            "subject": "Arabic",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obaydah",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Obaydah",
-            "subject": "Arabic",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
+            "label": "SHAF - Ust. Abdiraheem",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Obaydah",
-            "subject": "Arabic",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
+            "label": "MAPEH - Tchr. Halnaisa",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
           }
         }
       },
       {
-        "time": "11:30 AM \u2013 12:40 PM",
-        "minutes": "70 min.",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "LUNCH and SALAH",
-        "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:25 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Filipino - Tchr. Sitti",
-        "subject": "Filipino",
-        "teacher": "Teacher Sitti",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:25 PM \u2013 02:10 PM",
-        "minutes": "45 min.",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
+            "label": "English - Tchr. Arvin",
+            "subject": "English",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "ARAL Math - Tchr. Junaisa",
-            "subject": "ARAL Math",
-            "teacher": "Teacher Junaisa",
-            "extra": ""
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
+            "label": "English - Tchr. Arvin",
+            "subject": "English",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "ARAL Math - Tchr. Junaisa",
-            "subject": "ARAL Math",
-            "teacher": "Teacher Junaisa",
-            "extra": ""
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
+            "label": "FIL  - Tchr. Monisa",
+            "subject": "FIL",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
           }
         }
       },
       {
-        "time": "02:15 PM \u2013 03:00 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "ARAL Reading - Tchr. Marham",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "ARAL Reading - Tchr. Marham",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "ARAL Reading - Tchr. Marham",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "SALAH & DEPARTURE",
-        "subject": "SALAH & DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_15",
-    "sheet": "ELEM",
-    "section_name": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+    "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 2",
+    "grade_level": "Grade 5",
     "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Saliha",
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
+            "label": "SHAF - Ust. Raslina",
+            "subject": "SHAF",
+            "teacher_id": "tchr_raslina",
+            "teacher": "Ustadh Raslina",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
+            "label": "AP - Tchr. Monisa",
+            "subject": "AP",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Saliha",
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
+            "label": "SHAF - Ust. Raslina",
+            "subject": "SHAF",
+            "teacher_id": "tchr_raslina",
+            "teacher": "Ustadh Raslina",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
+            "label": "Filipino - Tchr. Joanna",
+            "subject": "Filipino",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "ARAL Reading - Tchr. Marham",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Marham",
-            "extra": ""
+            "label": "GMRC - Tchr. Jayra",
+            "subject": "GMRC",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
           }
         }
       },
       {
-        "time": "01:20 PM \u2013 01:30 PM",
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "01:30 PM \u2013 02:10 PM",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sitti",
-            "subject": "Filipino",
-            "teacher": "Teacher Sitti",
-            "extra": ""
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Sitti",
-            "subject": "Math",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Hainur",
-            "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sitti",
-            "subject": "Filipino",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Sitti",
-            "subject": "Math",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Zuhora",
-            "subject": "Makabansa",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Zuhora",
-            "subject": "Makabansa",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obaydah",
+            "label": "Qur'an - Ust. Jaisam",
             "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "MAPEH - Tchr. Keychell",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_keychell",
+            "teacher": "Teacher Keychell",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Arabic - Alim Abdul Karim",
+            "subject": "Arabic",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Math - Tchr. Fhairudz",
+            "subject": "Math",
+            "teacher_id": "tchr_fhairudz",
+            "teacher": "Teacher Fhairudz",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Math - Tchr. Fhairudz",
+            "subject": "Math",
+            "teacher_id": "tchr_fhairudz",
+            "teacher": "Teacher Fhairudz",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "TLE - Tchr. Anna",
+            "subject": "TLE",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL MATH",
-        "subject": "HOMEROOM GUIDANCE/ARAL MATH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_16",
-    "sheet": "ELEM",
-    "section_name": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+    "section_name": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 2",
+    "grade_level": "Grade 6",
     "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
+            "label": "AP - Tchr. Normylah",
+            "subject": "AP",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Saliha",
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Saliha",
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obaydah",
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Math - Tchr. Kat",
+            "subject": "Math",
+            "teacher_id": null,
+            "teacher": "Math - Tchr. Kat",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "GMRC- Ust. Silfah",
+            "subject": "GMRC- Ust. Silfah",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Math - Tchr. Kat",
+            "subject": "Math",
+            "teacher_id": null,
+            "teacher": "Math - Tchr. Kat",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "MAPEH Tchr. Zara",
+            "subject": "MAPEH Tchr. Zara",
+            "teacher_id": "tchr_zara",
+            "teacher": "Teacher Zara",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "SHAF - Ust. Abdi",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Qur'an - Ust. Jaisam",
             "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Monisa",
-            "subject": "Makabansa",
-            "teacher": "Teacher Monisa",
-            "extra": ""
+            "label": "TLE - Tchr. Arvin",
+            "subject": "TLE",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
+            "label": "SHAF - Ust. Abdi",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Monisa",
-            "subject": "Makabansa",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "ARAL Reading - Tchr. Marham",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sitti",
-            "subject": "Filipino",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Sitti",
-            "subject": "Math",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sitti",
-            "subject": "Filipino",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Sitti",
-            "subject": "Math",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Hainur",
+            "label": "Arabic - Ust. Ali",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Fil - Tchr. Zuhora",
+            "subject": "Fil",
+            "teacher_id": "tchr_zuhora",
+            "teacher": "Teacher Zuhora",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL MATH",
-        "subject": "HOMEROOM GUIDANCE/ARAL MATH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_17",
-    "sheet": "ELEM",
-    "section_name": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-    "department": "Elementary",
-    "grade_level": "Grade 2",
-    "shift": "ODL - 2ND SHIFT",
+    "section_name": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+    "department": "Kindergarten",
+    "grade_level": "Kinder 2",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL MATH",
-        "subject": "HOMEROOM GUIDANCE/ARAL MATH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
       },
       {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
         "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Math - Tchr. Sitti",
-            "subject": "Math",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Saliha",
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Sitti",
-            "subject": "Math",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Saliha",
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Aral Reading-Marham",
-            "subject": "Aral Reading",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          }
-        }
+        "is_merged_all_days": true,
+        "label": "Circle Time 1 - Tchr. Ayah",
+        "subject": "Circle Time 1",
+        "teacher_id": "tchr_ayah",
+        "teacher": "Teacher Ayah",
+        "is_break": false
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "04:30 PM \u2013 05:10 PM",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
+            "label": "CT 2 - Tchr. Ayah",
+            "subject": "CT 2",
+            "teacher_id": "tchr_ayah",
+            "teacher": "Teacher Ayah",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Arabic - Ust.Hainur",
+            "label": "Arabic  - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Zuhora",
-            "subject": "Filipino",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Zuhora",
-            "subject": "Filipino",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Monisa",
-            "subject": "Makabansa",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Monisa",
-            "subject": "Makabansa",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obaydah",
+            "label": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Hadith - Ust. Saliha",
+            "subject": "Hadith",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "CT 2 - Tchr. Ayah",
+            "subject": "CT 2",
+            "teacher_id": "tchr_ayah",
+            "teacher": "Teacher Ayah",
+            "is_break": false
           }
         }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "HOMEROOM GUIDANCE",
+        "subject": "HOMEROOM GUIDANCE",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_18",
-    "sheet": "ELEM",
-    "section_name": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+    "section_name": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 2",
-    "shift": "ODL - 2ND SHIFT",
+    "grade_level": "Grade 1",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL MATH",
-        "subject": "HOMEROOM GUIDANCE/ARAL MATH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Saliha",
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
+            "label": "Math- Tchr. Joanna",
+            "subject": "Math- Tchr. Joanna",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Sitti",
-            "subject": "Math",
-            "teacher": "Teacher Sitti",
-            "extra": ""
+            "label": "Language - Tchr. Sahdia",
+            "subject": "Language",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Saliha",
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
+            "label": "Makabansa - Tchr. Norhydie",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
+            "label": "Language - Tchr. Sahdia",
+            "subject": "Language",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Makabansa - Tchr. Norhydie",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
+          },
+          "Wednesday": {
             "label": "Arabic - Ust. Hainur",
             "subject": "Arabic",
+            "teacher_id": "tchr_hainur",
             "teacher": "Ustadh Hainur",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Sitti",
-            "subject": "Math",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Monisa",
-            "subject": "Makabansa",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obaydah",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Monisa",
-            "subject": "Makabansa",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sitti",
-            "subject": "Filipino",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sitti",
-            "subject": "Filipino",
-            "teacher": "Teacher Sitti",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "ARAL Reading - Tchr. Marham",
+            "label": "ARAL Reading - Tchr. Katrina",
             "subject": "ARAL Reading",
-            "teacher": "Teacher Marham",
-            "extra": ""
+            "teacher_id": "tchr_katrina",
+            "teacher": "Teacher Katrina",
+            "is_break": false
           }
         }
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "R & L - Tchr. Katrina",
+            "subject": "R & L",
+            "teacher_id": "tchr_katrina",
+            "teacher": "Teacher Katrina",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "R & L - Tchr. Katrina",
+            "subject": "R & L",
+            "teacher_id": "tchr_katrina",
+            "teacher": "Teacher Katrina",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Qur'an - Ust. Hainur",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Math- Tchr. Joanna",
+            "subject": "Math- Tchr. Joanna",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "HOMEROOM GUIDANCE/ARAL MATH",
+        "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL MATH",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_19",
-    "sheet": "ELEM",
-    "section_name": "GRADE 3 (FACE TO FACE)",
+    "section_name": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 3",
-    "shift": "F2F",
+    "grade_level": "Grade 2",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "GENERAL ASSEMBLY",
-        "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "07:40 AM \u2013 08:25 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Science - Tchr. Jerlyn",
-        "subject": "Science",
-        "teacher": "Teacher Jerlyn",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "08:25 AM \u2013 09:05 AM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "MAKABANSA - Tchr. Wendy",
-        "subject": "MAKABANSA",
-        "teacher": "Teacher Wendy",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "09:05 AM \u2013 09:45 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "English - Tchr. Marham",
-        "subject": "English",
-        "teacher": "Teacher Marham",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "09:45 AM \u2013 10:00 AM",
-        "minutes": "15 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "RECESS",
-        "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "10:00 AM \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Filipino - Tchr. Normayla",
-        "subject": "Filipino",
-        "teacher": "Tchr. Normayla",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "10:45:11:30",
-        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Saliha",
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "GMRC - Ust. Saliha",
             "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
             "teacher": "Ustadha Saliha",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Saliha",
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "GMRC - Ust. Saliha",
             "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
             "teacher": "Ustadha Saliha",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "HG - Tchr. Jerlyn",
-            "subject": "HG",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "11:30 AM \u2013 12:40 PM",
-        "minutes": "70 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "LUNCH and SALAH",
-        "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:25 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Silfah",
-            "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Silfah",
-            "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:25 PM \u2013 02:10 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "ARAL Reading- Tchr. Junaisah",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Junaisa",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "ARAL Reading- Tchr. Junaisah",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Junaisa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "ARAL Science - Tchr. Junaisah",
-            "subject": "ARAL Science",
-            "teacher": "Teacher Junaisa",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
             "label": "Qur'an - Ust. Obaydah",
             "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
             "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "ARAL Math - Tchr. Junaisah",
-            "subject": "ARAL Math",
-            "teacher": "Teacher Junaisa",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "02:15 PM \u2013 03:00 PM",
-        "minutes": "45 min.",
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "ARAL Reading- Tchr. Junaisah",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Junaisa",
-            "extra": ""
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jerlyn",
-            "subject": "Math",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
+            "label": "Makabansa - Tchr. Monisa",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "ARAL Reading- Tchr. Junaisah",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Junaisa",
-            "extra": ""
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jerlyn",
-            "subject": "Math",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
+            "label": "Makabansa - Tchr. Monisa",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jerlyn",
-            "subject": "Math",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
+            "label": "ARAL Reading - Tchr. Marham",
+            "subject": "ARAL Reading",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Sunday": {
+            "label": "Filipino - Tchr. Sitti",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sitti_kauzar",
+            "teacher": "Teacher Sitti Kauzar",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Math - Tchr. Sitti",
+            "subject": "Math",
+            "teacher_id": "tchr_sitti_kauzar",
+            "teacher": "Teacher Sitti Kauzar",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Filipino - Tchr. Sitti",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sitti_kauzar",
+            "teacher": "Teacher Sitti Kauzar",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Math - Tchr. Sitti",
+            "subject": "Math",
+            "teacher_id": "tchr_sitti_kauzar",
+            "teacher": "Teacher Sitti Kauzar",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Arabic - Ust. Hainur",
+            "subject": "Arabic",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          }
         }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "HOMEROOM GUIDANCE/ARAL MATH",
+        "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL MATH",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_20",
-    "sheet": "ELEM",
-    "section_name": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+    "section_name": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
     "department": "Elementary",
     "grade_level": "Grade 3",
     "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Science - Tchr. Jerlyn",
-            "subject": "Science",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jerlyn",
-            "subject": "Math",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Jerlyn",
-            "subject": "Science",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jerlyn",
-            "subject": "Math",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Silfah",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Silfah",
-            "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA",
-            "teacher": "Teacher Zara",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA",
-            "teacher": "Teacher Zara",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
             "label": "Qur'an - Ust. Obaydah",
             "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
             "teacher": "Ustadh Obaydah",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
+            "label": "SHAF - Ust. Ersahad",
             "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Normayla",
+            "label": "Filipino - Tchr. Normylah",
             "subject": "Filipino",
-            "teacher": "Tchr. Normayla",
-            "extra": ""
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Normayla",
-            "subject": "Filipino",
-            "teacher": "Tchr. Normayla",
-            "extra": ""
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "SHAF - Alim Abdul Karim",
-            "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
+            "label": "Filipino - Tchr. Normylah",
+            "subject": "Filipino",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Science - Tchr. Jerlyn",
+            "subject": "Science",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Math - Tchr. Jerlyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "GMRC - Ust. Silfah",
+            "subject": "GMRC",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Science - Tchr. Jerlyn",
+            "subject": "Science",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Math - Tchr. Jerlyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Arabic - Ust. Silfah",
+            "subject": "Arabic",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "MAKABANSA Tchr. Zara",
+            "subject": "MAKABANSA Tchr. Zara",
+            "teacher_id": "tchr_zara",
+            "teacher": "Teacher Zara",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "MAKABANSA Tchr. Zara",
+            "subject": "MAKABANSA Tchr. Zara",
+            "teacher_id": "tchr_zara",
+            "teacher": "Teacher Zara",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
         "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_21",
-    "sheet": "ELEM",
-    "section_name": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+    "section_name": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
     "department": "Elementary",
     "grade_level": "Grade 3",
     "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
+            "label": "Eng3- Tchr. Jenny",
+            "subject": "Eng3- Tchr. Jenny",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Fil3- Tchr. Jenny",
+            "subject": "Fil3- Tchr. Jenny",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Eng3- Tchr. Jenny",
+            "subject": "Eng3- Tchr. Jenny",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Fil3-Tchr. Jenny",
+            "subject": "Fil3-Tchr. Jenny",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "SHAF3- Ust. Faidh",
+            "subject": "SHAF3- Ust. Faidh",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "GMRC - Tchr. Zuhora",
+            "subject": "GMRC",
+            "teacher_id": "tchr_zuhora",
+            "teacher": "Teacher Zuhora",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Sci3-Tchr. Saimona",
+            "subject": "Sci3-Tchr. Saimona",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "SHAF3- Ust. Faidh",
+            "subject": "SHAF3- Ust. Faidh",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Sci3- Tchr. Saimona",
+            "subject": "Sci3- Tchr. Saimona",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
+          },
+          "Thursday": {
             "label": "Qur'an - Ust. Obaydah",
             "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
             "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Normylah",
-            "subject": "Filipino",
-            "teacher": "Tchr. Normylah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Normylah",
-            "subject": "Filipino",
-            "teacher": "Tchr. Normylah",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "01:20 PM \u2013 01:30 PM",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "01:30 PM \u2013 02:10 PM",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Science - Tchr. Jerlyn",
-            "subject": "Science",
+            "label": "Math3- Tchr. Jerlyn",
+            "subject": "Math3- Tchr. Jerlyn",
+            "teacher_id": "tchr_jerlyn",
             "teacher": "Teacher Jerlyn",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jerlyn",
-            "subject": "Math",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
+            "label": "Makabansa3-Jenny",
+            "subject": "Makabansa3-Jenny",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Silfah",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
+            "label": "Math3- Tchr. Jerlyn",
+            "subject": "Math3- Tchr. Jerlyn",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Jerlyn",
-            "subject": "Science",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
+            "label": "Makabansa3- Tchr. Jenny",
+            "subject": "Makabansa3- Tchr. Jenny",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jerlyn",
-            "subject": "Math",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
+            "label": "Arabic-Ust. Faidh",
+            "subject": "Arabic-Ust. Faidh",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
           }
         }
       },
       {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Silfah",
-            "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA",
-            "teacher": "Teacher Zara",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA",
-            "teacher": "Teacher Zara",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
         "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_22",
-    "sheet": "ELEM",
-    "section_name": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+    "section_name": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 3",
-    "shift": "ODL - 2ND SHIFT",
+    "grade_level": "Grade 4",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Silfah",
-            "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
+            "label": "English - Tchr. Arvin",
+            "subject": "English",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Silfah",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
+            "label": "English - Tchr. Arvin",
+            "subject": "English",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
+            "label": "AP - Tchr. Monisa",
+            "subject": "AP",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
           }
         }
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "04:30 PM \u2013 05:10 PM",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
+            "label": "FIL  - Tchr. Monisa",
+            "subject": "FIL",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Math - Tchr. Arvin",
+            "subject": "Math",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "TLE - Tchr. Monisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Math - Tchr. Arvin",
+            "subject": "Math",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Arabic - Ust. Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF - Ust. Abdiraheem",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "SHAF - Ust. Abdiraheem",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
+          },
+          "Tuesday": {
             "label": "Qur'an - Ust. Obaydah",
             "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
             "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Science - Tchr. Jerlyn",
-            "subject": "Science",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jerlyn",
-            "subject": "Math",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Jerlyn",
-            "subject": "Science",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
+            "label": "GMRC - Tchr. Sahdia",
+            "subject": "GMRC",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jerlyn",
-            "subject": "Math",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
+            "label": "MAPEH - Tchr. Halnaisa",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
           }
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA",
-            "teacher": "Teacher Zara",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Normylah",
-            "subject": "Filipino",
-            "teacher": "Tchr. Normylah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA",
-            "teacher": "Teacher Zara",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Normylah",
-            "subject": "Filipino",
-            "teacher": "Tchr. Normylah",
-            "extra": ""
-          }
-        }
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_23",
-    "sheet": "ELEM",
-    "section_name": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+    "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 3",
-    "shift": "ODL - 2ND SHIFT",
+    "grade_level": "Grade 5",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Silfah",
+            "label": "SHAF - Ust. Raslina",
+            "subject": "SHAF",
+            "teacher_id": "tchr_raslina",
+            "teacher": "Ustadh Raslina",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "SHAF - Ust. Raslina",
+            "subject": "SHAF",
+            "teacher_id": "tchr_raslina",
+            "teacher": "Ustadh Raslina",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Filipino - Tchr. Joanna",
+            "subject": "Filipino",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "MAPEH - Tchr. Keychell",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_keychell",
+            "teacher": "Teacher Keychell",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "GMRC - Tchr. Jayra",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA",
-            "teacher": "Teacher Zara",
-            "extra": ""
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA",
-            "teacher": "Teacher Zara",
-            "extra": ""
+            "label": "TLE - Tchr. Anna",
+            "subject": "TLE",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
           }
         }
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "04:30 PM \u2013 05:10 PM",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Silfah",
-            "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
+            "label": "AP - Tchr. Keychell",
+            "subject": "AP",
+            "teacher_id": "tchr_keychell",
+            "teacher": "Teacher Keychell",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Normylah",
-            "subject": "Filipino",
-            "teacher": "Tchr. Normylah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Marham",
-            "subject": "English",
-            "teacher": "Teacher Marham",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Normylah",
-            "subject": "Filipino",
-            "teacher": "Tchr. Normylah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obaydah",
+            "label": "Qur'an - Ust. Jaisam",
             "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Science - Tchr. Jerlyn",
-            "subject": "Science",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jerlyn",
+            "label": "Math - Tchr. Fhairudz",
             "subject": "Math",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
+            "teacher_id": "tchr_fhairudz",
+            "teacher": "Teacher Fhairudz",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Jerlyn",
-            "subject": "Science",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
+            "label": "Arabic - Alim Abdul Karim",
+            "subject": "Arabic",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jerlyn",
+            "label": "Math - Tchr. Fhairudz",
             "subject": "Math",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
+            "teacher_id": "tchr_fhairudz",
+            "teacher": "Teacher Fhairudz",
+            "is_break": false
           }
         }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_24",
-    "sheet": "ELEM",
-    "section_name": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+    "section_name": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 4",
+    "grade_level": "Grade 6",
     "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Qur'an4-Faidh",
-            "subject": "Qur'an4",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Math4-Saimona",
-            "subject": "Math4",
-            "teacher": "Saimona",
-            "extra": ""
+            "label": "Math - Tchr. Kat",
+            "subject": "Math",
+            "teacher_id": null,
+            "teacher": "Math - Tchr. Kat",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Fil4-Zuhora",
-            "subject": "Fil4",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
+            "label": "Math - Tchr. Kat",
+            "subject": "Math",
+            "teacher_id": null,
+            "teacher": "Math - Tchr. Kat",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "AP4-Monisa",
-            "subject": "AP4",
-            "teacher": "Teacher Monisa",
-            "extra": ""
+            "label": "AP - Tchr Normylah",
+            "subject": "AP",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Math4-Saimona",
-            "subject": "Math4",
-            "teacher": "Saimona",
-            "extra": ""
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
           }
         }
       },
       {
-        "time": "01:20 PM \u2013 01:30 PM",
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
         "minutes": "10 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "01:30 PM \u2013 02:10 PM",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Arabic4-Ali",
-            "subject": "Arabic4",
-            "teacher": "Ustadh Ali",
-            "extra": ""
+            "label": "TLE - Tchr. Arvin",
+            "subject": "TLE",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "MAPEH4-Zuhora",
-            "subject": "MAPEH4",
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "GMRC- Ust. Silfah",
+            "subject": "GMRC- Ust. Silfah",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Fil- Tchr Zuhora",
+            "subject": "Fil- Tchr Zuhora",
+            "teacher_id": "tchr_zuhora",
             "teacher": "Teacher Zuhora",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "SHAF4-Abdi",
-            "subject": "SHAF4",
-            "teacher": "Abdi",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF4-Abdi",
-            "subject": "SHAF4",
-            "teacher": "Abdi",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "GMRC4-Sahdia",
-            "subject": "GMRC4",
-            "teacher": "Sahdia",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "02:10 PM \u2013 02:20 PM",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
         "minutes": "10 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "02:20 PM \u2013 03:00 PM",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Eng4-Jenny",
-            "subject": "Eng4",
-            "teacher": "Teacher Jenny",
-            "extra": ""
+            "label": "Arabic - Ust. Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Sci4-Saimona",
-            "subject": "Sci4",
-            "teacher": "Saimona",
-            "extra": ""
+            "label": "MAPEH Tchr. Zara",
+            "subject": "MAPEH Tchr. Zara",
+            "teacher_id": "tchr_zara",
+            "teacher": "Teacher Zara",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "TLE4-Jenny",
-            "subject": "TLE4",
-            "teacher": "Teacher Jenny",
-            "extra": ""
+            "label": "Qur'an - Ust. Jaisam",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Sci4-Saimona",
-            "subject": "Sci4",
-            "teacher": "Saimona",
-            "extra": ""
+            "label": "SHAF - Ust. Abdi",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Eng4-Jenny",
-            "subject": "Eng4",
-            "teacher": "Teacher Jenny",
-            "extra": ""
+            "label": "SHAF - Ust. Abdi",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
         "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_25",
-    "sheet": "ELEM",
-    "section_name": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-    "department": "Elementary",
-    "grade_level": "Grade 3",
-    "shift": "ODL - 1ST SHIFT",
+    "section_name": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+    "department": "Kindergarten",
+    "grade_level": "K2",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Eng3- Tchr. Jenny",
-            "subject": "Eng3",
-            "teacher": "Teacher Jenny",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Fil3- Tchr. Jenny",
-            "subject": "Fil3",
-            "teacher": "Teacher Jenny",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Eng3- Tchr. Jenny",
-            "subject": "Eng3",
-            "teacher": "Teacher Jenny",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Fil3-Tchr. Jenny",
-            "subject": "Fil3",
-            "teacher": "Teacher Jenny",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "SHAF3- Ust. Faidh",
-            "subject": "SHAF3",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Zuhora",
-            "subject": "GMRC",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Sci3-Tchr. Saimona",
-            "subject": "Sci3",
-            "teacher": "Tchr. Saimona",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "SHAF3- Ust. Faidh",
-            "subject": "SHAF3",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Sci3- Tchr. Saimona",
-            "subject": "Sci3",
-            "teacher": "Tchr. Saimona",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obaydah",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Math3- Tchr. Jerlyn",
-            "subject": "Math3",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Makabansa3-Jenny",
-            "subject": "Makabansa3",
-            "teacher": "Teacher Jenny",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Math3- Tchr. Jerlyn",
-            "subject": "Math3",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Makabansa3- Tchr. Jenny",
-            "subject": "Makabansa3",
-            "teacher": "Teacher Jenny",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Arabic-Ust. Faidh",
-            "subject": "Arabic",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE",
+        "subject": "HOMEROOM GUIDANCE",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "CT 1 - Tchr. Ayah",
+            "subject": "CT 1",
+            "teacher_id": "tchr_ayah",
+            "teacher": "Teacher Ayah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "CT 1 - Tchr. Ayah",
+            "subject": "CT 1",
+            "teacher_id": "tchr_ayah",
+            "teacher": "Teacher Ayah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Arabic - Ust. Silfah",
+            "subject": "Arabic",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "CT 1 - Tchr. Ayah",
+            "subject": "CT 1",
+            "teacher_id": "tchr_ayah",
+            "teacher": "Teacher Ayah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "CT 1 - Tchr. Ayah",
+            "subject": "CT 1",
+            "teacher_id": "tchr_ayah",
+            "teacher": "Teacher Ayah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Qur'an - Ust. Hainur",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "CT 2 - Tchr. Ayah",
+            "subject": "CT 2",
+            "teacher_id": "tchr_ayah",
+            "teacher": "Teacher Ayah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "CT 1 - Tchr. Ayah",
+            "subject": "CT 1",
+            "teacher_id": "tchr_ayah",
+            "teacher": "Teacher Ayah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "CT 2 - Tchr. Ayah",
+            "subject": "CT 2",
+            "teacher_id": "tchr_ayah",
+            "teacher": "Teacher Ayah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Hadith - Ust. Hainur",
+            "subject": "Hadith",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          }
+        }
       }
     ]
   },
   {
     "id": "sec_26",
-    "sheet": "ELEM",
-    "section_name": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-    "department": "Elementary",
-    "grade_level": "Grade 3",
+    "section_name": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+    "department": "Kindergarten",
+    "grade_level": "K1",
     "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE",
+        "subject": "HOMEROOM GUIDANCE",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE",
+        "is_break": true
       },
       {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
         "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Math3-Jerlyn",
-            "subject": "Math3",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Fil3-Jenny",
-            "subject": "Fil3",
-            "teacher": "Teacher Jenny",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Math3-Jerlyn",
-            "subject": "Math3",
-            "teacher": "Teacher Jerlyn",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic-Faidh",
-            "subject": "Arabic",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "GMRC3-Saliha",
-            "subject": "GMRC3",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
-          }
-        }
+        "is_merged_all_days": true,
+        "label": "Circle Time 1 - Tchr. Wendy",
+        "subject": "Circle Time 1",
+        "teacher_id": "tchr_wendy",
+        "teacher": "Teacher Wendy",
+        "is_break": false
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "04:30 PM \u2013 05:10 PM",
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "English 3 - Jenny",
-            "subject": "English 3",
-            "teacher": "Teacher Jenny",
-            "extra": ""
+            "label": "CT 2 - Tchr. Wendy",
+            "subject": "CT 2",
+            "teacher_id": "tchr_wendy",
+            "teacher": "Teacher Wendy",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Faidh",
-            "subject": "SHAF",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
+            "label": "CT 2 - Tchr. Wendy",
+            "subject": "CT 2",
+            "teacher_id": "tchr_wendy",
+            "teacher": "Teacher Wendy",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Jenny",
-            "subject": "English",
-            "teacher": "Teacher Jenny",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Faidh",
-            "subject": "SHAF",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Qur'an - Obaydah",
+            "label": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Science - Saimona",
-            "subject": "Science",
-            "teacher": "Saimona",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Jenny",
-            "subject": "Makabansa",
-            "teacher": "Teacher Jenny",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Science - Saimona",
-            "subject": "Science",
-            "teacher": "Saimona",
-            "extra": ""
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Makabansa - Tchr. Jenny",
-            "subject": "Makabansa",
-            "teacher": "Teacher Jenny",
-            "extra": ""
+            "label": "Hadith - Ust. Hainur",
+            "subject": "Hadith",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Jenny",
-            "subject": "Filipino",
-            "teacher": "Teacher Jenny",
-            "extra": ""
+            "label": "Arabic - Alim Bustamante",
+            "subject": "Arabic",
+            "teacher_id": "tchr_bustamante",
+            "teacher": "Alim Bustamante",
+            "is_break": false
           }
         }
       }
@@ -4448,824 +4992,731 @@ window.OFFICIAL_CLASS_SCHEDULES = [
   },
   {
     "id": "sec_27",
-    "sheet": "ELEM",
-    "section_name": "GRADE 4 (FACE TO FACE)",
+    "section_name": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 4",
-    "shift": "F2F",
+    "grade_level": "Grade 1",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "GENERAL ASSEMBLY",
-        "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "07:40 AM \u2013 08:25 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "AP - Tchr. Monisa",
-            "subject": "AP",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Monisa",
-            "subject": "TLE",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "AP - Tchr. Monisa",
-            "subject": "AP",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Monisa",
-            "subject": "TLE",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "AP - Tchr. Monisa",
-            "subject": "AP",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "08:25 AM \u2013 09:05 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Math - Tchr. Arvin",
-        "subject": "Math",
-        "teacher": "Teacher Arvin",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "09:05 AM \u2013 09:45 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "ARAL Reading - Tchr. Arvin",
-            "subject": "ARAL Reading",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdiraheem",
-            "subject": "SHAF",
-            "teacher": "Ustadh Abdiraheem",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Sahdia",
-            "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdiraheem",
-            "subject": "SHAF",
-            "teacher": "Ustadh Abdiraheem",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Sahdia",
-            "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "09:45 AM \u2013 10:00 AM",
-        "minutes": "15 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "RECESS",
-        "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "10:00 AM \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Science - Tchr. Junaisah",
-        "subject": "Science",
-        "teacher": "Teacher Junaisa",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "10:45:11:30",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Norhydie",
-            "subject": "Filipino",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
-          },
-          "Monday": null,
-          "Tuesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Monisa",
-            "subject": "TLE",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Norhydie",
-            "subject": "Filipino",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
-          },
-          "Thursday": null
-        }
-      },
-      {
-        "time": "11:30 AM \u2013 12:40 PM",
-        "minutes": "70 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "LUNCH and SALAH",
-        "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:25 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obaydah",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Halnaisa",
-            "subject": "MAPEH",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obaydah",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:25 PM \u2013 02:10 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Sahdia",
-            "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Halnaisa",
-            "subject": "MAPEH",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "ARAL Math - Tchr. Arvin",
-            "subject": "ARAL Math",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Halnaisa",
-            "subject": "MAPEH",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "HG - Tchr. Monisa",
-            "subject": "HG",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:15 PM \u2013 03:00 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "English - Teacher Norhydie",
-        "subject": "English",
-        "teacher": "Teacher Norhydie",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "SALAH & DEPARTURE",
-        "subject": "SALAH & DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE/ARAL MATH",
+        "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL MATH",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "GMRC - Tchr. Sahdia",
+            "subject": "GMRC",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Makabansa - Tchr. Norhydie",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "GMRC - Tchr. Sahdia",
+            "subject": "GMRC",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Makabansa - Tchr. Norhydie",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Qur'an - Ust. Hainur",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Math - Tchr. Joanna",
+            "subject": "Math",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Language - Tchr. Sahdia",
+            "subject": "Language",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Math - Tchr. Joanna",
+            "subject": "Math",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Arabic - Ust. Hainur",
+            "subject": "Arabic",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Language - Tchr. Sahdia",
+            "subject": "Language",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "R & L - Tchr. Katrina",
+            "subject": "R & L",
+            "teacher_id": "tchr_katrina",
+            "teacher": "Teacher Katrina",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "R & L - Tchr. Katrina",
+            "subject": "R & L",
+            "teacher_id": "tchr_katrina",
+            "teacher": "Teacher Katrina",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "ARAL Reading - Tchr. Katrina",
+            "subject": "ARAL Reading",
+            "teacher_id": "tchr_katrina",
+            "teacher": "Teacher Katrina",
+            "is_break": false
+          }
+        }
       }
     ]
   },
   {
     "id": "sec_28",
-    "sheet": "ELEM",
-    "section_name": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+    "section_name": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 4",
-    "shift": "ODL - 1ST SHIFT",
+    "grade_level": "Grade 2",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "AP - Tchr. Monisa",
-            "subject": "AP",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Arvin",
-            "subject": "Math",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Monisa",
-            "subject": "TLE",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Arvin",
-            "subject": "Math",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Sahdia",
-            "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdiraheem",
-            "subject": "SHAF",
-            "teacher": "Ustadh Abdiraheem",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obaydah",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdiraheem",
-            "subject": "SHAF",
-            "teacher": "Ustadh Abdiraheem",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Halnaisa",
-            "subject": "MAPEH",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Arvin",
-            "subject": "English",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Arvin",
-            "subject": "English",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "FIL - Tchr. Monisa",
-            "subject": "FIL",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE/ARAL MATH",
+        "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL MATH",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Math - Tchr. Sitti",
+            "subject": "Math",
+            "teacher_id": "tchr_sitti_kauzar",
+            "teacher": "Teacher Sitti Kauzar",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Math - Tchr. Sitti",
+            "subject": "Math",
+            "teacher_id": "tchr_sitti_kauzar",
+            "teacher": "Teacher Sitti Kauzar",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Aral Reading-Marham",
+            "subject": "Aral Reading-Marham",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Arabic - Ust.Hainur",
+            "subject": "Arabic",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Filipino - Tchr. Zuhora",
+            "subject": "Filipino",
+            "teacher_id": "tchr_zuhora",
+            "teacher": "Teacher Zuhora",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Filipino - Tchr. Zuhora",
+            "subject": "Filipino",
+            "teacher_id": "tchr_zuhora",
+            "teacher": "Teacher Zuhora",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Makabansa - Tchr. Monisa",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Makabansa - Tchr. Monisa",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Qur'an - Ust. Obaydah",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
+          }
+        }
       }
     ]
   },
   {
     "id": "sec_29",
-    "sheet": "ELEM",
-    "section_name": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+    "section_name": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
     "department": "Elementary",
-    "grade_level": "Grade 4",
-    "shift": "ODL - 1ST SHIFT",
+    "grade_level": "Grade 3",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Arvin",
-            "subject": "English",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Arvin",
-            "subject": "English",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "AP - Tchr. Monisa",
-            "subject": "AP",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "FIL - Tchr. Monisa",
-            "subject": "FIL",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Arvin",
-            "subject": "Math",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Monisa",
-            "subject": "TLE",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Arvin",
-            "subject": "Math",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdiraheem",
-            "subject": "SHAF",
-            "teacher": "Ustadh Abdiraheem",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdiraheem",
-            "subject": "SHAF",
-            "teacher": "Ustadh Abdiraheem",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obaydah",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Sahdia",
-            "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Halnaisa",
-            "subject": "MAPEH",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
         "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Arabic - Ust. Silfah",
+            "subject": "Arabic",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "GMRC - Ust. Silfah",
+            "subject": "GMRC",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Qur'an - Ust. Obaydah",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Science - Tchr. Jerlyn",
+            "subject": "Science",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Math - Tchr. Jerlyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Science - Tchr. Jerlyn",
+            "subject": "Science",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Math - Tchr. Jerlyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "MAKABANSA Tchr. Zara",
+            "subject": "MAKABANSA Tchr. Zara",
+            "teacher_id": "tchr_zara",
+            "teacher": "Teacher Zara",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Filipino - Tchr. Normylah",
+            "subject": "Filipino",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "MAKABANSA Tchr. Zara",
+            "subject": "MAKABANSA Tchr. Zara",
+            "teacher_id": "tchr_zara",
+            "teacher": "Teacher Zara",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Filipino - Tchr. Normylah",
+            "subject": "Filipino",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
+          }
+        }
       }
     ]
   },
   {
     "id": "sec_30",
-    "sheet": "ELEM",
     "section_name": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 4",
     "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
         "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       },
       {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Filipino - Tchr. Norhydie",
             "subject": "Filipino",
+            "teacher_id": "tchr_norhydie",
             "teacher": "Teacher Norhydie",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Math - Tchr. Arvin",
             "subject": "Math",
+            "teacher_id": "tchr_arvin",
             "teacher": "Teacher Arvin",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "TLE - Tchr. Monisa",
             "subject": "TLE",
+            "teacher_id": "tchr_monisa",
             "teacher": "Teacher Monisa",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "GMRC - Tchr. Sahdia",
             "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Math - Tchr. Arvin",
             "subject": "Math",
+            "teacher_id": "tchr_arvin",
             "teacher": "Teacher Arvin",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "04:30 PM \u2013 05:10 PM",
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Arabic - Ust. Ali",
             "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Qur'an - Ust. Obaydah",
             "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
             "teacher": "Ustadh Obaydah",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "SHAF - Ust. Abdiraheem",
             "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
             "teacher": "Ustadh Abdiraheem",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "SHAF - Ust. Abdiraheem",
             "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
             "teacher": "Ustadh Abdiraheem",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "MAPEH - Tchr. Halnaisa",
             "subject": "MAPEH",
+            "teacher_id": "tchr_halnaisa",
             "teacher": "Teacher Halnaisa",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "05:20 PM \u2013 06:00 PM",
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "English - Tchr. Arvin",
             "subject": "English",
+            "teacher_id": "tchr_arvin",
             "teacher": "Teacher Arvin",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Science - Tchr. Anna",
             "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "English - Tchr. Arvin",
             "subject": "English",
+            "teacher_id": "tchr_arvin",
             "teacher": "Teacher Arvin",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Science - Tchr. Anna",
             "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "AP - Tchr. Monisa",
             "subject": "AP",
+            "teacher_id": "tchr_monisa",
             "teacher": "Teacher Monisa",
-            "extra": ""
+            "is_break": false
           }
         }
       }
@@ -5273,359 +5724,369 @@ window.OFFICIAL_CLASS_SCHEDULES = [
   },
   {
     "id": "sec_31",
-    "sheet": "ELEM",
-    "section_name": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+    "section_name": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 4",
-    "shift": "ODL - 2ND SHIFT",
+    "grade_level": "Grade 5",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE",
-        "subject": "HOMEROOM GUIDANCE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Arvin",
-            "subject": "English",
-            "teacher": "Teacher Arvin",
-            "extra": ""
+            "label": "Sci5-Saimona",
+            "subject": "Sci5-Saimona",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
+            "label": "SHAF5-Faidh",
+            "subject": "SHAF5-Faidh",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
+            "label": "Sci5-Saimona",
+            "subject": "Sci5-Saimona",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Arvin",
-            "subject": "English",
-            "teacher": "Teacher Arvin",
-            "extra": ""
+            "label": "SHAF5-Faidh",
+            "subject": "SHAF5-Faidh",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "AP - Tchr. Monisa",
-            "subject": "AP",
-            "teacher": "Teacher Monisa",
-            "extra": ""
+            "label": "GMRC5-Saliha",
+            "subject": "GMRC5-Saliha",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
           }
         }
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
         "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Norhydie",
-            "subject": "Filipino",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Arvin",
-            "subject": "Math",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Monisa",
-            "subject": "TLE",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Arvin",
-            "subject": "Math",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          }
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdiraheem",
-            "subject": "SHAF",
-            "teacher": "Ustadh Abdiraheem",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdiraheem",
-            "subject": "SHAF",
-            "teacher": "Ustadh Abdiraheem",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obaydah",
-            "subject": "Qur'an",
+            "label": "Qur'an5-Obaydah",
+            "subject": "Qur'an5-Obaydah",
+            "teacher_id": "tchr_obaydah",
             "teacher": "Ustadh Obaydah",
-            "extra": ""
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Fil5-Jenny",
+            "subject": "Fil5-Jenny",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "MAPEH5-Saimona",
+            "subject": "MAPEH5-Saimona",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Sahdia",
-            "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "label": "Eng5-Jessa",
+            "subject": "Eng5-Jessa",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Halnaisa",
-            "subject": "MAPEH",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
+            "label": "TLE5-Jenny",
+            "subject": "TLE5-Jenny",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
           }
         }
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Math5-Saimona",
+            "subject": "Math5-Saimona",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Eng5-Jessa",
+            "subject": "Eng5-Jessa",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Math5-Saimona",
+            "subject": "Math5-Saimona",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Arabic5-Faidh",
+            "subject": "Arabic5-Faidh",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "AP5-Saimona",
+            "subject": "AP5-Saimona",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_32",
-    "sheet": "ELEM",
-    "section_name": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+    "section_name": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 4",
+    "grade_level": "Grade 6",
     "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE",
-        "subject": "HOMEROOM GUIDANCE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       },
       {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "AP - Tchr. Monisa",
+            "label": "AP - Tchr. Normylah",
             "subject": "AP",
-            "teacher": "Teacher Monisa",
-            "extra": ""
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Zuhora",
-            "subject": "MAPEH",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
+            "label": "Fil - Tchr. Normylah",
+            "subject": "Fil",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Faidh",
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Qur'an - Ust. Jaisam",
             "subject": "Qur'an",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Zuhora",
-            "subject": "Filipino",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdi",
-            "subject": "SHAF",
-            "teacher": "Ust. Abdi",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "",
-        "subject": "",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdi",
-            "subject": "SHAF",
-            "teacher": "Ust. Abdi",
-            "extra": ""
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Saimona",
-            "subject": "Math",
-            "teacher": "Tchr. Saimona",
-            "extra": ""
+            "label": "GMRC- Ust. Silfah",
+            "subject": "GMRC- Ust. Silfah",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Arvin",
-            "subject": "English",
-            "teacher": "Teacher Arvin",
-            "extra": ""
+            "label": "MAPEH Tchr. Zara",
+            "subject": "MAPEH Tchr. Zara",
+            "teacher_id": "tchr_zara",
+            "teacher": "Teacher Zara",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Saimona",
+            "label": "Math - Tchr. Kat",
             "subject": "Math",
-            "teacher": "Tchr. Saimona",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Math - Tchr. Kat",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Science 4 - Saimona",
-            "subject": "Science 4",
-            "teacher": "Saimona",
-            "extra": ""
+            "label": "SHAF - Ust. Abdi",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
           }
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": false,
-        "label": "",
-        "subject": "",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "05:20 PM \u2013 06:00 PM",
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Ust Ali",
+            "label": "Math - Tchr. Kat",
+            "subject": "Math",
+            "teacher_id": null,
+            "teacher": "Math - Tchr. Kat",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Arabic - Ust. Ali",
             "subject": "Arabic",
-            "teacher": "Ust Ali",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Science 4 - Saimona",
-            "subject": "Science 4",
-            "teacher": "Saimona",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Jenny",
-            "subject": "TLE",
-            "teacher": "Teacher Jenny",
-            "extra": ""
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Arvin",
-            "subject": "English",
-            "teacher": "Teacher Arvin",
-            "extra": ""
+            "label": "SHAF - Ust. Abdi",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Sahdia",
-            "subject": "GMRC",
-            "teacher": "Tchr. Sahdia",
-            "extra": ""
+            "label": "TLE - Tchr. Arvin",
+            "subject": "TLE",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
           }
         }
       }
@@ -5633,1018 +6094,826 @@ window.OFFICIAL_CLASS_SCHEDULES = [
   },
   {
     "id": "sec_33",
-    "sheet": "ELEM",
-    "section_name": "GRADE 5 (FACE TO FACE)",
-    "department": "Elementary",
-    "grade_level": "Grade 5",
-    "shift": "F2F",
+    "section_name": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+    "department": "Kindergarten",
+    "grade_level": "K2",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "GENERAL ASSEMBLY",
-        "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "07:40 AM \u2013 08:25 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "English - Tchr. Jessa",
-        "subject": "English",
-        "teacher": "Tchr. Jessa",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "08:25 AM \u2013 09:05 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Jayra",
-            "subject": "GMRC",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Ubaydah",
-            "subject": "Qur'an",
-            "teacher": "Ust. Ubaydah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Jayra",
-            "subject": "GMRC",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Ubaydah",
-            "subject": "Qur'an",
-            "teacher": "Ust. Ubaydah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Jayra",
-            "subject": "GMRC",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "09:05 AM \u2013 09:45 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "AP - Tchr. Norhydie",
-            "subject": "AP",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Ersahad",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "AP - Tchr. Norhydie",
-            "subject": "AP",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Ersahad",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "AP - Tchr. Norhydie",
-            "subject": "AP",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "09:45 AM \u2013 10:00 AM",
-        "minutes": "15 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "RECESS",
-        "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "10:00 AM \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "ARAL Program - Tchr. Arvin",
-            "subject": "ARAL Program",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Halnaisa",
-            "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "ARAL Program - Tchr. Arvin",
-            "subject": "ARAL Program",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Halnaisa",
-            "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "ARAL Program - Tchr. Arvin",
-            "subject": "ARAL Program",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "10:45:11:30",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Math 5 - Tchr. Fhairudz",
-        "subject": "Math 5",
-        "teacher": "Tchr. Fhairudz",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "11:30 AM \u2013 12:40 PM",
-        "minutes": "70 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "LUNCH and SALAH",
-        "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:25 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Science - Tchr. Junaisah",
-        "subject": "Science",
-        "teacher": "Teacher Junaisa",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:25 PM \u2013 02:10 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Keychell",
-            "subject": "MAPEH",
-            "teacher": "Tchr. Keychell",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Keychell",
-            "subject": "MAPEH",
-            "teacher": "Tchr. Keychell",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "HG - Tchr. Jessa",
-            "subject": "HG",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:15 PM \u2013 03:00 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Jessa",
-            "subject": "Filipino",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Keychell",
-            "subject": "MAPEH",
-            "teacher": "Tchr. Keychell",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Jessa",
-            "subject": "Filipino",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Jessa",
-            "subject": "Filipino",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Jessa",
-            "subject": "Filipino",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "SALAH & DEPARTURE",
-        "subject": "SALAH & DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE",
+        "subject": "HOMEROOM GUIDANCE",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Qur'an - Ust. Hainur",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Circle Time 1 - Tchr. Joanna",
+            "subject": "Circle Time 1",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Hadith - Ust. Hainur",
+            "subject": "Hadith",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Circle Time 1 - Tchr. Joanna",
+            "subject": "Circle Time 1",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Arabic - Ust. Silfah",
+            "subject": "Arabic",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Circle Time 1 - Tchr. Joanna",
+            "subject": "Circle Time 1",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Circle Time 2 - Tchr. Joanna",
+            "subject": "Circle Time 2",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Circle Time 1 - Tchr. Joanna",
+            "subject": "Circle Time 1",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Circle Time 2 - Tchr. Joanna",
+            "subject": "Circle Time 2",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Circle Time 1 - Tchr. Joanna",
+            "subject": "Circle Time 1",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
+          }
+        }
       }
     ]
   },
   {
     "id": "sec_34",
-    "sheet": "ELEM",
-    "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-    "department": "Elementary",
-    "grade_level": "Grade 5",
-    "shift": "ODL - 1ST SHIFT",
+    "section_name": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+    "department": "Kindergarten",
+    "grade_level": "Kinder 2",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
         "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Raslina",
-            "subject": "SHAF",
-            "teacher": "Ust. Raslina",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "AP - Tchr. Monisa",
-            "subject": "AP",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Raslina",
-            "subject": "SHAF",
-            "teacher": "Ust. Raslina",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Joanna",
-            "subject": "Filipino",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Jayra",
-            "subject": "GMRC",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          }
-        }
+        "is_merged_all_days": true,
+        "label": "Circle Time 1 - Tchr. Keychell",
+        "subject": "Circle Time 1",
+        "teacher_id": "tchr_keychell",
+        "teacher": "Teacher Keychell",
+        "is_break": false
       },
       {
-        "time": "01:20 PM \u2013 01:30 PM",
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "01:30 PM \u2013 02:10 PM",
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
+            "label": "CT 2 - Tchr. Keychell",
+            "subject": "CT 2",
+            "teacher_id": "tchr_keychell",
+            "teacher": "Teacher Keychell",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Jaisam",
+            "label": "Qur'an - Us. Faidh",
             "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
+            "label": "CT 2 - Tchr. Keychell",
+            "subject": "CT 2",
+            "teacher_id": "tchr_keychell",
+            "teacher": "Teacher Keychell",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Keychell",
-            "subject": "MAPEH",
-            "teacher": "Tchr. Keychell",
-            "extra": ""
+            "label": "Hadith - Ust.Faidh",
+            "subject": "Hadith",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Alim Abdul Karim",
+            "label": "Arabic - Ustadh Faidh",
             "subject": "Arabic",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
           }
         }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Fhairudz",
-            "subject": "Math",
-            "teacher": "Tchr. Fhairudz",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Fhairudz",
-            "subject": "Math",
-            "teacher": "Tchr. Fhairudz",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Anna",
-            "subject": "TLE",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
       }
     ]
   },
   {
     "id": "sec_35",
-    "sheet": "ELEM",
-    "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+    "section_name": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 5",
-    "shift": "ODL - 1ST SHIFT",
+    "grade_level": "Grade 1",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Raslina",
-            "subject": "SHAF",
-            "teacher": "Ust. Raslina",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Raslina",
-            "subject": "SHAF",
-            "teacher": "Ust. Raslina",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Joanna",
-            "subject": "Filipino",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Keychell",
-            "subject": "MAPEH",
-            "teacher": "Tchr. Keychell",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Jayra",
-            "subject": "GMRC",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Anna",
-            "subject": "TLE",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "AP - Tchr. Keychell",
-            "subject": "AP",
-            "teacher": "Tchr. Keychell",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Jaisam",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Fhairudz",
-            "subject": "Math",
-            "teacher": "Tchr. Fhairudz",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic - Alim Abdul Karim",
-            "subject": "Arabic",
-            "teacher": "Alim Abdul Karim",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Fhairudz",
-            "subject": "Math",
-            "teacher": "Tchr. Fhairudz",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE/ARAL MATH",
+        "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL MATH",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Math- Tchr. Joanna",
+            "subject": "Math- Tchr. Joanna",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Language - Tchr. Sahdia",
+            "subject": "Language",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Math- Tchr. Joanna",
+            "subject": "Math- Tchr. Joanna",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "ARAL Reading - Tchr. Katrina",
+            "subject": "ARAL Reading",
+            "teacher_id": "tchr_katrina",
+            "teacher": "Teacher Katrina",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Language - Tchr. Sahdia",
+            "subject": "Language",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "R & L - Tchr. Katrina",
+            "subject": "R & L",
+            "teacher_id": "tchr_katrina",
+            "teacher": "Teacher Katrina",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "R & L - Tchr. Katrina",
+            "subject": "R & L",
+            "teacher_id": "tchr_katrina",
+            "teacher": "Teacher Katrina",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Qur'an - Ust. Hainur",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "GMRC - Tchr. Sahdia",
+            "subject": "GMRC",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Arabic - Ust. Hainur",
+            "subject": "Arabic",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "GMRC - Tchr. Sahdia",
+            "subject": "GMRC",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Makabansa - Tchr. Norhydie",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Makabansa - Tchr. Norhydie",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
+          }
+        }
       }
     ]
   },
   {
     "id": "sec_36",
-    "sheet": "ELEM",
-    "section_name": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+    "section_name": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 5",
-    "shift": "ODL - 1ST SHIFT",
+    "grade_level": "Grade 2",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Sci5-Saimona",
-            "subject": "Sci5",
-            "teacher": "Saimona",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF5-Faidh",
-            "subject": "SHAF5",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Sci5-Saimona",
-            "subject": "Sci5",
-            "teacher": "Saimona",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF5-Faidh",
-            "subject": "SHAF5",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "GMRC5-Saliha",
-            "subject": "GMRC5",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Qur'an5-Obaydah",
-            "subject": "Qur'an5",
-            "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Fil5-Jenny",
-            "subject": "Fil5",
-            "teacher": "Teacher Jenny",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "MAPEH5-Saimona",
-            "subject": "MAPEH5",
-            "teacher": "Saimona",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Eng5-Jessa",
-            "subject": "Eng5",
-            "teacher": "Jessa",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "TLE5-Jenny",
-            "subject": "TLE5",
-            "teacher": "Teacher Jenny",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Math5-Saimona",
-            "subject": "Math5",
-            "teacher": "Saimona",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Eng5-Jessa",
-            "subject": "Eng5",
-            "teacher": "Jessa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Math5-Saimona",
-            "subject": "Math5",
-            "teacher": "Saimona",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic5-Faidh",
-            "subject": "Arabic5",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "AP5-Saimona",
-            "subject": "AP5",
-            "teacher": "Saimona",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE/ARAL MATH",
+        "subject": "HOMEROOM GUIDANCE/ARAL MATH",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL MATH",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Math - Tchr. Sitti",
+            "subject": "Math",
+            "teacher_id": "tchr_sitti_kauzar",
+            "teacher": "Teacher Sitti Kauzar",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Arabic - Ust. Hainur",
+            "subject": "Arabic",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Math - Tchr. Sitti",
+            "subject": "Math",
+            "teacher_id": "tchr_sitti_kauzar",
+            "teacher": "Teacher Sitti Kauzar",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Makabansa - Tchr. Monisa",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Qur'an - Ust. Obaydah",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Makabansa - Tchr. Monisa",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "SHAF - Alim Abdul Karim",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Abdul Karim",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Filipino - Tchr. Sitti",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sitti_kauzar",
+            "teacher": "Teacher Sitti Kauzar",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Filipino - Tchr. Sitti",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sitti_kauzar",
+            "teacher": "Teacher Sitti Kauzar",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "ARAL Reading - Tchr. Marham",
+            "subject": "ARAL Reading",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
+          }
+        }
       }
     ]
   },
   {
     "id": "sec_37",
-    "sheet": "ELEM",
-    "section_name": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+    "section_name": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
     "department": "Elementary",
-    "grade_level": "Grade 5",
+    "grade_level": "Grade 3",
     "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
         "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       },
       {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Hainur",
+            "label": "SHAF - Ust. Ersahad",
             "subject": "SHAF",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "AP - Tchr. Monisa",
-            "subject": "AP",
-            "teacher": "Teacher Monisa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Hainur",
-            "subject": "SHAF",
-            "teacher": "Ustadh Hainur",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Joanna",
-            "subject": "Filipino",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Jayra",
-            "subject": "GMRC",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Jaisam",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Norhydie",
-            "subject": "MAPEH",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Ersahad",
-            "subject": "Arabic",
+            "teacher_id": "tchr_ersahad",
             "teacher": "Ustadh Ersahad",
-            "extra": ""
+            "is_break": false
+          },
+          "Monday": {
+            "label": "GMRC - Ust. Silfah",
+            "subject": "GMRC",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "MAKABANSA Tchr. Zara",
+            "subject": "MAKABANSA Tchr. Zara",
+            "teacher_id": "tchr_zara",
+            "teacher": "Teacher Zara",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "MAKABANSA Tchr. Zara",
+            "subject": "MAKABANSA Tchr. Zara",
+            "teacher_id": "tchr_zara",
+            "teacher": "Teacher Zara",
+            "is_break": false
           }
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "05:20 PM \u2013 06:00 PM",
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
+            "label": "Arabic - Ust. Silfah",
+            "subject": "Arabic",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. FAirudz",
-            "subject": "Math",
-            "teacher": "Tchr. FAirudz",
-            "extra": ""
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
+            "label": "Filipino - Tchr. Normylah",
+            "subject": "Filipino",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Fairudz",
-            "subject": "Math",
-            "teacher": "Tchr. Fairudz",
-            "extra": ""
+            "label": "English - Tchr. Marham",
+            "subject": "English",
+            "teacher_id": "tchr_marham",
+            "teacher": "Teacher Marham",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Anna",
-            "subject": "TLE",
-            "teacher": "Tchr. Anna",
-            "extra": ""
+            "label": "Filipino - Tchr. Normylah",
+            "subject": "Filipino",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Qur'an - Ust. Obaydah",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Science - Tchr. Jerlyn",
+            "subject": "Science",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Math - Tchr. Jerlyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Science - Tchr. Jerlyn",
+            "subject": "Science",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Math - Tchr. Jerlyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
           }
         }
       }
@@ -6652,179 +6921,182 @@ window.OFFICIAL_CLASS_SCHEDULES = [
   },
   {
     "id": "sec_38",
-    "sheet": "ELEM",
-    "section_name": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+    "section_name": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
     "department": "Elementary",
-    "grade_level": "Grade 5",
+    "grade_level": "Grade 3",
     "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
         "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       },
       {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
+            "label": "Math3-Jerlyn",
+            "subject": "Math3-Jerlyn",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
+            "label": "Fil3-Jenny",
+            "subject": "Fil3-Jenny",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Ersahad",
-            "subject": "SHAF",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
+            "label": "Math3-Jerlyn",
+            "subject": "Math3-Jerlyn",
+            "teacher_id": "tchr_jerlyn",
+            "teacher": "Teacher Jerlyn",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
+            "label": "Arabic-Faidh",
+            "subject": "Arabic-Faidh",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Joanna",
-            "subject": "Filipino",
-            "teacher": "Tchr. Joanna",
-            "extra": ""
+            "label": "GMRC3-Saliha",
+            "subject": "GMRC3-Saliha",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
           }
         }
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "04:30 PM \u2013 05:10 PM",
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
+            "label": "English 3 - Jenny",
+            "subject": "English 3",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Norhydie",
-            "subject": "MAPEH",
-            "teacher": "Teacher Norhydie",
-            "extra": ""
+            "label": "SHAF - Ust. Faidh",
+            "subject": "SHAF",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "GMRC - Tchr. Jayra",
-            "subject": "GMRC",
-            "teacher": "Teacher Jairah",
-            "extra": ""
+            "label": "English - Tchr. Jenny",
+            "subject": "English",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
+            "label": "SHAF - Ust. Faidh",
+            "subject": "SHAF",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Anna",
-            "subject": "TLE",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Ersahad",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Jaisam",
+            "label": "Qur'an - Obaydah",
             "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Science - Saimona",
+            "subject": "Science",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Makabansa - Tchr. Jenny",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Fhairudz",
-            "subject": "Math",
-            "teacher": "Tchr. Fhairudz",
-            "extra": ""
+            "label": "Science - Saimona",
+            "subject": "Science",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "AP - Tchr. Monisa",
-            "subject": "AP",
-            "teacher": "Teacher Monisa",
-            "extra": ""
+            "label": "Makabansa - Tchr. Jenny",
+            "subject": "Makabansa",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Fhairudz",
-            "subject": "Math",
-            "teacher": "Tchr. Fhairudz",
-            "extra": ""
+            "label": "Filipino - Tchr. Jenny",
+            "subject": "Filipino",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
           }
         }
       }
@@ -6832,179 +7104,182 @@ window.OFFICIAL_CLASS_SCHEDULES = [
   },
   {
     "id": "sec_39",
-    "sheet": "ELEM",
-    "section_name": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+    "section_name": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 5",
+    "grade_level": "Grade 4",
     "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE",
+        "subject": "HOMEROOM GUIDANCE",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE",
+        "is_break": true
       },
       {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Saimona",
-            "subject": "MAPEH",
-            "teacher": "Tchr. Saimona",
-            "extra": ""
+            "label": "English - Tchr. Arvin",
+            "subject": "English",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "MATH - Tchr. Saimona",
-            "subject": "MATH",
-            "teacher": "Tchr. Saimona",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "AP - Tchr. Saimona",
-            "subject": "AP",
-            "teacher": "Tchr. Saimona",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "MATH - Tchr. Saimona",
-            "subject": "MATH",
-            "teacher": "Tchr. Saimona",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Faidh",
-            "subject": "Arabic",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "",
-        "subject": "",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Science - Tr. Saimona",
+            "label": "Science - Tchr. Anna",
             "subject": "Science",
-            "teacher": "Tr. Saimona",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Jenny",
-            "subject": "Filipino",
-            "teacher": "Teacher Jenny",
-            "extra": ""
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "SHAF 5 - Ust. Faidh",
-            "subject": "SHAF 5",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Jenny",
-            "subject": "TLE",
-            "teacher": "Teacher Jenny",
-            "extra": ""
+            "label": "English - Tchr. Arvin",
+            "subject": "English",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Saliha",
-            "subject": "GMRC",
-            "teacher": "Ustadha Saliha",
-            "extra": ""
+            "label": "AP - Tchr. Monisa",
+            "subject": "AP",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
           }
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": false,
-        "label": "",
-        "subject": "",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "05:20 PM \u2013 06:00 PM",
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Faidh",
-            "subject": "SHAF",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
+            "label": "Filipino - Tchr. Norhydie",
+            "subject": "Filipino",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
+            "label": "Math - Tchr. Arvin",
+            "subject": "Math",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "TLE - Tchr. Monisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Arabic - Ust. Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Math - Tchr. Arvin",
+            "subject": "Math",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF - Ust. Abdiraheem",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "SHAF - Ust. Abdiraheem",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
+          },
+          "Tuesday": {
             "label": "Qur'an - Ust. Obaydah",
             "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
             "teacher": "Ustadh Obaydah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Science - Tr. Saimona",
-            "subject": "Science",
-            "teacher": "Tr. Saimona",
-            "extra": ""
+            "label": "GMRC - Tchr. Sahdia",
+            "subject": "GMRC",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
+            "label": "MAPEH - Tchr. Halnaisa",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
           }
         }
       }
@@ -7012,849 +7287,739 @@ window.OFFICIAL_CLASS_SCHEDULES = [
   },
   {
     "id": "sec_40",
-    "sheet": "ELEM",
-    "section_name": "GRADE  6  FACE TO FACE",
+    "section_name": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade",
-    "shift": "F2F",
+    "grade_level": "Grade 5",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "GENERAL ASSEMBLY",
-        "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "07:40 AM \u2013 08:25 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Normylah",
-            "subject": "Filipino",
-            "teacher": "Tchr. Normylah",
-            "extra": ""
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": {
-            "is_break": false,
-            "label": "HG - Tchr. Normylah",
-            "subject": "HG",
-            "teacher": "Tchr. Normylah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "08:25 AM \u2013 09:05 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "English - Tchr. Jessa",
-        "subject": "English",
-        "teacher": "Tchr. Jessa",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "09:05 AM \u2013 09:45 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "MAPEH Tchr. Zara",
-            "subject": "MAPEH",
-            "teacher": "Teacher Zara",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "AP - Tchr. Zuhora",
-            "subject": "AP",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "MAPEH Tchr. Zara",
-            "subject": "MAPEH",
-            "teacher": "Teacher Zara",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Math - Ust. Ersahad",
-            "subject": "Math",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "MAPEH Tchr. Zara",
-            "subject": "MAPEH",
-            "teacher": "Teacher Zara",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "09:45 AM \u2013 10:00 AM",
-        "minutes": "15 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "RECESS",
-        "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "10:00 AM \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdi",
-            "subject": "SHAF",
-            "teacher": "Ust. Abdi",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Math- Ust. Ersahad",
-            "subject": "Math",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "GMRC- Ust. Silfah",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdi",
-            "subject": "SHAF",
-            "teacher": "Ust. Abdi",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "GMRC- Ust. Silfah",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "10:45:11:30",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "GMRC- Ust. Silfah",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Arvin",
-            "subject": "TLE",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Math- Ust. Ersahad",
-            "subject": "Math",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Aral - Tchr. Arvin",
-            "subject": "Aral",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Math- Ust. Ersahad",
-            "subject": "Math",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "11:30 AM \u2013 12:40 PM",
-        "minutes": "70 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "LUNCH and SALAH",
-        "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:25 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "AP - Tchr. Zuhora",
-            "subject": "AP",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Arabic Ust. Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Faidh",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "AP - Tchr. Zuhora",
-            "subject": "AP",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Arvin",
-            "subject": "TLE",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:25 PM \u2013 02:10 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Science - Tchr. Wendelyn",
-        "subject": "Science",
-        "teacher": "Tchr. Wendelyn",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:15 PM \u2013 03:00 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Math - Ust. Ersahad",
-            "subject": "Math",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Faidh",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "ARAL Program - Tchr. Arvin",
-            "subject": "ARAL Program",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "ARAL Program - Tchr. Arvin",
-            "subject": "ARAL Program",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "SALAH & DEPARTURE",
-        "subject": "SALAH & DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF - Hainur",
+            "subject": "SHAF",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "AP - Tchr. Monisa",
+            "subject": "AP",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "SHAF - Hainur",
+            "subject": "SHAF",
+            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadh Hainur",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Filipino - Tchr. Joanna",
+            "subject": "Filipino",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "GMRC - Tchr. Jayra",
+            "subject": "GMRC",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Qur'an - Ust. Jaisam",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "MAPEH - Tchr. Norhydie",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Arabic - Ust. Ersahad",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Math - Tchr. FAirudz",
+            "subject": "Math",
+            "teacher_id": "tchr_fhairudz",
+            "teacher": "Teacher Fhairudz",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Math - Tchr. Fairudz",
+            "subject": "Math",
+            "teacher_id": "tchr_fhairudz",
+            "teacher": "Teacher Fhairudz",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "TLE - Tchr. Anna",
+            "subject": "TLE",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
+          }
+        }
       }
     ]
   },
   {
     "id": "sec_41",
-    "sheet": "ELEM",
-    "section_name": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+    "section_name": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
     "department": "Elementary",
     "grade_level": "Grade 6",
-    "shift": "ODL - 1ST SHIFT",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "AP - Tchr. Normylah",
-            "subject": "AP",
-            "teacher": "Tchr. Normylah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Math - Tchr. Kat",
-            "subject": "Math",
-            "teacher": "Teacher Kat",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "GMRC- Ust. Silfah",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Kat",
-            "subject": "Math",
-            "teacher": "Teacher Kat",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "MAPEH Tchr. Zara",
-            "subject": "MAPEH",
-            "teacher": "Teacher Zara",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdi",
-            "subject": "SHAF",
-            "teacher": "Ust. Abdi",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Jaisam",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Arvin",
-            "subject": "TLE",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdi",
-            "subject": "SHAF",
-            "teacher": "Ust. Abdi",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Fil - Tchr. Zuhora",
-            "subject": "Fil",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
         "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Science - Tchr. Fhairudz",
+            "subject": "Science",
+            "teacher_id": "tchr_fhairudz",
+            "teacher": "Teacher Fhairudz",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Science - Tchr. Fhairudz",
+            "subject": "Science",
+            "teacher_id": "tchr_fhairudz",
+            "teacher": "Teacher Fhairudz",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "AP - Tchr. Normylah",
+            "subject": "AP",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Filipino- Tchr. Normylah",
+            "subject": "Filipino- Tchr. Normylah",
+            "teacher_id": "tchr_normylah",
+            "teacher": "Teacher Normylah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Qur'an - Ust. Obayda",
+            "subject": "Qur'an",
+            "teacher_id": null,
+            "teacher": "Qur'an - Ust. Obayda",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF - Ust. Faidh",
+            "subject": "SHAF",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Math - Tchr. Saimona",
+            "subject": "Math",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "GMRC - Ust. Silfah",
+            "subject": "GMRC",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "MAPEH - Tchr. Zuhora",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_zuhora",
+            "teacher": "Teacher Zuhora",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "TLE - Tchr. Arvin",
+            "subject": "TLE",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "SHAF - Ust. Faidh",
+            "subject": "SHAF",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Arabic - Ust. Ersahad",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Math - Tchr. Saimona",
+            "subject": "Math",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
+          }
+        }
       }
     ]
   },
   {
     "id": "sec_42",
-    "sheet": "ELEM",
-    "section_name": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+    "section_name": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
     "department": "Elementary",
-    "grade_level": "Grade 6",
-    "shift": "ODL - 1ST SHIFT",
+    "grade_level": "Grade 4",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Kat",
-            "subject": "Math",
-            "teacher": "Teacher Kat",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Kat",
-            "subject": "Math",
-            "teacher": "Teacher Kat",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "AP - Tchr Normylah",
-            "subject": "AP",
-            "teacher": "Tchr Normylah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Arvin",
-            "subject": "TLE",
-            "teacher": "Teacher Arvin",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "GMRC- Ust. Silfah",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Fil- Tchr Zuhora",
-            "subject": "Fil",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "MAPEH Tchr. Zara",
-            "subject": "MAPEH",
-            "teacher": "Teacher Zara",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Jaisam",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdi",
-            "subject": "SHAF",
-            "teacher": "Ust. Abdi",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdi",
-            "subject": "SHAF",
-            "teacher": "Ust. Abdi",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE",
+        "subject": "HOMEROOM GUIDANCE",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "AP - Tchr. Monisa",
+            "subject": "AP",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "MAPEH - Tchr. Zuhora",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_zuhora",
+            "teacher": "Teacher Zuhora",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Qur'an - Ust. Faidh",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Filipino - Tchr. Zuhora",
+            "subject": "Filipino",
+            "teacher_id": "tchr_zuhora",
+            "teacher": "Teacher Zuhora",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "SHAF - Ust. Abdi",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF - Ust. Abdi",
+            "subject": "SHAF",
+            "teacher_id": "tchr_abdiraheem",
+            "teacher": "Ustadh Abdiraheem",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Math - Tchr. Saimona",
+            "subject": "Math",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "English - Tchr. Arvin",
+            "subject": "English",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Math - Tchr. Saimona",
+            "subject": "Math",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Science 4 - Saimona",
+            "subject": "Science 4",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Arabic - Ust Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Science 4 - Saimona",
+            "subject": "Science 4",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "TLE - Tchr. Jenny",
+            "subject": "TLE",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "English - Tchr. Arvin",
+            "subject": "English",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "GMRC - Tchr. Sahdia",
+            "subject": "GMRC",
+            "teacher_id": "tchr_sahdia",
+            "teacher": "Teacher Sahdia",
+            "is_break": false
+          }
+        }
       }
     ]
   },
   {
     "id": "sec_43",
-    "sheet": "ELEM",
-    "section_name": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+    "section_name": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
     "department": "Elementary",
-    "grade_level": "Grade 6",
+    "grade_level": "Grade 5",
     "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
         "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       },
       {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "AP - Tchr. Normylah",
-            "subject": "AP",
-            "teacher": "Tchr. Normylah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Fil - Tchr. Normylah",
-            "subject": "Fil",
-            "teacher": "Tchr. Normylah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
             "label": "English - Tchr. Jessa",
             "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "SHAF - Ust. Ersahad",
+            "subject": "SHAF",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Science - Tchr. Anna",
-            "subject": "Science",
-            "teacher": "Tchr. Anna",
-            "extra": ""
+            "label": "Filipino - Tchr. Joanna",
+            "subject": "Filipino",
+            "teacher_id": "tchr_joanna",
+            "teacher": "Teacher Joanna",
+            "is_break": false
           }
         }
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "04:30 PM \u2013 05:10 PM",
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "MAPEH - Tchr. Norhydie",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_norhydie",
+            "teacher": "Teacher Norhydie",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "GMRC - Tchr. Jayra",
+            "subject": "GMRC",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Science - Tchr. Anna",
+            "subject": "Science",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "TLE - Tchr. Anna",
+            "subject": "TLE",
+            "teacher_id": "tchr_anna",
+            "teacher": "Teacher Anna",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Arabic - Ust. Ersahad",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ersahad",
+            "teacher": "Ustadh Ersahad",
+            "is_break": false
+          },
+          "Monday": {
             "label": "Qur'an - Ust. Jaisam",
             "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
             "teacher": "Ustadh Jaisam",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "GMRC- Ust. Silfah",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "MAPEH Tchr. Zara",
-            "subject": "MAPEH",
-            "teacher": "Teacher Zara",
-            "extra": ""
+            "label": "Math - Tchr. Fhairudz",
+            "subject": "Math",
+            "teacher_id": "tchr_fhairudz",
+            "teacher": "Teacher Fhairudz",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Kat",
-            "subject": "Math",
-            "teacher": "Teacher Kat",
-            "extra": ""
+            "label": "AP - Tchr. Monisa",
+            "subject": "AP",
+            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Monisa",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdi",
-            "subject": "SHAF",
-            "teacher": "Ust. Abdi",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Math - Tchr. Kat",
+            "label": "Math - Tchr. Fhairudz",
             "subject": "Math",
-            "teacher": "Teacher Kat",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Abdi",
-            "subject": "SHAF",
-            "teacher": "Ust. Abdi",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Arvin",
-            "subject": "TLE",
-            "teacher": "Teacher Arvin",
-            "extra": ""
+            "teacher_id": "tchr_fhairudz",
+            "teacher": "Teacher Fhairudz",
+            "is_break": false
           }
         }
       }
@@ -7862,179 +8027,186 @@ window.OFFICIAL_CLASS_SCHEDULES = [
   },
   {
     "id": "sec_44",
-    "sheet": "ELEM",
-    "section_name": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+    "section_name": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
     "department": "Elementary",
-    "grade_level": "Grade 6",
+    "grade_level": "Grade 5",
     "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
         "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       },
       {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Science - Tchr. Fhairudz",
-            "subject": "Science",
-            "teacher": "Tchr. Fhairudz",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Science - Tchr. Fhairudz",
-            "subject": "Science",
-            "teacher": "Tchr. Fhairudz",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "AP - Tchr. Normylah",
-            "subject": "AP",
-            "teacher": "Tchr. Normylah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Filipino- Tchr. Normylah",
-            "subject": "Filipino",
-            "teacher": "Tchr. Normylah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Qur'an - Ust. Obayda",
-            "subject": "Qur'an",
-            "teacher": "Ust. Obayda",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "",
-        "subject": "",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Faidh",
-            "subject": "SHAF",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Saimona",
-            "subject": "Math",
-            "teacher": "Tchr. Saimona",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "GMRC - Ust. Silfah",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "English - Tchr. Jessa",
-            "subject": "English",
-            "teacher": "Tchr. Jessa",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "",
-        "subject": "",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Zuhora",
+            "label": "MAPEH - Tchr. Saimona",
             "subject": "MAPEH",
-            "teacher": "Teacher Zuhora",
-            "extra": ""
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Arvin",
-            "subject": "TLE",
-            "teacher": "Teacher Arvin",
-            "extra": ""
+            "label": "MATH - Tchr. Saimona",
+            "subject": "MATH",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Ust. Faidh",
-            "subject": "SHAF",
-            "teacher": "Ustadh Faidh",
-            "extra": ""
+            "label": "AP - Tchr. Saimona",
+            "subject": "AP",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Arabic - Ust. Ersahad",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ersahad",
-            "extra": ""
+            "label": "MATH - Tchr. Saimona",
+            "subject": "MATH",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Saimona",
-            "subject": "Math",
-            "teacher": "Tchr. Saimona",
-            "extra": ""
+            "label": "Arabic - Ust. Faidh",
+            "subject": "Arabic",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Science - Tr. Saimona",
+            "subject": "Science",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Filipino - Tchr. Jenny",
+            "subject": "Filipino",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "SHAF 5 - Ust. Faidh",
+            "subject": "SHAF 5",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "TLE - Tchr. Jenny",
+            "subject": "TLE",
+            "teacher_id": "tchr_jenny",
+            "teacher": "Teacher Jenny",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "GMRC - Ust. Saliha",
+            "subject": "GMRC",
+            "teacher_id": "tchr_saliha",
+            "teacher": "Ustadha Saliha",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF - Ust. Faidh",
+            "subject": "SHAF",
+            "teacher_id": "tchr_faidh",
+            "teacher": "Ustadh Faidh",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Qur'an - Ust. Obaydah",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_obaydah",
+            "teacher": "Ustadh Obaydah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Science - Tr. Saimona",
+            "subject": "Science",
+            "teacher_id": "tchr_saimonah",
+            "teacher": "Teacher Saimonah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "English - Tchr. Jessa",
+            "subject": "English",
+            "teacher_id": "tchr_jessa",
+            "teacher": "Teacher Jessa",
+            "is_break": false
           }
         }
       }
@@ -8042,2789 +8214,2945 @@ window.OFFICIAL_CLASS_SCHEDULES = [
   },
   {
     "id": "sec_45",
-    "sheet": "HS SCHED (NEW)",
     "section_name": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
     "department": "Junior High School",
-    "grade_level": "Grade 8",
+    "grade_level": "Grade 7",
     "shift": "F2F",
+    "total_periods": 12,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "GENERAL ASSEMBLY",
         "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "07:40 AM \u2013 08:25 AM",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "HG - Tchr. Sophia",
             "subject": "HG",
+            "teacher_id": "tchr_sophia",
             "teacher": "Teacher Sophia",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Filipino - Tchr. Sophia",
             "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
             "teacher": "Teacher Sophia",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Filipino - Tchr. Sophia",
             "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
             "teacher": "Teacher Sophia",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Filipino - Tchr. Sophia",
             "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
             "teacher": "Teacher Sophia",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Filipino - Tchr. Sophia",
             "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
             "teacher": "Teacher Sophia",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "08:25 AM \u2013 09:05 AM",
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "MAPEH - Tchr. Franchette",
             "subject": "MAPEH",
-            "teacher": "Tchr. Franchette",
-            "extra": ""
+            "teacher_id": "tchr_franchette",
+            "teacher": "Teacher Franchette",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Soc.Sci - Tchr. Shi",
             "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
             "teacher": "Teacher Shirehan",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Soc.Sci - Tchr. Shi",
             "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
             "teacher": "Teacher Shirehan",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Soc.Sci - Tchr. Shi",
             "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
             "teacher": "Teacher Shirehan",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Soc.Sci - Tchr. Shi",
             "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
             "teacher": "Teacher Shirehan",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "09:05 AM \u2013 09:45 AM",
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
         "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
-            "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
-            "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
-            "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
-            "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
-            "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          }
-        }
+        "is_merged_all_days": true,
+        "label": "Sci - Tchr. Radzmia",
+        "subject": "Sci",
+        "teacher_id": "tchr_radzmia",
+        "teacher": "Teacher Radzmia",
+        "is_break": false
       },
       {
-        "time": "09:45 AM \u2013 10:00 AM",
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
         "minutes": "15 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "RECESS",
         "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
       },
       {
-        "time": "10:00 AM \u2013 10:45 AM",
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
+            "teacher_id": "tchr_silfah",
             "teacher": "Ustadha Silfah",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "English - Tchr. Jayra",
             "subject": "English",
+            "teacher_id": "tchr_jairah",
             "teacher": "Teacher Jairah",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "English - Tchr. Jayra",
             "subject": "English",
+            "teacher_id": "tchr_jairah",
             "teacher": "Teacher Jairah",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "English - Tchr. Jayra",
             "subject": "English",
+            "teacher_id": "tchr_jairah",
             "teacher": "Teacher Jairah",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "English - Tchr. Jayra",
             "subject": "English",
+            "teacher_id": "tchr_jairah",
             "teacher": "Teacher Jairah",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "10:45:11:30",
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "English - Tchr. Jayra",
             "subject": "English",
+            "teacher_id": "tchr_jairah",
             "teacher": "Teacher Jairah",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Arabic - Ustadh Muh Ali",
             "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "MAPEH - Tchr. Franchette",
             "subject": "MAPEH",
-            "teacher": "Tchr. Franchette",
-            "extra": ""
+            "teacher_id": "tchr_franchette",
+            "teacher": "Teacher Franchette",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Arabic - Ustadh Muh Ali",
             "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "MAPEH - Tchr. Franchette",
             "subject": "MAPEH",
-            "teacher": "Tchr. Franchette",
-            "extra": ""
+            "teacher_id": "tchr_franchette",
+            "teacher": "Teacher Franchette",
+            "is_break": false
           }
         }
       },
       {
-        "time": "11:30 AM \u2013 12:40 PM",
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
         "minutes": "70 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "LUNCH and SALAH",
         "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:25 PM",
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Qur'an - Ustadh Jaisam",
             "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
             "teacher": "Ustadh Jaisam",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "SHAF - Alim Samsuddin",
             "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
+            "teacher_id": "tchr_silfah",
             "teacher": "Ustadha Silfah",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "SHAF - Alim Samsuddin",
             "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Qur'an - Ustadh Jaisam",
             "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
             "teacher": "Ustadh Jaisam",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "01:25 PM \u2013 02:10 PM",
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
         "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
-          }
-        }
+        "is_merged_all_days": true,
+        "label": "Math - Tchr. Hannah",
+        "subject": "Math",
+        "teacher_id": "tchr_hannah",
+        "teacher": "Teacher Hannah",
+        "is_break": false
       },
       {
-        "time": "02:15 PM \u2013 03:00 PM",
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "TLE - Tchr. Halnaisa",
             "subject": "TLE",
+            "teacher_id": "tchr_halnaisa",
             "teacher": "Teacher Halnaisa",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Aral Math - Sir Moh",
             "subject": "Aral Math",
-            "teacher": "Sir Moh",
-            "extra": ""
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "TLE - Tchr. Halnaisa",
             "subject": "TLE",
+            "teacher_id": "tchr_halnaisa",
             "teacher": "Teacher Halnaisa",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "TLE - Tchr. Halnaisa",
             "subject": "TLE",
+            "teacher_id": "tchr_halnaisa",
             "teacher": "Teacher Halnaisa",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
+            "teacher_id": "tchr_silfah",
             "teacher": "Ustadha Silfah",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "SALAH & DEPARTURE",
         "subject": "SALAH & DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "SALAH & DEPARTURE",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_46",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+    "section_name": "GRADE 7 & 8 BOYS (FACE TO FACE)",
     "department": "Junior High School",
     "grade_level": "Grade 7",
-    "shift": "ODL - 1ST SHIFT",
+    "shift": "F2F",
+    "total_periods": 12,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
-        "minutes": "40 min.",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
+        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "GMRC - Ustadha Silfa",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
+            "label": "HG - Tchr. Shi",
+            "subject": "HG",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Aniah",
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Aniah",
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Qur'an - Ustadh Jaisam",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Franchette",
-            "subject": "MAPEH",
-            "teacher": "Tchr. Franchette",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Halnaisa",
-            "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic - Ustadh Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Math - Tchr. Ethel",
-            "subject": "Math",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
             "label": "Soc.Sci - Tchr. Shi",
             "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
             "teacher": "Teacher Shirehan",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sophia",
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
+            "label": "Soc.Sci - Tchr. Shi",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Ethel",
-            "subject": "Math",
-            "teacher": "Teacher Ethel",
-            "extra": ""
+            "label": "Soc.Sci - Tchr. Shi",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sophia",
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
+            "label": "Soc.Sci - Tchr. Shi",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Sci - Tchr. Radzmia",
+            "subject": "Sci",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Sci - Tchr. Radzmia",
+            "subject": "Sci",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Aral.Sci - Tchr. Radzmia",
+            "subject": "Aral.Sci",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Sci - Tchr. Radzmia",
+            "subject": "Sci",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Sci - Tchr. Radzmia",
+            "subject": "Sci",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Aral Math - Sir Moh",
+            "subject": "Aral Math",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Filipino - Tchr. Sophia",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Filipino - Tchr. Sophia",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Filipino - Tchr. Sophia",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Filipino - Tchr. Sophia",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
+        "minutes": "15 min.",
+        "is_merged_all_days": true,
+        "label": "RECESS",
+        "subject": "RECESS",
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Math - Tchr. Hannah",
+        "subject": "Math",
+        "teacher_id": "tchr_hannah",
+        "teacher": "Teacher Hannah",
+        "is_break": false
+      },
+      {
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Arabic - Ustadh Muh Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "GMRC - Ustadha Silfa",
+            "subject": "GMRC",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Arabic - Ustadh Muh Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "GMRC - Ustadha Silfa",
+            "subject": "GMRC",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "GMRC - Ustadha Silfa",
+            "subject": "GMRC",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
+        "minutes": "70 min.",
+        "is_merged_all_days": true,
+        "label": "LUNCH and SALAH",
+        "subject": "LUNCH and SALAH",
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
+      },
+      {
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "MAPEH - Tchr. Franchette",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_franchette",
+            "teacher": "Teacher Franchette",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "TLE - Tchr. Halnaisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "MAPEH - Tchr. Franchette",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_franchette",
+            "teacher": "Teacher Franchette",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "MAPEH - Tchr. Franchette",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_franchette",
+            "teacher": "Teacher Franchette",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "TLE - Tchr. Halnaisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "TLE - Tchr. Halnaisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Qur'an - Ustadh Jaisam",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Qur'an - Ustadh Jaisam",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "English - Tchr. Jayra",
+        "subject": "English",
+        "teacher_id": "tchr_jairah",
+        "teacher": "Teacher Jairah",
+        "is_break": false
+      },
+      {
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "SALAH & DEPARTURE",
+        "subject": "SALAH & DEPARTURE",
+        "teacher_id": null,
+        "teacher": "SALAH & DEPARTURE",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_47",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+    "section_name": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
     "department": "Junior High School",
-    "grade_level": "Grade 7",
-    "shift": "ODL - 2ND SHIFT",
+    "grade_level": "Grade 9",
+    "shift": "F2F",
+    "total_periods": 12,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
-        "minutes": "40 min.",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
+        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
+            "label": "English- Tchr. Norhaima",
+            "subject": "English- Tchr. Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Shi",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
+            "label": "ENGLISH - Tchr. Norhaima",
+            "subject": "ENGLISH",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
+            "label": "ENGLISH - Tchr. Norhaima",
+            "subject": "ENGLISH",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Qur'an - Ustadh Jaisam",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
+            "label": "ENGLISH - Tchr. Norhaima",
+            "subject": "ENGLISH",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "GMRC - Ustadha Silfa",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
+            "label": "ENGLISH - Tchr. Norhaima",
+            "subject": "ENGLISH",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
           }
         }
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
+        "minutes": "40 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "Math - Tchr. Jhelyn",
+        "subject": "Math",
+        "teacher_id": "tchr_jhelyn",
+        "teacher": "Teacher Jhelyn",
+        "is_break": false
       },
       {
-        "time": "04:30 PM \u2013 05:10 PM",
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sophia",
+            "label": "Filipino - Tchr. Nadzra",
             "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sophia",
+            "label": "Filipino - Tchr. Nadzra",
             "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Aniah",
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
+            "label": "Filipino - Tchr. Nadzra",
+            "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Aniah",
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
+            "label": "Filipino - Tchr. Nadzra",
+            "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
+            "label": "Homeroom - Tchr. Norhaima",
+            "subject": "Homeroom",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": true
+          }
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
+        "minutes": "15 min.",
+        "is_merged_all_days": true,
+        "label": "RECESS",
+        "subject": "RECESS",
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Soc.Sci - Tchr. Sophia",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Soc.Sci - Tchr. Sophia",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Aral Math - Sir Moh",
+            "subject": "Aral Math",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Soc.Sci - Tchr. Sophia",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Soc.Sci - Tchr. Sophia",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Science - Tchr. Rowena",
+        "subject": "Science",
+        "teacher_id": "tchr_rowena",
+        "teacher": "Teacher Rowena",
+        "is_break": false
+      },
+      {
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
+        "minutes": "70 min.",
+        "is_merged_all_days": true,
+        "label": "LUNCH and SALAH",
+        "subject": "LUNCH and SALAH",
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
+      },
+      {
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "ESP - Tchr. Nof",
+            "subject": "ESP",
+            "teacher_id": "tchr_nof",
+            "teacher": "Teacher Nof",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "ESP - Tchr. Nof",
+            "subject": "ESP",
+            "teacher_id": "tchr_nof",
+            "teacher": "Teacher Nof",
+            "is_break": false
+          },
+          "Tuesday": {
             "label": "SHAF - Alim Samsuddin",
             "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "ESP - Tchr. Nof",
+            "subject": "ESP",
+            "teacher_id": "tchr_nof",
+            "teacher": "Teacher Nof",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
           }
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
+        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Halnaisa",
-            "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
+            "label": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Franchette",
+            "label": "MAPEH - Sir Moh",
             "subject": "MAPEH",
-            "teacher": "Tchr. Franchette",
-            "extra": ""
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Ethel",
-            "subject": "Math",
-            "teacher": "Teacher Ethel",
-            "extra": ""
+            "label": "MAPEH - Sir Moh",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Ethel",
-            "subject": "Math",
-            "teacher": "Teacher Ethel",
-            "extra": ""
+            "label": "Qur'an - Alim Abdulwahab",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_abdulwahab",
+            "teacher": "Alim Abdulwahab",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Ustadh Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
+            "label": "MAPEH - Sir Moh",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           }
         }
+      },
+      {
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "TLE - Tchr. Angeleni",
+            "subject": "TLE",
+            "teacher_id": "tchr_angeleni",
+            "teacher": "Teacher Angeleni",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Qur'an - Alim Abdulwahab",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_abdulwahab",
+            "teacher": "Alim Abdulwahab",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "TLE - Tchr. Angeleni",
+            "subject": "TLE",
+            "teacher_id": "tchr_angeleni",
+            "teacher": "Teacher Angeleni",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "TLE - Tchr. Angeleni",
+            "subject": "TLE",
+            "teacher_id": "tchr_angeleni",
+            "teacher": "Teacher Angeleni",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "SALAH & DEPARTURE",
+        "subject": "SALAH & DEPARTURE",
+        "teacher_id": null,
+        "teacher": "SALAH & DEPARTURE",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_48",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+    "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
     "department": "Junior High School",
-    "grade_level": "Grade 7",
-    "shift": "ODL - 1ST SHIFT",
+    "grade_level": "Grade 9",
+    "shift": "F2F",
+    "total_periods": 12,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "HG - Tchr. Nadzra",
+            "subject": "HG",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Filipino - Tchr. Nadzra",
+            "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Filipino - Tchr. Nadzra",
+            "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Filipino - Tchr. Nadzra",
+            "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Filipino - Tchr. Nadzra",
+            "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": true,
+        "label": "Science - Tchr. Rowena",
+        "subject": "Science",
+        "teacher_id": "tchr_rowena",
+        "teacher": "Teacher Rowena",
+        "is_break": false
+      },
+      {
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Halnaisa",
+            "label": "TLE - Tchr. Angeleni",
             "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
+            "teacher_id": "tchr_angeleni",
+            "teacher": "Teacher Angeleni",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Ustadh Jaisam",
+            "label": "Qur'an - Alim Abdulwahab",
             "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Shi",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Math - Tchr. Ethel",
-            "subject": "Math",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Aniah",
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
+            "teacher_id": "tchr_abdulwahab",
+            "teacher": "Alim Abdulwahab",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Ethel",
-            "subject": "Math",
-            "teacher": "Teacher Ethel",
-            "extra": ""
+            "label": "TLE - Tchr. Angeleni",
+            "subject": "TLE",
+            "teacher_id": "tchr_angeleni",
+            "teacher": "Teacher Angeleni",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Aniah",
-            "subject": "Sci",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
+            "label": "Qur'an - Alim Abdulwahab",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_abdulwahab",
+            "teacher": "Alim Abdulwahab",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "GMRC - Ustadha Silfa",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
+            "label": "TLE - Tchr. Angeleni",
+            "subject": "TLE",
+            "teacher_id": "tchr_angeleni",
+            "teacher": "Teacher Angeleni",
+            "is_break": false
           }
         }
       },
       {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
+        "minutes": "15 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "RECESS",
+        "subject": "RECESS",
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
       },
       {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
+        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Franchette",
+            "label": "MAPEH - Sir Moh",
             "subject": "MAPEH",
-            "teacher": "Tchr. Franchette",
-            "extra": ""
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sophia",
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Arabic - Ustadh Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sophia",
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
             "label": "SHAF - Alim Samsuddin",
             "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "MAPEH - Sir Moh",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "MAPEH - Sir Moh",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "ENGLISH - Tchr. Norhaima",
+        "subject": "ENGLISH",
+        "teacher_id": "tchr_norhaima",
+        "teacher": "Teacher Norhaima",
+        "is_break": false
+      },
+      {
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
+        "minutes": "70 min.",
+        "is_merged_all_days": true,
+        "label": "LUNCH and SALAH",
+        "subject": "LUNCH and SALAH",
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
+      },
+      {
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Soc.Sci - Tchr. Sophia",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Aral Math - Sir Moh",
+            "subject": "Aral Math",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Soc.Sci - Tchr. Sophia",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Soc.Sci - Tchr. Sophia",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Soc.Sci - Tchr. Sophia",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "ESP - Tchr. Nof",
+            "subject": "ESP",
+            "teacher_id": "tchr_nof",
+            "teacher": "Teacher Nof",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "ESP - Tchr. Nof",
+            "subject": "ESP",
+            "teacher_id": "tchr_nof",
+            "teacher": "Teacher Nof",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "ESP - Tchr. Nof",
+            "subject": "ESP",
+            "teacher_id": "tchr_nof",
+            "teacher": "Teacher Nof",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Math - Tchr. Jhelyn",
+        "subject": "Math",
+        "teacher_id": "tchr_jhelyn",
+        "teacher": "Teacher Jhelyn",
+        "is_break": false
+      },
+      {
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "SALAH & DEPARTURE",
+        "subject": "SALAH & DEPARTURE",
+        "teacher_id": null,
+        "teacher": "SALAH & DEPARTURE",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_49",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-    "department": "Junior High School",
-    "grade_level": "Grade 8",
-    "shift": "ODL - 2ND SHIFT",
+    "section_name": "GRADE 11 (FACE TO FACE)",
+    "department": "Senior High School",
+    "grade_level": "Grade 11",
+    "shift": "F2F",
+    "total_periods": 12,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Gen Science - Tchr. Rowena",
+        "subject": "Gen Science",
+        "teacher_id": "tchr_rowena",
+        "teacher": "Teacher Rowena",
+        "is_break": false
+      },
+      {
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": true,
+        "label": "LCS - Tchr. Norhaima",
+        "subject": "LCS",
+        "teacher_id": "tchr_norhaima",
+        "teacher": "Teacher Norhaima",
+        "is_break": false
+      },
+      {
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
-            "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
+            "label": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Arabic - Ustadh Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
+            "label": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
-            "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
+            "label": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Franchette",
-            "subject": "MAPEH",
-            "teacher": "Tchr. Franchette",
-            "extra": ""
+            "label": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Values Ed. - Tchr. Wardah",
-            "subject": "Values Ed.",
-            "teacher": "Tchr. Wardah",
-            "extra": ""
+            "label": "Gen Math/HR - Tchr. Jhelyn",
+            "subject": "Gen Math/HR",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
           }
         }
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
+        "minutes": "15 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "RECESS",
+        "subject": "RECESS",
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
       },
       {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "PSKP - Tchr. Shi",
+        "subject": "PSKP",
+        "teacher_id": "tchr_shirehan",
+        "teacher": "Teacher Shirehan",
+        "is_break": false
+      },
+      {
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
+        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
+            "label": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
+          },
+          "Monday": {
             "label": "SHAF - Alim Samsuddin",
             "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
+            "label": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
+            "label": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher_id": null,
+            "teacher": "HOMEROOM",
+            "is_break": true
           }
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
+        "minutes": "70 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "LUNCH and SALAH",
+        "subject": "LUNCH and SALAH",
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
       },
       {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "EC - Tchr.  Nadzra",
+        "subject": "EC",
+        "teacher_id": "tchr_nadzra",
+        "teacher": "Teacher Nadzra",
+        "is_break": false
+      },
+      {
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Gen Bio 1 - Tchr. Radzmia",
+        "subject": "Gen Bio 1",
+        "teacher_id": "tchr_radzmia",
+        "teacher": "Teacher Radzmia",
+        "is_break": false
+      },
+      {
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
+        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Qur'an - Ustadh Jaisam",
+            "label": "Qur'an - Alim Dipatuan",
             "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
+            "teacher_id": "tchr_dipatuan",
+            "teacher": "Alim Dipatuan",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sophia",
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
+            "label": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Shi",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
+            "label": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher_id": null,
+            "teacher": "HOMEROOM",
+            "is_break": true
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Halnaisa",
-            "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
+            "label": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher_id": null,
+            "teacher": "HOMEROOM",
+            "is_break": true
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Shi",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
+            "label": "Qur'an - Alim Dipatuan",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_dipatuan",
+            "teacher": "Alim Dipatuan",
+            "is_break": false
           }
         }
+      },
+      {
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "SALAH & DEPARTURE",
+        "subject": "SALAH & DEPARTURE",
+        "teacher_id": null,
+        "teacher": "SALAH & DEPARTURE",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_50",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-    "department": "Junior High School",
-    "grade_level": "Grade 8",
+    "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+    "department": "Senior High School",
+    "grade_level": "Grade 12",
     "shift": "F2F",
+    "total_periods": 12,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "GENERAL ASSEMBLY",
         "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "07:40 AM \u2013 08:25 AM",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
         "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "HG - Tchr. Shi",
-            "subject": "HG",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Shi",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Shi",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Shi",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Shi",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          }
-        }
+        "is_merged_all_days": true,
+        "label": "Prac. Res. 2 - Tchr. Aniah",
+        "subject": "Prac. Res. 2",
+        "teacher_id": "tchr_aniah",
+        "teacher": "Teacher Aniah",
+        "is_break": false
       },
       {
-        "time": "08:25 AM \u2013 09:05 AM",
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
-            "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
+            "label": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
-            "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
+            "label": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Aral.Sci - Tchr. Radzmia",
-            "subject": "Aral.Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
-            "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
+            "label": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
-            "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
           }
         }
       },
       {
-        "time": "09:05 AM \u2013 09:45 AM",
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
         "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Aral Math - Sir Moh",
-            "subject": "Aral Math",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sophia",
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sophia",
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sophia",
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sophia",
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          }
-        }
+        "is_merged_all_days": true,
+        "label": "MIL - Tchr. Ethel",
+        "subject": "MIL",
+        "teacher_id": "tchr_ethel",
+        "teacher": "Teacher Ethel",
+        "is_break": false
       },
       {
-        "time": "09:45 AM \u2013 10:00 AM",
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
         "minutes": "15 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "RECESS",
         "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
       },
       {
-        "time": "10:00 AM \u2013 10:45 AM",
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
         "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
-          }
-        }
+        "is_merged_all_days": true,
+        "label": "Gen. Physics 1 - Tchr. Aniah",
+        "subject": "Gen. Physics 1",
+        "teacher_id": "tchr_aniah",
+        "teacher": "Teacher Aniah",
+        "is_break": false
       },
       {
-        "time": "10:45:11:30",
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
         "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Ustadh Muh Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "GMRC - Ustadha Silfa",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Arabic - Ustadh Muh Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "GMRC - Ustadha Silfa",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "GMRC - Ustadha Silfa",
-            "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          }
-        }
+        "is_merged_all_days": true,
+        "label": "21st Lit. -Tchr Nof",
+        "subject": "21st Lit. -Tchr Nof",
+        "teacher_id": "tchr_nof",
+        "teacher": "Teacher Nof",
+        "is_break": false
       },
       {
-        "time": "11:30 AM \u2013 12:40 PM",
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
         "minutes": "70 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "LUNCH and SALAH",
         "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:25 PM",
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Franchette",
-            "subject": "MAPEH",
-            "teacher": "Tchr. Franchette",
-            "extra": ""
+            "label": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Halnaisa",
-            "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
+            "label": "Research Consultation",
+            "subject": "Research Consultation",
+            "teacher_id": null,
+            "teacher": "Research Consultation",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Franchette",
-            "subject": "MAPEH",
-            "teacher": "Tchr. Franchette",
-            "extra": ""
+            "label": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Franchette",
-            "subject": "MAPEH",
-            "teacher": "Tchr. Franchette",
-            "extra": ""
+            "label": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Halnaisa",
-            "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
+            "label": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher_id": null,
+            "teacher": "HOMEROOM",
+            "is_break": true
           }
         }
       },
       {
-        "time": "01:25 PM \u2013 02:10 PM",
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": "Gen Bio 1 - Tchr. Radzmia",
+        "subject": "Gen Bio 1",
+        "teacher_id": "tchr_radzmia",
+        "teacher": "Teacher Radzmia",
+        "is_break": false
+      },
+      {
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Halnaisa",
-            "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
+            "label": "Research Consultation",
+            "subject": "Research Consultation",
+            "teacher_id": null,
+            "teacher": "Research Consultation",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
+            "label": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Ustadh Jaisam",
+            "label": "Qur'an - Alim Dipatuan",
             "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
+            "teacher_id": "tchr_dipatuan",
+            "teacher": "Alim Dipatuan",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Qur'an - Ustadh Jaisam",
+            "label": "Qur'an - Alim Dipatuan",
             "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:15 PM \u2013 03:00 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
+            "teacher_id": "tchr_dipatuan",
+            "teacher": "Alim Dipatuan",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
+            "label": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "SALAH & DEPARTURE",
         "subject": "SALAH & DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "SALAH & DEPARTURE",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_51",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+    "section_name": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
     "department": "Junior High School",
-    "grade_level": "Grade 8",
+    "grade_level": "Grade 7",
     "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
+            "label": "GMRC - Ustadha Silfa",
+            "subject": "GMRC",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Sci - Tchr. Aniah",
             "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Values Ed. - Tchr. Wardah",
-            "subject": "Values Ed.",
-            "teacher": "Tchr. Wardah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
+            "label": "Sci - Tchr. Aniah",
             "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Shi",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Franchette",
-            "subject": "MAPEH",
-            "teacher": "Tchr. Franchette",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Shi",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Sophia",
-            "subject": "Filipino",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Halnaisa",
-            "subject": "TLE",
-            "teacher": "Teacher Halnaisa",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
             "label": "Qur'an - Ustadh Jaisam",
             "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
             "teacher": "Ustadh Jaisam",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Ustadh Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
+            "label": "MAPEH - Tchr. Franchette",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_franchette",
+            "teacher": "Teacher Franchette",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "English - Tchr. Jayra",
+            "subject": "English",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "English - Tchr. Jayra",
+            "subject": "English",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "TLE - Tchr. Halnaisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Arabic - Ustadh Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Math - Tchr. Ethel",
+            "subject": "Math",
+            "teacher_id": "tchr_ethel",
+            "teacher": "Teacher Ethel",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Soc.Sci - Tchr. Shi",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Filipino - Tchr. Sophia",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Math - Tchr. Ethel",
+            "subject": "Math",
+            "teacher_id": "tchr_ethel",
+            "teacher": "Teacher Ethel",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Filipino - Tchr. Sophia",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
         "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_52",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+    "section_name": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
     "department": "Junior High School",
-    "grade_level": "Grade 8",
-    "shift": "ODL - 2ND SHIFT",
+    "grade_level": "Grade 7",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Franchette",
-            "subject": "MAPEH",
-            "teacher": "Tchr. Franchette",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Ustadh Jaisam",
-            "subject": "Qur'an",
-            "teacher": "Ustadh Jaisam",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
             "label": "TLE - Tchr. Halnaisa",
             "subject": "TLE",
+            "teacher_id": "tchr_halnaisa",
             "teacher": "Teacher Halnaisa",
-            "extra": ""
+            "is_break": false
+          },
+          "Monday": {
+            "label": "English - Tchr. Jayra",
+            "subject": "English",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Qur'an - Ustadh Jaisam",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "English - Tchr. Jayra",
+            "subject": "English",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
+            "label": "Soc.Sci - Tchr. Shi",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Math - Tchr. Ethel",
+            "subject": "Math",
+            "teacher_id": "tchr_ethel",
+            "teacher": "Teacher Ethel",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Sci - Tchr. Aniah",
+            "subject": "Sci",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Math - Tchr. Ethel",
+            "subject": "Math",
+            "teacher_id": "tchr_ethel",
+            "teacher": "Teacher Ethel",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Sci - Tchr. Aniah",
+            "subject": "Sci",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "GMRC - Ustadha Silfa",
+            "subject": "GMRC",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "MAPEH - Tchr. Franchette",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_franchette",
+            "teacher": "Teacher Franchette",
+            "is_break": false
+          },
+          "Monday": {
             "label": "Filipino - Tchr. Sophia",
             "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
             "teacher": "Teacher Sophia",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
-            "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Arabic - Ustadh Ali",
             "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Hannah",
-            "subject": "Math",
-            "teacher": "Tchr. Hannah",
-            "extra": ""
+            "label": "Filipino - Tchr. Sophia",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Radzmia",
-            "subject": "Sci",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
           }
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Shi",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Jayra",
-            "subject": "English",
-            "teacher": "Teacher Jairah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Shi",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Values Ed. - Tchr. Wardah",
-            "subject": "Values Ed.",
-            "teacher": "Tchr. Wardah",
-            "extra": ""
-          }
-        }
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_53",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+    "section_name": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
     "department": "Junior High School",
-    "grade_level": "Grade 10",
-    "shift": "F2F",
+    "grade_level": "Grade 8",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "GENERAL ASSEMBLY",
-        "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "07:40 AM \u2013 08:25 AM",
-        "minutes": "45 min.",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
+        "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "English- Tchr. Norhaima",
+            "label": "Sci - Tchr. Radzmia",
+            "subject": "Sci",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Math - Tchr. Hannah",
+            "subject": "Math",
+            "teacher_id": "tchr_hannah",
+            "teacher": "Teacher Hannah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Values Ed. - Tchr. Wardah",
+            "subject": "Values Ed.",
+            "teacher_id": "tchr_wardah",
+            "teacher": "Teacher Wardah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Math - Tchr. Hannah",
+            "subject": "Math",
+            "teacher_id": "tchr_hannah",
+            "teacher": "Teacher Hannah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Sci - Tchr. Radzmia",
+            "subject": "Sci",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Soc.Sci - Tchr. Shi",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "MAPEH - Tchr. Franchette",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_franchette",
+            "teacher": "Teacher Franchette",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Soc.Sci - Tchr. Shi",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "English - Tchr. Jayra",
             "subject": "English",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "ENGLISH - Tchr. Norhaima",
-            "subject": "ENGLISH",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "ENGLISH - Tchr. Norhaima",
-            "subject": "ENGLISH",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "ENGLISH - Tchr. Norhaima",
-            "subject": "ENGLISH",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "ENGLISH - Tchr. Norhaima",
-            "subject": "ENGLISH",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
+            "label": "English - Tchr. Jayra",
+            "subject": "English",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
           }
         }
       },
       {
-        "time": "08:25 AM \u2013 09:05 AM",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jhelyn",
-            "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jhelyn",
-            "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jhelyn",
-            "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jhelyn",
-            "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jhelyn",
-            "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "09:05 AM \u2013 09:45 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
+            "label": "Filipino - Tchr. Sophia",
             "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
+            "label": "TLE - Tchr. Halnaisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": true,
-            "label": "Homeroom - Tchr. Norhaima",
-            "subject": "Homeroom - Tchr. Norhaima",
-            "teacher": "",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "09:45 AM \u2013 10:00 AM",
-        "minutes": "15 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "RECESS",
-        "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "10:00 AM \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Sophia",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Sophia",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Aral Math - Sir Moh",
-            "subject": "Aral Math",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Sophia",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Sophia",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "10:45:11:30",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Science - Tchr. Rowena",
-            "subject": "Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Science - Tchr. Rowena",
-            "subject": "Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Rowena",
-            "subject": "Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Rowena",
-            "subject": "Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Science - Tchr. Rowena",
-            "subject": "Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "11:30 AM \u2013 12:40 PM",
-        "minutes": "70 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "LUNCH and SALAH",
-        "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:25 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "ESP - Tchr. Nof",
-            "subject": "ESP",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "ESP - Tchr. Nof",
-            "subject": "ESP",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
             "label": "SHAF - Alim Samsuddin",
             "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "ESP - Tchr. Nof",
-            "subject": "ESP",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:25 PM \u2013 02:10 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Alim Mamonas",
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "MAPEH - Sir Moh",
-            "subject": "MAPEH",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "MAPEH - Sir Moh",
-            "subject": "MAPEH",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Qur'an - Alim Abdulwahab",
+            "label": "Qur'an - Ustadh Jaisam",
             "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "MAPEH - Sir Moh",
-            "subject": "MAPEH",
-            "teacher": "Sir Moh",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:15 PM \u2013 03:00 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Angeleni",
-            "subject": "TLE",
-            "teacher": "Tchr. Angeleni",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Qur'an - Alim Abdulwahab",
-            "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Angeleni",
-            "subject": "TLE",
-            "teacher": "Tchr. Angeleni",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Angeleni",
-            "subject": "TLE",
-            "teacher": "Tchr. Angeleni",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Alim Mamonas",
+            "label": "Arabic - Ustadh Ali",
             "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "SALAH & DEPARTURE",
-        "subject": "SALAH & DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_54",
-    "sheet": "HS SCHED (NEW)",
     "section_name": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
     "department": "Junior High School",
     "grade_level": "Grade 9",
     "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "SHAF - Alim Samsuddin",
             "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Qur'an - Alim Abdulwahab",
             "subject": "Qur'an",
+            "teacher_id": "tchr_abdulwahab",
             "teacher": "Alim Abdulwahab",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Math - Tchr. Jhelyn",
             "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Math - Tchr. Jhelyn",
             "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "TLE - Tchr. Angeleni",
             "subject": "TLE",
-            "teacher": "Tchr. Angeleni",
-            "extra": ""
+            "teacher_id": "tchr_angeleni",
+            "teacher": "Teacher Angeleni",
+            "is_break": false
           }
         }
       },
       {
-        "time": "01:20 PM \u2013 01:30 PM",
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "01:30 PM \u2013 02:10 PM",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Soc.Sci - Tchr. Sophia",
             "subject": "Soc.Sci",
+            "teacher_id": "tchr_sophia",
             "teacher": "Teacher Sophia",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Arabic - Ust. Raslina",
             "subject": "Arabic",
-            "teacher": "Ust. Raslina",
-            "extra": ""
+            "teacher_id": "tchr_raslina",
+            "teacher": "Ustadh Raslina",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "English - Tchr. Norhaima",
             "subject": "English",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "MAPEH - Sir Moh",
             "subject": "MAPEH",
-            "teacher": "Sir Moh",
-            "extra": ""
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "English - Tchr. Norhaima",
             "subject": "English",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
           }
         }
       },
       {
-        "time": "02:10 PM \u2013 02:20 PM",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "02:20 PM \u2013 03:00 PM",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Sci - Tchr. Rowena",
             "subject": "Sci",
+            "teacher_id": "tchr_rowena",
             "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "ESP - Tchr. Nof",
             "subject": "ESP",
+            "teacher_id": "tchr_nof",
             "teacher": "Teacher Nof",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Sci - Tchr. Rowena",
             "subject": "Sci",
+            "teacher_id": "tchr_rowena",
             "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Filipino - Tchr. Nadzra",
             "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
             "teacher": "Teacher Nadzra",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Filipino - Tchr. Nadzra",
             "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
             "teacher": "Teacher Nadzra",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
         "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_55",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+    "section_name": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
     "department": "Junior High School",
-    "grade_level": "Grade 9",
-    "shift": "ODL - 2ND SHIFT",
+    "grade_level": "Grade 10",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Ustadh Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Rowena",
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Rowena",
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
             "label": "Qur'an - Alim Abdulwahab",
             "subject": "Qur'an",
+            "teacher_id": "tchr_abdulwahab",
             "teacher": "Alim Abdulwahab",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Norhaima",
-            "subject": "English",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jhelyn",
-            "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "English - Tchr. Norhaima",
-            "subject": "English",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jhelyn",
-            "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "ESP - Tchr. Nof",
-            "subject": "ESP",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
             "label": "TLE - Tchr. Angeleni",
             "subject": "TLE",
-            "teacher": "Tchr. Angeleni",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
+            "teacher_id": "tchr_angeleni",
+            "teacher": "Teacher Angeleni",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "MAPEH - Tchr. Angeleni",
-            "subject": "MAPEH",
-            "teacher": "Tchr. Angeleni",
-            "extra": ""
+            "label": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
+            "label": "SHAF - Alim Bustamante",
+            "subject": "SHAF",
+            "teacher_id": "tchr_bustamante",
+            "teacher": "Alim Bustamante",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Sophia",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Sophia",
-            "extra": ""
+            "label": "MAPEH - Sir Moh",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           }
         }
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "English - Tchr. Norhaima",
+            "subject": "English",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Soc.Sci - Tchr. Sophia",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Math - Tchr. Jhelyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "English - Tchr. Norhaima",
+            "subject": "English",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Math - Tchr. Jhelyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Filipino - Tchr. Nadzra",
+            "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Sci - Tchr. Rowena",
+            "subject": "Sci",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Filipino - Tchr. Nadzra",
+            "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "ESP - Tchr. Nof",
+            "subject": "ESP",
+            "teacher_id": "tchr_nof",
+            "teacher": "Teacher Nof",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Sci - Tchr. Rowena",
+            "subject": "Sci",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       }
     ]
   },
   {
     "id": "sec_56",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-    "department": "Junior High School",
-    "grade_level": "Grade 9",
-    "shift": "ODL - 2ND SHIFT",
+    "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+    "department": "Senior High School",
+    "grade_level": "Grade 11",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 9,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
+            "label": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
+            "label": "Gen Bio 1 - Tchr. Rowena",
+            "subject": "Gen Bio 1",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
+            "label": "Gen Bio 1 - Tchr. Rowena",
+            "subject": "Gen Bio 1",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Gen Bio 1 - Tchr. Rowena",
+            "subject": "Gen Bio 1",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          },
+          "Thursday": {
             "label": "Qur'an - Alim Abdulwahab",
             "subject": "Qur'an",
+            "teacher_id": "tchr_abdulwahab",
             "teacher": "Alim Abdulwahab",
-            "extra": ""
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
           },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
+          "Monday": {
+            "label": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher_id": "tchr_nadzra",
             "teacher": "Teacher Nadzra",
-            "extra": ""
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "MAPEH - Sir Moh",
-            "subject": "MAPEH",
-            "teacher": "Sir Moh",
-            "extra": ""
+            "label": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
           }
         }
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "04:30 PM \u2013 05:10 PM",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Rowena",
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
+            "label": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Arabic - Ustadh Ali",
-            "subject": "Arabic",
-            "teacher": "Ustadh Ali",
-            "extra": ""
+            "label": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Sophia",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Sophia",
-            "extra": ""
+            "label": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Angeleni",
-            "subject": "TLE",
-            "teacher": "Tchr. Angeleni",
-            "extra": ""
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Rowena",
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
+            "label": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
           }
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
+        "period_num": 7,
+        "time": "03:00 \u2013 03:10 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "BREAK",
+        "subject": "BREAK",
+        "teacher_id": null,
+        "teacher": "BREAK",
+        "is_break": true
       },
       {
-        "time": "05:20 PM \u2013 06:00 PM",
+        "period_num": 8,
+        "time": "03:00 \u2013 03:40 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jhelyn",
-            "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
+            "label": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jhelyn",
-            "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
+            "label": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "ESP - Tchr. Nof",
-            "subject": "ESP",
-            "teacher": "Teacher Nof",
-            "extra": ""
+            "label": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Norhaima",
-            "subject": "English",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
+            "label": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "English - Tchr. Norhaima",
-            "subject": "English",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
+            "label": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 9,
+        "time": "03:50 \u2013 04:30 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher_id": null,
+            "teacher": "HOMEROOM",
+            "is_break": true
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": {
+            "label": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
           }
         }
       }
@@ -10832,718 +11160,628 @@ window.OFFICIAL_CLASS_SCHEDULES = [
   },
   {
     "id": "sec_57",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-    "department": "Junior High School",
-    "grade_level": "Grade 10",
-    "shift": "ODL - 1ST SHIFT",
+    "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+    "department": "Senior High School",
+    "grade_level": "Grade 12",
+    "shift": "F2F",
+    "total_periods": 9,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Qur'an - Alim Abdulwahab",
-            "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
+            "label": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Angeleni",
-            "subject": "TLE",
-            "teacher": "Tchr. Angeleni",
-            "extra": ""
+            "label": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
+            "label": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
+          },
+          "Monday": {
             "label": "Arabic - Alim Mamonas",
             "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
             "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF - Alim Bustamante",
-            "subject": "SHAF",
-            "teacher": "Alim Bustamante",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "MAPEH - Sir Moh",
-            "subject": "MAPEH",
-            "teacher": "Sir Moh",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "English - Tchr. Norhaima",
-            "subject": "English",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Sophia",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Sophia",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jhelyn",
-            "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
+            "label": "Qur'an - Alim Dipatuan",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_dipatuan",
+            "teacher": "Alim Dipatuan",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Norhaima",
-            "subject": "English",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jhelyn",
-            "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Rowena",
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "ESP - Tchr. Nof",
-            "subject": "ESP",
+            "label": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit. -Tchr Nof",
+            "teacher_id": "tchr_nof",
             "teacher": "Teacher Nof",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Rowena",
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
+            "label": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit. -Tchr Nof",
+            "teacher_id": "tchr_nof",
+            "teacher": "Teacher Nof",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher_id": "tchr_ethel",
+            "teacher": "Teacher Ethel",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher_id": "tchr_ethel",
+            "teacher": "Teacher Ethel",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:40 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Research Consulatation",
+            "subject": "Research Consulatation",
+            "teacher_id": null,
+            "teacher": "Research Consulatation",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 8,
+        "time": "03:40 \u2013 03:50 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 9,
+        "time": "03:50 \u2013 04:30 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher_id": "tchr_ethel",
+            "teacher": "Teacher Ethel",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit. -Tchr Nof",
+            "teacher_id": "tchr_nof",
+            "teacher": "Teacher Nof",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher_id": null,
+            "teacher": "HOMEROOM",
+            "is_break": true
+          },
+          "Thursday": null
+        }
       }
     ]
   },
   {
     "id": "sec_58",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+    "section_name": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
     "department": "Junior High School",
-    "grade_level": "Grade 10",
-    "shift": "F2F",
+    "grade_level": "Grade 7",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "GENERAL ASSEMBLY",
-        "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "07:40 AM \u2013 08:25 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "HG - Tchr. Nadzra",
-            "subject": "HG",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "08:25 AM \u2013 09:05 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Science - Tchr. Rowena",
-            "subject": "Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Science - Tchr. Rowena",
-            "subject": "Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Rowena",
-            "subject": "Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Science - Tchr. Rowena",
-            "subject": "Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Science - Tchr. Rowena",
-            "subject": "Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "09:05 AM \u2013 09:45 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Angeleni",
-            "subject": "TLE",
-            "teacher": "Tchr. Angeleni",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Qur'an - Alim Abdulwahab",
-            "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Angeleni",
-            "subject": "TLE",
-            "teacher": "Tchr. Angeleni",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Qur'an - Alim Abdulwahab",
-            "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Angeleni",
-            "subject": "TLE",
-            "teacher": "Tchr. Angeleni",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "09:45 AM \u2013 10:00 AM",
-        "minutes": "15 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "RECESS",
-        "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "10:00 AM \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "MAPEH - Sir Moh",
-            "subject": "MAPEH",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "MAPEH - Sir Moh",
-            "subject": "MAPEH",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "MAPEH - Sir Moh",
-            "subject": "MAPEH",
-            "teacher": "Sir Moh",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "10:45:11:30",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "ENGLISH - Tchr. Norhaima",
-            "subject": "ENGLISH",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "ENGLISH - Tchr. Norhaima",
-            "subject": "ENGLISH",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "ENGLISH - Tchr. Norhaima",
-            "subject": "ENGLISH",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "ENGLISH - Tchr. Norhaima",
-            "subject": "ENGLISH",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "ENGLISH - Tchr. Norhaima",
-            "subject": "ENGLISH",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "11:30 AM \u2013 12:40 PM",
-        "minutes": "70 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "LUNCH and SALAH",
-        "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:25 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Sophia",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Aral Math - Sir Moh",
-            "subject": "Aral Math",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Sophia",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Sophia",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Sophia",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Sophia",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:25 PM \u2013 02:10 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "ESP - Tchr. Nof",
-            "subject": "ESP",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "ESP - Tchr. Nof",
-            "subject": "ESP",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "ESP - Tchr. Nof",
-            "subject": "ESP",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic - Alim Mamonas",
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Alim Mamonas",
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:15 PM \u2013 03:00 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "Math - Tchr. Jhelyn",
-        "subject": "Math",
-        "teacher": "Tchr. Jhelyn",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "SALAH & DEPARTURE",
-        "subject": "SALAH & DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "English - Tchr. Jayra",
+            "subject": "English",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Soc.Sci - Tchr. Shi",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "English - Tchr. Jayra",
+            "subject": "English",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Qur'an - Ustadh Jaisam",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "GMRC - Ustadha Silfa",
+            "subject": "GMRC",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Filipino - Tchr. Sophia",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Filipino - Tchr. Sophia",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Sci - Tchr. Aniah",
+            "subject": "Sci",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Sci - Tchr. Aniah",
+            "subject": "Sci",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "TLE - Tchr. Halnaisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "MAPEH - Tchr. Franchette",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_franchette",
+            "teacher": "Teacher Franchette",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Math - Tchr. Ethel",
+            "subject": "Math",
+            "teacher_id": "tchr_ethel",
+            "teacher": "Teacher Ethel",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Math - Tchr. Ethel",
+            "subject": "Math",
+            "teacher_id": "tchr_ethel",
+            "teacher": "Teacher Ethel",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Arabic - Ustadh Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          }
+        }
       }
     ]
   },
   {
     "id": "sec_59",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+    "section_name": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
     "department": "Junior High School",
-    "grade_level": "Grade 10",
+    "grade_level": "Grade 8",
     "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
         "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       },
       {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jhelyn",
-            "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
+            "label": "Sci - Tchr. Radzmia",
+            "subject": "Sci",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Qur'an - Alim Abdulwahab",
-            "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Alim Bustamante",
-            "subject": "SHAF",
-            "teacher": "Alim Bustamante",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Math - Tchr. Jhelyn",
-            "subject": "Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Arabic - Alim Mamonas",
+            "label": "Arabic - Ustadh Ali",
             "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "MAPEH - Sir Moh",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Sci - Tchr. Radzmia",
+            "subject": "Sci",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "MAPEH - Tchr. Franchette",
             "subject": "MAPEH",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "English - Tchr. Norhaima",
-            "subject": "English",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "English - Tchr. Norhaima",
-            "subject": "English",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
+            "teacher_id": "tchr_franchette",
+            "teacher": "Teacher Franchette",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Soc.Sci - Tchr. Sophia",
-            "subject": "Soc.Sci",
-            "teacher": "Teacher Sophia",
-            "extra": ""
+            "label": "Values Ed. - Tchr. Wardah",
+            "subject": "Values Ed.",
+            "teacher_id": "tchr_wardah",
+            "teacher": "Teacher Wardah",
+            "is_break": false
           }
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "05:20 PM \u2013 06:00 PM",
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Filipino - Tchr. Nadzra",
-            "subject": "Filipino",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Rowena",
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
+            "label": "English - Tchr. Jayra",
+            "subject": "English",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "TLE - Tchr. Angeleni",
-            "subject": "TLE",
-            "teacher": "Tchr. Angeleni",
-            "extra": ""
+            "label": "Math - Tchr. Hannah",
+            "subject": "Math",
+            "teacher_id": "tchr_hannah",
+            "teacher": "Teacher Hannah",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Sci - Tchr. Rowena",
-            "subject": "Sci",
-            "teacher": "Teacher Rowena",
-            "extra": ""
+            "label": "English - Tchr. Jayra",
+            "subject": "English",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "ESP - Tchr. Nof",
-            "subject": "ESP",
-            "teacher": "Teacher Nof",
-            "extra": ""
+            "label": "Math - Tchr. Hannah",
+            "subject": "Math",
+            "teacher_id": "tchr_hannah",
+            "teacher": "Teacher Hannah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Qur'an - Ustadh Jaisam",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Filipino - Tchr. Sophia",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Soc.Sci - Tchr. Shi",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "TLE - Tchr. Halnaisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Soc.Sci - Tchr. Shi",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
           }
         }
       }
@@ -11551,245 +11789,182 @@ window.OFFICIAL_CLASS_SCHEDULES = [
   },
   {
     "id": "sec_60",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
-    "department": "Senior High School",
-    "grade_level": "Grade 11",
-    "shift": "ODL - 1ST SHIFT",
+    "section_name": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+    "department": "Junior High School",
+    "grade_level": "Grade 8",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Alim Mamonas",
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
+            "label": "MAPEH - Tchr. Franchette",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_franchette",
+            "teacher": "Teacher Franchette",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Rowena",
-            "subject": "Gen Bio 1",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Rowena",
-            "subject": "Gen Bio 1",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Rowena",
-            "subject": "Gen Bio 1",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Qur'an - Alim Abdulwahab",
-            "subject": "Qur'an",
-            "teacher": "Alim Abdulwahab",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Gen Math - Tchr. Jhelyn",
-            "subject": "Gen Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "EC - Tchr. Nadzra",
-            "subject": "EC",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "EC - Tchr. Nadzra",
-            "subject": "EC",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "PSKP - Tchr. Shi",
-            "subject": "PSKP",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "PSKP - Tchr. Shi",
-            "subject": "PSKP",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "LCS - Tchr. Norhaima",
-            "subject": "LCS",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "LCS - Tchr. Norhaima",
-            "subject": "LCS",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "PSKP - Tchr. Shi",
-            "subject": "PSKP",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
             "label": "SHAF - Alim Samsuddin",
             "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "LCS - Tchr. Norhaima",
-            "subject": "LCS",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:10 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": "BREAK",
-        "subject": "BREAK",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:00 PM \u2013 03:40 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "EC - Tchr. Nadzra",
-            "subject": "EC",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Gen Science - Tchr. Rowena",
-            "subject": "Gen Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Gen Math - Tchr. Jhelyn",
-            "subject": "Gen Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
+            "label": "Qur'an - Ustadh Jaisam",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_jaisam",
+            "teacher": "Ustadh Jaisam",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Gen Science - Tchr. Rowena",
-            "subject": "Gen Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
+            "label": "TLE - Tchr. Halnaisa",
+            "subject": "TLE",
+            "teacher_id": "tchr_halnaisa",
+            "teacher": "Teacher Halnaisa",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Gen Science - Tchr. Rowena",
-            "subject": "Gen Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
+            "label": "Filipino - Tchr. Sophia",
+            "subject": "Filipino",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:50 PM \u2013 04:30 PM",
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": true,
-            "label": "HOMEROOM",
-            "subject": "HOMEROOM",
-            "teacher": "",
-            "extra": ""
+            "label": "Sci - Tchr. Radzmia",
+            "subject": "Sci",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
+          "Monday": {
+            "label": "Math - Tchr. Hannah",
+            "subject": "Math",
+            "teacher_id": "tchr_hannah",
+            "teacher": "Teacher Hannah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Arabic - Ustadh Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Math - Tchr. Hannah",
+            "subject": "Math",
+            "teacher_id": "tchr_hannah",
+            "teacher": "Teacher Hannah",
+            "is_break": false
+          },
           "Thursday": {
-            "is_break": false,
-            "label": "Gen Math - Tchr. Jhelyn",
-            "subject": "Gen Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
+            "label": "Sci - Tchr. Radzmia",
+            "subject": "Sci",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "English - Tchr. Jayra",
+            "subject": "English",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Soc.Sci - Tchr. Shi",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "English - Tchr. Jayra",
+            "subject": "English",
+            "teacher_id": "tchr_jairah",
+            "teacher": "Teacher Jairah",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Soc.Sci - Tchr. Shi",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Values Ed. - Tchr. Wardah",
+            "subject": "Values Ed.",
+            "teacher_id": "tchr_wardah",
+            "teacher": "Teacher Wardah",
+            "is_break": false
           }
         }
       }
@@ -11797,624 +11972,365 @@ window.OFFICIAL_CLASS_SCHEDULES = [
   },
   {
     "id": "sec_61",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 11 (FACE TO FACE)",
-    "department": "Senior High School",
-    "grade_level": "Grade 11",
-    "shift": "F2F",
+    "section_name": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+    "department": "Junior High School",
+    "grade_level": "Grade 9",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "GENERAL ASSEMBLY",
-        "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "07:40 AM \u2013 08:25 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Gen Science - Tchr. Rowena",
-            "subject": "Gen Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Gen Science - Tchr. Rowena",
-            "subject": "Gen Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Gen Science - Tchr. Rowena",
-            "subject": "Gen Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Gen Science - Tchr. Rowena",
-            "subject": "Gen Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Gen Science - Tchr. Rowena",
-            "subject": "Gen Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "08:25 AM \u2013 09:05 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "LCS - Tchr. Norhaima",
-            "subject": "LCS",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "LCS - Tchr. Norhaima",
-            "subject": "LCS",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "LCS - Tchr. Norhaima",
-            "subject": "LCS",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "LCS - Tchr. Norhaima",
-            "subject": "LCS",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "LCS - Tchr. Norhaima",
-            "subject": "LCS",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "09:05 AM \u2013 09:45 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Gen Math - Tchr. Jhelyn",
-            "subject": "Gen Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Gen Math - Tchr. Jhelyn",
-            "subject": "Gen Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Gen Math - Tchr. Jhelyn",
-            "subject": "Gen Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Gen Math - Tchr. Jhelyn",
-            "subject": "Gen Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Gen Math/HR - Tchr. Jhelyn",
-            "subject": "Gen Math/HR",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "09:45 AM \u2013 10:00 AM",
-        "minutes": "15 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "RECESS",
-        "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "10:00 AM \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "PSKP - Tchr. Shi",
-            "subject": "PSKP",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "PSKP - Tchr. Shi",
-            "subject": "PSKP",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "PSKP - Tchr. Shi",
-            "subject": "PSKP",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "PSKP - Tchr. Shi",
-            "subject": "PSKP",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "PSKP - Tchr. Shi",
-            "subject": "PSKP",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "10:45:11:30",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Alim Mamonas",
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic - Alim Mamonas",
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": true,
-            "label": "HOMEROOM",
-            "subject": "HOMEROOM",
-            "teacher": "",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "11:30 AM \u2013 12:40 PM",
-        "minutes": "70 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "LUNCH and SALAH",
-        "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:25 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "EC - Tchr. Nadzra",
-            "subject": "EC",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "EC - Tchr. Nadzra",
-            "subject": "EC",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "EC - Tchr. Nadzra",
-            "subject": "EC",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "EC - Tchr. Nadzra",
-            "subject": "EC",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "EC - Tchr. Nadzra",
-            "subject": "EC",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:25 PM \u2013 02:10 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:15 PM \u2013 03:00 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Qur'an - Alim Dipatuan",
-            "subject": "Qur'an",
-            "teacher": "Alim Dipatuan",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": true,
-            "label": "HOMEROOM",
-            "subject": "HOMEROOM",
-            "teacher": "",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": true,
-            "label": "HOMEROOM",
-            "subject": "HOMEROOM",
-            "teacher": "",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Qur'an - Alim Dipatuan",
-            "subject": "Qur'an",
-            "teacher": "Alim Dipatuan",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "SALAH & DEPARTURE",
-        "subject": "SALAH & DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Arabic - Ustadh Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Sci - Tchr. Rowena",
+            "subject": "Sci",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Sci - Tchr. Rowena",
+            "subject": "Sci",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Qur'an - Alim Abdulwahab",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_abdulwahab",
+            "teacher": "Alim Abdulwahab",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "English - Tchr. Norhaima",
+            "subject": "English",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Math - Tchr. Jhelyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "English - Tchr. Norhaima",
+            "subject": "English",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Math - Tchr. Jhelyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "ESP - Tchr. Nof",
+            "subject": "ESP",
+            "teacher_id": "tchr_nof",
+            "teacher": "Teacher Nof",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "TLE - Tchr. Angeleni",
+            "subject": "TLE",
+            "teacher_id": "tchr_angeleni",
+            "teacher": "Teacher Angeleni",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Filipino - Tchr. Nadzra",
+            "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "MAPEH - Tchr. Angeleni",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_angeleni",
+            "teacher": "Teacher Angeleni",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Filipino - Tchr. Nadzra",
+            "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Soc.Sci - Tchr. Sophia",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
+          }
+        }
       }
     ]
   },
   {
     "id": "sec_62",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 11 (2ND SHIFT BOYS)",
-    "department": "Senior High School",
-    "grade_level": "Grade 11",
+    "section_name": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+    "department": "Junior High School",
+    "grade_level": "Grade 9",
     "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Arabic - Alim Mamonas",
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "LCS - Tchr. Norhaima",
-            "subject": "LCS",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "LCS 11 2nd shift",
-            "subject": "LCS 11 2nd shift",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": true,
-            "label": "HOMEROOM",
-            "subject": "HOMEROOM",
-            "teacher": "",
-            "extra": ""
-          },
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": {
-            "is_break": false,
-            "label": "EC - Tchr. Nadzra",
-            "subject": "EC",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          }
-        }
+        "is_merged_all_days": true,
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
       },
       {
-        "time": "03:30 PM \u2013 03:40 PM",
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "03:40 PM \u2013 04:20 PM",
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "PSKP 11 - Tchr. Shirehan",
-            "subject": "PSKP 11",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Gen Math - Tchr. Jhelyn",
-            "subject": "Gen Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
+            "label": "Filipino - Tchr. Nadzra",
+            "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "EC - Tchr. Nadzra",
-            "subject": "EC",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
             "label": "Qur'an - Alim Abdulwahab",
             "subject": "Qur'an",
+            "teacher_id": "tchr_abdulwahab",
             "teacher": "Alim Abdulwahab",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Gen Science - Tchr. Rowena",
-            "subject": "Gen Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "EC - Tchr. Nadzra",
-            "subject": "EC",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Gen Science - Tchr. Rowena",
-            "subject": "Gen Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "PSKP 11 - Tchr. Shirehan",
-            "subject": "PSKP 11",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
+            "label": "Filipino - Tchr. Nadzra",
+            "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "PSKP 11 - Tchr. Shirehan",
-            "subject": "PSKP 11",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
+            "label": "MAPEH - Sir Moh",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           }
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "05:20 PM \u2013 06:00 PM",
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Gen Science - Tchr. Rowena",
-            "subject": "Gen Science",
+            "label": "Sci - Tchr. Rowena",
+            "subject": "Sci",
+            "teacher_id": "tchr_rowena",
             "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "LCS - Tchr. Norhaima",
-            "subject": "LCS",
-            "teacher": "Tchr. Norhaima",
-            "extra": ""
+            "label": "Arabic - Ustadh Ali",
+            "subject": "Arabic",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Gen Math - Tchr. Jhelyn",
-            "subject": "Gen Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
+            "label": "Soc.Sci - Tchr. Sophia",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
           },
-          "Wednesday": null,
+          "Wednesday": {
+            "label": "TLE - Tchr. Angeleni",
+            "subject": "TLE",
+            "teacher_id": "tchr_angeleni",
+            "teacher": "Teacher Angeleni",
+            "is_break": false
+          },
           "Thursday": {
-            "is_break": false,
-            "label": "Gen Math - Tchr. Jhelyn",
-            "subject": "Gen Math",
-            "teacher": "Tchr. Jhelyn",
-            "extra": ""
+            "label": "Sci - Tchr. Rowena",
+            "subject": "Sci",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Math - Tchr. Jhelyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Math - Tchr. Jhelyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "ESP - Tchr. Nof",
+            "subject": "ESP",
+            "teacher_id": "tchr_nof",
+            "teacher": "Teacher Nof",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "English - Tchr. Norhaima",
+            "subject": "English",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "English - Tchr. Norhaima",
+            "subject": "English",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
           }
         }
       }
@@ -12422,1589 +12338,777 @@ window.OFFICIAL_CLASS_SCHEDULES = [
   },
   {
     "id": "sec_63",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
-    "department": "Senior High School",
-    "grade_level": "Grade 12",
-    "shift": "F2F",
+    "section_name": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+    "department": "Junior High School",
+    "grade_level": "Grade 10",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "subject": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "teacher_id": null,
+        "teacher": "HOMEROOM GUIDANCE/ARAL PROGRAM",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Gen. Physics 1 - Tchr. Aniah",
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
+            "label": "Math - Tchr. Jhelyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
+            "label": "Qur'an - Alim Abdulwahab",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_abdulwahab",
+            "teacher": "Alim Abdulwahab",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
+            "label": "SHAF - Alim Bustamante",
+            "subject": "SHAF",
+            "teacher_id": "tchr_bustamante",
+            "teacher": "Alim Bustamante",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
+            "label": "Math - Tchr. Jhelyn",
+            "subject": "Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "Gen. Physics 1 - Tchr. Aniah",
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
             "label": "Arabic - Alim Mamonas",
             "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
             "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Alim Dipatuan",
-            "subject": "Qur'an",
-            "teacher": "Alim Dipatuan",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "21st Lit. -Tchr Nof",
-            "subject": "21st Lit.",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "21st Lit. -Tchr Nof",
-            "subject": "21st Lit.",
-            "teacher": "Teacher Nof",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "02:10 PM \u2013 02:20 PM",
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "02:20 PM \u2013 03:00 PM",
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
+            "label": "MAPEH - Sir Moh",
+            "subject": "MAPEH",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "MIL - Tchr. Ethel",
-            "subject": "MIL",
-            "teacher": "Teacher Ethel",
-            "extra": ""
+            "label": "English - Tchr. Norhaima",
+            "subject": "English",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
+            "label": "Filipino - Tchr. Nadzra",
+            "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Gen. Physics 1 - Tchr. Aniah",
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
+            "label": "English - Tchr. Norhaima",
+            "subject": "English",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "MIL - Tchr. Ethel",
-            "subject": "MIL",
-            "teacher": "Teacher Ethel",
-            "extra": ""
+            "label": "Soc.Sci - Tchr. Sophia",
+            "subject": "Soc.Sci",
+            "teacher_id": "tchr_sophia",
+            "teacher": "Teacher Sophia",
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:40 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Research Consulatation",
-            "subject": "Research Consulatation",
-            "teacher": "",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "PE 12 - Sir Moh",
-            "subject": "PE 12",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "PE 12 - Sir Moh",
-            "subject": "PE 12",
-            "teacher": "Sir Moh",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:40 PM \u2013 03:50 PM",
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "03:50 PM \u2013 04:30 PM",
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "MIL - Tchr. Ethel",
-            "subject": "MIL",
-            "teacher": "Teacher Ethel",
-            "extra": ""
+            "label": "Filipino - Tchr. Nadzra",
+            "subject": "Filipino",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
+            "label": "Sci - Tchr. Rowena",
+            "subject": "Sci",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "21st Lit. -Tchr Nof",
-            "subject": "21st Lit.",
-            "teacher": "Teacher Nof",
-            "extra": ""
+            "label": "TLE - Tchr. Angeleni",
+            "subject": "TLE",
+            "teacher_id": "tchr_angeleni",
+            "teacher": "Teacher Angeleni",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": true,
-            "label": "HOMEROOM",
-            "subject": "HOMEROOM",
-            "teacher": "",
-            "extra": ""
+            "label": "Sci - Tchr. Rowena",
+            "subject": "Sci",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
           },
-          "Thursday": null
+          "Thursday": {
+            "label": "ESP - Tchr. Nof",
+            "subject": "ESP",
+            "teacher_id": "tchr_nof",
+            "teacher": "Teacher Nof",
+            "is_break": false
+          }
         }
       }
     ]
   },
   {
     "id": "sec_64",
-    "sheet": "HS SCHED (NEW)",
-    "section_name": "GRADE 12 - SUHAYB AR-RUMI",
-    "department": "Senior High School",
-    "grade_level": "Grade 12",
-    "shift": "F2F",
-    "periods": [
-      {
-        "time": "07:30 AM \u2013 07:40 AM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "GENERAL ASSEMBLY",
-        "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "07:40 AM \u2013 08:25 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "08:25 AM \u2013 09:05 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Arabic - Alim Mamonas",
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic - Alim Mamonas",
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "09:05 AM \u2013 09:45 AM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "MIL - Tchr. Ethel",
-            "subject": "MIL",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "MIL - Tchr. Ethel",
-            "subject": "MIL",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "MIL - Tchr. Ethel",
-            "subject": "MIL",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "MIL - Tchr. Ethel",
-            "subject": "MIL",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "MIL - Tchr. Ethel",
-            "subject": "MIL",
-            "teacher": "Teacher Ethel",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "09:45 AM \u2013 10:00 AM",
-        "minutes": "15 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "RECESS",
-        "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "10:00 AM \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Gen. Physics 1 - Tchr. Aniah",
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Gen. Physics 1 - Tchr. Aniah",
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Gen. Physics 1 - Tchr. Aniah",
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Gen. Physics 1 - Tchr. Aniah",
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Gen. Physics 1 - Tchr. Aniah",
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "10:45:11:30",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "21st Lit. -Tchr Nof",
-            "subject": "21st Lit.",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "21st Lit. -Tchr Nof",
-            "subject": "21st Lit.",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "21st Lit. -Tchr Nof",
-            "subject": "21st Lit.",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "21st Lit. -Tchr Nof",
-            "subject": "21st Lit.",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "21st Lit. -Tchr Nof",
-            "subject": "21st Lit.",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "11:30 AM \u2013 12:40 PM",
-        "minutes": "70 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "LUNCH and SALAH",
-        "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:25 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "PE 12 - Sir Moh",
-            "subject": "PE 12",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Research Consultation",
-            "subject": "Research Consultation",
-            "teacher": "",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "PE 12 - Sir Moh",
-            "subject": "PE 12",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "PE 12 - Sir Moh",
-            "subject": "PE 12",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": true,
-            "label": "HOMEROOM",
-            "subject": "HOMEROOM",
-            "teacher": "",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:25 PM \u2013 02:10 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:15 PM \u2013 03:00 PM",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Research Consultation",
-            "subject": "Research Consultation",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Gen Bio 1 - Tchr. Radzmia",
-            "subject": "Gen Bio 1",
-            "teacher": "Tchr. Radzmia",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Qur'an - Alim Dipatuan",
-            "subject": "Qur'an",
-            "teacher": "Alim Dipatuan",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Qur'an - Alim Dipatuan",
-            "subject": "Qur'an",
-            "teacher": "Alim Dipatuan",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Gen. Physics 1 - Tchr. Aniah",
-            "subject": "Gen. Physics 1",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "SALAH & DEPARTURE",
-        "subject": "SALAH & DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      }
-    ]
-  },
-  {
-    "id": "sec_85",
-    "sheet": "HS SCHED",
-    "section_name": "GRADE 11 (1ST SHIFT) GIRLS",
-    "department": "Senior High School",
-    "grade_level": "Grade 11",
-    "shift": "ODL - 1ST SHIFT",
-    "periods": [
-      {
-        "time": "12:30 PM \u2013 12:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "SHAF 11 - Alim Samsuddin",
-            "subject": "SHAF 11",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Qur'an 11 - Alim Dipatuan",
-            "subject": "Qur'an 11",
-            "teacher": "Alim Dipatuan",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "PHILO - Tchr Thea",
-            "subject": "PHILO",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic 11 - Alim Mamonas",
-            "subject": "Arabic 11",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "General Chemistry 1 Tr Aniah",
-            "subject": "General Chemistry 1 Tr Aniah",
-            "teacher": "",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "General Mathematics 11 ODL",
-            "subject": "General Mathematics 11 ODL",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "KomPan - Tchr. Thea",
-            "subject": "KomPan",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "General Mathematics 11 ODL",
-            "subject": "General Mathematics 11 ODL",
-            "teacher": "",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "KomPan - Tchr. Thea",
-            "subject": "KomPan",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Thursday": null
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Earth Science - Tchr. Rowena",
-            "subject": "Earth Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "General Chemistry 1 Tr Aniah",
-            "subject": "General Chemistry 1 Tr Aniah",
-            "teacher": "",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Pre Calculus",
-            "subject": "Pre Calculus",
-            "teacher": "",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Earth Science - Tchr. Rowena",
-            "subject": "Earth Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Pre Calculus",
-            "subject": "Pre Calculus",
-            "teacher": "",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:40 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "E-Tech - Sir Moh",
-            "subject": "E-Tech",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Monday": null,
-          "Tuesday": {
-            "is_break": false,
-            "label": "Oral Com - Tchr. Nadzra",
-            "subject": "Oral Com",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "E-Tech - Sir Moh",
-            "subject": "E-Tech",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "PE 11 - Sir Moh",
-            "subject": "PE 11",
-            "teacher": "Sir Moh",
-            "extra": ""
-          }
-        }
-      }
-    ]
-  },
-  {
-    "id": "sec_86",
-    "sheet": "HS SCHED",
-    "section_name": "GRADE 11 (2ND SHIFT) BOYS",
+    "section_name": "GRADE 11 (2ND SHIFT BOYS)",
     "department": "Senior High School",
     "grade_level": "Grade 11",
     "shift": "ODL - 2ND SHIFT",
+    "total_periods": 8,
     "periods": [
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 1,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 2,
+        "time": "03:00 \u2013 03:30 p.m.",
         "minutes": "30 min.",
         "is_merged_all_days": false,
         "days": {
-          "Sunday": null,
-          "Monday": {
-            "is_break": false,
-            "label": "KomPan - Tchr. Thea",
-            "subject": "KomPan",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "PE 11 - Sir Moh",
-            "subject": "PE 11",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "KomPan - Tchr. Thea",
-            "subject": "KomPan",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Oral Com - Tchr. Nadzra",
-            "subject": "Oral Com",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:40 PM \u2013 04:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Alim Mamonas",
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
+            "label": "LCS 11 2nd shift",
+            "subject": "LCS 11 2nd shift",
+            "teacher_id": null,
+            "teacher": "LCS 11 2nd shift",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "Qur'an 11 - Alim Dipatuan",
-            "subject": "Qur'an 11",
-            "teacher": "Alim Dipatuan",
-            "extra": ""
+            "label": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher_id": null,
+            "teacher": "HOMEROOM",
+            "is_break": true
           },
           "Tuesday": null,
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF 11 - Alim Samsuddin",
-            "subject": "SHAF 11",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
+          "Wednesday": null,
           "Thursday": {
-            "is_break": false,
-            "label": "Pre Calculus - Sir Ahmad",
-            "subject": "Pre Calculus",
-            "teacher": "Teacher Ahmad",
-            "extra": ""
+            "label": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
           }
         }
       },
       {
-        "time": "04:20 PM \u2013 04:30 PM",
+        "period_num": 3,
+        "time": "03:30 \u2013 03:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "04:30 PM \u2013 05:10 PM",
+        "period_num": 4,
+        "time": "03:40 \u2013 04:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "Earth Science - Tchr. Rowena",
-            "subject": "Earth Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
+            "label": "PSKP 11 - Tchr. Shirehan",
+            "subject": "PSKP 11",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "PHILO - Tchr Thea",
-            "subject": "PHILO",
-            "teacher": "Teacher Thea",
-            "extra": ""
+            "label": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "Pre Calculus - Sir Ahmad",
-            "subject": "Pre Calculus",
-            "teacher": "Teacher Ahmad",
-            "extra": ""
+            "label": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "Earth Science - Tchr. Rowena",
-            "subject": "Earth Science",
-            "teacher": "Teacher Rowena",
-            "extra": ""
+            "label": "Qur'an - Alim Abdulwahab",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_abdulwahab",
+            "teacher": "Alim Abdulwahab",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "General Mathematics 11 ODL",
-            "subject": "General Mathematics 11 ODL",
-            "teacher": "",
-            "extra": ""
+            "label": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
           }
         }
       },
       {
-        "time": "05:10 PM \u2013 05:20 PM",
+        "period_num": 5,
+        "time": "04:20 \u2013 04:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "05:20 PM \u2013 06:00 PM",
+        "period_num": 6,
+        "time": "04:30 \u2013 05:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "General Mathematics 11 ODL",
-            "subject": "General Mathematics 11 ODL",
-            "teacher": "",
-            "extra": ""
+            "label": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "General Chemistry 1 Tr Aniah",
-            "subject": "General Chemistry 1 Tr Aniah",
-            "teacher": "",
-            "extra": ""
+            "label": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher_id": "tchr_radzmia",
+            "teacher": "Teacher Radzmia",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
-            "label": "E-Tech - Sir Moh",
-            "subject": "E-Tech",
-            "teacher": "Sir Moh",
-            "extra": ""
+            "label": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
-            "label": "E-Tech - Sir Moh",
-            "subject": "E-Tech",
-            "teacher": "Sir Moh",
-            "extra": ""
+            "label": "PSKP 11 - Tchr. Shirehan",
+            "subject": "PSKP 11",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
-            "label": "General Chemistry 1 Tr Aniah",
-            "subject": "General Chemistry 1 Tr Aniah",
-            "teacher": "",
-            "extra": ""
+            "label": "PSKP 11 - Tchr. Shirehan",
+            "subject": "PSKP 11",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 8,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher_id": "tchr_norhaima",
+            "teacher": "Teacher Norhaima",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
+          },
+          "Wednesday": null,
+          "Thursday": {
+            "label": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher_id": "tchr_jhelyn",
+            "teacher": "Teacher Jhelyn",
+            "is_break": false
           }
         }
       }
     ]
   },
   {
-    "id": "sec_87",
-    "sheet": "HS SCHED",
+    "id": "sec_65",
     "section_name": "GRADE 12 (FACE TO FACE)",
     "department": "Senior High School",
     "grade_level": "Grade 12",
     "shift": "F2F",
+    "total_periods": 13,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "GENERAL ASSEMBLY",
         "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "07:40 AM \u2013 08:25 AM",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": true,
-        "is_break": false,
         "label": "GeneraL Physics 12",
         "subject": "GeneraL Physics 12",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "GeneraL Physics 12",
+        "is_break": false
       },
       {
-        "time": "08:25 AM \u2013 09:05 AM",
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Biology 12 - Tchr. Rowena",
             "subject": "Biology 12",
+            "teacher_id": "tchr_rowena",
             "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Biology 12 - Tchr. Rowena",
             "subject": "Biology 12",
+            "teacher_id": "tchr_rowena",
             "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Biology 12 - Tchr. Rowena",
             "subject": "Biology 12",
+            "teacher_id": "tchr_rowena",
             "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Biology 12 - Tchr. Rowena",
             "subject": "Biology 12",
+            "teacher_id": "tchr_rowena",
             "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "SHAF - Alim Samsuddin",
             "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "09:05 AM \u2013 09:45 AM",
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Practical Research 2 F2F",
             "subject": "Practical Research 2 F2F",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Practical Research 2 F2F",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Consultation Time (Research) F2F",
             "subject": "Consultation Time (Research) F2F",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Consultation Time (Research) F2F",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Practical Research 2 F2F",
             "subject": "Practical Research 2 F2F",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Practical Research 2 F2F",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Consultation Time (Research) F2F",
             "subject": "Consultation Time (Research) F2F",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Consultation Time (Research) F2F",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Practical Research 2 F2F",
             "subject": "Practical Research 2 F2F",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Practical Research 2 F2F",
+            "is_break": false
           }
         }
       },
       {
-        "time": "09:45 AM \u2013 10:00 AM",
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
         "minutes": "15 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "RECESS",
         "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
       },
       {
-        "time": "10:00 AM \u2013 10:45 AM",
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "UCSP - Tchr. Shirehan",
             "subject": "UCSP",
+            "teacher_id": "tchr_shirehan",
             "teacher": "Teacher Shirehan",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Arabic - Alim Mamonas",
             "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
             "teacher": "Alim Mamonas",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "UCSP - Tchr. Shirehan",
             "subject": "UCSP",
+            "teacher_id": "tchr_shirehan",
             "teacher": "Teacher Shirehan",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Arabic - Alim Mamonas",
             "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
             "teacher": "Alim Mamonas",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "UCSP - Tchr. Shirehan",
             "subject": "UCSP",
+            "teacher_id": "tchr_shirehan",
             "teacher": "Teacher Shirehan",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "10:45:11:30",
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "MIL 12 - Tchr. Thea",
             "subject": "MIL 12",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "MIL 12 - Tchr. Thea",
             "subject": "MIL 12",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Qur'an - Alim Dipatuan",
             "subject": "Qur'an",
+            "teacher_id": "tchr_dipatuan",
             "teacher": "Alim Dipatuan",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Qur'an - Alim Dipatuan",
             "subject": "Qur'an",
+            "teacher_id": "tchr_dipatuan",
             "teacher": "Alim Dipatuan",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "MIL 12 - Tchr. Thea",
             "subject": "MIL 12",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "11:30 AM \u2013 12:40 PM",
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
         "minutes": "70 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "LUNCH and SALAH",
         "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:25 PM",
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "21st Literature - Tr Nof",
             "subject": "21st Literature",
+            "teacher_id": "tchr_nof",
             "teacher": "Teacher Nof",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "PE 12",
             "subject": "PE 12",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "PE 12",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "21st Literature - Tr Nof",
             "subject": "21st Literature",
+            "teacher_id": "tchr_nof",
             "teacher": "Teacher Nof",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "PE 12",
             "subject": "PE 12",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "PE 12",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "21st Literature - Tr Nof",
             "subject": "21st Literature",
+            "teacher_id": "tchr_nof",
             "teacher": "Teacher Nof",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "01:25 PM \u2013 02:10 PM",
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Consultation Time (Research) F2F",
             "subject": "Consultation Time (Research) F2F",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Consultation Time (Research) F2F",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Consultation Time (Research) F2F",
             "subject": "Consultation Time (Research) F2F",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Consultation Time (Research) F2F",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Consultation Time (Research) F2F",
             "subject": "Consultation Time (Research) F2F",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Consultation Time (Research) F2F",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "SHAF - Alim Samsuddin",
             "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Consultation Time (Research) F2F",
             "subject": "Consultation Time (Research) F2F",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Consultation Time (Research) F2F",
+            "is_break": false
           }
         }
       },
       {
-        "time": "02:15 PM \u2013 03:00 PM",
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": null,
           "Monday": {
-            "is_break": false,
             "label": "PFPL- Tr. Thea",
-            "subject": "PFPL",
+            "subject": "PFPL- Tr. Thea",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": null,
           "Wednesday": {
-            "is_break": false,
             "label": "PFPL- Tr. Thea",
-            "subject": "PFPL",
+            "subject": "PFPL- Tr. Thea",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": null
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "SALAH & DEPARTURE",
         "subject": "SALAH & DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      }
-    ]
-  },
-  {
-    "id": "sec_88",
-    "sheet": "HS SCHED",
-    "section_name": "GRADE 12 ABU MUSA AL- ASHARI (GIRLS) - 1ST SHIFT",
-    "department": "Senior High School",
-    "grade_level": "Grade 12",
-    "shift": "ODL - 1ST SHIFT",
-    "periods": [
-      {
-        "time": "12:30 PM \u2013 12:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "SALAH & DEPARTURE",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Biology 12 - Tchr. Rowena",
-            "subject": "Biology 12",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Monday": null,
-          "Tuesday": {
-            "is_break": false,
-            "label": "UCSP 12 - Tchr Shirehan",
-            "subject": "UCSP 12",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "21st Literature - Tr Nof",
-            "subject": "21st Literature",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Thursday": null
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Practical Research 2 ODL",
-            "subject": "Practical Research 2 ODL",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF 12 - Ust. Silfah",
-            "subject": "SHAF 12",
-            "teacher": "Ustadha Silfah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "MIL 12 - Tchr. Thea",
-            "subject": "MIL 12",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "General Physics 12 ODL",
-            "subject": "General Physics 12 ODL",
-            "teacher": "",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "General Physics 12 ODL",
-            "subject": "General Physics 12 ODL",
-            "teacher": "",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Consultation Time (Research)",
-            "subject": "Consultation Time (Research)",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Qur'an - Alim Dipatuan",
-            "subject": "Qur'an",
-            "teacher": "Alim Dipatuan",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Biology 12 - Tchr. Rowena",
-            "subject": "Biology 12",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic 12 - Alim Mamonas",
-            "subject": "Arabic 12",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Consultation Time (Research)",
-            "subject": "Consultation Time (Research)",
-            "teacher": "",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:40 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "PFPL 12 - Tchr. Thea",
-            "subject": "PFPL 12",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "PE 12 - Sir Moh",
-            "subject": "PE 12",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": {
-            "is_break": false,
-            "label": "PFPL 12 - Tchr. Thea",
-            "subject": "PFPL 12",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          }
-        }
-      }
-    ]
-  },
-  {
-    "id": "sec_89",
-    "sheet": "HS SCHED",
-    "section_name": "GRADE 12 SUHAYB AR-RUMI (BOYS) - 2ND SHIFT",
-    "department": "Senior High School",
-    "grade_level": "Grade 12",
-    "shift": "ODL - 2ND SHIFT",
-    "periods": [
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
+        "period_num": 13,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": null,
@@ -14013,1465 +13117,2111 @@ window.OFFICIAL_CLASS_SCHEDULES = [
           "Wednesday": null,
           "Thursday": null
         }
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:40 PM \u2013 04:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Qur'an - Alim Dipatuan",
-            "subject": "Qur'an",
-            "teacher": "Alim Dipatuan",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "SHAF - Alim Samsuddin",
-            "subject": "SHAF",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "MIL 12 - Tchr. Thea",
-            "subject": "MIL 12",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "General Physics 12 ODL",
-            "subject": "General Physics 12 ODL",
-            "teacher": "",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "General Physics 12 ODL",
-            "subject": "General Physics 12 ODL",
-            "teacher": "",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Practical Research 2 ODL",
-            "subject": "Practical Research 2 ODL",
-            "teacher": "",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "PE 12 - Sir Moh",
-            "subject": "PE 12",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Tuesday": null,
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic 12 - Alim Mamonas",
-            "subject": "Arabic 12",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Biology 12 - Tchr. Rowena",
-            "subject": "Biology 12",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "PFPL 12 - Tchr. Thea",
-            "subject": "PFPL 12",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "21st Literature - Tr Nof",
-            "subject": "21st Literature",
-            "teacher": "Teacher Nof",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "UCSP 12 - Tchr Shirehan",
-            "subject": "UCSP 12",
-            "teacher": "Teacher Shirehan",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Biology 12 - Tchr. Rowena",
-            "subject": "Biology 12",
-            "teacher": "Teacher Rowena",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "PFPL 12 - Tchr. Thea",
-            "subject": "PFPL 12",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          }
-        }
       }
     ]
   },
   {
-    "id": "sec_90",
-    "sheet": "HS SCHED",
+    "id": "sec_66",
     "section_name": "GRADE 11 (FACE TO FACE) - SECOND SEMESTER",
     "department": "Senior High School",
     "grade_level": "Grade 11",
     "shift": "F2F",
+    "total_periods": 12,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "GENERAL ASSEMBLY",
         "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "07:40 AM \u2013 08:25 AM",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": true,
-        "is_break": false,
         "label": "BASIC CALCULUS - TCHR. AHMAD",
         "subject": "BASIC CALCULUS",
-        "teacher": "Teacher Ahmad",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "BASIC CALCULUS - TCHR. AHMAD",
+        "is_break": false
       },
       {
-        "time": "08:25 AM \u2013 09:05 AM",
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "ARABIC 11 - Alim Mamonas",
+            "label": "ARABIC 11  - Alim Mamonas",
             "subject": "ARABIC 11",
+            "teacher_id": "tchr_mamonas",
             "teacher": "Alim Mamonas",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
-            "label": "ARABIC 11 - Alim Mamonas",
+            "label": "ARABIC 11  - Alim Mamonas",
             "subject": "ARABIC 11",
+            "teacher_id": "tchr_mamonas",
             "teacher": "Alim Mamonas",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "PPITTP - Tchr. Thea",
             "subject": "PPITTP",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Qur'an 11 - Alim Dipatuan",
             "subject": "Qur'an 11",
+            "teacher_id": "tchr_dipatuan",
             "teacher": "Alim Dipatuan",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Qur'an 11 - Alim Dipatuan",
             "subject": "Qur'an 11",
+            "teacher_id": "tchr_dipatuan",
             "teacher": "Alim Dipatuan",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "09:05 AM \u2013 09:45 AM",
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
         "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Statistics and Probability - Tchr. Abegail",
-            "subject": "Statistics and Probability",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Statistics and Probability - Tchr. Abegail",
-            "subject": "Statistics and Probability",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Statistics and Probability - Tchr. Abegail",
-            "subject": "Statistics and Probability",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Statistics and Probability - Tchr. Abegail",
-            "subject": "Statistics and Probability",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Statistics and Probability - Tchr. Abegail",
-            "subject": "Statistics and Probability",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          }
-        }
+        "is_merged_all_days": true,
+        "label": "Statistics and Probability  - Tchr. Abegail",
+        "subject": "Statistics and Probability",
+        "teacher_id": "tchr_abegail",
+        "teacher": "Teacher Abegail",
+        "is_break": false
       },
       {
-        "time": "09:45 AM \u2013 10:00 AM",
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
         "minutes": "15 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "RECESS",
         "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
       },
       {
-        "time": "10:00 AM \u2013 10:45 AM",
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
-            "label": "General Chemistry 2 Tchr. Aniah",
-            "subject": "General Chemistry 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
+            "label": "General Chemistry 2 Tchr.  Aniah",
+            "subject": "General Chemistry 2 Tchr.  Aniah",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
           },
           "Monday": null,
           "Tuesday": null,
           "Wednesday": {
-            "is_break": false,
             "label": "PPITTP - Tchr. Thea",
             "subject": "PPITTP",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "PPITTP - Tchr. Thea",
             "subject": "PPITTP",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "10:45:11:30",
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Prac.Res1 - Tchr. Marie",
             "subject": "Prac.Res1",
+            "teacher_id": "tchr_marie",
             "teacher": "Teacher Marie",
-            "extra": ""
+            "is_break": false
           },
           "Monday": null,
           "Tuesday": null,
           "Wednesday": {
-            "is_break": false,
-            "label": "General Chemistry 2 Tchr. Aniah",
-            "subject": "General Chemistry 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
+            "label": "General Chemistry 2 Tchr.  Aniah",
+            "subject": "General Chemistry 2 Tchr.  Aniah",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
           },
           "Thursday": null
         }
       },
       {
-        "time": "11:30 AM \u2013 12:40 PM",
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
         "minutes": "70 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "LUNCH and SALAH",
         "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:25 PM",
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "PerDev - Tchr Thea",
             "subject": "PerDev",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "PerDev - Tchr Thea",
             "subject": "PerDev",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "SHAF 11 - Alim Samsuddin",
             "subject": "SHAF 11",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "SHAF 11 - Alim Samsuddin",
             "subject": "SHAF 11",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "PerDev - Tchr Thea",
             "subject": "PerDev",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "01:25 PM \u2013 02:10 PM",
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "R&W - Tchr. Nadzra",
             "subject": "R&W",
+            "teacher_id": "tchr_nadzra",
             "teacher": "Teacher Nadzra",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "DRRR - Sir Mohaymen",
             "subject": "DRRR",
+            "teacher_id": "tchr_mohaymen",
             "teacher": "Sir Mohaymen",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "R&W - Tchr. Nadzra",
             "subject": "R&W",
+            "teacher_id": "tchr_nadzra",
             "teacher": "Teacher Nadzra",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Consultation",
             "subject": "Consultation",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Consultation",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "R&W - Tchr. Nadzra",
             "subject": "R&W",
+            "teacher_id": "tchr_nadzra",
             "teacher": "Teacher Nadzra",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "02:15 PM \u2013 03:00 PM",
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "PE - Sir Moh",
             "subject": "PE",
-            "teacher": "Sir Moh",
-            "extra": ""
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "R&W - Tchr. Nadzra",
             "subject": "R&W",
+            "teacher_id": "tchr_nadzra",
             "teacher": "Teacher Nadzra",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "PE - Sir Moh",
             "subject": "PE",
-            "teacher": "Sir Moh",
-            "extra": ""
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           },
           "Wednesday": null,
           "Thursday": {
-            "is_break": false,
             "label": "DRRR - Sir Mohaymen",
             "subject": "DRRR",
+            "teacher_id": "tchr_mohaymen",
             "teacher": "Sir Mohaymen",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
         "minutes": "30 min.",
-        "is_merged_all_days": true,
-        "is_break": false,
-        "label": " ",
-        "subject": " ",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      }
-    ]
-  },
-  {
-    "id": "sec_91",
-    "sheet": "HS SCHED",
-    "section_name": "GRADE 11 (1ST SHIFT) GIRLS - SECOND SEMESTER",
-    "department": "Senior High School",
-    "grade_level": "Grade 11",
-    "shift": "ODL - 1ST SHIFT",
-    "periods": [
-      {
-        "time": "12:30 PM \u2013 12:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "SHAF 11 - Ust. Ali",
-            "subject": "SHAF 11",
-            "teacher": "Ustadh Ali",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Qur'an 11 - Alim Dipatuan",
-            "subject": "Qur'an 11",
-            "teacher": "Alim Dipatuan",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "PerDev- Tchr Thea",
-            "subject": "PerDev",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Prac.Res1 - Tchr. Marie",
-            "subject": "Prac.Res1",
-            "teacher": "Teacher Marie",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Prac.Res1 - Tchr. Marie",
-            "subject": "Prac.Res1",
-            "teacher": "Teacher Marie",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Statistics and Probability - Tchr. Abegail",
-            "subject": "Statistics and Probability",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "PPITTP - Tchr. Thea",
-            "subject": "PPITTP",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Statistics and Probability - Tchr. Abegail",
-            "subject": "Statistics and Probability",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "PPITTP - Tchr. Thea",
-            "subject": "PPITTP",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "General Chemistry 2 - Tchr. Aniah",
-            "subject": "General Chemistry 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": null,
-          "Monday": {
-            "is_break": false,
-            "label": "General Chemistry 2 - Tchr. Aniah",
-            "subject": "General Chemistry 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Basic Calculus - Sir Ahmad",
-            "subject": "Basic Calculus",
-            "teacher": "Teacher Ahmad",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Arabic - Alim Mamonas",
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Basic Calculus - Sir Ahmad",
-            "subject": "Basic Calculus",
-            "teacher": "Teacher Ahmad",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:40 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "DRRR - Sir Mohaymen",
-            "subject": "DRRR",
-            "teacher": "Sir Mohaymen",
-            "extra": ""
-          },
           "Monday": null,
-          "Tuesday": {
-            "is_break": false,
-            "label": "R&W - Tchr. Nadzra",
-            "subject": "R&W",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "DRRR - Sir Mohaymen",
-            "subject": "DRRR",
-            "teacher": "Sir Mohaymen",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "PE 11 - Sir Moh",
-            "subject": "PE 11",
-            "teacher": "Sir Moh",
-            "extra": ""
-          }
-        }
-      }
-    ]
-  },
-  {
-    "id": "sec_92",
-    "sheet": "HS SCHED",
-    "section_name": "GRADE 11 (2ND SHIFT) BOYS - SECOND SEMESTER",
-    "department": "Senior High School",
-    "grade_level": "Grade 11",
-    "shift": "ODL - 2ND SHIFT",
-    "periods": [
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": null,
-          "Monday": {
-            "is_break": false,
-            "label": "PPITTP - Tchr. Thea",
-            "subject": "PPITTP",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
           "Tuesday": null,
-          "Wednesday": {
-            "is_break": false,
-            "label": "PPITTP - Tchr. Thea",
-            "subject": "PPITTP",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "R&W - Tchr. Nadzra",
-            "subject": "R&W",
-            "teacher": "Teacher Nadzra",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "General Assembly",
-        "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "03:40 PM \u2013 04:20 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Arabic - Alim Mamonas",
-            "subject": "Arabic",
-            "teacher": "Alim Mamonas",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "Qur'an 11 - Alim Dipatuan",
-            "subject": "Qur'an 11",
-            "teacher": "Alim Dipatuan",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "PE 11 - Sir Moh",
-            "subject": "PE 11",
-            "teacher": "Sir Moh",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "SHAF 11 - Alim Samsuddin",
-            "subject": "SHAF 11",
-            "teacher": "Alim Samsuddin",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "General Chemistry 2 - Tchr. Aniah",
-            "subject": "General Chemistry 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "DRRR - Sir Mohaymen",
-            "subject": "DRRR",
-            "teacher": "Sir Mohaymen",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "PerDev- Tchr Thea",
-            "subject": "PerDev",
-            "teacher": "Teacher Thea",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Basic Calculus - Sir Ahmad",
-            "subject": "Basic Calculus",
-            "teacher": "Teacher Ahmad",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "Prac.Res1 - Tchr. Marie",
-            "subject": "Prac.Res1",
-            "teacher": "Teacher Marie",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Prac.Res1 - Tchr. Marie",
-            "subject": "Prac.Res1",
-            "teacher": "Teacher Marie",
-            "extra": ""
-          }
-        }
-      },
-      {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_merged_all_days": true,
-        "is_break": true,
-        "label": "Transition",
-        "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": {
-            "is_break": false,
-            "label": "Statistics and Probability - Tchr. Abegail",
-            "subject": "Statistics and Probability",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Monday": {
-            "is_break": false,
-            "label": "General Chemistry 2 - Tchr. Aniah",
-            "subject": "General Chemistry 2",
-            "teacher": "Tchr. Aniah",
-            "extra": ""
-          },
-          "Tuesday": {
-            "is_break": false,
-            "label": "Statistics and Probability - Tchr. Abegail",
-            "subject": "Statistics and Probability",
-            "teacher": "Teacher Abegail",
-            "extra": ""
-          },
-          "Wednesday": {
-            "is_break": false,
-            "label": "DRRR - Sir Mohaymen",
-            "subject": "DRRR",
-            "teacher": "Sir Mohaymen",
-            "extra": ""
-          },
-          "Thursday": {
-            "is_break": false,
-            "label": "Basic Calculus - Sir Ahmad",
-            "subject": "Basic Calculus",
-            "teacher": "Teacher Ahmad",
-            "extra": ""
-          }
+          "Wednesday": null,
+          "Thursday": null
         }
       }
     ]
   },
   {
-    "id": "sec_93",
-    "sheet": "HS SCHED",
+    "id": "sec_67",
     "section_name": "GRADE 12 (FACE TO FACE) - SECOND SEMESTER",
     "department": "Senior High School",
     "grade_level": "Grade 12",
     "shift": "F2F",
+    "total_periods": 12,
     "periods": [
       {
-        "time": "07:30 AM \u2013 07:40 AM",
+        "period_num": 1,
+        "time": "07:30 \u2013 07:40 a.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "GENERAL ASSEMBLY",
         "subject": "GENERAL ASSEMBLY",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "GENERAL ASSEMBLY",
+        "is_break": true
       },
       {
-        "time": "07:40 AM \u2013 08:25 AM",
+        "period_num": 2,
+        "time": "07:40 \u2013 08:25 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "EAPP - Tchr. Sophia",
             "subject": "EAPP",
+            "teacher_id": "tchr_sophia",
             "teacher": "Teacher Sophia",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "General Physics 2 - Tchr. Abegail",
             "subject": "General Physics 2",
+            "teacher_id": "tchr_abegail",
             "teacher": "Teacher Abegail",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "EAPP - Tchr. Sophia",
             "subject": "EAPP",
+            "teacher_id": "tchr_sophia",
             "teacher": "Teacher Sophia",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "General Physics 2 - Tchr. Abegail",
             "subject": "General Physics 2",
+            "teacher_id": "tchr_abegail",
             "teacher": "Teacher Abegail",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "EAPP - Tchr. Sophia",
             "subject": "EAPP",
+            "teacher_id": "tchr_sophia",
             "teacher": "Teacher Sophia",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "08:25 AM \u2013 09:05 AM",
+        "period_num": 3,
+        "time": "08:25 \u2013 09:05 a.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Biology 2 - Tchr. Rowena",
             "subject": "Biology 2",
+            "teacher_id": "tchr_rowena",
             "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Biology 2 - Tchr. Rowena",
             "subject": "Biology 2",
+            "teacher_id": "tchr_rowena",
             "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Biology 2 - Tchr. Rowena",
             "subject": "Biology 2",
+            "teacher_id": "tchr_rowena",
             "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Biology 2 - Tchr. Rowena",
             "subject": "Biology 2",
+            "teacher_id": "tchr_rowena",
             "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "SHAF - Alim Samsuddin",
             "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "09:05 AM \u2013 09:45 AM",
+        "period_num": 4,
+        "time": "09:05 \u2013 09:45 a.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Research/Capstone Project - Tchr Thea",
             "subject": "Research/Capstone Project",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Consultation Time (Research) F2F",
             "subject": "Consultation Time (Research) F2F",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Consultation Time (Research) F2F",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Research/Capstone Project - Tchr Thea",
             "subject": "Research/Capstone Project",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Consultation Time (Research) F2F",
             "subject": "Consultation Time (Research) F2F",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Consultation Time (Research) F2F",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Research/Capstone Project - Tchr Thea",
             "subject": "Research/Capstone Project",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "09:45 AM \u2013 10:00 AM",
+        "period_num": 5,
+        "time": "09:45 \u2013 10:00 a.m.",
         "minutes": "15 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "RECESS",
         "subject": "RECESS",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "RECESS",
+        "is_break": true
       },
       {
-        "time": "10:00 AM \u2013 10:45 AM",
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Entrepreneurship - Tchr.",
             "subject": "Entrepreneurship",
-            "teacher": "Tchr.",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Entrepreneurship - Tchr.",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Arabic - Alim Mamonas",
             "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
             "teacher": "Alim Mamonas",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Entrepreneurship - Tchr.",
             "subject": "Entrepreneurship",
-            "teacher": "Tchr.",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Entrepreneurship - Tchr.",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Arabic - Alim Mamonas",
             "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
             "teacher": "Alim Mamonas",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Entrepreneurship - Tchr.",
             "subject": "Entrepreneurship",
-            "teacher": "Tchr.",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Entrepreneurship - Tchr.",
+            "is_break": false
           }
         }
       },
       {
-        "time": "10:45:11:30",
+        "period_num": 7,
+        "time": "10:45:11:30 a.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "General Physics 2 - Tchr. Abegail",
             "subject": "General Physics 2",
+            "teacher_id": "tchr_abegail",
             "teacher": "Teacher Abegail",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Qur'an - Alim Dipatuan",
             "subject": "Qur'an",
+            "teacher_id": "tchr_dipatuan",
             "teacher": "Alim Dipatuan",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "General Physics 2 - Tchr. Abegail",
             "subject": "General Physics 2",
+            "teacher_id": "tchr_abegail",
             "teacher": "Teacher Abegail",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Qur'an - Alim Dipatuan",
             "subject": "Qur'an",
+            "teacher_id": "tchr_dipatuan",
             "teacher": "Alim Dipatuan",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "General Physics 2 - Tchr. Abegail",
             "subject": "General Physics 2",
+            "teacher_id": "tchr_abegail",
             "teacher": "Teacher Abegail",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "11:30 AM \u2013 12:40 PM",
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 p.m.",
         "minutes": "70 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "LUNCH and SALAH",
         "subject": "LUNCH and SALAH",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "LUNCH and SALAH",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:25 PM",
+        "period_num": 9,
+        "time": "12:40 \u2013 01:25 p.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": null,
           "Monday": {
-            "is_break": false,
             "label": "PE - Sir Moh",
             "subject": "PE",
-            "teacher": "Sir Moh",
-            "extra": ""
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           },
           "Tuesday": null,
           "Wednesday": {
-            "is_break": false,
             "label": "PE - Sir Moh",
             "subject": "PE",
-            "teacher": "Sir Moh",
-            "extra": ""
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "CPAR - Tr Nof",
             "subject": "CPAR",
+            "teacher_id": "tchr_nof",
             "teacher": "Teacher Nof",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "01:25 PM \u2013 02:10 PM",
+        "period_num": 10,
+        "time": "01:25 \u2013 02:10 p.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Consultation Time (Research) F2F",
             "subject": "Consultation Time (Research) F2F",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Consultation Time (Research) F2F",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Consultation Time (Research) F2F",
             "subject": "Consultation Time (Research) F2F",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Consultation Time (Research) F2F",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "SHAF - Alim Samsuddin",
             "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "SHAF - Alim Samsuddin",
             "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
             "teacher": "Alim Samsuddin",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "3I's - Tchr. Thea",
             "subject": "3I's",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "02:15 PM \u2013 03:00 PM",
+        "period_num": 11,
+        "time": "02:15 \u2013 03:00 p.m.",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "CPAR - Tr Nof",
             "subject": "CPAR",
+            "teacher_id": "tchr_nof",
             "teacher": "Teacher Nof",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "3I's - Tchr. Thea",
             "subject": "3I's",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "CPAR - Tr Nof",
             "subject": "CPAR",
+            "teacher_id": "tchr_nof",
             "teacher": "Teacher Nof",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "3I's - Tchr. Thea",
             "subject": "3I's",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": null
         }
       },
       {
-        "time": "03:00 PM \u2013 03:30 PM",
+        "period_num": 12,
+        "time": "03:00 \u2013 03:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "SALAH & DEPARTURE",
         "subject": "SALAH & DEPARTURE",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "SALAH & DEPARTURE",
+        "is_break": true
       }
     ]
   },
   {
-    "id": "sec_94",
-    "sheet": "HS SCHED",
+    "id": "sec_68",
+    "section_name": "GRADE 11 (1ST SHIFT) GIRLS",
+    "department": "Senior High School",
+    "grade_level": "Grade 11",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
+    "periods": [
+      {
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF 11 - Alim Samsuddin",
+            "subject": "SHAF 11",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Qur'an 11 - Alim Dipatuan",
+            "subject": "Qur'an 11",
+            "teacher_id": "tchr_dipatuan",
+            "teacher": "Alim Dipatuan",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "PHILO - Tchr Thea",
+            "subject": "PHILO",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Arabic 11 - Alim Mamonas",
+            "subject": "Arabic 11",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "General Chemistry 1 Tr Aniah",
+            "subject": "General Chemistry 1 Tr Aniah",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "General Mathematics 11 ODL",
+            "subject": "General Mathematics 11 ODL",
+            "teacher_id": null,
+            "teacher": "General Mathematics 11 ODL",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "KomPan - Tchr. Thea",
+            "subject": "KomPan",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "General Mathematics 11 ODL",
+            "subject": "General Mathematics 11 ODL",
+            "teacher_id": null,
+            "teacher": "General Mathematics 11 ODL",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "KomPan - Tchr. Thea",
+            "subject": "KomPan",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Earth Science - Tchr. Rowena",
+            "subject": "Earth Science",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "General Chemistry 1 Tr Aniah",
+            "subject": "General Chemistry 1 Tr Aniah",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Pre Calculus",
+            "subject": "Pre Calculus",
+            "teacher_id": null,
+            "teacher": "Pre Calculus",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Earth Science - Tchr. Rowena",
+            "subject": "Earth Science",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Pre Calculus",
+            "subject": "Pre Calculus",
+            "teacher_id": null,
+            "teacher": "Pre Calculus",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:40 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "E-Tech - Sir Moh",
+            "subject": "E-Tech",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Monday": null,
+          "Tuesday": {
+            "label": "Oral Com - Tchr. Nadzra",
+            "subject": "Oral Com",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "E-Tech - Sir Moh",
+            "subject": "E-Tech",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "PE 11 - Sir Moh",
+            "subject": "PE 11",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_69",
+    "section_name": "GRADE 12 ABU MUSA AL- ASHARI (GIRLS) - 1ST SHIFT",
+    "department": "Senior High School",
+    "grade_level": "Grade 12",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 8,
+    "periods": [
+      {
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Biology 12 - Tchr. Rowena",
+            "subject": "Biology 12",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          },
+          "Monday": null,
+          "Tuesday": {
+            "label": "UCSP 12 - Tchr Shirehan",
+            "subject": "UCSP 12",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "21st Literature - Tr Nof",
+            "subject": "21st Literature",
+            "teacher_id": "tchr_nof",
+            "teacher": "Teacher Nof",
+            "is_break": false
+          },
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Practical Research 2 ODL",
+            "subject": "Practical Research 2 ODL",
+            "teacher_id": null,
+            "teacher": "Practical Research 2 ODL",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "SHAF 12 - Ust. Silfah",
+            "subject": "SHAF 12",
+            "teacher_id": "tchr_silfah",
+            "teacher": "Ustadha Silfah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "MIL 12 - Tchr. Thea",
+            "subject": "MIL 12",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "General Physics 12 ODL",
+            "subject": "General Physics 12 ODL",
+            "teacher_id": null,
+            "teacher": "General Physics 12 ODL",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "General Physics 12 ODL",
+            "subject": "General Physics 12 ODL",
+            "teacher_id": null,
+            "teacher": "General Physics 12 ODL",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Consultation Time (Research)",
+            "subject": "Consultation Time (Research)",
+            "teacher_id": null,
+            "teacher": "Consultation Time (Research)",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Qur'an - Alim Dipatuan",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_dipatuan",
+            "teacher": "Alim Dipatuan",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Biology 12 - Tchr. Rowena",
+            "subject": "Biology 12",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Arabic 12 - Alim Mamonas",
+            "subject": "Arabic 12",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Consultation Time (Research)",
+            "subject": "Consultation Time (Research)",
+            "teacher_id": null,
+            "teacher": "Consultation Time (Research)",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:40 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "PFPL 12 - Tchr. Thea",
+            "subject": "PFPL 12",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": {
+            "label": "PFPL 12 - Tchr. Thea",
+            "subject": "PFPL 12",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 8,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_70",
+    "section_name": "GRADE 11 (1ST SHIFT) GIRLS - SECOND SEMESTER",
+    "department": "Senior High School",
+    "grade_level": "Grade 11",
+    "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
+    "periods": [
+      {
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "SHAF 11 - Ust. Ali",
+            "subject": "SHAF 11",
+            "teacher_id": "tchr_ali",
+            "teacher": "Ustadz Ali",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Qur'an 11 - Alim Dipatuan",
+            "subject": "Qur'an 11",
+            "teacher_id": "tchr_dipatuan",
+            "teacher": "Alim Dipatuan",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "PerDev- Tchr Thea",
+            "subject": "PerDev- Tchr Thea",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Prac.Res1 - Tchr. Marie",
+            "subject": "Prac.Res1",
+            "teacher_id": "tchr_marie",
+            "teacher": "Teacher Marie",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Prac.Res1 - Tchr. Marie",
+            "subject": "Prac.Res1",
+            "teacher_id": "tchr_marie",
+            "teacher": "Teacher Marie",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Statistics and Probability  - Tchr. Abegail",
+            "subject": "Statistics and Probability",
+            "teacher_id": "tchr_abegail",
+            "teacher": "Teacher Abegail",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "PPITTP - Tchr. Thea",
+            "subject": "PPITTP",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Statistics and Probability  - Tchr. Abegail",
+            "subject": "Statistics and Probability",
+            "teacher_id": "tchr_abegail",
+            "teacher": "Teacher Abegail",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "PPITTP - Tchr. Thea",
+            "subject": "PPITTP",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "General Chemistry 2 - Tchr. Aniah",
+            "subject": "General Chemistry 2",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": {
+            "label": "General Chemistry 2 - Tchr. Aniah",
+            "subject": "General Chemistry 2",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Basic Calculus - Sir Ahmad",
+            "subject": "Basic Calculus",
+            "teacher_id": null,
+            "teacher": "Basic Calculus - Sir Ahmad",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Basic Calculus - Sir Ahmad",
+            "subject": "Basic Calculus",
+            "teacher_id": null,
+            "teacher": "Basic Calculus - Sir Ahmad",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:40 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "DRRR - Sir Mohaymen",
+            "subject": "DRRR",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Monday": null,
+          "Tuesday": {
+            "label": "R&W - Tchr. Nadzra",
+            "subject": "R&W",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "DRRR - Sir Mohaymen",
+            "subject": "DRRR",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "PE 11 - Sir Moh",
+            "subject": "PE 11",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_71",
     "section_name": "GRADE 12 ABU MUSA AL- ASHARI (GIRLS) - 1ST SHIFT - SECOND SEMESTER",
     "department": "Senior High School",
     "grade_level": "Grade 12",
     "shift": "ODL - 1ST SHIFT",
+    "total_periods": 7,
     "periods": [
       {
-        "time": "12:30 PM \u2013 12:40 PM",
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "General Assembly",
         "subject": "General Assembly",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
       },
       {
-        "time": "12:40 PM \u2013 01:20 PM",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Biology 2 - Tchr. Rowena",
             "subject": "Biology 2",
+            "teacher_id": "tchr_rowena",
             "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Entrep - Tchr. Shanen",
             "subject": "Entrep",
+            "teacher_id": "tchr_shanen",
             "teacher": "Teacher Shanen",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "CPAR - Tr Nof",
             "subject": "CPAR",
+            "teacher_id": "tchr_nof",
             "teacher": "Teacher Nof",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "CPAR - Tr Nof",
             "subject": "CPAR",
+            "teacher_id": "tchr_nof",
             "teacher": "Teacher Nof",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Arabic - Alim Mamonas",
             "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
             "teacher": "Alim Mamonas",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "01:20 PM \u2013 01:30 PM",
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "01:30 PM \u2013 02:10 PM",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Research/Capstone Project",
             "subject": "Research/Capstone Project",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Research/Capstone Project",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "SHAF 12 - Ust. Silfah",
             "subject": "SHAF 12",
+            "teacher_id": "tchr_silfah",
             "teacher": "Ustadha Silfah",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Research/Capstone Project",
             "subject": "Research/Capstone Project",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Research/Capstone Project",
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "General Physics 2 - Tchr. Abegail",
             "subject": "General Physics 2",
+            "teacher_id": "tchr_abegail",
             "teacher": "Teacher Abegail",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "General Physics 2 - Tchr. Abegail",
             "subject": "General Physics 2",
+            "teacher_id": "tchr_abegail",
             "teacher": "Teacher Abegail",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "02:10 PM \u2013 02:20 PM",
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 p.m.",
         "minutes": "10 min.",
         "is_merged_all_days": true,
-        "is_break": true,
         "label": "Transition",
         "subject": "Transition",
-        "teacher": "",
-        "extra": "",
-        "days": {}
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
       },
       {
-        "time": "02:20 PM \u2013 03:00 PM",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "3is - Tchr. Thea",
             "subject": "3is",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "Qur'an - Alim Dipatuan",
             "subject": "Qur'an",
+            "teacher_id": "tchr_dipatuan",
             "teacher": "Alim Dipatuan",
-            "extra": ""
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "Biology 2 - Tchr. Rowena",
             "subject": "Biology 2",
+            "teacher_id": "tchr_rowena",
             "teacher": "Teacher Rowena",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "EAPP - Tchr. Sophia",
             "subject": "EAPP",
+            "teacher_id": "tchr_sophia",
             "teacher": "Teacher Sophia",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "3is - Tchr. Thea",
             "subject": "3is",
+            "teacher_id": "tchr_thea",
             "teacher": "Teacher Thea",
-            "extra": ""
+            "is_break": false
           }
         }
       },
       {
-        "time": "03:00 PM \u2013 03:40 PM",
+        "period_num": 7,
+        "time": "03:00 \u2013 03:40 p.m.",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
           "Sunday": {
-            "is_break": false,
             "label": "Consultation Time (Research)",
             "subject": "Consultation Time (Research)",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Consultation Time (Research)",
+            "is_break": false
           },
           "Monday": {
-            "is_break": false,
             "label": "PE 12 - Sir Moh",
             "subject": "PE 12",
-            "teacher": "Sir Moh",
-            "extra": ""
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
           },
           "Tuesday": {
-            "is_break": false,
             "label": "EAPP - Tchr. Sophia",
             "subject": "EAPP",
+            "teacher_id": "tchr_sophia",
             "teacher": "Teacher Sophia",
-            "extra": ""
+            "is_break": false
           },
           "Wednesday": {
-            "is_break": false,
             "label": "Entrep - Tchr. Shanen",
             "subject": "Entrep",
+            "teacher_id": "tchr_shanen",
             "teacher": "Teacher Shanen",
-            "extra": ""
+            "is_break": false
           },
           "Thursday": {
-            "is_break": false,
             "label": "Consultation Time (Research)",
             "subject": "Consultation Time (Research)",
-            "teacher": "",
-            "extra": ""
+            "teacher_id": null,
+            "teacher": "Consultation Time (Research)",
+            "is_break": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_72",
+    "section_name": "GRADE 12 SUHAYB AR-RUMI (BOYS) - 2ND SHIFT",
+    "department": "Senior High School",
+    "grade_level": "Grade 12",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 8,
+    "periods": [
+      {
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Qur'an - Alim Dipatuan",
+            "subject": "Qur'an",
+            "teacher_id": "tchr_dipatuan",
+            "teacher": "Alim Dipatuan",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "SHAF  - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "MIL 12 - Tchr. Thea",
+            "subject": "MIL 12",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "General Physics 12 ODL",
+            "subject": "General Physics 12 ODL",
+            "teacher_id": null,
+            "teacher": "General Physics 12 ODL",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "General Physics 12 ODL",
+            "subject": "General Physics 12 ODL",
+            "teacher_id": null,
+            "teacher": "General Physics 12 ODL",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Practical Research 2 ODL",
+            "subject": "Practical Research 2 ODL",
+            "teacher_id": null,
+            "teacher": "Practical Research 2 ODL",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Tuesday": null,
+          "Wednesday": {
+            "label": "Arabic 12 - Alim Mamonas",
+            "subject": "Arabic 12",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Biology 12 - Tchr. Rowena",
+            "subject": "Biology 12",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "PFPL 12 - Tchr. Thea",
+            "subject": "PFPL 12",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "21st Literature - Tr Nof",
+            "subject": "21st Literature",
+            "teacher_id": "tchr_nof",
+            "teacher": "Teacher Nof",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "UCSP 12 - Tchr Shirehan",
+            "subject": "UCSP 12",
+            "teacher_id": "tchr_shirehan",
+            "teacher": "Teacher Shirehan",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Biology 12 - Tchr. Rowena",
+            "subject": "Biology 12",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "PFPL 12 - Tchr. Thea",
+            "subject": "PFPL 12",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 8,
+        "time": "SECOND SEMESTER SCHEDULE BELOW",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_73",
+    "section_name": "GRADE 11 (2ND SHIFT) BOYS - SECOND SEMESTER",
+    "department": "Senior High School",
+    "grade_level": "Grade 11",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
+    "periods": [
+      {
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": {
+            "label": "PPITTP - Tchr. Thea",
+            "subject": "PPITTP",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Tuesday": null,
+          "Wednesday": {
+            "label": "PPITTP - Tchr. Thea",
+            "subject": "PPITTP",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "R&W - Tchr. Nadzra",
+            "subject": "R&W",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Qur'an 11 - Alim Dipatuan",
+            "subject": "Qur'an 11",
+            "teacher_id": "tchr_dipatuan",
+            "teacher": "Alim Dipatuan",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "PE 11 - Sir Moh",
+            "subject": "PE 11",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "SHAF 11 - Alim Samsuddin",
+            "subject": "SHAF 11",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "General Chemistry 2 - Tchr. Aniah",
+            "subject": "General Chemistry 2",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "DRRR - Sir Mohaymen",
+            "subject": "DRRR",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "PerDev- Tchr Thea",
+            "subject": "PerDev- Tchr Thea",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Basic Calculus - Sir Ahmad",
+            "subject": "Basic Calculus",
+            "teacher_id": null,
+            "teacher": "Basic Calculus - Sir Ahmad",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Prac.Res1 - Tchr. Marie",
+            "subject": "Prac.Res1",
+            "teacher_id": "tchr_marie",
+            "teacher": "Teacher Marie",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Prac.Res1 - Tchr. Marie",
+            "subject": "Prac.Res1",
+            "teacher_id": "tchr_marie",
+            "teacher": "Teacher Marie",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Statistics and Probability  - Tchr. Abegail",
+            "subject": "Statistics and Probability",
+            "teacher_id": "tchr_abegail",
+            "teacher": "Teacher Abegail",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "General Chemistry 2 - Tchr. Aniah",
+            "subject": "General Chemistry 2",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Statistics and Probability  - Tchr. Abegail",
+            "subject": "Statistics and Probability",
+            "teacher_id": "tchr_abegail",
+            "teacher": "Teacher Abegail",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "DRRR - Sir Mohaymen",
+            "subject": "DRRR",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Basic Calculus - Sir Ahmad",
+            "subject": "Basic Calculus",
+            "teacher_id": null,
+            "teacher": "Basic Calculus - Sir Ahmad",
+            "is_break": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "sec_74",
+    "section_name": "GRADE 11 (2ND SHIFT) BOYS",
+    "department": "Senior High School",
+    "grade_level": "Grade 11",
+    "shift": "ODL - 2ND SHIFT",
+    "total_periods": 7,
+    "periods": [
+      {
+        "period_num": 1,
+        "time": "03:00 \u2013 03:30 p.m.",
+        "minutes": "30 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": null,
+          "Monday": {
+            "label": "KomPan - Tchr. Thea",
+            "subject": "KomPan",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "PE 11 - Sir Moh",
+            "subject": "PE 11",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "KomPan - Tchr. Thea",
+            "subject": "KomPan",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Oral Com - Tchr. Nadzra",
+            "subject": "Oral Com",
+            "teacher_id": "tchr_nadzra",
+            "teacher": "Teacher Nadzra",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 2,
+        "time": "03:30 \u2013 03:40 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "teacher_id": null,
+        "teacher": "General Assembly",
+        "is_break": true
+      },
+      {
+        "period_num": 3,
+        "time": "03:40 \u2013 04:20 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher_id": "tchr_mamonas",
+            "teacher": "Alim Mamonas",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "Qur'an 11 - Alim Dipatuan",
+            "subject": "Qur'an 11",
+            "teacher_id": "tchr_dipatuan",
+            "teacher": "Alim Dipatuan",
+            "is_break": false
+          },
+          "Tuesday": null,
+          "Wednesday": {
+            "label": "SHAF 11 - Alim Samsuddin",
+            "subject": "SHAF 11",
+            "teacher_id": "tchr_samsuddin",
+            "teacher": "Alim Samsuddin",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "Pre Calculus - Sir Ahmad",
+            "subject": "Pre Calculus",
+            "teacher_id": null,
+            "teacher": "Pre Calculus - Sir Ahmad",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 4,
+        "time": "04:20 \u2013 04:30 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 5,
+        "time": "04:30 \u2013 05:10 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "Earth Science - Tchr. Rowena",
+            "subject": "Earth Science",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "PHILO - Tchr Thea",
+            "subject": "PHILO",
+            "teacher_id": "tchr_thea",
+            "teacher": "Teacher Thea",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "Pre Calculus - Sir Ahmad",
+            "subject": "Pre Calculus",
+            "teacher_id": null,
+            "teacher": "Pre Calculus - Sir Ahmad",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "Earth Science - Tchr. Rowena",
+            "subject": "Earth Science",
+            "teacher_id": "tchr_rowena",
+            "teacher": "Teacher Rowena",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "General Mathematics 11 ODL",
+            "subject": "General Mathematics 11 ODL",
+            "teacher_id": null,
+            "teacher": "General Mathematics 11 ODL",
+            "is_break": false
+          }
+        }
+      },
+      {
+        "period_num": 6,
+        "time": "05:10 \u2013 05:20 p.m.",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "teacher_id": null,
+        "teacher": "Transition",
+        "is_break": true
+      },
+      {
+        "period_num": 7,
+        "time": "05:20 \u2013 06:00 p.m.",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "days": {
+          "Sunday": {
+            "label": "General Mathematics 11 ODL",
+            "subject": "General Mathematics 11 ODL",
+            "teacher_id": null,
+            "teacher": "General Mathematics 11 ODL",
+            "is_break": false
+          },
+          "Monday": {
+            "label": "General Chemistry 1 Tr Aniah",
+            "subject": "General Chemistry 1 Tr Aniah",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
+          },
+          "Tuesday": {
+            "label": "E-Tech - Sir Moh",
+            "subject": "E-Tech",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Wednesday": {
+            "label": "E-Tech - Sir Moh",
+            "subject": "E-Tech",
+            "teacher_id": "tchr_mohaymen",
+            "teacher": "Sir Mohaymen",
+            "is_break": false
+          },
+          "Thursday": {
+            "label": "General Chemistry 1 Tr Aniah",
+            "subject": "General Chemistry 1 Tr Aniah",
+            "teacher_id": "tchr_aniah",
+            "teacher": "Teacher Aniah",
+            "is_break": false
           }
         }
       }
     ]
   }
 ];
-const OFFICIAL_CLASS_SCHEDULES = window.OFFICIAL_CLASS_SCHEDULES;
+const CLASS_SCHEDULES_DATA = window.CLASS_SCHEDULES_DATA;

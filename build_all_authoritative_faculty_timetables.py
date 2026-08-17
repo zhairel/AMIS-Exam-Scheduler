@@ -2,6 +2,7 @@ import openpyxl
 import json
 import re
 from collections import defaultdict
+from teacher_registry import TEACHER_REGISTRY, resolve_teacher
 
 EXCEL_PATH = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/SCHEDULE SY 2026-2027 TW.xlsx'
 CLASS_DATA_PATH = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/class_schedules_data.json'
@@ -10,8 +11,6 @@ wb = openpyxl.load_workbook(EXCEL_PATH, data_only=True)
 
 with open(CLASS_DATA_PATH) as f:
     sections = json.load(f)
-
-from parse_all_authoritative_schedules import normalize_teacher_name
 
 DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
 
@@ -53,9 +52,10 @@ def get_subject_color(subj):
         return {'bg': '#fae8ff', 'border': '#f0abfc', 'text': '#86198f'}
     return {'bg': '#f1f5f9', 'border': '#cbd5e1', 'text': '#334155'}
 
-# 1. Direct class timetable inverted extraction
+# Master dictionary of teacher assignments keyed by teacher_id
 teacher_classes = defaultdict(lambda: defaultdict(dict))
 
+# 1. Direct class timetable inverted extraction
 for sec in sections:
     sname = sec['section_name']
     dept = sec['department']
@@ -68,12 +68,15 @@ for sec in sections:
         
         if p.get('is_merged_all_days'):
             if not p.get('is_break'):
-                tchr_raw = p.get('teacher', '').strip()
-                tchr = normalize_teacher_name(tchr_raw)
+                tid = p.get('teacher_id')
+                if not tid and p.get('teacher'):
+                    t_res = resolve_teacher(p.get('teacher'))
+                    if t_res: tid = t_res['id']
+                    
                 subj = p.get('subject', '').strip()
-                if tchr and tchr != "Assigned Faculty":
+                if tid:
                     for d in DAYS:
-                        teacher_classes[tchr][t_str][d] = {
+                        teacher_classes[tid][t_str][d] = {
                             'subject': subj,
                             'section': sname,
                             'grade': grade,
@@ -83,11 +86,14 @@ for sec in sections:
         else:
             for d, cell in (p.get('days') or {}).items():
                 if cell and not cell.get('is_break'):
-                    tchr_raw = cell.get('teacher', '').strip()
-                    tchr = normalize_teacher_name(tchr_raw)
+                    tid = cell.get('teacher_id')
+                    if not tid and cell.get('teacher'):
+                        t_res = resolve_teacher(cell.get('teacher'))
+                        if t_res: tid = t_res['id']
+                        
                     subj = cell.get('subject', '').strip()
-                    if tchr and tchr != "Assigned Faculty":
-                        teacher_classes[tchr][t_str][d] = {
+                    if tid:
+                        teacher_classes[tid][t_str][d] = {
                             'subject': subj,
                             'section': sname,
                             'grade': grade,
@@ -103,10 +109,12 @@ for sname in ['HS LOADS', 'ISAL UPDATED']:
             v = ws.cell(row=r, column=c).value
             if v and isinstance(v, str):
                 v_str = v.strip()
-                if any(k in v_str.upper() for k in ['TEACHER', 'TCHR', 'SIR', 'USTADH', 'ALIM', 'USTADHA']):
+                if any(k in v_str.upper() for k in ['TEACHER', 'TCHR', 'SIR', 'USTADH', 'ALIM', 'USTADHA', 'USTADZ', 'UST']):
                     # Check if next row is Time header
                     if r+1 <= ws.max_row and any('time' in str(ws.cell(row=r+1, column=cc).value).lower() for cc in range(c, min(ws.max_column+1, c+5))):
-                        tchr_norm = normalize_teacher_name(v_str)
+                        t_res = resolve_teacher(v_str)
+                        if not t_res: continue
+                        tid = t_res['id']
                         time_row = r + 1
                         time_col = c
                         first_day_col = c + 2
@@ -116,26 +124,33 @@ for sname in ['HS LOADS', 'ISAL UPDATED']:
                             t_val = ws.cell(row=pr, column=time_col).value
                             if not t_val: continue
                             t_str = str(t_val).strip()
-                            if any(k in t_str.upper() for k in ['TEACHER', 'SIR', 'USTADH', 'ALIM']): break
+                            if any(k in t_str.upper() for k in ['TEACHER', 'SIR', 'USTADH', 'ALIM', 'USTADZ']): break
                             
                             for didx, d in enumerate(DAYS):
                                 cell_val = ws.cell(row=pr, column=first_day_col + didx).value
                                 if cell_val and isinstance(cell_val, str):
                                     c_str = cell_val.strip()
                                     if c_str and not any(k in c_str.upper() for k in ['GENERAL ASSEMBLY', 'RECESS', 'LUNCH', 'SALAH', 'DEPARTURE']):
-                                        # Parse subject and section
-                                        teacher_classes[tchr_norm][t_str][d] = {
-                                            'subject': c_str,
-                                            'section': c_str,
-                                            'grade': '',
-                                            'shift': 'F2F / ODL',
-                                            'minutes': '45 min.'
-                                        }
+                                        # Only add if not already populated
+                                        if d not in teacher_classes[tid][t_str]:
+                                            teacher_classes[tid][t_str][d] = {
+                                                'subject': c_str,
+                                                'section': c_str,
+                                                'grade': '',
+                                                'shift': 'F2F / ODL',
+                                                'minutes': '45 min.'
+                                            }
 
-# 3. Compile standard grid for each teacher
+# 3. Build canonical faculty schedules for each registered teacher
 final_faculty_schedules = {}
 
-for tchr, t_slots in sorted(teacher_classes.items()):
+for t_info in sorted(TEACHER_REGISTRY, key=lambda x: x['canonical_name']):
+    tid = t_info['id']
+    c_name = t_info['canonical_name']
+    dept = t_info['department']
+    title = t_info['title']
+    
+    t_slots = teacher_classes.get(tid, {})
     distinct_subjs = set()
     total_class_count = 0
     
@@ -165,10 +180,8 @@ for tchr, t_slots in sorted(teacher_classes.items()):
             for d in DAYS:
                 found = None
                 
-                # Check exact or approximate time slot match
                 for raw_t, d_map in t_slots.items():
                     if d in d_map:
-                        # check hour match
                         b_h = b_time[:5]
                         if b_h in raw_t or raw_t[:5] in b_time:
                             found = d_map[d]
@@ -188,6 +201,7 @@ for tchr, t_slots in sorted(teacher_classes.items()):
                         "section": found['section'],
                         "grade": found['grade'],
                         "shift": found['shift'],
+                        "modality": found['shift'],
                         "label": f"{subj_name} - {found['section']}" if found['section'] and found['section'] != subj_name else subj_name,
                         "color": color,
                         "bg": color['bg'],
@@ -199,26 +213,25 @@ for tchr, t_slots in sorted(teacher_classes.items()):
                     
         rows.append(row_data)
 
-    final_faculty_schedules[tchr] = {
-        "teacher_name": tchr,
-        "title": "Faculty Member",
+    final_faculty_schedules[tid] = {
+        "teacher_id": tid,
+        "teacher_name": c_name,
+        "canonical_name": c_name,
+        "department": dept,
+        "title": title,
         "total_classes": total_class_count,
         "total_teaching_periods": total_class_count,
         "subjects": sorted(list(distinct_subjs)),
         "rows": rows
     }
 
-print(f"Extracted and unified comprehensive faculty timetables for {len(final_faculty_schedules)} teachers!")
+print(f"Extracted and unified comprehensive faculty timetables for {len(final_faculty_schedules)} UNIQUE teachers!")
 
-# Print verification for Teacher Jairah and others
-for sample_t in ["Teacher Jairah", "Teacher Aniah", "Ustadha Silfah", "Ustadh Ali", "Teacher Wendy"]:
-    if sample_t in final_faculty_schedules:
-        f_data = final_faculty_schedules[sample_t]
-        print(f"\n{sample_t}: {f_data['total_classes']} classes, Subjects: {f_data['subjects']}")
-        for r in f_data['rows']:
-            for d, c in r['days'].items():
-                if c and c.get('is_class'):
-                    print(f"  {r['time']:<22} | {d:<10} -> {c['label']}")
+# Print verification for sample teachers
+for test_id in ["tchr_ali", "tchr_jairah", "tchr_silfah", "tchr_mohaymen", "tchr_wendy"]:
+    if test_id in final_faculty_schedules:
+        f_data = final_faculty_schedules[test_id]
+        print(f"\n{f_data['canonical_name']} (ID: {test_id}): {f_data['total_classes']} classes, Subjects: {f_data['subjects']}")
 
 with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/teacher_weekly_schedules.json', 'w') as f:
     json.dump(final_faculty_schedules, f, indent=2)
@@ -227,5 +240,5 @@ with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/teacher_weekly_schedul
     f.write(f"window.AMIS_TEACHER_WEEKLY_SCHEDULES = {json.dumps(final_faculty_schedules, indent=2)};\n")
     f.write(f"const AMIS_TEACHER_WEEKLY_SCHEDULES = window.AMIS_TEACHER_WEEKLY_SCHEDULES;\n")
 
-print("\nSuccessfully synchronized all Faculty Timetables in JSON & JS!")
+print("\nSuccessfully saved teacher_weekly_schedules.json and teacher_weekly_schedules.js keyed by canonical teacher_id!")
 

@@ -469,7 +469,7 @@ body {
 (function() {
   const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
   let ALL_TEACHERS_DATA = {};
-  let currentTeacher = "Ustadha Silfah";
+  let currentTeacherId = "tchr_silfah";
 
   const teacherSelect = document.getElementById('teacherSelect');
   const sheetsContainer = document.getElementById('sheetsContainer');
@@ -493,15 +493,15 @@ body {
       }
     }
 
-    const teacherNames = Object.keys(ALL_TEACHERS_DATA).sort((a, b) => a.localeCompare(b));
-    if (teacherNames.length === 0) {
+    const teacherList = Object.values(ALL_TEACHERS_DATA).sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name));
+    if (teacherList.length === 0) {
       sheetsContainer.innerHTML = '<div style="text-align:center; padding:50px; color:#64748b;">No schedule data available.</div>';
       return;
     }
 
-    // Populate Select Box
-    let selectHtml = `<option value="ALL_FACULTY">[ALL FACULTY] Show & Print All ${teacherNames.length} Teachers</option><optgroup label="── Individual Faculty ──">`;
-    selectHtml += teacherNames.map(t => `<option value="${esc(t)}">${esc(t)}</option>`).join('');
+    // Populate Select Box with Unique Canonical Teachers
+    let selectHtml = `<option value="ALL_FACULTY">[ALL FACULTY] Show & Print All ${teacherList.length} Teachers</option><optgroup label="── Unique Faculty Members ──">`;
+    selectHtml += teacherList.map(t => `<option value="${esc(t.teacher_id)}">${esc(t.canonical_name || t.teacher_name)}</option>`).join('');
     selectHtml += `</optgroup>`;
     teacherSelect.innerHTML = selectHtml;
 
@@ -509,32 +509,43 @@ body {
     const urlParams = new URLSearchParams(window.location.search);
     const paramTeacher = urlParams.get('teacher');
     if (paramTeacher && ['all', 'all_faculty'].includes(paramTeacher.toLowerCase())) {
-      currentTeacher = "ALL_FACULTY";
+      currentTeacherId = "ALL_FACULTY";
     } else if (paramTeacher && ALL_TEACHERS_DATA[paramTeacher]) {
-      currentTeacher = paramTeacher;
+      currentTeacherId = paramTeacher;
     } else if (paramTeacher) {
-      const match = teacherNames.find(t => t.toLowerCase() === paramTeacher.toLowerCase());
-      if (match) currentTeacher = match;
+      const pLow = paramTeacher.toLowerCase().replace(/[^a-z0-9]/g, '');
+      const match = teacherList.find(t => {
+        const cLow = (t.canonical_name || t.teacher_name).toLowerCase().replace(/[^a-z0-9]/g, '');
+        const idLow = t.teacher_id.toLowerCase().replace(/[^a-z0-9]/g, '');
+        return cLow === pLow || idLow === pLow || cLow.includes(pLow) || pLow.includes(cLow);
+      });
+      if (match) currentTeacherId = match.teacher_id;
     }
 
-    teacherSelect.value = currentTeacher;
-    renderSelectedTeachers(currentTeacher);
+    if (!ALL_TEACHERS_DATA[currentTeacherId] && currentTeacherId !== "ALL_FACULTY") {
+      currentTeacherId = teacherList[0].teacher_id;
+    }
+
+    teacherSelect.value = currentTeacherId;
+    renderSelectedTeachers(currentTeacherId);
 
     teacherSelect.addEventListener('change', (e) => {
       const val = e.target.value;
-      currentTeacher = val;
+      currentTeacherId = val;
       const newUrl = new URL(window.location);
       if (val === 'ALL_FACULTY') newUrl.searchParams.set('teacher', 'all');
-      else newUrl.searchParams.set('teacher', currentTeacher);
+      else newUrl.searchParams.set('teacher', currentTeacherId);
       window.history.replaceState({}, '', newUrl);
-      renderSelectedTeachers(currentTeacher);
+      renderSelectedTeachers(currentTeacherId);
     });
   }
 
   function renderSelectedTeachers(val) {
     if (val === 'ALL_FACULTY') {
-      const teacherNames = Object.keys(ALL_TEACHERS_DATA).sort((a, b) => a.localeCompare(b));
-      renderMultipleTeacherSheets(teacherNames);
+      const teacherIds = Object.values(ALL_TEACHERS_DATA)
+        .sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name))
+        .map(t => t.teacher_id);
+      renderMultipleTeacherSheets(teacherIds);
     } else {
       if (ALL_TEACHERS_DATA[val]) {
         renderMultipleTeacherSheets([val]);
@@ -542,14 +553,15 @@ body {
     }
   }
 
-  function renderMultipleTeacherSheets(tNames) {
+  function renderMultipleTeacherSheets(tIds) {
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
     let fullHtml = '';
 
-    tNames.forEach(tName => {
-      const data = ALL_TEACHERS_DATA[tName];
+    tIds.forEach(tid => {
+      const data = ALL_TEACHERS_DATA[tid];
       if (!data) return;
 
+      const teacherDisplayName = data.canonical_name || data.teacher_name || tid;
       const totalCount = data.total_classes || data.total_teaching_periods || (data.rows ? data.rows.reduce((acc, r) => acc + Object.values(r.days || {}).filter(c => c && (c.occupied || c.is_class)).length, 0) : 0);
       const subjsList = (data.subjects && data.subjects.length > 0) ? data.subjects.join(', ') : 'Assigned Classes';
       const metaStr = `${totalCount} Teaching Period${totalCount === 1 ? '' : 's'} • ${subjsList}`;
@@ -563,7 +575,7 @@ body {
           </div>
 
           <div class="teacher-banner">
-            <span class="teacher-name-title">${esc(tName.toUpperCase())}</span>
+            <span class="teacher-name-title">${esc(teacherDisplayName.toUpperCase())}</span>
             <span class="teacher-meta-tag">${esc(metaStr)}</span>
           </div>
 
