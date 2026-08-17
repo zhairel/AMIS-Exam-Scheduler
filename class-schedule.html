@@ -185,20 +185,33 @@ body {
 }
 
 /* Printable Container (A4 / Legal Landscape) */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
+/* Printable Container (A4 / Legal Landscape) */
 .page-sheet-container {
-  max-width: 1400px;
-  margin: 24px auto 0;
-  padding: 0 20px;
+  width: 100%;
+  max-width: 1360px;
+  margin: 20px auto 0;
+  padding: 0 16px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  align-items: center;
+  gap: 28px;
 }
 
 .timetable-sheet {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   background: #ffffff;
   border: 2px solid var(--line-strong);
   border-radius: 12px;
-  padding: 24px 28px;
+  padding: 20px 24px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   page-break-after: always;
   break-after: page;
@@ -402,11 +415,41 @@ body {
   font-size: 13px !important;
 }
 
+/* Responsive Table Scroll Wrapper */
+.table-responsive-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 0 0 8px 8px;
+  border: 2px solid var(--brand-deep);
+  border-top: none;
+  background: #ffffff;
+}
+
+.table-responsive-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.table-responsive-wrapper::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.table-responsive-wrapper::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.table-responsive-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
 /* Timetable Table Grid */
 .timetable-grid {
   width: 100%;
+  min-width: 780px;
   border-collapse: collapse;
-  border: 2px solid var(--brand-deep);
+  border: none;
   table-layout: fixed;
   background: #ffffff;
 }
@@ -423,11 +466,11 @@ body {
 }
 
 .timetable-grid thead th.col-time {
-  width: 155px;
+  width: 135px;
 }
 
 .timetable-grid thead th.col-mins {
-  width: 75px;
+  width: 60px;
 }
 
 .timetable-grid tbody td {
@@ -1038,78 +1081,80 @@ body {
             </div>
           </div>
 
-          <table class="timetable-grid">
-            <thead>
-              <tr>
-                <th class="col-time">Time</th>
-                <th class="col-mins">Minutes</th>
-                <th>Sunday</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-              </tr>
-            </thead>
-            <tbody>
-      `;
-
-      const rows = data.rows || [];
-      if (rows.length === 0) {
-        fullHtml += `
-          <tr>
-            <td colspan="7" style="padding: 30px; text-align: center; color: #64748b; font-weight: 700; font-size: 13px;">
-              No active weekly class periods scheduled for ${esc(teacherDisplayName)}.
-            </td>
-          </tr>
+          <div class="table-responsive-wrapper">
+            <table class="timetable-grid">
+              <thead>
+                <tr>
+                  <th class="col-time">Time</th>
+                  <th class="col-mins">Minutes</th>
+                  <th>Sunday</th>
+                  <th>Monday</th>
+                  <th>Tuesday</th>
+                  <th>Wednesday</th>
+                  <th>Thursday</th>
+                </tr>
+              </thead>
+              <tbody>
         `;
-      } else {
-        rows.forEach(r => {
-          const minsStr = typeof r.minutes === 'number' ? `${r.minutes} min.` : (r.minutes || '-');
-          const timeFormatted = esc(r.time);
 
-          if (r.is_break) {
-            fullHtml += `
-              <tr class="row-break">
-                <td class="cell-time">${timeFormatted}</td>
-                <td class="cell-mins">${esc(minsStr)}</td>
-                <td colspan="5" class="cell-break">${esc(r.break_title || r.label || 'BREAK')}</td>
-              </tr>
-            `;
-          } else {
-            fullHtml += `
-              <tr>
-                <td class="cell-time">${timeFormatted}</td>
-                <td class="cell-mins">${esc(minsStr)}</td>
-            `;
+        const rows = data.rows || [];
+        if (rows.length === 0) {
+          fullHtml += `
+            <tr>
+              <td colspan="7" style="padding: 30px; text-align: center; color: #64748b; font-weight: 700; font-size: 13px;">
+                No active weekly class periods scheduled for ${esc(teacherDisplayName)}.
+              </td>
+            </tr>
+          `;
+        } else {
+          rows.forEach(r => {
+            const minsStr = typeof r.minutes === 'number' ? `${r.minutes} min.` : (r.minutes || '-');
+            const timeFormatted = esc(r.time);
 
-            for (const d of DAYS) {
-              const cell = r.days ? r.days[d] : null;
-              if (cell && (cell.occupied || cell.is_class)) {
-                const color = cell.color || { bg: cell.bg || '#f1f5f9', border: cell.border || '#cbd5e1', text: cell.text || '#1e293b' };
-                const modTag = cell.modality || cell.shift || '';
+            if (r.is_break) {
+              fullHtml += `
+                <tr class="row-break">
+                  <td class="cell-time">${timeFormatted}</td>
+                  <td class="cell-mins">${esc(minsStr)}</td>
+                  <td colspan="5" class="cell-break">${esc(r.break_title || r.label || 'BREAK')}</td>
+                </tr>
+              `;
+            } else {
+              fullHtml += `
+                <tr>
+                  <td class="cell-time">${timeFormatted}</td>
+                  <td class="cell-mins">${esc(minsStr)}</td>
+              `;
 
-                fullHtml += `
-                  <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
-                    <div class="cell-class-inner">
-                      ${cell.has_conflict ? `<span style="background:#fee2e2; color:#991b1b; padding:1px 4px; border-radius:3px; font-weight:850; font-size:8.5px; margin-bottom:2px; text-transform:uppercase;">⚠️ SCHEDULE CONFLICT</span>` : ''}
-                      <span class="cell-subject-sec" style="font-weight:900; font-size:12px; line-height:1.2;">${esc(cell.subject || cell.label)}</span>
-                      <span class="cell-mod-badge" style="color:${color.text}; font-weight:750; font-size:10px; opacity:0.95; line-height:1.15;">${esc(cell.section_short || cell.section || '')}${modTag ? ' • ' + esc(modTag) : ''}</span>
-                    </div>
-                  </td>
-                `;
-              } else {
-                fullHtml += `<td class="cell-empty"></td>`;
+              for (const d of DAYS) {
+                const cell = r.days ? r.days[d] : null;
+                if (cell && (cell.occupied || cell.is_class)) {
+                  const color = cell.color || { bg: cell.bg || '#f1f5f9', border: cell.border || '#cbd5e1', text: cell.text || '#1e293b' };
+                  const modTag = cell.modality || cell.shift || '';
+
+                  fullHtml += `
+                    <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                      <div class="cell-class-inner">
+                        ${cell.has_conflict ? `<span style="background:#fee2e2; color:#991b1b; padding:1px 4px; border-radius:3px; font-weight:850; font-size:8.5px; margin-bottom:2px; text-transform:uppercase;">⚠️ SCHEDULE CONFLICT</span>` : ''}
+                        <span class="cell-subject-sec" style="font-weight:900; font-size:12px; line-height:1.2;">${esc(cell.subject || cell.label)}</span>
+                        <span class="cell-mod-badge" style="color:${color.text}; font-weight:750; font-size:10px; opacity:0.95; line-height:1.15;">${esc(cell.section_short || cell.section || '')}${modTag ? ' • ' + esc(modTag) : ''}</span>
+                      </div>
+                    </td>
+                  `;
+                } else {
+                  fullHtml += `<td class="cell-empty"></td>`;
+                }
               }
+
+              fullHtml += `</tr>`;
             }
+          });
+        }
 
-            fullHtml += `</tr>`;
-          }
-        });
-      }
-
-      fullHtml += `
-            </tbody>
-          </table>
+        fullHtml += `
+              </tbody>
+            </table>
+          </div>
 
           <div class="sheet-footer">
             <div class="legend-strip">
@@ -1165,94 +1210,96 @@ body {
             </div>
           </div>
 
-          <table class="timetable-grid">
-            <thead>
-              <tr>
-                <th class="col-time">Time</th>
-                <th class="col-mins">Minutes</th>
-                <th>Sunday</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-              </tr>
-            </thead>
-            <tbody>
-      `;
+          <div class="table-responsive-wrapper">
+            <table class="timetable-grid">
+              <thead>
+                <tr>
+                  <th class="col-time">Time</th>
+                  <th class="col-mins">Minutes</th>
+                  <th>Sunday</th>
+                  <th>Monday</th>
+                  <th>Tuesday</th>
+                  <th>Wednesday</th>
+                  <th>Thursday</th>
+                </tr>
+              </thead>
+              <tbody>
+        `;
 
-      sec.periods.forEach(p => {
-        const timeStr = formatTime(p.time);
+        sec.periods.forEach(p => {
+          const timeStr = formatTime(p.time);
 
-        if (p.is_merged_all_days) {
-          if (p.is_break) {
-            fullHtml += `
-              <tr class="row-break">
-                <td class="cell-time">${esc(timeStr)}</td>
-                <td class="cell-mins">${esc(p.minutes)}</td>
-                <td colspan="5" class="cell-break">${esc(p.label || p.subject || 'BREAK / ASSEMBLY')}</td>
-              </tr>
-            `;
-          } else {
-            const color = getSubjectColor(p.subject || p.label);
-            fullHtml += `
-              <tr>
-                <td class="cell-time">${esc(timeStr)}</td>
-                <td class="cell-mins">${esc(p.minutes)}</td>
-                <td colspan="5" class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text}; text-align:center;">
-                  <div class="cell-class-inner">
-                    <span class="cell-subject-sec">${esc(p.subject || p.label)}</span>
-                    ${p.teacher ? `<span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(p.teacher)}</span>` : ''}
-                  </div>
-                </td>
-              </tr>
-            `;
-          }
-        } else {
-          const firstDay = p.days ? p.days['Sunday'] : null;
-          const isBreakRow = firstDay && firstDay.is_break;
-
-          if (isBreakRow) {
-            fullHtml += `
-              <tr class="row-break">
-                <td class="cell-time">${esc(timeStr)}</td>
-                <td class="cell-mins">${esc(p.minutes)}</td>
-                <td colspan="5" class="cell-break">${esc(firstDay.label || 'BREAK / ASSEMBLY')}</td>
-              </tr>
-            `;
-          } else {
-            fullHtml += `
-              <tr>
-                <td class="cell-time">${esc(timeStr)}</td>
-                <td class="cell-mins">${esc(p.minutes)}</td>
-            `;
-
-            DAYS.forEach(d => {
-              const cell = p.days ? p.days[d] : null;
-              if (!cell) {
-                fullHtml += `<td class="cell-empty"></td>`;
-              } else if (cell.is_break) {
-                fullHtml += `<td class="cell-break" style="font-size:11px; font-weight:800; color:#64748b; background:#f1f5f9;">${esc(cell.label)}</td>`;
-              } else {
-                const color = getSubjectColor(cell.subject);
-                fullHtml += `
-                  <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+          if (p.is_merged_all_days) {
+            if (p.is_break) {
+              fullHtml += `
+                <tr class="row-break">
+                  <td class="cell-time">${esc(timeStr)}</td>
+                  <td class="cell-mins">${esc(p.minutes)}</td>
+                  <td colspan="5" class="cell-break">${esc(p.label || p.subject || 'BREAK / ASSEMBLY')}</td>
+                </tr>
+              `;
+            } else {
+              const color = getSubjectColor(p.subject || p.label);
+              fullHtml += `
+                <tr>
+                  <td class="cell-time">${esc(timeStr)}</td>
+                  <td class="cell-mins">${esc(p.minutes)}</td>
+                  <td colspan="5" class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text}; text-align:center;">
                     <div class="cell-class-inner">
-                      <span class="cell-subject-sec">${esc(cell.subject)}</span>
-                      ${cell.teacher ? `<span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(cell.teacher)}</span>` : ''}
+                      <span class="cell-subject-sec">${esc(p.subject || p.label)}</span>
+                      ${p.teacher ? `<span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(p.teacher)}</span>` : ''}
                     </div>
                   </td>
-                `;
-              }
-            });
+                </tr>
+              `;
+            }
+          } else {
+            const firstDay = p.days ? p.days['Sunday'] : null;
+            const isBreakRow = firstDay && firstDay.is_break;
 
-            fullHtml += `</tr>`;
+            if (isBreakRow) {
+              fullHtml += `
+                <tr class="row-break">
+                  <td class="cell-time">${esc(timeStr)}</td>
+                  <td class="cell-mins">${esc(p.minutes)}</td>
+                  <td colspan="5" class="cell-break">${esc(firstDay.label || 'BREAK / ASSEMBLY')}</td>
+                </tr>
+              `;
+            } else {
+              fullHtml += `
+                <tr>
+                  <td class="cell-time">${esc(timeStr)}</td>
+                  <td class="cell-mins">${esc(p.minutes)}</td>
+              `;
+
+              DAYS.forEach(d => {
+                const cell = p.days ? p.days[d] : null;
+                if (!cell) {
+                  fullHtml += `<td class="cell-empty"></td>`;
+                } else if (cell.is_break) {
+                  fullHtml += `<td class="cell-break" style="font-size:11px; font-weight:800; color:#64748b; background:#f1f5f9;">${esc(cell.label)}</td>`;
+                } else {
+                  const color = getSubjectColor(cell.subject);
+                  fullHtml += `
+                    <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                      <div class="cell-class-inner">
+                        <span class="cell-subject-sec">${esc(cell.subject)}</span>
+                        ${cell.teacher ? `<span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(cell.teacher)}</span>` : ''}
+                      </div>
+                    </td>
+                  `;
+                }
+              });
+
+              fullHtml += `</tr>`;
+            }
           }
-        }
-      });
+        });
 
-      fullHtml += `
-            </tbody>
-          </table>
+        fullHtml += `
+              </tbody>
+            </table>
+          </div>
 
           <div class="sheet-footer">
             <div class="legend-strip">
