@@ -858,7 +858,7 @@ body {
             <div>
               <h1 style="margin:0;">AL MUNAWWARA ISLAMIC SCHOOL</h1>
               <h2 style="margin:2px 0 0 0;">Official Class Timetable / Section Weekly Schedule</h2>
-              <p style="margin:2px 0 0 0;">School Year 2026–2027 • Developed by Software Engineer Mon Zhairel Lingasa</p>
+              <p style="margin:2px 0 0 0;">School Year 2026–2027</p>
             </div>
           </div>
 
