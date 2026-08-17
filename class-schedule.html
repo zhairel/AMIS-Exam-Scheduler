@@ -57,12 +57,13 @@ body {
   z-index: 1000;
   background: var(--brand-deep);
   color: #fff;
-  padding: 12px 24px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  flex-wrap: wrap;
 }
 
 .brand-title {
@@ -84,13 +85,13 @@ body {
 }
 
 .brand-text h1 {
-  font-size: 16px;
+  font-size: 15.5px;
   font-weight: 800;
   letter-spacing: -0.01em;
 }
 
 .brand-text p {
-  font-size: 12px;
+  font-size: 11.5px;
   color: #a7f3d0;
   font-weight: 600;
 }
@@ -98,28 +99,50 @@ body {
 .toolbar-controls {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
-.select-teacher {
-  padding: 8px 14px;
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 4px 8px;
   border-radius: 8px;
-  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.filter-label {
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #a7f3d0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.filter-select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   background: #ffffff;
   color: var(--ink);
-  font-weight: 700;
-  font-size: 13.5px;
+  font-weight: 750;
+  font-size: 13px;
   outline: none;
   cursor: pointer;
-  min-width: 360px;
-  max-width: 500px;
+}
+
+.filter-select-section {
+  min-width: 260px;
+  max-width: 360px;
 }
 
 .btn-action {
-  padding: 8px 16px;
+  padding: 7px 14px;
   border-radius: 8px;
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 800;
   cursor: pointer;
   border: 1.5px solid transparent;
@@ -138,15 +161,6 @@ body {
 
 .btn-print:hover {
   background: #f0fdf4;
-}
-
-.btn-pdf {
-  background: #f59e0b;
-  color: #ffffff;
-}
-
-.btn-pdf:hover {
-  background: #d97706;
 }
 
 .btn-back {
@@ -428,32 +442,53 @@ body {
 </head>
 <body>
 
-<!-- Top Navigation Toolbar -->
+<!-- Top Navigation Toolbar with Cascading Modality & Shift Filters -->
 <header class="top-toolbar">
   <div class="brand-title">
     <div class="brand-icon">AMIS</div>
     <div class="brand-text">
-      <h1>Official Class Timetable / Section Weekly Schedule</h1>
-      <p>School Year 2026–2027 • Official Class Program</p>
+      <h1>Official Class Timetable</h1>
+      <p>S.Y. 2026–2027 • Weekly Class Program</p>
     </div>
   </div>
 
   <div class="toolbar-controls">
-    <select id="sectionSelect" class="select-teacher" aria-label="Select Class Section">
-      <option value="">Loading class sections...</option>
-    </select>
+    <!-- Step 1: Modality Selector -->
+    <div class="filter-group">
+      <span class="filter-label">Modality:</span>
+      <select id="modalitySelect" class="filter-select" aria-label="Select Modality">
+        <option value="F2F">🏫 Face-to-Face (F2F)</option>
+        <option value="ODL">💻 Online Distance (ODL)</option>
+        <option value="ALL">🌟 Show All Sections</option>
+      </select>
+    </div>
+
+    <!-- Step 2: ODL Shift Selector (Visible when Modality = ODL) -->
+    <div class="filter-group" id="shiftGroup" style="display: none;">
+      <span class="filter-label">ODL Shift:</span>
+      <select id="shiftSelect" class="filter-select" aria-label="Select ODL Shift">
+        <option value="ODL1">☀️ 1st Shift (12:30 PM)</option>
+        <option value="ODL2">🌙 2nd Shift (03:30 PM)</option>
+        <option value="ODL_ALL">⚡ All ODL Shifts</option>
+      </select>
+    </div>
+
+    <!-- Step 3: Grade / Section Selector -->
+    <div class="filter-group">
+      <span class="filter-label">Section:</span>
+      <select id="sectionSelect" class="filter-select filter-select-section" aria-label="Select Section">
+        <option value="">Loading sections...</option>
+      </select>
+    </div>
 
     <button id="btnPrint" class="btn-action btn-print" onclick="window.print()">
-      🖨️ Print Schedule
+      🖨️ Print
     </button>
     <a href="faculty-timetable-print.html" class="btn-action btn-back">
-      👨‍🏫 Faculty Timetable
+      👨‍🏫 Faculty
     </a>
     <a href="index.html" class="btn-action btn-back">
-      📋 Exam Schedule
-    </a>
-    <a href="teacher-tracking.html" class="btn-action btn-back">
-      ← Teacher Tracking
+      📋 Exams
     </a>
   </div>
 </header>
@@ -468,6 +503,9 @@ body {
   const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
   let SECTIONS_DATA = [];
 
+  const modalitySelect = document.getElementById('modalitySelect');
+  const shiftGroup = document.getElementById('shiftGroup');
+  const shiftSelect = document.getElementById('shiftSelect');
   const sectionSelect = document.getElementById('sectionSelect');
   const sheetsContainer = document.getElementById('sheetsContainer');
 
@@ -530,104 +568,119 @@ body {
       return;
     }
 
-    const f2fCount = SECTIONS_DATA.filter(s => s.shift === 'F2F').length;
-    const odl1Count = SECTIONS_DATA.filter(s => s.shift === 'ODL - 1ST SHIFT').length;
-    const odl2Count = SECTIONS_DATA.filter(s => s.shift === 'ODL - 2ND SHIFT').length;
-
-    let selectHtml = `
-      <option value="ALL_SECTIONS">🌟 [ALL SECTIONS] Show & Print All ${SECTIONS_DATA.length} Sections</option>
-      <option value="FILTER_F2F">🏫 [F2F] Face-to-Face Sections (${f2fCount} Classes)</option>
-      <option value="FILTER_ODL1">💻 [ODL - 1ST SHIFT] Online Distance Learning 1st Shift (${odl1Count} Classes)</option>
-      <option value="FILTER_ODL2">🌙 [ODL - 2ND SHIFT] Online Distance Learning 2nd Shift (${odl2Count} Classes)</option>
-      <option value="ALL_ELEM">📚 [ELEMENTARY] Show All Elementary Sections</option>
-      <option value="ALL_JHS">🎓 [JUNIOR HIGH] Show All Junior High Sections</option>
-      <option value="ALL_SHS">📜 [SENIOR HIGH] Show All Senior High Sections</option>
-      <optgroup label="── Individual Face-to-Face (F2F) ──">
-    `;
-
-    SECTIONS_DATA.forEach((s, idx) => {
-      if (s.shift === 'F2F') {
-        selectHtml += `<option value="${idx}">[F2F] ${esc(s.section_name)}</option>`;
-      }
-    });
-    selectHtml += `</optgroup><optgroup label="── Individual ODL 1st Shift ──">`;
-    SECTIONS_DATA.forEach((s, idx) => {
-      if (s.shift === 'ODL - 1ST SHIFT') {
-        selectHtml += `<option value="${idx}">[1st Shift] ${esc(s.section_name)}</option>`;
-      }
-    });
-    selectHtml += `</optgroup><optgroup label="── Individual ODL 2nd Shift ──">`;
-    SECTIONS_DATA.forEach((s, idx) => {
-      if (s.shift === 'ODL - 2ND SHIFT') {
-        selectHtml += `<option value="${idx}">[2nd Shift] ${esc(s.section_name)}</option>`;
-      }
-    });
-    selectHtml += `</optgroup>`;
-
-    sectionSelect.innerHTML = selectHtml;
-
-    // Check URL Param ?section=...
+    // Set initial filters based on URL or defaults
     const urlParams = new URLSearchParams(window.location.search);
-    const paramSec = urlParams.get('section');
-    let defaultVal = "0";
-    if (paramSec) {
-      const p = paramSec.toLowerCase();
-      if (['all', 'all_sections'].includes(p)) defaultVal = "ALL_SECTIONS";
-      else if (['f2f', 'face to face'].includes(p)) defaultVal = "FILTER_F2F";
-      else if (['odl1', '1st', 'odl_1st', 'odl - 1st shift'].includes(p)) defaultVal = "FILTER_ODL1";
-      else if (['odl2', '2nd', 'odl_2nd', 'odl - 2nd shift'].includes(p)) defaultVal = "FILTER_ODL2";
-      else if (['elem', 'elementary'].includes(p)) defaultVal = "ALL_ELEM";
-      else if (['jhs', 'junior high'].includes(p)) defaultVal = "ALL_JHS";
-      else if (['shs', 'senior high'].includes(p)) defaultVal = "ALL_SHS";
-      else {
-        const matchIdx = SECTIONS_DATA.findIndex(s => s.section_name.toLowerCase().includes(p));
-        if (matchIdx !== -1) defaultVal = String(matchIdx);
-      }
+    let initModality = urlParams.get('modality') || 'F2F';
+    let initShift = urlParams.get('shift') || 'ODL1';
+    let initSec = urlParams.get('section') || 'ALL_GROUP';
+
+    modalitySelect.value = ['F2F', 'ODL', 'ALL'].includes(initModality.toUpperCase()) ? initModality.toUpperCase() : 'F2F';
+    shiftSelect.value = ['ODL1', 'ODL2', 'ODL_ALL'].includes(initShift.toUpperCase()) ? initShift.toUpperCase() : 'ODL1';
+
+    updateShiftVisibility();
+    populateSectionDropdown();
+
+    if (initSec) {
+      sectionSelect.value = initSec;
+      if (!sectionSelect.value) sectionSelect.selectedIndex = 0;
     }
 
-    sectionSelect.value = defaultVal;
-    renderSelectedView(defaultVal);
+    renderCurrentView();
 
-    sectionSelect.addEventListener('change', (e) => {
-      const val = e.target.value;
-      const newUrl = new URL(window.location);
-      if (val === 'ALL_SECTIONS') newUrl.searchParams.set('section', 'all');
-      else if (val === 'FILTER_F2F') newUrl.searchParams.set('section', 'f2f');
-      else if (val === 'FILTER_ODL1') newUrl.searchParams.set('section', 'odl1');
-      else if (val === 'FILTER_ODL2') newUrl.searchParams.set('section', 'odl2');
-      else if (val === 'ALL_ELEM') newUrl.searchParams.set('section', 'elem');
-      else if (val === 'ALL_JHS') newUrl.searchParams.set('section', 'jhs');
-      else if (val === 'ALL_SHS') newUrl.searchParams.set('section', 'shs');
-      else if (SECTIONS_DATA[parseInt(val, 10)]) newUrl.searchParams.set('section', SECTIONS_DATA[parseInt(val, 10)].section_name);
-      window.history.replaceState({}, '', newUrl);
-      renderSelectedView(val);
+    // Event listeners
+    modalitySelect.addEventListener('change', () => {
+      updateShiftVisibility();
+      populateSectionDropdown();
+      renderCurrentView();
+    });
+
+    shiftSelect.addEventListener('change', () => {
+      populateSectionDropdown();
+      renderCurrentView();
+    });
+
+    sectionSelect.addEventListener('change', () => {
+      renderCurrentView();
     });
   }
 
-  function renderSelectedView(val) {
-    if (val === 'ALL_SECTIONS') {
-      renderMultipleSections(SECTIONS_DATA);
-    } else if (val === 'FILTER_F2F') {
-      renderMultipleSections(SECTIONS_DATA.filter(s => s.shift === 'F2F'));
-    } else if (val === 'FILTER_ODL1') {
-      renderMultipleSections(SECTIONS_DATA.filter(s => s.shift === 'ODL - 1ST SHIFT'));
-    } else if (val === 'FILTER_ODL2') {
-      renderMultipleSections(SECTIONS_DATA.filter(s => s.shift === 'ODL - 2ND SHIFT'));
-    } else if (val === 'ALL_ELEM') {
-      renderMultipleSections(SECTIONS_DATA.filter(s => s.department === 'Elementary'));
-    } else if (val === 'ALL_JHS') {
-      renderMultipleSections(SECTIONS_DATA.filter(s => s.department === 'Junior High School'));
-    } else if (val === 'ALL_SHS') {
-      renderMultipleSections(SECTIONS_DATA.filter(s => s.department === 'Senior High School'));
+  function updateShiftVisibility() {
+    if (modalitySelect.value === 'ODL') {
+      shiftGroup.style.display = 'flex';
     } else {
-      const single = SECTIONS_DATA[parseInt(val, 10)];
-      if (single) renderMultipleSections([single]);
+      shiftGroup.style.display = 'none';
+    }
+  }
+
+  function getFilteredPool() {
+    const mod = modalitySelect.value;
+    const shift = shiftSelect.value;
+
+    if (mod === 'F2F') {
+      return SECTIONS_DATA.filter(s => s.shift === 'F2F');
+    } else if (mod === 'ODL') {
+      if (shift === 'ODL1') {
+        return SECTIONS_DATA.filter(s => s.shift === 'ODL - 1ST SHIFT');
+      } else if (shift === 'ODL2') {
+        return SECTIONS_DATA.filter(s => s.shift === 'ODL - 2ND SHIFT');
+      } else {
+        return SECTIONS_DATA.filter(s => s.shift.includes('ODL'));
+      }
+    } else {
+      return SECTIONS_DATA;
+    }
+  }
+
+  function populateSectionDropdown() {
+    const pool = getFilteredPool();
+    const mod = modalitySelect.value;
+    const shift = shiftSelect.value;
+
+    let groupTitle = "All Sections";
+    if (mod === 'F2F') groupTitle = `📋 [ALL F2F] Show All ${pool.length} F2F Classes`;
+    else if (mod === 'ODL') {
+      if (shift === 'ODL1') groupTitle = `📋 [ALL 1ST SHIFT] Show All ${pool.length} Classes`;
+      else if (shift === 'ODL2') groupTitle = `📋 [ALL 2ND SHIFT] Show All ${pool.length} Classes`;
+      else groupTitle = `📋 [ALL ODL] Show All ${pool.length} ODL Classes`;
+    } else {
+      groupTitle = `🌟 [ALL SECTIONS] Show All ${pool.length} Classes`;
+    }
+
+    let html = `<option value="ALL_GROUP">${groupTitle}</option>`;
+
+    pool.forEach(s => {
+      const globalIdx = SECTIONS_DATA.indexOf(s);
+      html += `<option value="${globalIdx}">${esc(s.section_name)}</option>`;
+    });
+
+    sectionSelect.innerHTML = html;
+    sectionSelect.value = "ALL_GROUP";
+  }
+
+  function renderCurrentView() {
+    const secVal = sectionSelect.value;
+    const pool = getFilteredPool();
+
+    if (secVal === 'ALL_GROUP') {
+      renderMultipleSections(pool);
+    } else {
+      const targetSec = SECTIONS_DATA[parseInt(secVal, 10)];
+      if (targetSec) {
+        renderMultipleSections([targetSec]);
+      } else {
+        renderMultipleSections(pool);
+      }
     }
   }
 
   function renderMultipleSections(list) {
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
     let fullHtml = '';
+
+    if (!list || list.length === 0) {
+      sheetsContainer.innerHTML = '<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">No section schedules found for this selection.</div>';
+      return;
+    }
 
     list.forEach(sec => {
       fullHtml += `
@@ -687,7 +740,6 @@ body {
             `;
           }
         } else {
-          // Individual day cells
           const firstDay = p.days ? p.days['Sunday'] : null;
           const isBreakRow = firstDay && firstDay.is_break;
 
