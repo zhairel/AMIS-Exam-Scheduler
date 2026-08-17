@@ -1089,6 +1089,10 @@ html_content = f"""<!DOCTYPE html>
           <span class="status-dot"></span>
           <span>100% Conflict-Free Validated</span>
         </div>
+        <a class="btn btn-outline" href="index.html" style="background:#ffffff; color:#0f172a; font-weight:700; border-color:#cbd5e1;" title="Back to Schedule Home">
+          <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Schedule Home
+        </a>
         <a class="btn btn-outline" href="class-schedule.html" target="_blank" style="background:#0f766e; color:#ffffff; font-weight:700; border-color:#0f766e;" title="View Official Weekly Class Schedule (Sunday-Thursday)">
           Class Schedule (Official)
         </a>
@@ -1959,7 +1963,7 @@ html_content = f"""<!DOCTYPE html>
 </html>
 """
 
-with open(os.path.join(BASE_DIR, "index.html"), "w", encoding="utf-8") as f:
+with open(os.path.join(BASE_DIR, "exam-schedule.html"), "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print("index.html successfully written and assembled with all 4 options!")
+print("exam-schedule.html successfully written and assembled with all 4 options!")
