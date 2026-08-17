@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T07:54:08.117133",
+  "generated_at": "2026-08-18T07:59:41.887223",
   "source_file": "OFFICIAL_CLASS_SCHEDULE_raw.json",
   "total_sections": 64,
   "total_active_class_sessions": 1260,
@@ -84,10 +84,10 @@
       "day": "Wednesday",
       "time": "01:30 PM \u2013 02:10 PM",
       "conflicting_sections": [
-        "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
-        "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX"
+        "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)"
       ],
-      "message": "Teacher 'Ustadh Abdiraheem' scheduled concurrently in ['GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)', 'GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX'] on Wednesday at 01:30 PM \u2013 02:10 PM"
+      "message": "Teacher 'Ustadh Abdiraheem' scheduled concurrently in ['GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX', 'GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)'] on Wednesday at 01:30 PM \u2013 02:10 PM"
     },
     {
       "type": "TEACHER_SCHEDULE_CONFLICT",

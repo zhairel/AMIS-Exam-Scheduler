@@ -4,9 +4,9 @@ from datetime import datetime
 from collections import defaultdict
 from teacher_registry import TEACHER_REGISTRY, resolve_teacher
 
-RAW_JSON_PATH = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/OFFICIAL_CLASS_SCHEDULE_raw.json'
+RAW_JSON_PATH = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/OFFICIAL_CLASS_SCHEDULE_IMPORT_CANONICAL.json'
 
-with open(RAW_JSON_PATH) as f:
+with open(RAW_JSON_PATH, 'r', encoding='utf-8') as f:
     raw_data = json.load(f)
 
 DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
@@ -175,14 +175,14 @@ def parse_time_range(raw_t):
 
 print("Building Master Single-Source Class Schedule from OFFICIAL_CLASS_SCHEDULE_raw.json...")
 
-sheets_dict = {s['name']: s for s in raw_data['sheets']}
+sheets_dict = {(s.get('name') or s.get('sheet_name')): s for s in raw_data['sheets']}
 
 all_sections = []
 audit_warnings = []
 flat_schedule_records = []
 
-# Exact active section sheets: ELEM, HS SCHED (NEW), and SHS
-target_sheets = ['ELEM', 'HS SCHED (NEW)', 'SHS']
+# Canonical source of truth sheets: ELEM and HS SCHED (NEW)
+target_sheets = ['ELEM', 'HS SCHED (NEW)']
 seen_sec_titles = set()
 
 for sname in target_sheets:
@@ -580,11 +580,27 @@ for tinfo in sorted(TEACHER_REGISTRY, key=lambda x: x['canonical_name']):
         
         for d in DAYS:
             matches = [r for r in t_recs if r['day'] == d and r['time'] == t_str]
-            if len(matches) == 1:
+            # Deduplicate matches by normalized section, subject, and time
+            distinct_sections = list(dict.fromkeys(m['section_name'] for m in matches))
+            cell_distinct_subjs = set(m['subject'] for m in matches)
+            
+            # Check for combined class: same subject, Grade 11 & 12 F2F combined
+            is_combined = False
+            if len(cell_distinct_subjs) == 1 and len(distinct_sections) > 1:
+                sec_names_up = [m['section_name'].upper() for m in matches]
+                if any('GRADE 11' in s for s in sec_names_up) and any('GRADE 12' in s for s in sec_names_up):
+                    is_combined = True
+
+            if len(distinct_sections) == 1 or is_combined:
                 rec = matches[0]
-                sec_short = re.sub(r'\(.*?\)', '', rec['section_name']).strip().replace('GRADE ', 'G').replace('Grade ', 'G').replace('Kinder ', 'K')
-                if 'FACE TO FACE' in rec['section_name'].upper() or 'F2F' in rec['section_name'].upper():
-                    sec_short += ' (F2F)'
+                if is_combined:
+                    sec_short = 'G11 & G12 (F2F)'
+                    sec_full = 'GRADE 11 & 12 (FACE TO FACE)'
+                else:
+                    sec_short = re.sub(r'\(.*?\)', '', rec['section_name']).strip().replace('GRADE ', 'G').replace('Grade ', 'G').replace('Kinder ', 'K')
+                    if 'FACE TO FACE' in rec['section_name'].upper() or 'F2F' in rec['section_name'].upper():
+                        sec_short += ' (F2F)'
+                    sec_full = rec['section_name']
                     
                 color = get_subject_color(rec['subject'])
                 row_data["days"][d] = {
@@ -594,7 +610,7 @@ for tinfo in sorted(TEACHER_REGISTRY, key=lambda x: x['canonical_name']):
                     "has_conflict": False,
                     "subject": rec['subject'],
                     "subject_id": rec['subject_id'],
-                    "section": rec['section_name'],
+                    "section": sec_full,
                     "section_short": sec_short,
                     "grade": rec['grade'],
                     "shift": rec['shift'],
@@ -611,8 +627,8 @@ for tinfo in sorted(TEACHER_REGISTRY, key=lambda x: x['canonical_name']):
                     "border": color['border'],
                     "text": color['text']
                 }
-            elif len(matches) > 1:
-                # Multiple classes scheduled in exact same slot on the same day (Conflict!)
+            elif len(distinct_sections) > 1:
+                # Genuinely different sections assigned to same teacher at same time (Real Conflict)
                 sec_shorts = []
                 for m in matches:
                     sh = re.sub(r'\(.*?\)', '', m['section_name']).strip().replace('GRADE ', 'G').replace('Grade ', 'G').replace('Kinder ', 'K')
