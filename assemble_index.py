@@ -9,6 +9,11 @@ with open(os.path.join(BASE_DIR, "options_exam_data.json"), "r", encoding="utf-8
 
 json_data_str = json.dumps(opts_data, ensure_ascii=False)
 
+with open(os.path.join(BASE_DIR, "teacher_weekly_schedules.json"), "r", encoding="utf-8") as f:
+    weekly_schedules = json.load(f)
+
+weekly_data_str = json.dumps(weekly_schedules, ensure_ascii=False)
+
 html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1084,6 +1089,15 @@ html_content = f"""<!DOCTYPE html>
           <span class="status-dot"></span>
           <span>100% Conflict-Free Validated</span>
         </div>
+        <a class="btn btn-outline" href="faculty-timetable-print.html" target="_blank" title="View & Print Official Faculty Weekly Timetable Grid">
+          Faculty Timetable (PDF)
+        </a>
+        <a class="btn btn-outline" href="teacher-tracking.html" title="Open Teacher Examination & Workload Tracking">
+          Teacher Tracking
+        </a>
+        <a class="btn btn-outline" href="grade-calendar-view.html" target="_blank" title="View & Print Grade Posters">
+          Grade Posters
+        </a>
         <button class="btn btn-outline" onclick="window.print()">Print Schedule</button>
         <button class="btn btn-primary" onclick="exportMasterCSV()">Export CSV</button>
       </div>
@@ -1274,10 +1288,12 @@ html_content = f"""<!DOCTYPE html>
     <p style="margin-top:4px; font-size:12.5px; color:#94a3b8;">100% Conflict-Free Validated • Mathematical Constraint Programming Model • S.Y. 2026–2027</p>
   </footer>
 
-  <!-- Inlined Full Multi-Option Dataset -->
+  <!-- Inlined Full Multi-Option Dataset & Weekly Schedules -->
   <script>
     window.AMIS_OPTIONS_DATA = {json_data_str};
     window.AMIS_EXAM_DATA = window.AMIS_OPTIONS_DATA.OPTION_A;
+    window.AMIS_TEACHER_WEEKLY_SCHEDULES = {weekly_data_str};
+    const WEEKLY_SCHEDULES_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
   </script>
 
   <script>
@@ -1655,27 +1671,98 @@ html_content = f"""<!DOCTYPE html>
       const uniqueTeachers = [...new Set(records.map(r => r.teacher))].sort();
 
       container.innerHTML = `
-        <div style="display:flex; flex-direction:column; gap:24px;">
+        <div style="display:flex; flex-direction:column; gap:28px;">
           ${{uniqueTeachers.map(teacher => {{
             const tRecs = records.filter(r => r.teacher === teacher).sort((a,b) => a.date.localeCompare(b.date) || minutes(a.time) - minutes(b.time));
             const subList = [...new Set(tRecs.map(r => r.subject))];
+            const weeklyData = (typeof WEEKLY_SCHEDULES_DATA !== 'undefined' && WEEKLY_SCHEDULES_DATA[teacher]) ? WEEKLY_SCHEDULES_DATA[teacher] : null;
+
+            let weeklyTableHtml = '';
+            if (weeklyData && weeklyData.rows) {{
+              weeklyTableHtml = `
+                <div style="overflow-x:auto; margin-top:14px; border:1.5px solid #cbd5e1; border-radius:8px;">
+                  <table style="width:100%; border-collapse:collapse; background:#ffffff; table-layout:fixed; font-size:12px;">
+                    <thead>
+                      <tr style="background:#0b4d38; color:#ffffff;">
+                        <th style="padding:8px 6px; width:130px; border:1px solid #043828; text-align:center;">Time</th>
+                        <th style="padding:8px 6px; width:65px; border:1px solid #043828; text-align:center;">Mins</th>
+                        <th style="padding:8px 6px; border:1px solid #043828; text-align:center;">Sunday</th>
+                        <th style="padding:8px 6px; border:1px solid #043828; text-align:center;">Monday</th>
+                        <th style="padding:8px 6px; border:1px solid #043828; text-align:center;">Tuesday</th>
+                        <th style="padding:8px 6px; border:1px solid #043828; text-align:center;">Wednesday</th>
+                        <th style="padding:8px 6px; border:1px solid #043828; text-align:center;">Thursday</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${{weeklyData.rows.map(r => {{
+                        if (r.is_break) {{
+                          return `
+                            <tr style="background:#f1f5f9;">
+                              <td style="padding:4px 6px; border:1px solid #cbd5e1; text-align:center; font-weight:800; font-size:11px; color:#1e293b;">${{r.time}}</td>
+                              <td style="padding:4px 6px; border:1px solid #cbd5e1; text-align:center; font-weight:800; font-size:11px; color:#64748b;">${{r.minutes}}m</td>
+                              <td colspan="5" style="padding:4px 10px; border:1px solid #cbd5e1; text-align:center; font-weight:900; font-size:10.5px; color:#475569; letter-spacing:0.04em; text-transform:uppercase;">${{r.break_title}}</td>
+                            </tr>
+                          `;
+                        }}
+                        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'];
+                        const dayCells = days.map(d => {{
+                          const cell = r.days[d];
+                          if (cell && cell.occupied) {{
+                            const c = cell.color || {{ bg: '#f1f5f9', border: '#cbd5e1', text: '#1e293b' }};
+                            return `
+                              <td style="padding:4px 4px; border:1px solid #cbd5e1; text-align:center; background:${{c.bg}}; color:${{c.text}}; border-color:${{c.border}}; vertical-align:middle;">
+                                <div style="font-weight:900; font-size:11px; line-height:1.2;">${{cell.label}}</div>
+                                <div style="font-size:9px; font-weight:700; opacity:0.8; text-transform:uppercase;">${{cell.modality}}</div>
+                              </td>
+                            `;
+                          }}
+                          return '<td style="padding:4px; border:1px solid #cbd5e1; background:#ffffff;"></td>';
+                        }}).join('');
+
+                        return `
+                          <tr>
+                            <td style="padding:4px 6px; border:1px solid #cbd5e1; text-align:center; font-weight:800; font-size:11px; background:#f8fafc; color:#1e293b;">${{r.time}}</td>
+                            <td style="padding:4px 6px; border:1px solid #cbd5e1; text-align:center; font-weight:800; font-size:11px; background:#f1f5f9; color:#475569;">${{r.minutes}}m</td>
+                            ${{dayCells}}
+                          </tr>
+                        `;
+                      }}).join('')}}
+                    </tbody>
+                  </table>
+                </div>
+              `;
+            }}
 
             return `
-              <div class="calendar-poster" style="margin-bottom:24px;">
-                <div class="poster-header" style="background: #0f766e;">
+              <div class="calendar-poster" style="margin-bottom:28px;">
+                <div class="poster-header" style="background: #064e3b; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
                   <div class="poster-title">
-                    <h2>${{teacher}}</h2>
-                    <p>${{subList.join(' • ')}} (${{OPTION_INFO[CURRENT_OPTION].code}})</p>
+                    <h2 style="font-size:20px; font-weight:900; letter-spacing:0.02em;">${{teacher}}</h2>
+                    <p style="font-size:13px; color:#a7f3d0; font-weight:700;">${{subList.join(' • ')}} (${{weeklyData ? weeklyData.total_classes + ' Weekly Classes' : tRecs.length + ' Exams'}})</p>
                   </div>
-                  <div class="grade-badge-display">${{tRecs.length}} Exam Assignments</div>
+                  <div style="display:flex; gap:10px; align-items:center;">
+                    <a href="faculty-timetable-print.html?teacher=${{encodeURIComponent(teacher)}}" target="_blank" class="btn btn-outline" style="background:#ffffff; color:#064e3b; font-size:13px; padding:7px 14px; border-radius:6px; text-decoration:none; font-weight:800;">
+                      🖨️ Print / Export PDF
+                    </a>
+                  </div>
                 </div>
 
                 <div style="padding:20px;">
-                  <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap:14px;">
-                    ${{tRecs.map(ex => {{
-                      const typeCls = ex.modality === 'F2F' ? 'f2f' : (ex.shift.includes('2nd') ? 'odl2' : 'odl1');
-                      return renderExamCardHtml(ex, typeCls);
-                    }}).join('')}}
+                  <h3 style="font-size:15px; font-weight:900; color:#0f172a; margin-bottom:6px;">
+                    Weekly Teaching Schedule Matrix (Sunday–Thursday)
+                  </h3>
+                  ${{weeklyTableHtml}}
+
+                  <div style="margin-top:24px; padding-top:18px; border-top:2px solid #e2e8f0;">
+                    <h3 style="font-size:14px; font-weight:900; color:#0f172a; margin-bottom:12px;">
+                      Term Examination Proctoring Schedule (${{tRecs.length}} Sessions)
+                    </h3>
+                    <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap:14px;">
+                      ${{tRecs.map(ex => {{
+                        const typeCls = ex.modality === 'F2F' ? 'f2f' : (ex.shift.includes('2nd') ? 'odl2' : 'odl1');
+                        return renderExamCardHtml(ex, typeCls);
+                      }}).join('')}}
+                    </div>
                   </div>
                 </div>
               </div>
