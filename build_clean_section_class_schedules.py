@@ -16,28 +16,37 @@ def format_time_clean(raw_t):
     # Remove seconds if present e.g. 03:00:00 -> 03:00
     s = re.sub(r'(\d{1,2}:\d{2}):00\b', r'\1', s)
     
-    # Standardize am/pm
-    s = re.sub(r'(?i)\b(a\.m\.|am)\b', 'AM', s)
-    s = re.sub(r'(?i)\b(p\.m\.|pm)\b', 'PM', s)
-    s = re.sub(r'(\d+:\d+)\s*-\s*(\d+:\d+)', r'\1 – \2', s)
-    s = re.sub(r'(\d+:\d+)\s*:\s*(\d+:\d+)', r'\1 – \2', s)
+    # Extract times
+    times = re.findall(r'(\d{1,2}:\d{2})', s)
+    has_am = bool(re.search(r'(?i)\b(a\.m\.|am)\b', s))
+    has_pm = bool(re.search(r'(?i)\b(p\.m\.|pm)\b', s))
     
-    # If no AM/PM, infer based on hour
-    if 'AM' not in s and 'PM' not in s:
-        m = re.match(r'^(\d{1,2}):(\d{2})', s)
-        if m:
-            hh = int(m.group(1))
-            if hh in [7, 8, 9, 10, 11]:
-                s += ' AM'
-            elif hh in [12, 1, 2, 3, 4, 5, 6]:
-                s += ' PM'
-                
-    # Pad hour to 2 digits e.g. 7:30 AM -> 07:30 AM
-    def pad_hour(m):
-        hh = int(m.group(1))
-        mm = m.group(2)
-        return f"{hh:02d}:{mm}"
-    s = re.sub(r'\b(\d{1}):(\d{2})\b', pad_hour, s)
+    if len(times) == 2:
+        t1, t2 = times[0], times[1]
+        h1 = int(t1.split(':')[0])
+        h2 = int(t2.split(':')[0])
+        
+        # Determine AM / PM for each
+        if has_pm and not has_am:
+            meridiem = 'PM'
+            m1 = 'AM' if h1 in [7, 8, 9, 10, 11] and h2 in [12, 1, 2] else 'PM'
+            m2 = 'PM'
+        elif has_am and not has_pm:
+            m1 = 'AM'
+            m2 = 'AM'
+        else:
+            m1 = 'AM' if h1 in [7, 8, 9, 10, 11] else 'PM'
+            m2 = 'AM' if h2 in [7, 8, 9, 10, 11] else 'PM'
+            
+        hh1, mm1 = int(t1.split(':')[0]), t1.split(':')[1]
+        hh2, mm2 = int(t2.split(':')[0]), t2.split(':')[1]
+        return f"{hh1:02d}:{mm1} {m1} – {hh2:02d}:{mm2} {m2}"
+    elif len(times) == 1:
+        t1 = times[0]
+        hh1, mm1 = int(t1.split(':')[0]), t1.split(':')[1]
+        m1 = 'AM' if (has_am or hh1 in [7, 8, 9, 10, 11]) and not has_pm else 'PM'
+        return f"{hh1:02d}:{mm1} {m1}"
+        
     return s
 
 def format_mins_clean(raw_m):
@@ -263,5 +272,5 @@ with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/class_schedules_data.j
     f.write(f"window.CLASS_SCHEDULES_DATA = {json.dumps(all_sections_data, indent=2)};\n")
     f.write(f"const CLASS_SCHEDULES_DATA = window.CLASS_SCHEDULES_DATA;\n")
 
-print(f"Successfully generated class_schedules_data.json and class_schedules_data.js for {len(all_sections_data)} sections with full merged ranges!")
+print(f"Successfully generated class_schedules_data.json and class_schedules_data.js for {len(all_sections_data)} sections with clean time formats!")
 
