@@ -68,7 +68,7 @@
       max-width: 1020px;
       width: 100%;
       margin: 0 auto;
-      padding: 48px 24px 40px 24px;
+      padding: 40px 24px 32px 24px;
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -79,29 +79,31 @@
     /* Header */
     .hero-header {
       text-align: center;
-      margin-bottom: 36px;
+      margin-bottom: 32px;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    .school-emblem {
-      width: 58px;
-      height: 58px;
-      background: linear-gradient(135deg, #064e3b 0%, #0f766e 100%);
-      color: #ffffff;
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 8px 18px rgba(6, 78, 59, 0.22);
-      margin-bottom: 18px;
+    .logo-container {
+      position: relative;
+      margin-bottom: 16px;
+      display: inline-block;
     }
 
-    .school-emblem svg {
-      width: 32px;
-      height: 32px;
-      stroke-width: 2;
+    .school-official-logo {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: contain;
+      filter: drop-shadow(0 6px 16px rgba(6, 78, 59, 0.2));
+      transition: var(--transition);
+      background: #ffffff;
+      padding: 2px;
+    }
+
+    .school-official-logo:hover {
+      transform: scale(1.04) rotate(2deg);
     }
 
     .school-name {
@@ -122,24 +124,43 @@
       margin-bottom: 8px;
     }
 
+    .developer-credit-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #064e3b;
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      padding: 4px 14px;
+      border-radius: 9999px;
+      margin-bottom: 10px;
+    }
+
+    .developer-credit-tag strong {
+      font-weight: 800;
+      color: #043d2e;
+    }
+
     .system-desc {
-      font-size: 14px;
+      font-size: 13.5px;
       color: var(--text-muted);
       font-weight: 500;
       max-width: 500px;
       line-height: 1.5;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     .school-year-tag {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 5px 14px;
+      padding: 4px 14px;
       background: #f1f5f9;
       border: 1px solid var(--line);
       border-radius: 9999px;
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       color: #475569;
     }
@@ -158,7 +179,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 24px;
       width: 100%;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
 
     .card {
@@ -356,12 +377,17 @@
     /* Footer */
     .site-footer {
       text-align: center;
-      padding: 20px 24px;
+      padding: 18px 24px;
       border-top: 1px solid var(--line);
       background: var(--surface);
       font-size: 12px;
       font-weight: 600;
       color: var(--text-muted);
+    }
+
+    .site-footer strong {
+      color: var(--brand-primary);
+      font-weight: 800;
     }
 
     @media (max-width: 768px) {
@@ -371,11 +397,16 @@
       }
 
       .main-wrapper {
-        padding: 32px 16px;
+        padding: 28px 16px;
       }
 
       .school-name {
         font-size: 21px;
+      }
+
+      .school-official-logo {
+        width: 80px;
+        height: 80px;
       }
 
       .card {
@@ -392,14 +423,17 @@
 
     <!-- Header & Branding -->
     <header class="hero-header">
-      <div class="school-emblem" aria-hidden="true">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-        </svg>
+      <div class="logo-container">
+        <img src="amis_logo.png" alt="Al Munawwara Islamic School Official Seal" class="school-official-logo">
       </div>
 
       <h1 class="school-name">AL MUNAWWARA ISLAMIC SCHOOL</h1>
       <h2 class="system-title">Schedule Management System</h2>
+      
+      <div class="developer-credit-tag">
+        <span>Developed by:</span> <strong>Software Engineer Mon Zhairel Lingasa</strong>
+      </div>
+
       <p class="system-desc">Manage and view official class schedules and examination schedules.</p>
 
       <div class="school-year-tag">
@@ -536,7 +570,7 @@
   </main>
 
   <footer class="site-footer">
-    AL MUNAWWARA ISLAMIC SCHOOL • Academic Year 2026–2027 • Official Schedule Management System
+    AL MUNAWWARA ISLAMIC SCHOOL • Academic Year 2026–2027 • Developed by <strong>Software Engineer Mon Zhairel Lingasa</strong>
   </footer>
 
 </body>
