@@ -301,99 +301,107 @@ body {
   z-index: 99999 !important;
   width: 100vw !important;
   max-width: 100vw !important;
-  height: 100vh !important;
+  min-height: 100vh !important;
   margin: 0 !important;
-  padding: 14px 20px !important;
+  padding: 24px 32px !important;
   background: #ffffff !important;
-  overflow: auto !important;
+  overflow-y: auto !important;
   border: none !important;
   border-radius: 0 !important;
   box-sizing: border-box !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: space-between !important;
+  display: block !important;
 }
 
 .timetable-sheet.is-fullscreen .school-header {
-  margin-bottom: 6px !important;
+  margin-bottom: 12px !important;
 }
 
 .timetable-sheet.is-fullscreen .school-header h1 {
-  font-size: 19px !important;
+  font-size: 22px !important;
 }
 
 .timetable-sheet.is-fullscreen .school-header h2 {
-  font-size: 13.5px !important;
+  font-size: 15px !important;
+}
+
+.timetable-sheet.is-fullscreen .school-header p {
+  font-size: 13px !important;
 }
 
 .timetable-sheet.is-fullscreen .teacher-banner {
-  padding: 8px 16px !important;
+  padding: 12px 20px !important;
   margin-bottom: 0 !important;
 }
 
 .timetable-sheet.is-fullscreen .teacher-name-title {
-  font-size: 18px !important;
+  font-size: 20px !important;
 }
 
 .timetable-sheet.is-fullscreen .teacher-meta-tag {
-  font-size: 13px !important;
-  padding: 4px 12px !important;
+  font-size: 14px !important;
+  padding: 6px 14px !important;
 }
 
 .timetable-sheet.is-fullscreen .timetable-grid {
-  flex: 1 1 auto !important;
-  height: auto !important;
   width: 100% !important;
+  table-layout: fixed !important;
+  border-collapse: collapse !important;
   margin-top: 0 !important;
+  display: table !important;
 }
 
 .timetable-sheet.is-fullscreen .timetable-grid thead th {
-  font-size: 14px !important;
-  padding: 8px 6px !important;
+  font-size: 14.5px !important;
+  padding: 10px 8px !important;
+  height: 42px !important;
+  line-height: 1.2 !important;
+  vertical-align: middle !important;
 }
 
 .timetable-sheet.is-fullscreen .timetable-grid thead th.col-time {
-  width: 175px !important;
+  width: 180px !important;
 }
 
 .timetable-sheet.is-fullscreen .timetable-grid thead th.col-mins {
-  width: 80px !important;
+  width: 90px !important;
 }
 
 .timetable-sheet.is-fullscreen .timetable-grid tbody td {
-  padding: 10px 8px !important;
+  padding: 14px 10px !important;
+  vertical-align: middle !important;
 }
 
 .timetable-sheet.is-fullscreen .cell-time {
-  font-size: 14px !important;
+  font-size: 15px !important;
   font-weight: 850 !important;
 }
 
 .timetable-sheet.is-fullscreen .cell-mins {
-  font-size: 13.5px !important;
+  font-size: 14px !important;
 }
 
 .timetable-sheet.is-fullscreen .cell-subject-sec {
-  font-size: 15px !important;
+  font-size: 16px !important;
   font-weight: 900 !important;
-  line-height: 1.25 !important;
+  line-height: 1.3 !important;
 }
 
 .timetable-sheet.is-fullscreen .cell-mod-badge {
-  font-size: 12.5px !important;
+  font-size: 13px !important;
   font-weight: 800 !important;
-  margin-top: 3px !important;
+  margin-top: 4px !important;
 }
 
 .timetable-sheet.is-fullscreen .cell-break {
-  font-size: 14px !important;
+  font-size: 15px !important;
   font-weight: 900 !important;
+  padding: 14px !important;
 }
 
 .timetable-sheet.is-fullscreen .sheet-footer {
-  margin-top: 8px !important;
-  padding-top: 6px !important;
-  font-size: 11.5px !important;
+  margin-top: 16px !important;
+  padding-top: 10px !important;
+  font-size: 13px !important;
 }
 
 /* Timetable Table Grid */
