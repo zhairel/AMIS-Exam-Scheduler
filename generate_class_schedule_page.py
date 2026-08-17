@@ -83,7 +83,8 @@ body {
   display: grid;
   place-items: center;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
 }
 
 .brand-text h1 {
@@ -122,6 +123,9 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .filter-select {
@@ -153,6 +157,12 @@ body {
   gap: 6px;
   text-decoration: none;
   transition: all 0.15s ease;
+}
+
+.btn-action svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
 }
 
 .btn-print {
@@ -444,10 +454,12 @@ body {
 </head>
 <body>
 
-<!-- Top Navigation Toolbar with Cascading Modality & Shift Filters -->
+<!-- Top Navigation Toolbar with Cascading Modality & Shift Filters (Icons only, No Emojis) -->
 <header class="top-toolbar">
   <div class="brand-title">
-    <div class="brand-icon">AMIS</div>
+    <div class="brand-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/></svg>
+    </div>
     <div class="brand-text">
       <h1>Official Class Timetable</h1>
       <p>S.Y. 2026–2027 • Weekly Class Program</p>
@@ -457,40 +469,52 @@ body {
   <div class="toolbar-controls">
     <!-- Step 1: Modality Selector -->
     <div class="filter-group">
-      <span class="filter-label">Modality:</span>
+      <span class="filter-label">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/></svg>
+        Modality:
+      </span>
       <select id="modalitySelect" class="filter-select" aria-label="Select Modality">
-        <option value="F2F">🏫 Face-to-Face (F2F)</option>
-        <option value="ODL">💻 Online Distance (ODL)</option>
-        <option value="ALL">🌟 Show All Sections</option>
+        <option value="F2F">Face-to-Face (F2F)</option>
+        <option value="ODL">Online Distance (ODL)</option>
+        <option value="ALL">Show All Sections</option>
       </select>
     </div>
 
     <!-- Step 2: ODL Shift Selector (Visible when Modality = ODL) -->
     <div class="filter-group" id="shiftGroup" style="display: none;">
-      <span class="filter-label">ODL Shift:</span>
+      <span class="filter-label">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12A10 10 0 0 0 12 22A10 10 0 0 0 22 12A10 10 0 0 0 12 2M12 4A8 8 0 0 1 20 12A8 8 0 0 1 12 20A8 8 0 0 1 4 12A8 8 0 0 1 12 4M12.5 7V12.25L17 14.92L16.25 16.15L11 13V7H12.5Z"/></svg>
+        Shift:
+      </span>
       <select id="shiftSelect" class="filter-select" aria-label="Select ODL Shift">
-        <option value="ODL1">☀️ 1st Shift (12:30 PM)</option>
-        <option value="ODL2">🌙 2nd Shift (03:30 PM)</option>
-        <option value="ODL_ALL">⚡ All ODL Shifts</option>
+        <option value="ODL1">1st Shift (12:30 PM)</option>
+        <option value="ODL2">2nd Shift (03:30 PM)</option>
+        <option value="ODL_ALL">All ODL Shifts</option>
       </select>
     </div>
 
     <!-- Step 3: Grade / Section Selector -->
     <div class="filter-group">
-      <span class="filter-label">Section:</span>
+      <span class="filter-label">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13H5V11H3V13M3 17H5V15H3V17M3 9H5V7H3V9M7 13H21V11H7V13M7 17H21V15H7V17M7 7V9H21V7H7Z"/></svg>
+        Section:
+      </span>
       <select id="sectionSelect" class="filter-select filter-select-section" aria-label="Select Section">
         <option value="">Loading sections...</option>
       </select>
     </div>
 
     <button id="btnPrint" class="btn-action btn-print" onclick="window.print()">
-      🖨️ Print
+      <svg viewBox="0 0 24 24"><path d="M18 3H6V7H18V3M19 12A1 1 0 1 1 18 11A1 1 0 0 1 19 12M16 19H8V14H16V19M19 8H5A3 3 0 0 0 2 11V17H6V21H18V17H22V11A3 3 0 0 0 19 8Z"/></svg>
+      Print
     </button>
     <a href="faculty-timetable-print.html" class="btn-action btn-back">
-      👨‍🏫 Faculty
+      <svg viewBox="0 0 24 24"><path d="M12 4A4 4 0 0 1 16 8A4 4 0 0 1 12 12A4 4 0 0 1 8 8A4 4 0 0 1 12 4M12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z"/></svg>
+      Faculty Timetable
     </a>
     <a href="index.html" class="btn-action btn-back">
-      📋 Exams
+      <svg viewBox="0 0 24 24"><path d="M19 19H5V8H19M16 1V3H8V1H6V3H5C3.89 3 3 3.89 3 5V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V5C21 3.89 20.1 3 19 3H18V1M17 12H12V17H17V12Z"/></svg>
+      Exam Schedule
     </a>
   </div>
 </header>
@@ -570,7 +594,6 @@ body {
       return;
     }
 
-    // Set initial filters based on URL or defaults
     const urlParams = new URLSearchParams(window.location.search);
     let initModality = urlParams.get('modality') || 'F2F';
     let initShift = urlParams.get('shift') || 'ODL1';
@@ -589,7 +612,6 @@ body {
 
     renderCurrentView();
 
-    // Event listeners
     modalitySelect.addEventListener('change', () => {
       updateShiftVisibility();
       populateSectionDropdown();
@@ -639,13 +661,13 @@ body {
     const shift = shiftSelect.value;
 
     let groupTitle = "All Sections";
-    if (mod === 'F2F') groupTitle = `📋 [ALL F2F] Show All ${pool.length} F2F Classes`;
+    if (mod === 'F2F') groupTitle = `[ALL F2F] Show All ${pool.length} F2F Classes`;
     else if (mod === 'ODL') {
-      if (shift === 'ODL1') groupTitle = `📋 [ALL 1ST SHIFT] Show All ${pool.length} Classes`;
-      else if (shift === 'ODL2') groupTitle = `📋 [ALL 2ND SHIFT] Show All ${pool.length} Classes`;
-      else groupTitle = `📋 [ALL ODL] Show All ${pool.length} ODL Classes`;
+      if (shift === 'ODL1') groupTitle = `[ALL 1ST SHIFT] Show All ${pool.length} Classes`;
+      else if (shift === 'ODL2') groupTitle = `[ALL 2ND SHIFT] Show All ${pool.length} Classes`;
+      else groupTitle = `[ALL ODL] Show All ${pool.length} ODL Classes`;
     } else {
-      groupTitle = `🌟 [ALL SECTIONS] Show All ${pool.length} Classes`;
+      groupTitle = `[ALL SECTIONS] Show All ${pool.length} Classes`;
     }
 
     let html = `<option value="ALL_GROUP">${groupTitle}</option>`;
@@ -825,4 +847,4 @@ body {
 with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/class-schedule.html', 'w', encoding='utf-8') as f:
     f.write(HTML_CONTENT)
 
-print("Updated class-schedule.html with cascading Modality -> Shift -> Section filters!")
+print("Updated class-schedule.html to use pure SVG icons with zero emojis!")
