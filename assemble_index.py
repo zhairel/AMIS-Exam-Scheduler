@@ -1017,12 +1017,22 @@ html_content = f"""<!DOCTYPE html>
       @page {{
         size: landscape;
         margin: 8mm;
+    /* Print Specific Rules */
+    @media print {{
+      @page {{
+        size: A4 landscape;
+        margin: 5mm 6mm;
       }}
 
-      body {{
+      html, body {{
         background: #ffffff !important;
-        padding: 0 !important;
+        color: #000000 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
         margin: 0 !important;
+        padding: 0 !important;
+        overflow: visible !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
       }}
@@ -1038,23 +1048,33 @@ html_content = f"""<!DOCTYPE html>
       input,
       select {{
         display: none !important;
-      }}
-
-      .main-content {{
-        max-width: 100% !important;
+        height: 0 !important;
         margin: 0 !important;
         padding: 0 !important;
       }}
 
+      .main-content,
+      #mainContainer {{
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        gap: 0 !important;
+      }}
+
       .calendar-poster {{
-        page-break-after: always !important;
-        break-after: page !important;
+        display: block !important;
+        width: 100% !important;
+        margin: 0 0 0 0 !important;
+        padding: 0 !important;
+        border: 1.5px solid #064e3b !important;
+        border-radius: 6px !important;
+        box-shadow: none !important;
         page-break-inside: avoid !important;
         break-inside: avoid !important;
-        margin-bottom: 0 !important;
-        box-shadow: none !important;
-        border: 2px solid #000000 !important;
-        border-radius: 0 !important;
+        page-break-after: always !important;
+        break-after: page !important;
       }}
 
       .calendar-poster:last-child {{
@@ -1067,7 +1087,151 @@ html_content = f"""<!DOCTYPE html>
         color: #ffffff !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
-        padding: 16px 20px !important;
+        padding: 6px 12px !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+      }}
+
+      .poster-header .poster-title h2 {{
+        font-size: 14px !important;
+        margin: 0 !important;
+        line-height: 1.1 !important;
+      }}
+
+      .poster-header .poster-title p {{
+        font-size: 10px !important;
+        margin: 2px 0 0 0 !important;
+        opacity: 0.9 !important;
+      }}
+
+      .grade-badge-display {{
+        font-size: 12px !important;
+        padding: 3px 8px !important;
+      }}
+
+      .table-container {{
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: visible !important;
+      }}
+
+      .matrix-table {{
+        width: 100% !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        font-size: 8.5px !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }}
+
+      .matrix-table thead th {{
+        padding: 3px 4px !important;
+        font-size: 9.5px !important;
+        height: 20px !important;
+        font-weight: 800 !important;
+      }}
+
+      .matrix-table thead th .th-day-title {{
+        font-size: 10px !important;
+      }}
+
+      .matrix-table thead th .th-day-sub {{
+        font-size: 8px !important;
+      }}
+
+      .matrix-table tbody td {{
+        padding: 2px 3px !important;
+        height: 22px !important;
+        vertical-align: top !important;
+      }}
+
+      .matrix-table .time-td {{
+        width: 115px !important;
+        padding: 2px 4px !important;
+      }}
+
+      .matrix-table .time-slot-val {{
+        font-size: 8.5px !important;
+        font-weight: 800 !important;
+      }}
+
+      .matrix-table .time-slot-period {{
+        font-size: 7.5px !important;
+      }}
+
+      .break-tr {{
+        background: #f1f5f9 !important;
+      }}
+
+      .break-banner-td {{
+        font-size: 8.5px !important;
+        font-weight: 800 !important;
+        padding: 2px 6px !important;
+      }}
+
+      .cards-stack {{
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2px !important;
+      }}
+
+      .exam-event-card {{
+        padding: 2px 4px !important;
+        border-radius: 4px !important;
+        border-width: 1px !important;
+        box-shadow: none !important;
+        margin-bottom: 0 !important;
+      }}
+
+      .card-subject-name {{
+        font-size: 9px !important;
+        font-weight: 900 !important;
+        line-height: 1.1 !important;
+      }}
+
+      .card-time-duration-row {{
+        font-size: 8px !important;
+        padding: 1px 3px !important;
+        margin: 1px 0 !important;
+        border-radius: 3px !important;
+      }}
+
+      .card-time-duration-row span:last-child {{
+        font-size: 7.5px !important;
+        padding: 0 3px !important;
+      }}
+
+      .card-grade-gender-row {{
+        font-size: 7.5px !important;
+        margin-top: 1px !important;
+      }}
+
+      .card-sec-name-row {{
+        font-size: 8px !important;
+        font-weight: 700 !important;
+        line-height: 1.1 !important;
+      }}
+
+      .card-teacher-row {{
+        font-size: 8px !important;
+        font-weight: 700 !important;
+      }}
+
+      .card-modality-row {{
+        font-size: 7px !important;
+        opacity: 0.8 !important;
+      }}
+
+      .empty-slot-block {{
+        font-size: 8px !important;
+        padding: 4px !important;
+        color: #94a3b8 !important;
+      }}
+
+      .poster-footer-strip {{
+        padding: 3px 10px !important;
+        font-size: 8px !important;
       }}
     }}
   </style>
@@ -1540,15 +1704,17 @@ html_content = f"""<!DOCTYPE html>
     }}
 
     function calcDuration(tStr, fallback) {{
-      if (fallback && typeof fallback === 'number') return fallback;
-      if (!tStr) return 60;
+      if (!tStr) return fallback || 60;
       const parts = tStr.split(/[-–]/);
-      if (parts.length < 2) return fallback || 60;
-      const m1 = minutes(parts[0].trim());
-      const m2 = minutes(parts[1].trim());
-      let diff = m2 - m1;
-      if (diff < 0) diff += 24 * 60;
-      return diff || fallback || 60;
+      if (parts.length >= 2) {{
+        const m1 = minutes(parts[0].trim());
+        const m2 = minutes(parts[1].trim());
+        let diff = m2 - m1;
+        if (diff < 0) diff += 24 * 60;
+        if (diff > 0) return diff;
+      }}
+      if (typeof fallback === 'number' && fallback > 0) return fallback;
+      return 60;
     }}
 
     function renderPostersView(records) {{
