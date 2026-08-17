@@ -1,598 +1,598 @@
 date,dayName,examDay,startTime,endTime,time,period,duration,grade,cleanSection,modality,shift,subject,teacher,room,proctor,status
-2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,General Biology 1,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
-2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,MIL,Teacher Ethel,,Teacher Ethel,CONFIRMED
-2026-09-02,Wednesday,Day 1,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,Practical Research 2,Teacher Aniah,,Teacher Aniah,CONFIRMED
-2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,General Physics 1,Teacher Aniah,,Teacher Aniah,CONFIRMED
-2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,21st Century Literature,Teacher Nof,,Teacher Nof,CONFIRMED
-2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,PE 12,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
-2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
-2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,Qur'an,Alim Dipatuan,,Alim Dipatuan,CONFIRMED
-2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-03,Thursday,Day 2,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,TLE,Teacher Angeleni,,Teacher Angeleni,CONFIRMED
-2026-09-02,Wednesday,Day 1,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Social Science,Teacher Sophia,,Teacher Sophia,CONFIRMED
-2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Math,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
-2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
+2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,General Biology 1,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
+2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,MIL,Teacher Ethel,,Teacher Ethel,CONFIRMED
+2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,Practical Research 2,Teacher Aniah,,Teacher Aniah,CONFIRMED
+2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,General Physics 1,Teacher Aniah,,Teacher Aniah,CONFIRMED
+2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,21st Century Literature,Teacher Nof,,Teacher Nof,CONFIRMED
+2026-09-07,Monday,Day 4,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,PE 12,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
+2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
+2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,Qur'an,Alim Dipatuan,,Alim Dipatuan,CONFIRMED
+2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 12,SUHAYB AR-RUMI,F2F,Day / F2F,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,TLE,Teacher Angeleni,,Teacher Angeleni,CONFIRMED
+2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Social Science,Teacher Sophia,,Teacher Sophia,CONFIRMED
+2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Math,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
+2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
 2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,English,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
-2026-09-07,Monday,Day 4,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,ESP,Teacher Nof,,Teacher Nof,CONFIRMED
-2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,MAPEH,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
-2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
-2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
-2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
-2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Kinder 2,FACE TO FACE,F2F,Day / F2F,Circle Time 1,Teacher Keychell,,Teacher Keychell,CONFIRMED
-2026-09-03,Thursday,Day 2,9:15 AM,10:15 AM,9:15 AM – 10:15 AM,Exam Period 2,60 minutes,Kinder 2,FACE TO FACE,F2F,Day / F2F,Circle Time 2,Teacher Keychell,,Teacher Keychell,CONFIRMED
-2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Kinder 2,FACE TO FACE,F2F,Day / F2F,Hadith,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Kinder 2,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Kinder 2,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
-2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Science,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
-2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
-2026-09-07,Monday,Day 4,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
-2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
-2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
-2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
-2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-03,Thursday,Day 2,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-02,Wednesday,Day 1,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadh Muh Ali,,Ustadh Muh Ali,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 1,FACE TO FACE,F2F,Day / F2F,Circle Time 1,Teacher Wendy,,Teacher Wendy,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 1,FACE TO FACE,F2F,Day / F2F,Circle Time 2,Teacher Wendy,,Teacher Wendy,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 1,FACE TO FACE,F2F,Day / F2F,Hadith,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Kinder 1,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 1,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,Makabansa,Teacher Wendy,,Teacher Wendy,CONFIRMED
-2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,Science,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
-2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,Math,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
-2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,English,Teacher Marham,,Teacher Marham,CONFIRMED
-2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
-2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-02,Wednesday,Day 1,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,SHAF,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
-2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
-2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,English,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
-2026-09-02,Wednesday,Day 1,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,Math,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,Science,Teacher Junaisah,,Teacher Junaisah,CONFIRMED
-2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,AP,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,TLE,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-07,Monday,Day 4,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,MAPEH,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
-2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
-2026-09-06,Sunday,Day 3,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
-2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-03,Thursday,Day 2,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,General Biology 1,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
-2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,PSKP,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
-2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,General Mathematics,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
-2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,EC,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
-2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,LCS,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
-2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,General Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
-2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
-2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,Qur'an,Alim Dipatuan,,Alim Dipatuan,CONFIRMED
-2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-06,Sunday,Day 3,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
-2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Science,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
-2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
-2026-09-03,Thursday,Day 2,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
-2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
-2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
-2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
-2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-07,Monday,Day 4,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadh Muh Ali,,Ustadh Muh Ali,CONFIRMED
-2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,AP,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
-2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,Science,Teacher Junaisah,,Teacher Junaisah,CONFIRMED
-2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
-2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Jessa,,Teacher Jessa,CONFIRMED
-2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,MAPEH,Teacher Keychell,,Teacher Keychell,CONFIRMED
-2026-09-07,Monday,Day 4,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,Math,Teacher Fhairudz,,Teacher Fhairudz,CONFIRMED
-2026-09-02,Wednesday,Day 1,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
-2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,GMRC,Teacher Jayra,,Teacher Jayra,CONFIRMED
-2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,SHAF,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
-2026-09-06,Sunday,Day 3,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
-2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,Math,Teacher Wendy,,Teacher Wendy,CONFIRMED
-2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,Reading and Literacy,Teacher Katrina,,Teacher Katrina,CONFIRMED
-2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,Makabansa,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
-2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,Language,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,Arabic,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
-2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,Math,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
-2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
-2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,English,Teacher Marham,,Teacher Marham,CONFIRMED
-2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,Makabansa,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,SHAF,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
-2026-09-06,Sunday,Day 3,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,TLE,Teacher Angeleni,,Teacher Angeleni,CONFIRMED
-2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Social Science,Teacher Sophia,,Teacher Sophia,CONFIRMED
-2026-09-07,Monday,Day 4,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Math,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
-2026-09-03,Thursday,Day 2,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
-2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,English,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
-2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,ESP,Teacher Nof,,Teacher Nof,CONFIRMED
+2026-09-02,Wednesday,Day 1,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,ESP,Teacher Nof,,Teacher Nof,CONFIRMED
 2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,MAPEH,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
+2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
+2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
+2026-09-07,Monday,Day 4,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-06,Sunday,Day 3,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
+2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Kinder 2,FACE TO FACE,F2F,Day / F2F,Circle Time 1,Teacher Keychell,,Teacher Keychell,CONFIRMED
+2026-09-06,Sunday,Day 3,9:15 AM,10:15 AM,9:15 AM – 10:15 AM,Exam Period 2,60 minutes,Kinder 2,FACE TO FACE,F2F,Day / F2F,Circle Time 2,Teacher Keychell,,Teacher Keychell,CONFIRMED
+2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Kinder 2,FACE TO FACE,F2F,Day / F2F,Hadith,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Kinder 2,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Kinder 2,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
+2026-09-02,Wednesday,Day 1,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Science,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
+2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
+2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
+2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
+2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
+2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
+2026-09-06,Sunday,Day 3,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-03,Thursday,Day 2,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 1,FACE TO FACE,F2F,Day / F2F,Circle Time 1,Teacher Wendy,,Teacher Wendy,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 1,FACE TO FACE,F2F,Day / F2F,Circle Time 2,Teacher Wendy,,Teacher Wendy,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 1,FACE TO FACE,F2F,Day / F2F,Hadith,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Kinder 1,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 1,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,Makabansa,Teacher Wendy,,Teacher Wendy,CONFIRMED
+2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,Science,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
+2026-09-07,Monday,Day 4,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,Math,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
+2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,English,Teacher Marham,,Teacher Marham,CONFIRMED
+2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
+2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 3,FACE TO FACE,F2F,Day / F2F,SHAF,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
+2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
+2026-09-02,Wednesday,Day 1,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,English,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
+2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,Math,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,Science,Teacher Junaisah,,Teacher Junaisah,CONFIRMED
+2026-09-03,Thursday,Day 2,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,AP,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,TLE,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,MAPEH,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
+2026-09-06,Sunday,Day 3,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
+2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 4,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,General Biology 1,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
+2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,PSKP,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
+2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,General Mathematics,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
+2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,EC,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
+2026-09-02,Wednesday,Day 1,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,LCS,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
+2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,General Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
+2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
+2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,Qur'an,Alim Dipatuan,,Alim Dipatuan,CONFIRMED
+2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 11,FACE TO FACE,F2F,Day / F2F,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
+2026-09-06,Sunday,Day 3,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Science,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
+2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
+2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
+2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
+2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
+2026-09-03,Thursday,Day 2,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
+2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-02,Wednesday,Day 1,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 7 & 8,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,AP,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
+2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,Science,Teacher Junaisah,,Teacher Junaisah,CONFIRMED
+2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
+2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Jessa,,Teacher Jessa,CONFIRMED
+2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,MAPEH,Teacher Keychell,,Teacher Keychell,CONFIRMED
+2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,Math,Teacher Fhairudz,,Teacher Fhairudz,CONFIRMED
+2026-09-06,Sunday,Day 3,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
+2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,GMRC,Teacher Jayra,,Teacher Jayra,CONFIRMED
+2026-09-02,Wednesday,Day 1,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-03,Thursday,Day 2,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,SHAF,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
+2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 5,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
+2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,Math,Teacher Wendy,,Teacher Wendy,CONFIRMED
+2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,Reading and Literacy,Teacher Katrina,,Teacher Katrina,CONFIRMED
+2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,Makabansa,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
+2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,Language,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,Arabic,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
+2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 1,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,Math,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
+2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
+2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,English,Teacher Marham,,Teacher Marham,CONFIRMED
+2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,Makabansa,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 2,FACE TO FACE,F2F,Day / F2F,SHAF,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
+2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,TLE,Teacher Angeleni,,Teacher Angeleni,CONFIRMED
+2026-09-06,Sunday,Day 3,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Social Science,Teacher Sophia,,Teacher Sophia,CONFIRMED
+2026-09-03,Thursday,Day 2,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Math,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
+2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
+2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,English,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
+2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,ESP,Teacher Nof,,Teacher Nof,CONFIRMED
+2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,MAPEH,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
 2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
-2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
-2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
-2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,Science,Teacher Wendy,,Teacher Wendy,CONFIRMED
-2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,TLE,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
+2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
+2026-09-02,Wednesday,Day 1,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 9 & 10,FACE TO FACE,F2F,Day / F2F,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
+2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,Science,Teacher Wendy,,Teacher Wendy,CONFIRMED
+2026-09-06,Sunday,Day 3,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,TLE,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-03,Thursday,Day 2,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
 2026-09-03,Thursday,Day 2,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,AP,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
-2026-09-07,Monday,Day 4,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
-2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,MAPEH,Teacher Zara,,Teacher Zara,CONFIRMED
-2026-09-06,Sunday,Day 3,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-07,Monday,Day 4,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
-2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-02,Wednesday,Day 1,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
+2026-09-02,Wednesday,Day 1,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,MAPEH,Teacher Zara,,Teacher Zara,CONFIRMED
+2026-09-07,Monday,Day 4,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-06,Sunday,Day 3,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
+2026-09-06,Sunday,Day 3,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
 2026-09-02,Wednesday,Day 1,8:00 AM,9:00 AM,8:00 AM – 9:00 AM,Exam Period 1,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,Qur'an,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-03,Thursday,Day 2,10:25 AM,11:25 AM,10:25 AM – 11:25 AM,Exam Period 3,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,Math,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,General Biology 1,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,MIL,Teacher Ethel,,Teacher Ethel,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,Practical Research 2,Teacher Aniah,,Teacher Aniah,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,General Physics 1,Teacher Aniah,,Teacher Aniah,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,21st Century Literature,Teacher Nof,,Teacher Nof,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,PE 12,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,Qur'an,Alim Dipatuan,,Alim Dipatuan,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,Reading and Literacy,Teacher Katrina,,Teacher Katrina,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,Makabansa,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,Language,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,Math,Teacher Joanna,,Teacher Joanna,CONFIRMED
+2026-09-07,Monday,Day 4,9:00 AM,10:00 AM,9:00 AM – 10:00 AM,Exam Period 2,60 minutes,Grade 6,FACE TO FACE,F2F,Day / F2F,Math,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,General Biology 1,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,MIL,Teacher Ethel,,Teacher Ethel,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,Practical Research 2,Teacher Aniah,,Teacher Aniah,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,General Physics 1,Teacher Aniah,,Teacher Aniah,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,21st Century Literature,Teacher Nof,,Teacher Nof,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,PE 12,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,Qur'an,Alim Dipatuan,,Alim Dipatuan,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 12,ABU MUSA AL-ASHARI,ODL,1st Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,Reading and Literacy,Teacher Katrina,,Teacher Katrina,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,Makabansa,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,Language,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,Math,Teacher Joanna,,Teacher Joanna,CONFIRMED
 2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,Math,Teacher Ethel,,Teacher Ethel,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,Science,Teacher Aniah,,Teacher Aniah,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,HUDHAYFAH IBN AL-YAM,ODL,1st Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,Math,Teacher Ethel,,Teacher Ethel,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,Science,Teacher Aniah,,Teacher Aniah,CONFIRMED
 2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,Science,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,Values Education,Teacher Wardah,,Teacher Wardah,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 7,USAMA IBN ZAYD,ODL,1st Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,Science,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,Values Education,Teacher Wardah,,Teacher Wardah,CONFIRMED
 2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 8,SA'AD IBN MUA'DH,ODL,1st Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
 2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 2,ABU BAKR AS-SIDEEQ,ODL,1st Shift,Circle Time 1,Teacher Ayah,,Teacher Ayah,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Kinder 2,ABU BAKR AS-SIDEEQ,ODL,1st Shift,Circle Time 2,Teacher Ayah,,Teacher Ayah,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 2,ABU BAKR AS-SIDEEQ,ODL,1st Shift,Circle Time 2,Teacher Ayah,,Teacher Ayah,CONFIRMED
 2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 2,ABU BAKR AS-SIDEEQ,ODL,1st Shift,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 2,ABU BAKR AS-SIDEEQ,ODL,1st Shift,Hadith,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 2,ABU BAKR AS-SIDEEQ,ODL,1st Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,Science,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,Math,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,English,Teacher Marham,,Teacher Marham,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,GMRC,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,Makabansa,Teacher Zara,,Teacher Zara,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,Arabic,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Kinder 2,ABU BAKR AS-SIDEEQ,ODL,1st Shift,Hadith,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 2,ABU BAKR AS-SIDEEQ,ODL,1st Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,Science,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,Math,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,English,Teacher Jenny,,Teacher Jenny,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,GMRC,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,Filipino,Teacher Jenny,,Teacher Jenny,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,Makabansa,Teacher Jenny,,Teacher Jenny,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,Arabic,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
 2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,SALMAN AL FARSI,ODL,1st Shift,SHAF,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,Math,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,Math,Teacher Arvin,,Teacher Arvin,CONFIRMED
 2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,English,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,AP,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,TLE,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,Filipino,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,MAPEH,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,TLE,Teacher Angeleni,,Teacher Angeleni,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,Social Science,Teacher Sophia,,Teacher Sophia,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,Math,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,Filipino,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,English,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,ESP,Teacher Nof,,Teacher Nof,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,MAPEH,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,AP,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,TLE,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,Filipino,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,MAPEH,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,HAKIM IBN HAZM,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,TLE,Teacher Angeleni,,Teacher Angeleni,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,Social Science,Teacher Sophia,,Teacher Sophia,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,Math,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,Filipino,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,English,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,ESP,Teacher Nof,,Teacher Nof,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,MAPEH,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
 2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,Arabic,Ustadh Raslina,,Ustadh Raslina,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,Math,Teacher Ethel,,Teacher Ethel,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,Science,Teacher Aniah,,Teacher Aniah,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,Science,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,Math,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,English,Teacher Jenny,,Teacher Jenny,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 9,ABU HURAYRAH,ODL,1st Shift,Arabic,Ustadh Raslina,,Ustadh Raslina,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,Math,Teacher Ethel,,Teacher Ethel,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,Science,Teacher Aniah,,Teacher Aniah,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 7,ABU SUFYAN IBN AL-HARITH,ODL,1st Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,Science,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,Math,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,English,Teacher Jenny,,Teacher Jenny,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,Filipino,Teacher Jenny,,Teacher Jenny,CONFIRMED
 2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,Makabansa,Teacher Jenny,,Teacher Jenny,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,Arabic,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,SHAF,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,Math,Teacher Katrina,,Teacher Katrina,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,TLE,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,Filipino,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,AP,Teacher Normylah,,Teacher Normylah,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,MAPEH,Teacher Zara,,Teacher Zara,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,Reading and Literacy,Teacher Katrina,,Teacher Katrina,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,Makabansa,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,Language,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,Math,Teacher Joanna,,Teacher Joanna,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 11,,ODL,1st Shift,PSKP,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 11,,ODL,1st Shift,General Mathematics,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 11,,ODL,1st Shift,EC,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 11,,ODL,1st Shift,LCS,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 11,,ODL,1st Shift,General Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 11,,ODL,1st Shift,General Biology 1,Teacher Rowena,,Teacher Rowena,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 11,,ODL,1st Shift,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 11,,ODL,1st Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 11,,ODL,1st Shift,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,Arabic,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,HABIB IBN ZAYD AL-ANSARI,ODL,1st Shift,SHAF,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,Math,Teacher Katrina,,Teacher Katrina,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,TLE,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,Filipino,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,AP,Teacher Normylah,,Teacher Normylah,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,MAPEH,Teacher Zara,,Teacher Zara,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABDULLAH IBN SALAAM,ODL,1st Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,Reading and Literacy,Teacher Katrina,,Teacher Katrina,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,Makabansa,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,Language,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,Math,Teacher Joanna,,Teacher Joanna,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 1,ALI IBN ABI TALIB,ODL,1st Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 11,,ODL,1st Shift,PSKP,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 11,,ODL,1st Shift,General Mathematics,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 11,,ODL,1st Shift,EC,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 11,,ODL,1st Shift,LCS,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 11,,ODL,1st Shift,General Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 11,,ODL,1st Shift,General Biology 1,Teacher Rowena,,Teacher Rowena,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 11,,ODL,1st Shift,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 11,,ODL,1st Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 11,,ODL,1st Shift,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
 2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 2,UTHMAN IBN AFFAN,ODL,1st Shift,Circle Time 1,Teacher Joanna,,Teacher Joanna,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 2,UTHMAN IBN AFFAN,ODL,1st Shift,Circle Time 2,Teacher Joanna,,Teacher Joanna,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 2,UTHMAN IBN AFFAN,ODL,1st Shift,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Kinder 2,UTHMAN IBN AFFAN,ODL,1st Shift,Hadith,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 2,UTHMAN IBN AFFAN,ODL,1st Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,Math,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,Filipino,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,English,Teacher Marham,,Teacher Marham,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,Makabansa,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,Science,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,Math,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,English,Teacher Jenny,,Teacher Jenny,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,GMRC,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,Filipino,Teacher Jenny,,Teacher Jenny,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,Makabansa,Teacher Jenny,,Teacher Jenny,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,Arabic,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,SHAF,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,Math,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,English,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,AP,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,TLE,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,Filipino,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,MAPEH,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,Filipino,Teacher Joanna,,Teacher Joanna,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,TLE,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,AP,Teacher Keychell,,Teacher Keychell,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 2,UTHMAN IBN AFFAN,ODL,1st Shift,Circle Time 2,Teacher Ayah,,Teacher Ayah,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 2,UTHMAN IBN AFFAN,ODL,1st Shift,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Kinder 2,UTHMAN IBN AFFAN,ODL,1st Shift,Hadith,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Kinder 2,UTHMAN IBN AFFAN,ODL,1st Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,Math,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,Filipino,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,English,Teacher Marham,,Teacher Marham,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,Makabansa,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,AMR IBN AL-JAMUH,ODL,1st Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,Science,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,Math,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,English,Teacher Marham,,Teacher Marham,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,GMRC,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,Makabansa,Teacher Zara,,Teacher Zara,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 3,AMMAR IBN YASIR,ODL,1st Shift,SHAF,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,Math,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,English,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,AP,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,TLE,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,Filipino,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,MAPEH,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,ABDUR RAHMAN IBN AWF,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,Filipino,Teacher Joanna,,Teacher Joanna,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,TLE,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,AP,Teacher Keychell,,Teacher Keychell,CONFIRMED
 2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,MAPEH,Teacher Keychell,,Teacher Keychell,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,GMRC,Teacher Jayra,,Teacher Jayra,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,GMRC,Teacher Jayra,,Teacher Jayra,CONFIRMED
 2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
 2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,Arabic,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,SHAF,Ustadh Raslina,,Ustadh Raslina,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,Math,Teacher Katrina,,Teacher Katrina,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,TLE,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,AYYASH IBN ABI RABI'AH,ODL,1st Shift,SHAF,Ustadh Raslina,,Ustadh Raslina,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,Math,Teacher Katrina,,Teacher Katrina,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,TLE,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
 2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,Filipino,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,AP,Teacher Normylah,,Teacher Normylah,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,MAPEH,Teacher Zara,,Teacher Zara,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,Filipino,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,AP,Teacher Normylah,,Teacher Normylah,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,MAPEH,Teacher Zara,,Teacher Zara,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
 2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 6,ABBAS IBN ABD AL-MUTTALIB,ODL,1st Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,TLE,Teacher Angeleni,,Teacher Angeleni,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,TLE,Teacher Angeleni,,Teacher Angeleni,CONFIRMED
 2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,Social Science,Teacher Sophia,,Teacher Sophia,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,Math,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,Filipino,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,English,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,ESP,Teacher Nof,,Teacher Nof,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,MAPEH,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,Math,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,Filipino,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,English,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,ESP,Teacher Nof,,Teacher Nof,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,MAPEH,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
 2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,SHAF,Alim Bustamante,,Alim Bustamante,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,Math,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,Filipino,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,English,Teacher Marham,,Teacher Marham,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,Makabansa,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 10,UTBAH IBN GHAZWAN,ODL,1st Shift,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,Math,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,Filipino,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,English,Teacher Marham,,Teacher Marham,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,Makabansa,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
 2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 2,TALHA IBN UBAYDULLAH,ODL,1st Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,Math,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,English,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,AP,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,TLE,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,Math,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,English,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,AP,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,TLE,Teacher Monisa,,Teacher Monisa,CONFIRMED
 2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,Filipino,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,MAPEH,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,MAPEH,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
 2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 4,USAYD IBN HUDHAYR,ODL,1st Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,Filipino,Teacher Joanna,,Teacher Joanna,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,TLE,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,Filipino,Teacher Joanna,,Teacher Joanna,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,TLE,Teacher Anna,,Teacher Anna,CONFIRMED
 2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,AP,Teacher Keychell,,Teacher Keychell,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,MAPEH,Teacher Keychell,,Teacher Keychell,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,GMRC,Teacher Jayra,,Teacher Jayra,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,Arabic,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,SHAF,Ustadh Raslina,,Ustadh Raslina,CONFIRMED
-2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,Filipino,Teacher Joanna,,Teacher Joanna,CONFIRMED
-2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
-2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,TLE,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,AP,Teacher Keychell,,Teacher Keychell,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,MAPEH,Teacher Keychell,,Teacher Keychell,CONFIRMED
-2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
-2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,GMRC,Teacher Jayra,,Teacher Jayra,CONFIRMED
-2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,Arabic,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
-2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,SHAF,Ustadh Raslina,,Ustadh Raslina,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,MAPEH,Teacher Keychell,,Teacher Keychell,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,GMRC,Teacher Jayra,,Teacher Jayra,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,Arabic,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,HAMZA IBN ABDUL,ODL,1st Shift,SHAF,Ustadh Raslina,,Ustadh Raslina,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,Filipino,Teacher Joanna,,Teacher Joanna,CONFIRMED
+2026-09-06,Sunday,Day 3,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
+2026-09-03,Thursday,Day 2,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-07,Monday,Day 4,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,TLE,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-02,Wednesday,Day 1,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,AP,Teacher Keychell,,Teacher Keychell,CONFIRMED
+2026-09-03,Thursday,Day 2,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,MAPEH,Teacher Keychell,,Teacher Keychell,CONFIRMED
+2026-09-06,Sunday,Day 3,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
+2026-09-02,Wednesday,Day 1,12:40 PM,1:40 PM,12:40 PM – 1:40 PM,Exam Period 1,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,GMRC,Teacher Jayra,,Teacher Jayra,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 3,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,Arabic,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
+2026-09-07,Monday,Day 4,1:50 PM,2:50 PM,1:50 PM – 2:50 PM,Exam Period 2,60 minutes,Grade 5,MUHAMMAD IBN MASLAMAH,ODL,1st Shift,SHAF,Ustadh Raslina,,Ustadh Raslina,CONFIRMED
 2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 11,,ODL,2nd Shift,General Biology 1,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 11,,ODL,2nd Shift,PSKP,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 11,,ODL,2nd Shift,General Mathematics,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 11,,ODL,2nd Shift,EC,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 11,,ODL,2nd Shift,PSKP,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 11,,ODL,2nd Shift,General Mathematics,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 11,,ODL,2nd Shift,EC,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
 2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 11,,ODL,2nd Shift,LCS,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
-2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 11,,ODL,2nd Shift,General Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 11,,ODL,2nd Shift,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 11,,ODL,2nd Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 11,,ODL,2nd Shift,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 11,,ODL,2nd Shift,General Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
+2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 11,,ODL,2nd Shift,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 11,,ODL,2nd Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 11,,ODL,2nd Shift,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
 2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,Reading and Literacy,Teacher Katrina,,Teacher Katrina,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,Makabansa,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,Language,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,Math,Teacher Joanna,,Teacher Joanna,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,Makabansa,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,Language,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,Math,Teacher Joanna,,Teacher Joanna,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 1,SA'AD IBN ABI WAQQAAS,ODL,2nd Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
+2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
 2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,Math,Teacher Ethel,,Teacher Ethel,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,Science,Teacher Aniah,,Teacher Aniah,CONFIRMED
-2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,Math,Teacher Ethel,,Teacher Ethel,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,Science,Teacher Aniah,,Teacher Aniah,CONFIRMED
+2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
 2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
 2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
-2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,Science,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
-2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
-2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,Values Education,Teacher Wardah,,Teacher Wardah,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 7,ANAS IBN MALIK,ODL,2nd Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,Science,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
+2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,Values Education,Teacher Wardah,,Teacher Wardah,CONFIRMED
 2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
-2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,NUAYM IBN MAS'UD,ODL,2nd Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
 2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,KHABAAB IBN ARAT,ODL,2nd Shift,Circle Time 1,Teacher Ayah,,Teacher Ayah,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,KHABAAB IBN ARAT,ODL,2nd Shift,Circle Time 2,Teacher Joanna,,Teacher Joanna,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,KHABAAB IBN ARAT,ODL,2nd Shift,Circle Time 2,Teacher Keychell,,Teacher Keychell,CONFIRMED
 2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,KHABAAB IBN ARAT,ODL,2nd Shift,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 2,60 minutes,Kinder 2,KHABAAB IBN ARAT,ODL,2nd Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,KHABAAB IBN ARAT,ODL,2nd Shift,Hadith,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,UMAR IBN AL-KHATTAB,ODL,2nd Shift,Circle Time 1,Teacher Joanna,,Teacher Joanna,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,UMAR IBN AL-KHATTAB,ODL,2nd Shift,Circle Time 2,Teacher Ayah,,Teacher Ayah,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,UMAR IBN AL-KHATTAB,ODL,2nd Shift,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,UMAR IBN AL-KHATTAB,ODL,2nd Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 2,60 minutes,Kinder 2,UMAR IBN AL-KHATTAB,ODL,2nd Shift,Hadith,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,Filipino,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
-2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,Math,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,English,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,KHABAAB IBN ARAT,ODL,2nd Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 2,60 minutes,Kinder 2,KHABAAB IBN ARAT,ODL,2nd Shift,Hadith,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,UMAR IBN AL-KHATTAB,ODL,2nd Shift,Circle Time 1,Teacher Keychell,,Teacher Keychell,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,UMAR IBN AL-KHATTAB,ODL,2nd Shift,Circle Time 2,Teacher Keychell,,Teacher Keychell,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,UMAR IBN AL-KHATTAB,ODL,2nd Shift,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 2,60 minutes,Kinder 2,UMAR IBN AL-KHATTAB,ODL,2nd Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,UMAR IBN AL-KHATTAB,ODL,2nd Shift,Hadith,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,Filipino,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,Math,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,English,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
 2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,MAPEH,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
-2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,AP,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,TLE,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,AP,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,TLE,Teacher Jenny,,Teacher Jenny,CONFIRMED
 2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,Qur'an,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
+2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,AZ ZUBAIR IBN AL AWWAAM,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
 2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,TLE,Teacher Angeleni,,Teacher Angeleni,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,MAPEH,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,Social Science,Teacher Sophia,,Teacher Sophia,CONFIRMED
-2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,Math,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,Filipino,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
-2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,English,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,ESP,Teacher Nof,,Teacher Nof,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
-2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,Science,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
-2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
+2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,MAPEH,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,Social Science,Teacher Sophia,,Teacher Sophia,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,Math,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
+2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,Filipino,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,English,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,ESP,Teacher Nof,,Teacher Nof,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
+2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU DHARR AL GHIFARRI,ODL,2nd Shift,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,Science,Teacher Radzmia,,Teacher Radzmia,CONFIRMED
+2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,TLE,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,Social Science,Teacher Shirehan,,Teacher Shirehan,CONFIRMED
+2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,MAPEH,Teacher Franchette,,Teacher Franchette,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,Filipino,Teacher Sophia,,Teacher Sophia,CONFIRMED
 2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,English,Teacher Jayra,,Teacher Jayra,CONFIRMED
-2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,Values Education,Teacher Wardah,,Teacher Wardah,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,Science,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,Math,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,Values Education,Teacher Wardah,,Teacher Wardah,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 8,MU'ADH IBN JABAL,ODL,2nd Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,Science,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,Math,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
 2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,English,Teacher Marham,,Teacher Marham,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,Makabansa,Teacher Zara,,Teacher Zara,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,Makabansa,Teacher Zara,,Teacher Zara,CONFIRMED
 2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,SHAF,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,MAPEH,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,Filipino,Teacher Jenny,,Teacher Jenny,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,Math,Teacher Fhairudz,,Teacher Fhairudz,CONFIRMED
-2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,AP,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
-2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
-2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,TLE,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,SHAF,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,Arabic,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
-2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,TLE,Teacher Angeleni,,Teacher Angeleni,CONFIRMED
-2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,Social Science,Teacher Sophia,,Teacher Sophia,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,Math,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,Filipino,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,English,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,ESP,Teacher Nof,,Teacher Nof,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,MAPEH,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
-2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,SHAF,Alim Bustamante,,Alim Bustamante,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,Science,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,Math,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,English,Teacher Marham,,Teacher Marham,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,Makabansa,Teacher Zara,,Teacher Zara,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,SHAF,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,Filipino,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,Math,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,English,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,MAPEH,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
-2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,AP,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,TLE,Teacher Jenny,,Teacher Jenny,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,ZAYD IBN HARITHA,ODL,2nd Shift,SHAF,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,MAPEH,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,Filipino,Teacher Joanna,,Teacher Joanna,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,Math,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,AP,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
+2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,TLE,Teacher Jenny,,Teacher Jenny,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,GMRC,Teacher Jayra,,Teacher Jayra,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,SHAF,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
+2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,MUS'AB IBN ABDUL MUTALIB,ODL,2nd Shift,Arabic,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,TLE,Teacher Angeleni,,Teacher Angeleni,CONFIRMED
+2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,Social Science,Teacher Sophia,,Teacher Sophia,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,Math,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
+2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,Filipino,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,English,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
+2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,ESP,Teacher Nof,,Teacher Nof,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,MAPEH,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,Arabic,Alim Mamonas,,Alim Mamonas,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,SHAF,Alim Bustamante,,Alim Bustamante,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 10,ABU AYYUB AL-ANSARI,ODL,2nd Shift,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,Science,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,Math,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,English,Teacher Marham,,Teacher Marham,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,Makabansa,Teacher Jenny,,Teacher Jenny,CONFIRMED
+2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,THABIT IBN QAYS,ODL,2nd Shift,SHAF,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,Filipino,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
+2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,Math,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,English,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,MAPEH,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,AP,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,TLE,Teacher Monisa,,Teacher Monisa,CONFIRMED
 2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
-2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,Qur'an,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,MAPEH,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,HASSAN IBN THABIT,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,MAPEH,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
 2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,Filipino,Teacher Joanna,,Teacher Joanna,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,AP,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
-2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,TLE,Teacher Jenny,,Teacher Jenny,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,SHAF,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,Arabic,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,Math,Teacher Hannah,,Teacher Hannah,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,AP,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
+2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,TLE,Teacher Jenny,,Teacher Jenny,CONFIRMED
+2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,SHAF,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,JA'FAR IBN ABI TALIB,ODL,2nd Shift,Arabic,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
 2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,Math,Teacher Katrina,,Teacher Katrina,CONFIRMED
 2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,TLE,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
-2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,Science,Teacher Fhairudz,,Teacher Fhairudz,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,MAPEH,Teacher Zara,,Teacher Zara,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,AP,Teacher Normylah,,Teacher Normylah,CONFIRMED
-2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,Arabic,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
-2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,MAPEH,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,Filipino,Teacher Joanna,,Teacher Joanna,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,Math,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,Science,Teacher Fhairudz,,Teacher Fhairudz,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,MAPEH,Teacher Zara,,Teacher Zara,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
+2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,AP,Teacher Normylah,,Teacher Normylah,CONFIRMED
+2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
+2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,Arabic,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,KHALEED IBN WALEED,ODL,2nd Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,MAPEH,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,Filipino,Teacher Joanna,,Teacher Joanna,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,Math,Teacher Fhairudz,,Teacher Fhairudz,CONFIRMED
 2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,AP,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
-2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
+2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
 2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,TLE,Teacher Jenny,,Teacher Jenny,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,Qur'an,Ustadh Jaisam,,Ustadh Jaisam,CONFIRMED
-2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,SHAF,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,Arabic,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,Math,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,TLE,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
-2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,Science,Teacher Fhairudz,,Teacher Fhairudz,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,MAPEH,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
-2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,AP,Teacher Normylah,,Teacher Normylah,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,SHAF,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,Arabic,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,TLE,Teacher Angeleni,,Teacher Angeleni,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,MAPEH,Sir Mohaymen,,Sir Mohaymen,CONFIRMED
+2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,SHAF,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 5,AL HARITH BIN AWF,ODL,2nd Shift,Arabic,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,Math,Teacher Katrina,,Teacher Katrina,CONFIRMED
+2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,TLE,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,English,Teacher Jessa,,Teacher Jessa,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,Science,Teacher Fhairudz,,Teacher Fhairudz,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,MAPEH,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,AP,Teacher Normylah,,Teacher Normylah,CONFIRMED
+2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,SHAF,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,Arabic,Ustadh Ersahad,,Ustadh Ersahad,CONFIRMED
+2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 6,DIHYA IBN KHALIFAH,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,TLE,Teacher Angeleni,,Teacher Angeleni,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,MAPEH,Teacher Angeleni,,Teacher Angeleni,CONFIRMED
 2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,Social Science,Teacher Sophia,,Teacher Sophia,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,Math,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,Filipino,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,English,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
-2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,ESP,Teacher Nof,,Teacher Nof,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
-2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,Math,Teacher Jhelyn,,Teacher Jhelyn,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,Filipino,Teacher Nadzra,,Teacher Nadzra,CONFIRMED
+2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,English,Teacher Norhaima,,Teacher Norhaima,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,ESP,Teacher Nof,,Teacher Nof,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,Science,Teacher Rowena,,Teacher Rowena,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,SHAF,Alim Samsuddin,,Alim Samsuddin,CONFIRMED
+2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
 2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 9,ABU JANDAL IBN SUHAYL,ODL,2nd Shift,Qur'an,Alim Abdulwahab,,Alim Abdulwahab,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,Science,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,Math,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,English,Teacher Jenny,,Teacher Jenny,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,Science,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,Math,Teacher Jerlyn,,Teacher Jerlyn,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,English,Teacher Jenny,,Teacher Jenny,CONFIRMED
+2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,Filipino,Teacher Normylah,,Teacher Normylah,CONFIRMED
 2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,Makabansa,Teacher Jenny,,Teacher Jenny,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,SHAF,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,Math,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,Filipino,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,English,Teacher Marham,,Teacher Marham,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,Makabansa,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,Reading and Literacy,Teacher Katrina,,Teacher Katrina,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,GMRC,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 3,AS'AD IBN ZURARAH,ODL,2nd Shift,SHAF,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,Math,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,Filipino,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,English,Teacher Marham,,Teacher Marham,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,Makabansa,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 2,SAEED IBN ZAYD,ODL,2nd Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,Reading and Literacy,Teacher Katrina,,Teacher Katrina,CONFIRMED
 2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,Makabansa,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,Language,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,Math,Teacher Joanna,,Teacher Joanna,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,ABDULLAH IBN MAS'UD,ODL,2nd Shift,Circle Time 1,Teacher Keychell,,Teacher Keychell,CONFIRMED
-2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 2,60 minutes,Kinder 2,ABDULLAH IBN MAS'UD,ODL,2nd Shift,Circle Time 2,Teacher Keychell,,Teacher Keychell,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,ABDULLAH IBN MAS'UD,ODL,2nd Shift,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,ABDULLAH IBN MAS'UD,ODL,2nd Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,Language,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,Math,Teacher Joanna,,Teacher Joanna,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 1,SUHAYB AR-RUMI,ODL,2nd Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,ABDULLAH IBN MAS'UD,ODL,2nd Shift,Circle Time 1,Teacher Joanna,,Teacher Joanna,CONFIRMED
+2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 2,60 minutes,Kinder 2,ABDULLAH IBN MAS'UD,ODL,2nd Shift,Circle Time 2,Teacher Joanna,,Teacher Joanna,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,ABDULLAH IBN MAS'UD,ODL,2nd Shift,Arabic,Ustadha Silfah,,Ustadha Silfah,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,ABDULLAH IBN MAS'UD,ODL,2nd Shift,Qur'an,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
 2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 1,60 minutes,Kinder 2,ABDULLAH IBN MAS'UD,ODL,2nd Shift,Hadith,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,AASIM IBN THABIT,ODL,2nd Shift,Math,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,AASIM IBN THABIT,ODL,2nd Shift,Filipino,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,AASIM IBN THABIT,ODL,2nd Shift,Math,Teacher Sitti Kauzar,,Teacher Sitti Kauzar,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 2,AASIM IBN THABIT,ODL,2nd Shift,Filipino,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
 2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 2,AASIM IBN THABIT,ODL,2nd Shift,English,Teacher Marham,,Teacher Marham,CONFIRMED
 2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 2,AASIM IBN THABIT,ODL,2nd Shift,Makabansa,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 2,AASIM IBN THABIT,ODL,2nd Shift,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,AASIM IBN THABIT,ODL,2nd Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,AASIM IBN THABIT,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 2,AASIM IBN THABIT,ODL,2nd Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
-2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,Filipino,Teacher Norhydie,,Teacher Norhydie,CONFIRMED
-2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
-2026-09-07,Monday,Day 4,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,Math,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
-2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,English,Teacher Arvin,,Teacher Arvin,CONFIRMED
-2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
-2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,MAPEH,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
-2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,AP,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,TLE,Teacher Monisa,,Teacher Monisa,CONFIRMED
-2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
-2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
-2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,AASIM IBN THABIT,ODL,2nd Shift,GMRC,Ustadha Saliha,,Ustadha Saliha,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,AASIM IBN THABIT,ODL,2nd Shift,Arabic,Ustadh Hainur,,Ustadh Hainur,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 2,AASIM IBN THABIT,ODL,2nd Shift,Qur'an,Ustadh Obaydah,,Ustadh Obaydah,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 2,AASIM IBN THABIT,ODL,2nd Shift,SHAF,Alim Abdul Karim,,Alim Abdul Karim,CONFIRMED
+2026-09-03,Thursday,Day 2,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,Filipino,Teacher Zuhora,,Teacher Zuhora,CONFIRMED
+2026-09-02,Wednesday,Day 1,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,GMRC,Teacher Sahdia,,Teacher Sahdia,CONFIRMED
+2026-09-06,Sunday,Day 3,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,Math,Teacher Saimonah,,Teacher Saimonah,CONFIRMED
+2026-09-07,Monday,Day 4,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,English,Teacher Arvin,,Teacher Arvin,CONFIRMED
+2026-09-06,Sunday,Day 3,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,Science,Teacher Anna,,Teacher Anna,CONFIRMED
+2026-09-07,Monday,Day 4,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,MAPEH,Teacher Halnaisa,,Teacher Halnaisa,CONFIRMED
+2026-09-06,Sunday,Day 3,5:30 PM,6:30 PM,5:30 PM – 6:30 PM,Exam Period 3,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,AP,Teacher Monisa,,Teacher Monisa,CONFIRMED
+2026-09-03,Thursday,Day 2,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,TLE,Teacher Jenny,,Teacher Jenny,CONFIRMED
+2026-09-02,Wednesday,Day 1,3:10 PM,4:10 PM,3:10 PM – 4:10 PM,Exam Period 1,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,SHAF,Ustadh Abdiraheem,,Ustadh Abdiraheem,CONFIRMED
+2026-09-02,Wednesday,Day 1,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,Arabic,Ustadh Ali,,Ustadh Ali,CONFIRMED
+2026-09-03,Thursday,Day 2,4:20 PM,5:20 PM,4:20 PM – 5:20 PM,Exam Period 2,60 minutes,Grade 4,IKRIMAH IBN ABI JAHL,ODL,2nd Shift,Qur'an,Ustadh Faidh,,Ustadh Faidh,CONFIRMED
