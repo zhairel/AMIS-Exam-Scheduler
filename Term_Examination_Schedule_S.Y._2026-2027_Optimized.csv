@@ -52,16 +52,16 @@ Day Number,Date,Slot Number,Time Slot,Section Name,Department,Grade Level,Shift,
 1,"Tuesday, September 2, 2026",3,10:00 AM – 11:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,Araling Panlipunan (AP),tchr_keychell,Teacher Keychell,45
 1,"Tuesday, September 2, 2026",2,08:45 AM – 09:45 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,SHAF,tchr_ersahad,Ustadh Ersahad,45
 2,"Wednesday, September 3, 2026",3,10:00 AM – 11:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,Filipino,tchr_jessa,Teacher Jessa,45
-1,"Tuesday, September 2, 2026",2,08:45 AM – 09:45 AM,GRADE  6  FACE TO FACE,Elementary,Grade  6,F2F,Filipino,tchr_normylah,Teacher Normylah,45
-3,"Saturday, September 6, 2026",2,08:45 AM – 09:45 AM,GRADE  6  FACE TO FACE,Elementary,Grade  6,F2F,English,tchr_jessa,Teacher Jessa,45
-3,"Saturday, September 6, 2026",1,07:30 AM – 08:30 AM,GRADE  6  FACE TO FACE,Elementary,Grade  6,F2F,Araling Panlipunan (AP),tchr_zara,Teacher Zara,45
-2,"Wednesday, September 3, 2026",3,10:00 AM – 11:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade  6,F2F,Mathematics,tchr_ersahad,Ustadh Ersahad,45
-1,"Tuesday, September 2, 2026",1,07:30 AM – 08:30 AM,GRADE  6  FACE TO FACE,Elementary,Grade  6,F2F,SHAF,tchr_abdiraheem,Ustadh Abdiraheem,45
-4,"Sunday, September 7, 2026",2,08:45 AM – 09:45 AM,GRADE  6  FACE TO FACE,Elementary,Grade  6,F2F,GMRC / Values,tchr_silfah,Ustadha Silfah,45
-3,"Saturday, September 6, 2026",3,10:00 AM – 11:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade  6,F2F,Technology and Livelihood Education,tchr_arvin,Teacher Arvin,45
-4,"Sunday, September 7, 2026",1,07:30 AM – 08:30 AM,GRADE  6  FACE TO FACE,Elementary,Grade  6,F2F,Arabic Language,tchr_ali,Ustadz Ali,45
-1,"Tuesday, September 2, 2026",3,10:00 AM – 11:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade  6,F2F,Qur'an,tchr_faidh,Ustadh Faidh,45
-4,"Sunday, September 7, 2026",3,10:00 AM – 11:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade  6,F2F,Science,unassigned,Science - Tchr. Wendelyn,45
+1,"Tuesday, September 2, 2026",2,08:45 AM – 09:45 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Filipino,tchr_normylah,Teacher Normylah,45
+3,"Saturday, September 6, 2026",2,08:45 AM – 09:45 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,English,tchr_jessa,Teacher Jessa,45
+3,"Saturday, September 6, 2026",1,07:30 AM – 08:30 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Araling Panlipunan (AP),tchr_zara,Teacher Zara,45
+2,"Wednesday, September 3, 2026",3,10:00 AM – 11:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Mathematics,tchr_ersahad,Ustadh Ersahad,45
+1,"Tuesday, September 2, 2026",1,07:30 AM – 08:30 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,SHAF,tchr_abdiraheem,Ustadh Abdiraheem,45
+4,"Sunday, September 7, 2026",2,08:45 AM – 09:45 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,GMRC / Values,tchr_silfah,Ustadha Silfah,45
+3,"Saturday, September 6, 2026",3,10:00 AM – 11:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Technology and Livelihood Education,tchr_arvin,Teacher Arvin,45
+4,"Sunday, September 7, 2026",1,07:30 AM – 08:30 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Arabic Language,tchr_ali,Ustadz Ali,45
+1,"Tuesday, September 2, 2026",3,10:00 AM – 11:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Qur'an,tchr_faidh,Ustadh Faidh,45
+4,"Sunday, September 7, 2026",3,10:00 AM – 11:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Science,unassigned,Science - Tchr. Wendelyn,45
 4,"Sunday, September 7, 2026",3,03:10 PM – 03:40 PM,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),Kindergarten,Kinder 2,ODL - 1ST SHIFT,Circle Time,tchr_joanna,Teacher Joanna,30
 1,"Tuesday, September 2, 2026",3,03:10 PM – 03:40 PM,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),Kindergarten,Kinder 2,ODL - 1ST SHIFT,Qur'an,tchr_hainur,Ustadh Hainur,30
 3,"Saturday, September 6, 2026",3,03:10 PM – 03:40 PM,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),Kindergarten,Kinder 2,ODL - 1ST SHIFT,Arabic Language,tchr_silfah,Ustadha Silfah,30
@@ -200,14 +200,14 @@ Day Number,Date,Slot Number,Time Slot,Section Name,Department,Grade Level,Shift,
 4,"Sunday, September 7, 2026",3,02:45 PM – 03:30 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Araling Panlipunan (AP),tchr_zara,Teacher Zara,45
 1,"Tuesday, September 2, 2026",1,12:30 PM – 01:30 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Qur'an,tchr_jaisam,Ustadh Jaisam,45
 3,"Saturday, September 6, 2026",1,12:30 PM – 01:30 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,SHAF,tchr_abdiraheem,Ustadh Abdiraheem,45
-2,"Wednesday, September 3, 2026",1,03:30 PM – 04:30 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Kindergarten,K2,ODL - 2ND SHIFT,Circle Time,tchr_ayah,Teacher Ayah,45
-4,"Sunday, September 7, 2026",1,03:30 PM – 04:30 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Kindergarten,K2,ODL - 2ND SHIFT,Arabic Language,tchr_silfah,Ustadha Silfah,45
-3,"Saturday, September 6, 2026",2,04:45 PM – 05:45 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Kindergarten,K2,ODL - 2ND SHIFT,Qur'an,tchr_hainur,Ustadh Hainur,45
-2,"Wednesday, September 3, 2026",2,04:45 PM – 05:45 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Kindergarten,K2,ODL - 2ND SHIFT,Hadith,tchr_hainur,Ustadh Hainur,45
-2,"Wednesday, September 3, 2026",2,04:45 PM – 05:45 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Kindergarten,K1,ODL - 2ND SHIFT,Circle Time,tchr_wendy,Teacher Wendy,45
-1,"Tuesday, September 2, 2026",2,04:45 PM – 05:45 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Kindergarten,K1,ODL - 2ND SHIFT,Qur'an,tchr_hainur,Ustadh Hainur,45
-4,"Sunday, September 7, 2026",1,03:30 PM – 04:30 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Kindergarten,K1,ODL - 2ND SHIFT,Hadith,tchr_hainur,Ustadh Hainur,45
-3,"Saturday, September 6, 2026",3,05:45 PM – 06:45 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Kindergarten,K1,ODL - 2ND SHIFT,Arabic Language,tchr_bustamante,Alim Bustamante,45
+2,"Wednesday, September 3, 2026",1,03:30 PM – 04:30 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Kindergarten,Kinder 2,ODL - 2ND SHIFT,Circle Time,tchr_ayah,Teacher Ayah,30
+4,"Sunday, September 7, 2026",1,03:30 PM – 04:30 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Kindergarten,Kinder 2,ODL - 2ND SHIFT,Arabic Language,tchr_silfah,Ustadha Silfah,30
+3,"Saturday, September 6, 2026",2,04:45 PM – 05:45 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Kindergarten,Kinder 2,ODL - 2ND SHIFT,Qur'an,tchr_hainur,Ustadh Hainur,30
+2,"Wednesday, September 3, 2026",2,04:45 PM – 05:45 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Kindergarten,Kinder 2,ODL - 2ND SHIFT,Hadith,tchr_hainur,Ustadh Hainur,30
+2,"Wednesday, September 3, 2026",2,04:45 PM – 05:45 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Kindergarten,Kinder 1,ODL - 2ND SHIFT,Circle Time,tchr_wendy,Teacher Wendy,30
+1,"Tuesday, September 2, 2026",2,04:45 PM – 05:45 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Kindergarten,Kinder 1,ODL - 2ND SHIFT,Qur'an,tchr_hainur,Ustadh Hainur,30
+4,"Sunday, September 7, 2026",1,03:30 PM – 04:30 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Kindergarten,Kinder 1,ODL - 2ND SHIFT,Hadith,tchr_hainur,Ustadh Hainur,30
+3,"Saturday, September 6, 2026",3,05:45 PM – 06:45 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Kindergarten,Kinder 1,ODL - 2ND SHIFT,Arabic Language,tchr_bustamante,Alim Bustamante,30
 1,"Tuesday, September 2, 2026",2,04:45 PM – 05:45 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,GMRC / Values,tchr_sahdia,Teacher Sahdia,45
 2,"Wednesday, September 3, 2026",1,03:30 PM – 04:30 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Makabansa,tchr_norhydie,Teacher Norhydie,45
 3,"Saturday, September 6, 2026",1,03:30 PM – 04:30 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Qur'an,tchr_hainur,Ustadh Hainur,45
@@ -263,10 +263,10 @@ Day Number,Date,Slot Number,Time Slot,Section Name,Department,Grade Level,Shift,
 4,"Sunday, September 7, 2026",1,03:30 PM – 04:30 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,SHAF,tchr_abdiraheem,Ustadh Abdiraheem,45
 3,"Saturday, September 6, 2026",2,04:45 PM – 05:45 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,Arabic Language,tchr_ali,Ustadz Ali,45
 2,"Wednesday, September 3, 2026",2,04:45 PM – 05:45 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,Technology and Livelihood Education,tchr_arvin,Teacher Arvin,45
-1,"Tuesday, September 2, 2026",3,05:45 PM – 06:45 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Kindergarten,K2,ODL - 2ND SHIFT,Qur'an,tchr_hainur,Ustadh Hainur,45
-3,"Saturday, September 6, 2026",2,04:45 PM – 05:45 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Kindergarten,K2,ODL - 2ND SHIFT,Circle Time,tchr_joanna,Teacher Joanna,45
-2,"Wednesday, September 3, 2026",2,04:45 PM – 05:45 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Kindergarten,K2,ODL - 2ND SHIFT,Hadith,tchr_hainur,Ustadh Hainur,45
-4,"Sunday, September 7, 2026",1,03:30 PM – 04:30 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Kindergarten,K2,ODL - 2ND SHIFT,Arabic Language,tchr_silfah,Ustadha Silfah,45
+1,"Tuesday, September 2, 2026",3,05:45 PM – 06:45 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Kindergarten,Kinder 2,ODL - 2ND SHIFT,Qur'an,tchr_hainur,Ustadh Hainur,30
+3,"Saturday, September 6, 2026",2,04:45 PM – 05:45 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Kindergarten,Kinder 2,ODL - 2ND SHIFT,Circle Time,tchr_joanna,Teacher Joanna,30
+2,"Wednesday, September 3, 2026",2,04:45 PM – 05:45 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Kindergarten,Kinder 2,ODL - 2ND SHIFT,Hadith,tchr_hainur,Ustadh Hainur,30
+4,"Sunday, September 7, 2026",1,03:30 PM – 04:30 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Kindergarten,Kinder 2,ODL - 2ND SHIFT,Arabic Language,tchr_silfah,Ustadha Silfah,30
 2,"Wednesday, September 3, 2026",2,04:45 PM – 05:45 PM,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),Kindergarten,Kinder 2,ODL - 2ND SHIFT,Circle Time,tchr_keychell,Teacher Keychell,30
 4,"Sunday, September 7, 2026",1,03:30 PM – 04:30 PM,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),Kindergarten,Kinder 2,ODL - 2ND SHIFT,Qur'an,tchr_faidh,Ustadh Faidh,30
 1,"Tuesday, September 2, 2026",1,03:30 PM – 04:30 PM,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),Kindergarten,Kinder 2,ODL - 2ND SHIFT,Hadith,tchr_faidh,Ustadh Faidh,30

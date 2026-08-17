@@ -72,7 +72,10 @@ seen_pairs = set()
 for sec in sections:
     sname = sec['section_name']
     dept = sec['department']
-    grade = sec['grade_level']
+    grade = sec['grade_level'].strip()
+    if grade == 'K1': grade = 'Kinder 1'
+    elif grade == 'K2': grade = 'Kinder 2'
+    elif grade == 'Grade  6': grade = 'Grade 6'
     shift = sec['shift']
     
     sec_subjs = {}
@@ -250,6 +253,11 @@ def solve_exam_schedule(option_name, seed=42):
                         elif 'Kinder 2' in sess['grade_level'] and sess['shift'] == 'ODL - 1ST SHIFT' and 'k2_time' in slot_info:
                             time_str = slot_info['k2_time']
                             
+                        sec_name = sess['section_name']
+                        gender = 'MIXED'
+                        if 'GIRLS' in sec_name.upper(): gender = 'GIRLS'
+                        elif 'BOYS' in sec_name.upper(): gender = 'BOYS'
+                        
                         scheduled.append({
                             'id': f"exam_{len(scheduled)+1}",
                             'day_number': d,
@@ -257,10 +265,15 @@ def solve_exam_schedule(option_name, seed=42):
                             'short_date': date_meta['short_date'],
                             'slot_number': s,
                             'time_slot': time_str,
-                            'section_name': sess['section_name'],
+                            'time': time_str,
+                            'section': sec_name,
+                            'section_name': sec_name,
                             'department': sess['department'],
+                            'grade': sess['grade_level'],
                             'grade_level': sess['grade_level'],
                             'shift': sess['shift'],
+                            'modality': sess['shift'],
+                            'gender': gender,
                             'subject': sess['subject'],
                             'teacher_id': sess['teacher_id'],
                             'teacher': sess['teacher'],
