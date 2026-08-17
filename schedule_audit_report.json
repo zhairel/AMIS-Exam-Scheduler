@@ -1,160 +1,10 @@
 {
-  "generated_at": "2026-08-18T00:53:34.382436",
+  "generated_at": "2026-08-18T07:00:41.760222",
   "source_file": "OFFICIAL_CLASS_SCHEDULE_raw.json",
   "total_sections": 69,
   "total_active_class_sessions": 1401,
-  "total_warnings": 185,
+  "total_warnings": 161,
   "warnings": [
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "D32",
-      "section": "GRADE 1 (FACE TO FACE)",
-      "day": "Sunday",
-      "time": "10:45 AM \u2013 11:30 AM",
-      "raw_text": "ARAL Reading - Tchr. Kat",
-      "message": "Could not match teacher in 'ARAL Reading - Tchr. Kat' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "F32",
-      "section": "GRADE 1 (FACE TO FACE)",
-      "day": "Tuesday",
-      "time": "10:45 AM \u2013 11:30 AM",
-      "raw_text": "ARAL Reading - Tchr. Kat",
-      "message": "Could not match teacher in 'ARAL Reading - Tchr. Kat' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "H32",
-      "section": "GRADE 1 (FACE TO FACE)",
-      "day": "Thursday",
-      "time": "10:45 AM \u2013 11:30 AM",
-      "raw_text": "ARAL Reading - Tchr. Kat",
-      "message": "Could not match teacher in 'ARAL Reading - Tchr. Kat' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "D61",
-      "section": "GRADE 3 (FACE TO FACE)",
-      "day": "Sunday",
-      "time": "10:00 AM \u2013 10:45 AM",
-      "raw_text": "Filipino - Tchr. Normayla",
-      "message": "Could not match teacher in 'Filipino - Tchr. Normayla' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "E61",
-      "section": "GRADE 3 (FACE TO FACE)",
-      "day": "Monday",
-      "time": "10:00 AM \u2013 10:45 AM",
-      "raw_text": "Filipino - Tchr. Normayla",
-      "message": "Could not match teacher in 'Filipino - Tchr. Normayla' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "F61",
-      "section": "GRADE 3 (FACE TO FACE)",
-      "day": "Tuesday",
-      "time": "10:00 AM \u2013 10:45 AM",
-      "raw_text": "Filipino - Tchr. Normayla",
-      "message": "Could not match teacher in 'Filipino - Tchr. Normayla' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "G61",
-      "section": "GRADE 3 (FACE TO FACE)",
-      "day": "Wednesday",
-      "time": "10:00 AM \u2013 10:45 AM",
-      "raw_text": "Filipino - Tchr. Normayla",
-      "message": "Could not match teacher in 'Filipino - Tchr. Normayla' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "H61",
-      "section": "GRADE 3 (FACE TO FACE)",
-      "day": "Thursday",
-      "time": "10:00 AM \u2013 10:45 AM",
-      "raw_text": "Filipino - Tchr. Normayla",
-      "message": "Could not match teacher in 'Filipino - Tchr. Normayla' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "E93",
-      "section": "GRADE 5 (FACE TO FACE)",
-      "day": "Monday",
-      "time": "08:25 AM \u2013 09:05 AM",
-      "raw_text": "Qur'an - Ust. Ubaydah",
-      "message": "Could not match teacher in 'Qur'an - Ust. Ubaydah' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "G93",
-      "section": "GRADE 5 (FACE TO FACE)",
-      "day": "Wednesday",
-      "time": "08:25 AM \u2013 09:05 AM",
-      "raw_text": "Qur'an - Ust. Ubaydah",
-      "message": "Could not match teacher in 'Qur'an - Ust. Ubaydah' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "D115",
-      "section": "GRADE  6  FACE TO FACE",
-      "day": "Sunday",
-      "time": "01:25 PM \u2013 02:10 PM",
-      "raw_text": "Science - Tchr. Wendelyn",
-      "message": "Could not match teacher in 'Science - Tchr. Wendelyn' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "E115",
-      "section": "GRADE  6  FACE TO FACE",
-      "day": "Monday",
-      "time": "01:25 PM \u2013 02:10 PM",
-      "raw_text": "Science - Tchr. Wendelyn",
-      "message": "Could not match teacher in 'Science - Tchr. Wendelyn' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "F115",
-      "section": "GRADE  6  FACE TO FACE",
-      "day": "Tuesday",
-      "time": "01:25 PM \u2013 02:10 PM",
-      "raw_text": "Science - Tchr. Wendelyn",
-      "message": "Could not match teacher in 'Science - Tchr. Wendelyn' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "G115",
-      "section": "GRADE  6  FACE TO FACE",
-      "day": "Wednesday",
-      "time": "01:25 PM \u2013 02:10 PM",
-      "raw_text": "Science - Tchr. Wendelyn",
-      "message": "Could not match teacher in 'Science - Tchr. Wendelyn' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "H115",
-      "section": "GRADE  6  FACE TO FACE",
-      "day": "Thursday",
-      "time": "01:25 PM \u2013 02:10 PM",
-      "raw_text": "Science - Tchr. Wendelyn",
-      "message": "Could not match teacher in 'Science - Tchr. Wendelyn' to canonical teacher registry"
-    },
     {
       "type": "MALFORMED_TIME",
       "sheet": "ELEM",
@@ -162,96 +12,6 @@
       "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
       "raw_value": "Kinder 1 HASAN IBN ALI (1ST SHIFT)",
       "message": "Malformed time string: Kinder 1 HASAN IBN ALI (1ST SHIFT)"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "N61",
-      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-      "day": "Tuesday",
-      "time": "02:20 PM \u2013 03:00 PM",
-      "raw_text": "Filipino - Tchr. Normayla",
-      "message": "Could not match teacher in 'Filipino - Tchr. Normayla' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "O61",
-      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-      "day": "Wednesday",
-      "time": "02:20 PM \u2013 03:00 PM",
-      "raw_text": "Filipino - Tchr. Normayla",
-      "message": "Could not match teacher in 'Filipino - Tchr. Normayla' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "L109",
-      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
-      "day": "Sunday",
-      "time": "01:30 PM \u2013 02:10 PM",
-      "raw_text": "Math - Tchr. Kat",
-      "message": "Could not match teacher in 'Math - Tchr. Kat' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "N109",
-      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
-      "day": "Tuesday",
-      "time": "01:30 PM \u2013 02:10 PM",
-      "raw_text": "Math - Tchr. Kat",
-      "message": "Could not match teacher in 'Math - Tchr. Kat' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "U107",
-      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
-      "day": "Monday",
-      "time": "12:40 PM \u2013 01:20 PM",
-      "raw_text": "Math - Tchr. Kat",
-      "message": "Could not match teacher in 'Math - Tchr. Kat' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "V107",
-      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
-      "day": "Tuesday",
-      "time": "12:40 PM \u2013 01:20 PM",
-      "raw_text": "Math - Tchr. Kat",
-      "message": "Could not match teacher in 'Math - Tchr. Kat' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "AE110",
-      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
-      "day": "Wednesday",
-      "time": "04:30 PM \u2013 05:10 PM",
-      "raw_text": "Math - Tchr. Kat",
-      "message": "Could not match teacher in 'Math - Tchr. Kat' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "AB112",
-      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
-      "day": "Sunday",
-      "time": "05:20 PM \u2013 06:00 PM",
-      "raw_text": "Math - Tchr. Kat",
-      "message": "Could not match teacher in 'Math - Tchr. Kat' to canonical teacher registry"
-    },
-    {
-      "type": "MISSING_TEACHER_MAPPING",
-      "sheet": "ELEM",
-      "cell": "AN108",
-      "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
-      "day": "Thursday",
-      "time": "03:40 PM \u2013 04:20 PM",
-      "raw_text": "Qur'an - Ust. Obayda",
-      "message": "Could not match teacher in 'Qur'an - Ust. Obayda' to canonical teacher registry"
     },
     {
       "type": "MISSING_TEACHER_MAPPING",
@@ -350,10 +110,10 @@
       "day": "Monday",
       "time": "01:25 PM \u2013 02:10 PM",
       "conflicting_sections": [
-        "GRADE 3 (FACE TO FACE)",
-        "GRADE 2 (FACE TO FACE)"
+        "GRADE 2 (FACE TO FACE)",
+        "GRADE 3 (FACE TO FACE)"
       ],
-      "message": "Teacher 'Teacher Junaisah' scheduled concurrently in ['GRADE 3 (FACE TO FACE)', 'GRADE 2 (FACE TO FACE)'] on Monday at 01:25 PM \u2013 02:10 PM"
+      "message": "Teacher 'Teacher Junaisah' scheduled concurrently in ['GRADE 2 (FACE TO FACE)', 'GRADE 3 (FACE TO FACE)'] on Monday at 01:25 PM \u2013 02:10 PM"
     },
     {
       "type": "TEACHER_SCHEDULE_CONFLICT",

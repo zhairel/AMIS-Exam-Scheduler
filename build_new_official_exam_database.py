@@ -226,11 +226,24 @@ def solve_exam_schedule(option_name, seed=42):
     for i, sess in enumerate(exam_items):
         sec_to_sessions[sess['section_name']].append(i)
         
+    sec_dev_terms = []
     for sname, indices in sec_to_sessions.items():
+        k = len(indices)
+        target_d = k / 4.0
+        target_int = int(round(target_d))
+
         for d in days:
+            # At most 1 exam per slot
             for s in slots:
                 model.Add(sum(x[i, d, s] for i in indices) <= 1)
-            model.Add(sum(x[i, d, s] for i in indices for s in slots) <= 3)
+            
+            # Max 3 exams per day
+            day_sum = sum(x[i, d, s] for i in indices for s in slots)
+            model.Add(day_sum <= 3)
+            
+            # If section has >= 4 exams, every exam day must have at least 1 exam!
+            if k >= 4:
+                model.Add(day_sum >= 1)
 
             # High School Math 2-hour continuous allocation rule
             for i in indices:
@@ -241,6 +254,12 @@ def solve_exam_schedule(option_name, seed=42):
                     model.Add(x[i, d, 3] == 0)
                     # If HS Math is in Slot 2, block Slot 3
                     model.Add(x[i, d, 2] + sum(x[j, d, 3] for j in indices if j != i) <= 1)
+
+            # Section daily balance penalty
+            dev = model.NewIntVar(0, 3, f"sec_dev_{sname}_{d}")
+            model.Add(dev >= day_sum - target_int)
+            model.Add(dev >= target_int - day_sum)
+            sec_dev_terms.append(dev)
 
     shift_tchr_to_sessions = defaultdict(list)
     for i, sess in enumerate(exam_items):
@@ -253,32 +272,49 @@ def solve_exam_schedule(option_name, seed=42):
             for j in indices[i_idx + 1:]:
                 s_i = exam_items[i]
                 s_j = exam_items[j]
-                if s_i['subject'] != s_j['subject'] or s_i['grade_level'] != s_j['grade_level']:
+                dur_i = s_i['duration_minutes']
+                dur_j = s_j['duration_minutes']
+                if s_i['subject'] != s_j['subject'] or s_i['grade_level'] != s_j['grade_level'] or dur_i == 120 or dur_j == 120:
                     for d in days:
                         for s in slots:
                             model.Add(x[i, d, s] + x[j, d, s] <= 1)
+                        if dur_i == 120:
+                            model.Add(x[i, d, 1] + x[j, d, 2] <= 1)
+                            model.Add(x[i, d, 2] + x[j, d, 3] <= 1)
+                        if dur_j == 120:
+                            model.Add(x[j, d, 1] + x[i, d, 2] <= 1)
+                            model.Add(x[j, d, 2] + x[i, d, 3] <= 1)
 
-    obj_terms = []
+    tchr_to_sessions = defaultdict(list)
     for i, sess in enumerate(exam_items):
-        subj = sess['subject'].lower()
-        if option_name == "OPTION_B":
-            if "math" in subj or "stat" in subj or "calculus" in subj:
-                for d in [1, 2]:
-                    for s in slots:
-                        obj_terms.append(x[i, d, s] * 10)
-        elif option_name == "OPTION_C":
-            if "arabic" in subj or "qur" in subj or "hadith" in subj or "shaf" in subj:
-                for d in [1, 2]:
-                    for s in slots:
-                        obj_terms.append(x[i, d, s] * 10)
-        elif option_name == "OPTION_D":
-            for d in days:
-                for s in slots:
-                    r_val = (i * 11 + d * 13 + s * 17 + seed) % 7
-                    obj_terms.append(x[i, d, s] * r_val)
+        tid = sess['teacher_id']
+        if tid and tid != "unassigned":
+            tchr_to_sessions[tid].append(i)
 
-    if obj_terms:
-        model.Maximize(sum(obj_terms))
+    tchr_dev_terms = []
+    for tid, indices in tchr_to_sessions.items():
+        t_count = len(indices)
+        target_per_day = t_count / 4.0
+        target_int = int(round(target_per_day))
+        for d in days:
+            t_day_sum = sum(x[i, d, s] for i in indices for s in slots)
+            dev = model.NewIntVar(0, t_count, f"dev_{tid}_{d}")
+            model.Add(dev >= t_day_sum - target_int)
+            model.Add(dev >= target_int - t_day_sum)
+            tchr_dev_terms.append(dev)
+
+    day_total_devs = []
+    target_day_total = num_sessions // 4
+    for d in days:
+        d_total = sum(x[i, d, s] for i in range(num_sessions) for s in slots)
+        d_dev = model.NewIntVar(0, num_sessions, f"d_dev_{d}")
+        model.Add(d_dev >= d_total - target_day_total)
+        model.Add(d_dev >= target_day_total - d_total)
+        day_total_devs.append(d_dev)
+
+    # Core Objective: Section daily balance (weight 10) + Teacher daily balance (weight 5) + School day balance (weight 2)
+    obj_cost = sum(sec_dev_terms) * 10 + sum(tchr_dev_terms) * 5 + sum(day_total_devs) * 2
+    model.Minimize(obj_cost)
 
     solver = cp_model.CpSolver()
     solver.parameters.max_time_in_seconds = 20.0
