@@ -1099,7 +1099,7 @@
       <div class="filter-grid">
         <div class="filter-control">
           <label>Grade Level</label>
-          <select id="gradeSelect" class="select-dropdown" onchange="onFilterChange()">
+          <select id="gradeSelect" class="select-dropdown" onchange="onGradeChange()">
             <option value="">All Grades (16)</option>
           </select>
         </div>
@@ -1331,23 +1331,31 @@
       return '';
     }
 
+    function getGradeSortOrder(g) {
+      if (!g) return 999;
+      const lower = String(g).toLowerCase().trim();
+      if (lower.includes('k1') || lower.includes('kinder 1')) return 1;
+      if (lower.includes('k2') || lower.includes('kinder 2')) return 2;
+      const m = lower.match(/\d+/);
+      if (m) {
+        return 10 + parseInt(m[0], 10);
+      }
+      return 100;
+    }
+
     function initApp() {
       populateFilters();
       renderCurrentView();
     }
 
     function populateFilters() {
-      const grades = [...new Set(ALL_DATA.map(r => r.grade))].sort((a,b) => a.localeCompare(b, undefined, { numeric: true }));
+      const grades = [...new Set(ALL_DATA.map(r => r.grade))].sort((a,b) => getGradeSortOrder(a) - getGradeSortOrder(b));
       const gradeSel = document.getElementById('gradeSelect');
       const curG = gradeSel.value;
       gradeSel.innerHTML = '<option value="">All Grades (' + grades.length + ')</option>' + grades.map(g => `<option value="${g}">${g}</option>`).join('');
       gradeSel.value = curG;
 
-      const sections = [...new Set(ALL_DATA.map(r => r.section))].sort();
-      const secSel = document.getElementById('sectionSelect');
-      const curS = secSel.value;
-      secSel.innerHTML = '<option value="">All Sections (' + sections.length + ')</option>' + sections.map(s => `<option value="${s}">${cleanSecName(s)}</option>`).join('');
-      secSel.value = curS;
+      updateSectionDropdown();
 
       const teachers = [...new Set(ALL_DATA.map(r => r.teacher))].sort();
       const tSel = document.getElementById('teacherSelect');
@@ -1362,36 +1370,105 @@
       subSel.value = curSub;
     }
 
+    function updateSectionDropdown() {
+      const selGrade = document.getElementById('gradeSelect').value;
+      const secSel = document.getElementById('sectionSelect');
+      const curS = secSel.value;
+
+      let pool = ALL_DATA;
+      if (selGrade) {
+        pool = pool.filter(r => r.grade === selGrade || r.grade_level === selGrade);
+      }
+
+      const sections = [...new Set(pool.map(r => r.section || r.section_name))].filter(Boolean).sort();
+      const label = selGrade ? `All ${selGrade} Sections (${sections.length})` : `All Sections (${sections.length})`;
+      secSel.innerHTML = `<option value="">${label}</option>` + sections.map(s => `<option value="${s}">${cleanSecName(s)}</option>`).join('');
+      
+      if (sections.includes(curS)) {
+        secSel.value = curS;
+      } else {
+        secSel.value = "";
+      }
+    }
+
     function getFilteredData() {
-      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const query = (document.getElementById('searchInput').value || '').toLowerCase().trim();
       const grade = document.getElementById('gradeSelect').value;
       const section = document.getElementById('sectionSelect').value;
-      const gender = document.getElementById('genderSelect').value;
+      const gender = (document.getElementById('genderSelect').value || '').toUpperCase().trim();
       const modality = document.getElementById('modalitySelect').value;
-      const shift = document.getElementById('shiftSelect').value;
+      const shift = (document.getElementById('shiftSelect').value || '').toUpperCase().trim();
       const teacher = document.getElementById('teacherSelect').value;
       const subject = document.getElementById('subjectSelect').value;
 
       return ALL_DATA.filter(r => {
-        if (grade && r.grade !== grade) return false;
-        if (section && r.section !== section) return false;
-        if (gender && (r.gender || '').toUpperCase() !== gender) return false;
-        if (modality && r.modality !== modality) return false;
-        if (shift && !r.shift.includes(shift.replace(' Shift', ''))) return false;
+        // Grade filter
+        if (grade && r.grade !== grade && r.grade_level !== grade) return false;
+
+        // Section filter
+        if (section) {
+          const s1 = (r.section || '').trim();
+          const s2 = (r.section_name || '').trim();
+          if (s1 !== section && s2 !== section && cleanSecName(s1) !== cleanSecName(section) && cleanSecName(s2) !== cleanSecName(section)) {
+            return false;
+          }
+        }
+
+        // Gender filter
+        if (gender) {
+          const g = (r.gender || '').toUpperCase().trim();
+          if (g !== gender && !g.includes(gender)) return false;
+        }
+
+        // Modality filter
+        if (modality) {
+          const m = (r.modality || '').toUpperCase();
+          const s = (r.shift || '').toUpperCase();
+          if (modality === 'F2F') {
+            if (!m.includes('F2F') && !s.includes('F2F')) return false;
+          } else if (modality === 'ODL') {
+            if (!m.includes('ODL') && !s.includes('ODL')) return false;
+          }
+        }
+
+        // Shift filter
+        if (shift) {
+          const s = (r.shift || '').toUpperCase();
+          const m = (r.modality || '').toUpperCase();
+          if (shift.includes('1ST') && !s.includes('1ST') && !m.includes('1ST')) return false;
+          if (shift.includes('2ND') && !s.includes('2ND') && !m.includes('2ND')) return false;
+        }
+
+        // Teacher filter
         if (teacher && r.teacher !== teacher) return false;
+
+        // Subject filter
         if (subject && r.subject !== subject) return false;
 
+        // Search query filter
         if (query) {
-          const match = 
-            r.subject.toLowerCase().includes(query) ||
-            r.teacher.toLowerCase().includes(query) ||
-            r.section.toLowerCase().includes(query) ||
-            r.grade.toLowerCase().includes(query);
-          if (!match) return false;
+          const haystack = [
+            r.subject || '',
+            r.teacher || '',
+            r.section || '',
+            r.section_name || '',
+            r.grade || '',
+            r.modality || '',
+            r.shift || '',
+            r.time_slot || '',
+            r.time || ''
+          ].join(' ').toLowerCase();
+
+          if (!haystack.includes(query)) return false;
         }
 
         return true;
       });
+    }
+
+    function onGradeChange() {
+      updateSectionDropdown();
+      renderCurrentView();
     }
 
     function onFilterChange() {
@@ -1407,6 +1484,7 @@
       document.getElementById('shiftSelect').value = '';
       document.getElementById('teacherSelect').value = '';
       document.getElementById('subjectSelect').value = '';
+      updateSectionDropdown();
       renderCurrentView();
     }
 
@@ -1470,7 +1548,7 @@
         return;
       }
 
-      const uniqueGrades = [...new Set(records.map(r => r.grade))].sort((a,b) => a.localeCompare(b, undefined, { numeric: true }));
+      const uniqueGrades = [...new Set(records.map(r => r.grade))].sort((a,b) => getGradeSortOrder(a) - getGradeSortOrder(b));
 
       const dates = [
         '2026-09-02',
