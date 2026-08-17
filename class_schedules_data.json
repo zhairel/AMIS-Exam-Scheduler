@@ -5,11 +5,11 @@
     "department": "Kindergarten",
     "grade_level": "Kinder 2",
     "shift": "F2F",
-    "total_periods": 9,
+    "total_periods": 8,
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -20,7 +20,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 07:50 a.m.",
+        "time": "07:40 \u2013 07:50 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Meeting Time -Tchr. Keychell",
@@ -31,7 +31,7 @@
       },
       {
         "period_num": 3,
-        "time": "07:50 \u2013 08:25 a.m.",
+        "time": "07:50 \u2013 08:25 a.m. AM",
         "minutes": "35 min.",
         "is_merged_all_days": true,
         "label": "Circle Time 1 - Tchr. Keychell",
@@ -42,7 +42,7 @@
       },
       {
         "period_num": 4,
-        "time": "08:25 \u2013 09:10 a.m.",
+        "time": "08:25 \u2013 09:10 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -85,7 +85,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:10 \u2013 09:30 a.m.",
+        "time": "09:10 \u2013 09:30 a.m. AM",
         "minutes": "20 min.",
         "is_merged_all_days": true,
         "label": "SUPERVISED RECESS - Tchr. Ayah and Ustadha Saliha",
@@ -96,7 +96,7 @@
       },
       {
         "period_num": 6,
-        "time": "09:30 \u2013 10:15 a.m.",
+        "time": "09:30 \u2013 10:15 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Circle Time 2 - Tchr. Keychell",
@@ -107,7 +107,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:15 \u2013 10:30 a.m.",
+        "time": "10:15 \u2013 10:30 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "Wrap-Up Time - Tchr.Keychell",
@@ -118,27 +118,14 @@
       },
       {
         "period_num": 8,
-        "time": "10:30 a.m.",
-        "minutes": "- min.",
+        "time": "10:30 a.m. AM",
+        "minutes": "-",
         "is_merged_all_days": true,
         "label": "DEPARTURE",
         "subject": "DEPARTURE",
         "teacher_id": null,
         "teacher": "DEPARTURE",
         "is_break": true
-      },
-      {
-        "period_num": 9,
-        "time": "",
-        "minutes": "45 min.",
-        "is_merged_all_days": false,
-        "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
       }
     ]
   },
@@ -152,7 +139,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:00 \u2013 12:40",
+        "time": "12:00 \u2013 12:40 PM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "SALAH",
@@ -163,7 +150,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Circle Time 1 - Tchr. Wendy",
@@ -174,7 +161,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -217,7 +204,7 @@
       },
       {
         "period_num": 4,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "SHORT BREAK",
@@ -228,7 +215,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:55 p.m.",
+        "time": "02:10 \u2013 02:55 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Circle Time 2 - Tchr. Wendy",
@@ -239,8 +226,8 @@
       },
       {
         "period_num": 6,
-        "time": "03:00:00",
-        "minutes": "- min.",
+        "time": "03:00 PM",
+        "minutes": "-",
         "is_merged_all_days": true,
         "label": "DEPARTURE",
         "subject": "DEPARTURE",
@@ -260,7 +247,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -271,7 +258,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -296,7 +283,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "Language - Tchr. Sahdia",
@@ -307,7 +294,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "Reading and Literacy - Tchr. Katrina",
@@ -318,7 +305,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -329,7 +316,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Math - Tchr. Wendy",
@@ -340,7 +327,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -383,7 +370,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -394,7 +381,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "SHAF - Ust. Abdiraheem",
@@ -405,7 +392,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "MAKABANSA -Teacher Norhydie",
@@ -416,7 +403,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -459,7 +446,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -480,7 +467,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -491,7 +478,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "English - Tchr. Marham",
@@ -502,7 +489,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "MAKABANSA - Tchr. Monisa",
@@ -513,7 +500,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "Math - Tchr. Sitti",
@@ -524,7 +511,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -535,7 +522,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -560,7 +547,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -603,7 +590,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -614,7 +601,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Filipino - Tchr. Sitti",
@@ -625,7 +612,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -668,7 +655,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -711,7 +698,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -732,7 +719,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -743,7 +730,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Science - Tchr. Jerlyn",
@@ -754,7 +741,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "MAKABANSA - Tchr. Wendy",
@@ -765,7 +752,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "English - Tchr. Marham",
@@ -776,7 +763,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -787,7 +774,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Filipino - Tchr. Normayla",
@@ -798,7 +785,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -841,7 +828,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -852,7 +839,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -895,7 +882,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -938,7 +925,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -981,7 +968,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1004,7 +991,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -1015,7 +1002,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1058,7 +1045,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "Math - Tchr. Arvin",
@@ -1069,7 +1056,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1112,7 +1099,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -1123,7 +1110,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Science - Tchr. Junaisah",
@@ -1134,7 +1121,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1165,7 +1152,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -1176,7 +1163,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1219,7 +1206,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1262,7 +1249,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "English - Teacher Norhydie",
@@ -1273,7 +1260,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -1294,7 +1281,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -1305,7 +1292,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "English - Tchr. Jessa",
@@ -1316,7 +1303,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1359,7 +1346,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1402,7 +1389,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -1413,7 +1400,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1456,7 +1443,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Math 5 - Tchr. Fhairudz",
@@ -1467,7 +1454,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -1478,7 +1465,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Science - Tchr. Junaisah",
@@ -1489,7 +1476,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1532,7 +1519,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1575,7 +1562,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -1596,7 +1583,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -1607,7 +1594,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1632,7 +1619,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "English - Tchr. Jessa",
@@ -1643,7 +1630,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1686,7 +1673,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -1697,7 +1684,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1740,7 +1727,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1783,7 +1770,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -1794,7 +1781,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1837,7 +1824,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Science - Tchr. Wendelyn",
@@ -1848,7 +1835,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1891,7 +1878,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -1912,7 +1899,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1925,7 +1912,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -1938,7 +1925,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -1949,7 +1936,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "Circle Time 1 - Tchr. Joanna",
@@ -1960,7 +1947,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -1971,7 +1958,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2014,7 +2001,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "QUR'AN READING (GENERAL ASSEMBLY)",
@@ -2035,7 +2022,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -2046,7 +2033,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2089,7 +2076,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -2100,7 +2087,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2143,7 +2130,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -2154,7 +2141,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2197,7 +2184,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -2218,7 +2205,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -2229,7 +2216,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2272,7 +2259,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -2283,7 +2270,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2326,7 +2313,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -2337,7 +2324,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2380,7 +2367,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -2401,7 +2388,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -2412,7 +2399,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2455,7 +2442,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -2466,7 +2453,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2509,7 +2496,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -2520,7 +2507,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2563,7 +2550,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -2584,7 +2571,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -2595,7 +2582,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2638,7 +2625,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2651,7 +2638,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2694,7 +2681,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2707,7 +2694,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2750,7 +2737,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -2771,7 +2758,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -2782,7 +2769,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2825,7 +2812,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -2836,7 +2823,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2879,7 +2866,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -2890,7 +2877,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -2933,7 +2920,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -2954,7 +2941,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -2965,7 +2952,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3008,7 +2995,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3019,7 +3006,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3062,7 +3049,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3073,7 +3060,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3116,7 +3103,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -3137,7 +3124,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -3148,7 +3135,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3191,7 +3178,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3202,7 +3189,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3245,7 +3232,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3256,7 +3243,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3299,7 +3286,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -3320,7 +3307,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3333,7 +3320,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3346,7 +3333,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -3357,7 +3344,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "Circle Time 1 - Tchr. Ayah",
@@ -3368,7 +3355,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3379,7 +3366,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3422,7 +3409,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -3443,7 +3430,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -3454,7 +3441,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3497,7 +3484,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3508,7 +3495,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3551,7 +3538,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3562,7 +3549,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3605,7 +3592,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -3626,7 +3613,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -3637,7 +3624,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3680,7 +3667,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3691,7 +3678,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3734,7 +3721,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3745,7 +3732,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3788,7 +3775,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -3809,7 +3796,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -3820,7 +3807,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3863,7 +3850,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3874,7 +3861,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3917,7 +3904,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3928,7 +3915,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -3971,7 +3958,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -3992,7 +3979,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -4003,7 +3990,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4046,7 +4033,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -4057,7 +4044,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4100,7 +4087,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -4111,7 +4098,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4154,7 +4141,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -4175,7 +4162,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -4186,7 +4173,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4229,7 +4216,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -4240,7 +4227,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4283,7 +4270,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -4294,7 +4281,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4337,7 +4324,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -4358,7 +4345,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -4369,7 +4356,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4412,7 +4399,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -4423,7 +4410,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4466,7 +4453,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -4477,7 +4464,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4520,7 +4507,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -4541,7 +4528,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -4552,7 +4539,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4595,7 +4582,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -4606,7 +4593,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4649,7 +4636,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -4660,7 +4647,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4703,7 +4690,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -4724,7 +4711,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -4735,7 +4722,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -4746,7 +4733,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4759,7 +4746,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -4770,7 +4757,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4813,7 +4800,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -4824,7 +4811,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4877,7 +4864,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -4888,7 +4875,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4901,7 +4888,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -4914,7 +4901,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -4925,7 +4912,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "Circle Time 1 - Tchr. Wendy",
@@ -4936,7 +4923,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -4947,7 +4934,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5000,7 +4987,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -5011,7 +4998,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -5022,7 +5009,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5065,7 +5052,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -5076,7 +5063,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5119,7 +5106,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -5130,7 +5117,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5183,7 +5170,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -5194,7 +5181,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -5205,7 +5192,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5248,7 +5235,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -5259,7 +5246,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5302,7 +5289,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -5313,7 +5300,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5366,7 +5353,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -5377,7 +5364,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -5388,7 +5375,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5431,7 +5418,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -5442,7 +5429,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5485,7 +5472,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -5496,7 +5483,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5549,7 +5536,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -5560,7 +5547,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -5571,7 +5558,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5614,7 +5601,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -5625,7 +5612,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5668,7 +5655,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -5679,7 +5666,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5732,7 +5719,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -5743,7 +5730,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5786,7 +5773,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5799,7 +5786,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5842,7 +5829,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5855,7 +5842,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5898,7 +5885,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -5919,7 +5906,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -5930,7 +5917,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -5941,7 +5928,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -5984,7 +5971,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -5995,7 +5982,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6038,7 +6025,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -6049,7 +6036,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6102,7 +6089,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -6113,7 +6100,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -6124,7 +6111,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6137,7 +6124,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -6148,7 +6135,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6191,7 +6178,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -6202,7 +6189,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6255,7 +6242,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6268,7 +6255,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6281,7 +6268,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6294,7 +6281,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -6305,7 +6292,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "Circle Time 1 - Tchr. Keychell",
@@ -6316,7 +6303,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -6327,7 +6314,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6380,7 +6367,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -6391,7 +6378,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -6402,7 +6389,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6445,7 +6432,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -6456,7 +6443,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6499,7 +6486,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -6510,7 +6497,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6563,7 +6550,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -6574,7 +6561,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -6585,7 +6572,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6628,7 +6615,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -6639,7 +6626,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6682,7 +6669,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -6693,7 +6680,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6746,7 +6733,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -6757,7 +6744,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -6768,7 +6755,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6811,7 +6798,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -6822,7 +6809,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6865,7 +6852,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -6876,7 +6863,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6929,7 +6916,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -6940,7 +6927,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -6951,7 +6938,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -6994,7 +6981,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -7005,7 +6992,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7048,7 +7035,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -7059,7 +7046,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7112,7 +7099,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -7123,7 +7110,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -7134,7 +7121,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7177,7 +7164,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -7188,7 +7175,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7231,7 +7218,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -7242,7 +7229,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7295,7 +7282,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -7306,7 +7293,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -7317,7 +7304,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7360,7 +7347,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -7371,7 +7358,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7414,7 +7401,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -7425,7 +7412,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7478,7 +7465,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -7489,7 +7476,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -7500,7 +7487,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7543,7 +7530,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7556,7 +7543,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7599,7 +7586,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7612,7 +7599,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7665,7 +7652,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -7676,7 +7663,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -7687,7 +7674,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7730,7 +7717,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7743,7 +7730,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7786,7 +7773,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7799,7 +7786,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7852,7 +7839,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -7863,7 +7850,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -7874,7 +7861,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7917,7 +7904,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -7928,7 +7915,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -7971,7 +7958,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -7982,7 +7969,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8035,7 +8022,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -8046,7 +8033,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -8057,7 +8044,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8100,7 +8087,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8113,7 +8100,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8156,7 +8143,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8169,7 +8156,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8222,7 +8209,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -8233,7 +8220,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8276,7 +8263,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8319,7 +8306,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "Sci - Tchr. Radzmia",
@@ -8330,7 +8317,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -8341,7 +8328,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8384,7 +8371,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8427,7 +8414,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -8438,7 +8425,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8481,7 +8468,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Math - Tchr. Hannah",
@@ -8492,7 +8479,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8535,7 +8522,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -8556,7 +8543,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -8567,7 +8554,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8610,7 +8597,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8653,7 +8640,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8696,7 +8683,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -8707,7 +8694,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Math - Tchr. Hannah",
@@ -8718,7 +8705,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8761,7 +8748,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -8772,7 +8759,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8815,7 +8802,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8858,7 +8845,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "English - Tchr. Jayra",
@@ -8869,7 +8856,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -8890,7 +8877,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -8901,7 +8888,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8944,7 +8931,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "Math - Tchr. Jhelyn",
@@ -8955,7 +8942,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -8998,7 +8985,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -9009,7 +8996,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9052,7 +9039,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Science - Tchr. Rowena",
@@ -9063,7 +9050,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -9074,7 +9061,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9117,7 +9104,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9160,7 +9147,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9203,7 +9190,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -9224,7 +9211,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -9235,7 +9222,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9278,7 +9265,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "Science - Tchr. Rowena",
@@ -9289,7 +9276,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9332,7 +9319,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -9343,7 +9330,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9386,7 +9373,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "ENGLISH - Tchr. Norhaima",
@@ -9397,7 +9384,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -9408,7 +9395,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9451,7 +9438,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9494,7 +9481,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Math - Tchr. Jhelyn",
@@ -9505,7 +9492,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -9526,7 +9513,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -9537,7 +9524,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Gen Science - Tchr. Rowena",
@@ -9548,7 +9535,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "LCS - Tchr. Norhaima",
@@ -9559,7 +9546,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9602,7 +9589,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -9613,7 +9600,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "PSKP - Tchr. Shi",
@@ -9624,7 +9611,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9667,7 +9654,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -9678,7 +9665,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "EC - Tchr.  Nadzra",
@@ -9689,7 +9676,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Gen Bio 1 - Tchr. Radzmia",
@@ -9700,7 +9687,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9743,7 +9730,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -9764,7 +9751,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -9775,7 +9762,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Prac. Res. 2 - Tchr. Aniah",
@@ -9786,7 +9773,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9829,7 +9816,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "MIL - Tchr. Ethel",
@@ -9840,7 +9827,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -9851,7 +9838,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Gen. Physics 1 - Tchr. Aniah",
@@ -9862,7 +9849,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "21st Lit. -Tchr Nof",
@@ -9873,7 +9860,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -9884,7 +9871,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9927,7 +9914,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "Gen Bio 1 - Tchr. Radzmia",
@@ -9938,7 +9925,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -9981,7 +9968,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -10002,7 +9989,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -10013,7 +10000,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10056,7 +10043,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10067,7 +10054,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10110,7 +10097,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10121,7 +10108,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10164,7 +10151,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -10185,7 +10172,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -10196,7 +10183,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10239,7 +10226,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10250,7 +10237,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10293,7 +10280,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10304,7 +10291,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10347,7 +10334,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -10368,7 +10355,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -10379,7 +10366,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10422,7 +10409,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10433,7 +10420,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10476,7 +10463,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10487,7 +10474,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10530,7 +10517,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -10551,7 +10538,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -10562,7 +10549,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10605,7 +10592,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10616,7 +10603,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10659,7 +10646,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10670,7 +10657,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10713,7 +10700,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -10734,7 +10721,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -10745,7 +10732,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10788,7 +10775,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10799,7 +10786,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10842,7 +10829,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10853,7 +10840,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10896,7 +10883,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -10917,7 +10904,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -10928,7 +10915,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -10971,7 +10958,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10982,7 +10969,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11025,7 +11012,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -11036,7 +11023,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11079,7 +11066,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:10 p.m.",
+        "time": "03:00 \u2013 03:10 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "BREAK",
@@ -11090,7 +11077,7 @@
       },
       {
         "period_num": 8,
-        "time": "03:00 \u2013 03:40 p.m.",
+        "time": "03:00 \u2013 03:40 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11133,7 +11120,7 @@
       },
       {
         "period_num": 9,
-        "time": "03:50 \u2013 04:30 p.m.",
+        "time": "03:50 \u2013 04:30 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11168,7 +11155,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -11179,7 +11166,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11222,7 +11209,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -11233,7 +11220,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11276,7 +11263,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -11287,7 +11274,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11330,7 +11317,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:40 p.m.",
+        "time": "03:00 \u2013 03:40 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11373,7 +11360,7 @@
       },
       {
         "period_num": 8,
-        "time": "03:40 \u2013 03:50 p.m.",
+        "time": "03:40 \u2013 03:50 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -11384,7 +11371,7 @@
       },
       {
         "period_num": 9,
-        "time": "03:50 \u2013 04:30 p.m.",
+        "time": "03:50 \u2013 04:30 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11431,7 +11418,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -11442,7 +11429,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -11453,7 +11440,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11496,7 +11483,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -11507,7 +11494,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11550,7 +11537,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -11561,7 +11548,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11614,7 +11601,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -11625,7 +11612,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -11636,7 +11623,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11679,7 +11666,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -11690,7 +11677,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11733,7 +11720,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -11744,7 +11731,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11797,7 +11784,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -11808,7 +11795,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -11819,7 +11806,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11862,7 +11849,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -11873,7 +11860,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11916,7 +11903,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -11927,7 +11914,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -11980,7 +11967,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -11991,7 +11978,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -12002,7 +11989,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12045,7 +12032,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -12056,7 +12043,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12099,7 +12086,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -12110,7 +12097,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12163,7 +12150,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -12174,7 +12161,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -12185,7 +12172,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12228,7 +12215,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -12239,7 +12226,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12282,7 +12269,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -12293,7 +12280,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12346,7 +12333,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -12357,7 +12344,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -12368,7 +12355,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12411,7 +12398,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -12422,7 +12409,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12465,7 +12452,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -12476,7 +12463,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12529,7 +12516,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12572,7 +12559,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12603,7 +12590,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -12614,7 +12601,7 @@
       },
       {
         "period_num": 4,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12657,7 +12644,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -12668,7 +12655,7 @@
       },
       {
         "period_num": 6,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12711,7 +12698,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -12722,7 +12709,7 @@
       },
       {
         "period_num": 8,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12769,7 +12756,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -12780,7 +12767,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "GeneraL Physics 12",
@@ -12791,7 +12778,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12834,7 +12821,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12877,7 +12864,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -12888,7 +12875,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12931,7 +12918,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -12974,7 +12961,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -12985,7 +12972,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13028,7 +13015,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13071,7 +13058,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13096,7 +13083,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -13130,7 +13117,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -13141,7 +13128,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": "BASIC CALCULUS - TCHR. AHMAD",
@@ -13152,7 +13139,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13195,7 +13182,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "Statistics and Probability  - Tchr. Abegail",
@@ -13206,7 +13193,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -13217,7 +13204,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13248,7 +13235,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13273,7 +13260,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -13284,7 +13271,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13327,7 +13314,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13370,7 +13357,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13407,7 +13394,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13430,7 +13417,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "07:30 \u2013 07:40 a.m.",
+        "time": "07:30 \u2013 07:40 a.m. AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -13441,7 +13428,7 @@
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 08:25 a.m.",
+        "time": "07:40 \u2013 08:25 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13484,7 +13471,7 @@
       },
       {
         "period_num": 3,
-        "time": "08:25 \u2013 09:05 a.m.",
+        "time": "08:25 \u2013 09:05 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13527,7 +13514,7 @@
       },
       {
         "period_num": 4,
-        "time": "09:05 \u2013 09:45 a.m.",
+        "time": "09:05 \u2013 09:45 a.m. AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13570,7 +13557,7 @@
       },
       {
         "period_num": 5,
-        "time": "09:45 \u2013 10:00 a.m.",
+        "time": "09:45 \u2013 10:00 a.m. AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -13581,7 +13568,7 @@
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 a.m.",
+        "time": "10:00 \u2013 10:45 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13624,7 +13611,7 @@
       },
       {
         "period_num": 7,
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 a.m. AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13667,7 +13654,7 @@
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 p.m.",
+        "time": "11:30 \u2013 12:40 p.m. AM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -13678,7 +13665,7 @@
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 01:25 p.m.",
+        "time": "12:40 \u2013 01:25 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13709,7 +13696,7 @@
       },
       {
         "period_num": 10,
-        "time": "01:25 \u2013 02:10 p.m.",
+        "time": "01:25 \u2013 02:10 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13752,7 +13739,7 @@
       },
       {
         "period_num": 11,
-        "time": "02:15 \u2013 03:00 p.m.",
+        "time": "02:15 \u2013 03:00 p.m. PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13789,7 +13776,7 @@
       },
       {
         "period_num": 12,
-        "time": "03:00 \u2013 03:30",
+        "time": "03:00 \u2013 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -13810,7 +13797,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -13821,7 +13808,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13864,7 +13851,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -13875,7 +13862,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13912,7 +13899,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -13923,7 +13910,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -13966,7 +13953,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:40 p.m.",
+        "time": "03:00 \u2013 03:40 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14013,7 +14000,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -14024,7 +14011,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14055,7 +14042,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14066,7 +14053,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14109,7 +14096,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14120,7 +14107,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14163,7 +14150,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:40 p.m.",
+        "time": "03:00 \u2013 03:40 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14217,7 +14204,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -14228,7 +14215,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14271,7 +14258,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14282,7 +14269,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14325,7 +14312,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14336,7 +14323,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14373,7 +14360,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:40 p.m.",
+        "time": "03:00 \u2013 03:40 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14420,7 +14407,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 p.m.",
+        "time": "12:30 \u2013 12:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -14431,7 +14418,7 @@
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 p.m.",
+        "time": "12:40 \u2013 01:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14474,7 +14461,7 @@
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 p.m.",
+        "time": "01:20 \u2013 01:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14485,7 +14472,7 @@
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 p.m.",
+        "time": "01:30 \u2013 02:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14528,7 +14515,7 @@
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 p.m.",
+        "time": "02:10 \u2013 02:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14539,7 +14526,7 @@
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 p.m.",
+        "time": "02:20 \u2013 03:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14582,7 +14569,7 @@
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:40 p.m.",
+        "time": "03:00 \u2013 03:40 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14635,7 +14622,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14648,7 +14635,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14659,7 +14646,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14702,7 +14689,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14713,7 +14700,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14750,7 +14737,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14761,7 +14748,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14827,7 +14814,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14858,7 +14845,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -14869,7 +14856,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14912,7 +14899,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14923,7 +14910,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -14966,7 +14953,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14977,7 +14964,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -15030,7 +15017,7 @@
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 p.m.",
+        "time": "03:00 \u2013 03:30 p.m. PM",
         "minutes": "30 min.",
         "is_merged_all_days": false,
         "days": {
@@ -15067,7 +15054,7 @@
       },
       {
         "period_num": 2,
-        "time": "03:30 \u2013 03:40 p.m.",
+        "time": "03:30 \u2013 03:40 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -15078,7 +15065,7 @@
       },
       {
         "period_num": 3,
-        "time": "03:40 \u2013 04:20 p.m.",
+        "time": "03:40 \u2013 04:20 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -15115,7 +15102,7 @@
       },
       {
         "period_num": 4,
-        "time": "04:20 \u2013 04:30 p.m.",
+        "time": "04:20 \u2013 04:30 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -15126,7 +15113,7 @@
       },
       {
         "period_num": 5,
-        "time": "04:30 \u2013 05:10 p.m.",
+        "time": "04:30 \u2013 05:10 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {
@@ -15169,7 +15156,7 @@
       },
       {
         "period_num": 6,
-        "time": "05:10 \u2013 05:20 p.m.",
+        "time": "05:10 \u2013 05:20 p.m. PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -15180,7 +15167,7 @@
       },
       {
         "period_num": 7,
-        "time": "05:20 \u2013 06:00 p.m.",
+        "time": "05:20 \u2013 06:00 p.m. PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "days": {

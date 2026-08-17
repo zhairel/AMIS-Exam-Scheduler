@@ -12,10 +12,27 @@ DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
 def format_time_clean(raw_t):
     if not raw_t: return ""
     s = str(raw_t).strip()
+    
+    # Remove seconds if present e.g. 03:00:00 -> 03:00
+    s = re.sub(r'(\d{1,2}:\d{2}):00\b', r'\1', s)
+    
+    # Standardize am/pm
     s = re.sub(r'(?i)\b(a\.m\.|am)\b', 'AM', s)
     s = re.sub(r'(?i)\b(p\.m\.|pm)\b', 'PM', s)
     s = re.sub(r'(\d+:\d+)\s*-\s*(\d+:\d+)', r'\1 – \2', s)
     
+    # If no AM/PM, infer based on hour
+    if 'AM' not in s and 'PM' not in s:
+        # Check start hour
+        m = re.match(r'^(\d{1,2}):(\d{2})', s)
+        if m:
+            hh = int(m.group(1))
+            if hh in [7, 8, 9, 10, 11]:
+                s += ' AM'
+            elif hh in [12, 1, 2, 3, 4, 5, 6]:
+                s += ' PM'
+                
+    # Pad hour to 2 digits e.g. 7:30 AM -> 07:30 AM
     def pad_hour(m):
         hh = int(m.group(1))
         mm = m.group(2)
@@ -27,6 +44,7 @@ def format_mins_clean(raw_m):
     if not raw_m: return "45 min."
     s = str(raw_m).strip()
     if s.endswith('.0'): s = s[:-2]
+    if s == '-' or s == '0': return "-"
     if s.isdigit(): return f"{s} min."
     if 'min' not in s.lower() and 'm' not in s.lower():
         return f"{s} min."
@@ -46,7 +64,7 @@ def parse_cell(cell_val):
     
     is_break = False
     s_low = s.lower()
-    if any(k in s_low for k in ['recess', 'assembly', 'lunch', 'departure', 'salah', 'transition', 'homeroom', 'break']):
+    if any(k in s_low for k in ['recess', 'assembly', 'lunch', 'departure', 'salah', 'transition', 'homeroom', 'short break', 'break']):
         is_break = True
         
     tid, tchr = parse_teacher_from_text(s)
@@ -113,7 +131,6 @@ def get_all_table_bounding_boxes():
                 continue
             seen_names.add(raw_title)
             
-            # Detect dept, grade, shift
             s_up = raw_title.upper()
             dept = "Elementary"
             if any(k in s_up for k in ['GRADE 7', 'GRADE 8', 'GRADE 9', 'GRADE 10', '7 & 8', '9 & 10', '7&8', '9&10']):
@@ -151,8 +168,6 @@ def get_all_table_bounding_boxes():
     return all_boxes
 
 table_boxes = get_all_table_bounding_boxes()
-print(f"Total isolated unique section tables to build: {len(table_boxes)}")
-
 all_sections_data = []
 
 for tinfo in table_boxes:
@@ -174,7 +189,7 @@ for tinfo in table_boxes:
         time_raw = ws.cell(row=r, column=c_time).value
         mins_raw = ws.cell(row=r, column=c_mins).value
         
-        if not time_raw:
+        if not time_raw and not mins_raw:
             continue
             
         time_str = format_time_clean(time_raw)
@@ -184,10 +199,17 @@ for tinfo in table_boxes:
             continue
             
         day_cells = {}
+        has_any_content = False
         for didx, dname in enumerate(DAYS):
             col_idx = c_days_start + didx
             cval = ws.cell(row=r, column=col_idx).value
-            day_cells[dname] = parse_cell(cval)
+            cell_parsed = parse_cell(cval)
+            day_cells[dname] = cell_parsed
+            if cell_parsed:
+                has_any_content = True
+                
+        if not time_str and not has_any_content:
+            continue
             
         labels = [c['label'] for c in day_cells.values() if c]
         is_merged = False
@@ -228,7 +250,6 @@ for tinfo in table_boxes:
         'periods': periods
     })
 
-# Save JSON and JS
 with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/class_schedules_data.json', 'w') as f:
     json.dump(all_sections_data, f, indent=2)
 
@@ -236,5 +257,5 @@ with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/class_schedules_data.j
     f.write(f"window.CLASS_SCHEDULES_DATA = {json.dumps(all_sections_data, indent=2)};\n")
     f.write(f"const CLASS_SCHEDULES_DATA = window.CLASS_SCHEDULES_DATA;\n")
 
-print(f"Successfully generated class_schedules_data.json and class_schedules_data.js for {len(all_sections_data)} sections with canonical teacher IDs!")
+print(f"Successfully generated class_schedules_data.json and class_schedules_data.js for {len(all_sections_data)} sections!")
 
