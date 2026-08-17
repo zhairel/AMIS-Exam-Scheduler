@@ -369,20 +369,49 @@
       text-decoration: underline;
     }
 
+    /* Developer Credit Badge under buttons */
+    .developer-bottom-badge {
+      margin-top: 36px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 18px 28px;
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      border-radius: var(--radius-md);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .developer-bottom-badge .dev-label {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .developer-bottom-badge .dev-name {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--brand-primary);
+      letter-spacing: -0.01em;
+    }
+
     /* Footer */
     .site-footer {
       text-align: center;
-      padding: 18px 24px;
+      padding: 20px 24px;
       border-top: 1px solid var(--line);
       background: var(--surface);
-      font-size: 12px;
+      font-size: 12.5px;
       font-weight: 600;
       color: var(--text-muted);
-    }
-
-    .site-footer strong {
-      color: var(--brand-primary);
-      font-weight: 800;
     }
 
     @media (max-width: 768px) {
@@ -407,6 +436,10 @@
       .card {
         padding: 22px 18px;
       }
+
+      .developer-bottom-badge .dev-name {
+        font-size: 17px;
+      }
     }
   </style>
 </head>
@@ -424,7 +457,6 @@
 
       <h1 class="school-name">AL MUNAWWARA ISLAMIC SCHOOL</h1>
       <h2 class="system-title">Schedule Management System</h2>
-      <p class="developer-text">Developed by: <span class="developer-name">Software Engineer Mon Zhairel Lingasa</span></p>
       <p class="system-desc">Manage and view official class schedules and examination schedules.</p>
 
       <div class="school-year-tag">
@@ -482,14 +514,6 @@
               <polyline points="12 5 19 12 12 19"/>
             </svg>
           </a>
-
-          <div class="quick-links" onclick="event.stopPropagation();">
-            <span>Quick link:</span>
-            <a href="faculty-timetable-class.html">
-              <span>Faculty Timetable — Class</span>
-              <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-            </a>
-          </div>
         </div>
       </div>
 
@@ -539,29 +563,21 @@
               <polyline points="12 5 19 12 12 19"/>
             </svg>
           </a>
-
-          <div class="quick-links" onclick="event.stopPropagation();">
-            <span>Quick links:</span>
-            <div style="display:flex; gap:12px;">
-              <a href="faculty-timetable-exam.html">
-                <span>Faculty Timetable — Exam</span>
-                <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-              </a>
-              <a href="grade-calendar-view.html">
-                <span>Grade Posters</span>
-                <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
 
     </div>
 
+    <!-- Prominent Developer Credit below the 2 buttons -->
+    <div class="developer-bottom-badge">
+      <span class="dev-label">Developed by:</span>
+      <span class="dev-name">Software Engineer Mon Zhairel Lingasa</span>
+    </div>
+
   </main>
 
   <footer class="site-footer">
-    AL MUNAWWARA ISLAMIC SCHOOL • Academic Year 2026–2027 • Developed by <strong>Software Engineer Mon Zhairel Lingasa</strong>
+    AL MUNAWWARA ISLAMIC SCHOOL • Academic Year 2026–2027
   </footer>
 
 </body>
