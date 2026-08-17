@@ -114,8 +114,8 @@ body {
   font-size: 13.5px;
   outline: none;
   cursor: pointer;
-  min-width: 320px;
-  max-width: 450px;
+  min-width: 340px;
+  max-width: 480px;
 }
 
 .btn-action {
@@ -166,6 +166,9 @@ body {
   max-width: 1400px;
   margin: 24px auto 0;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .timetable-sheet {
@@ -174,6 +177,13 @@ body {
   border-radius: 12px;
   padding: 24px 28px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  page-break-after: always;
+  break-after: page;
+}
+
+.timetable-sheet:last-child {
+  page-break-after: auto;
+  break-after: auto;
 }
 
 /* Header Block */
@@ -389,12 +399,14 @@ body {
     max-width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
+    gap: 0 !important;
   }
 
   .timetable-sheet {
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
+    margin-bottom: 20px !important;
   }
 
   .timetable-grid {
@@ -448,74 +460,18 @@ body {
   </div>
 </header>
 
-<!-- Main Printable Landscape Sheet -->
-<main class="page-sheet-container">
-  <div class="timetable-sheet" id="printArea">
-    
-    <!-- School Title Header -->
-    <div class="school-header">
-      <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
-      <h2>Official Class Timetable / Section Weekly Schedule</h2>
-      <p>School Year 2026–2027 • Official Class Program</p>
-    </div>
-
-    <!-- Section Name Banner -->
-    <div class="teacher-banner">
-      <span class="teacher-name-title" id="dispSectionName">GRADE 1 - ALI IBN ABI TALIB (1ST SHIFT)</span>
-      <span class="teacher-meta-tag" id="dispSectionMeta">Elementary • 1st Shift</span>
-    </div>
-
-    <!-- Master Weekly Schedule Table -->
-    <table class="timetable-grid" id="timetableGrid">
-      <thead>
-        <tr>
-          <th class="col-time">Time</th>
-          <th class="col-mins">Minutes</th>
-          <th>Sunday</th>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-        </tr>
-      </thead>
-      <tbody id="gridBody">
-        <!-- Rendered dynamically -->
-      </tbody>
-    </table>
-
-    <!-- Sheet Footer & Legend -->
-    <div class="sheet-footer">
-      <div class="legend-strip">
-        <span style="font-weight: 800; color: var(--ink);">Subject Keys:</span>
-        <div class="legend-box"><span class="legend-color-dot" style="background:#f3e8ff; border-color:#d8b4fe;"></span> Arabic / Qur'an / Islamic</div>
-        <div class="legend-box"><span class="legend-color-dot" style="background:#dcfce7; border-color:#86efac;"></span> GMRC / Values / ESP</div>
-        <div class="legend-box"><span class="legend-color-dot" style="background:#e0f2fe; border-color:#7dd3fc;"></span> Math / Physics</div>
-        <div class="legend-box"><span class="legend-color-dot" style="background:#ccfbf1; border-color:#5eead4;"></span> Science / Biology</div>
-        <div class="legend-box"><span class="legend-color-dot" style="background:#fef3c7; border-color:#fde047;"></span> English / Reading</div>
-        <div class="legend-box"><span class="legend-color-dot" style="background:#ffedd5; border-color:#fdba74;"></span> AP / Social / Filipino</div>
-        <div class="legend-box"><span class="legend-color-dot" style="background:#fae8ff; border-color:#f0abfc;"></span> MAPEH / TLE</div>
-      </div>
-      <div>
-        <span>Al Munawwara Islamic School • Generated on <strong id="currentDateStr"></strong></span>
-      </div>
-    </div>
-
-  </div>
+<!-- Main Printable Landscape Container -->
+<main class="page-sheet-container" id="sheetsContainer">
+  <!-- Dynamic Timetable Sheets rendered here -->
 </main>
 
 <script>
 (function() {
   const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
   let SECTIONS_DATA = [];
-  let currentSection = null;
 
   const sectionSelect = document.getElementById('sectionSelect');
-  const dispSectionName = document.getElementById('dispSectionName');
-  const dispSectionMeta = document.getElementById('dispSectionMeta');
-  const gridBody = document.getElementById('gridBody');
-  const currentDateStr = document.getElementById('currentDateStr');
-
-  currentDateStr.textContent = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  const sheetsContainer = document.getElementById('sheetsContainer');
 
   function esc(s) {
     if (!s) return '';
@@ -565,88 +521,175 @@ body {
     }
 
     if (!SECTIONS_DATA || SECTIONS_DATA.length === 0) {
-      gridBody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding:30px; color:#64748b;">No class schedule data available.</td></tr>';
+      sheetsContainer.innerHTML = '<div style="text-align:center; padding:50px; color:#64748b;">No class schedule data available.</div>';
       return;
     }
 
-    // Populate Select Box
-    sectionSelect.innerHTML = SECTIONS_DATA.map((s, idx) => `<option value="${idx}">[${esc(s.department)}] ${esc(s.section_name)}</option>`).join('');
+    // Build Select Box options including ALL options
+    let selectHtml = `
+      <option value="ALL_SECTIONS">🌟 [ALL SECTIONS] Show & Print All 74 Sections</option>
+      <option value="ALL_ELEM">🏫 [ELEMENTARY] Show All Elementary Sections</option>
+      <option value="ALL_JHS">🎓 [JUNIOR HIGH] Show All Junior High Sections</option>
+      <option value="ALL_SHS">📜 [SENIOR HIGH] Show All Senior High Sections</option>
+      <optgroup label="── Individual Class Sections ──">
+    `;
+
+    SECTIONS_DATA.forEach((s, idx) => {
+      selectHtml += `<option value="${idx}">[${esc(s.department)}] ${esc(s.section_name)}</option>`;
+    });
+    selectHtml += `</optgroup>`;
+    sectionSelect.innerHTML = selectHtml;
 
     // Check URL Param ?section=...
     const urlParams = new URLSearchParams(window.location.search);
     const paramSec = urlParams.get('section');
-    let defaultIdx = 0;
+    let defaultVal = "0"; // first individual section by default, or ALL_SECTIONS if requested
     if (paramSec) {
-      const matchIdx = SECTIONS_DATA.findIndex(s => s.section_name.toLowerCase().includes(paramSec.toLowerCase()));
-      if (matchIdx !== -1) defaultIdx = matchIdx;
+      if (['all', 'all_sections'].includes(paramSec.toLowerCase())) {
+        defaultVal = "ALL_SECTIONS";
+      } else if (['elem', 'elementary'].includes(paramSec.toLowerCase())) {
+        defaultVal = "ALL_ELEM";
+      } else if (['jhs', 'junior high'].includes(paramSec.toLowerCase())) {
+        defaultVal = "ALL_JHS";
+      } else if (['shs', 'senior high'].includes(paramSec.toLowerCase())) {
+        defaultVal = "ALL_SHS";
+      } else {
+        const matchIdx = SECTIONS_DATA.findIndex(s => s.section_name.toLowerCase().includes(paramSec.toLowerCase()));
+        if (matchIdx !== -1) defaultVal = String(matchIdx);
+      }
     }
 
-    sectionSelect.value = defaultIdx;
-    renderSectionGrid(SECTIONS_DATA[defaultIdx]);
+    sectionSelect.value = defaultVal;
+    renderSelectedView(defaultVal);
 
     sectionSelect.addEventListener('change', (e) => {
-      const selected = SECTIONS_DATA[parseInt(e.target.value, 10)];
-      if (selected) {
-        const newUrl = new URL(window.location);
-        newUrl.searchParams.set('section', selected.section_name);
-        window.history.replaceState({}, '', newUrl);
-        renderSectionGrid(selected);
-      }
+      const val = e.target.value;
+      const newUrl = new URL(window.location);
+      if (val === 'ALL_SECTIONS') newUrl.searchParams.set('section', 'all');
+      else if (val === 'ALL_ELEM') newUrl.searchParams.set('section', 'elem');
+      else if (val === 'ALL_JHS') newUrl.searchParams.set('section', 'jhs');
+      else if (val === 'ALL_SHS') newUrl.searchParams.set('section', 'shs');
+      else if (SECTIONS_DATA[parseInt(val, 10)]) newUrl.searchParams.set('section', SECTIONS_DATA[parseInt(val, 10)].section_name);
+      window.history.replaceState({}, '', newUrl);
+      renderSelectedView(val);
     });
   }
 
-  function renderSectionGrid(sec) {
-    if (!sec) return;
-    currentSection = sec;
+  function renderSelectedView(val) {
+    if (val === 'ALL_SECTIONS') {
+      renderMultipleSections(SECTIONS_DATA);
+    } else if (val === 'ALL_ELEM') {
+      renderMultipleSections(SECTIONS_DATA.filter(s => s.department === 'Elementary'));
+    } else if (val === 'ALL_JHS') {
+      renderMultipleSections(SECTIONS_DATA.filter(s => s.department === 'Junior High School'));
+    } else if (val === 'ALL_SHS') {
+      renderMultipleSections(SECTIONS_DATA.filter(s => s.department === 'Senior High School'));
+    } else {
+      const single = SECTIONS_DATA[parseInt(val, 10)];
+      if (single) renderMultipleSections([single]);
+    }
+  }
 
-    dispSectionName.textContent = sec.section_name.toUpperCase();
-    dispSectionMeta.textContent = `${sec.department} • ${sec.grade_level} • ${sec.shift}`;
+  function renderMultipleSections(list) {
+    const todayStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    let fullHtml = '';
 
-    let html = '';
-    sec.periods.forEach(p => {
-      const firstDay = p.days['Sunday'];
-      const isBreakRow = firstDay && firstDay.is_break;
+    list.forEach(sec => {
+      fullHtml += `
+        <div class="timetable-sheet">
+          <div class="school-header">
+            <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
+            <h2>Official Class Timetable / Section Weekly Schedule</h2>
+            <p>School Year 2026–2027 • Official Class Program</p>
+          </div>
 
-      if (isBreakRow) {
-        html += `
-          <tr class="row-break">
-            <td class="cell-time">${esc(p.time)}</td>
-            <td class="cell-mins">${esc(p.minutes)}</td>
-            <td colspan="5" class="cell-break">${esc(firstDay.label || 'BREAK / ASSEMBLY')}</td>
-          </tr>
-        `;
-      } else {
-        html += `
-          <tr>
-            <td class="cell-time">${esc(p.time)}</td>
-            <td class="cell-mins">${esc(p.minutes)}</td>
-        `;
+          <div class="teacher-banner">
+            <span class="teacher-name-title">${esc(sec.section_name.toUpperCase())}</span>
+            <span class="teacher-meta-tag">${esc(sec.department)} • ${esc(sec.grade_level)} • ${esc(sec.shift)}</span>
+          </div>
 
-        DAYS.forEach(d => {
-          const cell = p.days[d];
-          if (!cell) {
-            html += `<td class="cell-empty"></td>`;
-          } else if (cell.is_break) {
-            html += `<td class="cell-break" style="font-size:11px; font-weight:800; color:#64748b; background:#f1f5f9;">${esc(cell.label)}</td>`;
-          } else {
-            const color = getSubjectColor(cell.subject);
-            html += `
-              <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
-                <div class="cell-class-inner">
-                  <span class="cell-subject-sec">${esc(cell.subject)}</span>
-                  ${cell.teacher ? `<span class="cell-mod-badge" style="color:${color.text};">${esc(cell.teacher)}</span>` : ''}
-                  ${cell.extra ? `<span style="font-size:9.5px; opacity:0.8;">${esc(cell.extra)}</span>` : ''}
-                </div>
-              </td>
-            `;
-          }
-        });
+          <table class="timetable-grid">
+            <thead>
+              <tr>
+                <th class="col-time">Time</th>
+                <th class="col-mins">Minutes</th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+              </tr>
+            </thead>
+            <tbody>
+      `;
 
-        html += `</tr>`;
-      }
+      sec.periods.forEach(p => {
+        const firstDay = p.days['Sunday'];
+        const isBreakRow = firstDay && firstDay.is_break;
+
+        if (isBreakRow) {
+          fullHtml += `
+            <tr class="row-break">
+              <td class="cell-time">${esc(p.time)}</td>
+              <td class="cell-mins">${esc(p.minutes)}</td>
+              <td colspan="5" class="cell-break">${esc(firstDay.label || 'BREAK / ASSEMBLY')}</td>
+            </tr>
+          `;
+        } else {
+          fullHtml += `
+            <tr>
+              <td class="cell-time">${esc(p.time)}</td>
+              <td class="cell-mins">${esc(p.minutes)}</td>
+          `;
+
+          DAYS.forEach(d => {
+            const cell = p.days[d];
+            if (!cell) {
+              fullHtml += `<td class="cell-empty"></td>`;
+            } else if (cell.is_break) {
+              fullHtml += `<td class="cell-break" style="font-size:11px; font-weight:800; color:#64748b; background:#f1f5f9;">${esc(cell.label)}</td>`;
+            } else {
+              const color = getSubjectColor(cell.subject);
+              fullHtml += `
+                <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                  <div class="cell-class-inner">
+                    <span class="cell-subject-sec">${esc(cell.subject)}</span>
+                    ${cell.teacher ? `<span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(cell.teacher)}</span>` : ''}
+                    ${cell.extra ? `<span style="font-size:9.5px; opacity:0.8;">${esc(cell.extra)}</span>` : ''}
+                  </div>
+                </td>
+              `;
+            }
+          });
+
+          fullHtml += `</tr>`;
+        }
+      });
+
+      fullHtml += `
+            </tbody>
+          </table>
+
+          <div class="sheet-footer">
+            <div class="legend-strip">
+              <span style="font-weight: 800; color: var(--ink);">Subject Keys:</span>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#f3e8ff; border-color:#d8b4fe;"></span> Arabic / Qur'an / Islamic</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#dcfce7; border-color:#86efac;"></span> GMRC / Values / ESP</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#e0f2fe; border-color:#7dd3fc;"></span> Math / Physics</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ccfbf1; border-color:#5eead4;"></span> Science / Biology</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fef3c7; border-color:#fde047;"></span> English / Reading</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ffedd5; border-color:#fdba74;"></span> AP / Social / Filipino</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fae8ff; border-color:#f0abfc;"></span> MAPEH / TLE</div>
+            </div>
+            <div>
+              <span>Al Munawwara Islamic School • Generated on <strong>${todayStr}</strong></span>
+            </div>
+          </div>
+        </div>
+      `;
     });
 
-    gridBody.innerHTML = html;
+    sheetsContainer.innerHTML = fullHtml;
   }
 
   if (document.readyState === 'loading') {
@@ -663,4 +706,4 @@ body {
 with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/class-schedule.html', 'w', encoding='utf-8') as f:
     f.write(HTML_CONTENT)
 
-print("Regenerated class-schedule.html with robust async initialization and dataset bindings!")
+print("Updated class-schedule.html with [ALL SECTIONS], [ALL ELEM], [ALL JHS], [ALL SHS] options!")
