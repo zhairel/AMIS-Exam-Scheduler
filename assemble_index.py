@@ -1157,6 +1157,7 @@ html_content = f"""<!DOCTYPE html>
             <option value="BOYS">Boys</option>
             <option value="GIRLS">Girls</option>
             <option value="MIXED">Mixed</option>
+            <option value="NOT LABELED">Not Labeled</option>
           </select>
         </div>
         <div class="filter-control">
