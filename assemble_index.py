@@ -1157,7 +1157,6 @@ html_content = f"""<!DOCTYPE html>
             <option value="BOYS">Boys</option>
             <option value="GIRLS">Girls</option>
             <option value="MIXED">Mixed</option>
-            <option value="NOT LABELED">Not Labeled</option>
           </select>
         </div>
         <div class="filter-control">
@@ -1353,21 +1352,15 @@ html_content = f"""<!DOCTYPE html>
     }}
 
     function getGenderBadge(ex) {{
-      let g = ex.gender || '';
-      if (!g || g === 'NOT ENCODED') {{
-        let sec = String(ex.section || '').toUpperCase();
-        if (sec.includes('BOY')) g = 'BOYS';
-        else if (sec.includes('GIRL')) g = 'GIRLS';
-        else if (sec.includes('MIX')) g = 'MIXED';
-        else g = 'NOT ENCODED';
+      let g = (ex.gender || '').toUpperCase().trim();
+      if (g === 'BOYS') {{
+        return `<span class="gender-pill pill-boys">BOYS</span>`;
+      }} else if (g === 'GIRLS') {{
+        return `<span class="gender-pill pill-girls">GIRLS</span>`;
+      }} else if (g === 'MIXED' || g === 'MIX') {{
+        return `<span class="gender-pill pill-mixed">MIXED</span>`;
       }}
-      
-      let cls = 'pill-boys';
-      if (g.toUpperCase().includes('GIRL')) cls = 'pill-girls';
-      else if (g.toUpperCase().includes('MIX')) cls = 'pill-mixed';
-      else if (g.toUpperCase() === 'NOT ENCODED') cls = 'pill-not-encoded';
-      
-      return `<span class="gender-pill ${{cls}}">${{g}}</span>`;
+      return '';
     }}
 
     function initApp() {{

@@ -780,18 +780,15 @@ body.no-navbar {
   }
 
   function getGenderPillHtml(ex) {
-    let g = ex.gender || '';
-    if (!g) {
-      let sec = String(ex.section || '').toLowerCase();
-      if (sec.includes('boy')) g = 'Boys';
-      else if (sec.includes('girl')) g = 'Girls';
-      else if (sec.includes('mix')) g = 'Mix';
+    let g = (ex.gender || '').toUpperCase().trim();
+    if (g === 'BOYS') {
+      return `<span class="pill-gender pill-boys">BOYS</span>`;
+    } else if (g === 'GIRLS') {
+      return `<span class="pill-gender pill-girls">GIRLS</span>`;
+    } else if (g === 'MIXED' || g === 'MIX') {
+      return `<span class="pill-gender pill-mix">MIXED</span>`;
     }
-    if (!g) return '';
-    let cls = 'pill-boys';
-    if (g.toLowerCase().includes('girl')) cls = 'pill-girls';
-    else if (g.toLowerCase().includes('mix')) cls = 'pill-mix';
-    return `<span class="pill-gender ${cls}">${esc(g)}</span>`;
+    return '';
   }
 
   function formatShortDate(dStr) {
