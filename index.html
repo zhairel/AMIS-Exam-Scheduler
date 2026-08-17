@@ -14,18 +14,17 @@
       --brand-primary: #064e3b;
       --brand-primary-hover: #043d2e;
       --brand-accent: #0f766e;
-      --brand-accent-hover: #0d635c;
       --brand-surface: #f0fdf4;
       --brand-border: #a7f3d0;
       
       --exam-primary: #1e3a8a;
+      --exam-primary-hover: #172554;
       --exam-accent: #2563eb;
       --exam-surface: #eff6ff;
       --exam-border: #bfdbfe;
       
       --bg: #f8fafc;
       --surface: #ffffff;
-      --surface-subtle: #f1f5f9;
       --text: #0f172a;
       --text-secondary: #334155;
       --text-muted: #64748b;
@@ -35,12 +34,10 @@
       --radius-sm: 8px;
       --radius-md: 12px;
       --radius-lg: 16px;
-      --radius-xl: 24px;
+      --radius-xl: 20px;
       
-      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
-      --shadow-lg: 0 12px 28px rgba(15, 23, 42, 0.08);
-      --shadow-hover: 0 20px 36px -4px rgba(15, 23, 42, 0.14);
+      --shadow-card: 0 4px 20px rgba(15, 23, 42, 0.06);
+      --shadow-hover: 0 16px 36px -4px rgba(15, 23, 42, 0.12);
       --transition: all 250ms cubic-bezier(0.16, 1, 0.3, 1);
     }
 
@@ -57,87 +54,84 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
 
-    /* Top Accent Line */
-    .top-accent-bar {
+    .top-bar {
       height: 4px;
       background: linear-gradient(90deg, #064e3b 0%, #0f766e 50%, #2563eb 100%);
       width: 100%;
     }
 
-    /* Main Container */
-    .splash-container {
-      max-width: 1100px;
+    .main-wrapper {
+      max-width: 1020px;
       width: 100%;
       margin: 0 auto;
-      padding: 40px 24px 32px 24px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      padding: 48px 24px 40px 24px;
       flex: 1;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
 
-    /* Header & Branding */
-    .branding-header {
+    /* Header */
+    .hero-header {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 36px;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    .school-emblem-badge {
-      width: 64px;
-      height: 64px;
+    .school-emblem {
+      width: 58px;
+      height: 58px;
       background: linear-gradient(135deg, #064e3b 0%, #0f766e 100%);
       color: #ffffff;
-      border-radius: 16px;
+      border-radius: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 8px 20px rgba(6, 78, 59, 0.22);
-      margin-bottom: 20px;
+      box-shadow: 0 8px 18px rgba(6, 78, 59, 0.22);
+      margin-bottom: 18px;
     }
 
-    .school-emblem-badge svg {
-      width: 34px;
-      height: 34px;
+    .school-emblem svg {
+      width: 32px;
+      height: 32px;
       stroke-width: 2;
     }
 
-    .school-title {
-      font-size: 26px;
+    .school-name {
+      font-size: 24px;
       font-weight: 900;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
       color: var(--brand-primary);
       text-transform: uppercase;
       line-height: 1.2;
       margin-bottom: 6px;
     }
 
-    .school-subtitle {
+    .system-title {
       font-size: 16px;
       font-weight: 800;
       color: var(--text-secondary);
-      letter-spacing: 0.02em;
-      margin-bottom: 10px;
+      letter-spacing: 0.01em;
+      margin-bottom: 8px;
     }
 
-    .school-desc {
+    .system-desc {
       font-size: 14px;
       color: var(--text-muted);
       font-weight: 500;
-      max-width: 540px;
+      max-width: 500px;
       line-height: 1.5;
       margin-bottom: 16px;
     }
 
-    .status-pill {
+    .school-year-tag {
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -148,157 +142,118 @@
       font-size: 12px;
       font-weight: 700;
       color: #475569;
-      letter-spacing: 0.02em;
     }
 
-    .status-dot-active {
+    .dot-live {
       width: 8px;
       height: 8px;
-      background-color: #10b981;
+      background: #10b981;
       border-radius: 50%;
       box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
     }
 
     /* Cards Grid */
-    .portal-grid {
+    .cards-container {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 28px;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
       width: 100%;
-      max-width: 960px;
-      margin-bottom: 32px;
-    }
-
-    /* Selection Card */
-    .portal-card {
-      background: var(--surface);
-      border: 1.5px solid var(--line);
-      border-radius: var(--radius-xl);
-      padding: 32px 28px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-decoration: none;
-      color: inherit;
-      box-shadow: var(--shadow-md);
-      transition: var(--transition);
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-    }
-
-    .portal-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      opacity: 0;
-      transition: var(--transition);
-    }
-
-    /* Class Schedule Card Theme */
-    .portal-card.card-class::before {
-      background: linear-gradient(90deg, #064e3b, #0f766e);
-    }
-
-    .portal-card.card-class:hover {
-      border-color: #5eead4;
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .portal-card.card-class:hover::before {
-      opacity: 1;
-    }
-
-    /* Exam Schedule Card Theme */
-    .portal-card.card-exam::before {
-      background: linear-gradient(90deg, #1e3a8a, #2563eb);
-    }
-
-    .portal-card.card-exam:hover {
-      border-color: #93c5fd;
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .portal-card.card-exam:hover::before {
-      opacity: 1;
-    }
-
-    /* Card Content */
-    .card-top {
       margin-bottom: 24px;
     }
 
-    .card-icon-box {
-      width: 54px;
-      height: 54px;
+    .card {
+      background: var(--surface);
+      border: 1.5px solid var(--line);
+      border-radius: var(--radius-xl);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-card);
+      transition: var(--transition);
+      position: relative;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-class {
+      border-top: 4px solid var(--brand-accent);
+    }
+
+    .card-class:hover {
+      border-color: #5eead4;
+      border-top-color: var(--brand-accent);
+    }
+
+    .card-exam {
+      border-top: 4px solid var(--exam-accent);
+    }
+
+    .card-exam:hover {
+      border-color: #93c5fd;
+      border-top-color: var(--exam-accent);
+    }
+
+    .card-body {
+      margin-bottom: 24px;
+    }
+
+    .card-icon {
+      width: 50px;
+      height: 50px;
       border-radius: var(--radius-md);
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
       transition: var(--transition);
     }
 
-    .card-class .card-icon-box {
-      background: #ecfdf5;
-      color: #065f46;
-      border: 1px solid #a7f3d0;
+    .card-class .card-icon {
+      background: var(--brand-surface);
+      color: var(--brand-primary);
+      border: 1px solid var(--brand-border);
     }
 
-    .portal-card.card-class:hover .card-icon-box {
-      background: #065f46;
-      color: #ffffff;
-      transform: scale(1.05);
+    .card-exam .card-icon {
+      background: var(--exam-surface);
+      color: var(--exam-primary);
+      border: 1px solid var(--exam-border);
     }
 
-    .card-exam .card-icon-box {
-      background: #eff6ff;
-      color: #1e40af;
-      border: 1px solid #bfdbfe;
-    }
-
-    .portal-card.card-exam:hover .card-icon-box {
-      background: #1e40af;
-      color: #ffffff;
-      transform: scale(1.05);
-    }
-
-    .card-icon-box svg {
-      width: 28px;
-      height: 28px;
+    .card-icon svg {
+      width: 26px;
+      height: 26px;
       stroke-width: 2;
     }
 
-    .card-title {
-      font-size: 20px;
+    .card-heading {
+      font-size: 19px;
       font-weight: 800;
-      letter-spacing: -0.01em;
-      margin-bottom: 8px;
       color: var(--text);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
     }
 
-    .card-desc {
+    .card-text {
       font-size: 13.5px;
       color: var(--text-secondary);
       line-height: 1.55;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
-    /* Badges List inside Card */
-    .features-list {
+    .feature-list {
       list-style: none;
       display: flex;
       flex-direction: column;
       gap: 8px;
-      margin-bottom: 24px;
     }
 
-    .features-list li {
+    .feature-list li {
       display: flex;
       align-items: center;
       gap: 8px;
@@ -307,22 +262,27 @@
       color: var(--text-secondary);
     }
 
-    .features-list li svg {
-      width: 16px;
-      height: 16px;
+    .feature-list li svg {
+      width: 15px;
+      height: 15px;
       flex-shrink: 0;
     }
 
-    .card-class .features-list li svg {
+    .card-class .feature-list li svg {
       color: #059669;
     }
 
-    .card-exam .features-list li svg {
+    .card-exam .feature-list li svg {
       color: #2563eb;
     }
 
-    /* Button inside Card */
-    .btn-portal {
+    .card-footer {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .btn-main {
       width: 100%;
       padding: 12px 18px;
       border-radius: var(--radius-sm);
@@ -332,71 +292,69 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
+      text-decoration: none;
       transition: var(--transition);
-      border: 1.5px solid transparent;
-      letter-spacing: 0.01em;
+      border: none;
     }
 
-    .card-class .btn-portal {
-      background: #064e3b;
+    .btn-class {
+      background: var(--brand-primary);
       color: #ffffff;
     }
 
-    .portal-card.card-class:hover .btn-portal {
-      background: #043d2e;
+    .btn-class:hover {
+      background: var(--brand-primary-hover);
       box-shadow: 0 4px 14px rgba(6, 78, 59, 0.3);
     }
 
-    .card-exam .btn-portal {
-      background: #1e3a8a;
+    .btn-exam {
+      background: var(--exam-primary);
       color: #ffffff;
     }
 
-    .portal-card.card-exam:hover .btn-portal {
-      background: #172554;
+    .btn-exam:hover {
+      background: var(--exam-primary-hover);
       box-shadow: 0 4px 14px rgba(30, 58, 138, 0.3);
     }
 
-    .btn-portal svg {
+    .btn-main svg {
       width: 16px;
       height: 16px;
       stroke-width: 2.5;
       transition: transform 200ms ease;
     }
 
-    .portal-card:hover .btn-portal svg {
+    .card:hover .btn-main svg {
       transform: translateX(4px);
     }
 
-    /* Sub-Links Row */
-    .sub-links-box {
-      margin-top: 14px;
-      padding-top: 14px;
-      border-top: 1px solid var(--line);
+    .quick-links {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
       font-size: 12px;
       font-weight: 600;
       color: var(--text-muted);
     }
 
-    .sub-links-box a {
+    .quick-links a {
       color: var(--text-secondary);
       text-decoration: none;
-      transition: color 150ms ease;
       display: inline-flex;
       align-items: center;
       gap: 4px;
+      transition: color 150ms ease;
     }
 
-    .sub-links-box a:hover {
+    .quick-links a:hover {
       color: var(--brand-accent);
       text-decoration: underline;
     }
 
     /* Footer */
-    .splash-footer {
+    .site-footer {
       text-align: center;
       padding: 20px 24px;
       border-top: 1px solid var(--line);
@@ -404,61 +362,59 @@
       font-size: 12px;
       font-weight: 600;
       color: var(--text-muted);
-      letter-spacing: 0.01em;
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
-      .portal-grid {
+      .cards-container {
         grid-template-columns: 1fr;
-        gap: 20px;
-      }
-      
-      .splash-container {
-        padding: 30px 16px;
+        gap: 18px;
       }
 
-      .school-title {
-        font-size: 22px;
+      .main-wrapper {
+        padding: 32px 16px;
       }
 
-      .portal-card {
-        padding: 24px 20px;
+      .school-name {
+        font-size: 21px;
+      }
+
+      .card {
+        padding: 22px 18px;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="top-accent-bar"></div>
+  <div class="top-bar"></div>
 
-  <main class="splash-container">
+  <main class="main-wrapper">
 
-    <!-- Header & School Branding -->
-    <header class="branding-header">
-      <div class="school-emblem-badge" aria-hidden="true">
+    <!-- Header & Branding -->
+    <header class="hero-header">
+      <div class="school-emblem" aria-hidden="true">
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
         </svg>
       </div>
 
-      <h1 class="school-title">AL MUNAWWARA ISLAMIC SCHOOL</h1>
-      <h2 class="school-subtitle">Schedule Management System</h2>
-      <p class="school-desc">Manage and view official class schedules and examination schedules.</p>
+      <h1 class="school-name">AL MUNAWWARA ISLAMIC SCHOOL</h1>
+      <h2 class="system-title">Schedule Management System</h2>
+      <p class="system-desc">Manage and view official class schedules and examination schedules.</p>
 
-      <div class="status-pill">
-        <span class="status-dot-active" aria-hidden="true"></span>
-        <span>S.Y. 2026–2027 • Official Single-Source Scheduling Portal</span>
+      <div class="school-year-tag">
+        <span class="dot-live" aria-hidden="true"></span>
+        <span>S.Y. 2026–2027 • Official Schedule Portal</span>
       </div>
     </header>
 
-    <!-- Two Primary Options Grid -->
-    <div class="portal-grid">
+    <!-- Balanced Two Cards Grid -->
+    <div class="cards-container">
 
-      <!-- Option 1: Official Class Schedule -->
-      <a href="class-schedule.html" class="portal-card card-class" id="link-class-schedule">
-        <div class="card-top">
-          <div class="card-icon-box" aria-hidden="true">
+      <!-- Card 1: Official Class Schedule -->
+      <div class="card card-class" onclick="window.location.href='class-schedule.html'">
+        <div class="card-body">
+          <div class="card-icon" aria-hidden="true">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
               <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
               <line x1="16" y1="2" x2="16" y2="6"/>
@@ -468,10 +424,10 @@
             </svg>
           </div>
 
-          <h3 class="card-title">Official Class Schedule</h3>
-          <p class="card-desc">View and manage the official class schedules for all departments, grades, sections, shifts, and faculty.</p>
+          <h3 class="card-heading">Official Class Schedule</h3>
+          <p class="card-text">View and manage the official class schedules for all departments, grades, sections, shifts, and faculty.</p>
 
-          <ul class="features-list">
+          <ul class="feature-list">
             <li>
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12"/>
@@ -493,16 +449,16 @@
           </ul>
         </div>
 
-        <div>
-          <span class="btn-portal">
+        <div class="card-footer">
+          <a href="class-schedule.html" class="btn-main btn-class">
             <span>View Class Schedule</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"/>
               <polyline points="12 5 19 12 12 19"/>
             </svg>
-          </span>
+          </a>
 
-          <div class="sub-links-box" onclick="event.stopPropagation();">
+          <div class="quick-links" onclick="event.stopPropagation();">
             <span>Quick link:</span>
             <a href="faculty-timetable-print.html">
               <span>Faculty Timetable Grid</span>
@@ -510,12 +466,12 @@
             </a>
           </div>
         </div>
-      </a>
+      </div>
 
-      <!-- Option 2: Exam Schedule -->
-      <a href="exam-schedule.html" class="portal-card card-exam" id="link-exam-schedule">
-        <div class="card-top">
-          <div class="card-icon-box" aria-hidden="true">
+      <!-- Card 2: Exam Schedule -->
+      <div class="card card-exam" onclick="window.location.href='exam-schedule.html'">
+        <div class="card-body">
+          <div class="card-icon" aria-hidden="true">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
               <polyline points="14 2 14 8 20 8"/>
@@ -525,10 +481,10 @@
             </svg>
           </div>
 
-          <h3 class="card-title">Exam Schedule</h3>
-          <p class="card-desc">Create, manage, review, and track examination schedules for students and faculty.</p>
+          <h3 class="card-heading">Exam Schedule</h3>
+          <p class="card-text">Create, manage, review, and track examination schedules for students and faculty.</p>
 
-          <ul class="features-list">
+          <ul class="feature-list">
             <li>
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12"/>
@@ -550,16 +506,16 @@
           </ul>
         </div>
 
-        <div>
-          <span class="btn-portal">
+        <div class="card-footer">
+          <a href="exam-schedule.html" class="btn-main btn-exam">
             <span>View Exam Schedule</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"/>
               <polyline points="12 5 19 12 12 19"/>
             </svg>
-          </span>
+          </a>
 
-          <div class="sub-links-box" onclick="event.stopPropagation();">
+          <div class="quick-links" onclick="event.stopPropagation();">
             <span>Quick links:</span>
             <div style="display:flex; gap:12px;">
               <a href="teacher-tracking.html">
@@ -573,13 +529,13 @@
             </div>
           </div>
         </div>
-      </a>
+      </div>
 
     </div>
 
   </main>
 
-  <footer class="splash-footer">
+  <footer class="site-footer">
     AL MUNAWWARA ISLAMIC SCHOOL • Academic Year 2026–2027 • Official Schedule Management System
   </footer>
 
