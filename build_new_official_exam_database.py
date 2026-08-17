@@ -117,17 +117,20 @@ for sec in sections:
             seen_pairs.add(pair_key)
             
             # Duration allocation
-            duration = 45
-            is_hs = dept in ["Junior High School", "Senior High School"] or any(g in grade for g in ["Grade 7", "Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"])
+            is_hs = grade in ["Grade 7", "Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"] or dept in ["Junior High School", "Senior High School"]
+            is_elem = grade in ["Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5", "Grade 6"] or dept in ["Elementary", "Primary"]
+
             if is_hs:
                 if any(m in subj for m in ["Math", "Calculus", "Statistics", "Algebra", "General Mathematics"]):
                     duration = 120
                 else:
                     duration = 60
+            elif is_elem:
+                duration = 60
             elif "Kinder" in grade:
                 duration = 30
             else:
-                duration = 45
+                duration = 60
 
             # User Corrections: Exact Teacher Assignments
             # 1. Kindergarten 2 — Khabaab: Arabic → Ustadh Faidh
@@ -178,19 +181,19 @@ EXAM_DATES = [
 
 SHIFT_SLOTS = {
     "F2F": [
-        {"slot": 1, "time": "07:30 AM – 08:30 AM", "math_time": "07:30 AM – 09:30 AM"},
-        {"slot": 2, "time": "08:45 AM – 09:45 AM", "math_time": "09:45 AM – 11:45 AM"},
-        {"slot": 3, "time": "10:00 AM – 11:00 AM", "math_time": "10:00 AM – 12:00 PM"}
+        {"slot": 1, "time": "08:00 AM – 09:00 AM", "math_time": "08:00 AM – 10:00 AM"},
+        {"slot": 2, "time": "09:00 AM – 10:00 AM", "math_time": "08:00 AM – 10:00 AM"},
+        {"slot": 3, "time": "10:25 AM – 11:25 AM", "math_time": "08:00 AM – 10:00 AM"}
     ],
     "ODL - 1ST SHIFT": [
-        {"slot": 1, "time": "12:30 PM – 01:30 PM", "k2_time": "01:30 PM – 02:15 PM", "math_time": "12:30 PM – 02:30 PM"},
-        {"slot": 2, "time": "01:45 PM – 02:45 PM", "k2_time": "02:20 PM – 03:05 PM", "math_time": "01:30 PM – 03:30 PM"},
-        {"slot": 3, "time": "02:45 PM – 03:30 PM", "k2_time": "03:10 PM – 03:40 PM", "math_time": "12:30 PM – 02:30 PM"}
+        {"slot": 1, "time": "12:40 PM – 01:40 PM", "k2_time": "01:30 PM – 02:15 PM", "math_time": "12:40 PM – 02:50 PM"},
+        {"slot": 2, "time": "01:50 PM – 02:50 PM", "k2_time": "02:20 PM – 03:05 PM", "math_time": "12:40 PM – 02:50 PM"},
+        {"slot": 3, "time": "03:10 PM – 04:10 PM", "k2_time": "03:10 PM – 03:40 PM", "math_time": "12:40 PM – 02:50 PM"}
     ],
     "ODL - 2ND SHIFT": [
-        {"slot": 1, "time": "03:30 PM – 04:30 PM", "math_time": "03:30 PM – 05:30 PM"},
-        {"slot": 2, "time": "04:45 PM – 05:45 PM", "math_time": "04:45 PM – 06:45 PM"},
-        {"slot": 3, "time": "05:45 PM – 06:45 PM", "math_time": "03:30 PM – 05:30 PM"}
+        {"slot": 1, "time": "03:10 PM – 04:10 PM", "math_time": "03:10 PM – 05:20 PM"},
+        {"slot": 2, "time": "04:20 PM – 05:20 PM", "math_time": "03:10 PM – 05:20 PM"},
+        {"slot": 3, "time": "05:30 PM – 06:30 PM", "math_time": "03:10 PM – 05:20 PM"}
     ]
 }
 
@@ -219,6 +222,16 @@ def solve_exam_schedule(option_name, seed=42):
             for s in slots:
                 model.Add(sum(x[i, d, s] for i in indices) <= 1)
             model.Add(sum(x[i, d, s] for i in indices for s in slots) <= 3)
+
+            # High School Math 2-hour continuous allocation rule
+            for i in indices:
+                if exam_items[i]['duration_minutes'] == 120:
+                    # If HS Math is in Slot 1, block Slot 2 for that section
+                    model.Add(x[i, d, 1] + sum(x[j, d, 2] for j in indices if j != i) <= 1)
+                    # HS Math should not be in Slot 3
+                    model.Add(x[i, d, 3] == 0)
+                    # If HS Math is in Slot 2, block Slot 3
+                    model.Add(x[i, d, 2] + sum(x[j, d, 3] for j in indices if j != i) <= 1)
 
     shift_tchr_to_sessions = defaultdict(list)
     for i, sess in enumerate(exam_items):

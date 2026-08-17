@@ -1749,14 +1749,15 @@ html_content = f"""<!DOCTYPE html>
       container.innerHTML = uniqueGrades.map(grade => {{
         const gradeRecs = records.filter(r => r.grade === grade);
         const uniqueTimes = [...new Set(gradeRecs.map(r => r.time || r.time_slot))].sort((a,b) => minutes(a.split(/[-–]/)[0]) - minutes(b.split(/[-–]/)[0]));
-        const hasF2F = gradeRecs.some(r => r.modality === 'F2F');
+        const hasF2F = gradeRecs.some(r => (r.modality || '').includes('F2F') || (r.shift || '').includes('F2F'));
+        const hasODL1 = gradeRecs.some(r => (r.modality || '').includes('1ST') || (r.shift || '').includes('1ST'));
 
         let timeline = [];
         uniqueTimes.forEach(tStr => {{
           timeline.push({{ time: tStr, isBreak: false }});
         }});
 
-        if (hasF2F && (grade.startsWith('Grade') || grade === 'Kinder 2')) {{
+        if (hasF2F && (grade.startsWith('Grade') || grade.includes('Kinder'))) {{
           const insertIdx = timeline.findIndex(item => minutes(item.time.split(/[-–]/)[0]) >= minutes('10:00 AM'));
           const recessItem = {{
             time: '10:00 AM – 10:25 AM',
@@ -1766,18 +1767,17 @@ html_content = f"""<!DOCTYPE html>
           }};
           if (insertIdx !== -1) {{
             timeline.splice(insertIdx, 0, recessItem);
-          }} else {{
+          }} else if (timeline.length > 0 && minutes(timeline[0].time.split(/[-–]/)[0]) < minutes('12:00 PM')) {{
             timeline.push(recessItem);
           }}
         }}
 
-        const hasSalahBreak = timeline.some(item => minutes(item.time.split(/[-–]/)[0]) >= minutes('3:10 PM'));
-        if (hasSalahBreak) {{
-          const insertIdx2 = timeline.findIndex(item => minutes(item.time.split(/[-–]/)[0]) >= minutes('3:10 PM'));
+        if (hasODL1) {{
+          const insertIdx2 = timeline.findIndex(item => minutes(item.time.split(/[-–]/)[0]) >= minutes('03:10 PM'));
           const salahItem = {{
-            time: '2:50 PM – 3:10 PM',
+            time: '02:50 PM – 03:10 PM',
             isBreak: true,
-            label: 'TRANSITION AND SALAH BREAK (2:50 PM – 3:10 PM)',
+            label: 'TRANSITION & SALAH BREAK (2:50 PM – 3:10 PM)',
             tag: 'SALAH BREAK'
           }};
           if (insertIdx2 !== -1) {{
