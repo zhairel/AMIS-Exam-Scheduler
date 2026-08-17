@@ -12,7 +12,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "General Biology 1",
@@ -20,7 +20,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Radzmia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-03",
@@ -35,7 +36,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "MIL",
@@ -43,7 +44,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Ethel",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-02",
@@ -58,7 +60,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Practical Research 2",
@@ -66,7 +68,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Aniah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-06",
@@ -81,7 +84,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "General Physics 1",
@@ -89,7 +92,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Aniah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-07",
@@ -104,7 +108,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "21st Century Literature",
@@ -112,7 +116,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nof",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-06",
@@ -127,7 +132,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "PE 12",
@@ -135,7 +140,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Sir Mohaymen",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-03",
@@ -150,7 +156,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Arabic",
@@ -158,7 +164,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Mamonas",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-02",
@@ -173,7 +180,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Qur'an",
@@ -181,7 +188,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Dipatuan",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-03",
@@ -196,7 +204,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "SHAF",
@@ -204,7 +212,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-06",
@@ -219,7 +228,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "TLE",
@@ -227,7 +236,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Angeleni",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -242,7 +252,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Social Science",
@@ -250,7 +260,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -265,7 +276,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Math",
@@ -273,7 +284,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jhelyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -288,7 +300,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Filipino",
@@ -296,7 +308,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nadzra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -311,7 +324,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "English",
@@ -319,7 +332,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhaima",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -334,7 +348,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "ESP",
@@ -342,7 +356,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nof",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -357,7 +372,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "MAPEH",
@@ -365,7 +380,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Sir Mohaymen",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -380,7 +396,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Science",
@@ -388,7 +404,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Rowena",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -403,7 +420,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Arabic",
@@ -411,7 +428,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Mamonas",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -426,7 +444,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "SHAF",
@@ -434,7 +452,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -449,7 +468,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Qur'an",
@@ -457,7 +476,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdulwahab",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -472,7 +492,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Circle Time 1",
@@ -480,7 +500,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Keychell",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -495,7 +516,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Circle Time 2",
@@ -503,7 +524,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Keychell",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -518,7 +540,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Hadith",
@@ -526,7 +548,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -541,7 +564,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Arabic",
@@ -549,7 +572,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -564,7 +588,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Qur'an",
@@ -572,7 +596,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -587,7 +612,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Math",
@@ -595,7 +620,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Hannah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -610,7 +636,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Science",
@@ -618,7 +644,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Radzmia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -633,7 +660,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "TLE",
@@ -641,7 +668,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Halnaisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -656,7 +684,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Social Science",
@@ -664,7 +692,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Shirehan",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -679,7 +708,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "MAPEH",
@@ -687,7 +716,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Franchette",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -702,7 +732,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Filipino",
@@ -710,7 +740,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -725,7 +756,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "English",
@@ -733,7 +764,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jayra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -748,7 +780,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "GMRC",
@@ -756,7 +788,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -771,7 +804,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "SHAF",
@@ -779,7 +812,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -794,7 +828,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Qur'an",
@@ -802,7 +836,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -817,7 +852,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "BOYS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Arabic",
@@ -825,7 +860,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -840,7 +876,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 1",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Circle Time 1",
@@ -848,7 +884,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Wendy",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -863,7 +900,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 1",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Circle Time 2",
@@ -871,7 +908,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Wendy",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -886,7 +924,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 1",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Hadith",
@@ -894,7 +932,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -909,7 +948,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 1",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Arabic",
@@ -917,7 +956,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -932,7 +972,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 1",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Qur'an",
@@ -940,7 +980,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -955,7 +996,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Makabansa",
@@ -963,7 +1004,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Wendy",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -978,7 +1020,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Science",
@@ -986,7 +1028,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jerlyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -1001,7 +1044,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Math",
@@ -1009,7 +1052,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jerlyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -1024,7 +1068,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "English",
@@ -1032,7 +1076,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Marham",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -1047,7 +1092,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Filipino",
@@ -1055,7 +1100,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Normylah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -1070,7 +1116,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Arabic",
@@ -1078,7 +1124,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -1093,7 +1140,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "GMRC",
@@ -1101,7 +1148,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -1116,7 +1164,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Qur'an",
@@ -1124,7 +1172,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -1139,7 +1188,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "SHAF",
@@ -1147,7 +1196,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ersahad",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -1162,7 +1212,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Filipino",
@@ -1170,7 +1220,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhydie",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -1185,7 +1236,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "English",
@@ -1193,7 +1244,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhydie",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -1208,7 +1260,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "GMRC",
@@ -1216,7 +1268,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -1231,7 +1284,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Math",
@@ -1239,7 +1292,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -1254,7 +1308,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Science",
@@ -1262,7 +1316,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Junaisah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -1277,7 +1332,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "AP",
@@ -1285,7 +1340,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -1300,7 +1356,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "TLE",
@@ -1308,7 +1364,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -1323,7 +1380,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "MAPEH",
@@ -1331,7 +1388,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Halnaisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -1346,7 +1404,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "SHAF",
@@ -1354,7 +1412,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Abdiraheem",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -1369,7 +1428,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Arabic",
@@ -1377,7 +1436,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -1392,7 +1452,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Qur'an",
@@ -1400,7 +1460,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -1415,7 +1476,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "General Biology 1",
@@ -1423,7 +1484,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Radzmia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -1438,7 +1500,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "PSKP",
@@ -1446,7 +1508,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Shirehan",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -1461,7 +1524,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "General Mathematics",
@@ -1469,7 +1532,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jhelyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -1484,7 +1548,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "EC",
@@ -1492,7 +1556,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nadzra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -1507,7 +1572,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "LCS",
@@ -1515,7 +1580,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhaima",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -1530,7 +1596,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "General Science",
@@ -1538,7 +1604,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Rowena",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -1553,7 +1620,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Arabic",
@@ -1561,7 +1628,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Mamonas",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -1576,7 +1644,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Qur'an",
@@ -1584,7 +1652,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Dipatuan",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -1599,7 +1668,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "SHAF",
@@ -1607,7 +1676,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -1622,7 +1692,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Math",
@@ -1630,7 +1700,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Hannah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -1645,7 +1716,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Science",
@@ -1653,7 +1724,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Radzmia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -1668,7 +1740,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "TLE",
@@ -1676,7 +1748,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Halnaisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -1691,7 +1764,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Social Science",
@@ -1699,7 +1772,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Shirehan",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -1714,7 +1788,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "MAPEH",
@@ -1722,7 +1796,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Franchette",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -1737,7 +1812,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Filipino",
@@ -1745,7 +1820,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -1760,7 +1836,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "English",
@@ -1768,7 +1844,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jayra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -1783,7 +1860,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "GMRC",
@@ -1791,7 +1868,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -1806,7 +1884,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "SHAF",
@@ -1814,7 +1892,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -1829,7 +1908,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Qur'an",
@@ -1837,7 +1916,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -1852,7 +1932,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7 & 8",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Arabic",
@@ -1860,7 +1940,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -1875,7 +1956,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "AP",
@@ -1883,7 +1964,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhydie",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -1898,7 +1980,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Science",
@@ -1906,7 +1988,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Junaisah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -1921,7 +2004,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "English",
@@ -1929,7 +2012,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jessa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -1944,7 +2028,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Filipino",
@@ -1952,7 +2036,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jessa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -1967,7 +2052,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "MAPEH",
@@ -1975,7 +2060,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Keychell",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -1990,7 +2076,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Math",
@@ -1998,7 +2084,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Fhairudz",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -2013,7 +2100,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "TLE",
@@ -2021,7 +2108,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Halnaisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -2036,7 +2124,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "GMRC",
@@ -2044,7 +2132,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jayra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -2059,7 +2148,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Qur'an",
@@ -2067,7 +2156,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -2082,7 +2172,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "SHAF",
@@ -2090,7 +2180,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ersahad",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -2105,7 +2196,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Arabic",
@@ -2113,7 +2204,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ersahad",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -2128,7 +2220,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Math",
@@ -2136,7 +2228,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Wendy",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -2151,7 +2244,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Reading and Literacy",
@@ -2159,7 +2252,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Katrina",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -2174,7 +2268,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Makabansa",
@@ -2182,7 +2276,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhydie",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -2197,7 +2292,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Language",
@@ -2205,7 +2300,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -2220,7 +2316,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Arabic",
@@ -2228,7 +2324,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -2243,7 +2340,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "SHAF",
@@ -2251,7 +2348,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Abdiraheem",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -2266,7 +2364,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "GMRC",
@@ -2274,7 +2372,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -2289,7 +2388,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Qur'an",
@@ -2297,7 +2396,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -2312,7 +2412,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Math",
@@ -2320,7 +2420,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sitti Kauzar",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -2335,7 +2436,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Filipino",
@@ -2343,7 +2444,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sitti Kauzar",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -2358,7 +2460,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "English",
@@ -2366,7 +2468,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Marham",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -2381,7 +2484,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Makabansa",
@@ -2389,7 +2492,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -2404,7 +2508,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "GMRC",
@@ -2412,7 +2516,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -2427,7 +2532,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Qur'an",
@@ -2435,7 +2540,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -2450,7 +2556,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Arabic",
@@ -2458,7 +2564,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -2473,7 +2580,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "SHAF",
@@ -2481,7 +2588,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ersahad",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -2496,7 +2604,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "TLE",
@@ -2504,7 +2612,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Angeleni",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -2519,7 +2628,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Social Science",
@@ -2527,7 +2636,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -2542,7 +2652,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Math",
@@ -2550,7 +2660,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jhelyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -2565,7 +2676,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Filipino",
@@ -2573,7 +2684,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nadzra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -2588,7 +2700,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "English",
@@ -2596,7 +2708,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhaima",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -2611,7 +2724,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "ESP",
@@ -2619,7 +2732,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nof",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -2634,7 +2748,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "MAPEH",
@@ -2642,7 +2756,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Sir Mohaymen",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -2657,7 +2772,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Science",
@@ -2665,7 +2780,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Rowena",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -2680,7 +2796,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Arabic",
@@ -2688,7 +2804,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Mamonas",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -2703,7 +2820,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "SHAF",
@@ -2711,7 +2828,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -2726,7 +2844,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9 & 10",
     "section": "GIRLS FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Qur'an",
@@ -2734,7 +2852,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdulwahab",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -2749,7 +2868,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Science",
@@ -2757,7 +2876,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Wendy",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -2772,7 +2892,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "TLE",
@@ -2780,7 +2900,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -2795,7 +2916,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "English",
@@ -2803,7 +2924,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jessa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -2818,7 +2940,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "AP",
@@ -2826,7 +2948,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zuhora",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -2841,7 +2964,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Filipino",
@@ -2849,7 +2972,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Normylah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -2864,7 +2988,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "MAPEH",
@@ -2872,7 +2996,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zara",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -2887,7 +3012,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "GMRC",
@@ -2895,7 +3020,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-06",
@@ -2910,7 +3036,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "SHAF",
@@ -2918,7 +3044,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Abdiraheem",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -2933,7 +3060,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Arabic",
@@ -2941,7 +3068,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-02",
@@ -2956,7 +3084,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Qur'an",
@@ -2964,7 +3092,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Faidh",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-03",
@@ -2979,7 +3108,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "FACE TO FACE",
     "cleanSection": "FACE TO FACE",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "F2F",
     "shift": "Day / F2F",
     "subject": "Math",
@@ -2987,7 +3116,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ersahad",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "FACE TO FACE"
   },
   {
     "date": "2026-09-07",
@@ -3002,7 +3132,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "ABU MUSA AL-ASHARI",
     "cleanSection": "ABU MUSA AL-ASHARI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "General Biology 1",
@@ -3010,7 +3140,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Radzmia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU MUSA AL-ASHARI"
   },
   {
     "date": "2026-09-03",
@@ -3025,7 +3156,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "ABU MUSA AL-ASHARI",
     "cleanSection": "ABU MUSA AL-ASHARI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "MIL",
@@ -3033,7 +3164,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Ethel",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU MUSA AL-ASHARI"
   },
   {
     "date": "2026-09-06",
@@ -3048,7 +3180,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "ABU MUSA AL-ASHARI",
     "cleanSection": "ABU MUSA AL-ASHARI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Practical Research 2",
@@ -3056,7 +3188,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Aniah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU MUSA AL-ASHARI"
   },
   {
     "date": "2026-09-07",
@@ -3071,7 +3204,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "ABU MUSA AL-ASHARI",
     "cleanSection": "ABU MUSA AL-ASHARI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "General Physics 1",
@@ -3079,7 +3212,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Aniah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU MUSA AL-ASHARI"
   },
   {
     "date": "2026-09-06",
@@ -3094,7 +3228,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "ABU MUSA AL-ASHARI",
     "cleanSection": "ABU MUSA AL-ASHARI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "21st Century Literature",
@@ -3102,7 +3236,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nof",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU MUSA AL-ASHARI"
   },
   {
     "date": "2026-09-03",
@@ -3117,7 +3252,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "ABU MUSA AL-ASHARI",
     "cleanSection": "ABU MUSA AL-ASHARI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "PE 12",
@@ -3125,7 +3260,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Sir Mohaymen",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU MUSA AL-ASHARI"
   },
   {
     "date": "2026-09-06",
@@ -3140,7 +3276,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "ABU MUSA AL-ASHARI",
     "cleanSection": "ABU MUSA AL-ASHARI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -3148,7 +3284,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Mamonas",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU MUSA AL-ASHARI"
   },
   {
     "date": "2026-09-02",
@@ -3163,7 +3300,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "ABU MUSA AL-ASHARI",
     "cleanSection": "ABU MUSA AL-ASHARI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -3171,7 +3308,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Dipatuan",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU MUSA AL-ASHARI"
   },
   {
     "date": "2026-09-02",
@@ -3186,7 +3324,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 12",
     "section": "ABU MUSA AL-ASHARI",
     "cleanSection": "ABU MUSA AL-ASHARI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -3194,7 +3332,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU MUSA AL-ASHARI"
   },
   {
     "date": "2026-09-07",
@@ -3209,7 +3348,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "HUDHAYFAH IBN AL-YAM",
     "cleanSection": "HUDHAYFAH IBN AL-YAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Reading and Literacy",
@@ -3217,7 +3356,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Katrina",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HUDHAYFAH IBN AL-YAM"
   },
   {
     "date": "2026-09-02",
@@ -3232,7 +3372,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "HUDHAYFAH IBN AL-YAM",
     "cleanSection": "HUDHAYFAH IBN AL-YAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Makabansa",
@@ -3240,7 +3380,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhydie",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HUDHAYFAH IBN AL-YAM"
   },
   {
     "date": "2026-09-03",
@@ -3255,7 +3396,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "HUDHAYFAH IBN AL-YAM",
     "cleanSection": "HUDHAYFAH IBN AL-YAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Language",
@@ -3263,7 +3404,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HUDHAYFAH IBN AL-YAM"
   },
   {
     "date": "2026-09-02",
@@ -3278,7 +3420,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "HUDHAYFAH IBN AL-YAM",
     "cleanSection": "HUDHAYFAH IBN AL-YAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -3286,7 +3428,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HUDHAYFAH IBN AL-YAM"
   },
   {
     "date": "2026-09-03",
@@ -3301,7 +3444,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "HUDHAYFAH IBN AL-YAM",
     "cleanSection": "HUDHAYFAH IBN AL-YAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -3309,7 +3452,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Joanna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HUDHAYFAH IBN AL-YAM"
   },
   {
     "date": "2026-09-07",
@@ -3324,7 +3468,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "HUDHAYFAH IBN AL-YAM",
     "cleanSection": "HUDHAYFAH IBN AL-YAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -3332,7 +3476,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HUDHAYFAH IBN AL-YAM"
   },
   {
     "date": "2026-09-06",
@@ -3347,7 +3492,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "HUDHAYFAH IBN AL-YAM",
     "cleanSection": "HUDHAYFAH IBN AL-YAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -3355,7 +3500,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HUDHAYFAH IBN AL-YAM"
   },
   {
     "date": "2026-09-06",
@@ -3370,7 +3516,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "HUDHAYFAH IBN AL-YAM",
     "cleanSection": "HUDHAYFAH IBN AL-YAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -3378,7 +3524,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdul Karim",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HUDHAYFAH IBN AL-YAM"
   },
   {
     "date": "2026-09-07",
@@ -3393,7 +3540,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "USAMA IBN ZAYD (Girls)",
     "cleanSection": "USAMA IBN ZAYD",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "TLE",
@@ -3401,7 +3548,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Halnaisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAMA IBN ZAYD"
   },
   {
     "date": "2026-09-03",
@@ -3416,7 +3564,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "USAMA IBN ZAYD (Girls)",
     "cleanSection": "USAMA IBN ZAYD",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Social Science",
@@ -3424,7 +3572,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Shirehan",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAMA IBN ZAYD"
   },
   {
     "date": "2026-09-03",
@@ -3439,7 +3588,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "USAMA IBN ZAYD (Girls)",
     "cleanSection": "USAMA IBN ZAYD",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "MAPEH",
@@ -3447,7 +3596,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Franchette",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAMA IBN ZAYD"
   },
   {
     "date": "2026-09-07",
@@ -3462,7 +3612,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "USAMA IBN ZAYD (Girls)",
     "cleanSection": "USAMA IBN ZAYD",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -3470,7 +3620,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAMA IBN ZAYD"
   },
   {
     "date": "2026-09-06",
@@ -3485,7 +3636,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "USAMA IBN ZAYD (Girls)",
     "cleanSection": "USAMA IBN ZAYD",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -3493,7 +3644,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jayra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAMA IBN ZAYD"
   },
   {
     "date": "2026-09-06",
@@ -3508,7 +3660,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "USAMA IBN ZAYD (Girls)",
     "cleanSection": "USAMA IBN ZAYD",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -3516,7 +3668,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Ethel",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAMA IBN ZAYD"
   },
   {
     "date": "2026-09-03",
@@ -3531,7 +3684,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "USAMA IBN ZAYD (Girls)",
     "cleanSection": "USAMA IBN ZAYD",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -3539,7 +3692,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Aniah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAMA IBN ZAYD"
   },
   {
     "date": "2026-09-02",
@@ -3554,7 +3708,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "USAMA IBN ZAYD (Girls)",
     "cleanSection": "USAMA IBN ZAYD",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -3562,7 +3716,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAMA IBN ZAYD"
   },
   {
     "date": "2026-09-02",
@@ -3577,7 +3732,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "USAMA IBN ZAYD (Girls)",
     "cleanSection": "USAMA IBN ZAYD",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -3585,7 +3740,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAMA IBN ZAYD"
   },
   {
     "date": "2026-09-06",
@@ -3600,7 +3756,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "USAMA IBN ZAYD (Girls)",
     "cleanSection": "USAMA IBN ZAYD",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -3608,7 +3764,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAMA IBN ZAYD"
   },
   {
     "date": "2026-09-02",
@@ -3623,7 +3780,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "USAMA IBN ZAYD (Girls)",
     "cleanSection": "USAMA IBN ZAYD",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -3631,7 +3788,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAMA IBN ZAYD"
   },
   {
     "date": "2026-09-03",
@@ -3646,7 +3804,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "SA'AD IBN MUA'DH (Girls)",
     "cleanSection": "SA'AD IBN MUA'DH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -3654,7 +3812,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Hannah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN MUA'DH"
   },
   {
     "date": "2026-09-07",
@@ -3669,7 +3828,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "SA'AD IBN MUA'DH (Girls)",
     "cleanSection": "SA'AD IBN MUA'DH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -3677,7 +3836,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Radzmia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN MUA'DH"
   },
   {
     "date": "2026-09-07",
@@ -3692,7 +3852,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "SA'AD IBN MUA'DH (Girls)",
     "cleanSection": "SA'AD IBN MUA'DH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "TLE",
@@ -3700,7 +3860,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Halnaisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN MUA'DH"
   },
   {
     "date": "2026-09-03",
@@ -3715,7 +3876,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "SA'AD IBN MUA'DH (Girls)",
     "cleanSection": "SA'AD IBN MUA'DH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Social Science",
@@ -3723,7 +3884,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Shirehan",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN MUA'DH"
   },
   {
     "date": "2026-09-06",
@@ -3738,7 +3900,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "SA'AD IBN MUA'DH (Girls)",
     "cleanSection": "SA'AD IBN MUA'DH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "MAPEH",
@@ -3746,7 +3908,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Franchette",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN MUA'DH"
   },
   {
     "date": "2026-09-06",
@@ -3761,7 +3924,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "SA'AD IBN MUA'DH (Girls)",
     "cleanSection": "SA'AD IBN MUA'DH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -3769,7 +3932,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN MUA'DH"
   },
   {
     "date": "2026-09-02",
@@ -3784,7 +3948,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "SA'AD IBN MUA'DH (Girls)",
     "cleanSection": "SA'AD IBN MUA'DH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -3792,7 +3956,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jayra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN MUA'DH"
   },
   {
     "date": "2026-09-02",
@@ -3807,7 +3972,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "SA'AD IBN MUA'DH (Girls)",
     "cleanSection": "SA'AD IBN MUA'DH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Values Education",
@@ -3815,7 +3980,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Wardah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN MUA'DH"
   },
   {
     "date": "2026-09-03",
@@ -3830,7 +3996,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "SA'AD IBN MUA'DH (Girls)",
     "cleanSection": "SA'AD IBN MUA'DH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -3838,7 +4004,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN MUA'DH"
   },
   {
     "date": "2026-09-07",
@@ -3853,7 +4020,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "SA'AD IBN MUA'DH (Girls)",
     "cleanSection": "SA'AD IBN MUA'DH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -3861,7 +4028,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN MUA'DH"
   },
   {
     "date": "2026-09-02",
@@ -3876,7 +4044,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "SA'AD IBN MUA'DH (Girls)",
     "cleanSection": "SA'AD IBN MUA'DH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -3884,7 +4052,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN MUA'DH"
   },
   {
     "date": "2026-09-02",
@@ -3899,7 +4068,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "ABU BAKR AS-SIDEEQ",
     "cleanSection": "ABU BAKR AS-SIDEEQ",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Circle Time 1",
@@ -3907,7 +4076,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Ayah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU BAKR AS-SIDEEQ"
   },
   {
     "date": "2026-09-06",
@@ -3922,7 +4092,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "ABU BAKR AS-SIDEEQ",
     "cleanSection": "ABU BAKR AS-SIDEEQ",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Circle Time 2",
@@ -3930,7 +4100,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Ayah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU BAKR AS-SIDEEQ"
   },
   {
     "date": "2026-09-07",
@@ -3945,7 +4116,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "ABU BAKR AS-SIDEEQ",
     "cleanSection": "ABU BAKR AS-SIDEEQ",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -3953,7 +4124,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU BAKR AS-SIDEEQ"
   },
   {
     "date": "2026-09-03",
@@ -3968,7 +4140,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "ABU BAKR AS-SIDEEQ",
     "cleanSection": "ABU BAKR AS-SIDEEQ",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Hadith",
@@ -3976,7 +4148,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU BAKR AS-SIDEEQ"
   },
   {
     "date": "2026-09-02",
@@ -3991,7 +4164,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "ABU BAKR AS-SIDEEQ",
     "cleanSection": "ABU BAKR AS-SIDEEQ",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -3999,7 +4172,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU BAKR AS-SIDEEQ"
   },
   {
     "date": "2026-09-07",
@@ -4014,7 +4188,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "SALMAN AL FARSI (Mix)",
     "cleanSection": "SALMAN AL FARSI",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -4022,7 +4196,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Saimonah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SALMAN AL FARSI"
   },
   {
     "date": "2026-09-07",
@@ -4037,7 +4212,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "SALMAN AL FARSI (Mix)",
     "cleanSection": "SALMAN AL FARSI",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -4045,7 +4220,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jerlyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SALMAN AL FARSI"
   },
   {
     "date": "2026-09-03",
@@ -4060,7 +4236,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "SALMAN AL FARSI (Mix)",
     "cleanSection": "SALMAN AL FARSI",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -4068,7 +4244,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jenny",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SALMAN AL FARSI"
   },
   {
     "date": "2026-09-03",
@@ -4083,7 +4260,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "SALMAN AL FARSI (Mix)",
     "cleanSection": "SALMAN AL FARSI",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -4091,7 +4268,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zuhora",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SALMAN AL FARSI"
   },
   {
     "date": "2026-09-02",
@@ -4106,7 +4284,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "SALMAN AL FARSI (Mix)",
     "cleanSection": "SALMAN AL FARSI",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -4114,7 +4292,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Normylah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SALMAN AL FARSI"
   },
   {
     "date": "2026-09-06",
@@ -4129,7 +4308,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "SALMAN AL FARSI (Mix)",
     "cleanSection": "SALMAN AL FARSI",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Makabansa",
@@ -4137,7 +4316,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zara",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SALMAN AL FARSI"
   },
   {
     "date": "2026-09-06",
@@ -4152,7 +4332,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "SALMAN AL FARSI (Mix)",
     "cleanSection": "SALMAN AL FARSI",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -4160,7 +4340,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Faidh",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SALMAN AL FARSI"
   },
   {
     "date": "2026-09-02",
@@ -4175,7 +4356,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "SALMAN AL FARSI (Mix)",
     "cleanSection": "SALMAN AL FARSI",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -4183,7 +4364,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SALMAN AL FARSI"
   },
   {
     "date": "2026-09-02",
@@ -4198,7 +4380,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "SALMAN AL FARSI (Mix)",
     "cleanSection": "SALMAN AL FARSI",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -4206,7 +4388,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Faidh",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SALMAN AL FARSI"
   },
   {
     "date": "2026-09-02",
@@ -4221,7 +4404,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HAKIM IBN HAZM",
     "cleanSection": "HAKIM IBN HAZM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -4229,7 +4412,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAKIM IBN HAZM"
   },
   {
     "date": "2026-09-03",
@@ -4244,7 +4428,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HAKIM IBN HAZM",
     "cleanSection": "HAKIM IBN HAZM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -4252,7 +4436,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAKIM IBN HAZM"
   },
   {
     "date": "2026-09-03",
@@ -4267,7 +4452,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HAKIM IBN HAZM",
     "cleanSection": "HAKIM IBN HAZM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -4275,7 +4460,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAKIM IBN HAZM"
   },
   {
     "date": "2026-09-02",
@@ -4290,7 +4476,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HAKIM IBN HAZM",
     "cleanSection": "HAKIM IBN HAZM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -4298,7 +4484,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAKIM IBN HAZM"
   },
   {
     "date": "2026-09-02",
@@ -4313,7 +4500,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HAKIM IBN HAZM",
     "cleanSection": "HAKIM IBN HAZM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "AP",
@@ -4321,7 +4508,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAKIM IBN HAZM"
   },
   {
     "date": "2026-09-06",
@@ -4336,7 +4524,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HAKIM IBN HAZM",
     "cleanSection": "HAKIM IBN HAZM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "TLE",
@@ -4344,7 +4532,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAKIM IBN HAZM"
   },
   {
     "date": "2026-09-03",
@@ -4359,7 +4548,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HAKIM IBN HAZM",
     "cleanSection": "HAKIM IBN HAZM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -4367,7 +4556,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAKIM IBN HAZM"
   },
   {
     "date": "2026-09-06",
@@ -4382,7 +4572,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HAKIM IBN HAZM",
     "cleanSection": "HAKIM IBN HAZM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "MAPEH",
@@ -4390,7 +4580,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Halnaisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAKIM IBN HAZM"
   },
   {
     "date": "2026-09-06",
@@ -4405,7 +4596,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HAKIM IBN HAZM",
     "cleanSection": "HAKIM IBN HAZM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -4413,7 +4604,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Abdiraheem",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAKIM IBN HAZM"
   },
   {
     "date": "2026-09-07",
@@ -4428,7 +4620,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HAKIM IBN HAZM",
     "cleanSection": "HAKIM IBN HAZM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -4436,7 +4628,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAKIM IBN HAZM"
   },
   {
     "date": "2026-09-07",
@@ -4451,7 +4644,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HAKIM IBN HAZM",
     "cleanSection": "HAKIM IBN HAZM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -4459,7 +4652,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAKIM IBN HAZM"
   },
   {
     "date": "2026-09-03",
@@ -4474,7 +4668,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU HURAYRAH (Girls)",
     "cleanSection": "ABU HURAYRAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "TLE",
@@ -4482,7 +4676,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Angeleni",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU HURAYRAH"
   },
   {
     "date": "2026-09-06",
@@ -4497,7 +4692,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU HURAYRAH (Girls)",
     "cleanSection": "ABU HURAYRAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Social Science",
@@ -4505,7 +4700,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU HURAYRAH"
   },
   {
     "date": "2026-09-03",
@@ -4520,7 +4716,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU HURAYRAH (Girls)",
     "cleanSection": "ABU HURAYRAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -4528,7 +4724,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jhelyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU HURAYRAH"
   },
   {
     "date": "2026-09-06",
@@ -4543,7 +4740,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU HURAYRAH (Girls)",
     "cleanSection": "ABU HURAYRAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -4551,7 +4748,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nadzra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU HURAYRAH"
   },
   {
     "date": "2026-09-02",
@@ -4566,7 +4764,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU HURAYRAH (Girls)",
     "cleanSection": "ABU HURAYRAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -4574,7 +4772,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhaima",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU HURAYRAH"
   },
   {
     "date": "2026-09-03",
@@ -4589,7 +4788,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU HURAYRAH (Girls)",
     "cleanSection": "ABU HURAYRAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "ESP",
@@ -4597,7 +4796,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nof",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU HURAYRAH"
   },
   {
     "date": "2026-09-07",
@@ -4612,7 +4812,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU HURAYRAH (Girls)",
     "cleanSection": "ABU HURAYRAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "MAPEH",
@@ -4620,7 +4820,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Sir Mohaymen",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU HURAYRAH"
   },
   {
     "date": "2026-09-02",
@@ -4635,7 +4836,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU HURAYRAH (Girls)",
     "cleanSection": "ABU HURAYRAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -4643,7 +4844,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Rowena",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU HURAYRAH"
   },
   {
     "date": "2026-09-06",
@@ -4658,7 +4860,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU HURAYRAH (Girls)",
     "cleanSection": "ABU HURAYRAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -4666,7 +4868,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU HURAYRAH"
   },
   {
     "date": "2026-09-07",
@@ -4681,7 +4884,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU HURAYRAH (Girls)",
     "cleanSection": "ABU HURAYRAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -4689,7 +4892,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdulwahab",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU HURAYRAH"
   },
   {
     "date": "2026-09-02",
@@ -4704,7 +4908,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU HURAYRAH (Girls)",
     "cleanSection": "ABU HURAYRAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -4712,7 +4916,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Raslina",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU HURAYRAH"
   },
   {
     "date": "2026-09-06",
@@ -4727,7 +4932,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ABU SUFYAN IBN AL-HARITH (Boys)",
     "cleanSection": "ABU SUFYAN IBN AL-HARITH",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "TLE",
@@ -4735,7 +4940,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Halnaisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU SUFYAN IBN AL-HARITH"
   },
   {
     "date": "2026-09-06",
@@ -4750,7 +4956,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ABU SUFYAN IBN AL-HARITH (Boys)",
     "cleanSection": "ABU SUFYAN IBN AL-HARITH",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Social Science",
@@ -4758,7 +4964,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Shirehan",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU SUFYAN IBN AL-HARITH"
   },
   {
     "date": "2026-09-07",
@@ -4773,7 +4980,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ABU SUFYAN IBN AL-HARITH (Boys)",
     "cleanSection": "ABU SUFYAN IBN AL-HARITH",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "MAPEH",
@@ -4781,7 +4988,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Franchette",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU SUFYAN IBN AL-HARITH"
   },
   {
     "date": "2026-09-02",
@@ -4796,7 +5004,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ABU SUFYAN IBN AL-HARITH (Boys)",
     "cleanSection": "ABU SUFYAN IBN AL-HARITH",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -4804,7 +5012,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU SUFYAN IBN AL-HARITH"
   },
   {
     "date": "2026-09-03",
@@ -4819,7 +5028,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ABU SUFYAN IBN AL-HARITH (Boys)",
     "cleanSection": "ABU SUFYAN IBN AL-HARITH",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -4827,7 +5036,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jayra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU SUFYAN IBN AL-HARITH"
   },
   {
     "date": "2026-09-03",
@@ -4842,7 +5052,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ABU SUFYAN IBN AL-HARITH (Boys)",
     "cleanSection": "ABU SUFYAN IBN AL-HARITH",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -4850,7 +5060,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Ethel",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU SUFYAN IBN AL-HARITH"
   },
   {
     "date": "2026-09-07",
@@ -4865,7 +5076,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ABU SUFYAN IBN AL-HARITH (Boys)",
     "cleanSection": "ABU SUFYAN IBN AL-HARITH",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -4873,7 +5084,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Aniah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU SUFYAN IBN AL-HARITH"
   },
   {
     "date": "2026-09-06",
@@ -4888,7 +5100,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ABU SUFYAN IBN AL-HARITH (Boys)",
     "cleanSection": "ABU SUFYAN IBN AL-HARITH",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -4896,7 +5108,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU SUFYAN IBN AL-HARITH"
   },
   {
     "date": "2026-09-03",
@@ -4911,7 +5124,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ABU SUFYAN IBN AL-HARITH (Boys)",
     "cleanSection": "ABU SUFYAN IBN AL-HARITH",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -4919,7 +5132,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU SUFYAN IBN AL-HARITH"
   },
   {
     "date": "2026-09-02",
@@ -4934,7 +5148,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ABU SUFYAN IBN AL-HARITH (Boys)",
     "cleanSection": "ABU SUFYAN IBN AL-HARITH",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -4942,7 +5156,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU SUFYAN IBN AL-HARITH"
   },
   {
     "date": "2026-09-07",
@@ -4957,7 +5172,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ABU SUFYAN IBN AL-HARITH (Boys)",
     "cleanSection": "ABU SUFYAN IBN AL-HARITH",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -4965,7 +5180,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU SUFYAN IBN AL-HARITH"
   },
   {
     "date": "2026-09-03",
@@ -4980,7 +5196,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "HABIB IBN ZAYD AL-ANSARI (Girls)",
     "cleanSection": "HABIB IBN ZAYD AL-ANSARI",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -4988,7 +5204,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jerlyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HABIB IBN ZAYD AL-ANSARI"
   },
   {
     "date": "2026-09-02",
@@ -5003,7 +5220,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "HABIB IBN ZAYD AL-ANSARI (Girls)",
     "cleanSection": "HABIB IBN ZAYD AL-ANSARI",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -5011,7 +5228,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jerlyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HABIB IBN ZAYD AL-ANSARI"
   },
   {
     "date": "2026-09-06",
@@ -5026,7 +5244,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "HABIB IBN ZAYD AL-ANSARI (Girls)",
     "cleanSection": "HABIB IBN ZAYD AL-ANSARI",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -5034,7 +5252,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jenny",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HABIB IBN ZAYD AL-ANSARI"
   },
   {
     "date": "2026-09-02",
@@ -5049,7 +5268,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "HABIB IBN ZAYD AL-ANSARI (Girls)",
     "cleanSection": "HABIB IBN ZAYD AL-ANSARI",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -5057,7 +5276,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HABIB IBN ZAYD AL-ANSARI"
   },
   {
     "date": "2026-09-02",
@@ -5072,7 +5292,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "HABIB IBN ZAYD AL-ANSARI (Girls)",
     "cleanSection": "HABIB IBN ZAYD AL-ANSARI",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -5080,7 +5300,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jenny",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HABIB IBN ZAYD AL-ANSARI"
   },
   {
     "date": "2026-09-07",
@@ -5095,7 +5316,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "HABIB IBN ZAYD AL-ANSARI (Girls)",
     "cleanSection": "HABIB IBN ZAYD AL-ANSARI",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Makabansa",
@@ -5103,7 +5324,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jenny",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HABIB IBN ZAYD AL-ANSARI"
   },
   {
     "date": "2026-09-07",
@@ -5118,7 +5340,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "HABIB IBN ZAYD AL-ANSARI (Girls)",
     "cleanSection": "HABIB IBN ZAYD AL-ANSARI",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -5126,7 +5348,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Faidh",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HABIB IBN ZAYD AL-ANSARI"
   },
   {
     "date": "2026-09-06",
@@ -5141,7 +5364,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "HABIB IBN ZAYD AL-ANSARI (Girls)",
     "cleanSection": "HABIB IBN ZAYD AL-ANSARI",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -5149,7 +5372,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HABIB IBN ZAYD AL-ANSARI"
   },
   {
     "date": "2026-09-03",
@@ -5164,7 +5388,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "HABIB IBN ZAYD AL-ANSARI (Girls)",
     "cleanSection": "HABIB IBN ZAYD AL-ANSARI",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -5172,7 +5396,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdul Karim",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HABIB IBN ZAYD AL-ANSARI"
   },
   {
     "date": "2026-09-03",
@@ -5187,7 +5412,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABDULLAH IBN SALAAM",
     "cleanSection": "ABDULLAH IBN SALAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -5195,7 +5420,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Katrina",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN SALAAM"
   },
   {
     "date": "2026-09-06",
@@ -5210,7 +5436,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABDULLAH IBN SALAAM",
     "cleanSection": "ABDULLAH IBN SALAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "TLE",
@@ -5218,7 +5444,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN SALAAM"
   },
   {
     "date": "2026-09-03",
@@ -5233,7 +5460,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABDULLAH IBN SALAAM",
     "cleanSection": "ABDULLAH IBN SALAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -5241,7 +5468,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jessa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN SALAAM"
   },
   {
     "date": "2026-09-06",
@@ -5256,7 +5484,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABDULLAH IBN SALAAM",
     "cleanSection": "ABDULLAH IBN SALAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -5264,7 +5492,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN SALAAM"
   },
   {
     "date": "2026-09-02",
@@ -5279,7 +5508,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABDULLAH IBN SALAAM",
     "cleanSection": "ABDULLAH IBN SALAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -5287,7 +5516,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zuhora",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN SALAAM"
   },
   {
     "date": "2026-09-07",
@@ -5302,7 +5532,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABDULLAH IBN SALAAM",
     "cleanSection": "ABDULLAH IBN SALAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "AP",
@@ -5310,7 +5540,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Normylah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN SALAAM"
   },
   {
     "date": "2026-09-03",
@@ -5325,7 +5556,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABDULLAH IBN SALAAM",
     "cleanSection": "ABDULLAH IBN SALAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "MAPEH",
@@ -5333,7 +5564,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zara",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN SALAAM"
   },
   {
     "date": "2026-09-07",
@@ -5348,7 +5580,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABDULLAH IBN SALAAM",
     "cleanSection": "ABDULLAH IBN SALAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -5356,7 +5588,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN SALAAM"
   },
   {
     "date": "2026-09-06",
@@ -5371,7 +5604,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABDULLAH IBN SALAAM",
     "cleanSection": "ABDULLAH IBN SALAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -5379,7 +5612,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Abdiraheem",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN SALAAM"
   },
   {
     "date": "2026-09-02",
@@ -5394,7 +5628,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABDULLAH IBN SALAAM",
     "cleanSection": "ABDULLAH IBN SALAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -5402,7 +5636,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN SALAAM"
   },
   {
     "date": "2026-09-07",
@@ -5417,7 +5652,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABDULLAH IBN SALAAM",
     "cleanSection": "ABDULLAH IBN SALAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -5425,7 +5660,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN SALAAM"
   },
   {
     "date": "2026-09-02",
@@ -5440,7 +5676,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "ALI IBN ABI TALIB",
     "cleanSection": "ALI IBN ABI TALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Reading and Literacy",
@@ -5448,7 +5684,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Katrina",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ALI IBN ABI TALIB"
   },
   {
     "date": "2026-09-03",
@@ -5463,7 +5700,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "ALI IBN ABI TALIB",
     "cleanSection": "ALI IBN ABI TALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Makabansa",
@@ -5471,7 +5708,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhydie",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ALI IBN ABI TALIB"
   },
   {
     "date": "2026-09-03",
@@ -5486,7 +5724,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "ALI IBN ABI TALIB",
     "cleanSection": "ALI IBN ABI TALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Language",
@@ -5494,7 +5732,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ALI IBN ABI TALIB"
   },
   {
     "date": "2026-09-06",
@@ -5509,7 +5748,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "ALI IBN ABI TALIB",
     "cleanSection": "ALI IBN ABI TALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -5517,7 +5756,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ALI IBN ABI TALIB"
   },
   {
     "date": "2026-09-07",
@@ -5532,7 +5772,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "ALI IBN ABI TALIB",
     "cleanSection": "ALI IBN ABI TALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -5540,7 +5780,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Joanna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ALI IBN ABI TALIB"
   },
   {
     "date": "2026-09-02",
@@ -5555,7 +5796,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "ALI IBN ABI TALIB",
     "cleanSection": "ALI IBN ABI TALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -5563,7 +5804,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ALI IBN ABI TALIB"
   },
   {
     "date": "2026-09-06",
@@ -5578,7 +5820,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "ALI IBN ABI TALIB",
     "cleanSection": "ALI IBN ABI TALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -5586,7 +5828,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ALI IBN ABI TALIB"
   },
   {
     "date": "2026-09-07",
@@ -5601,7 +5844,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "ALI IBN ABI TALIB",
     "cleanSection": "ALI IBN ABI TALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -5609,7 +5852,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdul Karim",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ALI IBN ABI TALIB"
   },
   {
     "date": "2026-09-07",
@@ -5624,7 +5868,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Girls",
     "cleanSection": "",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "PSKP",
@@ -5632,7 +5876,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Shirehan",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-07",
@@ -5647,7 +5892,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Girls",
     "cleanSection": "",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "General Mathematics",
@@ -5655,7 +5900,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jhelyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-03",
@@ -5670,7 +5916,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Girls",
     "cleanSection": "",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "EC",
@@ -5678,7 +5924,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nadzra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-03",
@@ -5693,7 +5940,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Girls",
     "cleanSection": "",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "LCS",
@@ -5701,7 +5948,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhaima",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-02",
@@ -5716,7 +5964,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Girls",
     "cleanSection": "",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "General Science",
@@ -5724,7 +5972,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Rowena",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-02",
@@ -5739,7 +5988,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Girls",
     "cleanSection": "",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "General Biology 1",
@@ -5747,7 +5996,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Rowena",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-02",
@@ -5762,7 +6012,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Girls",
     "cleanSection": "",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -5770,7 +6020,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Mamonas",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-06",
@@ -5785,7 +6036,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Girls",
     "cleanSection": "",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -5793,7 +6044,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-06",
@@ -5808,7 +6060,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Girls",
     "cleanSection": "",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -5816,7 +6068,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdulwahab",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-07",
@@ -5831,7 +6084,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "UTHMAN IBN AFFAN",
     "cleanSection": "UTHMAN IBN AFFAN",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Circle Time 1",
@@ -5839,7 +6092,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Ayah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTHMAN IBN AFFAN"
   },
   {
     "date": "2026-09-02",
@@ -5854,7 +6108,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "UTHMAN IBN AFFAN",
     "cleanSection": "UTHMAN IBN AFFAN",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Circle Time 2",
@@ -5862,7 +6116,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Joanna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTHMAN IBN AFFAN"
   },
   {
     "date": "2026-09-03",
@@ -5877,7 +6132,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "UTHMAN IBN AFFAN",
     "cleanSection": "UTHMAN IBN AFFAN",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -5885,7 +6140,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTHMAN IBN AFFAN"
   },
   {
     "date": "2026-09-06",
@@ -5900,7 +6156,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "UTHMAN IBN AFFAN",
     "cleanSection": "UTHMAN IBN AFFAN",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Hadith",
@@ -5908,7 +6164,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTHMAN IBN AFFAN"
   },
   {
     "date": "2026-09-07",
@@ -5923,7 +6180,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "UTHMAN IBN AFFAN",
     "cleanSection": "UTHMAN IBN AFFAN",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -5931,7 +6188,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTHMAN IBN AFFAN"
   },
   {
     "date": "2026-09-03",
@@ -5946,7 +6204,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AMR IBN AL-JAMUH",
     "cleanSection": "AMR IBN AL-JAMUH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -5954,7 +6212,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sitti Kauzar",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMR IBN AL-JAMUH"
   },
   {
     "date": "2026-09-02",
@@ -5969,7 +6228,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AMR IBN AL-JAMUH",
     "cleanSection": "AMR IBN AL-JAMUH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -5977,7 +6236,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sitti Kauzar",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMR IBN AL-JAMUH"
   },
   {
     "date": "2026-09-02",
@@ -5992,7 +6252,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AMR IBN AL-JAMUH",
     "cleanSection": "AMR IBN AL-JAMUH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -6000,7 +6260,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Marham",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMR IBN AL-JAMUH"
   },
   {
     "date": "2026-09-07",
@@ -6015,7 +6276,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AMR IBN AL-JAMUH",
     "cleanSection": "AMR IBN AL-JAMUH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Makabansa",
@@ -6023,7 +6284,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zuhora",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMR IBN AL-JAMUH"
   },
   {
     "date": "2026-09-07",
@@ -6038,7 +6300,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AMR IBN AL-JAMUH",
     "cleanSection": "AMR IBN AL-JAMUH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -6046,7 +6308,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMR IBN AL-JAMUH"
   },
   {
     "date": "2026-09-03",
@@ -6061,7 +6324,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AMR IBN AL-JAMUH",
     "cleanSection": "AMR IBN AL-JAMUH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -6069,7 +6332,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMR IBN AL-JAMUH"
   },
   {
     "date": "2026-09-06",
@@ -6084,7 +6348,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AMR IBN AL-JAMUH",
     "cleanSection": "AMR IBN AL-JAMUH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -6092,7 +6356,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMR IBN AL-JAMUH"
   },
   {
     "date": "2026-09-06",
@@ -6107,7 +6372,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AMR IBN AL-JAMUH",
     "cleanSection": "AMR IBN AL-JAMUH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -6115,7 +6380,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdul Karim",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMR IBN AL-JAMUH"
   },
   {
     "date": "2026-09-06",
@@ -6130,7 +6396,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AMMAR IBN YASIR (Boys)",
     "cleanSection": "AMMAR IBN YASIR",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -6138,7 +6404,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Saimonah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMMAR IBN YASIR"
   },
   {
     "date": "2026-09-06",
@@ -6153,7 +6420,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AMMAR IBN YASIR (Boys)",
     "cleanSection": "AMMAR IBN YASIR",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -6161,7 +6428,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jerlyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMMAR IBN YASIR"
   },
   {
     "date": "2026-09-07",
@@ -6176,7 +6444,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AMMAR IBN YASIR (Boys)",
     "cleanSection": "AMMAR IBN YASIR",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -6184,7 +6452,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Marham",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMMAR IBN YASIR"
   },
   {
     "date": "2026-09-03",
@@ -6199,7 +6468,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AMMAR IBN YASIR (Boys)",
     "cleanSection": "AMMAR IBN YASIR",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -6207,7 +6476,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zuhora",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMMAR IBN YASIR"
   },
   {
     "date": "2026-09-03",
@@ -6222,7 +6492,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AMMAR IBN YASIR (Boys)",
     "cleanSection": "AMMAR IBN YASIR",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -6230,7 +6500,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Normylah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMMAR IBN YASIR"
   },
   {
     "date": "2026-09-02",
@@ -6245,7 +6516,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AMMAR IBN YASIR (Boys)",
     "cleanSection": "AMMAR IBN YASIR",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Makabansa",
@@ -6253,7 +6524,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zara",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMMAR IBN YASIR"
   },
   {
     "date": "2026-09-07",
@@ -6268,7 +6540,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AMMAR IBN YASIR (Boys)",
     "cleanSection": "AMMAR IBN YASIR",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -6276,7 +6548,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Faidh",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMMAR IBN YASIR"
   },
   {
     "date": "2026-09-03",
@@ -6291,7 +6564,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AMMAR IBN YASIR (Boys)",
     "cleanSection": "AMMAR IBN YASIR",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -6299,7 +6572,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMMAR IBN YASIR"
   },
   {
     "date": "2026-09-02",
@@ -6314,7 +6588,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AMMAR IBN YASIR (Boys)",
     "cleanSection": "AMMAR IBN YASIR",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -6322,7 +6596,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ersahad",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AMMAR IBN YASIR"
   },
   {
     "date": "2026-09-06",
@@ -6337,7 +6612,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "ABDUR RAHMAN IBN AWF",
     "cleanSection": "ABDUR RAHMAN IBN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -6345,7 +6620,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDUR RAHMAN IBN AWF"
   },
   {
     "date": "2026-09-07",
@@ -6360,7 +6636,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "ABDUR RAHMAN IBN AWF",
     "cleanSection": "ABDUR RAHMAN IBN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -6368,7 +6644,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDUR RAHMAN IBN AWF"
   },
   {
     "date": "2026-09-07",
@@ -6383,7 +6660,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "ABDUR RAHMAN IBN AWF",
     "cleanSection": "ABDUR RAHMAN IBN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -6391,7 +6668,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDUR RAHMAN IBN AWF"
   },
   {
     "date": "2026-09-07",
@@ -6406,7 +6684,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "ABDUR RAHMAN IBN AWF",
     "cleanSection": "ABDUR RAHMAN IBN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -6414,7 +6692,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDUR RAHMAN IBN AWF"
   },
   {
     "date": "2026-09-06",
@@ -6429,7 +6708,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "ABDUR RAHMAN IBN AWF",
     "cleanSection": "ABDUR RAHMAN IBN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "AP",
@@ -6437,7 +6716,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDUR RAHMAN IBN AWF"
   },
   {
     "date": "2026-09-02",
@@ -6452,7 +6732,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "ABDUR RAHMAN IBN AWF",
     "cleanSection": "ABDUR RAHMAN IBN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "TLE",
@@ -6460,7 +6740,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDUR RAHMAN IBN AWF"
   },
   {
     "date": "2026-09-06",
@@ -6475,7 +6756,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "ABDUR RAHMAN IBN AWF",
     "cleanSection": "ABDUR RAHMAN IBN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -6483,7 +6764,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDUR RAHMAN IBN AWF"
   },
   {
     "date": "2026-09-02",
@@ -6498,7 +6780,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "ABDUR RAHMAN IBN AWF",
     "cleanSection": "ABDUR RAHMAN IBN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "MAPEH",
@@ -6506,7 +6788,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Halnaisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDUR RAHMAN IBN AWF"
   },
   {
     "date": "2026-09-03",
@@ -6521,7 +6804,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "ABDUR RAHMAN IBN AWF",
     "cleanSection": "ABDUR RAHMAN IBN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -6529,7 +6812,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Abdiraheem",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDUR RAHMAN IBN AWF"
   },
   {
     "date": "2026-09-03",
@@ -6544,7 +6828,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "ABDUR RAHMAN IBN AWF",
     "cleanSection": "ABDUR RAHMAN IBN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -6552,7 +6836,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDUR RAHMAN IBN AWF"
   },
   {
     "date": "2026-09-03",
@@ -6567,7 +6852,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "ABDUR RAHMAN IBN AWF",
     "cleanSection": "ABDUR RAHMAN IBN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -6575,7 +6860,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDUR RAHMAN IBN AWF"
   },
   {
     "date": "2026-09-06",
@@ -6590,7 +6876,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AYYASH IBN ABI RABI'AH",
     "cleanSection": "AYYASH IBN ABI RABI'AH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -6598,7 +6884,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Joanna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AYYASH IBN ABI RABI'AH"
   },
   {
     "date": "2026-09-07",
@@ -6613,7 +6900,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AYYASH IBN ABI RABI'AH",
     "cleanSection": "AYYASH IBN ABI RABI'AH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -6621,7 +6908,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jessa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AYYASH IBN ABI RABI'AH"
   },
   {
     "date": "2026-09-02",
@@ -6636,7 +6924,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AYYASH IBN ABI RABI'AH",
     "cleanSection": "AYYASH IBN ABI RABI'AH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -6644,7 +6932,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AYYASH IBN ABI RABI'AH"
   },
   {
     "date": "2026-09-02",
@@ -6659,7 +6948,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AYYASH IBN ABI RABI'AH",
     "cleanSection": "AYYASH IBN ABI RABI'AH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "TLE",
@@ -6667,7 +6956,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AYYASH IBN ABI RABI'AH"
   },
   {
     "date": "2026-09-06",
@@ -6682,7 +6972,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AYYASH IBN ABI RABI'AH",
     "cleanSection": "AYYASH IBN ABI RABI'AH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "AP",
@@ -6690,7 +6980,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Keychell",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AYYASH IBN ABI RABI'AH"
   },
   {
     "date": "2026-09-07",
@@ -6705,7 +6996,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AYYASH IBN ABI RABI'AH",
     "cleanSection": "AYYASH IBN ABI RABI'AH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "MAPEH",
@@ -6713,7 +7004,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Keychell",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AYYASH IBN ABI RABI'AH"
   },
   {
     "date": "2026-09-03",
@@ -6728,7 +7020,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AYYASH IBN ABI RABI'AH",
     "cleanSection": "AYYASH IBN ABI RABI'AH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -6736,7 +7028,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Hannah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AYYASH IBN ABI RABI'AH"
   },
   {
     "date": "2026-09-02",
@@ -6751,7 +7044,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AYYASH IBN ABI RABI'AH",
     "cleanSection": "AYYASH IBN ABI RABI'AH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -6759,7 +7052,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jayra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AYYASH IBN ABI RABI'AH"
   },
   {
     "date": "2026-09-06",
@@ -6774,7 +7068,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AYYASH IBN ABI RABI'AH",
     "cleanSection": "AYYASH IBN ABI RABI'AH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -6782,7 +7076,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AYYASH IBN ABI RABI'AH"
   },
   {
     "date": "2026-09-03",
@@ -6797,7 +7092,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AYYASH IBN ABI RABI'AH",
     "cleanSection": "AYYASH IBN ABI RABI'AH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -6805,7 +7100,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdul Karim",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AYYASH IBN ABI RABI'AH"
   },
   {
     "date": "2026-09-03",
@@ -6820,7 +7116,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AYYASH IBN ABI RABI'AH",
     "cleanSection": "AYYASH IBN ABI RABI'AH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -6828,7 +7124,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Raslina",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AYYASH IBN ABI RABI'AH"
   },
   {
     "date": "2026-09-07",
@@ -6843,7 +7140,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABBAS IBN ABD AL-MUTTALIB",
     "cleanSection": "ABBAS IBN ABD AL-MUTTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -6851,7 +7148,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Katrina",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABBAS IBN ABD AL-MUTTALIB"
   },
   {
     "date": "2026-09-02",
@@ -6866,7 +7164,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABBAS IBN ABD AL-MUTTALIB",
     "cleanSection": "ABBAS IBN ABD AL-MUTTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "TLE",
@@ -6874,7 +7172,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABBAS IBN ABD AL-MUTTALIB"
   },
   {
     "date": "2026-09-03",
@@ -6889,7 +7188,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABBAS IBN ABD AL-MUTTALIB",
     "cleanSection": "ABBAS IBN ABD AL-MUTTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -6897,7 +7196,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jessa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABBAS IBN ABD AL-MUTTALIB"
   },
   {
     "date": "2026-09-03",
@@ -6912,7 +7212,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABBAS IBN ABD AL-MUTTALIB",
     "cleanSection": "ABBAS IBN ABD AL-MUTTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -6920,7 +7220,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABBAS IBN ABD AL-MUTTALIB"
   },
   {
     "date": "2026-09-02",
@@ -6935,7 +7236,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABBAS IBN ABD AL-MUTTALIB",
     "cleanSection": "ABBAS IBN ABD AL-MUTTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -6943,7 +7244,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zuhora",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABBAS IBN ABD AL-MUTTALIB"
   },
   {
     "date": "2026-09-07",
@@ -6958,7 +7260,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABBAS IBN ABD AL-MUTTALIB",
     "cleanSection": "ABBAS IBN ABD AL-MUTTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "AP",
@@ -6966,7 +7268,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Normylah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABBAS IBN ABD AL-MUTTALIB"
   },
   {
     "date": "2026-09-06",
@@ -6981,7 +7284,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABBAS IBN ABD AL-MUTTALIB",
     "cleanSection": "ABBAS IBN ABD AL-MUTTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "MAPEH",
@@ -6989,7 +7292,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zara",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABBAS IBN ABD AL-MUTTALIB"
   },
   {
     "date": "2026-09-06",
@@ -7004,7 +7308,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABBAS IBN ABD AL-MUTTALIB",
     "cleanSection": "ABBAS IBN ABD AL-MUTTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -7012,7 +7316,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABBAS IBN ABD AL-MUTTALIB"
   },
   {
     "date": "2026-09-02",
@@ -7027,7 +7332,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABBAS IBN ABD AL-MUTTALIB",
     "cleanSection": "ABBAS IBN ABD AL-MUTTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -7035,7 +7340,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Abdiraheem",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABBAS IBN ABD AL-MUTTALIB"
   },
   {
     "date": "2026-09-03",
@@ -7050,7 +7356,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABBAS IBN ABD AL-MUTTALIB",
     "cleanSection": "ABBAS IBN ABD AL-MUTTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -7058,7 +7364,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABBAS IBN ABD AL-MUTTALIB"
   },
   {
     "date": "2026-09-07",
@@ -7073,7 +7380,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "ABBAS IBN ABD AL-MUTTALIB",
     "cleanSection": "ABBAS IBN ABD AL-MUTTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -7081,7 +7388,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABBAS IBN ABD AL-MUTTALIB"
   },
   {
     "date": "2026-09-07",
@@ -7096,7 +7404,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "UTBAH IBN GHAZWAN (Girls)",
     "cleanSection": "UTBAH IBN GHAZWAN",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "TLE",
@@ -7104,7 +7412,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Angeleni",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTBAH IBN GHAZWAN"
   },
   {
     "date": "2026-09-06",
@@ -7119,7 +7428,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "UTBAH IBN GHAZWAN (Girls)",
     "cleanSection": "UTBAH IBN GHAZWAN",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Social Science",
@@ -7127,7 +7436,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTBAH IBN GHAZWAN"
   },
   {
     "date": "2026-09-07",
@@ -7142,7 +7452,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "UTBAH IBN GHAZWAN (Girls)",
     "cleanSection": "UTBAH IBN GHAZWAN",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -7150,7 +7460,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jhelyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTBAH IBN GHAZWAN"
   },
   {
     "date": "2026-09-07",
@@ -7165,7 +7476,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "UTBAH IBN GHAZWAN (Girls)",
     "cleanSection": "UTBAH IBN GHAZWAN",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -7173,7 +7484,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nadzra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTBAH IBN GHAZWAN"
   },
   {
     "date": "2026-09-03",
@@ -7188,7 +7500,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "UTBAH IBN GHAZWAN (Girls)",
     "cleanSection": "UTBAH IBN GHAZWAN",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -7196,7 +7508,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhaima",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTBAH IBN GHAZWAN"
   },
   {
     "date": "2026-09-06",
@@ -7211,7 +7524,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "UTBAH IBN GHAZWAN (Girls)",
     "cleanSection": "UTBAH IBN GHAZWAN",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "ESP",
@@ -7219,7 +7532,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nof",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTBAH IBN GHAZWAN"
   },
   {
     "date": "2026-09-02",
@@ -7234,7 +7548,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "UTBAH IBN GHAZWAN (Girls)",
     "cleanSection": "UTBAH IBN GHAZWAN",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "MAPEH",
@@ -7242,7 +7556,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Sir Mohaymen",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTBAH IBN GHAZWAN"
   },
   {
     "date": "2026-09-03",
@@ -7257,7 +7572,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "UTBAH IBN GHAZWAN (Girls)",
     "cleanSection": "UTBAH IBN GHAZWAN",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -7265,7 +7580,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Rowena",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTBAH IBN GHAZWAN"
   },
   {
     "date": "2026-09-02",
@@ -7280,7 +7596,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "UTBAH IBN GHAZWAN (Girls)",
     "cleanSection": "UTBAH IBN GHAZWAN",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -7288,7 +7604,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Mamonas",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTBAH IBN GHAZWAN"
   },
   {
     "date": "2026-09-02",
@@ -7303,7 +7620,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "UTBAH IBN GHAZWAN (Girls)",
     "cleanSection": "UTBAH IBN GHAZWAN",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -7311,7 +7628,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Bustamante",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTBAH IBN GHAZWAN"
   },
   {
     "date": "2026-09-03",
@@ -7326,7 +7644,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "UTBAH IBN GHAZWAN (Girls)",
     "cleanSection": "UTBAH IBN GHAZWAN",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -7334,7 +7652,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdulwahab",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UTBAH IBN GHAZWAN"
   },
   {
     "date": "2026-09-07",
@@ -7349,7 +7668,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "TALHA IBN UBAYDULLAH",
     "cleanSection": "TALHA IBN UBAYDULLAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -7357,7 +7676,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sitti Kauzar",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "TALHA IBN UBAYDULLAH"
   },
   {
     "date": "2026-09-07",
@@ -7372,7 +7692,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "TALHA IBN UBAYDULLAH",
     "cleanSection": "TALHA IBN UBAYDULLAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -7380,7 +7700,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sitti Kauzar",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "TALHA IBN UBAYDULLAH"
   },
   {
     "date": "2026-09-06",
@@ -7395,7 +7716,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "TALHA IBN UBAYDULLAH",
     "cleanSection": "TALHA IBN UBAYDULLAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -7403,7 +7724,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Marham",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "TALHA IBN UBAYDULLAH"
   },
   {
     "date": "2026-09-06",
@@ -7418,7 +7740,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "TALHA IBN UBAYDULLAH",
     "cleanSection": "TALHA IBN UBAYDULLAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Makabansa",
@@ -7426,7 +7748,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zuhora",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "TALHA IBN UBAYDULLAH"
   },
   {
     "date": "2026-09-02",
@@ -7441,7 +7764,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "TALHA IBN UBAYDULLAH",
     "cleanSection": "TALHA IBN UBAYDULLAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -7449,7 +7772,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "TALHA IBN UBAYDULLAH"
   },
   {
     "date": "2026-09-03",
@@ -7464,7 +7788,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "TALHA IBN UBAYDULLAH",
     "cleanSection": "TALHA IBN UBAYDULLAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -7472,7 +7796,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "TALHA IBN UBAYDULLAH"
   },
   {
     "date": "2026-09-03",
@@ -7487,7 +7812,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "TALHA IBN UBAYDULLAH",
     "cleanSection": "TALHA IBN UBAYDULLAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -7495,7 +7820,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "TALHA IBN UBAYDULLAH"
   },
   {
     "date": "2026-09-02",
@@ -7510,7 +7836,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "TALHA IBN UBAYDULLAH",
     "cleanSection": "TALHA IBN UBAYDULLAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -7518,7 +7844,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdul Karim",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "TALHA IBN UBAYDULLAH"
   },
   {
     "date": "2026-09-06",
@@ -7533,7 +7860,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "USAYD IBN HUDHAYR (Mix)",
     "cleanSection": "USAYD IBN HUDHAYR",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -7541,7 +7868,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAYD IBN HUDHAYR"
   },
   {
     "date": "2026-09-06",
@@ -7556,7 +7884,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "USAYD IBN HUDHAYR (Mix)",
     "cleanSection": "USAYD IBN HUDHAYR",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -7564,7 +7892,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAYD IBN HUDHAYR"
   },
   {
     "date": "2026-09-03",
@@ -7579,7 +7908,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "USAYD IBN HUDHAYR (Mix)",
     "cleanSection": "USAYD IBN HUDHAYR",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -7587,7 +7916,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAYD IBN HUDHAYR"
   },
   {
     "date": "2026-09-03",
@@ -7602,7 +7932,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "USAYD IBN HUDHAYR (Mix)",
     "cleanSection": "USAYD IBN HUDHAYR",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -7610,7 +7940,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAYD IBN HUDHAYR"
   },
   {
     "date": "2026-09-07",
@@ -7625,7 +7956,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "USAYD IBN HUDHAYR (Mix)",
     "cleanSection": "USAYD IBN HUDHAYR",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "AP",
@@ -7633,7 +7964,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAYD IBN HUDHAYR"
   },
   {
     "date": "2026-09-07",
@@ -7648,7 +7980,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "USAYD IBN HUDHAYR (Mix)",
     "cleanSection": "USAYD IBN HUDHAYR",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "TLE",
@@ -7656,7 +7988,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAYD IBN HUDHAYR"
   },
   {
     "date": "2026-09-03",
@@ -7671,7 +8004,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "USAYD IBN HUDHAYR (Mix)",
     "cleanSection": "USAYD IBN HUDHAYR",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -7679,7 +8012,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAYD IBN HUDHAYR"
   },
   {
     "date": "2026-09-07",
@@ -7694,7 +8028,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "USAYD IBN HUDHAYR (Mix)",
     "cleanSection": "USAYD IBN HUDHAYR",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "MAPEH",
@@ -7702,7 +8036,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Halnaisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAYD IBN HUDHAYR"
   },
   {
     "date": "2026-09-02",
@@ -7717,7 +8052,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "USAYD IBN HUDHAYR (Mix)",
     "cleanSection": "USAYD IBN HUDHAYR",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -7725,7 +8060,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Abdiraheem",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAYD IBN HUDHAYR"
   },
   {
     "date": "2026-09-06",
@@ -7740,7 +8076,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "USAYD IBN HUDHAYR (Mix)",
     "cleanSection": "USAYD IBN HUDHAYR",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -7748,7 +8084,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAYD IBN HUDHAYR"
   },
   {
     "date": "2026-09-02",
@@ -7763,7 +8100,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "USAYD IBN HUDHAYR (Mix)",
     "cleanSection": "USAYD IBN HUDHAYR",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -7771,7 +8108,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "USAYD IBN HUDHAYR"
   },
   {
     "date": "2026-09-07",
@@ -7786,7 +8124,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "HAMZA IBN ABDUL",
     "cleanSection": "HAMZA IBN ABDUL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -7794,7 +8132,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Joanna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAMZA IBN ABDUL"
   },
   {
     "date": "2026-09-02",
@@ -7809,7 +8148,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "HAMZA IBN ABDUL",
     "cleanSection": "HAMZA IBN ABDUL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -7817,7 +8156,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jessa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAMZA IBN ABDUL"
   },
   {
     "date": "2026-09-07",
@@ -7832,7 +8172,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "HAMZA IBN ABDUL",
     "cleanSection": "HAMZA IBN ABDUL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -7840,7 +8180,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAMZA IBN ABDUL"
   },
   {
     "date": "2026-09-06",
@@ -7855,7 +8196,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "HAMZA IBN ABDUL",
     "cleanSection": "HAMZA IBN ABDUL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "TLE",
@@ -7863,7 +8204,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAMZA IBN ABDUL"
   },
   {
     "date": "2026-09-07",
@@ -7878,7 +8220,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "HAMZA IBN ABDUL",
     "cleanSection": "HAMZA IBN ABDUL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "AP",
@@ -7886,7 +8228,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Keychell",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAMZA IBN ABDUL"
   },
   {
     "date": "2026-09-03",
@@ -7901,7 +8244,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "HAMZA IBN ABDUL",
     "cleanSection": "HAMZA IBN ABDUL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "MAPEH",
@@ -7909,7 +8252,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Keychell",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAMZA IBN ABDUL"
   },
   {
     "date": "2026-09-06",
@@ -7924,7 +8268,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "HAMZA IBN ABDUL",
     "cleanSection": "HAMZA IBN ABDUL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -7932,7 +8276,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Hannah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAMZA IBN ABDUL"
   },
   {
     "date": "2026-09-06",
@@ -7947,7 +8292,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "HAMZA IBN ABDUL",
     "cleanSection": "HAMZA IBN ABDUL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -7955,7 +8300,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jayra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAMZA IBN ABDUL"
   },
   {
     "date": "2026-09-03",
@@ -7970,7 +8316,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "HAMZA IBN ABDUL",
     "cleanSection": "HAMZA IBN ABDUL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -7978,7 +8324,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAMZA IBN ABDUL"
   },
   {
     "date": "2026-09-02",
@@ -7993,7 +8340,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "HAMZA IBN ABDUL",
     "cleanSection": "HAMZA IBN ABDUL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -8001,7 +8348,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdul Karim",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAMZA IBN ABDUL"
   },
   {
     "date": "2026-09-03",
@@ -8016,7 +8364,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "HAMZA IBN ABDUL",
     "cleanSection": "HAMZA IBN ABDUL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -8024,7 +8372,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Raslina",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HAMZA IBN ABDUL"
   },
   {
     "date": "2026-09-07",
@@ -8039,7 +8388,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUHAMMAD IBN MASLAMAH",
     "cleanSection": "MUHAMMAD IBN MASLAMAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Filipino",
@@ -8047,7 +8396,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Joanna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUHAMMAD IBN MASLAMAH"
   },
   {
     "date": "2026-09-06",
@@ -8062,7 +8412,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUHAMMAD IBN MASLAMAH",
     "cleanSection": "MUHAMMAD IBN MASLAMAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "English",
@@ -8070,7 +8420,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jessa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUHAMMAD IBN MASLAMAH"
   },
   {
     "date": "2026-09-06",
@@ -8085,7 +8436,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUHAMMAD IBN MASLAMAH",
     "cleanSection": "MUHAMMAD IBN MASLAMAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Science",
@@ -8093,7 +8444,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUHAMMAD IBN MASLAMAH"
   },
   {
     "date": "2026-09-03",
@@ -8108,7 +8460,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUHAMMAD IBN MASLAMAH",
     "cleanSection": "MUHAMMAD IBN MASLAMAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "TLE",
@@ -8116,7 +8468,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUHAMMAD IBN MASLAMAH"
   },
   {
     "date": "2026-09-07",
@@ -8131,7 +8484,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUHAMMAD IBN MASLAMAH",
     "cleanSection": "MUHAMMAD IBN MASLAMAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "AP",
@@ -8139,7 +8492,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Keychell",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUHAMMAD IBN MASLAMAH"
   },
   {
     "date": "2026-09-02",
@@ -8154,7 +8508,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUHAMMAD IBN MASLAMAH",
     "cleanSection": "MUHAMMAD IBN MASLAMAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "MAPEH",
@@ -8162,7 +8516,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Keychell",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUHAMMAD IBN MASLAMAH"
   },
   {
     "date": "2026-09-02",
@@ -8177,7 +8532,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUHAMMAD IBN MASLAMAH",
     "cleanSection": "MUHAMMAD IBN MASLAMAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Math",
@@ -8185,7 +8540,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Hannah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUHAMMAD IBN MASLAMAH"
   },
   {
     "date": "2026-09-06",
@@ -8200,7 +8556,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUHAMMAD IBN MASLAMAH",
     "cleanSection": "MUHAMMAD IBN MASLAMAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "GMRC",
@@ -8208,7 +8564,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jayra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUHAMMAD IBN MASLAMAH"
   },
   {
     "date": "2026-09-03",
@@ -8223,7 +8580,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUHAMMAD IBN MASLAMAH",
     "cleanSection": "MUHAMMAD IBN MASLAMAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Qur'an",
@@ -8231,7 +8588,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUHAMMAD IBN MASLAMAH"
   },
   {
     "date": "2026-09-07",
@@ -8246,7 +8604,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUHAMMAD IBN MASLAMAH",
     "cleanSection": "MUHAMMAD IBN MASLAMAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "Arabic",
@@ -8254,7 +8612,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdul Karim",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUHAMMAD IBN MASLAMAH"
   },
   {
     "date": "2026-09-02",
@@ -8269,7 +8628,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUHAMMAD IBN MASLAMAH",
     "cleanSection": "MUHAMMAD IBN MASLAMAH",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "1st Shift",
     "subject": "SHAF",
@@ -8277,7 +8636,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Raslina",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUHAMMAD IBN MASLAMAH"
   },
   {
     "date": "2026-09-02",
@@ -8292,7 +8652,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Boys",
     "cleanSection": "",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "General Biology 1",
@@ -8300,7 +8660,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Radzmia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-03",
@@ -8315,7 +8676,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Boys",
     "cleanSection": "",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "PSKP",
@@ -8323,7 +8684,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Shirehan",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-07",
@@ -8338,7 +8700,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Boys",
     "cleanSection": "",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "General Mathematics",
@@ -8346,7 +8708,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jhelyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-06",
@@ -8361,7 +8724,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Boys",
     "cleanSection": "",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "EC",
@@ -8369,7 +8732,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nadzra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-02",
@@ -8384,7 +8748,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Boys",
     "cleanSection": "",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "LCS",
@@ -8392,7 +8756,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhaima",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-07",
@@ -8407,7 +8772,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Boys",
     "cleanSection": "",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "General Science",
@@ -8415,7 +8780,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Rowena",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-06",
@@ -8430,7 +8796,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Boys",
     "cleanSection": "",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -8438,7 +8804,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Mamonas",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-03",
@@ -8453,7 +8820,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Boys",
     "cleanSection": "",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -8461,7 +8828,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-06",
@@ -8476,7 +8844,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 11",
     "section": "Boys",
     "cleanSection": "",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -8484,7 +8852,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdulwahab",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MAIN SECTION"
   },
   {
     "date": "2026-09-02",
@@ -8499,7 +8868,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SA'AD IBN ABI WAQQAAS",
     "cleanSection": "SA'AD IBN ABI WAQQAAS",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Reading and Literacy",
@@ -8507,7 +8876,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Katrina",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN ABI WAQQAAS"
   },
   {
     "date": "2026-09-06",
@@ -8522,7 +8892,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SA'AD IBN ABI WAQQAAS",
     "cleanSection": "SA'AD IBN ABI WAQQAAS",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Makabansa",
@@ -8530,7 +8900,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhydie",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN ABI WAQQAAS"
   },
   {
     "date": "2026-09-02",
@@ -8545,7 +8916,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SA'AD IBN ABI WAQQAAS",
     "cleanSection": "SA'AD IBN ABI WAQQAAS",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Language",
@@ -8553,7 +8924,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN ABI WAQQAAS"
   },
   {
     "date": "2026-09-06",
@@ -8568,7 +8940,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SA'AD IBN ABI WAQQAAS",
     "cleanSection": "SA'AD IBN ABI WAQQAAS",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -8576,7 +8948,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN ABI WAQQAAS"
   },
   {
     "date": "2026-09-03",
@@ -8591,7 +8964,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SA'AD IBN ABI WAQQAAS",
     "cleanSection": "SA'AD IBN ABI WAQQAAS",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -8599,7 +8972,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Joanna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN ABI WAQQAAS"
   },
   {
     "date": "2026-09-07",
@@ -8614,7 +8988,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SA'AD IBN ABI WAQQAAS",
     "cleanSection": "SA'AD IBN ABI WAQQAAS",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -8622,7 +8996,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN ABI WAQQAAS"
   },
   {
     "date": "2026-09-03",
@@ -8637,7 +9012,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SA'AD IBN ABI WAQQAAS",
     "cleanSection": "SA'AD IBN ABI WAQQAAS",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -8645,7 +9020,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN ABI WAQQAAS"
   },
   {
     "date": "2026-09-07",
@@ -8660,7 +9036,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SA'AD IBN ABI WAQQAAS",
     "cleanSection": "SA'AD IBN ABI WAQQAAS",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -8668,7 +9044,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdul Karim",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SA'AD IBN ABI WAQQAAS"
   },
   {
     "date": "2026-09-03",
@@ -8683,7 +9060,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ANAS IBN MALIK (Mix)",
     "cleanSection": "ANAS IBN MALIK",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "TLE",
@@ -8691,7 +9068,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Halnaisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ANAS IBN MALIK"
   },
   {
     "date": "2026-09-07",
@@ -8706,7 +9084,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ANAS IBN MALIK (Mix)",
     "cleanSection": "ANAS IBN MALIK",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Social Science",
@@ -8714,7 +9092,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Shirehan",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ANAS IBN MALIK"
   },
   {
     "date": "2026-09-02",
@@ -8729,7 +9108,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ANAS IBN MALIK (Mix)",
     "cleanSection": "ANAS IBN MALIK",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "MAPEH",
@@ -8737,7 +9116,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Franchette",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ANAS IBN MALIK"
   },
   {
     "date": "2026-09-03",
@@ -8752,7 +9132,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ANAS IBN MALIK (Mix)",
     "cleanSection": "ANAS IBN MALIK",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -8760,7 +9140,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ANAS IBN MALIK"
   },
   {
     "date": "2026-09-07",
@@ -8775,7 +9156,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ANAS IBN MALIK (Mix)",
     "cleanSection": "ANAS IBN MALIK",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -8783,7 +9164,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jayra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ANAS IBN MALIK"
   },
   {
     "date": "2026-09-06",
@@ -8798,7 +9180,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ANAS IBN MALIK (Mix)",
     "cleanSection": "ANAS IBN MALIK",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -8806,7 +9188,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Ethel",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ANAS IBN MALIK"
   },
   {
     "date": "2026-09-02",
@@ -8821,7 +9204,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ANAS IBN MALIK (Mix)",
     "cleanSection": "ANAS IBN MALIK",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -8829,7 +9212,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Aniah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ANAS IBN MALIK"
   },
   {
     "date": "2026-09-03",
@@ -8844,7 +9228,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ANAS IBN MALIK (Mix)",
     "cleanSection": "ANAS IBN MALIK",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -8852,7 +9236,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ANAS IBN MALIK"
   },
   {
     "date": "2026-09-02",
@@ -8867,7 +9252,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ANAS IBN MALIK (Mix)",
     "cleanSection": "ANAS IBN MALIK",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -8875,7 +9260,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ANAS IBN MALIK"
   },
   {
     "date": "2026-09-07",
@@ -8890,7 +9276,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ANAS IBN MALIK (Mix)",
     "cleanSection": "ANAS IBN MALIK",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -8898,7 +9284,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ANAS IBN MALIK"
   },
   {
     "date": "2026-09-06",
@@ -8913,7 +9300,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 7",
     "section": "ANAS IBN MALIK (Mix)",
     "cleanSection": "ANAS IBN MALIK",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -8921,7 +9308,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ANAS IBN MALIK"
   },
   {
     "date": "2026-09-06",
@@ -8936,7 +9324,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "NUAYM IBN MAS'UD (Mix)",
     "cleanSection": "NUAYM IBN MAS'UD",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -8944,7 +9332,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Hannah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "NUAYM IBN MAS'UD"
   },
   {
     "date": "2026-09-03",
@@ -8959,7 +9348,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "NUAYM IBN MAS'UD (Mix)",
     "cleanSection": "NUAYM IBN MAS'UD",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -8967,7 +9356,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Radzmia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "NUAYM IBN MAS'UD"
   },
   {
     "date": "2026-09-02",
@@ -8982,7 +9372,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "NUAYM IBN MAS'UD (Mix)",
     "cleanSection": "NUAYM IBN MAS'UD",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "TLE",
@@ -8990,7 +9380,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Halnaisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "NUAYM IBN MAS'UD"
   },
   {
     "date": "2026-09-07",
@@ -9005,7 +9396,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "NUAYM IBN MAS'UD (Mix)",
     "cleanSection": "NUAYM IBN MAS'UD",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Social Science",
@@ -9013,7 +9404,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Shirehan",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "NUAYM IBN MAS'UD"
   },
   {
     "date": "2026-09-07",
@@ -9028,7 +9420,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "NUAYM IBN MAS'UD (Mix)",
     "cleanSection": "NUAYM IBN MAS'UD",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "MAPEH",
@@ -9036,7 +9428,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Franchette",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "NUAYM IBN MAS'UD"
   },
   {
     "date": "2026-09-07",
@@ -9051,7 +9444,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "NUAYM IBN MAS'UD (Mix)",
     "cleanSection": "NUAYM IBN MAS'UD",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -9059,7 +9452,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "NUAYM IBN MAS'UD"
   },
   {
     "date": "2026-09-03",
@@ -9074,7 +9468,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "NUAYM IBN MAS'UD (Mix)",
     "cleanSection": "NUAYM IBN MAS'UD",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -9082,7 +9476,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jayra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "NUAYM IBN MAS'UD"
   },
   {
     "date": "2026-09-02",
@@ -9097,7 +9492,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "NUAYM IBN MAS'UD (Mix)",
     "cleanSection": "NUAYM IBN MAS'UD",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Values Education",
@@ -9105,7 +9500,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Wardah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "NUAYM IBN MAS'UD"
   },
   {
     "date": "2026-09-06",
@@ -9120,7 +9516,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "NUAYM IBN MAS'UD (Mix)",
     "cleanSection": "NUAYM IBN MAS'UD",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -9128,7 +9524,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "NUAYM IBN MAS'UD"
   },
   {
     "date": "2026-09-02",
@@ -9143,7 +9540,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "NUAYM IBN MAS'UD (Mix)",
     "cleanSection": "NUAYM IBN MAS'UD",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -9151,7 +9548,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "NUAYM IBN MAS'UD"
   },
   {
     "date": "2026-09-06",
@@ -9166,7 +9564,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "NUAYM IBN MAS'UD (Mix)",
     "cleanSection": "NUAYM IBN MAS'UD",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -9174,7 +9572,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "NUAYM IBN MAS'UD"
   },
   {
     "date": "2026-09-06",
@@ -9189,7 +9588,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "KHABAAB IBN ARAT",
     "cleanSection": "KHABAAB IBN ARAT",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Circle Time 1",
@@ -9197,7 +9596,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Ayah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHABAAB IBN ARAT"
   },
   {
     "date": "2026-09-02",
@@ -9212,7 +9612,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "KHABAAB IBN ARAT",
     "cleanSection": "KHABAAB IBN ARAT",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Circle Time 2",
@@ -9220,7 +9620,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Ayah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHABAAB IBN ARAT"
   },
   {
     "date": "2026-09-07",
@@ -9235,7 +9636,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "KHABAAB IBN ARAT",
     "cleanSection": "KHABAAB IBN ARAT",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -9243,7 +9644,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHABAAB IBN ARAT"
   },
   {
     "date": "2026-09-07",
@@ -9258,7 +9660,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "KHABAAB IBN ARAT",
     "cleanSection": "KHABAAB IBN ARAT",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -9266,7 +9668,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHABAAB IBN ARAT"
   },
   {
     "date": "2026-09-03",
@@ -9281,7 +9684,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "KHABAAB IBN ARAT",
     "cleanSection": "KHABAAB IBN ARAT",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Hadith",
@@ -9289,7 +9692,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Faidh",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHABAAB IBN ARAT"
   },
   {
     "date": "2026-09-06",
@@ -9304,7 +9708,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "UMAR IBN AL-KHATTAB",
     "cleanSection": "UMAR IBN AL-KHATTAB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Circle Time 1",
@@ -9312,7 +9716,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Keychell",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UMAR IBN AL-KHATTAB"
   },
   {
     "date": "2026-09-03",
@@ -9327,7 +9732,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "UMAR IBN AL-KHATTAB",
     "cleanSection": "UMAR IBN AL-KHATTAB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Circle Time 2",
@@ -9335,7 +9740,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Keychell",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UMAR IBN AL-KHATTAB"
   },
   {
     "date": "2026-09-07",
@@ -9350,7 +9756,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "UMAR IBN AL-KHATTAB",
     "cleanSection": "UMAR IBN AL-KHATTAB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -9358,7 +9764,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UMAR IBN AL-KHATTAB"
   },
   {
     "date": "2026-09-06",
@@ -9373,7 +9780,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "UMAR IBN AL-KHATTAB",
     "cleanSection": "UMAR IBN AL-KHATTAB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -9381,7 +9788,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UMAR IBN AL-KHATTAB"
   },
   {
     "date": "2026-09-02",
@@ -9396,7 +9804,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "UMAR IBN AL-KHATTAB",
     "cleanSection": "UMAR IBN AL-KHATTAB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Hadith",
@@ -9404,7 +9812,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Faidh",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "UMAR IBN AL-KHATTAB"
   },
   {
     "date": "2026-09-02",
@@ -9419,7 +9828,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "AZ ZUBAIR IBN AL AWWAAM",
     "cleanSection": "AZ ZUBAIR IBN AL AWWAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -9427,7 +9836,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhydie",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AZ ZUBAIR IBN AL AWWAAM"
   },
   {
     "date": "2026-09-03",
@@ -9442,7 +9852,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "AZ ZUBAIR IBN AL AWWAAM",
     "cleanSection": "AZ ZUBAIR IBN AL AWWAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -9450,7 +9860,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AZ ZUBAIR IBN AL AWWAAM"
   },
   {
     "date": "2026-09-06",
@@ -9465,7 +9876,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "AZ ZUBAIR IBN AL AWWAAM",
     "cleanSection": "AZ ZUBAIR IBN AL AWWAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -9473,7 +9884,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Saimonah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AZ ZUBAIR IBN AL AWWAAM"
   },
   {
     "date": "2026-09-07",
@@ -9488,7 +9900,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "AZ ZUBAIR IBN AL AWWAAM",
     "cleanSection": "AZ ZUBAIR IBN AL AWWAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -9496,7 +9908,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AZ ZUBAIR IBN AL AWWAAM"
   },
   {
     "date": "2026-09-03",
@@ -9511,7 +9924,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "AZ ZUBAIR IBN AL AWWAAM",
     "cleanSection": "AZ ZUBAIR IBN AL AWWAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -9519,7 +9932,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AZ ZUBAIR IBN AL AWWAAM"
   },
   {
     "date": "2026-09-07",
@@ -9534,7 +9948,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "AZ ZUBAIR IBN AL AWWAAM",
     "cleanSection": "AZ ZUBAIR IBN AL AWWAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "MAPEH",
@@ -9542,7 +9956,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zuhora",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AZ ZUBAIR IBN AL AWWAAM"
   },
   {
     "date": "2026-09-07",
@@ -9557,7 +9972,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "AZ ZUBAIR IBN AL AWWAAM",
     "cleanSection": "AZ ZUBAIR IBN AL AWWAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "AP",
@@ -9565,7 +9980,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AZ ZUBAIR IBN AL AWWAAM"
   },
   {
     "date": "2026-09-02",
@@ -9580,7 +9996,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "AZ ZUBAIR IBN AL AWWAAM",
     "cleanSection": "AZ ZUBAIR IBN AL AWWAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "TLE",
@@ -9588,7 +10004,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AZ ZUBAIR IBN AL AWWAAM"
   },
   {
     "date": "2026-09-02",
@@ -9603,7 +10020,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "AZ ZUBAIR IBN AL AWWAAM",
     "cleanSection": "AZ ZUBAIR IBN AL AWWAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -9611,7 +10028,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Abdiraheem",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AZ ZUBAIR IBN AL AWWAAM"
   },
   {
     "date": "2026-09-06",
@@ -9626,7 +10044,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "AZ ZUBAIR IBN AL AWWAAM",
     "cleanSection": "AZ ZUBAIR IBN AL AWWAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -9634,7 +10052,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AZ ZUBAIR IBN AL AWWAAM"
   },
   {
     "date": "2026-09-06",
@@ -9649,7 +10068,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "AZ ZUBAIR IBN AL AWWAAM",
     "cleanSection": "AZ ZUBAIR IBN AL AWWAAM",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -9657,7 +10076,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AZ ZUBAIR IBN AL AWWAAM"
   },
   {
     "date": "2026-09-07",
@@ -9672,7 +10092,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU DHARR AL GHIFARRI (Boys)",
     "cleanSection": "ABU DHARR AL GHIFARRI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "TLE",
@@ -9680,7 +10100,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Angeleni",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU DHARR AL GHIFARRI"
   },
   {
     "date": "2026-09-07",
@@ -9695,7 +10116,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU DHARR AL GHIFARRI (Boys)",
     "cleanSection": "ABU DHARR AL GHIFARRI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "MAPEH",
@@ -9703,7 +10124,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Sir Mohaymen",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU DHARR AL GHIFARRI"
   },
   {
     "date": "2026-09-03",
@@ -9718,7 +10140,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU DHARR AL GHIFARRI (Boys)",
     "cleanSection": "ABU DHARR AL GHIFARRI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Social Science",
@@ -9726,7 +10148,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU DHARR AL GHIFARRI"
   },
   {
     "date": "2026-09-03",
@@ -9741,7 +10164,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU DHARR AL GHIFARRI (Boys)",
     "cleanSection": "ABU DHARR AL GHIFARRI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -9749,7 +10172,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jhelyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU DHARR AL GHIFARRI"
   },
   {
     "date": "2026-09-07",
@@ -9764,7 +10188,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU DHARR AL GHIFARRI (Boys)",
     "cleanSection": "ABU DHARR AL GHIFARRI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -9772,7 +10196,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nadzra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU DHARR AL GHIFARRI"
   },
   {
     "date": "2026-09-06",
@@ -9787,7 +10212,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU DHARR AL GHIFARRI (Boys)",
     "cleanSection": "ABU DHARR AL GHIFARRI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -9795,7 +10220,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhaima",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU DHARR AL GHIFARRI"
   },
   {
     "date": "2026-09-02",
@@ -9810,7 +10236,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU DHARR AL GHIFARRI (Boys)",
     "cleanSection": "ABU DHARR AL GHIFARRI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "ESP",
@@ -9818,7 +10244,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nof",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU DHARR AL GHIFARRI"
   },
   {
     "date": "2026-09-06",
@@ -9833,7 +10260,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU DHARR AL GHIFARRI (Boys)",
     "cleanSection": "ABU DHARR AL GHIFARRI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -9841,7 +10268,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Rowena",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU DHARR AL GHIFARRI"
   },
   {
     "date": "2026-09-02",
@@ -9856,7 +10284,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU DHARR AL GHIFARRI (Boys)",
     "cleanSection": "ABU DHARR AL GHIFARRI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -9864,7 +10292,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU DHARR AL GHIFARRI"
   },
   {
     "date": "2026-09-02",
@@ -9879,7 +10308,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU DHARR AL GHIFARRI (Boys)",
     "cleanSection": "ABU DHARR AL GHIFARRI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -9887,7 +10316,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU DHARR AL GHIFARRI"
   },
   {
     "date": "2026-09-03",
@@ -9902,7 +10332,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU DHARR AL GHIFARRI (Boys)",
     "cleanSection": "ABU DHARR AL GHIFARRI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -9910,7 +10340,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdulwahab",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU DHARR AL GHIFARRI"
   },
   {
     "date": "2026-09-02",
@@ -9925,7 +10356,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "MU'ADH IBN JABAL (Boys)",
     "cleanSection": "MU'ADH IBN JABAL",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -9933,7 +10364,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Hannah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MU'ADH IBN JABAL"
   },
   {
     "date": "2026-09-03",
@@ -9948,7 +10380,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "MU'ADH IBN JABAL (Boys)",
     "cleanSection": "MU'ADH IBN JABAL",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -9956,7 +10388,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Radzmia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MU'ADH IBN JABAL"
   },
   {
     "date": "2026-09-06",
@@ -9971,7 +10404,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "MU'ADH IBN JABAL (Boys)",
     "cleanSection": "MU'ADH IBN JABAL",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "TLE",
@@ -9979,7 +10412,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Halnaisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MU'ADH IBN JABAL"
   },
   {
     "date": "2026-09-06",
@@ -9994,7 +10428,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "MU'ADH IBN JABAL (Boys)",
     "cleanSection": "MU'ADH IBN JABAL",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Social Science",
@@ -10002,7 +10436,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Shirehan",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MU'ADH IBN JABAL"
   },
   {
     "date": "2026-09-07",
@@ -10017,7 +10452,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "MU'ADH IBN JABAL (Boys)",
     "cleanSection": "MU'ADH IBN JABAL",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "MAPEH",
@@ -10025,7 +10460,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Franchette",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MU'ADH IBN JABAL"
   },
   {
     "date": "2026-09-02",
@@ -10040,7 +10476,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "MU'ADH IBN JABAL (Boys)",
     "cleanSection": "MU'ADH IBN JABAL",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -10048,7 +10484,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MU'ADH IBN JABAL"
   },
   {
     "date": "2026-09-06",
@@ -10063,7 +10500,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "MU'ADH IBN JABAL (Boys)",
     "cleanSection": "MU'ADH IBN JABAL",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -10071,7 +10508,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jayra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MU'ADH IBN JABAL"
   },
   {
     "date": "2026-09-03",
@@ -10086,7 +10524,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "MU'ADH IBN JABAL (Boys)",
     "cleanSection": "MU'ADH IBN JABAL",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Values Education",
@@ -10094,7 +10532,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Wardah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MU'ADH IBN JABAL"
   },
   {
     "date": "2026-09-07",
@@ -10109,7 +10548,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "MU'ADH IBN JABAL (Boys)",
     "cleanSection": "MU'ADH IBN JABAL",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -10117,7 +10556,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MU'ADH IBN JABAL"
   },
   {
     "date": "2026-09-07",
@@ -10132,7 +10572,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "MU'ADH IBN JABAL (Boys)",
     "cleanSection": "MU'ADH IBN JABAL",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -10140,7 +10580,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MU'ADH IBN JABAL"
   },
   {
     "date": "2026-09-02",
@@ -10155,7 +10596,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 8",
     "section": "MU'ADH IBN JABAL (Boys)",
     "cleanSection": "MU'ADH IBN JABAL",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -10163,7 +10604,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MU'ADH IBN JABAL"
   },
   {
     "date": "2026-09-03",
@@ -10178,7 +10620,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "ZAYD IBN HARITHA (Girls)",
     "cleanSection": "ZAYD IBN HARITHA",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -10186,7 +10628,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jerlyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ZAYD IBN HARITHA"
   },
   {
     "date": "2026-09-03",
@@ -10201,7 +10644,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "ZAYD IBN HARITHA (Girls)",
     "cleanSection": "ZAYD IBN HARITHA",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -10209,7 +10652,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jerlyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ZAYD IBN HARITHA"
   },
   {
     "date": "2026-09-07",
@@ -10224,7 +10668,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "ZAYD IBN HARITHA (Girls)",
     "cleanSection": "ZAYD IBN HARITHA",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -10232,7 +10676,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Marham",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ZAYD IBN HARITHA"
   },
   {
     "date": "2026-09-07",
@@ -10247,7 +10692,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "ZAYD IBN HARITHA (Girls)",
     "cleanSection": "ZAYD IBN HARITHA",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -10255,7 +10700,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Normylah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ZAYD IBN HARITHA"
   },
   {
     "date": "2026-09-02",
@@ -10270,7 +10716,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "ZAYD IBN HARITHA (Girls)",
     "cleanSection": "ZAYD IBN HARITHA",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Makabansa",
@@ -10278,7 +10724,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zara",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ZAYD IBN HARITHA"
   },
   {
     "date": "2026-09-06",
@@ -10293,7 +10740,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "ZAYD IBN HARITHA (Girls)",
     "cleanSection": "ZAYD IBN HARITHA",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -10301,7 +10748,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ZAYD IBN HARITHA"
   },
   {
     "date": "2026-09-06",
@@ -10316,7 +10764,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "ZAYD IBN HARITHA (Girls)",
     "cleanSection": "ZAYD IBN HARITHA",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -10324,7 +10772,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ZAYD IBN HARITHA"
   },
   {
     "date": "2026-09-06",
@@ -10339,7 +10788,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "ZAYD IBN HARITHA (Girls)",
     "cleanSection": "ZAYD IBN HARITHA",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -10347,7 +10796,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ZAYD IBN HARITHA"
   },
   {
     "date": "2026-09-02",
@@ -10362,7 +10812,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "ZAYD IBN HARITHA (Girls)",
     "cleanSection": "ZAYD IBN HARITHA",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -10370,7 +10820,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ersahad",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ZAYD IBN HARITHA"
   },
   {
     "date": "2026-09-02",
@@ -10385,7 +10836,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUS'AB IBN ABDUL MUTALIB",
     "cleanSection": "MUS'AB IBN ABDUL MUTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "MAPEH",
@@ -10393,7 +10844,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Saimonah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUS'AB IBN ABDUL MUTALIB"
   },
   {
     "date": "2026-09-02",
@@ -10408,7 +10860,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUS'AB IBN ABDUL MUTALIB",
     "cleanSection": "MUS'AB IBN ABDUL MUTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -10416,7 +10868,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jenny",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUS'AB IBN ABDUL MUTALIB"
   },
   {
     "date": "2026-09-03",
@@ -10431,7 +10884,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUS'AB IBN ABDUL MUTALIB",
     "cleanSection": "MUS'AB IBN ABDUL MUTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -10439,7 +10892,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Fhairudz",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUS'AB IBN ABDUL MUTALIB"
   },
   {
     "date": "2026-09-02",
@@ -10454,7 +10908,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUS'AB IBN ABDUL MUTALIB",
     "cleanSection": "MUS'AB IBN ABDUL MUTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "AP",
@@ -10462,7 +10916,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUS'AB IBN ABDUL MUTALIB"
   },
   {
     "date": "2026-09-07",
@@ -10477,7 +10932,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUS'AB IBN ABDUL MUTALIB",
     "cleanSection": "MUS'AB IBN ABDUL MUTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -10485,7 +10940,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jessa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUS'AB IBN ABDUL MUTALIB"
   },
   {
     "date": "2026-09-07",
@@ -10500,7 +10956,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUS'AB IBN ABDUL MUTALIB",
     "cleanSection": "MUS'AB IBN ABDUL MUTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -10508,7 +10964,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUS'AB IBN ABDUL MUTALIB"
   },
   {
     "date": "2026-09-03",
@@ -10523,7 +10980,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUS'AB IBN ABDUL MUTALIB",
     "cleanSection": "MUS'AB IBN ABDUL MUTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "TLE",
@@ -10531,7 +10988,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jenny",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUS'AB IBN ABDUL MUTALIB"
   },
   {
     "date": "2026-09-06",
@@ -10546,7 +11004,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUS'AB IBN ABDUL MUTALIB",
     "cleanSection": "MUS'AB IBN ABDUL MUTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -10554,7 +11012,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUS'AB IBN ABDUL MUTALIB"
   },
   {
     "date": "2026-09-03",
@@ -10569,7 +11028,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUS'AB IBN ABDUL MUTALIB",
     "cleanSection": "MUS'AB IBN ABDUL MUTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -10577,7 +11036,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUS'AB IBN ABDUL MUTALIB"
   },
   {
     "date": "2026-09-06",
@@ -10592,7 +11052,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUS'AB IBN ABDUL MUTALIB",
     "cleanSection": "MUS'AB IBN ABDUL MUTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -10600,7 +11060,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Faidh",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUS'AB IBN ABDUL MUTALIB"
   },
   {
     "date": "2026-09-07",
@@ -10615,7 +11076,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "MUS'AB IBN ABDUL MUTALIB",
     "cleanSection": "MUS'AB IBN ABDUL MUTALIB",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -10623,7 +11084,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Faidh",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "MUS'AB IBN ABDUL MUTALIB"
   },
   {
     "date": "2026-09-02",
@@ -10638,7 +11100,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "ABU AYYUB AL-ANSARI (Boys)",
     "cleanSection": "ABU AYYUB AL-ANSARI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "TLE",
@@ -10646,7 +11108,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Angeleni",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU AYYUB AL-ANSARI"
   },
   {
     "date": "2026-09-07",
@@ -10661,7 +11124,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "ABU AYYUB AL-ANSARI (Boys)",
     "cleanSection": "ABU AYYUB AL-ANSARI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Social Science",
@@ -10669,7 +11132,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU AYYUB AL-ANSARI"
   },
   {
     "date": "2026-09-07",
@@ -10684,7 +11148,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "ABU AYYUB AL-ANSARI (Boys)",
     "cleanSection": "ABU AYYUB AL-ANSARI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -10692,7 +11156,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jhelyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU AYYUB AL-ANSARI"
   },
   {
     "date": "2026-09-02",
@@ -10707,7 +11172,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "ABU AYYUB AL-ANSARI (Boys)",
     "cleanSection": "ABU AYYUB AL-ANSARI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -10715,7 +11180,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nadzra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU AYYUB AL-ANSARI"
   },
   {
     "date": "2026-09-06",
@@ -10730,7 +11196,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "ABU AYYUB AL-ANSARI (Boys)",
     "cleanSection": "ABU AYYUB AL-ANSARI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -10738,7 +11204,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhaima",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU AYYUB AL-ANSARI"
   },
   {
     "date": "2026-09-03",
@@ -10753,7 +11220,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "ABU AYYUB AL-ANSARI (Boys)",
     "cleanSection": "ABU AYYUB AL-ANSARI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "ESP",
@@ -10761,7 +11228,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nof",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU AYYUB AL-ANSARI"
   },
   {
     "date": "2026-09-03",
@@ -10776,7 +11244,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "ABU AYYUB AL-ANSARI (Boys)",
     "cleanSection": "ABU AYYUB AL-ANSARI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "MAPEH",
@@ -10784,7 +11252,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Sir Mohaymen",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU AYYUB AL-ANSARI"
   },
   {
     "date": "2026-09-06",
@@ -10799,7 +11268,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "ABU AYYUB AL-ANSARI (Boys)",
     "cleanSection": "ABU AYYUB AL-ANSARI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -10807,7 +11276,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Rowena",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU AYYUB AL-ANSARI"
   },
   {
     "date": "2026-09-07",
@@ -10822,7 +11292,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "ABU AYYUB AL-ANSARI (Boys)",
     "cleanSection": "ABU AYYUB AL-ANSARI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -10830,7 +11300,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Mamonas",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU AYYUB AL-ANSARI"
   },
   {
     "date": "2026-09-06",
@@ -10845,7 +11316,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "ABU AYYUB AL-ANSARI (Boys)",
     "cleanSection": "ABU AYYUB AL-ANSARI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -10853,7 +11324,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Bustamante",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU AYYUB AL-ANSARI"
   },
   {
     "date": "2026-09-02",
@@ -10868,7 +11340,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 10",
     "section": "ABU AYYUB AL-ANSARI (Boys)",
     "cleanSection": "ABU AYYUB AL-ANSARI",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -10876,7 +11348,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdulwahab",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU AYYUB AL-ANSARI"
   },
   {
     "date": "2026-09-02",
@@ -10891,7 +11364,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "THABIT IBN QAYS (Boys)",
     "cleanSection": "THABIT IBN QAYS",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -10899,7 +11372,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jerlyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "THABIT IBN QAYS"
   },
   {
     "date": "2026-09-02",
@@ -10914,7 +11388,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "THABIT IBN QAYS (Boys)",
     "cleanSection": "THABIT IBN QAYS",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -10922,7 +11396,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jerlyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "THABIT IBN QAYS"
   },
   {
     "date": "2026-09-02",
@@ -10937,7 +11412,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "THABIT IBN QAYS (Boys)",
     "cleanSection": "THABIT IBN QAYS",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -10945,7 +11420,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Marham",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "THABIT IBN QAYS"
   },
   {
     "date": "2026-09-03",
@@ -10960,7 +11436,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "THABIT IBN QAYS (Boys)",
     "cleanSection": "THABIT IBN QAYS",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -10968,7 +11444,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Normylah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "THABIT IBN QAYS"
   },
   {
     "date": "2026-09-06",
@@ -10983,7 +11460,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "THABIT IBN QAYS (Boys)",
     "cleanSection": "THABIT IBN QAYS",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Makabansa",
@@ -10991,7 +11468,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zara",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "THABIT IBN QAYS"
   },
   {
     "date": "2026-09-03",
@@ -11006,7 +11484,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "THABIT IBN QAYS (Boys)",
     "cleanSection": "THABIT IBN QAYS",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -11014,7 +11492,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "THABIT IBN QAYS"
   },
   {
     "date": "2026-09-07",
@@ -11029,7 +11508,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "THABIT IBN QAYS (Boys)",
     "cleanSection": "THABIT IBN QAYS",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -11037,7 +11516,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "THABIT IBN QAYS"
   },
   {
     "date": "2026-09-06",
@@ -11052,7 +11532,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "THABIT IBN QAYS (Boys)",
     "cleanSection": "THABIT IBN QAYS",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -11060,7 +11540,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "THABIT IBN QAYS"
   },
   {
     "date": "2026-09-07",
@@ -11075,7 +11556,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "THABIT IBN QAYS (Boys)",
     "cleanSection": "THABIT IBN QAYS",
-    "gender": "Boys",
+    "gender": "BOYS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -11083,7 +11564,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Faidh",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "THABIT IBN QAYS"
   },
   {
     "date": "2026-09-07",
@@ -11098,7 +11580,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HASSAN IBN THABIT (Mix)",
     "cleanSection": "HASSAN IBN THABIT",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -11106,7 +11588,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zuhora",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HASSAN IBN THABIT"
   },
   {
     "date": "2026-09-03",
@@ -11121,7 +11604,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HASSAN IBN THABIT (Mix)",
     "cleanSection": "HASSAN IBN THABIT",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -11129,7 +11612,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HASSAN IBN THABIT"
   },
   {
     "date": "2026-09-07",
@@ -11144,7 +11628,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HASSAN IBN THABIT (Mix)",
     "cleanSection": "HASSAN IBN THABIT",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -11152,7 +11636,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HASSAN IBN THABIT"
   },
   {
     "date": "2026-09-02",
@@ -11167,7 +11652,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HASSAN IBN THABIT (Mix)",
     "cleanSection": "HASSAN IBN THABIT",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -11175,7 +11660,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HASSAN IBN THABIT"
   },
   {
     "date": "2026-09-02",
@@ -11190,7 +11676,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HASSAN IBN THABIT (Mix)",
     "cleanSection": "HASSAN IBN THABIT",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -11198,7 +11684,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HASSAN IBN THABIT"
   },
   {
     "date": "2026-09-06",
@@ -11213,7 +11700,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HASSAN IBN THABIT (Mix)",
     "cleanSection": "HASSAN IBN THABIT",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "MAPEH",
@@ -11221,7 +11708,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Halnaisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HASSAN IBN THABIT"
   },
   {
     "date": "2026-09-07",
@@ -11236,7 +11724,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HASSAN IBN THABIT (Mix)",
     "cleanSection": "HASSAN IBN THABIT",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "AP",
@@ -11244,7 +11732,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HASSAN IBN THABIT"
   },
   {
     "date": "2026-09-03",
@@ -11259,7 +11748,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HASSAN IBN THABIT (Mix)",
     "cleanSection": "HASSAN IBN THABIT",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "TLE",
@@ -11267,7 +11756,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jenny",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HASSAN IBN THABIT"
   },
   {
     "date": "2026-09-02",
@@ -11282,7 +11772,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HASSAN IBN THABIT (Mix)",
     "cleanSection": "HASSAN IBN THABIT",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -11290,7 +11780,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Abdiraheem",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HASSAN IBN THABIT"
   },
   {
     "date": "2026-09-06",
@@ -11305,7 +11796,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HASSAN IBN THABIT (Mix)",
     "cleanSection": "HASSAN IBN THABIT",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -11313,7 +11804,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HASSAN IBN THABIT"
   },
   {
     "date": "2026-09-06",
@@ -11328,7 +11820,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "HASSAN IBN THABIT (Mix)",
     "cleanSection": "HASSAN IBN THABIT",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -11336,7 +11828,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Faidh",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "HASSAN IBN THABIT"
   },
   {
     "date": "2026-09-07",
@@ -11351,7 +11844,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "JA'FAR IBN ABI TALIB (Mix)",
     "cleanSection": "JA'FAR IBN ABI TALIB",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "MAPEH",
@@ -11359,7 +11852,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Saimonah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "JA'FAR IBN ABI TALIB"
   },
   {
     "date": "2026-09-06",
@@ -11374,7 +11868,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "JA'FAR IBN ABI TALIB (Mix)",
     "cleanSection": "JA'FAR IBN ABI TALIB",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -11382,7 +11876,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jenny",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "JA'FAR IBN ABI TALIB"
   },
   {
     "date": "2026-09-07",
@@ -11397,7 +11892,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "JA'FAR IBN ABI TALIB (Mix)",
     "cleanSection": "JA'FAR IBN ABI TALIB",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -11405,7 +11900,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Saimonah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "JA'FAR IBN ABI TALIB"
   },
   {
     "date": "2026-09-07",
@@ -11420,7 +11916,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "JA'FAR IBN ABI TALIB (Mix)",
     "cleanSection": "JA'FAR IBN ABI TALIB",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "AP",
@@ -11428,7 +11924,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Saimonah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "JA'FAR IBN ABI TALIB"
   },
   {
     "date": "2026-09-03",
@@ -11443,7 +11940,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "JA'FAR IBN ABI TALIB (Mix)",
     "cleanSection": "JA'FAR IBN ABI TALIB",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -11451,7 +11948,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jessa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "JA'FAR IBN ABI TALIB"
   },
   {
     "date": "2026-09-02",
@@ -11466,7 +11964,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "JA'FAR IBN ABI TALIB (Mix)",
     "cleanSection": "JA'FAR IBN ABI TALIB",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -11474,7 +11972,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "JA'FAR IBN ABI TALIB"
   },
   {
     "date": "2026-09-06",
@@ -11489,7 +11988,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "JA'FAR IBN ABI TALIB (Mix)",
     "cleanSection": "JA'FAR IBN ABI TALIB",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "TLE",
@@ -11497,7 +11996,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jenny",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "JA'FAR IBN ABI TALIB"
   },
   {
     "date": "2026-09-03",
@@ -11512,7 +12012,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "JA'FAR IBN ABI TALIB (Mix)",
     "cleanSection": "JA'FAR IBN ABI TALIB",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -11520,7 +12020,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "JA'FAR IBN ABI TALIB"
   },
   {
     "date": "2026-09-02",
@@ -11535,7 +12036,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "JA'FAR IBN ABI TALIB (Mix)",
     "cleanSection": "JA'FAR IBN ABI TALIB",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -11543,7 +12044,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "JA'FAR IBN ABI TALIB"
   },
   {
     "date": "2026-09-03",
@@ -11558,7 +12060,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "JA'FAR IBN ABI TALIB (Mix)",
     "cleanSection": "JA'FAR IBN ABI TALIB",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -11566,7 +12068,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Faidh",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "JA'FAR IBN ABI TALIB"
   },
   {
     "date": "2026-09-02",
@@ -11581,7 +12084,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "JA'FAR IBN ABI TALIB (Mix)",
     "cleanSection": "JA'FAR IBN ABI TALIB",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -11589,7 +12092,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ersahad",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "JA'FAR IBN ABI TALIB"
   },
   {
     "date": "2026-09-06",
@@ -11604,7 +12108,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "KHALEED IBN WALEED",
     "cleanSection": "KHALEED IBN WALEED",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -11612,7 +12116,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Katrina",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHALEED IBN WALEED"
   },
   {
     "date": "2026-09-06",
@@ -11627,7 +12132,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "KHALEED IBN WALEED",
     "cleanSection": "KHALEED IBN WALEED",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "TLE",
@@ -11635,7 +12140,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHALEED IBN WALEED"
   },
   {
     "date": "2026-09-07",
@@ -11650,7 +12156,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "KHALEED IBN WALEED",
     "cleanSection": "KHALEED IBN WALEED",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -11658,7 +12164,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jessa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHALEED IBN WALEED"
   },
   {
     "date": "2026-09-03",
@@ -11673,7 +12180,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "KHALEED IBN WALEED",
     "cleanSection": "KHALEED IBN WALEED",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -11681,7 +12188,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Fhairudz",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHALEED IBN WALEED"
   },
   {
     "date": "2026-09-03",
@@ -11696,7 +12204,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "KHALEED IBN WALEED",
     "cleanSection": "KHALEED IBN WALEED",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "MAPEH",
@@ -11704,7 +12212,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zara",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHALEED IBN WALEED"
   },
   {
     "date": "2026-09-02",
@@ -11719,7 +12228,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "KHALEED IBN WALEED",
     "cleanSection": "KHALEED IBN WALEED",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -11727,7 +12236,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Normylah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHALEED IBN WALEED"
   },
   {
     "date": "2026-09-02",
@@ -11742,7 +12252,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "KHALEED IBN WALEED",
     "cleanSection": "KHALEED IBN WALEED",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "AP",
@@ -11750,7 +12260,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Normylah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHALEED IBN WALEED"
   },
   {
     "date": "2026-09-02",
@@ -11765,7 +12276,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "KHALEED IBN WALEED",
     "cleanSection": "KHALEED IBN WALEED",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -11773,7 +12284,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHALEED IBN WALEED"
   },
   {
     "date": "2026-09-07",
@@ -11788,7 +12300,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "KHALEED IBN WALEED",
     "cleanSection": "KHALEED IBN WALEED",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -11796,7 +12308,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Abdiraheem",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHALEED IBN WALEED"
   },
   {
     "date": "2026-09-03",
@@ -11811,7 +12324,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "KHALEED IBN WALEED",
     "cleanSection": "KHALEED IBN WALEED",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -11819,7 +12332,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHALEED IBN WALEED"
   },
   {
     "date": "2026-09-07",
@@ -11834,7 +12348,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "KHALEED IBN WALEED",
     "cleanSection": "KHALEED IBN WALEED",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -11842,7 +12356,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "KHALEED IBN WALEED"
   },
   {
     "date": "2026-09-06",
@@ -11857,7 +12372,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AL HARITH BIN AWF",
     "cleanSection": "AL HARITH BIN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "MAPEH",
@@ -11865,7 +12380,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Saimonah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AL HARITH BIN AWF"
   },
   {
     "date": "2026-09-07",
@@ -11880,7 +12396,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AL HARITH BIN AWF",
     "cleanSection": "AL HARITH BIN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -11888,7 +12404,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jenny",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AL HARITH BIN AWF"
   },
   {
     "date": "2026-09-06",
@@ -11903,7 +12420,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AL HARITH BIN AWF",
     "cleanSection": "AL HARITH BIN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -11911,7 +12428,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Hannah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AL HARITH BIN AWF"
   },
   {
     "date": "2026-09-03",
@@ -11926,7 +12444,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AL HARITH BIN AWF",
     "cleanSection": "AL HARITH BIN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "AP",
@@ -11934,7 +12452,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Saimonah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AL HARITH BIN AWF"
   },
   {
     "date": "2026-09-02",
@@ -11949,7 +12468,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AL HARITH BIN AWF",
     "cleanSection": "AL HARITH BIN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -11957,7 +12476,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jessa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AL HARITH BIN AWF"
   },
   {
     "date": "2026-09-07",
@@ -11972,7 +12492,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AL HARITH BIN AWF",
     "cleanSection": "AL HARITH BIN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -11980,7 +12500,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AL HARITH BIN AWF"
   },
   {
     "date": "2026-09-03",
@@ -11995,7 +12516,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AL HARITH BIN AWF",
     "cleanSection": "AL HARITH BIN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "TLE",
@@ -12003,7 +12524,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AL HARITH BIN AWF"
   },
   {
     "date": "2026-09-07",
@@ -12018,7 +12540,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AL HARITH BIN AWF",
     "cleanSection": "AL HARITH BIN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -12026,7 +12548,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AL HARITH BIN AWF"
   },
   {
     "date": "2026-09-02",
@@ -12041,7 +12564,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AL HARITH BIN AWF",
     "cleanSection": "AL HARITH BIN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -12049,7 +12572,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AL HARITH BIN AWF"
   },
   {
     "date": "2026-09-06",
@@ -12064,7 +12588,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AL HARITH BIN AWF",
     "cleanSection": "AL HARITH BIN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -12072,7 +12596,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ersahad",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AL HARITH BIN AWF"
   },
   {
     "date": "2026-09-03",
@@ -12087,7 +12612,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 5",
     "section": "AL HARITH BIN AWF",
     "cleanSection": "AL HARITH BIN AWF",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -12095,7 +12620,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Faidh",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AL HARITH BIN AWF"
   },
   {
     "date": "2026-09-07",
@@ -12110,7 +12636,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "DIHYA IBN KHALIFAH (Girls)",
     "cleanSection": "DIHYA IBN KHALIFAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -12118,7 +12644,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Katrina",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "DIHYA IBN KHALIFAH"
   },
   {
     "date": "2026-09-07",
@@ -12133,7 +12660,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "DIHYA IBN KHALIFAH (Girls)",
     "cleanSection": "DIHYA IBN KHALIFAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "TLE",
@@ -12141,7 +12668,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "DIHYA IBN KHALIFAH"
   },
   {
     "date": "2026-09-07",
@@ -12156,7 +12684,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "DIHYA IBN KHALIFAH (Girls)",
     "cleanSection": "DIHYA IBN KHALIFAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -12164,7 +12692,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jessa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "DIHYA IBN KHALIFAH"
   },
   {
     "date": "2026-09-02",
@@ -12179,7 +12708,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "DIHYA IBN KHALIFAH (Girls)",
     "cleanSection": "DIHYA IBN KHALIFAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -12187,7 +12716,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Fhairudz",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "DIHYA IBN KHALIFAH"
   },
   {
     "date": "2026-09-06",
@@ -12202,7 +12732,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "DIHYA IBN KHALIFAH (Girls)",
     "cleanSection": "DIHYA IBN KHALIFAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "MAPEH",
@@ -12210,7 +12740,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zara",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "DIHYA IBN KHALIFAH"
   },
   {
     "date": "2026-09-03",
@@ -12225,7 +12756,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "DIHYA IBN KHALIFAH (Girls)",
     "cleanSection": "DIHYA IBN KHALIFAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -12233,7 +12764,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Normylah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "DIHYA IBN KHALIFAH"
   },
   {
     "date": "2026-09-03",
@@ -12248,7 +12780,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "DIHYA IBN KHALIFAH (Girls)",
     "cleanSection": "DIHYA IBN KHALIFAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "AP",
@@ -12256,7 +12788,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Normylah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "DIHYA IBN KHALIFAH"
   },
   {
     "date": "2026-09-06",
@@ -12271,7 +12804,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "DIHYA IBN KHALIFAH (Girls)",
     "cleanSection": "DIHYA IBN KHALIFAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -12279,7 +12812,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "DIHYA IBN KHALIFAH"
   },
   {
     "date": "2026-09-03",
@@ -12294,7 +12828,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "DIHYA IBN KHALIFAH (Girls)",
     "cleanSection": "DIHYA IBN KHALIFAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -12302,7 +12836,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Abdiraheem",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "DIHYA IBN KHALIFAH"
   },
   {
     "date": "2026-09-02",
@@ -12317,7 +12852,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "DIHYA IBN KHALIFAH (Girls)",
     "cleanSection": "DIHYA IBN KHALIFAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -12325,7 +12860,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "DIHYA IBN KHALIFAH"
   },
   {
     "date": "2026-09-02",
@@ -12340,7 +12876,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 6",
     "section": "DIHYA IBN KHALIFAH (Girls)",
     "cleanSection": "DIHYA IBN KHALIFAH",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -12348,7 +12884,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Jaisam",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "DIHYA IBN KHALIFAH"
   },
   {
     "date": "2026-09-06",
@@ -12363,7 +12900,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU JANDAL IBN SUHAYL (Girls)",
     "cleanSection": "ABU JANDAL IBN SUHAYL",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "TLE",
@@ -12371,7 +12908,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Angeleni",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU JANDAL IBN SUHAYL"
   },
   {
     "date": "2026-09-07",
@@ -12386,7 +12924,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU JANDAL IBN SUHAYL (Girls)",
     "cleanSection": "ABU JANDAL IBN SUHAYL",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "MAPEH",
@@ -12394,7 +12932,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Sir Mohaymen",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU JANDAL IBN SUHAYL"
   },
   {
     "date": "2026-09-02",
@@ -12409,7 +12948,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU JANDAL IBN SUHAYL (Girls)",
     "cleanSection": "ABU JANDAL IBN SUHAYL",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Social Science",
@@ -12417,7 +12956,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sophia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU JANDAL IBN SUHAYL"
   },
   {
     "date": "2026-09-06",
@@ -12432,7 +12972,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU JANDAL IBN SUHAYL (Girls)",
     "cleanSection": "ABU JANDAL IBN SUHAYL",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -12440,7 +12980,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jhelyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU JANDAL IBN SUHAYL"
   },
   {
     "date": "2026-09-03",
@@ -12455,7 +12996,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU JANDAL IBN SUHAYL (Girls)",
     "cleanSection": "ABU JANDAL IBN SUHAYL",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -12463,7 +13004,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nadzra",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU JANDAL IBN SUHAYL"
   },
   {
     "date": "2026-09-06",
@@ -12478,7 +13020,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU JANDAL IBN SUHAYL (Girls)",
     "cleanSection": "ABU JANDAL IBN SUHAYL",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -12486,7 +13028,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhaima",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU JANDAL IBN SUHAYL"
   },
   {
     "date": "2026-09-02",
@@ -12501,7 +13044,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU JANDAL IBN SUHAYL (Girls)",
     "cleanSection": "ABU JANDAL IBN SUHAYL",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "ESP",
@@ -12509,7 +13052,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Nof",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU JANDAL IBN SUHAYL"
   },
   {
     "date": "2026-09-02",
@@ -12524,7 +13068,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU JANDAL IBN SUHAYL (Girls)",
     "cleanSection": "ABU JANDAL IBN SUHAYL",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -12532,7 +13076,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Rowena",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU JANDAL IBN SUHAYL"
   },
   {
     "date": "2026-09-07",
@@ -12547,7 +13092,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU JANDAL IBN SUHAYL (Girls)",
     "cleanSection": "ABU JANDAL IBN SUHAYL",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -12555,7 +13100,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Samsuddin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU JANDAL IBN SUHAYL"
   },
   {
     "date": "2026-09-07",
@@ -12570,7 +13116,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU JANDAL IBN SUHAYL (Girls)",
     "cleanSection": "ABU JANDAL IBN SUHAYL",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -12578,7 +13124,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU JANDAL IBN SUHAYL"
   },
   {
     "date": "2026-09-03",
@@ -12593,7 +13140,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 9",
     "section": "ABU JANDAL IBN SUHAYL (Girls)",
     "cleanSection": "ABU JANDAL IBN SUHAYL",
-    "gender": "Girls",
+    "gender": "GIRLS",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -12601,7 +13148,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdulwahab",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABU JANDAL IBN SUHAYL"
   },
   {
     "date": "2026-09-07",
@@ -12616,7 +13164,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AS'AD IBN ZURARAH (Mix)",
     "cleanSection": "AS'AD IBN ZURARAH",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -12624,7 +13172,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jerlyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AS'AD IBN ZURARAH"
   },
   {
     "date": "2026-09-07",
@@ -12639,7 +13188,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AS'AD IBN ZURARAH (Mix)",
     "cleanSection": "AS'AD IBN ZURARAH",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -12647,7 +13196,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Jerlyn",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AS'AD IBN ZURARAH"
   },
   {
     "date": "2026-09-06",
@@ -12662,7 +13212,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AS'AD IBN ZURARAH (Mix)",
     "cleanSection": "AS'AD IBN ZURARAH",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -12670,7 +13220,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Marham",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AS'AD IBN ZURARAH"
   },
   {
     "date": "2026-09-06",
@@ -12685,7 +13236,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AS'AD IBN ZURARAH (Mix)",
     "cleanSection": "AS'AD IBN ZURARAH",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -12693,7 +13244,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Normylah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AS'AD IBN ZURARAH"
   },
   {
     "date": "2026-09-02",
@@ -12708,7 +13260,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AS'AD IBN ZURARAH (Mix)",
     "cleanSection": "AS'AD IBN ZURARAH",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Makabansa",
@@ -12716,7 +13268,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zara",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AS'AD IBN ZURARAH"
   },
   {
     "date": "2026-09-03",
@@ -12731,7 +13284,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AS'AD IBN ZURARAH (Mix)",
     "cleanSection": "AS'AD IBN ZURARAH",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -12739,7 +13292,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AS'AD IBN ZURARAH"
   },
   {
     "date": "2026-09-02",
@@ -12754,7 +13308,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AS'AD IBN ZURARAH (Mix)",
     "cleanSection": "AS'AD IBN ZURARAH",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -12762,7 +13316,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AS'AD IBN ZURARAH"
   },
   {
     "date": "2026-09-03",
@@ -12777,7 +13332,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AS'AD IBN ZURARAH (Mix)",
     "cleanSection": "AS'AD IBN ZURARAH",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -12785,7 +13340,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AS'AD IBN ZURARAH"
   },
   {
     "date": "2026-09-03",
@@ -12800,7 +13356,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 3",
     "section": "AS'AD IBN ZURARAH (Mix)",
     "cleanSection": "AS'AD IBN ZURARAH",
-    "gender": "Mix",
+    "gender": "MIXED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -12808,7 +13364,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ersahad",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AS'AD IBN ZURARAH"
   },
   {
     "date": "2026-09-07",
@@ -12823,7 +13380,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "SAEED IBN ZAYD",
     "cleanSection": "SAEED IBN ZAYD",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -12831,7 +13388,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sitti Kauzar",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SAEED IBN ZAYD"
   },
   {
     "date": "2026-09-06",
@@ -12846,7 +13404,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "SAEED IBN ZAYD",
     "cleanSection": "SAEED IBN ZAYD",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -12854,7 +13412,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zuhora",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SAEED IBN ZAYD"
   },
   {
     "date": "2026-09-07",
@@ -12869,7 +13428,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "SAEED IBN ZAYD",
     "cleanSection": "SAEED IBN ZAYD",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -12877,7 +13436,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Marham",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SAEED IBN ZAYD"
   },
   {
     "date": "2026-09-03",
@@ -12892,7 +13452,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "SAEED IBN ZAYD",
     "cleanSection": "SAEED IBN ZAYD",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Makabansa",
@@ -12900,7 +13460,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SAEED IBN ZAYD"
   },
   {
     "date": "2026-09-02",
@@ -12915,7 +13476,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "SAEED IBN ZAYD",
     "cleanSection": "SAEED IBN ZAYD",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -12923,7 +13484,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SAEED IBN ZAYD"
   },
   {
     "date": "2026-09-06",
@@ -12938,7 +13500,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "SAEED IBN ZAYD",
     "cleanSection": "SAEED IBN ZAYD",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -12946,7 +13508,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SAEED IBN ZAYD"
   },
   {
     "date": "2026-09-02",
@@ -12961,7 +13524,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "SAEED IBN ZAYD",
     "cleanSection": "SAEED IBN ZAYD",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -12969,7 +13532,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SAEED IBN ZAYD"
   },
   {
     "date": "2026-09-03",
@@ -12984,7 +13548,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "SAEED IBN ZAYD",
     "cleanSection": "SAEED IBN ZAYD",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -12992,7 +13556,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdul Karim",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SAEED IBN ZAYD"
   },
   {
     "date": "2026-09-03",
@@ -13007,7 +13572,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Reading and Literacy",
@@ -13015,7 +13580,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Katrina",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-06",
@@ -13030,7 +13596,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Makabansa",
@@ -13038,7 +13604,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhydie",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-07",
@@ -13053,7 +13620,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Language",
@@ -13061,7 +13628,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-07",
@@ -13076,7 +13644,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -13084,7 +13652,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-03",
@@ -13099,7 +13668,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -13107,7 +13676,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Joanna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-06",
@@ -13122,7 +13692,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -13130,7 +13700,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-02",
@@ -13145,7 +13716,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -13153,7 +13724,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-02",
@@ -13168,7 +13740,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 1",
     "section": "SUHAYB AR-RUMI",
     "cleanSection": "SUHAYB AR-RUMI",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -13176,7 +13748,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdul Karim",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "SUHAYB AR-RUMI"
   },
   {
     "date": "2026-09-06",
@@ -13191,7 +13764,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "ABDULLAH IBN MAS'UD",
     "cleanSection": "ABDULLAH IBN MAS'UD",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Circle Time 1",
@@ -13199,7 +13772,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Joanna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN MAS'UD"
   },
   {
     "date": "2026-09-07",
@@ -13214,7 +13788,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "ABDULLAH IBN MAS'UD",
     "cleanSection": "ABDULLAH IBN MAS'UD",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Circle Time 2",
@@ -13222,7 +13796,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Ayah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN MAS'UD"
   },
   {
     "date": "2026-09-02",
@@ -13237,7 +13812,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "ABDULLAH IBN MAS'UD",
     "cleanSection": "ABDULLAH IBN MAS'UD",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -13245,7 +13820,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Silfah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN MAS'UD"
   },
   {
     "date": "2026-09-02",
@@ -13260,7 +13836,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "ABDULLAH IBN MAS'UD",
     "cleanSection": "ABDULLAH IBN MAS'UD",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -13268,7 +13844,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN MAS'UD"
   },
   {
     "date": "2026-09-03",
@@ -13283,7 +13860,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Kinder 2",
     "section": "ABDULLAH IBN MAS'UD",
     "cleanSection": "ABDULLAH IBN MAS'UD",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Hadith",
@@ -13291,7 +13868,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "ABDULLAH IBN MAS'UD"
   },
   {
     "date": "2026-09-07",
@@ -13306,7 +13884,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AASIM IBN THABIT",
     "cleanSection": "AASIM IBN THABIT",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -13314,7 +13892,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sitti Kauzar",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AASIM IBN THABIT"
   },
   {
     "date": "2026-09-06",
@@ -13329,7 +13908,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AASIM IBN THABIT",
     "cleanSection": "AASIM IBN THABIT",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -13337,7 +13916,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sitti Kauzar",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AASIM IBN THABIT"
   },
   {
     "date": "2026-09-03",
@@ -13352,7 +13932,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AASIM IBN THABIT",
     "cleanSection": "AASIM IBN THABIT",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -13360,7 +13940,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Marham",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AASIM IBN THABIT"
   },
   {
     "date": "2026-09-06",
@@ -13375,7 +13956,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AASIM IBN THABIT",
     "cleanSection": "AASIM IBN THABIT",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Makabansa",
@@ -13383,7 +13964,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AASIM IBN THABIT"
   },
   {
     "date": "2026-09-03",
@@ -13398,7 +13980,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AASIM IBN THABIT",
     "cleanSection": "AASIM IBN THABIT",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -13406,7 +13988,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadha Saliha",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AASIM IBN THABIT"
   },
   {
     "date": "2026-09-02",
@@ -13421,7 +14004,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AASIM IBN THABIT",
     "cleanSection": "AASIM IBN THABIT",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -13429,7 +14012,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Hainur",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AASIM IBN THABIT"
   },
   {
     "date": "2026-09-07",
@@ -13444,7 +14028,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AASIM IBN THABIT",
     "cleanSection": "AASIM IBN THABIT",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -13452,7 +14036,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Obaydah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AASIM IBN THABIT"
   },
   {
     "date": "2026-09-02",
@@ -13467,7 +14052,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 2",
     "section": "AASIM IBN THABIT",
     "cleanSection": "AASIM IBN THABIT",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -13475,7 +14060,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Alim Abdul Karim",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "AASIM IBN THABIT"
   },
   {
     "date": "2026-09-07",
@@ -13490,7 +14076,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "IKRIMAH IBN ABI JAHL",
     "cleanSection": "IKRIMAH IBN ABI JAHL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Filipino",
@@ -13498,7 +14084,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Norhydie",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "IKRIMAH IBN ABI JAHL"
   },
   {
     "date": "2026-09-07",
@@ -13513,7 +14100,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "IKRIMAH IBN ABI JAHL",
     "cleanSection": "IKRIMAH IBN ABI JAHL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "GMRC",
@@ -13521,7 +14108,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Sahdia",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "IKRIMAH IBN ABI JAHL"
   },
   {
     "date": "2026-09-03",
@@ -13536,7 +14124,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "IKRIMAH IBN ABI JAHL",
     "cleanSection": "IKRIMAH IBN ABI JAHL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Math",
@@ -13544,7 +14132,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Saimonah",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "IKRIMAH IBN ABI JAHL"
   },
   {
     "date": "2026-09-06",
@@ -13559,7 +14148,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "IKRIMAH IBN ABI JAHL",
     "cleanSection": "IKRIMAH IBN ABI JAHL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "English",
@@ -13567,7 +14156,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Arvin",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "IKRIMAH IBN ABI JAHL"
   },
   {
     "date": "2026-09-06",
@@ -13582,7 +14172,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "IKRIMAH IBN ABI JAHL",
     "cleanSection": "IKRIMAH IBN ABI JAHL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Science",
@@ -13590,7 +14180,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Anna",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "IKRIMAH IBN ABI JAHL"
   },
   {
     "date": "2026-09-02",
@@ -13605,7 +14196,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "IKRIMAH IBN ABI JAHL",
     "cleanSection": "IKRIMAH IBN ABI JAHL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "MAPEH",
@@ -13613,7 +14204,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Zuhora",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "IKRIMAH IBN ABI JAHL"
   },
   {
     "date": "2026-09-07",
@@ -13628,7 +14220,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "IKRIMAH IBN ABI JAHL",
     "cleanSection": "IKRIMAH IBN ABI JAHL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "AP",
@@ -13636,7 +14228,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "IKRIMAH IBN ABI JAHL"
   },
   {
     "date": "2026-09-02",
@@ -13651,7 +14244,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "IKRIMAH IBN ABI JAHL",
     "cleanSection": "IKRIMAH IBN ABI JAHL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "TLE",
@@ -13659,7 +14252,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Teacher Monisa",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "IKRIMAH IBN ABI JAHL"
   },
   {
     "date": "2026-09-03",
@@ -13674,7 +14268,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "IKRIMAH IBN ABI JAHL",
     "cleanSection": "IKRIMAH IBN ABI JAHL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "SHAF",
@@ -13682,7 +14276,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Abdiraheem",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "IKRIMAH IBN ABI JAHL"
   },
   {
     "date": "2026-09-06",
@@ -13697,7 +14292,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "IKRIMAH IBN ABI JAHL",
     "cleanSection": "IKRIMAH IBN ABI JAHL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Arabic",
@@ -13705,7 +14300,8 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Ali",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "IKRIMAH IBN ABI JAHL"
   },
   {
     "date": "2026-09-02",
@@ -13720,7 +14316,7 @@ window.AMIS_EXAM_DATA = [
     "grade": "Grade 4",
     "section": "IKRIMAH IBN ABI JAHL",
     "cleanSection": "IKRIMAH IBN ABI JAHL",
-    "gender": "",
+    "gender": "NOT ENCODED",
     "modality": "ODL",
     "shift": "2nd Shift",
     "subject": "Qur'an",
@@ -13728,6 +14324,7 @@ window.AMIS_EXAM_DATA = [
     "room": "",
     "proctor": "Ustadh Faidh",
     "notes": "Term Examination",
-    "status": "CONFIRMED"
+    "status": "CONFIRMED",
+    "section_name": "IKRIMAH IBN ABI JAHL"
   }
 ];

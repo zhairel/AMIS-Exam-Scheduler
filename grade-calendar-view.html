@@ -1203,13 +1203,19 @@ body.no-navbar {
                                     <div class="cal-event-top-row">
                                       <span class="cal-event-sub">${esc(ex.subject || 'No Subject')}</span>
                                     </div>
-                                    <div class="cal-event-sec">
-                                      <span>${esc(cleanSectionName(ex.section))}</span>
+                                    <div class="card-grade-gender-row" style="display:flex; justify-content:space-between; align-items:center; margin-top:4px; padding-bottom:3px; border-bottom:1px solid #e2e8f0;">
+                                      <span class="cal-grade-title" style="font-size:13.5px; color:#1e293b;">${esc(ex.grade)}</span>
                                       ${getGenderPillHtml(ex)}
+                                    </div>
+                                    <div class="cal-event-sec" style="margin-top:4px;">
+                                      <span class="cal-sec-name">${esc(cleanSectionName(ex.section_name || ex.section))}</span>
                                     </div>
                                     <div class="cal-event-tchr">
                                       <span>${esc(ex.teacher || 'To Confirm')}</span>
                                       ${ex.room ? `<span class="pill-sm">Rm ${esc(ex.room)}</span>` : ''}
+                                    </div>
+                                    <div style="margin-top:4px; font-size:11px; font-weight:800; color:#64748b; text-transform:uppercase;">
+                                      <span>${ex.modality === 'F2F' ? 'F2F Classroom' : (ex.shift.includes('2nd') ? 'ODL 2nd Shift' : 'ODL 1st Shift')}</span>
                                     </div>
                                   </div>
                                 `;
