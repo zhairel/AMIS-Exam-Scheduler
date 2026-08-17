@@ -142,31 +142,23 @@ for sec in sections:
                 duration = 60
 
             # User Corrections: Exact Teacher Assignments
-            # 1. Kindergarten 2 — Khabaab: Arabic → Ustadh Faidh
             if 'KHABAAB' in sname.upper() and ('Arabic' in subj or 'ARABIC' in subj.upper()):
                 tchr = "Ustadh Faidh"
-                tid = "ustadh_faidh"
-
-            # 2. Grade 3 — As'ad: GMRC → Ustadha Saliha, Arabic → Ustadh Faidh
             if ('AS\'AD' in sname.upper() or 'ASAD' in sname.upper()) and ('GMRC' in subj or 'Values' in subj):
                 tchr = "Ustadha Saliha"
-                tid = "ustadha_saliha"
             if ('AS\'AD' in sname.upper() or 'ASAD' in sname.upper()) and ('Arabic' in subj or 'ARABIC' in subj.upper()):
                 tchr = "Ustadh Faidh"
-                tid = "ustadh_faidh"
-
-            # 3. Grade 6 — Dihya: Math → Teacher Saimona, SHAF → Ustadh Faidh
             if 'DIHYA' in sname.upper() and ('Math' in subj or 'Mathematics' in subj):
-                tchr = "Teacher Saimona"
-                tid = "tchr_saimona"
+                tchr = "Teacher Saimonah"
             if 'DIHYA' in sname.upper() and 'SHAF' in subj:
                 tchr = "Ustadh Faidh"
-                tid = "ustadh_faidh"
-
-            # 4. Grade 4 — Usayd: English → Teacher Jenny
             if 'USAYD' in sname.upper() and ('Eng' in subj or 'English' in subj):
                 tchr = "Teacher Jenny"
-                tid = "tchr_jenny"
+
+            t_can = resolve_teacher(tchr)
+            if t_can:
+                tid = t_can['id']
+                tchr = t_can['canonical_name']
                 
             exam_items.append({
                 'section_name': sname,
@@ -188,23 +180,33 @@ EXAM_DATES = [
     {"day_number": 4, "date_str": "Monday, September 7, 2026", "short_date": "Sep 7"}
 ]
 
-SHIFT_SLOTS = {
-    "F2F": [
-        {"slot": 1, "time": "08:00 AM – 09:00 AM", "math_time": "08:00 AM – 10:00 AM"},
-        {"slot": 2, "time": "09:00 AM – 10:00 AM", "math_time": "08:00 AM – 10:00 AM"},
-        {"slot": 3, "time": "10:25 AM – 11:25 AM", "math_time": "08:00 AM – 10:00 AM"}
-    ],
-    "ODL - 1ST SHIFT": [
-        {"slot": 1, "time": "12:40 PM – 01:40 PM", "k2_time": "01:30 PM – 02:15 PM", "math_time": "12:40 PM – 02:50 PM"},
-        {"slot": 2, "time": "01:50 PM – 02:50 PM", "k2_time": "02:20 PM – 03:05 PM", "math_time": "12:40 PM – 02:50 PM"},
-        {"slot": 3, "time": "03:10 PM – 04:10 PM", "k2_time": "03:10 PM – 03:40 PM", "math_time": "12:40 PM – 02:50 PM"}
-    ],
-    "ODL - 2ND SHIFT": [
-        {"slot": 1, "time": "03:10 PM – 04:10 PM", "math_time": "03:10 PM – 05:20 PM"},
-        {"slot": 2, "time": "04:20 PM – 05:20 PM", "math_time": "03:10 PM – 05:20 PM"},
-        {"slot": 3, "time": "05:30 PM – 06:30 PM", "math_time": "03:10 PM – 05:20 PM"}
-    ]
-}
+def get_slot_time_interval(shift, grade_level, duration_minutes, slot):
+    if shift == 'F2F':
+        if duration_minutes == 120:
+            return 8 * 60, 10 * 60, '08:00 AM – 10:00 AM'
+        if slot == 1: return 8 * 60, 9 * 60, '08:00 AM – 09:00 AM'
+        if slot == 2: return 9 * 60, 10 * 60, '09:00 AM – 10:00 AM'
+        if slot == 3: return 10 * 60 + 25, 11 * 60 + 25, '10:25 AM – 11:25 AM'
+    elif shift == 'ODL - 1ST SHIFT':
+        if grade_level == 'Kinder 2':
+            if slot == 1: return 13 * 60 + 30, 14 * 60 + 15, '01:30 PM – 02:15 PM'
+            if slot == 2: return 14 * 60 + 20, 15 * 60 + 5, '02:20 PM – 03:05 PM'
+            if slot == 3: return 15 * 60 + 10, 15 * 60 + 40, '03:10 PM – 03:40 PM'
+        if duration_minutes == 120:
+            return 12 * 60 + 40, 14 * 60 + 50, '12:40 PM – 02:50 PM'
+        if slot == 1: return 12 * 60 + 40, 13 * 60 + 40, '12:40 PM – 01:40 PM'
+        if slot == 2: return 13 * 60 + 50, 14 * 60 + 50, '01:50 PM – 02:50 PM'
+        if slot == 3: return 15 * 60 + 10, 16 * 60 + 10, '03:10 PM – 04:10 PM'
+    elif shift == 'ODL - 2ND SHIFT':
+        if duration_minutes == 120:
+            return 15 * 60 + 10, 17 * 60 + 20, '03:10 PM – 05:20 PM'
+        if slot == 1: return 15 * 60 + 10, 16 * 60 + 10, '03:10 PM – 04:10 PM'
+        if slot == 2: return 16 * 60 + 20, 17 * 60 + 20, '04:20 PM – 05:20 PM'
+        if slot == 3: return 17 * 60 + 30, 18 * 60 + 30, '05:30 PM – 06:30 PM'
+    return 8 * 60, 9 * 60, '08:00 AM – 09:00 AM'
+
+def slots_overlap(s1, e1, s2, e2):
+    return s1 < e2 and s2 < e1
 
 def solve_exam_schedule(option_name, seed=42):
     model = cp_model.CpModel()
@@ -221,6 +223,13 @@ def solve_exam_schedule(option_name, seed=42):
                 
     for i in range(num_sessions):
         model.Add(sum(x[i, d, s] for d in days for s in slots) == 1)
+
+    # HS Math MUST be in slot 1 (since slot 1 covers both slot 1 & slot 2)
+    for i, sess in enumerate(exam_items):
+        if sess['duration_minutes'] == 120:
+            for d in days:
+                model.Add(x[i, d, 2] == 0)
+                model.Add(x[i, d, 3] == 0)
         
     sec_to_sessions = defaultdict(list)
     for i, sess in enumerate(exam_items):
@@ -233,9 +242,15 @@ def solve_exam_schedule(option_name, seed=42):
         target_int = int(round(target_d))
 
         for d in days:
-            # At most 1 exam per slot
-            for s in slots:
-                model.Add(sum(x[i, d, s] for i in indices) <= 1)
+            # Prevent any time overlap for the same section
+            for i_idx, i in enumerate(indices):
+                for j in indices[i_idx + 1:]:
+                    for s1 in slots:
+                        for s2 in slots:
+                            t1_s, t1_e, _ = get_slot_time_interval(exam_items[i]['shift'], exam_items[i]['grade_level'], exam_items[i]['duration_minutes'], s1)
+                            t2_s, t2_e, _ = get_slot_time_interval(exam_items[j]['shift'], exam_items[j]['grade_level'], exam_items[j]['duration_minutes'], s2)
+                            if slots_overlap(t1_s, t1_e, t2_s, t2_e):
+                                model.Add(x[i, d, s1] + x[j, d, s2] <= 1)
             
             # Max 3 exams per day
             day_sum = sum(x[i, d, s] for i in indices for s in slots)
@@ -245,51 +260,44 @@ def solve_exam_schedule(option_name, seed=42):
             if k >= 4:
                 model.Add(day_sum >= 1)
 
-            # High School Math 2-hour continuous allocation rule
-            for i in indices:
-                if exam_items[i]['duration_minutes'] == 120:
-                    # If HS Math is in Slot 1, block Slot 2 for that section
-                    model.Add(x[i, d, 1] + sum(x[j, d, 2] for j in indices if j != i) <= 1)
-                    # HS Math should not be in Slot 3
-                    model.Add(x[i, d, 3] == 0)
-                    # If HS Math is in Slot 2, block Slot 3
-                    model.Add(x[i, d, 2] + sum(x[j, d, 3] for j in indices if j != i) <= 1)
-
             # Section daily balance penalty
             dev = model.NewIntVar(0, 3, f"sec_dev_{sname}_{d}")
             model.Add(dev >= day_sum - target_int)
             model.Add(dev >= target_int - day_sum)
             sec_dev_terms.append(dev)
 
-    shift_tchr_to_sessions = defaultdict(list)
-    for i, sess in enumerate(exam_items):
-        tid = sess['teacher_id']
-        if tid and tid != "unassigned":
-            shift_tchr_to_sessions[(sess['shift'], tid)].append(i)
-            
-    for (shift, tid), indices in shift_tchr_to_sessions.items():
-        for i_idx, i in enumerate(indices):
-            for j in indices[i_idx + 1:]:
-                s_i = exam_items[i]
-                s_j = exam_items[j]
-                dur_i = s_i['duration_minutes']
-                dur_j = s_j['duration_minutes']
-                if s_i['subject'] != s_j['subject'] or s_i['grade_level'] != s_j['grade_level'] or dur_i == 120 or dur_j == 120:
-                    for d in days:
-                        for s in slots:
-                            model.Add(x[i, d, s] + x[j, d, s] <= 1)
-                        if dur_i == 120:
-                            model.Add(x[i, d, 1] + x[j, d, 2] <= 1)
-                            model.Add(x[i, d, 2] + x[j, d, 3] <= 1)
-                        if dur_j == 120:
-                            model.Add(x[j, d, 1] + x[i, d, 2] <= 1)
-                            model.Add(x[j, d, 2] + x[i, d, 3] <= 1)
-
+    # Teacher conflict constraint: Real-time overlap prevention across all shifts
     tchr_to_sessions = defaultdict(list)
     for i, sess in enumerate(exam_items):
         tid = sess['teacher_id']
         if tid and tid != "unassigned":
             tchr_to_sessions[tid].append(i)
+
+    for tid, indices in tchr_to_sessions.items():
+        for i_idx, i in enumerate(indices):
+            for j in indices[i_idx + 1:]:
+                s_i = exam_items[i]
+                s_j = exam_items[j]
+                # If same shift, grade, and subject in ODL with normal duration, they may share the online slot together
+                is_same_merged_odl = (
+                    s_i['shift'] == s_j['shift'] and
+                    s_i['grade_level'] == s_j['grade_level'] and
+                    s_i['subject'] == s_j['subject'] and
+                    s_i['duration_minutes'] < 120 and
+                    s_j['duration_minutes'] < 120 and
+                    'ODL' in s_i['shift']
+                )
+                
+                for d in days:
+                    for s1 in slots:
+                        for s2 in slots:
+                            t1_s, t1_e, _ = get_slot_time_interval(s_i['shift'], s_i['grade_level'], s_i['duration_minutes'], s1)
+                            t2_s, t2_e, _ = get_slot_time_interval(s_j['shift'], s_j['grade_level'], s_j['duration_minutes'], s2)
+                            if slots_overlap(t1_s, t1_e, t2_s, t2_e):
+                                if is_same_merged_odl and s1 == s2:
+                                    pass
+                                else:
+                                    model.Add(x[i, d, s1] + x[j, d, s2] <= 1)
 
     tchr_dev_terms = []
     for tid, indices in tchr_to_sessions.items():
@@ -331,15 +339,8 @@ def solve_exam_schedule(option_name, seed=42):
                 for s in slots:
                     if solver.Value(x[i, d, s]) == 1:
                         date_meta = EXAM_DATES[d - 1]
-                        shift_info = SHIFT_SLOTS.get(sess['shift'], SHIFT_SLOTS["F2F"])
-                        slot_info = shift_info[s - 1]
+                        s_m, e_m, time_str = get_slot_time_interval(sess['shift'], sess['grade_level'], sess['duration_minutes'], s)
                         
-                        time_str = slot_info['time']
-                        if sess['duration_minutes'] == 120 and 'math_time' in slot_info:
-                            time_str = slot_info['math_time']
-                        elif 'Kinder 2' in sess['grade_level'] and sess['shift'] == 'ODL - 1ST SHIFT' and 'k2_time' in slot_info:
-                            time_str = slot_info['k2_time']
-                            
                         sec_name = sess['section_name']
                         gender = 'MIXED'
                         if 'GIRLS' in sec_name.upper(): gender = 'GIRLS'
