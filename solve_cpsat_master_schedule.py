@@ -17,8 +17,8 @@ with open("/home/tatsuya/Projects/AMIS/amis_exam_calendar/exam_data.json", "r", 
 EXAM_DAYS = [
     {"dayNo": 1, "date": "2026-09-02", "dayName": "Wednesday", "examDay": "Day 1"},
     {"dayNo": 2, "date": "2026-09-03", "dayName": "Thursday", "examDay": "Day 2"},
-    {"dayNo": 3, "date": "2026-09-09", "dayName": "Wednesday", "examDay": "Day 3"},
-    {"dayNo": 4, "date": "2026-09-10", "dayName": "Thursday", "examDay": "Day 4"}
+    {"dayNo": 3, "date": "2026-09-06", "dayName": "Sunday", "examDay": "Day 3"},
+    {"dayNo": 4, "date": "2026-09-07", "dayName": "Monday", "examDay": "Day 4"}
 ]
 
 def to_mins(t_str):

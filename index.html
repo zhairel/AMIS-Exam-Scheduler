@@ -993,7 +993,7 @@
     <div class="stat-pill">Total Exam Sessions: <strong id="statTotalExams">597</strong></div>
     <div class="stat-pill">Active Sections: <strong id="statTotalSections">63</strong></div>
     <div class="stat-pill">Assigned Faculty: <strong id="statTotalTeachers">55</strong></div>
-    <div class="stat-pill">Dates: <strong>Sep 2, 3, 9 & 10, 2026</strong></div>
+    <div class="stat-pill">Dates: <strong>Sep 2, 3, 6 & 7, 2026</strong></div>
     <div class="stat-pill" style="margin-left:auto;">
       <button class="btn btn-outline" style="padding:6px 14px; font-size:13px;" onclick="resetFilters()">Reset All Filters</button>
     </div>
@@ -1190,7 +1190,7 @@
     function renderPostersView(records) {
       const container = document.getElementById('mainContainer');
       const uniqueGrades = [...new Set(records.map(r => r.grade))].sort((a,b) => a.localeCompare(b, undefined, { numeric: true }));
-      const dates = ['2026-09-02', '2026-09-03', '2026-09-09', '2026-09-10'];
+      const dates = ['2026-09-02', '2026-09-03', '2026-09-06', '2026-09-07'];
 
       container.innerHTML = uniqueGrades.map(grade => {
         const gradeRecs = records.filter(r => r.grade === grade);
@@ -1239,8 +1239,8 @@
                   <th class="time-col">Exam Period</th>
                   <th><span class="date-header-title">Sep 2</span><span class="date-header-sub">Wednesday</span></th>
                   <th><span class="date-header-title">Sep 3</span><span class="date-header-sub">Thursday</span></th>
-                  <th><span class="date-header-title">Sep 9</span><span class="date-header-sub">Wednesday</span></th>
-                  <th><span class="date-header-title">Sep 10</span><span class="date-header-sub">Thursday</span></th>
+                  <th><span class="date-header-title">Sep 6</span><span class="date-header-sub">Sunday</span></th>
+                  <th><span class="date-header-title">Sep 7</span><span class="date-header-sub">Monday</span></th>
                 </tr>
               </thead>
               <tbody>
@@ -1309,8 +1309,8 @@
       const dates = [
         { date: '2026-09-02', title: 'Day 1 — September 2, 2026 (Wednesday)' },
         { date: '2026-09-03', title: 'Day 2 — September 3, 2026 (Thursday)' },
-        { date: '2026-09-09', title: 'Day 3 — September 9, 2026 (Wednesday)' },
-        { date: '2026-09-10', title: 'Day 4 — September 10, 2026 (Thursday)' }
+        { date: '2026-09-06', title: 'Day 3 — September 6, 2026 (Sunday)' },
+        { date: '2026-09-07', title: 'Day 4 — September 7, 2026 (Monday)' }
       ];
 
       container.innerHTML = dates.map(dayInfo => {
