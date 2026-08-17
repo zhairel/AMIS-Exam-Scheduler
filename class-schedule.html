@@ -12,8 +12,9 @@
 <!-- html2pdf.js CDN with offline fallback -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
-<!-- Embedded Master Section Class Data -->
+<!-- Embedded Master Section Class Data & Teacher Schedules -->
 <script src="class_schedules_data.js"></script>
+<script src="teacher_weekly_schedules.js"></script>
 
 <style>
 :root {
@@ -605,6 +606,17 @@ body {
   </div>
 
   <div class="toolbar-controls">
+    <!-- Staff / Faculty Selector -->
+    <div class="filter-group">
+      <span class="filter-label">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4A4 4 0 0 1 16 8A4 4 0 0 1 12 12A4 4 0 0 1 8 8A4 4 0 0 1 12 4M12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z"/></svg>
+        Staff / Faculty:
+      </span>
+      <select id="teacherSelect" class="filter-select" style="min-width:180px; max-width:260px;" aria-label="Select Staff / Faculty">
+        <option value="">All Staff / Faculty</option>
+      </select>
+    </div>
+
     <!-- Step 1: Modality Selector -->
     <div class="filter-group">
       <span class="filter-label">
@@ -671,11 +683,13 @@ body {
   const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
   let SECTIONS_DATA = [];
 
+  const teacherSelect = document.getElementById('teacherSelect');
   const modalitySelect = document.getElementById('modalitySelect');
   const shiftGroup = document.getElementById('shiftGroup');
   const shiftSelect = document.getElementById('shiftSelect');
   const sectionSelect = document.getElementById('sectionSelect');
   const sheetsContainer = document.getElementById('sheetsContainer');
+  let ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES || {};
 
   function esc(s) {
     if (!s) return '';
@@ -731,43 +745,85 @@ body {
       }
     }
 
+    if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) {
+      ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
+    } else {
+      try {
+        const tResp = await fetch('teacher_weekly_schedules.json?v=' + Date.now());
+        if (tResp.ok) {
+          ALL_TEACHERS_DATA = await tResp.json();
+        }
+      } catch (e) {
+        console.warn('Failed to load teacher JSON:', e);
+      }
+    }
+
     if (!SECTIONS_DATA || SECTIONS_DATA.length === 0) {
       sheetsContainer.innerHTML = '<div style="text-align:center; padding:50px; color:#64748b;">No class schedule data available.</div>';
       return;
     }
 
+    populateTeacherDropdown();
+
     const urlParams = new URLSearchParams(window.location.search);
+    let initTeacher = urlParams.get('teacher') || '';
     let initModality = urlParams.get('modality') || 'F2F';
     let initShift = urlParams.get('shift') || 'ODL1';
     let initSec = urlParams.get('section') || 'ALL_GROUP';
 
-    modalitySelect.value = ['F2F', 'ODL', 'ALL'].includes(initModality.toUpperCase()) ? initModality.toUpperCase() : 'F2F';
-    shiftSelect.value = ['ODL1', 'ODL2', 'ODL_ALL'].includes(initShift.toUpperCase()) ? initShift.toUpperCase() : 'ODL1';
+    if (initTeacher && (ALL_TEACHERS_DATA[initTeacher] || initTeacher === 'ALL_FACULTY')) {
+      teacherSelect.value = initTeacher;
+    } else {
+      modalitySelect.value = ['F2F', 'ODL', 'ALL'].includes(initModality.toUpperCase()) ? initModality.toUpperCase() : 'F2F';
+      shiftSelect.value = ['ODL1', 'ODL2', 'ODL_ALL'].includes(initShift.toUpperCase()) ? initShift.toUpperCase() : 'ODL1';
+    }
 
     updateShiftVisibility();
     populateSectionDropdown();
 
-    if (initSec) {
+    if (initSec && !initTeacher) {
       sectionSelect.value = initSec;
       if (!sectionSelect.value) sectionSelect.selectedIndex = 0;
     }
 
     renderCurrentView();
 
+    teacherSelect.addEventListener('change', () => {
+      renderCurrentView();
+    });
+
     modalitySelect.addEventListener('change', () => {
+      teacherSelect.value = '';
       updateShiftVisibility();
       populateSectionDropdown();
       renderCurrentView();
     });
 
     shiftSelect.addEventListener('change', () => {
+      teacherSelect.value = '';
       populateSectionDropdown();
       renderCurrentView();
     });
 
     sectionSelect.addEventListener('change', () => {
+      teacherSelect.value = '';
       renderCurrentView();
     });
+  }
+
+  function populateTeacherDropdown() {
+    let teachers = Object.values(ALL_TEACHERS_DATA || {});
+    teachers = teachers.sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name));
+
+    let html = '<option value="">All Staff / Faculty</option>';
+    html += '<option value="ALL_FACULTY">[ALL FACULTY] Show All Faculty Timetables</option>';
+    teachers.forEach(t => {
+      const name = t.canonical_name || t.teacher_name;
+      const count = t.total_classes || t.total_teaching_periods || 0;
+      const countLabel = count ? ` (${count} classes)` : '';
+      html += `<option value="${t.teacher_id}">${esc(name)}${countLabel}</option>`;
+    });
+    teacherSelect.innerHTML = html;
   }
 
   function updateShiftVisibility() {
@@ -824,6 +880,19 @@ body {
   }
 
   function renderCurrentView() {
+    const tVal = teacherSelect.value;
+    if (tVal) {
+      if (tVal === 'ALL_FACULTY') {
+        const teacherIds = Object.values(ALL_TEACHERS_DATA)
+          .sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name))
+          .map(t => t.teacher_id);
+        renderMultipleTeacherSheets(teacherIds);
+      } else if (ALL_TEACHERS_DATA[tVal]) {
+        renderMultipleTeacherSheets([tVal]);
+      }
+      return;
+    }
+
     const secVal = sectionSelect.value;
     const pool = getFilteredPool();
 
@@ -837,6 +906,136 @@ body {
         renderMultipleSections(pool);
       }
     }
+  }
+
+  function renderMultipleTeacherSheets(tIds) {
+    const todayStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    let fullHtml = '';
+
+    tIds.forEach(tid => {
+      const data = ALL_TEACHERS_DATA[tid];
+      if (!data) return;
+
+      const teacherDisplayName = data.canonical_name || data.teacher_name || tid;
+      const totalCount = data.total_classes || data.total_teaching_periods || (data.rows ? data.rows.reduce((acc, r) => acc + Object.values(r.days || {}).filter(c => c && (c.occupied || c.is_class)).length, 0) : 0);
+      const subjsList = (data.subjects && data.subjects.length > 0) ? data.subjects.join(', ') : 'Assigned Classes';
+      const metaStr = `${totalCount} Teaching Period${totalCount === 1 ? '' : 's'} • ${subjsList}`;
+
+      fullHtml += `
+        <div class="timetable-sheet">
+          <div class="school-header" style="display:flex; align-items:center; justify-content:center; gap:14px; margin-bottom:14px;">
+            <img src="amis_logo.png" alt="AMIS Logo" style="width:48px; height:48px; border-radius:50%; object-fit:contain;">
+            <div>
+              <h1 style="margin:0;">AL MUNAWWARA ISLAMIC SCHOOL</h1>
+              <h2 style="margin:2px 0 0 0;">Faculty Timetable — Class Schedule</h2>
+              <p style="margin:2px 0 0 0;">Official Weekly Schedule S.Y. 2026–2027</p>
+            </div>
+          </div>
+
+          <div class="teacher-banner">
+            <span class="teacher-name-title">${esc(teacherDisplayName.toUpperCase())}</span>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="teacher-meta-tag">${esc(metaStr)}</span>
+              <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
+                <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                <svg class="icon-compress" viewBox="0 0 24 24" style="display:none;"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <table class="timetable-grid">
+            <thead>
+              <tr>
+                <th class="col-time">Time</th>
+                <th class="col-mins">Minutes</th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+              </tr>
+            </thead>
+            <tbody>
+      `;
+
+      const rows = data.rows || [];
+      if (rows.length === 0) {
+        fullHtml += `
+          <tr>
+            <td colspan="7" style="padding: 30px; text-align: center; color: #64748b; font-weight: 700; font-size: 13px;">
+              No active weekly class periods scheduled for ${esc(teacherDisplayName)}.
+            </td>
+          </tr>
+        `;
+      } else {
+        rows.forEach(r => {
+          const minsStr = typeof r.minutes === 'number' ? `${r.minutes} min.` : (r.minutes || '-');
+          const timeFormatted = esc(r.time);
+
+          if (r.is_break) {
+            fullHtml += `
+              <tr class="row-break">
+                <td class="cell-time">${timeFormatted}</td>
+                <td class="cell-mins">${esc(minsStr)}</td>
+                <td colspan="5" class="cell-break">${esc(r.break_title || r.label || 'BREAK')}</td>
+              </tr>
+            `;
+          } else {
+            fullHtml += `
+              <tr>
+                <td class="cell-time">${timeFormatted}</td>
+                <td class="cell-mins">${esc(minsStr)}</td>
+            `;
+
+            for (const d of DAYS) {
+              const cell = r.days ? r.days[d] : null;
+              if (cell && (cell.occupied || cell.is_class)) {
+                const color = cell.color || { bg: cell.bg || '#f1f5f9', border: cell.border || '#cbd5e1', text: cell.text || '#1e293b' };
+                const modTag = cell.modality || cell.shift || '';
+
+                fullHtml += `
+                  <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                    <div class="cell-class-inner">
+                      ${cell.has_conflict ? `<span style="background:#fee2e2; color:#991b1b; padding:1px 4px; border-radius:3px; font-weight:850; font-size:8.5px; margin-bottom:2px; text-transform:uppercase;">⚠️ SCHEDULE CONFLICT</span>` : ''}
+                      <span class="cell-subject-sec" style="font-weight:900; font-size:12px; line-height:1.2;">${esc(cell.subject || cell.label)}</span>
+                      <span class="cell-mod-badge" style="color:${color.text}; font-weight:750; font-size:10px; opacity:0.95; line-height:1.15;">${esc(cell.section_short || cell.section || '')}${modTag ? ' • ' + esc(modTag) : ''}</span>
+                    </div>
+                  </td>
+                `;
+              } else {
+                fullHtml += `<td class="cell-empty"></td>`;
+              }
+            }
+
+            fullHtml += `</tr>`;
+          }
+        });
+      }
+
+      fullHtml += `
+            </tbody>
+          </table>
+
+          <div class="sheet-footer">
+            <div class="legend-strip">
+              <span style="font-weight: 800; color: var(--ink);">Subject Keys:</span>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#f3e8ff; border-color:#d8b4fe;"></span> Arabic / Qur'an / Islamic</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#dcfce7; border-color:#86efac;"></span> GMRC / Values / ESP</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#e0f2fe; border-color:#7dd3fc;"></span> Mathematics</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ccfbf1; border-color:#5eead4;"></span> Science</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fef3c7; border-color:#fde047;"></span> English / Language</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ffedd5; border-color:#fdba74;"></span> Filipino / AP / Makabansa</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fae8ff; border-color:#f0abfc;"></span> MAPEH / TLE / TVL</div>
+            </div>
+            <div>
+              Generated: <strong>${todayStr}</strong>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+
+    sheetsContainer.innerHTML = fullHtml;
   }
 
   function renderMultipleSections(list) {
