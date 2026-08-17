@@ -15,24 +15,46 @@ with open(CLASS_DATA_PATH) as f:
 DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
 
 STANDARD_TIME_BLOCKS = [
-    {"id": "f2f_assembly", "time": "07:30 AM – 07:40 AM", "minutes": 10, "is_break": True, "break_title": "GENERAL ASSEMBLY (F2F)", "shift_type": "F2F"},
-    {"id": "p1_f2f", "time": "07:40 AM – 08:25 AM", "minutes": 45, "is_break": False, "shift_type": "F2F"},
-    {"id": "p2_f2f", "time": "08:25 AM – 09:05 AM", "minutes": 40, "is_break": False, "shift_type": "F2F"},
-    {"id": "p3_f2f", "time": "09:05 AM – 09:45 AM", "minutes": 40, "is_break": False, "shift_type": "F2F"},
-    {"id": "f2f_recess", "time": "09:45 AM – 10:00 AM", "minutes": 15, "is_break": True, "break_title": "RECESS", "shift_type": "F2F"},
-    {"id": "p4_f2f", "time": "10:00 AM – 10:45 AM", "minutes": 45, "is_break": False, "shift_type": "F2F"},
-    {"id": "p5_f2f", "time": "10:45 AM – 11:30 AM", "minutes": 45, "is_break": False, "shift_type": "F2F"},
-    {"id": "f2f_lunch", "time": "11:30 AM – 12:30 PM", "minutes": 60, "is_break": True, "break_title": "LUNCH and SALAH", "shift_type": "F2F"},
-    {"id": "odl1_assembly", "time": "12:30 PM – 12:40 PM", "minutes": 10, "is_break": True, "break_title": "GENERAL ASSEMBLY (FIRST SHIFT)", "shift_type": "ODL 1st Shift"},
-    {"id": "p6_f2f_odl1", "time": "12:40 PM – 01:25 PM", "minutes": 45, "is_break": False, "shift_type": "F2F / ODL 1"},
-    {"id": "p7_f2f_odl1", "time": "01:25 PM – 02:10 PM", "minutes": 45, "is_break": False, "shift_type": "F2F / ODL 1"},
-    {"id": "p8_f2f_odl1", "time": "02:15 PM – 03:00 PM", "minutes": 45, "is_break": False, "shift_type": "F2F / ODL 1"},
-    {"id": "f2f_salah_departure", "time": "03:00 PM – 03:30 PM", "minutes": 30, "is_break": True, "break_title": "SALAH & DEPARTURE (F2F) • HOMEROOM GUIDANCE (ODL 1)", "shift_type": "F2F / ODL 1"},
-    {"id": "odl2_assembly", "time": "03:30 PM – 03:40 PM", "minutes": 10, "is_break": True, "break_title": "GENERAL ASSEMBLY (SECOND SHIFT)", "shift_type": "ODL 2nd Shift"},
-    {"id": "p1_odl2", "time": "03:40 PM – 04:20 PM", "minutes": 40, "is_break": False, "shift_type": "ODL 2nd Shift"},
-    {"id": "p2_odl2", "time": "04:30 PM – 05:10 PM", "minutes": 40, "is_break": False, "shift_type": "ODL 2nd Shift"},
-    {"id": "p3_odl2", "time": "05:20 PM – 06:00 PM", "minutes": 40, "is_break": False, "shift_type": "ODL 2nd Shift"}
+    {"id": "f2f_assembly", "time": "07:30 AM – 07:40 AM", "minutes": "10 min.", "is_break": True, "break_title": "GENERAL ASSEMBLY (F2F)", "shift_type": "F2F"},
+    {"id": "p1_f2f", "time": "07:40 AM – 08:25 AM", "minutes": "45 min.", "is_break": False, "shift_type": "F2F"},
+    {"id": "p2_f2f", "time": "08:25 AM – 09:05 AM", "minutes": "40 min.", "is_break": False, "shift_type": "F2F"},
+    {"id": "p3_f2f", "time": "09:05 AM – 09:45 AM", "minutes": "40 min.", "is_break": False, "shift_type": "F2F"},
+    {"id": "f2f_recess", "time": "09:45 AM – 10:00 AM", "minutes": "15 min.", "is_break": True, "break_title": "RECESS", "shift_type": "F2F"},
+    {"id": "p4_f2f", "time": "10:00 AM – 10:45 AM", "minutes": "45 min.", "is_break": False, "shift_type": "F2F"},
+    {"id": "p5_f2f", "time": "10:45 AM – 11:30 AM", "minutes": "45 min.", "is_break": False, "shift_type": "F2F"},
+    {"id": "f2f_lunch", "time": "11:30 AM – 12:30 PM", "minutes": "60 min.", "is_break": True, "break_title": "LUNCH and SALAH", "shift_type": "F2F"},
+    {"id": "odl1_assembly", "time": "12:30 PM – 12:40 PM", "minutes": "10 min.", "is_break": True, "break_title": "GENERAL ASSEMBLY (FIRST SHIFT)", "shift_type": "ODL 1st Shift"},
+    {"id": "p6_f2f_odl1", "time": "12:40 PM – 01:25 PM (F2F)\n12:40 PM – 01:20 PM (ODL)", "minutes": "45/40 min.", "is_break": False, "shift_type": "F2F / ODL 1"},
+    {"id": "p7_f2f_odl1", "time": "01:25 PM – 02:10 PM (F2F)\n01:30 PM – 02:10 PM (ODL)", "minutes": "45/40 min.", "is_break": False, "shift_type": "F2F / ODL 1"},
+    {"id": "p8_f2f_odl1", "time": "02:15 PM – 03:00 PM (F2F)\n02:20 PM – 03:00 PM (ODL)", "minutes": "45/40 min.", "is_break": False, "shift_type": "F2F / ODL 1"},
+    {"id": "f2f_salah_departure", "time": "03:00 PM – 03:30 PM", "minutes": "30 min.", "is_break": True, "break_title": "SALAH & DEPARTURE (F2F)", "shift_type": "F2F / ODL 1"},
+    {"id": "odl2_assembly", "time": "03:30 PM – 03:40 PM", "minutes": "10 min.", "is_break": True, "break_title": "GENERAL ASSEMBLY (SECOND SHIFT)", "shift_type": "ODL 2nd Shift"},
+    {"id": "p1_odl2", "time": "03:40 PM – 04:20 PM", "minutes": "40 min.", "is_break": False, "shift_type": "ODL 2nd Shift"},
+    {"id": "p2_odl2", "time": "04:30 PM – 05:10 PM", "minutes": "40 min.", "is_break": False, "shift_type": "ODL 2nd Shift"},
+    {"id": "p3_odl2", "time": "05:20 PM – 06:00 PM", "minutes": "40 min.", "is_break": False, "shift_type": "ODL 2nd Shift"}
 ]
+
+def map_time_to_row_id(time_str, shift):
+    if not time_str: return None
+    t_clean = time_str.upper().replace(' ', '')
+    if '7:30' in t_clean and '7:40' in t_clean: return 'f2f_assembly'
+    if '7:40' in t_clean or '07:40' in t_clean: return 'p1_f2f'
+    if '8:25' in t_clean or '08:25' in t_clean: return 'p2_f2f'
+    if '9:05' in t_clean or '09:05' in t_clean: return 'p3_f2f'
+    if '9:45' in t_clean and '10:00' in t_clean: return 'f2f_recess'
+    if '10:00' in t_clean: return 'p4_f2f'
+    if '10:45' in t_clean: return 'p5_f2f'
+    if '11:30' in t_clean: return 'f2f_lunch'
+    if '12:30' in t_clean and '12:40' in t_clean: return 'odl1_assembly'
+    if '12:40' in t_clean: return 'p6_f2f_odl1'
+    if '1:25' in t_clean or '1:30' in t_clean or '01:25' in t_clean or '01:30' in t_clean: return 'p7_f2f_odl1'
+    if '2:15' in t_clean or '2:20' in t_clean or '02:15' in t_clean or '02:20' in t_clean: return 'p8_f2f_odl1'
+    if '3:00' in t_clean and '3:30' in t_clean: return 'f2f_salah_departure'
+    if '3:30' in t_clean and '3:40' in t_clean: return 'odl2_assembly'
+    if '3:40' in t_clean or '03:40' in t_clean: return 'p1_odl2'
+    if '4:30' in t_clean or '04:30' in t_clean: return 'p2_odl2'
+    if '5:20' in t_clean or '05:20' in t_clean: return 'p3_odl2'
+    return None
 
 def get_subject_color(subj):
     s = (subj or "").lower()
@@ -52,10 +74,17 @@ def get_subject_color(subj):
         return {'bg': '#fae8ff', 'border': '#f0abfc', 'text': '#86198f'}
     return {'bg': '#f1f5f9', 'border': '#cbd5e1', 'text': '#334155'}
 
-# Master dictionary of teacher assignments keyed by teacher_id
+def format_clean_short_label(subj, sec_name):
+    s_clean = re.sub(r'(?i)\s*-\s*(ust|tchr|alim|sir|tr).*$', '', subj).strip()
+    sec_clean = re.sub(r'\(.*?\)', '', sec_name).strip()
+    sec_short = sec_clean.replace('GRADE ', 'G').replace('Grade ', 'G').replace('Kinder ', 'K').replace('KINDER ', 'K')
+    if 'FACE TO FACE' in sec_name.upper():
+        sec_short += ' (F2F)'
+        
+    return s_clean, sec_short
+
 teacher_classes = defaultdict(lambda: defaultdict(dict))
 
-# 1. Direct class timetable inverted extraction
 for sec in sections:
     sname = sec['section_name']
     dept = sec['department']
@@ -63,8 +92,9 @@ for sec in sections:
     shift = sec['shift']
     
     for p in sec['periods']:
-        t_str = p['time']
-        m_str = p['minutes']
+        t_raw = p['time']
+        row_id = map_time_to_row_id(t_raw, shift)
+        if not row_id: continue
         
         if p.get('is_merged_all_days'):
             if not p.get('is_break'):
@@ -75,13 +105,14 @@ for sec in sections:
                     
                 subj = p.get('subject', '').strip()
                 if tid:
+                    s_clean, sec_short = format_clean_short_label(subj, sname)
                     for d in DAYS:
-                        teacher_classes[tid][t_str][d] = {
-                            'subject': subj,
+                        teacher_classes[tid][row_id][d] = {
+                            'subject': s_clean,
                             'section': sname,
+                            'section_short': sec_short,
                             'grade': grade,
-                            'shift': shift,
-                            'minutes': m_str
+                            'shift': shift
                         }
         else:
             for d, cell in (p.get('days') or {}).items():
@@ -93,55 +124,15 @@ for sec in sections:
                         
                     subj = cell.get('subject', '').strip()
                     if tid:
-                        teacher_classes[tid][t_str][d] = {
-                            'subject': subj,
+                        s_clean, sec_short = format_clean_short_label(subj, sname)
+                        teacher_classes[tid][row_id][d] = {
+                            'subject': s_clean,
                             'section': sname,
+                            'section_short': sec_short,
                             'grade': grade,
-                            'shift': shift,
-                            'minutes': m_str
+                            'shift': shift
                         }
 
-# 2. Add specific direct grids from HS LOADS & ISAL UPDATED
-for sname in ['HS LOADS', 'ISAL UPDATED']:
-    ws = wb[sname]
-    for r in range(1, ws.max_row + 1):
-        for c in range(1, ws.max_column + 1):
-            v = ws.cell(row=r, column=c).value
-            if v and isinstance(v, str):
-                v_str = v.strip()
-                if any(k in v_str.upper() for k in ['TEACHER', 'TCHR', 'SIR', 'USTADH', 'ALIM', 'USTADHA', 'USTADZ', 'UST']):
-                    # Check if next row is Time header
-                    if r+1 <= ws.max_row and any('time' in str(ws.cell(row=r+1, column=cc).value).lower() for cc in range(c, min(ws.max_column+1, c+5))):
-                        t_res = resolve_teacher(v_str)
-                        if not t_res: continue
-                        tid = t_res['id']
-                        time_row = r + 1
-                        time_col = c
-                        first_day_col = c + 2
-                        
-                        for pr in range(time_row + 1, time_row + 18):
-                            if pr > ws.max_row: break
-                            t_val = ws.cell(row=pr, column=time_col).value
-                            if not t_val: continue
-                            t_str = str(t_val).strip()
-                            if any(k in t_str.upper() for k in ['TEACHER', 'SIR', 'USTADH', 'ALIM', 'USTADZ']): break
-                            
-                            for didx, d in enumerate(DAYS):
-                                cell_val = ws.cell(row=pr, column=first_day_col + didx).value
-                                if cell_val and isinstance(cell_val, str):
-                                    c_str = cell_val.strip()
-                                    if c_str and not any(k in c_str.upper() for k in ['GENERAL ASSEMBLY', 'RECESS', 'LUNCH', 'SALAH', 'DEPARTURE']):
-                                        # Only add if not already populated
-                                        if d not in teacher_classes[tid][t_str]:
-                                            teacher_classes[tid][t_str][d] = {
-                                                'subject': c_str,
-                                                'section': c_str,
-                                                'grade': '',
-                                                'shift': 'F2F / ODL',
-                                                'minutes': '45 min.'
-                                            }
-
-# 3. Build canonical faculty schedules for each registered teacher
 final_faculty_schedules = {}
 
 for t_info in sorted(TEACHER_REGISTRY, key=lambda x: x['canonical_name']):
@@ -150,17 +141,18 @@ for t_info in sorted(TEACHER_REGISTRY, key=lambda x: x['canonical_name']):
     dept = t_info['department']
     title = t_info['title']
     
-    t_slots = teacher_classes.get(tid, {})
+    t_rows_data = teacher_classes.get(tid, {})
     distinct_subjs = set()
     total_class_count = 0
     
     rows = []
     for block in STANDARD_TIME_BLOCKS:
+        rid = block["id"]
         b_time = block["time"]
         is_brk = block["is_break"]
         
         row_data = {
-            "id": block["id"],
+            "id": rid,
             "time": b_time,
             "minutes": block["minutes"],
             "is_break": is_brk,
@@ -178,15 +170,7 @@ for t_info in sorted(TEACHER_REGISTRY, key=lambda x: x['canonical_name']):
                 }
         else:
             for d in DAYS:
-                found = None
-                
-                for raw_t, d_map in t_slots.items():
-                    if d in d_map:
-                        b_h = b_time[:5]
-                        if b_h in raw_t or raw_t[:5] in b_time:
-                            found = d_map[d]
-                            break
-                            
+                found = t_rows_data.get(rid, {}).get(d)
                 if found:
                     total_class_count += 1
                     subj_name = found['subject']
@@ -199,10 +183,11 @@ for t_info in sorted(TEACHER_REGISTRY, key=lambda x: x['canonical_name']):
                         "is_break": False,
                         "subject": subj_name,
                         "section": found['section'],
+                        "section_short": found['section_short'],
                         "grade": found['grade'],
                         "shift": found['shift'],
                         "modality": found['shift'],
-                        "label": f"{subj_name} - {found['section']}" if found['section'] and found['section'] != subj_name else subj_name,
+                        "label": f"{subj_name} - {found['section_short']}",
                         "color": color,
                         "bg": color['bg'],
                         "border": color['border'],
@@ -227,12 +212,6 @@ for t_info in sorted(TEACHER_REGISTRY, key=lambda x: x['canonical_name']):
 
 print(f"Extracted and unified comprehensive faculty timetables for {len(final_faculty_schedules)} UNIQUE teachers!")
 
-# Print verification for sample teachers
-for test_id in ["tchr_ali", "tchr_jairah", "tchr_silfah", "tchr_mohaymen", "tchr_wendy"]:
-    if test_id in final_faculty_schedules:
-        f_data = final_faculty_schedules[test_id]
-        print(f"\n{f_data['canonical_name']} (ID: {test_id}): {f_data['total_classes']} classes, Subjects: {f_data['subjects']}")
-
 with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/teacher_weekly_schedules.json', 'w') as f:
     json.dump(final_faculty_schedules, f, indent=2)
 
@@ -240,5 +219,5 @@ with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/teacher_weekly_schedul
     f.write(f"window.AMIS_TEACHER_WEEKLY_SCHEDULES = {json.dumps(final_faculty_schedules, indent=2)};\n")
     f.write(f"const AMIS_TEACHER_WEEKLY_SCHEDULES = window.AMIS_TEACHER_WEEKLY_SCHEDULES;\n")
 
-print("\nSuccessfully saved teacher_weekly_schedules.json and teacher_weekly_schedules.js keyed by canonical teacher_id!")
+print("\nSuccessfully synchronized all Faculty Timetables in JSON & JS!")
 
