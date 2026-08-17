@@ -1,0 +1,2018 @@
+{
+  "generated_at": "2026-08-17T20:22:03.632963",
+  "source_file": "OFFICIAL_CLASS_SCHEDULE_raw.json",
+  "total_sections": 69,
+  "total_active_class_sessions": 1401,
+  "total_warnings": 185,
+  "warnings": [
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "D32",
+      "section": "GRADE 1 (FACE TO FACE)",
+      "day": "Sunday",
+      "time": "10:45 AM \u2013 11:30 AM",
+      "raw_text": "ARAL Reading - Tchr. Kat",
+      "message": "Could not match teacher in 'ARAL Reading - Tchr. Kat' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "F32",
+      "section": "GRADE 1 (FACE TO FACE)",
+      "day": "Tuesday",
+      "time": "10:45 AM \u2013 11:30 AM",
+      "raw_text": "ARAL Reading - Tchr. Kat",
+      "message": "Could not match teacher in 'ARAL Reading - Tchr. Kat' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "H32",
+      "section": "GRADE 1 (FACE TO FACE)",
+      "day": "Thursday",
+      "time": "10:45 AM \u2013 11:30 AM",
+      "raw_text": "ARAL Reading - Tchr. Kat",
+      "message": "Could not match teacher in 'ARAL Reading - Tchr. Kat' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "D61",
+      "section": "GRADE 3 (FACE TO FACE)",
+      "day": "Sunday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "raw_text": "Filipino - Tchr. Normayla",
+      "message": "Could not match teacher in 'Filipino - Tchr. Normayla' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "E61",
+      "section": "GRADE 3 (FACE TO FACE)",
+      "day": "Monday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "raw_text": "Filipino - Tchr. Normayla",
+      "message": "Could not match teacher in 'Filipino - Tchr. Normayla' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "F61",
+      "section": "GRADE 3 (FACE TO FACE)",
+      "day": "Tuesday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "raw_text": "Filipino - Tchr. Normayla",
+      "message": "Could not match teacher in 'Filipino - Tchr. Normayla' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "G61",
+      "section": "GRADE 3 (FACE TO FACE)",
+      "day": "Wednesday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "raw_text": "Filipino - Tchr. Normayla",
+      "message": "Could not match teacher in 'Filipino - Tchr. Normayla' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "H61",
+      "section": "GRADE 3 (FACE TO FACE)",
+      "day": "Thursday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "raw_text": "Filipino - Tchr. Normayla",
+      "message": "Could not match teacher in 'Filipino - Tchr. Normayla' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "E93",
+      "section": "GRADE 5 (FACE TO FACE)",
+      "day": "Monday",
+      "time": "08:25 AM \u2013 09:05 AM",
+      "raw_text": "Qur'an - Ust. Ubaydah",
+      "message": "Could not match teacher in 'Qur'an - Ust. Ubaydah' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "G93",
+      "section": "GRADE 5 (FACE TO FACE)",
+      "day": "Wednesday",
+      "time": "08:25 AM \u2013 09:05 AM",
+      "raw_text": "Qur'an - Ust. Ubaydah",
+      "message": "Could not match teacher in 'Qur'an - Ust. Ubaydah' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "D115",
+      "section": "GRADE  6  FACE TO FACE",
+      "day": "Sunday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "raw_text": "Science - Tchr. Wendelyn",
+      "message": "Could not match teacher in 'Science - Tchr. Wendelyn' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "E115",
+      "section": "GRADE  6  FACE TO FACE",
+      "day": "Monday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "raw_text": "Science - Tchr. Wendelyn",
+      "message": "Could not match teacher in 'Science - Tchr. Wendelyn' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "F115",
+      "section": "GRADE  6  FACE TO FACE",
+      "day": "Tuesday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "raw_text": "Science - Tchr. Wendelyn",
+      "message": "Could not match teacher in 'Science - Tchr. Wendelyn' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "G115",
+      "section": "GRADE  6  FACE TO FACE",
+      "day": "Wednesday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "raw_text": "Science - Tchr. Wendelyn",
+      "message": "Could not match teacher in 'Science - Tchr. Wendelyn' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "H115",
+      "section": "GRADE  6  FACE TO FACE",
+      "day": "Thursday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "raw_text": "Science - Tchr. Wendelyn",
+      "message": "Could not match teacher in 'Science - Tchr. Wendelyn' to canonical teacher registry"
+    },
+    {
+      "type": "MALFORMED_TIME",
+      "sheet": "ELEM",
+      "cell": "J14",
+      "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+      "raw_value": "Kinder 1 HASAN IBN ALI (1ST SHIFT)",
+      "message": "Malformed time string: Kinder 1 HASAN IBN ALI (1ST SHIFT)"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "N61",
+      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+      "day": "Tuesday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "raw_text": "Filipino - Tchr. Normayla",
+      "message": "Could not match teacher in 'Filipino - Tchr. Normayla' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "O61",
+      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+      "day": "Wednesday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "raw_text": "Filipino - Tchr. Normayla",
+      "message": "Could not match teacher in 'Filipino - Tchr. Normayla' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "L109",
+      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+      "day": "Sunday",
+      "time": "01:30 PM \u2013 02:10 PM",
+      "raw_text": "Math - Tchr. Kat",
+      "message": "Could not match teacher in 'Math - Tchr. Kat' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "N109",
+      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+      "day": "Tuesday",
+      "time": "01:30 PM \u2013 02:10 PM",
+      "raw_text": "Math - Tchr. Kat",
+      "message": "Could not match teacher in 'Math - Tchr. Kat' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "U107",
+      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+      "day": "Monday",
+      "time": "12:40 PM \u2013 01:20 PM",
+      "raw_text": "Math - Tchr. Kat",
+      "message": "Could not match teacher in 'Math - Tchr. Kat' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "V107",
+      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+      "day": "Tuesday",
+      "time": "12:40 PM \u2013 01:20 PM",
+      "raw_text": "Math - Tchr. Kat",
+      "message": "Could not match teacher in 'Math - Tchr. Kat' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "AE110",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "day": "Wednesday",
+      "time": "04:30 PM \u2013 05:10 PM",
+      "raw_text": "Math - Tchr. Kat",
+      "message": "Could not match teacher in 'Math - Tchr. Kat' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "AB112",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "day": "Sunday",
+      "time": "05:20 PM \u2013 06:00 PM",
+      "raw_text": "Math - Tchr. Kat",
+      "message": "Could not match teacher in 'Math - Tchr. Kat' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "ELEM",
+      "cell": "AN108",
+      "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+      "day": "Thursday",
+      "time": "03:40 PM \u2013 04:20 PM",
+      "raw_text": "Qur'an - Ust. Obayda",
+      "message": "Could not match teacher in 'Qur'an - Ust. Obayda' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "HS SCHED (NEW)",
+      "cell": "E97",
+      "section": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Monday",
+      "time": "12:40 PM \u2013 01:25 PM",
+      "raw_text": "Research Consultation",
+      "message": "Could not match teacher in 'Research Consultation' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "HS SCHED (NEW)",
+      "cell": "D99",
+      "section": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Sunday",
+      "time": "02:15 PM \u2013 03:00 PM",
+      "raw_text": "Research Consultation",
+      "message": "Could not match teacher in 'Research Consultation' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "HS SCHED (NEW)",
+      "cell": "N86",
+      "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Monday",
+      "time": "03:00 PM \u2013 03:40 PM",
+      "raw_text": "Research Consulatation",
+      "message": "Could not match teacher in 'Research Consulatation' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "HS SCHED (NEW)",
+      "cell": "U79",
+      "section": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Sunday",
+      "time": "03:00 PM \u2013 03:30 PM",
+      "raw_text": "LCS 11 2nd shift",
+      "message": "Could not match teacher in 'LCS 11 2nd shift' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "SHS",
+      "cell": "D36",
+      "section": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Sunday",
+      "time": "03:00 PM \u2013 03:30 PM",
+      "raw_text": "LCS 11 2nd shift",
+      "message": "Could not match teacher in 'LCS 11 2nd shift' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "SHS",
+      "cell": "N14",
+      "section": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Monday",
+      "time": "12:40 PM \u2013 01:25 PM",
+      "raw_text": "Research Consultation",
+      "message": "Could not match teacher in 'Research Consultation' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "SHS",
+      "cell": "O15",
+      "section": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Tuesday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "raw_text": "Gen Bio 1 - Tchr. Radzmia+",
+      "message": "Could not match teacher in 'Gen Bio 1 - Tchr. Radzmia+' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "SHS",
+      "cell": "M16",
+      "section": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Sunday",
+      "time": "02:15 PM \u2013 03:00 PM",
+      "raw_text": "Research Consultation",
+      "message": "Could not match teacher in 'Research Consultation' to canonical teacher registry"
+    },
+    {
+      "type": "MISSING_TEACHER_MAPPING",
+      "sheet": "SHS",
+      "cell": "N28",
+      "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Monday",
+      "time": "03:00 PM \u2013 03:40 PM",
+      "raw_text": "Research Consulatation",
+      "message": "Could not match teacher in 'Research Consulatation' to canonical teacher registry"
+    },
+    {
+      "type": "TEACHER_SCHEDULE_CONFLICT",
+      "teacher_id": "tchr_junaisah",
+      "teacher_name": "Teacher Junaisah",
+      "day": "Monday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "conflicting_sections": [
+        "GRADE 3 (FACE TO FACE)",
+        "GRADE 2 (FACE TO FACE)"
+      ],
+      "message": "Teacher 'Teacher Junaisah' scheduled concurrently in ['GRADE 3 (FACE TO FACE)', 'GRADE 2 (FACE TO FACE)'] on Monday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "TEACHER_SCHEDULE_CONFLICT",
+      "teacher_id": "tchr_ersahad",
+      "teacher_name": "Ustadh Ersahad",
+      "day": "Wednesday",
+      "time": "09:05 AM \u2013 09:45 AM",
+      "conflicting_sections": [
+        "GRADE  6  FACE TO FACE",
+        "GRADE 5 (FACE TO FACE)"
+      ],
+      "message": "Teacher 'Ustadh Ersahad' scheduled concurrently in ['GRADE  6  FACE TO FACE', 'GRADE 5 (FACE TO FACE)'] on Wednesday at 09:05 AM \u2013 09:45 AM"
+    },
+    {
+      "type": "TEACHER_SCHEDULE_CONFLICT",
+      "teacher_id": "tchr_abdiraheem",
+      "teacher_name": "Ustadh Abdiraheem",
+      "day": "Wednesday",
+      "time": "01:30 PM \u2013 02:10 PM",
+      "conflicting_sections": [
+        "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX"
+      ],
+      "message": "Teacher 'Ustadh Abdiraheem' scheduled concurrently in ['GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)', 'GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX'] on Wednesday at 01:30 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "TEACHER_SCHEDULE_CONFLICT",
+      "teacher_id": "tchr_radzmia",
+      "teacher_name": "Teacher Radzmia",
+      "day": "Sunday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "conflicting_sections": [
+        "GRADE 12 - SUHAYB AR-RUMI",
+        "GRADE 11 (FACE TO FACE)"
+      ],
+      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 12 - SUHAYB AR-RUMI', 'GRADE 11 (FACE TO FACE)'] on Sunday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "TEACHER_SCHEDULE_CONFLICT",
+      "teacher_id": "tchr_radzmia",
+      "teacher_name": "Teacher Radzmia",
+      "day": "Monday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "conflicting_sections": [
+        "GRADE 12 - SUHAYB AR-RUMI",
+        "GRADE 11 (FACE TO FACE)"
+      ],
+      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 12 - SUHAYB AR-RUMI', 'GRADE 11 (FACE TO FACE)'] on Monday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "TEACHER_SCHEDULE_CONFLICT",
+      "teacher_id": "tchr_radzmia",
+      "teacher_name": "Teacher Radzmia",
+      "day": "Tuesday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "conflicting_sections": [
+        "GRADE 12 - SUHAYB AR-RUMI",
+        "GRADE 11 (FACE TO FACE)"
+      ],
+      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 12 - SUHAYB AR-RUMI', 'GRADE 11 (FACE TO FACE)'] on Tuesday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "TEACHER_SCHEDULE_CONFLICT",
+      "teacher_id": "tchr_radzmia",
+      "teacher_name": "Teacher Radzmia",
+      "day": "Wednesday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "conflicting_sections": [
+        "GRADE 12 - SUHAYB AR-RUMI",
+        "GRADE 11 (FACE TO FACE)"
+      ],
+      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 12 - SUHAYB AR-RUMI', 'GRADE 11 (FACE TO FACE)'] on Wednesday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "TEACHER_SCHEDULE_CONFLICT",
+      "teacher_id": "tchr_radzmia",
+      "teacher_name": "Teacher Radzmia",
+      "day": "Thursday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "conflicting_sections": [
+        "GRADE 12 - SUHAYB AR-RUMI",
+        "GRADE 11 (FACE TO FACE)"
+      ],
+      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 12 - SUHAYB AR-RUMI', 'GRADE 11 (FACE TO FACE)'] on Thursday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "TEACHER_SCHEDULE_CONFLICT",
+      "teacher_id": "tchr_radzmia",
+      "teacher_name": "Teacher Radzmia",
+      "day": "Monday",
+      "time": "02:15 PM \u2013 03:00 PM",
+      "conflicting_sections": [
+        "GRADE 12 - SUHAYB AR-RUMI",
+        "GRADE 11 (FACE TO FACE)"
+      ],
+      "message": "Teacher 'Teacher Radzmia' scheduled concurrently in ['GRADE 12 - SUHAYB AR-RUMI', 'GRADE 11 (FACE TO FACE)'] on Monday at 02:15 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "TEACHER_SCHEDULE_CONFLICT",
+      "teacher_id": "tchr_angeleni",
+      "teacher_name": "Teacher Angeleni",
+      "day": "Tuesday",
+      "time": "05:20 PM \u2013 06:00 PM",
+      "conflicting_sections": [
+        "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS"
+      ],
+      "message": "Teacher 'Teacher Angeleni' scheduled concurrently in ['GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS', 'GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS'] on Tuesday at 05:20 PM \u2013 06:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Sunday",
+      "time": "07:40 AM \u2013 08:25 AM",
+      "sessions": [
+        "Science (Teacher Rowena)",
+        "Science (Teacher Rowena)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Sunday at 07:40 AM \u2013 08:25 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Monday",
+      "time": "07:40 AM \u2013 08:25 AM",
+      "sessions": [
+        "Science (Teacher Rowena)",
+        "Science (Teacher Rowena)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Monday at 07:40 AM \u2013 08:25 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Tuesday",
+      "time": "07:40 AM \u2013 08:25 AM",
+      "sessions": [
+        "Science (Teacher Rowena)",
+        "Science (Teacher Rowena)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Tuesday at 07:40 AM \u2013 08:25 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Wednesday",
+      "time": "07:40 AM \u2013 08:25 AM",
+      "sessions": [
+        "Science (Teacher Rowena)",
+        "Science (Teacher Rowena)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Wednesday at 07:40 AM \u2013 08:25 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Thursday",
+      "time": "07:40 AM \u2013 08:25 AM",
+      "sessions": [
+        "Science (Teacher Rowena)",
+        "Science (Teacher Rowena)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Thursday at 07:40 AM \u2013 08:25 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Sunday",
+      "time": "08:25 AM \u2013 09:05 AM",
+      "sessions": [
+        "Life and Career Skills (Teacher Norhaima)",
+        "Life and Career Skills (Teacher Norhaima)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Sunday at 08:25 AM \u2013 09:05 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Monday",
+      "time": "08:25 AM \u2013 09:05 AM",
+      "sessions": [
+        "Life and Career Skills (Teacher Norhaima)",
+        "Life and Career Skills (Teacher Norhaima)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Monday at 08:25 AM \u2013 09:05 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Tuesday",
+      "time": "08:25 AM \u2013 09:05 AM",
+      "sessions": [
+        "Life and Career Skills (Teacher Norhaima)",
+        "Life and Career Skills (Teacher Norhaima)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Tuesday at 08:25 AM \u2013 09:05 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Wednesday",
+      "time": "08:25 AM \u2013 09:05 AM",
+      "sessions": [
+        "Life and Career Skills (Teacher Norhaima)",
+        "Life and Career Skills (Teacher Norhaima)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Wednesday at 08:25 AM \u2013 09:05 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Thursday",
+      "time": "08:25 AM \u2013 09:05 AM",
+      "sessions": [
+        "Life and Career Skills (Teacher Norhaima)",
+        "Life and Career Skills (Teacher Norhaima)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Thursday at 08:25 AM \u2013 09:05 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Sunday",
+      "time": "09:05 AM \u2013 09:45 AM",
+      "sessions": [
+        "Mathematics (Teacher Jhelyn)",
+        "Mathematics (Teacher Jhelyn)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Sunday at 09:05 AM \u2013 09:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Monday",
+      "time": "09:05 AM \u2013 09:45 AM",
+      "sessions": [
+        "Mathematics (Teacher Jhelyn)",
+        "Mathematics (Teacher Jhelyn)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Monday at 09:05 AM \u2013 09:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Tuesday",
+      "time": "09:05 AM \u2013 09:45 AM",
+      "sessions": [
+        "Mathematics (Teacher Jhelyn)",
+        "Mathematics (Teacher Jhelyn)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Tuesday at 09:05 AM \u2013 09:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Wednesday",
+      "time": "09:05 AM \u2013 09:45 AM",
+      "sessions": [
+        "Mathematics (Teacher Jhelyn)",
+        "Mathematics (Teacher Jhelyn)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Wednesday at 09:05 AM \u2013 09:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Thursday",
+      "time": "09:05 AM \u2013 09:45 AM",
+      "sessions": [
+        "Gen Math/Hr (Teacher Jhelyn)",
+        "Gen Math/Hr (Teacher Jhelyn)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Thursday at 09:05 AM \u2013 09:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Sunday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "sessions": [
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)",
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Sunday at 10:00 AM \u2013 10:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Monday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "sessions": [
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)",
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Monday at 10:00 AM \u2013 10:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Tuesday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "sessions": [
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)",
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Tuesday at 10:00 AM \u2013 10:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Wednesday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "sessions": [
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)",
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Wednesday at 10:00 AM \u2013 10:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Thursday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "sessions": [
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)",
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Thursday at 10:00 AM \u2013 10:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Sunday",
+      "time": "10:45 AM \u2013 11:30 AM",
+      "sessions": [
+        "Arabic (Alim Mamonas)",
+        "Arabic (Alim Mamonas)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Sunday at 10:45 AM \u2013 11:30 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Monday",
+      "time": "10:45 AM \u2013 11:30 AM",
+      "sessions": [
+        "SHAF (Alim Samsuddin)",
+        "SHAF (Alim Samsuddin)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Monday at 10:45 AM \u2013 11:30 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Tuesday",
+      "time": "10:45 AM \u2013 11:30 AM",
+      "sessions": [
+        "SHAF (Alim Samsuddin)",
+        "SHAF (Alim Samsuddin)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Tuesday at 10:45 AM \u2013 11:30 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Wednesday",
+      "time": "10:45 AM \u2013 11:30 AM",
+      "sessions": [
+        "Arabic (Alim Mamonas)",
+        "Arabic (Alim Mamonas)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Wednesday at 10:45 AM \u2013 11:30 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Sunday",
+      "time": "12:40 PM \u2013 01:25 PM",
+      "sessions": [
+        "Ec (Teacher Nadzra)",
+        "Ec (Teacher Nadzra)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Sunday at 12:40 PM \u2013 01:25 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Monday",
+      "time": "12:40 PM \u2013 01:25 PM",
+      "sessions": [
+        "Ec (Teacher Nadzra)",
+        "Ec (Teacher Nadzra)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Monday at 12:40 PM \u2013 01:25 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Tuesday",
+      "time": "12:40 PM \u2013 01:25 PM",
+      "sessions": [
+        "Ec (Teacher Nadzra)",
+        "Ec (Teacher Nadzra)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Tuesday at 12:40 PM \u2013 01:25 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Wednesday",
+      "time": "12:40 PM \u2013 01:25 PM",
+      "sessions": [
+        "Ec (Teacher Nadzra)",
+        "Ec (Teacher Nadzra)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Wednesday at 12:40 PM \u2013 01:25 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Thursday",
+      "time": "12:40 PM \u2013 01:25 PM",
+      "sessions": [
+        "Ec (Teacher Nadzra)",
+        "Ec (Teacher Nadzra)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Thursday at 12:40 PM \u2013 01:25 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Sunday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Sunday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Monday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Monday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Tuesday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Tuesday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Wednesday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Wednesday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Thursday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Thursday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Sunday",
+      "time": "02:15 PM \u2013 03:00 PM",
+      "sessions": [
+        "Qur'an (Alim Dipatuan)",
+        "Qur'an (Alim Dipatuan)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Sunday at 02:15 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Monday",
+      "time": "02:15 PM \u2013 03:00 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Monday at 02:15 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (FACE TO FACE)",
+      "day": "Thursday",
+      "time": "02:15 PM \u2013 03:00 PM",
+      "sessions": [
+        "Qur'an (Alim Dipatuan)",
+        "Qur'an (Alim Dipatuan)"
+      ],
+      "message": "Section 'GRADE 11 (FACE TO FACE)' scheduled twice on Thursday at 02:15 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Sunday",
+      "time": "07:40 AM \u2013 08:25 AM",
+      "sessions": [
+        "Practical Research 2 (Teacher Aniah)",
+        "Practical Research 2 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Sunday at 07:40 AM \u2013 08:25 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Monday",
+      "time": "07:40 AM \u2013 08:25 AM",
+      "sessions": [
+        "Practical Research 2 (Teacher Aniah)",
+        "Practical Research 2 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Monday at 07:40 AM \u2013 08:25 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Tuesday",
+      "time": "07:40 AM \u2013 08:25 AM",
+      "sessions": [
+        "Practical Research 2 (Teacher Aniah)",
+        "Practical Research 2 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Tuesday at 07:40 AM \u2013 08:25 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Wednesday",
+      "time": "07:40 AM \u2013 08:25 AM",
+      "sessions": [
+        "Practical Research 2 (Teacher Aniah)",
+        "Practical Research 2 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Wednesday at 07:40 AM \u2013 08:25 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Thursday",
+      "time": "07:40 AM \u2013 08:25 AM",
+      "sessions": [
+        "Practical Research 2 (Teacher Aniah)",
+        "Practical Research 2 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Thursday at 07:40 AM \u2013 08:25 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Sunday",
+      "time": "08:25 AM \u2013 09:05 AM",
+      "sessions": [
+        "Practical Research 2 (Teacher Aniah)",
+        "Practical Research 2 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Sunday at 08:25 AM \u2013 09:05 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Monday",
+      "time": "08:25 AM \u2013 09:05 AM",
+      "sessions": [
+        "Arabic (Alim Mamonas)",
+        "Arabic (Alim Mamonas)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Monday at 08:25 AM \u2013 09:05 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Tuesday",
+      "time": "08:25 AM \u2013 09:05 AM",
+      "sessions": [
+        "SHAF (Alim Samsuddin)",
+        "SHAF (Alim Samsuddin)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Tuesday at 08:25 AM \u2013 09:05 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Wednesday",
+      "time": "08:25 AM \u2013 09:05 AM",
+      "sessions": [
+        "Arabic (Alim Mamonas)",
+        "Arabic (Alim Mamonas)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Wednesday at 08:25 AM \u2013 09:05 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Thursday",
+      "time": "08:25 AM \u2013 09:05 AM",
+      "sessions": [
+        "SHAF (Alim Samsuddin)",
+        "SHAF (Alim Samsuddin)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Thursday at 08:25 AM \u2013 09:05 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Sunday",
+      "time": "09:05 AM \u2013 09:45 AM",
+      "sessions": [
+        "Media and Information Literacy (Teacher Ethel)",
+        "Media and Information Literacy (Teacher Ethel)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Sunday at 09:05 AM \u2013 09:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Monday",
+      "time": "09:05 AM \u2013 09:45 AM",
+      "sessions": [
+        "Media and Information Literacy (Teacher Ethel)",
+        "Media and Information Literacy (Teacher Ethel)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Monday at 09:05 AM \u2013 09:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Tuesday",
+      "time": "09:05 AM \u2013 09:45 AM",
+      "sessions": [
+        "Media and Information Literacy (Teacher Ethel)",
+        "Media and Information Literacy (Teacher Ethel)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Tuesday at 09:05 AM \u2013 09:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Wednesday",
+      "time": "09:05 AM \u2013 09:45 AM",
+      "sessions": [
+        "Media and Information Literacy (Teacher Ethel)",
+        "Media and Information Literacy (Teacher Ethel)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Wednesday at 09:05 AM \u2013 09:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Thursday",
+      "time": "09:05 AM \u2013 09:45 AM",
+      "sessions": [
+        "Media and Information Literacy (Teacher Ethel)",
+        "Media and Information Literacy (Teacher Ethel)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Thursday at 09:05 AM \u2013 09:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Sunday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "sessions": [
+        "General Physics 1 (Teacher Aniah)",
+        "21St Lit. (Teacher Nof)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Sunday at 10:00 AM \u2013 10:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Monday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "sessions": [
+        "General Physics 1 (Teacher Aniah)",
+        "21St Lit. (Teacher Nof)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Monday at 10:00 AM \u2013 10:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Tuesday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "sessions": [
+        "General Physics 1 (Teacher Aniah)",
+        "21St Lit. (Teacher Nof)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Tuesday at 10:00 AM \u2013 10:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Wednesday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "sessions": [
+        "General Physics 1 (Teacher Aniah)",
+        "21St Lit. (Teacher Nof)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Wednesday at 10:00 AM \u2013 10:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Thursday",
+      "time": "10:00 AM \u2013 10:45 AM",
+      "sessions": [
+        "General Physics 1 (Teacher Aniah)",
+        "21St Lit. (Teacher Nof)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Thursday at 10:00 AM \u2013 10:45 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Sunday",
+      "time": "10:45 AM \u2013 11:30 AM",
+      "sessions": [
+        "21St Lit. (Teacher Nof)",
+        "General Physics 1 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Sunday at 10:45 AM \u2013 11:30 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Monday",
+      "time": "10:45 AM \u2013 11:30 AM",
+      "sessions": [
+        "21St Lit. (Teacher Nof)",
+        "General Physics 1 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Monday at 10:45 AM \u2013 11:30 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Tuesday",
+      "time": "10:45 AM \u2013 11:30 AM",
+      "sessions": [
+        "21St Lit. (Teacher Nof)",
+        "General Physics 1 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Tuesday at 10:45 AM \u2013 11:30 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Wednesday",
+      "time": "10:45 AM \u2013 11:30 AM",
+      "sessions": [
+        "21St Lit. (Teacher Nof)",
+        "General Physics 1 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Wednesday at 10:45 AM \u2013 11:30 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Thursday",
+      "time": "10:45 AM \u2013 11:30 AM",
+      "sessions": [
+        "21St Lit. (Teacher Nof)",
+        "General Physics 1 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Thursday at 10:45 AM \u2013 11:30 AM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Sunday",
+      "time": "12:40 PM \u2013 01:25 PM",
+      "sessions": [
+        "Physical Education (Sir Mohaymen)",
+        "Physical Education (Sir Mohaymen)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Sunday at 12:40 PM \u2013 01:25 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Monday",
+      "time": "12:40 PM \u2013 01:25 PM",
+      "sessions": [
+        "Research Consultation (Research Consultation)",
+        "Research Consultation (Research Consultation)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Monday at 12:40 PM \u2013 01:25 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Tuesday",
+      "time": "12:40 PM \u2013 01:25 PM",
+      "sessions": [
+        "Physical Education (Sir Mohaymen)",
+        "Physical Education (Sir Mohaymen)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Tuesday at 12:40 PM \u2013 01:25 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Wednesday",
+      "time": "12:40 PM \u2013 01:25 PM",
+      "sessions": [
+        "Physical Education (Sir Mohaymen)",
+        "Physical Education (Sir Mohaymen)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Wednesday at 12:40 PM \u2013 01:25 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Sunday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Sunday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Monday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Monday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Tuesday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Gen Bio 1 - Tchr. Radzmia+)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Tuesday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Wednesday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Wednesday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Thursday",
+      "time": "01:25 PM \u2013 02:10 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Thursday at 01:25 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Sunday",
+      "time": "02:15 PM \u2013 03:00 PM",
+      "sessions": [
+        "Research Consultation (Research Consultation)",
+        "Research Consultation (Research Consultation)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Sunday at 02:15 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Monday",
+      "time": "02:15 PM \u2013 03:00 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Monday at 02:15 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Tuesday",
+      "time": "02:15 PM \u2013 03:00 PM",
+      "sessions": [
+        "Qur'an (Alim Dipatuan)",
+        "Qur'an (Alim Dipatuan)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Tuesday at 02:15 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Wednesday",
+      "time": "02:15 PM \u2013 03:00 PM",
+      "sessions": [
+        "Qur'an (Alim Dipatuan)",
+        "Qur'an (Alim Dipatuan)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Wednesday at 02:15 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+      "day": "Thursday",
+      "time": "02:15 PM \u2013 03:00 PM",
+      "sessions": [
+        "General Physics 1 (Teacher Aniah)",
+        "General Physics 1 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - SUHAYB AR-RUMI' scheduled twice on Thursday at 02:15 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Sunday",
+      "time": "12:40 PM \u2013 01:20 PM",
+      "sessions": [
+        "Arabic (Alim Mamonas)",
+        "Arabic (Alim Mamonas)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Sunday at 12:40 PM \u2013 01:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Monday",
+      "time": "12:40 PM \u2013 01:20 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Rowena)",
+        "General Biology 1 (Teacher Rowena)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Monday at 12:40 PM \u2013 01:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Tuesday",
+      "time": "12:40 PM \u2013 01:20 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Rowena)",
+        "General Biology 1 (Teacher Rowena)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Tuesday at 12:40 PM \u2013 01:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Wednesday",
+      "time": "12:40 PM \u2013 01:20 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Rowena)",
+        "General Biology 1 (Teacher Rowena)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Wednesday at 12:40 PM \u2013 01:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Thursday",
+      "time": "12:40 PM \u2013 01:20 PM",
+      "sessions": [
+        "Qur'an (Alim Abdulwahab)",
+        "Qur'an (Alim Abdulwahab)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Thursday at 12:40 PM \u2013 01:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Sunday",
+      "time": "01:30 PM \u2013 02:10 PM",
+      "sessions": [
+        "Mathematics (Teacher Jhelyn)",
+        "Mathematics (Teacher Jhelyn)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Sunday at 01:30 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Monday",
+      "time": "01:30 PM \u2013 02:10 PM",
+      "sessions": [
+        "Ec (Teacher Nadzra)",
+        "Ec (Teacher Nadzra)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Monday at 01:30 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Tuesday",
+      "time": "01:30 PM \u2013 02:10 PM",
+      "sessions": [
+        "Ec (Teacher Nadzra)",
+        "Ec (Teacher Nadzra)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Tuesday at 01:30 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Wednesday",
+      "time": "01:30 PM \u2013 02:10 PM",
+      "sessions": [
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)",
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Wednesday at 01:30 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Thursday",
+      "time": "01:30 PM \u2013 02:10 PM",
+      "sessions": [
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)",
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Thursday at 01:30 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Sunday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "Life and Career Skills (Teacher Norhaima)",
+        "Life and Career Skills (Teacher Norhaima)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Sunday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Monday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "Life and Career Skills (Teacher Norhaima)",
+        "Life and Career Skills (Teacher Norhaima)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Monday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Tuesday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)",
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Tuesday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Wednesday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "SHAF (Alim Samsuddin)",
+        "SHAF (Alim Samsuddin)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Wednesday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Thursday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "Life and Career Skills (Teacher Norhaima)",
+        "Life and Career Skills (Teacher Norhaima)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Thursday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Sunday",
+      "time": "03:00 PM \u2013 03:40 PM",
+      "sessions": [
+        "Ec (Teacher Nadzra)",
+        "Ec (Teacher Nadzra)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Sunday at 03:00 PM \u2013 03:40 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Monday",
+      "time": "03:00 PM \u2013 03:40 PM",
+      "sessions": [
+        "Science (Teacher Rowena)",
+        "Science (Teacher Rowena)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Monday at 03:00 PM \u2013 03:40 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Tuesday",
+      "time": "03:00 PM \u2013 03:40 PM",
+      "sessions": [
+        "Mathematics (Teacher Jhelyn)",
+        "Mathematics (Teacher Jhelyn)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Tuesday at 03:00 PM \u2013 03:40 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Wednesday",
+      "time": "03:00 PM \u2013 03:40 PM",
+      "sessions": [
+        "Science (Teacher Rowena)",
+        "Science (Teacher Rowena)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Wednesday at 03:00 PM \u2013 03:40 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Thursday",
+      "time": "03:00 PM \u2013 03:40 PM",
+      "sessions": [
+        "Science (Teacher Rowena)",
+        "Science (Teacher Rowena)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Thursday at 03:00 PM \u2013 03:40 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+      "day": "Thursday",
+      "time": "03:50 PM \u2013 04:30 PM",
+      "sessions": [
+        "Mathematics (Teacher Jhelyn)",
+        "Mathematics (Teacher Jhelyn)"
+      ],
+      "message": "Section 'GRADE 11 (1ST SHIFT GIRLS)' scheduled twice on Thursday at 03:50 PM \u2013 04:30 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Sunday",
+      "time": "12:40 PM \u2013 01:20 PM",
+      "sessions": [
+        "General Physics 1 (Teacher Aniah)",
+        "General Physics 1 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Sunday at 12:40 PM \u2013 01:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Monday",
+      "time": "12:40 PM \u2013 01:20 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Monday at 12:40 PM \u2013 01:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Tuesday",
+      "time": "12:40 PM \u2013 01:20 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Tuesday at 12:40 PM \u2013 01:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Wednesday",
+      "time": "12:40 PM \u2013 01:20 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Wednesday at 12:40 PM \u2013 01:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Thursday",
+      "time": "12:40 PM \u2013 01:20 PM",
+      "sessions": [
+        "General Physics 1 (Teacher Aniah)",
+        "General Physics 1 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Thursday at 12:40 PM \u2013 01:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Sunday",
+      "time": "01:30 PM \u2013 02:10 PM",
+      "sessions": [
+        "SHAF (Alim Samsuddin)",
+        "SHAF (Alim Samsuddin)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Sunday at 01:30 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Monday",
+      "time": "01:30 PM \u2013 02:10 PM",
+      "sessions": [
+        "Arabic (Alim Mamonas)",
+        "Arabic (Alim Mamonas)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Monday at 01:30 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Tuesday",
+      "time": "01:30 PM \u2013 02:10 PM",
+      "sessions": [
+        "Qur'an (Alim Dipatuan)",
+        "Qur'an (Alim Dipatuan)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Tuesday at 01:30 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Wednesday",
+      "time": "01:30 PM \u2013 02:10 PM",
+      "sessions": [
+        "21St Lit. (Teacher Nof)",
+        "21St Lit. (Teacher Nof)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Wednesday at 01:30 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Thursday",
+      "time": "01:30 PM \u2013 02:10 PM",
+      "sessions": [
+        "21St Lit. (Teacher Nof)",
+        "21St Lit. (Teacher Nof)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Thursday at 01:30 PM \u2013 02:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Sunday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "Practical Research 2 (Teacher Aniah)",
+        "Practical Research 2 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Sunday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Monday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "Media and Information Literacy (Teacher Ethel)",
+        "Media and Information Literacy (Teacher Ethel)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Monday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Tuesday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "Practical Research 2 (Teacher Aniah)",
+        "Practical Research 2 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Tuesday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Wednesday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "General Physics 1 (Teacher Aniah)",
+        "General Physics 1 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Wednesday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Thursday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "Media and Information Literacy (Teacher Ethel)",
+        "Media and Information Literacy (Teacher Ethel)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Thursday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Sunday",
+      "time": "03:00 PM \u2013 03:40 PM",
+      "sessions": [
+        "Practical Research 2 (Teacher Aniah)",
+        "Practical Research 2 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Sunday at 03:00 PM \u2013 03:40 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Monday",
+      "time": "03:00 PM \u2013 03:40 PM",
+      "sessions": [
+        "Research Consulatation (Research Consulatation)",
+        "Research Consulatation (Research Consulatation)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Monday at 03:00 PM \u2013 03:40 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Tuesday",
+      "time": "03:00 PM \u2013 03:40 PM",
+      "sessions": [
+        "Practical Research 2 (Teacher Aniah)",
+        "Practical Research 2 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Tuesday at 03:00 PM \u2013 03:40 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Wednesday",
+      "time": "03:00 PM \u2013 03:40 PM",
+      "sessions": [
+        "Physical Education (Sir Mohaymen)",
+        "Physical Education (Sir Mohaymen)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Wednesday at 03:00 PM \u2013 03:40 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Thursday",
+      "time": "03:00 PM \u2013 03:40 PM",
+      "sessions": [
+        "Physical Education (Sir Mohaymen)",
+        "Physical Education (Sir Mohaymen)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Thursday at 03:00 PM \u2013 03:40 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Sunday",
+      "time": "03:50 PM \u2013 04:30 PM",
+      "sessions": [
+        "Media and Information Literacy (Teacher Ethel)",
+        "Media and Information Literacy (Teacher Ethel)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Sunday at 03:50 PM \u2013 04:30 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Monday",
+      "time": "03:50 PM \u2013 04:30 PM",
+      "sessions": [
+        "Practical Research 2 (Teacher Aniah)",
+        "Practical Research 2 (Teacher Aniah)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Monday at 03:50 PM \u2013 04:30 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "day": "Tuesday",
+      "time": "03:50 PM \u2013 04:30 PM",
+      "sessions": [
+        "21St Lit. (Teacher Nof)",
+        "21St Lit. (Teacher Nof)"
+      ],
+      "message": "Section 'GRADE 12 - ABU MUSA AL-ASHARI' scheduled twice on Tuesday at 03:50 PM \u2013 04:30 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Sunday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "SHAF (Alim Samsuddin)",
+        "SHAF (Alim Samsuddin)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Sunday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Monday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "Arabic (Alim Mamonas)",
+        "Arabic (Alim Mamonas)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Monday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Tuesday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "Life and Career Skills (Teacher Norhaima)",
+        "Life and Career Skills (Teacher Norhaima)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Tuesday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Wednesday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Wednesday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Thursday",
+      "time": "02:20 PM \u2013 03:00 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Thursday at 02:20 PM \u2013 03:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Sunday",
+      "time": "03:00 PM \u2013 03:30 PM",
+      "sessions": [
+        "Life and Career Skills (LCS 11 2nd shift)",
+        "Life and Career Skills (LCS 11 2nd shift)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Sunday at 03:00 PM \u2013 03:30 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Thursday",
+      "time": "03:00 PM \u2013 03:30 PM",
+      "sessions": [
+        "Ec (Teacher Nadzra)",
+        "Ec (Teacher Nadzra)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Thursday at 03:00 PM \u2013 03:30 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Sunday",
+      "time": "03:40 PM \u2013 04:20 PM",
+      "sessions": [
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)",
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Sunday at 03:40 PM \u2013 04:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Monday",
+      "time": "03:40 PM \u2013 04:20 PM",
+      "sessions": [
+        "Mathematics (Teacher Jhelyn)",
+        "Mathematics (Teacher Jhelyn)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Monday at 03:40 PM \u2013 04:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Tuesday",
+      "time": "03:40 PM \u2013 04:20 PM",
+      "sessions": [
+        "Ec (Teacher Nadzra)",
+        "Ec (Teacher Nadzra)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Tuesday at 03:40 PM \u2013 04:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Wednesday",
+      "time": "03:40 PM \u2013 04:20 PM",
+      "sessions": [
+        "Qur'an (Alim Abdulwahab)",
+        "Qur'an (Alim Abdulwahab)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Wednesday at 03:40 PM \u2013 04:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Thursday",
+      "time": "03:40 PM \u2013 04:20 PM",
+      "sessions": [
+        "Science (Teacher Rowena)",
+        "Science (Teacher Rowena)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Thursday at 03:40 PM \u2013 04:20 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Sunday",
+      "time": "04:30 PM \u2013 05:10 PM",
+      "sessions": [
+        "Ec (Teacher Nadzra)",
+        "Ec (Teacher Nadzra)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Sunday at 04:30 PM \u2013 05:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Monday",
+      "time": "04:30 PM \u2013 05:10 PM",
+      "sessions": [
+        "General Biology 1 (Teacher Radzmia)",
+        "General Biology 1 (Teacher Radzmia)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Monday at 04:30 PM \u2013 05:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Tuesday",
+      "time": "04:30 PM \u2013 05:10 PM",
+      "sessions": [
+        "Science (Teacher Rowena)",
+        "Science (Teacher Rowena)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Tuesday at 04:30 PM \u2013 05:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Wednesday",
+      "time": "04:30 PM \u2013 05:10 PM",
+      "sessions": [
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)",
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Wednesday at 04:30 PM \u2013 05:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Thursday",
+      "time": "04:30 PM \u2013 05:10 PM",
+      "sessions": [
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)",
+        "Pagbasa at Pagsusuri ng Iba't Ibang Teksto (Teacher Shirehan)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Thursday at 04:30 PM \u2013 05:10 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Sunday",
+      "time": "05:20 PM \u2013 06:00 PM",
+      "sessions": [
+        "Science (Teacher Rowena)",
+        "Science (Teacher Rowena)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Sunday at 05:20 PM \u2013 06:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Monday",
+      "time": "05:20 PM \u2013 06:00 PM",
+      "sessions": [
+        "Life and Career Skills (Teacher Norhaima)",
+        "Life and Career Skills (Teacher Norhaima)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Monday at 05:20 PM \u2013 06:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Tuesday",
+      "time": "05:20 PM \u2013 06:00 PM",
+      "sessions": [
+        "Mathematics (Teacher Jhelyn)",
+        "Mathematics (Teacher Jhelyn)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Tuesday at 05:20 PM \u2013 06:00 PM"
+    },
+    {
+      "type": "SECTION_DOUBLE_SCHEDULED",
+      "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+      "day": "Thursday",
+      "time": "05:20 PM \u2013 06:00 PM",
+      "sessions": [
+        "Mathematics (Teacher Jhelyn)",
+        "Mathematics (Teacher Jhelyn)"
+      ],
+      "message": "Section 'GRADE 11 (2ND SHIFT BOYS)' scheduled twice on Thursday at 05:20 PM \u2013 06:00 PM"
+    }
+  ]
+}
