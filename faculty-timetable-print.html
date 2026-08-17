@@ -500,7 +500,7 @@ body {
     }
 
     // Populate Select Box
-    let selectHtml = `<option value="ALL_FACULTY">🌟 [ALL FACULTY] Show & Print All ${teacherNames.length} Teachers</option><optgroup label="── Individual Faculty ──">`;
+    let selectHtml = `<option value="ALL_FACULTY">[ALL FACULTY] Show & Print All ${teacherNames.length} Teachers</option><optgroup label="── Individual Faculty ──">`;
     selectHtml += teacherNames.map(t => `<option value="${esc(t)}">${esc(t)}</option>`).join('');
     selectHtml += `</optgroup>`;
     teacherSelect.innerHTML = selectHtml;
@@ -550,7 +550,9 @@ body {
       const data = ALL_TEACHERS_DATA[tName];
       if (!data) return;
 
-      const metaStr = `${data.total_classes} Assigned Class${data.total_classes === 1 ? '' : 'es'} (${(data.subjects || []).join(', ')})`;
+      const totalCount = data.total_classes || data.total_teaching_periods || (data.rows ? data.rows.reduce((acc, r) => acc + Object.values(r.days || {}).filter(c => c && (c.occupied || c.is_class)).length, 0) : 0);
+      const subjsList = (data.subjects && data.subjects.length > 0) ? data.subjects.join(', ') : 'Assigned Classes';
+      const metaStr = `${totalCount} Teaching Period${totalCount === 1 ? '' : 's'} • ${subjsList}`;
 
       fullHtml += `
         <div class="timetable-sheet">
@@ -582,30 +584,32 @@ body {
 
       const rows = data.rows || [];
       rows.forEach(r => {
+        const minsStr = typeof r.minutes === 'number' ? `${r.minutes} min.` : (r.minutes || '-');
+
         if (r.is_break) {
           fullHtml += `
             <tr class="row-break">
               <td class="cell-time">${esc(r.time)}</td>
-              <td class="cell-mins">${r.minutes}m</td>
-              <td colspan="5" class="cell-break">${esc(r.break_title)}</td>
+              <td class="cell-mins">${esc(minsStr)}</td>
+              <td colspan="5" class="cell-break">${esc(r.break_title || r.label || 'BREAK')}</td>
             </tr>
           `;
         } else {
           fullHtml += `
             <tr>
               <td class="cell-time">${esc(r.time)}</td>
-              <td class="cell-mins">${r.minutes}m</td>
+              <td class="cell-mins">${esc(minsStr)}</td>
           `;
 
           for (const d of DAYS) {
             const cell = r.days ? r.days[d] : null;
-            if (cell && cell.occupied) {
-              const color = cell.color || { bg: '#f1f5f9', border: '#cbd5e1', text: '#1e293b' };
+            if (cell && (cell.occupied || cell.is_class)) {
+              const color = cell.color || { bg: cell.bg || '#f1f5f9', border: cell.border || '#cbd5e1', text: cell.text || '#1e293b' };
               fullHtml += `
                 <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
                   <div class="cell-class-inner">
-                    <span class="cell-subject-sec">${esc(cell.label)}</span>
-                    <span class="cell-mod-badge">${esc(cell.modality)}</span>
+                    <span class="cell-subject-sec">${esc(cell.subject || cell.label)}</span>
+                    <span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(cell.section || cell.shift || '')}</span>
                   </div>
                 </td>
               `;

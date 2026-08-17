@@ -15,7 +15,7 @@ STANDARD_TIME_BLOCKS = [
     {
         "id": "f2f_assembly",
         "time": "07:30 AM – 07:40 AM",
-        "minutes": "10 min.",
+        "minutes": 10,
         "is_break": True,
         "break_title": "GENERAL ASSEMBLY (F2F)",
         "shift_type": "F2F"
@@ -23,28 +23,28 @@ STANDARD_TIME_BLOCKS = [
     {
         "id": "p1_f2f",
         "time": "07:40 AM – 08:25 AM",
-        "minutes": "45 min.",
+        "minutes": 45,
         "is_break": False,
         "shift_type": "F2F"
     },
     {
         "id": "p2_f2f",
         "time": "08:25 AM – 09:05 AM",
-        "minutes": "40 min.",
+        "minutes": 40,
         "is_break": False,
         "shift_type": "F2F"
     },
     {
         "id": "p3_f2f",
         "time": "09:05 AM – 09:45 AM",
-        "minutes": "40 min.",
+        "minutes": 40,
         "is_break": False,
         "shift_type": "F2F"
     },
     {
         "id": "f2f_recess",
         "time": "09:45 AM – 10:00 AM",
-        "minutes": "15 min.",
+        "minutes": 15,
         "is_break": True,
         "break_title": "RECESS",
         "shift_type": "F2F"
@@ -52,21 +52,21 @@ STANDARD_TIME_BLOCKS = [
     {
         "id": "p4_f2f",
         "time": "10:00 AM – 10:45 AM",
-        "minutes": "45 min.",
+        "minutes": 45,
         "is_break": False,
         "shift_type": "F2F"
     },
     {
         "id": "p5_f2f",
         "time": "10:45 AM – 11:30 AM",
-        "minutes": "45 min.",
+        "minutes": 45,
         "is_break": False,
         "shift_type": "F2F"
     },
     {
         "id": "f2f_lunch",
         "time": "11:30 AM – 12:30 PM",
-        "minutes": "60 min.",
+        "minutes": 60,
         "is_break": True,
         "break_title": "LUNCH and SALAH",
         "shift_type": "F2F"
@@ -74,7 +74,7 @@ STANDARD_TIME_BLOCKS = [
     {
         "id": "odl1_assembly",
         "time": "12:30 PM – 12:40 PM",
-        "minutes": "10 min.",
+        "minutes": 10,
         "is_break": True,
         "break_title": "GENERAL ASSEMBLY (FIRST SHIFT)",
         "shift_type": "ODL 1st Shift"
@@ -82,28 +82,28 @@ STANDARD_TIME_BLOCKS = [
     {
         "id": "p6_f2f_odl1",
         "time": "12:40 PM – 01:25 PM",
-        "minutes": "45 min.",
+        "minutes": 45,
         "is_break": False,
         "shift_type": "F2F / ODL 1"
     },
     {
         "id": "p7_f2f_odl1",
         "time": "01:25 PM – 02:10 PM",
-        "minutes": "45 min.",
+        "minutes": 45,
         "is_break": False,
         "shift_type": "F2F / ODL 1"
     },
     {
         "id": "p8_f2f_odl1",
         "time": "02:15 PM – 03:00 PM",
-        "minutes": "45 min.",
+        "minutes": 45,
         "is_break": False,
         "shift_type": "F2F / ODL 1"
     },
     {
         "id": "f2f_salah_departure",
         "time": "03:00 PM – 03:30 PM",
-        "minutes": "30 min.",
+        "minutes": 30,
         "is_break": True,
         "break_title": "SALAH & DEPARTURE (F2F) • HOMEROOM GUIDANCE (ODL 1)",
         "shift_type": "F2F / ODL 1"
@@ -111,7 +111,7 @@ STANDARD_TIME_BLOCKS = [
     {
         "id": "odl2_assembly",
         "time": "03:30 PM – 03:40 PM",
-        "minutes": "10 min.",
+        "minutes": 10,
         "is_break": True,
         "break_title": "GENERAL ASSEMBLY (SECOND SHIFT)",
         "shift_type": "ODL 2nd Shift"
@@ -119,21 +119,21 @@ STANDARD_TIME_BLOCKS = [
     {
         "id": "p1_odl2",
         "time": "03:40 PM – 04:20 PM",
-        "minutes": "40 min.",
+        "minutes": 40,
         "is_break": False,
         "shift_type": "ODL 2nd Shift"
     },
     {
         "id": "p2_odl2",
         "time": "04:30 PM – 05:10 PM",
-        "minutes": "40 min.",
+        "minutes": 40,
         "is_break": False,
         "shift_type": "ODL 2nd Shift"
     },
     {
         "id": "p3_odl2",
         "time": "05:20 PM – 06:00 PM",
-        "minutes": "40 min.",
+        "minutes": 40,
         "is_break": False,
         "shift_type": "ODL 2nd Shift"
     }
@@ -206,17 +206,14 @@ for sec in sections:
 all_teacher_schedules = {}
 
 for tchr, assign_list in sorted(teacher_raw_assignments.items()):
-    # Map assignments by (time, day)
     assign_by_slot = defaultdict(dict)
+    distinct_subjects = set()
     for a in assign_list:
         assign_by_slot[a['time']][a['day']] = a
+        if a['subject']:
+            distinct_subjects.add(a['subject'])
 
-    # Build weekly rows
     rows = []
-    
-    # 1. Use standard time blocks
-    # Match teacher assignments into standard time blocks
-    used_assignments = set()
     
     for block in STANDARD_TIME_BLOCKS:
         row_id = block["id"]
@@ -241,18 +238,14 @@ for tchr, assign_list in sorted(teacher_raw_assignments.items()):
                     "label": block.get("break_title", "")
                 }
         else:
-            # Find matching assigned classes for this time window
             for d in DAYS:
                 found_assign = None
-                # Exact time match
                 if b_time in assign_by_slot and d in assign_by_slot[b_time]:
                     found_assign = assign_by_slot[b_time][d]
                 else:
-                    # Fuzzy time match within shift
                     for a_time, d_map in assign_by_slot.items():
                         if d in d_map:
                             cand = d_map[d]
-                            # Check start hour overlap
                             b_start = b_time[:5]
                             if b_start in a_time:
                                 found_assign = cand
@@ -261,16 +254,19 @@ for tchr, assign_list in sorted(teacher_raw_assignments.items()):
                 if found_assign:
                     color = get_subject_color(found_assign['subject'])
                     row_data["days"][d] = {
+                        "occupied": True,
                         "is_break": False,
                         "is_class": True,
                         "subject": found_assign['subject'],
                         "section": found_assign['section'],
                         "grade": found_assign['grade'],
                         "shift": found_assign['shift'],
+                        "modality": found_assign['shift'],
                         "label": f"{found_assign['subject']} - {found_assign['section']}",
-                        "bg_color": color['bg'],
-                        "border_color": color['border'],
-                        "text_color": color['text']
+                        "color": color,
+                        "bg": color['bg'],
+                        "border": color['border'],
+                        "text": color['text']
                     }
                 else:
                     row_data["days"][d] = None
@@ -281,7 +277,9 @@ for tchr, assign_list in sorted(teacher_raw_assignments.items()):
     all_teacher_schedules[tchr] = {
         "teacher_name": tchr,
         "title": "Faculty Member",
+        "total_classes": total_classes,
         "total_teaching_periods": total_classes,
+        "subjects": sorted(list(distinct_subjects)),
         "rows": rows
     }
 
