@@ -1466,15 +1466,15 @@
       ];
 
       const dayHeaders = [
-        { title: 'Sep 2', sub: 'Wednesday' },
-        { title: 'Sep 3', sub: 'Thursday' },
-        { title: 'Sep 6', sub: 'Sunday' },
-        { title: 'Sep 7', sub: 'Monday' }
+        { day_num: 1, title: 'Sep 2', sub: 'Wednesday' },
+        { day_num: 2, title: 'Sep 3', sub: 'Thursday' },
+        { day_num: 3, title: 'Sep 6', sub: 'Sunday' },
+        { day_num: 4, title: 'Sep 7', sub: 'Monday' }
       ];
 
       container.innerHTML = uniqueGrades.map(grade => {
         const gradeRecs = records.filter(r => r.grade === grade);
-        const uniqueTimes = [...new Set(gradeRecs.map(r => r.time))].sort((a,b) => minutes(a.split('–')[0]) - minutes(b.split('–')[0]));
+        const uniqueTimes = [...new Set(gradeRecs.map(r => r.time || r.time_slot))].sort((a,b) => minutes(a.split(/[-–]/)[0]) - minutes(b.split(/[-–]/)[0]));
         const hasF2F = gradeRecs.some(r => r.modality === 'F2F');
 
         let timeline = [];
@@ -1483,7 +1483,7 @@
         });
 
         if (hasF2F && (grade.startsWith('Grade') || grade === 'Kinder 2')) {
-          const insertIdx = timeline.findIndex(item => minutes(item.time.split('–')[0]) >= minutes('10:00 AM'));
+          const insertIdx = timeline.findIndex(item => minutes(item.time.split(/[-–]/)[0]) >= minutes('10:00 AM'));
           const recessItem = {
             time: '10:00 AM – 10:25 AM',
             isBreak: true,
@@ -1497,9 +1497,9 @@
           }
         }
 
-        const hasSalahBreak = timeline.some(item => minutes(item.time.split('–')[0]) >= minutes('3:10 PM'));
+        const hasSalahBreak = timeline.some(item => minutes(item.time.split(/[-–]/)[0]) >= minutes('3:10 PM'));
         if (hasSalahBreak) {
-          const insertIdx2 = timeline.findIndex(item => minutes(item.time.split('–')[0]) >= minutes('3:10 PM'));
+          const insertIdx2 = timeline.findIndex(item => minutes(item.time.split(/[-–]/)[0]) >= minutes('3:10 PM'));
           const salahItem = {
             time: '2:50 PM – 3:10 PM',
             isBreak: true,
@@ -1554,8 +1554,13 @@
                           <span class="time-slot-val">${item.time}</span>
                           <span class="time-slot-period">Exam Period</span>
                         </td>
-                        ${dates.map(d => {
-                          const cellExams = gradeRecs.filter(r => r.date === d && r.time === item.time);
+                        ${dayHeaders.map(dh => {
+                          const cellExams = gradeRecs.filter(r => {
+                            const matchDay = (r.day_number === dh.day_num) || (r.short_date && r.short_date.includes(dh.title)) || (r.date && r.date.includes(dh.title));
+                            const matchTime = (r.time === item.time) || (r.time_slot === item.time);
+                            return matchDay && matchTime;
+                          });
+
                           if (cellExams.length === 0) {
                             return `<td><div class="empty-slot-block">No Exam</div></td>`;
                           }
@@ -1563,7 +1568,7 @@
                             <td>
                               <div class="cards-stack">
                                 ${cellExams.map(ex => {
-                                  const typeCls = ex.modality === 'F2F' ? 'f2f' : (ex.shift.includes('2nd') ? 'odl2' : 'odl1');
+                                  const typeCls = ex.modality === 'F2F' ? 'f2f' : ((ex.shift && ex.shift.includes('2nd')) ? 'odl2' : 'odl1');
                                   return renderExamCardHtml(ex, typeCls);
                                 }).join('')}
                               </div>
