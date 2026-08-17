@@ -1,4 +1,4 @@
-window.AMIS_OPTIONS_DATA = {
+{
   "OPTION_A": [
     {
       "date": "2026-09-07",
@@ -55578,5 +55578,4 @@ window.AMIS_OPTIONS_DATA = {
       "status": "VALID"
     }
   }
-};
-window.AMIS_EXAM_DATA = window.AMIS_OPTIONS_DATA.OPTION_A;
+}
