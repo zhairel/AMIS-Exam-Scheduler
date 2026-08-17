@@ -1903,100 +1903,62 @@ html_content = f"""<!DOCTYPE html>
       const container = document.getElementById('mainContainer');
       const uniqueTeachers = [...new Set(records.map(r => r.teacher))].sort();
 
+      const EXAM_DAYS = [
+        {{ day_num: 1, label: "1st Exam Day", full_date: "September 2, 2026", weekday: "Wednesday", short: "Sep 2" }},
+        {{ day_num: 2, label: "2nd Exam Day", full_date: "September 3, 2026", weekday: "Thursday", short: "Sep 3" }},
+        {{ day_num: 3, label: "3rd Exam Day", full_date: "September 6, 2026", weekday: "Sunday", short: "Sep 6" }},
+        {{ day_num: 4, label: "4th Exam Day", full_date: "September 7, 2026", weekday: "Monday", short: "Sep 7" }}
+      ];
+
       container.innerHTML = `
         <div style="display:flex; flex-direction:column; gap:28px;">
           ${{uniqueTeachers.map(teacher => {{
-            const tRecs = records.filter(r => r.teacher === teacher).sort((a,b) => a.date.localeCompare(b.date) || minutes(a.time) - minutes(b.time));
+            const tRecs = records.filter(r => r.teacher === teacher);
             const subList = [...new Set(tRecs.map(r => r.subject))];
-            const weeklyData = (typeof WEEKLY_SCHEDULES_DATA !== 'undefined' && WEEKLY_SCHEDULES_DATA[teacher]) ? WEEKLY_SCHEDULES_DATA[teacher] : null;
-
-            let weeklyTableHtml = '';
-            if (weeklyData && weeklyData.rows) {{
-              weeklyTableHtml = `
-                <div style="overflow-x:auto; margin-top:14px; border:1.5px solid #cbd5e1; border-radius:8px;">
-                  <table style="width:100%; border-collapse:collapse; background:#ffffff; table-layout:fixed; font-size:12px;">
-                    <thead>
-                      <tr style="background:#0b4d38; color:#ffffff;">
-                        <th style="padding:8px 6px; width:130px; border:1px solid #043828; text-align:center;">Time</th>
-                        <th style="padding:8px 6px; width:65px; border:1px solid #043828; text-align:center;">Mins</th>
-                        <th style="padding:8px 6px; border:1px solid #043828; text-align:center;">Sunday</th>
-                        <th style="padding:8px 6px; border:1px solid #043828; text-align:center;">Monday</th>
-                        <th style="padding:8px 6px; border:1px solid #043828; text-align:center;">Tuesday</th>
-                        <th style="padding:8px 6px; border:1px solid #043828; text-align:center;">Wednesday</th>
-                        <th style="padding:8px 6px; border:1px solid #043828; text-align:center;">Thursday</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      ${{weeklyData.rows.map(r => {{
-                        if (r.is_break) {{
-                          return `
-                            <tr style="background:#f1f5f9;">
-                              <td style="padding:4px 6px; border:1px solid #cbd5e1; text-align:center; font-weight:800; font-size:11px; color:#1e293b;">${{r.time}}</td>
-                              <td style="padding:4px 6px; border:1px solid #cbd5e1; text-align:center; font-weight:800; font-size:11px; color:#64748b;">${{r.minutes}}m</td>
-                              <td colspan="5" style="padding:4px 10px; border:1px solid #cbd5e1; text-align:center; font-weight:900; font-size:10.5px; color:#475569; letter-spacing:0.04em; text-transform:uppercase;">${{r.break_title}}</td>
-                            </tr>
-                          `;
-                        }}
-                        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'];
-                        const dayCells = days.map(d => {{
-                          const cell = r.days[d];
-                          if (cell && cell.occupied) {{
-                            const c = cell.color || {{ bg: '#f1f5f9', border: '#cbd5e1', text: '#1e293b' }};
-                            return `
-                              <td style="padding:4px 4px; border:1px solid #cbd5e1; text-align:center; background:${{c.bg}}; color:${{c.text}}; border-color:${{c.border}}; vertical-align:middle;">
-                                <div style="font-weight:900; font-size:11px; line-height:1.2;">${{cell.label}}</div>
-                                <div style="font-size:9px; font-weight:700; opacity:0.8; text-transform:uppercase;">${{cell.modality}}</div>
-                              </td>
-                            `;
-                          }}
-                          return '<td style="padding:4px; border:1px solid #cbd5e1; background:#ffffff;"></td>';
-                        }}).join('');
-
-                        return `
-                          <tr>
-                            <td style="padding:4px 6px; border:1px solid #cbd5e1; text-align:center; font-weight:800; font-size:11px; background:#f8fafc; color:#1e293b;">${{r.time}}</td>
-                            <td style="padding:4px 6px; border:1px solid #cbd5e1; text-align:center; font-weight:800; font-size:11px; background:#f1f5f9; color:#475569;">${{r.minutes}}m</td>
-                            ${{dayCells}}
-                          </tr>
-                        `;
-                      }}).join('')}}
-                    </tbody>
-                  </table>
-                </div>
-              `;
-            }}
 
             return `
               <div class="calendar-poster" style="margin-bottom:28px;">
-                <div class="poster-header" style="background: #064e3b; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+                <div class="poster-header" style="background: #064e3b; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; padding:16px 20px;">
                   <div class="poster-title">
                     <h2 style="font-size:20px; font-weight:900; letter-spacing:0.02em;">${{teacher}}</h2>
-                    <p style="font-size:13px; color:#a7f3d0; font-weight:700;">${{subList.join(' • ')}} (${{weeklyData ? weeklyData.total_classes + ' Weekly Classes' : tRecs.length + ' Exams'}})</p>
+                    <p style="font-size:13px; color:#a7f3d0; font-weight:700;">${{subList.join(' • ')}} (${{tRecs.length}} Exam Proctoring Sessions)</p>
                   </div>
-                  <div style="display:flex; gap:10px; align-items:center;">
-                    <a href="faculty-timetable-print.html?teacher=${{encodeURIComponent(teacher)}}" target="_blank" class="btn btn-outline" style="background:#ffffff; color:#064e3b; font-size:13px; padding:7px 14px; border-radius:6px; text-decoration:none; font-weight:800; display:inline-flex; align-items:center; gap:6px;">
+                  <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+                    <a href="faculty-timetable-class.html?teacher=${{encodeURIComponent(teacher)}}" target="_blank" class="btn btn-outline" style="background:rgba(255,255,255,0.15); color:#ffffff; font-size:12.5px; padding:6px 12px; border-radius:6px; text-decoration:none; font-weight:750; display:inline-flex; align-items:center; gap:6px; border-color:rgba(255,255,255,0.3);" title="View Weekly Class Schedule for this teacher">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/></svg>
+                      Weekly Class Timetable →
+                    </a>
+                    <a href="faculty-timetable-exam.html?teacher=${{encodeURIComponent(teacher)}}" target="_blank" class="btn btn-outline" style="background:#ffffff; color:#064e3b; font-size:13px; padding:7px 14px; border-radius:6px; text-decoration:none; font-weight:800; display:inline-flex; align-items:center; gap:6px;" title="Print Dedicated Exam Timetable">
                       <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 3H6V7H18V3M19 12A1 1 0 1 1 18 11A1 1 0 0 1 19 12M16 19H8V14H16V19M19 8H5A3 3 0 0 0 2 11V17H6V21H18V17H22V11A3 3 0 0 0 19 8Z"/></svg>
-                      Print / Export PDF
+                      Print Exam Timetable
                     </a>
                   </div>
                 </div>
 
                 <div style="padding:20px;">
-                  <h3 style="font-size:15px; font-weight:900; color:#0f172a; margin-bottom:6px;">
-                    Weekly Teaching Schedule Matrix (Sunday–Thursday)
-                  </h3>
-                  ${{weeklyTableHtml}}
-
-                  <div style="margin-top:24px; padding-top:18px; border-top:2px solid #e2e8f0;">
-                    <h3 style="font-size:14px; font-weight:900; color:#0f172a; margin-bottom:12px;">
-                      Term Examination Proctoring Schedule (${{tRecs.length}} Sessions)
-                    </h3>
-                    <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap:14px;">
-                      ${{tRecs.map(ex => {{
-                        const typeCls = ex.modality === 'F2F' ? 'f2f' : (ex.shift.includes('2nd') ? 'odl2' : 'odl1');
-                        return renderExamCardHtml(ex, typeCls);
-                      }}).join('')}}
-                    </div>
+                  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+                    ${{EXAM_DAYS.map(day => {{
+                      const dayExams = tRecs.filter(r => r.day_number === day.day_num).sort((a,b) => minutes(a.time_slot || a.time) - minutes(b.time_slot || b.time));
+                      return `
+                        <div style="border:1.5px solid #cbd5e1; border-radius:10px; overflow:hidden; background:#ffffff; display:flex; flex-direction:column;">
+                          <div style="background:#0b4d38; color:#ffffff; padding:10px; text-align:center;">
+                            <div style="font-size:10px; font-weight:800; color:#a7f3d0; text-transform:uppercase; letter-spacing:0.06em;">${{day.label}}</div>
+                            <div style="font-size:14px; font-weight:900;">${{day.full_date}}</div>
+                            <div style="font-size:11px; opacity:0.9; font-weight:700;">${{day.weekday}}</div>
+                          </div>
+                          <div style="padding:10px; background:#f8fafc; flex:1; display:flex; flex-direction:column; gap:10px;">
+                            ${{dayExams.length === 0 ? `
+                              <div style="padding:30px 10px; text-align:center; color:#94a3b8; font-size:12px; font-weight:700;">
+                                No exam sessions scheduled
+                              </div>
+                            ` : dayExams.map(ex => {{
+                              const typeCls = ex.modality === 'F2F' ? 'f2f' : (ex.shift.includes('2nd') ? 'odl2' : 'odl1');
+                              return renderExamCardHtml(ex, typeCls);
+                            }}).join('')}}
+                          </div>
+                        </div>
+                      `;
+                    }}).join('')}}
                   </div>
                 </div>
               </div>
