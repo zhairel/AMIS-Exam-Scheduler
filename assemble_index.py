@@ -511,14 +511,29 @@ html_content = f"""<!DOCTYPE html>
       position: fixed !important;
       inset: 0 !important;
       z-index: 99999 !important;
-      max-width: 100% !important;
+      width: 100vw !important;
+      max-width: 100vw !important;
       height: 100vh !important;
       margin: 0 !important;
-      padding: 24px 32px !important;
+      padding: 16px 24px !important;
       background: #ffffff !important;
-      overflow-y: auto !important;
+      overflow: auto !important;
+      border: none !important;
       border-radius: 0 !important;
       box-sizing: border-box !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+    }}
+
+    .calendar-poster.is-fullscreen .poster-header {{
+      padding: 12px 20px !important;
+      margin-bottom: 8px !important;
+    }}
+
+    .calendar-poster.is-fullscreen .table-container {{
+      flex: 1 1 auto !important;
+      padding: 12px !important;
     }}
 
     /* Matrix Table Grid */

@@ -299,14 +299,101 @@ body {
   position: fixed !important;
   inset: 0 !important;
   z-index: 99999 !important;
-  max-width: 100% !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
   height: 100vh !important;
   margin: 0 !important;
-  padding: 20px 24px !important;
+  padding: 14px 20px !important;
   background: #ffffff !important;
-  overflow-y: auto !important;
+  overflow: auto !important;
+  border: none !important;
   border-radius: 0 !important;
   box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.timetable-sheet.is-fullscreen .school-header {
+  margin-bottom: 6px !important;
+}
+
+.timetable-sheet.is-fullscreen .school-header h1 {
+  font-size: 19px !important;
+}
+
+.timetable-sheet.is-fullscreen .school-header h2 {
+  font-size: 13.5px !important;
+}
+
+.timetable-sheet.is-fullscreen .teacher-banner {
+  padding: 8px 16px !important;
+  margin-bottom: 0 !important;
+}
+
+.timetable-sheet.is-fullscreen .teacher-name-title {
+  font-size: 18px !important;
+}
+
+.timetable-sheet.is-fullscreen .teacher-meta-tag {
+  font-size: 13px !important;
+  padding: 4px 12px !important;
+}
+
+.timetable-sheet.is-fullscreen .timetable-grid {
+  flex: 1 1 auto !important;
+  height: auto !important;
+  width: 100% !important;
+  margin-top: 0 !important;
+}
+
+.timetable-sheet.is-fullscreen .timetable-grid thead th {
+  font-size: 14px !important;
+  padding: 8px 6px !important;
+}
+
+.timetable-sheet.is-fullscreen .timetable-grid thead th.col-time {
+  width: 175px !important;
+}
+
+.timetable-sheet.is-fullscreen .timetable-grid thead th.col-mins {
+  width: 80px !important;
+}
+
+.timetable-sheet.is-fullscreen .timetable-grid tbody td {
+  padding: 10px 8px !important;
+}
+
+.timetable-sheet.is-fullscreen .cell-time {
+  font-size: 14px !important;
+  font-weight: 850 !important;
+}
+
+.timetable-sheet.is-fullscreen .cell-mins {
+  font-size: 13.5px !important;
+}
+
+.timetable-sheet.is-fullscreen .cell-subject-sec {
+  font-size: 15px !important;
+  font-weight: 900 !important;
+  line-height: 1.25 !important;
+}
+
+.timetable-sheet.is-fullscreen .cell-mod-badge {
+  font-size: 12.5px !important;
+  font-weight: 800 !important;
+  margin-top: 3px !important;
+}
+
+.timetable-sheet.is-fullscreen .cell-break {
+  font-size: 14px !important;
+  font-weight: 900 !important;
+}
+
+.timetable-sheet.is-fullscreen .sheet-footer {
+  margin-top: 8px !important;
+  padding-top: 6px !important;
+  font-size: 11.5px !important;
 }
 
 /* Timetable Table Grid */
