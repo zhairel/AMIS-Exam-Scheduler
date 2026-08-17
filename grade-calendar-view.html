@@ -767,13 +767,31 @@ body.no-navbar {
 
   function cleanSectionName(sec) {
     if (!sec) return '';
-    return String(sec)
+    let s = String(sec)
       .replace(/\s*\((Boys|Girls|Mix|Mixed)\)/gi, '')
       .replace(/\s*—\s*(Boys|Girls|Mix|Mixed)/gi, '')
       .replace(/\s*-\s*(Boys|Girls|Mix|Mixed)/gi, '')
-      .replace(/\b(Boys|Girls|Mix|Mixed)\b/gi, '')
-      .replace(/\s+/g, ' ')
+      .replace(/\s*•\s*(Boys|Girls|Mix|Mixed)/gi, '')
       .trim();
+    if (!s || s.toLowerCase() === 'boys' || s.toLowerCase() === 'girls') {
+      return sec;
+    }
+    return s;
+  }
+
+  function getGenderPillHtml(ex) {
+    let g = ex.gender || '';
+    if (!g) {
+      let sec = String(ex.section || '').toLowerCase();
+      if (sec.includes('boy')) g = 'Boys';
+      else if (sec.includes('girl')) g = 'Girls';
+      else if (sec.includes('mix')) g = 'Mix';
+    }
+    if (!g) return '';
+    let cls = 'pill-boys';
+    if (g.toLowerCase().includes('girl')) cls = 'pill-girls';
+    else if (g.toLowerCase().includes('mix')) cls = 'pill-mix';
+    return `<span class="pill-gender ${cls}">${esc(g)}</span>`;
   }
 
   function formatShortDate(dStr) {
@@ -1000,6 +1018,7 @@ body.no-navbar {
                                   <div class="cal-event-sec">
                                     <span class="cal-grade-title">${esc(ex.grade)}</span>
                                     ${cleanSectionName(ex.section) ? `<span class="cal-sec-name">— ${esc(cleanSectionName(ex.section))}</span>` : ''}
+                                    ${getGenderPillHtml(ex)}
                                   </div>
                                   ${ex.room ? `
                                     <div class="cal-event-tchr" style="border-top:0; padding-top:0; margin-top:4px;">
@@ -1186,6 +1205,7 @@ body.no-navbar {
                                     </div>
                                     <div class="cal-event-sec">
                                       <span>${esc(cleanSectionName(ex.section))}</span>
+                                      ${getGenderPillHtml(ex)}
                                     </div>
                                     <div class="cal-event-tchr">
                                       <span>${esc(ex.teacher || 'To Confirm')}</span>

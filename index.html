@@ -569,6 +569,39 @@ window.AMIS_EXAM_DATA = [{"date": "2026-09-07", "dayName": "Monday", "examDay": 
       font-weight: 800;
       color: #334155;
       margin-top: 5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .gender-pill {
+      display: inline-block;
+      font-size: 11.5px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 2px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .gender-pill.pill-boys {
+      background: #e0f2fe;
+      color: #0369a1;
+      border: 1.5px solid #7dd3fc;
+    }
+
+    .gender-pill.pill-girls {
+      background: #fce7f3;
+      color: #be185d;
+      border: 1.5px solid #fbcfe8;
+    }
+
+    .gender-pill.pill-mix {
+      background: #f3e8ff;
+      color: #7e22ce;
+      border: 1.5px solid #e9d5ff;
     }
 
     .card-teacher-row {
@@ -1061,16 +1094,35 @@ window.AMIS_EXAM_DATA = [{"date": "2026-09-07", "dayName": "Monday", "examDay": 
       }
     });
 
-    // Complete gender indicator stripping
     function cleanSecName(sec) {
       if (!sec) return '';
-      return String(sec)
+      let s = String(sec)
         .replace(/\s*\((Boys|Girls|Mix|Mixed)\)/gi, '')
         .replace(/\s*—\s*(Boys|Girls|Mix|Mixed)/gi, '')
         .replace(/\s*-\s*(Boys|Girls|Mix|Mixed)/gi, '')
         .replace(/\s*•\s*(Boys|Girls|Mix|Mixed)/gi, '')
-        .replace(/\b(Boys|Girls|Mix|Mixed)\b/gi, '')
         .trim();
+      if (!s || s.toLowerCase() === 'boys' || s.toLowerCase() === 'girls') {
+        return sec;
+      }
+      return s;
+    }
+
+    function getGenderBadge(ex) {
+      let g = ex.gender || '';
+      if (!g) {
+        let sec = String(ex.section || '').toLowerCase();
+        if (sec.includes('boy')) g = 'Boys';
+        else if (sec.includes('girl')) g = 'Girls';
+        else if (sec.includes('mix')) g = 'Mix';
+      }
+      if (!g) return '';
+      
+      let cls = 'pill-boys';
+      if (g.toLowerCase().includes('girl')) cls = 'pill-girls';
+      else if (g.toLowerCase().includes('mix')) cls = 'pill-mix';
+      
+      return `<span class="gender-pill ${cls}">${g}</span>`;
     }
 
     function initApp() {
@@ -1277,6 +1329,7 @@ window.AMIS_EXAM_DATA = [{"date": "2026-09-07", "dayName": "Monday", "examDay": 
                                     </div>
                                     <div class="card-sec-row">
                                       <span>${cleanSecName(ex.section)}</span>
+                                      ${getGenderBadge(ex)}
                                     </div>
                                     <div class="card-teacher-row">
                                       <span>${ex.teacher}</span>
@@ -1455,6 +1508,7 @@ window.AMIS_EXAM_DATA = [{"date": "2026-09-07", "dayName": "Monday", "examDay": 
                           </div>
                           <div class="card-sec-row">
                             <strong>${ex.grade}</strong> — ${cleanSecName(ex.section)}
+                            ${getGenderBadge(ex)}
                           </div>
                           <div class="card-teacher-row" style="color:var(--text); font-size:14.5px;">
                             <span>${ex.date} (${ex.dayName.slice(0,3)})</span>
@@ -1499,7 +1553,7 @@ window.AMIS_EXAM_DATA = [{"date": "2026-09-07", "dayName": "Monday", "examDay": 
         return `
           <div class="modal-sec-item">
             <div>
-              <div class="item-grade-sec">${ex.grade} — ${cleanSecName(ex.section)}</div>
+              <div class="item-grade-sec">${ex.grade} — ${cleanSecName(ex.section)} ${getGenderBadge(ex)}</div>
               <span class="mod-badge ${modCls}">${modLabel}</span>
             </div>
             <div>
