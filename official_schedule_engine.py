@@ -183,6 +183,7 @@ flat_schedule_records = []
 
 # Exact active section sheets: ELEM, HS SCHED (NEW), and SHS
 target_sheets = ['ELEM', 'HS SCHED (NEW)', 'SHS']
+seen_sec_titles = set()
 
 for sname in target_sheets:
     if sname not in sheets_dict:
@@ -244,12 +245,12 @@ for sname in target_sheets:
                     next_r = other['title_row']
         t['end_row'] = next_r - 1 if next_r else min(max_r, t['time_row'] + 25)
 
-    seen_sec_titles = set()
     for t in tables:
         raw_title = t['title']
-        if raw_title in seen_sec_titles:
+        clean_key = re.sub(r'\s+', ' ', raw_title.strip().upper())
+        if clean_key in seen_sec_titles:
             continue
-        seen_sec_titles.add(raw_title)
+        seen_sec_titles.add(clean_key)
         
         s_up = raw_title.upper()
         dept = "Elementary"
