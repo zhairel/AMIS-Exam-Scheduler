@@ -52,7 +52,7 @@ for grade in grades:
     # Dynamic height: header (240px) + total rows * 115px + footer/padding (160px)
     win_height = max(920, min(3200, 260 + (total_rows * 118) + 120))
     
-    url = f"http://localhost:8080/grade-calendar-view.html?grade={urllib.parse.quote(grade)}&nobar=1"
+    url = f"http://localhost:3000/grade-calendar-view.html?grade={urllib.parse.quote(grade)}&nobar=1"
     
     cmd = [
         "firefox", "--headless",

@@ -51,7 +51,7 @@ ws1['A2'].alignment = Alignment(horizontal="center", vertical="center")
 ws1.row_dimensions[2].height = 24
 
 ws1.merge_cells('A3:J3')
-ws1['A3'] = "Official Exam Week: September 2–3 & September 9–10, 2026 • 60 Minutes per Subject • Continuous Flow"
+ws1['A3'] = "Official Exam Dates: September 2, 3, 6, 7, 2026 • High School Math (120 Mins) • Continuous Flow"
 ws1['A3'].font = Font(name="Arial", size=10, italic=True, color="334155")
 ws1['A3'].fill = PatternFill(start_color="E2E8F0", end_color="E2E8F0", fill_type="solid")
 ws1['A3'].alignment = Alignment(horizontal="center", vertical="center")
@@ -155,7 +155,7 @@ ws3['A1'].fill = PatternFill(start_color=NAVY, end_color=NAVY, fill_type="solid"
 ws3['A1'].alignment = Alignment(horizontal="center", vertical="center")
 ws3.row_dimensions[1].height = 26
 
-t_headers = ["Teacher Name", "Total Assigned Exams", "Day 1 (Sep 2)", "Day 2 (Sep 3)", "Day 3 (Sep 9)", "Day 4 (Sep 10)"]
+t_headers = ["Teacher Name", "Total Assigned Exams", "Day 1 (Sep 2)", "Day 2 (Sep 3)", "Day 3 (Sep 6)", "Day 4 (Sep 7)"]
 for col_idx, h in enumerate(t_headers, 1):
     c = ws3.cell(row=3, column=col_idx, value=h)
     c.font = Font(name="Arial", size=10, bold=True, color="FFFFFF")
@@ -173,8 +173,8 @@ for t_name, d_counts in sorted(t_map.items()):
     total_e = sum(d_counts.values())
     d1 = d_counts.get("2026-09-02", 0)
     d2 = d_counts.get("2026-09-03", 0)
-    d3 = d_counts.get("2026-09-09", 0)
-    d4 = d_counts.get("2026-09-10", 0)
+    d3 = d_counts.get("2026-09-06", 0)
+    d4 = d_counts.get("2026-09-07", 0)
 
     fill_c = PatternFill(start_color=WHITE if row_idx % 2 == 0 else LIGHT_BG, end_color=WHITE if row_idx % 2 == 0 else LIGHT_BG, fill_type="solid")
     row_vals = [t_name, total_e, d1, d2, d3, d4]

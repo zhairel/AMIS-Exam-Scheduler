@@ -2,38 +2,38 @@
 AL MUNAWWARA ISLAMIC SCHOOL — CANONICAL FACULTY WORKLOAD & CONFLICT REPORT
 Total Canonical Faculty Members: 54
 Total Exam Proctored Sessions: 597
-Total Teacher Conflict Exam Slots: 29
+Total Teacher Conflict Exam Slots: 0
 ===============================================================================================
 FACULTY NAME               | TOTAL | F2F  | ODL 1 | ODL 2 | CONFLICTS | PRIMARY SUBJECTS
 -----------------------------------------------------------------------------------------------
-Ustadh Obaydah             |    23 |    6 |     8 |     9 |      6 ⚠️ | Arabic, Qur'an
-Ustadha Silfah             |    23 |    4 |    10 |     9 |      4 ⚠️ | Arabic, GMRC
-Teacher Monisa             |    21 |    3 |     9 |     9 |      2 ⚠️ | AP, Filipino, Makabansa, TLE
+Ustadh Obaydah             |    23 |    6 |     8 |     9 |         0 | Arabic, Qur'an
+Ustadha Silfah             |    23 |    4 |    10 |     9 |         0 | Arabic, GMRC
+Teacher Monisa             |    21 |    3 |     9 |     9 |         0 | AP, Filipino, Makabansa, TLE
 Ustadh Ali                 |    21 |    4 |     8 |     9 |         0 | Arabic
-Ustadh Hainur              |    19 |    0 |     8 |    11 |      4 ⚠️ | Arabic, Hadith, Qur'an, SHAF
+Ustadh Hainur              |    19 |    0 |     8 |    11 |         0 | Arabic, Hadith, Qur'an, SHAF
 Alim Samsuddin             |    18 |    6 |     6 |     6 |         0 | SHAF
 Ustadh Jaisam              |    17 |    4 |     7 |     6 |         0 | Qur'an
-Ustadha Saliha             |    17 |    7 |     6 |     4 |      4 ⚠️ | Arabic, GMRC, Hadith
+Ustadha Saliha             |    17 |    7 |     6 |     4 |         0 | Arabic, GMRC, Hadith
 Teacher Sahdia             |    16 |    3 |     6 |     7 |         0 | Arabic, GMRC, Language
-Teacher Anna               |    15 |    0 |     8 |     7 |      3 ⚠️ | Science, TLE
-Teacher Arvin              |    15 |    2 |     6 |     7 |      4 ⚠️ | English, Math, TLE
-Teacher Saimonah           |    15 |    0 |     7 |     8 |      9 ⚠️ | AP, MAPEH, Math, Science
+Teacher Anna               |    15 |    0 |     8 |     7 |         0 | Science, TLE
+Teacher Arvin              |    15 |    2 |     6 |     7 |         0 | English, Math, TLE
+Teacher Saimonah           |    15 |    0 |     7 |     8 |         0 | AP, MAPEH, Math, Science
 Teacher Sophia             |    15 |    4 |     5 |     6 |         0 | Filipino, Social Science
-Ustadh Faidh               |    15 |    1 |     5 |     9 |      7 ⚠️ | Arabic, Hadith, Qur'an, SHAF
+Ustadh Faidh               |    15 |    1 |     5 |     9 |         0 | Arabic, Hadith, Qur'an, SHAF
 Teacher Halnaisa           |    14 |    4 |     5 |     5 |         0 | MAPEH, TLE
-Teacher Jayra              |    13 |    3 |     5 |     5 |      4 ⚠️ | English, GMRC
-Teacher Jenny              |    13 |    0 |     7 |     6 |      7 ⚠️ | English, Filipino, Makabansa, TLE
+Teacher Jayra              |    13 |    3 |     5 |     5 |         0 | English, GMRC
+Teacher Jenny              |    13 |    0 |     7 |     6 |         0 | English, Filipino, Makabansa, TLE
 Teacher Jessa              |    13 |    3 |     5 |     5 |         0 | English, Filipino
 Teacher Jerlyn             |    12 |    2 |     5 |     5 |         0 | Math, Science
-Teacher Joanna             |    12 |    0 |     6 |     6 |      4 ⚠️ | Circle Time 1, Circle Time 2, Filipino, Math
+Teacher Joanna             |    12 |    0 |     6 |     6 |         0 | Circle Time 1, Circle Time 2, Filipino, Math
 Teacher Norhydie           |    12 |    4 |     2 |     6 |         0 | AP, English, Filipino, MAPEH, Makabansa
-Teacher Normylah           |    12 |    2 |     4 |     6 |      2 ⚠️ | AP, Filipino
+Teacher Normylah           |    12 |    2 |     4 |     6 |         0 | AP, Filipino
 Ustadh Abdiraheem          |    12 |    3 |     5 |     4 |         0 | SHAF
 Ustadh Ersahad             |    12 |    5 |     1 |     6 |         0 | Arabic, Math, SHAF
 Alim Abdul Karim           |    11 |    0 |     7 |     4 |         0 | Arabic, SHAF
 Teacher Rowena             |    11 |    3 |     4 |     4 |         0 | General Biology 1, General Science, Science
 Teacher Shirehan           |    11 |    3 |     4 |     4 |         0 | PSKP, Social Science
-Teacher Zuhora             |    11 |    1 |     6 |     4 |      2 ⚠️ | AP, Filipino, GMRC, MAPEH, Makabansa
+Teacher Zuhora             |    11 |    1 |     6 |     4 |         0 | AP, Filipino, GMRC, MAPEH, Makabansa
 Teacher Jhelyn             |    10 |    3 |     3 |     4 |         0 | General Mathematics, Math
 Teacher Marham             |    10 |    2 |     4 |     4 |         0 | English
 Teacher Nadzra             |    10 |    3 |     3 |     4 |         0 | EC, Filipino
