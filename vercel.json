@@ -2,6 +2,11 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/faculty-timetable/class", "destination": "/faculty-timetable-class.html" },
+    { "source": "/faculty-timetable/exam", "destination": "/faculty-timetable-exam.html" },
+    { "source": "/faculty-timetable-print", "destination": "/faculty-timetable-class.html" }
+  ],
   "headers": [
     {
       "source": "/(.*)",

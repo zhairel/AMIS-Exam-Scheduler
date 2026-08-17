@@ -1254,7 +1254,10 @@ html_content = f"""<!DOCTYPE html>
           Schedule Home
         </a>
         <a class="btn btn-outline" href="class-schedule.html" target="_blank" style="background:#0f766e; color:#ffffff; font-weight:700; border-color:#0f766e;" title="View Official Weekly Class Schedule (Sunday-Thursday)">
-          Class Schedule (Official)
+          Class Schedule
+        </a>
+        <a class="btn btn-outline" href="faculty-timetable-exam.html" target="_blank" style="background:#047857; color:#ffffff; font-weight:700; border-color:#059669;" title="View Faculty Timetable — Exam Schedule">
+          Faculty Timetable (Exam)
         </a>
         <button class="btn btn-outline" onclick="window.print()">Print Schedule</button>
         <button class="btn btn-primary" onclick="exportMasterCSV()">Export CSV</button>

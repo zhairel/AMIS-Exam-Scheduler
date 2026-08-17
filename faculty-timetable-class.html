@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Faculty Timetable — Class Schedule | AL MUNAWWARA ISLAMIC SCHOOL</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- html2pdf.js CDN with offline fallback -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<!-- Embedded Master Weekly Data -->
+<script src="teacher_weekly_schedules.js"></script>
+
+<style>
+:root {
+  --brand-deep: #064e3b;
+  --brand-green: #0b4d38;
+  --brand-accent: #0f766e;
+  --brand-surface: #f0fdf4;
+  --brand-border: #a7f3d0;
+  
+  --ink: #0f172a;
+  --ink-secondary: #334155;
+  --muted: #64748b;
+  --line: #cbd5e1;
+  --line-strong: #94a3b8;
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  
+  --break-bg: #f1f5f9;
+  --break-text: #475569;
+  --break-border: #cbd5e1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 60px;
+}
+
+/* Screen Navigation Toolbar */
+.top-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--brand-deep);
+  color: #fff;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.brand-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 1px;
+}
+
+.brand-text h1 {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.brand-text p {
+  font-size: 12px;
+  color: #a7f3d0;
+  font-weight: 600;
+}
+
+.toolbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.select-teacher {
+  background: #ffffff;
+  color: var(--ink);
+  border: 1.5px solid var(--brand-border);
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  min-width: 230px;
+}
+
+.select-teacher:focus {
+  border-color: #34d399;
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.3);
+}
+
+.btn-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--brand-accent);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 12.5px;
+  font-weight: 750;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-action:hover {
+  background: #115e59;
+  transform: translateY(-1px);
+}
+
+.btn-print {
+  background: #f59e0b;
+  color: #78350f;
+  font-weight: 850;
+  border-color: #d97706;
+}
+
+.btn-print:hover {
+  background: #d97706;
+  color: #fff;
+}
+
+.btn-back {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-back:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Main Container */
+.page-sheet-container {
+  max-width: 1400px;
+  margin: 28px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* Individual Printable Sheet (A4 Landscape Formatted) */
+.timetable-sheet {
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+  padding: 24px 28px;
+  position: relative;
+  page-break-after: always;
+  break-after: page;
+}
+
+.school-header {
+  text-align: center;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.school-header h1 {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--brand-deep);
+  letter-spacing: 0.02em;
+  margin-bottom: 2px;
+}
+
+.school-header h2 {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  margin-bottom: 3px;
+}
+
+.school-header p {
+  font-size: 11px;
+  font-weight: 650;
+  color: var(--muted);
+}
+
+.teacher-banner {
+  background: #f1f5f9;
+  border-left: 5px solid var(--brand-deep);
+  border-radius: 6px;
+  padding: 8px 14px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.teacher-name-title {
+  font-size: 17px;
+  font-weight: 900;
+  color: var(--brand-deep);
+}
+
+.teacher-meta-tag {
+  font-size: 11.5px;
+  font-weight: 800;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: var(--ink-secondary);
+}
+
+/* Master Timetable Grid */
+.timetable-grid {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 11px;
+  border: 1.5px solid #64748b;
+}
+
+.timetable-grid th {
+  background: var(--brand-deep);
+  color: #ffffff;
+  font-weight: 850;
+  text-align: center;
+  padding: 6px 4px;
+  border: 1px solid #043828;
+  font-size: 11.5px;
+  letter-spacing: 0.02em;
+}
+
+.timetable-grid th.col-time {
+  width: 140px;
+}
+
+.timetable-grid th.col-mins {
+  width: 68px;
+}
+
+.timetable-grid td {
+  border: 1px solid #94a3b8;
+  padding: 4px;
+  text-align: center;
+  vertical-align: middle;
+  height: 48px;
+}
+
+.cell-time {
+  background: #f8fafc;
+  font-weight: 850;
+  font-size: 11px;
+  color: var(--ink);
+  line-height: 1.25;
+}
+
+.cell-mins {
+  background: #f8fafc;
+  font-weight: 800;
+  color: var(--muted);
+  font-size: 10.5px;
+}
+
+.row-break {
+  background: var(--break-bg) !important;
+}
+
+.cell-break {
+  background: #f1f5f9;
+  color: var(--break-text);
+  font-weight: 850;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.cell-empty {
+  background: #ffffff;
+}
+
+.cell-class {
+  border-width: 1.5px !important;
+  transition: transform 0.1s ease;
+  position: relative;
+}
+
+.cell-class-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 2px 4px;
+}
+
+.cell-subject-sec {
+  font-weight: 900;
+  font-size: 11.5px;
+  line-height: 1.2;
+}
+
+.cell-mod-badge {
+  font-weight: 750;
+  font-size: 10px;
+  line-height: 1.15;
+  opacity: 0.95;
+}
+
+.cell-time-duration-pill {
+  font-size: 9.5px;
+  font-weight: 800;
+  opacity: 0.85;
+  margin-top: 1px;
+}
+
+/* Footer of Sheet */
+.sheet-footer {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1.5px solid #cbd5e1;
+  padding-top: 8px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.legend-strip {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.legend-box {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+}
+
+.legend-color-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+/* Strict A4 Landscape Print Engine */
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 5mm 6mm;
+  }
+  
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  
+  .top-toolbar {
+    display: none !important;
+  }
+  
+  .page-sheet-container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    gap: 0 !important;
+  }
+  
+  .timetable-sheet {
+    box-shadow: none !important;
+    border: 1px solid #64748b !important;
+    border-radius: 0 !important;
+    padding: 8px 12px !important;
+    margin: 0 0 0 0 !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
+  }
+
+  .school-header {
+    margin-bottom: 6px !important;
+    padding-bottom: 4px !important;
+  }
+  .school-header h1 {
+    font-size: 16px !important;
+  }
+  .school-header h2 {
+    font-size: 12.5px !important;
+  }
+  .school-header p {
+    font-size: 9.5px !important;
+  }
+
+  .teacher-banner {
+    padding: 4px 10px !important;
+    margin-bottom: 6px !important;
+  }
+  .teacher-name-title {
+    font-size: 14px !important;
+  }
+  .teacher-meta-tag {
+    font-size: 9.5px !important;
+    padding: 2px 6px !important;
+  }
+
+  .timetable-grid {
+    flex: 1 !important;
+    font-size: 9.5px !important;
+  }
+  .timetable-grid th {
+    padding: 4px 2px !important;
+    font-size: 10px !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .timetable-grid td {
+    padding: 2px 2px !important;
+    height: auto !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .cell-subject-sec {
+    font-size: 9.5px !important;
+  }
+  .cell-mod-badge {
+    font-size: 8.5px !important;
+  }
+  .cell-time-duration-pill {
+    font-size: 8px !important;
+  }
+
+  .sheet-footer {
+    margin-top: 4px !important;
+    padding-top: 3px !important;
+    font-size: 8.5px !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Top Navigation Toolbar -->
+<header class="top-toolbar">
+  <div class="brand-title">
+    <img src="amis_logo.png" alt="AMIS Logo" class="brand-logo">
+    <div class="brand-text">
+      <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
+      <p>Faculty Timetable — Class Schedule • S.Y. 2026–2027</p>
+    </div>
+  </div>
+
+  <div class="toolbar-controls">
+    <select id="teacherPicker" class="select-teacher" title="Select faculty member to view timetable">
+      <option value="ALL_FACULTY">All Staff / Faculty (Print All)</option>
+    </select>
+
+    <button id="btnPrint" class="btn-action btn-print" title="Print Class Timetable (A4 Landscape)">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 3H6V7H18V3M19 12A1 1 0 1 1 18 11A1 1 0 0 1 19 12M16 19H8V14H16V19M19 8H5A3 3 0 0 0 2 11V17H6V21H18V17H22V11A3 3 0 0 0 19 8Z"/></svg>
+      Print Class Timetable
+    </button>
+
+    <a href="class-schedule.html" class="btn-action" style="background:#0f766e; color:#fff; border-color:#0f766e;" title="Back to Class Schedule">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/></svg>
+      Class Schedule
+    </a>
+
+    <a href="faculty-timetable-exam.html" class="btn-action" style="background:#065f46; color:#fff; border-color:#059669;" title="Go to Faculty Exam Schedule Timetable">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 19H5V8H19M16 1V3H8V1H6V3H5C3.89 3 3 3.89 3 5V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V5C21 3.89 20.1 3 19 3H18V1M17 12H12V17H17V12Z"/></svg>
+      Faculty Exam Timetable →
+    </a>
+
+    <a href="index.html" class="btn-action btn-back" title="Return to Portal Home">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      Schedule Home
+    </a>
+  </div>
+</header>
+
+<!-- Main Printable Landscape Sheet -->
+<main class="page-sheet-container" id="sheetsContainer">
+  <!-- Dynamic Faculty Sheets rendered here -->
+</main>
+
+<script>
+(function() {
+  const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
+  let ALL_TEACHERS_DATA = {};
+
+  function init() {
+    if (typeof AMIS_TEACHER_WEEKLY_SCHEDULES !== 'undefined') {
+      ALL_TEACHERS_DATA = AMIS_TEACHER_WEEKLY_SCHEDULES;
+      populateTeacherDropdown();
+      handleInitialRoute();
+    } else {
+      fetch('teacher_weekly_schedules.json')
+        .then(r => r.json())
+        .then(data => {
+          ALL_TEACHERS_DATA = data;
+          populateTeacherDropdown();
+          handleInitialRoute();
+        })
+        .catch(err => {
+          document.getElementById('sheetsContainer').innerHTML = `
+            <div style="padding:40px; text-align:center; color:#b91c1c; font-weight:800;">
+              Failed to load teacher schedules dataset. Please ensure teacher_weekly_schedules.js / JSON exists.
+            </div>
+          `;
+        });
+    }
+
+    document.getElementById('teacherPicker').addEventListener('change', function(e) {
+      const val = e.target.value;
+      const url = new URL(window.location);
+      if (val === 'ALL_FACULTY') {
+        url.searchParams.delete('teacher');
+      } else {
+        url.searchParams.set('teacher', val);
+      }
+      window.history.pushState({}, '', url);
+      renderSelectedTeachers(val);
+    });
+
+    document.getElementById('btnPrint').addEventListener('click', function() {
+      window.print();
+    });
+  }
+
+  function populateTeacherDropdown() {
+    const picker = document.getElementById('teacherPicker');
+    picker.innerHTML = '<option value="ALL_FACULTY">All Staff / Faculty (Print All)</option>';
+
+    const teacherList = Object.values(ALL_TEACHERS_DATA).sort((a, b) => {
+      const nameA = a.canonical_name || a.teacher_name || a.teacher_id;
+      const nameB = b.canonical_name || b.teacher_name || b.teacher_id;
+      return nameA.localeCompare(nameB);
+    });
+
+    teacherList.forEach(t => {
+      const opt = document.createElement('option');
+      opt.value = t.teacher_id;
+      const totalCount = t.total_classes || t.total_teaching_periods || 0;
+      opt.textContent = `${t.canonical_name || t.teacher_name} (${totalCount} classes)`;
+      picker.appendChild(opt);
+    });
+  }
+
+  function handleInitialRoute() {
+    const params = new URLSearchParams(window.location.search);
+    const teacherParam = params.get('teacher');
+
+    if (teacherParam && ALL_TEACHERS_DATA[teacherParam]) {
+      document.getElementById('teacherPicker').value = teacherParam;
+      renderSelectedTeachers(teacherParam);
+    } else {
+      const firstTid = Object.keys(ALL_TEACHERS_DATA)[0];
+      if (firstTid) {
+        document.getElementById('teacherPicker').value = firstTid;
+        renderSelectedTeachers(firstTid);
+      } else {
+        renderSelectedTeachers('ALL_FACULTY');
+      }
+    }
+  }
+
+  function renderSelectedTeachers(val) {
+    if (val === 'ALL_FACULTY') {
+      const teacherIds = Object.values(ALL_TEACHERS_DATA)
+        .sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name))
+        .map(t => t.teacher_id);
+      renderMultipleTeacherSheets(teacherIds);
+    } else {
+      if (ALL_TEACHERS_DATA[val]) {
+        renderMultipleTeacherSheets([val]);
+      }
+    }
+  }
+
+  function renderMultipleTeacherSheets(tIds) {
+    const todayStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    let fullHtml = '';
+
+    tIds.forEach(tid => {
+      const data = ALL_TEACHERS_DATA[tid];
+      if (!data) return;
+
+      const teacherDisplayName = data.canonical_name || data.teacher_name || tid;
+      const totalCount = data.total_classes || data.total_teaching_periods || (data.rows ? data.rows.reduce((acc, r) => acc + Object.values(r.days || {}).filter(c => c && (c.occupied || c.is_class)).length, 0) : 0);
+      const subjsList = (data.subjects && data.subjects.length > 0) ? data.subjects.join(', ') : 'Assigned Classes';
+      const metaStr = `${totalCount} Teaching Period${totalCount === 1 ? '' : 's'} • ${subjsList}`;
+
+      fullHtml += `
+        <div class="timetable-sheet">
+          <div class="school-header" style="display:flex; align-items:center; justify-content:center; gap:14px; margin-bottom:14px;">
+            <img src="amis_logo.png" alt="AMIS Logo" style="width:48px; height:48px; border-radius:50%; object-fit:contain;">
+            <div>
+              <h1 style="margin:0;">AL MUNAWWARA ISLAMIC SCHOOL</h1>
+              <h2 style="margin:2px 0 0 0;">Faculty Timetable — Class Schedule</h2>
+              <p style="margin:2px 0 0 0;">Official Weekly Schedule S.Y. 2026–2027 • Developed by Software Engineer Mon Zhairel Lingasa</p>
+            </div>
+          </div>
+
+          <div class="teacher-banner">
+            <span class="teacher-name-title">${esc(teacherDisplayName.toUpperCase())}</span>
+            <span class="teacher-meta-tag">${esc(metaStr)}</span>
+          </div>
+
+          <table class="timetable-grid">
+            <thead>
+              <tr>
+                <th class="col-time">Time</th>
+                <th class="col-mins">Minutes</th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+              </tr>
+            </thead>
+            <tbody>
+      `;
+
+      const rows = data.rows || [];
+      if (rows.length === 0) {
+        fullHtml += `
+          <tr>
+            <td colspan="7" style="padding: 30px; text-align: center; color: #64748b; font-weight: 700; font-size: 13px;">
+              No active weekly class periods scheduled for ${esc(teacherDisplayName)}.
+            </td>
+          </tr>
+        `;
+      } else {
+        rows.forEach(r => {
+          const minsStr = typeof r.minutes === 'number' ? `${r.minutes} min.` : (r.minutes || '-');
+          const timeFormatted = esc(r.time);
+
+          if (r.is_break) {
+            fullHtml += `
+              <tr class="row-break">
+                <td class="cell-time">${timeFormatted}</td>
+                <td class="cell-mins">${esc(minsStr)}</td>
+                <td colspan="5" class="cell-break">${esc(r.break_title || r.label || 'BREAK')}</td>
+              </tr>
+            `;
+          } else {
+            fullHtml += `
+              <tr>
+                <td class="cell-time">${timeFormatted}</td>
+                <td class="cell-mins">${esc(minsStr)}</td>
+            `;
+
+            for (const d of DAYS) {
+              const cell = r.days ? r.days[d] : null;
+              if (cell && (cell.occupied || cell.is_class)) {
+                const color = cell.color || { bg: cell.bg || '#f1f5f9', border: cell.border || '#cbd5e1', text: cell.text || '#1e293b' };
+                const modTag = cell.modality || cell.shift || '';
+                const durTag = cell.duration_minutes ? `${cell.duration_minutes} min.` : minsStr;
+
+                fullHtml += `
+                  <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                    <div class="cell-class-inner">
+                      ${cell.has_conflict ? `<span style="background:#fee2e2; color:#991b1b; padding:1px 4px; border-radius:3px; font-weight:850; font-size:8.5px; margin-bottom:2px; text-transform:uppercase;">⚠️ SCHEDULE CONFLICT</span>` : ''}
+                      <span class="cell-subject-sec" style="font-weight:900; font-size:12px; line-height:1.2;">${esc(cell.subject || cell.label)}</span>
+                      <span class="cell-mod-badge" style="color:${color.text}; font-weight:750; font-size:10px; opacity:0.95; line-height:1.15;">${esc(cell.section_short || cell.section || '')}${modTag ? ' • ' + esc(modTag) : ''}</span>
+                      <span class="cell-time-duration-pill" style="font-size:9.5px; font-weight:800; opacity:0.85; margin-top:2px;">${esc(cell.time || r.time)} · ${esc(durTag)}</span>
+                    </div>
+                  </td>
+                `;
+              } else {
+                fullHtml += `<td class="cell-empty"></td>`;
+              }
+            }
+
+            fullHtml += `</tr>`;
+          }
+        });
+      }
+
+      fullHtml += `
+            </tbody>
+          </table>
+
+          <div class="sheet-footer">
+            <div class="legend-strip">
+              <span style="font-weight: 800; color: var(--ink);">Subject Keys:</span>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#f3e8ff; border-color:#d8b4fe;"></span> Arabic / Qur'an / Islamic</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#dcfce7; border-color:#86efac;"></span> GMRC / Values / ESP</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#e0f2fe; border-color:#7dd3fc;"></span> Mathematics</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ccfbf1; border-color:#5eead4;"></span> Science</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fef3c7; border-color:#fde047;"></span> English / Language</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ffedd5; border-color:#fdba74;"></span> Filipino / AP / Makabansa</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fae8ff; border-color:#f0abfc;"></span> MAPEH / TLE / TVL</div>
+            </div>
+            <div>
+              Generated: <strong>${todayStr}</strong>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+
+    document.getElementById('sheetsContainer').innerHTML = fullHtml;
+  }
+
+  function esc(str) {
+    if (str === null || str === undefined) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+})();
+</script>
+
+</body>
+</html>
