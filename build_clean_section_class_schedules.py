@@ -76,13 +76,14 @@ def parse_cell(cell_str):
     s = re.sub(r'\s+', ' ', s)
     
     s_up = s.upper()
-    is_break = any(k in s_up for k in ['GENERAL ASSEMBLY', 'RECESS', 'LUNCH', 'DEPARTURE', 'TRANSITION', 'SALAH'])
+    is_break = any(k in s_up for k in ['GENERAL ASSEMBLY', 'RECESS', 'LUNCH', 'DEPARTURE', 'TRANSITION', 'SALAH', 'SHORT BREAK'])
     if is_break:
         return {
             'is_break': True,
             'label': s,
-            'subject': '',
-            'teacher': ''
+            'subject': s,
+            'teacher': '',
+            'extra': ''
         }
     
     # Check "Subject - Teacher"
@@ -94,6 +95,7 @@ def parse_cell(cell_str):
         extra = m.group(4) or ''
         return {
             'is_break': False,
+            'label': s,
             'subject': subj,
             'teacher': t_norm,
             'extra': extra.strip()
@@ -106,6 +108,7 @@ def parse_cell(cell_str):
         t_norm = normalize_teacher_name(t_raw)
         return {
             'is_break': False,
+            'label': s,
             'subject': subj,
             'teacher': t_norm,
             'extra': ''
@@ -113,6 +116,7 @@ def parse_cell(cell_str):
         
     return {
         'is_break': False,
+        'label': s,
         'subject': s,
         'teacher': '',
         'extra': ''
@@ -129,6 +133,13 @@ sheet_configs = [
 
 for sname, max_r in sheet_configs:
     ws = wb[sname]
+    
+    merged_map = {}
+    for rng in ws.merged_cells.ranges:
+        for r in range(rng.min_row, rng.max_row + 1):
+            for c in range(rng.min_col, rng.max_col + 1):
+                merged_map[(r, c)] = (rng.min_row, rng.min_col, rng.max_row, rng.max_col)
+                
     for r in range(1, min(ws.max_row + 1, max_r)):
         for c in range(1, min(ws.max_column + 1, 60)):
             v = ws.cell(row=r, column=c).value
@@ -136,7 +147,7 @@ for sname, max_r in sheet_configs:
                 s = v.strip()
                 s_up = s.upper()
                 if any(k in s_up for k in ['GRADE', 'KINDER', 'SECTION', 'SCHEDULE', 'FACE TO FACE', '1ST SHIFT', '2ND SHIFT']):
-                    if len(s) < 80 and not any(k in s_up for k in ['GENERAL ASSEMBLY', 'RECESS', 'LUNCH']):
+                    if len(s) < 80 and not any(k in s_up for k in ['GENERAL ASSEMBLY', 'RECESS', 'LUNCH', 'DEPARTURE']):
                         time_row = None
                         if r + 1 <= ws.max_row and any('time' in str(ws.cell(row=r+1, column=cc).value).lower() for cc in range(c, min(ws.max_column+1, c+5))):
                             time_row = r + 1
@@ -148,28 +159,61 @@ for sname, max_r in sheet_configs:
                             min_col = c + 1
                             
                             periods = []
-                            for pr in range(time_row + 1, time_row + 18):
-                                t_val = clean_time(ws.cell(row=pr, column=time_col).value)
+                            for pr in range(time_row + 1, time_row + 25):
+                                cell_t0 = ws.cell(row=pr, column=time_col).value
+                                if cell_t0 and isinstance(cell_t0, str) and any(k in cell_t0.upper() for k in ['GRADE', 'KINDER', 'SCHEDULE']) and pr > time_row + 1:
+                                    break
+                                    
+                                t_val = clean_time(cell_t0)
                                 m_val = clean_min(ws.cell(row=pr, column=min_col).value)
                                 
                                 if not t_val and not m_val:
                                     continue
                                 
-                                row_days = {}
-                                has_content = False
-                                for didx, d in enumerate(DAYS):
-                                    cell_val = ws.cell(row=pr, column=min_col + 1 + didx).value
-                                    parsed = parse_cell(cell_val)
-                                    row_days[d] = parsed
-                                    if parsed:
-                                        has_content = True
-                                        
-                                if has_content or t_val:
+                                first_day_col = min_col + 1
+                                span = merged_map.get((pr, first_day_col))
+                                is_merged_across_days = False
+                                if span and span[3] >= first_day_col + 4:
+                                    is_merged_across_days = True
+                                
+                                val_first = ws.cell(row=pr, column=first_day_col).value
+                                parsed_first = parse_cell(val_first)
+                                
+                                if is_merged_across_days:
                                     periods.append({
                                         'time': t_val,
                                         'minutes': m_val,
-                                        'days': row_days
+                                        'is_merged_all_days': True,
+                                        'is_break': parsed_first['is_break'] if parsed_first else False,
+                                        'label': parsed_first['label'] if parsed_first else str(val_first or ''),
+                                        'subject': parsed_first['subject'] if parsed_first else str(val_first or ''),
+                                        'teacher': parsed_first['teacher'] if parsed_first else '',
+                                        'extra': parsed_first.get('extra', '') if parsed_first else '',
+                                        'days': {}
                                     })
+                                else:
+                                    row_days = {}
+                                    has_content = False
+                                    for didx, d in enumerate(DAYS):
+                                        c_val = ws.cell(row=pr, column=first_day_col + didx).value
+                                        parsed = parse_cell(c_val)
+                                        row_days[d] = parsed
+                                        if parsed:
+                                            has_content = True
+                                            
+                                    if not has_content and parsed_first:
+                                        has_content = True
+                                        
+                                    if has_content or t_val:
+                                        periods.append({
+                                            'time': t_val,
+                                            'minutes': m_val,
+                                            'is_merged_all_days': False,
+                                            'days': row_days
+                                        })
+                                        
+                                if (t_val and 'DEPARTURE' in t_val.upper()) or (parsed_first and 'DEPARTURE' in str(parsed_first.get('label', '')).upper()):
+                                    break
                                     
                             if periods:
                                 dept = "Elementary"
@@ -222,5 +266,5 @@ with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/class_schedules_data.j
     f.write(f"window.OFFICIAL_CLASS_SCHEDULES = {json.dumps(unique_sections, indent=2)};\n")
     f.write(f"const OFFICIAL_CLASS_SCHEDULES = window.OFFICIAL_CLASS_SCHEDULES;\n")
 
-print(f"Saved {len(unique_sections)} unique section schedules with clean AM/PM times!")
+print(f"Saved {len(unique_sections)} unique section schedules with exact merged cells and AM/PM times!")
 

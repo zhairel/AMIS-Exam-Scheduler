@@ -479,7 +479,6 @@ body {
   function formatTime(t) {
     if (!t) return '-';
     let s = String(t).trim();
-    s = s.replace(/(\d{1,2}):(\d{2}):00/g, '$1:$2');
     s = s.replace(/a\.?m\.?/gi, 'AM').replace(/p\.?m\.?/gi, 'PM');
     return s;
   }
@@ -498,7 +497,7 @@ body {
     if (s.includes('science') || s.includes('sci') || s.includes('biology') || s.includes('chemistry') || s.includes('physics') || s.includes('earth')) {
       return { bg: '#ccfbf1', border: '#5eead4', text: '#115e59' };
     }
-    if (s.includes('english') || s.includes('reading') || s.includes('oral') || s.includes('literature') || s.includes('eapp')) {
+    if (s.includes('english') || s.includes('reading') || s.includes('oral') || s.includes('literature') || s.includes('eapp') || s.includes('circle') || s.includes('meeting') || s.includes('wrap-up')) {
       return { bg: '#fef3c7', border: '#fde047', text: '#854d0e' };
     }
     if (s.includes('filipino') || s.includes('makabansa') || s.includes('ap') || s.includes('soc.sci') || s.includes('philo') || s.includes('kompan') || s.includes('ucsp')) {
@@ -531,7 +530,6 @@ body {
       return;
     }
 
-    // Build Select Box options including F2F, ODL 1st Shift, ODL 2nd Shift filters
     const f2fCount = SECTIONS_DATA.filter(s => s.shift === 'F2F').length;
     const odl1Count = SECTIONS_DATA.filter(s => s.shift === 'ODL - 1ST SHIFT').length;
     const odl2Count = SECTIONS_DATA.filter(s => s.shift === 'ODL - 2ND SHIFT').length;
@@ -661,46 +659,75 @@ body {
       `;
 
       sec.periods.forEach(p => {
-        const firstDay = p.days['Sunday'];
-        const isBreakRow = firstDay && firstDay.is_break;
         const timeStr = formatTime(p.time);
 
-        if (isBreakRow) {
-          fullHtml += `
-            <tr class="row-break">
-              <td class="cell-time">${esc(timeStr)}</td>
-              <td class="cell-mins">${esc(p.minutes)}</td>
-              <td colspan="5" class="cell-break">${esc(firstDay.label || 'BREAK / ASSEMBLY')}</td>
-            </tr>
-          `;
-        } else {
-          fullHtml += `
-            <tr>
-              <td class="cell-time">${esc(timeStr)}</td>
-              <td class="cell-mins">${esc(p.minutes)}</td>
-          `;
-
-          DAYS.forEach(d => {
-            const cell = p.days[d];
-            if (!cell) {
-              fullHtml += `<td class="cell-empty"></td>`;
-            } else if (cell.is_break) {
-              fullHtml += `<td class="cell-break" style="font-size:11px; font-weight:800; color:#64748b; background:#f1f5f9;">${esc(cell.label)}</td>`;
-            } else {
-              const color = getSubjectColor(cell.subject);
-              fullHtml += `
-                <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+        if (p.is_merged_all_days) {
+          if (p.is_break) {
+            fullHtml += `
+              <tr class="row-break">
+                <td class="cell-time">${esc(timeStr)}</td>
+                <td class="cell-mins">${esc(p.minutes)}</td>
+                <td colspan="5" class="cell-break">${esc(p.label || p.subject || 'BREAK / ASSEMBLY')}</td>
+              </tr>
+            `;
+          } else {
+            const color = getSubjectColor(p.subject || p.label);
+            fullHtml += `
+              <tr>
+                <td class="cell-time">${esc(timeStr)}</td>
+                <td class="cell-mins">${esc(p.minutes)}</td>
+                <td colspan="5" class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text}; text-align:center;">
                   <div class="cell-class-inner">
-                    <span class="cell-subject-sec">${esc(cell.subject)}</span>
-                    ${cell.teacher ? `<span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(cell.teacher)}</span>` : ''}
-                    ${cell.extra ? `<span style="font-size:9.5px; opacity:0.8;">${esc(cell.extra)}</span>` : ''}
+                    <span class="cell-subject-sec">${esc(p.subject || p.label)}</span>
+                    ${p.teacher ? `<span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(p.teacher)}</span>` : ''}
+                    ${p.extra ? `<span style="font-size:9.5px; opacity:0.8;">${esc(p.extra)}</span>` : ''}
                   </div>
                 </td>
-              `;
-            }
-          });
+              </tr>
+            `;
+          }
+        } else {
+          // Individual day cells
+          const firstDay = p.days ? p.days['Sunday'] : null;
+          const isBreakRow = firstDay && firstDay.is_break;
 
-          fullHtml += `</tr>`;
+          if (isBreakRow) {
+            fullHtml += `
+              <tr class="row-break">
+                <td class="cell-time">${esc(timeStr)}</td>
+                <td class="cell-mins">${esc(p.minutes)}</td>
+                <td colspan="5" class="cell-break">${esc(firstDay.label || 'BREAK / ASSEMBLY')}</td>
+              </tr>
+            `;
+          } else {
+            fullHtml += `
+              <tr>
+                <td class="cell-time">${esc(timeStr)}</td>
+                <td class="cell-mins">${esc(p.minutes)}</td>
+            `;
+
+            DAYS.forEach(d => {
+              const cell = p.days ? p.days[d] : null;
+              if (!cell) {
+                fullHtml += `<td class="cell-empty"></td>`;
+              } else if (cell.is_break) {
+                fullHtml += `<td class="cell-break" style="font-size:11px; font-weight:800; color:#64748b; background:#f1f5f9;">${esc(cell.label)}</td>`;
+              } else {
+                const color = getSubjectColor(cell.subject);
+                fullHtml += `
+                  <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                    <div class="cell-class-inner">
+                      <span class="cell-subject-sec">${esc(cell.subject)}</span>
+                      ${cell.teacher ? `<span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(cell.teacher)}</span>` : ''}
+                      ${cell.extra ? `<span style="font-size:9.5px; opacity:0.8;">${esc(cell.extra)}</span>` : ''}
+                    </div>
+                  </td>
+                `;
+              }
+            });
+
+            fullHtml += `</tr>`;
+          }
         }
       });
 
