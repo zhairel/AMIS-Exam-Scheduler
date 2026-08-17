@@ -14,7 +14,46 @@ def clean_time(t_str):
         return ""
     s = str(t_str).strip()
     s = re.sub(r'[\r\n\t]+', ' ', s)
-    s = re.sub(r'\s+', ' ', s)
+    s = re.sub(r'(\d{1,2}):(\d{2}):00', r'\1:\2', s)
+    
+    has_am = bool(re.search(r'(?i)a\.?m\.?', s))
+    has_pm = bool(re.search(r'(?i)p\.?m\.?', s))
+    
+    s = re.sub(r'(?i)\s*a\.?\s*m\.?', '', s)
+    s = re.sub(r'(?i)\s*p\.?\s*m\.?', '', s)
+    s = re.sub(r'\s*[-–—]\s*', ' – ', s).strip()
+    
+    if not s:
+        return ""
+        
+    parts = s.split(' – ')
+    if len(parts) == 2:
+        t1, t2 = parts[0].strip(), parts[1].strip()
+        m1 = re.match(r'^0?(\d{1,2}):?(\d{2})?$', t1)
+        m2 = re.match(r'^0?(\d{1,2}):?(\d{2})?$', t2)
+        if m1 and m2:
+            h1, min1 = int(m1.group(1)), m1.group(2) or '00'
+            h2, min2 = int(m2.group(1)), m2.group(2) or '00'
+            p1 = 'AM' if (7 <= h1 <= 11) else 'PM'
+            p2 = 'AM' if (7 <= h2 <= 11) else 'PM'
+            if has_pm:
+                if h1 >= 12 or h1 < 7: p1 = 'PM'
+                p2 = 'PM'
+            elif has_am:
+                p1 = 'AM'
+                p2 = 'AM'
+            return f"{h1:02d}:{min1} {p1} – {h2:02d}:{min2} {p2}"
+        return f"{t1} – {t2}"
+    elif len(parts) == 1:
+        pt = parts[0].strip()
+        m = re.match(r'^0?(\d{1,2}):?(\d{2})?$', pt)
+        if m:
+            h, mins = int(m.group(1)), m.group(2) or '00'
+            p = 'AM' if (7 <= h <= 11) else 'PM'
+            if has_pm: p = 'PM'
+            elif has_am: p = 'AM'
+            return f"{h:02d}:{mins} {p}"
+        return pt
     return s
 
 def clean_min(m_val):
@@ -79,7 +118,6 @@ def parse_cell(cell_str):
         'extra': ''
     }
 
-# Find all section headers across sheets
 all_sections = []
 
 sheet_configs = [
@@ -99,7 +137,6 @@ for sname, max_r in sheet_configs:
                 s_up = s.upper()
                 if any(k in s_up for k in ['GRADE', 'KINDER', 'SECTION', 'SCHEDULE', 'FACE TO FACE', '1ST SHIFT', '2ND SHIFT']):
                     if len(s) < 80 and not any(k in s_up for k in ['GENERAL ASSEMBLY', 'RECESS', 'LUNCH']):
-                        # check if table starts at r+1 or r+2
                         time_row = None
                         if r + 1 <= ws.max_row and any('time' in str(ws.cell(row=r+1, column=cc).value).lower() for cc in range(c, min(ws.max_column+1, c+5))):
                             time_row = r + 1
@@ -107,13 +144,9 @@ for sname, max_r in sheet_configs:
                             time_row = r + 2
                             
                         if time_row:
-                            # Extract periods
-                            # Days are usually time_col+2 .. time_col+6
                             time_col = c
-                            # find min_col
                             min_col = c + 1
                             
-                            # check if time_col has time
                             periods = []
                             for pr in range(time_row + 1, time_row + 18):
                                 t_val = clean_time(ws.cell(row=pr, column=time_col).value)
@@ -139,7 +172,6 @@ for sname, max_r in sheet_configs:
                                     })
                                     
                             if periods:
-                                # Determine Department, Grade Level, Modality, Shift
                                 dept = "Elementary"
                                 if any(k in s_up for k in ['GRADE 7', 'GRADE 8', 'GRADE 9', 'GRADE 10', '7 & 8', '9 & 10']):
                                     dept = "Junior High School"
@@ -159,11 +191,11 @@ for sname, max_r in sheet_configs:
                                 elif 'KINDER 2' in s_up or 'K2' in s_up:
                                     grade = "Kindergarten 2"
                                     
-                                shift = "Morning (F2F)"
+                                shift = "F2F"
                                 if '1ST SHIFT' in s_up or 'FIRST SHIFT' in s_up:
-                                    shift = "ODL 1st Shift"
+                                    shift = "ODL - 1ST SHIFT"
                                 elif '2ND SHIFT' in s_up or 'SECOND SHIFT' in s_up:
-                                    shift = "ODL 2nd Shift"
+                                    shift = "ODL - 2ND SHIFT"
                                     
                                 all_sections.append({
                                     'id': f"sec_{len(all_sections)+1}",
@@ -175,9 +207,6 @@ for sname, max_r in sheet_configs:
                                     'periods': periods
                                 })
 
-print(f"Extracted {len(all_sections)} clean section schedules.")
-
-# De-duplicate by section_name if identical from multiple sheets, prefer newer sheets
 unique_sections = []
 seen_names = set()
 for sec in all_sections:
@@ -186,8 +215,6 @@ for sec in all_sections:
         seen_names.add(s_norm)
         unique_sections.append(sec)
 
-print(f"Unique section schedules: {len(unique_sections)}")
-
 with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/class_schedules_data.json', 'w') as f:
     json.dump(unique_sections, f, indent=2)
 
@@ -195,5 +222,5 @@ with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/class_schedules_data.j
     f.write(f"window.OFFICIAL_CLASS_SCHEDULES = {json.dumps(unique_sections, indent=2)};\n")
     f.write(f"const OFFICIAL_CLASS_SCHEDULES = window.OFFICIAL_CLASS_SCHEDULES;\n")
 
-print("Saved class_schedules_data.json and class_schedules_data.js with window.OFFICIAL_CLASS_SCHEDULES!")
+print(f"Saved {len(unique_sections)} unique section schedules with clean AM/PM times!")
 

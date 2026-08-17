@@ -78,7 +78,7 @@ DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
 STANDARD_TIME_BLOCKS = [
     {
         "id": "f2f_assembly",
-        "time": "7:30–7:40 a.m.",
+        "time": "7:30–7:40 AM",
         "start": "07:30",
         "end": "07:40",
         "minutes": 10,
@@ -88,7 +88,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "p1_f2f",
-        "time": "7:40–8:25 a.m.",
+        "time": "7:40–8:25 AM",
         "start": "07:40",
         "end": "08:25",
         "minutes": 45,
@@ -97,7 +97,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "p2_f2f",
-        "time": "8:25–9:05 a.m.",
+        "time": "8:25–9:05 AM",
         "start": "08:25",
         "end": "09:05",
         "minutes": 40,
@@ -106,7 +106,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "p3_f2f",
-        "time": "9:05–9:45 a.m.",
+        "time": "9:05–9:45 AM",
         "start": "09:05",
         "end": "09:45",
         "minutes": 40,
@@ -115,7 +115,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "f2f_recess",
-        "time": "9:45–10:00 a.m.",
+        "time": "9:45–10:00 AM",
         "start": "09:45",
         "end": "10:00",
         "minutes": 15,
@@ -125,7 +125,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "p4_f2f",
-        "time": "10:00–10:45 a.m.",
+        "time": "10:00–10:45 AM",
         "start": "10:00",
         "end": "10:45",
         "minutes": 45,
@@ -134,7 +134,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "p5_f2f",
-        "time": "10:45–11:30 a.m.",
+        "time": "10:45–11:30 AM",
         "start": "10:45",
         "end": "11:30",
         "minutes": 45,
@@ -143,7 +143,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "f2f_lunch",
-        "time": "11:30–12:30 p.m.",
+        "time": "11:30 AM – 12:30 PM",
         "start": "11:30",
         "end": "12:30",
         "minutes": 60,
@@ -153,7 +153,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "odl1_assembly",
-        "time": "12:30–12:40 p.m.",
+        "time": "12:30–12:40 PM",
         "start": "12:30",
         "end": "12:40",
         "minutes": 10,
@@ -163,7 +163,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "p6_f2f_odl1",
-        "time": "12:40–1:25 p.m.",
+        "time": "12:40–1:25 PM",
         "start": "12:40",
         "end": "13:25",
         "minutes": 45,
@@ -172,7 +172,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "p7_f2f_odl1",
-        "time": "1:25–2:10 p.m.",
+        "time": "1:25–2:10 PM",
         "start": "13:25",
         "end": "14:10",
         "minutes": 45,
@@ -181,7 +181,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "p8_f2f_odl1",
-        "time": "2:15–3:00 p.m.",
+        "time": "2:15–3:00 PM",
         "start": "14:15",
         "end": "15:00",
         "minutes": 45,
@@ -190,7 +190,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "f2f_salah_departure",
-        "time": "3:00–3:30 p.m.",
+        "time": "3:00–3:30 PM",
         "start": "15:00",
         "end": "15:30",
         "minutes": 30,
@@ -200,7 +200,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "odl2_assembly",
-        "time": "3:30–3:40 p.m.",
+        "time": "3:30–3:40 PM",
         "start": "15:30",
         "end": "15:40",
         "minutes": 10,
@@ -210,7 +210,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "p1_odl2",
-        "time": "3:40–4:20 p.m.",
+        "time": "3:40–4:20 PM",
         "start": "15:40",
         "end": "16:20",
         "minutes": 40,
@@ -219,7 +219,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "p2_odl2",
-        "time": "4:30–5:10 p.m.",
+        "time": "4:30–5:10 PM",
         "start": "16:30",
         "end": "17:10",
         "minutes": 40,
@@ -228,7 +228,7 @@ STANDARD_TIME_BLOCKS = [
     },
     {
         "id": "p3_odl2",
-        "time": "5:20–6:00 p.m.",
+        "time": "5:20–6:00 PM",
         "start": "17:20",
         "end": "18:00",
         "minutes": 40,

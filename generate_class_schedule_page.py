@@ -114,8 +114,8 @@ body {
   font-size: 13.5px;
   outline: none;
   cursor: pointer;
-  min-width: 340px;
-  max-width: 480px;
+  min-width: 360px;
+  max-width: 500px;
 }
 
 .btn-action {
@@ -267,7 +267,7 @@ body {
 }
 
 .timetable-grid thead th.col-time {
-  width: 145px;
+  width: 155px;
 }
 
 .timetable-grid thead th.col-mins {
@@ -478,6 +478,14 @@ body {
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
+  function formatTime(t) {
+    if (!t) return '-';
+    let s = String(t).trim();
+    s = s.replace(/(\d{1,2}):(\d{2}):00/g, '$1:$2');
+    s = s.replace(/a\.?m\.?/gi, 'AM').replace(/p\.?m\.?/gi, 'PM');
+    return s;
+  }
+
   function getSubjectColor(subj) {
     const s = (subj || "").toLowerCase();
     if (s.includes('gmrc') || s.includes('values') || s.includes('esp') || s.includes('homeroom') || s.includes('hg')) {
@@ -525,36 +533,58 @@ body {
       return;
     }
 
-    // Build Select Box options including ALL options
+    // Build Select Box options including F2F, ODL 1st Shift, ODL 2nd Shift filters
+    const f2fCount = SECTIONS_DATA.filter(s => s.shift === 'F2F').length;
+    const odl1Count = SECTIONS_DATA.filter(s => s.shift === 'ODL - 1ST SHIFT').length;
+    const odl2Count = SECTIONS_DATA.filter(s => s.shift === 'ODL - 2ND SHIFT').length;
+
     let selectHtml = `
-      <option value="ALL_SECTIONS">🌟 [ALL SECTIONS] Show & Print All 74 Sections</option>
-      <option value="ALL_ELEM">🏫 [ELEMENTARY] Show All Elementary Sections</option>
+      <option value="ALL_SECTIONS">🌟 [ALL SECTIONS] Show & Print All ${SECTIONS_DATA.length} Sections</option>
+      <option value="FILTER_F2F">🏫 [F2F] Face-to-Face Sections (${f2fCount} Classes)</option>
+      <option value="FILTER_ODL1">💻 [ODL - 1ST SHIFT] Online Distance Learning 1st Shift (${odl1Count} Classes)</option>
+      <option value="FILTER_ODL2">🌙 [ODL - 2ND SHIFT] Online Distance Learning 2nd Shift (${odl2Count} Classes)</option>
+      <option value="ALL_ELEM">📚 [ELEMENTARY] Show All Elementary Sections</option>
       <option value="ALL_JHS">🎓 [JUNIOR HIGH] Show All Junior High Sections</option>
       <option value="ALL_SHS">📜 [SENIOR HIGH] Show All Senior High Sections</option>
-      <optgroup label="── Individual Class Sections ──">
+      <optgroup label="── Individual Face-to-Face (F2F) ──">
     `;
 
     SECTIONS_DATA.forEach((s, idx) => {
-      selectHtml += `<option value="${idx}">[${esc(s.department)}] ${esc(s.section_name)}</option>`;
+      if (s.shift === 'F2F') {
+        selectHtml += `<option value="${idx}">[F2F] ${esc(s.section_name)}</option>`;
+      }
+    });
+    selectHtml += `</optgroup><optgroup label="── Individual ODL 1st Shift ──">`;
+    SECTIONS_DATA.forEach((s, idx) => {
+      if (s.shift === 'ODL - 1ST SHIFT') {
+        selectHtml += `<option value="${idx}">[1st Shift] ${esc(s.section_name)}</option>`;
+      }
+    });
+    selectHtml += `</optgroup><optgroup label="── Individual ODL 2nd Shift ──">`;
+    SECTIONS_DATA.forEach((s, idx) => {
+      if (s.shift === 'ODL - 2ND SHIFT') {
+        selectHtml += `<option value="${idx}">[2nd Shift] ${esc(s.section_name)}</option>`;
+      }
     });
     selectHtml += `</optgroup>`;
+
     sectionSelect.innerHTML = selectHtml;
 
     // Check URL Param ?section=...
     const urlParams = new URLSearchParams(window.location.search);
     const paramSec = urlParams.get('section');
-    let defaultVal = "0"; // first individual section by default, or ALL_SECTIONS if requested
+    let defaultVal = "0";
     if (paramSec) {
-      if (['all', 'all_sections'].includes(paramSec.toLowerCase())) {
-        defaultVal = "ALL_SECTIONS";
-      } else if (['elem', 'elementary'].includes(paramSec.toLowerCase())) {
-        defaultVal = "ALL_ELEM";
-      } else if (['jhs', 'junior high'].includes(paramSec.toLowerCase())) {
-        defaultVal = "ALL_JHS";
-      } else if (['shs', 'senior high'].includes(paramSec.toLowerCase())) {
-        defaultVal = "ALL_SHS";
-      } else {
-        const matchIdx = SECTIONS_DATA.findIndex(s => s.section_name.toLowerCase().includes(paramSec.toLowerCase()));
+      const p = paramSec.toLowerCase();
+      if (['all', 'all_sections'].includes(p)) defaultVal = "ALL_SECTIONS";
+      else if (['f2f', 'face to face'].includes(p)) defaultVal = "FILTER_F2F";
+      else if (['odl1', '1st', 'odl_1st', 'odl - 1st shift'].includes(p)) defaultVal = "FILTER_ODL1";
+      else if (['odl2', '2nd', 'odl_2nd', 'odl - 2nd shift'].includes(p)) defaultVal = "FILTER_ODL2";
+      else if (['elem', 'elementary'].includes(p)) defaultVal = "ALL_ELEM";
+      else if (['jhs', 'junior high'].includes(p)) defaultVal = "ALL_JHS";
+      else if (['shs', 'senior high'].includes(p)) defaultVal = "ALL_SHS";
+      else {
+        const matchIdx = SECTIONS_DATA.findIndex(s => s.section_name.toLowerCase().includes(p));
         if (matchIdx !== -1) defaultVal = String(matchIdx);
       }
     }
@@ -566,6 +596,9 @@ body {
       const val = e.target.value;
       const newUrl = new URL(window.location);
       if (val === 'ALL_SECTIONS') newUrl.searchParams.set('section', 'all');
+      else if (val === 'FILTER_F2F') newUrl.searchParams.set('section', 'f2f');
+      else if (val === 'FILTER_ODL1') newUrl.searchParams.set('section', 'odl1');
+      else if (val === 'FILTER_ODL2') newUrl.searchParams.set('section', 'odl2');
       else if (val === 'ALL_ELEM') newUrl.searchParams.set('section', 'elem');
       else if (val === 'ALL_JHS') newUrl.searchParams.set('section', 'jhs');
       else if (val === 'ALL_SHS') newUrl.searchParams.set('section', 'shs');
@@ -578,6 +611,12 @@ body {
   function renderSelectedView(val) {
     if (val === 'ALL_SECTIONS') {
       renderMultipleSections(SECTIONS_DATA);
+    } else if (val === 'FILTER_F2F') {
+      renderMultipleSections(SECTIONS_DATA.filter(s => s.shift === 'F2F'));
+    } else if (val === 'FILTER_ODL1') {
+      renderMultipleSections(SECTIONS_DATA.filter(s => s.shift === 'ODL - 1ST SHIFT'));
+    } else if (val === 'FILTER_ODL2') {
+      renderMultipleSections(SECTIONS_DATA.filter(s => s.shift === 'ODL - 2ND SHIFT'));
     } else if (val === 'ALL_ELEM') {
       renderMultipleSections(SECTIONS_DATA.filter(s => s.department === 'Elementary'));
     } else if (val === 'ALL_JHS') {
@@ -626,11 +665,12 @@ body {
       sec.periods.forEach(p => {
         const firstDay = p.days['Sunday'];
         const isBreakRow = firstDay && firstDay.is_break;
+        const timeStr = formatTime(p.time);
 
         if (isBreakRow) {
           fullHtml += `
             <tr class="row-break">
-              <td class="cell-time">${esc(p.time)}</td>
+              <td class="cell-time">${esc(timeStr)}</td>
               <td class="cell-mins">${esc(p.minutes)}</td>
               <td colspan="5" class="cell-break">${esc(firstDay.label || 'BREAK / ASSEMBLY')}</td>
             </tr>
@@ -638,7 +678,7 @@ body {
         } else {
           fullHtml += `
             <tr>
-              <td class="cell-time">${esc(p.time)}</td>
+              <td class="cell-time">${esc(timeStr)}</td>
               <td class="cell-mins">${esc(p.minutes)}</td>
           `;
 
@@ -706,4 +746,4 @@ body {
 with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/class-schedule.html', 'w', encoding='utf-8') as f:
     f.write(HTML_CONTENT)
 
-print("Updated class-schedule.html with [ALL SECTIONS], [ALL ELEM], [ALL JHS], [ALL SHS] options!")
+print("Updated class-schedule.html with F2F, ODL - 1ST SHIFT, ODL - 2ND SHIFT filters and clean AM/PM times!")

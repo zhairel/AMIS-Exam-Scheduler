@@ -5,10 +5,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
     "department": "Elementary",
     "grade_level": "Kindergarten 2",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -24,7 +24,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "07:40-7:50 a.m.",
+        "time": "07:40 AM \u2013 07:50 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -40,7 +40,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:50-8:25 a.m.",
+        "time": "07:50 AM \u2013 08:25 AM",
         "minutes": "35 min.",
         "days": {
           "Sunday": {
@@ -56,7 +56,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:10 a.m.",
+        "time": "08:25 AM \u2013 09:10 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -92,7 +92,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:10-9:30 a.m.",
+        "time": "09:10 AM \u2013 09:30 AM",
         "minutes": "20 min.",
         "days": {
           "Sunday": {
@@ -108,7 +108,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:30-10:15 a.m.",
+        "time": "09:30 AM \u2013 10:15 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -124,7 +124,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:15-10:30 a.m.",
+        "time": "10:15 AM \u2013 10:30 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -140,7 +140,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:30 a.m.",
+        "time": "10:30 AM",
         "minutes": "-",
         "days": {
           "Sunday": {
@@ -203,7 +203,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:00-12:40",
+        "time": "12:00 PM \u2013 12:40 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -219,7 +219,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -235,7 +235,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -271,7 +271,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:10-2:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -287,7 +287,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:10-2:55 p.m.",
+        "time": "02:10 PM \u2013 02:55 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -303,7 +303,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00:00",
+        "time": "03:00 PM",
         "minutes": "-",
         "days": {
           "Sunday": {
@@ -326,10 +326,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Kindergarten 2",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -340,7 +340,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": null,
@@ -351,7 +351,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -367,7 +367,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -383,7 +383,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -399,7 +399,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -435,7 +435,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -469,10 +469,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Kindergarten 2",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -483,7 +483,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": null,
@@ -494,7 +494,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -510,7 +510,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -526,7 +526,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -542,7 +542,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -578,7 +578,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -601,10 +601,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Kindergarten 2",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -620,7 +620,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -636,7 +636,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": null,
@@ -647,7 +647,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -663,7 +663,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -699,7 +699,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -715,7 +715,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -751,7 +751,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "time": "K1 \u2013 HUSAIN IBN ALI (2ND SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -798,7 +798,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -814,7 +814,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -825,7 +825,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": null,
@@ -836,7 +836,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -852,7 +852,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -868,7 +868,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -884,7 +884,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -927,10 +927,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Kindergarten 2",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -946,7 +946,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -962,7 +962,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": null,
@@ -973,7 +973,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -989,7 +989,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -1025,7 +1025,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -1041,7 +1041,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -1124,7 +1124,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": null,
@@ -1135,7 +1135,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -1146,7 +1146,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": null,
@@ -1157,7 +1157,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -1173,7 +1173,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -1189,7 +1189,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -1205,7 +1205,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -1248,10 +1248,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Kindergarten 1",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -1267,7 +1267,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -1278,7 +1278,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": null,
@@ -1289,7 +1289,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -1305,7 +1305,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -1321,7 +1321,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -1337,7 +1337,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -1373,7 +1373,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "time": "GRADE 1 \u2013 SUHAYB AR \u2013 RUMI (2ND SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -1420,7 +1420,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -1436,7 +1436,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -1452,7 +1452,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -1488,7 +1488,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -1504,7 +1504,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -1540,7 +1540,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -1563,10 +1563,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Kindergarten 2",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": null,
@@ -1577,7 +1577,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -1588,7 +1588,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": null,
@@ -1599,7 +1599,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -1615,7 +1615,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -1631,7 +1631,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -1647,7 +1647,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -1683,7 +1683,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "time": "GRADE 1 \u2013 SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -1730,7 +1730,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -1746,7 +1746,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -1762,7 +1762,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -1798,7 +1798,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -1814,7 +1814,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -1850,7 +1850,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -1873,10 +1873,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "KINDER 1 CLASS SCHEDULE (F2F)",
     "department": "Elementary",
     "grade_level": "Kindergarten 1",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "12:00-12:40",
+        "time": "12:00 PM \u2013 12:40 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -1892,7 +1892,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -1908,7 +1908,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -1944,7 +1944,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:10-2:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -1960,7 +1960,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:10-2:55 p.m.",
+        "time": "02:10 PM \u2013 02:55 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -1976,7 +1976,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00:00",
+        "time": "03:00 PM",
         "minutes": "-",
         "days": {
           "Sunday": {
@@ -2039,7 +2039,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -2055,7 +2055,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -2076,7 +2076,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -2092,7 +2092,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -2108,7 +2108,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -2124,7 +2124,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -2140,7 +2140,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -2183,10 +2183,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 1 (FACE TO FACE)",
     "department": "Elementary",
     "grade_level": "Grade 1",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -2202,7 +2202,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -2223,7 +2223,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -2239,7 +2239,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -2255,7 +2255,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -2271,7 +2271,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -2287,7 +2287,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -2323,7 +2323,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -2339,7 +2339,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -2355,7 +2355,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -2371,7 +2371,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -2407,7 +2407,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -2470,7 +2470,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -2486,7 +2486,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -2509,10 +2509,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 1",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -2528,7 +2528,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -2564,7 +2564,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -2580,7 +2580,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -2616,7 +2616,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -2632,7 +2632,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -2668,7 +2668,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -2684,7 +2684,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "time": "GRADE 2 \u2013 TALHA IBN UBAYDULLAH (1ST SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -2731,7 +2731,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -2747,7 +2747,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -2790,10 +2790,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 1",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -2809,7 +2809,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -2845,7 +2845,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -2861,7 +2861,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -2897,7 +2897,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -2913,7 +2913,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -2949,7 +2949,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -2965,7 +2965,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "time": "GRADE 2 \u2013 R IBN AL \u2013 JUH (1ST SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -3012,7 +3012,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -3028,7 +3028,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -3071,10 +3071,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 1",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -3090,7 +3090,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -3106,7 +3106,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -3142,7 +3142,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -3158,7 +3158,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -3194,7 +3194,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -3210,7 +3210,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -3246,7 +3246,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "time": "GRADE 2 \u2013 SAEED IBN ZAYD (2ND SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -3293,7 +3293,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -3309,7 +3309,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -3332,10 +3332,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 1",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -3351,7 +3351,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -3367,7 +3367,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -3403,7 +3403,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -3419,7 +3419,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -3455,7 +3455,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -3471,7 +3471,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -3507,7 +3507,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "time": "GRADE 2 \u2013 AASIM IBN THABIT (2ND SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -3554,7 +3554,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -3570,7 +3570,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -3593,10 +3593,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 2 (FACE TO FACE)",
     "department": "Elementary",
     "grade_level": "Grade 2",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -3612,7 +3612,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -3628,7 +3628,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -3644,7 +3644,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -3660,7 +3660,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -3676,7 +3676,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -3697,7 +3697,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -3733,7 +3733,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -3749,7 +3749,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -3765,7 +3765,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -3801,7 +3801,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -3837,7 +3837,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -3900,7 +3900,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -3916,7 +3916,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -3939,10 +3939,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 2",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -3958,7 +3958,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -3994,7 +3994,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -4010,7 +4010,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -4046,7 +4046,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -4062,7 +4062,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -4098,7 +4098,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -4114,7 +4114,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "time": "Grade 3 \u2013 HABIB IBN ZAYD AL \u2013 ANSARI (1ST SHIFT) \u2013 GIRLS",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -4161,7 +4161,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -4177,7 +4177,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -4220,10 +4220,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 2",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -4239,7 +4239,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -4275,7 +4275,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -4291,7 +4291,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -4327,7 +4327,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -4343,7 +4343,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -4379,7 +4379,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -4395,7 +4395,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "time": "GRADE 3 \u2013 MAR IBN YASIR (1ST SHIFT) \u2013 BOYS",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -4442,7 +4442,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -4458,7 +4458,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -4501,10 +4501,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 2",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -4520,7 +4520,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -4536,7 +4536,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -4572,7 +4572,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -4588,7 +4588,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -4624,7 +4624,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -4640,7 +4640,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -4676,7 +4676,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "time": "GRADE 3 \u2013 ZAYD IBN HARITHA (2ND SHIFT) \u2013 GIRLS",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -4723,7 +4723,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -4739,7 +4739,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -4762,10 +4762,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 2",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -4781,7 +4781,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -4797,7 +4797,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -4833,7 +4833,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -4849,7 +4849,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -4885,7 +4885,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -4901,7 +4901,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -4937,7 +4937,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "time": "GRADE 3 \u2013 THABIT IBN QAYS (2ND SHIFT) \u2013 BOYS",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -4984,7 +4984,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -5000,7 +5000,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -5023,10 +5023,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 3 (FACE TO FACE)",
     "department": "Elementary",
     "grade_level": "Grade 3",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -5042,7 +5042,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -5058,7 +5058,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -5074,7 +5074,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -5090,7 +5090,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -5106,7 +5106,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -5122,7 +5122,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -5158,7 +5158,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -5174,7 +5174,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -5210,7 +5210,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -5246,7 +5246,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -5282,7 +5282,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": null,
@@ -5300,10 +5300,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
     "department": "Elementary",
     "grade_level": "Grade 3",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -5319,7 +5319,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -5355,7 +5355,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -5371,7 +5371,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -5407,7 +5407,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -5423,7 +5423,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -5459,7 +5459,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -5475,7 +5475,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "time": "GRADE 4 \u2013 USAYD IBN HUDHAYR (1ST SHIFT) \u2013 MIX",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -5522,7 +5522,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -5538,7 +5538,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -5574,7 +5574,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -5585,7 +5585,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -5621,7 +5621,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -5632,7 +5632,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -5668,7 +5668,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -5691,10 +5691,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
     "department": "Elementary",
     "grade_level": "Grade 3",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -5710,7 +5710,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -5746,7 +5746,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -5762,7 +5762,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -5798,7 +5798,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -5814,7 +5814,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -5850,7 +5850,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -5866,7 +5866,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "time": "GRADE 3 \u2013 SALMAN AL FARSI (1ST SHIFT) MIX",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -5913,7 +5913,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -5929,7 +5929,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -5965,7 +5965,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -5981,7 +5981,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6017,7 +6017,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -6033,7 +6033,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6069,7 +6069,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -6092,10 +6092,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
     "department": "Elementary",
     "grade_level": "Grade 3",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -6111,7 +6111,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -6127,7 +6127,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6163,7 +6163,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -6179,7 +6179,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6215,7 +6215,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -6231,7 +6231,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6274,10 +6274,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
     "department": "Elementary",
     "grade_level": "Grade 3",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -6293,7 +6293,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -6309,7 +6309,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6345,7 +6345,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -6361,7 +6361,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6397,7 +6397,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -6413,7 +6413,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6449,7 +6449,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "time": "GRADE 3 \u2013 AS'AD IBN ZURARAH (2ND SHIFT) MIX",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -6496,7 +6496,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -6512,7 +6512,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -6528,7 +6528,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6564,7 +6564,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -6580,7 +6580,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6616,7 +6616,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -6632,7 +6632,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6675,10 +6675,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
     "department": "Elementary",
     "grade_level": "Grade 4",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -6694,7 +6694,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6730,7 +6730,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -6741,7 +6741,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6777,7 +6777,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -6788,7 +6788,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6824,7 +6824,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -6840,7 +6840,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "time": "GRADE 4 \u2013 ABDUR RAHMAN IBN AWF (1ST SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -6887,7 +6887,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -6903,7 +6903,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6939,7 +6939,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -6955,7 +6955,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -6991,7 +6991,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -7007,7 +7007,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7043,7 +7043,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -7066,10 +7066,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
     "department": "Elementary",
     "grade_level": "Grade 3",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -7085,7 +7085,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7121,7 +7121,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -7137,7 +7137,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7173,7 +7173,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -7189,7 +7189,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7225,7 +7225,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -7241,7 +7241,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "time": "GRADE 4 \u2013 HAKIM IBN HAZM(1ST SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -7288,7 +7288,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -7304,7 +7304,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7340,7 +7340,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -7356,7 +7356,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7392,7 +7392,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -7408,7 +7408,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7444,7 +7444,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -7467,10 +7467,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
     "department": "Elementary",
     "grade_level": "Grade 3",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -7486,7 +7486,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -7502,7 +7502,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7538,7 +7538,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -7554,7 +7554,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7590,7 +7590,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -7606,7 +7606,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7642,7 +7642,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "time": "GRADE 4 \u2013 IKRIMAH IBN ABI JAHL (2ND SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -7689,7 +7689,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -7705,7 +7705,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -7721,7 +7721,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7757,7 +7757,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -7773,7 +7773,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7809,7 +7809,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -7825,7 +7825,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7868,10 +7868,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 4 (FACE TO FACE)",
     "department": "Elementary",
     "grade_level": "Grade 4",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -7887,7 +7887,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -7923,7 +7923,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7939,7 +7939,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -7975,7 +7975,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -7991,7 +7991,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -8007,7 +8007,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -8033,7 +8033,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -8049,7 +8049,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -8085,7 +8085,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -8121,7 +8121,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -8137,7 +8137,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -8200,7 +8200,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -8216,7 +8216,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -8239,10 +8239,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 4",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -8258,7 +8258,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -8294,7 +8294,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -8310,7 +8310,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -8346,7 +8346,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -8362,7 +8362,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -8398,7 +8398,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -8414,7 +8414,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "time": "GRADE 5 \u2013 HZA IBN ABDUL (1ST SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -8461,7 +8461,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -8477,7 +8477,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -8520,10 +8520,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 4",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -8539,7 +8539,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -8575,7 +8575,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -8591,7 +8591,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -8627,7 +8627,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -8643,7 +8643,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -8679,7 +8679,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -8695,7 +8695,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "time": "GRADE 5 \u2013 MUHMAD IBN MASLAH (1ST SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -8742,7 +8742,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -8758,7 +8758,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -8801,10 +8801,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 4",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -8820,7 +8820,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -8836,7 +8836,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -8872,7 +8872,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -8888,7 +8888,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -8924,7 +8924,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -8940,7 +8940,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -8976,7 +8976,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "time": "GRADE 5 \u2013 AYYASH IBN ABI RABI'AH(1ST SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -9023,7 +9023,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -9039,7 +9039,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -9082,10 +9082,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 4",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -9101,7 +9101,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -9117,7 +9117,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -9153,7 +9153,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -9169,7 +9169,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -9205,7 +9205,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -9221,7 +9221,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -9257,7 +9257,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "time": "GRADE 5 \u2013 MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -9304,7 +9304,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -9320,7 +9320,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -9343,10 +9343,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
     "department": "Elementary",
     "grade_level": "Grade 4",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -9362,7 +9362,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -9378,7 +9378,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -9414,7 +9414,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -9425,7 +9425,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -9461,7 +9461,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -9472,7 +9472,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -9508,7 +9508,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "time": "GRADE 5 \u2013 AL HARITH BIN AWF (2ND SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -9555,7 +9555,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -9571,7 +9571,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -9594,10 +9594,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 5 (FACE TO FACE)",
     "department": "Elementary",
     "grade_level": "Grade 5",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -9613,7 +9613,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -9629,7 +9629,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -9665,7 +9665,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -9701,7 +9701,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -9717,7 +9717,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -9753,7 +9753,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -9769,7 +9769,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -9785,7 +9785,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -9801,7 +9801,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -9837,7 +9837,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -9873,7 +9873,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -9889,7 +9889,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 6 FACE TO FACE",
+        "time": "GRADE  6  FACE TO FACE",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -9936,7 +9936,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -9952,7 +9952,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -9980,10 +9980,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 5",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -9999,7 +9999,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -10035,7 +10035,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -10051,7 +10051,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -10087,7 +10087,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -10103,7 +10103,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -10139,7 +10139,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -10155,7 +10155,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "time": "GRADE 6 \u2013 ABDULLAH IBN SALA (1ST SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -10202,7 +10202,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -10218,7 +10218,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -10261,10 +10261,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 5",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -10280,7 +10280,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -10316,7 +10316,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -10332,7 +10332,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -10368,7 +10368,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -10384,7 +10384,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -10420,7 +10420,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -10436,7 +10436,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "time": "GRADE 6 \u2013 ABBAS IBN ABD AL \u2013 MUTTALIB (1ST SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -10483,7 +10483,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -10499,7 +10499,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -10542,10 +10542,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 5",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -10561,7 +10561,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -10597,7 +10597,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -10608,7 +10608,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -10644,7 +10644,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -10655,7 +10655,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -10691,7 +10691,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -10707,7 +10707,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "time": "GRADE 6 \u2013 KHALEED IBN WALEED (2ND SHIFT)",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -10754,7 +10754,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -10770,7 +10770,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -10793,10 +10793,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 5",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -10812,7 +10812,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -10828,7 +10828,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -10864,7 +10864,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -10880,7 +10880,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -10916,7 +10916,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -10932,7 +10932,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -10968,7 +10968,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "time": "GRADE 6 \u2013 DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -11015,7 +11015,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -11031,7 +11031,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -11054,10 +11054,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 5",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -11073,7 +11073,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -11089,7 +11089,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -11125,7 +11125,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -11141,7 +11141,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -11177,7 +11177,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -11193,7 +11193,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -11236,10 +11236,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
     "department": "Elementary",
     "grade_level": "Grade 5",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -11255,7 +11255,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -11271,7 +11271,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -11307,7 +11307,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -11318,7 +11318,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -11354,7 +11354,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -11365,7 +11365,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -11408,10 +11408,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE  6  FACE TO FACE",
     "department": "Elementary",
     "grade_level": "Grade",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -11427,7 +11427,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -11448,7 +11448,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -11464,7 +11464,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -11500,7 +11500,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -11516,7 +11516,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -11552,7 +11552,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -11588,7 +11588,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -11604,7 +11604,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -11640,7 +11640,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -11656,7 +11656,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -11692,7 +11692,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -11715,10 +11715,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 6",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -11734,7 +11734,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -11770,7 +11770,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -11786,7 +11786,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -11822,7 +11822,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -11838,7 +11838,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -11874,7 +11874,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -11897,10 +11897,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 6",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -11916,7 +11916,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -11952,7 +11952,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -11968,7 +11968,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -12004,7 +12004,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -12020,7 +12020,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -12056,7 +12056,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -12079,10 +12079,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
     "department": "Elementary",
     "grade_level": "Grade 6",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -12098,7 +12098,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -12114,7 +12114,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -12150,7 +12150,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -12166,7 +12166,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -12202,7 +12202,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -12218,7 +12218,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -12261,10 +12261,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
     "department": "Elementary",
     "grade_level": "Grade 6",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -12280,7 +12280,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -12296,7 +12296,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -12332,7 +12332,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -12343,7 +12343,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -12379,7 +12379,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": null,
@@ -12390,7 +12390,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -12433,10 +12433,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
     "department": "Junior High School",
     "grade_level": "Grade 8",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -12452,7 +12452,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -12488,7 +12488,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -12524,7 +12524,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -12560,7 +12560,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -12576,7 +12576,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -12612,7 +12612,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -12648,7 +12648,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -12664,7 +12664,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -12700,7 +12700,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -12736,7 +12736,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -12772,7 +12772,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -12835,7 +12835,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -12858,10 +12858,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
     "department": "Junior High School",
     "grade_level": "Grade 7",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -12877,7 +12877,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -12913,7 +12913,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -12929,7 +12929,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -12965,7 +12965,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -12981,7 +12981,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -13017,7 +13017,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -13033,7 +13033,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "time": "GRADE 7 \u2013 ABU SUFYAN IBN AL \u2013 HARITH (1ST SHIFT) BOYS",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -13080,7 +13080,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13096,7 +13096,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -13132,7 +13132,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13148,7 +13148,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -13184,7 +13184,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13200,7 +13200,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -13243,10 +13243,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
     "department": "Junior High School",
     "grade_level": "Grade 7",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -13262,7 +13262,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13278,7 +13278,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -13314,7 +13314,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13330,7 +13330,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -13366,7 +13366,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13382,7 +13382,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -13418,7 +13418,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "time": "GRADE 8 \u2013 MU'ADH IBN JABAL (2ND SHIFT) \u2013 BOYS",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -13465,7 +13465,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -13481,7 +13481,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13497,7 +13497,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -13533,7 +13533,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13549,7 +13549,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -13585,7 +13585,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13608,10 +13608,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
     "department": "Junior High School",
     "grade_level": "Grade 7",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13627,7 +13627,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -13663,7 +13663,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13679,7 +13679,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -13715,7 +13715,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13731,7 +13731,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -13767,7 +13767,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -13783,7 +13783,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "time": "GRADE 8 \u2013 SA'AD IBN MUA'DH (1ST SHIFT) \u2013 GIRLS",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -13830,7 +13830,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13846,7 +13846,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -13882,7 +13882,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13898,7 +13898,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -13934,7 +13934,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13957,10 +13957,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
     "department": "Junior High School",
     "grade_level": "Grade 8",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -13976,7 +13976,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -13992,7 +13992,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -14028,7 +14028,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -14044,7 +14044,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -14080,7 +14080,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -14096,7 +14096,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -14132,7 +14132,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "time": "GRADE 8 \u2013 NUAYM IBN MAS'UD (2ND SHIFT) MIX",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -14179,7 +14179,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -14195,7 +14195,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -14211,7 +14211,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -14247,7 +14247,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -14263,7 +14263,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -14306,10 +14306,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 7 & 8 BOYS (FACE TO FACE)",
     "department": "Junior High School",
     "grade_level": "Grade 8",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -14325,7 +14325,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -14361,7 +14361,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -14397,7 +14397,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -14433,7 +14433,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -14449,7 +14449,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -14485,7 +14485,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -14521,7 +14521,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -14537,7 +14537,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -14573,7 +14573,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -14609,7 +14609,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -14645,7 +14645,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -14708,7 +14708,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -14731,10 +14731,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
     "department": "Junior High School",
     "grade_level": "Grade 8",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -14750,7 +14750,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -14786,7 +14786,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -14802,7 +14802,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -14838,7 +14838,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -14854,7 +14854,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -14890,7 +14890,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -14906,7 +14906,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "time": "GRADE 9 \u2013 ABU HURAYRAH (1ST SHIFT) GIRLS",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -14953,7 +14953,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -14969,7 +14969,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -15005,7 +15005,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -15021,7 +15021,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -15057,7 +15057,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -15080,10 +15080,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
     "department": "Junior High School",
     "grade_level": "Grade 8",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -15099,7 +15099,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -15115,7 +15115,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -15151,7 +15151,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -15167,7 +15167,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -15203,7 +15203,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -15219,7 +15219,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -15255,7 +15255,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "time": "GRADE 9 \u2013 ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -15302,7 +15302,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -15318,7 +15318,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -15334,7 +15334,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -15370,7 +15370,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -15386,7 +15386,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -15429,10 +15429,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
     "department": "Junior High School",
     "grade_level": "Grade 10",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -15448,7 +15448,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -15484,7 +15484,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -15520,7 +15520,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -15556,7 +15556,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -15572,7 +15572,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -15608,7 +15608,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -15644,7 +15644,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -15660,7 +15660,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -15696,7 +15696,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -15732,7 +15732,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -15768,7 +15768,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -15831,7 +15831,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -15854,10 +15854,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
     "department": "Junior High School",
     "grade_level": "Grade 9",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -15873,7 +15873,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -15909,7 +15909,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -15925,7 +15925,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -15961,7 +15961,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -15977,7 +15977,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -16013,7 +16013,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -16029,7 +16029,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "time": "GRADE 10 \u2013 UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -16076,7 +16076,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16092,7 +16092,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -16128,7 +16128,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16144,7 +16144,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -16180,7 +16180,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16203,10 +16203,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
     "department": "Junior High School",
     "grade_level": "Grade 9",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -16222,7 +16222,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16238,7 +16238,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -16274,7 +16274,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16290,7 +16290,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -16326,7 +16326,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16342,7 +16342,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -16378,7 +16378,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "time": "GRADE 9 \u2013 ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -16425,7 +16425,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -16441,7 +16441,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16457,7 +16457,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -16493,7 +16493,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16509,7 +16509,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -16545,7 +16545,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16568,10 +16568,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
     "department": "Junior High School",
     "grade_level": "Grade 9",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -16587,7 +16587,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16603,7 +16603,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -16639,7 +16639,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16655,7 +16655,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -16691,7 +16691,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16707,7 +16707,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -16743,7 +16743,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "time": "GRADE 10 \u2013 ABU AYYUB AL \u2013 ANSARI (2ND SHIFT) BOYS",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -16790,7 +16790,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -16806,7 +16806,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16822,7 +16822,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -16858,7 +16858,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16874,7 +16874,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -16910,7 +16910,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16933,10 +16933,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
     "department": "Junior High School",
     "grade_level": "Grade 10",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -16952,7 +16952,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -16988,7 +16988,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -17004,7 +17004,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -17040,7 +17040,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -17056,7 +17056,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -17092,7 +17092,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -17155,7 +17155,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -17171,7 +17171,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -17207,7 +17207,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -17223,7 +17223,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -17259,7 +17259,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -17275,7 +17275,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -17318,10 +17318,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
     "department": "Junior High School",
     "grade_level": "Grade 10",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -17337,7 +17337,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -17373,7 +17373,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -17409,7 +17409,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -17445,7 +17445,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -17461,7 +17461,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -17497,7 +17497,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -17533,7 +17533,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -17549,7 +17549,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -17585,7 +17585,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -17621,7 +17621,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -17637,7 +17637,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -17700,7 +17700,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -17723,10 +17723,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
     "department": "Junior High School",
     "grade_level": "Grade 10",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -17742,7 +17742,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -17758,7 +17758,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -17794,7 +17794,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -17810,7 +17810,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -17846,7 +17846,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -17862,7 +17862,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -17945,7 +17945,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:20-3:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -17981,7 +17981,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -18007,7 +18007,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30 -3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -18030,10 +18030,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
     "department": "Senior High School",
     "grade_level": "Grade 11",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -18049,7 +18049,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -18085,7 +18085,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -18101,7 +18101,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -18137,7 +18137,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -18153,7 +18153,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -18189,7 +18189,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:10 p.m.",
+        "time": "03:00 PM \u2013 03:10 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -18205,7 +18205,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 PM \u2013 03:40 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -18241,7 +18241,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:50 - 4:30 p.m.",
+        "time": "03:50 PM \u2013 04:30 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -18262,7 +18262,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "time": "GRADE 12 \u2013 ABU MUSA AL \u2013 ASHARI",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -18309,7 +18309,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -18325,7 +18325,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -18368,10 +18368,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 11 (FACE TO FACE)",
     "department": "Senior High School",
     "grade_level": "Grade 11",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -18387,7 +18387,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -18423,7 +18423,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -18459,7 +18459,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -18495,7 +18495,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -18511,7 +18511,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -18547,7 +18547,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -18583,7 +18583,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -18599,7 +18599,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -18635,7 +18635,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -18671,7 +18671,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -18707,7 +18707,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -18723,7 +18723,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 12 - SUHAYB AR-RUMI",
+        "time": "GRADE 12 \u2013 SUHAYB AR \u2013 RUMI",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -18741,10 +18741,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 11 (2ND SHIFT BOYS)",
     "department": "Senior High School",
     "grade_level": "Grade 11",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "2:20-3:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -18780,7 +18780,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -18806,7 +18806,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30 -3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -18822,7 +18822,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -18858,7 +18858,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -18874,7 +18874,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -18910,7 +18910,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -18926,7 +18926,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -18964,10 +18964,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
     "department": "Senior High School",
     "grade_level": "Grade 12",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -18983,7 +18983,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -19019,7 +19019,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -19035,7 +19035,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -19071,7 +19071,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -19087,7 +19087,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -19123,7 +19123,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 PM \u2013 03:40 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -19159,7 +19159,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:40-03:50 p.m.",
+        "time": "03:40 PM \u2013 03:50 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -19175,7 +19175,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:50 - 4:30 p.m.",
+        "time": "03:50 PM \u2013 04:30 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -19213,10 +19213,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 12 - SUHAYB AR-RUMI",
     "department": "Senior High School",
     "grade_level": "Grade 12",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -19232,7 +19232,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -19268,7 +19268,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -19304,7 +19304,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -19340,7 +19340,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -19356,7 +19356,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -19392,7 +19392,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -19428,7 +19428,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -19444,7 +19444,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -19480,7 +19480,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -19516,7 +19516,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -19552,7 +19552,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -19575,10 +19575,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 11 (1ST SHIFT) GIRLS",
     "department": "Senior High School",
     "grade_level": "Grade 11",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -19594,7 +19594,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -19630,7 +19630,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -19646,7 +19646,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -19677,7 +19677,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -19693,7 +19693,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -19729,7 +19729,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 PM \u2013 03:40 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -19760,7 +19760,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 12 ABU MUSA AL- ASHARI (GIRLS) - 1ST SHIFT",
+        "time": "GRADE 12 ABU MUSA AL \u2013 ASHARI (GIRLS) \u2013 1ST SHIFT",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -19807,7 +19807,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -19830,10 +19830,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 11 (2ND SHIFT) BOYS",
     "department": "Senior High School",
     "grade_level": "Grade 11",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": null,
@@ -19864,7 +19864,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -19880,7 +19880,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -19911,7 +19911,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -19927,7 +19927,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -19963,7 +19963,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -19979,7 +19979,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -20022,10 +20022,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 12 (FACE TO FACE)",
     "department": "Senior High School",
     "grade_level": "Grade 12",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -20041,7 +20041,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -20057,7 +20057,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -20093,7 +20093,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -20129,7 +20129,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -20145,7 +20145,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -20181,7 +20181,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -20217,7 +20217,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -20233,7 +20233,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -20269,7 +20269,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -20305,7 +20305,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": null,
@@ -20326,7 +20326,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -20360,10 +20360,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 12 ABU MUSA AL- ASHARI (GIRLS) - 1ST SHIFT",
     "department": "Senior High School",
     "grade_level": "Grade 12",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -20379,7 +20379,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -20405,7 +20405,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -20421,7 +20421,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -20457,7 +20457,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -20473,7 +20473,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -20509,7 +20509,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 PM \u2013 03:40 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -20553,10 +20553,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 12 SUHAYB AR-RUMI (BOYS) - 2ND SHIFT",
     "department": "Senior High School",
     "grade_level": "Grade 12",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": null,
@@ -20567,7 +20567,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -20583,7 +20583,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -20619,7 +20619,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -20635,7 +20635,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -20666,7 +20666,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -20682,7 +20682,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -20736,10 +20736,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 11 (FACE TO FACE) - SECOND SEMESTER",
     "department": "Senior High School",
     "grade_level": "Grade 11",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -20755,7 +20755,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -20771,7 +20771,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -20807,7 +20807,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -20843,7 +20843,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -20859,7 +20859,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -20885,7 +20885,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -20906,7 +20906,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -20922,7 +20922,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -20958,7 +20958,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -20994,7 +20994,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -21025,7 +21025,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": null,
@@ -21036,7 +21036,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 12 (FACE TO FACE) - SECOND SEMESTER",
+        "time": "GRADE 12 (FACE TO FACE) \u2013 SECOND SEMESTER",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -21083,7 +21083,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -21106,10 +21106,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 11 (1ST SHIFT) GIRLS - SECOND SEMESTER",
     "department": "Senior High School",
     "grade_level": "Grade 11",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -21125,7 +21125,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -21161,7 +21161,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -21177,7 +21177,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -21213,7 +21213,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -21229,7 +21229,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": null,
@@ -21260,7 +21260,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 PM \u2013 03:40 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -21291,7 +21291,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 12 ABU MUSA AL- ASHARI (GIRLS) - 1ST SHIFT - SECOND SEMESTER",
+        "time": "GRADE 12 ABU MUSA AL \u2013 ASHARI (GIRLS) \u2013 1ST SHIFT \u2013 SECOND SEMESTER",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -21338,7 +21338,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -21361,10 +21361,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 11 (2ND SHIFT) BOYS - SECOND SEMESTER",
     "department": "Senior High School",
     "grade_level": "Grade 11",
-    "shift": "ODL 2nd Shift",
+    "shift": "ODL - 2ND SHIFT",
     "periods": [
       {
-        "time": "03:00-03:30 p.m.",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": null,
@@ -21390,7 +21390,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:30-3:40 p.m.",
+        "time": "03:30 PM \u2013 03:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -21406,7 +21406,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:40-4:20 p.m.",
+        "time": "03:40 PM \u2013 04:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -21442,7 +21442,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:20-4:30 p.m.",
+        "time": "04:20 PM \u2013 04:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -21458,7 +21458,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "4:30-5:10 p.m.",
+        "time": "04:30 PM \u2013 05:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -21494,7 +21494,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:10-5:20 p.m.",
+        "time": "05:10 PM \u2013 05:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -21510,7 +21510,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "5:20-6:00 p.m.",
+        "time": "05:20 PM \u2013 06:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -21546,7 +21546,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "GRADE 12 SUHAYB AR-RUMI (BOYS) - 2ND SHIFT",
+        "time": "GRADE 12 SUHAYB AR \u2013 RUMI (BOYS) \u2013 2ND SHIFT",
         "minutes": "",
         "days": {
           "Sunday": null,
@@ -21593,7 +21593,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": null,
@@ -21631,10 +21631,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 12 (FACE TO FACE) - SECOND SEMESTER",
     "department": "Senior High School",
     "grade_level": "Grade 12",
-    "shift": "Morning (F2F)",
+    "shift": "F2F",
     "periods": [
       {
-        "time": "7:30-7:40 a.m.",
+        "time": "07:30 AM \u2013 07:40 AM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -21650,7 +21650,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "7:40-8:25 a.m.",
+        "time": "07:40 AM \u2013 08:25 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -21686,7 +21686,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "8:25-9:05 a.m.",
+        "time": "08:25 AM \u2013 09:05 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -21722,7 +21722,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:05-9:45 a.m.",
+        "time": "09:05 AM \u2013 09:45 AM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -21758,7 +21758,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "9:45-10:00 a.m.",
+        "time": "09:45 AM \u2013 10:00 AM",
         "minutes": "15 min.",
         "days": {
           "Sunday": {
@@ -21774,7 +21774,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 AM \u2013 10:45 AM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -21810,7 +21810,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -21846,7 +21846,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "11:30:00-12:40 p.m.",
+        "time": "11:30 AM \u2013 12:40 PM",
         "minutes": "70 min.",
         "days": {
           "Sunday": {
@@ -21862,7 +21862,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 PM \u2013 01:25 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": null,
@@ -21888,7 +21888,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "1:25-2:10 p.m.",
+        "time": "01:25 PM \u2013 02:10 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -21924,7 +21924,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "2:15-3:00 p.m.",
+        "time": "02:15 PM \u2013 03:00 PM",
         "minutes": "45 min.",
         "days": {
           "Sunday": {
@@ -21955,7 +21955,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "3:00-3:30",
+        "time": "03:00 PM \u2013 03:30 PM",
         "minutes": "30 min.",
         "days": {
           "Sunday": {
@@ -21978,10 +21978,10 @@ window.OFFICIAL_CLASS_SCHEDULES = [
     "section_name": "GRADE 12 ABU MUSA AL- ASHARI (GIRLS) - 1ST SHIFT - SECOND SEMESTER",
     "department": "Senior High School",
     "grade_level": "Grade 12",
-    "shift": "ODL 1st Shift",
+    "shift": "ODL - 1ST SHIFT",
     "periods": [
       {
-        "time": "12:30-12:40 p.m.",
+        "time": "12:30 PM \u2013 12:40 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -21997,7 +21997,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 PM \u2013 01:20 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -22033,7 +22033,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:20-01:30 p.m.",
+        "time": "01:20 PM \u2013 01:30 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -22049,7 +22049,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 PM \u2013 02:10 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -22085,7 +22085,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:10-02:20 p.m.",
+        "time": "02:10 PM \u2013 02:20 PM",
         "minutes": "10 min.",
         "days": {
           "Sunday": {
@@ -22101,7 +22101,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 PM \u2013 03:00 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
@@ -22137,7 +22137,7 @@ window.OFFICIAL_CLASS_SCHEDULES = [
         }
       },
       {
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 PM \u2013 03:40 PM",
         "minutes": "40 min.",
         "days": {
           "Sunday": {
