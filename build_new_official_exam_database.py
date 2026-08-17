@@ -116,9 +116,11 @@ for sec in sections:
         if pair_key not in seen_pairs:
             seen_pairs.add(pair_key)
             
+            # Duration allocation
             duration = 45
-            if dept in ["Junior High School", "Senior High School"]:
-                if "Math" in subj or "Calculus" in subj or "Statistics" in subj:
+            is_hs = dept in ["Junior High School", "Senior High School"] or any(g in grade for g in ["Grade 7", "Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"])
+            if is_hs:
+                if any(m in subj for m in ["Math", "Calculus", "Statistics", "Algebra", "General Mathematics"]):
                     duration = 120
                 else:
                     duration = 60
@@ -126,6 +128,33 @@ for sec in sections:
                 duration = 30
             else:
                 duration = 45
+
+            # User Corrections: Exact Teacher Assignments
+            # 1. Kindergarten 2 — Khabaab: Arabic → Ustadh Faidh
+            if 'KHABAAB' in sname.upper() and ('Arabic' in subj or 'ARABIC' in subj.upper()):
+                tchr = "Ustadh Faidh"
+                tid = "ustadh_faidh"
+
+            # 2. Grade 3 — As'ad: GMRC → Ustadha Saliha, Arabic → Ustadh Faidh
+            if ('AS\'AD' in sname.upper() or 'ASAD' in sname.upper()) and ('GMRC' in subj or 'Values' in subj):
+                tchr = "Ustadha Saliha"
+                tid = "ustadha_saliha"
+            if ('AS\'AD' in sname.upper() or 'ASAD' in sname.upper()) and ('Arabic' in subj or 'ARABIC' in subj.upper()):
+                tchr = "Ustadh Faidh"
+                tid = "ustadh_faidh"
+
+            # 3. Grade 6 — Dihya: Math → Teacher Saimona, SHAF → Ustadh Faidh
+            if 'DIHYA' in sname.upper() and ('Math' in subj or 'Mathematics' in subj):
+                tchr = "Teacher Saimona"
+                tid = "tchr_saimona"
+            if 'DIHYA' in sname.upper() and 'SHAF' in subj:
+                tchr = "Ustadh Faidh"
+                tid = "ustadh_faidh"
+
+            # 4. Grade 4 — Usayd: English → Teacher Jenny
+            if 'USAYD' in sname.upper() and ('Eng' in subj or 'English' in subj):
+                tchr = "Teacher Jenny"
+                tid = "tchr_jenny"
                 
             exam_items.append({
                 'section_name': sname,
@@ -141,10 +170,10 @@ for sec in sections:
 print(f"Total active 1st Term exam sessions: {len(exam_items)}")
 
 EXAM_DATES = [
-    {"day_number": 1, "date_str": "Tuesday, September 2, 2026", "short_date": "Sep 2"},
-    {"day_number": 2, "date_str": "Wednesday, September 3, 2026", "short_date": "Sep 3"},
-    {"day_number": 3, "date_str": "Saturday, September 6, 2026", "short_date": "Sep 6"},
-    {"day_number": 4, "date_str": "Sunday, September 7, 2026", "short_date": "Sep 7"}
+    {"day_number": 1, "date_str": "Wednesday, September 2, 2026", "short_date": "Sep 2"},
+    {"day_number": 2, "date_str": "Thursday, September 3, 2026", "short_date": "Sep 3"},
+    {"day_number": 3, "date_str": "Sunday, September 6, 2026", "short_date": "Sep 6"},
+    {"day_number": 4, "date_str": "Monday, September 7, 2026", "short_date": "Sep 7"}
 ]
 
 SHIFT_SLOTS = {
@@ -154,14 +183,14 @@ SHIFT_SLOTS = {
         {"slot": 3, "time": "10:00 AM – 11:00 AM", "math_time": "10:00 AM – 12:00 PM"}
     ],
     "ODL - 1ST SHIFT": [
-        {"slot": 1, "time": "12:30 PM – 01:30 PM", "k2_time": "01:30 PM – 02:15 PM"},
-        {"slot": 2, "time": "01:45 PM – 02:45 PM", "k2_time": "02:20 PM – 03:05 PM"},
-        {"slot": 3, "time": "02:45 PM – 03:30 PM", "k2_time": "03:10 PM – 03:40 PM"}
+        {"slot": 1, "time": "12:30 PM – 01:30 PM", "k2_time": "01:30 PM – 02:15 PM", "math_time": "12:30 PM – 02:30 PM"},
+        {"slot": 2, "time": "01:45 PM – 02:45 PM", "k2_time": "02:20 PM – 03:05 PM", "math_time": "01:30 PM – 03:30 PM"},
+        {"slot": 3, "time": "02:45 PM – 03:30 PM", "k2_time": "03:10 PM – 03:40 PM", "math_time": "12:30 PM – 02:30 PM"}
     ],
     "ODL - 2ND SHIFT": [
-        {"slot": 1, "time": "03:30 PM – 04:30 PM"},
-        {"slot": 2, "time": "04:45 PM – 05:45 PM"},
-        {"slot": 3, "time": "05:45 PM – 06:45 PM"}
+        {"slot": 1, "time": "03:30 PM – 04:30 PM", "math_time": "03:30 PM – 05:30 PM"},
+        {"slot": 2, "time": "04:45 PM – 05:45 PM", "math_time": "04:45 PM – 06:45 PM"},
+        {"slot": 3, "time": "05:45 PM – 06:45 PM", "math_time": "03:30 PM – 05:30 PM"}
     ]
 }
 
