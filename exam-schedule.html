@@ -942,7 +942,7 @@ html, body {
       timeline = [
         { is_break: true, time: '07:30 AM – 07:45 AM', minutes: '15 min.', label: 'GENERAL ASSEMBLY' },
         { is_break: false, time: '08:00 AM – 09:00 AM', minutes: '60 min.', slot_id: 's1' },
-        { is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60 min.', slot_id: 's2' },
+        { is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60/120 min.', slot_id: 's2' },
         { is_break: true, time: '10:00 AM – 10:25 AM', minutes: '25 min.', label: 'RECESS' },
         { is_break: false, time: '10:25 AM – 11:25 AM', minutes: '60 min.', slot_id: 's3' },
         { is_break: true, time: '11:25 AM – 12:45 PM', minutes: '80 min.', label: 'LUNCH AND SALAH' },
@@ -963,19 +963,15 @@ html, body {
         timeline = [
           { is_break: true, time: '12:30 PM – 12:40 PM', minutes: '10 min.', label: 'GENERAL ASSEMBLY' },
           { is_break: false, time: '12:40 PM – 01:40 PM', minutes: '60 min.', slot_id: 's1' },
-          { is_break: true, time: '01:40 PM – 01:50 PM', minutes: '10 min.', label: 'TRANSITION' },
-          { is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60 min.', slot_id: 's2' },
-          { is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'TRANSITION AND SALAH BREAK' },
-          { is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 's3' },
-          { is_break: true, time: '04:10 PM – 04:20 PM', minutes: '10 min.', label: 'DISMISSAL' }
+          { is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60/120 min.', slot_id: 's2' },
+          { is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'TRANSITION AND SALAH BREAK' }
         ];
       }
     } else { // ODL - 2ND SHIFT
       timeline = [
         { is_break: true, time: '02:45 PM – 03:10 PM', minutes: '25 min.', label: 'HOMEROOM GUIDANCE / GENERAL ASSEMBLY' },
         { is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 's1' },
-        { is_break: true, time: '04:10 PM – 04:20 PM', minutes: '10 min.', label: 'TRANSITION' },
-        { is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60 min.', slot_id: 's2' },
+        { is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60/120 min.', slot_id: 's2' },
         { is_break: true, time: '05:20 PM – 05:30 PM', minutes: '10 min.', label: 'TRANSITION' },
         { is_break: false, time: '05:30 PM – 06:30 PM', minutes: '60 min.', slot_id: 's3' },
         { is_break: true, time: '06:30 PM – 06:45 PM', minutes: '15 min.', label: 'SALAH & DISMISSAL' }
@@ -1031,6 +1027,8 @@ html, body {
               <tbody>
       `;
 
+      const rowspanActive = { 'Sep 2': 0, 'Sep 3': 0, 'Sep 6': 0, 'Sep 7': 0 };
+
       timeline.forEach(row => {
         if (row.is_break) {
           fullHtml += `
@@ -1048,10 +1046,18 @@ html, body {
           `;
 
           EXAM_DATES.forEach(d => {
+            const dKey = d.short_date;
+            if (rowspanActive[dKey] > 0) {
+              rowspanActive[dKey]--;
+              return; // Merged with row above
+            }
+
             const exam = secExams.find(e => {
               if (e.short_date !== d.short_date && e.day_number !== d.day_num) return false;
+              if (e.duration_minutes >= 90) {
+                return row.slot_id === 's1';
+              }
               if (e.time === row.time || e.time_slot === row.time) return true;
-              if (e.duration_minutes >= 90 && (row.slot_id === 's1' || row.slot_id === 's2')) return true;
               if (row.slot_id === 's1' && e.slot_number === 1) return true;
               if (row.slot_id === 's2' && e.slot_number === 2) return true;
               if (row.slot_id === 's3' && e.slot_number === 3) return true;
@@ -1060,13 +1066,16 @@ html, body {
 
             if (exam) {
               const color = getSubjectColor(exam.subject);
-              const durText = exam.duration_minutes ? `${exam.duration_minutes} min.` : '';
+              const is120 = exam.duration_minutes >= 90;
+              if (is120) {
+                rowspanActive[dKey] = 1;
+              }
               fullHtml += `
-                <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                <td class="cell-class" ${is120 ? 'rowspan="2"' : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${is120 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(exam.subject)}</span>
-                    <span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(exam.teacher)}</span>
-                    ${exam.duration_minutes >= 90 ? `<span class="cell-duration-pill" style="color:${color.text};">${durText} EXTENDED</span>` : ''}
+                    <span class="cell-section-name">${esc(exam.teacher)}</span>
+                    <span class="cell-mod-badge" style="background:rgba(0,0,0,0.08); padding:2px 8px; border-radius:4px; font-weight:850; font-size:10px; margin-top:3px;">${is120 ? '120 MIN' : (exam.duration_minutes && exam.duration_minutes !== 60 ? exam.duration_minutes + ' MIN' : '60 MIN')}</span>
                   </div>
                 </td>
               `;
@@ -1116,7 +1125,7 @@ html, body {
     if (hasF2F) {
       timeline.push({ is_break: true, time: '07:30 AM – 07:45 AM', minutes: '15 min.', label: 'GENERAL ASSEMBLY' });
       timeline.push({ is_break: false, time: '08:00 AM – 09:00 AM', minutes: '60 min.', slot_id: 'f2f_s1' });
-      timeline.push({ is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60 min.', slot_id: 'f2f_s2' });
+      timeline.push({ is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60/120 min.', slot_id: 'f2f_s2' });
       timeline.push({ is_break: true, time: '10:00 AM – 10:25 AM', minutes: '25 min.', label: 'RECESS' });
       timeline.push({ is_break: false, time: '10:25 AM – 11:25 AM', minutes: '60 min.', slot_id: 'f2f_s3' });
       timeline.push({ is_break: true, time: '11:25 AM – 12:40 PM', minutes: '75 min.', label: 'LUNCH AND SALAH' });
@@ -1127,21 +1136,16 @@ html, body {
         timeline.push({ is_break: true, time: '12:30 PM – 12:40 PM', minutes: '10 min.', label: 'GENERAL ASSEMBLY' });
       }
       timeline.push({ is_break: false, time: '12:40 PM – 01:40 PM', minutes: '60 min.', slot_id: 'odl1_s1' });
-      timeline.push({ is_break: true, time: '01:40 PM – 01:50 PM', minutes: '10 min.', label: 'TRANSITION' });
-      timeline.push({ is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60 min.', slot_id: 'odl1_s2' });
+      timeline.push({ is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60/120 min.', slot_id: 'odl1_s2' });
       timeline.push({ is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'TRANSITION AND SALAH BREAK' });
-      timeline.push({ is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 'odl1_s3' });
     }
 
     if (hasODL2) {
       if (!hasF2F && !hasODL1) {
         timeline.push({ is_break: true, time: '02:45 PM – 03:10 PM', minutes: '25 min.', label: 'HOMEROOM GUIDANCE / GENERAL ASSEMBLY' });
-      } else if (!hasODL1) {
-        timeline.push({ is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'TRANSITION AND SALAH BREAK' });
       }
       timeline.push({ is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 'odl2_s1' });
-      timeline.push({ is_break: true, time: '04:10 PM – 04:20 PM', minutes: '10 min.', label: 'TRANSITION' });
-      timeline.push({ is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60 min.', slot_id: 'odl2_s2' });
+      timeline.push({ is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60/120 min.', slot_id: 'odl2_s2' });
       timeline.push({ is_break: true, time: '05:20 PM – 05:30 PM', minutes: '10 min.', label: 'TRANSITION' });
       timeline.push({ is_break: false, time: '05:30 PM – 06:30 PM', minutes: '60 min.', slot_id: 'odl2_s3' });
       timeline.push({ is_break: true, time: '06:30 PM – 06:45 PM', minutes: '15 min.', label: 'SALAH & DISMISSAL' });
@@ -1155,17 +1159,15 @@ html, body {
       timeline = [
         { is_break: true, time: '07:30 AM – 07:45 AM', minutes: '15 min.', label: 'GENERAL ASSEMBLY' },
         { is_break: false, time: '08:00 AM – 09:00 AM', minutes: '60 min.', slot_id: 'f2f_s1' },
-        { is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60 min.', slot_id: 'f2f_s2' },
+        { is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60/120 min.', slot_id: 'f2f_s2' },
         { is_break: true, time: '10:00 AM – 10:25 AM', minutes: '25 min.', label: 'RECESS' },
         { is_break: false, time: '10:25 AM – 11:25 AM', minutes: '60 min.', slot_id: 'f2f_s3' },
         { is_break: true, time: '11:25 AM – 12:40 PM', minutes: '75 min.', label: 'LUNCH AND SALAH' },
         { is_break: false, time: '12:40 PM – 01:40 PM', minutes: '60 min.', slot_id: 'odl1_s1' },
-        { is_break: true, time: '01:40 PM – 01:50 PM', minutes: '10 min.', label: 'TRANSITION' },
-        { is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60 min.', slot_id: 'odl1_s2' },
+        { is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60/120 min.', slot_id: 'odl1_s2' },
         { is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'TRANSITION AND SALAH BREAK' },
         { is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 'odl2_s1' },
-        { is_break: true, time: '04:10 PM – 04:20 PM', minutes: '10 min.', label: 'TRANSITION' },
-        { is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60 min.', slot_id: 'odl2_s2' },
+        { is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60/120 min.', slot_id: 'odl2_s2' },
         { is_break: true, time: '05:20 PM – 05:30 PM', minutes: '10 min.', label: 'TRANSITION' },
         { is_break: false, time: '05:30 PM – 06:30 PM', minutes: '60 min.', slot_id: 'odl2_s3' },
         { is_break: true, time: '06:30 PM – 06:45 PM', minutes: '15 min.', label: 'SALAH & DISMISSAL' }
@@ -1249,6 +1251,8 @@ html, body {
               <tbody>
       `;
 
+      const rowspanActive = { 'Sep 2': 0, 'Sep 3': 0, 'Sep 6': 0, 'Sep 7': 0 };
+
       timeline.forEach(row => {
         if (row.is_break) {
           fullHtml += `
@@ -1266,12 +1270,18 @@ html, body {
           `;
 
           EXAM_DATES.forEach(d => {
+            const dKey = d.short_date;
+            if (rowspanActive[dKey] > 0) {
+              rowspanActive[dKey]--;
+              return; // Merged with row above
+            }
+
             const matches = tExams.filter(e => {
               if (e.short_date !== d.short_date && e.day_number !== d.day_num) return false;
-              if (e.time_slot === row.time || e.time === row.time) return true;
-              if (e.duration_minutes >= 90 && (row.time.includes('08:00 AM') || row.time.includes('09:00 AM') || row.time.includes('12:40 PM') || row.time.includes('01:50 PM') || row.time.includes('03:10 PM') || row.time.includes('04:20 PM'))) {
-                return true;
+              if (e.duration_minutes >= 90) {
+                return row.slot_id === 'f2f_s1' || row.slot_id === 'odl1_s1' || row.slot_id === 'odl2_s1' || row.slot_id === 's1';
               }
+              if (e.time_slot === row.time || e.time === row.time) return true;
               return false;
             });
 
@@ -1280,13 +1290,16 @@ html, body {
               const color = getSubjectColor(exam.subject);
               const cleanSec = cleanSectionName(exam.section_name);
               const cleanShift = formatModalityShift(exam.shift);
+              const is120 = exam.duration_minutes >= 90;
+              if (is120) {
+                rowspanActive[dKey] = 1;
+              }
               fullHtml += `
-                <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                <td class="cell-class" ${is120 ? 'rowspan="2"' : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${is120 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(exam.subject)}</span>
                     <span class="cell-section-name">${esc(cleanSec)}</span>
-                    <span class="cell-mod-badge">${esc(cleanShift)}</span>
-                    ${exam.duration_minutes >= 90 ? `<span class="cell-duration-pill" style="color:${color.text};">${exam.duration_minutes}m EXTENDED</span>` : ''}
+                    <span class="cell-mod-badge" style="background:rgba(0,0,0,0.08); padding:2px 8px; border-radius:4px; font-weight:850; font-size:10px; margin-top:3px;">${is120 ? '120 MIN • ' + esc(cleanShift) : esc(cleanShift)}</span>
                   </div>
                 </td>
               `;
@@ -1297,12 +1310,16 @@ html, body {
                 const color = getSubjectColor(exam.subject);
                 const secsStr = matches.map(m => cleanSectionName(m.section_name)).join(' & ');
                 const cleanShift = formatModalityShift(exam.shift);
+                const is120 = exam.duration_minutes >= 90;
+                if (is120) {
+                  rowspanActive[dKey] = 1;
+                }
                 fullHtml += `
-                  <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                  <td class="cell-class" ${is120 ? 'rowspan="2"' : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${is120 ? 'vertical-align:middle;' : ''}">
                     <div class="cell-class-inner">
                       <span class="cell-subject-sec">${esc(exam.subject)}</span>
                       <span class="cell-section-name">${esc(secsStr)}</span>
-                      <span class="cell-mod-badge">${esc(cleanShift)} (Merged)</span>
+                      <span class="cell-mod-badge" style="background:rgba(0,0,0,0.08); padding:2px 8px; border-radius:4px; font-weight:850; font-size:10px; margin-top:3px;">${is120 ? '120 MIN (Merged) • ' + esc(cleanShift) : esc(cleanShift) + ' (Merged)'}</span>
                     </div>
                   </td>
                 `;
