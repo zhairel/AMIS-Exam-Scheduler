@@ -228,6 +228,43 @@ TEACHER_NAME_NORMALIZATION = {
     'UST. ERSAHAD': 'Ersahad'
 }
 
+# Canonical display names: maps clean last-name → full title + name as it appears in original records
+# Ustadh = male Islamic scholar, Ustadha = female Islamic scholar, Alim = Islamic scholar (senior)
+# Sir = informal male title, Teacher = general/secular teacher
+CANONICAL_DISPLAY_NAMES = {
+    # Alim – senior Islamic scholars (HS / SHS Quran / Islamic Studies)
+    'Abdul Karim': 'Alim Abdul Karim',
+    'Abdulwahab':  'Alim Abdulwahab',
+    'Samsuddin':   'Alim Samsuddin',
+    'Mamonas':     'Alim Mamonas',
+    'Dipatuan':    'Alim Dipatuan',
+    'Bustamante':  'Alim Bustamante',
+    # Sir
+    'Moh':         'Sir Moh',
+    # Ustadh (male)
+    'Abdiraheem':  'Ustadh Abdiraheem',
+    'Muh Ali':     'Ustadh Muh Ali',
+    'Faidh':       'Ustadh Faidh',
+    'Jaisam':      'Ustadh Jaisam',
+    'Obaydah':     'Ustadh Obaydah',
+    'Ersahad':     'Ustadh Ersahad',
+    # Ustadha (female)
+    'Hainur':      'Ustadha Hainur',
+    'Saliha':      'Ustadha Saliha',
+    'Silfah':      'Ustadha Silfah',
+    'Raslina':     'Ustadha Raslina',
+    'A Saliha':    'Ustadha A Saliha',
+    'A Silfa':     'Ustadha A Silfa',
+    # All other staff → Teacher prefix
+}
+
+def get_display_name(clean_t):
+    """Return the proper title-prefixed display name for a canonical clean name."""
+    if not clean_t:
+        return ''
+    return CANONICAL_DISPLAY_NAMES.get(clean_t, f'Teacher {clean_t}')
+
+
 def clean_teacher_name(tname):
     if not tname: return ""
     t = str(tname).strip()
@@ -351,7 +388,7 @@ for sdef in SECTION_DEFS:
             day_cells[dname] = {
                 "raw": c_val,
                 "subject": subj,
-                "teacher": f"Teacher {clean_t}" if clean_t else (tchr if tchr else None),
+                "teacher": get_display_name(clean_t) if clean_t else (tchr if tchr else None),
                 "teacher_id": t_id,
                 "is_break": is_break_cell,
                 "label": subj if is_break_cell else None,
@@ -392,8 +429,8 @@ for sdef in SECTION_DEFS:
                 if t_id not in active_teachers:
                     active_teachers[t_id] = {
                         "teacher_id": t_id,
-                        "teacher_name": f"Teacher {clean_t}",
-                        "canonical_name": f"Teacher {clean_t}",
+                        "teacher_name": get_display_name(clean_t),
+                        "canonical_name": get_display_name(clean_t),
                         "raw_names": set(),
                         "periods": [],
                         "subjects": set(),
@@ -429,7 +466,7 @@ for sdef in SECTION_DEFS:
             "label": main_subj if is_break_row else None,
             "subject": main_subj,
             "subject_id": 'subj_' + re.sub(r'[^a-zA-Z0-9]+', '_', main_subj).strip('_').lower(),
-            "teacher": f"Teacher {clean_main_t}" if clean_main_t else main_tchr,
+            "teacher": get_display_name(clean_main_t) if clean_main_t else main_tchr,
             "teacher_id": 'tchr_' + re.sub(r'[^a-zA-Z0-9]+', '_', clean_main_t).strip('_').lower() if clean_main_t else None,
             "is_break": is_break_row and all_same,
             "days": day_cells,
@@ -665,7 +702,7 @@ for exam in exam_records:
             break
             
     if matched:
-        exam['teacher'] = f"Teacher {matched['teacher_clean']}"
+        exam['teacher'] = get_display_name(matched['teacher_clean'])
         exam['teacher_clean'] = matched['teacher_clean']
         exam['teacher_id'] = matched['teacher_id']
         exam['teacher_status'] = "VERIFIED"

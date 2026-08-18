@@ -16,7 +16,7 @@ HTML_CONTENT = r"""<!doctype html>
 
 <!-- Embedded Master Section Class Data & Teacher Schedules -->
 <script src="class_schedules_data.js?v=20260818_0800"></script>
-<script src="teacher_weekly_schedules.js?v=20260818_0940"></script>
+<script src="teacher_weekly_schedules.js?v=20260818_0947"></script>
 
 <style>
 :root {

@@ -706,8 +706,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_saliha": {
     "teacher_id": "tchr_saliha",
-    "teacher_name": "Teacher Saliha",
-    "canonical_name": "Teacher Saliha",
+    "teacher_name": "Ustadha Saliha",
+    "canonical_name": "Ustadha Saliha",
     "total_classes": 26,
     "total_teaching_periods": 26,
     "subjects": [
@@ -1634,8 +1634,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_jaisam": {
     "teacher_id": "tchr_jaisam",
-    "teacher_name": "Teacher Jaisam",
-    "canonical_name": "Teacher Jaisam",
+    "teacher_name": "Ustadh Jaisam",
+    "canonical_name": "Ustadh Jaisam",
     "total_classes": 21,
     "total_teaching_periods": 21,
     "subjects": [
@@ -3151,8 +3151,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_hainur": {
     "teacher_id": "tchr_hainur",
-    "teacher_name": "Teacher Hainur",
-    "canonical_name": "Teacher Hainur",
+    "teacher_name": "Ustadha Hainur",
+    "canonical_name": "Ustadha Hainur",
     "total_classes": 22,
     "total_teaching_periods": 22,
     "subjects": [
@@ -3798,8 +3798,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_silfah": {
     "teacher_id": "tchr_silfah",
-    "teacher_name": "Teacher Silfah",
-    "canonical_name": "Teacher Silfah",
+    "teacher_name": "Ustadha Silfah",
+    "canonical_name": "Ustadha Silfah",
     "total_classes": 21,
     "total_teaching_periods": 21,
     "subjects": [
@@ -5078,8 +5078,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_faidh": {
     "teacher_id": "tchr_faidh",
-    "teacher_name": "Teacher Faidh",
-    "canonical_name": "Teacher Faidh",
+    "teacher_name": "Ustadh Faidh",
+    "canonical_name": "Ustadh Faidh",
     "total_classes": 21,
     "total_teaching_periods": 21,
     "subjects": [
@@ -6493,8 +6493,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_bustamante": {
     "teacher_id": "tchr_bustamante",
-    "teacher_name": "Teacher Bustamante",
-    "canonical_name": "Teacher Bustamante",
+    "teacher_name": "Alim Bustamante",
+    "canonical_name": "Alim Bustamante",
     "total_classes": 3,
     "total_teaching_periods": 3,
     "subjects": [
@@ -8641,8 +8641,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_abdiraheem": {
     "teacher_id": "tchr_abdiraheem",
-    "teacher_name": "Teacher Abdiraheem",
-    "canonical_name": "Teacher Abdiraheem",
+    "teacher_name": "Ustadh Abdiraheem",
+    "canonical_name": "Ustadh Abdiraheem",
     "total_classes": 23,
     "total_teaching_periods": 23,
     "subjects": [
@@ -10355,8 +10355,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_obaydah": {
     "teacher_id": "tchr_obaydah",
-    "teacher_name": "Teacher Obaydah",
-    "canonical_name": "Teacher Obaydah",
+    "teacher_name": "Ustadh Obaydah",
+    "canonical_name": "Ustadh Obaydah",
     "total_classes": 30,
     "total_teaching_periods": 30,
     "subjects": [
@@ -11352,8 +11352,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_abdul_karim": {
     "teacher_id": "tchr_abdul_karim",
-    "teacher_name": "Teacher Abdul Karim",
-    "canonical_name": "Teacher Abdul Karim",
+    "teacher_name": "Alim Abdul Karim",
+    "canonical_name": "Alim Abdul Karim",
     "total_classes": 20,
     "total_teaching_periods": 20,
     "subjects": [
@@ -14700,8 +14700,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_a_saliha": {
     "teacher_id": "tchr_a_saliha",
-    "teacher_name": "Teacher A Saliha",
-    "canonical_name": "Teacher A Saliha",
+    "teacher_name": "Ustadha A Saliha",
+    "canonical_name": "Ustadha A Saliha",
     "total_classes": 1,
     "total_teaching_periods": 1,
     "subjects": [
@@ -14979,8 +14979,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_ersahad": {
     "teacher_id": "tchr_ersahad",
-    "teacher_name": "Teacher Ersahad",
-    "canonical_name": "Teacher Ersahad",
+    "teacher_name": "Ustadh Ersahad",
+    "canonical_name": "Ustadh Ersahad",
     "total_classes": 28,
     "total_teaching_periods": 28,
     "subjects": [
@@ -21269,8 +21269,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_muh_ali": {
     "teacher_id": "tchr_muh_ali",
-    "teacher_name": "Teacher Muh Ali",
-    "canonical_name": "Teacher Muh Ali",
+    "teacher_name": "Ustadh Muh Ali",
+    "canonical_name": "Ustadh Muh Ali",
     "total_classes": 24,
     "total_teaching_periods": 24,
     "subjects": [
@@ -26702,8 +26702,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_raslina": {
     "teacher_id": "tchr_raslina",
-    "teacher_name": "Teacher Raslina",
-    "canonical_name": "Teacher Raslina",
+    "teacher_name": "Ustadha Raslina",
+    "canonical_name": "Ustadha Raslina",
     "total_classes": 5,
     "total_teaching_periods": 5,
     "subjects": [
@@ -30701,8 +30701,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_a_silfa": {
     "teacher_id": "tchr_a_silfa",
-    "teacher_name": "Teacher A Silfa",
-    "canonical_name": "Teacher A Silfa",
+    "teacher_name": "Ustadha A Silfa",
+    "canonical_name": "Ustadha A Silfa",
     "total_classes": 9,
     "total_teaching_periods": 9,
     "subjects": [
@@ -31319,8 +31319,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_samsuddin": {
     "teacher_id": "tchr_samsuddin",
-    "teacher_name": "Teacher Samsuddin",
-    "canonical_name": "Teacher Samsuddin",
+    "teacher_name": "Alim Samsuddin",
+    "canonical_name": "Alim Samsuddin",
     "total_classes": 24,
     "total_teaching_periods": 24,
     "subjects": [
@@ -32220,8 +32220,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_moh": {
     "teacher_id": "tchr_moh",
-    "teacher_name": "Teacher Moh",
-    "canonical_name": "Teacher Moh",
+    "teacher_name": "Sir Moh",
+    "canonical_name": "Sir Moh",
     "total_classes": 19,
     "total_teaching_periods": 19,
     "subjects": [
@@ -37832,8 +37832,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_mamonas": {
     "teacher_id": "tchr_mamonas",
-    "teacher_name": "Teacher Mamonas",
-    "canonical_name": "Teacher Mamonas",
+    "teacher_name": "Alim Mamonas",
+    "canonical_name": "Alim Mamonas",
     "total_classes": 13,
     "total_teaching_periods": 13,
     "subjects": [
@@ -38526,8 +38526,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_abdulwahab": {
     "teacher_id": "tchr_abdulwahab",
-    "teacher_name": "Teacher Abdulwahab",
-    "canonical_name": "Teacher Abdulwahab",
+    "teacher_name": "Alim Abdulwahab",
+    "canonical_name": "Alim Abdulwahab",
     "total_classes": 11,
     "total_teaching_periods": 11,
     "subjects": [
@@ -41803,8 +41803,8 @@ const ALL_TEACHERS_DATA = {
   },
   "tchr_dipatuan": {
     "teacher_id": "tchr_dipatuan",
-    "teacher_name": "Teacher Dipatuan",
-    "canonical_name": "Teacher Dipatuan",
+    "teacher_name": "Alim Dipatuan",
+    "canonical_name": "Alim Dipatuan",
     "total_classes": 5,
     "total_teaching_periods": 5,
     "subjects": [
