@@ -832,6 +832,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "SHAF"
       },
       {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "SHAF",
+        "raw_label": "SHAF"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "SHAF",
+        "raw_label": "SHAF"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "SHAF",
+        "raw_label": "SHAF"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "SHAF",
+        "raw_label": "SHAF"
+      },
+      {
         "section_id": "sec_grade_4_face_to_face",
         "section_name": "GRADE 4 (FACE TO FACE)",
         "department": "Elementary",
@@ -1118,8 +1170,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "SHAF"
       }
     ],
-    "total_classes": 23,
-    "total_teaching_periods": 23,
+    "total_classes": 27,
+    "total_teaching_periods": 27,
     "subjects": [
       "SHAF",
       "SHAF4"
@@ -1146,10 +1198,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "SHAF",
+            "label": "SHAF",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f3e8ff",
+              "border": "#d8b4fe",
+              "text": "#6b21a8"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "SHAF",
+            "label": "SHAF",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f3e8ff",
+              "border": "#d8b4fe",
+              "text": "#6b21a8"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "SHAF",
+            "label": "SHAF",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f3e8ff",
+              "border": "#d8b4fe",
+              "text": "#6b21a8"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "SHAF",
+            "label": "SHAF",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f3e8ff",
+              "border": "#d8b4fe",
+              "text": "#6b21a8"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -7696,6 +7808,45 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "GMRC"
       },
       {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "GMRC",
+        "raw_label": "GMRC"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "GMRC",
+        "raw_label": "GMRC"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "GMRC",
+        "raw_label": "GMRC"
+      },
+      {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "section_name": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "department": "Elementary",
@@ -7731,6 +7882,45 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "day": "Monday",
+        "subject": "GMRC",
+        "raw_label": "GMRC"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "GMRC",
+        "raw_label": "GMRC"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "GMRC",
+        "raw_label": "GMRC"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Thursday",
         "subject": "GMRC",
         "raw_label": "GMRC"
       },
@@ -7930,8 +8120,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "GMRC"
       }
     ],
-    "total_classes": 27,
-    "total_teaching_periods": 27,
+    "total_classes": 33,
+    "total_teaching_periods": 33,
     "subjects": [
       "Arabic",
       "GMRC",
@@ -8132,9 +8322,54 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "label": "GMRC",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "label": "GMRC",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "label": "GMRC",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
+          },
           "Thursday": null
         }
       },
@@ -8187,9 +8422,54 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "label": "GMRC",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "label": "GMRC",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "label": "GMRC",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -12375,6 +12655,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "department": "Elementary",
         "grade_level": "Grade 4",
         "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_4_face_to_face",
+        "section_name": "GRADE 4 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_4_face_to_face",
+        "section_name": "GRADE 4 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_4_face_to_face",
+        "section_name": "GRADE 4 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_4_face_to_face",
+        "section_name": "GRADE 4 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "F2F",
         "period_num": 4,
         "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
@@ -12786,8 +13118,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "TLE"
       }
     ],
-    "total_classes": 33,
-    "total_teaching_periods": 33,
+    "total_classes": 37,
+    "total_teaching_periods": 37,
     "subjects": [
       "ARAL Math",
       "ARAL Program",
@@ -12819,10 +13151,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -13476,6 +13868,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "department": "Elementary",
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 – 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_uthman_ibn_affan_1st_shift",
+        "section_name": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 – 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_uthman_ibn_affan_1st_shift",
+        "section_name": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 – 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_uthman_ibn_affan_1st_shift",
+        "section_name": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 – 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_uthman_ibn_affan_1st_shift",
+        "section_name": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
         "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
@@ -13588,8 +14032,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "CT 2"
       }
     ],
-    "total_classes": 10,
-    "total_teaching_periods": 10,
+    "total_classes": 14,
+    "total_teaching_periods": 14,
     "subjects": [
       "CT 1",
       "CT 2",
@@ -13617,10 +14061,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+            "section_short": "K2 UTHMAN IBN AFFAN (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+            "section_short": "K2 UTHMAN IBN AFFAN (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+            "section_short": "K2 UTHMAN IBN AFFAN (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+            "section_short": "K2 UTHMAN IBN AFFAN (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -14284,6 +14788,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "Math 5"
       },
       {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
+        "period_num": 7,
+        "time": "10:45:11:30 AM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Math 5",
+        "raw_label": "Math 5"
+      },
+      {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
+        "period_num": 7,
+        "time": "10:45:11:30 AM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Math 5",
+        "raw_label": "Math 5"
+      },
+      {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
+        "period_num": 7,
+        "time": "10:45:11:30 AM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "Math 5",
+        "raw_label": "Math 5"
+      },
+      {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
+        "period_num": 7,
+        "time": "10:45:11:30 AM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "Math 5",
+        "raw_label": "Math 5"
+      },
+      {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
         "department": "Elementary",
@@ -14622,8 +15178,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "Math"
       }
     ],
-    "total_classes": 27,
-    "total_teaching_periods": 27,
+    "total_classes": 31,
+    "total_teaching_periods": 31,
     "subjects": [
       "Math",
       "Math 5",
@@ -14651,10 +15207,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math 5",
+            "label": "Math 5",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math 5",
+            "label": "Math 5",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math 5",
+            "label": "Math 5",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math 5",
+            "label": "Math 5",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -17934,6 +18550,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "department": "Elementary",
         "grade_level": "Grade 3",
         "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
         "period_num": 7,
         "time": "10:45:11:30 AM",
         "minutes": "45 min.",
@@ -18241,8 +18909,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "Math3"
       }
     ],
-    "total_classes": 25,
-    "total_teaching_periods": 25,
+    "total_classes": 29,
+    "total_teaching_periods": 29,
     "subjects": [
       "HG",
       "Math",
@@ -18271,10 +18939,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -18760,6 +19488,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "department": "Elementary",
         "grade_level": "Grade 5",
         "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
         "period_num": 10,
         "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
@@ -18989,6 +19769,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "English"
       },
       {
+        "section_id": "sec_grade_6_face_to_face",
+        "section_name": "GRADE  6  FACE TO FACE",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_6_face_to_face",
+        "section_name": "GRADE  6  FACE TO FACE",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_6_face_to_face",
+        "section_name": "GRADE  6  FACE TO FACE",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_6_face_to_face",
+        "section_name": "GRADE  6  FACE TO FACE",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "section_name": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
         "department": "Elementary",
@@ -19093,8 +19925,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "English"
       }
     ],
-    "total_classes": 27,
-    "total_teaching_periods": 27,
+    "total_classes": 35,
+    "total_teaching_periods": 35,
     "subjects": [
       "Eng5",
       "English",
@@ -19123,10 +19955,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -19621,10 +20513,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE  6  FACE TO FACE",
+            "section_short": "G 6  FACE TO FACE",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE  6  FACE TO FACE",
+            "section_short": "G 6  FACE TO FACE",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE  6  FACE TO FACE",
+            "section_short": "G 6  FACE TO FACE",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE  6  FACE TO FACE",
+            "section_short": "G 6  FACE TO FACE",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          }
         }
       }
     ]
@@ -19710,6 +20662,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "day": "Sunday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_9_10_boys_face_to_face",
+        "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 9 & 10",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 – 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_9_10_boys_face_to_face",
+        "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 9 & 10",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 – 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_9_10_boys_face_to_face",
+        "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 9 & 10",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 – 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_9_10_boys_face_to_face",
+        "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 9 & 10",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 – 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Thursday",
         "subject": "Math",
         "raw_label": "Math"
       },
@@ -19987,8 +20991,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "Gen Math"
       }
     ],
-    "total_classes": 27,
-    "total_teaching_periods": 27,
+    "total_classes": 31,
+    "total_teaching_periods": 31,
     "subjects": [
       "Gen Math",
       "Gen Math/HR",
@@ -20103,10 +21107,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+            "section_short": "G9 & 10 BOYS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+            "section_short": "G9 & 10 BOYS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+            "section_short": "G9 & 10 BOYS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+            "section_short": "G9 & 10 BOYS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -20547,6 +21611,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "department": "Elementary",
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 – 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_abu_bakr_as_sideeq_1st_shift",
+        "section_name": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 – 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_abu_bakr_as_sideeq_1st_shift",
+        "section_name": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 – 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_abu_bakr_as_sideeq_1st_shift",
+        "section_name": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 – 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_abu_bakr_as_sideeq_1st_shift",
+        "section_name": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
         "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
@@ -20815,8 +21931,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "Filipino"
       }
     ],
-    "total_classes": 22,
-    "total_teaching_periods": 22,
+    "total_classes": 26,
+    "total_teaching_periods": 26,
     "subjects": [
       "CT 2",
       "Circle Time 1",
@@ -20846,10 +21962,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+            "section_short": "K2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+            "section_short": "K2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+            "section_short": "K2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+            "section_short": "K2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -21340,6 +22516,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "Science"
       },
       {
+        "section_id": "sec_grade_4_face_to_face",
+        "section_name": "GRADE 4 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_4_face_to_face",
+        "section_name": "GRADE 4 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_4_face_to_face",
+        "section_name": "GRADE 4 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_4_face_to_face",
+        "section_name": "GRADE 4 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
         "section_id": "sec_grade_5_face_to_face",
         "section_name": "GRADE 5 (FACE TO FACE)",
         "department": "Elementary",
@@ -21351,10 +22579,62 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "day": "Sunday",
         "subject": "Science",
         "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "Science",
+        "raw_label": "Science"
       }
     ],
-    "total_classes": 9,
-    "total_teaching_periods": 9,
+    "total_classes": 17,
+    "total_teaching_periods": 17,
     "subjects": [
       "ARAL Math",
       "ARAL Reading",
@@ -21512,10 +22792,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -21539,10 +22879,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          }
         }
       }
     ]
@@ -21563,6 +22963,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "day": "Sunday",
+        "subject": "Reading and Literacy",
+        "raw_label": "Reading and Literacy"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 4,
+        "time": "9:05 – 9:45 AM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "Reading and Literacy",
+        "raw_label": "Reading and Literacy"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 4,
+        "time": "9:05 – 9:45 AM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "Reading and Literacy",
+        "raw_label": "Reading and Literacy"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 4,
+        "time": "9:05 – 9:45 AM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "Reading and Literacy",
+        "raw_label": "Reading and Literacy"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 4,
+        "time": "9:05 – 9:45 AM",
+        "minutes": "40 min.",
+        "day": "Thursday",
         "subject": "Reading and Literacy",
         "raw_label": "Reading and Literacy"
       },
@@ -21840,8 +23292,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "Math"
       }
     ],
-    "total_classes": 22,
-    "total_teaching_periods": 22,
+    "total_classes": 26,
+    "total_teaching_periods": 26,
     "subjects": [
       "ARAL Reading",
       "Math",
@@ -21870,10 +23322,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Reading and Literacy",
+            "label": "Reading and Literacy",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Reading and Literacy",
+            "label": "Reading and Literacy",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Reading and Literacy",
+            "label": "Reading and Literacy",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Reading and Literacy",
+            "label": "Reading and Literacy",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -22302,10 +23814,114 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "department": "Elementary",
         "grade_level": "Kinder 2",
         "shift": "F2F",
+        "period_num": 2,
+        "time": "07:40 – 7:50 AM",
+        "minutes": "10 min.",
+        "day": "Monday",
+        "subject": "Meeting Time",
+        "raw_label": "Meeting Time"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "07:40 – 7:50 AM",
+        "minutes": "10 min.",
+        "day": "Tuesday",
+        "subject": "Meeting Time",
+        "raw_label": "Meeting Time"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "07:40 – 7:50 AM",
+        "minutes": "10 min.",
+        "day": "Wednesday",
+        "subject": "Meeting Time",
+        "raw_label": "Meeting Time"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "07:40 – 7:50 AM",
+        "minutes": "10 min.",
+        "day": "Thursday",
+        "subject": "Meeting Time",
+        "raw_label": "Meeting Time"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
         "period_num": 3,
         "time": "7:50 – 8:25 AM",
         "minutes": "35 min.",
         "day": "Sunday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "7:50 – 8:25 AM",
+        "minutes": "35 min.",
+        "day": "Monday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "7:50 – 8:25 AM",
+        "minutes": "35 min.",
+        "day": "Tuesday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "7:50 – 8:25 AM",
+        "minutes": "35 min.",
+        "day": "Wednesday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "7:50 – 8:25 AM",
+        "minutes": "35 min.",
+        "day": "Thursday",
         "subject": "Circle Time 1",
         "raw_label": "Circle Time 1"
       },
@@ -22328,10 +23944,114 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "department": "Elementary",
         "grade_level": "Kinder 2",
         "shift": "F2F",
+        "period_num": 6,
+        "time": "9:30 – 10:15 AM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Circle Time 2",
+        "raw_label": "Circle Time 2"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "9:30 – 10:15 AM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Circle Time 2",
+        "raw_label": "Circle Time 2"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "9:30 – 10:15 AM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "Circle Time 2",
+        "raw_label": "Circle Time 2"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "9:30 – 10:15 AM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "Circle Time 2",
+        "raw_label": "Circle Time 2"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
         "period_num": 7,
         "time": "10:15 – 10:30 AM",
         "minutes": "15 min.",
         "day": "Sunday",
+        "subject": "Wrap-Up Time",
+        "raw_label": "Wrap-Up Time"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
+        "period_num": 7,
+        "time": "10:15 – 10:30 AM",
+        "minutes": "15 min.",
+        "day": "Monday",
+        "subject": "Wrap-Up Time",
+        "raw_label": "Wrap-Up Time"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
+        "period_num": 7,
+        "time": "10:15 – 10:30 AM",
+        "minutes": "15 min.",
+        "day": "Tuesday",
+        "subject": "Wrap-Up Time",
+        "raw_label": "Wrap-Up Time"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
+        "period_num": 7,
+        "time": "10:15 – 10:30 AM",
+        "minutes": "15 min.",
+        "day": "Wednesday",
+        "subject": "Wrap-Up Time",
+        "raw_label": "Wrap-Up Time"
+      },
+      {
+        "section_id": "sec_kinder_2_class_schedule_f2f",
+        "section_name": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "F2F",
+        "period_num": 7,
+        "time": "10:15 – 10:30 AM",
+        "minutes": "15 min.",
+        "day": "Thursday",
         "subject": "Wrap-Up Time",
         "raw_label": "Wrap-Up Time"
       },
@@ -22345,6 +24065,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_khabaab_ibn_arat_2nd_shift",
+        "section_name": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 – 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_khabaab_ibn_arat_2nd_shift",
+        "section_name": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 – 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_khabaab_ibn_arat_2nd_shift",
+        "section_name": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 – 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_2_khabaab_ibn_arat_2nd_shift",
+        "section_name": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 – 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
         "subject": "Circle Time 1",
         "raw_label": "Circle Time 1"
       },
@@ -22453,8 +24225,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "AP"
       }
     ],
-    "total_classes": 13,
-    "total_teaching_periods": 13,
+    "total_classes": 33,
+    "total_teaching_periods": 33,
     "subjects": [
       "AP",
       "CT 2",
@@ -22486,10 +24258,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Meeting Time",
+            "label": "Meeting Time",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Meeting Time",
+            "label": "Meeting Time",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Meeting Time",
+            "label": "Meeting Time",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Meeting Time",
+            "label": "Meeting Time",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -22513,10 +24345,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -22540,10 +24432,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 2",
+            "label": "Circle Time 2",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 2",
+            "label": "Circle Time 2",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 2",
+            "label": "Circle Time 2",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 2",
+            "label": "Circle Time 2",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -22567,10 +24519,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Wrap-Up Time",
+            "label": "Wrap-Up Time",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Wrap-Up Time",
+            "label": "Wrap-Up Time",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Wrap-Up Time",
+            "label": "Wrap-Up Time",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Wrap-Up Time",
+            "label": "Wrap-Up Time",
+            "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 2 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -22594,10 +24606,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+            "section_short": "K2 KHABAAB IBN ARAT (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+            "section_short": "K2 KHABAAB IBN ARAT (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+            "section_short": "K2 KHABAAB IBN ARAT (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+            "section_short": "K2 KHABAAB IBN ARAT (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -22809,6 +24881,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "day": "Sunday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Thursday",
         "subject": "English",
         "raw_label": "English"
       },
@@ -23034,6 +25158,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "English"
       },
       {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 4,
+        "time": "9:05 – 9:45 AM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 4,
+        "time": "9:05 – 9:45 AM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 4,
+        "time": "9:05 – 9:45 AM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 4,
+        "time": "9:05 – 9:45 AM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "section_name": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
         "department": "Elementary",
@@ -23138,8 +25314,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "English"
       }
     ],
-    "total_classes": 26,
-    "total_teaching_periods": 26,
+    "total_classes": 34,
+    "total_teaching_periods": 34,
     "subjects": [
       "ARAL Reading",
       "Aral Reading",
@@ -23168,10 +25344,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -23609,10 +25845,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -23675,6 +25971,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "day": "Sunday",
+        "subject": "MAKABANSA",
+        "raw_label": "MAKABANSA"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "MAKABANSA",
+        "raw_label": "MAKABANSA"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "MAKABANSA",
+        "raw_label": "MAKABANSA"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "MAKABANSA",
+        "raw_label": "MAKABANSA"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Thursday",
         "subject": "MAKABANSA",
         "raw_label": "MAKABANSA"
       },
@@ -24043,8 +26391,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "AP"
       }
     ],
-    "total_classes": 29,
-    "total_teaching_periods": 29,
+    "total_classes": 33,
+    "total_teaching_periods": 33,
     "subjects": [
       "AP",
       "AP4",
@@ -24076,10 +26424,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAKABANSA",
+            "label": "MAKABANSA",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAKABANSA",
+            "label": "MAKABANSA",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAKABANSA",
+            "label": "MAKABANSA",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAKABANSA",
+            "label": "MAKABANSA",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -27206,6 +29614,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "MAKABANSA"
       },
       {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 10,
+        "time": "1:25 – 2:10 PM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "MAKABANSA",
+        "raw_label": "MAKABANSA"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 10,
+        "time": "1:25 – 2:10 PM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "MAKABANSA",
+        "raw_label": "MAKABANSA"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 10,
+        "time": "1:25 – 2:10 PM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "MAKABANSA",
+        "raw_label": "MAKABANSA"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 10,
+        "time": "1:25 – 2:10 PM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "MAKABANSA",
+        "raw_label": "MAKABANSA"
+      },
+      {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "section_name": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
         "department": "Elementary",
@@ -27331,7 +29791,33 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "period_num": 7,
         "time": "10:45:11:30 AM",
         "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Filipino",
+        "raw_label": "Filipino"
+      },
+      {
+        "section_id": "sec_grade_4_face_to_face",
+        "section_name": "GRADE 4 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "F2F",
+        "period_num": 7,
+        "time": "10:45:11:30 AM",
+        "minutes": "45 min.",
         "day": "Wednesday",
+        "subject": "Filipino",
+        "raw_label": "Filipino"
+      },
+      {
+        "section_id": "sec_grade_4_face_to_face",
+        "section_name": "GRADE 4 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "F2F",
+        "period_num": 7,
+        "time": "10:45:11:30 AM",
+        "minutes": "45 min.",
+        "day": "Thursday",
         "subject": "Filipino",
         "raw_label": "Filipino"
       },
@@ -27345,6 +29831,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "day": "Sunday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_4_face_to_face",
+        "section_name": "GRADE 4 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 – 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_4_face_to_face",
+        "section_name": "GRADE 4 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 – 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_4_face_to_face",
+        "section_name": "GRADE 4 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 – 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_4_face_to_face",
+        "section_name": "GRADE 4 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 – 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Thursday",
         "subject": "English",
         "raw_label": "English"
       },
@@ -27440,8 +29978,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "MAPEH"
       }
     ],
-    "total_classes": 19,
-    "total_teaching_periods": 19,
+    "total_classes": 29,
+    "total_teaching_periods": 29,
     "subjects": [
       "AP",
       "English",
@@ -27472,10 +30010,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAKABANSA",
+            "label": "MAKABANSA",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAKABANSA",
+            "label": "MAKABANSA",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAKABANSA",
+            "label": "MAKABANSA",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAKABANSA",
+            "label": "MAKABANSA",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -27670,7 +30268,22 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Filipino",
+            "label": "Filipino",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
           "Tuesday": null,
           "Wednesday": {
             "occupied": true,
@@ -27688,7 +30301,22 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Thursday": null
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Filipino",
+            "label": "Filipino",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -27712,10 +30340,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 4 (FACE TO FACE)",
+            "section_short": "G4 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -27854,6 +30542,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "Filipino"
       },
       {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Filipino",
+        "raw_label": "Filipino"
+      },
+      {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Filipino",
+        "raw_label": "Filipino"
+      },
+      {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "Filipino",
+        "raw_label": "Filipino"
+      },
+      {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "Filipino",
+        "raw_label": "Filipino"
+      },
+      {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "section_name": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
         "department": "Elementary",
@@ -27967,6 +30707,45 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "day": "Sunday",
+        "subject": "Filipino",
+        "raw_label": "Filipino"
+      },
+      {
+        "section_id": "sec_grade_6_face_to_face",
+        "section_name": "GRADE  6  FACE TO FACE",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Filipino",
+        "raw_label": "Filipino"
+      },
+      {
+        "section_id": "sec_grade_6_face_to_face",
+        "section_name": "GRADE  6  FACE TO FACE",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Filipino",
+        "raw_label": "Filipino"
+      },
+      {
+        "section_id": "sec_grade_6_face_to_face",
+        "section_name": "GRADE  6  FACE TO FACE",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "7:40 – 8:25 AM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
         "subject": "Filipino",
         "raw_label": "Filipino"
       },
@@ -28062,8 +30841,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "Filipino"
       }
     ],
-    "total_classes": 17,
-    "total_teaching_periods": 17,
+    "total_classes": 24,
+    "total_teaching_periods": 24,
     "subjects": [
       "AP",
       "Fil",
@@ -28092,10 +30871,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Filipino",
+            "label": "Filipino",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Filipino",
+            "label": "Filipino",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Filipino",
+            "label": "Filipino",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Filipino",
+            "label": "Filipino",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -28317,9 +31156,54 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Filipino",
+            "label": "Filipino",
+            "section": "GRADE  6  FACE TO FACE",
+            "section_short": "G 6  FACE TO FACE",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Filipino",
+            "label": "Filipino",
+            "section": "GRADE  6  FACE TO FACE",
+            "section_short": "G 6  FACE TO FACE",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Filipino",
+            "label": "Filipino",
+            "section": "GRADE  6  FACE TO FACE",
+            "section_short": "G 6  FACE TO FACE",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
           "Thursday": {
             "occupied": true,
             "is_class": true,
@@ -30503,6 +33387,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "department": "Elementary",
         "grade_level": "Grade 1",
         "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "Language",
+        "raw_label": "Language"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "Language",
+        "raw_label": "Language"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "Language",
+        "raw_label": "Language"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "Language",
+        "raw_label": "Language"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
         "period_num": 11,
         "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
@@ -30836,8 +33772,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "GMRC"
       }
     ],
-    "total_classes": 28,
-    "total_teaching_periods": 28,
+    "total_classes": 32,
+    "total_teaching_periods": 32,
     "subjects": [
       "Arabic",
       "GMRC",
@@ -30894,10 +33830,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Language",
+            "label": "Language",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Language",
+            "label": "Language",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Language",
+            "label": "Language",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Language",
+            "label": "Language",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -33201,10 +36197,114 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "department": "Elementary",
         "grade_level": "Grade 2",
         "shift": "F2F",
+        "period_num": 4,
+        "time": "9:05 – 9:45 AM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 4,
+        "time": "9:05 – 9:45 AM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 4,
+        "time": "9:05 – 9:45 AM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 4,
+        "time": "9:05 – 9:45 AM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
         "period_num": 9,
         "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
+        "subject": "Filipino",
+        "raw_label": "Filipino"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Filipino",
+        "raw_label": "Filipino"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Filipino",
+        "raw_label": "Filipino"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "Filipino",
+        "raw_label": "Filipino"
+      },
+      {
+        "section_id": "sec_grade_2_face_to_face",
+        "section_name": "GRADE 2 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 2",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Thursday",
         "subject": "Filipino",
         "raw_label": "Filipino"
       },
@@ -33391,8 +36491,8 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "Filipino"
       }
     ],
-    "total_classes": 16,
-    "total_teaching_periods": 16,
+    "total_classes": 24,
+    "total_teaching_periods": 24,
     "subjects": [
       "Filipino",
       "Math"
@@ -33419,10 +36519,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -33446,10 +36606,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Filipino",
+            "label": "Filipino",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Filipino",
+            "label": "Filipino",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Filipino",
+            "label": "Filipino",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Filipino",
+            "label": "Filipino",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "section_short": "G2 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -34876,6 +38096,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "department": "Elementary",
         "grade_level": "Kinder 1",
         "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 – 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_k1_husain_ibn_ali_2nd_shift",
+        "section_name": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 1",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 – 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_k1_husain_ibn_ali_2nd_shift",
+        "section_name": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 1",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 – 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_k1_husain_ibn_ali_2nd_shift",
+        "section_name": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 1",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 – 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_k1_husain_ibn_ali_2nd_shift",
+        "section_name": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 1",
+        "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
         "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
@@ -34915,10 +38187,114 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "department": "Elementary",
         "grade_level": "Kinder 1",
         "shift": "F2F",
+        "period_num": 2,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_1_class_schedule_f2f",
+        "section_name": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 1",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_1_class_schedule_f2f",
+        "section_name": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 1",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_1_class_schedule_f2f",
+        "section_name": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 1",
+        "shift": "F2F",
+        "period_num": 2,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "Circle Time 1",
+        "raw_label": "Circle Time 1"
+      },
+      {
+        "section_id": "sec_kinder_1_class_schedule_f2f",
+        "section_name": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 1",
+        "shift": "F2F",
         "period_num": 5,
         "time": "2:10 – 2:55 PM",
         "minutes": "45 min.",
         "day": "Sunday",
+        "subject": "Circle Time 2",
+        "raw_label": "Circle Time 2"
+      },
+      {
+        "section_id": "sec_kinder_1_class_schedule_f2f",
+        "section_name": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 1",
+        "shift": "F2F",
+        "period_num": 5,
+        "time": "2:10 – 2:55 PM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Circle Time 2",
+        "raw_label": "Circle Time 2"
+      },
+      {
+        "section_id": "sec_kinder_1_class_schedule_f2f",
+        "section_name": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 1",
+        "shift": "F2F",
+        "period_num": 5,
+        "time": "2:10 – 2:55 PM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Circle Time 2",
+        "raw_label": "Circle Time 2"
+      },
+      {
+        "section_id": "sec_kinder_1_class_schedule_f2f",
+        "section_name": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 1",
+        "shift": "F2F",
+        "period_num": 5,
+        "time": "2:10 – 2:55 PM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "Circle Time 2",
+        "raw_label": "Circle Time 2"
+      },
+      {
+        "section_id": "sec_kinder_1_class_schedule_f2f",
+        "section_name": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "department": "Elementary",
+        "grade_level": "Kinder 1",
+        "shift": "F2F",
+        "period_num": 5,
+        "time": "2:10 – 2:55 PM",
+        "minutes": "45 min.",
+        "day": "Thursday",
         "subject": "Circle Time 2",
         "raw_label": "Circle Time 2"
       },
@@ -34932,6 +38308,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "day": "Sunday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "Math",
+        "raw_label": "Math"
+      },
+      {
+        "section_id": "sec_grade_1_face_to_face",
+        "section_name": "GRADE 1 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 1",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Thursday",
         "subject": "Math",
         "raw_label": "Math"
       },
@@ -34975,6 +38403,58 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "raw_label": "MAKABANSA"
       },
       {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "MAKABANSA",
+        "raw_label": "MAKABANSA"
+      },
+      {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "MAKABANSA",
+        "raw_label": "MAKABANSA"
+      },
+      {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "MAKABANSA",
+        "raw_label": "MAKABANSA"
+      },
+      {
+        "section_id": "sec_grade_3_face_to_face",
+        "section_name": "GRADE 3 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 3",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 – 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "MAKABANSA",
+        "raw_label": "MAKABANSA"
+      },
+      {
         "section_id": "sec_grade_6_face_to_face",
         "section_name": "GRADE  6  FACE TO FACE",
         "department": "Elementary",
@@ -34986,10 +38466,62 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "day": "Sunday",
         "subject": "Science",
         "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_6_face_to_face",
+        "section_name": "GRADE  6  FACE TO FACE",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "F2F",
+        "period_num": 10,
+        "time": "1:25 – 2:10 PM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_6_face_to_face",
+        "section_name": "GRADE  6  FACE TO FACE",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "F2F",
+        "period_num": 10,
+        "time": "1:25 – 2:10 PM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_6_face_to_face",
+        "section_name": "GRADE  6  FACE TO FACE",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "F2F",
+        "period_num": 10,
+        "time": "1:25 – 2:10 PM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_6_face_to_face",
+        "section_name": "GRADE  6  FACE TO FACE",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "F2F",
+        "period_num": 10,
+        "time": "1:25 – 2:10 PM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "Science",
+        "raw_label": "Science"
       }
     ],
-    "total_classes": 10,
-    "total_teaching_periods": 10,
+    "total_classes": 34,
+    "total_teaching_periods": 34,
     "subjects": [
       "ARAL Math",
       "CT 2",
@@ -35021,10 +38553,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+            "section_short": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+            "section_short": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+            "section_short": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+            "section_short": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -35090,10 +38682,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 1",
+            "label": "Circle Time 1",
+            "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -35117,10 +38769,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 2",
+            "label": "Circle Time 2",
+            "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 2",
+            "label": "Circle Time 2",
+            "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 2",
+            "label": "Circle Time 2",
+            "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Circle Time 2",
+            "label": "Circle Time 2",
+            "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "section_short": "KINDER 1 CLASS SCHEDULE (F2F)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#f1f5f9",
+              "border": "#cbd5e1",
+              "text": "#334155"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -35144,10 +38856,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Math",
+            "label": "Math",
+            "section": "GRADE 1 (FACE TO FACE)",
+            "section_short": "G1 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -35213,10 +38985,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAKABANSA",
+            "label": "MAKABANSA",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAKABANSA",
+            "label": "MAKABANSA",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAKABANSA",
+            "label": "MAKABANSA",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAKABANSA",
+            "label": "MAKABANSA",
+            "section": "GRADE 3 (FACE TO FACE)",
+            "section_short": "G3 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          }
         }
       },
       {
@@ -35240,10 +39072,70 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
             },
             "has_conflict": false
           },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE  6  FACE TO FACE",
+            "section_short": "G 6  FACE TO FACE",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE  6  FACE TO FACE",
+            "section_short": "G 6  FACE TO FACE",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE  6  FACE TO FACE",
+            "section_short": "G 6  FACE TO FACE",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE  6  FACE TO FACE",
+            "section_short": "G 6  FACE TO FACE",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          }
         }
       }
     ]

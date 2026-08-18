@@ -158,6 +158,17 @@ def format_time_label(t):
     t = re.sub(r'\s*-\s*', ' – ', t)
     return t
 
+def get_cell_value_merged(ws, row, col):
+    val = ws.cell(row, col).value
+    if val is not None and str(val).strip():
+        return str(val).strip()
+    for rng in ws.merged_cells.ranges:
+        if row >= rng.min_row and row <= rng.max_row and col >= rng.min_col and col <= rng.max_col:
+            top_val = ws.cell(rng.min_row, rng.min_col).value
+            if top_val is not None and str(top_val).strip():
+                return str(top_val).strip()
+    return ''
+
 print("Building Canonical V4 Class Schedules...")
 sections_dataset = []
 audit_records = []
@@ -188,6 +199,13 @@ for sdef in SECTION_DEFS:
             except:
                 pass
         
+        # Extract 5 days with merged cell support
+        raw_vals = [get_cell_value_merged(ws, r, c) for c in sdef['day_cols']]
+        
+        # If only Sunday is filled and Mon-Thu are empty, copy Sunday across all 5 days (1 cell in 5 days)
+        if raw_vals[0] and all(v == '' for v in raw_vals[1:]):
+            raw_vals = [raw_vals[0]] * 5
+            
         day_cells = {}
         row_subjects = []
         row_teachers = []
@@ -195,8 +213,7 @@ for sdef in SECTION_DEFS:
         
         for idx, c in enumerate(sdef['day_cols']):
             dname = DAYS_OF_WEEK[idx]
-            c_val = ws.cell(r, c).value
-            c_str = str(c_val).strip() if c_val is not None else ""
+            c_str = raw_vals[idx]
             col_letter = openpyxl.utils.get_column_letter(c)
             cell_ref = f"{col_letter}{r}"
             
@@ -248,7 +265,7 @@ for sdef in SECTION_DEFS:
                 
         # Determine if merged across all days
         first_day_val = day_cells["Sunday"]["raw"] if "Sunday" in day_cells else ""
-        all_same = all(day_cells[d]["raw"] == first_day_val for d in DAYS_OF_WEEK)
+        all_same = bool(first_day_val) and all(day_cells[d]["raw"] == first_day_val for d in DAYS_OF_WEEK)
         
         main_subj = row_subjects[0] if row_subjects else (first_day_val if first_day_val else "BREAK / ASSEMBLY")
         main_tchr = row_teachers[0] if row_teachers else None
