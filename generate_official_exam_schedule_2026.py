@@ -7,7 +7,7 @@ Generates the Official 1st Quarter Examination Schedule for AMIS.
 - Academic data (subjects, sections, teachers, shifts) strictly from:
   Current AMIS System Database (class_schedules_data.json / Canonical V4)
 - High School & SHS Math exams are 120 minutes (2 consecutive slots)
-- Zero teacher & section conflicts with CP-SAT solver
+- Zero teacher & section conflicts with CP-SAT solver across 100% of time intervals
 """
 
 import os
@@ -256,31 +256,45 @@ for sec_id, items in by_sec.items():
                 daily_units.append(x[i, d, s_start] * k)
         model.Add(sum(daily_units) <= max_daily_units)
 
-# Constraint 3: Same-shift teacher conflict (Strictly 0 conflict)
-by_teacher_shift = defaultdict(list)
+# Constraint 3: Strict 0 Teacher Overlaps across all time windows & all teachers
+by_teacher = defaultdict(list)
 for i, item in enumerate(all_exam_items):
     tid = item['teacher_id']
-    sh = item['shift']
-    g = item['grade_level']
-    is_kinder = 'Kinder' in g or 'K1' in g or 'K2' in g
-    if tid and tid != 'tchr_assigned_faculty' and not is_kinder:
-        by_teacher_shift[(tid, sh)].append(i)
+    if tid and tid != 'tchr_assigned_faculty':
+        by_teacher[tid].append(i)
 
-for (tid, sh), items in by_teacher_shift.items():
-    slots = SHIFT_SLOTS[sh]
-    num_slots = len(slots)
+for tid, items in by_teacher.items():
     for d in DAYS:
-        for s in range(num_slots):
-            occupying = []
-            for i in items:
-                k = all_exam_items[i]['slots_needed']
-                for s_start in range(max(0, s - k + 1), min(s + 1, num_slots - k + 1)):
-                    occupying.append(x[i, d, s_start])
-            model.Add(sum(occupying) <= 1)
+        for idx1 in range(len(items)):
+            i1 = items[idx1]
+            slots1 = get_slots_for_item(all_exam_items[i1])
+            k1 = all_exam_items[i1]['slots_needed']
+            for idx2 in range(idx1 + 1, len(items)):
+                i2 = items[idx2]
+                slots2 = get_slots_for_item(all_exam_items[i2])
+                k2 = all_exam_items[i2]['slots_needed']
+                
+                # Check if i1 and i2 are co-taught synchronous ISAL sessions
+                is_merged = (all_exam_items[i1]['shift'] == all_exam_items[i2]['shift'] and
+                             'ODL' in all_exam_items[i1]['shift'] and
+                             all_exam_items[i1]['subject'] == all_exam_items[i2]['subject'] and
+                             any(k in all_exam_items[i1]['subject'].upper() for k in ['QUR', 'ARABIC', 'HADITH', 'SHAF']))
+                
+                for s1 in range(len(slots1) - k1 + 1):
+                    start1 = slots1[s1]['start_m']
+                    end1 = slots1[s1 + k1 - 1]['end_m']
+                    for s2 in range(len(slots2) - k2 + 1):
+                        start2 = slots2[s2]['start_m']
+                        end2 = slots2[s2 + k2 - 1]['end_m']
+                        
+                        if not (end1 <= start2 or start1 >= end2):
+                            if is_merged and start1 == start2 and end1 == end2:
+                                continue
+                            model.Add(x[i1, d, s1] + x[i2, d, s2] <= 1)
 
-print("Solving Official Examination CP-SAT model...")
+print("Solving Official Examination CP-SAT model with zero conflicts...")
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 45.0
+solver.parameters.max_time_in_seconds = 60.0
 solver.parameters.num_search_workers = 8
 status = solver.Solve(model)
 
@@ -288,7 +302,7 @@ if status not in (cp_model.OPTIMAL, cp_model.FEASIBLE):
     print("Error: Could not find feasible exam schedule!")
     exit(1)
 
-print(f"✓ Solved successfully!")
+print(f"✓ Solved successfully with 0 conflicts!")
 
 # Build Final Exam Records
 final_exam_records = []
@@ -323,6 +337,8 @@ for d_idx, day_info in enumerate(EXAM_DAYS):
                     "slots_spanned": k,
                     "start_slot_index": s_idx,
                     "end_slot_index": s_idx + k - 1,
+                    "start_m": slots[s_idx]['start_m'],
+                    "end_m": slots[s_idx + k - 1]['end_m'],
                     "time_slot": full_time_slot,
                     "time": full_time_slot,
                     "section_id": item['section_id'],
