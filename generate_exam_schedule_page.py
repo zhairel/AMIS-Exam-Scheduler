@@ -471,9 +471,10 @@ html, body {
 .timetable-grid tbody td.cell-class {
   font-weight: 600;
   text-align: center;
-  padding: 8px 10px;
+  padding: 10px 8px;
   vertical-align: middle;
   height: auto;
+  box-sizing: border-box;
 }
 
 .cell-class-inner {
@@ -481,7 +482,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3px;
+  gap: 4px;
   width: 100%;
   height: 100%;
   min-height: 48px;
@@ -489,47 +490,24 @@ html, body {
 }
 
 .cell-subject-sec {
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 13.5px;
+  font-weight: 800;
   line-height: 1.25;
   text-align: center;
   word-break: normal;
   overflow-wrap: break-word;
+  letter-spacing: -0.01em;
 }
 
-.cell-section-name {
-  font-size: 11px;
-  line-height: 1.25;
-  font-weight: 700;
-  text-align: center;
-  word-break: normal;
-  overflow-wrap: break-word;
-  opacity: 0.95;
-  margin-top: 1px;
-}
-
+.cell-section-name,
 .cell-teacher-name {
-  font-size: 11px;
+  font-size: 11.5px;
   line-height: 1.25;
-  font-weight: 700;
+  font-weight: 650;
   text-align: center;
   word-break: normal;
   overflow-wrap: break-word;
-  opacity: 0.95;
-  margin-top: 1px;
-}
-
-.cell-modality-text {
-  font-size: 10px;
-  line-height: 1.25;
-  font-weight: 750;
-  text-align: center;
-  word-break: normal;
-  overflow-wrap: break-word;
-  opacity: 0.88;
-  letter-spacing: 0.02em;
-  margin-top: 2px;
-  text-transform: uppercase;
+  opacity: 0.92;
 }
 
 .timetable-grid tbody td.cell-empty {
@@ -763,7 +741,18 @@ html, body {
   }
 
   function cleanSectionName(name) {
-    return (name || '').replace(/CLASS SCHEDULE/gi, '').replace(/GRADE/gi, 'G').replace(/KINDER/gi, 'K').trim();
+    if (!name) return '';
+    let s = String(name)
+      .replace(/CLASS\\s+SCHEDULE/gi, '')
+      .replace(/GRADE\\s+/gi, 'Grade ')
+      .replace(/KINDER\\s+/gi, 'Kinder ')
+      .replace(/\\(FACE\\s+TO\\s+FACE\\)/gi, '(F2F)')
+      .replace(/FACE\\s+TO\\s+FACE/gi, '(F2F)')
+      .replace(/\\(1ST\\s+SHIFT\\)/gi, '(1st Shift)')
+      .replace(/\\(2ND\\s+SHIFT\\)/gi, '(2nd Shift)')
+      .replace(/\\s+/g, ' ')
+      .trim();
+    return s;
   }
 
   function formatModalityShift(shift) {
@@ -1011,7 +1000,6 @@ html, body {
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(match.subject)}</span>
                     <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                    <span class="cell-modality-text">${esc(formatModalityShift(match.shift))}</span>
                   </div>
                 </td>
               `;

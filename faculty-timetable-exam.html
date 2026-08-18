@@ -1026,7 +1026,6 @@ html, body {
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(exam.subject)}</span>
                     <span class="cell-section-name">${esc(cleanSec)}</span>
-                    <span class="cell-mod-badge" style="background:rgba(0,0,0,0.08); padding:2px 8px; border-radius:4px; font-weight:850; font-size:10px; margin-top:3px;">${is120 ? '120 MIN • ' + esc(cleanShift) : esc(cleanShift)}</span>
                   </div>
                 </td>
               `;
@@ -1045,8 +1044,7 @@ html, body {
                   <td class="cell-class" ${is120 ? 'rowspan="2"' : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${is120 ? 'vertical-align:middle;' : ''}">
                     <div class="cell-class-inner">
                       <span class="cell-subject-sec">${esc(exam.subject)}</span>
-                      <span class="cell-section-name">${esc(secsStr)}</span>
-                      <span class="cell-mod-badge" style="background:rgba(0,0,0,0.08); padding:2px 8px; border-radius:4px; font-weight:850; font-size:10px; margin-top:3px;">${is120 ? '120 MIN (Merged) • ' + esc(cleanShift) : esc(cleanShift) + ' (Merged)'}</span>
+                      <span class="cell-section-name">${esc(secsStr)} (Merged)</span>
                     </div>
                   </td>
                 `;
