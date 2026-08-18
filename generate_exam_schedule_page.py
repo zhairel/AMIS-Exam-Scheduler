@@ -23,7 +23,7 @@ HTML_TEMPLATE = r"""<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AMIS — 1st Term Examination Schedule (Official Timetable)</title>
+<title>AMIS — Term Exam Week 2026 – 2027 (Official Timetable)</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -138,13 +138,19 @@ body {
 .filter-select {
   padding: 6px 12px;
   border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid #cbd5e1;
   background: #ffffff;
-  color: var(--ink);
-  font-weight: 750;
-  font-size: 13px;
+  color: #0f172a;
+  font-size: 12.5px;
+  font-weight: 700;
   outline: none;
   cursor: pointer;
+  font-family: inherit;
+}
+
+.filter-select:focus {
+  border-color: #0f766e;
+  box-shadow: 0 0 0 2px rgba(15, 118, 110, 0.2);
 }
 
 .filter-select-section {
@@ -255,6 +261,7 @@ html, body {
 
 .timetable-sheet.is-fullscreen .timetable-grid {
   width: 100% !important;
+  min-width: 920px !important;
 }
 
 .timetable-sheet.is-fullscreen .timetable-grid thead th {
@@ -264,10 +271,36 @@ html, body {
   max-height: 42px !important;
 }
 
+.timetable-sheet.is-fullscreen .timetable-grid thead th.col-time {
+  width: 185px !important;
+  min-width: 185px !important;
+  max-width: 185px !important;
+}
+
+.timetable-sheet.is-fullscreen .timetable-grid thead th.col-mins {
+  width: 80px !important;
+  min-width: 80px !important;
+  max-width: 80px !important;
+}
+
 .timetable-sheet.is-fullscreen .timetable-grid tbody td {
   padding: 10px 8px !important;
   font-size: 13px !important;
   min-height: 44px !important;
+}
+
+.timetable-sheet.is-fullscreen .timetable-grid tbody td.cell-time {
+  font-size: 12.5px !important;
+  padding: 8px 6px !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+}
+
+.timetable-sheet.is-fullscreen .timetable-grid tbody td.cell-mins {
+  font-size: 12.5px !important;
+  padding: 8px 6px !important;
+  white-space: nowrap !important;
+  text-align: center !important;
 }
 
 .timetable-sheet.is-fullscreen .cell-subject-sec {
@@ -400,7 +433,7 @@ html, body {
 /* Master Timetable Grid */
 .timetable-grid {
   width: 100%;
-  min-width: 780px;
+  min-width: 860px;
   border-collapse: collapse;
   table-layout: fixed;
   font-size: 11px;
@@ -419,11 +452,15 @@ html, body {
 }
 
 .timetable-grid thead th.col-time {
-  width: 135px;
+  width: 160px;
+  min-width: 160px;
+  max-width: 160px;
 }
 
 .timetable-grid thead th.col-mins {
-  width: 60px;
+  width: 68px;
+  min-width: 68px;
+  max-width: 68px;
 }
 
 .timetable-grid tbody td {
@@ -433,14 +470,17 @@ html, body {
   font-size: 11.5px;
   vertical-align: middle;
   height: 44px;
+  box-sizing: border-box;
 }
 
 .timetable-grid tbody td.cell-time {
   background: #f8fafc;
   font-weight: 800;
   color: #1e293b;
-  font-size: 11px;
-  white-space: nowrap;
+  font-size: 11.5px;
+  white-space: nowrap !important;
+  padding: 6px 4px !important;
+  text-align: center;
 }
 
 .timetable-grid tbody td.cell-mins {
@@ -448,6 +488,9 @@ html, body {
   font-weight: 800;
   color: #475569;
   font-size: 11px;
+  white-space: nowrap !important;
+  padding: 6px 4px !important;
+  text-align: center;
 }
 
 /* Special Break Row */
@@ -948,8 +991,7 @@ html, body {
             <img src="amis_logo.png" alt="AMIS Logo" style="width:48px; height:48px; border-radius:50%; object-fit:contain;">
             <div>
               <h1 style="margin:0;">AL MUNAWWARA ISLAMIC SCHOOL</h1>
-              <h2 style="margin:2px 0 0 0;">1st Term Examination Schedule</h2>
-              <p style="margin:2px 0 0 0;">Term Exam Week</p>
+              <h2 style="margin:3px 0 0 0; font-size:13px; font-weight:800; color:var(--brand-accent); letter-spacing:0.02em;">TERM EXAM WEEK 2026 – 2027</h2>
             </div>
           </div>
 
