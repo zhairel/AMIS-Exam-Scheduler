@@ -934,14 +934,14 @@ html, body {
   }
 
   function populateTeacherDropdown() {
-    let teachers = Object.values(ALL_TEACHERS_DATA || {}).filter(t => (t.total_classes || t.total_teaching_periods || 0) > 0);
+    let teachers = Object.values(ALL_TEACHERS_DATA || {}).filter(t => ((t.periods && t.periods.length) || t.total_classes || t.total_teaching_periods || 0) > 0);
     teachers = teachers.sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name));
 
     let html = '<option value="">All Staff / Faculty</option>';
     html += '<option value="ALL_FACULTY">[ALL FACULTY] Show All Faculty Timetables</option>';
     teachers.forEach(t => {
       const name = t.canonical_name || t.teacher_name;
-      const count = t.total_classes || t.total_teaching_periods || 0;
+      const count = (t.periods ? t.periods.length : 0) || t.total_classes || t.total_teaching_periods || 0;
       const countLabel = count ? ` (${count} classes)` : '';
       html += `<option value="${t.teacher_id}">${esc(name)}${countLabel}</option>`;
     });
