@@ -781,25 +781,30 @@ body {
     return { bg: '#f1f5f9', border: '#cbd5e1', text: '#1e293b' };
   }
 
-  function init() {
-    if (typeof AMIS_EXAM_DATA !== 'undefined') {
-      ALL_EXAM_RECORDS = AMIS_EXAM_DATA;
-      processData();
-    } else {
-      fetch('exam_data.json')
-        .then(r => r.json())
-        .then(data => {
-          ALL_EXAM_RECORDS = data;
-          processData();
-        })
-        .catch(err => {
-          document.getElementById('sheetsContainer').innerHTML = `
-            <div style="padding:40px; text-align:center; color:#b91c1c; font-weight:800;">
-              Failed to load exam schedule dataset.
-            </div>
-          `;
-        });
+  async function init() {
+    try {
+      const resp = await fetch('exam_data.json?v=' + Date.now());
+      if (resp.ok) {
+        ALL_EXAM_RECORDS = await resp.json();
+      } else if (typeof AMIS_EXAM_DATA !== 'undefined') {
+        ALL_EXAM_RECORDS = AMIS_EXAM_DATA;
+      }
+    } catch (e) {
+      if (typeof AMIS_EXAM_DATA !== 'undefined') {
+        ALL_EXAM_RECORDS = AMIS_EXAM_DATA;
+      }
     }
+
+    if (!ALL_EXAM_RECORDS || ALL_EXAM_RECORDS.length === 0) {
+      document.getElementById('sheetsContainer').innerHTML = `
+        <div style="padding:40px; text-align:center; color:#b91c1c; font-weight:800;">
+          Failed to load exam schedule dataset.
+        </div>
+      `;
+      return;
+    }
+
+    processData();
 
     document.getElementById('teacherPicker').addEventListener('change', function(e) {
       const val = e.target.value;
