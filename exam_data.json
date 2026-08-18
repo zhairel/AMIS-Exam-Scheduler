@@ -530,11 +530,11 @@
     "gender": "MIXED",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_a_saliha",
-    "teacher": "Ustadha A Saliha",
+    "teacher_id": "tchr_saliha",
+    "teacher": "Ustadha Saliha",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED",
-    "teacher_clean": "A Saliha",
+    "teacher_clean": "Saliha",
     "source_cell": "ELEM!E46"
   },
   {
@@ -9969,11 +9969,11 @@
     "gender": "GIRLS",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_a_silfa",
-    "teacher": "Ustadha A Silfa",
+    "teacher_id": "tchr_silfah",
+    "teacher": "Ustadha Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED",
-    "teacher_clean": "A Silfa",
+    "teacher_clean": "Silfah",
     "source_cell": "HS SCHED (NEW)!H17"
   },
   {
@@ -10266,11 +10266,11 @@
     "gender": "BOYS",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_a_silfa",
-    "teacher": "Ustadha A Silfa",
+    "teacher_id": "tchr_silfah",
+    "teacher": "Ustadha Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED",
-    "teacher_clean": "A Silfa",
+    "teacher_clean": "Silfah",
     "source_cell": "HS SCHED (NEW)!H29"
   },
   {
@@ -11315,11 +11315,11 @@
     "gender": "GIRLS",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_a_silfa",
-    "teacher": "Ustadha A Silfa",
+    "teacher_id": "tchr_silfah",
+    "teacher": "Ustadha Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED",
-    "teacher_clean": "A Silfa",
+    "teacher_clean": "Silfah",
     "source_cell": "HS SCHED (NEW)!M8"
   },
   {
@@ -11720,11 +11720,11 @@
     "gender": "BOYS",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_a_silfa",
-    "teacher": "Ustadha A Silfa",
+    "teacher_id": "tchr_silfah",
+    "teacher": "Ustadha Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED",
-    "teacher_clean": "A Silfa",
+    "teacher_clean": "Silfah",
     "source_cell": "HS SCHED (NEW)!Q21"
   },
   {
@@ -13066,11 +13066,11 @@
     "gender": "MIXED",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_a_silfa",
-    "teacher": "Ustadha A Silfa",
+    "teacher_id": "tchr_silfah",
+    "teacher": "Ustadha Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED",
-    "teacher_clean": "A Silfa",
+    "teacher_clean": "Silfah",
     "source_cell": "HS SCHED (NEW)!Y9"
   },
   {

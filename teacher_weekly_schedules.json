@@ -708,8 +708,8 @@
     "teacher_id": "tchr_saliha",
     "teacher_name": "Ustadha Saliha",
     "canonical_name": "Ustadha Saliha",
-    "total_classes": 26,
-    "total_teaching_periods": 26,
+    "total_classes": 27,
+    "total_teaching_periods": 27,
     "subjects": [
       "Arabic",
       "GMRC",
@@ -720,6 +720,7 @@
     "sections": [
       "GRADE 1 (FACE TO FACE)",
       "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+      "GRADE 2 (FACE TO FACE)",
       "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
       "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
       "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
@@ -832,6 +833,15 @@
         "time": "02:20 \u2013 03:00 PM",
         "shift": "ODL - 1ST SHIFT",
         "source_cell": "ELEM!U31"
+      },
+      {
+        "section": "GRADE 2 (FACE TO FACE)",
+        "section_id": "sec_grade_2_face_to_face",
+        "subject": "GMRC",
+        "day": "Monday",
+        "time": "10:00 \u2013 10:45 AM",
+        "shift": "F2F",
+        "source_cell": "ELEM!E46"
       },
       {
         "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
@@ -1111,8 +1121,17 @@
             "is_class": false
           },
           "Monday": {
-            "occupied": false,
-            "is_class": false
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "section": "GRADE 2 (FACE TO FACE)",
+            "shift": "F2F",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
           },
           "Tuesday": {
             "occupied": false,
@@ -3800,8 +3819,8 @@
     "teacher_id": "tchr_silfah",
     "teacher_name": "Ustadha Silfah",
     "canonical_name": "Ustadha Silfah",
-    "total_classes": 21,
-    "total_teaching_periods": 21,
+    "total_classes": 30,
+    "total_teaching_periods": 30,
     "subjects": [
       "Arabic",
       "GMRC"
@@ -3816,6 +3835,11 @@
       "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
       "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
       "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "GRADE 7 & 8 BOYS (FACE TO FACE)",
+      "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+      "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+      "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
       "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
       "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
       "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
@@ -4011,6 +4035,87 @@
         "time": "4:30 \u2013 5:10 PM",
         "shift": "ODL - 2ND SHIFT",
         "source_cell": "ELEM!AM110"
+      },
+      {
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "section_id": "sec_grade_7_8_girls_face_to_face",
+        "subject": "GMRC",
+        "day": "Sunday",
+        "time": "10:00 \u2013 10:45 AM",
+        "shift": "F2F",
+        "source_cell": "HS SCHED (NEW)!D12"
+      },
+      {
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "section_id": "sec_grade_7_8_girls_face_to_face",
+        "subject": "GMRC",
+        "day": "Tuesday",
+        "time": "12:40 \u2013 1:25 PM",
+        "shift": "F2F",
+        "source_cell": "HS SCHED (NEW)!F15"
+      },
+      {
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "section_id": "sec_grade_7_8_girls_face_to_face",
+        "subject": "GMRC",
+        "day": "Thursday",
+        "time": "2:15 \u2013 3:00 PM",
+        "shift": "F2F",
+        "source_cell": "HS SCHED (NEW)!H17"
+      },
+      {
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "section_id": "sec_grade_7_8_boys_face_to_face",
+        "subject": "GMRC",
+        "day": "Monday",
+        "time": "10:45:11:30 AM",
+        "shift": "F2F",
+        "source_cell": "HS SCHED (NEW)!E29"
+      },
+      {
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "section_id": "sec_grade_7_8_boys_face_to_face",
+        "subject": "GMRC",
+        "day": "Wednesday",
+        "time": "10:45:11:30 AM",
+        "shift": "F2F",
+        "source_cell": "HS SCHED (NEW)!G29"
+      },
+      {
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "section_id": "sec_grade_7_8_boys_face_to_face",
+        "subject": "GMRC",
+        "day": "Thursday",
+        "time": "10:45:11:30 AM",
+        "shift": "F2F",
+        "source_cell": "HS SCHED (NEW)!H29"
+      },
+      {
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
+        "subject": "GMRC",
+        "day": "Sunday",
+        "time": "12:40 \u2013 01:20 PM",
+        "shift": "ODL - 1ST SHIFT",
+        "source_cell": "HS SCHED (NEW)!M8"
+      },
+      {
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
+        "subject": "GMRC",
+        "day": "Thursday",
+        "time": "01:30 \u2013 02:10 PM",
+        "shift": "ODL - 1ST SHIFT",
+        "source_cell": "HS SCHED (NEW)!Q21"
+      },
+      {
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
+        "subject": "GMRC",
+        "day": "Thursday",
+        "time": "3:40 \u2013 4:20 PM",
+        "shift": "ODL - 2ND SHIFT",
+        "source_cell": "HS SCHED (NEW)!Y9"
       }
     ],
     "rows": [
@@ -4115,8 +4220,17 @@
         "is_break": false,
         "days": {
           "Sunday": {
-            "occupied": false,
-            "is_class": false
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+            "shift": "F2F",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
           },
           "Monday": {
             "occupied": false,
@@ -4211,8 +4325,17 @@
             "has_conflict": false
           },
           "Tuesday": {
-            "occupied": false,
-            "is_class": false
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+            "shift": "F2F",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
           },
           "Wednesday": {
             "occupied": true,
@@ -4282,8 +4405,17 @@
             "is_class": false
           },
           "Thursday": {
-            "occupied": false,
-            "is_class": false
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+            "shift": "F2F",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
           }
         }
       },
@@ -4307,8 +4439,17 @@
         "is_break": false,
         "days": {
           "Sunday": {
-            "occupied": false,
-            "is_class": false
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
           },
           "Monday": {
             "occupied": false,
@@ -4402,8 +4543,17 @@
             "has_conflict": false
           },
           "Thursday": {
-            "occupied": false,
-            "is_class": false
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
           }
         }
       },
@@ -4531,8 +4681,17 @@
             "is_class": false
           },
           "Thursday": {
-            "occupied": false,
-            "is_class": false
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
           }
         }
       },
@@ -14694,285 +14853,6 @@
         "minutes": "15 min.",
         "is_break": true,
         "break_title": "SALAH & DISMISSAL",
-        "days": {}
-      }
-    ]
-  },
-  "tchr_a_saliha": {
-    "teacher_id": "tchr_a_saliha",
-    "teacher_name": "Ustadha A Saliha",
-    "canonical_name": "Ustadha A Saliha",
-    "total_classes": 1,
-    "total_teaching_periods": 1,
-    "subjects": [
-      "GMRC"
-    ],
-    "sections": [
-      "GRADE 2 (FACE TO FACE)"
-    ],
-    "periods": [
-      {
-        "section": "GRADE 2 (FACE TO FACE)",
-        "section_id": "sec_grade_2_face_to_face",
-        "subject": "GMRC",
-        "day": "Monday",
-        "time": "10:00 \u2013 10:45 AM",
-        "shift": "F2F",
-        "source_cell": "ELEM!E46"
-      }
-    ],
-    "rows": [
-      {
-        "time": "07:30 AM \u2013 07:40 AM",
-        "minutes": "10 min.",
-        "is_break": true,
-        "break_title": "GENERAL ASSEMBLY",
-        "days": {}
-      },
-      {
-        "time": "07:40 AM \u2013 08:25 AM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "08:25 AM \u2013 09:05 AM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "09:05 AM \u2013 09:45 AM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "09:45 AM \u2013 10:00 AM",
-        "minutes": "15 min.",
-        "is_break": true,
-        "break_title": "RECESS",
-        "days": {}
-      },
-      {
-        "time": "10:00 AM \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "GMRC",
-            "section": "GRADE 2 (FACE TO FACE)",
-            "shift": "F2F",
-            "color": {
-              "bg": "#dcfce7",
-              "border": "#86efac",
-              "text": "#166534"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "10:45 AM \u2013 11:30 AM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "11:30 AM \u2013 12:40 PM",
-        "minutes": "70 min.",
-        "is_break": true,
-        "break_title": "LUNCH AND SALAH",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:25 PM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "01:25 PM \u2013 02:10 PM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "02:15 PM \u2013 03:00 PM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_break": true,
-        "break_title": "SALAH & DEPARTURE",
         "days": {}
       }
     ]
@@ -30653,624 +30533,6 @@
               "text": "#0f766e"
             },
             "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "05:10 PM \u2013 05:20 PM",
-        "minutes": "10 min.",
-        "is_break": true,
-        "break_title": "TRANSITION",
-        "days": {}
-      },
-      {
-        "time": "05:20 PM \u2013 06:00 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "06:00 PM \u2013 06:15 PM",
-        "minutes": "15 min.",
-        "is_break": true,
-        "break_title": "SALAH & DISMISSAL",
-        "days": {}
-      }
-    ]
-  },
-  "tchr_a_silfa": {
-    "teacher_id": "tchr_a_silfa",
-    "teacher_name": "Ustadha A Silfa",
-    "canonical_name": "Ustadha A Silfa",
-    "total_classes": 9,
-    "total_teaching_periods": 9,
-    "subjects": [
-      "GMRC"
-    ],
-    "sections": [
-      "GRADE 7 & 8 BOYS (FACE TO FACE)",
-      "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-      "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
-      "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-      "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS"
-    ],
-    "periods": [
-      {
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "section_id": "sec_grade_7_8_girls_face_to_face",
-        "subject": "GMRC",
-        "day": "Sunday",
-        "time": "10:00 \u2013 10:45 AM",
-        "shift": "F2F",
-        "source_cell": "HS SCHED (NEW)!D12"
-      },
-      {
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "section_id": "sec_grade_7_8_girls_face_to_face",
-        "subject": "GMRC",
-        "day": "Tuesday",
-        "time": "12:40 \u2013 1:25 PM",
-        "shift": "F2F",
-        "source_cell": "HS SCHED (NEW)!F15"
-      },
-      {
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "section_id": "sec_grade_7_8_girls_face_to_face",
-        "subject": "GMRC",
-        "day": "Thursday",
-        "time": "2:15 \u2013 3:00 PM",
-        "shift": "F2F",
-        "source_cell": "HS SCHED (NEW)!H17"
-      },
-      {
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "section_id": "sec_grade_7_8_boys_face_to_face",
-        "subject": "GMRC",
-        "day": "Monday",
-        "time": "10:45:11:30 AM",
-        "shift": "F2F",
-        "source_cell": "HS SCHED (NEW)!E29"
-      },
-      {
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "section_id": "sec_grade_7_8_boys_face_to_face",
-        "subject": "GMRC",
-        "day": "Wednesday",
-        "time": "10:45:11:30 AM",
-        "shift": "F2F",
-        "source_cell": "HS SCHED (NEW)!G29"
-      },
-      {
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "section_id": "sec_grade_7_8_boys_face_to_face",
-        "subject": "GMRC",
-        "day": "Thursday",
-        "time": "10:45:11:30 AM",
-        "shift": "F2F",
-        "source_cell": "HS SCHED (NEW)!H29"
-      },
-      {
-        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
-        "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
-        "subject": "GMRC",
-        "day": "Sunday",
-        "time": "12:40 \u2013 01:20 PM",
-        "shift": "ODL - 1ST SHIFT",
-        "source_cell": "HS SCHED (NEW)!M8"
-      },
-      {
-        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
-        "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
-        "subject": "GMRC",
-        "day": "Thursday",
-        "time": "01:30 \u2013 02:10 PM",
-        "shift": "ODL - 1ST SHIFT",
-        "source_cell": "HS SCHED (NEW)!Q21"
-      },
-      {
-        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-        "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
-        "subject": "GMRC",
-        "day": "Thursday",
-        "time": "3:40 \u2013 4:20 PM",
-        "shift": "ODL - 2ND SHIFT",
-        "source_cell": "HS SCHED (NEW)!Y9"
-      }
-    ],
-    "rows": [
-      {
-        "time": "07:30 AM \u2013 07:40 AM",
-        "minutes": "10 min.",
-        "is_break": true,
-        "break_title": "GENERAL ASSEMBLY",
-        "days": {}
-      },
-      {
-        "time": "07:40 AM \u2013 08:25 AM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "08:25 AM \u2013 09:05 AM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "09:05 AM \u2013 09:45 AM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "09:45 AM \u2013 10:00 AM",
-        "minutes": "15 min.",
-        "is_break": true,
-        "break_title": "RECESS",
-        "days": {}
-      },
-      {
-        "time": "10:00 AM \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "GMRC",
-            "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-            "shift": "F2F",
-            "color": {
-              "bg": "#dcfce7",
-              "border": "#86efac",
-              "text": "#166534"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "10:45 AM \u2013 11:30 AM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "11:30 AM \u2013 12:40 PM",
-        "minutes": "70 min.",
-        "is_break": true,
-        "break_title": "LUNCH AND SALAH",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:25 PM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "GMRC",
-            "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-            "shift": "F2F",
-            "color": {
-              "bg": "#dcfce7",
-              "border": "#86efac",
-              "text": "#166534"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "01:25 PM \u2013 02:10 PM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "02:15 PM \u2013 03:00 PM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "GMRC",
-            "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-            "shift": "F2F",
-            "color": {
-              "bg": "#dcfce7",
-              "border": "#86efac",
-              "text": "#166534"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_break": true,
-        "break_title": "SALAH & DEPARTURE",
-        "days": {}
-      },
-      {
-        "time": "12:30 PM \u2013 12:40 PM",
-        "minutes": "10 min.",
-        "is_break": true,
-        "break_title": "GENERAL ASSEMBLY",
-        "days": {}
-      },
-      {
-        "time": "12:40 PM \u2013 01:20 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "GMRC",
-            "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#dcfce7",
-              "border": "#86efac",
-              "text": "#166534"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "01:20 PM \u2013 01:30 PM",
-        "minutes": "10 min.",
-        "is_break": true,
-        "break_title": "TRANSITION",
-        "days": {}
-      },
-      {
-        "time": "01:30 PM \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "GMRC",
-            "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#dcfce7",
-              "border": "#86efac",
-              "text": "#166534"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "02:10 PM \u2013 02:20 PM",
-        "minutes": "10 min.",
-        "is_break": true,
-        "break_title": "TRANSITION",
-        "days": {}
-      },
-      {
-        "time": "02:20 PM \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
-          }
-        }
-      },
-      {
-        "time": "03:00 PM \u2013 03:30 PM",
-        "minutes": "30 min.",
-        "is_break": true,
-        "break_title": "HOMEROOM GUIDANCE / ARAL",
-        "days": {}
-      },
-      {
-        "time": "03:30 PM \u2013 03:40 PM",
-        "minutes": "10 min.",
-        "is_break": true,
-        "break_title": "GENERAL ASSEMBLY",
-        "days": {}
-      },
-      {
-        "time": "03:40 PM \u2013 04:20 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "GMRC",
-            "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#dcfce7",
-              "border": "#86efac",
-              "text": "#166534"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "04:20 PM \u2013 04:30 PM",
-        "minutes": "10 min.",
-        "is_break": true,
-        "break_title": "TRANSITION",
-        "days": {}
-      },
-      {
-        "time": "04:30 PM \u2013 05:10 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Monday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Tuesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Wednesday": {
-            "occupied": false,
-            "is_class": false
-          },
-          "Thursday": {
-            "occupied": false,
-            "is_class": false
           }
         }
       },

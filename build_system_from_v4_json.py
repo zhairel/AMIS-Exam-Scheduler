@@ -220,10 +220,17 @@ TEACHER_NAME_NORMALIZATION = {
     'SALIHA': 'Saliha',
     'UST. SALIHA': 'Saliha',
     'USTADHA SALIHA': 'Saliha',
+    'A SALIHA': 'Saliha',
+    'UST. A SALIHA': 'Saliha',
+    'TEACHER A SALIHA': 'Saliha',
     'SILFA': 'Silfah',
     'SILFAH': 'Silfah',
     'UST. SILFAH': 'Silfah',
     'USTADHA SILFA': 'Silfah',
+    'A SILFA': 'Silfah',
+    'A SILFAH': 'Silfah',
+    'UST. A SILFA': 'Silfah',
+    'TEACHER A SILFA': 'Silfah',
     'ERSAHAD': 'Ersahad',
     'UST. ERSAHAD': 'Ersahad'
 }
@@ -253,8 +260,6 @@ CANONICAL_DISPLAY_NAMES = {
     'Saliha':      'Ustadha Saliha',
     'Silfah':      'Ustadha Silfah',
     'Raslina':     'Ustadha Raslina',
-    'A Saliha':    'Ustadha A Saliha',
-    'A Silfa':     'Ustadha A Silfa',
     # All other staff → Teacher prefix
 }
 
