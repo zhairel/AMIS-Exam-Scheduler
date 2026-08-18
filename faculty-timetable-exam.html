@@ -994,17 +994,34 @@ html, body {
               <tbody>
       `;
 
-      const rowspanActive = { 'Sep 2': 0, 'Sep 3': 0, 'Sep 6': 0, 'Sep 7': 0 };
+      const activeRowspan = { 'Sep 2': 0, 'Sep 3': 0, 'Sep 6': 0, 'Sep 7': 0 };
 
-      timeline.forEach(row => {
+      timeline.forEach((row, rowIdx) => {
         if (row.is_break) {
           fullHtml += `
             <tr class="row-break">
               <td class="cell-time">${esc(row.time)}</td>
               <td class="cell-mins">${esc(row.minutes)}</td>
-              <td colspan="4" class="cell-break">${esc(row.label)}</td>
-            </tr>
           `;
+
+          let currentSpan = 0;
+          EXAM_DATES.forEach(d => {
+            const dKey = d.short_date;
+            if (activeRowspan[dKey] > 0) {
+              if (currentSpan > 0) {
+                fullHtml += `<td colspan="${currentSpan}" class="cell-break">${esc(row.label)}</td>`;
+                currentSpan = 0;
+              }
+              activeRowspan[dKey]--;
+            } else {
+              currentSpan++;
+            }
+          });
+          if (currentSpan > 0) {
+            fullHtml += `<td colspan="${currentSpan}" class="cell-break">${esc(row.label)}</td>`;
+          }
+
+          fullHtml += `</tr>`;
         } else {
           fullHtml += `
             <tr>
@@ -1014,17 +1031,19 @@ html, body {
 
           EXAM_DATES.forEach(d => {
             const dKey = d.short_date;
-            if (rowspanActive[dKey] > 0) {
-              rowspanActive[dKey]--;
+            if (activeRowspan[dKey] > 0) {
+              activeRowspan[dKey]--;
               return; // Merged with row above
             }
 
             const matches = tExams.filter(e => {
               if (e.short_date !== d.short_date && e.day_number !== d.day_num) return false;
-              if (e.duration_minutes >= 90) {
-                return row.slot_id === 'f2f_s1' || row.slot_id === 'odl1_s1' || row.slot_id === 'odl2_s1' || row.slot_id === 's1';
-              }
               if (e.time_slot === row.time || e.time === row.time) return true;
+              if (e.time_slot && e.time_slot.includes('–')) {
+                const sStart = e.time_slot.split('–')[0].trim();
+                const slStart = row.time.split('–')[0].trim();
+                return sStart === slStart;
+              }
               return false;
             });
 
@@ -1034,11 +1053,22 @@ html, body {
               const cleanSec = cleanSectionName(exam.section_name);
               const cleanShift = formatModalityShift(exam.shift);
               const is120 = exam.duration_minutes >= 90;
+              let calcRowspan = 1;
+
               if (is120) {
-                rowspanActive[dKey] = 1;
+                let nextExamIdx = -1;
+                for (let nextIdx = rowIdx + 1; nextIdx < timeline.length; nextIdx++) {
+                  if (!timeline[nextIdx].is_break) {
+                    nextExamIdx = nextIdx;
+                    break;
+                  }
+                }
+                calcRowspan = nextExamIdx > -1 ? (nextExamIdx - rowIdx + 1) : 1;
+                activeRowspan[dKey] = calcRowspan - 1;
               }
+
               fullHtml += `
-                <td class="cell-class" ${is120 ? 'rowspan="2"' : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${is120 ? 'vertical-align:middle;' : ''}">
+                <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(exam.subject)}</span>
                     <span class="cell-section-name">${esc(cleanSec)}</span>
@@ -1054,11 +1084,22 @@ html, body {
                 const secsStr = matches.map(m => cleanSectionName(m.section_name)).join(' & ');
                 const cleanShift = formatModalityShift(exam.shift);
                 const is120 = exam.duration_minutes >= 90;
+                let calcRowspan = 1;
+
                 if (is120) {
-                  rowspanActive[dKey] = 1;
+                  let nextExamIdx = -1;
+                  for (let nextIdx = rowIdx + 1; nextIdx < timeline.length; nextIdx++) {
+                    if (!timeline[nextIdx].is_break) {
+                      nextExamIdx = nextIdx;
+                      break;
+                    }
+                  }
+                  calcRowspan = nextExamIdx > -1 ? (nextExamIdx - rowIdx + 1) : 1;
+                  activeRowspan[dKey] = calcRowspan - 1;
                 }
+
                 fullHtml += `
-                  <td class="cell-class" ${is120 ? 'rowspan="2"' : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${is120 ? 'vertical-align:middle;' : ''}">
+                  <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                     <div class="cell-class-inner">
                       <span class="cell-subject-sec">${esc(exam.subject)}</span>
                       <span class="cell-section-name">${esc(secsStr)} (Merged)</span>

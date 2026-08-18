@@ -13,9 +13,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <!-- Embedded Master Datasets with Cache-Busting -->
-<script src="class_schedules_data.js?v=20260819_0030"></script>
-<script src="exam_data.js?v=20260819_0030"></script>
-<script src="teacher_weekly_schedules.js?v=20260819_0030"></script>
+<script src="class_schedules_data.js?v=20260819_0050"></script>
+<script src="exam_data.js?v=20260819_0050"></script>
+<script src="teacher_weekly_schedules.js?v=20260819_0050"></script>
 
 <style>
 :root {
@@ -959,7 +959,7 @@ html, body {
               <tbody>
       `;
 
-      const dayOccupiedUntil = { 1: -1, 2: -1, 3: -1, 4: -1 };
+      const activeRowspan = { 1: 0, 2: 0, 3: 0, 4: 0 };
 
       masterSlots.forEach((slot, rowIdx) => {
         if (slot.type === 'break') {
@@ -967,9 +967,25 @@ html, body {
             <tr>
               <td class="cell-time">${esc(slot.time)}</td>
               <td class="cell-mins">${esc(slot.mins)}</td>
-              <td class="cell-break" colspan="4">${esc(slot.label)}</td>
-            </tr>
           `;
+
+          let currentSpan = 0;
+          EXAM_DATES.forEach(d => {
+            if (activeRowspan[d.day_num] > 0) {
+              if (currentSpan > 0) {
+                fullHtml += `<td colspan="${currentSpan}" class="cell-break">${esc(slot.label)}</td>`;
+                currentSpan = 0;
+              }
+              activeRowspan[d.day_num]--;
+            } else {
+              currentSpan++;
+            }
+          });
+          if (currentSpan > 0) {
+            fullHtml += `<td colspan="${currentSpan}" class="cell-break">${esc(slot.label)}</td>`;
+          }
+
+          fullHtml += `</tr>`;
         } else {
           fullHtml += `
             <tr>
@@ -978,7 +994,8 @@ html, body {
           `;
 
           EXAM_DATES.forEach(d => {
-            if (dayOccupiedUntil[d.day_num] >= rowIdx) {
+            if (activeRowspan[d.day_num] > 0) {
+              activeRowspan[d.day_num]--;
               return;
             }
 
@@ -996,12 +1013,23 @@ html, body {
             if (match) {
               const color = getSubjectColor(match.subject);
               const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
-              const rSpan = is120 ? 'rowspan="2"' : '';
+              let calcRowspan = 1;
+
               if (is120) {
-                dayOccupiedUntil[d.day_num] = rowIdx + 1;
+                // Find next exam slot in masterSlots for this teacher's shift
+                let nextExamIdx = -1;
+                for (let nextIdx = rowIdx + 1; nextIdx < masterSlots.length; nextIdx++) {
+                  if (masterSlots[nextIdx].type === 'exam') {
+                    nextExamIdx = nextIdx;
+                    break;
+                  }
+                }
+                calcRowspan = nextExamIdx > -1 ? (nextExamIdx - rowIdx + 1) : 1;
+                activeRowspan[d.day_num] = calcRowspan - 1;
               }
+
               fullHtml += `
-                <td class="cell-class" ${rSpan} style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(match.subject)}</span>
                     <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
@@ -1163,7 +1191,7 @@ html, body {
               <tbody>
       `;
 
-      const dayOccupiedUntil = { 1: -1, 2: -1, 3: -1, 4: -1 };
+      const activeRowspan = { 1: 0, 2: 0, 3: 0, 4: 0 };
 
       timeRows.forEach((row, rowIdx) => {
         if (row.type === 'break') {
@@ -1171,9 +1199,25 @@ html, body {
             <tr>
               <td class="cell-time">${esc(row.time)}</td>
               <td class="cell-mins">${esc(row.mins)}</td>
-              <td class="cell-break" colspan="4">${esc(row.label)}</td>
-            </tr>
           `;
+
+          let currentSpan = 0;
+          EXAM_DATES.forEach(d => {
+            if (activeRowspan[d.day_num] > 0) {
+              if (currentSpan > 0) {
+                fullHtml += `<td colspan="${currentSpan}" class="cell-break">${esc(row.label)}</td>`;
+                currentSpan = 0;
+              }
+              activeRowspan[d.day_num]--;
+            } else {
+              currentSpan++;
+            }
+          });
+          if (currentSpan > 0) {
+            fullHtml += `<td colspan="${currentSpan}" class="cell-break">${esc(row.label)}</td>`;
+          }
+
+          fullHtml += `</tr>`;
         } else {
           fullHtml += `
             <tr>
@@ -1182,7 +1226,8 @@ html, body {
           `;
 
           EXAM_DATES.forEach(d => {
-            if (dayOccupiedUntil[d.day_num] >= rowIdx) {
+            if (activeRowspan[d.day_num] > 0) {
+              activeRowspan[d.day_num]--;
               return;
             }
 
@@ -1200,12 +1245,23 @@ html, body {
             if (match) {
               const color = getSubjectColor(match.subject);
               const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
-              const rSpan = is120 ? 'rowspan="2"' : '';
+              let calcRowspan = 1;
+
               if (is120) {
-                dayOccupiedUntil[d.day_num] = rowIdx + 1;
+                // Find next exam slot row in timeRows for this section
+                let nextExamIdx = -1;
+                for (let nextIdx = rowIdx + 1; nextIdx < timeRows.length; nextIdx++) {
+                  if (timeRows[nextIdx].type === 'exam') {
+                    nextExamIdx = nextIdx;
+                    break;
+                  }
+                }
+                calcRowspan = nextExamIdx > -1 ? (nextExamIdx - rowIdx + 1) : 1;
+                activeRowspan[d.day_num] = calcRowspan - 1;
               }
+
               fullHtml += `
-                <td class="cell-class" ${rSpan} style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(match.subject)}</span>
                     <span class="cell-teacher-name">${esc(match.teacher)}</span>

@@ -2,9 +2,9 @@
 """
 generate_exam_schedule_page.py
 Generates the Unified Official 1st Term Examination Schedule (exam-schedule.html)
-- Official AMIS logo in top navigation toolbar
-- 120-minute High School & SHS Math exams span 2 full hours (2 slots / 2 visual units) with '120 min.' duration badge
-- Perfect rowspan="2" support in the official examination timetable grid
+- Clean, rock-solid layout with zero table displacement
+- 120-minute High School & SHS Math exams span 2 continuous units with '120 min.' duration badge
+- Official AMIS circular logo in navbar and headers
 - Corrected Exam Dates:
   * Day 1 • Wed, Sep 2
   * Day 2 • Thu, Sep 3
@@ -49,9 +49,9 @@ HTML_TEMPLATE = """<!doctype html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <!-- Embedded Master Datasets with Cache-Busting -->
-<script src="class_schedules_data.js?v=20260819_0030"></script>
-<script src="exam_data.js?v=20260819_0030"></script>
-<script src="teacher_weekly_schedules.js?v=20260819_0030"></script>
+<script src="class_schedules_data.js?v=20260819_0050"></script>
+<script src="exam_data.js?v=20260819_0050"></script>
+<script src="teacher_weekly_schedules.js?v=20260819_0050"></script>
 
 <style>
 :root {
@@ -995,7 +995,7 @@ html, body {
               <tbody>
       `;
 
-      const dayOccupiedUntil = { 1: -1, 2: -1, 3: -1, 4: -1 };
+      const activeRowspan = { 1: 0, 2: 0, 3: 0, 4: 0 };
 
       masterSlots.forEach((slot, rowIdx) => {
         if (slot.type === 'break') {
@@ -1003,9 +1003,25 @@ html, body {
             <tr>
               <td class="cell-time">${esc(slot.time)}</td>
               <td class="cell-mins">${esc(slot.mins)}</td>
-              <td class="cell-break" colspan="4">${esc(slot.label)}</td>
-            </tr>
           `;
+
+          let currentSpan = 0;
+          EXAM_DATES.forEach(d => {
+            if (activeRowspan[d.day_num] > 0) {
+              if (currentSpan > 0) {
+                fullHtml += `<td colspan="${currentSpan}" class="cell-break">${esc(slot.label)}</td>`;
+                currentSpan = 0;
+              }
+              activeRowspan[d.day_num]--;
+            } else {
+              currentSpan++;
+            }
+          });
+          if (currentSpan > 0) {
+            fullHtml += `<td colspan="${currentSpan}" class="cell-break">${esc(slot.label)}</td>`;
+          }
+
+          fullHtml += `</tr>`;
         } else {
           fullHtml += `
             <tr>
@@ -1014,7 +1030,8 @@ html, body {
           `;
 
           EXAM_DATES.forEach(d => {
-            if (dayOccupiedUntil[d.day_num] >= rowIdx) {
+            if (activeRowspan[d.day_num] > 0) {
+              activeRowspan[d.day_num]--;
               return;
             }
 
@@ -1032,12 +1049,23 @@ html, body {
             if (match) {
               const color = getSubjectColor(match.subject);
               const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
-              const rSpan = is120 ? 'rowspan="2"' : '';
+              let calcRowspan = 1;
+
               if (is120) {
-                dayOccupiedUntil[d.day_num] = rowIdx + 1;
+                // Find next exam slot in masterSlots for this teacher's shift
+                let nextExamIdx = -1;
+                for (let nextIdx = rowIdx + 1; nextIdx < masterSlots.length; nextIdx++) {
+                  if (masterSlots[nextIdx].type === 'exam') {
+                    nextExamIdx = nextIdx;
+                    break;
+                  }
+                }
+                calcRowspan = nextExamIdx > -1 ? (nextExamIdx - rowIdx + 1) : 1;
+                activeRowspan[d.day_num] = calcRowspan - 1;
               }
+
               fullHtml += `
-                <td class="cell-class" ${rSpan} style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(match.subject)}</span>
                     <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
@@ -1199,7 +1227,7 @@ html, body {
               <tbody>
       `;
 
-      const dayOccupiedUntil = { 1: -1, 2: -1, 3: -1, 4: -1 };
+      const activeRowspan = { 1: 0, 2: 0, 3: 0, 4: 0 };
 
       timeRows.forEach((row, rowIdx) => {
         if (row.type === 'break') {
@@ -1207,9 +1235,25 @@ html, body {
             <tr>
               <td class="cell-time">${esc(row.time)}</td>
               <td class="cell-mins">${esc(row.mins)}</td>
-              <td class="cell-break" colspan="4">${esc(row.label)}</td>
-            </tr>
           `;
+
+          let currentSpan = 0;
+          EXAM_DATES.forEach(d => {
+            if (activeRowspan[d.day_num] > 0) {
+              if (currentSpan > 0) {
+                fullHtml += `<td colspan="${currentSpan}" class="cell-break">${esc(row.label)}</td>`;
+                currentSpan = 0;
+              }
+              activeRowspan[d.day_num]--;
+            } else {
+              currentSpan++;
+            }
+          });
+          if (currentSpan > 0) {
+            fullHtml += `<td colspan="${currentSpan}" class="cell-break">${esc(row.label)}</td>`;
+          }
+
+          fullHtml += `</tr>`;
         } else {
           fullHtml += `
             <tr>
@@ -1218,7 +1262,8 @@ html, body {
           `;
 
           EXAM_DATES.forEach(d => {
-            if (dayOccupiedUntil[d.day_num] >= rowIdx) {
+            if (activeRowspan[d.day_num] > 0) {
+              activeRowspan[d.day_num]--;
               return;
             }
 
@@ -1236,12 +1281,23 @@ html, body {
             if (match) {
               const color = getSubjectColor(match.subject);
               const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
-              const rSpan = is120 ? 'rowspan="2"' : '';
+              let calcRowspan = 1;
+
               if (is120) {
-                dayOccupiedUntil[d.day_num] = rowIdx + 1;
+                // Find next exam slot row in timeRows for this section
+                let nextExamIdx = -1;
+                for (let nextIdx = rowIdx + 1; nextIdx < timeRows.length; nextIdx++) {
+                  if (timeRows[nextIdx].type === 'exam') {
+                    nextExamIdx = nextIdx;
+                    break;
+                  }
+                }
+                calcRowspan = nextExamIdx > -1 ? (nextExamIdx - rowIdx + 1) : 1;
+                activeRowspan[d.day_num] = calcRowspan - 1;
               }
+
               fullHtml += `
-                <td class="cell-class" ${rSpan} style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(match.subject)}</span>
                     <span class="cell-teacher-name">${esc(match.teacher)}</span>
@@ -1332,4 +1388,4 @@ html, body {
 with open(os.path.join(BASE_DIR, "exam-schedule.html"), "w", encoding="utf-8") as f:
     f.write(HTML_TEMPLATE)
 
-print("✓ Successfully generated unified exam-schedule.html with AMIS logo & 120min Math spanning!")
+print("✓ Successfully generated unified exam-schedule.html with dynamic break colspan and seamless Math rowspan spanning!")
