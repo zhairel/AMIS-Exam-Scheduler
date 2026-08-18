@@ -12,16 +12,18 @@
 <!-- html2pdf.js CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
-<!-- Embedded Master Exam Data -->
-<script src="exam-data.js"></script>
+<!-- Embedded Master Datasets with Cache-Busting -->
+<script src="class_schedules_data.js?v=20260818_0800"></script>
+<script src="exam_data.js?v=20260818_0800"></script>
+<script src="teacher_weekly_schedules.js?v=20260818_0800"></script>
 
 <style>
 :root {
   --brand-deep: #064e3b;
   --brand-green: #0b4d38;
   --brand-accent: #0f766e;
-  --brand-gold: #d97706;
-  --brand-gold-light: #fef3c7;
+  --brand-surface: #f0fdf4;
+  --brand-border: #a7f3d0;
   
   --ink: #0f172a;
   --ink-secondary: #334155;
@@ -30,6 +32,10 @@
   --line-strong: #94a3b8;
   --bg: #f8fafc;
   --surface: #ffffff;
+  
+  --break-bg: #f1f5f9;
+  --break-text: #475569;
+  --break-border: #cbd5e1;
 }
 
 * {
@@ -46,19 +52,20 @@ body {
   padding-bottom: 60px;
 }
 
-/* Top Toolbar */
+/* Screen Navigation Toolbar */
 .top-toolbar {
   position: sticky;
   top: 0;
   z-index: 1000;
   background: var(--brand-deep);
   color: #fff;
-  padding: 12px 24px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  flex-wrap: wrap;
 }
 
 .brand-title {
@@ -67,23 +74,27 @@ body {
   gap: 12px;
 }
 
-.brand-logo {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  object-fit: contain;
-  background: #ffffff;
-  padding: 1px;
+.brand-icon {
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 0.05em;
 }
 
 .brand-text h1 {
-  font-size: 16px;
-  font-weight: 900;
+  font-size: 15.5px;
+  font-weight: 800;
   letter-spacing: -0.01em;
 }
 
 .brand-text p {
-  font-size: 12px;
+  font-size: 11.5px;
   color: #a7f3d0;
   font-weight: 600;
 }
@@ -95,786 +106,695 @@ body {
   flex-wrap: wrap;
 }
 
-.select-teacher {
-  background: #ffffff;
-  color: var(--ink);
-  border: 1.5px solid #a7f3d0;
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 4px 8px;
   border-radius: 8px;
-  padding: 7px 12px;
-  font-size: 13px;
-  font-weight: 700;
-  font-family: inherit;
-  outline: none;
-  cursor: pointer;
-  min-width: 240px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.select-teacher:focus {
-  border-color: #34d399;
-  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.3);
+.filter-label {
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #a7f3d0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.filter-select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: #ffffff;
+  color: var(--ink);
+  font-weight: 750;
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+  min-width: 260px;
 }
 
 .btn-action {
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  border: 1.5px solid transparent;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: var(--brand-accent);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  padding: 7px 14px;
-  font-size: 12.5px;
-  font-weight: 750;
   text-decoration: none;
-  cursor: pointer;
   transition: all 0.15s ease;
 }
 
-.btn-action:hover {
-  background: #115e59;
-  transform: translateY(-1px);
+.btn-action svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
 }
 
 .btn-print {
-  background: #f59e0b;
-  color: #78350f;
-  font-weight: 850;
-  border-color: #d97706;
+  background: #ffffff;
+  color: var(--brand-deep);
+  border-color: #ffffff;
 }
 
 .btn-print:hover {
-  background: #d97706;
-  color: #fff;
+  background: #f0fdf4;
 }
 
 .btn-back {
   background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 .btn-back:hover {
   background: rgba(255, 255, 255, 0.25);
 }
 
-/* Main Container */
-.page-sheet-container {
-  max-width: 1440px;
-  margin: 24px auto;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
+/* Container */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
 }
 
-/* Individual Printable Sheet (A4 Landscape Formatted) */
+.page-sheet-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 20px auto 0;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
 .timetable-sheet {
-  background: #ffffff;
-  border: 1.5px solid #cbd5e1;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
-  padding: 24px 28px;
+  background: var(--surface);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 20px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   position: relative;
   page-break-after: always;
   break-after: page;
 }
 
-.school-header {
-  text-align: center;
-  border-bottom: 2px solid var(--ink);
-  padding-bottom: 10px;
-  margin-bottom: 12px;
+/* Fullscreen Expansion Mode */
+.timetable-sheet.is-fullscreen {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  margin: 0 !important;
+  padding: 16px 20px !important;
+  z-index: 99999 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: #ffffff !important;
+  display: block !important;
+  overflow-y: auto !important;
 }
 
-.school-header h1 {
-  font-size: 20px;
-  font-weight: 900;
-  color: var(--brand-deep);
-  letter-spacing: 0.02em;
-  margin-bottom: 2px;
+.timetable-sheet.is-fullscreen .school-header {
+  margin-bottom: 8px !important;
 }
 
-.school-header h2 {
-  font-size: 14px;
-  font-weight: 800;
-  color: var(--ink);
-  letter-spacing: -0.01em;
-  margin-bottom: 3px;
+.timetable-sheet.is-fullscreen .teacher-banner {
+  padding: 8px 16px !important;
+  font-size: 15px !important;
 }
 
-.school-header p {
-  font-size: 11px;
-  font-weight: 650;
-  color: var(--muted);
+.timetable-sheet.is-fullscreen .table-responsive-wrapper {
+  overflow-x: auto !important;
 }
 
-.teacher-banner {
-  background: #f0fdf4;
-  border-left: 5px solid var(--brand-deep);
-  border-radius: 6px;
-  padding: 8px 14px;
-  margin-bottom: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
+.timetable-sheet.is-fullscreen .timetable-grid {
+  width: 100% !important;
 }
 
-.teacher-name-title {
-  font-size: 17px;
-  font-weight: 900;
-  color: var(--brand-deep);
+.timetable-sheet.is-fullscreen .timetable-grid thead th {
+  padding: 10px 8px !important;
+  font-size: 13.5px !important;
 }
 
-.teacher-meta-tag {
-  font-size: 11.5px;
-  font-weight: 800;
-  background: #ffffff;
-  border: 1px solid var(--line);
-  padding: 4px 10px;
-  border-radius: 20px;
-  color: var(--ink-secondary);
+.timetable-sheet.is-fullscreen .timetable-grid tbody td {
+  padding: 10px 8px !important;
+  font-size: 13px !important;
 }
 
 .btn-fullscreen {
-  background: #ffffff;
-  color: var(--brand-deep);
-  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
   border-radius: 6px;
-  padding: 4px 8px;
-  cursor: pointer;
+  width: 28px;
+  height: 28px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.15s ease;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 
 .btn-fullscreen:hover {
-  background: #f0fdf4;
+  background: rgba(255, 255, 255, 0.3);
   transform: scale(1.05);
 }
 
 .btn-fullscreen svg {
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   fill: currentColor;
 }
 
-.timetable-sheet.is-fullscreen {
-  position: fixed !important;
-  inset: 0 !important;
-  z-index: 99999 !important;
-  width: 100vw !important;
-  max-width: 100vw !important;
-  min-height: 100vh !important;
-  margin: 0 !important;
-  padding: 24px 32px !important;
-  background: #ffffff !important;
-  overflow-y: auto !important;
-  border: none !important;
-  border-radius: 0 !important;
-  box-sizing: border-box !important;
-  display: block !important;
-}
-
-.timetable-sheet.is-fullscreen .school-header {
-  margin-bottom: 12px !important;
-}
-
-.timetable-sheet.is-fullscreen .school-header h1 {
-  font-size: 22px !important;
-}
-
-.timetable-sheet.is-fullscreen .school-header h2 {
-  font-size: 15px !important;
-}
-
-.timetable-sheet.is-fullscreen .school-header p {
-  font-size: 13px !important;
-}
-
-.timetable-sheet.is-fullscreen .teacher-banner {
-  padding: 12px 20px !important;
-  margin-bottom: 14px !important;
-}
-
-.timetable-sheet.is-fullscreen .teacher-name-title {
-  font-size: 20px !important;
-}
-
-.timetable-sheet.is-fullscreen .teacher-meta-tag {
-  font-size: 14px !important;
-  padding: 6px 14px !important;
-}
-
-.timetable-sheet.is-fullscreen .exam-date-groups-grid {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
-  gap: 16px !important;
-  margin-bottom: 14px !important;
-}
-
-.timetable-sheet.is-fullscreen .exam-date-group-header {
-  padding: 10px 8px !important;
-}
-
-.timetable-sheet.is-fullscreen .header-date-title {
-  font-size: 15px !important;
-}
-
-.timetable-sheet.is-fullscreen .assignment-card {
-  padding: 12px 14px !important;
-}
-
-.timetable-sheet.is-fullscreen .assignment-subject {
-  font-size: 15px !important;
-}
-
-.timetable-sheet.is-fullscreen .assignment-time {
-  font-size: 13px !important;
-}
-
-.timetable-sheet.is-fullscreen .sheet-footer {
-  margin-top: 16px !important;
-  padding-top: 10px !important;
-  font-size: 13px !important;
-}
-
-/* 4-Day Grouped Grid */
-.exam-date-groups-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-  margin-bottom: 14px;
-}
-
-.exam-date-group-column {
-  border: 1.5px solid #cbd5e1;
-  border-radius: 10px;
-  background: #ffffff;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.exam-date-group-header {
-  background: var(--brand-deep);
-  color: #ffffff;
-  padding: 10px 8px;
+/* Institutional Header */
+.school-header {
   text-align: center;
-  border-bottom: 2px solid #043828;
+  margin-bottom: 12px;
 }
 
-.header-day-badge {
-  font-size: 10.5px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #a7f3d0;
-  margin-bottom: 2px;
-}
-
-.header-date-title {
-  font-size: 13.5px;
+.school-header h1 {
+  font-size: 14px;
   font-weight: 900;
-  letter-spacing: -0.01em;
-}
-
-.header-weekday-sub {
-  font-size: 11px;
-  font-weight: 700;
-  opacity: 0.9;
-}
-
-.exam-date-group-body {
-  padding: 10px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  background: #f8fafc;
-}
-
-/* Exam Assignment Card */
-.assignment-card {
-  background: #ffffff;
-  border: 1.5px solid #cbd5e1;
-  border-radius: 8px;
-  padding: 10px 12px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.04);
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  transition: transform 0.1s ease;
-}
-
-.assignment-card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 6px;
-}
-
-.assignment-subject {
-  font-size: 13px;
-  font-weight: 900;
-  line-height: 1.2;
-}
-
-.assignment-grade-sec {
-  font-size: 11px;
-  font-weight: 800;
   color: var(--brand-deep);
-  line-height: 1.25;
+  letter-spacing: 0.04em;
 }
 
-.assignment-section-full {
-  font-size: 10.5px;
-  font-weight: 700;
-  color: #475569;
-  line-height: 1.2;
-}
-
-.assignment-date-badge {
-  font-size: 10px;
+.school-header h2 {
+  font-size: 11.5px;
   font-weight: 800;
-  color: #0369a1;
-  background: #e0f2fe;
-  padding: 2px 6px;
-  border-radius: 4px;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  width: fit-content;
-}
-
-.assignment-time-badge {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #f1f5f9;
-  border: 1px solid #cbd5e1;
-  border-radius: 6px;
-  padding: 4px 7px;
-  font-size: 11px;
-  font-weight: 850;
-  color: #1e293b;
+  color: var(--brand-accent);
   margin-top: 1px;
 }
 
-.dur-pill {
+.school-header p {
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 600;
+  margin-top: 1px;
+}
+
+/* Section / Timetable Top Banner */
+.teacher-banner {
   background: var(--brand-deep);
   color: #ffffff;
-  padding: 1px 6px;
-  border-radius: 4px;
-  font-size: 9.5px;
-  font-weight: 900;
-}
-
-.dur-pill-hsmath {
-  background: #b91c1c;
-  color: #ffffff;
-}
-
-.assignment-footer-row {
+  padding: 8px 14px;
+  border-radius: 8px 8px 0 0;
+  border: 2px solid var(--brand-deep);
+  border-bottom: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 4px;
-  margin-top: 2px;
-  padding-top: 4px;
-  border-top: 1px solid #e2e8f0;
-}
-
-.modality-shift-tag {
-  font-size: 9.5px;
   font-weight: 800;
-  color: #475569;
-  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.02em;
 }
 
-.proctor-tag {
-  font-size: 9.5px;
-  font-weight: 800;
-  color: #047857;
-  background: #d1fae5;
-  padding: 2px 6px;
-  border-radius: 4px;
-}
-
-.gender-badge {
-  font-size: 8.5px;
-  font-weight: 850;
-  padding: 1px 5px;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
-.gender-boys { background: #dbeafe; color: #1e40af; }
-.gender-girls { background: #fce7f3; color: #9d174d; }
-.gender-mixed { background: #f3e8ff; color: #6b21a8; }
-
-.conflict-alert-badge {
-  background: #fee2e2;
-  color: #991b1b;
-  border: 1px solid #f87171;
-  padding: 2px 5px;
-  border-radius: 4px;
+.teacher-name-title {
+  font-size: 13.5px;
+  letter-spacing: 0.03em;
   font-weight: 900;
-  font-size: 9px;
-  margin-bottom: 3px;
-  text-transform: uppercase;
 }
 
-.no-exams-day {
-  padding: 30px 10px;
-  text-align: center;
-  color: #94a3b8;
+.teacher-meta-tag {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 3px 8px;
+  border-radius: 4px;
   font-size: 11px;
   font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-/* Footer of Sheet */
+/* Responsive Table Scroll Wrapper */
+.table-responsive-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 0 0 8px 8px;
+  border: 2px solid var(--brand-deep);
+  border-top: none;
+  background: #ffffff;
+}
+
+.table-responsive-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.table-responsive-wrapper::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.table-responsive-wrapper::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.table-responsive-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Master Timetable Grid */
+.timetable-grid {
+  width: 100%;
+  min-width: 780px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 11px;
+  border: none;
+}
+
+.timetable-grid thead th {
+  background: var(--brand-green);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 850;
+  text-align: center;
+  padding: 8px 6px;
+  border: 1px solid #043828;
+  letter-spacing: 0.02em;
+}
+
+.timetable-grid thead th.col-time {
+  width: 135px;
+}
+
+.timetable-grid thead th.col-mins {
+  width: 60px;
+}
+
+.timetable-grid tbody td {
+  border: 1.5px solid var(--line-strong);
+  padding: 6px 8px;
+  text-align: center;
+  font-size: 11.5px;
+  vertical-align: middle;
+  height: 44px;
+}
+
+.timetable-grid tbody td.cell-time {
+  background: #f8fafc;
+  font-weight: 800;
+  color: #1e293b;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.timetable-grid tbody td.cell-mins {
+  background: #f1f5f9;
+  font-weight: 800;
+  color: #475569;
+  font-size: 11px;
+}
+
+/* Special Break Row */
+.timetable-grid tbody tr.row-break td.cell-break {
+  background: var(--break-bg) !important;
+  color: var(--break-text) !important;
+  font-size: 11px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  padding: 6px 10px !important;
+  height: 28px !important;
+  border: 1.5px solid var(--break-border) !important;
+}
+
+/* Occupied Exam Cell */
+.timetable-grid tbody td.cell-class {
+  font-weight: 850;
+  line-height: 1.25;
+  padding: 4px 6px;
+}
+
+.cell-class-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.cell-subject-sec {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.cell-mod-badge {
+  font-weight: 750;
+  font-size: 10px;
+  opacity: 0.95;
+  line-height: 1.15;
+}
+
+.cell-duration-pill {
+  font-size: 8.5px;
+  padding: 1px 4px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.08);
+  font-weight: 800;
+  margin-top: 2px;
+}
+
+.timetable-grid tbody td.cell-empty {
+  background: #ffffff;
+}
+
+/* Footer & Legend Strip */
 .sheet-footer {
-  margin-top: 12px;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1.5px solid #cbd5e1;
-  padding-top: 8px;
-  font-size: 10.5px;
-  font-weight: 700;
+  font-size: 9.5px;
   color: var(--muted);
+  font-weight: 600;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-/* Strict A4 Landscape Print Engine */
+.legend-strip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.legend-box {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  color: var(--ink-secondary);
+}
+
+.legend-color-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Print Optimization */
 @media print {
-  @page {
-    size: A4 landscape;
-    margin: 5mm 6mm;
-  }
-  
-  html, body {
-    background: #ffffff !important;
-    color: #000000 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-  }
-  
-  .top-toolbar {
+  .top-toolbar, .btn-fullscreen {
     display: none !important;
   }
-  
+  body {
+    background: #fff !important;
+    padding: 0 !important;
+  }
   .page-sheet-container {
     max-width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-    display: block !important;
     gap: 0 !important;
   }
-  
   .timetable-sheet {
     box-shadow: none !important;
-    border: 1px solid #64748b !important;
-    border-radius: 0 !important;
+    border: none !important;
     padding: 8px 12px !important;
-    margin: 0 0 0 0 !important;
     page-break-after: always !important;
     break-after: page !important;
-    page-break-inside: avoid !important;
-    break-inside: avoid !important;
-    height: 100vh !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-    box-sizing: border-box !important;
   }
-
-  .school-header {
-    margin-bottom: 6px !important;
-    padding-bottom: 4px !important;
-  }
-  .school-header h1 { font-size: 15px !important; }
-  .school-header h2 { font-size: 12px !important; }
-  .school-header p { font-size: 9px !important; }
-
-  .teacher-banner {
-    padding: 4px 10px !important;
-    margin-bottom: 6px !important;
-  }
-  .teacher-name-title { font-size: 13.5px !important; }
-  .teacher-meta-tag { font-size: 9px !important; padding: 2px 6px !important; }
-
-  .exam-date-groups-grid {
-    flex: 1 !important;
-    gap: 8px !important;
-    margin-bottom: 6px !important;
-  }
-  .exam-date-group-header { padding: 4px 4px !important; }
-  .header-day-badge { font-size: 8.5px !important; }
-  .header-date-title { font-size: 11px !important; }
-  .header-weekday-sub { font-size: 9px !important; }
-  .exam-date-group-body { padding: 4px !important; gap: 6px !important; }
-
-  .assignment-card { padding: 5px 6px !important; gap: 3px !important; }
-  .assignment-subject { font-size: 10.5px !important; }
-  .assignment-grade-sec { font-size: 9.5px !important; }
-  .assignment-section-full { font-size: 8.5px !important; }
-  .assignment-date-badge { font-size: 8px !important; padding: 1px 4px !important; }
-  .assignment-time-badge { font-size: 9px !important; padding: 2px 4px !important; }
-  .dur-pill { font-size: 8px !important; }
-  .assignment-footer-row { margin-top: 1px !important; padding-top: 2px !important; }
-  .modality-shift-tag { font-size: 8px !important; }
-  .proctor-tag { font-size: 8px !important; padding: 1px 4px !important; }
-  
-  .sheet-footer { margin-top: 4px !important; padding-top: 2px !important; font-size: 8px !important; }
 }
 </style>
 </head>
 <body>
 
-<!-- Top Navigation Toolbar -->
+<!-- Screen Top Navigation Toolbar -->
 <header class="top-toolbar">
   <div class="brand-title">
-    <img src="amis_logo.png" alt="AMIS Logo" class="brand-logo">
+    <div class="brand-icon">AMIS</div>
     <div class="brand-text">
-      <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
-      <p>Faculty Timetable — Exam Schedule • Dates: Sep 2, 3, 6 & 7, 2026</p>
+      <h1>Faculty Examination Proctoring Timetable</h1>
+      <p>Term Exam Week • Official Exam Program</p>
     </div>
   </div>
 
   <div class="toolbar-controls">
-    <select id="teacherPicker" class="select-teacher" title="Select faculty member to view exam timetable">
-      <option value="ALL_FACULTY">All Staff / Faculty (Print All)</option>
-    </select>
+    <!-- Staff / Faculty Selector -->
+    <div class="filter-group">
+      <span class="filter-label">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4A4 4 0 0 1 16 8A4 4 0 0 1 12 12A4 4 0 0 1 8 8A4 4 0 0 1 12 4M12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z"/></svg>
+        Proctor / Faculty:
+      </span>
+      <select id="teacherPicker" class="filter-select" aria-label="Select Proctor or Faculty Member">
+        <option value="ALL_FACULTY">All Staff / Faculty (Print All)</option>
+      </select>
+    </div>
 
-    <button id="btnPrint" class="btn-action btn-print" title="Print Exam Timetable (A4 Landscape)">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 3H6V7H18V3M19 12A1 1 0 1 1 18 11A1 1 0 0 1 19 12M16 19H8V14H16V19M19 8H5A3 3 0 0 0 2 11V17H6V21H18V17H22V11A3 3 0 0 0 19 8Z"/></svg>
+    <button id="btnPrint" class="btn-action btn-print" onclick="window.print()" title="Print Exam Timetables">
+      <svg viewBox="0 0 24 24"><path d="M18 3H6V7H18V3M19 12A1 1 0 1 1 18 11A1 1 0 0 1 19 12M16 19H8V14H16V19M19 8H5A3 3 0 0 0 2 11V17H6V21H18V17H22V11A3 3 0 0 0 19 8Z"/></svg>
       Print Exam Timetable
     </button>
-
-    <a href="exam-schedule.html" class="btn-action" style="background:#047857; color:#fff; border-color:#059669;" title="Back to Exam Schedule">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 19H5V8H19M16 1V3H8V1H6V3H5C3.89 3 3 3.89 3 5V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V5C21 3.89 20.1 3 19 3H18V1M17 12H12V17H17V12Z"/></svg>
+    <a href="exam-schedule.html" class="btn-action btn-back" title="Go to Section Exam Schedules">
+      <svg viewBox="0 0 24 24"><path d="M19 3H5C3.89 3 3 3.89 3 5V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V5C21 3.89 20.1 3 19 3M19 19H5V8H19V19M7 10H12V15H7V10Z"/></svg>
       Exam Schedule
     </a>
-
-    <a href="index.html" class="btn-action btn-back" title="Return to Portal Home">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    <a href="index.html" class="btn-action btn-back" style="background:#ffffff; color:#0f172a; border-color:#cbd5e1; font-weight:750;" title="Back to Schedule Home">
+      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
       Schedule Home
     </a>
   </div>
 </header>
 
-<!-- Main Printable Landscape Sheet Container -->
+<!-- Main Printable Landscape Container -->
 <main class="page-sheet-container" id="sheetsContainer">
-  <!-- Dynamic Faculty Exam Sheets rendered here -->
+  <!-- Dynamic Faculty Exam Timetable Sheets rendered here -->
 </main>
 
 <script>
 (function() {
-  // Exact 4 Exam Days (Sep 2, Sep 3, Sep 6, Sep 7)
-  const EXAM_DAYS = [
-    {
-      day_num: 1,
-      day_label: "1st Exam Day",
-      full_date: "September 2, 2026",
-      weekday: "Wednesday",
-      short_date: "Sep 2"
-    },
-    {
-      day_num: 2,
-      day_label: "2nd Exam Day",
-      full_date: "September 3, 2026",
-      weekday: "Thursday",
-      short_date: "Sep 3"
-    },
-    {
-      day_num: 3,
-      day_label: "3rd Exam Day",
-      full_date: "September 6, 2026",
-      weekday: "Sunday",
-      short_date: "Sep 6"
-    },
-    {
-      day_num: 4,
-      day_label: "4th Exam Day",
-      full_date: "September 7, 2026",
-      weekday: "Monday",
-      short_date: "Sep 7"
-    }
+  const EXAM_DATES = [
+    { day_num: 1, short_date: 'Sep 2', day_name: 'Wednesday', header: 'Day 1 • Wed, Sep 2' },
+    { day_num: 2, short_date: 'Sep 3', day_name: 'Thursday', header: 'Day 2 • Thu, Sep 3' },
+    { day_num: 3, short_date: 'Sep 6', day_name: 'Sunday', header: 'Day 3 • Sun, Sep 6' },
+    { day_num: 4, short_date: 'Sep 7', day_name: 'Monday', header: 'Day 4 • Mon, Sep 7' }
   ];
 
-  const GRADE_ORDER = {
-    "Kinder 1": 1, "K1": 1,
-    "Kinder 2": 2, "K2": 2,
-    "Grade 1": 3, "Grade 2": 4, "Grade 3": 5, "Grade 4": 6,
-    "Grade 5": 7, "Grade 6": 8, "Grade 7": 9, "Grade 8": 10,
-    "Grade 9": 11, "Grade 10": 12, "Grade 11": 13, "Grade 12": 14
-  };
-
   let ALL_EXAM_RECORDS = [];
-  let TEACHER_NAMES = [];
+  let ALL_TEACHERS_DATA = {};
 
-  function cleanSecName(s) {
+  const teacherPicker = document.getElementById('teacherPicker');
+  const sheetsContainer = document.getElementById('sheetsContainer');
+
+  function esc(s) {
     if (!s) return '';
-    return s.replace(/^GRADE\s*\d+\s*-\s*/i, '')
-            .replace(/^KINDER\s*\d*\s*/i, '')
-            .replace(/^K\d+\s*-\s*/i, '')
-            .replace(/\s*\((?:1ST|2ND)\s+SHIFT\)/i, '')
-            .replace(/\s*-\s*(?:BOYS|GIRLS|MIX|MIXED)/i, '')
-            .trim();
-  }
-
-  function minutes(tStr) {
-    if (!tStr) return 0;
-    const parts = tStr.trim().split(' ');
-    if (parts.length < 2) return 0;
-    const hm = parts[0].split(':');
-    let h = parseInt(hm[0], 10);
-    let m = parseInt(hm[1], 10) || 0;
-    const ampm = parts[1].toUpperCase();
-    if (ampm === 'PM' && h !== 12) h += 12;
-    if (ampm === 'AM' && h === 12) h = 0;
-    return h * 60 + m;
-  }
-
-  function calcDuration(tStr, fallback) {
-    if (!tStr) return fallback || 60;
-    const parts = tStr.split(/[-–]/);
-    if (parts.length >= 2) {
-      const m1 = minutes(parts[0].trim());
-      const m2 = minutes(parts[1].trim());
-      let diff = m2 - m1;
-      if (diff < 0) diff += 24 * 60;
-      if (diff > 0) return diff;
-    }
-    if (typeof fallback === 'number' && fallback > 0) return fallback;
-    return 60;
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
   }
 
   function getSubjectColor(subj) {
     const s = (subj || '').toLowerCase();
-    if (s.includes('arabic') || s.includes("qur'an") || s.includes('hadith') || s.includes('shaf')) {
-      return { bg: '#f3e8ff', border: '#d8b4fe', text: '#581c87' };
-    }
-    if (s.includes('math') || s.includes('calculus') || s.includes('algebra') || s.includes('stat')) {
-      return { bg: '#e0f2fe', border: '#7dd3fc', text: '#0369a1' };
-    }
-    if (s.includes('sci') || s.includes('biology') || s.includes('chem') || s.includes('phys')) {
-      return { bg: '#ccfbf1', border: '#5eead4', text: '#115e59' };
-    }
-    if (s.includes('english') || s.includes('reading') || s.includes('oral') || s.includes('eapp')) {
-      return { bg: '#fef3c7', border: '#fde047', text: '#854d0e' };
-    }
-    if (s.includes('filipino') || s.includes('makabansa') || s.includes('ap') || s.includes('panlipunan')) {
-      return { bg: '#ffedd5', border: '#fdba74', text: '#9a3412' };
-    }
-    if (s.includes('gmrc') || s.includes('values') || s.includes('esp')) {
+    if (s.includes('gmrc') || s.includes('values') || s.includes('esp') || s.includes('homeroom') || s.includes('hg')) {
       return { bg: '#dcfce7', border: '#86efac', text: '#14532d' };
     }
-    return { bg: '#f1f5f9', border: '#cbd5e1', text: '#1e293b' };
+    if (s.includes('arabic') || s.includes('qur\'an') || s.includes('quran') || s.includes('hadith') || s.includes('shaf') || s.includes('islamic')) {
+      return { bg: '#f3e8ff', border: '#d8b4fe', text: '#581c87' };
+    }
+    if (s.includes('math') || s.includes('mathematics') || s.includes('physics') || s.includes('algebra') || s.includes('calculus')) {
+      return { bg: '#e0f2fe', border: '#7dd3fc', text: '#0369a1' };
+    }
+    if (s.includes('science') || s.includes('sci') || s.includes('biology') || s.includes('chemistry') || s.includes('gen science')) {
+      return { bg: '#ccfbf1', border: '#5eead4', text: '#115e59' };
+    }
+    if (s.includes('english') || s.includes('reading') || s.includes('literacy') || s.includes('language') || s.includes('circle time') || s.includes('oral com') || s.includes('eapp') || s.includes('lit')) {
+      return { bg: '#fef3c7', border: '#fde047', text: '#854d0e' };
+    }
+    if (s.includes('filipino') || s.includes('makabansa') || s.includes('ap') || s.includes('araling panlipunan') || s.includes('social science') || s.includes('soc.sci')) {
+      return { bg: '#ffedd5', border: '#fdba74', text: '#9a3412' };
+    }
+    if (s.includes('mapeh') || s.includes('pe') || s.includes('tle') || s.includes('tvl') || s.includes('mil') || s.includes('practical research') || s.includes('entrep')) {
+      return { bg: '#fae8ff', border: '#f0abfc', text: '#86198f' };
+    }
+    return { bg: '#f1f5f9', border: '#cbd5e1', text: '#334155' };
   }
 
   async function init() {
     try {
-      const resp = await fetch('exam_data.json?v=' + Date.now());
-      if (resp.ok) {
-        ALL_EXAM_RECORDS = await resp.json();
-      } else if (typeof AMIS_EXAM_DATA !== 'undefined') {
-        ALL_EXAM_RECORDS = AMIS_EXAM_DATA;
-      }
+      const eResp = await fetch('exam_data.json?v=' + Date.now());
+      if (eResp.ok) ALL_EXAM_RECORDS = await eResp.json();
+      else if (window.AMIS_EXAM_DATA) ALL_EXAM_RECORDS = window.AMIS_EXAM_DATA;
     } catch (e) {
-      if (typeof AMIS_EXAM_DATA !== 'undefined') {
-        ALL_EXAM_RECORDS = AMIS_EXAM_DATA;
-      }
+      if (window.AMIS_EXAM_DATA) ALL_EXAM_RECORDS = window.AMIS_EXAM_DATA;
+    }
+
+    try {
+      const tResp = await fetch('teacher_weekly_schedules.json?v=' + Date.now());
+      if (tResp.ok) ALL_TEACHERS_DATA = await tResp.json();
+      else if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
+    } catch (e) {
+      if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
     }
 
     if (!ALL_EXAM_RECORDS || ALL_EXAM_RECORDS.length === 0) {
-      document.getElementById('sheetsContainer').innerHTML = `
-        <div style="padding:40px; text-align:center; color:#b91c1c; font-weight:800;">
-          Failed to load exam schedule dataset.
-        </div>
-      `;
+      sheetsContainer.innerHTML = '<div style="text-align:center; padding:50px; color:#64748b;">No exam schedule data available.</div>';
       return;
     }
 
-    processData();
-
-    document.getElementById('teacherPicker').addEventListener('change', function(e) {
-      const val = e.target.value;
-      const url = new URL(window.location);
-      if (val === 'ALL_FACULTY') {
-        url.searchParams.delete('teacher');
-      } else {
-        url.searchParams.set('teacher', val);
-      }
-      window.history.pushState({}, '', url);
-      renderSelectedTeachers(val);
-    });
-
-    document.getElementById('btnPrint').addEventListener('click', function() {
-      window.print();
-    });
-  }
-
-  function processData() {
-    TEACHER_NAMES = [...new Set(ALL_EXAM_RECORDS.map(r => r.teacher))]
-      .filter(Boolean)
-      .sort((a, b) => a.localeCompare(b));
-
     populateTeacherDropdown();
-    handleInitialRoute();
+
+    const urlParams = new URLSearchParams(window.location.search);
+    let initTeacher = urlParams.get('teacher') || '';
+
+    if (initTeacher && (ALL_TEACHERS_DATA[initTeacher] || initTeacher === 'ALL_FACULTY')) {
+      teacherPicker.value = initTeacher;
+    } else {
+      teacherPicker.selectedIndex = 1; // Default to first individual teacher
+    }
+
+    renderCurrentView();
+
+    teacherPicker.addEventListener('change', () => {
+      renderCurrentView();
+    });
   }
 
   function populateTeacherDropdown() {
-    const picker = document.getElementById('teacherPicker');
-    picker.innerHTML = '<option value="ALL_FACULTY">All Staff / Faculty (Print All)</option>';
-
-    TEACHER_NAMES.forEach(name => {
-      const opt = document.createElement('option');
-      opt.value = name;
-      const count = ALL_EXAM_RECORDS.filter(r => r.teacher === name).length;
-      opt.textContent = `${name} (${count} exams)`;
-      picker.appendChild(opt);
-    });
-  }
-
-  function handleInitialRoute() {
-    const params = new URLSearchParams(window.location.search);
-    const teacherParam = params.get('teacher');
-
-    if (teacherParam && TEACHER_NAMES.includes(teacherParam)) {
-      document.getElementById('teacherPicker').value = teacherParam;
-      renderSelectedTeachers(teacherParam);
-    } else {
-      const firstT = TEACHER_NAMES[0];
-      if (firstT) {
-        document.getElementById('teacherPicker').value = firstT;
-        renderSelectedTeachers(firstT);
-      } else {
-        renderSelectedTeachers('ALL_FACULTY');
+    const teacherExamCounts = {};
+    ALL_EXAM_RECORDS.forEach(e => {
+      const pid = e.proctor_teacher_id || e.teacher_id;
+      if (pid) {
+        teacherExamCounts[pid] = (teacherExamCounts[pid] || 0) + 1;
       }
+    });
+
+    let teachers = Object.values(ALL_TEACHERS_DATA || {}).filter(t => (teacherExamCounts[t.teacher_id] || 0) > 0);
+    teachers = teachers.sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name));
+
+    let html = '<option value="ALL_FACULTY">All Staff / Faculty (Print All)</option>';
+    teachers.forEach(t => {
+      const name = t.canonical_name || t.teacher_name;
+      const count = teacherExamCounts[t.teacher_id] || 0;
+      const countLabel = count ? ` (${count} exam sessions)` : '';
+      html += `<option value="${t.teacher_id}">${esc(name)}${countLabel}</option>`;
+    });
+    teacherPicker.innerHTML = html;
+  }
+
+  function getFacultyTimeline(shiftsSet) {
+    const hasF2F = shiftsSet.has('F2F');
+    const hasODL1 = shiftsSet.has('ODL - 1ST SHIFT');
+    const hasODL2 = shiftsSet.has('ODL - 2ND SHIFT');
+
+    let timeline = [];
+
+    if (hasF2F) {
+      timeline.push({ is_break: true, time: '07:30 AM – 07:45 AM', minutes: '15 min.', label: 'GENERAL ASSEMBLY' });
+      timeline.push({ is_break: false, time: '08:00 AM – 09:00 AM', minutes: '60 min.', slot_id: 'f2f_s1' });
+      timeline.push({ is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60 min.', slot_id: 'f2f_s2' });
+      timeline.push({ is_break: true, time: '10:00 AM – 10:25 AM', minutes: '25 min.', label: 'RECESS' });
+      timeline.push({ is_break: false, time: '10:25 AM – 11:25 AM', minutes: '60 min.', slot_id: 'f2f_s3' });
+      timeline.push({ is_break: true, time: '11:25 AM – 12:40 PM', minutes: '75 min.', label: 'LUNCH AND SALAH' });
+    }
+
+    if (hasODL1) {
+      if (!hasF2F) {
+        timeline.push({ is_break: true, time: '12:30 PM – 12:40 PM', minutes: '10 min.', label: 'GENERAL ASSEMBLY' });
+      }
+      timeline.push({ is_break: false, time: '12:40 PM – 01:40 PM', minutes: '60 min.', slot_id: 'odl1_s1' });
+      timeline.push({ is_break: true, time: '01:40 PM – 01:50 PM', minutes: '10 min.', label: 'TRANSITION' });
+      timeline.push({ is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60 min.', slot_id: 'odl1_s2' });
+      timeline.push({ is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'TRANSITION AND SALAH BREAK' });
+      timeline.push({ is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 'odl1_s3' });
+    }
+
+    if (hasODL2) {
+      if (!hasF2F && !hasODL1) {
+        timeline.push({ is_break: true, time: '02:45 PM – 03:10 PM', minutes: '25 min.', label: 'HOMEROOM GUIDANCE / GENERAL ASSEMBLY' });
+      } else if (!hasODL1) {
+        timeline.push({ is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'TRANSITION AND SALAH BREAK' });
+      }
+      timeline.push({ is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 'odl2_s1' });
+      timeline.push({ is_break: true, time: '04:10 PM – 04:20 PM', minutes: '10 min.', label: 'TRANSITION' });
+      timeline.push({ is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60 min.', slot_id: 'odl2_s2' });
+      timeline.push({ is_break: true, time: '05:20 PM – 05:30 PM', minutes: '10 min.', label: 'TRANSITION' });
+      timeline.push({ is_break: false, time: '05:30 PM – 06:30 PM', minutes: '60 min.', slot_id: 'odl2_s3' });
+      timeline.push({ is_break: true, time: '06:30 PM – 06:45 PM', minutes: '15 min.', label: 'SALAH & DISMISSAL' });
+    }
+
+    if (hasF2F && !hasODL1 && !hasODL2) {
+      timeline.push({ is_break: true, time: '02:45 PM – 03:00 PM', minutes: '15 min.', label: 'SALAH / SALAH & DEPARTURE' });
+    }
+
+    if (timeline.length === 0) {
+      timeline = [
+        { is_break: true, time: '07:30 AM – 07:45 AM', minutes: '15 min.', label: 'GENERAL ASSEMBLY' },
+        { is_break: false, time: '08:00 AM – 09:00 AM', minutes: '60 min.', slot_id: 'f2f_s1' },
+        { is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60 min.', slot_id: 'f2f_s2' },
+        { is_break: true, time: '10:00 AM – 10:25 AM', minutes: '25 min.', label: 'RECESS' },
+        { is_break: false, time: '10:25 AM – 11:25 AM', minutes: '60 min.', slot_id: 'f2f_s3' },
+        { is_break: true, time: '11:25 AM – 12:40 PM', minutes: '75 min.', label: 'LUNCH AND SALAH' },
+        { is_break: false, time: '12:40 PM – 01:40 PM', minutes: '60 min.', slot_id: 'odl1_s1' },
+        { is_break: true, time: '01:40 PM – 01:50 PM', minutes: '10 min.', label: 'TRANSITION' },
+        { is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60 min.', slot_id: 'odl1_s2' },
+        { is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'TRANSITION AND SALAH BREAK' },
+        { is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 'odl2_s1' },
+        { is_break: true, time: '04:10 PM – 04:20 PM', minutes: '10 min.', label: 'TRANSITION' },
+        { is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60 min.', slot_id: 'odl2_s2' },
+        { is_break: true, time: '05:20 PM – 05:30 PM', minutes: '10 min.', label: 'TRANSITION' },
+        { is_break: false, time: '05:30 PM – 06:30 PM', minutes: '60 min.', slot_id: 'odl2_s3' },
+        { is_break: true, time: '06:30 PM – 06:45 PM', minutes: '15 min.', label: 'SALAH & DISMISSAL' }
+      ];
+    }
+
+    return timeline;
+  }
+
+  function renderCurrentView() {
+    const tVal = teacherPicker.value;
+    if (tVal === 'ALL_FACULTY') {
+      const teacherIds = Object.values(ALL_TEACHERS_DATA)
+        .filter(t => ALL_EXAM_RECORDS.some(e => (e.proctor_teacher_id === t.teacher_id || e.teacher_id === t.teacher_id)))
+        .sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name))
+        .map(t => t.teacher_id);
+      renderMultipleTeacherExamSheets(teacherIds);
+    } else if (ALL_TEACHERS_DATA[tVal]) {
+      renderMultipleTeacherExamSheets([tVal]);
     }
   }
 
-  function renderSelectedTeachers(val) {
-    if (val === 'ALL_FACULTY') {
-      renderMultipleTeacherSheets(TEACHER_NAMES);
-    } else {
-      renderMultipleTeacherSheets([val]);
-    }
-  }
-
-  function renderMultipleTeacherSheets(names) {
+  function renderMultipleTeacherExamSheets(tIds) {
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
     let fullHtml = '';
 
-    names.forEach(teacherName => {
-      const tExams = ALL_EXAM_RECORDS.filter(r => r.teacher === teacherName);
+    tIds.forEach(tid => {
+      const data = ALL_TEACHERS_DATA[tid];
+      const tExams = ALL_EXAM_RECORDS.filter(e => (e.proctor_teacher_id === tid || e.teacher_id === tid));
+      if (tExams.length === 0 && !data) return;
+
+      const teacherDisplayName = data ? (data.canonical_name || data.teacher_name || tid) : (tExams[0].proctor_teacher || tExams[0].teacher || tid);
       const totalCount = tExams.length;
-      const subjsList = [...new Set(tExams.map(r => r.subject))].join(', ') || 'Examination Proctoring';
+      const subjsList = Array.from(new Set(tExams.map(e => e.subject))).join(', ') || 'Proctored Subjects';
       const metaStr = `${totalCount} Exam Session${totalCount === 1 ? '' : 's'} • ${subjsList}`;
+
+      const shiftsSet = new Set(tExams.map(e => e.shift || 'F2F'));
+      const timeline = getFacultyTimeline(shiftsSet);
 
       fullHtml += `
         <div class="timetable-sheet">
@@ -882,13 +802,13 @@ body {
             <img src="amis_logo.png" alt="AMIS Logo" style="width:48px; height:48px; border-radius:50%; object-fit:contain;">
             <div>
               <h1 style="margin:0;">AL MUNAWWARA ISLAMIC SCHOOL</h1>
-              <h2 style="margin:2px 0 0 0;">Faculty Timetable — Exam Schedule</h2>
-              <p style="margin:2px 0 0 0;">Dates: Sep 2, 3, 6 & 7, 2026 • 1st Term Examination S.Y. 2026–2027</p>
+              <h2 style="margin:2px 0 0 0;">Faculty Examination Proctoring Timetable</h2>
+              <p style="margin:2px 0 0 0;">Term Exam Week</p>
             </div>
           </div>
 
           <div class="teacher-banner">
-            <span class="teacher-name-title">${esc(teacherName.toUpperCase())}</span>
+            <span class="teacher-name-title">${esc(teacherDisplayName.toUpperCase())}</span>
             <div style="display:flex; align-items:center; gap:8px;">
               <span class="teacher-meta-tag">${esc(metaStr)}</span>
               <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
@@ -898,115 +818,106 @@ body {
             </div>
           </div>
 
-          <div class="exam-date-groups-grid">
+          <div class="table-responsive-wrapper">
+            <table class="timetable-grid">
+              <thead>
+                <tr>
+                  <th class="col-time">Time</th>
+                  <th class="col-mins">Minutes</th>
+                  ${EXAM_DATES.map(d => `<th>${esc(d.header)}</th>`).join('')}
+                </tr>
+              </thead>
+              <tbody>
       `;
 
-      EXAM_DAYS.forEach(day => {
-        // Filter and sort assignments by: 1. Start Time, 2. Grade, 3. Section
-        const dayExams = tExams
-          .filter(r => r.day_number === day.day_num)
-          .sort((a, b) => {
-            const tA = minutes(a.time_slot || a.time);
-            const tB = minutes(b.time_slot || b.time);
-            if (tA !== tB) return tA - tB;
-            const gA = GRADE_ORDER[a.grade] || 99;
-            const gB = GRADE_ORDER[b.grade] || 99;
-            if (gA !== gB) return gA - gB;
-            return (a.section_name || a.section || '').localeCompare(b.section_name || b.section || '');
-          });
-
-        fullHtml += `
-          <div class="exam-date-group-column">
-            <div class="exam-date-group-header">
-              <div class="header-day-badge">${day.day_label}</div>
-              <div class="header-date-title">${day.full_date}</div>
-              <div class="header-weekday-sub">${day.weekday}</div>
-            </div>
-            <div class="exam-date-group-body">
-        `;
-
-        if (dayExams.length === 0) {
+      timeline.forEach(row => {
+        if (row.is_break) {
           fullHtml += `
-            <div class="no-exams-day">
-              No exam sessions scheduled for ${day.full_date}
-            </div>
+            <tr class="row-break">
+              <td class="cell-time">${esc(row.time)}</td>
+              <td class="cell-mins">${esc(row.minutes)}</td>
+              <td colspan="4" class="cell-break">${esc(row.label)}</td>
+            </tr>
           `;
         } else {
-          dayExams.forEach((ex, idx) => {
-            const timeStr = ex.time_slot || ex.time || '';
-            const dur = calcDuration(timeStr, ex.duration_minutes);
-            const color = getSubjectColor(ex.subject);
-            const shiftLabel = ex.modality === 'F2F' ? 'F2F Classroom' : (ex.shift && ex.shift.includes('2nd') ? 'ODL 2nd Shift' : 'ODL 1st Shift');
-            const isHsMath = (ex.grade && ex.grade.includes('Grade') && parseInt(ex.grade.replace(/\D/g, ''), 10) >= 7 && ex.subject && (ex.subject.toLowerCase().includes('math') || ex.subject.toLowerCase().includes('calculus') || ex.subject.toLowerCase().includes('stat')));
-            
-            // Check for conflict on the same day
-            const hasConflict = dayExams.some((other, oIdx) => {
-              if (oIdx === idx) return false;
-              const oTime = other.time_slot || other.time || '';
-              return oTime === timeStr;
+          fullHtml += `
+            <tr>
+              <td class="cell-time">${esc(row.time)}</td>
+              <td class="cell-mins">${esc(row.minutes)}</td>
+          `;
+
+          EXAM_DATES.forEach(d => {
+            const matches = tExams.filter(e => {
+              if (e.short_date !== d.short_date && e.day_number !== d.day_num) return false;
+              if (e.time_slot === row.time || e.time === row.time) return true;
+              if (e.duration_minutes >= 90 && (row.time.includes('08:00 AM') || row.time.includes('09:00 AM') || row.time.includes('12:40 PM') || row.time.includes('01:50 PM') || row.time.includes('03:10 PM') || row.time.includes('04:20 PM'))) {
+                return true;
+              }
+              return false;
             });
 
-            // Gender badge logic: only display if explicitly BOYS, GIRLS, or MIXED (hide if unknown)
-            const rawGender = (ex.gender || '').toUpperCase().trim();
-            let genderBadgeHtml = '';
-            if (rawGender === 'BOYS') {
-              genderBadgeHtml = `<span class="gender-badge gender-boys">Boys</span>`;
-            } else if (rawGender === 'GIRLS') {
-              genderBadgeHtml = `<span class="gender-badge gender-girls">Girls</span>`;
-            } else if (rawGender === 'MIXED') {
-              genderBadgeHtml = `<span class="gender-badge gender-mixed">Mixed</span>`;
+            if (matches.length === 1) {
+              const exam = matches[0];
+              const color = getSubjectColor(exam.subject);
+              const secShort = exam.section_name.replace('GRADE ', 'G').replace('Grade ', 'G').replace('Kinder ', 'K');
+              const modTag = exam.shift === 'F2F' ? 'F2F' : (exam.shift.includes('2ND') ? 'ODL 2' : 'ODL 1');
+              fullHtml += `
+                <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                  <div class="cell-class-inner">
+                    <span class="cell-subject-sec">${esc(exam.subject)}</span>
+                    <span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(secShort)} • ${modTag}</span>
+                    ${exam.duration_minutes >= 90 ? `<span class="cell-duration-pill" style="color:${color.text};">${exam.duration_minutes}m EXTENDED</span>` : ''}
+                  </div>
+                </td>
+              `;
+            } else if (matches.length > 1) {
+              const isAllowedMerged = matches.every(m => m.shift && m.shift.includes('ODL') && m.subject_id === matches[0].subject_id);
+              if (isAllowedMerged) {
+                const exam = matches[0];
+                const color = getSubjectColor(exam.subject);
+                const secsStr = matches.map(m => m.section_name.replace('GRADE ', 'G').replace('Grade ', 'G')).join(' & ');
+                fullHtml += `
+                  <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                    <div class="cell-class-inner">
+                      <span class="cell-subject-sec">${esc(exam.subject)}</span>
+                      <span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(secsStr)} (Merged ODL)</span>
+                    </div>
+                  </td>
+                `;
+              } else {
+                fullHtml += `
+                  <td class="cell-class" style="background:#fee2e2; border-color:#ef4444; color:#991b1b;">
+                    <div class="cell-class-inner">
+                      <span style="font-weight:900; font-size:9px; background:#fecaca; padding:1px 4px; border-radius:3px;">⚠️ CONFLICT</span>
+                      ${matches.map(m => `<span class="cell-subject-sec" style="font-size:11px;">${esc(m.subject)}: ${esc(m.section_name)}</span>`).join('')}
+                    </div>
+                  </td>
+                `;
+              }
+            } else {
+              fullHtml += `<td class="cell-empty"></td>`;
             }
-
-            fullHtml += `
-              <div class="assignment-card" style="border-left: 4px solid ${color.border};">
-                ${hasConflict ? `<div class="conflict-alert-badge">⚠️ TEACHER SCHEDULE CONFLICT</div>` : ''}
-                
-                <div class="assignment-card-header">
-                  <span class="assignment-subject" style="color: ${color.text};">${esc(ex.subject)}</span>
-                  ${genderBadgeHtml}
-                </div>
-
-                <div class="assignment-grade-sec">
-                  ${esc(ex.grade)}
-                </div>
-                <div class="assignment-section-full">
-                  ${esc(ex.section_name || ex.section || '')}
-                </div>
-
-                <div class="assignment-date-badge">
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M19 19H5V8H19M16 1V3H8V1H6V3H5C3.89 3 3 3.89 3 5V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V5C21 3.89 20.1 3 19 3H18V1M17 12H12V17H17V12Z"/></svg>
-                  ${day.full_date}
-                </div>
-
-                <div class="assignment-time-badge">
-                  <span>${esc(timeStr)}</span>
-                  <span class="dur-pill ${isHsMath ? 'dur-pill-hsmath' : ''}">${dur} mins</span>
-                </div>
-
-                <div class="assignment-footer-row">
-                  <span class="modality-shift-tag">${esc(shiftLabel)}</span>
-                  <span class="proctor-tag">Proctor: ${esc(teacherName)}</span>
-                </div>
-              </div>
-            `;
           });
-        }
 
-        fullHtml += `
-            </div>
-          </div>
-        `;
+          fullHtml += `</tr>`;
+        }
       });
 
       fullHtml += `
+              </tbody>
+            </table>
           </div>
 
           <div class="sheet-footer">
-            <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap;">
-              <span>• Exam Dates: <strong>Sep 2, 3, 6 & 7, 2026</strong></span>
-              <span>• High School Math: <strong>120 mins (2 Hours)</strong></span>
-              <span>• Elementary & HS Normal Subjects: <strong>60 mins</strong></span>
-              <span>• Qur'an Proctor: <strong>Assigned Section Qur'an Teacher</strong></span>
+            <div class="legend-strip">
+              <span style="font-weight: 800; color: var(--ink);">Subject Keys:</span>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#f3e8ff; border-color:#d8b4fe;"></span> Arabic / Qur'an / Islamic</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#dcfce7; border-color:#86efac;"></span> GMRC / Values / ESP</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#e0f2fe; border-color:#7dd3fc;"></span> Mathematics</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ccfbf1; border-color:#5eead4;"></span> Science</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fef3c7; border-color:#fde047;"></span> English / Language</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ffedd5; border-color:#fdba74;"></span> Filipino / AP / Makabansa</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fae8ff; border-color:#f0abfc;"></span> MAPEH / TLE / TVL</div>
             </div>
             <div>
               Generated: <strong>${todayStr}</strong>
@@ -1016,60 +927,43 @@ body {
       `;
     });
 
-    document.getElementById('sheetsContainer').innerHTML = fullHtml;
+    sheetsContainer.innerHTML = fullHtml;
   }
 
   window.toggleFullscreenSheet = function(btn) {
     const sheet = btn.closest('.timetable-sheet');
     if (!sheet) return;
-
-    const isFs = sheet.classList.toggle('is-fullscreen');
-    const iconExpand = btn.querySelector('.icon-expand');
-    const iconCompress = btn.querySelector('.icon-compress');
-
-    if (isFs) {
-      if (iconExpand) iconExpand.style.display = 'none';
-      if (iconCompress) iconCompress.style.display = 'inline-block';
+    
+    sheet.classList.toggle('is-fullscreen');
+    const isFull = sheet.classList.contains('is-fullscreen');
+    
+    const expandIcon = btn.querySelector('.icon-expand');
+    const compressIcon = btn.querySelector('.icon-compress');
+    
+    if (isFull) {
+      if (expandIcon) expandIcon.style.display = 'none';
+      if (compressIcon) compressIcon.style.display = 'inline-block';
       btn.setAttribute('title', 'Exit Fullscreen');
-      if (sheet.requestFullscreen && !document.fullscreenElement) {
-        sheet.requestFullscreen().catch(() => {});
-      }
+      document.body.style.overflow = 'hidden';
     } else {
-      if (iconExpand) iconExpand.style.display = 'inline-block';
-      if (iconCompress) iconCompress.style.display = 'none';
+      if (expandIcon) expandIcon.style.display = 'inline-block';
+      if (compressIcon) compressIcon.style.display = 'none';
       btn.setAttribute('title', 'Fullscreen Table');
-      if (document.exitFullscreen && document.fullscreenElement) {
-        document.exitFullscreen().catch(() => {});
-      }
+      document.body.style.overflow = '';
     }
   };
 
-  document.addEventListener('fullscreenchange', () => {
-    if (!document.fullscreenElement) {
-      document.querySelectorAll('.timetable-sheet.is-fullscreen').forEach(sh => {
-        sh.classList.remove('is-fullscreen');
-        const btn = sh.querySelector('.btn-fullscreen');
-        if (btn) {
-          const iconExpand = btn.querySelector('.icon-expand');
-          const iconCompress = btn.querySelector('.icon-compress');
-          if (iconExpand) iconExpand.style.display = 'inline-block';
-          if (iconCompress) iconCompress.style.display = 'none';
-          btn.setAttribute('title', 'Fullscreen Table');
-        }
-      });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      const activeSheet = document.querySelector('.timetable-sheet.is-fullscreen');
+      if (activeSheet) {
+        const btn = activeSheet.querySelector('.btn-fullscreen');
+        if (btn) toggleFullscreenSheet(btn);
+      }
     }
   });
 
-  function esc(str) {
-    if (str === null || str === undefined) return '';
-    return String(str)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
-  }
-
-  document.addEventListener('DOMContentLoaded', init);
+  init();
 })();
 </script>
 

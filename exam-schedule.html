@@ -793,12 +793,11 @@ html, body {
   }
 
   function populateTeacherDropdown() {
-    // Count exam sessions per teacher from EXAM_RECORDS
     const teacherExamCounts = {};
     EXAM_RECORDS.forEach(e => {
-      const tid = e.teacher_id;
-      if (tid) {
-        teacherExamCounts[tid] = (teacherExamCounts[tid] || 0) + 1;
+      const pid = e.proctor_teacher_id || e.teacher_id;
+      if (pid) {
+        teacherExamCounts[pid] = (teacherExamCounts[pid] || 0) + 1;
       }
     });
 
@@ -869,7 +868,7 @@ html, body {
     if (tVal) {
       if (tVal === 'ALL_FACULTY') {
         const teacherIds = Object.values(ALL_TEACHERS_DATA)
-          .filter(t => EXAM_RECORDS.some(e => e.teacher_id === t.teacher_id))
+          .filter(t => EXAM_RECORDS.some(e => (e.proctor_teacher_id === t.teacher_id || e.teacher_id === t.teacher_id)))
           .sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name))
           .map(t => t.teacher_id);
         renderMultipleTeacherExamSheets(teacherIds);
@@ -896,7 +895,7 @@ html, body {
 
   function getSectionExamScheduleModel(sec) {
     const secName = sec.section_name;
-    const secExams = EXAM_RECORDS.filter(e => e.section_name === secName || e.section === secName);
+    const secExams = EXAM_RECORDS.filter(e => e.section_name === secName || e.section === secName || (sec.id && e.section_id === sec.id));
     const shift = sec.shift || 'F2F';
     const isKinder = (sec.grade_level || '').toLowerCase().includes('kinder') || secName.toLowerCase().includes('kinder') || secName.toLowerCase().includes('k1') || secName.toLowerCase().includes('k2');
 
@@ -909,8 +908,8 @@ html, body {
         { is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60 min.', slot_id: 's2' },
         { is_break: true, time: '10:00 AM – 10:25 AM', minutes: '25 min.', label: 'RECESS' },
         { is_break: false, time: '10:25 AM – 11:25 AM', minutes: '60 min.', slot_id: 's3' },
-        { is_break: true, time: '11:25 AM – 12:45 PM', minutes: '80 min.', label: 'LUNCH & SALAH' },
-        { is_break: true, time: '02:45 PM – 03:00 PM', minutes: '15 min.', label: 'SALAH & DISMISSAL' }
+        { is_break: true, time: '11:25 AM – 12:45 PM', minutes: '80 min.', label: 'LUNCH AND SALAH' },
+        { is_break: true, time: '02:45 PM – 03:00 PM', minutes: '15 min.', label: 'SALAH / SALAH & DEPARTURE' }
       ];
     } else if (shift === 'ODL - 1ST SHIFT') {
       if (isKinder) {
@@ -920,7 +919,8 @@ html, body {
           { is_break: true, time: '02:15 PM – 02:20 PM', minutes: '5 min.', label: 'TRANSITION' },
           { is_break: false, time: '02:20 PM – 03:05 PM', minutes: '45 min.', slot_id: 's2' },
           { is_break: true, time: '03:05 PM – 03:10 PM', minutes: '5 min.', label: 'TRANSITION' },
-          { is_break: false, time: '03:10 PM – 03:40 PM', minutes: '30 min.', slot_id: 's3' }
+          { is_break: false, time: '03:10 PM – 03:40 PM', minutes: '30 min.', slot_id: 's3' },
+          { is_break: true, time: '03:40 PM – 03:50 PM', minutes: '10 min.', label: 'DISMISSAL' }
         ];
       } else {
         timeline = [
@@ -928,13 +928,14 @@ html, body {
           { is_break: false, time: '12:40 PM – 01:40 PM', minutes: '60 min.', slot_id: 's1' },
           { is_break: true, time: '01:40 PM – 01:50 PM', minutes: '10 min.', label: 'TRANSITION' },
           { is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60 min.', slot_id: 's2' },
-          { is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'BREAK / TRANSITION' },
-          { is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 's3' }
+          { is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'TRANSITION AND SALAH BREAK' },
+          { is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 's3' },
+          { is_break: true, time: '04:10 PM – 04:20 PM', minutes: '10 min.', label: 'DISMISSAL' }
         ];
       }
     } else { // ODL - 2ND SHIFT
       timeline = [
-        { is_break: true, time: '02:45 PM – 03:10 PM', minutes: '25 min.', label: 'HOMEROOM GUIDANCE / ASSEMBLY' },
+        { is_break: true, time: '02:45 PM – 03:10 PM', minutes: '25 min.', label: 'HOMEROOM GUIDANCE / GENERAL ASSEMBLY' },
         { is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 's1' },
         { is_break: true, time: '04:10 PM – 04:20 PM', minutes: '10 min.', label: 'TRANSITION' },
         { is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60 min.', slot_id: 's2' },
@@ -967,7 +968,7 @@ html, body {
             <div>
               <h1 style="margin:0;">AL MUNAWWARA ISLAMIC SCHOOL</h1>
               <h2 style="margin:2px 0 0 0;">1st Term Examination Schedule</h2>
-              <p style="margin:2px 0 0 0;">Official Examination Schedule S.Y. 2026–2027</p>
+              <p style="margin:2px 0 0 0;">Term Exam Week</p>
             </div>
           </div>
 
@@ -1011,12 +1012,9 @@ html, body {
           `;
 
           EXAM_DATES.forEach(d => {
-            // Find exam matching date and slot
             const exam = secExams.find(e => {
               if (e.short_date !== d.short_date && e.day_number !== d.day_num) return false;
-              // Check time matching
               if (e.time === row.time || e.time_slot === row.time) return true;
-              // For 120m Math exams spanning slot 1 and slot 2
               if (e.duration_minutes >= 90 && (row.slot_id === 's1' || row.slot_id === 's2')) return true;
               if (row.slot_id === 's1' && e.slot_number === 1) return true;
               if (row.slot_id === 's2' && e.slot_number === 2) return true;
@@ -1027,11 +1025,12 @@ html, body {
             if (exam) {
               const color = getSubjectColor(exam.subject);
               const durText = exam.duration_minutes ? `${exam.duration_minutes} min.` : '';
+              const proctorName = exam.proctor_teacher || exam.teacher || exam.subject_teacher;
               fullHtml += `
                 <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(exam.subject)}</span>
-                    <span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(exam.teacher)}</span>
+                    <span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(proctorName)}</span>
                     ${exam.duration_minutes >= 90 ? `<span class="cell-duration-pill" style="color:${color.text};">${durText} EXTENDED</span>` : ''}
                   </div>
                 </td>
@@ -1072,22 +1071,92 @@ html, body {
     sheetsContainer.innerHTML = fullHtml;
   }
 
+  function getFacultyTimeline(shiftsSet) {
+    const hasF2F = shiftsSet.has('F2F');
+    const hasODL1 = shiftsSet.has('ODL - 1ST SHIFT');
+    const hasODL2 = shiftsSet.has('ODL - 2ND SHIFT');
+
+    let timeline = [];
+
+    if (hasF2F) {
+      timeline.push({ is_break: true, time: '07:30 AM – 07:45 AM', minutes: '15 min.', label: 'GENERAL ASSEMBLY' });
+      timeline.push({ is_break: false, time: '08:00 AM – 09:00 AM', minutes: '60 min.', slot_id: 'f2f_s1' });
+      timeline.push({ is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60 min.', slot_id: 'f2f_s2' });
+      timeline.push({ is_break: true, time: '10:00 AM – 10:25 AM', minutes: '25 min.', label: 'RECESS' });
+      timeline.push({ is_break: false, time: '10:25 AM – 11:25 AM', minutes: '60 min.', slot_id: 'f2f_s3' });
+      timeline.push({ is_break: true, time: '11:25 AM – 12:40 PM', minutes: '75 min.', label: 'LUNCH AND SALAH' });
+    }
+
+    if (hasODL1) {
+      if (!hasF2F) {
+        timeline.push({ is_break: true, time: '12:30 PM – 12:40 PM', minutes: '10 min.', label: 'GENERAL ASSEMBLY' });
+      }
+      timeline.push({ is_break: false, time: '12:40 PM – 01:40 PM', minutes: '60 min.', slot_id: 'odl1_s1' });
+      timeline.push({ is_break: true, time: '01:40 PM – 01:50 PM', minutes: '10 min.', label: 'TRANSITION' });
+      timeline.push({ is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60 min.', slot_id: 'odl1_s2' });
+      timeline.push({ is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'TRANSITION AND SALAH BREAK' });
+      timeline.push({ is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 'odl1_s3' });
+    }
+
+    if (hasODL2) {
+      if (!hasF2F && !hasODL1) {
+        timeline.push({ is_break: true, time: '02:45 PM – 03:10 PM', minutes: '25 min.', label: 'HOMEROOM GUIDANCE / GENERAL ASSEMBLY' });
+      } else if (!hasODL1) {
+        timeline.push({ is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'TRANSITION AND SALAH BREAK' });
+      }
+      timeline.push({ is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 'odl2_s1' });
+      timeline.push({ is_break: true, time: '04:10 PM – 04:20 PM', minutes: '10 min.', label: 'TRANSITION' });
+      timeline.push({ is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60 min.', slot_id: 'odl2_s2' });
+      timeline.push({ is_break: true, time: '05:20 PM – 05:30 PM', minutes: '10 min.', label: 'TRANSITION' });
+      timeline.push({ is_break: false, time: '05:30 PM – 06:30 PM', minutes: '60 min.', slot_id: 'odl2_s3' });
+      timeline.push({ is_break: true, time: '06:30 PM – 06:45 PM', minutes: '15 min.', label: 'SALAH & DISMISSAL' });
+    }
+
+    if (hasF2F && !hasODL1 && !hasODL2) {
+      timeline.push({ is_break: true, time: '02:45 PM – 03:00 PM', minutes: '15 min.', label: 'SALAH / SALAH & DEPARTURE' });
+    }
+
+    // Default full school timeline fallback if empty
+    if (timeline.length === 0) {
+      timeline = [
+        { is_break: true, time: '07:30 AM – 07:45 AM', minutes: '15 min.', label: 'GENERAL ASSEMBLY' },
+        { is_break: false, time: '08:00 AM – 09:00 AM', minutes: '60 min.', slot_id: 'f2f_s1' },
+        { is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60 min.', slot_id: 'f2f_s2' },
+        { is_break: true, time: '10:00 AM – 10:25 AM', minutes: '25 min.', label: 'RECESS' },
+        { is_break: false, time: '10:25 AM – 11:25 AM', minutes: '60 min.', slot_id: 'f2f_s3' },
+        { is_break: true, time: '11:25 AM – 12:40 PM', minutes: '75 min.', label: 'LUNCH AND SALAH' },
+        { is_break: false, time: '12:40 PM – 01:40 PM', minutes: '60 min.', slot_id: 'odl1_s1' },
+        { is_break: true, time: '01:40 PM – 01:50 PM', minutes: '10 min.', label: 'TRANSITION' },
+        { is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60 min.', slot_id: 'odl1_s2' },
+        { is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'TRANSITION AND SALAH BREAK' },
+        { is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 'odl2_s1' },
+        { is_break: true, time: '04:10 PM – 04:20 PM', minutes: '10 min.', label: 'TRANSITION' },
+        { is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60 min.', slot_id: 'odl2_s2' },
+        { is_break: true, time: '05:20 PM – 05:30 PM', minutes: '10 min.', label: 'TRANSITION' },
+        { is_break: false, time: '05:30 PM – 06:30 PM', minutes: '60 min.', slot_id: 'odl2_s3' },
+        { is_break: true, time: '06:30 PM – 06:45 PM', minutes: '15 min.', label: 'SALAH & DISMISSAL' }
+      ];
+    }
+
+    return timeline;
+  }
+
   function renderMultipleTeacherExamSheets(tIds) {
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
     let fullHtml = '';
 
     tIds.forEach(tid => {
       const data = ALL_TEACHERS_DATA[tid];
-      const tExams = EXAM_RECORDS.filter(e => e.teacher_id === tid);
+      const tExams = EXAM_RECORDS.filter(e => (e.proctor_teacher_id === tid || e.teacher_id === tid));
       if (tExams.length === 0 && !data) return;
 
-      const teacherDisplayName = data ? (data.canonical_name || data.teacher_name || tid) : (tExams[0].teacher || tid);
+      const teacherDisplayName = data ? (data.canonical_name || data.teacher_name || tid) : (tExams[0].proctor_teacher || tExams[0].teacher || tid);
       const totalCount = tExams.length;
       const subjsList = Array.from(new Set(tExams.map(e => e.subject))).join(', ') || 'Proctored Subjects';
       const metaStr = `${totalCount} Exam Session${totalCount === 1 ? '' : 's'} • ${subjsList}`;
 
-      // Extract unique time slots for this teacher
-      const uniqueSlots = Array.from(new Set(tExams.map(e => e.time_slot || e.time))).sort();
+      const shiftsSet = new Set(tExams.map(e => e.shift || 'F2F'));
+      const timeline = getFacultyTimeline(shiftsSet);
 
       fullHtml += `
         <div class="timetable-sheet">
@@ -1123,54 +1192,79 @@ html, body {
               <tbody>
       `;
 
-      if (uniqueSlots.length === 0) {
-        fullHtml += `
-          <tr>
-            <td colspan="6" style="padding: 30px; text-align: center; color: #64748b; font-weight: 700; font-size: 13px;">
-              No exam proctoring sessions scheduled for ${esc(teacherDisplayName)}.
-            </td>
-          </tr>
-        `;
-      } else {
-        uniqueSlots.forEach(slotTime => {
+      timeline.forEach(row => {
+        if (row.is_break) {
+          fullHtml += `
+            <tr class="row-break">
+              <td class="cell-time">${esc(row.time)}</td>
+              <td class="cell-mins">${esc(row.minutes)}</td>
+              <td colspan="4" class="cell-break">${esc(row.label)}</td>
+            </tr>
+          `;
+        } else {
           fullHtml += `
             <tr>
-              <td class="cell-time">${esc(slotTime)}</td>
-              <td class="cell-mins">60 min.</td>
+              <td class="cell-time">${esc(row.time)}</td>
+              <td class="cell-mins">${esc(row.minutes)}</td>
           `;
 
           EXAM_DATES.forEach(d => {
-            const matches = tExams.filter(e => (e.short_date === d.short_date || e.day_number === d.day_num) && (e.time_slot === slotTime || e.time === slotTime));
+            const matches = tExams.filter(e => {
+              if (e.short_date !== d.short_date && e.day_number !== d.day_num) return false;
+              if (e.time_slot === row.time || e.time === row.time) return true;
+              if (e.duration_minutes >= 90 && (row.time.includes('08:00 AM') || row.time.includes('09:00 AM') || row.time.includes('12:40 PM') || row.time.includes('01:50 PM') || row.time.includes('03:10 PM') || row.time.includes('04:20 PM'))) {
+                return true;
+              }
+              return false;
+            });
 
             if (matches.length === 1) {
               const exam = matches[0];
               const color = getSubjectColor(exam.subject);
               const secShort = exam.section_name.replace('GRADE ', 'G').replace('Grade ', 'G').replace('Kinder ', 'K');
+              const modTag = exam.shift === 'F2F' ? 'F2F' : (exam.shift.includes('2ND') ? 'ODL 2' : 'ODL 1');
               fullHtml += `
                 <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(exam.subject)}</span>
-                    <span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(secShort)}</span>
+                    <span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(secShort)} • ${modTag}</span>
+                    ${exam.duration_minutes >= 90 ? `<span class="cell-duration-pill" style="color:${color.text};">${exam.duration_minutes}m EXTENDED</span>` : ''}
                   </div>
                 </td>
               `;
             } else if (matches.length > 1) {
-              fullHtml += `
-                <td class="cell-class" style="background:#fee2e2; border-color:#ef4444; color:#991b1b;">
-                  <div class="cell-class-inner">
-                    <span style="font-weight:900; font-size:9px; background:#fecaca; padding:1px 4px; border-radius:3px;">⚠️ CONFLICT</span>
-                    ${matches.map(m => `<span class="cell-subject-sec" style="font-size:11px;">${esc(m.subject)}: ${esc(m.section_name)}</span>`).join('')}
-                  </div>
-                </td>
-              `;
+              // Check if allowed merged ODL
+              const isAllowedMerged = matches.every(m => m.shift && m.shift.includes('ODL') && m.subject_id === matches[0].subject_id);
+              if (isAllowedMerged) {
+                const exam = matches[0];
+                const color = getSubjectColor(exam.subject);
+                const secsStr = matches.map(m => m.section_name.replace('GRADE ', 'G').replace('Grade ', 'G')).join(' & ');
+                fullHtml += `
+                  <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                    <div class="cell-class-inner">
+                      <span class="cell-subject-sec">${esc(exam.subject)}</span>
+                      <span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(secsStr)} (Merged ODL)</span>
+                    </div>
+                  </td>
+                `;
+              } else {
+                fullHtml += `
+                  <td class="cell-class" style="background:#fee2e2; border-color:#ef4444; color:#991b1b;">
+                    <div class="cell-class-inner">
+                      <span style="font-weight:900; font-size:9px; background:#fecaca; padding:1px 4px; border-radius:3px;">⚠️ CONFLICT</span>
+                      ${matches.map(m => `<span class="cell-subject-sec" style="font-size:11px;">${esc(m.subject)}: ${esc(m.section_name)}</span>`).join('')}
+                    </div>
+                  </td>
+                `;
+              }
             } else {
               fullHtml += `<td class="cell-empty"></td>`;
             }
           });
 
           fullHtml += `</tr>`;
-        });
-      }
+        }
+      });
 
       fullHtml += `
               </tbody>
