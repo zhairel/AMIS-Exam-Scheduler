@@ -13,7 +13,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <!-- Embedded Master Weekly Data -->
-<script src="teacher_weekly_schedules.js"></script>
+<script src="teacher_weekly_schedules.js?v=20260818_0800"></script>
 
 <style>
 :root {
@@ -704,26 +704,26 @@ html, body {
   let ALL_TEACHERS_DATA = {};
 
   function init() {
-    if (typeof AMIS_TEACHER_WEEKLY_SCHEDULES !== 'undefined') {
-      ALL_TEACHERS_DATA = AMIS_TEACHER_WEEKLY_SCHEDULES;
-      populateTeacherDropdown();
-      handleInitialRoute();
-    } else {
-      fetch('teacher_weekly_schedules.json')
-        .then(r => r.json())
-        .then(data => {
-          ALL_TEACHERS_DATA = data;
+    fetch('teacher_weekly_schedules.json?v=' + Date.now())
+      .then(r => r.json())
+      .then(data => {
+        ALL_TEACHERS_DATA = data;
+        populateTeacherDropdown();
+        handleInitialRoute();
+      })
+      .catch(err => {
+        if (typeof AMIS_TEACHER_WEEKLY_SCHEDULES !== 'undefined') {
+          ALL_TEACHERS_DATA = AMIS_TEACHER_WEEKLY_SCHEDULES;
           populateTeacherDropdown();
           handleInitialRoute();
-        })
-        .catch(err => {
+        } else {
           document.getElementById('sheetsContainer').innerHTML = `
             <div style="padding:40px; text-align:center; color:#b91c1c; font-weight:800;">
-              Failed to load teacher schedules dataset. Please ensure teacher_weekly_schedules.js / JSON exists.
+              Failed to load teacher schedules dataset.
             </div>
           `;
-        });
-    }
+        }
+      });
 
     document.getElementById('teacherPicker').addEventListener('change', function(e) {
       const val = e.target.value;

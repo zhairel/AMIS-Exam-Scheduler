@@ -15,8 +15,8 @@ HTML_CONTENT = r"""<!doctype html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <!-- Embedded Master Section Class Data & Teacher Schedules -->
-<script src="class_schedules_data.js"></script>
-<script src="teacher_weekly_schedules.js"></script>
+<script src="class_schedules_data.js?v=20260818_0800"></script>
+<script src="teacher_weekly_schedules.js?v=20260818_0800"></script>
 
 <style>
 :root {
@@ -870,32 +870,26 @@ html, body {
   }
 
   async function init() {
-    if (window.OFFICIAL_CLASS_SCHEDULES && window.OFFICIAL_CLASS_SCHEDULES.length > 0) {
-      SECTIONS_DATA = window.OFFICIAL_CLASS_SCHEDULES;
-    } else if (typeof OFFICIAL_CLASS_SCHEDULES !== 'undefined' && OFFICIAL_CLASS_SCHEDULES.length > 0) {
-      SECTIONS_DATA = OFFICIAL_CLASS_SCHEDULES;
-    } else {
-      try {
-        const resp = await fetch('class_schedules_data.json?v=' + Date.now());
-        if (resp.ok) {
-          SECTIONS_DATA = await resp.json();
-        }
-      } catch (e) {
-        console.warn('Failed to load JSON:', e);
+    try {
+      const resp = await fetch('class_schedules_data.json?v=' + Date.now());
+      if (resp.ok) {
+        SECTIONS_DATA = await resp.json();
+      } else if (window.CLASS_SCHEDULES_DATA) {
+        SECTIONS_DATA = window.CLASS_SCHEDULES_DATA;
       }
+    } catch (e) {
+      if (window.CLASS_SCHEDULES_DATA) SECTIONS_DATA = window.CLASS_SCHEDULES_DATA;
     }
 
-    if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) {
-      ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
-    } else {
-      try {
-        const tResp = await fetch('teacher_weekly_schedules.json?v=' + Date.now());
-        if (tResp.ok) {
-          ALL_TEACHERS_DATA = await tResp.json();
-        }
-      } catch (e) {
-        console.warn('Failed to load teacher JSON:', e);
+    try {
+      const tResp = await fetch('teacher_weekly_schedules.json?v=' + Date.now());
+      if (tResp.ok) {
+        ALL_TEACHERS_DATA = await tResp.json();
+      } else if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) {
+        ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
       }
+    } catch (e) {
+      if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
     }
 
     if (!SECTIONS_DATA || SECTIONS_DATA.length === 0) {
