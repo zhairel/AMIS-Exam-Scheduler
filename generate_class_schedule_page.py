@@ -794,21 +794,9 @@ html, body {
       </select>
     </div>
 
-    <button id="btnPrint" class="btn-action btn-print" onclick="window.print()">
-      <svg viewBox="0 0 24 24"><path d="M18 3H6V7H18V3M19 12A1 1 0 1 1 18 11A1 1 0 0 1 19 12M16 19H8V14H16V19M19 8H5A3 3 0 0 0 2 11V17H6V21H18V17H22V11A3 3 0 0 0 19 8Z"/></svg>
-      Print
-    </button>
-    <a href="index.html" class="btn-action btn-back" style="background:#ffffff; color:#0f172a; border-color:#cbd5e1; font-weight:700;" title="Back to Schedule Home">
+    <a href="index.html" class="btn-action btn-back" style="background:#ffffff; color:#0f172a; border-color:#cbd5e1; font-weight:750;" title="Back to Home">
       <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-      Schedule Home
-    </a>
-    <a href="faculty-timetable-class.html" class="btn-action btn-back" title="View Official Weekly Faculty Class Timetables">
-      <svg viewBox="0 0 24 24"><path d="M12 4A4 4 0 0 1 16 8A4 4 0 0 1 12 12A4 4 0 0 1 8 8A4 4 0 0 1 12 4M12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z"/></svg>
-      Faculty Timetable (Class)
-    </a>
-    <a href="exam-schedule.html" class="btn-action btn-back">
-      <svg viewBox="0 0 24 24"><path d="M19 19H5V8H19M16 1V3H8V1H6V3H5C3.89 3 3 3.89 3 5V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V5C21 3.89 20.1 3 19 3H18V1M17 12H12V17H17V12Z"/></svg>
-      Exam Schedule
+      Home
     </a>
   </div>
 </header>
