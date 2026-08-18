@@ -3361,18 +3361,6 @@
       }
     ]
   },
-  "tchr_abegail": {
-    "teacher_id": "tchr_abegail",
-    "faculty_id": "tchr_abegail",
-    "teacher_name": "Teacher Abegail",
-    "canonical_name": "Teacher Abegail",
-    "department": "High School Faculty",
-    "title": "Faculty Member",
-    "total_classes": 0,
-    "total_teaching_periods": 0,
-    "subjects": [],
-    "rows": []
-  },
   "tchr_angeleni": {
     "teacher_id": "tchr_angeleni",
     "faculty_id": "tchr_angeleni",
@@ -18958,18 +18946,6 @@
       }
     ]
   },
-  "tchr_marie": {
-    "teacher_id": "tchr_marie",
-    "faculty_id": "tchr_marie",
-    "teacher_name": "Teacher Marie",
-    "canonical_name": "Teacher Marie",
-    "department": "High School Faculty",
-    "title": "Faculty Member",
-    "total_classes": 0,
-    "total_teaching_periods": 0,
-    "subjects": [],
-    "rows": []
-  },
   "tchr_monisa": {
     "teacher_id": "tchr_monisa",
     "faculty_id": "tchr_monisa",
@@ -28193,18 +28169,6 @@
       }
     ]
   },
-  "tchr_shanen": {
-    "teacher_id": "tchr_shanen",
-    "faculty_id": "tchr_shanen",
-    "teacher_name": "Teacher Shanen",
-    "canonical_name": "Teacher Shanen",
-    "department": "High School Faculty",
-    "title": "Faculty Member",
-    "total_classes": 0,
-    "total_teaching_periods": 0,
-    "subjects": [],
-    "rows": []
-  },
   "tchr_shirehan": {
     "teacher_id": "tchr_shirehan",
     "faculty_id": "tchr_shirehan",
@@ -30906,18 +30870,6 @@
         }
       }
     ]
-  },
-  "tchr_thea": {
-    "teacher_id": "tchr_thea",
-    "faculty_id": "tchr_thea",
-    "teacher_name": "Teacher Thea",
-    "canonical_name": "Teacher Thea",
-    "department": "High School Faculty",
-    "title": "Faculty Member",
-    "total_classes": 0,
-    "total_teaching_periods": 0,
-    "subjects": [],
-    "rows": []
   },
   "tchr_wardah": {
     "teacher_id": "tchr_wardah",
@@ -38128,18 +38080,6 @@
         }
       }
     ]
-  },
-  "tchr_raffy": {
-    "teacher_id": "tchr_raffy",
-    "faculty_id": "tchr_raffy",
-    "teacher_name": "Ustadh Raffy",
-    "canonical_name": "Ustadh Raffy",
-    "department": "ISAL Faculty",
-    "title": "ISAL Teacher",
-    "total_classes": 0,
-    "total_teaching_periods": 0,
-    "subjects": [],
-    "rows": []
   },
   "tchr_raslina": {
     "teacher_id": "tchr_raslina",

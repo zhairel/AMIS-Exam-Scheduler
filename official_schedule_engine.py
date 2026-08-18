@@ -546,8 +546,11 @@ for tinfo in sorted(TEACHER_REGISTRY, key=lambda x: x['canonical_name']):
     title = tinfo['title']
     
     t_recs = [r for r in flat_schedule_records if r['teacher_id'] == tid]
-    distinct_subjs = sorted(list(set(r['subject'] for r in t_recs)))
     total_class_count = len(t_recs)
+    if total_class_count == 0:
+        continue
+        
+    distinct_subjs = sorted(list(set(r['subject'] for r in t_recs)))
     
     # Extract unique time slots for this specific teacher
     unique_slots = []

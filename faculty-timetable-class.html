@@ -746,11 +746,13 @@ html, body {
     const picker = document.getElementById('teacherPicker');
     picker.innerHTML = '<option value="ALL_FACULTY">All Staff / Faculty (Print All)</option>';
 
-    const teacherList = Object.values(ALL_TEACHERS_DATA).sort((a, b) => {
-      const nameA = a.canonical_name || a.teacher_name || a.teacher_id;
-      const nameB = b.canonical_name || b.teacher_name || b.teacher_id;
-      return nameA.localeCompare(nameB);
-    });
+    const teacherList = Object.values(ALL_TEACHERS_DATA)
+      .filter(t => (t.total_classes || t.total_teaching_periods || 0) > 0)
+      .sort((a, b) => {
+        const nameA = a.canonical_name || a.teacher_name || a.teacher_id;
+        const nameB = b.canonical_name || b.teacher_name || b.teacher_id;
+        return nameA.localeCompare(nameB);
+      });
 
     teacherList.forEach(t => {
       const opt = document.createElement('option');

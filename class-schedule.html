@@ -944,7 +944,7 @@ html, body {
   }
 
   function populateTeacherDropdown() {
-    let teachers = Object.values(ALL_TEACHERS_DATA || {});
+    let teachers = Object.values(ALL_TEACHERS_DATA || {}).filter(t => (t.total_classes || t.total_teaching_periods || 0) > 0);
     teachers = teachers.sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name));
 
     let html = '<option value="">All Staff / Faculty</option>';
