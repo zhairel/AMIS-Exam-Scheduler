@@ -890,14 +890,23 @@ html, body {
     }
 
     const masterSlots = [
-      { time: '08:00 AM – 09:00 AM', mins: '60 min.', slot_id: 'f2f_s1', label: 'F2F Slot 1' },
-      { time: '09:00 AM – 10:00 AM', mins: '60 min.', slot_id: 'f2f_s2', label: 'F2F Slot 2' },
-      { time: '10:25 AM – 11:25 AM', mins: '60 min.', slot_id: 'f2f_s3', label: 'F2F Slot 3' },
-      { time: '12:40 PM – 01:40 PM', mins: '60 min.', slot_id: 'odl1_s1', label: 'ODL 1st Slot 1' },
-      { time: '01:50 PM – 02:50 PM', mins: '60 min.', slot_id: 'odl1_s2', label: 'ODL 1st Slot 2' },
-      { time: '03:10 PM – 04:10 PM', mins: '60 min.', slot_id: 'odl1_s3_odl2_s1', label: '1st Shift S3 / 2nd Shift S1' },
-      { time: '04:20 PM – 05:20 PM', mins: '60 min.', slot_id: 'odl2_s2_shs_s4', label: '2nd Shift S2 / SHS Slot 4' },
-      { time: '05:30 PM – 06:30 PM', mins: '60 min.', slot_id: 'odl2_s3', label: 'ODL 2nd Slot 3' }
+      { time: '07:30 AM – 07:45 AM', mins: '15 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
+      { time: '08:00 AM – 09:00 AM', mins: '60 min.', type: 'exam', slot_id: 'f2f_s1' },
+      { time: '09:00 AM – 10:00 AM', mins: '60 min.', type: 'exam', slot_id: 'f2f_s2' },
+      { time: '10:00 AM – 10:25 AM', mins: '25 min.', type: 'break', label: 'RECESS' },
+      { time: '10:25 AM – 11:25 AM', mins: '60 min.', type: 'exam', slot_id: 'f2f_s3' },
+      { time: '11:25 AM', mins: '--', type: 'break', label: 'FACE TO FACE DISMISSAL' },
+      { time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
+      { time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_id: 'odl1_s1' },
+      { time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
+      { time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_id: 'odl1_s2' },
+      { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION AND SALAH' },
+      { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_id: 'odl1_s3_odl2_s1' },
+      { time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
+      { time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_id: 'odl2_s2_shs_s4' },
+      { time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
+      { time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_id: 'odl2_s3' },
+      { time: '06:30 PM', mins: '--', type: 'break', label: 'DISMISSAL' }
     ];
 
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
@@ -940,32 +949,41 @@ html, body {
       `;
 
       masterSlots.forEach(slot => {
-        const hasAnyExam = tExams.some(e => e.time_slot === slot.time || e.time === slot.time);
-        fullHtml += `
-          <tr>
-            <td class="cell-time">${esc(slot.time)}</td>
-            <td class="cell-mins">${esc(slot.mins)}</td>
-        `;
+        if (slot.type === 'break') {
+          fullHtml += `
+            <tr>
+              <td class="cell-time">${esc(slot.time)}</td>
+              <td class="cell-mins">${esc(slot.mins)}</td>
+              <td class="cell-break" colspan="4">${esc(slot.label)}</td>
+            </tr>
+          `;
+        } else {
+          fullHtml += `
+            <tr>
+              <td class="cell-time">${esc(slot.time)}</td>
+              <td class="cell-mins">${esc(slot.mins)}</td>
+          `;
 
-        EXAM_DATES.forEach(d => {
-          const match = tExams.find(e => (e.day_number === d.day_num || e.short_date === d.short_date) && (e.time_slot === slot.time || e.time === slot.time));
-          if (match) {
-            const color = getSubjectColor(match.subject);
-            fullHtml += `
-              <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
-                <div class="cell-class-inner">
-                  <span class="cell-subject-sec">${esc(match.subject)}</span>
-                  <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                  <span class="cell-modality-text">${esc(formatModalityShift(match.shift))}</span>
-                </div>
-              </td>
-            `;
-          } else {
-            fullHtml += `<td class="cell-empty"></td>`;
-          }
-        });
+          EXAM_DATES.forEach(d => {
+            const match = tExams.find(e => (e.day_number === d.day_num || e.short_date === d.short_date) && (e.time_slot === slot.time || e.time === slot.time));
+            if (match) {
+              const color = getSubjectColor(match.subject);
+              fullHtml += `
+                <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                  <div class="cell-class-inner">
+                    <span class="cell-subject-sec">${esc(match.subject)}</span>
+                    <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
+                    <span class="cell-modality-text">${esc(formatModalityShift(match.shift))}</span>
+                  </div>
+                </td>
+              `;
+            } else {
+              fullHtml += `<td class="cell-empty"></td>`;
+            }
+          });
 
-        fullHtml += `</tr>`;
+          fullHtml += `</tr>`;
+        }
       });
 
       fullHtml += `
