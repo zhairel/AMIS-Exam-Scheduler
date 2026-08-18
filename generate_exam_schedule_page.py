@@ -607,9 +607,9 @@ html, body {
     <div class="filter-group">
       <span class="filter-label">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4A4 4 0 0 1 16 8A4 4 0 0 1 12 12A4 4 0 0 1 8 8A4 4 0 0 1 12 4M12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z"/></svg>
-        Proctor / Faculty:
+        Faculty / Teacher:
       </span>
-      <select id="teacherSelect" class="filter-select" aria-label="Filter by Staff or Faculty">
+      <select id="teacherSelect" class="filter-select" aria-label="Filter by Faculty or Teacher">
         <option value="">All Staff / Faculty</option>
       </select>
     </div>
@@ -663,7 +663,7 @@ html, body {
       <svg viewBox="0 0 24 24"><path d="M19 3H5C3.89 3 3 3.89 3 5V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V5C21 3.89 20.1 3 19 3M19 19H5V8H19V19M7 10H12V15H7V10Z"/></svg>
       Class Schedule
     </a>
-    <a href="faculty-timetable-exam.html" class="btn-action btn-back" title="View Faculty Proctoring Timetables">
+    <a href="faculty-timetable-exam.html" class="btn-action btn-back" title="View Faculty Examination Timetables">
       <svg viewBox="0 0 24 24"><path d="M12 4A4 4 0 0 1 16 8A4 4 0 0 1 12 12A4 4 0 0 1 8 8A4 4 0 0 1 12 4M12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z"/></svg>
       Faculty Timetable (Exam)
     </a>
@@ -815,9 +815,9 @@ html, body {
   function populateTeacherDropdown() {
     const teacherExamCounts = {};
     EXAM_RECORDS.forEach(e => {
-      const pid = e.proctor_teacher_id || e.teacher_id;
-      if (pid) {
-        teacherExamCounts[pid] = (teacherExamCounts[pid] || 0) + 1;
+      const tid = e.teacher_id;
+      if (tid) {
+        teacherExamCounts[tid] = (teacherExamCounts[tid] || 0) + 1;
       }
     });
 
@@ -888,7 +888,7 @@ html, body {
     if (tVal) {
       if (tVal === 'ALL_FACULTY') {
         const teacherIds = Object.values(ALL_TEACHERS_DATA)
-          .filter(t => EXAM_RECORDS.some(e => (e.proctor_teacher_id === t.teacher_id || e.teacher_id === t.teacher_id)))
+          .filter(t => EXAM_RECORDS.some(e => e.teacher_id === t.teacher_id))
           .sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name))
           .map(t => t.teacher_id);
         renderMultipleTeacherExamSheets(teacherIds);
@@ -1045,12 +1045,11 @@ html, body {
             if (exam) {
               const color = getSubjectColor(exam.subject);
               const durText = exam.duration_minutes ? `${exam.duration_minutes} min.` : '';
-              const proctorName = exam.proctor_teacher || exam.teacher || exam.subject_teacher;
               fullHtml += `
                 <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(exam.subject)}</span>
-                    <span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(proctorName)}</span>
+                    <span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(exam.teacher)}</span>
                     ${exam.duration_minutes >= 90 ? `<span class="cell-duration-pill" style="color:${color.text};">${durText} EXTENDED</span>` : ''}
                   </div>
                 </td>
@@ -1136,7 +1135,6 @@ html, body {
       timeline.push({ is_break: true, time: '02:45 PM – 03:00 PM', minutes: '15 min.', label: 'SALAH / SALAH & DEPARTURE' });
     }
 
-    // Default full school timeline fallback if empty
     if (timeline.length === 0) {
       timeline = [
         { is_break: true, time: '07:30 AM – 07:45 AM', minutes: '15 min.', label: 'GENERAL ASSEMBLY' },
@@ -1167,12 +1165,12 @@ html, body {
 
     tIds.forEach(tid => {
       const data = ALL_TEACHERS_DATA[tid];
-      const tExams = EXAM_RECORDS.filter(e => (e.proctor_teacher_id === tid || e.teacher_id === tid));
+      const tExams = EXAM_RECORDS.filter(e => e.teacher_id === tid);
       if (tExams.length === 0 && !data) return;
 
-      const teacherDisplayName = data ? (data.canonical_name || data.teacher_name || tid) : (tExams[0].proctor_teacher || tExams[0].teacher || tid);
+      const teacherDisplayName = data ? (data.canonical_name || data.teacher_name || tid) : (tExams[0].teacher || tid);
       const totalCount = tExams.length;
-      const subjsList = Array.from(new Set(tExams.map(e => e.subject))).join(', ') || 'Proctored Subjects';
+      const subjsList = Array.from(new Set(tExams.map(e => e.subject))).join(', ') || 'Assigned Subjects';
       const metaStr = `${totalCount} Exam Session${totalCount === 1 ? '' : 's'} • ${subjsList}`;
 
       const shiftsSet = new Set(tExams.map(e => e.shift || 'F2F'));
@@ -1184,7 +1182,7 @@ html, body {
             <img src="amis_logo.png" alt="AMIS Logo" style="width:48px; height:48px; border-radius:50%; object-fit:contain;">
             <div>
               <h1 style="margin:0;">AL MUNAWWARA ISLAMIC SCHOOL</h1>
-              <h2 style="margin:2px 0 0 0;">Faculty Examination Proctoring Timetable</h2>
+              <h2 style="margin:2px 0 0 0;">Faculty Examination Timetable</h2>
               <p style="margin:2px 0 0 0;">Term Exam Week</p>
             </div>
           </div>
@@ -1253,7 +1251,6 @@ html, body {
                 </td>
               `;
             } else if (matches.length > 1) {
-              // Check if allowed merged ODL
               const isAllowedMerged = matches.every(m => m.shift && m.shift.includes('ODL') && m.subject_id === matches[0].subject_id);
               if (isAllowedMerged) {
                 const exam = matches[0];
@@ -1271,7 +1268,7 @@ html, body {
                 fullHtml += `
                   <td class="cell-class" style="background:#fee2e2; border-color:#ef4444; color:#991b1b;">
                     <div class="cell-class-inner">
-                      <span style="font-weight:900; font-size:9px; background:#fecaca; padding:1px 4px; border-radius:3px;">⚠️ CONFLICT</span>
+                      <span style="font-weight:900; font-size:9px; background:#fecaca; padding:1px 4px; border-radius:3px;">⚠️ TEACHER SCHEDULE CONFLICT</span>
                       ${matches.map(m => `<span class="cell-subject-sec" style="font-size:11px;">${esc(m.subject)}: ${esc(m.section_name)}</span>`).join('')}
                     </div>
                   </td>
@@ -1357,4 +1354,4 @@ html, body {
 with open(os.path.join(BASE_DIR, "exam-schedule.html"), "w", encoding="utf-8") as f:
     f.write(HTML_TEMPLATE)
 
-print("✓ Successfully regenerated exam-schedule.html with rich break and activity rows!")
+print("✓ Successfully regenerated exam-schedule.html with pure Subject Teacher architecture!")

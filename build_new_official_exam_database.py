@@ -110,7 +110,7 @@ def normalize_subject(raw_subj):
     clean_id = "subj_" + re.sub(r'[^a-z0-9]+', '_', s_low).strip('_')
     return clean_id, s
 
-# Extract exam requirements with section_id + subject_id matching
+# Extract exam requirements with section_id + subject_id matching to actual subject teacher
 exam_items = []
 seen_exam_keys = set()
 
@@ -124,8 +124,8 @@ for sec_idx, sec in enumerate(sections, start=1):
     elif grade == 'Grade  6': grade = 'Grade 6'
     shift = sec['shift']
     
-    # Map section subjects from canonical class records
-    sec_subjs = {} # subject_id -> { 'subject': ..., 'subject_teacher': ..., 'subject_teacher_id': ... }
+    # Map section subjects to their actual canonical subject teacher from class records
+    sec_subjs = {} # subject_id -> { 'subject': ..., 'teacher': ..., 'teacher_id': ... }
     
     for p in sec['periods']:
         if p.get('is_merged_all_days'):
@@ -139,12 +139,12 @@ for sec_idx, sec in enumerate(sections, start=1):
                     if t_res:
                         tchr_id = t_res['id']
                         tchr_name = t_res['canonical_name']
-                    if subj_id not in sec_subjs or (not sec_subjs[subj_id]['subject_teacher'] and tchr_name):
+                    if subj_id not in sec_subjs or (not sec_subjs[subj_id]['teacher'] and tchr_name):
                         sec_subjs[subj_id] = {
                             'subject_id': subj_id,
                             'subject': clean_subj,
-                            'subject_teacher': tchr_name,
-                            'subject_teacher_id': tchr_id
+                            'teacher': tchr_name,
+                            'teacher_id': tchr_id
                         }
         else:
             for day, cell in (p.get('days') or {}).items():
@@ -158,12 +158,12 @@ for sec_idx, sec in enumerate(sections, start=1):
                         if t_res:
                             tchr_id = t_res['id']
                             tchr_name = t_res['canonical_name']
-                        if subj_id not in sec_subjs or (not sec_subjs[subj_id]['subject_teacher'] and tchr_name):
+                        if subj_id not in sec_subjs or (not sec_subjs[subj_id]['teacher'] and tchr_name):
                             sec_subjs[subj_id] = {
                                 'subject_id': subj_id,
                                 'subject': clean_subj,
-                                'subject_teacher': tchr_name,
-                                'subject_teacher_id': tchr_id
+                                'teacher': tchr_name,
+                                'teacher_id': tchr_id
                             }
                             
     for subj_id, subj_info in sec_subjs.items():
@@ -173,8 +173,8 @@ for sec_idx, sec in enumerate(sections, start=1):
         seen_exam_keys.add(unique_key)
         
         clean_subj = subj_info['subject']
-        subj_tchr = subj_info['subject_teacher']
-        subj_tid = subj_info['subject_teacher_id']
+        tchr = subj_info['teacher']
+        tid = subj_info['teacher_id']
         
         # Duration allocation
         is_hs = grade in ["Grade 7", "Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"] or dept in ["Junior High School", "Senior High School"]
@@ -192,30 +192,24 @@ for sec_idx, sec in enumerate(sections, start=1):
         else:
             duration = 60
 
-        # Exact Teacher Corrections
+        # Exact Subject Teacher Corrections
         if 'KHABAAB' in sname.upper() and ('Arabic' in clean_subj or 'ARABIC' in clean_subj.upper()):
-            subj_tchr = "Ustadh Faidh"
+            tchr = "Ustadh Faidh"
         if ('AS\'AD' in sname.upper() or 'ASAD' in sname.upper()) and ('GMRC' in clean_subj or 'Values' in clean_subj):
-            subj_tchr = "Ustadha Saliha"
+            tchr = "Ustadha Saliha"
         if ('AS\'AD' in sname.upper() or 'ASAD' in sname.upper()) and ('Arabic' in clean_subj or 'ARABIC' in clean_subj.upper()):
-            subj_tchr = "Ustadh Faidh"
+            tchr = "Ustadh Faidh"
         if 'DIHYA' in sname.upper() and ('Math' in clean_subj or 'Mathematics' in clean_subj):
-            subj_tchr = "Teacher Saimonah"
+            tchr = "Teacher Saimonah"
         if 'DIHYA' in sname.upper() and 'SHAF' in clean_subj:
-            subj_tchr = "Ustadh Faidh"
+            tchr = "Ustadh Faidh"
         if 'USAYD' in sname.upper() and ('Eng' in clean_subj or 'English' in clean_subj):
-            subj_tchr = "Teacher Jenny"
+            tchr = "Teacher Jenny"
 
-        t_can = resolve_teacher(subj_tchr)
+        t_can = resolve_teacher(tchr)
         if t_can:
-            subj_tid = t_can['id']
-            subj_tchr = t_can['canonical_name']
-
-        # Proctor Assignment:
-        # For Qur'an, proctor_teacher_id = subject_teacher_id (actual Qur'an teacher required)
-        # For other subjects, proctor_teacher_id defaults to subject_teacher_id
-        proctor_tchr = subj_tchr or "Assigned Faculty"
-        proctor_tid = subj_tid or "unassigned"
+            tid = t_can['id']
+            tchr = t_can['canonical_name']
 
         exam_items.append({
             'exam_term': "1st Term",
@@ -226,14 +220,8 @@ for sec_idx, sec in enumerate(sections, start=1):
             'shift': shift,
             'subject_id': subj_id,
             'subject': clean_subj,
-            'subject_teacher_id': subj_tid or "unassigned",
-            'subject_teacher': subj_tchr or "Assigned Faculty",
-            'subject_teacher_name': subj_tchr or "Assigned Faculty",
-            'proctor_teacher_id': proctor_tid,
-            'proctor_teacher': proctor_tchr,
-            'proctor_teacher_name': proctor_tchr,
-            'teacher_id': proctor_tid,
-            'teacher': proctor_tchr,
+            'teacher_id': tid or "unassigned",
+            'teacher': tchr or "Assigned Faculty",
             'duration_minutes': duration
         })
 
@@ -332,14 +320,14 @@ def solve_exam_schedule(option_name, seed=42):
             model.Add(dev >= target_int - day_sum)
             sec_dev_terms.append(dev)
 
-    # Proctor Conflict Constraint: Real-time overlap prevention across all shifts
-    proctor_to_sessions = defaultdict(list)
+    # Actual Subject Teacher Conflict Constraint: Prevent simultaneous teaching/exam conflicts
+    teacher_to_sessions = defaultdict(list)
     for i, sess in enumerate(exam_items):
-        pid = sess['proctor_teacher_id']
-        if pid and pid != "unassigned":
-            proctor_to_sessions[pid].append(i)
+        tid = sess['teacher_id']
+        if tid and tid != "unassigned":
+            teacher_to_sessions[tid].append(i)
 
-    for pid, indices in proctor_to_sessions.items():
+    for tid, indices in teacher_to_sessions.items():
         for i_idx, i in enumerate(indices):
             for j in indices[i_idx + 1:]:
                 s_i = exam_items[i]
@@ -366,13 +354,13 @@ def solve_exam_schedule(option_name, seed=42):
                                     model.Add(x[i, d, s1] + x[j, d, s2] <= 1)
 
     tchr_dev_terms = []
-    for pid, indices in proctor_to_sessions.items():
+    for tid, indices in teacher_to_sessions.items():
         t_count = len(indices)
         target_per_day = t_count / 4.0
         target_int = int(round(target_per_day))
         for d in days:
             t_day_sum = sum(x[i, d, s] for i in indices for s in slots)
-            dev = model.NewIntVar(0, t_count, f"dev_{pid}_{d}")
+            dev = model.NewIntVar(0, t_count, f"dev_{tid}_{d}")
             model.Add(dev >= t_day_sum - target_int)
             model.Add(dev >= target_int - t_day_sum)
             tchr_dev_terms.append(dev)
@@ -386,7 +374,7 @@ def solve_exam_schedule(option_name, seed=42):
         model.Add(d_dev >= target_day_total - d_total)
         day_total_devs.append(d_dev)
 
-    # Core Objective: Section balance (10x) + Proctor balance (5x) + School-wide balance (2x)
+    # Core Objective: Section balance (10x) + Teacher balance (5x) + School-wide balance (2x)
     obj_cost = sum(sec_dev_terms) * 10 + sum(tchr_dev_terms) * 5 + sum(day_total_devs) * 2
     model.Minimize(obj_cost)
 
@@ -432,14 +420,8 @@ def solve_exam_schedule(option_name, seed=42):
                             'gender': gender,
                             'subject_id': sess['subject_id'],
                             'subject': sess['subject'],
-                            'subject_teacher_id': sess['subject_teacher_id'],
-                            'subject_teacher': sess['subject_teacher'],
-                            'subject_teacher_name': sess['subject_teacher_name'],
-                            'proctor_teacher_id': sess['proctor_teacher_id'],
-                            'proctor_teacher': sess['proctor_teacher'],
-                            'proctor_teacher_name': sess['proctor_teacher_name'],
-                            'teacher_id': sess['proctor_teacher_id'],
-                            'teacher': sess['proctor_teacher'],
+                            'teacher_id': sess['teacher_id'],
+                            'teacher': sess['teacher'],
                             'duration_minutes': sess['duration_minutes']
                         })
         return scheduled
@@ -478,7 +460,7 @@ ws_out.title = "Exam Schedule (Option C)"
 ws_out.append([
     "Day Number", "Date", "Slot Number", "Time Slot", "Section ID", "Section Name",
     "Department", "Grade Level", "Shift", "Subject ID", "Subject",
-    "Subject Teacher ID", "Subject Teacher", "Proctor Teacher ID", "Proctor Teacher", "Duration (Mins)"
+    "Teacher ID", "Teacher", "Duration (Mins)"
 ])
 
 for ex in all_options["OPTION_C"]:
@@ -486,8 +468,7 @@ for ex in all_options["OPTION_C"]:
         ex['day_number'], ex['date'], ex['slot_number'], ex['time_slot'],
         ex.get('section_id', ''), ex['section_name'], ex['department'], ex['grade_level'], ex['shift'],
         ex.get('subject_id', ''), ex['subject'],
-        ex.get('subject_teacher_id', ''), ex.get('subject_teacher', ''),
-        ex.get('proctor_teacher_id', ''), ex.get('proctor_teacher', ''),
+        ex.get('teacher_id', ''), ex['teacher'],
         ex['duration_minutes']
     ])
 
@@ -501,27 +482,26 @@ with open(csv_path, 'w', newline='', encoding='utf-8') as f:
     writer.writerow([
         "Day Number", "Date", "Slot Number", "Time Slot", "Section ID", "Section Name",
         "Department", "Grade Level", "Shift", "Subject ID", "Subject",
-        "Subject Teacher ID", "Subject Teacher", "Proctor Teacher ID", "Proctor Teacher", "Duration (Mins)"
+        "Teacher ID", "Teacher", "Duration (Mins)"
     ])
     for ex in all_options["OPTION_C"]:
         writer.writerow([
             ex['day_number'], ex['date'], ex['slot_number'], ex['time_slot'],
             ex.get('section_id', ''), ex['section_name'], ex['department'], ex['grade_level'], ex['shift'],
             ex.get('subject_id', ''), ex['subject'],
-            ex.get('subject_teacher_id', ''), ex.get('subject_teacher', ''),
-            ex.get('proctor_teacher_id', ''), ex.get('proctor_teacher', ''),
+            ex.get('teacher_id', ''), ex['teacher'],
             ex['duration_minutes']
         ])
 
 # Build Teacher Subject Tracking dataset from Option C
 teacher_tracking = defaultdict(lambda: {"total_exams": 0, "canonical_name": "", "sessions": []})
 for ex in all_options["OPTION_C"]:
-    pid = ex.get('proctor_teacher_id', ex.get('teacher_id', ex['teacher']))
-    teacher_tracking[pid]["canonical_name"] = ex.get('proctor_teacher', ex['teacher'])
-    teacher_tracking[pid]["total_exams"] += 1
-    teacher_tracking[pid]["sessions"].append(ex)
+    tid = ex.get('teacher_id', ex['teacher'])
+    teacher_tracking[tid]["canonical_name"] = ex['teacher']
+    teacher_tracking[tid]["total_exams"] += 1
+    teacher_tracking[tid]["sessions"].append(ex)
 
 with open('/home/tatsuya/Projects/AMIS/amis_exam_calendar/teacher_subject_tracking.json', 'w', encoding='utf-8') as f:
     json.dump(teacher_tracking, f, indent=2, ensure_ascii=False)
 
-print("✓ Successfully rebuilt and saved all Exam Database Assets connected to Canonical Class Schedule!")
+print("✓ Successfully rebuilt and saved all Exam Database Assets using pure Subject Teacher architecture!")

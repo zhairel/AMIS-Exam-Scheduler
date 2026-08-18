@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Faculty Timetable — Exam Schedule | AL MUNAWWARA ISLAMIC SCHOOL</title>
+<title>Faculty Examination Timetable | AL MUNAWWARA ISLAMIC SCHOOL</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -548,7 +548,7 @@ html, body {
   <div class="brand-title">
     <div class="brand-icon">AMIS</div>
     <div class="brand-text">
-      <h1>Faculty Examination Proctoring Timetable</h1>
+      <h1>Faculty Examination Timetable</h1>
       <p>Term Exam Week • Official Exam Program</p>
     </div>
   </div>
@@ -558,9 +558,9 @@ html, body {
     <div class="filter-group">
       <span class="filter-label">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4A4 4 0 0 1 16 8A4 4 0 0 1 12 12A4 4 0 0 1 8 8A4 4 0 0 1 12 4M12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z"/></svg>
-        Proctor / Faculty:
+        Faculty / Teacher:
       </span>
-      <select id="teacherPicker" class="filter-select" aria-label="Select Proctor or Faculty Member">
+      <select id="teacherPicker" class="filter-select" aria-label="Select Faculty or Teacher">
         <option value="ALL_FACULTY">All Staff / Faculty (Print All)</option>
       </select>
     </div>
@@ -678,9 +678,9 @@ html, body {
   function populateTeacherDropdown() {
     const teacherExamCounts = {};
     ALL_EXAM_RECORDS.forEach(e => {
-      const pid = e.proctor_teacher_id || e.teacher_id;
-      if (pid) {
-        teacherExamCounts[pid] = (teacherExamCounts[pid] || 0) + 1;
+      const tid = e.teacher_id;
+      if (tid) {
+        teacherExamCounts[tid] = (teacherExamCounts[tid] || 0) + 1;
       }
     });
 
@@ -770,7 +770,7 @@ html, body {
     const tVal = teacherPicker.value;
     if (tVal === 'ALL_FACULTY') {
       const teacherIds = Object.values(ALL_TEACHERS_DATA)
-        .filter(t => ALL_EXAM_RECORDS.some(e => (e.proctor_teacher_id === t.teacher_id || e.teacher_id === t.teacher_id)))
+        .filter(t => ALL_EXAM_RECORDS.some(e => e.teacher_id === t.teacher_id))
         .sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name))
         .map(t => t.teacher_id);
       renderMultipleTeacherExamSheets(teacherIds);
@@ -785,12 +785,12 @@ html, body {
 
     tIds.forEach(tid => {
       const data = ALL_TEACHERS_DATA[tid];
-      const tExams = ALL_EXAM_RECORDS.filter(e => (e.proctor_teacher_id === tid || e.teacher_id === tid));
+      const tExams = ALL_EXAM_RECORDS.filter(e => e.teacher_id === tid);
       if (tExams.length === 0 && !data) return;
 
-      const teacherDisplayName = data ? (data.canonical_name || data.teacher_name || tid) : (tExams[0].proctor_teacher || tExams[0].teacher || tid);
+      const teacherDisplayName = data ? (data.canonical_name || data.teacher_name || tid) : (tExams[0].teacher || tid);
       const totalCount = tExams.length;
-      const subjsList = Array.from(new Set(tExams.map(e => e.subject))).join(', ') || 'Proctored Subjects';
+      const subjsList = Array.from(new Set(tExams.map(e => e.subject))).join(', ') || 'Assigned Subjects';
       const metaStr = `${totalCount} Exam Session${totalCount === 1 ? '' : 's'} • ${subjsList}`;
 
       const shiftsSet = new Set(tExams.map(e => e.shift || 'F2F'));
@@ -802,7 +802,7 @@ html, body {
             <img src="amis_logo.png" alt="AMIS Logo" style="width:48px; height:48px; border-radius:50%; object-fit:contain;">
             <div>
               <h1 style="margin:0;">AL MUNAWWARA ISLAMIC SCHOOL</h1>
-              <h2 style="margin:2px 0 0 0;">Faculty Examination Proctoring Timetable</h2>
+              <h2 style="margin:2px 0 0 0;">Faculty Examination Timetable</h2>
               <p style="margin:2px 0 0 0;">Term Exam Week</p>
             </div>
           </div>
@@ -888,7 +888,7 @@ html, body {
                 fullHtml += `
                   <td class="cell-class" style="background:#fee2e2; border-color:#ef4444; color:#991b1b;">
                     <div class="cell-class-inner">
-                      <span style="font-weight:900; font-size:9px; background:#fecaca; padding:1px 4px; border-radius:3px;">⚠️ CONFLICT</span>
+                      <span style="font-weight:900; font-size:9px; background:#fecaca; padding:1px 4px; border-radius:3px;">⚠️ TEACHER SCHEDULE CONFLICT</span>
                       ${matches.map(m => `<span class="cell-subject-sec" style="font-size:11px;">${esc(m.subject)}: ${esc(m.section_name)}</span>`).join('')}
                     </div>
                   </td>
