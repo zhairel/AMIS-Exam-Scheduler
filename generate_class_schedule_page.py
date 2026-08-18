@@ -1265,7 +1265,8 @@ html, body {
               <tbody>
         `;
 
-        sec.periods.forEach(p => {
+        const pList = sec.periods || sec.rows || [];
+        pList.forEach(p => {
           const timeStr = formatTime(p.time);
 
           if (p.is_merged_all_days) {
