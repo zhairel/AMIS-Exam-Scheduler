@@ -5,7 +5,7 @@ TEACHER_REGISTRY = [
     # ISAL / Islamic Studies Faculty
     {
         "id": "tchr_ali",
-        "canonical_name": "Ustadz Ali",
+        "canonical_name": "Ustadh Ali",
         "department": "ISAL Faculty",
         "title": "ISAL Teacher",
         "aliases": [
