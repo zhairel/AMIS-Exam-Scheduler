@@ -547,15 +547,25 @@ html, body {
 
 .cell-subject-sec {
   font-weight: 900;
-  font-size: 12px;
+  font-size: 11.5px;
   line-height: 1.2;
 }
 
-.cell-mod-badge {
+.cell-section-name {
+  font-size: 10.5px;
   font-weight: 750;
-  font-size: 10px;
+  line-height: 1.2;
   opacity: 0.95;
-  line-height: 1.15;
+}
+
+.cell-mod-badge {
+  font-weight: 800;
+  font-size: 9.5px;
+  opacity: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  margin-top: 1px;
 }
 
 .cell-duration-pill {
@@ -1185,6 +1195,30 @@ html, body {
     return timeline;
   }
 
+  function formatModalityShift(shiftStr) {
+    if (!shiftStr) return '';
+    const s = String(shiftStr).toUpperCase();
+    if (s.includes('1ST') || s.includes('1ST SHIFT') || s === 'ODL1') return '1st Shift';
+    if (s.includes('2ND') || s.includes('2ND SHIFT') || s === 'ODL2') return '2nd Shift';
+    if (s.includes('F2F') || s.includes('FACE TO FACE')) return 'F2F';
+    return shiftStr;
+  }
+
+  function cleanSectionName(sname) {
+    if (!sname) return '';
+    let s = String(sname);
+    s = s.replace(/\s*\((?:ODL\s*-\s*)?1ST\s+SHIFT\)/gi, '')
+         .replace(/\s*\((?:ODL\s*-\s*)?2ND\s+SHIFT\)/gi, '')
+         .replace(/\s*\((?:FACE\s+TO\s+FACE|F2F)\)/gi, '')
+         .replace(/\s+FACE\s+TO\s+FACE/gi, '')
+         .replace(/\s+CLASS\s+SCHEDULE/gi, '')
+         .replace(/\s*-\s*MIX\b/gi, ' (Mix)')
+         .replace(/\s*-\s*GIRLS\b/gi, ' (Girls)')
+         .replace(/\s*-\s*BOYS\b/gi, ' (Boys)')
+         .trim();
+    return s;
+  }
+
   function renderMultipleTeacherExamSheets(tIds) {
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
     let fullHtml = '';
@@ -1264,13 +1298,14 @@ html, body {
             if (matches.length === 1) {
               const exam = matches[0];
               const color = getSubjectColor(exam.subject);
-              const secShort = exam.section_name.replace('GRADE ', 'G').replace('Grade ', 'G').replace('Kinder ', 'K');
-              const modTag = exam.shift === 'F2F' ? 'F2F' : (exam.shift.includes('2ND') ? 'ODL 2' : 'ODL 1');
+              const cleanSec = cleanSectionName(exam.section_name);
+              const cleanShift = formatModalityShift(exam.shift);
               fullHtml += `
                 <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(exam.subject)}</span>
-                    <span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(secShort)} • ${modTag}</span>
+                    <span class="cell-section-name">${esc(cleanSec)}</span>
+                    <span class="cell-mod-badge">${esc(cleanShift)}</span>
                     ${exam.duration_minutes >= 90 ? `<span class="cell-duration-pill" style="color:${color.text};">${exam.duration_minutes}m EXTENDED</span>` : ''}
                   </div>
                 </td>
@@ -1280,12 +1315,14 @@ html, body {
               if (isAllowedMerged) {
                 const exam = matches[0];
                 const color = getSubjectColor(exam.subject);
-                const secsStr = matches.map(m => m.section_name.replace('GRADE ', 'G').replace('Grade ', 'G')).join(' & ');
+                const secsStr = matches.map(m => cleanSectionName(m.section_name)).join(' & ');
+                const cleanShift = formatModalityShift(exam.shift);
                 fullHtml += `
                   <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
                     <div class="cell-class-inner">
                       <span class="cell-subject-sec">${esc(exam.subject)}</span>
-                      <span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(secsStr)} (Merged ODL)</span>
+                      <span class="cell-section-name">${esc(secsStr)}</span>
+                      <span class="cell-mod-badge">${esc(cleanShift)} (Merged)</span>
                     </div>
                   </td>
                 `;
@@ -1294,7 +1331,7 @@ html, body {
                   <td class="cell-class" style="background:#fee2e2; border-color:#ef4444; color:#991b1b;">
                     <div class="cell-class-inner">
                       <span style="font-weight:900; font-size:9px; background:#fecaca; padding:1px 4px; border-radius:3px;">⚠️ TEACHER SCHEDULE CONFLICT</span>
-                      ${matches.map(m => `<span class="cell-subject-sec" style="font-size:11px;">${esc(m.subject)}: ${esc(m.section_name)}</span>`).join('')}
+                      ${matches.map(m => `<span class="cell-subject-sec" style="font-size:11px;">${esc(m.subject)}: ${esc(cleanSectionName(m.section_name))}</span>`).join('')}
                     </div>
                   </td>
                 `;

@@ -550,13 +550,23 @@ html, body {
   font-size: 11.5px;
   font-weight: 900;
   letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.cell-section-name {
+  font-size: 10.5px;
+  font-weight: 750;
+  line-height: 1.2;
+  opacity: 0.95;
 }
 
 .cell-mod-badge {
-  font-size: 10px;
+  font-size: 9.5px;
   font-weight: 800;
-  opacity: 0.95;
+  opacity: 0.85;
   text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-top: 1px;
 }
 
 /* Empty Cell */
@@ -1049,6 +1059,30 @@ html, body {
     }
   }
 
+  function formatModalityShift(shiftStr) {
+    if (!shiftStr) return '';
+    const s = String(shiftStr).toUpperCase();
+    if (s.includes('1ST') || s.includes('1ST SHIFT') || s === 'ODL1') return '1st Shift';
+    if (s.includes('2ND') || s.includes('2ND SHIFT') || s === 'ODL2') return '2nd Shift';
+    if (s.includes('F2F') || s.includes('FACE TO FACE')) return 'F2F';
+    return shiftStr;
+  }
+
+  function cleanSectionName(sname) {
+    if (!sname) return '';
+    let s = String(sname);
+    s = s.replace(/\s*\((?:ODL\s*-\s*)?1ST\s+SHIFT\)/gi, '')
+         .replace(/\s*\((?:ODL\s*-\s*)?2ND\s+SHIFT\)/gi, '')
+         .replace(/\s*\((?:FACE\s+TO\s+FACE|F2F)\)/gi, '')
+         .replace(/\s+FACE\s+TO\s+FACE/gi, '')
+         .replace(/\s+CLASS\s+SCHEDULE/gi, '')
+         .replace(/\s*-\s*MIX\b/gi, ' (Mix)')
+         .replace(/\s*-\s*GIRLS\b/gi, ' (Girls)')
+         .replace(/\s*-\s*BOYS\b/gi, ' (Boys)')
+         .trim();
+    return s;
+  }
+
   function renderMultipleTeacherSheets(tIds) {
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
     let fullHtml = '';
@@ -1132,14 +1166,17 @@ html, body {
                 const cell = r.days ? r.days[d] : null;
                 if (cell && (cell.occupied || cell.is_class)) {
                   const color = cell.color || { bg: cell.bg || '#f1f5f9', border: cell.border || '#cbd5e1', text: cell.text || '#1e293b' };
-                  const modTag = cell.modality || cell.shift || '';
+                  const rawShift = cell.shift || cell.modality || '';
+                  const cleanShift = formatModalityShift(rawShift);
+                  const cleanSec = cleanSectionName(cell.section || cell.section_short || '');
 
                   fullHtml += `
                     <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
                       <div class="cell-class-inner">
                         ${cell.has_conflict ? `<span style="background:#fee2e2; color:#991b1b; padding:1px 4px; border-radius:3px; font-weight:850; font-size:8.5px; margin-bottom:2px; text-transform:uppercase;">⚠️ SCHEDULE CONFLICT</span>` : ''}
-                        <span class="cell-subject-sec" style="font-weight:900; font-size:12px; line-height:1.2;">${esc(cell.subject || cell.label)}</span>
-                        <span class="cell-mod-badge" style="color:${color.text}; font-weight:750; font-size:10px; opacity:0.95; line-height:1.15;">${esc(cell.section_short || cell.section || '')}${modTag ? ' • ' + esc(modTag) : ''}</span>
+                        <span class="cell-subject-sec">${esc(cell.subject || cell.label)}</span>
+                        <span class="cell-section-name">${esc(cleanSec)}</span>
+                        <span class="cell-mod-badge">${esc(cleanShift)}</span>
                       </div>
                     </td>
                   `;
