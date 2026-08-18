@@ -115,7 +115,7 @@ for sec in sections:
                 'subject': subj_name,
                 'teacher': tchr_canonical,
                 'teacher_id': tchr_id,
-                'duration_minutes': 40 if is_kinder else 60
+                'duration_minutes': 60
             })
     else:
         for subj_name, tchrs in sec_subjs.items():
