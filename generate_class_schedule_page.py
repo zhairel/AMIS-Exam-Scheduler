@@ -825,7 +825,7 @@ html, body {
 
     <a href="index.html" class="btn-action btn-back" style="background:#ffffff; color:#0f172a; border-color:#cbd5e1; font-weight:750;" title="Back to Home">
       <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-      Home
+      Back Home
     </a>
   </div>
 </header>
