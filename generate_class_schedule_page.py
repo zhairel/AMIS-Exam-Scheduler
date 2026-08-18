@@ -315,30 +315,49 @@ html, body {
   width: 100vw !important;
   max-width: 100vw !important;
   min-height: 100vh !important;
+  height: 100vh !important;
   margin: 0 !important;
-  padding: 24px 32px !important;
+  padding: 24px 36px !important;
   background: #ffffff !important;
   overflow-y: auto !important;
   border: none !important;
   border-radius: 0 !important;
   box-sizing: border-box !important;
-  display: block !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.timetable-sheet.is-fullscreen > * {
+  width: 100% !important;
+  max-width: 1400px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
 }
 
 .timetable-sheet.is-fullscreen .school-header {
+  margin-top: auto !important;
   margin-bottom: 12px !important;
 }
 
 .timetable-sheet.is-fullscreen .school-header h1 {
-  font-size: 22px !important;
+  font-size: 20px !important;
 }
 
 .timetable-sheet.is-fullscreen .school-header h2 {
-  font-size: 15px !important;
+  font-size: 14px !important;
 }
 
 .timetable-sheet.is-fullscreen .school-header p {
-  font-size: 13px !important;
+  font-size: 12px !important;
+}
+
+.timetable-sheet.is-fullscreen .sheet-footer {
+  margin-top: 14px !important;
+  margin-bottom: auto !important;
+  padding-top: 8px !important;
+  font-size: 12.5px !important;
 }
 
 .timetable-sheet.is-fullscreen .teacher-banner {
