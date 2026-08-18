@@ -1,6 +1,8 @@
 {
   "tchr_ali": {
+    "id": "tchr_ali",
     "teacher_id": "tchr_ali",
+    "name": "Ustadh Ali",
     "teacher_name": "Ustadh Ali",
     "canonical_name": "Ustadh Ali",
     "department": "ISAL Faculty",
@@ -813,7 +815,9 @@
     ]
   },
   "tchr_abdiraheem": {
+    "id": "tchr_abdiraheem",
     "teacher_id": "tchr_abdiraheem",
+    "name": "Ustadh Abdiraheem",
     "teacher_name": "Ustadh Abdiraheem",
     "canonical_name": "Ustadh Abdiraheem",
     "department": "ISAL Faculty",
@@ -1666,7 +1670,9 @@
     ]
   },
   "tchr_abdul_karim": {
+    "id": "tchr_abdul_karim",
     "teacher_id": "tchr_abdul_karim",
+    "name": "Alim Abdul Karim",
     "teacher_name": "Alim Abdul Karim",
     "canonical_name": "Alim Abdul Karim",
     "department": "ISAL Faculty",
@@ -2302,7 +2308,9 @@
     ]
   },
   "tchr_abdulwahab": {
+    "id": "tchr_abdulwahab",
     "teacher_id": "tchr_abdulwahab",
+    "name": "Alim Abdulwahab",
     "teacher_name": "Alim Abdulwahab",
     "canonical_name": "Alim Abdulwahab",
     "department": "ISAL Faculty",
@@ -2685,7 +2693,9 @@
     ]
   },
   "tchr_bustamante": {
+    "id": "tchr_bustamante",
     "teacher_id": "tchr_bustamante",
+    "name": "Alim Bustamante",
     "teacher_name": "Alim Bustamante",
     "canonical_name": "Alim Bustamante",
     "department": "ISAL Faculty",
@@ -2821,7 +2831,9 @@
     ]
   },
   "tchr_dipatuan": {
+    "id": "tchr_dipatuan",
     "teacher_id": "tchr_dipatuan",
+    "name": "Alim Dipatuan",
     "teacher_name": "Alim Dipatuan",
     "canonical_name": "Alim Dipatuan",
     "department": "ISAL Faculty",
@@ -3000,7 +3012,9 @@
     ]
   },
   "tchr_ersahad": {
+    "id": "tchr_ersahad",
     "teacher_id": "tchr_ersahad",
+    "name": "Ustadh Ersahad",
     "teacher_name": "Ustadh Ersahad",
     "canonical_name": "Ustadh Ersahad",
     "department": "ISAL Faculty",
@@ -3906,7 +3920,9 @@
     ]
   },
   "tchr_faidh": {
+    "id": "tchr_faidh",
     "teacher_id": "tchr_faidh",
+    "name": "Ustadh Faidh",
     "teacher_name": "Ustadh Faidh",
     "canonical_name": "Ustadh Faidh",
     "department": "ISAL Faculty",
@@ -4613,7 +4629,9 @@
     ]
   },
   "tchr_hainur": {
+    "id": "tchr_hainur",
     "teacher_id": "tchr_hainur",
+    "name": "Ustadh Hainur",
     "teacher_name": "Ustadh Hainur",
     "canonical_name": "Ustadh Hainur",
     "department": "ISAL Faculty",
@@ -5319,7 +5337,9 @@
     ]
   },
   "tchr_jaisam": {
+    "id": "tchr_jaisam",
     "teacher_id": "tchr_jaisam",
+    "name": "Ustadh Jaisam",
     "teacher_name": "Ustadh Jaisam",
     "canonical_name": "Ustadh Jaisam",
     "department": "ISAL Faculty",
@@ -6030,7 +6050,9 @@
     ]
   },
   "tchr_mamonas": {
+    "id": "tchr_mamonas",
     "teacher_id": "tchr_mamonas",
+    "name": "Alim Mamonas",
     "teacher_name": "Alim Mamonas",
     "canonical_name": "Alim Mamonas",
     "department": "ISAL Faculty",
@@ -6505,7 +6527,9 @@
     ]
   },
   "tchr_obaydah": {
+    "id": "tchr_obaydah",
     "teacher_id": "tchr_obaydah",
+    "name": "Ustadh Obaydah",
     "teacher_name": "Ustadh Obaydah",
     "canonical_name": "Ustadh Obaydah",
     "department": "ISAL Faculty",
@@ -7494,7 +7518,9 @@
     ]
   },
   "tchr_raffy": {
+    "id": "tchr_raffy",
     "teacher_id": "tchr_raffy",
+    "name": "Ustadh Raffy",
     "teacher_name": "Ustadh Raffy",
     "canonical_name": "Ustadh Raffy",
     "department": "ISAL Faculty",
@@ -7505,7 +7531,9 @@
     "rows": []
   },
   "tchr_raslina": {
+    "id": "tchr_raslina",
     "teacher_id": "tchr_raslina",
+    "name": "Ustadh Raslina",
     "teacher_name": "Ustadh Raslina",
     "canonical_name": "Ustadh Raslina",
     "department": "ISAL Faculty",
@@ -7685,7 +7713,9 @@
     ]
   },
   "tchr_saliha": {
+    "id": "tchr_saliha",
     "teacher_id": "tchr_saliha",
+    "name": "Ustadha Saliha",
     "teacher_name": "Ustadha Saliha",
     "canonical_name": "Ustadha Saliha",
     "department": "ISAL Faculty",
@@ -8748,7 +8778,9 @@
     ]
   },
   "tchr_samsuddin": {
+    "id": "tchr_samsuddin",
     "teacher_id": "tchr_samsuddin",
+    "name": "Alim Samsuddin",
     "teacher_name": "Alim Samsuddin",
     "canonical_name": "Alim Samsuddin",
     "department": "ISAL Faculty",
@@ -9567,7 +9599,9 @@
     ]
   },
   "tchr_silfah": {
+    "id": "tchr_silfah",
     "teacher_id": "tchr_silfah",
+    "name": "Ustadha Silfah",
     "teacher_name": "Ustadha Silfah",
     "canonical_name": "Ustadha Silfah",
     "department": "ISAL Faculty",
@@ -10531,18 +10565,680 @@
     ]
   },
   "tchr_mohaymen": {
+    "id": "tchr_mohaymen",
     "teacher_id": "tchr_mohaymen",
+    "name": "Sir Mohaymen",
     "teacher_name": "Sir Mohaymen",
     "canonical_name": "Sir Mohaymen",
     "department": "High School Faculty",
-    "periods": [],
-    "total_classes": 0,
-    "total_teaching_periods": 0,
-    "subjects": [],
-    "rows": []
+    "periods": [
+      {
+        "section_id": "sec_grade_7_8_girls_face_to_face",
+        "section_name": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 7 & 8",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 – 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Aral Math",
+        "raw_label": "Aral Math"
+      },
+      {
+        "section_id": "sec_grade_7_8_boys_face_to_face",
+        "section_name": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 7 & 8",
+        "shift": "F2F",
+        "period_num": 4,
+        "time": "9:05 – 9:45 AM",
+        "minutes": "40 min.",
+        "day": "Sunday",
+        "subject": "Aral Math",
+        "raw_label": "Aral Math"
+      },
+      {
+        "section_id": "sec_grade_9_10_girls_face_to_face",
+        "section_name": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 9 & 10",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Aral Math",
+        "raw_label": "Aral Math"
+      },
+      {
+        "section_id": "sec_grade_9_10_girls_face_to_face",
+        "section_name": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 9 & 10",
+        "shift": "F2F",
+        "period_num": 10,
+        "time": "1:25 – 2:10 PM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "MAPEH",
+        "raw_label": "MAPEH"
+      },
+      {
+        "section_id": "sec_grade_9_10_girls_face_to_face",
+        "section_name": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 9 & 10",
+        "shift": "F2F",
+        "period_num": 10,
+        "time": "1:25 – 2:10 PM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "MAPEH",
+        "raw_label": "MAPEH"
+      },
+      {
+        "section_id": "sec_grade_9_10_girls_face_to_face",
+        "section_name": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 9 & 10",
+        "shift": "F2F",
+        "period_num": 10,
+        "time": "1:25 – 2:10 PM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "MAPEH",
+        "raw_label": "MAPEH"
+      },
+      {
+        "section_id": "sec_grade_9_10_boys_face_to_face",
+        "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 9 & 10",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Sunday",
+        "subject": "MAPEH",
+        "raw_label": "MAPEH"
+      },
+      {
+        "section_id": "sec_grade_9_10_boys_face_to_face",
+        "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 9 & 10",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "MAPEH",
+        "raw_label": "MAPEH"
+      },
+      {
+        "section_id": "sec_grade_9_10_boys_face_to_face",
+        "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 9 & 10",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "MAPEH",
+        "raw_label": "MAPEH"
+      },
+      {
+        "section_id": "sec_grade_9_10_boys_face_to_face",
+        "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 9 & 10",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "Aral Math",
+        "raw_label": "Aral Math"
+      },
+      {
+        "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
+        "section_name": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "department": "Junior High School",
+        "grade_level": "Grade 9",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 – 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "MAPEH",
+        "raw_label": "MAPEH"
+      },
+      {
+        "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
+        "section_name": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "department": "Junior High School",
+        "grade_level": "Grade 10",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 2,
+        "time": "12:40 – 01:20 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "MAPEH",
+        "raw_label": "MAPEH"
+      },
+      {
+        "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
+        "section_name": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "department": "Junior High School",
+        "grade_level": "Grade 9",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 3,
+        "time": "3:40 – 4:20 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "MAPEH",
+        "raw_label": "MAPEH"
+      },
+      {
+        "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
+        "section_name": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "department": "Junior High School",
+        "grade_level": "Grade 10",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 – 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Sunday",
+        "subject": "MAPEH",
+        "raw_label": "MAPEH"
+      },
+      {
+        "section_id": "sec_grade_12_suhayb_ar_rumi",
+        "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+        "department": "Senior High School",
+        "grade_level": "Grade 12",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Sunday",
+        "subject": "PE 12",
+        "raw_label": "PE 12"
+      },
+      {
+        "section_id": "sec_grade_12_suhayb_ar_rumi",
+        "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+        "department": "Senior High School",
+        "grade_level": "Grade 12",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "PE 12",
+        "raw_label": "PE 12"
+      },
+      {
+        "section_id": "sec_grade_12_suhayb_ar_rumi",
+        "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+        "department": "Senior High School",
+        "grade_level": "Grade 12",
+        "shift": "F2F",
+        "period_num": 9,
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "PE 12",
+        "raw_label": "PE 12"
+      },
+      {
+        "section_id": "sec_grade_12_abu_musa_al_ashari",
+        "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "department": "Senior High School",
+        "grade_level": "Grade 12",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 7,
+        "time": "03:00 – 03:40 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "PE 12",
+        "raw_label": "PE 12"
+      },
+      {
+        "section_id": "sec_grade_12_abu_musa_al_ashari",
+        "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "department": "Senior High School",
+        "grade_level": "Grade 12",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 7,
+        "time": "03:00 – 03:40 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "PE 12",
+        "raw_label": "PE 12"
+      }
+    ],
+    "total_classes": 19,
+    "total_teaching_periods": 19,
+    "subjects": [
+      "Aral Math",
+      "MAPEH",
+      "PE 12"
+    ],
+    "rows": [
+      {
+        "time": "2:15 – 3:00 PM",
+        "minutes": "45 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": null,
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Aral Math",
+            "label": "Aral Math",
+            "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+            "section_short": "G7 & 8 GIRLS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "9:05 – 9:45 AM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Aral Math",
+            "label": "Aral Math",
+            "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+            "section_short": "G7 & 8 BOYS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:00 – 10:45 AM",
+        "minutes": "45 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAPEH",
+            "label": "MAPEH",
+            "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+            "section_short": "G9 & 10 BOYS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Monday": null,
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Aral Math",
+            "label": "Aral Math",
+            "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+            "section_short": "G9 & 10 GIRLS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAPEH",
+            "label": "MAPEH",
+            "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+            "section_short": "G9 & 10 BOYS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAPEH",
+            "label": "MAPEH",
+            "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+            "section_short": "G9 & 10 BOYS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "1:25 – 2:10 PM",
+        "minutes": "45 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": null,
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAPEH",
+            "label": "MAPEH",
+            "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+            "section_short": "G9 & 10 GIRLS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAPEH",
+            "label": "MAPEH",
+            "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+            "section_short": "G9 & 10 GIRLS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": null,
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAPEH",
+            "label": "MAPEH",
+            "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+            "section_short": "G9 & 10 GIRLS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "12:40 – 1:25 PM",
+        "minutes": "45 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "PE 12",
+            "label": "PE 12",
+            "section": "GRADE 12 - SUHAYB AR-RUMI",
+            "section_short": "G12 - SUHAYB AR-RUMI",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fae8ff",
+              "border": "#f0abfc",
+              "text": "#86198f"
+            },
+            "has_conflict": false
+          },
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Aral Math",
+            "label": "Aral Math",
+            "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+            "section_short": "G9 & 10 BOYS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#e0f2fe",
+              "border": "#7dd3fc",
+              "text": "#0369a1"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "PE 12",
+            "label": "PE 12",
+            "section": "GRADE 12 - SUHAYB AR-RUMI",
+            "section_short": "G12 - SUHAYB AR-RUMI",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fae8ff",
+              "border": "#f0abfc",
+              "text": "#86198f"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "PE 12",
+            "label": "PE 12",
+            "section": "GRADE 12 - SUHAYB AR-RUMI",
+            "section_short": "G12 - SUHAYB AR-RUMI",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fae8ff",
+              "border": "#f0abfc",
+              "text": "#86198f"
+            },
+            "has_conflict": false
+          },
+          "Thursday": null
+        }
+      },
+      {
+        "time": "01:30 – 02:10 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAPEH",
+            "label": "MAPEH",
+            "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+            "section_short": "G9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Thursday": null
+        }
+      },
+      {
+        "time": "12:40 – 01:20 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAPEH",
+            "label": "MAPEH",
+            "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+            "section_short": "G10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "3:40 – 4:20 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAPEH",
+            "label": "MAPEH",
+            "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+            "section_short": "G9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "4:30 – 5:10 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "MAPEH",
+            "label": "MAPEH",
+            "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+            "section_short": "G10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#ffedd5",
+              "border": "#fdba74",
+              "text": "#9a3412"
+            },
+            "has_conflict": false
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "03:00 – 03:40 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "PE 12",
+            "label": "PE 12",
+            "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+            "section_short": "G12 - ABU MUSA AL-ASHARI",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#fae8ff",
+              "border": "#f0abfc",
+              "text": "#86198f"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "PE 12",
+            "label": "PE 12",
+            "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+            "section_short": "G12 - ABU MUSA AL-ASHARI",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#fae8ff",
+              "border": "#f0abfc",
+              "text": "#86198f"
+            },
+            "has_conflict": false
+          }
+        }
+      }
+    ]
   },
   "tchr_abegail": {
+    "id": "tchr_abegail",
     "teacher_id": "tchr_abegail",
+    "name": "Teacher Abegail",
     "teacher_name": "Teacher Abegail",
     "canonical_name": "Teacher Abegail",
     "department": "High School Faculty",
@@ -10553,7 +11249,9 @@
     "rows": []
   },
   "tchr_angeleni": {
+    "id": "tchr_angeleni",
     "teacher_id": "tchr_angeleni",
+    "name": "Teacher Angeleni",
     "teacher_name": "Teacher Angeleni",
     "canonical_name": "Teacher Angeleni",
     "department": "Elementary / HS Faculty",
@@ -10950,7 +11648,9 @@
     ]
   },
   "tchr_aniah": {
+    "id": "tchr_aniah",
     "teacher_id": "tchr_aniah",
+    "name": "Teacher Aniah",
     "teacher_name": "Teacher Aniah",
     "canonical_name": "Teacher Aniah",
     "department": "High School Faculty",
@@ -11815,7 +12515,9 @@
     ]
   },
   "tchr_anna": {
+    "id": "tchr_anna",
     "teacher_id": "tchr_anna",
+    "name": "Teacher Anna",
     "teacher_name": "Teacher Anna",
     "canonical_name": "Teacher Anna",
     "department": "Elementary Faculty",
@@ -12631,7 +13333,9 @@
     ]
   },
   "tchr_arvin": {
+    "id": "tchr_arvin",
     "teacher_id": "tchr_arvin",
+    "name": "Teacher Arvin",
     "teacher_name": "Teacher Arvin",
     "canonical_name": "Teacher Arvin",
     "department": "High School Faculty",
@@ -13844,7 +14548,9 @@
     ]
   },
   "tchr_ayah": {
+    "id": "tchr_ayah",
     "teacher_id": "tchr_ayah",
+    "name": "Teacher Ayah",
     "teacher_name": "Teacher Ayah",
     "canonical_name": "Teacher Ayah",
     "department": "Elementary Faculty",
@@ -14301,7 +15007,9 @@
     ]
   },
   "tchr_ethel": {
+    "id": "tchr_ethel",
     "teacher_id": "tchr_ethel",
+    "name": "Teacher Ethel",
     "teacher_name": "Teacher Ethel",
     "canonical_name": "Teacher Ethel",
     "department": "High School Faculty",
@@ -14769,7 +15477,9 @@
     ]
   },
   "tchr_fhairudz": {
+    "id": "tchr_fhairudz",
     "teacher_id": "tchr_fhairudz",
+    "name": "Teacher Fhairudz",
     "teacher_name": "Teacher Fhairudz",
     "canonical_name": "Teacher Fhairudz",
     "department": "Elementary Faculty",
@@ -15750,7 +16460,9 @@
     ]
   },
   "tchr_franchette": {
+    "id": "tchr_franchette",
     "teacher_id": "tchr_franchette",
+    "name": "Teacher Franchette",
     "teacher_name": "Teacher Franchette",
     "canonical_name": "Teacher Franchette",
     "department": "Elementary / HS Faculty",
@@ -16197,7 +16909,9 @@
     ]
   },
   "tchr_halnaisa": {
+    "id": "tchr_halnaisa",
     "teacher_id": "tchr_halnaisa",
+    "name": "Teacher Halnaisa",
     "teacher_name": "Teacher Halnaisa",
     "canonical_name": "Teacher Halnaisa",
     "department": "High School Faculty",
@@ -16921,7 +17635,9 @@
     ]
   },
   "tchr_hannah": {
+    "id": "tchr_hannah",
     "teacher_id": "tchr_hannah",
+    "name": "Teacher Hannah",
     "teacher_name": "Teacher Hannah",
     "canonical_name": "Teacher Hannah",
     "department": "High School Faculty",
@@ -16932,7 +17648,9 @@
     "rows": []
   },
   "tchr_jairah": {
+    "id": "tchr_jairah",
     "teacher_id": "tchr_jairah",
+    "name": "Teacher Jairah",
     "teacher_name": "Teacher Jairah",
     "canonical_name": "Teacher Jairah",
     "department": "High School Faculty",
@@ -17868,7 +18586,9 @@
     ]
   },
   "tchr_jenny": {
+    "id": "tchr_jenny",
     "teacher_id": "tchr_jenny",
+    "name": "Teacher Jenny",
     "teacher_name": "Teacher Jenny",
     "canonical_name": "Teacher Jenny",
     "department": "Elementary Faculty",
@@ -18526,7 +19246,9 @@
     ]
   },
   "tchr_jerlyn": {
+    "id": "tchr_jerlyn",
     "teacher_id": "tchr_jerlyn",
+    "name": "Teacher Jerlyn",
     "teacher_name": "Teacher Jerlyn",
     "canonical_name": "Teacher Jerlyn",
     "department": "Elementary Faculty",
@@ -19464,7 +20186,9 @@
     ]
   },
   "tchr_jessa": {
+    "id": "tchr_jessa",
     "teacher_id": "tchr_jessa",
+    "name": "Teacher Jessa",
     "teacher_name": "Teacher Jessa",
     "canonical_name": "Teacher Jessa",
     "department": "Elementary Faculty",
@@ -20582,7 +21306,9 @@
     ]
   },
   "tchr_jhelyn": {
+    "id": "tchr_jhelyn",
     "teacher_id": "tchr_jhelyn",
+    "name": "Teacher Jhelyn",
     "teacher_name": "Teacher Jhelyn",
     "canonical_name": "Teacher Jhelyn",
     "department": "High School Faculty",
@@ -21587,7 +22313,9 @@
     ]
   },
   "tchr_joanna": {
+    "id": "tchr_joanna",
     "teacher_id": "tchr_joanna",
+    "name": "Teacher Joanna",
     "teacher_name": "Teacher Joanna",
     "canonical_name": "Teacher Joanna",
     "department": "Elementary Faculty",
@@ -22406,7 +23134,9 @@
     ]
   },
   "tchr_junaisah": {
+    "id": "tchr_junaisah",
     "teacher_id": "tchr_junaisah",
+    "name": "Teacher Junaisah",
     "teacher_name": "Teacher Junaisah",
     "canonical_name": "Teacher Junaisah",
     "department": "Elementary Faculty",
@@ -22948,7 +23678,9 @@
     ]
   },
   "tchr_katrina": {
+    "id": "tchr_katrina",
     "teacher_id": "tchr_katrina",
+    "name": "Teacher Katrina",
     "teacher_name": "Teacher Katrina",
     "canonical_name": "Teacher Katrina",
     "department": "Elementary Faculty",
@@ -23790,7 +24522,9 @@
     ]
   },
   "tchr_keychell": {
+    "id": "tchr_keychell",
     "teacher_id": "tchr_keychell",
+    "name": "Teacher Keychell",
     "teacher_name": "Teacher Keychell",
     "canonical_name": "Teacher Keychell",
     "department": "Elementary Faculty",
@@ -24855,7 +25589,9 @@
     ]
   },
   "tchr_marie": {
+    "id": "tchr_marie",
     "teacher_id": "tchr_marie",
+    "name": "Teacher Marie",
     "teacher_name": "Teacher Marie",
     "canonical_name": "Teacher Marie",
     "department": "High School Faculty",
@@ -24866,7 +25602,9 @@
     "rows": []
   },
   "tchr_marham": {
+    "id": "tchr_marham",
     "teacher_id": "tchr_marham",
+    "name": "Teacher Marham",
     "teacher_name": "Teacher Marham",
     "canonical_name": "Teacher Marham",
     "department": "High School Faculty",
@@ -25956,7 +26694,9 @@
     ]
   },
   "tchr_monisa": {
+    "id": "tchr_monisa",
     "teacher_id": "tchr_monisa",
+    "name": "Teacher Monisa",
     "teacher_name": "Teacher Monisa",
     "canonical_name": "Teacher Monisa",
     "department": "Elementary Faculty",
@@ -27021,7 +27761,9 @@
     ]
   },
   "tchr_nadzra": {
+    "id": "tchr_nadzra",
     "teacher_id": "tchr_nadzra",
+    "name": "Teacher Nadzra",
     "teacher_name": "Teacher Nadzra",
     "canonical_name": "Teacher Nadzra",
     "department": "High School Faculty",
@@ -27998,7 +28740,9 @@
     ]
   },
   "tchr_nof": {
+    "id": "tchr_nof",
     "teacher_id": "tchr_nof",
+    "name": "Teacher Nof",
     "teacher_name": "Teacher Nof",
     "canonical_name": "Teacher Nof",
     "department": "High School Faculty",
@@ -28642,7 +29386,9 @@
     ]
   },
   "tchr_norhaima": {
+    "id": "tchr_norhaima",
     "teacher_id": "tchr_norhaima",
+    "name": "Teacher Norhaima",
     "teacher_name": "Teacher Norhaima",
     "canonical_name": "Teacher Norhaima",
     "department": "High School Faculty",
@@ -29595,7 +30341,9 @@
     ]
   },
   "tchr_norhydie": {
+    "id": "tchr_norhydie",
     "teacher_id": "tchr_norhydie",
+    "name": "Teacher Norhydie",
     "teacher_name": "Teacher Norhydie",
     "canonical_name": "Teacher Norhydie",
     "department": "Elementary Faculty",
@@ -30523,7 +31271,9 @@
     ]
   },
   "tchr_normylah": {
+    "id": "tchr_normylah",
     "teacher_id": "tchr_normylah",
+    "name": "Teacher Normylah",
     "teacher_name": "Teacher Normylah",
     "canonical_name": "Teacher Normylah",
     "department": "High School Faculty",
@@ -31297,7 +32047,9 @@
     ]
   },
   "tchr_radzmia": {
+    "id": "tchr_radzmia",
     "teacher_id": "tchr_radzmia",
+    "name": "Teacher Radzmia",
     "teacher_name": "Teacher Radzmia",
     "canonical_name": "Teacher Radzmia",
     "department": "High School Faculty",
@@ -32272,7 +33024,9 @@
     ]
   },
   "tchr_rowena": {
+    "id": "tchr_rowena",
     "teacher_id": "tchr_rowena",
+    "name": "Teacher Rowena",
     "teacher_name": "Teacher Rowena",
     "canonical_name": "Teacher Rowena",
     "department": "High School Faculty",
@@ -33350,7 +34104,9 @@
     ]
   },
   "tchr_sahdia": {
+    "id": "tchr_sahdia",
     "teacher_id": "tchr_sahdia",
+    "name": "Teacher Sahdia",
     "teacher_name": "Teacher Sahdia",
     "canonical_name": "Teacher Sahdia",
     "department": "Elementary Faculty",
@@ -34397,7 +35153,9 @@
     ]
   },
   "tchr_saimonah": {
+    "id": "tchr_saimonah",
     "teacher_id": "tchr_saimonah",
+    "name": "Teacher Saimonah",
     "teacher_name": "Teacher Saimonah",
     "canonical_name": "Teacher Saimonah",
     "department": "Elementary Faculty",
@@ -35224,7 +35982,9 @@
     ]
   },
   "tchr_shanen": {
+    "id": "tchr_shanen",
     "teacher_id": "tchr_shanen",
+    "name": "Teacher Shanen",
     "teacher_name": "Teacher Shanen",
     "canonical_name": "Teacher Shanen",
     "department": "High School Faculty",
@@ -35235,7 +35995,9 @@
     "rows": []
   },
   "tchr_shirehan": {
+    "id": "tchr_shirehan",
     "teacher_id": "tchr_shirehan",
+    "name": "Teacher Shirehan",
     "teacher_name": "Teacher Shirehan",
     "canonical_name": "Teacher Shirehan",
     "department": "High School Faculty",
@@ -36173,7 +36935,9 @@
     ]
   },
   "tchr_sitti_kauzar": {
+    "id": "tchr_sitti_kauzar",
     "teacher_id": "tchr_sitti_kauzar",
+    "name": "Teacher Sitti Kauzar",
     "teacher_name": "Teacher Sitti Kauzar",
     "canonical_name": "Teacher Sitti Kauzar",
     "department": "Elementary Faculty",
@@ -36933,7 +37697,9 @@
     ]
   },
   "tchr_sophia": {
+    "id": "tchr_sophia",
     "teacher_id": "tchr_sophia",
+    "name": "Teacher Sophia",
     "teacher_name": "Teacher Sophia",
     "canonical_name": "Teacher Sophia",
     "department": "High School Faculty",
@@ -37926,7 +38692,9 @@
     ]
   },
   "tchr_thea": {
+    "id": "tchr_thea",
     "teacher_id": "tchr_thea",
+    "name": "Teacher Thea",
     "teacher_name": "Teacher Thea",
     "canonical_name": "Teacher Thea",
     "department": "High School Faculty",
@@ -37937,7 +38705,9 @@
     "rows": []
   },
   "tchr_wardah": {
+    "id": "tchr_wardah",
     "teacher_id": "tchr_wardah",
+    "name": "Teacher Wardah",
     "teacher_name": "Teacher Wardah",
     "canonical_name": "Teacher Wardah",
     "department": "High School Faculty",
@@ -38072,7 +38842,9 @@
     ]
   },
   "tchr_wendy": {
+    "id": "tchr_wendy",
     "teacher_id": "tchr_wendy",
+    "name": "Teacher Wendy",
     "teacher_name": "Teacher Wendy",
     "canonical_name": "Teacher Wendy",
     "department": "Elementary Faculty",
@@ -39141,7 +39913,9 @@
     ]
   },
   "tchr_zara": {
+    "id": "tchr_zara",
     "teacher_id": "tchr_zara",
+    "name": "Teacher Zara",
     "teacher_name": "Teacher Zara",
     "canonical_name": "Teacher Zara",
     "department": "Elementary Faculty",
@@ -39621,7 +40395,9 @@
     ]
   },
   "tchr_zuhora": {
+    "id": "tchr_zuhora",
     "teacher_id": "tchr_zuhora",
+    "name": "Teacher Zuhora",
     "teacher_name": "Teacher Zuhora",
     "canonical_name": "Teacher Zuhora",
     "department": "Elementary Faculty",

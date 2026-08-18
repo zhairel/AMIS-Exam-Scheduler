@@ -9,6 +9,7 @@ Only Sources:
 
 import json, re, os, datetime
 import openpyxl
+from teacher_registry import resolve_teacher
 
 EXCEL_PATH = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/SCHEDULE SY 2026-2027 TW.xlsx'
 OUTPUT_V4_JSON = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/AMIS_CLASS_DATASET_CANONICAL_LATEST_V4.json'
@@ -224,13 +225,20 @@ for sdef in SECTION_DEFS:
             subj, tchr = split_subject_teacher(c_str)
             is_break_cell = is_break_text(subj)
             
-            clean_t = clean_teacher_name(tchr)
-            t_id = 'tchr_' + re.sub(r'[^a-zA-Z0-9]+', '_', clean_t).strip('_').lower() if clean_t else None
+            t_obj = resolve_teacher(tchr) if tchr else None
+            if t_obj:
+                canonical_t = t_obj['canonical_name']
+                clean_t = clean_teacher_name(canonical_t)
+                t_id = t_obj['id']
+            else:
+                clean_t = clean_teacher_name(tchr) if tchr else ""
+                canonical_t = f"Teacher {clean_t}" if clean_t else None
+                t_id = 'tchr_' + re.sub(r'[^a-zA-Z0-9]+', '_', clean_t).strip('_').lower() if clean_t else None
             
             day_cells[dname] = {
                 "raw": c_str,
                 "subject": subj,
-                "teacher": f"Teacher {clean_t}" if clean_t else (tchr if tchr else None),
+                "teacher": canonical_t,
                 "teacher_id": t_id,
                 "is_break": is_break_cell,
                 "label": subj if is_break_cell else None,
@@ -243,12 +251,12 @@ for sdef in SECTION_DEFS:
             elif subj:
                 row_subjects.append(subj)
                 if tchr:
-                    row_teachers.append(tchr)
+                    row_teachers.append(canonical_t or tchr)
             
             if tchr and subj and not is_break_cell:
                 c_subj = clean_subject_code(subj)
                 rec = {
-                    "teacher": tchr,
+                    "teacher": canonical_t or tchr,
                     "teacher_clean": clean_t,
                     "teacher_id": t_id,
                     "section": sec_name,
@@ -273,7 +281,16 @@ for sdef in SECTION_DEFS:
         
         main_subj = row_subjects[0] if row_subjects else (first_day_val if first_day_val else "BREAK / ASSEMBLY")
         main_tchr = row_teachers[0] if row_teachers else None
-        clean_main_t = clean_teacher_name(main_tchr) if main_tchr else None
+        
+        main_t_obj = resolve_teacher(main_tchr) if main_tchr else None
+        if main_t_obj:
+            canonical_main_t = main_t_obj['canonical_name']
+            clean_main_t = clean_teacher_name(canonical_main_t)
+            main_t_id = main_t_obj['id']
+        else:
+            clean_main_t = clean_teacher_name(main_tchr) if main_tchr else None
+            canonical_main_t = f"Teacher {clean_main_t}" if clean_main_t else main_tchr
+            main_t_id = 'tchr_' + re.sub(r'[^a-zA-Z0-9]+', '_', clean_main_t).strip('_').lower() if clean_main_t else None
         
         period_obj = {
             "period_num": p_num,
@@ -283,8 +300,8 @@ for sdef in SECTION_DEFS:
             "label": main_subj if is_break_row else None,
             "subject": main_subj,
             "subject_id": 'subj_' + re.sub(r'[^a-zA-Z0-9]+', '_', main_subj).strip('_').lower(),
-            "teacher": f"Teacher {clean_main_t}" if clean_main_t else main_tchr,
-            "teacher_id": 'tchr_' + re.sub(r'[^a-zA-Z0-9]+', '_', clean_main_t).strip('_').lower() if clean_main_t else None,
+            "teacher": canonical_main_t,
+            "teacher_id": main_t_id,
             "is_break": is_break_row and all_same,
             "days": day_cells,
             "source_sheet": sdef['sheet'],

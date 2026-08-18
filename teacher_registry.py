@@ -433,7 +433,7 @@ LOOKUP_MAP = {}
 def clean_key(s):
     if not s: return ""
     s = s.lower().strip()
-    s = re.sub(r'[\(\)\[\]\,\.\-\_\—\:\;\"\']', ' ', s)
+    s = re.sub(r'[\(\)\[\]\,\.\-\_\—\:\;\"\'\+\*\#\?]', ' ', s)
     s = re.sub(r'\s+', ' ', s).strip()
     return s
 

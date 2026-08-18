@@ -38,7 +38,9 @@ def get_subj_color(sname):
 teacher_data = {}
 for t in TEACHER_REGISTRY:
     teacher_data[t['id']] = {
+        'id': t['id'],
         'teacher_id': t['id'],
+        'name': t['canonical_name'],
         'teacher_name': t['canonical_name'],
         'canonical_name': t['canonical_name'],
         'department': t.get('department', 'Faculty'),
