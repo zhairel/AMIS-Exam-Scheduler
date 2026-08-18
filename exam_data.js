@@ -20,9 +20,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_circle_time",
     "subject": "Circle Time",
     "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychell",
+    "teacher": "Tchr. Keychell",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Keychell",
+    "source_cell": "ELEM!D7"
   },
   {
     "id": "exam_2",
@@ -45,9 +47,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_hadith",
     "subject": "Hadith",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Ust. Saliha",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D8",
+    "teacher_clean": "Saliha"
   },
   {
     "id": "exam_3",
@@ -70,9 +74,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Ust. Saliha",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saliha",
+    "source_cell": "ELEM!G8"
   },
   {
     "id": "exam_4",
@@ -97,7 +103,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jaisam",
     "teacher": "Ustadh Jaisam",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!H8",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_5",
@@ -120,9 +128,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_circle_time",
     "subject": "Circle Time",
     "teacher_id": "tchr_wendy",
-    "teacher": "Teacher Wendy",
+    "teacher": "Tchr. Wendy",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Wendy",
+    "source_cell": "ELEM!D17"
   },
   {
     "id": "exam_6",
@@ -147,7 +157,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jaisam",
     "teacher": "Ustadh Jaisam",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!G18",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_7",
@@ -170,9 +182,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Ust. Saliha",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saliha",
+    "source_cell": "ELEM!H18"
   },
   {
     "id": "exam_8",
@@ -195,9 +209,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_hadith",
     "subject": "Hadith",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Ust. Saliha",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!F18",
+    "teacher_clean": "Saliha"
   },
   {
     "id": "exam_9",
@@ -220,9 +236,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Ust. Saliha",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saliha",
+    "source_cell": "ELEM!D27"
   },
   {
     "id": "exam_10",
@@ -245,9 +263,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_language",
     "subject": "Language",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D28",
+    "teacher_clean": "Sahdia"
   },
   {
     "id": "exam_11",
@@ -272,7 +292,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_katrina",
     "teacher": "Teacher Katrina",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_12",
@@ -295,9 +315,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_wendy",
-    "teacher": "Teacher Wendy",
+    "teacher": "Tchr. Wendy",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Wendy",
+    "source_cell": "ELEM!D31"
   },
   {
     "id": "exam_13",
@@ -320,9 +342,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_abdiraheem",
-    "teacher": "Ustadh Abdiraheem",
+    "teacher": "Ust. Abdiraheem",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D34",
+    "teacher_clean": "Abdiraheem"
   },
   {
     "id": "exam_14",
@@ -347,7 +371,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_norhydie",
     "teacher": "Teacher Norhydie",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D35",
+    "teacher_clean": "Norhydie"
   },
   {
     "id": "exam_15",
@@ -370,9 +396,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sahdia",
+    "source_cell": "ELEM!H36"
   },
   {
     "id": "exam_16",
@@ -395,9 +423,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!G36",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_17",
@@ -420,9 +450,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_marham",
-    "teacher": "Teacher Marham",
+    "teacher": "Tchr. Marham",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D42",
+    "teacher_clean": "Marham"
   },
   {
     "id": "exam_18",
@@ -445,9 +477,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D43",
+    "teacher_clean": "Monisa"
   },
   {
     "id": "exam_19",
@@ -469,10 +503,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
-    "teacher_id": "tchr_sitti_kauzar",
-    "teacher": "Teacher Sitti Kauzar",
+    "teacher_id": "tchr_sitti",
+    "teacher": "Tchr. Sitti",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sitti",
+    "source_cell": "ELEM!D44"
   },
   {
     "id": "exam_20",
@@ -494,10 +530,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_saliha",
+    "teacher_id": "tchr_a_saliha",
     "teacher": "Ustadha Saliha",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "A Saliha",
+    "source_cell": "ELEM!E46"
   },
   {
     "id": "exam_21",
@@ -520,9 +558,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!F47",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_22",
@@ -545,9 +585,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Obaydah",
+    "source_cell": "ELEM!H47"
   },
   {
     "id": "exam_23",
@@ -569,10 +611,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_filipino",
     "subject": "Filipino",
-    "teacher_id": "tchr_sitti_kauzar",
-    "teacher": "Teacher Sitti Kauzar",
+    "teacher_id": "tchr_sitti",
+    "teacher": "Tchr. Sitti",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D49",
+    "teacher_clean": "Sitti"
   },
   {
     "id": "exam_24",
@@ -595,9 +639,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_ersahad",
-    "teacher": "Ustadh Ersahad",
+    "teacher": "Ust. Ersahad",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!G51",
+    "teacher_clean": "Ersahad"
   },
   {
     "id": "exam_25",
@@ -620,9 +666,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_jerlyn",
-    "teacher": "Teacher Jerlyn",
+    "teacher": "Tchr. Jerlyn",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D57",
+    "teacher_clean": "Jerlyn"
   },
   {
     "id": "exam_26",
@@ -645,9 +693,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
     "teacher_id": "tchr_wendy",
-    "teacher": "Teacher Wendy",
+    "teacher": "Tchr. Wendy",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D58",
+    "teacher_clean": "Wendy"
   },
   {
     "id": "exam_27",
@@ -670,9 +720,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_marham",
-    "teacher": "Teacher Marham",
+    "teacher": "Tchr. Marham",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D59",
+    "teacher_clean": "Marham"
   },
   {
     "id": "exam_28",
@@ -694,10 +746,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_filipino",
     "subject": "Filipino",
-    "teacher_id": "tchr_normylah",
-    "teacher": "Teacher Normylah",
+    "teacher_id": "tchr_normayla",
+    "teacher": "Tchr. Normayla",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D61",
+    "teacher_clean": "Normayla"
   },
   {
     "id": "exam_29",
@@ -720,9 +774,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Ust. Saliha",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saliha",
+    "source_cell": "ELEM!G62"
   },
   {
     "id": "exam_30",
@@ -745,9 +801,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_ersahad",
-    "teacher": "Ustadh Ersahad",
+    "teacher": "Ust. Ersahad",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!H64",
+    "teacher_clean": "Ersahad"
   },
   {
     "id": "exam_31",
@@ -770,9 +828,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!G64"
   },
   {
     "id": "exam_32",
@@ -795,9 +855,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!G65",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_33",
@@ -820,9 +882,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_jerlyn",
-    "teacher": "Teacher Jerlyn",
+    "teacher": "Tchr. Jerlyn",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jerlyn",
+    "source_cell": "ELEM!H66"
   },
   {
     "id": "exam_34",
@@ -845,9 +909,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!F82"
   },
   {
     "id": "exam_35",
@@ -870,9 +936,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Arvin",
+    "source_cell": "ELEM!D78"
   },
   {
     "id": "exam_36",
@@ -895,9 +963,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_abdiraheem",
-    "teacher": "Ustadh Abdiraheem",
+    "teacher": "Ust. Abdiraheem",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!G79",
+    "teacher_clean": "Abdiraheem"
   },
   {
     "id": "exam_37",
@@ -920,9 +990,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sahdia",
+    "source_cell": "ELEM!D85"
   },
   {
     "id": "exam_38",
@@ -945,9 +1017,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_junaisah",
-    "teacher": "Teacher Junaisah",
+    "teacher": "Tchr. Junaisah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D81",
+    "teacher_clean": "Junaisah"
   },
   {
     "id": "exam_39",
@@ -970,9 +1044,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_norhydie",
-    "teacher": "Teacher Norhydie",
+    "teacher": "Tchr. Norhydie",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!G82",
+    "teacher_clean": "Norhydie"
   },
   {
     "id": "exam_40",
@@ -995,9 +1071,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ali",
-    "teacher": "Ustadh Ali",
+    "teacher": "Ust. Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "ELEM!H84"
   },
   {
     "id": "exam_41",
@@ -1020,9 +1098,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!G84",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_42",
@@ -1045,9 +1125,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!H77"
   },
   {
     "id": "exam_43",
@@ -1072,7 +1154,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_norhydie",
     "teacher": "Teacher Norhydie",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D86",
+    "teacher_clean": "Norhydie"
   },
   {
     "id": "exam_44",
@@ -1095,9 +1179,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_jessa",
-    "teacher": "Teacher Jessa",
+    "teacher": "Tchr. Jessa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D92",
+    "teacher_clean": "Jessa"
   },
   {
     "id": "exam_45",
@@ -1119,10 +1205,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_jairah",
-    "teacher": "Teacher Jairah",
+    "teacher_id": "tchr_jayra",
+    "teacher": "Tchr. Jayra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jayra",
+    "source_cell": "ELEM!H93"
   },
   {
     "id": "exam_46",
@@ -1144,10 +1232,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
-    "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher_id": "tchr_ubaydah",
+    "teacher": "Ust. Ubaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!G93",
+    "teacher_clean": "Ubaydah"
   },
   {
     "id": "exam_47",
@@ -1170,9 +1260,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ersahad",
-    "teacher": "Ustadh Ersahad",
+    "teacher": "Ust. Ersahad",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ersahad",
+    "source_cell": "ELEM!G94"
   },
   {
     "id": "exam_48",
@@ -1195,9 +1287,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_halnaisa",
-    "teacher": "Teacher Halnaisa",
+    "teacher": "Tchr. Halnaisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Halnaisa",
+    "source_cell": "ELEM!G96"
   },
   {
     "id": "exam_49",
@@ -1220,9 +1314,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_fhairudz",
-    "teacher": "Teacher Fhairudz",
+    "teacher": "Tchr. Fhairudz",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Fhairudz",
+    "source_cell": "ELEM!D97"
   },
   {
     "id": "exam_50",
@@ -1245,9 +1341,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_junaisah",
-    "teacher": "Teacher Junaisah",
+    "teacher": "Tchr. Junaisah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D99",
+    "teacher_clean": "Junaisah"
   },
   {
     "id": "exam_51",
@@ -1270,9 +1368,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_norhydie",
-    "teacher": "Teacher Norhydie",
+    "teacher": "Tchr. Norhydie",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Norhydie",
+    "source_cell": "ELEM!H94"
   },
   {
     "id": "exam_52",
@@ -1295,9 +1395,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_ersahad",
-    "teacher": "Ustadh Ersahad",
+    "teacher": "Ust. Ersahad",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!G100",
+    "teacher_clean": "Ersahad"
   },
   {
     "id": "exam_53",
@@ -1320,9 +1422,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_jessa",
-    "teacher": "Teacher Jessa",
+    "teacher": "Tchr. Jessa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!H101",
+    "teacher_clean": "Jessa"
   },
   {
     "id": "exam_54",
@@ -1345,9 +1449,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_normylah",
-    "teacher": "Teacher Normylah",
+    "teacher": "Tchr. Normylah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D107",
+    "teacher_clean": "Normylah"
   },
   {
     "id": "exam_55",
@@ -1370,9 +1476,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_jessa",
-    "teacher": "Teacher Jessa",
+    "teacher": "Tchr. Jessa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D108",
+    "teacher_clean": "Jessa"
   },
   {
     "id": "exam_56",
@@ -1395,9 +1503,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_zuhora",
-    "teacher": "Teacher Zuhora",
+    "teacher": "Tchr. Zuhora",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Zuhora",
+    "source_cell": "ELEM!G114"
   },
   {
     "id": "exam_57",
@@ -1420,9 +1530,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_ersahad",
-    "teacher": "Ustadh Ersahad",
+    "teacher": "Ust. Ersahad",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ersahad",
+    "source_cell": "ELEM!D116"
   },
   {
     "id": "exam_58",
@@ -1444,10 +1556,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_shaf",
     "subject": "SHAF",
-    "teacher_id": "tchr_abdiraheem",
-    "teacher": "Ustadh Abdiraheem",
+    "teacher_id": "tchr_abdi",
+    "teacher": "Ust. Abdi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!G111",
+    "teacher_clean": "Abdi"
   },
   {
     "id": "exam_59",
@@ -1470,9 +1584,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!D112"
   },
   {
     "id": "exam_60",
@@ -1495,9 +1611,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Arvin",
+    "source_cell": "ELEM!H114"
   },
   {
     "id": "exam_61",
@@ -1520,9 +1638,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ali",
-    "teacher": "Ustadh Ali",
+    "teacher": "Ust. Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "ELEM!E116"
   },
   {
     "id": "exam_62",
@@ -1545,9 +1665,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_faidh",
-    "teacher": "Ustadh Faidh",
+    "teacher": "Ust. Faidh",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!F116",
+    "teacher_clean": "Faidh"
   },
   {
     "id": "exam_63",
@@ -1569,10 +1691,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_science",
     "subject": "Science",
-    "teacher_id": "tchr_wendy",
-    "teacher": "Teacher Wendy",
+    "teacher_id": "tchr_wendelyn",
+    "teacher": "Tchr. Wendelyn",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!D115",
+    "teacher_clean": "Wendelyn"
   },
   {
     "id": "exam_64",
@@ -1595,9 +1719,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_circle_time",
     "subject": "Circle Time",
     "teacher_id": "tchr_joanna",
-    "teacher": "Teacher Joanna",
+    "teacher": "Tchr. Joanna",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Joanna",
+    "source_cell": "ELEM!L8"
   },
   {
     "id": "exam_65",
@@ -1620,9 +1746,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!L10",
+    "teacher_clean": "Hainur"
   },
   {
     "id": "exam_66",
@@ -1645,9 +1773,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!N10"
   },
   {
     "id": "exam_67",
@@ -1670,9 +1800,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_hadith",
     "subject": "Hadith",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Ust. Saliha",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!P10",
+    "teacher_clean": "Saliha"
   },
   {
     "id": "exam_68",
@@ -1697,7 +1829,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_ali",
     "teacher": "Ustadh Ali",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_69",
@@ -1720,9 +1852,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sahdia",
+    "source_cell": "ELEM!N27"
   },
   {
     "id": "exam_70",
@@ -1745,9 +1879,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
     "teacher_id": "tchr_norhydie",
-    "teacher": "Teacher Norhydie",
+    "teacher": "Tchr. Norhydie",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!O27",
+    "teacher_clean": "Norhydie"
   },
   {
     "id": "exam_71",
@@ -1770,9 +1906,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Hainur",
+    "source_cell": "ELEM!P27"
   },
   {
     "id": "exam_72",
@@ -1797,7 +1935,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdul_karim",
     "teacher": "Alim Abdul Karim",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!O29",
+    "teacher_clean": "Abdul Karim"
   },
   {
     "id": "exam_73",
@@ -1820,9 +1960,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_language",
     "subject": "Language",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!N29",
+    "teacher_clean": "Sahdia"
   },
   {
     "id": "exam_74",
@@ -1845,9 +1987,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!P29",
+    "teacher_clean": "Hainur"
   },
   {
     "id": "exam_75",
@@ -1870,9 +2014,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_joanna",
-    "teacher": "Teacher Joanna",
+    "teacher": "Tchr. Joanna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Joanna",
+    "source_cell": "ELEM!N31"
   },
   {
     "id": "exam_76",
@@ -1897,7 +2043,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_katrina",
     "teacher": "Teacher Katrina",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_77",
@@ -1920,9 +2066,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Ust. Saliha",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saliha",
+    "source_cell": "ELEM!N42"
   },
   {
     "id": "exam_78",
@@ -1945,9 +2093,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_marham",
-    "teacher": "Teacher Marham",
+    "teacher": "Tchr. Marham",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!O42",
+    "teacher_clean": "Marham"
   },
   {
     "id": "exam_79",
@@ -1969,10 +2119,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_filipino",
     "subject": "Filipino",
-    "teacher_id": "tchr_sitti_kauzar",
-    "teacher": "Teacher Sitti Kauzar",
+    "teacher_id": "tchr_sitti",
+    "teacher": "Tchr. Sitti",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!O44",
+    "teacher_clean": "Sitti"
   },
   {
     "id": "exam_80",
@@ -1994,10 +2146,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
-    "teacher_id": "tchr_sitti_kauzar",
-    "teacher": "Teacher Sitti Kauzar",
+    "teacher_id": "tchr_sitti",
+    "teacher": "Tchr. Sitti",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sitti",
+    "source_cell": "ELEM!P44"
   },
   {
     "id": "exam_81",
@@ -2020,9 +2174,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Hainur",
+    "source_cell": "ELEM!N44"
   },
   {
     "id": "exam_82",
@@ -2047,7 +2203,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdul_karim",
     "teacher": "Alim Abdul Karim",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!N46",
+    "teacher_clean": "Abdul Karim"
   },
   {
     "id": "exam_83",
@@ -2070,9 +2228,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
     "teacher_id": "tchr_zuhora",
-    "teacher": "Teacher Zuhora",
+    "teacher": "Tchr. Zuhora",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!O46",
+    "teacher_clean": "Zuhora"
   },
   {
     "id": "exam_84",
@@ -2095,9 +2255,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!P46",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_85",
@@ -2120,9 +2282,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_jerlyn",
-    "teacher": "Teacher Jerlyn",
+    "teacher": "Tchr. Jerlyn",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!N57",
+    "teacher_clean": "Jerlyn"
   },
   {
     "id": "exam_86",
@@ -2145,9 +2309,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_jerlyn",
-    "teacher": "Teacher Jerlyn",
+    "teacher": "Tchr. Jerlyn",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jerlyn",
+    "source_cell": "ELEM!O57"
   },
   {
     "id": "exam_87",
@@ -2170,9 +2336,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!P57"
   },
   {
     "id": "exam_88",
@@ -2195,9 +2363,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!L59"
   },
   {
     "id": "exam_89",
@@ -2220,9 +2390,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_marham",
-    "teacher": "Teacher Marham",
+    "teacher": "Tchr. Marham",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!O59",
+    "teacher_clean": "Marham"
   },
   {
     "id": "exam_90",
@@ -2247,7 +2419,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_zara",
     "teacher": "Teacher Zara",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_91",
@@ -2270,9 +2442,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!L61",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_92",
@@ -2297,7 +2471,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdul_karim",
     "teacher": "Alim Abdul Karim",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!P61",
+    "teacher_clean": "Abdul Karim"
   },
   {
     "id": "exam_93",
@@ -2319,10 +2495,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_filipino",
     "subject": "Filipino",
-    "teacher_id": "tchr_normylah",
-    "teacher": "Teacher Normylah",
+    "teacher_id": "tchr_normayla",
+    "teacher": "Tchr. Normayla",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!O61",
+    "teacher_clean": "Normayla"
   },
   {
     "id": "exam_94",
@@ -2345,9 +2523,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_faidh",
-    "teacher": "Ustadh Faidh",
+    "teacher": "Faidh",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Faidh",
+    "source_cell": "ELEM!L67"
   },
   {
     "id": "exam_95",
@@ -2369,10 +2549,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
-    "teacher_id": "tchr_saimonah",
-    "teacher": "Teacher Saimonah",
+    "teacher_id": "tchr_saimona",
+    "teacher": "Saimona",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saimona",
+    "source_cell": "ELEM!P67"
   },
   {
     "id": "exam_96",
@@ -2397,7 +2579,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_zuhora",
     "teacher": "Teacher Zuhora",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_97",
@@ -2420,9 +2602,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!O67"
   },
   {
     "id": "exam_98",
@@ -2445,9 +2629,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ali",
-    "teacher": "Ustadh Ali",
+    "teacher": "Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "ELEM!L69"
   },
   {
     "id": "exam_99",
@@ -2472,7 +2658,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdiraheem",
     "teacher": "Ustadh Abdiraheem",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_100",
@@ -2495,9 +2681,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sahdia",
+    "source_cell": "ELEM!P69"
   },
   {
     "id": "exam_101",
@@ -2522,7 +2710,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jenny",
     "teacher": "Teacher Jenny",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_102",
@@ -2544,10 +2732,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_science",
     "subject": "Science",
-    "teacher_id": "tchr_saimonah",
-    "teacher": "Teacher Saimonah",
+    "teacher_id": "tchr_saimona",
+    "teacher": "Saimona",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saimona",
+    "source_cell": "ELEM!O71"
   },
   {
     "id": "exam_103",
@@ -2572,7 +2762,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jenny",
     "teacher": "Teacher Jenny",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_104",
@@ -2595,9 +2785,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Arvin",
+    "source_cell": "ELEM!O77"
   },
   {
     "id": "exam_105",
@@ -2620,9 +2812,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!N77"
   },
   {
     "id": "exam_106",
@@ -2645,9 +2839,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sahdia",
+    "source_cell": "ELEM!P77"
   },
   {
     "id": "exam_107",
@@ -2670,9 +2866,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_abdiraheem",
-    "teacher": "Ustadh Abdiraheem",
+    "teacher": "Ust. Abdiraheem",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!O79",
+    "teacher_clean": "Abdiraheem"
   },
   {
     "id": "exam_108",
@@ -2695,9 +2893,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ali",
-    "teacher": "Ustadh Ali",
+    "teacher": "Ust. Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "ELEM!M79"
   },
   {
     "id": "exam_109",
@@ -2720,9 +2920,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!N79",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_110",
@@ -2745,9 +2947,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!L77"
   },
   {
     "id": "exam_111",
@@ -2770,9 +2974,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!N81",
+    "teacher_clean": "Arvin"
   },
   {
     "id": "exam_112",
@@ -2795,9 +3001,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!O81",
+    "teacher_clean": "Anna"
   },
   {
     "id": "exam_113",
@@ -2820,9 +3028,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_fil",
     "subject": "Fil",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!P81",
+    "teacher_clean": "Monisa"
   },
   {
     "id": "exam_114",
@@ -2845,9 +3055,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_raslina",
-    "teacher": "Ustadh Raslina",
+    "teacher": "Ust. Raslina",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!N92",
+    "teacher_clean": "Raslina"
   },
   {
     "id": "exam_115",
@@ -2870,9 +3082,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_joanna",
-    "teacher": "Teacher Joanna",
+    "teacher": "Tchr. Joanna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!O92",
+    "teacher_clean": "Joanna"
   },
   {
     "id": "exam_116",
@@ -2894,10 +3108,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_jairah",
-    "teacher": "Teacher Jairah",
+    "teacher_id": "tchr_jayra",
+    "teacher": "Tchr. Jayra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jayra",
+    "source_cell": "ELEM!P92"
   },
   {
     "id": "exam_117",
@@ -2920,9 +3136,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_jessa",
-    "teacher": "Teacher Jessa",
+    "teacher": "Tchr. Jessa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!N94",
+    "teacher_clean": "Jessa"
   },
   {
     "id": "exam_118",
@@ -2945,9 +3163,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_jaisam",
-    "teacher": "Ustadh Jaisam",
+    "teacher": "Ust. Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!M94",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_119",
@@ -2970,9 +3190,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!M92"
   },
   {
     "id": "exam_120",
@@ -2997,7 +3219,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdul_karim",
     "teacher": "Alim Abdul Karim",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Abdul Karim",
+    "source_cell": "ELEM!P94"
   },
   {
     "id": "exam_121",
@@ -3020,9 +3244,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!N96",
+    "teacher_clean": "Anna"
   },
   {
     "id": "exam_122",
@@ -3045,9 +3271,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_fhairudz",
-    "teacher": "Teacher Fhairudz",
+    "teacher": "Tchr. Fhairudz",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Fhairudz",
+    "source_cell": "ELEM!O96"
   },
   {
     "id": "exam_123",
@@ -3070,9 +3298,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Anna",
+    "source_cell": "ELEM!P96"
   },
   {
     "id": "exam_124",
@@ -3095,9 +3325,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_jessa",
-    "teacher": "Teacher Jessa",
+    "teacher": "Tchr. Jessa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!O107",
+    "teacher_clean": "Jessa"
   },
   {
     "id": "exam_125",
@@ -3120,9 +3352,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!P107",
+    "teacher_clean": "Anna"
   },
   {
     "id": "exam_126",
@@ -3144,10 +3378,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
-    "teacher_id": "tchr_katrina",
-    "teacher": "Teacher Katrina",
+    "teacher_id": "tchr_kat",
+    "teacher": "Tchr. Kat",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Kat",
+    "source_cell": "ELEM!N109"
   },
   {
     "id": "exam_127",
@@ -3170,9 +3406,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!M109"
   },
   {
     "id": "exam_128",
@@ -3195,9 +3433,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_normylah",
-    "teacher": "Teacher Normylah",
+    "teacher": "Tchr. Normylah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Normylah",
+    "source_cell": "ELEM!L107"
   },
   {
     "id": "exam_129",
@@ -3219,10 +3459,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_shaf",
     "subject": "SHAF",
-    "teacher_id": "tchr_abdiraheem",
-    "teacher": "Ustadh Abdiraheem",
+    "teacher_id": "tchr_abdi",
+    "teacher": "Ust. Abdi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!N111",
+    "teacher_clean": "Abdi"
   },
   {
     "id": "exam_130",
@@ -3245,9 +3487,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_jaisam",
-    "teacher": "Ustadh Jaisam",
+    "teacher": "Ust. Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!L111",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_131",
@@ -3270,9 +3514,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Arvin",
+    "source_cell": "ELEM!M111"
   },
   {
     "id": "exam_132",
@@ -3295,9 +3541,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ali",
-    "teacher": "Ustadh Ali",
+    "teacher": "Ust. Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "ELEM!O111"
   },
   {
     "id": "exam_133",
@@ -3320,9 +3568,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_fil",
     "subject": "Fil",
     "teacher_id": "tchr_zuhora",
-    "teacher": "Teacher Zuhora",
+    "teacher": "Tchr. Zuhora",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!P111",
+    "teacher_clean": "Zuhora"
   },
   {
     "id": "exam_134",
@@ -3345,9 +3595,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_circle_time",
     "subject": "Circle Time",
     "teacher_id": "tchr_ayah",
-    "teacher": "Teacher Ayah",
+    "teacher": "Tchr. Ayah",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ayah",
+    "source_cell": "ELEM!T8"
   },
   {
     "id": "exam_135",
@@ -3370,9 +3622,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!U10"
   },
   {
     "id": "exam_136",
@@ -3395,9 +3649,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!V10",
+    "teacher_clean": "Hainur"
   },
   {
     "id": "exam_137",
@@ -3420,9 +3676,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_hadith",
     "subject": "Hadith",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Ust. Saliha",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!W10",
+    "teacher_clean": "Saliha"
   },
   {
     "id": "exam_138",
@@ -3445,9 +3703,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_joanna",
-    "teacher": "Teacher Joanna",
+    "teacher": "Tchr. Joanna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Joanna",
+    "source_cell": "ELEM!X31"
   },
   {
     "id": "exam_139",
@@ -3470,9 +3730,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_language",
     "subject": "Language",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!W27",
+    "teacher_clean": "Sahdia"
   },
   {
     "id": "exam_140",
@@ -3495,9 +3757,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
     "teacher_id": "tchr_norhydie",
-    "teacher": "Teacher Norhydie",
+    "teacher": "Tchr. Norhydie",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!X27",
+    "teacher_clean": "Norhydie"
   },
   {
     "id": "exam_141",
@@ -3520,9 +3784,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Ust. Saliha",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saliha",
+    "source_cell": "ELEM!U31"
   },
   {
     "id": "exam_142",
@@ -3547,7 +3813,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdul_karim",
     "teacher": "Alim Abdul Karim",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!V29",
+    "teacher_clean": "Abdul Karim"
   },
   {
     "id": "exam_143",
@@ -3570,9 +3838,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Hainur",
+    "source_cell": "ELEM!W29"
   },
   {
     "id": "exam_144",
@@ -3597,7 +3867,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_katrina",
     "teacher": "Teacher Katrina",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_145",
@@ -3620,9 +3890,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!W31",
+    "teacher_clean": "Hainur"
   },
   {
     "id": "exam_146",
@@ -3647,7 +3919,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdul_karim",
     "teacher": "Alim Abdul Karim",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!V42",
+    "teacher_clean": "Abdul Karim"
   },
   {
     "id": "exam_147",
@@ -3670,9 +3944,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Ust. Saliha",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saliha",
+    "source_cell": "ELEM!W42"
   },
   {
     "id": "exam_148",
@@ -3695,9 +3971,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!X42",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_149",
@@ -3720,9 +3998,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_marham",
-    "teacher": "Teacher Marham",
+    "teacher": "Tchr. Marham",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!V44",
+    "teacher_clean": "Marham"
   },
   {
     "id": "exam_150",
@@ -3745,9 +4025,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!W44",
+    "teacher_clean": "Monisa"
   },
   {
     "id": "exam_151",
@@ -3769,10 +4051,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_filipino",
     "subject": "Filipino",
-    "teacher_id": "tchr_sitti_kauzar",
-    "teacher": "Teacher Sitti Kauzar",
+    "teacher_id": "tchr_sitti",
+    "teacher": "Tchr. Sitti",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!V46",
+    "teacher_clean": "Sitti"
   },
   {
     "id": "exam_152",
@@ -3794,10 +4078,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
-    "teacher_id": "tchr_sitti_kauzar",
-    "teacher": "Teacher Sitti Kauzar",
+    "teacher_id": "tchr_sitti",
+    "teacher": "Tchr. Sitti",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sitti",
+    "source_cell": "ELEM!W46"
   },
   {
     "id": "exam_153",
@@ -3820,9 +4106,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Hainur",
+    "source_cell": "ELEM!X46"
   },
   {
     "id": "exam_154",
@@ -3845,9 +4133,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!T57",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_155",
@@ -3870,9 +4160,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_ersahad",
-    "teacher": "Ustadh Ersahad",
+    "teacher": "Ust. Ersahad",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!W57",
+    "teacher_clean": "Ersahad"
   },
   {
     "id": "exam_156",
@@ -3895,9 +4187,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_normylah",
-    "teacher": "Teacher Normylah",
+    "teacher": "Tchr. Normylah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!X57",
+    "teacher_clean": "Normylah"
   },
   {
     "id": "exam_157",
@@ -3920,9 +4214,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_jerlyn",
-    "teacher": "Teacher Jerlyn",
+    "teacher": "Tchr. Jerlyn",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!W59",
+    "teacher_clean": "Jerlyn"
   },
   {
     "id": "exam_158",
@@ -3945,9 +4241,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_jerlyn",
-    "teacher": "Teacher Jerlyn",
+    "teacher": "Tchr. Jerlyn",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jerlyn",
+    "source_cell": "ELEM!X59"
   },
   {
     "id": "exam_159",
@@ -3970,9 +4268,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!V59"
   },
   {
     "id": "exam_160",
@@ -3995,9 +4295,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!T61"
   },
   {
     "id": "exam_161",
@@ -4020,9 +4322,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_marham",
-    "teacher": "Teacher Marham",
+    "teacher": "Tchr. Marham",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!W61",
+    "teacher_clean": "Marham"
   },
   {
     "id": "exam_162",
@@ -4047,7 +4351,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_zara",
     "teacher": "Teacher Zara",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_163",
@@ -4070,9 +4374,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_eng3",
     "subject": "Eng3",
     "teacher_id": "tchr_jenny",
-    "teacher": "Teacher Jenny",
+    "teacher": "Tchr. Jenny",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!V67",
+    "teacher_clean": "Jenny"
   },
   {
     "id": "exam_164",
@@ -4095,9 +4401,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_fil3",
     "subject": "Fil3",
     "teacher_id": "tchr_jenny",
-    "teacher": "Teacher Jenny",
+    "teacher": "Tchr. Jenny",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!W67",
+    "teacher_clean": "Jenny"
   },
   {
     "id": "exam_165",
@@ -4120,9 +4428,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf3",
     "subject": "Shaf3",
     "teacher_id": "tchr_faidh",
-    "teacher": "Ustadh Faidh",
+    "teacher": "Ust. Faidh",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!V69",
+    "teacher_clean": "Faidh"
   },
   {
     "id": "exam_166",
@@ -4145,9 +4455,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_zuhora",
-    "teacher": "Teacher Zuhora",
+    "teacher": "Tchr. Zuhora",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Zuhora",
+    "source_cell": "ELEM!T69"
   },
   {
     "id": "exam_167",
@@ -4169,10 +4481,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_science",
     "subject": "Science",
-    "teacher_id": "tchr_saimonah",
-    "teacher": "Teacher Saimonah",
+    "teacher_id": "tchr_saimona",
+    "teacher": "Tchr. Saimona",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saimona",
+    "source_cell": "ELEM!W69"
   },
   {
     "id": "exam_168",
@@ -4195,9 +4509,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!X69",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_169",
@@ -4220,9 +4536,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_jerlyn",
-    "teacher": "Teacher Jerlyn",
+    "teacher": "Tchr. Jerlyn",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jerlyn",
+    "source_cell": "ELEM!V71"
   },
   {
     "id": "exam_170",
@@ -4245,9 +4563,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
     "teacher_id": "tchr_jenny",
-    "teacher": "Teacher Jenny",
+    "teacher": "Tchr. Jenny",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jenny",
+    "source_cell": "ELEM!W71"
   },
   {
     "id": "exam_171",
@@ -4270,9 +4590,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_faidh",
-    "teacher": "Ustadh Faidh",
+    "teacher": "Ust. Faidh",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Faidh",
+    "source_cell": "ELEM!X71"
   },
   {
     "id": "exam_172",
@@ -4295,9 +4617,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!V77",
+    "teacher_clean": "Arvin"
   },
   {
     "id": "exam_173",
@@ -4320,9 +4644,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!W77",
+    "teacher_clean": "Anna"
   },
   {
     "id": "exam_174",
@@ -4345,9 +4671,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_fil",
     "subject": "Fil",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!T79",
+    "teacher_clean": "Monisa"
   },
   {
     "id": "exam_175",
@@ -4370,9 +4698,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Arvin",
+    "source_cell": "ELEM!W79"
   },
   {
     "id": "exam_176",
@@ -4395,9 +4725,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!V79"
   },
   {
     "id": "exam_177",
@@ -4420,9 +4752,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ali",
-    "teacher": "Ustadh Ali",
+    "teacher": "Ust. Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "ELEM!X79"
   },
   {
     "id": "exam_178",
@@ -4445,9 +4779,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_abdiraheem",
-    "teacher": "Ustadh Abdiraheem",
+    "teacher": "Ust. Abdiraheem",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!U81",
+    "teacher_clean": "Abdiraheem"
   },
   {
     "id": "exam_179",
@@ -4470,9 +4806,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!V81",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_180",
@@ -4495,9 +4833,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sahdia",
+    "source_cell": "ELEM!W81"
   },
   {
     "id": "exam_181",
@@ -4520,9 +4860,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!X77"
   },
   {
     "id": "exam_182",
@@ -4545,9 +4887,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_jessa",
-    "teacher": "Teacher Jessa",
+    "teacher": "Tchr. Jessa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!V92",
+    "teacher_clean": "Jessa"
   },
   {
     "id": "exam_183",
@@ -4570,9 +4914,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_raslina",
-    "teacher": "Ustadh Raslina",
+    "teacher": "Ust. Raslina",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!W92",
+    "teacher_clean": "Raslina"
   },
   {
     "id": "exam_184",
@@ -4595,9 +4941,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_joanna",
-    "teacher": "Teacher Joanna",
+    "teacher": "Tchr. Joanna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!X92",
+    "teacher_clean": "Joanna"
   },
   {
     "id": "exam_185",
@@ -4620,9 +4968,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!W94",
+    "teacher_clean": "Anna"
   },
   {
     "id": "exam_186",
@@ -4645,9 +4995,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychell",
+    "teacher": "Tchr. Keychell",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Keychell",
+    "source_cell": "ELEM!T96"
   },
   {
     "id": "exam_187",
@@ -4669,10 +5021,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_jairah",
-    "teacher": "Teacher Jairah",
+    "teacher_id": "tchr_jayra",
+    "teacher": "Tchr. Jayra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jayra",
+    "source_cell": "ELEM!V94"
   },
   {
     "id": "exam_188",
@@ -4695,9 +5049,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Anna",
+    "source_cell": "ELEM!X94"
   },
   {
     "id": "exam_189",
@@ -4720,9 +5076,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_jaisam",
-    "teacher": "Ustadh Jaisam",
+    "teacher": "Ust. Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!U96",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_190",
@@ -4745,9 +5103,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_fhairudz",
-    "teacher": "Teacher Fhairudz",
+    "teacher": "Tchr. Fhairudz",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Fhairudz",
+    "source_cell": "ELEM!X96"
   },
   {
     "id": "exam_191",
@@ -4772,7 +5132,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdul_karim",
     "teacher": "Alim Abdul Karim",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Abdul Karim",
+    "source_cell": "ELEM!W96"
   },
   {
     "id": "exam_192",
@@ -4795,9 +5157,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!V109",
+    "teacher_clean": "Anna"
   },
   {
     "id": "exam_193",
@@ -4819,10 +5183,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
-    "teacher_id": "tchr_katrina",
-    "teacher": "Teacher Katrina",
+    "teacher_id": "tchr_kat",
+    "teacher": "Tchr. Kat",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Kat",
+    "source_cell": "ELEM!V107"
   },
   {
     "id": "exam_194",
@@ -4845,9 +5211,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_jessa",
-    "teacher": "Teacher Jessa",
+    "teacher": "Tchr. Jessa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!U109",
+    "teacher_clean": "Jessa"
   },
   {
     "id": "exam_195",
@@ -4870,9 +5238,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Arvin",
+    "source_cell": "ELEM!T109"
   },
   {
     "id": "exam_196",
@@ -4895,9 +5265,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!W109"
   },
   {
     "id": "exam_197",
@@ -4920,9 +5292,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_fil",
     "subject": "Fil",
     "teacher_id": "tchr_zuhora",
-    "teacher": "Teacher Zuhora",
+    "teacher": "Tchr Zuhora",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!X109",
+    "teacher_clean": "Zuhora"
   },
   {
     "id": "exam_198",
@@ -4945,9 +5319,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ali",
-    "teacher": "Ustadh Ali",
+    "teacher": "Ust. Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "ELEM!T111"
   },
   {
     "id": "exam_199",
@@ -4970,9 +5346,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_normylah",
-    "teacher": "Teacher Normylah",
+    "teacher": "Tchr Normylah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Normylah",
+    "source_cell": "ELEM!W107"
   },
   {
     "id": "exam_200",
@@ -4995,9 +5373,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_jaisam",
-    "teacher": "Ustadh Jaisam",
+    "teacher": "Ust. Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!V111",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_201",
@@ -5019,10 +5399,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_shaf",
     "subject": "SHAF",
-    "teacher_id": "tchr_abdiraheem",
-    "teacher": "Ustadh Abdiraheem",
+    "teacher_id": "tchr_abdi",
+    "teacher": "Ust. Abdi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!X111",
+    "teacher_clean": "Abdi"
   },
   {
     "id": "exam_202",
@@ -5045,9 +5427,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_circle_time",
     "subject": "Circle Time",
     "teacher_id": "tchr_ayah",
-    "teacher": "Teacher Ayah",
+    "teacher": "Tchr. Ayah",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ayah",
+    "source_cell": "ELEM!AD11"
   },
   {
     "id": "exam_203",
@@ -5070,9 +5454,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!AD9"
   },
   {
     "id": "exam_204",
@@ -5095,9 +5481,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AB11",
+    "teacher_clean": "Hainur"
   },
   {
     "id": "exam_205",
@@ -5120,9 +5508,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_hadith",
     "subject": "Hadith",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AF11",
+    "teacher_clean": "Hainur"
   },
   {
     "id": "exam_206",
@@ -5145,9 +5535,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_circle_time",
     "subject": "Circle Time",
     "teacher_id": "tchr_wendy",
-    "teacher": "Teacher Wendy",
+    "teacher": "Tchr. Wendy",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Wendy",
+    "source_cell": "ELEM!AB19"
   },
   {
     "id": "exam_207",
@@ -5170,9 +5562,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AD21",
+    "teacher_clean": "Hainur"
   },
   {
     "id": "exam_208",
@@ -5195,9 +5589,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_hadith",
     "subject": "Hadith",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AE21",
+    "teacher_clean": "Hainur"
   },
   {
     "id": "exam_209",
@@ -5222,7 +5618,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_bustamante",
     "teacher": "Alim Bustamante",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Bustamante",
+    "source_cell": "ELEM!AF21"
   },
   {
     "id": "exam_210",
@@ -5245,9 +5643,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sahdia",
+    "source_cell": "ELEM!AD28"
   },
   {
     "id": "exam_211",
@@ -5270,9 +5670,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
     "teacher_id": "tchr_norhydie",
-    "teacher": "Teacher Norhydie",
+    "teacher": "Tchr. Norhydie",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AE28",
+    "teacher_clean": "Norhydie"
   },
   {
     "id": "exam_212",
@@ -5295,9 +5697,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AF28",
+    "teacher_clean": "Hainur"
   },
   {
     "id": "exam_213",
@@ -5320,9 +5724,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_joanna",
-    "teacher": "Teacher Joanna",
+    "teacher": "Tchr. Joanna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Joanna",
+    "source_cell": "ELEM!AD30"
   },
   {
     "id": "exam_214",
@@ -5345,9 +5751,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_language",
     "subject": "Language",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AF30",
+    "teacher_clean": "Sahdia"
   },
   {
     "id": "exam_215",
@@ -5370,9 +5778,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Hainur",
+    "source_cell": "ELEM!AE30"
   },
   {
     "id": "exam_216",
@@ -5397,7 +5807,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdul_karim",
     "teacher": "Alim Abdul Karim",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AD32",
+    "teacher_clean": "Abdul Karim"
   },
   {
     "id": "exam_217",
@@ -5422,7 +5834,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_katrina",
     "teacher": "Teacher Katrina",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_218",
@@ -5444,10 +5856,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
-    "teacher_id": "tchr_sitti_kauzar",
-    "teacher": "Teacher Sitti Kauzar",
+    "teacher_id": "tchr_sitti",
+    "teacher": "Tchr. Sitti",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sitti",
+    "source_cell": "ELEM!AD43"
   },
   {
     "id": "exam_219",
@@ -5470,9 +5884,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Ust. Saliha",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saliha",
+    "source_cell": "ELEM!AE43"
   },
   {
     "id": "exam_220",
@@ -5495,9 +5911,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_marham",
-    "teacher": "Teacher Marham",
+    "teacher": "Tchr. Marham",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AD45",
+    "teacher_clean": "Marham"
   },
   {
     "id": "exam_221",
@@ -5520,9 +5938,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust.Hainur",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Hainur",
+    "source_cell": "ELEM!AC45"
   },
   {
     "id": "exam_222",
@@ -5545,9 +5965,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_zuhora",
-    "teacher": "Teacher Zuhora",
+    "teacher": "Tchr. Zuhora",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AF45",
+    "teacher_clean": "Zuhora"
   },
   {
     "id": "exam_223",
@@ -5570,9 +5992,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AD47",
+    "teacher_clean": "Monisa"
   },
   {
     "id": "exam_224",
@@ -5597,7 +6021,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdul_karim",
     "teacher": "Alim Abdul Karim",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AE47",
+    "teacher_clean": "Abdul Karim"
   },
   {
     "id": "exam_225",
@@ -5620,9 +6046,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AF47",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_226",
@@ -5645,9 +6073,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!AB58"
   },
   {
     "id": "exam_227",
@@ -5670,9 +6100,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_marham",
-    "teacher": "Teacher Marham",
+    "teacher": "Tchr. Marham",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AE58",
+    "teacher_clean": "Marham"
   },
   {
     "id": "exam_228",
@@ -5695,9 +6127,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!AD58"
   },
   {
     "id": "exam_229",
@@ -5720,9 +6154,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_ersahad",
-    "teacher": "Ustadh Ersahad",
+    "teacher": "Ust. Ersahad",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AC62",
+    "teacher_clean": "Ersahad"
   },
   {
     "id": "exam_230",
@@ -5745,9 +6181,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AB60",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_231",
@@ -5770,9 +6208,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_jerlyn",
-    "teacher": "Teacher Jerlyn",
+    "teacher": "Tchr. Jerlyn",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AE60",
+    "teacher_clean": "Jerlyn"
   },
   {
     "id": "exam_232",
@@ -5795,9 +6235,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_jerlyn",
-    "teacher": "Teacher Jerlyn",
+    "teacher": "Tchr. Jerlyn",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jerlyn",
+    "source_cell": "ELEM!AF60"
   },
   {
     "id": "exam_233",
@@ -5822,7 +6264,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_zara",
     "teacher": "Teacher Zara",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_234",
@@ -5845,9 +6287,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_normylah",
-    "teacher": "Teacher Normylah",
+    "teacher": "Tchr. Normylah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AF62",
+    "teacher_clean": "Normylah"
   },
   {
     "id": "exam_235",
@@ -5870,9 +6314,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_norhydie",
-    "teacher": "Teacher Norhydie",
+    "teacher": "Tchr. Norhydie",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AB78",
+    "teacher_clean": "Norhydie"
   },
   {
     "id": "exam_236",
@@ -5895,9 +6341,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Arvin",
+    "source_cell": "ELEM!AF78"
   },
   {
     "id": "exam_237",
@@ -5920,9 +6368,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!AD78"
   },
   {
     "id": "exam_238",
@@ -5945,9 +6395,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sahdia",
+    "source_cell": "ELEM!AE78"
   },
   {
     "id": "exam_239",
@@ -5970,9 +6422,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ali",
-    "teacher": "Ustadh Ali",
+    "teacher": "Ust. Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "ELEM!AB80"
   },
   {
     "id": "exam_240",
@@ -5995,9 +6449,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AC80",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_241",
@@ -6020,9 +6476,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_abdiraheem",
-    "teacher": "Ustadh Abdiraheem",
+    "teacher": "Ust. Abdiraheem",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AE80",
+    "teacher_clean": "Abdiraheem"
   },
   {
     "id": "exam_242",
@@ -6045,9 +6503,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!AF82"
   },
   {
     "id": "exam_243",
@@ -6070,9 +6530,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AD82",
+    "teacher_clean": "Arvin"
   },
   {
     "id": "exam_244",
@@ -6095,9 +6557,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AE82",
+    "teacher_clean": "Anna"
   },
   {
     "id": "exam_245",
@@ -6119,10 +6583,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_science",
     "subject": "Science",
-    "teacher_id": "tchr_saimonah",
-    "teacher": "Teacher Saimonah",
+    "teacher_id": "tchr_saimona",
+    "teacher": "Saimona",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saimona",
+    "source_cell": "ELEM!AD92"
   },
   {
     "id": "exam_246",
@@ -6147,7 +6613,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_faidh",
     "teacher": "Ustadh Faidh",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_247",
@@ -6170,9 +6636,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Saliha",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saliha",
+    "source_cell": "ELEM!AF92"
   },
   {
     "id": "exam_248",
@@ -6195,9 +6663,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Obaydah",
+    "source_cell": "ELEM!AB94"
   },
   {
     "id": "exam_249",
@@ -6222,7 +6692,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jenny",
     "teacher": "Teacher Jenny",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_250",
@@ -6244,10 +6714,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_saimonah",
-    "teacher": "Teacher Saimonah",
+    "teacher_id": "tchr_saimona",
+    "teacher": "Saimona",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saimona",
+    "source_cell": "ELEM!AF96"
   },
   {
     "id": "exam_251",
@@ -6272,7 +6744,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jessa",
     "teacher": "Teacher Jessa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_252",
@@ -6297,7 +6769,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jenny",
     "teacher": "Teacher Jenny",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_253",
@@ -6319,10 +6791,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
-    "teacher_id": "tchr_saimonah",
-    "teacher": "Teacher Saimonah",
+    "teacher_id": "tchr_saimona",
+    "teacher": "Saimona",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saimona",
+    "source_cell": "ELEM!AD96"
   },
   {
     "id": "exam_254",
@@ -6345,9 +6819,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_faidh",
-    "teacher": "Ustadh Faidh",
+    "teacher": "Faidh",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Faidh",
+    "source_cell": "ELEM!AE96"
   },
   {
     "id": "exam_255",
@@ -6370,9 +6846,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_fil",
     "subject": "Fil",
     "teacher_id": "tchr_normylah",
-    "teacher": "Teacher Normylah",
+    "teacher": "Tchr. Normylah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AC108",
+    "teacher_clean": "Normylah"
   },
   {
     "id": "exam_256",
@@ -6395,9 +6873,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_jessa",
-    "teacher": "Teacher Jessa",
+    "teacher": "Tchr. Jessa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AC112",
+    "teacher_clean": "Jessa"
   },
   {
     "id": "exam_257",
@@ -6420,9 +6900,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AF108",
+    "teacher_clean": "Anna"
   },
   {
     "id": "exam_258",
@@ -6445,9 +6927,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_jaisam",
-    "teacher": "Ustadh Jaisam",
+    "teacher": "Ust. Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AB110",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_259",
@@ -6470,9 +6954,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!AC110"
   },
   {
     "id": "exam_260",
@@ -6495,9 +6981,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_normylah",
-    "teacher": "Teacher Normylah",
+    "teacher": "Tchr. Normylah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Normylah",
+    "source_cell": "ELEM!AB108"
   },
   {
     "id": "exam_261",
@@ -6519,10 +7007,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
-    "teacher_id": "tchr_katrina",
-    "teacher": "Teacher Katrina",
+    "teacher_id": "tchr_kat",
+    "teacher": "Tchr. Kat",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Kat",
+    "source_cell": "ELEM!AB112"
   },
   {
     "id": "exam_262",
@@ -6544,10 +7034,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_shaf",
     "subject": "SHAF",
-    "teacher_id": "tchr_abdiraheem",
-    "teacher": "Ustadh Abdiraheem",
+    "teacher_id": "tchr_abdi",
+    "teacher": "Ust. Abdi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AE112",
+    "teacher_clean": "Abdi"
   },
   {
     "id": "exam_263",
@@ -6570,9 +7062,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ali",
-    "teacher": "Ustadh Ali",
+    "teacher": "Ust. Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "ELEM!AD112"
   },
   {
     "id": "exam_264",
@@ -6595,9 +7089,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Arvin",
+    "source_cell": "ELEM!AF112"
   },
   {
     "id": "exam_265",
@@ -6620,9 +7116,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AJ9",
+    "teacher_clean": "Hainur"
   },
   {
     "id": "exam_266",
@@ -6645,9 +7143,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_circle_time",
     "subject": "Circle Time",
     "teacher_id": "tchr_joanna",
-    "teacher": "Teacher Joanna",
+    "teacher": "Tchr. Joanna",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Joanna",
+    "source_cell": "ELEM!AN11"
   },
   {
     "id": "exam_267",
@@ -6670,9 +7170,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_hadith",
     "subject": "Hadith",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AL9",
+    "teacher_clean": "Hainur"
   },
   {
     "id": "exam_268",
@@ -6695,9 +7197,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!AN9"
   },
   {
     "id": "exam_269",
@@ -6720,9 +7224,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_circle_time",
     "subject": "Circle Time",
     "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychell",
+    "teacher": "Tchr. Keychell",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Keychell",
+    "source_cell": "ELEM!AJ19"
   },
   {
     "id": "exam_270",
@@ -6744,10 +7250,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
-    "teacher_id": "tchr_faidh",
-    "teacher": "Ustadh Faidh",
+    "teacher_id": "tchr_us_faidh",
+    "teacher": "Us. Faidh",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AK21",
+    "teacher_clean": "Us. Faidh"
   },
   {
     "id": "exam_271",
@@ -6770,9 +7278,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_hadith",
     "subject": "Hadith",
     "teacher_id": "tchr_faidh",
-    "teacher": "Ustadh Faidh",
+    "teacher": "Ust.Faidh",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AM21",
+    "teacher_clean": "Faidh"
   },
   {
     "id": "exam_272",
@@ -6797,7 +7307,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_faidh",
     "teacher": "Ustadh Faidh",
     "duration_minutes": 30,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Faidh",
+    "source_cell": "ELEM!AN21"
   },
   {
     "id": "exam_273",
@@ -6820,9 +7332,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_joanna",
-    "teacher": "Teacher Joanna",
+    "teacher": "Tchr. Joanna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Joanna",
+    "source_cell": "ELEM!AL28"
   },
   {
     "id": "exam_274",
@@ -6845,9 +7359,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_language",
     "subject": "Language",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AN28",
+    "teacher_clean": "Sahdia"
   },
   {
     "id": "exam_275",
@@ -6872,7 +7388,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_katrina",
     "teacher": "Teacher Katrina",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_276",
@@ -6897,7 +7413,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdul_karim",
     "teacher": "Alim Abdul Karim",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AM30",
+    "teacher_clean": "Abdul Karim"
   },
   {
     "id": "exam_277",
@@ -6920,9 +7438,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AN30",
+    "teacher_clean": "Hainur"
   },
   {
     "id": "exam_278",
@@ -6945,9 +7465,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sahdia",
+    "source_cell": "ELEM!AL32"
   },
   {
     "id": "exam_279",
@@ -6970,9 +7492,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Hainur",
+    "source_cell": "ELEM!AK32"
   },
   {
     "id": "exam_280",
@@ -6995,9 +7519,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
     "teacher_id": "tchr_norhydie",
-    "teacher": "Teacher Norhydie",
+    "teacher": "Tchr. Norhydie",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AN32",
+    "teacher_clean": "Norhydie"
   },
   {
     "id": "exam_281",
@@ -7020,9 +7546,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Ust. Saliha",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saliha",
+    "source_cell": "ELEM!AL43"
   },
   {
     "id": "exam_282",
@@ -7044,10 +7572,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
-    "teacher_id": "tchr_sitti_kauzar",
-    "teacher": "Teacher Sitti Kauzar",
+    "teacher_id": "tchr_sitti",
+    "teacher": "Tchr. Sitti",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sitti",
+    "source_cell": "ELEM!AN43"
   },
   {
     "id": "exam_283",
@@ -7070,9 +7600,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Ust. Hainur",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Hainur",
+    "source_cell": "ELEM!AM43"
   },
   {
     "id": "exam_284",
@@ -7097,7 +7629,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdul_karim",
     "teacher": "Alim Abdul Karim",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AN45",
+    "teacher_clean": "Abdul Karim"
   },
   {
     "id": "exam_285",
@@ -7120,9 +7654,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AM45",
+    "teacher_clean": "Monisa"
   },
   {
     "id": "exam_286",
@@ -7145,9 +7681,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AL45",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_287",
@@ -7170,9 +7708,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_marham",
-    "teacher": "Teacher Marham",
+    "teacher": "Tchr. Marham",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AL47",
+    "teacher_clean": "Marham"
   },
   {
     "id": "exam_288",
@@ -7194,10 +7734,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_filipino",
     "subject": "Filipino",
-    "teacher_id": "tchr_sitti_kauzar",
-    "teacher": "Teacher Sitti Kauzar",
+    "teacher_id": "tchr_sitti",
+    "teacher": "Tchr. Sitti",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AM47",
+    "teacher_clean": "Sitti"
   },
   {
     "id": "exam_289",
@@ -7220,9 +7762,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_ersahad",
-    "teacher": "Ustadh Ersahad",
+    "teacher": "Ust. Ersahad",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AM58",
+    "teacher_clean": "Ersahad"
   },
   {
     "id": "exam_290",
@@ -7245,9 +7789,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!AK58"
   },
   {
     "id": "exam_291",
@@ -7272,7 +7818,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_zara",
     "teacher": "Teacher Zara",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_292",
@@ -7295,9 +7841,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!AJ60"
   },
   {
     "id": "exam_293",
@@ -7320,9 +7868,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_marham",
-    "teacher": "Teacher Marham",
+    "teacher": "Tchr. Marham",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AM60",
+    "teacher_clean": "Marham"
   },
   {
     "id": "exam_294",
@@ -7345,9 +7895,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_normylah",
-    "teacher": "Teacher Normylah",
+    "teacher": "Tchr. Normylah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AN60",
+    "teacher_clean": "Normylah"
   },
   {
     "id": "exam_295",
@@ -7370,9 +7922,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AJ62",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_296",
@@ -7395,9 +7949,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_jerlyn",
-    "teacher": "Teacher Jerlyn",
+    "teacher": "Tchr. Jerlyn",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AM62",
+    "teacher_clean": "Jerlyn"
   },
   {
     "id": "exam_297",
@@ -7420,9 +7976,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_jerlyn",
-    "teacher": "Teacher Jerlyn",
+    "teacher": "Tchr. Jerlyn",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jerlyn",
+    "source_cell": "ELEM!AN62"
   },
   {
     "id": "exam_298",
@@ -7445,9 +8003,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_jerlyn",
-    "teacher": "Teacher Jerlyn",
+    "teacher": "Jerlyn",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jerlyn",
+    "source_cell": "ELEM!AL68"
   },
   {
     "id": "exam_299",
@@ -7472,7 +8032,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jenny",
     "teacher": "Teacher Jenny",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_300",
@@ -7495,9 +8055,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_faidh",
-    "teacher": "Ustadh Faidh",
+    "teacher": "Faidh",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Faidh",
+    "source_cell": "ELEM!AM68"
   },
   {
     "id": "exam_301",
@@ -7520,9 +8082,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Saliha",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saliha",
+    "source_cell": "ELEM!AN68"
   },
   {
     "id": "exam_302",
@@ -7545,9 +8109,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_jenny",
-    "teacher": "Teacher Jenny",
+    "teacher": "Tchr. Jenny",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AL70",
+    "teacher_clean": "Jenny"
   },
   {
     "id": "exam_303",
@@ -7570,9 +8136,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_faidh",
-    "teacher": "Ustadh Faidh",
+    "teacher": "Ust. Faidh",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AM70",
+    "teacher_clean": "Faidh"
   },
   {
     "id": "exam_304",
@@ -7595,9 +8163,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AN70",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_305",
@@ -7619,10 +8189,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_science",
     "subject": "Science",
-    "teacher_id": "tchr_saimonah",
-    "teacher": "Teacher Saimonah",
+    "teacher_id": "tchr_saimona",
+    "teacher": "Saimona",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AL72",
+    "teacher_clean": "Saimona"
   },
   {
     "id": "exam_306",
@@ -7645,9 +8217,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
     "teacher_id": "tchr_jenny",
-    "teacher": "Teacher Jenny",
+    "teacher": "Tchr. Jenny",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AM72",
+    "teacher_clean": "Jenny"
   },
   {
     "id": "exam_307",
@@ -7670,9 +8244,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_jenny",
-    "teacher": "Teacher Jenny",
+    "teacher": "Tchr. Jenny",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AN72",
+    "teacher_clean": "Jenny"
   },
   {
     "id": "exam_308",
@@ -7695,9 +8271,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AM78",
+    "teacher_clean": "Arvin"
   },
   {
     "id": "exam_309",
@@ -7720,9 +8298,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AL78",
+    "teacher_clean": "Anna"
   },
   {
     "id": "exam_310",
@@ -7745,9 +8325,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_norhydie",
-    "teacher": "Teacher Norhydie",
+    "teacher": "Tchr. Norhydie",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AJ80",
+    "teacher_clean": "Norhydie"
   },
   {
     "id": "exam_311",
@@ -7770,9 +8352,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Arvin",
+    "source_cell": "ELEM!AN80"
   },
   {
     "id": "exam_312",
@@ -7795,9 +8379,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!AL80"
   },
   {
     "id": "exam_313",
@@ -7820,9 +8406,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ali",
-    "teacher": "Ustadh Ali",
+    "teacher": "Ust. Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "ELEM!AM80"
   },
   {
     "id": "exam_314",
@@ -7845,9 +8433,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_abdiraheem",
-    "teacher": "Ustadh Abdiraheem",
+    "teacher": "Ust. Abdiraheem",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AK82",
+    "teacher_clean": "Abdiraheem"
   },
   {
     "id": "exam_315",
@@ -7870,9 +8460,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AL82",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_316",
@@ -7895,9 +8487,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sahdia",
+    "source_cell": "ELEM!AM82"
   },
   {
     "id": "exam_317",
@@ -7920,9 +8514,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!AN78"
   },
   {
     "id": "exam_318",
@@ -7945,9 +8541,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_hainur",
-    "teacher": "Ustadh Hainur",
+    "teacher": "Hainur",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AL93",
+    "teacher_clean": "Hainur"
   },
   {
     "id": "exam_319",
@@ -7970,9 +8568,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_joanna",
-    "teacher": "Teacher Joanna",
+    "teacher": "Tchr. Joanna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AM93",
+    "teacher_clean": "Joanna"
   },
   {
     "id": "exam_320",
@@ -7994,10 +8594,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_jairah",
-    "teacher": "Teacher Jairah",
+    "teacher_id": "tchr_jayra",
+    "teacher": "Tchr. Jayra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jayra",
+    "source_cell": "ELEM!AN93"
   },
   {
     "id": "exam_321",
@@ -8020,9 +8622,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_jessa",
-    "teacher": "Teacher Jessa",
+    "teacher": "Tchr. Jessa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AL95",
+    "teacher_clean": "Jessa"
   },
   {
     "id": "exam_322",
@@ -8045,9 +8649,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_jaisam",
-    "teacher": "Ustadh Jaisam",
+    "teacher": "Ust. Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AK95",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_323",
@@ -8070,9 +8676,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!AK93"
   },
   {
     "id": "exam_324",
@@ -8095,9 +8703,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ersahad",
-    "teacher": "Ustadh Ersahad",
+    "teacher": "Ust. Ersahad",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ersahad",
+    "source_cell": "ELEM!AN95"
   },
   {
     "id": "exam_325",
@@ -8120,9 +8730,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AL97",
+    "teacher_clean": "Anna"
   },
   {
     "id": "exam_326",
@@ -8144,10 +8756,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
-    "teacher_id": "tchr_fhairudz",
-    "teacher": "Teacher Fhairudz",
+    "teacher_id": "tchr_fairudz",
+    "teacher": "Tchr. Fairudz",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Fairudz",
+    "source_cell": "ELEM!AM97"
   },
   {
     "id": "exam_327",
@@ -8170,9 +8784,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Anna",
+    "source_cell": "ELEM!AN97"
   },
   {
     "id": "exam_328",
@@ -8195,9 +8811,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_fhairudz",
-    "teacher": "Teacher Fhairudz",
+    "teacher": "Tchr. Fhairudz",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AK108",
+    "teacher_clean": "Fhairudz"
   },
   {
     "id": "exam_329",
@@ -8220,9 +8838,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_normylah",
-    "teacher": "Teacher Normylah",
+    "teacher": "Tchr. Normylah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AM108",
+    "teacher_clean": "Normylah"
   },
   {
     "id": "exam_330",
@@ -8244,10 +8864,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
-    "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher_id": "tchr_obayda",
+    "teacher": "Ust. Obayda",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AN108",
+    "teacher_clean": "Obayda"
   },
   {
     "id": "exam_331",
@@ -8270,9 +8892,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_faidh",
-    "teacher": "Ustadh Faidh",
+    "teacher": "Ust. Faidh",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AL112",
+    "teacher_clean": "Faidh"
   },
   {
     "id": "exam_332",
@@ -8295,9 +8919,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_jessa",
-    "teacher": "Teacher Jessa",
+    "teacher": "Tchr. Jessa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AN110",
+    "teacher_clean": "Jessa"
   },
   {
     "id": "exam_333",
@@ -8319,10 +8945,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
-    "teacher_id": "tchr_saimonah",
-    "teacher": "Teacher Saimonah",
+    "teacher_id": "tchr_saimona",
+    "teacher": "Tchr. Saimona",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saimona",
+    "source_cell": "ELEM!AN112"
   },
   {
     "id": "exam_334",
@@ -8345,9 +8973,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ust. Silfah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Silfah",
+    "source_cell": "ELEM!AM110"
   },
   {
     "id": "exam_335",
@@ -8370,9 +9000,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_normylah",
-    "teacher": "Teacher Normylah",
+    "teacher": "Tchr. Normylah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Normylah",
+    "source_cell": "ELEM!AL108"
   },
   {
     "id": "exam_336",
@@ -8395,9 +9027,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Arvin",
+    "source_cell": "ELEM!AK112"
   },
   {
     "id": "exam_337",
@@ -8420,9 +9054,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ersahad",
-    "teacher": "Ustadh Ersahad",
+    "teacher": "Ust. Ersahad",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ersahad",
+    "source_cell": "ELEM!AM112"
   },
   {
     "id": "exam_338",
@@ -8445,9 +9081,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!AR78"
   },
   {
     "id": "exam_339",
@@ -8470,9 +9108,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_faidh",
-    "teacher": "Ustadh Faidh",
+    "teacher": "Ust. Faidh",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AT78",
+    "teacher_clean": "Faidh"
   },
   {
     "id": "exam_340",
@@ -8495,9 +9135,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_zuhora",
-    "teacher": "Teacher Zuhora",
+    "teacher": "Tchr. Zuhora",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AU78",
+    "teacher_clean": "Zuhora"
   },
   {
     "id": "exam_341",
@@ -8519,10 +9161,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_shaf",
     "subject": "SHAF",
-    "teacher_id": "tchr_abdiraheem",
-    "teacher": "Ustadh Abdiraheem",
+    "teacher_id": "tchr_abdi",
+    "teacher": "Ust. Abdi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AR80",
+    "teacher_clean": "Abdi"
   },
   {
     "id": "exam_342",
@@ -8544,10 +9188,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
-    "teacher_id": "tchr_saimonah",
-    "teacher": "Teacher Saimonah",
+    "teacher_id": "tchr_saimona",
+    "teacher": "Tchr. Saimona",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saimona",
+    "source_cell": "ELEM!AU80"
   },
   {
     "id": "exam_343",
@@ -8570,9 +9216,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_arvin",
-    "teacher": "Teacher Arvin",
+    "teacher": "Tchr. Arvin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AU82",
+    "teacher_clean": "Arvin"
   },
   {
     "id": "exam_344",
@@ -8597,7 +9245,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_saimonah",
     "teacher": "Teacher Saimonah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_345",
@@ -8620,9 +9268,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ali",
-    "teacher": "Ustadh Ali",
+    "teacher": "Ust Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "ELEM!AR82"
   },
   {
     "id": "exam_346",
@@ -8645,9 +9295,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_jenny",
-    "teacher": "Teacher Jenny",
+    "teacher": "Tchr. Jenny",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jenny",
+    "source_cell": "ELEM!AT82"
   },
   {
     "id": "exam_347",
@@ -8670,9 +9322,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_sahdia",
-    "teacher": "Teacher Sahdia",
+    "teacher": "Tchr. Sahdia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sahdia",
+    "source_cell": "ELEM!AV82"
   },
   {
     "id": "exam_348",
@@ -8695,9 +9349,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_jessa",
-    "teacher": "Teacher Jessa",
+    "teacher": "Tchr. Jessa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AU93",
+    "teacher_clean": "Jessa"
   },
   {
     "id": "exam_349",
@@ -8720,9 +9376,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_ersahad",
-    "teacher": "Ustadh Ersahad",
+    "teacher": "Ust. Ersahad",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AT93",
+    "teacher_clean": "Ersahad"
   },
   {
     "id": "exam_350",
@@ -8745,9 +9403,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_joanna",
-    "teacher": "Teacher Joanna",
+    "teacher": "Tchr. Joanna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AV93",
+    "teacher_clean": "Joanna"
   },
   {
     "id": "exam_351",
@@ -8770,9 +9430,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AU95",
+    "teacher_clean": "Anna"
   },
   {
     "id": "exam_352",
@@ -8795,9 +9457,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_monisa",
-    "teacher": "Teacher Monisa",
+    "teacher": "Tchr. Monisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Monisa",
+    "source_cell": "ELEM!AU97"
   },
   {
     "id": "exam_353",
@@ -8819,10 +9483,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_jairah",
-    "teacher": "Teacher Jairah",
+    "teacher_id": "tchr_jayra",
+    "teacher": "Tchr. Jayra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jayra",
+    "source_cell": "ELEM!AT95"
   },
   {
     "id": "exam_354",
@@ -8845,9 +9511,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_anna",
-    "teacher": "Teacher Anna",
+    "teacher": "Tchr. Anna",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Anna",
+    "source_cell": "ELEM!AV95"
   },
   {
     "id": "exam_355",
@@ -8870,9 +9538,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_ersahad",
-    "teacher": "Ustadh Ersahad",
+    "teacher": "Ust. Ersahad",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ersahad",
+    "source_cell": "ELEM!AR97"
   },
   {
     "id": "exam_356",
@@ -8895,9 +9565,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_jaisam",
-    "teacher": "Ustadh Jaisam",
+    "teacher": "Ust. Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AS97",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_357",
@@ -8920,9 +9592,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_fhairudz",
-    "teacher": "Teacher Fhairudz",
+    "teacher": "Tchr. Fhairudz",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Fhairudz",
+    "source_cell": "ELEM!AV97"
   },
   {
     "id": "exam_358",
@@ -8944,10 +9618,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_saimonah",
-    "teacher": "Teacher Saimonah",
+    "teacher_id": "tchr_saimona",
+    "teacher": "Tchr. Saimona",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saimona",
+    "source_cell": "ELEM!BB93"
   },
   {
     "id": "exam_359",
@@ -8969,10 +9645,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
-    "teacher_id": "tchr_saimonah",
-    "teacher": "Teacher Saimonah",
+    "teacher_id": "tchr_saimona",
+    "teacher": "Tchr. Saimona",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saimona",
+    "source_cell": "ELEM!BC93"
   },
   {
     "id": "exam_360",
@@ -8995,9 +9673,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_faidh",
-    "teacher": "Ustadh Faidh",
+    "teacher": "Ust. Faidh",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Faidh",
+    "source_cell": "ELEM!BD93"
   },
   {
     "id": "exam_361",
@@ -9019,10 +9699,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_science",
     "subject": "Science",
-    "teacher_id": "tchr_saimonah",
-    "teacher": "Teacher Saimonah",
+    "teacher_id": "tchr_tr_saimona",
+    "teacher": "Tr. Saimona",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!BC97",
+    "teacher_clean": "Tr. Saimona"
   },
   {
     "id": "exam_362",
@@ -9045,9 +9727,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_jenny",
-    "teacher": "Teacher Jenny",
+    "teacher": "Tchr. Jenny",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!BA95",
+    "teacher_clean": "Jenny"
   },
   {
     "id": "exam_363",
@@ -9070,9 +9754,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_shaf",
     "subject": "SHAF",
     "teacher_id": "tchr_faidh",
-    "teacher": "Ustadh Faidh",
+    "teacher": "Ust. Faidh",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!AZ97",
+    "teacher_clean": "Faidh"
   },
   {
     "id": "exam_364",
@@ -9095,9 +9781,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_jenny",
-    "teacher": "Teacher Jenny",
+    "teacher": "Tchr. Jenny",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jenny",
+    "source_cell": "ELEM!BC95"
   },
   {
     "id": "exam_365",
@@ -9120,9 +9808,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_saliha",
-    "teacher": "Ustadha Saliha",
+    "teacher": "Ust. Saliha",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Saliha",
+    "source_cell": "ELEM!BD95"
   },
   {
     "id": "exam_366",
@@ -9145,9 +9835,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_qur_an",
     "subject": "Qur'an",
     "teacher_id": "tchr_obaydah",
-    "teacher": "Ustadh Obaydah",
+    "teacher": "Ust. Obaydah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!BA97",
+    "teacher_clean": "Obaydah"
   },
   {
     "id": "exam_367",
@@ -9170,9 +9862,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_jessa",
-    "teacher": "Teacher Jessa",
+    "teacher": "Tchr. Jessa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "ELEM!BD97",
+    "teacher_clean": "Jessa"
   },
   {
     "id": "exam_368",
@@ -9195,9 +9889,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_sophia",
-    "teacher": "Teacher Sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!H8",
+    "teacher_clean": "Sophia"
   },
   {
     "id": "exam_369",
@@ -9219,10 +9915,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_franchette",
-    "teacher": "Teacher Franchette",
+    "teacher_id": "tchr_shi",
+    "teacher": "Tchr. Shi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Shi",
+    "source_cell": "HS SCHED (NEW)!H9"
   },
   {
     "id": "exam_370",
@@ -9245,9 +9943,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_radzmia",
-    "teacher": "Teacher Radzmia",
+    "teacher": "Tchr. Radzmia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Radzmia",
+    "source_cell": "HS SCHED (NEW)!H10"
   },
   {
     "id": "exam_371",
@@ -9269,10 +9969,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher_id": "tchr_a_silfa",
+    "teacher": "Ustadha Silfa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "A Silfa",
+    "source_cell": "HS SCHED (NEW)!H17"
   },
   {
     "id": "exam_372",
@@ -9294,10 +9996,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_english",
     "subject": "English",
-    "teacher_id": "tchr_jairah",
-    "teacher": "Teacher Jairah",
+    "teacher_id": "tchr_jayra",
+    "teacher": "Tchr. Jayra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!D13",
+    "teacher_clean": "Jayra"
   },
   {
     "id": "exam_373",
@@ -9319,10 +10023,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
-    "teacher_id": "tchr_ali",
-    "teacher": "Ustadh Ali",
+    "teacher_id": "tchr_muh_ali",
+    "teacher": "Ustadh Muh Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Muh Ali",
+    "source_cell": "HS SCHED (NEW)!G13"
   },
   {
     "id": "exam_374",
@@ -9347,7 +10053,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jaisam",
     "teacher": "Ustadh Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!H15",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_375",
@@ -9372,7 +10080,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!G15",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_376",
@@ -9395,9 +10105,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_hannah",
-    "teacher": "Teacher Hannah",
+    "teacher": "Tchr. Hannah",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Hannah",
+    "source_cell": "HS SCHED (NEW)!H16"
   },
   {
     "id": "exam_377",
@@ -9420,9 +10132,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_halnaisa",
-    "teacher": "Teacher Halnaisa",
+    "teacher": "Tchr. Halnaisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Halnaisa",
+    "source_cell": "HS SCHED (NEW)!G17"
   },
   {
     "id": "exam_378",
@@ -9445,9 +10159,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_radzmia",
-    "teacher": "Teacher Radzmia",
+    "teacher": "Tchr. Radzmia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Radzmia",
+    "source_cell": "HS SCHED (NEW)!H25"
   },
   {
     "id": "exam_379",
@@ -9470,9 +10186,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_hannah",
-    "teacher": "Teacher Hannah",
+    "teacher": "Tchr. Hannah",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Hannah",
+    "source_cell": "HS SCHED (NEW)!H28"
   },
   {
     "id": "exam_380",
@@ -9495,9 +10213,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_sophia",
-    "teacher": "Teacher Sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!H26",
+    "teacher_clean": "Sophia"
   },
   {
     "id": "exam_381",
@@ -9519,10 +10239,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "BOYS",
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
-    "teacher_id": "tchr_ali",
-    "teacher": "Ustadh Ali",
+    "teacher_id": "tchr_muh_ali",
+    "teacher": "Ustadh Muh Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Muh Ali",
+    "source_cell": "HS SCHED (NEW)!F29"
   },
   {
     "id": "exam_382",
@@ -9544,10 +10266,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "BOYS",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher_id": "tchr_a_silfa",
+    "teacher": "Ustadha Silfa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "A Silfa",
+    "source_cell": "HS SCHED (NEW)!H29"
   },
   {
     "id": "exam_383",
@@ -9569,10 +10293,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "BOYS",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_franchette",
-    "teacher": "Teacher Franchette",
+    "teacher_id": "tchr_shi",
+    "teacher": "Tchr. Shi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Shi",
+    "source_cell": "HS SCHED (NEW)!H24"
   },
   {
     "id": "exam_384",
@@ -9595,9 +10321,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_halnaisa",
-    "teacher": "Teacher Halnaisa",
+    "teacher": "Tchr. Halnaisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Halnaisa",
+    "source_cell": "HS SCHED (NEW)!D32"
   },
   {
     "id": "exam_385",
@@ -9622,7 +10350,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!G32",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_386",
@@ -9647,7 +10377,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jaisam",
     "teacher": "Ustadh Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!H32",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_387",
@@ -9669,10 +10401,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "BOYS",
     "subject_id": "subj_english",
     "subject": "English",
-    "teacher_id": "tchr_jairah",
-    "teacher": "Teacher Jairah",
+    "teacher_id": "tchr_jayra",
+    "teacher": "Tchr. Jayra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!H33",
+    "teacher_clean": "Jayra"
   },
   {
     "id": "exam_388",
@@ -9695,9 +10429,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_norhaima",
-    "teacher": "Teacher Norhaima",
+    "teacher": "Tchr. Norhaima",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!H40",
+    "teacher_clean": "Norhaima"
   },
   {
     "id": "exam_389",
@@ -9720,9 +10456,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_jhelyn",
-    "teacher": "Teacher Jhelyn",
+    "teacher": "Tchr. Jhelyn",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jhelyn",
+    "source_cell": "HS SCHED (NEW)!H41"
   },
   {
     "id": "exam_390",
@@ -9745,9 +10483,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_nadzra",
-    "teacher": "Teacher Nadzra",
+    "teacher": "Tchr. Nadzra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!G42",
+    "teacher_clean": "Nadzra"
   },
   {
     "id": "exam_391",
@@ -9770,9 +10510,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_rowena",
-    "teacher": "Teacher Rowena",
+    "teacher": "Tchr. Rowena",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!H45",
+    "teacher_clean": "Rowena"
   },
   {
     "id": "exam_392",
@@ -9794,10 +10536,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_nof",
-    "teacher": "Teacher Nof",
+    "teacher_id": "tchr_sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sophia",
+    "source_cell": "HS SCHED (NEW)!H44"
   },
   {
     "id": "exam_393",
@@ -9822,7 +10566,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!H47",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_394",
@@ -9847,7 +10593,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_mamonas",
     "teacher": "Alim Mamonas",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Mamonas",
+    "source_cell": "HS SCHED (NEW)!H49"
   },
   {
     "id": "exam_395",
@@ -9872,7 +10620,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdulwahab",
     "teacher": "Alim Abdulwahab",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!E49",
+    "teacher_clean": "Abdulwahab"
   },
   {
     "id": "exam_396",
@@ -9895,9 +10645,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_angeleni",
-    "teacher": "Teacher Angeleni",
+    "teacher": "Tchr. Angeleni",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Angeleni",
+    "source_cell": "HS SCHED (NEW)!G49"
   },
   {
     "id": "exam_397",
@@ -9920,9 +10672,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_nadzra",
-    "teacher": "Teacher Nadzra",
+    "teacher": "Tchr. Nadzra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!H56",
+    "teacher_clean": "Nadzra"
   },
   {
     "id": "exam_398",
@@ -9945,9 +10699,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_rowena",
-    "teacher": "Teacher Rowena",
+    "teacher": "Tchr. Rowena",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!H57",
+    "teacher_clean": "Rowena"
   },
   {
     "id": "exam_399",
@@ -9970,9 +10726,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_angeleni",
-    "teacher": "Teacher Angeleni",
+    "teacher": "Tchr. Angeleni",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Angeleni",
+    "source_cell": "HS SCHED (NEW)!H58"
   },
   {
     "id": "exam_400",
@@ -9997,7 +10755,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdulwahab",
     "teacher": "Alim Abdulwahab",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!G58",
+    "teacher_clean": "Abdulwahab"
   },
   {
     "id": "exam_401",
@@ -10019,10 +10779,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "BOYS",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_mohaymen",
-    "teacher": "Sir Mohaymen",
+    "teacher_id": "tchr_sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sophia",
+    "source_cell": "HS SCHED (NEW)!H63"
   },
   {
     "id": "exam_402",
@@ -10047,7 +10809,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!F60",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_403",
@@ -10070,9 +10834,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_norhaima",
-    "teacher": "Teacher Norhaima",
+    "teacher": "Tchr. Norhaima",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!H61",
+    "teacher_clean": "Norhaima"
   },
   {
     "id": "exam_404",
@@ -10095,9 +10861,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_jhelyn",
-    "teacher": "Teacher Jhelyn",
+    "teacher": "Tchr. Jhelyn",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jhelyn",
+    "source_cell": "HS SCHED (NEW)!D65"
   },
   {
     "id": "exam_405",
@@ -10122,7 +10890,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_mamonas",
     "teacher": "Alim Mamonas",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Mamonas",
+    "source_cell": "HS SCHED (NEW)!H64"
   },
   {
     "id": "exam_406",
@@ -10145,9 +10915,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_rowena",
-    "teacher": "Teacher Rowena",
+    "teacher": "Tchr. Rowena",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Rowena",
+    "source_cell": "SHS!H7"
   },
   {
     "id": "exam_407",
@@ -10170,9 +10942,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_life_career_skills",
     "subject": "Life and Career Skills",
     "teacher_id": "tchr_norhaima",
-    "teacher": "Teacher Norhaima",
+    "teacher": "Tchr. Norhaima",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Norhaima",
+    "source_cell": "SHS!H8"
   },
   {
     "id": "exam_408",
@@ -10196,8 +10970,8 @@ window.AMIS_EXAM_DATA = [
     "subject": "Mathematics",
     "teacher_id": "tchr_jhelyn",
     "teacher": "Teacher Jhelyn",
-    "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "duration_minutes": 60,
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_409",
@@ -10220,9 +10994,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gen_math",
     "subject": "General Mathematics",
     "teacher_id": "tchr_jhelyn",
-    "teacher": "Teacher Jhelyn",
-    "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher": "Tchr. Jhelyn",
+    "duration_minutes": 60,
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jhelyn",
+    "source_cell": "SHS!G9"
   },
   {
     "id": "exam_410",
@@ -10244,10 +11020,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_pagbasa_at_pagsusuri_ng_iba_t_ibang_teksto",
     "subject": "Pagbasa at Pagsusuri ng Iba't Ibang Teksto",
-    "teacher_id": "tchr_shirehan",
-    "teacher": "Teacher Shirehan",
+    "teacher_id": "tchr_shi",
+    "teacher": "Tchr. Shi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Shi",
+    "source_cell": "SHS!H11"
   },
   {
     "id": "exam_411",
@@ -10272,7 +11050,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_mamonas",
     "teacher": "Alim Mamonas",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Mamonas",
+    "source_cell": "SHS!G12"
   },
   {
     "id": "exam_412",
@@ -10297,7 +11077,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "SHS!F12",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_413",
@@ -10320,9 +11102,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_ec",
     "subject": "Ec",
     "teacher_id": "tchr_nadzra",
-    "teacher": "Teacher Nadzra",
+    "teacher": "Tchr.  Nadzra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "SHS!H14",
+    "teacher_clean": "Nadzra"
   },
   {
     "id": "exam_414",
@@ -10347,7 +11131,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_dipatuan",
     "teacher": "Alim Dipatuan",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "SHS!H16",
+    "teacher_clean": "Dipatuan"
   },
   {
     "id": "exam_415",
@@ -10370,9 +11156,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_practical_research_2",
     "subject": "Practical Research 2",
     "teacher_id": "tchr_aniah",
-    "teacher": "Teacher Aniah",
+    "teacher": "Tchr. Aniah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Aniah",
+    "source_cell": "SHS!M8"
   },
   {
     "id": "exam_416",
@@ -10397,7 +11185,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_mamonas",
     "teacher": "Alim Mamonas",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Mamonas",
+    "source_cell": "SHS!P8"
   },
   {
     "id": "exam_417",
@@ -10422,7 +11212,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "SHS!Q8",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_418",
@@ -10444,10 +11236,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_21st_cent_lit",
     "subject": "21st Century Literature",
-    "teacher_id": "tchr_ethel",
-    "teacher": "Teacher Ethel",
+    "teacher_id": "tchr_nof",
+    "teacher": "Tchr Nof",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Nof",
+    "source_cell": "SHS!Q11"
   },
   {
     "id": "exam_419",
@@ -10472,7 +11266,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_aniah",
     "teacher": "Teacher Aniah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_420",
@@ -10497,7 +11291,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_dipatuan",
     "teacher": "Alim Dipatuan",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "SHS!P16",
+    "teacher_clean": "Dipatuan"
   },
   {
     "id": "exam_421",
@@ -10519,10 +11315,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher_id": "tchr_a_silfa",
+    "teacher": "Ustadha Silfa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "A Silfa",
+    "source_cell": "HS SCHED (NEW)!M8"
   },
   {
     "id": "exam_422",
@@ -10545,9 +11343,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_aniah",
-    "teacher": "Teacher Aniah",
+    "teacher": "Tchr. Aniah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Aniah",
+    "source_cell": "HS SCHED (NEW)!O8"
   },
   {
     "id": "exam_423",
@@ -10572,7 +11372,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jaisam",
     "teacher": "Ustadh Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!P8",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_424",
@@ -10594,10 +11396,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_franchette",
-    "teacher": "Teacher Franchette",
+    "teacher_id": "tchr_shi",
+    "teacher": "Tchr. Shi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Shi",
+    "source_cell": "HS SCHED (NEW)!N12"
   },
   {
     "id": "exam_425",
@@ -10619,10 +11423,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_english",
     "subject": "English",
-    "teacher_id": "tchr_jairah",
-    "teacher": "Teacher Jairah",
+    "teacher_id": "tchr_jayra",
+    "teacher": "Tchr. Jayra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!N10",
+    "teacher_clean": "Jayra"
   },
   {
     "id": "exam_426",
@@ -10645,9 +11451,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_halnaisa",
-    "teacher": "Teacher Halnaisa",
+    "teacher": "Tchr. Halnaisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Halnaisa",
+    "source_cell": "HS SCHED (NEW)!O10"
   },
   {
     "id": "exam_427",
@@ -10672,7 +11480,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_ali",
     "teacher": "Ustadh Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "HS SCHED (NEW)!P10"
   },
   {
     "id": "exam_428",
@@ -10697,7 +11507,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!Q10",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_429",
@@ -10720,9 +11532,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_ethel",
-    "teacher": "Teacher Ethel",
+    "teacher": "Tchr. Ethel",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ethel",
+    "source_cell": "HS SCHED (NEW)!P12"
   },
   {
     "id": "exam_430",
@@ -10745,9 +11559,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_sophia",
-    "teacher": "Teacher Sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!Q12",
+    "teacher_clean": "Sophia"
   },
   {
     "id": "exam_431",
@@ -10770,9 +11586,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_halnaisa",
-    "teacher": "Teacher Halnaisa",
+    "teacher": "Tchr. Halnaisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Halnaisa",
+    "source_cell": "HS SCHED (NEW)!M19"
   },
   {
     "id": "exam_432",
@@ -10794,10 +11612,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "BOYS",
     "subject_id": "subj_english",
     "subject": "English",
-    "teacher_id": "tchr_jairah",
-    "teacher": "Teacher Jairah",
+    "teacher_id": "tchr_jayra",
+    "teacher": "Tchr. Jayra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!P19",
+    "teacher_clean": "Jayra"
   },
   {
     "id": "exam_433",
@@ -10822,7 +11642,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jaisam",
     "teacher": "Ustadh Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!O19",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_434",
@@ -10845,9 +11667,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_aniah",
-    "teacher": "Teacher Aniah",
+    "teacher": "Tchr. Aniah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Aniah",
+    "source_cell": "HS SCHED (NEW)!P21"
   },
   {
     "id": "exam_435",
@@ -10870,9 +11694,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_ethel",
-    "teacher": "Teacher Ethel",
+    "teacher": "Tchr. Ethel",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ethel",
+    "source_cell": "HS SCHED (NEW)!O21"
   },
   {
     "id": "exam_436",
@@ -10894,10 +11720,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "BOYS",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher_id": "tchr_a_silfa",
+    "teacher": "Ustadha Silfa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "A Silfa",
+    "source_cell": "HS SCHED (NEW)!Q21"
   },
   {
     "id": "exam_437",
@@ -10919,10 +11747,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "BOYS",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_franchette",
-    "teacher": "Teacher Franchette",
+    "teacher_id": "tchr_shi",
+    "teacher": "Tchr. Shi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Shi",
+    "source_cell": "HS SCHED (NEW)!Q19"
   },
   {
     "id": "exam_438",
@@ -10945,9 +11775,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_sophia",
-    "teacher": "Teacher Sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!P23",
+    "teacher_clean": "Sophia"
   },
   {
     "id": "exam_439",
@@ -10972,7 +11804,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_ali",
     "teacher": "Ustadh Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "HS SCHED (NEW)!O23"
   },
   {
     "id": "exam_440",
@@ -10997,7 +11831,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!Q23",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_441",
@@ -11020,9 +11856,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_radzmia",
-    "teacher": "Teacher Radzmia",
+    "teacher": "Tchr. Radzmia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Radzmia",
+    "source_cell": "HS SCHED (NEW)!Q31"
   },
   {
     "id": "exam_442",
@@ -11045,9 +11883,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_hannah",
-    "teacher": "Teacher Hannah",
+    "teacher": "Tchr. Hannah",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Hannah",
+    "source_cell": "HS SCHED (NEW)!P31"
   },
   {
     "id": "exam_443",
@@ -11070,9 +11910,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_wardah",
-    "teacher": "Teacher Wardah",
+    "teacher": "Tchr. Wardah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Wardah",
+    "source_cell": "HS SCHED (NEW)!O31"
   },
   {
     "id": "exam_444",
@@ -11094,10 +11936,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_franchette",
-    "teacher": "Teacher Franchette",
+    "teacher_id": "tchr_shi",
+    "teacher": "Tchr. Shi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Shi",
+    "source_cell": "HS SCHED (NEW)!O33"
   },
   {
     "id": "exam_445",
@@ -11119,10 +11963,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_english",
     "subject": "English",
-    "teacher_id": "tchr_jairah",
-    "teacher": "Teacher Jairah",
+    "teacher_id": "tchr_jayra",
+    "teacher": "Tchr. Jayra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!Q33",
+    "teacher_clean": "Jayra"
   },
   {
     "id": "exam_446",
@@ -11145,9 +11991,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_sophia",
-    "teacher": "Teacher Sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!M35",
+    "teacher_clean": "Sophia"
   },
   {
     "id": "exam_447",
@@ -11170,9 +12018,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_halnaisa",
-    "teacher": "Teacher Halnaisa",
+    "teacher": "Tchr. Halnaisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Halnaisa",
+    "source_cell": "HS SCHED (NEW)!N35"
   },
   {
     "id": "exam_448",
@@ -11197,7 +12047,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!O35",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_449",
@@ -11222,7 +12074,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jaisam",
     "teacher": "Ustadh Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!P35",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_450",
@@ -11247,7 +12101,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_ali",
     "teacher": "Ustadh Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "HS SCHED (NEW)!Q35"
   },
   {
     "id": "exam_451",
@@ -11272,7 +12128,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!M43",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_452",
@@ -11297,7 +12155,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdulwahab",
     "teacher": "Alim Abdulwahab",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!N43",
+    "teacher_clean": "Abdulwahab"
   },
   {
     "id": "exam_453",
@@ -11320,9 +12180,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_jhelyn",
-    "teacher": "Teacher Jhelyn",
+    "teacher": "Tchr. Jhelyn",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jhelyn",
+    "source_cell": "HS SCHED (NEW)!P43"
   },
   {
     "id": "exam_454",
@@ -11345,9 +12207,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_angeleni",
-    "teacher": "Teacher Angeleni",
+    "teacher": "Tchr. Angeleni",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Angeleni",
+    "source_cell": "HS SCHED (NEW)!Q43"
   },
   {
     "id": "exam_455",
@@ -11370,9 +12234,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_rowena",
-    "teacher": "Teacher Rowena",
+    "teacher": "Tchr. Rowena",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Rowena",
+    "source_cell": "HS SCHED (NEW)!O47"
   },
   {
     "id": "exam_456",
@@ -11395,9 +12261,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_arabic",
     "subject": "Arabic Language",
     "teacher_id": "tchr_raslina",
-    "teacher": "Ustadh Raslina",
+    "teacher": "Ust. Raslina",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Raslina",
+    "source_cell": "HS SCHED (NEW)!N45"
   },
   {
     "id": "exam_457",
@@ -11420,9 +12288,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_norhaima",
-    "teacher": "Teacher Norhaima",
+    "teacher": "Tchr. Norhaima",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!Q45",
+    "teacher_clean": "Norhaima"
   },
   {
     "id": "exam_458",
@@ -11444,10 +12314,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_mohaymen",
-    "teacher": "Sir Mohaymen",
+    "teacher_id": "tchr_sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sophia",
+    "source_cell": "HS SCHED (NEW)!M45"
   },
   {
     "id": "exam_459",
@@ -11470,9 +12342,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_nadzra",
-    "teacher": "Teacher Nadzra",
+    "teacher": "Tchr. Nadzra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!Q47",
+    "teacher_clean": "Nadzra"
   },
   {
     "id": "exam_460",
@@ -11497,7 +12371,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdulwahab",
     "teacher": "Alim Abdulwahab",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!M55",
+    "teacher_clean": "Abdulwahab"
   },
   {
     "id": "exam_461",
@@ -11520,9 +12396,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_angeleni",
-    "teacher": "Teacher Angeleni",
+    "teacher": "Tchr. Angeleni",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Angeleni",
+    "source_cell": "HS SCHED (NEW)!N55"
   },
   {
     "id": "exam_462",
@@ -11547,7 +12425,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_mamonas",
     "teacher": "Alim Mamonas",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Mamonas",
+    "source_cell": "HS SCHED (NEW)!O55"
   },
   {
     "id": "exam_463",
@@ -11572,7 +12452,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_bustamante",
     "teacher": "Alim Bustamante",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!P55",
+    "teacher_clean": "Bustamante"
   },
   {
     "id": "exam_464",
@@ -11594,10 +12476,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_mohaymen",
-    "teacher": "Sir Mohaymen",
+    "teacher_id": "tchr_sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sophia",
+    "source_cell": "HS SCHED (NEW)!N57"
   },
   {
     "id": "exam_465",
@@ -11620,9 +12504,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_norhaima",
-    "teacher": "Teacher Norhaima",
+    "teacher": "Tchr. Norhaima",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!P57",
+    "teacher_clean": "Norhaima"
   },
   {
     "id": "exam_466",
@@ -11645,9 +12531,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_rowena",
-    "teacher": "Teacher Rowena",
+    "teacher": "Tchr. Rowena",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Rowena",
+    "source_cell": "HS SCHED (NEW)!Q59"
   },
   {
     "id": "exam_467",
@@ -11670,9 +12558,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_jhelyn",
-    "teacher": "Teacher Jhelyn",
+    "teacher": "Tchr. Jhelyn",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jhelyn",
+    "source_cell": "HS SCHED (NEW)!Q57"
   },
   {
     "id": "exam_468",
@@ -11695,9 +12585,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_nadzra",
-    "teacher": "Teacher Nadzra",
+    "teacher": "Tchr. Nadzra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!O59",
+    "teacher_clean": "Nadzra"
   },
   {
     "id": "exam_469",
@@ -11722,7 +12614,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_mamonas",
     "teacher": "Alim Mamonas",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Mamonas",
+    "source_cell": "SHS!D23"
   },
   {
     "id": "exam_470",
@@ -11745,9 +12639,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_rowena",
-    "teacher": "Teacher Rowena",
+    "teacher": "Tchr. Rowena",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Rowena",
+    "source_cell": "SHS!H29"
   },
   {
     "id": "exam_471",
@@ -11772,7 +12668,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdulwahab",
     "teacher": "Alim Abdulwahab",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "SHS!H23",
+    "teacher_clean": "Abdulwahab"
   },
   {
     "id": "exam_472",
@@ -11796,8 +12694,8 @@ window.AMIS_EXAM_DATA = [
     "subject": "Mathematics",
     "teacher_id": "tchr_jhelyn",
     "teacher": "Teacher Jhelyn",
-    "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "duration_minutes": 60,
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_473",
@@ -11820,9 +12718,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_ec",
     "subject": "Ec",
     "teacher_id": "tchr_nadzra",
-    "teacher": "Teacher Nadzra",
+    "teacher": "Tchr.  Nadzra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "SHS!D29",
+    "teacher_clean": "Nadzra"
   },
   {
     "id": "exam_474",
@@ -11844,10 +12744,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_pagbasa_at_pagsusuri_ng_iba_t_ibang_teksto",
     "subject": "Pagbasa at Pagsusuri ng Iba't Ibang Teksto",
-    "teacher_id": "tchr_shirehan",
-    "teacher": "Teacher Shirehan",
+    "teacher_id": "tchr_shi",
+    "teacher": "Tchr. Shi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Shi",
+    "source_cell": "SHS!F27"
   },
   {
     "id": "exam_475",
@@ -11870,9 +12772,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_life_career_skills",
     "subject": "Life and Career Skills",
     "teacher_id": "tchr_norhaima",
-    "teacher": "Teacher Norhaima",
+    "teacher": "Tchr. Norhaima",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Norhaima",
+    "source_cell": "SHS!H27"
   },
   {
     "id": "exam_476",
@@ -11897,7 +12801,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "SHS!G27",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_477",
@@ -11922,7 +12828,7 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_aniah",
     "teacher": "Teacher Aniah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_478",
@@ -11947,7 +12853,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "SHS!M25",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_479",
@@ -11972,7 +12880,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_mamonas",
     "teacher": "Alim Mamonas",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Mamonas",
+    "source_cell": "SHS!N25"
   },
   {
     "id": "exam_480",
@@ -11997,7 +12907,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_dipatuan",
     "teacher": "Alim Dipatuan",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "SHS!O25",
+    "teacher_clean": "Dipatuan"
   },
   {
     "id": "exam_481",
@@ -12020,9 +12932,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_21st_cent_lit",
     "subject": "21st Century Literature",
     "teacher_id": "tchr_nof",
-    "teacher": "Teacher Nof",
+    "teacher": "Tchr Nof",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Nof",
+    "source_cell": "SHS!O30"
   },
   {
     "id": "exam_482",
@@ -12045,9 +12959,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_practical_research_2",
     "subject": "Practical Research 2",
     "teacher_id": "tchr_aniah",
-    "teacher": "Teacher Aniah",
+    "teacher": "Tchr. Aniah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Aniah",
+    "source_cell": "SHS!N30"
   },
   {
     "id": "exam_483",
@@ -12069,10 +12985,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_english",
     "subject": "English",
-    "teacher_id": "tchr_jairah",
-    "teacher": "Teacher Jairah",
+    "teacher_id": "tchr_jayra",
+    "teacher": "Tchr. Jayra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!W9",
+    "teacher_clean": "Jayra"
   },
   {
     "id": "exam_484",
@@ -12095,9 +13013,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_aniah",
-    "teacher": "Teacher Aniah",
+    "teacher": "Tchr. Aniah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Aniah",
+    "source_cell": "HS SCHED (NEW)!X11"
   },
   {
     "id": "exam_485",
@@ -12122,7 +13042,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jaisam",
     "teacher": "Ustadh Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!X9",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_486",
@@ -12144,10 +13066,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
-    "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher_id": "tchr_a_silfa",
+    "teacher": "Ustadha Silfa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "A Silfa",
+    "source_cell": "HS SCHED (NEW)!Y9"
   },
   {
     "id": "exam_487",
@@ -12170,9 +13094,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_sophia",
-    "teacher": "Teacher Sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!V11",
+    "teacher_clean": "Sophia"
   },
   {
     "id": "exam_488",
@@ -12197,7 +13123,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!Y11",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_489",
@@ -12220,9 +13148,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_halnaisa",
-    "teacher": "Teacher Halnaisa",
+    "teacher": "Tchr. Halnaisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Halnaisa",
+    "source_cell": "HS SCHED (NEW)!U13"
   },
   {
     "id": "exam_490",
@@ -12244,10 +13174,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_franchette",
-    "teacher": "Teacher Franchette",
+    "teacher_id": "tchr_shi",
+    "teacher": "Tchr. Shi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Shi",
+    "source_cell": "HS SCHED (NEW)!V9"
   },
   {
     "id": "exam_491",
@@ -12270,9 +13202,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_ethel",
-    "teacher": "Teacher Ethel",
+    "teacher": "Tchr. Ethel",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ethel",
+    "source_cell": "HS SCHED (NEW)!X13"
   },
   {
     "id": "exam_492",
@@ -12297,7 +13231,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_ali",
     "teacher": "Ustadh Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "HS SCHED (NEW)!Y13"
   },
   {
     "id": "exam_493",
@@ -12320,9 +13256,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_radzmia",
-    "teacher": "Teacher Radzmia",
+    "teacher": "Tchr. Radzmia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Radzmia",
+    "source_cell": "HS SCHED (NEW)!W20"
   },
   {
     "id": "exam_494",
@@ -12347,7 +13285,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_ali",
     "teacher": "Ustadh Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "HS SCHED (NEW)!V20"
   },
   {
     "id": "exam_495",
@@ -12369,10 +13309,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "BOYS",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_franchette",
-    "teacher": "Teacher Franchette",
+    "teacher_id": "tchr_shi",
+    "teacher": "Tchr. Shi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Shi",
+    "source_cell": "HS SCHED (NEW)!Y24"
   },
   {
     "id": "exam_496",
@@ -12395,9 +13337,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_wardah",
-    "teacher": "Teacher Wardah",
+    "teacher": "Tchr. Wardah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Wardah",
+    "source_cell": "HS SCHED (NEW)!Y20"
   },
   {
     "id": "exam_497",
@@ -12422,7 +13366,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!U22",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_498",
@@ -12444,10 +13390,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "BOYS",
     "subject_id": "subj_english",
     "subject": "English",
-    "teacher_id": "tchr_jairah",
-    "teacher": "Teacher Jairah",
+    "teacher_id": "tchr_jayra",
+    "teacher": "Tchr. Jayra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!X22",
+    "teacher_clean": "Jayra"
   },
   {
     "id": "exam_499",
@@ -12470,9 +13418,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_hannah",
-    "teacher": "Teacher Hannah",
+    "teacher": "Tchr. Hannah",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Hannah",
+    "source_cell": "HS SCHED (NEW)!Y22"
   },
   {
     "id": "exam_500",
@@ -12497,7 +13447,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jaisam",
     "teacher": "Ustadh Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!U24",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_501",
@@ -12520,9 +13472,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_sophia",
-    "teacher": "Teacher Sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!V24",
+    "teacher_clean": "Sophia"
   },
   {
     "id": "exam_502",
@@ -12545,9 +13499,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_halnaisa",
-    "teacher": "Teacher Halnaisa",
+    "teacher": "Tchr. Halnaisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Halnaisa",
+    "source_cell": "HS SCHED (NEW)!X24"
   },
   {
     "id": "exam_503",
@@ -12569,10 +13525,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_franchette",
-    "teacher": "Teacher Franchette",
+    "teacher_id": "tchr_shi",
+    "teacher": "Tchr. Shi",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Shi",
+    "source_cell": "HS SCHED (NEW)!X36"
   },
   {
     "id": "exam_504",
@@ -12597,7 +13555,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!V32",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_505",
@@ -12622,7 +13582,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_jaisam",
     "teacher": "Ustadh Jaisam",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!W32",
+    "teacher_clean": "Jaisam"
   },
   {
     "id": "exam_506",
@@ -12645,9 +13607,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_halnaisa",
-    "teacher": "Teacher Halnaisa",
+    "teacher": "Tchr. Halnaisa",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Halnaisa",
+    "source_cell": "HS SCHED (NEW)!X32"
   },
   {
     "id": "exam_507",
@@ -12670,9 +13634,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_sophia",
-    "teacher": "Teacher Sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!Y32",
+    "teacher_clean": "Sophia"
   },
   {
     "id": "exam_508",
@@ -12695,9 +13661,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_radzmia",
-    "teacher": "Teacher Radzmia",
+    "teacher": "Tchr. Radzmia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Radzmia",
+    "source_cell": "HS SCHED (NEW)!Y34"
   },
   {
     "id": "exam_509",
@@ -12720,9 +13688,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_hannah",
-    "teacher": "Teacher Hannah",
+    "teacher": "Tchr. Hannah",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Hannah",
+    "source_cell": "HS SCHED (NEW)!X34"
   },
   {
     "id": "exam_510",
@@ -12747,7 +13717,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_ali",
     "teacher": "Ustadh Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "HS SCHED (NEW)!W34"
   },
   {
     "id": "exam_511",
@@ -12769,10 +13741,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "MIXED",
     "subject_id": "subj_english",
     "subject": "English",
-    "teacher_id": "tchr_jairah",
-    "teacher": "Teacher Jairah",
+    "teacher_id": "tchr_jayra",
+    "teacher": "Tchr. Jayra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!W36",
+    "teacher_clean": "Jayra"
   },
   {
     "id": "exam_512",
@@ -12795,9 +13769,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_gmrc_values",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_wardah",
-    "teacher": "Teacher Wardah",
+    "teacher": "Tchr. Wardah",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Wardah",
+    "source_cell": "HS SCHED (NEW)!Y36"
   },
   {
     "id": "exam_513",
@@ -12822,7 +13798,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_ali",
     "teacher": "Ustadh Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "HS SCHED (NEW)!U44"
   },
   {
     "id": "exam_514",
@@ -12845,9 +13823,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_rowena",
-    "teacher": "Teacher Rowena",
+    "teacher": "Tchr. Rowena",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Rowena",
+    "source_cell": "HS SCHED (NEW)!W44"
   },
   {
     "id": "exam_515",
@@ -12872,7 +13852,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!X44",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_516",
@@ -12897,7 +13879,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdulwahab",
     "teacher": "Alim Abdulwahab",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!Y44",
+    "teacher_clean": "Abdulwahab"
   },
   {
     "id": "exam_517",
@@ -12920,9 +13904,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_norhaima",
-    "teacher": "Teacher Norhaima",
+    "teacher": "Tchr. Norhaima",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!W46",
+    "teacher_clean": "Norhaima"
   },
   {
     "id": "exam_518",
@@ -12945,9 +13931,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_jhelyn",
-    "teacher": "Teacher Jhelyn",
+    "teacher": "Tchr. Jhelyn",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jhelyn",
+    "source_cell": "HS SCHED (NEW)!X46"
   },
   {
     "id": "exam_519",
@@ -12969,10 +13957,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "BOYS",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_nof",
-    "teacher": "Teacher Nof",
+    "teacher_id": "tchr_sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sophia",
+    "source_cell": "HS SCHED (NEW)!Y48"
   },
   {
     "id": "exam_520",
@@ -12995,9 +13985,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_angeleni",
-    "teacher": "Teacher Angeleni",
+    "teacher": "Tchr. Angeleni",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Angeleni",
+    "source_cell": "HS SCHED (NEW)!U48"
   },
   {
     "id": "exam_521",
@@ -13020,9 +14012,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_nadzra",
-    "teacher": "Teacher Nadzra",
+    "teacher": "Tchr. Nadzra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!X48",
+    "teacher_clean": "Nadzra"
   },
   {
     "id": "exam_522",
@@ -13047,7 +14041,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!U55",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_523",
@@ -13070,9 +14066,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_nadzra",
-    "teacher": "Teacher Nadzra",
+    "teacher": "Tchr. Nadzra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!X55",
+    "teacher_clean": "Nadzra"
   },
   {
     "id": "exam_524",
@@ -13097,7 +14095,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdulwahab",
     "teacher": "Alim Abdulwahab",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!W55",
+    "teacher_clean": "Abdulwahab"
   },
   {
     "id": "exam_525",
@@ -13119,10 +14119,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "GIRLS",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_mohaymen",
-    "teacher": "Sir Mohaymen",
+    "teacher_id": "tchr_sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sophia",
+    "source_cell": "HS SCHED (NEW)!W57"
   },
   {
     "id": "exam_526",
@@ -13145,9 +14147,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_rowena",
-    "teacher": "Teacher Rowena",
+    "teacher": "Tchr. Rowena",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Rowena",
+    "source_cell": "HS SCHED (NEW)!Y57"
   },
   {
     "id": "exam_527",
@@ -13172,7 +14176,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_ali",
     "teacher": "Ustadh Ali",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Ali",
+    "source_cell": "HS SCHED (NEW)!V57"
   },
   {
     "id": "exam_528",
@@ -13195,9 +14201,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_angeleni",
-    "teacher": "Teacher Angeleni",
+    "teacher": "Tchr. Angeleni",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Angeleni",
+    "source_cell": "HS SCHED (NEW)!X57"
   },
   {
     "id": "exam_529",
@@ -13220,9 +14228,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_jhelyn",
-    "teacher": "Teacher Jhelyn",
+    "teacher": "Tchr. Jhelyn",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jhelyn",
+    "source_cell": "HS SCHED (NEW)!V59"
   },
   {
     "id": "exam_530",
@@ -13245,9 +14255,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_norhaima",
-    "teacher": "Teacher Norhaima",
+    "teacher": "Tchr. Norhaima",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!Y59",
+    "teacher_clean": "Norhaima"
   },
   {
     "id": "exam_531",
@@ -13270,9 +14282,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_mathematics",
     "subject": "Mathematics",
     "teacher_id": "tchr_jhelyn",
-    "teacher": "Teacher Jhelyn",
+    "teacher": "Tchr. Jhelyn",
     "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Jhelyn",
+    "source_cell": "HS SCHED (NEW)!X66"
   },
   {
     "id": "exam_532",
@@ -13297,7 +14311,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdulwahab",
     "teacher": "Alim Abdulwahab",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!V66",
+    "teacher_clean": "Abdulwahab"
   },
   {
     "id": "exam_533",
@@ -13322,7 +14338,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_bustamante",
     "teacher": "Alim Bustamante",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!W66",
+    "teacher_clean": "Bustamante"
   },
   {
     "id": "exam_534",
@@ -13347,7 +14365,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_mamonas",
     "teacher": "Alim Mamonas",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Mamonas",
+    "source_cell": "HS SCHED (NEW)!Y66"
   },
   {
     "id": "exam_535",
@@ -13369,10 +14389,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "BOYS",
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan (AP)",
-    "teacher_id": "tchr_mohaymen",
-    "teacher": "Sir Mohaymen",
+    "teacher_id": "tchr_sophia",
+    "teacher": "Tchr. Sophia",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Sophia",
+    "source_cell": "HS SCHED (NEW)!Y68"
   },
   {
     "id": "exam_536",
@@ -13395,9 +14417,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_english",
     "subject": "English",
     "teacher_id": "tchr_norhaima",
-    "teacher": "Teacher Norhaima",
+    "teacher": "Tchr. Norhaima",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!X68",
+    "teacher_clean": "Norhaima"
   },
   {
     "id": "exam_537",
@@ -13420,9 +14444,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_filipino",
     "subject": "Filipino",
     "teacher_id": "tchr_nadzra",
-    "teacher": "Teacher Nadzra",
+    "teacher": "Tchr. Nadzra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "HS SCHED (NEW)!U70",
+    "teacher_clean": "Nadzra"
   },
   {
     "id": "exam_538",
@@ -13445,9 +14471,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_science",
     "subject": "Science",
     "teacher_id": "tchr_rowena",
-    "teacher": "Teacher Rowena",
+    "teacher": "Tchr. Rowena",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Rowena",
+    "source_cell": "HS SCHED (NEW)!X70"
   },
   {
     "id": "exam_539",
@@ -13470,9 +14498,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_technology_and_livelihood_education",
     "subject": "Technology and Livelihood Education",
     "teacher_id": "tchr_angeleni",
-    "teacher": "Teacher Angeleni",
+    "teacher": "Tchr. Angeleni",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Angeleni",
+    "source_cell": "HS SCHED (NEW)!W70"
   },
   {
     "id": "exam_540",
@@ -13497,7 +14527,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_samsuddin",
     "teacher": "Alim Samsuddin",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "SHS!D35",
+    "teacher_clean": "Samsuddin"
   },
   {
     "id": "exam_541",
@@ -13522,7 +14554,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_mamonas",
     "teacher": "Alim Mamonas",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Mamonas",
+    "source_cell": "SHS!E35"
   },
   {
     "id": "exam_542",
@@ -13545,9 +14579,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_life_career_skills",
     "subject": "Life and Career Skills",
     "teacher_id": "tchr_norhaima",
-    "teacher": "Teacher Norhaima",
+    "teacher": "Tchr. Norhaima",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Norhaima",
+    "source_cell": "SHS!E42"
   },
   {
     "id": "exam_543",
@@ -13569,10 +14605,12 @@ window.AMIS_EXAM_DATA = [
     "gender": "BOYS",
     "subject_id": "subj_science",
     "subject": "Science",
-    "teacher_id": "tchr_radzmia",
-    "teacher": "Teacher Radzmia",
+    "teacher_id": "tchr_rowena",
+    "teacher": "Tchr. Rowena",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Rowena",
+    "source_cell": "SHS!D42"
   },
   {
     "id": "exam_544",
@@ -13595,9 +14633,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_ec",
     "subject": "Ec",
     "teacher_id": "tchr_nadzra",
-    "teacher": "Teacher Nadzra",
+    "teacher": "Tchr.  Nadzra",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "SHS!D40",
+    "teacher_clean": "Nadzra"
   },
   {
     "id": "exam_545",
@@ -13620,9 +14660,11 @@ window.AMIS_EXAM_DATA = [
     "subject_id": "subj_pagbasa_at_pagsusuri_ng_iba_t_ibang_teksto",
     "subject": "Pagbasa at Pagsusuri ng Iba't Ibang Teksto",
     "teacher_id": "tchr_shirehan",
-    "teacher": "Teacher Shirehan",
+    "teacher": "Tchr. Shirehan",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "teacher_clean": "Shirehan",
+    "source_cell": "SHS!H40"
   },
   {
     "id": "exam_546",
@@ -13646,8 +14688,8 @@ window.AMIS_EXAM_DATA = [
     "subject": "Mathematics",
     "teacher_id": "tchr_jhelyn",
     "teacher": "Teacher Jhelyn",
-    "duration_minutes": 120,
-    "teacher_status": "VERIFIED"
+    "duration_minutes": 60,
+    "teacher_status": "TEACHER NOT VERIFIED"
   },
   {
     "id": "exam_547",
@@ -13672,7 +14714,9 @@ window.AMIS_EXAM_DATA = [
     "teacher_id": "tchr_abdulwahab",
     "teacher": "Alim Abdulwahab",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "source_cell": "SHS!G38",
+    "teacher_clean": "Abdulwahab"
   }
 ];
 const AMIS_EXAM_DATA = window.AMIS_EXAM_DATA;
