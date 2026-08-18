@@ -202,6 +202,10 @@ for sdef in SECTION_DEFS:
         # Extract 5 days with merged cell support
         raw_vals = [get_cell_value_merged(ws, r, c) for c in sdef['day_cols']]
         
+        # If all 5 days are completely empty, this period does not exist for this section (skip empty template rows)
+        if all(v == '' for v in raw_vals):
+            continue
+            
         # If only Sunday is filled and Mon-Thu are empty, copy Sunday across all 5 days (1 cell in 5 days)
         if raw_vals[0] and all(v == '' for v in raw_vals[1:]):
             raw_vals = [raw_vals[0]] * 5
@@ -288,6 +292,9 @@ for sdef in SECTION_DEFS:
         }
         periods_list.append(period_obj)
         p_num += 1
+        
+    if len(periods_list) == 0:
+        continue
         
     sec_obj = {
         "id": sec_id,
