@@ -162,12 +162,15 @@ for tid, tinfo in teacher_data.items():
         
     tinfo['rows'] = rows
 
+# Keep only active teachers with total_classes > 0
+active_teacher_data = {k: v for k, v in teacher_data.items() if v.get('total_classes', 0) > 0}
+
 # Save JSON and JS
 with open(os.path.join(BASE_DIR, "teacher_weekly_schedules.json"), "w", encoding="utf-8") as f:
-    json.dump(teacher_data, f, indent=2, ensure_ascii=False)
+    json.dump(active_teacher_data, f, indent=2, ensure_ascii=False)
 
 with open(os.path.join(BASE_DIR, "teacher_weekly_schedules.js"), "w", encoding="utf-8") as f:
-    f.write(f"window.AMIS_TEACHER_WEEKLY_SCHEDULES = {json.dumps(teacher_data, indent=2, ensure_ascii=False)};\n")
+    f.write(f"window.AMIS_TEACHER_WEEKLY_SCHEDULES = {json.dumps(active_teacher_data, indent=2, ensure_ascii=False)};\n")
     f.write("const AMIS_TEACHER_WEEKLY_SCHEDULES = window.AMIS_TEACHER_WEEKLY_SCHEDULES;\n")
 
-print(f"✓ Successfully built teacher_weekly_schedules.json and .js for {len(teacher_data)} teachers!")
+print(f"✓ Successfully built teacher_weekly_schedules.json and .js for {len(active_teacher_data)} active teachers!")

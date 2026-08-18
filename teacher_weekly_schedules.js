@@ -7517,19 +7517,6 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
       }
     ]
   },
-  "tchr_raffy": {
-    "id": "tchr_raffy",
-    "teacher_id": "tchr_raffy",
-    "name": "Ustadh Raffy",
-    "teacher_name": "Ustadh Raffy",
-    "canonical_name": "Ustadh Raffy",
-    "department": "ISAL Faculty",
-    "periods": [],
-    "total_classes": 0,
-    "total_teaching_periods": 0,
-    "subjects": [],
-    "rows": []
-  },
   "tchr_raslina": {
     "id": "tchr_raslina",
     "teacher_id": "tchr_raslina",
@@ -11234,19 +11221,6 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         }
       }
     ]
-  },
-  "tchr_abegail": {
-    "id": "tchr_abegail",
-    "teacher_id": "tchr_abegail",
-    "name": "Teacher Abegail",
-    "teacher_name": "Teacher Abegail",
-    "canonical_name": "Teacher Abegail",
-    "department": "High School Faculty",
-    "periods": [],
-    "total_classes": 0,
-    "total_teaching_periods": 0,
-    "subjects": [],
-    "rows": []
   },
   "tchr_angeleni": {
     "id": "tchr_angeleni",
@@ -17633,19 +17607,6 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         }
       }
     ]
-  },
-  "tchr_hannah": {
-    "id": "tchr_hannah",
-    "teacher_id": "tchr_hannah",
-    "name": "Teacher Hannah",
-    "teacher_name": "Teacher Hannah",
-    "canonical_name": "Teacher Hannah",
-    "department": "High School Faculty",
-    "periods": [],
-    "total_classes": 0,
-    "total_teaching_periods": 0,
-    "subjects": [],
-    "rows": []
   },
   "tchr_jairah": {
     "id": "tchr_jairah",
@@ -25587,19 +25548,6 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         }
       }
     ]
-  },
-  "tchr_marie": {
-    "id": "tchr_marie",
-    "teacher_id": "tchr_marie",
-    "name": "Teacher Marie",
-    "teacher_name": "Teacher Marie",
-    "canonical_name": "Teacher Marie",
-    "department": "High School Faculty",
-    "periods": [],
-    "total_classes": 0,
-    "total_teaching_periods": 0,
-    "subjects": [],
-    "rows": []
   },
   "tchr_marham": {
     "id": "tchr_marham",
@@ -35981,19 +35929,6 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
       }
     ]
   },
-  "tchr_shanen": {
-    "id": "tchr_shanen",
-    "teacher_id": "tchr_shanen",
-    "name": "Teacher Shanen",
-    "teacher_name": "Teacher Shanen",
-    "canonical_name": "Teacher Shanen",
-    "department": "High School Faculty",
-    "periods": [],
-    "total_classes": 0,
-    "total_teaching_periods": 0,
-    "subjects": [],
-    "rows": []
-  },
   "tchr_shirehan": {
     "id": "tchr_shirehan",
     "teacher_id": "tchr_shirehan",
@@ -38690,19 +38625,6 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         }
       }
     ]
-  },
-  "tchr_thea": {
-    "id": "tchr_thea",
-    "teacher_id": "tchr_thea",
-    "name": "Teacher Thea",
-    "teacher_name": "Teacher Thea",
-    "canonical_name": "Teacher Thea",
-    "department": "High School Faculty",
-    "periods": [],
-    "total_classes": 0,
-    "total_teaching_periods": 0,
-    "subjects": [],
-    "rows": []
   },
   "tchr_wardah": {
     "id": "tchr_wardah",
