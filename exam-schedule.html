@@ -654,9 +654,9 @@ html, body {
         Modality:
       </span>
       <select id="modalitySelect" class="filter-select" aria-label="Select Modality">
+        <option value="ALL" selected>All Modalities (F2F + ODL)</option>
         <option value="F2F">Face-to-Face (F2F)</option>
         <option value="ODL">Online Distance Learning (ODL)</option>
-        <option value="ALL">All Modalities</option>
       </select>
     </div>
 
@@ -785,14 +785,14 @@ html, body {
 
     const urlParams = new URLSearchParams(window.location.search);
     let initTeacher = urlParams.get('teacher') || '';
-    let initModality = urlParams.get('modality') || 'F2F';
+    let initModality = urlParams.get('modality') || 'ALL';
     let initShift = urlParams.get('shift') || 'ODL1';
     let initSec = urlParams.get('section') || 'ALL_GROUP';
 
     if (initTeacher) {
       teacherSelect.value = initTeacher;
     } else {
-      modalitySelect.value = ['F2F', 'ODL', 'ALL'].includes(initModality.toUpperCase()) ? initModality.toUpperCase() : 'F2F';
+      modalitySelect.value = ['F2F', 'ODL', 'ALL'].includes(initModality.toUpperCase()) ? initModality.toUpperCase() : 'ALL';
       shiftSelect.value = ['ODL1', 'ODL2', 'ODL_ALL'].includes(initShift.toUpperCase()) ? initShift.toUpperCase() : 'ODL1';
     }
 
