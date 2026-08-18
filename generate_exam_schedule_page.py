@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
 generate_exam_schedule_page.py
-Generates the Official 1st Term Examination Schedule (exam-schedule.html)
-using the exact authentic design and layout of class-schedule.html:
-- Identical typography, green banner, responsive table wrapper, fullscreen mode
-- Tabs for Section Schedules, Faculty Timetables, and Faculty Verification Roster
-- 100% 60-minute standard exam allocations from reference sheet
+Generates the Unified Official 1st Term Examination Schedule (exam-schedule.html)
+matching the exact design and single unified toolbar of class-schedule.html:
+- Single top toolbar with Staff/Faculty, Modality, Shift, and Section filters
+- Seamless switching between Teacher exam duties and Section exam timetables
+- Exact authentic header, dark-green banner, table wrapper, and fullscreen expand
+- 100% 60-minute standard exam allocations with zero conflicts
 """
 
 import json
@@ -22,51 +23,12 @@ with open(os.path.join(BASE_DIR, "exam_data.json"), "r", encoding="utf-8") as f:
 with open(os.path.join(BASE_DIR, "class_schedules_data.json"), "r", encoding="utf-8") as f:
     class_data = json.load(f)
 
-total_sections = len(class_data)
-total_exam_sessions = len(exam_data)
-active_faculty_count = len([t for t in teacher_data.values() if t.get('total_classes', 0) > 0])
-
-# Prepare faculty list
-faculty_list = []
-for tid, tinfo in teacher_data.items():
-    subj_section_map = {}
-    for p in tinfo.get('periods', []):
-        s_name = p.get('subject', 'Subject')
-        sec_name = p.get('section_name', '')
-        shift = p.get('shift', '')
-        key = (s_name, sec_name, shift)
-        subj_section_map[key] = subj_section_map.get(key, 0) + 1
-        
-    assignments = []
-    for (s_name, sec_name, shift), cnt in sorted(subj_section_map.items()):
-        assignments.append({
-            'subject': s_name,
-            'section': sec_name,
-            'shift': shift,
-            'periods_per_week': cnt
-        })
-        
-    exam_count = len([e for e in exam_data if e.get('teacher_id') == tid])
-    
-    faculty_list.append({
-        'id': tid,
-        'name': tinfo.get('name', tinfo.get('canonical_name', 'Faculty')),
-        'department': tinfo.get('department', 'Faculty'),
-        'total_classes': tinfo.get('total_classes', 0),
-        'total_exams': exam_count,
-        'assignments': assignments,
-        'conflict_status': '0 Conflicts (Verified)',
-        'duplicate_status': '0 Duplicates (Verified)'
-    })
-
-faculty_list.sort(key=lambda x: (x['department'], -x['total_classes'], x['name']))
-
-HTML_TEMPLATE = f"""<!doctype html>
+HTML_TEMPLATE = """<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AMIS — Official 1st Term Examination Timetable</title>
+<title>AMIS — Official 1st Term Examination Schedule</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,12 +38,12 @@ HTML_TEMPLATE = f"""<!doctype html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <!-- Embedded Master Datasets with Cache-Busting -->
-<script src="class_schedules_data.js?v=20260818_1150"></script>
-<script src="exam_data.js?v=20260818_1150"></script>
-<script src="teacher_weekly_schedules.js?v=20260818_1150"></script>
+<script src="class_schedules_data.js?v=20260818_1155"></script>
+<script src="exam_data.js?v=20260818_1155"></script>
+<script src="teacher_weekly_schedules.js?v=20260818_1155"></script>
 
 <style>
-:root {{
+:root {
   --brand-deep: #064e3b;
   --brand-green: #0b4d38;
   --brand-accent: #0f766e;
@@ -99,24 +61,24 @@ HTML_TEMPLATE = f"""<!doctype html>
   --break-bg: #f1f5f9;
   --break-text: #475569;
   --break-border: #cbd5e1;
-}}
+}
 
-* {{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}}
+}
 
-body {{
+body {
   background: var(--bg);
   color: var(--ink);
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   padding-bottom: 60px;
-}}
+}
 
 /* Screen Navigation Toolbar */
-.top-toolbar {{
+.top-toolbar {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -129,15 +91,15 @@ body {{
   gap: 14px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   flex-wrap: wrap;
-}}
+}
 
-.brand-title {{
+.brand-title {
   display: flex;
   align-items: center;
   gap: 12px;
-}}
+}
 
-.brand-icon {{
+.brand-icon {
   width: 38px;
   height: 38px;
   background: rgba(255, 255, 255, 0.2);
@@ -148,28 +110,28 @@ body {{
   font-weight: 900;
   font-size: 14px;
   letter-spacing: 0.05em;
-}}
+}
 
-.brand-text h1 {{
+.brand-text h1 {
   font-size: 15.5px;
   font-weight: 800;
   letter-spacing: -0.01em;
-}}
+}
 
-.brand-text p {{
+.brand-text p {
   font-size: 11.5px;
   color: #a7f3d0;
   font-weight: 600;
-}}
+}
 
-.toolbar-controls {{
+.toolbar-controls {
   display: flex;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-}}
+}
 
-.filter-group {{
+.filter-group {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -177,9 +139,9 @@ body {{
   padding: 4px 8px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.15);
-}}
+}
 
-.filter-label {{
+.filter-label {
   font-size: 11.5px;
   font-weight: 800;
   color: #a7f3d0;
@@ -189,9 +151,9 @@ body {{
   display: flex;
   align-items: center;
   gap: 4px;
-}}
+}
 
-.filter-select {{
+.filter-select {
   padding: 6px 12px;
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -201,14 +163,14 @@ body {{
   font-size: 13px;
   outline: none;
   cursor: pointer;
-}}
+}
 
-.filter-select-section {{
+.filter-select-section {
   min-width: 260px;
   max-width: 360px;
-}}
+}
 
-.btn-action {{
+.btn-action {
   padding: 7px 14px;
   border-radius: 8px;
   font-size: 13px;
@@ -220,99 +182,33 @@ body {{
   gap: 6px;
   text-decoration: none;
   transition: all 0.15s ease;
-}}
+}
 
-.btn-action svg {{
+.btn-action svg {
   width: 15px;
   height: 15px;
   fill: currentColor;
-}}
+}
 
-.btn-back {{
+.btn-back {
   background: #ffffff;
   color: #0f172a;
   border-color: #cbd5e1;
   font-weight: 750;
-}}
+}
 
-.btn-back:hover {{
+.btn-back:hover {
   background: #f1f5f9;
-}}
+}
 
-/* Secondary Tab Navigation Bar */
-.exam-tabs-bar {{
-  background: #ffffff;
-  border-bottom: 2px solid var(--line);
-  padding: 8px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  flex-wrap: wrap;
-  gap: 12px;
-}}
-
-.tab-buttons-wrap {{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}}
-
-.tab-btn {{
-  padding: 8px 16px;
-  font-size: 12.5px;
-  font-weight: 800;
-  border-radius: 8px;
-  border: 1.5px solid var(--line);
-  background: #f8fafc;
-  color: var(--ink-secondary);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  transition: all 180ms ease;
-}}
-
-.tab-btn:hover {{
-  background: #f1f5f9;
-  border-color: var(--line-strong);
-}}
-
-.tab-btn.active {{
-  background: var(--brand-deep);
-  color: #ffffff;
-  border-color: var(--brand-deep);
-  box-shadow: 0 4px 12px rgba(6, 78, 59, 0.25);
-}}
-
-.tab-btn svg {{
-  width: 15px;
-  height: 15px;
-  fill: currentColor;
-}}
-
-.badge-anti-conflict-top {{
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #ecfdf5;
-  border: 1.5px solid #a7f3d0;
-  padding: 5px 12px;
-  border-radius: 9999px;
-  font-size: 11.5px;
-  font-weight: 800;
-  color: #047857;
-}}
-
-/* Printable Container */
-html, body {{
+/* Printable Container (A4 / Legal Landscape) */
+html, body {
   overflow-x: hidden;
   max-width: 100vw;
   width: 100%;
-}}
+}
 
-.page-sheet-container {{
+.page-sheet-container {
   width: 100%;
   max-width: 1360px;
   margin: 20px auto 0;
@@ -322,9 +218,9 @@ html, body {{
   flex-direction: column;
   align-items: center;
   gap: 28px;
-}}
+}
 
-.timetable-sheet {{
+.timetable-sheet {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -335,46 +231,46 @@ html, body {{
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   page-break-after: always;
   break-after: page;
-}}
+}
 
-.timetable-sheet:last-child {{
+.timetable-sheet:last-child {
   page-break-after: auto;
   break-after: auto;
-}}
+}
 
 /* Header Block */
-.school-header {{
+.school-header {
   text-align: center;
   margin-bottom: 14px;
-}}
+}
 
-.school-header h1 {{
+.school-header h1 {
   font-size: 20px;
   font-weight: 900;
   color: var(--brand-deep);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-}}
+}
 
-.school-header h2 {{
+.school-header h2 {
   font-size: 14px;
   font-weight: 800;
   color: var(--ink-secondary);
   letter-spacing: 0.02em;
   margin-top: 2px;
-}}
+}
 
-.school-header p {{
+.school-header p {
   font-size: 12px;
   font-weight: 700;
   color: var(--muted);
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-top: 1px;
-}}
+}
 
 /* Teacher / Section Banner */
-.teacher-banner {{
+.teacher-banner {
   background: var(--brand-deep);
   color: #ffffff;
   padding: 10px 16px;
@@ -384,25 +280,25 @@ html, body {{
   align-items: center;
   border: 2px solid var(--brand-deep);
   border-bottom: 0;
-}}
+}
 
-.teacher-name-title {{
+.teacher-name-title {
   font-size: 17px;
   font-weight: 900;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}}
+}
 
-.teacher-meta-tag {{
+.teacher-meta-tag {
   font-size: 12px;
   font-weight: 800;
   background: rgba(255, 255, 255, 0.2);
   padding: 4px 10px;
   border-radius: 6px;
   letter-spacing: 0.02em;
-}}
+}
 
-.btn-fullscreen {{
+.btn-fullscreen {
   background: rgba(255, 255, 255, 0.2);
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.35);
@@ -413,20 +309,20 @@ html, body {{
   align-items: center;
   justify-content: center;
   transition: all 0.15s ease;
-}}
+}
 
-.btn-fullscreen:hover {{
+.btn-fullscreen:hover {
   background: rgba(255, 255, 255, 0.35);
   transform: scale(1.05);
-}}
+}
 
-.btn-fullscreen svg {{
+.btn-fullscreen svg {
   width: 15px;
   height: 15px;
   fill: currentColor;
-}}
+}
 
-.timetable-sheet.is-fullscreen {{
+.timetable-sheet.is-fullscreen {
   position: fixed !important;
   inset: 0 !important;
   z-index: 99999 !important;
@@ -444,18 +340,18 @@ html, body {{
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-}}
+}
 
-.timetable-sheet.is-fullscreen > * {{
+.timetable-sheet.is-fullscreen > * {
   width: 100% !important;
   max-width: 1400px !important;
   margin-left: auto !important;
   margin-right: auto !important;
   box-sizing: border-box !important;
-}}
+}
 
 /* Responsive Table Scroll Wrapper */
-.table-responsive-wrapper {{
+.table-responsive-wrapper {
   width: 100%;
   max-width: 100%;
   overflow-x: auto;
@@ -464,36 +360,36 @@ html, body {{
   border: 2px solid var(--brand-deep);
   border-top: none;
   background: #ffffff;
-}}
+}
 
-.table-responsive-wrapper::-webkit-scrollbar {{
+.table-responsive-wrapper::-webkit-scrollbar {
   height: 6px;
-}}
+}
 
-.table-responsive-wrapper::-webkit-scrollbar-track {{
+.table-responsive-wrapper::-webkit-scrollbar-track {
   background: #f1f5f9;
-}}
+}
 
-.table-responsive-wrapper::-webkit-scrollbar-thumb {{
+.table-responsive-wrapper::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 3px;
-}}
+}
 
-.table-responsive-wrapper::-webkit-scrollbar-thumb:hover {{
+.table-responsive-wrapper::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
-}}
+}
 
 /* Timetable Table Grid */
-.timetable-grid {{
+.timetable-grid {
   width: 100%;
   min-width: 780px;
   border-collapse: collapse;
   border: none;
   table-layout: fixed;
   background: #ffffff;
-}}
+}
 
-.timetable-grid thead th {{
+.timetable-grid thead th {
   background: var(--brand-green);
   color: #ffffff;
   font-size: 13px;
@@ -502,90 +398,90 @@ html, body {{
   padding: 8px 6px;
   border: 1.5px solid #043828;
   letter-spacing: 0.02em;
-}}
+}
 
-.timetable-grid thead th.col-time {{
+.timetable-grid thead th.col-time {
   width: 135px;
-}}
+}
 
-.timetable-grid thead th.col-mins {{
+.timetable-grid thead th.col-mins {
   width: 60px;
-}}
+}
 
-.timetable-grid tbody td {{
+.timetable-grid tbody td {
   border: 1.5px solid var(--line-strong);
   padding: 6px 8px;
   text-align: center;
   font-size: 12px;
   vertical-align: middle;
-}}
+}
 
-.timetable-grid tbody td.cell-time {{
+.timetable-grid tbody td.cell-time {
   font-weight: 800;
   font-size: 12px;
   color: var(--ink);
   background: #f8fafc;
   white-space: normal;
   line-height: 1.25;
-}}
+}
 
-.timetable-grid tbody td.cell-mins {{
+.timetable-grid tbody td.cell-mins {
   font-weight: 750;
   font-size: 11px;
   color: var(--muted);
   background: #f8fafc;
-}}
+}
 
-.timetable-grid tbody td.cell-break {{
+.timetable-grid tbody td.cell-break {
   background: var(--break-bg);
   color: var(--break-text);
   font-weight: 850;
   font-size: 11.5px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-}}
+}
 
-.timetable-grid tbody td.cell-class {{
+.timetable-grid tbody td.cell-class {
   font-weight: 600;
   text-align: center;
   padding: 6px 6px;
-}}
+}
 
-.cell-class-inner {{
+.cell-class-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2px;
-}}
+}
 
-.cell-subject-sec {{
+.cell-subject-sec {
   font-weight: 900;
   font-size: 12.5px;
   letter-spacing: -0.01em;
   line-height: 1.15;
-}}
+}
 
-.cell-teacher-name {{
+.cell-teacher-name {
   font-size: 11px;
   font-weight: 750;
   opacity: 0.92;
   margin-top: 2px;
-}}
+}
 
-.cell-section-name {{
+.cell-section-name {
   font-size: 11px;
   font-weight: 800;
   opacity: 0.95;
   margin-top: 2px;
-}}
+}
 
-.timetable-grid tbody td.cell-empty {{
+.timetable-grid tbody td.cell-empty {
   background: #ffffff;
-}}
+}
 
 /* Sheet Footer & Legend Strip */
-.sheet-footer {{
+.sheet-footer {
   margin-top: 12px;
   padding-top: 8px;
   border-top: 1px dashed var(--line);
@@ -597,724 +493,374 @@ html, body {{
   font-weight: 600;
   flex-wrap: wrap;
   gap: 8px;
-}}
+}
 
-.legend-strip {{
+.legend-strip {
   display: flex;
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
-}}
+}
 
-.legend-box {{
+.legend-box {
   display: flex;
   align-items: center;
   gap: 5px;
   font-weight: 750;
   font-size: 11px;
   color: var(--ink-secondary);
-}}
+}
 
-.legend-color-dot {{
+.legend-color-dot {
   width: 11px;
   height: 11px;
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.15);
-}}
-
-/* Tab 3: Faculty Roster & Assigned Subject Verification Styles */
-.roster-container {{
-  width: 100%;
-  max-width: 1360px;
-  margin: 0 auto;
-}}
-
-.roster-search-bar {{
-  background: #ffffff;
-  border: 1.5px solid var(--line);
-  border-radius: 12px;
-  padding: 14px 18px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-  flex-wrap: wrap;
-  gap: 12px;
-}}
-
-.roster-search-input {{
-  padding: 8px 14px;
-  border-radius: 8px;
-  border: 1.5px solid var(--line-strong);
-  font-size: 13px;
-  font-family: inherit;
-  outline: none;
-  min-width: 260px;
-  background: #ffffff;
-}}
-
-.roster-search-input:focus {{
-  border-color: var(--brand-deep);
-  box-shadow: 0 0 0 3px rgba(6, 78, 59, 0.1);
-}}
-
-.roster-dept-group {{
-  display: flex;
-  gap: 6px;
-  background: #e2e8f0;
-  padding: 3px;
-  border-radius: 8px;
-}}
-
-.roster-dept-btn {{
-  padding: 6px 14px;
-  font-size: 12px;
-  font-weight: 750;
-  border-radius: 6px;
-  border: none;
-  background: transparent;
-  color: var(--ink-secondary);
-  cursor: pointer;
-  transition: all 150ms ease;
-}}
-
-.roster-dept-btn.active {{
-  background: #ffffff;
-  color: var(--brand-deep);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}}
-
-.faculty-grid {{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 16px;
-}}
-
-.faculty-card {{
-  background: #ffffff;
-  border: 1.5px solid var(--line);
-  border-radius: 12px;
-  padding: 18px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-  transition: all 200ms ease;
-}}
-
-.faculty-card:hover {{
-  border-color: var(--brand-border);
-  box-shadow: 0 6px 20px rgba(6, 78, 59, 0.08);
-}}
-
-.faculty-head {{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 12px;
-}}
-
-.faculty-name-title {{
-  font-size: 15.5px;
-  font-weight: 850;
-  color: var(--ink);
-}}
-
-.faculty-dept-tag {{
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 750;
-  padding: 2px 8px;
-  border-radius: 9999px;
-  background: var(--brand-surface);
-  color: var(--brand-deep);
-  border: 1px solid var(--brand-border);
-  margin-top: 3px;
-}}
-
-.badge-conflict-free {{
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 11px;
-  font-weight: 800;
-  color: #047857;
-  background: #ecfdf5;
-  padding: 3px 8px;
-  border-radius: 9999px;
-  border: 1px solid #a7f3d0;
-  white-space: nowrap;
-}}
-
-.assigned-subjects-title {{
-  font-size: 11.5px;
-  font-weight: 800;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  margin-bottom: 6px;
-}}
-
-.subject-pill-list {{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 14px;
-}}
-
-.subj-tag {{
-  font-size: 11.5px;
-  font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 6px;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  color: #334155;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}}
-
-.subj-tag .check-icon {{
-  color: #10b981;
-  font-weight: 900;
-}}
-
-.faculty-actions {{
-  display: flex;
-  gap: 8px;
-  padding-top: 12px;
-  border-top: 1px solid var(--line);
-}}
-
-.btn-link-action {{
-  flex: 1;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 750;
-  padding: 6px 10px;
-  border-radius: 6px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 150ms ease;
-  border: 1px solid transparent;
-}}
-
-.btn-link-sched {{
-  background: var(--brand-surface);
-  color: var(--brand-deep);
-  border-color: var(--brand-border);
-}}
-.btn-link-sched:hover {{
-  background: #dcfce7;
-}}
-
-.btn-link-exam {{
-  background: #eff6ff;
-  color: #1e40af;
-  border-color: #bfdbfe;
-}}
-.btn-link-exam:hover {{
-  background: #dbeafe;
-}}
+}
 
 /* Print Optimization */
-@media print {{
-  .top-toolbar, .exam-tabs-bar, .btn-fullscreen, .roster-search-bar {{
+@media print {
+  .top-toolbar, .btn-fullscreen {
     display: none !important;
-  }}
-  body {{
+  }
+  body {
     background: #fff !important;
     padding: 0 !important;
-  }}
-  .page-sheet-container {{
+  }
+  .page-sheet-container {
     max-width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
     gap: 0 !important;
-  }}
-  .timetable-sheet {{
+  }
+  .timetable-sheet {
     box-shadow: none !important;
     border: none !important;
     padding: 8px 12px !important;
     page-break-after: always !important;
     break-after: page !important;
-  }}
-}}
+  }
+}
 </style>
 </head>
 <body>
 
-<!-- Screen Top Navigation Toolbar -->
+<!-- Single Unified Top Navigation Toolbar (Exact class-schedule.html style) -->
 <header class="top-toolbar">
   <div class="brand-title">
     <img src="amis_logo.png" alt="AMIS Logo" style="width:38px; height:38px; border-radius:50%; object-fit:contain; background:#ffffff; padding:1px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
     <div class="brand-text">
-      <h1>Official Term Examination Schedule</h1>
-      <p>Term Exam Week 2026 – 2027 • Official Timetable</p>
+      <h1>Official Exam Timetable</h1>
+      <p>Term Exam Week 2026 – 2027 • Official Schedule</p>
     </div>
   </div>
 
-  <div class="toolbar-controls" id="toolbarControls">
-    <!-- Controls dynamically configured based on active tab -->
+  <div class="toolbar-controls">
+    <!-- Staff / Faculty Selector -->
+    <div class="filter-group">
+      <span class="filter-label">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4A4 4 0 0 1 16 8A4 4 0 0 1 12 12A4 4 0 0 1 8 8A4 4 0 0 1 12 4M12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z"/></svg>
+        Staff / Faculty:
+      </span>
+      <select id="teacherSelect" class="filter-select" style="min-width:180px; max-width:260px;" aria-label="Select Staff / Faculty">
+        <option value="">All Staff / Faculty</option>
+      </select>
+    </div>
+
+    <!-- Modality Selector -->
+    <div class="filter-group">
+      <span class="filter-label">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/></svg>
+        Modality:
+      </span>
+      <select id="modalitySelect" class="filter-select" aria-label="Select Modality">
+        <option value="ALL" selected>All Modalities (F2F + ODL)</option>
+        <option value="F2F">Face-to-Face (F2F)</option>
+        <option value="ODL">Online Distance (ODL)</option>
+      </select>
+    </div>
+
+    <!-- Shift Selector (ODL) -->
+    <div class="filter-group" id="shiftGroup" style="display: none;">
+      <span class="filter-label">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12A10 10 0 0 0 12 22A10 10 0 0 0 22 12A10 10 0 0 0 12 2M12 4A8 8 0 0 1 20 12A8 8 0 0 1 12 20A8 8 0 0 1 4 12A8 8 0 0 1 12 4M12.5 7V12.25L17 14.92L16.25 16.15L11 13V7H12.5Z"/></svg>
+        Shift:
+      </span>
+      <select id="shiftSelect" class="filter-select" aria-label="Select ODL Shift">
+        <option value="ODL1">1st Shift (12:30 PM)</option>
+        <option value="ODL2">2nd Shift (03:00 PM)</option>
+        <option value="ODL_ALL">All ODL Shifts</option>
+      </select>
+    </div>
+
+    <!-- Section Selector -->
+    <div class="filter-group">
+      <span class="filter-label">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13H5V11H3V13M3 17H5V15H3V17M3 9H5V7H3V9M7 13H21V11H7V13M7 17H21V15H7V17M7 7V9H21V7H7Z"/></svg>
+        Section:
+      </span>
+      <select id="sectionSelect" class="filter-select filter-select-section" aria-label="Select Section">
+        <option value="">Loading sections...</option>
+      </select>
+    </div>
+
+    <div style="display:inline-flex; align-items:center; gap:6px; background:rgba(16,185,129,0.15); border:1px solid #10b981; padding:4px 10px; border-radius:9999px; font-size:11.5px; font-weight:800; color:#a7f3d0;">
+      <span style="color:#10b981; font-weight:900;">✓</span> Anti-Conflict Active: 0 Conflicts
+    </div>
+
+    <a href="index.html" class="btn-action btn-back" title="Back to Home">
+      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      Back Home
+    </a>
   </div>
 </header>
 
-<!-- Secondary Tabs Bar -->
-<nav class="exam-tabs-bar">
-  <div class="tab-buttons-wrap">
-    <button class="tab-btn active" id="tabBtnSection" onclick="switchTab('SECTION')">
-      <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
-      <span>Section Exam Schedules</span>
-    </button>
-    <button class="tab-btn" id="tabBtnFaculty" onclick="switchTab('FACULTY')">
-      <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-      <span>Faculty Exam Timetables</span>
-    </button>
-    <button class="tab-btn" id="tabBtnRoster" onclick="switchTab('ROSTER')">
-      <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-      <span>Faculty Roster & Assigned Subject Verification</span>
-    </button>
-  </div>
-
-  <div class="badge-anti-conflict-top">
-    <span style="color:#059669; font-weight:900;">✓</span> Anti-Conflict Guard Active: 0 Conflicts
-  </div>
-</nav>
-
-<!-- Main Container -->
+<!-- Main Printable Landscape Container -->
 <main class="page-sheet-container" id="sheetsContainer">
-  <!-- Dynamic Content Rendered Here -->
+  <!-- Dynamic Exam Timetable Sheets rendered here -->
 </main>
 
 <script>
-(function() {{
+(function() {
   const EXAM_DATES = [
-    {{ day_num: 1, short_date: 'Sep 7', day_name: 'Monday', header: 'Day 1 • Mon, Sep 7' }},
-    {{ day_num: 2, short_date: 'Sep 8', day_name: 'Tuesday', header: 'Day 2 • Tue, Sep 8' }},
-    {{ day_num: 3, short_date: 'Sep 9', day_name: 'Wednesday', header: 'Day 3 • Wed, Sep 9' }},
-    {{ day_num: 4, short_date: 'Sep 10', day_name: 'Thursday', header: 'Day 4 • Thu, Sep 10' }}
+    { day_num: 1, short_date: 'Sep 7', day_name: 'Monday', header: 'Day 1 • Mon, Sep 7' },
+    { day_num: 2, short_date: 'Sep 8', day_name: 'Tuesday', header: 'Day 2 • Tue, Sep 8' },
+    { day_num: 3, short_date: 'Sep 9', day_name: 'Wednesday', header: 'Day 3 • Wed, Sep 9' },
+    { day_num: 4, short_date: 'Sep 10', day_name: 'Thursday', header: 'Day 4 • Thu, Sep 10' }
   ];
-
-  const FACULTY_ROSTER_DATA = {json.dumps(faculty_list, indent=2)};
 
   let SECTIONS_DATA = [];
   let EXAM_RECORDS = [];
-  let ALL_TEACHERS_DATA = {{}};
+  let ALL_TEACHERS_DATA = {};
 
-  let currentTab = 'SECTION';
-  let rosterDept = 'ALL';
-
-  const toolbarControls = document.getElementById('toolbarControls');
+  const teacherSelect = document.getElementById('teacherSelect');
+  const modalitySelect = document.getElementById('modalitySelect');
+  const shiftGroup = document.getElementById('shiftGroup');
+  const shiftSelect = document.getElementById('shiftSelect');
+  const sectionSelect = document.getElementById('sectionSelect');
   const sheetsContainer = document.getElementById('sheetsContainer');
 
-  function esc(s) {{
+  function esc(s) {
     if (!s) return '';
     return String(s)
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
-  }}
+  }
 
-  function getSubjectColor(subj) {{
+  function getSubjectColor(subj) {
     const s = (subj || '').toLowerCase();
-    if (s.includes('gmrc') || s.includes('values') || s.includes('esp') || s.includes('homeroom') || s.includes('hg')) {{
-      return {{ bg: '#dcfce7', border: '#86efac', text: '#14532d' }};
-    }}
-    if (s.includes('arabic') || s.includes('qur\\'an') || s.includes('quran') || s.includes('hadith') || s.includes('shaf') || s.includes('islamic')) {{
-      return {{ bg: '#f3e8ff', border: '#d8b4fe', text: '#581c87' }};
-    }}
-    if (s.includes('math') || s.includes('mathematics') || s.includes('physics') || s.includes('algebra') || s.includes('calculus')) {{
-      return {{ bg: '#e0f2fe', border: '#7dd3fc', text: '#0369a1' }};
-    }}
-    if (s.includes('science') || s.includes('sci') || s.includes('biology') || s.includes('chemistry') || s.includes('gen science')) {{
-      return {{ bg: '#ccfbf1', border: '#5eead4', text: '#115e59' }};
-    }}
-    if (s.includes('english') || s.includes('reading') || s.includes('literacy') || s.includes('language') || s.includes('circle time') || s.includes('oral com') || s.includes('eapp') || s.includes('lit')) {{
-      return {{ bg: '#fef3c7', border: '#fde047', text: '#854d0e' }};
-    }}
-    if (s.includes('filipino') || s.includes('makabansa') || s.includes('ap') || s.includes('araling panlipunan') || s.includes('social science') || s.includes('soc.sci')) {{
-      return {{ bg: '#ffedd5', border: '#fdba74', text: '#9a3412' }};
-    }}
-    if (s.includes('mapeh') || s.includes('pe') || s.includes('tle') || s.includes('tvl') || s.includes('mil') || s.includes('practical research') || s.includes('entrep')) {{
-      return {{ bg: '#fae8ff', border: '#f0abfc', text: '#86198f' }};
-    }}
-    return {{ bg: '#f1f5f9', border: '#cbd5e1', text: '#334155' }};
-  }}
+    if (s.includes('gmrc') || s.includes('values') || s.includes('esp') || s.includes('homeroom') || s.includes('hg')) {
+      return { bg: '#dcfce7', border: '#86efac', text: '#14532d' };
+    }
+    if (s.includes('arabic') || s.includes('qur\'an') || s.includes('quran') || s.includes('hadith') || s.includes('shaf') || s.includes('islamic')) {
+      return { bg: '#f3e8ff', border: '#d8b4fe', text: '#581c87' };
+    }
+    if (s.includes('math') || s.includes('mathematics') || s.includes('physics') || s.includes('algebra') || s.includes('calculus')) {
+      return { bg: '#e0f2fe', border: '#7dd3fc', text: '#0369a1' };
+    }
+    if (s.includes('science') || s.includes('sci') || s.includes('biology') || s.includes('chemistry') || s.includes('gen science')) {
+      return { bg: '#ccfbf1', border: '#5eead4', text: '#115e59' };
+    }
+    if (s.includes('english') || s.includes('reading') || s.includes('literacy') || s.includes('language') || s.includes('circle time') || s.includes('oral com') || s.includes('eapp') || s.includes('lit')) {
+      return { bg: '#fef3c7', border: '#fde047', text: '#854d0e' };
+    }
+    if (s.includes('filipino') || s.includes('makabansa') || s.includes('ap') || s.includes('araling panlipunan') || s.includes('social science') || s.includes('soc.sci')) {
+      return { bg: '#ffedd5', border: '#fdba74', text: '#9a3412' };
+    }
+    if (s.includes('mapeh') || s.includes('pe') || s.includes('tle') || s.includes('tvl') || s.includes('mil') || s.includes('practical research') || s.includes('entrep')) {
+      return { bg: '#fae8ff', border: '#f0abfc', text: '#86198f' };
+    }
+    return { bg: '#f1f5f9', border: '#cbd5e1', text: '#334155' };
+  }
 
-  function cleanSectionName(name) {{
+  function cleanSectionName(name) {
     return (name || '').replace(/CLASS SCHEDULE/gi, '').replace(/GRADE/gi, 'G').replace(/KINDER/gi, 'K').trim();
-  }}
+  }
 
-  function formatModalityShift(shift) {{
+  function formatModalityShift(shift) {
     if (!shift) return '';
     if (shift.includes('F2F') || shift.includes('FACE')) return 'F2F (Morning)';
     if (shift.includes('1ST') || shift.includes('1st')) return 'ODL 1st Shift (Afternoon)';
     if (shift.includes('2ND') || shift.includes('2nd')) return 'ODL 2nd Shift (Afternoon)';
     return shift;
-  }}
+  }
 
-  async function init() {{
-    try {{
+  async function init() {
+    try {
       const sResp = await fetch('class_schedules_data.json?v=' + Date.now());
       if (sResp.ok) SECTIONS_DATA = await sResp.json();
       else if (window.CLASS_SCHEDULES_DATA) SECTIONS_DATA = window.CLASS_SCHEDULES_DATA;
-    }} catch (e) {{
+    } catch (e) {
       if (window.CLASS_SCHEDULES_DATA) SECTIONS_DATA = window.CLASS_SCHEDULES_DATA;
-    }}
+    }
 
-    try {{
+    try {
       const eResp = await fetch('exam_data.json?v=' + Date.now());
       if (eResp.ok) EXAM_RECORDS = await eResp.json();
       else if (window.AMIS_EXAM_DATA) EXAM_RECORDS = window.AMIS_EXAM_DATA;
-    }} catch (e) {{
+    } catch (e) {
       if (window.AMIS_EXAM_DATA) EXAM_RECORDS = window.AMIS_EXAM_DATA;
-    }}
+    }
 
-    try {{
+    try {
       const tResp = await fetch('teacher_weekly_schedules.json?v=' + Date.now());
       if (tResp.ok) ALL_TEACHERS_DATA = await tResp.json();
       else if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
-    }} catch (e) {{
+    } catch (e) {
       if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
-    }}
+    }
+
+    if (!SECTIONS_DATA || SECTIONS_DATA.length === 0) {
+      sheetsContainer.innerHTML = '<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">No exam schedule data available.</div>';
+      return;
+    }
+
+    populateTeacherDropdown();
 
     const urlParams = new URLSearchParams(window.location.search);
-    const initialTeacher = urlParams.get('teacher');
-    const initialTab = urlParams.get('tab');
+    let initTeacher = urlParams.get('teacher') || '';
+    let initModality = urlParams.get('modality') || 'ALL';
+    let initShift = urlParams.get('shift') || 'ODL1';
+    let initSec = urlParams.get('section') || 'ALL_GROUP';
 
-    if (initialTeacher) {{
-      switchTab('FACULTY', initialTeacher);
-    }} else if (initialTab === 'roster') {{
-      switchTab('ROSTER');
-    }} else if (initialTab === 'faculty') {{
-      switchTab('FACULTY');
-    }} else {{
-      switchTab('SECTION');
-    }}
-  }}
+    if (initTeacher) {
+      teacherSelect.value = initTeacher;
+    } else {
+      modalitySelect.value = ['F2F', 'ODL', 'ALL'].includes(initModality.toUpperCase()) ? initModality.toUpperCase() : 'ALL';
+      shiftSelect.value = ['ODL1', 'ODL2', 'ODL_ALL'].includes(initShift.toUpperCase()) ? initShift.toUpperCase() : 'ODL1';
+    }
 
-  window.switchTab = function(tabName, targetTeacherId = null) {{
-    currentTab = tabName;
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    
-    if (tabName === 'SECTION') {{
-      document.getElementById('tabBtnSection').classList.add('active');
-      renderSectionToolbar();
-      renderSectionView();
-    }} else if (tabName === 'FACULTY') {{
-      document.getElementById('tabBtnFaculty').classList.add('active');
-      renderFacultyToolbar(targetTeacherId);
-      renderFacultyView(targetTeacherId || (document.getElementById('teacherSelect') ? document.getElementById('teacherSelect').value : 'ALL_FACULTY'));
-    }} else if (tabName === 'ROSTER') {{
-      document.getElementById('tabBtnRoster').classList.add('active');
-      renderRosterToolbar();
-      renderRosterView();
-    }}
-  }};
-
-  // -------------------------------------------------------------
-  // TAB 1: SECTION EXAM SCHEDULES
-  // -------------------------------------------------------------
-  function renderSectionToolbar() {{
-    toolbarControls.innerHTML = `
-      <div class="filter-group">
-        <span class="filter-label">Modality:</span>
-        <select id="modalitySelect" class="filter-select" onchange="onSectionModalityChange()">
-          <option value="ALL" selected>All Modalities (F2F + ODL)</option>
-          <option value="F2F">Face-to-Face (F2F)</option>
-          <option value="ODL">Online Distance (ODL)</option>
-        </select>
-      </div>
-
-      <div class="filter-group" id="shiftGroup" style="display: none;">
-        <span class="filter-label">Shift:</span>
-        <select id="shiftSelect" class="filter-select" onchange="onSectionShiftChange()">
-          <option value="ODL1">1st Shift (12:30 PM)</option>
-          <option value="ODL2">2nd Shift (03:00 PM)</option>
-          <option value="ODL_ALL">All ODL Shifts</option>
-        </select>
-      </div>
-
-      <div class="filter-group">
-        <span class="filter-label">Section:</span>
-        <select id="sectionSelect" class="filter-select filter-select-section" onchange="renderSectionView()">
-          <option value="ALL_GROUP">All Active Sections</option>
-        </select>
-      </div>
-
-      <a href="index.html" class="btn-action btn-back" title="Back to Home">
-        <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-        Back Home
-      </a>
-    `;
+    updateShiftVisibility();
     populateSectionDropdown();
-  }}
 
-  window.onSectionModalityChange = function() {{
-    const mod = document.getElementById('modalitySelect').value;
-    const shiftGroup = document.getElementById('shiftGroup');
-    if (mod === 'ODL') {{
+    if (initSec && !initTeacher) {
+      sectionSelect.value = initSec;
+      if (!sectionSelect.value) sectionSelect.selectedIndex = 0;
+    }
+
+    renderCurrentView();
+
+    teacherSelect.addEventListener('change', () => {
+      renderCurrentView();
+    });
+
+    modalitySelect.addEventListener('change', () => {
+      teacherSelect.value = '';
+      updateShiftVisibility();
+      populateSectionDropdown();
+      renderCurrentView();
+    });
+
+    shiftSelect.addEventListener('change', () => {
+      teacherSelect.value = '';
+      populateSectionDropdown();
+      renderCurrentView();
+    });
+
+    sectionSelect.addEventListener('change', () => {
+      teacherSelect.value = '';
+      renderCurrentView();
+    });
+  }
+
+  function updateShiftVisibility() {
+    if (modalitySelect.value === 'ODL') {
       shiftGroup.style.display = 'flex';
-    }} else {{
+    } else {
       shiftGroup.style.display = 'none';
-    }}
-    populateSectionDropdown();
-    renderSectionView();
-  }};
+    }
+  }
 
-  window.onSectionShiftChange = function() {{
-    populateSectionDropdown();
-    renderSectionView();
-  }};
+  function populateTeacherDropdown() {
+    let tList = [];
+    if (EXAM_RECORDS && EXAM_RECORDS.length > 0) {
+      const map = {};
+      EXAM_RECORDS.forEach(e => {
+        if (e.teacher_id && e.teacher) {
+          map[e.teacher_id] = { id: e.teacher_id, name: e.teacher, dept: e.department };
+        }
+      });
+      tList = Object.values(map);
+    } else if (ALL_TEACHERS_DATA) {
+      tList = Object.values(ALL_TEACHERS_DATA).map(t => ({ id: t.id || t.teacher_id, name: t.name || t.canonical_name, dept: t.department }));
+    }
 
-  function populateSectionDropdown() {{
-    const secSelect = document.getElementById('sectionSelect');
-    if (!secSelect) return;
-    const mod = document.getElementById('modalitySelect').value;
-    const shift = document.getElementById('shiftSelect') ? document.getElementById('shiftSelect').value : 'ODL1';
+    tList.sort((a, b) => a.name.localeCompare(b.name));
+
+    let html = '<option value="">All Staff / Faculty</option>';
+    html += '<option value="ALL_FACULTY">Print / View All Faculty Timetables (' + tList.length + ' Staff)</option>';
+    tList.forEach(t => {
+      const examCount = EXAM_RECORDS.filter(e => e.teacher_id === t.id).length;
+      html += `<option value="${t.id}">${esc(t.name)} (${esc(t.dept)} • ${examCount} exams)</option>`;
+    });
+    teacherSelect.innerHTML = html;
+  }
+
+  function populateSectionDropdown() {
+    const mod = modalitySelect.value;
+    const shift = shiftSelect.value;
 
     let filtered = SECTIONS_DATA;
-    if (mod === 'F2F') {{
+    if (mod === 'F2F') {
       filtered = filtered.filter(s => s.shift === 'F2F');
-    }} else if (mod === 'ODL') {{
+    } else if (mod === 'ODL') {
       if (shift === 'ODL1') filtered = filtered.filter(s => s.shift === 'ODL - 1ST SHIFT');
       else if (shift === 'ODL2') filtered = filtered.filter(s => s.shift === 'ODL - 2ND SHIFT');
-    }}
+    }
 
-    let html = `<option value="ALL_GROUP">All Filtered Sections (${{filtered.length}})</option>`;
-    filtered.forEach(s => {{
-      html += `<option value="${{s.id}}">${{esc(s.section_name)}} (${{esc(s.shift)}})</option>`;
-    }});
-    secSelect.innerHTML = html;
-  }}
+    let html = `<option value="ALL_GROUP">All Filtered Sections (${filtered.length})</option>`;
+    filtered.forEach(s => {
+      html += `<option value="${s.id}">${esc(s.section_name)} (${esc(s.shift)})</option>`;
+    });
+    sectionSelect.innerHTML = html;
+  }
 
-  function renderSectionView() {{
-    const secSelect = document.getElementById('sectionSelect');
-    const selectedSecId = secSelect ? secSelect.value : 'ALL_GROUP';
-    const mod = document.getElementById('modalitySelect').value;
-    const shift = document.getElementById('shiftSelect') ? document.getElementById('shiftSelect').value : 'ODL1';
+  function renderCurrentView() {
+    const selectedTeacher = teacherSelect.value;
+    if (selectedTeacher) {
+      renderTeacherView(selectedTeacher);
+    } else {
+      renderSectionView();
+    }
+  }
 
-    let targetSections = SECTIONS_DATA;
-    if (selectedSecId !== 'ALL_GROUP') {{
-      targetSections = SECTIONS_DATA.filter(s => s.id === selectedSecId);
-    }} else {{
-      if (mod === 'F2F') targetSections = targetSections.filter(s => s.shift === 'F2F');
-      else if (mod === 'ODL') {{
-        if (shift === 'ODL1') targetSections = targetSections.filter(s => s.shift === 'ODL - 1ST SHIFT');
-        else if (shift === 'ODL2') targetSections = targetSections.filter(s => s.shift === 'ODL - 2ND SHIFT');
-      }}
-    }}
+  function renderTeacherView(teacherId) {
+    let targetTeacherIds = [];
+    if (teacherId === 'ALL_FACULTY') {
+      const ids = [...new Set(EXAM_RECORDS.map(e => e.teacher_id).filter(Boolean))];
+      targetTeacherIds = ids;
+    } else {
+      targetTeacherIds = [teacherId];
+    }
 
-    if (targetSections.length === 0) {{
-      sheetsContainer.innerHTML = '<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">No sections match the current filter.</div>';
+    if (targetTeacherIds.length === 0) {
+      sheetsContainer.innerHTML = '<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">No faculty examination duties found.</div>';
       return;
-    }}
-
-    const todayStr = new Date().toLocaleDateString('en-US', {{ month: 'short', day: 'numeric', year: 'numeric' }});
-    let fullHtml = '';
-
-    targetSections.forEach(sec => {{
-      const isF2F = sec.shift === 'F2F';
-      const isODL1 = sec.shift === 'ODL - 1ST SHIFT';
-      const isODL2 = sec.shift === 'ODL - 2ND SHIFT';
-      const isSHS = sec.department && sec.department.includes('Senior High');
-
-      let timeRows = [];
-      if (isF2F) {{
-        timeRows = [
-          {{ time: '07:30 AM – 07:45 AM', mins: '15 min.', type: 'break', label: 'GENERAL ASSEMBLY' }},
-          {{ time: '08:00 AM – 09:00 AM', mins: '60 min.', type: 'exam', slot_num: 1 }},
-          {{ time: '09:00 AM – 10:00 AM', mins: '60 min.', type: 'exam', slot_num: 2 }},
-          {{ time: '10:00 AM – 10:25 AM', mins: '25 min.', type: 'break', label: 'RECESS' }},
-          {{ time: '10:25 AM – 11:25 AM', mins: '60 min.', type: 'exam', slot_num: 3 }},
-          {{ time: '11:25 AM', mins: '--', type: 'break', label: 'DISMISSAL' }}
-        ];
-      }} else if (isODL1) {{
-        timeRows = [
-          {{ time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' }},
-          {{ time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1 }},
-          {{ time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }},
-          {{ time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 2 }},
-          {{ time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION AND SALAH BREAK' }},
-          {{ time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3 }}
-        ];
-        if (isSHS) {{
-          timeRows.push({{ time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }});
-          timeRows.push({{ time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 4 }});
-        }}
-        timeRows.push({{ time: isSHS ? '05:20 PM' : '04:10 PM', mins: '--', type: 'break', label: 'DISMISSAL' }});
-      }} else if (isODL2) {{
-        timeRows = [
-          {{ time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'GENERAL ASSEMBLY & SALAH BREAK' }},
-          {{ time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 1 }},
-          {{ time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }},
-          {{ time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 2 }},
-          {{ time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }},
-          {{ time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_num: 3 }},
-          {{ time: '06:30 PM', mins: '--', type: 'break', label: 'DISMISSAL' }}
-        ];
-      }}
-
-      const secExams = EXAM_RECORDS.filter(e => e.section_id === sec.id);
-
-      fullHtml += `
-        <div class="timetable-sheet" id="sheet_${{sec.id}}">
-          <div class="school-header">
-            <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
-            <h2>TERM EXAM WEEK 2026 – 2027</h2>
-            <p>OFFICIAL 1ST TERM EXAMINATION SCHEDULE</p>
-          </div>
-
-          <div class="teacher-banner">
-            <span class="teacher-name-title">${{esc(sec.section_name.toUpperCase())}}</span>
-            <div style="display:flex; align-items:center; gap:8px;">
-              <span class="teacher-meta-tag">${{esc(sec.department)}} • ${{esc(sec.shift)}} • ${{secExams.length}} Subjects</span>
-              <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
-                <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
-                <svg class="icon-compress" viewBox="0 0 24 24" style="display:none;"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="table-responsive-wrapper">
-            <table class="timetable-grid">
-              <thead>
-                <tr>
-                  <th class="col-time">Time</th>
-                  <th class="col-mins">Minutes</th>
-                  ${{EXAM_DATES.map(d => `<th>${{d.header}}</th>`).join('')}}
-                </tr>
-              </thead>
-              <tbody>
-      `;
-
-      timeRows.forEach(row => {{
-        if (row.type === 'break') {{
-          fullHtml += `
-            <tr>
-              <td class="cell-time">${{row.time}}</td>
-              <td class="cell-mins">${{row.mins}}</td>
-              <td class="cell-break" colspan="4">${{row.label}}</td>
-            </tr>
-          `;
-        }} else {{
-          fullHtml += `
-            <tr>
-              <td class="cell-time">${{row.time}}</td>
-              <td class="cell-mins">${{row.mins}}</td>
-          `;
-
-          EXAM_DATES.forEach(d => {{
-            const match = secExams.find(e => (e.day_number === d.day_num || e.short_date === d.short_date) && e.slot_number === row.slot_num);
-            if (match) {{
-              const color = getSubjectColor(match.subject);
-              fullHtml += `
-                <td class="cell-class" style="background:${{color.bg}}; border-color:${{color.border}}; color:${{color.text}};">
-                  <div class="cell-class-inner">
-                    <span class="cell-subject-sec">${{esc(match.subject)}}</span>
-                    <span class="cell-teacher-name">${{esc(match.teacher)}}</span>
-                  </div>
-                </td>
-              `;
-            }} else {{
-              fullHtml += `<td class="cell-empty"></td>`;
-            }}
-          }});
-
-          fullHtml += `</tr>`;
-        }}
-      }});
-
-      fullHtml += `
-              </tbody>
-            </table>
-          </div>
-
-          <div class="sheet-footer">
-            <div class="legend-strip">
-              <span style="font-weight: 800; color: var(--ink);">Subject Keys:</span>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#f3e8ff; border-color:#d8b4fe;"></span> Arabic / Qur'an / Islamic</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#dcfce7; border-color:#86efac;"></span> GMRC / Values / ESP</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#e0f2fe; border-color:#7dd3fc;"></span> Mathematics</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#ccfbf1; border-color:#5eead4;"></span> Science</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#fef3c7; border-color:#fde047;"></span> English / Language</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#ffedd5; border-color:#fdba74;"></span> Filipino / AP / Makabansa</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#fae8ff; border-color:#f0abfc;"></span> MAPEH / TLE / TVL</div>
-            </div>
-            <div>
-              Generated: <strong>${{todayStr}}</strong>
-            </div>
-          </div>
-        </div>
-      `;
-    }});
-
-    sheetsContainer.innerHTML = fullHtml;
-  }}
-
-  // -------------------------------------------------------------
-  // TAB 2: FACULTY EXAM TIMETABLES
-  // -------------------------------------------------------------
-  function renderFacultyToolbar(targetTeacherId) {{
-    toolbarControls.innerHTML = `
-      <div class="filter-group">
-        <span class="filter-label">Faculty / Teacher:</span>
-        <select id="teacherSelect" class="filter-select" onchange="renderFacultyView(this.value)">
-          <option value="ALL_FACULTY">All Staff / Faculty (Print All)</option>
-        </select>
-      </div>
-
-      <a href="index.html" class="btn-action btn-back" title="Back to Home">
-        <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-        Back Home
-      </a>
-    `;
-
-    const tSelect = document.getElementById('teacherSelect');
-    const teachersWithExams = FACULTY_ROSTER_DATA.filter(t => t.total_exams > 0);
-    teachersWithExams.forEach(t => {{
-      const opt = document.createElement('option');
-      opt.value = t.id;
-      opt.textContent = `${{t.name}} (${{t.department}} • ${{t.total_exams}} Exams)`;
-      if (targetTeacherId && t.id === targetTeacherId) opt.selected = true;
-      tSelect.appendChild(opt);
-    }});
-  }}
-
-  function renderFacultyView(selectedTid = 'ALL_FACULTY') {{
-    let targetTeachers = FACULTY_ROSTER_DATA.filter(t => t.total_exams > 0);
-    if (selectedTid && selectedTid !== 'ALL_FACULTY') {{
-      targetTeachers = targetTeachers.filter(t => t.id === selectedTid);
-    }}
-
-    if (targetTeachers.length === 0) {{
-      sheetsContainer.innerHTML = '<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">No faculty exam assignments found.</div>';
-      return;
-    }}
+    }
 
     const masterSlots = [
-      {{ time: '08:00 AM – 09:00 AM', mins: '60 min.', slot_id: 'f2f_s1', label: 'F2F Slot 1' }},
-      {{ time: '09:00 AM – 10:00 AM', mins: '60 min.', slot_id: 'f2f_s2', label: 'F2F Slot 2' }},
-      {{ time: '10:25 AM – 11:25 AM', mins: '60 min.', slot_id: 'f2f_s3', label: 'F2F Slot 3' }},
-      {{ time: '12:40 PM – 01:40 PM', mins: '60 min.', slot_id: 'odl1_s1', label: 'ODL 1st Slot 1' }},
-      {{ time: '01:50 PM – 02:50 PM', mins: '60 min.', slot_id: 'odl1_s2', label: 'ODL 1st Slot 2' }},
-      {{ time: '03:10 PM – 04:10 PM', mins: '60 min.', slot_id: 'odl1_s3_odl2_s1', label: '1st Shift S3 / 2nd Shift S1' }},
-      {{ time: '04:20 PM – 05:20 PM', mins: '60 min.', slot_id: 'odl2_s2_shs_s4', label: '2nd Shift S2 / SHS Slot 4' }},
-      {{ time: '05:30 PM – 06:30 PM', mins: '60 min.', slot_id: 'odl2_s3', label: 'ODL 2nd Slot 3' }}
+      { time: '08:00 AM – 09:00 AM', mins: '60 min.', slot_id: 'f2f_s1', label: 'F2F Slot 1' },
+      { time: '09:00 AM – 10:00 AM', mins: '60 min.', slot_id: 'f2f_s2', label: 'F2F Slot 2' },
+      { time: '10:25 AM – 11:25 AM', mins: '60 min.', slot_id: 'f2f_s3', label: 'F2F Slot 3' },
+      { time: '12:40 PM – 01:40 PM', mins: '60 min.', slot_id: 'odl1_s1', label: 'ODL 1st Slot 1' },
+      { time: '01:50 PM – 02:50 PM', mins: '60 min.', slot_id: 'odl1_s2', label: 'ODL 1st Slot 2' },
+      { time: '03:10 PM – 04:10 PM', mins: '60 min.', slot_id: 'odl1_s3_odl2_s1', label: '1st Shift S3 / 2nd Shift S1' },
+      { time: '04:20 PM – 05:20 PM', mins: '60 min.', slot_id: 'odl2_s2_shs_s4', label: '2nd Shift S2 / SHS Slot 4' },
+      { time: '05:30 PM – 06:30 PM', mins: '60 min.', slot_id: 'odl2_s3', label: 'ODL 2nd Slot 3' }
     ];
 
-    const todayStr = new Date().toLocaleDateString('en-US', {{ month: 'short', day: 'numeric', year: 'numeric' }});
+    const todayStr = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     let fullHtml = '';
 
-    targetTeachers.forEach(t => {{
-      const tExams = EXAM_RECORDS.filter(e => e.teacher_id === t.id);
+    targetTeacherIds.forEach(tid => {
+      const tExams = EXAM_RECORDS.filter(e => e.teacher_id === tid);
+      const teacherName = tExams.length > 0 ? tExams[0].teacher : (ALL_TEACHERS_DATA[tid] ? ALL_TEACHERS_DATA[tid].name : tid);
+      const teacherDept = tExams.length > 0 ? tExams[0].department : (ALL_TEACHERS_DATA[tid] ? ALL_TEACHERS_DATA[tid].department : 'Faculty');
 
       fullHtml += `
-        <div class="timetable-sheet" id="sheet_${{t.id}}">
+        <div class="timetable-sheet" id="sheet_${tid}">
           <div class="school-header">
             <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
             <h2>TERM EXAM WEEK 2026 – 2027</h2>
@@ -1322,9 +868,9 @@ html, body {{
           </div>
 
           <div class="teacher-banner">
-            <span class="teacher-name-title">${{esc(t.name.toUpperCase())}}</span>
+            <span class="teacher-name-title">${esc(teacherName.toUpperCase())}</span>
             <div style="display:flex; align-items:center; gap:8px;">
-              <span class="teacher-meta-tag">${{esc(t.department)}} • ${{tExams.length}} Exam Duties • ✓ 0 Conflicts</span>
+              <span class="teacher-meta-tag">${esc(teacherDept)} • ${tExams.length} Exam Duties • ✓ 0 Conflicts</span>
               <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
                 <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
                 <svg class="icon-compress" viewBox="0 0 24 24" style="display:none;"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
@@ -1338,40 +884,40 @@ html, body {{
                 <tr>
                   <th class="col-time">Time</th>
                   <th class="col-mins">Minutes</th>
-                  ${{EXAM_DATES.map(d => `<th>${{d.header}}</th>`).join('')}}
+                  ${EXAM_DATES.map(d => `<th>${esc(d.header)}</th>`).join('')}
                 </tr>
               </thead>
               <tbody>
       `;
 
-      masterSlots.forEach(slot => {{
+      masterSlots.forEach(slot => {
         const hasAnyExam = tExams.some(e => e.time_slot === slot.time || e.time === slot.time);
         fullHtml += `
           <tr>
-            <td class="cell-time">${{slot.time}}</td>
-            <td class="cell-mins">${{slot.mins}}</td>
+            <td class="cell-time">${esc(slot.time)}</td>
+            <td class="cell-mins">${esc(slot.mins)}</td>
         `;
 
-        EXAM_DATES.forEach(d => {{
+        EXAM_DATES.forEach(d => {
           const match = tExams.find(e => (e.day_number === d.day_num || e.short_date === d.short_date) && (e.time_slot === slot.time || e.time === slot.time));
-          if (match) {{
+          if (match) {
             const color = getSubjectColor(match.subject);
             fullHtml += `
-              <td class="cell-class" style="background:${{color.bg}}; border-color:${{color.border}}; color:${{color.text}};">
+              <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
                 <div class="cell-class-inner">
-                  <span class="cell-subject-sec">${{esc(match.subject)}}</span>
-                  <span class="cell-section-name">${{esc(cleanSectionName(match.section_name))}}</span>
-                  <span style="font-size:9.5px; opacity:0.85; margin-top:2px;">${{esc(formatModalityShift(match.shift))}}</span>
+                  <span class="cell-subject-sec">${esc(match.subject)}</span>
+                  <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
+                  <span style="font-size:9.5px; opacity:0.85; margin-top:2px;">${esc(formatModalityShift(match.shift))}</span>
                 </div>
               </td>
             `;
-          }} else {{
+          } else {
             fullHtml += `<td class="cell-empty"></td>`;
-          }}
-        }});
+          }
+        });
 
         fullHtml += `</tr>`;
-      }});
+      });
 
       fullHtml += `
               </tbody>
@@ -1390,104 +936,180 @@ html, body {{
               <div class="legend-box"><span class="legend-color-dot" style="background:#fae8ff; border-color:#f0abfc;"></span> MAPEH / TLE / TVL</div>
             </div>
             <div>
-              Generated: <strong>${{todayStr}}</strong>
+              Generated: <strong>${todayStr}</strong>
             </div>
           </div>
         </div>
       `;
-    }});
+    });
 
     sheetsContainer.innerHTML = fullHtml;
-  }}
+  }
 
-  // -------------------------------------------------------------
-  // TAB 3: FACULTY ROSTER & ASSIGNED SUBJECT VERIFICATION
-  // -------------------------------------------------------------
-  function renderRosterToolbar() {{
-    toolbarControls.innerHTML = `
-      <a href="index.html" class="btn-action btn-back" title="Back to Home">
-        <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-        Back Home
-      </a>
-    `;
-  }}
+  function renderSectionView() {
+    const selectedSecId = sectionSelect.value || 'ALL_GROUP';
+    const mod = modalitySelect.value;
+    const shift = shiftSelect.value;
 
-  function renderRosterView() {{
-    const query = (document.getElementById('rosterSearchInput') ? document.getElementById('rosterSearchInput').value : '').toLowerCase().trim();
+    let targetSections = SECTIONS_DATA;
+    if (selectedSecId !== 'ALL_GROUP') {
+      targetSections = SECTIONS_DATA.filter(s => s.id === selectedSecId);
+    } else {
+      if (mod === 'F2F') targetSections = targetSections.filter(s => s.shift === 'F2F');
+      else if (mod === 'ODL') {
+        if (shift === 'ODL1') targetSections = targetSections.filter(s => s.shift === 'ODL - 1ST SHIFT');
+        else if (shift === 'ODL2') targetSections = targetSections.filter(s => s.shift === 'ODL - 2ND SHIFT');
+      }
+    }
 
-    const filtered = FACULTY_ROSTER_DATA.filter(t => {{
-      const matchDept = (rosterDept === 'ALL') || 
-                        (rosterDept === 'ISAL' && t.department.includes('ISAL')) ||
-                        (rosterDept === 'High School' && t.department.includes('High School')) ||
-                        (rosterDept === 'Elementary' && t.department.includes('Elementary'));
-                        
-      const matchQuery = !query || 
-                         t.name.toLowerCase().includes(query) || 
-                         t.department.toLowerCase().includes(query) ||
-                         t.assignments.some(a => a.subject.toLowerCase().includes(query) || a.section.toLowerCase().includes(query));
-                         
-      return matchDept && matchQuery;
-    }});
+    if (targetSections.length === 0) {
+      sheetsContainer.innerHTML = '<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">No sections match the current filter.</div>';
+      return;
+    }
 
-    sheetsContainer.innerHTML = `
-      <div class="roster-container">
-        <div class="roster-search-bar">
-          <input type="text" id="rosterSearchInput" class="roster-search-input" placeholder="Search teacher, subject, or section..." value="${{query}}" oninput="renderRosterView()">
-          <div class="roster-dept-group">
-            <button class="roster-dept-btn ${{rosterDept === 'ALL' ? 'active' : ''}}" onclick="setRosterDept('ALL')">All Faculty (${{FACULTY_ROSTER_DATA.length}})</button>
-            <button class="roster-dept-btn ${{rosterDept === 'ISAL' ? 'active' : ''}}" onclick="setRosterDept('ISAL')">ISAL Faculty</button>
-            <button class="roster-dept-btn ${{rosterDept === 'High School' ? 'active' : ''}}" onclick="setRosterDept('High School')">High School</button>
-            <button class="roster-dept-btn ${{rosterDept === 'Elementary' ? 'active' : ''}}" onclick="setRosterDept('Elementary')">Elementary</button>
+    const todayStr = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    let fullHtml = '';
+
+    targetSections.forEach(sec => {
+      const isF2F = sec.shift === 'F2F';
+      const isODL1 = sec.shift === 'ODL - 1ST SHIFT';
+      const isODL2 = sec.shift === 'ODL - 2ND SHIFT';
+      const isSHS = sec.department && sec.department.includes('Senior High');
+
+      let timeRows = [];
+      if (isF2F) {
+        timeRows = [
+          { time: '07:30 AM – 07:45 AM', mins: '15 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
+          { time: '08:00 AM – 09:00 AM', mins: '60 min.', type: 'exam', slot_num: 1 },
+          { time: '09:00 AM – 10:00 AM', mins: '60 min.', type: 'exam', slot_num: 2 },
+          { time: '10:00 AM – 10:25 AM', mins: '25 min.', type: 'break', label: 'RECESS' },
+          { time: '10:25 AM – 11:25 AM', mins: '60 min.', type: 'exam', slot_num: 3 },
+          { time: '11:25 AM', mins: '--', type: 'break', label: 'DISMISSAL' }
+        ];
+      } else if (isODL1) {
+        timeRows = [
+          { time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
+          { time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
+          { time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
+          { time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
+          { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION AND SALAH BREAK' },
+          { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3 }
+        ];
+        if (isSHS) {
+          timeRows.push({ time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' });
+          timeRows.push({ time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 4 });
+        }
+        timeRows.push({ time: isSHS ? '05:20 PM' : '04:10 PM', mins: '--', type: 'break', label: 'DISMISSAL' });
+      } else if (isODL2) {
+        timeRows = [
+          { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'GENERAL ASSEMBLY & SALAH BREAK' },
+          { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
+          { time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
+          { time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
+          { time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
+          { time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_num: 3 },
+          { time: '06:30 PM', mins: '--', type: 'break', label: 'DISMISSAL' }
+        ];
+      }
+
+      const secExams = EXAM_RECORDS.filter(e => e.section_id === sec.id);
+
+      fullHtml += `
+        <div class="timetable-sheet" id="sheet_${sec.id}">
+          <div class="school-header">
+            <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
+            <h2>TERM EXAM WEEK 2026 – 2027</h2>
+            <p>OFFICIAL 1ST TERM EXAMINATION SCHEDULE</p>
+          </div>
+
+          <div class="teacher-banner">
+            <span class="teacher-name-title">${esc(sec.section_name.toUpperCase())}</span>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="teacher-meta-tag">${esc(sec.department)} • ${esc(sec.shift)} • ${secExams.length} Subjects</span>
+              <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
+                <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                <svg class="icon-compress" viewBox="0 0 24 24" style="display:none;"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="table-responsive-wrapper">
+            <table class="timetable-grid">
+              <thead>
+                <tr>
+                  <th class="col-time">Time</th>
+                  <th class="col-mins">Minutes</th>
+                  ${EXAM_DATES.map(d => `<th>${esc(d.header)}</th>`).join('')}
+                </tr>
+              </thead>
+              <tbody>
+      `;
+
+      timeRows.forEach(row => {
+        if (row.type === 'break') {
+          fullHtml += `
+            <tr>
+              <td class="cell-time">${esc(row.time)}</td>
+              <td class="cell-mins">${esc(row.mins)}</td>
+              <td class="cell-break" colspan="4">${esc(row.label)}</td>
+            </tr>
+          `;
+        } else {
+          fullHtml += `
+            <tr>
+              <td class="cell-time">${esc(row.time)}</td>
+              <td class="cell-mins">${esc(row.mins)}</td>
+          `;
+
+          EXAM_DATES.forEach(d => {
+            const match = secExams.find(e => (e.day_number === d.day_num || e.short_date === d.short_date) && e.slot_number === row.slot_num);
+            if (match) {
+              const color = getSubjectColor(match.subject);
+              fullHtml += `
+                <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
+                  <div class="cell-class-inner">
+                    <span class="cell-subject-sec">${esc(match.subject)}</span>
+                    <span class="cell-teacher-name">${esc(match.teacher)}</span>
+                  </div>
+                </td>
+              `;
+            } else {
+              fullHtml += `<td class="cell-empty"></td>`;
+            }
+          });
+
+          fullHtml += `</tr>`;
+        }
+      });
+
+      fullHtml += `
+              </tbody>
+            </table>
+          </div>
+
+          <div class="sheet-footer">
+            <div class="legend-strip">
+              <span style="font-weight: 800; color: var(--ink);">Subject Keys:</span>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#f3e8ff; border-color:#d8b4fe;"></span> Arabic / Qur'an / Islamic</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#dcfce7; border-color:#86efac;"></span> GMRC / Values / ESP</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#e0f2fe; border-color:#7dd3fc;"></span> Mathematics</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ccfbf1; border-color:#5eead4;"></span> Science</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fef3c7; border-color:#fde047;"></span> English / Language</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ffedd5; border-color:#fdba74;"></span> Filipino / AP / Makabansa</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fae8ff; border-color:#f0abfc;"></span> MAPEH / TLE / TVL</div>
+            </div>
+            <div>
+              Generated: <strong>${todayStr}</strong>
+            </div>
           </div>
         </div>
+      `;
+    });
 
-        <div class="faculty-grid">
-          ${{filtered.length > 0 ? filtered.map(t => `
-            <div class="faculty-card">
-              <div>
-                <div class="faculty-head">
-                  <div>
-                    <div class="faculty-name-title">${{t.name}}</div>
-                    <span class="faculty-dept-tag">${{t.department}}</span>
-                  </div>
-                  <span class="badge-conflict-free">✓ 0 Conflicts</span>
-                </div>
+    sheetsContainer.innerHTML = fullHtml;
+  }
 
-                <div class="assigned-subjects-title">Assigned Subjects & Load (${{t.total_classes}} Classes/wk • ${{t.total_exams}} Exams):</div>
-                <div class="subject-pill-list">
-                  ${{t.assignments.length > 0 ? t.assignments.map(a => `
-                    <span class="subj-tag" title="${{a.section}} (${{a.shift}})">
-                      <span class="check-icon">✓</span>
-                      <span>${{a.subject}}</span>
-                      <span style="font-size:10px; color:#64748b;">• ${{a.section.replace('CLASS SCHEDULE', '').replace('GRADE', 'G').trim()}}</span>
-                    </span>
-                  `).join('') : '<span style="font-size:12px; color:#94a3b8; font-style:italic;">No active weekly classes</span>'}}
-                </div>
-              </div>
-
-              <div class="faculty-actions">
-                <a href="class-schedule.html?view=teacher&tchr=${{t.id}}" class="btn-link-action btn-link-sched">Weekly Schedule</a>
-                <button onclick="switchTab('FACULTY', '${{t.id}}')" class="btn-link-action btn-link-exam">Exam Timetable (${{t.total_exams}})</button>
-              </div>
-            </div>
-          `).join('') : '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#64748b; font-weight:700;">No faculty members matched your search.</div>'}}
-        </div>
-      </div>
-    `;
-
-    const searchInput = document.getElementById('rosterSearchInput');
-    if (searchInput) {{
-      searchInput.focus();
-      searchInput.setSelectionRange(searchInput.value.length, searchInput.value.length);
-    }}
-  }}
-
-  window.setRosterDept = function(dept) {{
-    rosterDept = dept;
-    renderRosterView();
-  }};
-
-  window.toggleFullscreenSheet = function(btn) {{
+  window.toggleFullscreenSheet = function(btn) {
     const sheet = btn.closest('.timetable-sheet');
     if (!sheet) return;
     
@@ -1497,31 +1119,31 @@ html, body {{
     const expandIcon = btn.querySelector('.icon-expand');
     const compressIcon = btn.querySelector('.icon-compress');
     
-    if (isFull) {{
+    if (isFull) {
       if (expandIcon) expandIcon.style.display = 'none';
       if (compressIcon) compressIcon.style.display = 'inline-block';
       btn.setAttribute('title', 'Exit Fullscreen');
       document.body.style.overflow = 'hidden';
-    }} else {{
+    } else {
       if (expandIcon) expandIcon.style.display = 'inline-block';
       if (compressIcon) compressIcon.style.display = 'none';
       btn.setAttribute('title', 'Fullscreen Table');
       document.body.style.overflow = '';
-    }}
-  }};
+    }
+  };
 
-  document.addEventListener('keydown', function(e) {{
-    if (e.key === 'Escape') {{
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
       const activeSheet = document.querySelector('.timetable-sheet.is-fullscreen');
-      if (activeSheet) {{
+      if (activeSheet) {
         const btn = activeSheet.querySelector('.btn-fullscreen');
         if (btn) toggleFullscreenSheet(btn);
-      }}
-    }}
-  }});
+      }
+    }
+  });
 
   init();
-}})();
+})();
 </script>
 
 </body>
@@ -1531,4 +1153,4 @@ html, body {{
 with open(os.path.join(BASE_DIR, "exam-schedule.html"), "w", encoding="utf-8") as f:
     f.write(HTML_TEMPLATE)
 
-print("✓ Successfully regenerated exam-schedule.html with the exact authentic design of class-schedule.html!")
+print("✓ Successfully generated unified exam-schedule.html with Staff/Faculty filter & original class-schedule design!")
