@@ -94,19 +94,6 @@ body {
   gap: 12px;
 }
 
-.brand-icon {
-  width: 38px;
-  height: 38px;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
-  display: grid;
-  place-items: center;
-  font-weight: 900;
-  font-size: 14px;
-  letter-spacing: 0.05em;
-}
-
 .brand-text h1 {
   font-size: 15.5px;
   font-weight: 800;
@@ -185,24 +172,14 @@ body {
   fill: currentColor;
 }
 
-.btn-print {
-  background: #ffffff;
-  color: var(--brand-deep);
-  border-color: #ffffff;
-}
-
-.btn-print:hover {
-  background: #f0fdf4;
-}
-
 .btn-back {
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.25);
+  background: #ffffff;
+  color: #0f172a;
+  border-color: #cbd5e1;
 }
 
 .btn-back:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: #f1f5f9;
 }
 
 /* Printable Container (A4 / Legal Landscape) */
@@ -595,10 +572,10 @@ html, body {
 <!-- Screen Top Navigation Toolbar -->
 <header class="top-toolbar">
   <div class="brand-title">
-    <div class="brand-icon">AMIS</div>
+    <img src="amis_logo.png" alt="AMIS Logo" style="width:38px; height:38px; border-radius:50%; object-fit:contain; background:#ffffff; padding:1px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
     <div class="brand-text">
       <h1>Official Term Examination Timetable</h1>
-      <p>S.Y. 2026–2027 • Official Exam Program</p>
+      <p>Term Exam Week • Official Exam Program</p>
     </div>
   </div>
 
@@ -651,25 +628,9 @@ html, body {
       </select>
     </div>
 
-    <button id="btnPrint" class="btn-action btn-print" onclick="window.print()" title="Print Exam Schedules">
-      <svg viewBox="0 0 24 24"><path d="M18 3H6V7H18V3M19 12A1 1 0 1 1 18 11A1 1 0 0 1 19 12M16 19H8V14H16V19M19 8H5A3 3 0 0 0 2 11V17H6V21H18V17H22V11A3 3 0 0 0 19 8Z"/></svg>
-      Print Schedule
-    </button>
-    <a href="index.html" class="btn-action btn-back" style="background:#ffffff; color:#0f172a; border-color:#cbd5e1; font-weight:750;" title="Back to Schedule Home">
+    <a href="index.html" class="btn-action btn-back" title="Back to Home">
       <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-      Schedule Home
-    </a>
-    <a href="class-schedule.html" class="btn-action btn-back" title="Go to Official Class Schedule">
-      <svg viewBox="0 0 24 24"><path d="M19 3H5C3.89 3 3 3.89 3 5V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V5C21 3.89 20.1 3 19 3M19 19H5V8H19V19M7 10H12V15H7V10Z"/></svg>
-      Class Schedule
-    </a>
-    <a href="faculty-timetable-exam.html" class="btn-action btn-back" title="View Faculty Examination Timetables">
-      <svg viewBox="0 0 24 24"><path d="M12 4A4 4 0 0 1 16 8A4 4 0 0 1 12 12A4 4 0 0 1 8 8A4 4 0 0 1 12 4M12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z"/></svg>
-      Faculty Timetable (Exam)
-    </a>
-    <a href="Term_Examination_Schedule_S.Y._2026-2027_Optimized.csv" download class="btn-action btn-back" title="Download Master Exam Schedule CSV">
-      <svg viewBox="0 0 24 24"><path d="M14 2H6C4.89 2 4 2.89 4 4V20C4 21.1 4.89 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2M18 20H6V4H13V9H18V20M12 19L8 15H10.5V11H13.5V15H16L12 19Z"/></svg>
-      Export CSV
+      Back Home
     </a>
   </div>
 </header>
@@ -1354,4 +1315,4 @@ html, body {
 with open(os.path.join(BASE_DIR, "exam-schedule.html"), "w", encoding="utf-8") as f:
     f.write(HTML_TEMPLATE)
 
-print("✓ Successfully regenerated exam-schedule.html with pure Subject Teacher architecture!")
+print("✓ Successfully regenerated exam-schedule.html with official logo, Back Home button, and cleaned toolbar!")
