@@ -1057,8 +1057,7 @@ html, body {
 
       const teacherDisplayName = data.canonical_name || data.teacher_name || tid;
       const totalCount = data.total_classes || data.total_teaching_periods || (data.rows ? data.rows.reduce((acc, r) => acc + Object.values(r.days || {}).filter(c => c && (c.occupied || c.is_class)).length, 0) : 0);
-      const subjsList = (data.subjects && data.subjects.length > 0) ? data.subjects.join(', ') : 'Assigned Classes';
-      const metaStr = `${totalCount} Teaching Period${totalCount === 1 ? '' : 's'} • ${subjsList}`;
+      const metaStr = `${totalCount} Teaching Period${totalCount === 1 ? '' : 's'}`;
 
       fullHtml += `
         <div class="timetable-sheet">

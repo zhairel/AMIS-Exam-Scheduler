@@ -856,8 +856,7 @@ html, body {
 
       const teacherDisplayName = data ? (data.canonical_name || data.teacher_name || tid) : (tExams[0].teacher || tid);
       const totalCount = tExams.length;
-      const subjsList = Array.from(new Set(tExams.map(e => e.subject))).join(', ') || 'Assigned Subjects';
-      const metaStr = `${totalCount} Exam Session${totalCount === 1 ? '' : 's'} • ${subjsList}`;
+      const metaStr = `${totalCount} Exam Session${totalCount === 1 ? '' : 's'}`;
 
       const shiftsSet = new Set(tExams.map(e => e.shift || 'F2F'));
       const timeline = getFacultyTimeline(shiftsSet);
