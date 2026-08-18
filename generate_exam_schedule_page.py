@@ -2,6 +2,7 @@
 """
 generate_exam_schedule_page.py
 Generates the Unified Official 1st Term Examination Schedule (exam-schedule.html)
+- Official AMIS logo in top navigation toolbar
 - 120-minute High School & SHS Math exams span 2 full hours (2 slots / 2 visual units) with '120 min.' duration badge
 - Perfect rowspan="2" support in the official examination timetable grid
 - Corrected Exam Dates:
@@ -48,9 +49,9 @@ HTML_TEMPLATE = """<!doctype html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <!-- Embedded Master Datasets with Cache-Busting -->
-<script src="class_schedules_data.js?v=20260819_0025"></script>
-<script src="exam_data.js?v=20260819_0025"></script>
-<script src="teacher_weekly_schedules.js?v=20260819_0025"></script>
+<script src="class_schedules_data.js?v=20260819_0030"></script>
+<script src="exam_data.js?v=20260819_0030"></script>
+<script src="teacher_weekly_schedules.js?v=20260819_0030"></script>
 
 <style>
 :root {
@@ -109,17 +110,14 @@ body {
   gap: 12px;
 }
 
-.brand-icon {
+.brand-logo {
   width: 38px;
   height: 38px;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
-  display: grid;
-  place-items: center;
-  font-weight: 900;
-  font-size: 14px;
-  letter-spacing: 0.05em;
+  border-radius: 50%;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 1px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .brand-text h1 {
@@ -261,8 +259,22 @@ html, body {
 
 /* Header Block */
 .school-header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
   margin-bottom: 14px;
+}
+
+.school-header-logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.school-header-text {
+  text-align: center;
 }
 
 .school-header h1 {
@@ -610,10 +622,10 @@ html, body {
 </head>
 <body>
 
-<!-- Single Unified Top Navigation Toolbar -->
+<!-- Single Unified Top Navigation Toolbar with AMIS Logo -->
 <header class="top-toolbar">
   <div class="brand-title">
-    <div class="brand-icon">AMIS</div>
+    <img src="amis_logo.png" alt="AMIS Logo" class="brand-logo">
     <div class="brand-text">
       <h1>1st Term Examination Schedule</h1>
       <p>S.Y. 2026 – 2027 • Official Schedule</p>
@@ -947,15 +959,17 @@ html, body {
       const tExams = EXAM_RECORDS.filter(e => e.teacher_id === tid);
       const teacherName = tExams.length > 0 ? tExams[0].teacher : (ALL_TEACHERS_DATA[tid] ? ALL_TEACHERS_DATA[tid].name : tid);
       const teacherDept = tExams.length > 0 ? tExams[0].department : (ALL_TEACHERS_DATA[tid] ? ALL_TEACHERS_DATA[tid].department : 'Faculty');
-      const examDutyCount = tExams.length; // True count of exam duties
+      const examDutyCount = tExams.length;
 
-      // Standard Table View with perfect 120min rowspan support
       fullHtml += `
         <div class="timetable-sheet" id="sheet_${tid}">
           <div class="school-header">
-            <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
-            <h2>TERM EXAM WEEK 2026 – 2027</h2>
-            <p>FACULTY EXAMINATION TIMETABLE</p>
+            <img src="amis_logo.png" alt="AMIS Logo" class="school-header-logo">
+            <div class="school-header-text">
+              <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
+              <h2>TERM EXAM WEEK 2026 – 2027</h2>
+              <p>FACULTY EXAMINATION TIMETABLE</p>
+            </div>
           </div>
 
           <div class="teacher-banner">
@@ -981,7 +995,6 @@ html, body {
               <tbody>
       `;
 
-      // Track occupied days for multi-slot spans
       const dayOccupiedUntil = { 1: -1, 2: -1, 3: -1, 4: -1 };
 
       masterSlots.forEach((slot, rowIdx) => {
@@ -1002,7 +1015,6 @@ html, body {
 
           EXAM_DATES.forEach(d => {
             if (dayOccupiedUntil[d.day_num] >= rowIdx) {
-              // Covered by a previous rowspan
               return;
             }
 
@@ -1100,7 +1112,8 @@ html, body {
       const isF2F = sec.shift === 'F2F';
       const isODL1 = sec.shift === 'ODL - 1ST SHIFT';
       const isODL2 = sec.shift === 'ODL - 2ND SHIFT';
-      const isK2_1st = ('Kinder' in sec.grade_level || 'K2' in sec.grade_level) && isODL1;
+      const gLevel = sec.grade_level || '';
+      const isK2_1st = (gLevel.includes('Kinder') || gLevel.includes('K2') || gLevel.includes('Kindergarten')) && isODL1;
       const isSHS = sec.department && sec.department.includes('Senior High');
 
       let timeRows = [];
@@ -1150,14 +1163,17 @@ html, body {
       }
 
       const secExams = EXAM_RECORDS.filter(e => e.section_id === sec.id);
-      const totalSubjectCount = secExams.length; // True count: Math is 1 subject
+      const totalSubjectCount = secExams.length;
 
       fullHtml += `
         <div class="timetable-sheet" id="sheet_${sec.id}">
           <div class="school-header">
-            <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
-            <h2>TERM EXAM WEEK 2026 – 2027</h2>
-            <p>OFFICIAL 1ST TERM EXAMINATION SCHEDULE</p>
+            <img src="amis_logo.png" alt="AMIS Logo" class="school-header-logo">
+            <div class="school-header-text">
+              <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
+              <h2>TERM EXAM WEEK 2026 – 2027</h2>
+              <p>OFFICIAL 1ST TERM EXAMINATION SCHEDULE</p>
+            </div>
           </div>
 
           <div class="teacher-banner">
@@ -1183,7 +1199,6 @@ html, body {
               <tbody>
       `;
 
-      // Track occupied days for multi-slot spans
       const dayOccupiedUntil = { 1: -1, 2: -1, 3: -1, 4: -1 };
 
       timeRows.forEach((row, rowIdx) => {
@@ -1204,7 +1219,6 @@ html, body {
 
           EXAM_DATES.forEach(d => {
             if (dayOccupiedUntil[d.day_num] >= rowIdx) {
-              // Covered by a previous rowspan
               return;
             }
 
@@ -1318,4 +1332,4 @@ html, body {
 with open(os.path.join(BASE_DIR, "exam-schedule.html"), "w", encoding="utf-8") as f:
     f.write(HTML_TEMPLATE)
 
-print("✓ Successfully generated unified exam-schedule.html with 120min Math spanning!")
+print("✓ Successfully generated unified exam-schedule.html with AMIS logo & 120min Math spanning!")
