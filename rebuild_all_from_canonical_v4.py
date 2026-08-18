@@ -20,7 +20,6 @@ OPTIONS_EXAM_DATA_JSON = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/options
 TEACHER_WEEKLY_JSON = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/teacher_weekly_schedules.json'
 TEACHER_WEEKLY_JS = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/teacher_weekly_schedules.js'
 AUDIT_LOG_PATH = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/canonical_v4_teacher_audit.txt'
-TRACKING_JSON = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/teacher_subject_tracking.json'
 
 wb = openpyxl.load_workbook(EXCEL_PATH, data_only=True)
 DAYS_OF_WEEK = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
@@ -106,11 +105,23 @@ SECTION_DEFS = [
     {"sheet": "SHS", "header_cell": "B33", "time_col": 2, "min_col": 3, "day_cols": [4,5,6,7,8], "start_row": 35, "end_row": 42, "shift": "ODL - 2ND SHIFT", "grade": "Grade 11", "dept": "Senior High School"}
 ]
 
+BREAK_KEYWORDS = [
+    'GENERAL ASSEMBLY', 'RECESS', 'TRANSITION', 'LUNCH AND SALAH', 
+    'SALAH & DEPARTURE', 'DEPARTURE', 'SHORT BREAK', 'BREAK', 'SALAH', 
+    'HOMEROOM GUIDANCE', 'HOMEROOM', 'DISMISSAL', 'HOMEROOM GUIDANCE/ARAL PROGRAM',
+    'HOMEROOM GUIDANCE/ARAL MATH', 'QUR\'AN READING (GENERAL ASSEMBLY)'
+]
+
+def is_break_text(s):
+    if not s: return True
+    s_upper = s.strip().upper()
+    return any(b in s_upper for b in BREAK_KEYWORDS)
+
 def split_subject_teacher(cell_str):
     if not cell_str:
         return "", ""
     s = str(cell_str).strip()
-    if not s or s.upper() in ['GENERAL ASSEMBLY', 'RECESS', 'TRANSITION', 'LUNCH AND SALAH', 'SALAH & DEPARTURE', 'DEPARTURE', 'SHORT BREAK', 'BREAK', 'SALAH', 'HOMEROOM GUIDANCE']:
+    if is_break_text(s):
         return s, ""
     
     parts = s.split(' - ')
@@ -137,14 +148,20 @@ def clean_teacher_name(tname):
 def clean_subject_code(s):
     if not s: return ""
     s = str(s).strip()
-    # Strip trailing numbers like Math4 -> Math, Fil4 -> Fil, Sci4 -> Sci, AP4 -> AP
     s = re.sub(r'([a-zA-Z\']+)(\d+)$', r'\1', s).strip()
     return s.upper()
 
-print("Parsing Canonical V4 Class Schedules...")
+def format_time_label(t):
+    if not t: return ""
+    t = str(t).strip()
+    t = t.replace('a.m.', 'AM').replace('p.m.', 'PM').replace('a.m', 'AM').replace('p.m', 'PM')
+    t = re.sub(r'\s*-\s*', ' – ', t)
+    return t
+
+print("Building Canonical V4 Class Schedules...")
 sections_dataset = []
 audit_records = []
-canonical_lookup = {} # (clean_sec_id, clean_subj_code) -> {teacher, teacher_id, source_sheet, source_cell}
+canonical_lookup = {}
 
 for sdef in SECTION_DEFS:
     ws = wb[sdef['sheet']]
@@ -154,18 +171,28 @@ for sdef in SECTION_DEFS:
     sec_name = str(hdr_val).strip()
     sec_id = 'sec_' + re.sub(r'[^a-zA-Z0-9]+', '_', sec_name).strip('_').lower()
     
-    rows_data = []
+    periods_list = []
     
+    p_num = 1
     for r in range(sdef['start_row'], sdef['end_row'] + 1):
         time_val = ws.cell(r, sdef['time_col']).value
         min_val = ws.cell(r, sdef['min_col']).value
         if not time_val:
             continue
             
-        time_str = str(time_val).strip()
+        time_str = format_time_label(str(time_val).strip())
         min_str = str(min_val).strip() if min_val is not None else ""
+        if min_str and not min_str.endswith('min.') and not min_str.endswith('m'):
+            try:
+                min_str = f"{int(float(min_str))} min."
+            except:
+                pass
         
         day_cells = {}
+        row_subjects = []
+        row_teachers = []
+        is_break_row = False
+        
         for idx, c in enumerate(sdef['day_cols']):
             dname = DAYS_OF_WEEK[idx]
             c_val = ws.cell(r, c).value
@@ -174,19 +201,31 @@ for sdef in SECTION_DEFS:
             cell_ref = f"{col_letter}{r}"
             
             subj, tchr = split_subject_teacher(c_str)
+            is_break_cell = is_break_text(subj)
+            
+            clean_t = clean_teacher_name(tchr)
+            t_id = 'tchr_' + re.sub(r'[^a-zA-Z0-9]+', '_', clean_t).strip('_').lower() if clean_t else None
+            
             day_cells[dname] = {
                 "raw": c_str,
                 "subject": subj,
-                "teacher": tchr,
+                "teacher": f"Teacher {clean_t}" if clean_t else (tchr if tchr else None),
+                "teacher_id": t_id,
+                "is_break": is_break_cell,
+                "label": subj if is_break_cell else None,
                 "source_sheet": sdef['sheet'],
                 "source_cell": cell_ref
             }
             
-            if tchr and subj:
-                clean_t = clean_teacher_name(tchr)
-                t_id = 'tchr_' + re.sub(r'[^a-zA-Z0-9]+', '_', clean_t).strip('_').lower()
+            if is_break_cell:
+                is_break_row = True
+            elif subj:
+                row_subjects.append(subj)
+                if tchr:
+                    row_teachers.append(tchr)
+            
+            if tchr and subj and not is_break_cell:
                 c_subj = clean_subject_code(subj)
-                
                 rec = {
                     "teacher": tchr,
                     "teacher_clean": clean_t,
@@ -202,52 +241,108 @@ for sdef in SECTION_DEFS:
                 }
                 audit_records.append(rec)
                 
-                # Store in lookup table
                 canonical_lookup[(sec_id, c_subj)] = rec
                 canonical_lookup[(sec_name.upper(), c_subj)] = rec
                 canonical_lookup[(sec_id, subj.upper())] = rec
                 canonical_lookup[(sec_name.upper(), subj.upper())] = rec
                 
-        rows_data.append({
-            "row_number": r,
+        # Determine if merged across all days
+        first_day_val = day_cells["Sunday"]["raw"] if "Sunday" in day_cells else ""
+        all_same = all(day_cells[d]["raw"] == first_day_val for d in DAYS_OF_WEEK)
+        
+        main_subj = row_subjects[0] if row_subjects else (first_day_val if first_day_val else "BREAK / ASSEMBLY")
+        main_tchr = row_teachers[0] if row_teachers else None
+        clean_main_t = clean_teacher_name(main_tchr) if main_tchr else None
+        
+        period_obj = {
+            "period_num": p_num,
             "time": time_str,
             "minutes": min_str,
-            "days": day_cells
-        })
+            "is_merged_all_days": all_same,
+            "label": main_subj if is_break_row else None,
+            "subject": main_subj,
+            "subject_id": 'subj_' + re.sub(r'[^a-zA-Z0-9]+', '_', main_subj).strip('_').lower(),
+            "teacher": f"Teacher {clean_main_t}" if clean_main_t else main_tchr,
+            "teacher_id": 'tchr_' + re.sub(r'[^a-zA-Z0-9]+', '_', clean_main_t).strip('_').lower() if clean_main_t else None,
+            "is_break": is_break_row and all_same,
+            "days": day_cells,
+            "source_sheet": sdef['sheet'],
+            "source_cell": sdef['header_cell']
+        }
+        periods_list.append(period_obj)
+        p_num += 1
         
-    sections_dataset.append({
+    sec_obj = {
+        "id": sec_id,
         "section_id": sec_id,
         "section_name": sec_name,
         "shift": sdef['shift'],
         "department": sdef['dept'],
         "grade_level": sdef['grade'],
+        "total_periods": len(periods_list),
         "source_sheet": sdef['sheet'],
-        "source_header_cell": sdef['header_cell'],
-        "rows": rows_data
-    })
+        "source_cell": sdef['header_cell'],
+        "periods": periods_list,
+        "rows": periods_list
+    }
+    sections_dataset.append(sec_obj)
 
-print(f"Total parsed canonical sections: {len(sections_dataset)}")
-print(f"Total parsed class period audit records: {len(audit_records)}")
+print(f"Total Canonical Sections Built: {len(sections_dataset)}")
+print(f"Total Audit Records Built: {len(audit_records)}")
 
-# Write class schedule files
 with open(CLASS_DATA_JSON, 'w') as f:
     json.dump(sections_dataset, f, indent=2)
 with open(CLASS_DATA_JS, 'w') as f:
     f.write('const ALL_SECTIONS_DATA = ' + json.dumps(sections_dataset, indent=2) + ';\n')
 
-# Write Canonical Audit Log
-with open(AUDIT_LOG_PATH, 'w') as f:
-    f.write("=== CANONICAL V4 TEACHER AUDIT LOG ===\n")
-    f.write(f"Generated: {datetime.datetime.now(datetime.timezone.utc).isoformat()}\n")
-    f.write(f"Total Verified Class Assignments: {len(audit_records)}\n\n")
-    f.write(f"{'TEACHER':<25} | {'SECTION':<48} | {'EXACT SUBJECT':<32} | {'SOURCE SHEET & CELL':<22}\n")
-    f.write("-" * 135 + "\n")
-    for a in audit_records:
-        f.write(f"{a['teacher']:<25} | {a['section']:<48} | {a['subject']:<32} | {a['source_cell']:<22}\n")
+# Build Teacher Weekly Schedules
+teacher_dict = {}
+for a in audit_records:
+    tid = a['teacher_id']
+    tname = a['teacher']
+    clean_t = a['teacher_clean']
+    
+    if tid not in teacher_dict:
+        teacher_dict[tid] = {
+            "teacher_id": tid,
+            "teacher_name": tname,
+            "canonical_name": f"Teacher {clean_t}",
+            "periods": [],
+            "subjects": set(),
+            "sections": set(),
+            "total_classes": 0,
+            "total_teaching_periods": 0,
+            "rows": []
+        }
+    teacher_dict[tid]["periods"].append({
+        "section": a['section'],
+        "section_id": a['section_id'],
+        "subject": a['subject'],
+        "day": a['day'],
+        "time": a['time'],
+        "source_cell": a['source_cell']
+    })
+    teacher_dict[tid]["subjects"].add(a['subject'])
+    teacher_dict[tid]["sections"].add(a['section'])
 
-print(f"Audit log saved: {AUDIT_LOG_PATH}")
+# Deduplicate teacher periods
+for tid, tdata in teacher_dict.items():
+    tdata["subjects"] = sorted(list(tdata["subjects"]))
+    tdata["sections"] = sorted(list(tdata["sections"]))
+    tdata["total_classes"] = len(tdata["periods"])
+    tdata["total_teaching_periods"] = len(tdata["periods"])
 
-# Subject canonical alias matching strictly adhering to separation rules
+with open(TEACHER_WEEKLY_JSON, 'w') as f:
+    json.dump(teacher_dict, f, indent=2)
+with open(TEACHER_WEEKLY_JS, 'w') as f:
+    f.write('const ALL_TEACHERS_DATA = ' + json.dumps(teacher_dict, indent=2) + ';\n')
+
+print(f"Total Verified Teachers in Weekly Timetable: {len(teacher_dict)}")
+
+# Update Master Exam Records strictly from V4 dataset
+with open(EXAM_DATA_JSON, 'r') as f:
+    exam_records = json.load(f)
+
 SUBJECT_CANONICAL_MAP = {
     'MATHEMATICS': ['MATH', 'MATH 5'],
     'GENERAL MATHEMATICS': ['GEN MATH', 'GEN. MATH', 'GENERAL MATH'],
@@ -284,10 +379,6 @@ SUBJECT_CANONICAL_MAP = {
     'CIRCLE TIME': ['CIRCLE TIME 1', 'CIRCLE TIME 2', 'CT 1', 'CT 2', 'CIRCLE TIME', 'MEETING TIME']
 }
 
-# Update master Exam Schedule records
-with open(EXAM_DATA_JSON, 'r') as f:
-    exam_records = json.load(f)
-
 verified_exams = 0
 unverified_exams = 0
 
@@ -304,7 +395,6 @@ for exam in exam_records:
     if is_hs and is_reg_math:
         exam['duration_minutes'] = 120
     elif exam.get('duration_minutes') == 120 and not (is_hs and is_reg_math):
-        # Do not allow 120 min on non-regular HS math
         exam['duration_minutes'] = 60
         
     matched = None
@@ -336,44 +426,4 @@ with open(EXAM_DATA_JSON, 'w') as f:
 with open(EXAM_DATA_JS, 'w') as f:
     f.write('const ALL_EXAM_RECORDS = ' + json.dumps(exam_records, indent=2) + ';\n')
 
-# Build Teacher Weekly Schedules
-teacher_dict = {}
-for a in audit_records:
-    tid = a['teacher_id']
-    tname = a['teacher']
-    clean_t = a['teacher_clean']
-    
-    if tid not in teacher_dict:
-        teacher_dict[tid] = {
-            "teacher_id": tid,
-            "teacher_name": tname,
-            "canonical_name": f"Teacher {clean_t}",
-            "periods": [],
-            "subjects": set(),
-            "sections": set()
-        }
-    teacher_dict[tid]["periods"].append({
-        "section": a['section'],
-        "section_id": a['section_id'],
-        "subject": a['subject'],
-        "day": a['day'],
-        "time": a['time'],
-        "source_cell": a['source_cell']
-    })
-    teacher_dict[tid]["subjects"].add(a['subject'])
-    teacher_dict[tid]["sections"].add(a['section'])
-
-# Deduplicate teacher periods
-for tid, tdata in teacher_dict.items():
-    tdata["subjects"] = sorted(list(tdata["subjects"]))
-    tdata["sections"] = sorted(list(tdata["sections"]))
-    tdata["total_classes"] = len(tdata["periods"])
-    tdata["total_teaching_periods"] = len(tdata["periods"])
-
-with open(TEACHER_WEEKLY_JSON, 'w') as f:
-    json.dump(teacher_dict, f, indent=2)
-with open(TEACHER_WEEKLY_JS, 'w') as f:
-    f.write('const ALL_TEACHERS_DATA = ' + json.dumps(teacher_dict, indent=2) + ';\n')
-
-print(f"Total Active Verified Faculty in V4: {len(teacher_dict)}")
-print("✓ Complete Rebuild from Canonical V4 finished successfully!")
+print("✓ Rebuild completed successfully!")

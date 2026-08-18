@@ -9,7 +9,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_class_schedule_f2f",
         "subject": "Meeting Time",
         "day": "Sunday",
-        "time": "07:40-7:50 a.m.",
+        "time": "07:40 \u2013 7:50 AM",
         "source_cell": "ELEM!D6"
       },
       {
@@ -17,7 +17,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_class_schedule_f2f",
         "subject": "Circle Time 1",
         "day": "Sunday",
-        "time": "7:50-8:25 a.m.",
+        "time": "7:50 \u2013 8:25 AM",
         "source_cell": "ELEM!D7"
       },
       {
@@ -25,7 +25,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_class_schedule_f2f",
         "subject": "Circle Time 2",
         "day": "Sunday",
-        "time": "9:30-10:15 a.m.",
+        "time": "9:30 \u2013 10:15 AM",
         "source_cell": "ELEM!D10"
       },
       {
@@ -33,7 +33,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_class_schedule_f2f",
         "subject": "Wrap-Up Time",
         "day": "Sunday",
-        "time": "10:15-10:30 a.m.",
+        "time": "10:15 \u2013 10:30 AM",
         "source_cell": "ELEM!D11"
       },
       {
@@ -41,7 +41,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_khabaab_ibn_arat_2nd_shift",
         "subject": "Circle Time 1",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AJ19"
       },
       {
@@ -49,7 +49,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_khabaab_ibn_arat_2nd_shift",
         "subject": "CT 2",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AJ21"
       },
       {
@@ -57,7 +57,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_khabaab_ibn_arat_2nd_shift",
         "subject": "CT 2",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AL21"
       },
       {
@@ -65,7 +65,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "MAPEH",
         "day": "Sunday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!D100"
       },
       {
@@ -73,7 +73,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "MAPEH",
         "day": "Tuesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!F100"
       },
       {
@@ -81,7 +81,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "MAPEH",
         "day": "Monday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!E101"
       },
       {
@@ -89,7 +89,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "MAPEH",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!O94"
       },
       {
@@ -97,7 +97,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "MAPEH",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!U94"
       },
       {
@@ -105,7 +105,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "AP",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!T96"
       }
     ],
@@ -126,7 +126,8 @@ const ALL_TEACHERS_DATA = {
       "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)"
     ],
     "total_classes": 13,
-    "total_teaching_periods": 13
+    "total_teaching_periods": 13,
+    "rows": []
   },
   "tchr_saliha": {
     "teacher_id": "tchr_saliha",
@@ -138,7 +139,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_class_schedule_f2f",
         "subject": "Hadith",
         "day": "Sunday",
-        "time": "8:25-9:10 a.m.",
+        "time": "8:25 \u2013 9:10 AM",
         "source_cell": "ELEM!D8"
       },
       {
@@ -146,7 +147,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_class_schedule_f2f",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "8:25-9:10 a.m.",
+        "time": "8:25 \u2013 9:10 AM",
         "source_cell": "ELEM!E8"
       },
       {
@@ -154,7 +155,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_class_schedule_f2f",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "8:25-9:10 a.m.",
+        "time": "8:25 \u2013 9:10 AM",
         "source_cell": "ELEM!G8"
       },
       {
@@ -162,7 +163,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_abu_bakr_as_sideeq_1st_shift",
         "subject": "Hadith",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!P10"
       },
       {
@@ -170,7 +171,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_uthman_ibn_affan_1st_shift",
         "subject": "Hadith",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!W10"
       },
       {
@@ -178,7 +179,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_1_class_schedule_f2f",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!E18"
       },
       {
@@ -186,7 +187,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_1_class_schedule_f2f",
         "subject": "Hadith",
         "day": "Tuesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!F18"
       },
       {
@@ -194,7 +195,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_1_class_schedule_f2f",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!H18"
       },
       {
@@ -202,7 +203,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "GMRC",
         "day": "Sunday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "ELEM!D27"
       },
       {
@@ -210,7 +211,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "GMRC",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!T29"
       },
       {
@@ -218,7 +219,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "GMRC",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!U31"
       },
       {
@@ -226,7 +227,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "GMRC",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!L42"
       },
       {
@@ -234,7 +235,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "GMRC",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!N42"
       },
       {
@@ -242,7 +243,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "GMRC",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!U42"
       },
       {
@@ -250,7 +251,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "GMRC",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!W42"
       },
       {
@@ -258,7 +259,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "GMRC",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AC43"
       },
       {
@@ -266,7 +267,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "GMRC",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AE43"
       },
       {
@@ -274,7 +275,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "GMRC",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AJ43"
       },
       {
@@ -282,7 +283,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "GMRC",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AL43"
       },
       {
@@ -290,7 +291,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "GMRC",
         "day": "Sunday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!D62"
       },
       {
@@ -298,7 +299,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "GMRC",
         "day": "Monday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!E62"
       },
       {
@@ -306,7 +307,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "GMRC",
         "day": "Tuesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!F62"
       },
       {
@@ -314,7 +315,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "GMRC",
         "day": "Wednesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!G62"
       },
       {
@@ -322,7 +323,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "GMRC3",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AN68"
       },
       {
@@ -330,7 +331,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "GMRC5",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!AF92"
       },
       {
@@ -338,7 +339,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "GMRC",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!BD95"
       }
     ],
@@ -366,7 +367,8 @@ const ALL_TEACHERS_DATA = {
       "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)"
     ],
     "total_classes": 26,
-    "total_teaching_periods": 26
+    "total_teaching_periods": 26,
+    "rows": []
   },
   "tchr_jaisam": {
     "teacher_id": "tchr_jaisam",
@@ -378,7 +380,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_class_schedule_f2f",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "8:25-9:10 a.m.",
+        "time": "8:25 \u2013 9:10 AM",
         "source_cell": "ELEM!F8"
       },
       {
@@ -386,7 +388,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_class_schedule_f2f",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "8:25-9:10 a.m.",
+        "time": "8:25 \u2013 9:10 AM",
         "source_cell": "ELEM!H8"
       },
       {
@@ -394,7 +396,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_1_class_schedule_f2f",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!D18"
       },
       {
@@ -402,7 +404,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_1_class_schedule_f2f",
         "subject": "Qur'an",
         "day": "Wednesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!G18"
       },
       {
@@ -410,7 +412,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "Qur'an",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!M94"
       },
       {
@@ -418,7 +420,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "Qur'an",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!U96"
       },
       {
@@ -426,7 +428,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "Qur'an",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AK95"
       },
       {
@@ -434,7 +436,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "Qur'an",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AS97"
       },
       {
@@ -442,7 +444,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!L111"
       },
       {
@@ -450,7 +452,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!V111"
       },
       {
@@ -458,7 +460,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AB110"
       },
       {
@@ -466,7 +468,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!D15"
       },
       {
@@ -474,7 +476,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!H15"
       },
       {
@@ -482,7 +484,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!F32"
       },
       {
@@ -490,7 +492,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!H32"
       },
       {
@@ -498,7 +500,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "Qur'an",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!P8"
       },
       {
@@ -506,7 +508,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!O19"
       },
       {
@@ -514,7 +516,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "Qur'an",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!P35"
       },
       {
@@ -522,7 +524,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "Qur'an",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!X9"
       },
       {
@@ -530,7 +532,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!U24"
       },
       {
@@ -538,7 +540,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!W32"
       }
     ],
@@ -565,30 +567,8 @@ const ALL_TEACHERS_DATA = {
       "KINDER 2 CLASS SCHEDULE (F2F)"
     ],
     "total_classes": 21,
-    "total_teaching_periods": 21
-  },
-  "tchr_ayah_and_ustadha_saliha": {
-    "teacher_id": "tchr_ayah_and_ustadha_saliha",
-    "teacher_name": "Tchr. Ayah and Ustadha Saliha",
-    "canonical_name": "Teacher Ayah And Ustadha Saliha",
-    "periods": [
-      {
-        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
-        "section_id": "sec_kinder_2_class_schedule_f2f",
-        "subject": "SUPERVISED RECESS",
-        "day": "Sunday",
-        "time": "9:10-9:30 a.m.",
-        "source_cell": "ELEM!D9"
-      }
-    ],
-    "subjects": [
-      "SUPERVISED RECESS"
-    ],
-    "sections": [
-      "KINDER 2 CLASS SCHEDULE (F2F)"
-    ],
-    "total_classes": 1,
-    "total_teaching_periods": 1
+    "total_teaching_periods": 21,
+    "rows": []
   },
   "tchr_joanna": {
     "teacher_id": "tchr_joanna",
@@ -600,7 +580,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_abu_bakr_as_sideeq_1st_shift",
         "subject": "Circle Time 1",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!L8"
       },
       {
@@ -608,7 +588,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_abu_bakr_as_sideeq_1st_shift",
         "subject": "CT 2",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!M10"
       },
       {
@@ -616,7 +596,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_abu_bakr_as_sideeq_1st_shift",
         "subject": "CT 2",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!O10"
       },
       {
@@ -624,7 +604,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_umar_ibn_al_khattab_2nd_shift",
         "subject": "Circle Time 1",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AK9"
       },
       {
@@ -632,7 +612,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_umar_ibn_al_khattab_2nd_shift",
         "subject": "Circle Time 1",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AM9"
       },
       {
@@ -640,7 +620,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_umar_ibn_al_khattab_2nd_shift",
         "subject": "Circle Time 1",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AJ11"
       },
       {
@@ -648,7 +628,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_umar_ibn_al_khattab_2nd_shift",
         "subject": "Circle Time 2",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AK11"
       },
       {
@@ -656,7 +636,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_umar_ibn_al_khattab_2nd_shift",
         "subject": "Circle Time 1",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AL11"
       },
       {
@@ -664,7 +644,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_umar_ibn_al_khattab_2nd_shift",
         "subject": "Circle Time 2",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AM11"
       },
       {
@@ -672,7 +652,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_umar_ibn_al_khattab_2nd_shift",
         "subject": "Circle Time 1",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AN11"
       },
       {
@@ -680,7 +660,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "Math",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!L31"
       },
       {
@@ -688,7 +668,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!N31"
       },
       {
@@ -696,7 +676,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "Math",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!T27"
       },
       {
@@ -704,7 +684,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "Math",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!X31"
       },
       {
@@ -712,7 +692,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "Math",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AB30"
       },
       {
@@ -720,7 +700,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AD30"
       },
       {
@@ -728,7 +708,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "Math",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AJ28"
       },
       {
@@ -736,7 +716,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AL28"
       },
       {
@@ -744,7 +724,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!O92"
       },
       {
@@ -752,7 +732,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "Filipino",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!X92"
       },
       {
@@ -760,7 +740,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AM93"
       },
       {
@@ -768,7 +748,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "Filipino",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AV93"
       }
     ],
@@ -792,7 +772,8 @@ const ALL_TEACHERS_DATA = {
       "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)"
     ],
     "total_classes": 22,
-    "total_teaching_periods": 22
+    "total_teaching_periods": 22,
+    "rows": []
   },
   "tchr_hainur": {
     "teacher_id": "tchr_hainur",
@@ -804,7 +785,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_abu_bakr_as_sideeq_1st_shift",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!L10"
       },
       {
@@ -812,7 +793,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_uthman_ibn_affan_1st_shift",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!V10"
       },
       {
@@ -820,7 +801,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_abdullah_ibn_mas_ud_2nd_shift",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AB11"
       },
       {
@@ -828,7 +809,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_abdullah_ibn_mas_ud_2nd_shift",
         "subject": "Hadith",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AF11"
       },
       {
@@ -836,7 +817,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_umar_ibn_al_khattab_2nd_shift",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AJ9"
       },
       {
@@ -844,7 +825,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_umar_ibn_al_khattab_2nd_shift",
         "subject": "Hadith",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AL9"
       },
       {
@@ -852,7 +833,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k1_husain_ibn_ali_2nd_shift",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AD21"
       },
       {
@@ -860,7 +841,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k1_husain_ibn_ali_2nd_shift",
         "subject": "Hadith",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AE21"
       },
       {
@@ -868,7 +849,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!P27"
       },
       {
@@ -876,7 +857,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!P29"
       },
       {
@@ -884,7 +865,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!W29"
       },
       {
@@ -892,7 +873,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "Qur'an",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!W31"
       },
       {
@@ -900,7 +881,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AF28"
       },
       {
@@ -908,7 +889,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AE30"
       },
       {
@@ -916,7 +897,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AN30"
       },
       {
@@ -924,7 +905,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AK32"
       },
       {
@@ -932,7 +913,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "Arabic",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!N44"
       },
       {
@@ -940,7 +921,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!X46"
       },
       {
@@ -948,7 +929,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AC45"
       },
       {
@@ -956,7 +937,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AM43"
       },
       {
@@ -964,7 +945,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AJ93"
       },
       {
@@ -972,7 +953,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AL93"
       }
     ],
@@ -999,7 +980,8 @@ const ALL_TEACHERS_DATA = {
       "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)"
     ],
     "total_classes": 22,
-    "total_teaching_periods": 22
+    "total_teaching_periods": 22,
+    "rows": []
   },
   "tchr_silfah": {
     "teacher_id": "tchr_silfah",
@@ -1011,7 +993,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_abu_bakr_as_sideeq_1st_shift",
         "subject": "Arabic",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!N10"
       },
       {
@@ -1019,7 +1001,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_uthman_ibn_affan_1st_shift",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!U10"
       },
       {
@@ -1027,7 +1009,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_abdullah_ibn_mas_ud_2nd_shift",
         "subject": "Arabic",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AD9"
       },
       {
@@ -1035,7 +1017,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_umar_ibn_al_khattab_2nd_shift",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AN9"
       },
       {
@@ -1043,7 +1025,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!E64"
       },
       {
@@ -1051,7 +1033,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!G64"
       },
       {
@@ -1059,7 +1041,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "subject": "GMRC",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!P57"
       },
       {
@@ -1067,7 +1049,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!L59"
       },
       {
@@ -1075,7 +1057,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_ammar_ibn_yasir_1st_shift_boys",
         "subject": "GMRC",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!V59"
       },
       {
@@ -1083,7 +1065,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_ammar_ibn_yasir_1st_shift_boys",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!T61"
       },
       {
@@ -1091,7 +1073,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_zayd_ibn_haritha_2nd_shift_girls",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AB58"
       },
       {
@@ -1099,7 +1081,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_zayd_ibn_haritha_2nd_shift_girls",
         "subject": "GMRC",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AD58"
       },
       {
@@ -1107,7 +1089,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_thabit_ibn_qays_2nd_shift_boys",
         "subject": "GMRC",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AK58"
       },
       {
@@ -1115,7 +1097,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_thabit_ibn_qays_2nd_shift_boys",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AJ60"
       },
       {
@@ -1123,7 +1105,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "GMRC",
         "day": "Tuesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!F111"
       },
       {
@@ -1131,7 +1113,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "GMRC",
         "day": "Thursday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!H111"
       },
       {
@@ -1139,7 +1121,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "GMRC",
         "day": "Sunday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!D112"
       },
       {
@@ -1147,7 +1129,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "subject": "GMRC",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!M109"
       },
       {
@@ -1155,7 +1137,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
         "subject": "GMRC",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!W109"
       },
       {
@@ -1163,7 +1145,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
         "subject": "GMRC",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AC110"
       },
       {
@@ -1171,7 +1153,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "GMRC",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AM110"
       }
     ],
@@ -1196,7 +1178,8 @@ const ALL_TEACHERS_DATA = {
       "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)"
     ],
     "total_classes": 21,
-    "total_teaching_periods": 21
+    "total_teaching_periods": 21,
+    "rows": []
   },
   "tchr_ayah": {
     "teacher_id": "tchr_ayah",
@@ -1208,7 +1191,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_uthman_ibn_affan_1st_shift",
         "subject": "Circle Time 1",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!T8"
       },
       {
@@ -1216,7 +1199,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_uthman_ibn_affan_1st_shift",
         "subject": "CT 2",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!T10"
       },
       {
@@ -1224,7 +1207,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_uthman_ibn_affan_1st_shift",
         "subject": "CT 2",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!X10"
       },
       {
@@ -1232,7 +1215,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_abdullah_ibn_mas_ud_2nd_shift",
         "subject": "CT 1",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AB9"
       },
       {
@@ -1240,7 +1223,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_abdullah_ibn_mas_ud_2nd_shift",
         "subject": "CT 1",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AC9"
       },
       {
@@ -1248,7 +1231,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_abdullah_ibn_mas_ud_2nd_shift",
         "subject": "CT 1",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AE9"
       },
       {
@@ -1256,7 +1239,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_abdullah_ibn_mas_ud_2nd_shift",
         "subject": "CT 1",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AF9"
       },
       {
@@ -1264,7 +1247,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_abdullah_ibn_mas_ud_2nd_shift",
         "subject": "CT 2",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AC11"
       },
       {
@@ -1272,7 +1255,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_abdullah_ibn_mas_ud_2nd_shift",
         "subject": "CT 1",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AD11"
       },
       {
@@ -1280,7 +1263,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k2_abdullah_ibn_mas_ud_2nd_shift",
         "subject": "CT 2",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AE11"
       }
     ],
@@ -1294,7 +1277,8 @@ const ALL_TEACHERS_DATA = {
       "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)"
     ],
     "total_classes": 10,
-    "total_teaching_periods": 10
+    "total_teaching_periods": 10,
+    "rows": []
   },
   "tchr_us_faidh": {
     "teacher_id": "tchr_us_faidh",
@@ -1306,7 +1290,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_khabaab_ibn_arat_2nd_shift",
         "subject": "Qur'an",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AK21"
       }
     ],
@@ -1317,7 +1301,8 @@ const ALL_TEACHERS_DATA = {
       "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)"
     ],
     "total_classes": 1,
-    "total_teaching_periods": 1
+    "total_teaching_periods": 1,
+    "rows": []
   },
   "tchr_faidh": {
     "teacher_id": "tchr_faidh",
@@ -1329,7 +1314,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_khabaab_ibn_arat_2nd_shift",
         "subject": "Hadith",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AM21"
       },
       {
@@ -1337,7 +1322,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_2_khabaab_ibn_arat_2nd_shift",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AN21"
       },
       {
@@ -1345,7 +1330,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "SHAF3",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!X67"
       },
       {
@@ -1353,7 +1338,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "SHAF3",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!V69"
       },
       {
@@ -1361,7 +1346,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!X71"
       },
       {
@@ -1369,7 +1354,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AM68"
       },
       {
@@ -1377,7 +1362,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AK70"
       },
       {
@@ -1385,7 +1370,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AM70"
       },
       {
@@ -1393,7 +1378,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "Qur'an4",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!L67"
       },
       {
@@ -1401,7 +1386,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AT78"
       },
       {
@@ -1409,7 +1394,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "SHAF5",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!AC92"
       },
       {
@@ -1417,7 +1402,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "SHAF5",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!AE92"
       },
       {
@@ -1425,7 +1410,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "Arabic5",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!AE96"
       },
       {
@@ -1433,7 +1418,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!BD93"
       },
       {
@@ -1441,7 +1426,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "SHAF 5",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!BB95"
       },
       {
@@ -1449,7 +1434,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AZ97"
       },
       {
@@ -1457,7 +1442,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!F114"
       },
       {
@@ -1465,7 +1450,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!F116"
       },
       {
@@ -1473,7 +1458,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AJ110"
       },
       {
@@ -1481,7 +1466,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AL112"
       }
     ],
@@ -1508,7 +1493,8 @@ const ALL_TEACHERS_DATA = {
       "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)"
     ],
     "total_classes": 20,
-    "total_teaching_periods": 20
+    "total_teaching_periods": 20,
+    "rows": []
   },
   "tchr_wendy": {
     "teacher_id": "tchr_wendy",
@@ -1520,7 +1506,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k1_husain_ibn_ali_2nd_shift",
         "subject": "Circle Time 1",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AB19"
       },
       {
@@ -1528,7 +1514,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k1_husain_ibn_ali_2nd_shift",
         "subject": "CT 2",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AB21"
       },
       {
@@ -1536,7 +1522,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k1_husain_ibn_ali_2nd_shift",
         "subject": "CT 2",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AC21"
       },
       {
@@ -1544,7 +1530,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_1_class_schedule_f2f",
         "subject": "Circle Time 1",
         "day": "Sunday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!D17"
       },
       {
@@ -1552,7 +1538,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_kinder_1_class_schedule_f2f",
         "subject": "Circle Time 2",
         "day": "Sunday",
-        "time": "2:10-2:55 p.m.",
+        "time": "2:10 \u2013 2:55 PM",
         "source_cell": "ELEM!D20"
       },
       {
@@ -1560,7 +1546,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "Math",
         "day": "Sunday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!D31"
       },
       {
@@ -1568,7 +1554,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "ARAL Math",
         "day": "Monday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!E32"
       },
       {
@@ -1576,7 +1562,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "ARAL Math",
         "day": "Wednesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!G32"
       },
       {
@@ -1584,7 +1570,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "MAKABANSA",
         "day": "Sunday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "ELEM!D58"
       }
     ],
@@ -1603,7 +1589,8 @@ const ALL_TEACHERS_DATA = {
       "KINDER 1 CLASS SCHEDULE (F2F)"
     ],
     "total_classes": 9,
-    "total_teaching_periods": 9
+    "total_teaching_periods": 9,
+    "rows": []
   },
   "tchr_bustamante": {
     "teacher_id": "tchr_bustamante",
@@ -1615,7 +1602,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_k1_husain_ibn_ali_2nd_shift",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AF21"
       },
       {
@@ -1623,7 +1610,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!P55"
       },
       {
@@ -1631,7 +1618,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!W66"
       }
     ],
@@ -1645,7 +1632,8 @@ const ALL_TEACHERS_DATA = {
       "K1 - HUSAIN IBN ALI (2ND SHIFT)"
     ],
     "total_classes": 3,
-    "total_teaching_periods": 3
+    "total_teaching_periods": 3,
+    "rows": []
   },
   "tchr_sahdia": {
     "teacher_id": "tchr_sahdia",
@@ -1657,7 +1645,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "HG",
         "day": "Thursday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "ELEM!H27"
       },
       {
@@ -1665,7 +1653,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "Language",
         "day": "Sunday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "ELEM!D28"
       },
       {
@@ -1673,7 +1661,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!D36"
       },
       {
@@ -1681,7 +1669,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "Arabic",
         "day": "Tuesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!F36"
       },
       {
@@ -1689,7 +1677,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!H36"
       },
       {
@@ -1697,7 +1685,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "GMRC",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!L27"
       },
       {
@@ -1705,7 +1693,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "GMRC",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!N27"
       },
       {
@@ -1713,7 +1701,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "Language",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!M29"
       },
       {
@@ -1721,7 +1709,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "Language",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!N29"
       },
       {
@@ -1729,7 +1717,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "Language",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!U27"
       },
       {
@@ -1737,7 +1725,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "Language",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!W27"
       },
       {
@@ -1745,7 +1733,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "GMRC",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AB28"
       },
       {
@@ -1753,7 +1741,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "GMRC",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AD28"
       },
       {
@@ -1761,7 +1749,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "Language",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AC30"
       },
       {
@@ -1769,7 +1757,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "Language",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AF30"
       },
       {
@@ -1777,7 +1765,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "Language",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AK28"
       },
       {
@@ -1785,7 +1773,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "Language",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AN28"
       },
       {
@@ -1793,7 +1781,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "GMRC",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AJ32"
       },
       {
@@ -1801,7 +1789,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "GMRC",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AL32"
       },
       {
@@ -1809,7 +1797,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "GMRC",
         "day": "Tuesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!F79"
       },
       {
@@ -1817,7 +1805,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "GMRC",
         "day": "Thursday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!H79"
       },
       {
@@ -1825,7 +1813,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "GMRC",
         "day": "Sunday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!D85"
       },
       {
@@ -1833,7 +1821,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "GMRC",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!P77"
       },
       {
@@ -1841,7 +1829,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "GMRC",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!W81"
       },
       {
@@ -1849,7 +1837,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "GMRC4",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!P69"
       },
       {
@@ -1857,7 +1845,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "GMRC",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AE78"
       },
       {
@@ -1865,7 +1853,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "GMRC",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AM82"
       },
       {
@@ -1873,7 +1861,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "GMRC",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AV82"
       }
     ],
@@ -1899,7 +1887,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX"
     ],
     "total_classes": 28,
-    "total_teaching_periods": 28
+    "total_teaching_periods": 28,
+    "rows": []
   },
   "tchr_katrina": {
     "teacher_id": "tchr_katrina",
@@ -1911,7 +1900,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "Reading and Literacy",
         "day": "Sunday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!D29"
       },
       {
@@ -1919,7 +1908,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "R & L",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!M31"
       },
       {
@@ -1927,7 +1916,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "R & L",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!O31"
       },
       {
@@ -1935,7 +1924,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "ARAL Reading",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!P31"
       },
       {
@@ -1943,7 +1932,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "ARAL Reading",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!X29"
       },
       {
@@ -1951,7 +1940,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "R & L",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!T31"
       },
       {
@@ -1959,7 +1948,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "R & L",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!V31"
       },
       {
@@ -1967,7 +1956,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "R & L",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AC32"
       },
       {
@@ -1975,7 +1964,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "R & L",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AE32"
       },
       {
@@ -1983,7 +1972,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "ARAL Reading",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AF32"
       },
       {
@@ -1991,7 +1980,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "ARAL Reading",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AM28"
       },
       {
@@ -1999,7 +1988,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "R & L",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AJ30"
       },
       {
@@ -2007,7 +1996,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "R & L",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AL30"
       }
     ],
@@ -2024,7 +2013,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)"
     ],
     "total_classes": 13,
-    "total_teaching_periods": 13
+    "total_teaching_periods": 13,
+    "rows": []
   },
   "tchr_kat": {
     "teacher_id": "tchr_kat",
@@ -2036,7 +2026,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "ARAL Reading",
         "day": "Sunday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!D32"
       },
       {
@@ -2044,7 +2034,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "ARAL Reading",
         "day": "Tuesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!F32"
       },
       {
@@ -2052,7 +2042,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "ARAL Reading",
         "day": "Thursday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!H32"
       },
       {
@@ -2060,7 +2050,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "subject": "Math",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!L109"
       },
       {
@@ -2068,7 +2058,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!N109"
       },
       {
@@ -2076,7 +2066,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
         "subject": "Math",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!U107"
       },
       {
@@ -2084,7 +2074,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!V107"
       },
       {
@@ -2092,7 +2082,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AE110"
       },
       {
@@ -2100,7 +2090,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
         "subject": "Math",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AB112"
       }
     ],
@@ -2115,7 +2105,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)"
     ],
     "total_classes": 9,
-    "total_teaching_periods": 9
+    "total_teaching_periods": 9,
+    "rows": []
   },
   "tchr_abdiraheem": {
     "teacher_id": "tchr_abdiraheem",
@@ -2127,7 +2118,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!D34"
       },
       {
@@ -2135,7 +2126,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!E79"
       },
       {
@@ -2143,7 +2134,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!G79"
       },
       {
@@ -2151,7 +2142,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!L79"
       },
       {
@@ -2159,7 +2150,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!O79"
       },
       {
@@ -2167,7 +2158,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!T81"
       },
       {
@@ -2175,7 +2166,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!U81"
       },
       {
@@ -2183,7 +2174,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AD80"
       },
       {
@@ -2191,7 +2182,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AE80"
       },
       {
@@ -2199,7 +2190,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AJ82"
       },
       {
@@ -2207,7 +2198,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AK82"
       }
     ],
@@ -2223,7 +2214,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)"
     ],
     "total_classes": 11,
-    "total_teaching_periods": 11
+    "total_teaching_periods": 11,
+    "rows": []
   },
   "tchr_norhydie": {
     "teacher_id": "tchr_norhydie",
@@ -2235,7 +2227,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "MAKABANSA",
         "day": "Sunday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!D35"
       },
       {
@@ -2243,7 +2235,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "Makabansa",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!M27"
       },
       {
@@ -2251,7 +2243,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "Makabansa",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!O27"
       },
       {
@@ -2259,7 +2251,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "Makabansa",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!V27"
       },
       {
@@ -2267,7 +2259,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "Makabansa",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!X27"
       },
       {
@@ -2275,7 +2267,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "Makabansa",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AC28"
       },
       {
@@ -2283,7 +2275,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "Makabansa",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AE28"
       },
       {
@@ -2291,7 +2283,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "Makabansa",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AM32"
       },
       {
@@ -2299,7 +2291,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "Makabansa",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AN32"
       },
       {
@@ -2307,7 +2299,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "Filipino",
         "day": "Sunday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!D82"
       },
       {
@@ -2315,7 +2307,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!G82"
       },
       {
@@ -2323,7 +2315,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "English",
         "day": "Sunday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!D86"
       },
       {
@@ -2331,7 +2323,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "Filipino",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AB78"
       },
       {
@@ -2339,7 +2331,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "Filipino",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AJ80"
       },
       {
@@ -2347,7 +2339,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "AP",
         "day": "Sunday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!D94"
       },
       {
@@ -2355,7 +2347,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "AP",
         "day": "Tuesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!F94"
       },
       {
@@ -2363,7 +2355,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "AP",
         "day": "Thursday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!H94"
       },
       {
@@ -2371,7 +2363,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "MAPEH",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AM95"
       },
       {
@@ -2379,7 +2371,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "MAPEH",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AS95"
       }
     ],
@@ -2405,7 +2397,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)"
     ],
     "total_classes": 19,
-    "total_teaching_periods": 19
+    "total_teaching_periods": 19,
+    "rows": []
   },
   "tchr_obaydah": {
     "teacher_id": "tchr_obaydah",
@@ -2417,7 +2410,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "Qur'an",
         "day": "Monday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!E36"
       },
       {
@@ -2425,7 +2418,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_face_to_face",
         "subject": "Qur'an",
         "day": "Wednesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!G36"
       },
       {
@@ -2433,7 +2426,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!D47"
       },
       {
@@ -2441,7 +2434,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!E47"
       },
       {
@@ -2449,7 +2442,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!F47"
       },
       {
@@ -2457,7 +2450,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!G47"
       },
       {
@@ -2465,7 +2458,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!H47"
       },
       {
@@ -2473,7 +2466,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!P46"
       },
       {
@@ -2481,7 +2474,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!X42"
       },
       {
@@ -2489,7 +2482,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AF47"
       },
       {
@@ -2497,7 +2490,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AL45"
       },
       {
@@ -2505,7 +2498,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "Qur'an",
         "day": "Wednesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!G65"
       },
       {
@@ -2513,7 +2506,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!L61"
       },
       {
@@ -2521,7 +2514,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_ammar_ibn_yasir_1st_shift_boys",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!T57"
       },
       {
@@ -2529,7 +2522,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!X69"
       },
       {
@@ -2537,7 +2530,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_zayd_ibn_haritha_2nd_shift_girls",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AB60"
       },
       {
@@ -2545,7 +2538,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_thabit_ibn_qays_2nd_shift_boys",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AJ62"
       },
       {
@@ -2553,7 +2546,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AN70"
       },
       {
@@ -2561,7 +2554,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "Qur'an",
         "day": "Monday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!E84"
       },
       {
@@ -2569,7 +2562,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "Qur'an",
         "day": "Wednesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!G84"
       },
       {
@@ -2577,7 +2570,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!N79"
       },
       {
@@ -2585,7 +2578,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!V81"
       },
       {
@@ -2593,7 +2586,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "Qur'an",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AC80"
       },
       {
@@ -2601,7 +2594,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AL82"
       },
       {
@@ -2609,7 +2602,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "Qur'an5",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!AB94"
       },
       {
@@ -2617,7 +2610,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "Qur'an",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!BA97"
       }
     ],
@@ -2649,7 +2642,8 @@ const ALL_TEACHERS_DATA = {
       "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS"
     ],
     "total_classes": 26,
-    "total_teaching_periods": 26
+    "total_teaching_periods": 26,
+    "rows": []
   },
   "tchr_abdul_karim": {
     "teacher_id": "tchr_abdul_karim",
@@ -2661,7 +2655,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!L29"
       },
       {
@@ -2669,7 +2663,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!O29"
       },
       {
@@ -2677,7 +2671,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!U29"
       },
       {
@@ -2685,7 +2679,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!V29"
       },
       {
@@ -2693,7 +2687,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AB32"
       },
       {
@@ -2701,7 +2695,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AD32"
       },
       {
@@ -2709,7 +2703,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AK30"
       },
       {
@@ -2717,7 +2711,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AM30"
       },
       {
@@ -2725,7 +2719,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!L46"
       },
       {
@@ -2733,7 +2727,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!N46"
       },
       {
@@ -2741,7 +2735,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!T42"
       },
       {
@@ -2749,7 +2743,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!V42"
       },
       {
@@ -2757,7 +2751,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AC47"
       },
       {
@@ -2765,7 +2759,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AE47"
       },
       {
@@ -2773,7 +2767,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AJ45"
       },
       {
@@ -2781,7 +2775,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "SHAF",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AN45"
       },
       {
@@ -2789,7 +2783,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!M61"
       },
       {
@@ -2797,7 +2791,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "subject": "SHAF",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!P61"
       },
       {
@@ -2805,7 +2799,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!P94"
       },
       {
@@ -2813,7 +2807,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!W96"
       }
     ],
@@ -2835,7 +2829,8 @@ const ALL_TEACHERS_DATA = {
       "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS"
     ],
     "total_classes": 20,
-    "total_teaching_periods": 20
+    "total_teaching_periods": 20,
+    "rows": []
   },
   "tchr_marham": {
     "teacher_id": "tchr_marham",
@@ -2847,7 +2842,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "English",
         "day": "Sunday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "ELEM!D42"
       },
       {
@@ -2855,7 +2850,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "HG",
         "day": "Sunday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!D46"
       },
       {
@@ -2863,7 +2858,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "ARAL Reading",
         "day": "Sunday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!D51"
       },
       {
@@ -2871,7 +2866,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "ARAL Reading",
         "day": "Tuesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!F51"
       },
       {
@@ -2879,7 +2874,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "ARAL Reading",
         "day": "Thursday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!H51"
       },
       {
@@ -2887,7 +2882,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "English",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!M42"
       },
       {
@@ -2895,7 +2890,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "English",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!O42"
       },
       {
@@ -2903,7 +2898,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "ARAL Reading",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!P42"
       },
       {
@@ -2911,7 +2906,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "English",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!T44"
       },
       {
@@ -2919,7 +2914,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "English",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!V44"
       },
       {
@@ -2927,7 +2922,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "ARAL Reading",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!X44"
       },
       {
@@ -2935,7 +2930,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "Aral Reading",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AF43"
       },
       {
@@ -2943,7 +2938,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "English",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AB45"
       },
       {
@@ -2951,7 +2946,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "English",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AD45"
       },
       {
@@ -2959,7 +2954,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "English",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AJ47"
       },
       {
@@ -2967,7 +2962,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "English",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AL47"
       },
       {
@@ -2975,7 +2970,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "ARAL Reading",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AN47"
       },
       {
@@ -2983,7 +2978,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "English",
         "day": "Sunday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!D59"
       },
       {
@@ -2991,7 +2986,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "subject": "English",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!M59"
       },
       {
@@ -2999,7 +2994,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "subject": "English",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!O59"
       },
       {
@@ -3007,7 +3002,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_ammar_ibn_yasir_1st_shift_boys",
         "subject": "English",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!U61"
       },
       {
@@ -3015,7 +3010,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_ammar_ibn_yasir_1st_shift_boys",
         "subject": "English",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!W61"
       },
       {
@@ -3023,7 +3018,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_zayd_ibn_haritha_2nd_shift_girls",
         "subject": "English",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AC58"
       },
       {
@@ -3031,7 +3026,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_zayd_ibn_haritha_2nd_shift_girls",
         "subject": "English",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AE58"
       },
       {
@@ -3039,7 +3034,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_thabit_ibn_qays_2nd_shift_boys",
         "subject": "English",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AK60"
       },
       {
@@ -3047,7 +3042,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_thabit_ibn_qays_2nd_shift_boys",
         "subject": "English",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AM60"
       }
     ],
@@ -3070,7 +3065,8 @@ const ALL_TEACHERS_DATA = {
       "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS"
     ],
     "total_classes": 26,
-    "total_teaching_periods": 26
+    "total_teaching_periods": 26,
+    "rows": []
   },
   "tchr_monisa": {
     "teacher_id": "tchr_monisa",
@@ -3082,7 +3078,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "MAKABANSA",
         "day": "Sunday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "ELEM!D43"
       },
       {
@@ -3090,7 +3086,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "Makabansa",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!U44"
       },
       {
@@ -3098,7 +3094,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "Makabansa",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!W44"
       },
       {
@@ -3106,7 +3102,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "Makabansa",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AB47"
       },
       {
@@ -3114,7 +3110,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "Makabansa",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AD47"
       },
       {
@@ -3122,7 +3118,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "Makabansa",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AK45"
       },
       {
@@ -3130,7 +3126,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "Makabansa",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AM45"
       },
       {
@@ -3138,7 +3134,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "AP",
         "day": "Sunday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "ELEM!D77"
       },
       {
@@ -3146,7 +3142,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "TLE",
         "day": "Monday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "ELEM!E77"
       },
       {
@@ -3154,7 +3150,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "AP",
         "day": "Tuesday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "ELEM!F77"
       },
       {
@@ -3162,7 +3158,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "TLE",
         "day": "Wednesday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "ELEM!G77"
       },
       {
@@ -3170,7 +3166,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "AP",
         "day": "Thursday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "ELEM!H77"
       },
       {
@@ -3178,7 +3174,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "TLE",
         "day": "Tuesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!F82"
       },
       {
@@ -3186,7 +3182,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "HG",
         "day": "Thursday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!H85"
       },
       {
@@ -3194,7 +3190,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "AP",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!L77"
       },
       {
@@ -3202,7 +3198,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "TLE",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!N77"
       },
       {
@@ -3210,7 +3206,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "FIL",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!P81"
       },
       {
@@ -3218,7 +3214,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "AP",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!X77"
       },
       {
@@ -3226,7 +3222,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "FIL",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!T79"
       },
       {
@@ -3234,7 +3230,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "TLE",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!V79"
       },
       {
@@ -3242,7 +3238,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "AP4",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!O67"
       },
       {
@@ -3250,7 +3246,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "TLE",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AD78"
       },
       {
@@ -3258,7 +3254,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "AP",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AF82"
       },
       {
@@ -3266,7 +3262,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "AP",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AN78"
       },
       {
@@ -3274,7 +3270,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "TLE",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AL80"
       },
       {
@@ -3282,7 +3278,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "AP",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AR78"
       },
       {
@@ -3290,7 +3286,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "AP",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!M92"
       },
       {
@@ -3298,7 +3294,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "AP",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AK93"
       },
       {
@@ -3306,7 +3302,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "AP",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AU97"
       }
     ],
@@ -3336,7 +3332,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)"
     ],
     "total_classes": 29,
-    "total_teaching_periods": 29
+    "total_teaching_periods": 29,
+    "rows": []
   },
   "tchr_sitti": {
     "teacher_id": "tchr_sitti",
@@ -3348,7 +3345,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "Math",
         "day": "Sunday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!D44"
       },
       {
@@ -3356,7 +3353,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "Filipino",
         "day": "Sunday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!D49"
       },
       {
@@ -3364,7 +3361,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "Filipino",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!L44"
       },
       {
@@ -3372,7 +3369,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "Math",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!M44"
       },
       {
@@ -3380,7 +3377,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!O44"
       },
       {
@@ -3388,7 +3385,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "Math",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!P44"
       },
       {
@@ -3396,7 +3393,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "Filipino",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!T46"
       },
       {
@@ -3404,7 +3401,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "Math",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!U46"
       },
       {
@@ -3412,7 +3409,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "Filipino",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!V46"
       },
       {
@@ -3420,7 +3417,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!W46"
       },
       {
@@ -3428,7 +3425,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "Math",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AB43"
       },
       {
@@ -3436,7 +3433,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AD43"
       },
       {
@@ -3444,7 +3441,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "Math",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AK43"
       },
       {
@@ -3452,7 +3449,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "Math",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AN43"
       },
       {
@@ -3460,7 +3457,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "Filipino",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AK47"
       },
       {
@@ -3468,7 +3465,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AM47"
       }
     ],
@@ -3484,7 +3481,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)"
     ],
     "total_classes": 16,
-    "total_teaching_periods": 16
+    "total_teaching_periods": 16,
+    "rows": []
   },
   "tchr_a_saliha": {
     "teacher_id": "tchr_a_saliha",
@@ -3496,7 +3494,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "GMRC",
         "day": "Monday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!E46"
       }
     ],
@@ -3507,7 +3505,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 2 (FACE TO FACE)"
     ],
     "total_classes": 1,
-    "total_teaching_periods": 1
+    "total_teaching_periods": 1,
+    "rows": []
   },
   "tchr_ersahad": {
     "teacher_id": "tchr_ersahad",
@@ -3519,7 +3518,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!D50"
       },
       {
@@ -3527,7 +3526,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!F50"
       },
       {
@@ -3535,7 +3534,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "SHAF",
         "day": "Thursday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!H50"
       },
       {
@@ -3543,7 +3542,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!E51"
       },
       {
@@ -3551,7 +3550,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!G51"
       },
       {
@@ -3559,7 +3558,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!D64"
       },
       {
@@ -3567,7 +3566,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!F64"
       },
       {
@@ -3575,7 +3574,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "SHAF",
         "day": "Thursday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!H64"
       },
       {
@@ -3583,7 +3582,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_ammar_ibn_yasir_1st_shift_boys",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!U57"
       },
       {
@@ -3591,7 +3590,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_ammar_ibn_yasir_1st_shift_boys",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!W57"
       },
       {
@@ -3599,7 +3598,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_zayd_ibn_haritha_2nd_shift_girls",
         "subject": "SHAF",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AF58"
       },
       {
@@ -3607,7 +3606,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_zayd_ibn_haritha_2nd_shift_girls",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AC62"
       },
       {
@@ -3615,7 +3614,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_thabit_ibn_qays_2nd_shift_boys",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AJ58"
       },
       {
@@ -3623,7 +3622,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_thabit_ibn_qays_2nd_shift_boys",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AM58"
       },
       {
@@ -3631,7 +3630,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!E94"
       },
       {
@@ -3639,7 +3638,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!G94"
       },
       {
@@ -3647,7 +3646,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!E100"
       },
       {
@@ -3655,7 +3654,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!G100"
       },
       {
@@ -3663,7 +3662,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AN95"
       },
       {
@@ -3671,7 +3670,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AS93"
       },
       {
@@ -3679,7 +3678,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AT93"
       },
       {
@@ -3687,7 +3686,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AR97"
       },
       {
@@ -3695,7 +3694,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!G109"
       },
       {
@@ -3703,7 +3702,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "Math",
         "day": "Monday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!E111"
       },
       {
@@ -3711,7 +3710,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!F112"
       },
       {
@@ -3719,7 +3718,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "Math",
         "day": "Thursday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!H112"
       },
       {
@@ -3727,7 +3726,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "Math",
         "day": "Sunday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!D116"
       },
       {
@@ -3735,7 +3734,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AM112"
       }
     ],
@@ -3757,7 +3756,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS"
     ],
     "total_classes": 28,
-    "total_teaching_periods": 28
+    "total_teaching_periods": 28,
+    "rows": []
   },
   "tchr_junaisa": {
     "teacher_id": "tchr_junaisa",
@@ -3769,7 +3769,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "ARAL Math",
         "day": "Monday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!E50"
       },
       {
@@ -3777,7 +3777,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_face_to_face",
         "subject": "ARAL Math",
         "day": "Wednesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!G50"
       }
     ],
@@ -3788,7 +3788,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 2 (FACE TO FACE)"
     ],
     "total_classes": 2,
-    "total_teaching_periods": 2
+    "total_teaching_periods": 2,
+    "rows": []
   },
   "tchr_zuhora": {
     "teacher_id": "tchr_zuhora",
@@ -3800,7 +3801,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "Makabansa",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!M46"
       },
       {
@@ -3808,7 +3809,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "subject": "Makabansa",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!O46"
       },
       {
@@ -3816,7 +3817,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AE45"
       },
       {
@@ -3824,7 +3825,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
         "subject": "Filipino",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AF45"
       },
       {
@@ -3832,7 +3833,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "GMRC",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!T69"
       },
       {
@@ -3840,7 +3841,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "Fil4",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!N67"
       },
       {
@@ -3848,7 +3849,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "MAPEH4",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!M69"
       },
       {
@@ -3856,7 +3857,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "MAPEH",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AS78"
       },
       {
@@ -3864,7 +3865,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AU78"
       },
       {
@@ -3872,7 +3873,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "AP",
         "day": "Monday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!E109"
       },
       {
@@ -3880,7 +3881,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "AP",
         "day": "Sunday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!D114"
       },
       {
@@ -3888,7 +3889,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "AP",
         "day": "Wednesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!G114"
       },
       {
@@ -3896,7 +3897,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "subject": "Fil",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!P111"
       },
       {
@@ -3904,7 +3905,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
         "subject": "Fil",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!X109"
       },
       {
@@ -3912,7 +3913,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "MAPEH",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AJ112"
       }
     ],
@@ -3938,7 +3939,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS"
     ],
     "total_classes": 15,
-    "total_teaching_periods": 15
+    "total_teaching_periods": 15,
+    "rows": []
   },
   "tchr_jerlyn": {
     "teacher_id": "tchr_jerlyn",
@@ -3950,7 +3952,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "Science",
         "day": "Sunday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "ELEM!D57"
       },
       {
@@ -3958,7 +3960,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "HG",
         "day": "Thursday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!H62"
       },
       {
@@ -3966,7 +3968,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "Math",
         "day": "Monday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!E66"
       },
       {
@@ -3974,7 +3976,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!G66"
       },
       {
@@ -3982,7 +3984,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "Math",
         "day": "Thursday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!H66"
       },
       {
@@ -3990,7 +3992,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "subject": "Science",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!L57"
       },
       {
@@ -3998,7 +4000,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "subject": "Math",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!M57"
       },
       {
@@ -4006,7 +4008,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "subject": "Science",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!N57"
       },
       {
@@ -4014,7 +4016,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!O57"
       },
       {
@@ -4022,7 +4024,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_ammar_ibn_yasir_1st_shift_boys",
         "subject": "Science",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!T59"
       },
       {
@@ -4030,7 +4032,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_ammar_ibn_yasir_1st_shift_boys",
         "subject": "Math",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!U59"
       },
       {
@@ -4038,7 +4040,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_ammar_ibn_yasir_1st_shift_boys",
         "subject": "Science",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!W59"
       },
       {
@@ -4046,7 +4048,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_ammar_ibn_yasir_1st_shift_boys",
         "subject": "Math",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!X59"
       },
       {
@@ -4054,7 +4056,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "Math3",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!T71"
       },
       {
@@ -4062,7 +4064,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "Math3",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!V71"
       },
       {
@@ -4070,7 +4072,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_zayd_ibn_haritha_2nd_shift_girls",
         "subject": "Science",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AC60"
       },
       {
@@ -4078,7 +4080,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_zayd_ibn_haritha_2nd_shift_girls",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AD60"
       },
       {
@@ -4086,7 +4088,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_zayd_ibn_haritha_2nd_shift_girls",
         "subject": "Science",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AE60"
       },
       {
@@ -4094,7 +4096,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_zayd_ibn_haritha_2nd_shift_girls",
         "subject": "Math",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AF60"
       },
       {
@@ -4102,7 +4104,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_thabit_ibn_qays_2nd_shift_boys",
         "subject": "Science",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AK62"
       },
       {
@@ -4110,7 +4112,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_thabit_ibn_qays_2nd_shift_boys",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AL62"
       },
       {
@@ -4118,7 +4120,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_thabit_ibn_qays_2nd_shift_boys",
         "subject": "Science",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AM62"
       },
       {
@@ -4126,7 +4128,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_thabit_ibn_qays_2nd_shift_boys",
         "subject": "Math",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AN62"
       },
       {
@@ -4134,7 +4136,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "Math3",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AJ68"
       },
       {
@@ -4142,7 +4144,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "Math3",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AL68"
       }
     ],
@@ -4162,7 +4164,8 @@ const ALL_TEACHERS_DATA = {
       "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS"
     ],
     "total_classes": 25,
-    "total_teaching_periods": 25
+    "total_teaching_periods": 25,
+    "rows": []
   },
   "tchr_normayla": {
     "teacher_id": "tchr_normayla",
@@ -4174,7 +4177,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "Filipino",
         "day": "Sunday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!D61"
       },
       {
@@ -4182,7 +4185,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "subject": "Filipino",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!N61"
       },
       {
@@ -4190,7 +4193,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!O61"
       }
     ],
@@ -4202,7 +4205,8 @@ const ALL_TEACHERS_DATA = {
       "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS"
     ],
     "total_classes": 3,
-    "total_teaching_periods": 3
+    "total_teaching_periods": 3,
+    "rows": []
   },
   "tchr_junaisah": {
     "teacher_id": "tchr_junaisah",
@@ -4214,7 +4218,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "ARAL Reading",
         "day": "Sunday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!D65"
       },
       {
@@ -4222,7 +4226,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "ARAL Reading",
         "day": "Monday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!E65"
       },
       {
@@ -4230,7 +4234,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "ARAL Science",
         "day": "Tuesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!F65"
       },
       {
@@ -4238,7 +4242,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "ARAL Math",
         "day": "Thursday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!H65"
       },
       {
@@ -4246,7 +4250,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "ARAL Reading",
         "day": "Sunday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!D66"
       },
       {
@@ -4254,7 +4258,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_face_to_face",
         "subject": "ARAL Reading",
         "day": "Tuesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!F66"
       },
       {
@@ -4262,7 +4266,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "Science",
         "day": "Sunday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!D81"
       },
       {
@@ -4270,7 +4274,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "Science",
         "day": "Sunday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!D99"
       }
     ],
@@ -4286,7 +4290,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 5 (FACE TO FACE)"
     ],
     "total_classes": 8,
-    "total_teaching_periods": 8
+    "total_teaching_periods": 8,
+    "rows": []
   },
   "tchr_normylah": {
     "teacher_id": "tchr_normylah",
@@ -4298,7 +4303,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_ammar_ibn_yasir_1st_shift_boys",
         "subject": "Filipino",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!V57"
       },
       {
@@ -4306,7 +4311,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_ammar_ibn_yasir_1st_shift_boys",
         "subject": "Filipino",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!X57"
       },
       {
@@ -4314,7 +4319,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_zayd_ibn_haritha_2nd_shift_girls",
         "subject": "Filipino",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AD62"
       },
       {
@@ -4322,7 +4327,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_zayd_ibn_haritha_2nd_shift_girls",
         "subject": "Filipino",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AF62"
       },
       {
@@ -4330,7 +4335,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_thabit_ibn_qays_2nd_shift_boys",
         "subject": "Filipino",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AL60"
       },
       {
@@ -4338,7 +4343,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_thabit_ibn_qays_2nd_shift_boys",
         "subject": "Filipino",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AN60"
       },
       {
@@ -4346,7 +4351,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "Filipino",
         "day": "Sunday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "ELEM!D107"
       },
       {
@@ -4354,7 +4359,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "HG",
         "day": "Thursday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "ELEM!H107"
       },
       {
@@ -4362,7 +4367,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "subject": "AP",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!L107"
       },
       {
@@ -4370,7 +4375,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
         "subject": "AP",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!W107"
       },
       {
@@ -4378,7 +4383,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
         "subject": "AP",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AB108"
       },
       {
@@ -4386,7 +4391,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
         "subject": "Fil",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AC108"
       },
       {
@@ -4394,7 +4399,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "AP",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AL108"
       },
       {
@@ -4402,7 +4407,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AM108"
       }
     ],
@@ -4423,7 +4428,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)"
     ],
     "total_classes": 14,
-    "total_teaching_periods": 14
+    "total_teaching_periods": 14,
+    "rows": []
   },
   "tchr_jenny": {
     "teacher_id": "tchr_jenny",
@@ -4435,7 +4441,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "Eng3",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!T67"
       },
       {
@@ -4443,7 +4449,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "Fil3",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!U67"
       },
       {
@@ -4451,7 +4457,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "Eng3",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!V67"
       },
       {
@@ -4459,7 +4465,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "Fil3",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!W67"
       },
       {
@@ -4467,7 +4473,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "Makabansa3",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!U71"
       },
       {
@@ -4475,7 +4481,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "Makabansa3",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!W71"
       },
       {
@@ -4483,7 +4489,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "Fil3",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AK68"
       },
       {
@@ -4491,7 +4497,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "English 3",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AJ70"
       },
       {
@@ -4499,7 +4505,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "English",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AL70"
       },
       {
@@ -4507,7 +4513,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "Makabansa",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AK72"
       },
       {
@@ -4515,7 +4521,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "Makabansa",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AM72"
       },
       {
@@ -4523,7 +4529,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "Filipino",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AN72"
       },
       {
@@ -4531,7 +4537,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "Eng4",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!L71"
       },
       {
@@ -4539,7 +4545,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "TLE4",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!N71"
       },
       {
@@ -4547,7 +4553,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "Eng4",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!P71"
       },
       {
@@ -4555,7 +4561,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "TLE",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AT82"
       },
       {
@@ -4563,7 +4569,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "Fil5",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!AC94"
       },
       {
@@ -4571,7 +4577,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "TLE5",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!AF94"
       },
       {
@@ -4579,7 +4585,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "Filipino",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!BA95"
       },
       {
@@ -4587,7 +4593,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "TLE",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!BC95"
       }
     ],
@@ -4614,7 +4620,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX"
     ],
     "total_classes": 20,
-    "total_teaching_periods": 20
+    "total_teaching_periods": 20,
+    "rows": []
   },
   "tchr_saimona": {
     "teacher_id": "tchr_saimona",
@@ -4626,7 +4633,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "Sci3",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!U69"
       },
       {
@@ -4634,7 +4641,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
         "subject": "Sci3",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!W69"
       },
       {
@@ -4642,7 +4649,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "Science",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AJ72"
       },
       {
@@ -4650,7 +4657,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
         "subject": "Science",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AL72"
       },
       {
@@ -4658,7 +4665,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "Math4",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!M67"
       },
       {
@@ -4666,7 +4673,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "Math4",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!P67"
       },
       {
@@ -4674,7 +4681,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "Sci4",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!M71"
       },
       {
@@ -4682,7 +4689,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "Sci4",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!O71"
       },
       {
@@ -4690,7 +4697,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "Math",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AS80"
       },
       {
@@ -4698,7 +4705,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AU80"
       },
       {
@@ -4706,7 +4713,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "Science 4",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AV80"
       },
       {
@@ -4714,7 +4721,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "Science 4",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AS82"
       },
       {
@@ -4722,7 +4729,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "Sci5",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!AB92"
       },
       {
@@ -4730,7 +4737,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "Sci5",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!AD92"
       },
       {
@@ -4738,7 +4745,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "MAPEH5",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!AD94"
       },
       {
@@ -4746,7 +4753,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "Math5",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!AB96"
       },
       {
@@ -4754,7 +4761,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "Math5",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!AD96"
       },
       {
@@ -4762,7 +4769,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "AP5",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!AF96"
       },
       {
@@ -4770,7 +4777,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "MAPEH",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AZ93"
       },
       {
@@ -4778,7 +4785,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "MATH",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!BA93"
       },
       {
@@ -4786,7 +4793,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "AP",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!BB93"
       },
       {
@@ -4794,7 +4801,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "MATH",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!BC93"
       },
       {
@@ -4802,7 +4809,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AL110"
       },
       {
@@ -4810,7 +4817,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "Math",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AN112"
       }
     ],
@@ -4839,7 +4846,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS"
     ],
     "total_classes": 24,
-    "total_teaching_periods": 24
+    "total_teaching_periods": 24,
+    "rows": []
   },
   "tchr_arvin": {
     "teacher_id": "tchr_arvin",
@@ -4851,7 +4859,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "Math",
         "day": "Sunday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "ELEM!D78"
       },
       {
@@ -4859,7 +4867,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "ARAL Reading",
         "day": "Sunday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "ELEM!D79"
       },
       {
@@ -4867,7 +4875,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "ARAL Math",
         "day": "Tuesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!F85"
       },
       {
@@ -4875,7 +4883,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "Math",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!M77"
       },
       {
@@ -4883,7 +4891,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!O77"
       },
       {
@@ -4891,7 +4899,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "English",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!L81"
       },
       {
@@ -4899,7 +4907,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "English",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!N81"
       },
       {
@@ -4907,7 +4915,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "English",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!T77"
       },
       {
@@ -4915,7 +4923,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "English",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!V77"
       },
       {
@@ -4923,7 +4931,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "Math",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!U79"
       },
       {
@@ -4931,7 +4939,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!W79"
       },
       {
@@ -4939,7 +4947,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "Math",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AC78"
       },
       {
@@ -4947,7 +4955,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "Math",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AF78"
       },
       {
@@ -4955,7 +4963,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "English",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AB82"
       },
       {
@@ -4963,7 +4971,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "English",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AD82"
       },
       {
@@ -4971,7 +4979,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "English",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AJ78"
       },
       {
@@ -4979,7 +4987,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "English",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AM78"
       },
       {
@@ -4987,7 +4995,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "Math",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AK80"
       },
       {
@@ -4995,7 +5003,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "Math",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AN80"
       },
       {
@@ -5003,7 +5011,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "English",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AT80"
       },
       {
@@ -5011,7 +5019,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "English",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AU82"
       },
       {
@@ -5019,7 +5027,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "ARAL Program",
         "day": "Sunday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!D96"
       },
       {
@@ -5027,7 +5035,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "ARAL Program",
         "day": "Tuesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!F96"
       },
       {
@@ -5035,7 +5043,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "ARAL Program",
         "day": "Thursday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!H96"
       },
       {
@@ -5043,7 +5051,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "TLE",
         "day": "Monday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!E112"
       },
       {
@@ -5051,7 +5059,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "Aral",
         "day": "Wednesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!G112"
       },
       {
@@ -5059,7 +5067,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "TLE",
         "day": "Thursday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!H114"
       },
       {
@@ -5067,7 +5075,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "ARAL Program",
         "day": "Wednesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!G116"
       },
       {
@@ -5075,7 +5083,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "ARAL Program",
         "day": "Thursday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!H116"
       },
       {
@@ -5083,7 +5091,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "subject": "TLE",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!M111"
       },
       {
@@ -5091,7 +5099,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
         "subject": "TLE",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!T109"
       },
       {
@@ -5099,7 +5107,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
         "subject": "TLE",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AF112"
       },
       {
@@ -5107,7 +5115,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "TLE",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AK112"
       }
     ],
@@ -5135,7 +5143,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)"
     ],
     "total_classes": 33,
-    "total_teaching_periods": 33
+    "total_teaching_periods": 33,
+    "rows": []
   },
   "tchr_ali": {
     "teacher_id": "tchr_ali",
@@ -5147,7 +5156,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!D84"
       },
       {
@@ -5155,7 +5164,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!H84"
       },
       {
@@ -5163,7 +5172,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!M79"
       },
       {
@@ -5171,7 +5180,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!X79"
       },
       {
@@ -5179,7 +5188,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "Arabic4",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!L69"
       },
       {
@@ -5187,7 +5196,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AB80"
       },
       {
@@ -5195,7 +5204,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AM80"
       },
       {
@@ -5203,7 +5212,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AR82"
       },
       {
@@ -5211,7 +5220,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!E116"
       },
       {
@@ -5219,7 +5228,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!O111"
       },
       {
@@ -5227,7 +5236,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!T111"
       },
       {
@@ -5235,7 +5244,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
         "subject": "Arabic",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AD112"
       },
       {
@@ -5243,7 +5252,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!P10"
       },
       {
@@ -5251,7 +5260,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "Arabic",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!O23"
       },
       {
@@ -5259,7 +5268,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!Q35"
       },
       {
@@ -5267,7 +5276,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!Y13"
       },
       {
@@ -5275,7 +5284,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!V20"
       },
       {
@@ -5283,7 +5292,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "Arabic",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!W34"
       },
       {
@@ -5291,7 +5300,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!U44"
       },
       {
@@ -5299,7 +5308,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!V57"
       }
     ],
@@ -5329,7 +5338,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS"
     ],
     "total_classes": 20,
-    "total_teaching_periods": 20
+    "total_teaching_periods": 20,
+    "rows": []
   },
   "tchr_halnaisa": {
     "teacher_id": "tchr_halnaisa",
@@ -5341,7 +5351,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "MAPEH",
         "day": "Tuesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "ELEM!F84"
       },
       {
@@ -5349,7 +5359,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "MAPEH",
         "day": "Monday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!E85"
       },
       {
@@ -5357,7 +5367,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_face_to_face",
         "subject": "MAPEH",
         "day": "Wednesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!G85"
       },
       {
@@ -5365,7 +5375,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "MAPEH",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!P79"
       },
       {
@@ -5373,7 +5383,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "MAPEH",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!X81"
       },
       {
@@ -5381,7 +5391,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "MAPEH",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AF80"
       },
       {
@@ -5389,7 +5399,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "MAPEH",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AN82"
       },
       {
@@ -5397,7 +5407,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "TLE",
         "day": "Monday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!E96"
       },
       {
@@ -5405,7 +5415,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "TLE",
         "day": "Wednesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!G96"
       },
       {
@@ -5413,7 +5423,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "TLE",
         "day": "Sunday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!D17"
       },
       {
@@ -5421,7 +5431,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "TLE",
         "day": "Tuesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!F17"
       },
       {
@@ -5429,7 +5439,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "TLE",
         "day": "Wednesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!G17"
       },
       {
@@ -5437,7 +5447,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "TLE",
         "day": "Monday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!E31"
       },
       {
@@ -5445,7 +5455,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "TLE",
         "day": "Thursday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!H31"
       },
       {
@@ -5453,7 +5463,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "TLE",
         "day": "Sunday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!D32"
       },
       {
@@ -5461,7 +5471,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "TLE",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!O10"
       },
       {
@@ -5469,7 +5479,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "TLE",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!M19"
       },
       {
@@ -5477,7 +5487,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "TLE",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!N35"
       },
       {
@@ -5485,7 +5495,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "TLE",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!U13"
       },
       {
@@ -5493,7 +5503,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "TLE",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!X24"
       },
       {
@@ -5501,7 +5511,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "TLE",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!X32"
       }
     ],
@@ -5526,7 +5536,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS"
     ],
     "total_classes": 21,
-    "total_teaching_periods": 21
+    "total_teaching_periods": 21,
+    "rows": []
   },
   "tchr_anna": {
     "teacher_id": "tchr_anna",
@@ -5538,7 +5549,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "Science",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!M81"
       },
       {
@@ -5546,7 +5557,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "subject": "Science",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!O81"
       },
       {
@@ -5554,7 +5565,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "Science",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!U77"
       },
       {
@@ -5562,7 +5573,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
         "subject": "Science",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!W77"
       },
       {
@@ -5570,7 +5581,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "Science",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AC82"
       },
       {
@@ -5578,7 +5589,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
         "subject": "Science",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AE82"
       },
       {
@@ -5586,7 +5597,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "Science",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AK78"
       },
       {
@@ -5594,7 +5605,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
         "subject": "Science",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AL78"
       },
       {
@@ -5602,7 +5613,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "Science",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!L96"
       },
       {
@@ -5610,7 +5621,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "Science",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!N96"
       },
       {
@@ -5618,7 +5629,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "TLE",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!P96"
       },
       {
@@ -5626,7 +5637,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "Science",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!T94"
       },
       {
@@ -5634,7 +5645,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "Science",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!W94"
       },
       {
@@ -5642,7 +5653,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "TLE",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!X94"
       },
       {
@@ -5650,7 +5661,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "Science",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AJ97"
       },
       {
@@ -5658,7 +5669,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "Science",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AL97"
       },
       {
@@ -5666,7 +5677,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "TLE",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AN97"
       },
       {
@@ -5674,7 +5685,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "Science",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AR95"
       },
       {
@@ -5682,7 +5693,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "Science",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AU95"
       },
       {
@@ -5690,7 +5701,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "TLE",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AV95"
       },
       {
@@ -5698,7 +5709,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "subject": "Science",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!N107"
       },
       {
@@ -5706,7 +5717,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "subject": "Science",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!P107"
       },
       {
@@ -5714,7 +5725,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
         "subject": "Science",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!T107"
       },
       {
@@ -5722,7 +5733,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
         "subject": "Science",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!V109"
       },
       {
@@ -5730,7 +5741,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
         "subject": "Science",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AE108"
       },
       {
@@ -5738,7 +5749,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
         "subject": "Science",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AF108"
       }
     ],
@@ -5760,7 +5771,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)"
     ],
     "total_classes": 26,
-    "total_teaching_periods": 26
+    "total_teaching_periods": 26,
+    "rows": []
   },
   "tchr_abdi": {
     "teacher_id": "tchr_abdi",
@@ -5772,7 +5784,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "SHAF4",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!N69"
       },
       {
@@ -5780,7 +5792,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
         "subject": "SHAF4",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!O69"
       },
       {
@@ -5788,7 +5800,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "SHAF",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AV78"
       },
       {
@@ -5796,7 +5808,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AR80"
       },
       {
@@ -5804,7 +5816,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!D111"
       },
       {
@@ -5812,7 +5824,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "ELEM!G111"
       },
       {
@@ -5820,7 +5832,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "subject": "SHAF",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!P109"
       },
       {
@@ -5828,7 +5840,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!N111"
       },
       {
@@ -5836,7 +5848,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!W111"
       },
       {
@@ -5844,7 +5856,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
         "subject": "SHAF",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!X111"
       },
       {
@@ -5852,7 +5864,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
         "subject": "SHAF",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AF110"
       },
       {
@@ -5860,7 +5872,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AE112"
       }
     ],
@@ -5877,7 +5889,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)"
     ],
     "total_classes": 12,
-    "total_teaching_periods": 12
+    "total_teaching_periods": 12,
+    "rows": []
   },
   "tchr_jessa": {
     "teacher_id": "tchr_jessa",
@@ -5889,7 +5902,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "English",
         "day": "Sunday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "ELEM!D92"
       },
       {
@@ -5897,7 +5910,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "HG",
         "day": "Thursday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!H100"
       },
       {
@@ -5905,7 +5918,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "Filipino",
         "day": "Sunday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!D101"
       },
       {
@@ -5913,7 +5926,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "Filipino",
         "day": "Tuesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!F101"
       },
       {
@@ -5921,7 +5934,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!G101"
       },
       {
@@ -5929,7 +5942,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "Filipino",
         "day": "Thursday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "ELEM!H101"
       },
       {
@@ -5937,7 +5950,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "English",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!L94"
       },
       {
@@ -5945,7 +5958,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "English",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!N94"
       },
       {
@@ -5953,7 +5966,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "English",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!T92"
       },
       {
@@ -5961,7 +5974,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "English",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!V92"
       },
       {
@@ -5969,7 +5982,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "Eng5",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!AE94"
       },
       {
@@ -5977,7 +5990,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
         "subject": "Eng5",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!AC96"
       },
       {
@@ -5985,7 +5998,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "English",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AJ95"
       },
       {
@@ -5993,7 +6006,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "English",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AL95"
       },
       {
@@ -6001,7 +6014,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "English",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AR93"
       },
       {
@@ -6009,7 +6022,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "English",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AU93"
       },
       {
@@ -6017,7 +6030,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "English",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!BB97"
       },
       {
@@ -6025,7 +6038,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "English",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!BD97"
       },
       {
@@ -6033,7 +6046,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "English",
         "day": "Sunday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "ELEM!D108"
       },
       {
@@ -6041,7 +6054,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "subject": "English",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!M107"
       },
       {
@@ -6049,7 +6062,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
         "subject": "English",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!O107"
       },
       {
@@ -6057,7 +6070,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
         "subject": "English",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!X107"
       },
       {
@@ -6065,7 +6078,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
         "subject": "English",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!U109"
       },
       {
@@ -6073,7 +6086,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
         "subject": "English",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AD108"
       },
       {
@@ -6081,7 +6094,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
         "subject": "English",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AC112"
       },
       {
@@ -6089,7 +6102,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "English",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AK110"
       },
       {
@@ -6097,7 +6110,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "English",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AN110"
       }
     ],
@@ -6122,7 +6135,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)"
     ],
     "total_classes": 27,
-    "total_teaching_periods": 27
+    "total_teaching_periods": 27,
+    "rows": []
   },
   "tchr_jayra": {
     "teacher_id": "tchr_jayra",
@@ -6134,7 +6148,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "GMRC",
         "day": "Sunday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "ELEM!D93"
       },
       {
@@ -6142,7 +6156,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "GMRC",
         "day": "Tuesday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "ELEM!F93"
       },
       {
@@ -6150,7 +6164,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "GMRC",
         "day": "Thursday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "ELEM!H93"
       },
       {
@@ -6158,7 +6172,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "GMRC",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!P92"
       },
       {
@@ -6166,7 +6180,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "GMRC",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "ELEM!V94"
       },
       {
@@ -6174,7 +6188,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "GMRC",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AN93"
       },
       {
@@ -6182,7 +6196,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "GMRC",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AT95"
       },
       {
@@ -6190,7 +6204,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "English",
         "day": "Monday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!E12"
       },
       {
@@ -6198,7 +6212,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "English",
         "day": "Tuesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!F12"
       },
       {
@@ -6206,7 +6220,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "English",
         "day": "Wednesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!G12"
       },
       {
@@ -6214,7 +6228,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "English",
         "day": "Thursday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!H12"
       },
       {
@@ -6222,7 +6236,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "English",
         "day": "Sunday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!D13"
       },
       {
@@ -6230,7 +6244,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "English",
         "day": "Sunday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!D33"
       },
       {
@@ -6238,7 +6252,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "English",
         "day": "Monday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!E33"
       },
       {
@@ -6246,7 +6260,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "English",
         "day": "Tuesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!F33"
       },
       {
@@ -6254,7 +6268,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "English",
         "day": "Wednesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!G33"
       },
       {
@@ -6262,7 +6276,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "English",
         "day": "Thursday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!H33"
       },
       {
@@ -6270,7 +6284,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "English",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!M10"
       },
       {
@@ -6278,7 +6292,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "English",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!N10"
       },
       {
@@ -6286,7 +6300,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "English",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!N19"
       },
       {
@@ -6294,7 +6308,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "English",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!P19"
       },
       {
@@ -6302,7 +6316,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "English",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!P33"
       },
       {
@@ -6310,7 +6324,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "English",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!Q33"
       },
       {
@@ -6318,7 +6332,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "English",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!U9"
       },
       {
@@ -6326,7 +6340,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "English",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!W9"
       },
       {
@@ -6334,7 +6348,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "English",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!V22"
       },
       {
@@ -6342,7 +6356,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "English",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!X22"
       },
       {
@@ -6350,7 +6364,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "English",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!U36"
       },
       {
@@ -6358,7 +6372,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "English",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!W36"
       }
     ],
@@ -6382,7 +6396,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS"
     ],
     "total_classes": 29,
-    "total_teaching_periods": 29
+    "total_teaching_periods": 29,
+    "rows": []
   },
   "tchr_ubaydah": {
     "teacher_id": "tchr_ubaydah",
@@ -6394,7 +6409,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "Qur'an",
         "day": "Monday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "ELEM!E93"
       },
       {
@@ -6402,7 +6417,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "Qur'an",
         "day": "Wednesday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "ELEM!G93"
       }
     ],
@@ -6413,7 +6428,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 5 (FACE TO FACE)"
     ],
     "total_classes": 2,
-    "total_teaching_periods": 2
+    "total_teaching_periods": 2,
+    "rows": []
   },
   "tchr_fhairudz": {
     "teacher_id": "tchr_fhairudz",
@@ -6425,7 +6441,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_face_to_face",
         "subject": "Math 5",
         "day": "Sunday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "ELEM!D97"
       },
       {
@@ -6433,7 +6449,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "Math",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!M96"
       },
       {
@@ -6441,7 +6457,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!O96"
       },
       {
@@ -6449,7 +6465,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!V96"
       },
       {
@@ -6457,7 +6473,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "Math",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "ELEM!X96"
       },
       {
@@ -6465,7 +6481,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AT97"
       },
       {
@@ -6473,7 +6489,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
         "subject": "Math",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AV97"
       },
       {
@@ -6481,7 +6497,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "Science",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AJ108"
       },
       {
@@ -6489,7 +6505,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "Science",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AK108"
       }
     ],
@@ -6506,7 +6522,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS"
     ],
     "total_classes": 9,
-    "total_teaching_periods": 9
+    "total_teaching_periods": 9,
+    "rows": []
   },
   "tchr_raslina": {
     "teacher_id": "tchr_raslina",
@@ -6518,7 +6535,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!L92"
       },
       {
@@ -6526,7 +6543,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!N92"
       },
       {
@@ -6534,7 +6551,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!U92"
       },
       {
@@ -6542,7 +6559,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "ELEM!W92"
       },
       {
@@ -6550,7 +6567,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!N45"
       }
     ],
@@ -6564,7 +6581,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS"
     ],
     "total_classes": 5,
-    "total_teaching_periods": 5
+    "total_teaching_periods": 5,
+    "rows": []
   },
   "tchr_fairudz": {
     "teacher_id": "tchr_fairudz",
@@ -6576,7 +6594,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "Math",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AK97"
       },
       {
@@ -6584,7 +6602,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!AM97"
       }
     ],
@@ -6595,7 +6613,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)"
     ],
     "total_classes": 2,
-    "total_teaching_periods": 2
+    "total_teaching_periods": 2,
+    "rows": []
   },
   "tchr_tr_saimona": {
     "teacher_id": "tchr_tr_saimona",
@@ -6607,7 +6626,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "Science",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "ELEM!AZ95"
       },
       {
@@ -6615,7 +6634,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         "subject": "Science",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "ELEM!BC97"
       }
     ],
@@ -6626,7 +6645,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX"
     ],
     "total_classes": 2,
-    "total_teaching_periods": 2
+    "total_teaching_periods": 2,
+    "rows": []
   },
   "tchr_wendelyn": {
     "teacher_id": "tchr_wendelyn",
@@ -6638,7 +6658,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_face_to_face",
         "subject": "Science",
         "day": "Sunday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "ELEM!D115"
       }
     ],
@@ -6649,7 +6669,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE  6  FACE TO FACE"
     ],
     "total_classes": 1,
-    "total_teaching_periods": 1
+    "total_teaching_periods": 1,
+    "rows": []
   },
   "tchr_obayda": {
     "teacher_id": "tchr_obayda",
@@ -6661,7 +6682,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "ELEM!AN108"
       }
     ],
@@ -6672,7 +6693,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS"
     ],
     "total_classes": 1,
-    "total_teaching_periods": 1
+    "total_teaching_periods": 1,
+    "rows": []
   },
   "tchr_sophia": {
     "teacher_id": "tchr_sophia",
@@ -6684,7 +6706,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "HG",
         "day": "Sunday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!D8"
       },
       {
@@ -6692,7 +6714,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Filipino",
         "day": "Monday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!E8"
       },
       {
@@ -6700,7 +6722,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Filipino",
         "day": "Tuesday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!F8"
       },
       {
@@ -6708,7 +6730,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!G8"
       },
       {
@@ -6716,7 +6738,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Filipino",
         "day": "Thursday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!H8"
       },
       {
@@ -6724,7 +6746,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Filipino",
         "day": "Monday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!E26"
       },
       {
@@ -6732,7 +6754,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Filipino",
         "day": "Tuesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!F26"
       },
       {
@@ -6740,7 +6762,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!G26"
       },
       {
@@ -6748,7 +6770,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Filipino",
         "day": "Thursday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!H26"
       },
       {
@@ -6756,7 +6778,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Soc.Sci",
         "day": "Sunday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!D44"
       },
       {
@@ -6764,7 +6786,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Soc.Sci",
         "day": "Monday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!E44"
       },
       {
@@ -6772,7 +6794,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Soc.Sci",
         "day": "Wednesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!G44"
       },
       {
@@ -6780,7 +6802,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Soc.Sci",
         "day": "Thursday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!H44"
       },
       {
@@ -6788,7 +6810,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Soc.Sci",
         "day": "Sunday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!D63"
       },
       {
@@ -6796,7 +6818,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Soc.Sci",
         "day": "Tuesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!F63"
       },
       {
@@ -6804,7 +6826,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Soc.Sci",
         "day": "Wednesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!G63"
       },
       {
@@ -6812,7 +6834,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Soc.Sci",
         "day": "Thursday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!H63"
       },
       {
@@ -6820,7 +6842,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "Filipino",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!O12"
       },
       {
@@ -6828,7 +6850,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "Filipino",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!Q12"
       },
       {
@@ -6836,7 +6858,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "Filipino",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!N23"
       },
       {
@@ -6844,7 +6866,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!P23"
       },
       {
@@ -6852,7 +6874,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "Filipino",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!M35"
       },
       {
@@ -6860,7 +6882,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "Soc.Sci",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!M45"
       },
       {
@@ -6868,7 +6890,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "Soc.Sci",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!N57"
       },
       {
@@ -6876,7 +6898,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "Filipino",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!U11"
       },
       {
@@ -6884,7 +6906,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "Filipino",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!V11"
       },
       {
@@ -6892,7 +6914,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "Filipino",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!V24"
       },
       {
@@ -6900,7 +6922,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "Filipino",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!Y32"
       },
       {
@@ -6908,7 +6930,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "Soc.Sci",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!Y48"
       },
       {
@@ -6916,7 +6938,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "Soc.Sci",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!W57"
       },
       {
@@ -6924,7 +6946,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "Soc.Sci",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!Y68"
       }
     ],
@@ -6951,7 +6973,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS"
     ],
     "total_classes": 31,
-    "total_teaching_periods": 31
+    "total_teaching_periods": 31,
+    "rows": []
   },
   "tchr_franchette": {
     "teacher_id": "tchr_franchette",
@@ -6963,7 +6986,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "MAPEH",
         "day": "Sunday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!D9"
       },
       {
@@ -6971,7 +6994,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "MAPEH",
         "day": "Tuesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!F13"
       },
       {
@@ -6979,7 +7002,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "MAPEH",
         "day": "Thursday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!H13"
       },
       {
@@ -6987,7 +7010,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "MAPEH",
         "day": "Sunday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!D31"
       },
       {
@@ -6995,7 +7018,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "MAPEH",
         "day": "Tuesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!F31"
       },
       {
@@ -7003,7 +7026,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "MAPEH",
         "day": "Wednesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!G31"
       },
       {
@@ -7011,7 +7034,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "MAPEH",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!Q8"
       },
       {
@@ -7019,7 +7042,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "MAPEH",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!M23"
       },
       {
@@ -7027,7 +7050,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "MAPEH",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!N33"
       },
       {
@@ -7035,7 +7058,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "MAPEH",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!V13"
       },
       {
@@ -7043,7 +7066,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "MAPEH",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!X20"
       },
       {
@@ -7051,7 +7074,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "MAPEH",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!U32"
       }
     ],
@@ -7069,7 +7092,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS"
     ],
     "total_classes": 12,
-    "total_teaching_periods": 12
+    "total_teaching_periods": 12,
+    "rows": []
   },
   "tchr_shi": {
     "teacher_id": "tchr_shi",
@@ -7081,7 +7105,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Soc.Sci",
         "day": "Monday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!E9"
       },
       {
@@ -7089,7 +7113,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Soc.Sci",
         "day": "Tuesday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!F9"
       },
       {
@@ -7097,7 +7121,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Soc.Sci",
         "day": "Wednesday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!G9"
       },
       {
@@ -7105,7 +7129,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Soc.Sci",
         "day": "Thursday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!H9"
       },
       {
@@ -7113,7 +7137,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "HG",
         "day": "Sunday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!D24"
       },
       {
@@ -7121,7 +7145,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Soc.Sci",
         "day": "Monday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!E24"
       },
       {
@@ -7129,7 +7153,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Soc.Sci",
         "day": "Tuesday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!F24"
       },
       {
@@ -7137,7 +7161,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Soc.Sci",
         "day": "Wednesday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!G24"
       },
       {
@@ -7145,7 +7169,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Soc.Sci",
         "day": "Thursday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!H24"
       },
       {
@@ -7153,7 +7177,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "Soc.Sci",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!N12"
       },
       {
@@ -7161,7 +7185,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "Soc.Sci",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!Q19"
       },
       {
@@ -7169,7 +7193,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "Soc.Sci",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!M33"
       },
       {
@@ -7177,7 +7201,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "Soc.Sci",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!O33"
       },
       {
@@ -7185,7 +7209,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "Soc.Sci",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!V9"
       },
       {
@@ -7193,7 +7217,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "Soc.Sci",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!W24"
       },
       {
@@ -7201,7 +7225,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "Soc.Sci",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!Y24"
       },
       {
@@ -7209,7 +7233,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "Soc.Sci",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!V36"
       },
       {
@@ -7217,7 +7241,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "Soc.Sci",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!X36"
       },
       {
@@ -7225,7 +7249,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "PSKP",
         "day": "Sunday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "SHS!D11"
       },
       {
@@ -7233,7 +7257,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "PSKP",
         "day": "Monday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "SHS!E11"
       },
       {
@@ -7241,7 +7265,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "PSKP",
         "day": "Tuesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "SHS!F11"
       },
       {
@@ -7249,7 +7273,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "PSKP",
         "day": "Wednesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "SHS!G11"
       },
       {
@@ -7257,7 +7281,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "PSKP",
         "day": "Thursday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "SHS!H11"
       },
       {
@@ -7265,7 +7289,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "PSKP",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "SHS!G25"
       },
       {
@@ -7273,7 +7297,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "PSKP",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "SHS!H25"
       },
       {
@@ -7281,7 +7305,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "PSKP",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "SHS!F27"
       }
     ],
@@ -7303,7 +7327,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS"
     ],
     "total_classes": 26,
-    "total_teaching_periods": 26
+    "total_teaching_periods": 26,
+    "rows": []
   },
   "tchr_radzmia": {
     "teacher_id": "tchr_radzmia",
@@ -7315,7 +7340,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Sci",
         "day": "Sunday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!D10"
       },
       {
@@ -7323,7 +7348,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Sci",
         "day": "Monday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!E10"
       },
       {
@@ -7331,7 +7356,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Sci",
         "day": "Tuesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!F10"
       },
       {
@@ -7339,7 +7364,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Sci",
         "day": "Wednesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!G10"
       },
       {
@@ -7347,7 +7372,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Sci",
         "day": "Thursday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!H10"
       },
       {
@@ -7355,7 +7380,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Sci",
         "day": "Sunday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!D25"
       },
       {
@@ -7363,7 +7388,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Sci",
         "day": "Monday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!E25"
       },
       {
@@ -7371,7 +7396,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Aral.Sci",
         "day": "Tuesday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!F25"
       },
       {
@@ -7379,7 +7404,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Sci",
         "day": "Wednesday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!G25"
       },
       {
@@ -7387,7 +7412,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Sci",
         "day": "Thursday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!H25"
       },
       {
@@ -7395,7 +7420,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "Sci",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!M31"
       },
       {
@@ -7403,7 +7428,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "Sci",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!Q31"
       },
       {
@@ -7411,7 +7436,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "Sci",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!U20"
       },
       {
@@ -7419,7 +7444,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "Sci",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!W20"
       },
       {
@@ -7427,7 +7452,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "Sci",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!U34"
       },
       {
@@ -7435,7 +7460,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "Sci",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!Y34"
       },
       {
@@ -7443,7 +7468,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Bio 1",
         "day": "Sunday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "SHS!D15"
       },
       {
@@ -7451,7 +7476,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Bio 1",
         "day": "Monday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "SHS!E15"
       },
       {
@@ -7459,7 +7484,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Bio 1",
         "day": "Tuesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "SHS!F15"
       },
       {
@@ -7467,7 +7492,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Bio 1",
         "day": "Wednesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "SHS!G15"
       },
       {
@@ -7475,7 +7500,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Bio 1",
         "day": "Thursday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "SHS!H15"
       },
       {
@@ -7483,7 +7508,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Bio 1",
         "day": "Monday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "SHS!E16"
       },
       {
@@ -7491,7 +7516,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Gen Bio 1",
         "day": "Sunday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "SHS!M15"
       },
       {
@@ -7499,7 +7524,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Gen Bio 1",
         "day": "Monday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "SHS!N15"
       },
       {
@@ -7507,7 +7532,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Gen Bio 1",
         "day": "Tuesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "SHS!O15"
       },
       {
@@ -7515,7 +7540,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Gen Bio 1",
         "day": "Wednesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "SHS!P15"
       },
       {
@@ -7523,7 +7548,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Gen Bio 1",
         "day": "Thursday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "SHS!Q15"
       },
       {
@@ -7531,7 +7556,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Gen Bio 1",
         "day": "Monday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "SHS!N16"
       },
       {
@@ -7539,7 +7564,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "Gen Bio 1",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "SHS!N23"
       },
       {
@@ -7547,7 +7572,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "Gen Bio 1",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "SHS!O23"
       },
       {
@@ -7555,7 +7580,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "Gen Bio 1",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "SHS!P23"
       },
       {
@@ -7563,7 +7588,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "Gen Bio 1",
         "day": "Wednesday",
-        "time": "2:20-3:00 p.m.",
+        "time": "2:20 \u2013 3:00 PM",
         "source_cell": "SHS!G35"
       },
       {
@@ -7571,7 +7596,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "Gen Bio 1",
         "day": "Thursday",
-        "time": "2:20-3:00 p.m.",
+        "time": "2:20 \u2013 3:00 PM",
         "source_cell": "SHS!H35"
       },
       {
@@ -7579,7 +7604,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "Gen Bio 1",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "SHS!E40"
       }
     ],
@@ -7600,7 +7625,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS"
     ],
     "total_classes": 34,
-    "total_teaching_periods": 34
+    "total_teaching_periods": 34,
+    "rows": []
   },
   "tchr_a_silfa": {
     "teacher_id": "tchr_a_silfa",
@@ -7612,7 +7638,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "GMRC",
         "day": "Sunday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!D12"
       },
       {
@@ -7620,7 +7646,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "GMRC",
         "day": "Tuesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!F15"
       },
       {
@@ -7628,7 +7654,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "GMRC",
         "day": "Thursday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!H17"
       },
       {
@@ -7636,7 +7662,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "GMRC",
         "day": "Monday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!E29"
       },
       {
@@ -7644,7 +7670,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "GMRC",
         "day": "Wednesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!G29"
       },
       {
@@ -7652,7 +7678,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "GMRC",
         "day": "Thursday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!H29"
       },
       {
@@ -7660,7 +7686,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "GMRC",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!M8"
       },
       {
@@ -7668,7 +7694,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "GMRC",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!Q21"
       },
       {
@@ -7676,7 +7702,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "GMRC",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!Y9"
       }
     ],
@@ -7691,7 +7717,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS"
     ],
     "total_classes": 9,
-    "total_teaching_periods": 9
+    "total_teaching_periods": 9,
+    "rows": []
   },
   "tchr_muh_ali": {
     "teacher_id": "tchr_muh_ali",
@@ -7703,7 +7730,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!E13"
       },
       {
@@ -7711,7 +7738,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!G13"
       },
       {
@@ -7719,7 +7746,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!D29"
       },
       {
@@ -7727,7 +7754,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Arabic",
         "day": "Tuesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!F29"
       }
     ],
@@ -7739,7 +7766,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 7 & 8 GIRLS (FACE TO FACE)"
     ],
     "total_classes": 4,
-    "total_teaching_periods": 4
+    "total_teaching_periods": 4,
+    "rows": []
   },
   "tchr_samsuddin": {
     "teacher_id": "tchr_samsuddin",
@@ -7751,7 +7779,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!E15"
       },
       {
@@ -7759,7 +7787,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!G15"
       },
       {
@@ -7767,7 +7795,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!E32"
       },
       {
@@ -7775,7 +7803,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!G32"
       },
       {
@@ -7783,7 +7811,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!F47"
       },
       {
@@ -7791,7 +7819,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "SHAF",
         "day": "Thursday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!H47"
       },
       {
@@ -7799,7 +7827,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!E60"
       },
       {
@@ -7807,7 +7835,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!F60"
       },
       {
@@ -7815,7 +7843,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "SHAF",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!Q10"
       },
       {
@@ -7823,7 +7851,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "SHAF",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!Q23"
       },
       {
@@ -7831,7 +7859,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!O35"
       },
       {
@@ -7839,7 +7867,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!M43"
       },
       {
@@ -7847,7 +7875,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "SHAF",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!Y11"
       },
       {
@@ -7855,7 +7883,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!U22"
       },
       {
@@ -7863,7 +7891,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!V32"
       },
       {
@@ -7871,7 +7899,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!X44"
       },
       {
@@ -7879,7 +7907,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!U55"
       },
       {
@@ -7887,7 +7915,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "SHAF",
         "day": "Monday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "SHS!E12"
       },
       {
@@ -7895,7 +7923,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "SHS!F12"
       },
       {
@@ -7903,7 +7931,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "SHAF",
         "day": "Tuesday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "SHS!O8"
       },
       {
@@ -7911,7 +7939,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "SHAF",
         "day": "Thursday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "SHS!Q8"
       },
       {
@@ -7919,7 +7947,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "SHAF",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "SHS!G27"
       },
       {
@@ -7927,7 +7955,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "SHS!M25"
       },
       {
@@ -7935,7 +7963,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "SHAF",
         "day": "Sunday",
-        "time": "2:20-3:00 p.m.",
+        "time": "2:20 \u2013 3:00 PM",
         "source_cell": "SHS!D35"
       }
     ],
@@ -7963,7 +7991,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS"
     ],
     "total_classes": 24,
-    "total_teaching_periods": 24
+    "total_teaching_periods": 24,
+    "rows": []
   },
   "tchr_hannah": {
     "teacher_id": "tchr_hannah",
@@ -7975,7 +8004,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Math",
         "day": "Sunday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!D16"
       },
       {
@@ -7983,7 +8012,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Math",
         "day": "Monday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!E16"
       },
       {
@@ -7991,7 +8020,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!F16"
       },
       {
@@ -7999,7 +8028,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!G16"
       },
       {
@@ -8007,7 +8036,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Math",
         "day": "Thursday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!H16"
       },
       {
@@ -8015,7 +8044,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Math",
         "day": "Sunday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!D28"
       },
       {
@@ -8023,7 +8052,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Math",
         "day": "Monday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!E28"
       },
       {
@@ -8031,7 +8060,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!F28"
       },
       {
@@ -8039,7 +8068,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!G28"
       },
       {
@@ -8047,7 +8076,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Math",
         "day": "Thursday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!H28"
       },
       {
@@ -8055,7 +8084,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "Math",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!N31"
       },
       {
@@ -8063,7 +8092,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!P31"
       },
       {
@@ -8071,7 +8100,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!W22"
       },
       {
@@ -8079,7 +8108,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "Math",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!Y22"
       },
       {
@@ -8087,7 +8116,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "Math",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!V34"
       },
       {
@@ -8095,7 +8124,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!X34"
       }
     ],
@@ -8110,7 +8139,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS"
     ],
     "total_classes": 16,
-    "total_teaching_periods": 16
+    "total_teaching_periods": 16,
+    "rows": []
   },
   "tchr_moh": {
     "teacher_id": "tchr_moh",
@@ -8122,7 +8152,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_girls_face_to_face",
         "subject": "Aral Math",
         "day": "Monday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!E17"
       },
       {
@@ -8130,7 +8160,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_8_boys_face_to_face",
         "subject": "Aral Math",
         "day": "Sunday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!D26"
       },
       {
@@ -8138,7 +8168,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Aral Math",
         "day": "Tuesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!F44"
       },
       {
@@ -8146,7 +8176,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "MAPEH",
         "day": "Monday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!E48"
       },
       {
@@ -8154,7 +8184,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "MAPEH",
         "day": "Tuesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!F48"
       },
       {
@@ -8162,7 +8192,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "MAPEH",
         "day": "Thursday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!H48"
       },
       {
@@ -8170,7 +8200,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "MAPEH",
         "day": "Sunday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!D60"
       },
       {
@@ -8178,7 +8208,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "MAPEH",
         "day": "Wednesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!G60"
       },
       {
@@ -8186,7 +8216,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "MAPEH",
         "day": "Thursday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "HS SCHED (NEW)!H60"
       },
       {
@@ -8194,7 +8224,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Aral Math",
         "day": "Monday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!E63"
       },
       {
@@ -8202,7 +8232,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "MAPEH",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!P45"
       },
       {
@@ -8210,7 +8240,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "MAPEH",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!Q55"
       },
       {
@@ -8218,7 +8248,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "MAPEH",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!Y55"
       },
       {
@@ -8226,7 +8256,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "MAPEH",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!U68"
       },
       {
@@ -8234,7 +8264,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "PE 12",
         "day": "Sunday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "SHS!M14"
       },
       {
@@ -8242,7 +8272,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "PE 12",
         "day": "Tuesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "SHS!O14"
       },
       {
@@ -8250,7 +8280,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "PE 12",
         "day": "Wednesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "SHS!P14"
       },
       {
@@ -8258,7 +8288,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "PE 12",
         "day": "Wednesday",
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 \u2013 03:40 PM",
         "source_cell": "SHS!P28"
       },
       {
@@ -8266,7 +8296,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "PE 12",
         "day": "Thursday",
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 \u2013 03:40 PM",
         "source_cell": "SHS!Q28"
       }
     ],
@@ -8288,7 +8318,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS"
     ],
     "total_classes": 19,
-    "total_teaching_periods": 19
+    "total_teaching_periods": 19,
+    "rows": []
   },
   "tchr_norhaima": {
     "teacher_id": "tchr_norhaima",
@@ -8300,7 +8331,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "English",
         "day": "Sunday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!D40"
       },
       {
@@ -8308,7 +8339,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "ENGLISH",
         "day": "Monday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!E40"
       },
       {
@@ -8316,7 +8347,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "ENGLISH",
         "day": "Tuesday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!F40"
       },
       {
@@ -8324,7 +8355,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "ENGLISH",
         "day": "Wednesday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!G40"
       },
       {
@@ -8332,23 +8363,15 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "ENGLISH",
         "day": "Thursday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!H40"
-      },
-      {
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "section_id": "sec_grade_9_10_girls_face_to_face",
-        "subject": "Homeroom",
-        "day": "Thursday",
-        "time": "9:05-9:45 a.m.",
-        "source_cell": "HS SCHED (NEW)!H42"
       },
       {
         "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "ENGLISH",
         "day": "Sunday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!D61"
       },
       {
@@ -8356,7 +8379,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "ENGLISH",
         "day": "Monday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!E61"
       },
       {
@@ -8364,7 +8387,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "ENGLISH",
         "day": "Tuesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!F61"
       },
       {
@@ -8372,7 +8395,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "ENGLISH",
         "day": "Wednesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!G61"
       },
       {
@@ -8380,7 +8403,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "ENGLISH",
         "day": "Thursday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!H61"
       },
       {
@@ -8388,7 +8411,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "English",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!O45"
       },
       {
@@ -8396,7 +8419,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "English",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!Q45"
       },
       {
@@ -8404,7 +8427,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "English",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!M57"
       },
       {
@@ -8412,7 +8435,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "English",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!P57"
       },
       {
@@ -8420,7 +8443,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "English",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!U46"
       },
       {
@@ -8428,7 +8451,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "English",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!W46"
       },
       {
@@ -8436,7 +8459,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "English",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!X59"
       },
       {
@@ -8444,7 +8467,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "English",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!Y59"
       },
       {
@@ -8452,7 +8475,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "English",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!V68"
       },
       {
@@ -8460,7 +8483,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "English",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!X68"
       },
       {
@@ -8468,7 +8491,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "LCS",
         "day": "Sunday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "SHS!D8"
       },
       {
@@ -8476,7 +8499,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "LCS",
         "day": "Monday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "SHS!E8"
       },
       {
@@ -8484,7 +8507,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "LCS",
         "day": "Tuesday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "SHS!F8"
       },
       {
@@ -8492,7 +8515,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "LCS",
         "day": "Wednesday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "SHS!G8"
       },
       {
@@ -8500,7 +8523,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "LCS",
         "day": "Thursday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "SHS!H8"
       },
       {
@@ -8508,7 +8531,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "LCS",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "SHS!D27"
       },
       {
@@ -8516,7 +8539,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "LCS",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "SHS!E27"
       },
       {
@@ -8524,7 +8547,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "LCS",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "SHS!H27"
       },
       {
@@ -8532,7 +8555,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "LCS",
         "day": "Tuesday",
-        "time": "2:20-3:00 p.m.",
+        "time": "2:20 \u2013 3:00 PM",
         "source_cell": "SHS!F35"
       },
       {
@@ -8540,14 +8563,13 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "LCS",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "SHS!E42"
       }
     ],
     "subjects": [
       "ENGLISH",
       "English",
-      "Homeroom",
       "LCS"
     ],
     "sections": [
@@ -8562,8 +8584,9 @@ const ALL_TEACHERS_DATA = {
       "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
       "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS"
     ],
-    "total_classes": 31,
-    "total_teaching_periods": 31
+    "total_classes": 30,
+    "total_teaching_periods": 30,
+    "rows": []
   },
   "tchr_jhelyn": {
     "teacher_id": "tchr_jhelyn",
@@ -8575,7 +8598,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Math",
         "day": "Sunday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!D41"
       },
       {
@@ -8583,7 +8606,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Math",
         "day": "Monday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!E41"
       },
       {
@@ -8591,7 +8614,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!F41"
       },
       {
@@ -8599,7 +8622,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!G41"
       },
       {
@@ -8607,7 +8630,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Math",
         "day": "Thursday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!H41"
       },
       {
@@ -8615,7 +8638,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Math",
         "day": "Sunday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!D65"
       },
       {
@@ -8623,7 +8646,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!O43"
       },
       {
@@ -8631,7 +8654,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!P43"
       },
       {
@@ -8639,7 +8662,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!O57"
       },
       {
@@ -8647,7 +8670,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "Math",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!Q57"
       },
       {
@@ -8655,7 +8678,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "Math",
         "day": "Monday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!V46"
       },
       {
@@ -8663,7 +8686,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!X46"
       },
       {
@@ -8671,7 +8694,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "Math",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!U59"
       },
       {
@@ -8679,7 +8702,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "Math",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!V59"
       },
       {
@@ -8687,7 +8710,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "Math",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!U66"
       },
       {
@@ -8695,7 +8718,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!X66"
       },
       {
@@ -8703,7 +8726,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Math",
         "day": "Sunday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "SHS!D9"
       },
       {
@@ -8711,7 +8734,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Math",
         "day": "Monday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "SHS!E9"
       },
       {
@@ -8719,7 +8742,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Math",
         "day": "Tuesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "SHS!F9"
       },
       {
@@ -8727,7 +8750,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Math",
         "day": "Wednesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "SHS!G9"
       },
       {
@@ -8735,7 +8758,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Math/HR",
         "day": "Thursday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "SHS!H9"
       },
       {
@@ -8743,7 +8766,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "Gen Math",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "SHS!D25"
       },
       {
@@ -8751,7 +8774,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "Gen Math",
         "day": "Tuesday",
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 \u2013 03:40 PM",
         "source_cell": "SHS!F29"
       },
       {
@@ -8759,7 +8782,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "Gen Math",
         "day": "Thursday",
-        "time": "3:50 - 4:30 p.m.",
+        "time": "3:50 \u2013 4:30 PM",
         "source_cell": "SHS!H30"
       },
       {
@@ -8767,7 +8790,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "Gen Math",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "SHS!E38"
       },
       {
@@ -8775,7 +8798,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "Gen Math",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "SHS!F42"
       },
       {
@@ -8783,7 +8806,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "Gen Math",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "SHS!H42"
       }
     ],
@@ -8805,7 +8828,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS"
     ],
     "total_classes": 27,
-    "total_teaching_periods": 27
+    "total_teaching_periods": 27,
+    "rows": []
   },
   "tchr_nadzra": {
     "teacher_id": "tchr_nadzra",
@@ -8817,7 +8841,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Filipino",
         "day": "Sunday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!D42"
       },
       {
@@ -8825,7 +8849,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Filipino",
         "day": "Monday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!E42"
       },
       {
@@ -8833,7 +8857,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Filipino",
         "day": "Tuesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!F42"
       },
       {
@@ -8841,7 +8865,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!G42"
       },
       {
@@ -8849,7 +8873,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "HG",
         "day": "Sunday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!D56"
       },
       {
@@ -8857,7 +8881,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Filipino",
         "day": "Monday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!E56"
       },
       {
@@ -8865,7 +8889,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Filipino",
         "day": "Tuesday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!F56"
       },
       {
@@ -8873,7 +8897,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!G56"
       },
       {
@@ -8881,7 +8905,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Filipino",
         "day": "Thursday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "HS SCHED (NEW)!H56"
       },
       {
@@ -8889,7 +8913,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!P47"
       },
       {
@@ -8897,7 +8921,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "Filipino",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!Q47"
       },
       {
@@ -8905,7 +8929,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "Filipino",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!M59"
       },
       {
@@ -8913,7 +8937,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "Filipino",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!O59"
       },
       {
@@ -8921,7 +8945,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "Filipino",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!V48"
       },
       {
@@ -8929,7 +8953,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!X48"
       },
       {
@@ -8937,7 +8961,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "Filipino",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!V55"
       },
       {
@@ -8945,7 +8969,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "Filipino",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!X55"
       },
       {
@@ -8953,7 +8977,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "Filipino",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!W68"
       },
       {
@@ -8961,7 +8985,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "Filipino",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!U70"
       },
       {
@@ -8969,7 +8993,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "EC",
         "day": "Sunday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "SHS!D14"
       },
       {
@@ -8977,7 +9001,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "EC",
         "day": "Monday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "SHS!E14"
       },
       {
@@ -8985,7 +9009,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "EC",
         "day": "Tuesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "SHS!F14"
       },
       {
@@ -8993,7 +9017,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "EC",
         "day": "Wednesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "SHS!G14"
       },
       {
@@ -9001,7 +9025,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "EC",
         "day": "Thursday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "SHS!H14"
       },
       {
@@ -9009,7 +9033,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "EC",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "SHS!E25"
       },
       {
@@ -9017,7 +9041,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "EC",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "SHS!F25"
       },
       {
@@ -9025,7 +9049,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "EC",
         "day": "Sunday",
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 \u2013 03:40 PM",
         "source_cell": "SHS!D29"
       },
       {
@@ -9033,7 +9057,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "EC",
         "day": "Thursday",
-        "time": "3:00-3:30 p.m.",
+        "time": "3:00 \u2013 3:30 PM",
         "source_cell": "SHS!H36"
       },
       {
@@ -9041,7 +9065,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "EC",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "SHS!F38"
       },
       {
@@ -9049,7 +9073,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "EC",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "SHS!D40"
       }
     ],
@@ -9071,7 +9095,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS"
     ],
     "total_classes": 30,
-    "total_teaching_periods": 30
+    "total_teaching_periods": 30,
+    "rows": []
   },
   "tchr_rowena": {
     "teacher_id": "tchr_rowena",
@@ -9083,7 +9108,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Science",
         "day": "Sunday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!D45"
       },
       {
@@ -9091,7 +9116,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Science",
         "day": "Monday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!E45"
       },
       {
@@ -9099,7 +9124,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Science",
         "day": "Tuesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!F45"
       },
       {
@@ -9107,7 +9132,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Science",
         "day": "Wednesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!G45"
       },
       {
@@ -9115,7 +9140,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Science",
         "day": "Thursday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "HS SCHED (NEW)!H45"
       },
       {
@@ -9123,7 +9148,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Science",
         "day": "Sunday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!D57"
       },
       {
@@ -9131,7 +9156,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Science",
         "day": "Monday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!E57"
       },
       {
@@ -9139,7 +9164,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Science",
         "day": "Tuesday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!F57"
       },
       {
@@ -9147,7 +9172,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Science",
         "day": "Wednesday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!G57"
       },
       {
@@ -9155,7 +9180,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Science",
         "day": "Thursday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "HS SCHED (NEW)!H57"
       },
       {
@@ -9163,7 +9188,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "Sci",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!M47"
       },
       {
@@ -9171,7 +9196,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "Sci",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!O47"
       },
       {
@@ -9179,7 +9204,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "Sci",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!N59"
       },
       {
@@ -9187,7 +9212,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "Sci",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!Q59"
       },
       {
@@ -9195,7 +9220,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "Sci",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!V44"
       },
       {
@@ -9203,7 +9228,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "Sci",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!W44"
       },
       {
@@ -9211,7 +9236,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "Sci",
         "day": "Sunday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!U57"
       },
       {
@@ -9219,7 +9244,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "Sci",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!Y57"
       },
       {
@@ -9227,7 +9252,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "Sci",
         "day": "Monday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!V70"
       },
       {
@@ -9235,7 +9260,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "Sci",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!X70"
       },
       {
@@ -9243,7 +9268,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Science",
         "day": "Sunday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "SHS!D7"
       },
       {
@@ -9251,7 +9276,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Science",
         "day": "Monday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "SHS!E7"
       },
       {
@@ -9259,7 +9284,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Science",
         "day": "Tuesday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "SHS!F7"
       },
       {
@@ -9267,7 +9292,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Science",
         "day": "Wednesday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "SHS!G7"
       },
       {
@@ -9275,7 +9300,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Gen Science",
         "day": "Thursday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "SHS!H7"
       },
       {
@@ -9283,7 +9308,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "Gen Bio 1",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "SHS!E23"
       },
       {
@@ -9291,7 +9316,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "Gen Bio 1",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "SHS!F23"
       },
       {
@@ -9299,7 +9324,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "Gen Bio 1",
         "day": "Wednesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "SHS!G23"
       },
       {
@@ -9307,7 +9332,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "Gen Science",
         "day": "Monday",
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 \u2013 03:40 PM",
         "source_cell": "SHS!E29"
       },
       {
@@ -9315,7 +9340,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "Gen Science",
         "day": "Wednesday",
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 \u2013 03:40 PM",
         "source_cell": "SHS!G29"
       },
       {
@@ -9323,7 +9348,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "Gen Science",
         "day": "Thursday",
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 \u2013 03:40 PM",
         "source_cell": "SHS!H29"
       },
       {
@@ -9331,7 +9356,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "Gen Science",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "SHS!H38"
       },
       {
@@ -9339,7 +9364,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "Gen Science",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "SHS!F40"
       },
       {
@@ -9347,7 +9372,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "Gen Science",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "SHS!D42"
       }
     ],
@@ -9370,7 +9395,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS"
     ],
     "total_classes": 34,
-    "total_teaching_periods": 34
+    "total_teaching_periods": 34,
+    "rows": []
   },
   "tchr_nof": {
     "teacher_id": "tchr_nof",
@@ -9382,7 +9408,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "ESP",
         "day": "Sunday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!D47"
       },
       {
@@ -9390,7 +9416,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "ESP",
         "day": "Monday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!E47"
       },
       {
@@ -9398,7 +9424,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "ESP",
         "day": "Wednesday",
-        "time": "12:40-1:25 p.m.",
+        "time": "12:40 \u2013 1:25 PM",
         "source_cell": "HS SCHED (NEW)!G47"
       },
       {
@@ -9406,7 +9432,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "ESP",
         "day": "Sunday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!D64"
       },
       {
@@ -9414,7 +9440,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "ESP",
         "day": "Monday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!E64"
       },
       {
@@ -9422,7 +9448,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "ESP",
         "day": "Tuesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!F64"
       },
       {
@@ -9430,7 +9456,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "ESP",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!N47"
       },
       {
@@ -9438,7 +9464,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "ESP",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!P59"
       },
       {
@@ -9446,7 +9472,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "ESP",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!Y46"
       },
       {
@@ -9454,7 +9480,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "ESP",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!W59"
       },
       {
@@ -9462,7 +9488,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "ESP",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!Y70"
       },
       {
@@ -9470,7 +9496,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "21st Lit.",
         "day": "Sunday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "SHS!M11"
       },
       {
@@ -9478,7 +9504,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "21st Lit.",
         "day": "Monday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "SHS!N11"
       },
       {
@@ -9486,7 +9512,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "21st Lit.",
         "day": "Tuesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "SHS!O11"
       },
       {
@@ -9494,7 +9520,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "21st Lit.",
         "day": "Wednesday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "SHS!P11"
       },
       {
@@ -9502,7 +9528,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "21st Lit.",
         "day": "Thursday",
-        "time": "10:00-10:45 a.m.",
+        "time": "10:00 \u2013 10:45 AM",
         "source_cell": "SHS!Q11"
       },
       {
@@ -9510,7 +9536,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "21st Lit.",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "SHS!P25"
       },
       {
@@ -9518,7 +9544,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "21st Lit.",
         "day": "Thursday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "SHS!Q25"
       },
       {
@@ -9526,7 +9552,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "21st Lit.",
         "day": "Tuesday",
-        "time": "3:50 - 4:30 p.m.",
+        "time": "3:50 \u2013 4:30 PM",
         "source_cell": "SHS!O30"
       }
     ],
@@ -9546,7 +9572,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS"
     ],
     "total_classes": 19,
-    "total_teaching_periods": 19
+    "total_teaching_periods": 19,
+    "rows": []
   },
   "tchr_mamonas": {
     "teacher_id": "tchr_mamonas",
@@ -9558,7 +9585,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!D48"
       },
       {
@@ -9566,7 +9593,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!H49"
       },
       {
@@ -9574,7 +9601,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!G64"
       },
       {
@@ -9582,7 +9609,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!H64"
       },
       {
@@ -9590,7 +9617,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "Arabic",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!O55"
       },
       {
@@ -9598,7 +9625,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "Arabic",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!Y66"
       },
       {
@@ -9606,7 +9633,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "SHS!D12"
       },
       {
@@ -9614,7 +9641,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "SHS!G12"
       },
       {
@@ -9622,7 +9649,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "SHS!N8"
       },
       {
@@ -9630,7 +9657,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Arabic",
         "day": "Wednesday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "SHS!P8"
       },
       {
@@ -9638,7 +9665,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "Arabic",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "SHS!D23"
       },
       {
@@ -9646,7 +9673,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "SHS!N25"
       },
       {
@@ -9654,7 +9681,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "Arabic",
         "day": "Monday",
-        "time": "2:20-3:00 p.m.",
+        "time": "2:20 \u2013 3:00 PM",
         "source_cell": "SHS!E35"
       }
     ],
@@ -9673,7 +9700,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 9 & 10 GIRLS (FACE TO FACE)"
     ],
     "total_classes": 13,
-    "total_teaching_periods": 13
+    "total_teaching_periods": 13,
+    "rows": []
   },
   "tchr_abdulwahab": {
     "teacher_id": "tchr_abdulwahab",
@@ -9685,7 +9713,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Qur'an",
         "day": "Wednesday",
-        "time": "1:25-2:10 p.m.",
+        "time": "1:25 \u2013 2:10 PM",
         "source_cell": "HS SCHED (NEW)!G48"
       },
       {
@@ -9693,7 +9721,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "Qur'an",
         "day": "Monday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!E49"
       },
       {
@@ -9701,7 +9729,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Qur'an",
         "day": "Monday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!E58"
       },
       {
@@ -9709,7 +9737,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "Qur'an",
         "day": "Wednesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!G58"
       },
       {
@@ -9717,7 +9745,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "Qur'an",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!N43"
       },
       {
@@ -9725,7 +9753,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!M55"
       },
       {
@@ -9733,7 +9761,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!Y44"
       },
       {
@@ -9741,7 +9769,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!W55"
       },
       {
@@ -9749,7 +9777,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "Qur'an",
         "day": "Monday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!V66"
       },
       {
@@ -9757,7 +9785,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_1st_shift_girls",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "SHS!H23"
       },
       {
@@ -9765,7 +9793,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "Qur'an",
         "day": "Wednesday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "SHS!G38"
       }
     ],
@@ -9784,7 +9812,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS"
     ],
     "total_classes": 11,
-    "total_teaching_periods": 11
+    "total_teaching_periods": 11,
+    "rows": []
   },
   "tchr_angeleni": {
     "teacher_id": "tchr_angeleni",
@@ -9796,7 +9825,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "TLE",
         "day": "Sunday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!D49"
       },
       {
@@ -9804,7 +9833,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "TLE",
         "day": "Tuesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!F49"
       },
       {
@@ -9812,7 +9841,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "subject": "TLE",
         "day": "Wednesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "HS SCHED (NEW)!G49"
       },
       {
@@ -9820,7 +9849,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "TLE",
         "day": "Sunday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!D58"
       },
       {
@@ -9828,7 +9857,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "TLE",
         "day": "Tuesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!F58"
       },
       {
@@ -9836,7 +9865,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_10_boys_face_to_face",
         "subject": "TLE",
         "day": "Thursday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "HS SCHED (NEW)!H58"
       },
       {
@@ -9844,7 +9873,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
         "subject": "TLE",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!Q43"
       },
       {
@@ -9852,7 +9881,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
         "subject": "TLE",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!N55"
       },
       {
@@ -9860,7 +9889,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "TLE",
         "day": "Sunday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!U48"
       },
       {
@@ -9868,7 +9897,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
         "subject": "MAPEH",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!W48"
       },
       {
@@ -9876,7 +9905,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
         "subject": "TLE",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!X57"
       },
       {
@@ -9884,7 +9913,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
         "subject": "TLE",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!W70"
       }
     ],
@@ -9902,7 +9931,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS"
     ],
     "total_classes": 12,
-    "total_teaching_periods": 12
+    "total_teaching_periods": 12,
+    "rows": []
   },
   "tchr_aniah": {
     "teacher_id": "tchr_aniah",
@@ -9914,7 +9944,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "Sci",
         "day": "Monday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!N8"
       },
       {
@@ -9922,7 +9952,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "Sci",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!O8"
       },
       {
@@ -9930,7 +9960,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "Sci",
         "day": "Monday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!N21"
       },
       {
@@ -9938,7 +9968,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "Sci",
         "day": "Wednesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!P21"
       },
       {
@@ -9946,7 +9976,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "Sci",
         "day": "Tuesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!W11"
       },
       {
@@ -9954,7 +9984,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "Sci",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "HS SCHED (NEW)!X11"
       },
       {
@@ -9962,7 +9992,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Prac. Res. 2",
         "day": "Sunday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "SHS!M7"
       },
       {
@@ -9970,7 +10000,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Prac. Res. 2",
         "day": "Monday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "SHS!N7"
       },
       {
@@ -9978,7 +10008,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Prac. Res. 2",
         "day": "Tuesday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "SHS!O7"
       },
       {
@@ -9986,7 +10016,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Prac. Res. 2",
         "day": "Wednesday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "SHS!P7"
       },
       {
@@ -9994,7 +10024,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Prac. Res. 2",
         "day": "Thursday",
-        "time": "7:40-8:25 a.m.",
+        "time": "7:40 \u2013 8:25 AM",
         "source_cell": "SHS!Q7"
       },
       {
@@ -10002,7 +10032,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Prac. Res. 2",
         "day": "Sunday",
-        "time": "8:25-9:05 a.m.",
+        "time": "8:25 \u2013 9:05 AM",
         "source_cell": "SHS!M8"
       },
       {
@@ -10010,7 +10040,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Gen. Physics 1",
         "day": "Sunday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "SHS!M12"
       },
       {
@@ -10018,7 +10048,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Gen. Physics 1",
         "day": "Monday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "SHS!N12"
       },
       {
@@ -10026,7 +10056,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Gen. Physics 1",
         "day": "Tuesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "SHS!O12"
       },
       {
@@ -10034,7 +10064,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Gen. Physics 1",
         "day": "Wednesday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "SHS!P12"
       },
       {
@@ -10042,7 +10072,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Gen. Physics 1",
         "day": "Thursday",
-        "time": "10:45:11:30 a.m.",
+        "time": "10:45:11:30 AM",
         "source_cell": "SHS!Q12"
       },
       {
@@ -10050,7 +10080,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Gen. Physics 1",
         "day": "Thursday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "SHS!Q16"
       },
       {
@@ -10058,7 +10088,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "Gen. Physics 1",
         "day": "Sunday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "SHS!M23"
       },
       {
@@ -10066,7 +10096,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "Gen. Physics 1",
         "day": "Thursday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "SHS!Q23"
       },
       {
@@ -10074,7 +10104,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "Prac. Res. 2",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "SHS!M27"
       },
       {
@@ -10082,7 +10112,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "Prac. Res. 2",
         "day": "Tuesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "SHS!O27"
       },
       {
@@ -10090,7 +10120,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "Gen. Physics 1",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "SHS!P27"
       },
       {
@@ -10098,7 +10128,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "Prac. Res. 2",
         "day": "Sunday",
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 \u2013 03:40 PM",
         "source_cell": "SHS!M28"
       },
       {
@@ -10106,7 +10136,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "Prac. Res. 2",
         "day": "Tuesday",
-        "time": "03:00-03:40 p.m.",
+        "time": "03:00 \u2013 03:40 PM",
         "source_cell": "SHS!O28"
       },
       {
@@ -10114,7 +10144,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "Prac. Res. 2",
         "day": "Monday",
-        "time": "3:50 - 4:30 p.m.",
+        "time": "3:50 \u2013 4:30 PM",
         "source_cell": "SHS!N30"
       }
     ],
@@ -10131,7 +10161,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS"
     ],
     "total_classes": 26,
-    "total_teaching_periods": 26
+    "total_teaching_periods": 26,
+    "rows": []
   },
   "tchr_ethel": {
     "teacher_id": "tchr_ethel",
@@ -10143,7 +10174,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "Math",
         "day": "Sunday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!M12"
       },
       {
@@ -10151,7 +10182,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "HS SCHED (NEW)!P12"
       },
       {
@@ -10159,7 +10190,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "Math",
         "day": "Sunday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!M21"
       },
       {
@@ -10167,7 +10198,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "HS SCHED (NEW)!O21"
       },
       {
@@ -10175,7 +10206,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "Math",
         "day": "Tuesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!W13"
       },
       {
@@ -10183,7 +10214,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
         "subject": "Math",
         "day": "Wednesday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!X13"
       },
       {
@@ -10191,7 +10222,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "MIL",
         "day": "Sunday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "SHS!M9"
       },
       {
@@ -10199,7 +10230,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "MIL",
         "day": "Monday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "SHS!N9"
       },
       {
@@ -10207,7 +10238,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "MIL",
         "day": "Tuesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "SHS!O9"
       },
       {
@@ -10215,7 +10246,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "MIL",
         "day": "Wednesday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "SHS!P9"
       },
       {
@@ -10223,7 +10254,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "MIL",
         "day": "Thursday",
-        "time": "9:05-9:45 a.m.",
+        "time": "9:05 \u2013 9:45 AM",
         "source_cell": "SHS!Q9"
       },
       {
@@ -10231,7 +10262,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "MIL",
         "day": "Monday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "SHS!N27"
       },
       {
@@ -10239,7 +10270,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "MIL",
         "day": "Thursday",
-        "time": "02:20-03:00 p.m.",
+        "time": "02:20 \u2013 03:00 PM",
         "source_cell": "SHS!Q27"
       },
       {
@@ -10247,7 +10278,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "MIL",
         "day": "Sunday",
-        "time": "3:50 - 4:30 p.m.",
+        "time": "3:50 \u2013 4:30 PM",
         "source_cell": "SHS!M30"
       }
     ],
@@ -10263,7 +10294,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS"
     ],
     "total_classes": 14,
-    "total_teaching_periods": 14
+    "total_teaching_periods": 14,
+    "rows": []
   },
   "tchr_wardah": {
     "teacher_id": "tchr_wardah",
@@ -10275,7 +10307,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
         "subject": "Values Ed.",
         "day": "Tuesday",
-        "time": "12:40-01:20 p.m.",
+        "time": "12:40 \u2013 01:20 PM",
         "source_cell": "HS SCHED (NEW)!O31"
       },
       {
@@ -10283,7 +10315,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
         "subject": "Values Ed.",
         "day": "Thursday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "HS SCHED (NEW)!Y20"
       },
       {
@@ -10291,7 +10323,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
         "subject": "Values Ed.",
         "day": "Thursday",
-        "time": "5:20-6:00 p.m.",
+        "time": "5:20 \u2013 6:00 PM",
         "source_cell": "HS SCHED (NEW)!Y36"
       }
     ],
@@ -10304,7 +10336,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS"
     ],
     "total_classes": 3,
-    "total_teaching_periods": 3
+    "total_teaching_periods": 3,
+    "rows": []
   },
   "tchr_dipatuan": {
     "teacher_id": "tchr_dipatuan",
@@ -10316,7 +10349,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Qur'an",
         "day": "Sunday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "SHS!D16"
       },
       {
@@ -10324,7 +10357,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_face_to_face",
         "subject": "Qur'an",
         "day": "Thursday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "SHS!H16"
       },
       {
@@ -10332,7 +10365,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "SHS!O16"
       },
       {
@@ -10340,7 +10373,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_suhayb_ar_rumi",
         "subject": "Qur'an",
         "day": "Wednesday",
-        "time": "2:15-3:00 p.m.",
+        "time": "2:15 \u2013 3:00 PM",
         "source_cell": "SHS!P16"
       },
       {
@@ -10348,7 +10381,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_12_abu_musa_al_ashari",
         "subject": "Qur'an",
         "day": "Tuesday",
-        "time": "01:30-02:10 p.m.",
+        "time": "01:30 \u2013 02:10 PM",
         "source_cell": "SHS!O25"
       }
     ],
@@ -10361,7 +10394,8 @@ const ALL_TEACHERS_DATA = {
       "GRADE 12 - SUHAYB AR-RUMI"
     ],
     "total_classes": 5,
-    "total_teaching_periods": 5
+    "total_teaching_periods": 5,
+    "rows": []
   },
   "tchr_shirehan": {
     "teacher_id": "tchr_shirehan",
@@ -10373,7 +10407,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "PSKP 11",
         "day": "Sunday",
-        "time": "3:40-4:20 p.m.",
+        "time": "3:40 \u2013 4:20 PM",
         "source_cell": "SHS!D38"
       },
       {
@@ -10381,7 +10415,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "PSKP 11",
         "day": "Wednesday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "SHS!G40"
       },
       {
@@ -10389,7 +10423,7 @@ const ALL_TEACHERS_DATA = {
         "section_id": "sec_grade_11_2nd_shift_boys",
         "subject": "PSKP 11",
         "day": "Thursday",
-        "time": "4:30-5:10 p.m.",
+        "time": "4:30 \u2013 5:10 PM",
         "source_cell": "SHS!H40"
       }
     ],
@@ -10400,6 +10434,7 @@ const ALL_TEACHERS_DATA = {
       "GRADE 11 (2ND SHIFT BOYS)"
     ],
     "total_classes": 3,
-    "total_teaching_periods": 3
+    "total_teaching_periods": 3,
+    "rows": []
   }
 };
