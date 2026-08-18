@@ -103,6 +103,10 @@ for sec in sections:
             ('Hadith', list(sec_subjs.get('Hadith', ['Ustadh Hainur']))[0]),
         ]
         for subj_name, tchr_name in kinder_exams:
+            # Overrides
+            if 'KHABAAB' in sec_name.upper() and subj_name == 'Arabic':
+                tchr_name = 'Ustadh Faidh'
+
             t_res = resolve_teacher(tchr_name)
             tchr_canonical = t_res['canonical_name'] if t_res else tchr_name
             tchr_id = t_res['id'] if t_res else 'tchr_' + re.sub(r'[^a-zA-Z0-9]+', '_', tchr_name).strip('_').lower()
@@ -121,6 +125,17 @@ for sec in sections:
         for subj_name, tchrs in sec_subjs.items():
             valid_tchrs = [t for t in tchrs if t]
             tchr_name = valid_tchrs[0] if valid_tchrs else 'Assigned Faculty'
+
+            # Explicit Teacher Corrections
+            if 'AS\'AD' in sec_name.upper() or 'AS`AD' in sec_name.upper() or 'ASAD' in sec_name.upper():
+                if subj_name == 'GMRC': tchr_name = 'Ustadha Saliha'
+                if subj_name == 'Arabic': tchr_name = 'Ustadh Faidh'
+            if 'DIHYA' in sec_name.upper():
+                if subj_name == 'Math': tchr_name = 'Teacher Saimona'
+                if subj_name == 'SHAF': tchr_name = 'Ustadh Faidh'
+            if 'USAYD' in sec_name.upper():
+                if subj_name == 'English': tchr_name = 'Teacher Jenny'
+
             t_res = resolve_teacher(tchr_name)
             tchr_canonical = t_res['canonical_name'] if t_res else tchr_name
             tchr_id = t_res['id'] if t_res else 'tchr_' + re.sub(r'[^a-zA-Z0-9]+', '_', tchr_name).strip('_').lower()
@@ -130,6 +145,11 @@ for sec in sections:
                 continue
             seen_items.add(item_key)
             
+            # High School & SHS Math = 2 hours (120 min)
+            is_hs_or_shs = 'High School' in dept or 'Senior High' in dept or any(g in grade for g in ['Grade 7', 'Grade 8', 'Grade 9', 'Grade 10', 'Grade 11', 'Grade 12'])
+            is_math = any(m in subj_name.lower() for m in ['math', 'mathematics', 'calculus', 'statistics'])
+            duration_mins = 120 if (is_hs_or_shs and is_math) else 60
+
             all_exam_items.append({
                 'section_id': sec_id,
                 'section_name': sec_name,
@@ -139,7 +159,7 @@ for sec in sections:
                 'subject': subj_name,
                 'teacher': tchr_canonical,
                 'teacher_id': tchr_id,
-                'duration_minutes': 60
+                'duration_minutes': duration_mins
             })
 
 print(f"Loaded {len(all_exam_items)} curricular exam items across {len(sections)} sections.")
@@ -163,6 +183,12 @@ SHIFT_SLOTS = {
     ]
 }
 
+K2_1ST_SLOTS = [
+    {'slot_num': 1, 'time_slot': '01:30 PM – 02:30 PM', 'start_m': 810, 'end_m': 870},
+    {'slot_num': 2, 'time_slot': '02:40 PM – 03:40 PM', 'start_m': 880, 'end_m': 940},
+    {'slot_num': 3, 'time_slot': '03:50 PM – 04:50 PM', 'start_m': 950, 'end_m': 1010}
+]
+
 SHS_1ST_SLOTS = [
     {'slot_num': 1, 'time_slot': '12:40 PM – 01:40 PM', 'start_m': 760, 'end_m': 820},
     {'slot_num': 2, 'time_slot': '01:50 PM – 02:50 PM', 'start_m': 830, 'end_m': 890},
@@ -171,15 +197,17 @@ SHS_1ST_SLOTS = [
 ]
 
 def get_slots_for_item(item):
+    if 'Kinder' in item['grade_level'] and '1ST' in item['shift']:
+        return K2_1ST_SLOTS
     if 'Senior High' in item['department'] and item['shift'] == 'ODL - 1ST SHIFT':
         return SHS_1ST_SLOTS
     return SHIFT_SLOTS[item['shift']]
 
 EXAM_DAYS = [
-    {'day_num': 1, 'date_str': 'Monday, September 7, 2026', 'short_date': 'Sep 7', 'day_name': 'Monday'},
-    {'day_num': 2, 'date_str': 'Tuesday, September 8, 2026', 'short_date': 'Sep 8', 'day_name': 'Tuesday'},
-    {'day_num': 3, 'date_str': 'Wednesday, September 9, 2026', 'short_date': 'Sep 9', 'day_name': 'Wednesday'},
-    {'day_num': 4, 'date_str': 'Thursday, September 10, 2026', 'short_date': 'Sep 10', 'day_name': 'Thursday'}
+    {'day_num': 1, 'date_str': 'Wednesday, September 2, 2026', 'short_date': 'Sep 2', 'day_name': 'Wednesday', 'header': 'Day 1 • Wed, Sep 2'},
+    {'day_num': 2, 'date_str': 'Thursday, September 3, 2026', 'short_date': 'Sep 3', 'day_name': 'Thursday', 'header': 'Day 2 • Thu, Sep 3'},
+    {'day_num': 3, 'date_str': 'Sunday, September 6, 2026', 'short_date': 'Sep 6', 'day_name': 'Sunday', 'header': 'Day 3 • Sun, Sep 6'},
+    {'day_num': 4, 'date_str': 'Monday, September 7, 2026', 'short_date': 'Sep 7', 'day_name': 'Monday', 'header': 'Day 4 • Mon, Sep 7'}
 ]
 
 DAYS = [1, 2, 3, 4]

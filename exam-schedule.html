@@ -13,9 +13,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <!-- Embedded Master Datasets with Cache-Busting -->
-<script src="class_schedules_data.js?v=20260818_1155"></script>
-<script src="exam_data.js?v=20260818_1155"></script>
-<script src="teacher_weekly_schedules.js?v=20260818_1155"></script>
+<script src="class_schedules_data.js?v=20260819_0015"></script>
+<script src="exam_data.js?v=20260819_0015"></script>
+<script src="teacher_weekly_schedules.js?v=20260819_0015"></script>
 
 <style>
 :root {
@@ -129,29 +129,38 @@ body {
 }
 
 .filter-select {
-  padding: 6px 12px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
   background: #ffffff;
-  color: var(--ink);
+  color: #0f172a;
+  border: none;
+  font-size: 12.5px;
   font-weight: 750;
-  font-size: 13px;
+  border-radius: 6px;
+  padding: 5px 10px;
   outline: none;
   cursor: pointer;
+  max-width: 260px;
 }
 
-.filter-select-section {
-  min-width: 260px;
-  max-width: 360px;
+.filter-select:focus {
+  box-shadow: 0 0 0 2px #34d399;
+}
+
+.filter-select-teacher {
+  background: #f0fdf4;
+  color: #064e3b;
+  border: 1.5px solid #34d399;
+  font-weight: 800;
 }
 
 .btn-action {
-  padding: 7px 14px;
-  border-radius: 8px;
-  font-size: 13px;
+  background: #ffffff;
+  color: var(--brand-deep);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 12px;
   font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 6px;
   cursor: pointer;
-  border: 1.5px solid transparent;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -176,7 +185,7 @@ body {
   background: #f1f5f9;
 }
 
-/* Printable Container (A4 / Legal Landscape) */
+/* Printable Container */
 html, body {
   overflow-x: hidden;
   max-width: 100vw;
@@ -239,48 +248,49 @@ html, body {
 
 .school-header p {
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 750;
   color: var(--muted);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-top: 1px;
+  letter-spacing: 0.06em;
+  margin-top: 2px;
 }
 
-/* Teacher / Section Banner */
+/* Banner Strip */
 .teacher-banner {
-  background: var(--brand-deep);
+  background: var(--brand-green);
   color: #ffffff;
   padding: 10px 16px;
   border-radius: 8px 8px 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid var(--brand-deep);
-  border-bottom: 0;
+  gap: 10px;
+  border: 1.5px solid #043828;
+  border-bottom: none;
 }
 
 .teacher-name-title {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 900;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
 .teacher-meta-tag {
-  font-size: 12px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 3px 10px;
+  border-radius: 9999px;
+  font-size: 11px;
   font-weight: 800;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 4px 10px;
-  border-radius: 6px;
   letter-spacing: 0.02em;
 }
 
 .btn-fullscreen {
   background: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
   border-radius: 6px;
-  padding: 4px 8px;
+  padding: 5px 8px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -290,51 +300,45 @@ html, body {
 
 .btn-fullscreen:hover {
   background: rgba(255, 255, 255, 0.35);
-  transform: scale(1.05);
 }
 
 .btn-fullscreen svg {
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   fill: currentColor;
 }
 
+/* Fullscreen Mode */
 .timetable-sheet.is-fullscreen {
   position: fixed !important;
-  inset: 0 !important;
-  z-index: 99999 !important;
+  top: 0 !important;
+  left: 0 !important;
   width: 100vw !important;
-  max-width: 100vw !important;
-  min-height: 100vh !important;
   height: 100vh !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  z-index: 99999 !important;
   margin: 0 !important;
-  padding: 24px 36px !important;
-  background: #ffffff !important;
-  overflow-y: auto !important;
-  border: none !important;
   border-radius: 0 !important;
+  padding: 16px 20px !important;
+  overflow-y: auto !important;
+  background: #ffffff !important;
+  box-shadow: none !important;
   box-sizing: border-box !important;
   display: flex !important;
   flex-direction: column !important;
-  align-items: center !important;
 }
 
-.timetable-sheet.is-fullscreen > * {
-  width: 100% !important;
-  max-width: 1400px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  box-sizing: border-box !important;
+.timetable-sheet.is-fullscreen .table-responsive-wrapper {
+  flex: 1 1 auto !important;
+  overflow: auto !important;
 }
 
-/* Responsive Table Scroll Wrapper */
+/* Table Responsive Wrapper */
 .table-responsive-wrapper {
   width: 100%;
-  max-width: 100%;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  border-radius: 0 0 8px 8px;
-  border: 2px solid var(--brand-deep);
+  border: 1.5px solid var(--line-strong);
   border-top: none;
   background: #ffffff;
 }
@@ -356,7 +360,7 @@ html, body {
   background: #94a3b8;
 }
 
-/* Timetable Table Grid with Consistent Fixed Columns & Auto-Expanding Rows */
+/* Timetable Table Grid */
 .timetable-grid {
   width: 100%;
   min-width: 780px;
@@ -372,96 +376,87 @@ html, body {
   font-size: 13px;
   font-weight: 800;
   text-align: center;
-  padding: 8px 6px;
+  padding: 10px 8px;
   border: 1.5px solid #043828;
   letter-spacing: 0.02em;
-  white-space: normal;
-  overflow-wrap: break-word;
-  word-break: normal;
-  vertical-align: middle;
-  box-sizing: border-box;
+  white-space: nowrap;
 }
 
-.timetable-grid thead th.col-time {
+.timetable-grid thead th.col-day {
+  width: 175px;
+}
+
+.timetable-grid thead th.col-window {
   width: 165px;
-  min-width: 165px;
-  white-space: nowrap !important;
-}
-
-.timetable-grid thead th.col-mins {
-  width: 75px;
-  min-width: 75px;
-  white-space: nowrap !important;
 }
 
 .timetable-grid tbody tr {
-  min-height: 60px;
+  min-height: 70px;
   height: auto;
 }
 
 .timetable-grid tbody td {
   border: 1.5px solid var(--line-strong);
-  padding: 8px 10px;
+  padding: 10px 12px;
   text-align: center;
   font-size: 12px;
   vertical-align: middle;
-  white-space: normal;
-  overflow-wrap: break-word;
-  word-break: normal;
   box-sizing: border-box;
   height: auto;
-  min-height: 60px;
 }
 
-.timetable-grid tbody td.cell-time {
+.timetable-grid tbody td.cell-day {
   font-weight: 800;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--ink);
   background: #f8fafc;
   white-space: nowrap !important;
-  line-height: 1.2;
-  padding: 8px 6px;
+  line-height: 1.25;
 }
 
-.timetable-grid tbody td.cell-mins {
+.timetable-grid tbody td.cell-window {
   font-weight: 750;
-  font-size: 11.5px;
-  color: var(--muted);
+  font-size: 12px;
+  color: var(--ink-secondary);
   background: #f8fafc;
   white-space: nowrap !important;
-  padding: 8px 4px;
+  line-height: 1.25;
 }
 
-.timetable-grid tbody td.cell-break {
-  background: var(--break-bg);
-  color: var(--break-text);
-  font-weight: 850;
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 10px 12px;
-  line-height: 1.3;
-}
-
-.timetable-grid tbody td.cell-class {
-  font-weight: 600;
-  text-align: center;
-  padding: 10px 8px;
-  vertical-align: middle;
-  height: auto;
+/* ONE ROW CSS Grid for Multiple Subjects */
+.subject-row {
+  display: grid;
+  gap: 8px;
+  width: 100%;
   box-sizing: border-box;
+  align-items: stretch;
 }
 
-.cell-class-inner {
+.subject-60 {
+  grid-column: span 1;
+}
+
+.subject-120 {
+  grid-column: span 2;
+}
+
+.subject-card {
+  border-radius: 8px;
+  padding: 12px 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 4px;
-  width: 100%;
-  height: 100%;
-  min-height: 48px;
+  text-align: center;
+  min-height: 58px;
   box-sizing: border-box;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.subject-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .cell-subject-sec {
@@ -474,8 +469,7 @@ html, body {
   letter-spacing: -0.01em;
 }
 
-.cell-section-name,
-.cell-teacher-name {
+.cell-subtitle {
   font-size: 11.5px;
   line-height: 1.25;
   font-weight: 650;
@@ -485,121 +479,130 @@ html, body {
   opacity: 0.92;
 }
 
-.timetable-grid tbody td.cell-empty {
-  background: #ffffff;
-  min-height: 60px;
+.cell-duration-badge {
+  font-size: 10px;
+  font-weight: 800;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  margin-top: 3px;
+  letter-spacing: 0.02em;
 }
 
-/* Sheet Footer & Legend Strip */
+/* Footer / Legend Strip */
 .sheet-footer {
-  margin-top: 12px;
-  padding-top: 8px;
-  border-top: 1px dashed var(--line);
+  margin-top: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
   font-size: 11px;
   color: var(--muted);
-  font-weight: 600;
-  flex-wrap: wrap;
-  gap: 8px;
+  font-weight: 700;
+  border-top: 1.5px solid var(--line);
+  padding-top: 10px;
 }
 
 .legend-strip {
   display: flex;
-  align-items: center;
   gap: 12px;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .legend-box {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-weight: 750;
-  font-size: 11px;
-  color: var(--ink-secondary);
 }
 
 .legend-color-dot {
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   border-radius: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* Print Optimization */
 @media print {
-  .top-toolbar, .btn-fullscreen {
-    display: none !important;
-  }
   body {
-    background: #fff !important;
-    padding: 0 !important;
+    background: #fff;
+    padding: 0;
+  }
+  .top-toolbar {
+    display: none !important;
   }
   .page-sheet-container {
     max-width: 100% !important;
-    margin: 0 !important;
     padding: 0 !important;
+    margin: 0 !important;
     gap: 0 !important;
   }
   .timetable-sheet {
-    box-shadow: none !important;
     border: none !important;
-    padding: 8px 12px !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 12px 14px !important;
     page-break-after: always !important;
     break-after: page !important;
+  }
+  .btn-fullscreen {
+    display: none !important;
+  }
+  @page {
+    size: A4 landscape;
+    margin: 8mm;
   }
 }
 </style>
 </head>
 <body>
 
-<!-- Single Unified Top Navigation Toolbar (Exact class-schedule.html style) -->
+<!-- Single Unified Top Navigation Toolbar -->
 <header class="top-toolbar">
   <div class="brand-title">
-    <img src="amis_logo.png" alt="AMIS Logo" style="width:38px; height:38px; border-radius:50%; object-fit:contain; background:#ffffff; padding:1px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
+    <div class="brand-icon">AMIS</div>
     <div class="brand-text">
-      <h1>Official Exam Timetable</h1>
-      <p>Term Exam Week 2026 – 2027 • Official Schedule</p>
+      <h1>1st Term Examination Schedule</h1>
+      <p>S.Y. 2026 – 2027 • Official Schedule</p>
     </div>
   </div>
 
   <div class="toolbar-controls">
-    <!-- Staff / Faculty Selector -->
+    <!-- Staff / Faculty Filter -->
     <div class="filter-group">
       <span class="filter-label">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4A4 4 0 0 1 16 8A4 4 0 0 1 12 12A4 4 0 0 1 8 8A4 4 0 0 1 12 4M12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z"/></svg>
-        Staff / Faculty:
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        Faculty:
       </span>
-      <select id="teacherSelect" class="filter-select" style="min-width:180px; max-width:260px;" aria-label="Select Staff / Faculty">
+      <select id="teacherSelect" class="filter-select filter-select-teacher" aria-label="Filter by Faculty">
         <option value="">All Staff / Faculty</option>
       </select>
     </div>
 
-    <!-- Modality Selector -->
+    <!-- Modality Filter -->
     <div class="filter-group">
       <span class="filter-label">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/></svg>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
         Modality:
       </span>
       <select id="modalitySelect" class="filter-select" aria-label="Select Modality">
-        <option value="ALL" selected>All Modalities (F2F + ODL)</option>
+        <option value="ALL">All Modalities (F2F + ODL)</option>
         <option value="F2F">Face-to-Face (F2F)</option>
-        <option value="ODL">Online Distance (ODL)</option>
+        <option value="ODL">Online Distance Learning (ODL)</option>
       </select>
     </div>
 
-    <!-- Shift Selector (ODL) -->
-    <div class="filter-group" id="shiftGroup" style="display: none;">
+    <!-- Shift Filter -->
+    <div class="filter-group" id="shiftGroup" style="display:none;">
       <span class="filter-label">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12A10 10 0 0 0 12 22A10 10 0 0 0 22 12A10 10 0 0 0 12 2M12 4A8 8 0 0 1 20 12A8 8 0 0 1 12 20A8 8 0 0 1 4 12A8 8 0 0 1 12 4M12.5 7V12.25L17 14.92L16.25 16.15L11 13V7H12.5Z"/></svg>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
         Shift:
       </span>
-      <select id="shiftSelect" class="filter-select" aria-label="Select ODL Shift">
-        <option value="ODL1">1st Shift (12:30 PM)</option>
-        <option value="ODL2">2nd Shift (03:00 PM)</option>
-        <option value="ODL_ALL">All ODL Shifts</option>
+      <select id="shiftSelect" class="filter-select" aria-label="Select Shift">
+        <option value="ALL">All ODL Shifts (1st + 2nd)</option>
+        <option value="ODL1">1st Shift (Afternoon)</option>
+        <option value="ODL2">2nd Shift (Late Afternoon)</option>
       </select>
     </div>
 
@@ -632,11 +635,12 @@ html, body {
 
 <script>
 (function() {
+  // Corrected Official Exam Dates
   const EXAM_DATES = [
-    { day_num: 1, short_date: 'Sep 7', day_name: 'Monday', header: 'Day 1 • Mon, Sep 7' },
-    { day_num: 2, short_date: 'Sep 8', day_name: 'Tuesday', header: 'Day 2 • Tue, Sep 8' },
-    { day_num: 3, short_date: 'Sep 9', day_name: 'Wednesday', header: 'Day 3 • Wed, Sep 9' },
-    { day_num: 4, short_date: 'Sep 10', day_name: 'Thursday', header: 'Day 4 • Thu, Sep 10' }
+    { day_num: 1, short_date: 'Sep 2', day_name: 'Wednesday', header: 'Day 1 • Wed, Sep 2', date_str: 'Wednesday, September 2, 2026' },
+    { day_num: 2, short_date: 'Sep 3', day_name: 'Thursday', header: 'Day 2 • Thu, Sep 3', date_str: 'Thursday, September 3, 2026' },
+    { day_num: 3, short_date: 'Sep 6', day_name: 'Sunday', header: 'Day 3 • Sun, Sep 6', date_str: 'Sunday, September 6, 2026' },
+    { day_num: 4, short_date: 'Sep 7', day_name: 'Monday', header: 'Day 4 • Mon, Sep 7', date_str: 'Monday, September 7, 2026' }
   ];
 
   let SECTIONS_DATA = [];
@@ -730,14 +734,6 @@ html, body {
     return s;
   }
 
-  function formatModalityShift(shift) {
-    if (!shift) return '';
-    if (shift.includes('F2F') || shift.includes('FACE')) return 'F2F (Morning)';
-    if (shift.includes('1ST') || shift.includes('1st')) return 'ODL 1st Shift (Afternoon)';
-    if (shift.includes('2ND') || shift.includes('2nd')) return 'ODL 2nd Shift (Afternoon)';
-    return shift;
-  }
-
   async function init() {
     try {
       const sResp = await fetch('class_schedules_data.json?v=' + Date.now());
@@ -763,65 +759,43 @@ html, body {
       if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
     }
 
-    if (!SECTIONS_DATA || SECTIONS_DATA.length === 0) {
-      sheetsContainer.innerHTML = '<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">No exam schedule data available.</div>';
-      return;
-    }
-
     populateTeacherDropdown();
-
-    const urlParams = new URLSearchParams(window.location.search);
-    let initTeacher = urlParams.get('teacher') || '';
-    let initModality = urlParams.get('modality') || 'ALL';
-    let initShift = urlParams.get('shift') || 'ODL1';
-    let initSec = urlParams.get('section') || 'ALL_GROUP';
-
-    if (initTeacher) {
-      teacherSelect.value = initTeacher;
-    } else {
-      modalitySelect.value = ['F2F', 'ODL', 'ALL'].includes(initModality.toUpperCase()) ? initModality.toUpperCase() : 'ALL';
-      shiftSelect.value = ['ODL1', 'ODL2', 'ODL_ALL'].includes(initShift.toUpperCase()) ? initShift.toUpperCase() : 'ODL1';
-    }
-
-    updateShiftVisibility();
     populateSectionDropdown();
 
-    if (initSec && !initTeacher) {
-      sectionSelect.value = initSec;
-      if (!sectionSelect.value) sectionSelect.selectedIndex = 0;
-    }
-
-    renderCurrentView();
-
     teacherSelect.addEventListener('change', () => {
+      if (teacherSelect.value) {
+        sectionSelect.disabled = true;
+        modalitySelect.disabled = true;
+        shiftSelect.disabled = true;
+      } else {
+        sectionSelect.disabled = false;
+        modalitySelect.disabled = false;
+        shiftSelect.disabled = false;
+      }
       renderCurrentView();
     });
 
     modalitySelect.addEventListener('change', () => {
-      teacherSelect.value = '';
-      updateShiftVisibility();
+      if (modalitySelect.value === 'ODL') {
+        shiftGroup.style.display = 'inline-flex';
+      } else {
+        shiftGroup.style.display = 'none';
+        shiftSelect.value = 'ALL';
+      }
       populateSectionDropdown();
       renderCurrentView();
     });
 
     shiftSelect.addEventListener('change', () => {
-      teacherSelect.value = '';
       populateSectionDropdown();
       renderCurrentView();
     });
 
     sectionSelect.addEventListener('change', () => {
-      teacherSelect.value = '';
       renderCurrentView();
     });
-  }
 
-  function updateShiftVisibility() {
-    if (modalitySelect.value === 'ODL') {
-      shiftGroup.style.display = 'flex';
-    } else {
-      shiftGroup.style.display = 'none';
-    }
+    renderCurrentView();
   }
 
   function populateTeacherDropdown() {
@@ -891,26 +865,6 @@ html, body {
       return;
     }
 
-    const masterSlots = [
-      { time: '07:30 AM – 07:45 AM', mins: '15 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
-      { time: '08:00 AM – 09:00 AM', mins: '60 min.', type: 'exam', slot_id: 'f2f_s1' },
-      { time: '09:00 AM – 10:00 AM', mins: '60 min.', type: 'exam', slot_id: 'f2f_s2' },
-      { time: '10:00 AM – 10:25 AM', mins: '25 min.', type: 'break', label: 'RECESS' },
-      { time: '10:25 AM – 11:25 AM', mins: '60 min.', type: 'exam', slot_id: 'f2f_s3' },
-      { time: '11:25 AM', mins: '--', type: 'break', label: 'FACE TO FACE DISMISSAL' },
-      { time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
-      { time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_id: 'odl1_s1' },
-      { time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
-      { time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_id: 'odl1_s2' },
-      { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION AND SALAH' },
-      { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_id: 'odl1_s3_odl2_s1' },
-      { time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
-      { time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_id: 'odl2_s2_shs_s4' },
-      { time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
-      { time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_id: 'odl2_s3' },
-      { time: '06:30 PM', mins: '--', type: 'break', label: 'DISMISSAL' }
-    ];
-
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     let fullHtml = '';
 
@@ -918,6 +872,7 @@ html, body {
       const tExams = EXAM_RECORDS.filter(e => e.teacher_id === tid);
       const teacherName = tExams.length > 0 ? tExams[0].teacher : (ALL_TEACHERS_DATA[tid] ? ALL_TEACHERS_DATA[tid].name : tid);
       const teacherDept = tExams.length > 0 ? tExams[0].department : (ALL_TEACHERS_DATA[tid] ? ALL_TEACHERS_DATA[tid].department : 'Faculty');
+      const examDutyCount = tExams.length; // True count of exam duties (Math is 1 duty)
 
       fullHtml += `
         <div class="timetable-sheet" id="sheet_${tid}">
@@ -930,7 +885,7 @@ html, body {
           <div class="teacher-banner">
             <span class="teacher-name-title">${esc(teacherName.toUpperCase())}</span>
             <div style="display:flex; align-items:center; gap:8px;">
-              <span class="teacher-meta-tag">${esc(teacherDept)} • ${tExams.length} Exam Duties • ✓ 0 Conflicts</span>
+              <span class="teacher-meta-tag">${esc(teacherDept)} • ${examDutyCount} Exam Duties • ✓ 0 Conflicts</span>
               <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
                 <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
                 <svg class="icon-compress" viewBox="0 0 24 24" style="display:none;"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
@@ -942,48 +897,58 @@ html, body {
             <table class="timetable-grid">
               <thead>
                 <tr>
-                  <th class="col-time">Time</th>
-                  <th class="col-mins">Minutes</th>
-                  ${EXAM_DATES.map(d => `<th>${esc(d.header)}</th>`).join('')}
+                  <th class="col-day">Day &amp; Date</th>
+                  <th class="col-window">Schedule Window</th>
+                  <th>Exam Duty &amp; Duration Allocation (1 Visual Cell = 60 min.)</th>
                 </tr>
               </thead>
               <tbody>
       `;
 
-      masterSlots.forEach(slot => {
-        if (slot.type === 'break') {
+      EXAM_DATES.forEach(d => {
+        const dayExams = tExams.filter(e => (e.day_number === d.day_num || e.short_date === d.short_date));
+        dayExams.sort((a, b) => (a.slot_number || 0) - (b.slot_number || 0));
+
+        if (dayExams.length === 0) {
           fullHtml += `
             <tr>
-              <td class="cell-time">${esc(slot.time)}</td>
-              <td class="cell-mins">${esc(slot.mins)}</td>
-              <td class="cell-break" colspan="4">${esc(slot.label)}</td>
+              <td class="cell-day">${esc(d.header)}</td>
+              <td class="cell-window">--</td>
+              <td style="color:#94a3b8; font-weight:600; font-size:12.5px; text-align:center; padding:18px;">
+                No Examination Duty Scheduled
+              </td>
             </tr>
           `;
         } else {
+          const totalUnits = dayExams.reduce((sum, e) => sum + Math.max(1, Math.round((e.duration_minutes || 60) / 60)), 0);
+          const firstSlot = dayExams[0].time_slot || dayExams[0].time || '';
+          const lastSlot = dayExams[dayExams.length - 1].time_slot || dayExams[dayExams.length - 1].time || '';
+          const startTime = firstSlot.includes('–') ? firstSlot.split('–')[0].trim() : firstSlot;
+          const endTime = lastSlot.includes('–') ? lastSlot.split('–')[1].trim() : lastSlot;
+          const windowStr = `${startTime} – ${endTime}`;
+
           fullHtml += `
             <tr>
-              <td class="cell-time">${esc(slot.time)}</td>
-              <td class="cell-mins">${esc(slot.mins)}</td>
+              <td class="cell-day">${esc(d.header)}</td>
+              <td class="cell-window">${esc(windowStr)}</td>
+              <td style="padding: 8px 10px; vertical-align: middle;">
+                <div class="subject-row" style="display: grid; grid-template-columns: repeat(${totalUnits}, 1fr); gap: 8px; width: 100%;">
+                  ${dayExams.map(e => {
+                    const units = Math.max(1, Math.round((e.duration_minutes || 60) / 60));
+                    const color = getSubjectColor(e.subject);
+                    const spanClass = units > 1 ? 'subject-' + (units * 60) : 'subject-60';
+                    return `
+                      <div class="subject-card ${spanClass}" style="grid-column: span ${units}; background:${color.bg}; border:1.5px solid ${color.border}; color:${color.text};">
+                        <span class="cell-subject-sec">${esc(e.subject.toUpperCase())}</span>
+                        <span class="cell-subtitle">${esc(cleanSectionName(e.section_name))}</span>
+                        <span class="cell-duration-badge">${e.duration_minutes || 60} min.</span>
+                      </div>
+                    `;
+                  }).join('')}
+                </div>
+              </td>
+            </tr>
           `;
-
-          EXAM_DATES.forEach(d => {
-            const match = tExams.find(e => (e.day_number === d.day_num || e.short_date === d.short_date) && (e.time_slot === slot.time || e.time === slot.time));
-            if (match) {
-              const color = getSubjectColor(match.subject);
-              fullHtml += `
-                <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
-                  <div class="cell-class-inner">
-                    <span class="cell-subject-sec">${esc(match.subject)}</span>
-                    <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                  </div>
-                </td>
-              `;
-            } else {
-              fullHtml += `<td class="cell-empty"></td>`;
-            }
-          });
-
-          fullHtml += `</tr>`;
         }
       });
 
@@ -1042,48 +1007,8 @@ html, body {
     let fullHtml = '';
 
     targetSections.forEach(sec => {
-      const isF2F = sec.shift === 'F2F';
-      const isODL1 = sec.shift === 'ODL - 1ST SHIFT';
-      const isODL2 = sec.shift === 'ODL - 2ND SHIFT';
-      const isSHS = sec.department && sec.department.includes('Senior High');
-
-      let timeRows = [];
-      if (isF2F) {
-        timeRows = [
-          { time: '07:30 AM – 07:45 AM', mins: '15 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
-          { time: '08:00 AM – 09:00 AM', mins: '60 min.', type: 'exam', slot_num: 1 },
-          { time: '09:00 AM – 10:00 AM', mins: '60 min.', type: 'exam', slot_num: 2 },
-          { time: '10:00 AM – 10:25 AM', mins: '25 min.', type: 'break', label: 'RECESS' },
-          { time: '10:25 AM – 11:25 AM', mins: '60 min.', type: 'exam', slot_num: 3 },
-          { time: '11:25 AM', mins: '--', type: 'break', label: 'DISMISSAL' }
-        ];
-      } else if (isODL1) {
-        timeRows = [
-          { time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
-          { time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
-          { time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
-          { time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
-          { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION AND SALAH BREAK' },
-          { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3 }
-        ];
-        if (isSHS) {
-          timeRows.push({ time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' });
-          timeRows.push({ time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 4 });
-        }
-        timeRows.push({ time: isSHS ? '05:20 PM' : '04:10 PM', mins: '--', type: 'break', label: 'DISMISSAL' });
-      } else if (isODL2) {
-        timeRows = [
-          { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'GENERAL ASSEMBLY & SALAH BREAK' },
-          { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
-          { time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
-          { time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
-          { time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
-          { time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_num: 3 },
-          { time: '06:30 PM', mins: '--', type: 'break', label: 'DISMISSAL' }
-        ];
-      }
-
       const secExams = EXAM_RECORDS.filter(e => e.section_id === sec.id);
+      const totalSubjectCount = secExams.length; // True count: Math is 1 subject
 
       fullHtml += `
         <div class="timetable-sheet" id="sheet_${sec.id}">
@@ -1096,7 +1021,7 @@ html, body {
           <div class="teacher-banner">
             <span class="teacher-name-title">${esc(sec.section_name.toUpperCase())}</span>
             <div style="display:flex; align-items:center; gap:8px;">
-              <span class="teacher-meta-tag">${esc(sec.department)} • ${esc(sec.shift)} • ${secExams.length} Subjects</span>
+              <span class="teacher-meta-tag">${esc(sec.department)} • ${esc(sec.shift)} • ${totalSubjectCount} Subjects • ✓ 0 Conflicts</span>
               <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
                 <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
                 <svg class="icon-compress" viewBox="0 0 24 24" style="display:none;"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
@@ -1108,48 +1033,58 @@ html, body {
             <table class="timetable-grid">
               <thead>
                 <tr>
-                  <th class="col-time">Time</th>
-                  <th class="col-mins">Minutes</th>
-                  ${EXAM_DATES.map(d => `<th>${esc(d.header)}</th>`).join('')}
+                  <th class="col-day">Day &amp; Date</th>
+                  <th class="col-window">Schedule Window</th>
+                  <th>Examination Subject Allocation (1 Visual Cell = 60 min.)</th>
                 </tr>
               </thead>
               <tbody>
       `;
 
-      timeRows.forEach(row => {
-        if (row.type === 'break') {
+      EXAM_DATES.forEach(d => {
+        const dayExams = secExams.filter(e => (e.day_number === d.day_num || e.short_date === d.short_date));
+        dayExams.sort((a, b) => (a.slot_number || 0) - (b.slot_number || 0));
+
+        if (dayExams.length === 0) {
           fullHtml += `
             <tr>
-              <td class="cell-time">${esc(row.time)}</td>
-              <td class="cell-mins">${esc(row.mins)}</td>
-              <td class="cell-break" colspan="4">${esc(row.label)}</td>
+              <td class="cell-day">${esc(d.header)}</td>
+              <td class="cell-window">--</td>
+              <td style="color:#94a3b8; font-weight:600; font-size:12.5px; text-align:center; padding:18px;">
+                No Examination Scheduled
+              </td>
             </tr>
           `;
         } else {
+          const totalUnits = dayExams.reduce((sum, e) => sum + Math.max(1, Math.round((e.duration_minutes || 60) / 60)), 0);
+          const firstSlot = dayExams[0].time_slot || dayExams[0].time || '';
+          const lastSlot = dayExams[dayExams.length - 1].time_slot || dayExams[dayExams.length - 1].time || '';
+          const startTime = firstSlot.includes('–') ? firstSlot.split('–')[0].trim() : firstSlot;
+          const endTime = lastSlot.includes('–') ? lastSlot.split('–')[1].trim() : lastSlot;
+          const windowStr = `${startTime} – ${endTime}`;
+
           fullHtml += `
             <tr>
-              <td class="cell-time">${esc(row.time)}</td>
-              <td class="cell-mins">${esc(row.mins)}</td>
+              <td class="cell-day">${esc(d.header)}</td>
+              <td class="cell-window">${esc(windowStr)}</td>
+              <td style="padding: 8px 10px; vertical-align: middle;">
+                <div class="subject-row" style="display: grid; grid-template-columns: repeat(${totalUnits}, 1fr); gap: 8px; width: 100%;">
+                  ${dayExams.map(e => {
+                    const units = Math.max(1, Math.round((e.duration_minutes || 60) / 60));
+                    const color = getSubjectColor(e.subject);
+                    const spanClass = units > 1 ? 'subject-' + (units * 60) : 'subject-60';
+                    return `
+                      <div class="subject-card ${spanClass}" style="grid-column: span ${units}; background:${color.bg}; border:1.5px solid ${color.border}; color:${color.text};">
+                        <span class="cell-subject-sec">${esc(e.subject.toUpperCase())}</span>
+                        <span class="cell-subtitle">${esc(e.teacher)}</span>
+                        <span class="cell-duration-badge">${e.duration_minutes || 60} min.</span>
+                      </div>
+                    `;
+                  }).join('')}
+                </div>
+              </td>
+            </tr>
           `;
-
-          EXAM_DATES.forEach(d => {
-            const match = secExams.find(e => (e.day_number === d.day_num || e.short_date === d.short_date) && e.slot_number === row.slot_num);
-            if (match) {
-              const color = getSubjectColor(match.subject);
-              fullHtml += `
-                <td class="cell-class" style="background:${color.bg}; border-color:${color.border}; color:${color.text};">
-                  <div class="cell-class-inner">
-                    <span class="cell-subject-sec">${esc(match.subject)}</span>
-                    <span class="cell-teacher-name">${esc(match.teacher)}</span>
-                  </div>
-                </td>
-              `;
-            } else {
-              fullHtml += `<td class="cell-empty"></td>`;
-            }
-          });
-
-          fullHtml += `</tr>`;
         }
       });
 
