@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
 """
 assemble_index.py
-Builds the official home dashboard with:
-- Class Schedule & Exam Schedule Gateway Cards
-- Live Anti-Conflict & Duplicate Detector Status Bar
-- Complete Faculty Directory with Assigned Subjects, Teaching Loads, and Checkmark Verification
+Builds the clean, professional home gateway for AMIS Schedule Management System.
 """
 
 import json
 import os
-import re
 
 BASE_DIR = "/home/tatsuya/Projects/AMIS/amis_exam_calendar"
 
@@ -22,53 +18,16 @@ with open(os.path.join(BASE_DIR, "exam_data.json"), "r", encoding="utf-8") as f:
 with open(os.path.join(BASE_DIR, "class_schedules_data.json"), "r", encoding="utf-8") as f:
     class_data = json.load(f)
 
-# Compute live audit metrics
 total_sections = len(class_data)
 total_exam_sessions = len(exam_data)
 active_faculty_count = len([t for t in teacher_data.values() if t.get('total_classes', 0) > 0])
-
-# Prepare faculty list sorted by department and name
-faculty_list = []
-for tid, tinfo in teacher_data.items():
-    # Group assigned subjects with sections
-    subj_section_map = {}
-    for p in tinfo.get('periods', []):
-        s_name = p.get('subject', 'Subject')
-        sec_name = p.get('section_name', '')
-        shift = p.get('shift', '')
-        key = (s_name, sec_name, shift)
-        subj_section_map[key] = subj_section_map.get(key, 0) + 1
-        
-    assignments = []
-    for (s_name, sec_name, shift), cnt in sorted(subj_section_map.items()):
-        assignments.append({
-            'subject': s_name,
-            'section': sec_name,
-            'shift': shift,
-            'periods_per_week': cnt
-        })
-        
-    exam_count = len([e for e in exam_data if e.get('teacher_id') == tid])
-    
-    faculty_list.append({
-        'id': tid,
-        'name': tinfo.get('name', tinfo.get('canonical_name', 'Faculty')),
-        'department': tinfo.get('department', 'Faculty'),
-        'total_classes': tinfo.get('total_classes', 0),
-        'total_exams': exam_count,
-        'assignments': assignments,
-        'conflict_status': '0 Conflicts (Verified)',
-        'duplicate_status': '0 Duplicates (Verified)'
-    })
-
-faculty_list.sort(key=lambda x: (x['department'], -x['total_classes'], x['name']))
 
 html_content = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AL MUNAWWARA ISLAMIC SCHOOL — Schedule & Faculty Verification Portal</title>
+  <title>AL MUNAWWARA ISLAMIC SCHOOL — Schedule Management System</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,7 +62,7 @@ html_content = f'''<!DOCTYPE html>
       
       --shadow-card: 0 4px 20px rgba(15, 23, 42, 0.06);
       --shadow-hover: 0 16px 36px -4px rgba(15, 23, 42, 0.12);
-      --transition: all 200ms cubic-bezier(0.16, 1, 0.3, 1);
+      --transition: all 250ms cubic-bezier(0.16, 1, 0.3, 1);
     }}
 
     * {{
@@ -120,6 +79,7 @@ html_content = f'''<!DOCTYPE html>
       display: flex;
       flex-direction: column;
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }}
 
     .top-bar {{
@@ -129,17 +89,21 @@ html_content = f'''<!DOCTYPE html>
     }}
 
     .main-wrapper {{
-      max-width: 1120px;
+      max-width: 1020px;
       width: 100%;
       margin: 0 auto;
-      padding: 36px 20px 48px 20px;
+      padding: 40px 24px 32px 24px;
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }}
 
     /* Header */
     .hero-header {{
       text-align: center;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -147,42 +111,56 @@ html_content = f'''<!DOCTYPE html>
 
     .logo-container {{
       position: relative;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
       display: inline-block;
     }}
 
     .school-official-logo {{
-      width: 90px;
-      height: 90px;
+      width: 96px;
+      height: 96px;
       border-radius: 50%;
       object-fit: contain;
       filter: drop-shadow(0 6px 16px rgba(6, 78, 59, 0.2));
+      transition: var(--transition);
       background: #ffffff;
       padding: 2px;
     }}
 
+    .school-official-logo:hover {{
+      transform: scale(1.04) rotate(2deg);
+    }}
+
     .school-name {{
-      font-size: 23px;
+      font-size: 24px;
       font-weight: 900;
       letter-spacing: 0.04em;
       color: var(--brand-primary);
       text-transform: uppercase;
       line-height: 1.2;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
     }}
 
     .system-title {{
-      font-size: 15.5px;
+      font-size: 16px;
       font-weight: 800;
       color: var(--text-secondary);
       letter-spacing: 0.01em;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
+    }}
+
+    .system-desc {{
+      font-size: 13.5px;
+      color: var(--text-muted);
+      font-weight: 500;
+      max-width: 500px;
+      line-height: 1.5;
+      margin-bottom: 14px;
     }}
 
     /* System Integrity & Anti-Conflict Banner */
     .integrity-banner {{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 12px;
       width: 100%;
       margin-bottom: 28px;
@@ -191,30 +169,30 @@ html_content = f'''<!DOCTYPE html>
     .integrity-pill {{
       background: #ffffff;
       border: 1.5px solid #a7f3d0;
-      padding: 12px 16px;
+      padding: 10px 14px;
       border-radius: var(--radius-md);
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       box-shadow: 0 2px 10px rgba(6, 78, 59, 0.04);
     }}
 
     .pill-icon {{
-      width: 32px;
-      height: 32px;
+      width: 28px;
+      height: 28px;
       border-radius: 50%;
       background: #dcfce7;
       color: #059669;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 900;
       flex-shrink: 0;
     }}
 
     .pill-content h4 {{
-      font-size: 11.5px;
+      font-size: 10.5px;
       font-weight: 700;
       color: var(--text-muted);
       text-transform: uppercase;
@@ -222,7 +200,7 @@ html_content = f'''<!DOCTYPE html>
     }}
 
     .pill-content p {{
-      font-size: 14.5px;
+      font-size: 13.5px;
       font-weight: 800;
       color: var(--brand-primary);
     }}
@@ -231,16 +209,16 @@ html_content = f'''<!DOCTYPE html>
     .cards-container {{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
+      gap: 24px;
       width: 100%;
-      margin-bottom: 36px;
+      margin-bottom: 20px;
     }}
 
     .card {{
       background: var(--surface);
       border: 1.5px solid var(--line);
       border-radius: var(--radius-xl);
-      padding: 24px;
+      padding: 28px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -254,17 +232,37 @@ html_content = f'''<!DOCTYPE html>
       box-shadow: var(--shadow-hover);
     }}
 
-    .card-class {{ border-top: 4px solid var(--brand-accent); }}
-    .card-exam {{ border-top: 4px solid var(--exam-accent); }}
+    .card-class {{
+      border-top: 4px solid var(--brand-accent);
+    }}
+
+    .card-class:hover {{
+      border-color: #5eead4;
+      border-top-color: var(--brand-accent);
+    }}
+
+    .card-exam {{
+      border-top: 4px solid var(--exam-accent);
+    }}
+
+    .card-exam:hover {{
+      border-color: #93c5fd;
+      border-top-color: var(--exam-accent);
+    }}
+
+    .card-body {{
+      margin-bottom: 24px;
+    }}
 
     .card-icon {{
-      width: 44px;
-      height: 44px;
+      width: 50px;
+      height: 50px;
       border-radius: var(--radius-md);
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
+      transition: var(--transition);
     }}
 
     .card-class .card-icon {{
@@ -279,28 +277,32 @@ html_content = f'''<!DOCTYPE html>
       border: 1px solid var(--exam-border);
     }}
 
-    .card-icon svg {{ width: 22px; height: 22px; stroke-width: 2; }}
+    .card-icon svg {{
+      width: 26px;
+      height: 26px;
+      stroke-width: 2;
+    }}
 
     .card-heading {{
-      font-size: 18px;
+      font-size: 19px;
       font-weight: 800;
       color: var(--text);
-      margin-bottom: 6px;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
     }}
 
     .card-text {{
-      font-size: 13px;
+      font-size: 13.5px;
       color: var(--text-secondary);
-      line-height: 1.5;
-      margin-bottom: 16px;
+      line-height: 1.55;
+      margin-bottom: 18px;
     }}
 
     .feature-list {{
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 7px;
-      margin-bottom: 20px;
+      gap: 8px;
     }}
 
     .feature-list li {{
@@ -313,19 +315,30 @@ html_content = f'''<!DOCTYPE html>
     }}
 
     .feature-list li svg {{
-      width: 14px;
-      height: 14px;
+      width: 15px;
+      height: 15px;
       flex-shrink: 0;
     }}
 
-    .card-class .feature-list li svg {{ color: #059669; }}
-    .card-exam .feature-list li svg {{ color: #2563eb; }}
+    .card-class .feature-list li svg {{
+      color: #059669;
+    }}
+
+    .card-exam .feature-list li svg {{
+      color: #2563eb;
+    }}
+
+    .card-footer {{
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }}
 
     .btn-main {{
       width: 100%;
-      padding: 11px 16px;
+      padding: 12px 18px;
       border-radius: var(--radius-sm);
-      font-size: 13.5px;
+      font-size: 14px;
       font-weight: 800;
       display: flex;
       align-items: center;
@@ -340,258 +353,79 @@ html_content = f'''<!DOCTYPE html>
       background: var(--brand-primary);
       color: #ffffff;
     }}
+
     .btn-class:hover {{
       background: var(--brand-primary-hover);
+      box-shadow: 0 4px 14px rgba(6, 78, 59, 0.3);
     }}
 
     .btn-exam {{
       background: var(--exam-primary);
       color: #ffffff;
     }}
+
     .btn-exam:hover {{
       background: var(--exam-primary-hover);
+      box-shadow: 0 4px 14px rgba(30, 58, 138, 0.3);
     }}
 
-    /* Faculty Directory Section */
-    .section-title-wrap {{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 16px;
-      flex-wrap: wrap;
-      gap: 12px;
+    .btn-main svg {{
+      width: 16px;
+      height: 16px;
+      stroke-width: 2.5;
+      transition: transform 200ms ease;
     }}
 
-    .section-title {{
-      font-size: 18px;
-      font-weight: 900;
-      color: var(--brand-primary);
-      display: flex;
-      align-items: center;
-      gap: 8px;
+    .card:hover .btn-main svg {{
+      transform: translateX(4px);
     }}
 
-    .filter-search-bar {{
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }}
-
-    .search-input {{
-      padding: 8px 14px;
-      border-radius: var(--radius-sm);
-      border: 1.5px solid var(--line-strong);
-      font-size: 13px;
-      font-family: inherit;
-      outline: none;
-      min-width: 220px;
-      background: #ffffff;
-    }}
-
-    .search-input:focus {{
-      border-color: var(--brand-primary);
-      box-shadow: 0 0 0 3px rgba(6, 78, 59, 0.1);
-    }}
-
-    .dept-btn-group {{
-      display: flex;
-      gap: 6px;
-      background: #e2e8f0;
-      padding: 3px;
-      border-radius: var(--radius-sm);
-    }}
-
-    .dept-btn {{
-      padding: 6px 12px;
-      font-size: 12px;
-      font-weight: 700;
-      border-radius: 6px;
-      border: none;
-      background: transparent;
-      color: var(--text-secondary);
-      cursor: pointer;
-      transition: var(--transition);
-    }}
-
-    .dept-btn.active {{
-      background: #ffffff;
-      color: var(--brand-primary);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }}
-
-    .faculty-grid {{
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 16px;
-    }}
-
-    .faculty-card {{
-      background: #ffffff;
-      border: 1.5px solid var(--line);
-      border-radius: var(--radius-md);
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-      transition: var(--transition);
-    }}
-
-    .faculty-card:hover {{
-      border-color: var(--brand-border);
-      box-shadow: 0 6px 20px rgba(6, 78, 59, 0.08);
-    }}
-
-    .faculty-head {{
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 12px;
-    }}
-
-    .faculty-name-title {{
-      font-size: 15px;
-      font-weight: 800;
-      color: var(--text);
-    }}
-
-    .faculty-dept-tag {{
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 9999px;
-      background: var(--brand-surface);
-      color: var(--brand-primary);
-      border: 1px solid var(--brand-border);
-      margin-top: 3px;
-    }}
-
-    .badge-conflict-free {{
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 11px;
-      font-weight: 800;
-      color: #047857;
-      background: #ecfdf5;
-      padding: 3px 8px;
-      border-radius: 9999px;
-      border: 1px solid #a7f3d0;
-      white-space: nowrap;
-    }}
-
-    .assigned-subjects-title {{
-      font-size: 11.5px;
-      font-weight: 800;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-      margin-bottom: 6px;
-    }}
-
-    .subject-pill-list {{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 14px;
-    }}
-
-    .subj-tag {{
-      font-size: 11.5px;
-      font-weight: 700;
-      padding: 3px 8px;
-      border-radius: 6px;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      color: #334155;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-    }}
-
-    .subj-tag .check-icon {{
-      color: #10b981;
-      font-weight: 900;
-    }}
-
-    .faculty-actions {{
-      display: flex;
-      gap: 8px;
-      padding-top: 10px;
-      border-top: 1px solid var(--line);
-    }}
-
-    .btn-link-action {{
-      flex: 1;
-      text-align: center;
-      font-size: 12px;
-      font-weight: 750;
-      padding: 6px 10px;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: var(--transition);
-      border: 1px solid transparent;
-    }}
-
-    .btn-link-sched {{
-      background: var(--brand-surface);
-      color: var(--brand-primary);
-      border-color: var(--brand-border);
-    }}
-    .btn-link-sched:hover {{
-      background: #dcfce7;
-    }}
-
-    .btn-link-exam {{
-      background: var(--exam-surface);
-      color: var(--exam-primary);
-      border-color: var(--exam-border);
-    }}
-    .btn-link-exam:hover {{
-      background: #dbeafe;
-    }}
-
-    /* Developer Credit */
+    /* Developer Credit below buttons (Text Only) */
     .developer-bottom-text {{
-      margin-top: 36px;
+      margin-top: 32px;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       gap: 4px;
     }}
 
     .developer-bottom-text .dev-label {{
-      font-size: 13.5px;
+      font-size: 14px;
       font-weight: 700;
-      color: var(--text-muted);
+      color: var(--text-secondary);
+      letter-spacing: 0.01em;
     }}
 
     .developer-bottom-text .dev-name {{
-      font-size: 19px;
+      font-size: 20px;
       font-weight: 900;
       color: var(--brand-primary);
+      letter-spacing: -0.01em;
     }}
 
+    /* Footer */
     .site-footer {{
       text-align: center;
-      padding: 16px 20px;
+      padding: 20px 24px;
       border-top: 1px solid var(--line);
       background: var(--surface);
-      font-size: 12px;
+      font-size: 12.5px;
       font-weight: 600;
       color: var(--text-muted);
     }}
 
     @media (max-width: 768px) {{
+      .integrity-banner {{
+        grid-template-columns: 1fr 1fr;
+      }}
       .cards-container {{
         grid-template-columns: 1fr;
+        gap: 18px;
       }}
-      .faculty-grid {{
-        grid-template-columns: 1fr;
+      .main-wrapper {{
+        padding: 28px 16px;
       }}
     }}
   </style>
@@ -605,10 +439,12 @@ html_content = f'''<!DOCTYPE html>
     <!-- Header & Branding -->
     <header class="hero-header">
       <div class="logo-container">
-        <img src="amis_logo.png" alt="AMIS Logo" class="school-official-logo">
+        <img src="amis_logo.png" alt="Al Munawwara Islamic School Official Seal" class="school-official-logo">
       </div>
+
       <h1 class="school-name">AL MUNAWWARA ISLAMIC SCHOOL</h1>
-      <h2 class="system-title">Official Schedule & Anti-Conflict Verification Portal</h2>
+      <h2 class="system-title">Schedule Management System</h2>
+      <p class="system-desc">Manage and view official class schedules, examination schedules, and faculty timetables.</p>
     </header>
 
     <!-- Real-Time Anti-Conflict & Duplicate Guard Banner -->
@@ -643,66 +479,110 @@ html_content = f'''<!DOCTYPE html>
       </div>
     </section>
 
-    <!-- Quick Navigation Cards Grid -->
+    <!-- Balanced Two Cards Grid -->
     <div class="cards-container">
+
       <!-- Card 1: Official Class Schedule -->
       <div class="card card-class" onclick="window.location.href='class-schedule.html'">
-        <div>
-          <div class="card-icon">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <div class="card-body">
+          <div class="card-icon" aria-hidden="true">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+              <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/>
+            </svg>
           </div>
+
           <h3 class="card-heading">Official Class Schedule</h3>
-          <p class="card-text">Weekly section timetables, period allocations, and teaching load distributions across all shifts.</p>
+          <p class="card-text">View and manage the official class schedules for all departments, grades, sections, shifts, and faculty.</p>
+
           <ul class="feature-list">
-            <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>{total_sections} Active Sections across Kinder, ELEM, JHS & SHS</span></li>
-            <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Face-to-Face, 1st Shift & 2nd Shift Timetables</span></li>
-            <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Clean 5-Day Seamless Span Layout</span></li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>{total_sections} Active Sections across Kinder, Elementary, JHS & SHS</span>
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Face-to-Face, ODL 1st Shift & ODL 2nd Shift Timetables</span>
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Clean 5-Day Merged Span Timetable Layout</span>
+            </li>
           </ul>
         </div>
-        <a href="class-schedule.html" class="btn-main btn-class">Open Class Schedules →</a>
+
+        <div class="card-footer">
+          <a href="class-schedule.html" class="btn-main btn-class">
+            <span>View Class Schedule</span>
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
       </div>
 
       <!-- Card 2: Exam Schedule -->
       <div class="card card-exam" onclick="window.location.href='exam-schedule.html'">
-        <div>
-          <div class="card-icon">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <div class="card-body">
+          <div class="card-icon" aria-hidden="true">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
           </div>
+
           <h3 class="card-heading">1st Term Exam Schedule</h3>
-          <p class="card-text">Official 4-day term examination schedule optimized for zero teacher and section overlaps.</p>
+          <p class="card-text">Official 4-day term examination schedule, faculty timetables, and subject verification roster.</p>
+
           <ul class="feature-list">
-            <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>{total_exam_sessions} Curricular Exam Sessions Scheduled</span></li>
-            <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Standard S.Y. 2025-2026 Reference Time Allocations</span></li>
-            <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Faculty Exam Timetable with Anti-Conflict Verification</span></li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>{total_exam_sessions} Curricular Exam Sessions (Zero Conflicts)</span>
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Standard S.Y. 2025–2026 Reference Time Allocations</span>
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Faculty Roster & Assigned Subject Verification Tabs</span>
+            </li>
           </ul>
         </div>
-        <a href="exam-schedule.html" class="btn-main btn-exam">Open Exam Schedules →</a>
-      </div>
-    </div>
 
-    <!-- Faculty List with Assigned Subject Checkmark Section -->
-    <section style="margin-top: 10px;">
-      <div class="section-title-wrap">
-        <h3 class="section-title">
-          <span>Faculty Roster & Assigned Subject Verification</span>
-        </h3>
-        <div class="filter-search-bar">
-          <input type="text" id="facultySearch" class="search-input" placeholder="Search teacher or subject..." oninput="filterFaculty()">
-          <div class="dept-btn-group">
-            <button class="dept-btn active" onclick="setDeptFilter('ALL', this)">All</button>
-            <button class="dept-btn" onclick="setDeptFilter('ISAL', this)">ISAL</button>
-            <button class="dept-btn" onclick="setDeptFilter('High School', this)">High School</button>
-            <button class="dept-btn" onclick="setDeptFilter('Elementary', this)">Elementary</button>
-          </div>
+        <div class="card-footer">
+          <a href="exam-schedule.html" class="btn-main btn-exam">
+            <span>View Exam Schedule</span>
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
         </div>
       </div>
 
-      <div class="faculty-grid" id="facultyGrid">
-        <!-- Rendered by JavaScript -->
-      </div>
-    </section>
+    </div>
 
-    <!-- Developer Credit -->
+    <!-- Developer Credit below the 2 buttons (Text Only) -->
     <div class="developer-bottom-text">
       <span class="dev-label">Developed by:</span>
       <span class="dev-name">Software Engineer Mon Zhairel Lingasa</span>
@@ -711,82 +591,8 @@ html_content = f'''<!DOCTYPE html>
   </main>
 
   <footer class="site-footer">
-    AL MUNAWWARA ISLAMIC SCHOOL • Official Schedule Portal • Academic Year 2026–2027
+    AL MUNAWWARA ISLAMIC SCHOOL • Academic Year 2026–2027
   </footer>
-
-  <script>
-    const FACULTY_DATA = {json.dumps(faculty_list, indent=2)};
-    let currentDept = 'ALL';
-
-    function renderFaculty() {{
-      const query = (document.getElementById('facultySearch').value || '').toLowerCase().trim();
-      const grid = document.getElementById('facultyGrid');
-      
-      const filtered = FACULTY_DATA.filter(t => {{
-        const matchDept = (currentDept === 'ALL') || 
-                          (currentDept === 'ISAL' && t.department.includes('ISAL')) ||
-                          (currentDept === 'High School' && t.department.includes('High School')) ||
-                          (currentDept === 'Elementary' && t.department.includes('Elementary'));
-                          
-        const matchQuery = !query || 
-                           t.name.toLowerCase().includes(query) || 
-                           t.department.toLowerCase().includes(query) ||
-                           t.assignments.some(a => a.subject.toLowerCase().includes(query) || a.section.toLowerCase().includes(query));
-                           
-        return matchDept && matchQuery;
-      }});
-
-      if (filtered.length === 0) {{
-        grid.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#64748b; font-weight:700;">No faculty members matched the search criteria.</div>';
-        return;
-      }}
-
-      grid.innerHTML = filtered.map(t => `
-        <div class="faculty-card">
-          <div>
-            <div class="faculty-head">
-              <div>
-                <div class="faculty-name-title">${{t.name}}</div>
-                <span class="faculty-dept-tag">${{t.department}}</span>
-              </div>
-              <span class="badge-conflict-free">✓ 0 Conflicts</span>
-            </div>
-
-            <div class="assigned-subjects-title">Assigned Subjects & Load (${{t.total_classes}} Classes/wk):</div>
-            <div class="subject-pill-list">
-              ${{t.assignments.length > 0 ? t.assignments.map(a => `
-                <span class="subj-tag" title="${{a.section}} (${{a.shift}})">
-                  <span class="check-icon">✓</span>
-                  <span>${{a.subject}}</span>
-                  <span style="font-size:10px; color:#64748b;">• ${{a.section.replace('CLASS SCHEDULE', '').replace('GRADE', 'G').trim()}}</span>
-                </span>
-              `).join('') : '<span style="font-size:12px; color:#94a3b8; font-style:italic;">No active weekly classes</span>'}}
-            </div>
-          </div>
-
-          <div class="faculty-actions">
-            <a href="class-schedule.html?view=teacher&tchr=${{t.id}}" class="btn-link-action btn-link-sched">Weekly Schedule</a>
-            <a href="faculty-timetable-exam.html?teacher=${{t.id}}" class="btn-link-action btn-link-exam">Exam Timetable (${{t.total_exams}})</a>
-          </div>
-        </div>
-      `).join('');
-    }}
-
-    function filterFaculty() {{
-      renderFaculty();
-    }}
-
-    function setDeptFilter(dept, btn) {{
-      currentDept = dept;
-      document.querySelectorAll('.dept-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      renderFaculty();
-    }}
-
-    document.addEventListener('DOMContentLoaded', () => {{
-      renderFaculty();
-    }});
-  </script>
 
 </body>
 </html>
@@ -795,4 +601,4 @@ html_content = f'''<!DOCTYPE html>
 with open(os.path.join(BASE_DIR, "index.html"), "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print(f"✓ Successfully built {os.path.join(BASE_DIR, 'index.html')} with complete Faculty Directory and Anti-Conflict Checkmarks!")
+print(f"✓ Built clean index.html!")
