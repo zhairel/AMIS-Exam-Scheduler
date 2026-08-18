@@ -210,19 +210,21 @@ html, body {
 
 .page-sheet-container {
   width: 100%;
-  max-width: 1360px;
-  margin: 20px auto 0;
-  padding: 0 16px;
+  max-width: 1440px;
+  margin: 24px auto 0;
+  padding: 0 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 28px;
 }
 
 .timetable-sheet {
   width: 100%;
-  max-width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
   box-sizing: border-box;
   background: #ffffff;
   border: 2px solid var(--line-strong);
