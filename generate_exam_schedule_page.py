@@ -707,28 +707,58 @@ html, body {
   }
 
   function getSubjectColor(subj) {
-    const s = (subj || '').toLowerCase();
-    if (s.includes('gmrc') || s.includes('values') || s.includes('esp') || s.includes('homeroom') || s.includes('hg')) {
-      return { bg: '#dcfce7', border: '#86efac', text: '#14532d' };
-    }
-    if (s.includes('arabic') || s.includes("qur'an") || s.includes('quran') || s.includes('hadith') || s.includes('shaf') || s.includes('islamic')) {
+    const s = (subj || '').toLowerCase().trim();
+
+    // 1. Islamic Studies & Arabic (Purple / Violet)
+    if (s.includes('arabic') || s.includes("qur'an") || s.includes('quran') || s.includes('hadith') || s.includes('shaf') || s.includes('islamic') || s.includes('fiqh') || s.includes('aqeedah') || s.includes('seerah')) {
       return { bg: '#f3e8ff', border: '#d8b4fe', text: '#581c87' };
     }
-    if (s.includes('math') || s.includes('mathematics') || s.includes('physics') || s.includes('algebra') || s.includes('calculus')) {
+
+    // 2. Values Education / GMRC / Homeroom (Emerald Green)
+    if (s.includes('gmrc') || s.includes('values') || s.includes('esp') || s.includes('homeroom') || s.includes('hg') || s.includes('guidance') || s.includes('character')) {
+      return { bg: '#dcfce7', border: '#86efac', text: '#14532d' };
+    }
+
+    // 3. Mathematics & Quantitative (Sky Blue)
+    if (s.includes('math') || s.includes('mathematics') || s.includes('algebra') || s.includes('calculus') || s.includes('statistics') || s.includes('geometry')) {
       return { bg: '#e0f2fe', border: '#7dd3fc', text: '#0369a1' };
     }
-    if (s.includes('science') || s.includes('sci') || s.includes('biology') || s.includes('chemistry') || s.includes('gen science')) {
+
+    // 4. Sciences, Biology, Physics, Chemistry (Teal / Mint)
+    if (s.includes('sci') || s.includes('science') || s.includes('bio') || s.includes('biology') || s.includes('physics') || s.includes('chem') || s.includes('earth')) {
       return { bg: '#ccfbf1', border: '#5eead4', text: '#115e59' };
     }
-    if (s.includes('english') || s.includes('reading') || s.includes('literacy') || s.includes('language') || s.includes('circle time') || s.includes('oral com') || s.includes('eapp') || s.includes('lit')) {
-      return { bg: '#fef3c7', border: '#fde047', text: '#854d0e' };
-    }
-    if (s.includes('filipino') || s.includes('makabansa') || s.includes('ap') || s.includes('araling panlipunan') || s.includes('social science') || s.includes('soc.sci')) {
+
+    // 5. Filipino, Makabansa, Social Science, AP, PSKP (Warm Orange)
+    if (s.includes('filipino') || s.includes('fil') || s.includes('makabansa') || s.includes('ap') || s.includes('araling panlipunan') || s.includes('social science') || s.includes('soc.sci') || s.includes('pskp') || s.includes('kompan') || s.includes('ucsp') || s.includes('philo')) {
       return { bg: '#ffedd5', border: '#fdba74', text: '#9a3412' };
     }
-    if (s.includes('mapeh') || s.includes('pe') || s.includes('tle') || s.includes('tvl') || s.includes('mil') || s.includes('practical research') || s.includes('entrep')) {
+
+    // 6. English, Literature, Reading, Communication, LCS, EC (Warm Gold)
+    if (s.includes('english') || s.includes('eng') || s.includes('reading') || s.includes('literacy') || s.includes('language') || s.includes('lcs') || s.includes('lit') || s.includes('oral com') || s.includes('eapp') || s.includes('circle time') || s.includes('ct 1') || s.includes('ct 2') || s.includes('meeting time') || s.includes('wrap-up') || s.includes('ec') || s.includes('r & l') || s.includes('r&l')) {
+      return { bg: '#fef3c7', border: '#fde047', text: '#854d0e' };
+    }
+
+    // 7. MAPEH, Physical Education, TLE, TVL, Arts (Magenta / Pink)
+    if (s.includes('mapeh') || s.includes('pe') || s.includes('tle') || s.includes('tvl') || s.includes('music') || s.includes('arts') || s.includes('health') || s.includes('entrep') || s.includes('cpar') || s.includes('e-tech')) {
       return { bg: '#fae8ff', border: '#f0abfc', text: '#86198f' };
     }
+
+    // 8. Research & Media / Information Literacy (Indigo)
+    if (s.includes('res') || s.includes('research') || s.includes('mil') || s.includes('inquiries') || s.includes('immersion')) {
+      return { bg: '#e0e7ff', border: '#a5b4fc', text: '#3730a3' };
+    }
+
+    // 9. Kinder Comprehensive Exam (Oral & Written Exam) (Coral Rose)
+    if (s.includes('oral & written') || s.includes('oral and written') || s.includes('written exam') || s.includes('oral exam')) {
+      return { bg: '#fee2e2', border: '#fca5a5', text: '#991b1b' };
+    }
+
+    // 10. ARAL Program (Amber Cream)
+    if (s.includes('aral')) {
+      return { bg: '#fef9c3', border: '#fef08a', text: '#713f12' };
+    }
+
     return { bg: '#f1f5f9', border: '#cbd5e1', text: '#334155' };
   }
 
@@ -1005,10 +1035,13 @@ html, body {
               <div class="legend-box"><span class="legend-color-dot" style="background:#f3e8ff; border-color:#d8b4fe;"></span> Arabic / Qur'an / Islamic</div>
               <div class="legend-box"><span class="legend-color-dot" style="background:#dcfce7; border-color:#86efac;"></span> GMRC / Values / ESP</div>
               <div class="legend-box"><span class="legend-color-dot" style="background:#e0f2fe; border-color:#7dd3fc;"></span> Mathematics</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#ccfbf1; border-color:#5eead4;"></span> Science</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#fef3c7; border-color:#fde047;"></span> English / Language</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#ffedd5; border-color:#fdba74;"></span> Filipino / AP / Makabansa</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#fae8ff; border-color:#f0abfc;"></span> MAPEH / TLE / TVL</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ccfbf1; border-color:#5eead4;"></span> Science / Biology / Physics</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fef3c7; border-color:#fde047;"></span> English / Reading / LCS / EC</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ffedd5; border-color:#fdba74;"></span> Filipino / AP / Makabansa / PSKP</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fae8ff; border-color:#f0abfc;"></span> MAPEH / TLE / TVL / PE</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#e0e7ff; border-color:#a5b4fc;"></span> Research / MIL</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fee2e2; border-color:#fca5a5;"></span> Oral &amp; Written Exam</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fef9c3; border-color:#fef08a;"></span> ARAL Program</div>
             </div>
             <div>
               Generated: <strong>${todayStr}</strong>
@@ -1168,10 +1201,13 @@ html, body {
               <div class="legend-box"><span class="legend-color-dot" style="background:#f3e8ff; border-color:#d8b4fe;"></span> Arabic / Qur'an / Islamic</div>
               <div class="legend-box"><span class="legend-color-dot" style="background:#dcfce7; border-color:#86efac;"></span> GMRC / Values / ESP</div>
               <div class="legend-box"><span class="legend-color-dot" style="background:#e0f2fe; border-color:#7dd3fc;"></span> Mathematics</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#ccfbf1; border-color:#5eead4;"></span> Science</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#fef3c7; border-color:#fde047;"></span> English / Language</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#ffedd5; border-color:#fdba74;"></span> Filipino / AP / Makabansa</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#fae8ff; border-color:#f0abfc;"></span> MAPEH / TLE / TVL</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ccfbf1; border-color:#5eead4;"></span> Science / Biology / Physics</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fef3c7; border-color:#fde047;"></span> English / Reading / LCS / EC</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ffedd5; border-color:#fdba74;"></span> Filipino / AP / Makabansa / PSKP</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fae8ff; border-color:#f0abfc;"></span> MAPEH / TLE / TVL / PE</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#e0e7ff; border-color:#a5b4fc;"></span> Research / MIL</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fee2e2; border-color:#fca5a5;"></span> Oral &amp; Written Exam</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fef9c3; border-color:#fef08a;"></span> ARAL Program</div>
             </div>
             <div>
               Generated: <strong>${todayStr}</strong>
