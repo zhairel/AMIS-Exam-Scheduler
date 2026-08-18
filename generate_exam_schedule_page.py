@@ -379,7 +379,7 @@ html, body {
   background: #94a3b8;
 }
 
-/* Timetable Table Grid */
+/* Timetable Table Grid with Consistent Fixed Columns & Auto-Expanding Rows */
 .timetable-grid {
   width: 100%;
   min-width: 780px;
@@ -398,53 +398,74 @@ html, body {
   padding: 8px 6px;
   border: 1.5px solid #043828;
   letter-spacing: 0.02em;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 
 .timetable-grid thead th.col-time {
-  width: 135px;
+  width: 140px;
 }
 
 .timetable-grid thead th.col-mins {
-  width: 60px;
+  width: 65px;
+}
+
+.timetable-grid tbody tr {
+  min-height: 60px;
+  height: auto;
 }
 
 .timetable-grid tbody td {
   border: 1.5px solid var(--line-strong);
-  padding: 6px 8px;
+  padding: 8px 10px;
   text-align: center;
   font-size: 12px;
   vertical-align: middle;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 60px;
 }
 
 .timetable-grid tbody td.cell-time {
   font-weight: 800;
-  font-size: 12px;
+  font-size: 12.5px;
   color: var(--ink);
   background: #f8fafc;
   white-space: normal;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 
 .timetable-grid tbody td.cell-mins {
   font-weight: 750;
-  font-size: 11px;
+  font-size: 11.5px;
   color: var(--muted);
   background: #f8fafc;
+  white-space: normal;
 }
 
 .timetable-grid tbody td.cell-break {
   background: var(--break-bg);
   color: var(--break-text);
   font-weight: 850;
-  font-size: 11.5px;
-  letter-spacing: 0.08em;
+  font-size: 12px;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding: 10px 12px;
+  line-height: 1.3;
 }
 
 .timetable-grid tbody td.cell-class {
   font-weight: 600;
   text-align: center;
-  padding: 6px 6px;
+  padding: 8px 10px;
+  vertical-align: middle;
+  height: auto;
 }
 
 .cell-class-inner {
@@ -452,32 +473,60 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
+  gap: 3px;
+  width: 100%;
+  height: 100%;
+  min-height: 48px;
+  box-sizing: border-box;
 }
 
 .cell-subject-sec {
-  font-weight: 900;
-  font-size: 12.5px;
-  letter-spacing: -0.01em;
-  line-height: 1.15;
-}
-
-.cell-teacher-name {
-  font-size: 11px;
-  font-weight: 750;
-  opacity: 0.92;
-  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 .cell-section-name {
   font-size: 11px;
-  font-weight: 800;
+  line-height: 1.25;
+  font-weight: 700;
+  text-align: center;
+  word-break: normal;
+  overflow-wrap: break-word;
   opacity: 0.95;
+  margin-top: 1px;
+}
+
+.cell-teacher-name {
+  font-size: 11px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-align: center;
+  word-break: normal;
+  overflow-wrap: break-word;
+  opacity: 0.95;
+  margin-top: 1px;
+}
+
+.cell-modality-text {
+  font-size: 10px;
+  line-height: 1.25;
+  font-weight: 750;
+  text-align: center;
+  word-break: normal;
+  overflow-wrap: break-word;
+  opacity: 0.88;
+  letter-spacing: 0.02em;
   margin-top: 2px;
+  text-transform: uppercase;
 }
 
 .timetable-grid tbody td.cell-empty {
   background: #ffffff;
+  min-height: 60px;
 }
 
 /* Sheet Footer & Legend Strip */
@@ -907,7 +956,7 @@ html, body {
                 <div class="cell-class-inner">
                   <span class="cell-subject-sec">${esc(match.subject)}</span>
                   <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                  <span style="font-size:9.5px; opacity:0.85; margin-top:2px;">${esc(formatModalityShift(match.shift))}</span>
+                  <span class="cell-modality-text">${esc(formatModalityShift(match.shift))}</span>
                 </div>
               </td>
             `;

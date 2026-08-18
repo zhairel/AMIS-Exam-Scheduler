@@ -463,7 +463,7 @@ html, body {
   background: #94a3b8;
 }
 
-/* Timetable Table Grid */
+/* Timetable Table Grid with Auto-Expanding Cell Height & Consistent Column Widths */
 .timetable-grid {
   width: 100%;
   min-width: 780px;
@@ -482,58 +482,78 @@ html, body {
   padding: 8px 6px;
   border: 1.5px solid #043828;
   letter-spacing: 0.02em;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 
 .timetable-grid thead th.col-time {
-  width: 135px;
+  width: 140px;
 }
 
 .timetable-grid thead th.col-mins {
-  width: 60px;
+  width: 65px;
+}
+
+.timetable-grid tbody tr {
+  min-height: 60px;
+  height: auto;
 }
 
 .timetable-grid tbody td {
   border: 1.5px solid var(--line-strong);
-  padding: 6px 8px;
+  padding: 8px 10px;
   text-align: center;
   font-size: 12px;
   vertical-align: middle;
-  height: 40px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 60px;
 }
 
 .timetable-grid tbody td.cell-time {
   background: #f8fafc;
   font-weight: 800;
-  color: #1e293b;
-  font-size: 11.5px;
-  white-space: nowrap;
+  color: var(--ink);
+  font-size: 12.5px;
+  white-space: normal;
+  line-height: 1.3;
 }
 
 .timetable-grid tbody td.cell-mins {
-  background: #f1f5f9;
-  font-weight: 800;
-  color: #475569;
-  font-size: 12px;
+  background: #f8fafc;
+  font-weight: 750;
+  color: var(--muted);
+  font-size: 11.5px;
+  white-space: normal;
 }
 
 /* Special Break Row */
 .timetable-grid tbody tr.row-break td.cell-break {
   background: var(--break-bg) !important;
   color: var(--break-text) !important;
-  font-size: 11.5px !important;
-  font-weight: 900 !important;
+  font-size: 12px !important;
+  font-weight: 850 !important;
   letter-spacing: 0.06em !important;
   text-transform: uppercase !important;
   text-align: center !important;
-  padding: 6px 10px !important;
-  height: 28px !important;
+  padding: 10px 12px !important;
+  line-height: 1.3 !important;
   border: 1.5px solid var(--break-border) !important;
 }
 
 /* Occupied Class Cell */
 .timetable-grid tbody td.cell-class {
-  font-weight: 850;
-  line-height: 1.25;
+  font-weight: 600;
+  text-align: center;
+  padding: 8px 10px;
+  vertical-align: middle;
+  height: auto;
 }
 
 .cell-class-inner {
@@ -541,35 +561,50 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
+  gap: 3px;
+  width: 100%;
+  height: 100%;
+  min-height: 48px;
+  box-sizing: border-box;
 }
 
 .cell-subject-sec {
-  font-size: 11.5px;
-  font-weight: 900;
-  letter-spacing: -0.01em;
-  line-height: 1.2;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 .cell-section-name {
-  font-size: 10.5px;
-  font-weight: 750;
-  line-height: 1.2;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  word-break: normal;
+  overflow-wrap: break-word;
   opacity: 0.95;
+  margin-top: 1px;
 }
 
 .cell-mod-badge {
-  font-size: 9.5px;
-  font-weight: 800;
-  opacity: 0.85;
+  font-size: 10px;
+  font-weight: 750;
+  opacity: 0.88;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-  margin-top: 1px;
+  line-height: 1.25;
+  margin-top: 2px;
+  word-break: normal;
+  overflow-wrap: break-word;
+  text-align: center;
 }
 
 /* Empty Cell */
 .timetable-grid tbody td.cell-empty {
   background: #ffffff;
+  min-height: 60px;
 }
 
 /* Footer / Legend Block */
