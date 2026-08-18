@@ -16,7 +16,7 @@ HTML_CONTENT = r"""<!doctype html>
 
 <!-- Embedded Master Section Class Data & Teacher Schedules -->
 <script src="class_schedules_data.js?v=20260818_0800"></script>
-<script src="teacher_weekly_schedules.js?v=20260818_0800"></script>
+<script src="teacher_weekly_schedules.js?v=20260818_0940"></script>
 
 <style>
 :root {
@@ -846,7 +846,7 @@ html, body {
   const shiftSelect = document.getElementById('shiftSelect');
   const sectionSelect = document.getElementById('sectionSelect');
   const sheetsContainer = document.getElementById('sheetsContainer');
-  let ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES || {};
+  let ALL_TEACHERS_DATA = window.ALL_TEACHERS_DATA || window.AMIS_TEACHER_WEEKLY_SCHEDULES || {};
 
   function esc(s) {
     if (!s) return '';
@@ -902,11 +902,13 @@ html, body {
       const tResp = await fetch('teacher_weekly_schedules.json?v=' + Date.now());
       if (tResp.ok) {
         ALL_TEACHERS_DATA = await tResp.json();
+      } else if (window.ALL_TEACHERS_DATA) {
+        ALL_TEACHERS_DATA = window.ALL_TEACHERS_DATA;
       } else if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) {
         ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
       }
     } catch (e) {
-      if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
+      ALL_TEACHERS_DATA = window.ALL_TEACHERS_DATA || window.AMIS_TEACHER_WEEKLY_SCHEDULES || ALL_TEACHERS_DATA;
     }
 
     if (!SECTIONS_DATA || SECTIONS_DATA.length === 0) {
