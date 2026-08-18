@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
 generate_exam_schedule_page.py
-Generates the interactive, tabbed Official 1st Term Examination Portal (exam-schedule.html) with:
-- Tab 1: Section Exam Schedules (by Section, Grade Level, Shift, Modality)
-- Tab 2: Faculty Exam Timetables (Personalized faculty examination duty schedules)
-- Tab 3: Faculty Roster & Assigned Subject Verification (Full verification directory with checkmarks, search, and department filters)
+Generates the Official 1st Term Examination Schedule (exam-schedule.html)
+using the exact authentic design and layout of class-schedule.html:
+- Identical typography, green banner, responsive table wrapper, fullscreen mode
+- Tabs for Section Schedules, Faculty Timetables, and Faculty Verification Roster
+- 100% 60-minute standard exam allocations from reference sheet
 """
 
 import json
@@ -21,12 +22,11 @@ with open(os.path.join(BASE_DIR, "exam_data.json"), "r", encoding="utf-8") as f:
 with open(os.path.join(BASE_DIR, "class_schedules_data.json"), "r", encoding="utf-8") as f:
     class_data = json.load(f)
 
-# Compute live audit metrics
 total_sections = len(class_data)
 total_exam_sessions = len(exam_data)
 active_faculty_count = len([t for t in teacher_data.values() if t.get('total_classes', 0) > 0])
 
-# Prepare faculty list sorted by department and name
+# Prepare faculty list
 faculty_list = []
 for tid, tinfo in teacher_data.items():
     subj_section_map = {}
@@ -66,7 +66,7 @@ HTML_TEMPLATE = f"""<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Official Term Examination Schedule | AL MUNAWWARA ISLAMIC SCHOOL</title>
+<title>AMIS — Official 1st Term Examination Timetable</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,9 +76,9 @@ HTML_TEMPLATE = f"""<!doctype html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <!-- Embedded Master Datasets with Cache-Busting -->
-<script src="class_schedules_data.js?v=20260818_1145"></script>
-<script src="exam_data.js?v=20260818_1145"></script>
-<script src="teacher_weekly_schedules.js?v=20260818_1145"></script>
+<script src="class_schedules_data.js?v=20260818_1150"></script>
+<script src="exam_data.js?v=20260818_1150"></script>
+<script src="teacher_weekly_schedules.js?v=20260818_1150"></script>
 
 <style>
 :root {{
@@ -122,11 +122,11 @@ body {{
   z-index: 1000;
   background: var(--brand-deep);
   color: #fff;
-  padding: 8px 18px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   flex-wrap: wrap;
 }}
@@ -138,8 +138,8 @@ body {{
 }}
 
 .brand-icon {{
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
@@ -147,16 +147,17 @@ body {{
   place-items: center;
   font-weight: 900;
   font-size: 14px;
+  letter-spacing: 0.05em;
 }}
 
 .brand-text h1 {{
-  font-size: 15px;
+  font-size: 15.5px;
   font-weight: 800;
   letter-spacing: -0.01em;
 }}
 
 .brand-text p {{
-  font-size: 11px;
+  font-size: 11.5px;
   color: #a7f3d0;
   font-weight: 600;
 }}
@@ -164,7 +165,7 @@ body {{
 .toolbar-controls {{
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   flex-wrap: wrap;
 }}
 
@@ -179,7 +180,7 @@ body {{
 }}
 
 .filter-label {{
-  font-size: 11px;
+  font-size: 11.5px;
   font-weight: 800;
   color: #a7f3d0;
   text-transform: uppercase;
@@ -191,27 +192,26 @@ body {{
 }}
 
 .filter-select {{
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 6px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   background: #ffffff;
-  color: #0f172a;
-  font-size: 12px;
-  font-weight: 700;
+  color: var(--ink);
+  font-weight: 750;
+  font-size: 13px;
   outline: none;
   cursor: pointer;
-  font-family: inherit;
 }}
 
 .filter-select-section {{
-  min-width: 240px;
-  max-width: 340px;
+  min-width: 260px;
+  max-width: 360px;
 }}
 
 .btn-action {{
-  padding: 6px 12px;
-  border-radius: 7px;
-  font-size: 12px;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 13px;
   font-weight: 800;
   cursor: pointer;
   border: 1.5px solid transparent;
@@ -223,8 +223,8 @@ body {{
 }}
 
 .btn-action svg {{
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   fill: currentColor;
 }}
 
@@ -232,6 +232,7 @@ body {{
   background: #ffffff;
   color: #0f172a;
   border-color: #cbd5e1;
+  font-weight: 750;
 }}
 
 .btn-back:hover {{
@@ -304,7 +305,7 @@ body {{
   color: #047857;
 }}
 
-/* Main Printable Container */
+/* Printable Container */
 html, body {{
   overflow-x: hidden;
   max-width: 100vw;
@@ -314,28 +315,117 @@ html, body {{
 .page-sheet-container {{
   width: 100%;
   max-width: 1360px;
-  margin: 16px auto 0;
+  margin: 20px auto 0;
   padding: 0 16px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 28px;
 }}
 
 .timetable-sheet {{
-  background: var(--surface);
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  background: #ffffff;
+  border: 2px solid var(--line-strong);
+  border-radius: 12px;
   padding: 20px 24px;
-  border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-  position: relative;
   page-break-after: always;
   break-after: page;
 }}
 
-/* Fullscreen Expansion Mode */
+.timetable-sheet:last-child {{
+  page-break-after: auto;
+  break-after: auto;
+}}
+
+/* Header Block */
+.school-header {{
+  text-align: center;
+  margin-bottom: 14px;
+}}
+
+.school-header h1 {{
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--brand-deep);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}}
+
+.school-header h2 {{
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--ink-secondary);
+  letter-spacing: 0.02em;
+  margin-top: 2px;
+}}
+
+.school-header p {{
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 1px;
+}}
+
+/* Teacher / Section Banner */
+.teacher-banner {{
+  background: var(--brand-deep);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--brand-deep);
+  border-bottom: 0;
+}}
+
+.teacher-name-title {{
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}}
+
+.teacher-meta-tag {{
+  font-size: 12px;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.02em;
+}}
+
+.btn-fullscreen {{
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}}
+
+.btn-fullscreen:hover {{
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.05);
+}}
+
+.btn-fullscreen svg {{
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}}
+
 .timetable-sheet.is-fullscreen {{
   position: fixed !important;
   inset: 0 !important;
@@ -343,6 +433,7 @@ html, body {{
   width: 100vw !important;
   max-width: 100vw !important;
   min-height: 100vh !important;
+  height: 100vh !important;
   margin: 0 !important;
   padding: 24px 36px !important;
   background: #ffffff !important;
@@ -353,7 +444,6 @@ html, body {{
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  justify-content: flex-start !important;
 }}
 
 .timetable-sheet.is-fullscreen > * {{
@@ -364,153 +454,94 @@ html, body {{
   box-sizing: border-box !important;
 }}
 
-.btn-fullscreen {{
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 10px;
-  border-radius: 6px;
-  background: #f1f5f9;
-  border: 1px solid #cbd5e1;
-  color: var(--ink-secondary);
-  font-size: 11px;
-  font-weight: 750;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  z-index: 10;
-}}
-
-.btn-fullscreen:hover {{
-  background: #e2e8f0;
-  color: var(--ink);
-}}
-
-/* Official Sheet Header */
-.sheet-header {{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid var(--brand-deep);
-  margin-bottom: 12px;
-  position: relative;
-}}
-
-.school-logo {{
-  width: 54px;
-  height: 54px;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.12));
-}}
-
-.header-text {{
-  text-align: center;
-}}
-
-.header-school-name {{
-  font-size: 15px;
-  font-weight: 900;
-  color: var(--brand-deep);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}}
-
-.header-school-meta {{
-  font-size: 10px;
-  font-weight: 600;
-  color: var(--muted);
-}}
-
-.header-doc-title {{
-  font-size: 13.5px;
-  font-weight: 850;
-  color: #1e3a8a;
-  letter-spacing: 0.02em;
-  margin-top: 2px;
-  text-transform: uppercase;
-}}
-
-.header-badge-strip {{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin-top: 5px;
-  flex-wrap: wrap;
-}}
-
-.pill-badge {{
-  font-size: 10.5px;
-  font-weight: 800;
-  padding: 3px 9px;
-  border-radius: 9999px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}}
-
-.pill-sec {{ background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; }}
-.pill-mod {{ background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }}
-.pill-shift {{ background: #fefce8; color: #854d0e; border: 1px solid #fef08a; }}
-.pill-room {{ background: #fdf2f8; color: #9d174d; border: 1px solid #fbcfe8; }}
-.pill-time {{ background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; }}
-
-/* Timetable Grid */
-.table-wrapper {{
+/* Responsive Table Scroll Wrapper */
+.table-responsive-wrapper {{
   width: 100%;
+  max-width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  border-radius: 0 0 8px 8px;
+  border: 2px solid var(--brand-deep);
+  border-top: none;
+  background: #ffffff;
 }}
 
+.table-responsive-wrapper::-webkit-scrollbar {{
+  height: 6px;
+}}
+
+.table-responsive-wrapper::-webkit-scrollbar-track {{
+  background: #f1f5f9;
+}}
+
+.table-responsive-wrapper::-webkit-scrollbar-thumb {{
+  background: #cbd5e1;
+  border-radius: 3px;
+}}
+
+.table-responsive-wrapper::-webkit-scrollbar-thumb:hover {{
+  background: #94a3b8;
+}}
+
+/* Timetable Table Grid */
 .timetable-grid {{
   width: 100%;
+  min-width: 780px;
   border-collapse: collapse;
-  font-size: 11px;
+  border: none;
   table-layout: fixed;
-}}
-
-.timetable-grid th, 
-.timetable-grid td {{
-  border: 1px solid var(--line);
-  padding: 6px 6px;
-  text-align: center;
-  vertical-align: middle;
-  word-wrap: break-word;
+  background: #ffffff;
 }}
 
 .timetable-grid thead th {{
-  background: #f1f5f9;
-  color: var(--ink);
-  font-weight: 850;
-  font-size: 10.5px;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  border-bottom: 2px solid var(--brand-deep);
+  background: var(--brand-green);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+  padding: 8px 6px;
+  border: 1.5px solid #043828;
+  letter-spacing: 0.02em;
 }}
 
 .timetable-grid thead th.col-time {{
   width: 135px;
-  background: #e2e8f0;
+}}
+
+.timetable-grid thead th.col-mins {{
+  width: 60px;
+}}
+
+.timetable-grid tbody td {{
+  border: 1.5px solid var(--line-strong);
+  padding: 6px 8px;
+  text-align: center;
+  font-size: 12px;
+  vertical-align: middle;
 }}
 
 .timetable-grid tbody td.cell-time {{
   font-weight: 800;
-  font-size: 10.5px;
+  font-size: 12px;
   color: var(--ink);
   background: #f8fafc;
   white-space: normal;
   line-height: 1.25;
 }}
 
+.timetable-grid tbody td.cell-mins {{
+  font-weight: 750;
+  font-size: 11px;
+  color: var(--muted);
+  background: #f8fafc;
+}}
+
 .timetable-grid tbody td.cell-break {{
   background: var(--break-bg);
   color: var(--break-text);
-  font-weight: 800;
-  font-size: 10px;
-  letter-spacing: 0.05em;
+  font-weight: 850;
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }}
 
@@ -518,7 +549,6 @@ html, body {{
   font-weight: 600;
   text-align: center;
   padding: 6px 6px;
-  transition: transform 0.1s ease;
 }}
 
 .cell-class-inner {{
@@ -531,23 +561,23 @@ html, body {{
 
 .cell-subject-sec {{
   font-weight: 900;
-  font-size: 12px;
+  font-size: 12.5px;
   letter-spacing: -0.01em;
   line-height: 1.15;
 }}
 
 .cell-teacher-name {{
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 750;
   opacity: 0.92;
-  margin-top: 1px;
+  margin-top: 2px;
 }}
 
 .cell-section-name {{
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 800;
   opacity: 0.95;
-  margin-top: 1px;
+  margin-top: 2px;
 }}
 
 .timetable-grid tbody td.cell-empty {{
@@ -556,13 +586,13 @@ html, body {{
 
 /* Sheet Footer & Legend Strip */
 .sheet-footer {{
-  margin-top: 10px;
+  margin-top: 12px;
   padding-top: 8px;
   border-top: 1px dashed var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 9.5px;
+  font-size: 11px;
   color: var(--muted);
   font-weight: 600;
   flex-wrap: wrap;
@@ -579,15 +609,16 @@ html, body {{
 .legend-box {{
   display: flex;
   align-items: center;
-  gap: 4px;
-  font-weight: 700;
+  gap: 5px;
+  font-weight: 750;
+  font-size: 11px;
   color: var(--ink-secondary);
 }}
 
 .legend-color-dot {{
-  width: 10px;
-  height: 10px;
-  border-radius: 2px;
+  width: 11px;
+  height: 11px;
+  border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.15);
 }}
 
@@ -819,10 +850,10 @@ html, body {{
 <!-- Screen Top Navigation Toolbar -->
 <header class="top-toolbar">
   <div class="brand-title">
-    <img src="amis_logo.png" alt="AMIS Logo" style="width:36px; height:36px; border-radius:50%; object-fit:contain; background:#ffffff; padding:1px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
+    <img src="amis_logo.png" alt="AMIS Logo" style="width:38px; height:38px; border-radius:50%; object-fit:contain; background:#ffffff; padding:1px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">
     <div class="brand-text">
-      <h1>Official 1st Term Examination Schedule</h1>
-      <p>AL MUNAWWARA ISLAMIC SCHOOL • S.Y. 2026–2027</p>
+      <h1>Official Term Examination Schedule</h1>
+      <p>Term Exam Week 2026 – 2027 • Official Timetable</p>
     </div>
   </div>
 
@@ -1095,36 +1126,36 @@ html, body {{
       let timeRows = [];
       if (isF2F) {{
         timeRows = [
-          {{ time: '07:30 AM – 07:45 AM', type: 'break', label: 'GENERAL ASSEMBLY' }},
-          {{ time: '08:00 AM – 09:00 AM', type: 'exam', slot_num: 1 }},
-          {{ time: '09:00 AM – 10:00 AM', type: 'exam', slot_num: 2 }},
-          {{ time: '10:00 AM – 10:25 AM', type: 'break', label: 'RECESS / BREAK' }},
-          {{ time: '10:25 AM – 11:25 AM', type: 'exam', slot_num: 3 }},
-          {{ time: '11:25 AM', type: 'break', label: 'DISMISSAL' }}
+          {{ time: '07:30 AM – 07:45 AM', mins: '15 min.', type: 'break', label: 'GENERAL ASSEMBLY' }},
+          {{ time: '08:00 AM – 09:00 AM', mins: '60 min.', type: 'exam', slot_num: 1 }},
+          {{ time: '09:00 AM – 10:00 AM', mins: '60 min.', type: 'exam', slot_num: 2 }},
+          {{ time: '10:00 AM – 10:25 AM', mins: '25 min.', type: 'break', label: 'RECESS' }},
+          {{ time: '10:25 AM – 11:25 AM', mins: '60 min.', type: 'exam', slot_num: 3 }},
+          {{ time: '11:25 AM', mins: '--', type: 'break', label: 'DISMISSAL' }}
         ];
       }} else if (isODL1) {{
         timeRows = [
-          {{ time: '12:30 PM – 12:40 PM', type: 'break', label: 'GENERAL ASSEMBLY' }},
-          {{ time: '12:40 PM – 01:40 PM', type: 'exam', slot_num: 1 }},
-          {{ time: '01:40 PM – 01:50 PM', type: 'break', label: 'TRANSITION BREAK' }},
-          {{ time: '01:50 PM – 02:50 PM', type: 'exam', slot_num: 2 }},
-          {{ time: '02:50 PM – 03:10 PM', type: 'break', label: 'TRANSITION & SALAH BREAK' }},
-          {{ time: '03:10 PM – 04:10 PM', type: 'exam', slot_num: 3 }}
+          {{ time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' }},
+          {{ time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1 }},
+          {{ time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }},
+          {{ time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 2 }},
+          {{ time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION AND SALAH BREAK' }},
+          {{ time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3 }}
         ];
         if (isSHS) {{
-          timeRows.push({{ time: '04:10 PM – 04:20 PM', type: 'break', label: 'TRANSITION BREAK' }});
-          timeRows.push({{ time: '04:20 PM – 05:20 PM', type: 'exam', slot_num: 4 }});
+          timeRows.push({{ time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }});
+          timeRows.push({{ time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 4 }});
         }}
-        timeRows.push({{ time: isSHS ? '05:20 PM' : '04:10 PM', type: 'break', label: 'DISMISSAL' }});
+        timeRows.push({{ time: isSHS ? '05:20 PM' : '04:10 PM', mins: '--', type: 'break', label: 'DISMISSAL' }});
       }} else if (isODL2) {{
         timeRows = [
-          {{ time: '02:50 PM – 03:10 PM', type: 'break', label: 'GENERAL ASSEMBLY & SALAH' }},
-          {{ time: '03:10 PM – 04:10 PM', type: 'exam', slot_num: 1 }},
-          {{ time: '04:10 PM – 04:20 PM', type: 'break', label: 'TRANSITION BREAK' }},
-          {{ time: '04:20 PM – 05:20 PM', type: 'exam', slot_num: 2 }},
-          {{ time: '05:20 PM – 05:30 PM', type: 'break', label: 'TRANSITION BREAK' }},
-          {{ time: '05:30 PM – 06:30 PM', type: 'exam', slot_num: 3 }},
-          {{ time: '06:30 PM', type: 'break', label: 'DISMISSAL' }}
+          {{ time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'GENERAL ASSEMBLY & SALAH BREAK' }},
+          {{ time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 1 }},
+          {{ time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }},
+          {{ time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 2 }},
+          {{ time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }},
+          {{ time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_num: 3 }},
+          {{ time: '06:30 PM', mins: '--', type: 'break', label: 'DISMISSAL' }}
         ];
       }}
 
@@ -1132,30 +1163,29 @@ html, body {{
 
       fullHtml += `
         <div class="timetable-sheet" id="sheet_${{sec.id}}">
-          <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Toggle Fullscreen">
-            <span class="icon-expand">⛶ Expand</span>
-            <span class="icon-compress" style="display:none;">✕ Exit</span>
-          </button>
+          <div class="school-header">
+            <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
+            <h2>TERM EXAM WEEK 2026 – 2027</h2>
+            <p>OFFICIAL 1ST TERM EXAMINATION SCHEDULE</p>
+          </div>
 
-          <div class="sheet-header">
-            <img src="amis_logo.png" alt="AMIS Logo" class="school-logo">
-            <div class="header-text">
-              <div class="header-school-name">AL MUNAWWARA ISLAMIC SCHOOL</div>
-              <div class="header-school-meta">OFFICIAL 1ST TERM EXAMINATION SCHEDULE • S.Y. 2026–2027</div>
-              <div class="header-doc-title">${{esc(sec.section_name)}}</div>
-              <div class="header-badge-strip">
-                <span class="pill-badge pill-sec">${{esc(sec.grade_level)}}</span>
-                <span class="pill-badge pill-shift">${{esc(sec.shift)}}</span>
-                <span class="pill-badge pill-mod">${{secExams.length}} Curricular Exams</span>
-              </div>
+          <div class="teacher-banner">
+            <span class="teacher-name-title">${{esc(sec.section_name.toUpperCase())}}</span>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="teacher-meta-tag">${{esc(sec.department)}} • ${{esc(sec.shift)}} • ${{secExams.length}} Subjects</span>
+              <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
+                <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                <svg class="icon-compress" viewBox="0 0 24 24" style="display:none;"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
+              </button>
             </div>
           </div>
 
-          <div class="table-wrapper">
+          <div class="table-responsive-wrapper">
             <table class="timetable-grid">
               <thead>
                 <tr>
-                  <th class="col-time">Time Allocation</th>
+                  <th class="col-time">Time</th>
+                  <th class="col-mins">Minutes</th>
                   ${{EXAM_DATES.map(d => `<th>${{d.header}}</th>`).join('')}}
                 </tr>
               </thead>
@@ -1167,6 +1197,7 @@ html, body {{
           fullHtml += `
             <tr>
               <td class="cell-time">${{row.time}}</td>
+              <td class="cell-mins">${{row.mins}}</td>
               <td class="cell-break" colspan="4">${{row.label}}</td>
             </tr>
           `;
@@ -1174,6 +1205,7 @@ html, body {{
           fullHtml += `
             <tr>
               <td class="cell-time">${{row.time}}</td>
+              <td class="cell-mins">${{row.mins}}</td>
           `;
 
           EXAM_DATES.forEach(d => {{
@@ -1265,14 +1297,14 @@ html, body {{
     }}
 
     const masterSlots = [
-      {{ time: '08:00 AM – 09:00 AM', slot_id: 'f2f_s1', label: 'F2F Slot 1' }},
-      {{ time: '09:00 AM – 10:00 AM', slot_id: 'f2f_s2', label: 'F2F Slot 2' }},
-      {{ time: '10:25 AM – 11:25 AM', slot_id: 'f2f_s3', label: 'F2F Slot 3' }},
-      {{ time: '12:40 PM – 01:40 PM', slot_id: 'odl1_s1', label: 'ODL 1st Slot 1' }},
-      {{ time: '01:50 PM – 02:50 PM', slot_id: 'odl1_s2', label: 'ODL 1st Slot 2' }},
-      {{ time: '03:10 PM – 04:10 PM', slot_id: 'odl1_s3_odl2_s1', label: '1st Shift S3 / 2nd Shift S1' }},
-      {{ time: '04:20 PM – 05:20 PM', slot_id: 'odl2_s2_shs_s4', label: '2nd Shift S2 / SHS Slot 4' }},
-      {{ time: '05:30 PM – 06:30 PM', slot_id: 'odl2_s3', label: 'ODL 2nd Slot 3' }}
+      {{ time: '08:00 AM – 09:00 AM', mins: '60 min.', slot_id: 'f2f_s1', label: 'F2F Slot 1' }},
+      {{ time: '09:00 AM – 10:00 AM', mins: '60 min.', slot_id: 'f2f_s2', label: 'F2F Slot 2' }},
+      {{ time: '10:25 AM – 11:25 AM', mins: '60 min.', slot_id: 'f2f_s3', label: 'F2F Slot 3' }},
+      {{ time: '12:40 PM – 01:40 PM', mins: '60 min.', slot_id: 'odl1_s1', label: 'ODL 1st Slot 1' }},
+      {{ time: '01:50 PM – 02:50 PM', mins: '60 min.', slot_id: 'odl1_s2', label: 'ODL 1st Slot 2' }},
+      {{ time: '03:10 PM – 04:10 PM', mins: '60 min.', slot_id: 'odl1_s3_odl2_s1', label: '1st Shift S3 / 2nd Shift S1' }},
+      {{ time: '04:20 PM – 05:20 PM', mins: '60 min.', slot_id: 'odl2_s2_shs_s4', label: '2nd Shift S2 / SHS Slot 4' }},
+      {{ time: '05:30 PM – 06:30 PM', mins: '60 min.', slot_id: 'odl2_s3', label: 'ODL 2nd Slot 3' }}
     ];
 
     const todayStr = new Date().toLocaleDateString('en-US', {{ month: 'short', day: 'numeric', year: 'numeric' }});
@@ -1283,30 +1315,29 @@ html, body {{
 
       fullHtml += `
         <div class="timetable-sheet" id="sheet_${{t.id}}">
-          <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Toggle Fullscreen">
-            <span class="icon-expand">⛶ Expand</span>
-            <span class="icon-compress" style="display:none;">✕ Exit</span>
-          </button>
+          <div class="school-header">
+            <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
+            <h2>TERM EXAM WEEK 2026 – 2027</h2>
+            <p>FACULTY EXAMINATION TIMETABLE</p>
+          </div>
 
-          <div class="sheet-header">
-            <img src="amis_logo.png" alt="AMIS Logo" class="school-logo">
-            <div class="header-text">
-              <div class="header-school-name">AL MUNAWWARA ISLAMIC SCHOOL</div>
-              <div class="header-school-meta">FACULTY EXAMINATION TIMETABLE • S.Y. 2026–2027</div>
-              <div class="header-doc-title">${{esc(t.name)}}</div>
-              <div class="header-badge-strip">
-                <span class="pill-badge pill-sec">${{esc(t.department)}}</span>
-                <span class="pill-badge pill-mod">${{tExams.length}} Exam Duties</span>
-                <span class="pill-badge pill-shift">✓ 0 Conflicts</span>
-              </div>
+          <div class="teacher-banner">
+            <span class="teacher-name-title">${{esc(t.name.toUpperCase())}}</span>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="teacher-meta-tag">${{esc(t.department)}} • ${{tExams.length}} Exam Duties • ✓ 0 Conflicts</span>
+              <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
+                <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                <svg class="icon-compress" viewBox="0 0 24 24" style="display:none;"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
+              </button>
             </div>
           </div>
 
-          <div class="table-wrapper">
+          <div class="table-responsive-wrapper">
             <table class="timetable-grid">
               <thead>
                 <tr>
-                  <th class="col-time">Exam Slot Time</th>
+                  <th class="col-time">Time</th>
+                  <th class="col-mins">Minutes</th>
                   ${{EXAM_DATES.map(d => `<th>${{d.header}}</th>`).join('')}}
                 </tr>
               </thead>
@@ -1318,6 +1349,7 @@ html, body {{
         fullHtml += `
           <tr>
             <td class="cell-time">${{slot.time}}</td>
+            <td class="cell-mins">${{slot.mins}}</td>
         `;
 
         EXAM_DATES.forEach(d => {{
@@ -1499,4 +1531,4 @@ html, body {{
 with open(os.path.join(BASE_DIR, "exam-schedule.html"), "w", encoding="utf-8") as f:
     f.write(HTML_TEMPLATE)
 
-print("✓ Successfully regenerated exam-schedule.html with Tabbed Navigation (Section Schedules, Faculty Timetables, Faculty Roster & Verification)!")
+print("✓ Successfully regenerated exam-schedule.html with the exact authentic design of class-schedule.html!")
