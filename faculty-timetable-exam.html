@@ -622,6 +622,22 @@ html, body {
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
+.cell-duration-badge {
+  font-size: 10px;
+  font-weight: 800;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  margin-top: 3px;
+  letter-spacing: 0.02em;
+}
+
+.badge-120 {
+  background: #0284c7 !important;
+  color: #ffffff !important;
+  font-weight: 850 !important;
+}
+
 /* Print Optimization */
 @media print {
   .top-toolbar, .btn-fullscreen {
@@ -690,10 +706,10 @@ html, body {
 <script>
 (function() {
   const EXAM_DATES = [
-    { day_num: 1, short_date: 'Sep 7', day_name: 'Monday', header: 'Day 1 • Mon, Sep 7' },
-    { day_num: 2, short_date: 'Sep 8', day_name: 'Tuesday', header: 'Day 2 • Tue, Sep 8' },
-    { day_num: 3, short_date: 'Sep 9', day_name: 'Wednesday', header: 'Day 3 • Wed, Sep 9' },
-    { day_num: 4, short_date: 'Sep 10', day_name: 'Thursday', header: 'Day 4 • Thu, Sep 10' }
+    { day_num: 1, short_date: 'Sep 2', day_name: 'Wednesday', header: 'Day 1 • Wed, Sep 2' },
+    { day_num: 2, short_date: 'Sep 3', day_name: 'Thursday', header: 'Day 2 • Thu, Sep 3' },
+    { day_num: 3, short_date: 'Sep 6', day_name: 'Sunday', header: 'Day 3 • Sun, Sep 6' },
+    { day_num: 4, short_date: 'Sep 7', day_name: 'Monday', header: 'Day 4 • Mon, Sep 7' }
   ];
 
   let ALL_EXAM_RECORDS = [];
@@ -1026,6 +1042,7 @@ html, body {
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(exam.subject)}</span>
                     <span class="cell-section-name">${esc(cleanSec)}</span>
+                    <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${exam.duration_minutes || 60} min.</span>
                   </div>
                 </td>
               `;
@@ -1045,6 +1062,7 @@ html, body {
                     <div class="cell-class-inner">
                       <span class="cell-subject-sec">${esc(exam.subject)}</span>
                       <span class="cell-section-name">${esc(secsStr)} (Merged)</span>
+                      <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${exam.duration_minutes || 60} min.</span>
                     </div>
                   </td>
                 `;
