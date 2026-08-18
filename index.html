@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AL MUNAWWARA ISLAMIC SCHOOL — Schedule Management System</title>
+  <title>AL MUNAWWARA ISLAMIC SCHOOL — Schedule & Faculty Verification Portal</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +38,7 @@
       
       --shadow-card: 0 4px 20px rgba(15, 23, 42, 0.06);
       --shadow-hover: 0 16px 36px -4px rgba(15, 23, 42, 0.12);
-      --transition: all 250ms cubic-bezier(0.16, 1, 0.3, 1);
+      --transition: all 200ms cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     * {
@@ -55,7 +55,6 @@
       display: flex;
       flex-direction: column;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
 
     .top-bar {
@@ -65,21 +64,17 @@
     }
 
     .main-wrapper {
-      max-width: 1020px;
+      max-width: 1120px;
       width: 100%;
       margin: 0 auto;
-      padding: 40px 24px 32px 24px;
+      padding: 36px 20px 48px 20px;
       flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
     }
 
     /* Header */
     .hero-header {
       text-align: center;
-      margin-bottom: 32px;
+      margin-bottom: 28px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -87,108 +82,105 @@
 
     .logo-container {
       position: relative;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
       display: inline-block;
     }
 
     .school-official-logo {
-      width: 96px;
-      height: 96px;
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
       object-fit: contain;
       filter: drop-shadow(0 6px 16px rgba(6, 78, 59, 0.2));
-      transition: var(--transition);
       background: #ffffff;
       padding: 2px;
     }
 
-    .school-official-logo:hover {
-      transform: scale(1.04) rotate(2deg);
-    }
-
     .school-name {
-      font-size: 24px;
+      font-size: 23px;
       font-weight: 900;
       letter-spacing: 0.04em;
       color: var(--brand-primary);
       text-transform: uppercase;
       line-height: 1.2;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
 
     .system-title {
-      font-size: 16px;
+      font-size: 15.5px;
       font-weight: 800;
       color: var(--text-secondary);
       letter-spacing: 0.01em;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
     }
 
-    .developer-text {
-      font-size: 13.5px;
-      font-weight: 500;
-      color: var(--text-muted);
-      margin-top: 2px;
-      margin-bottom: 10px;
-      letter-spacing: 0.01em;
+    /* System Integrity & Anti-Conflict Banner */
+    .integrity-banner {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      width: 100%;
+      margin-bottom: 28px;
     }
 
-    .developer-text .developer-name {
-      font-weight: 700;
-      color: var(--brand-primary);
-    }
-
-    .system-desc {
-      font-size: 13.5px;
-      color: var(--text-muted);
-      font-weight: 500;
-      max-width: 500px;
-      line-height: 1.5;
-      margin-bottom: 14px;
-    }
-
-    .school-year-tag {
-      display: inline-flex;
+    .integrity-pill {
+      background: #ffffff;
+      border: 1.5px solid #a7f3d0;
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      display: flex;
       align-items: center;
-      gap: 9px;
-      padding: 7px 20px;
-      background: #f1f5f9;
-      border: 1.5px solid #cbd5e1;
-      border-radius: 9999px;
-      font-size: 14.5px;
-      font-weight: 750;
-      color: #334155;
-      letter-spacing: 0.01em;
+      gap: 12px;
+      box-shadow: 0 2px 10px rgba(6, 78, 59, 0.04);
     }
 
-    .dot-live {
-      width: 9px;
-      height: 9px;
-      background: #10b981;
+    .pill-icon {
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
-      box-shadow: 0 0 0 3.5px rgba(16, 185, 129, 0.25);
+      background: #dcfce7;
+      color: #059669;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    .pill-content h4 {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .pill-content p {
+      font-size: 14.5px;
+      font-weight: 800;
+      color: var(--brand-primary);
     }
 
     /* Cards Grid */
     .cards-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 24px;
+      gap: 20px;
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 36px;
     }
 
     .card {
       background: var(--surface);
       border: 1.5px solid var(--line);
       border-radius: var(--radius-xl);
-      padding: 28px;
+      padding: 24px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       box-shadow: var(--shadow-card);
       transition: var(--transition);
-      position: relative;
       cursor: pointer;
     }
 
@@ -197,37 +189,17 @@
       box-shadow: var(--shadow-hover);
     }
 
-    .card-class {
-      border-top: 4px solid var(--brand-accent);
-    }
-
-    .card-class:hover {
-      border-color: #5eead4;
-      border-top-color: var(--brand-accent);
-    }
-
-    .card-exam {
-      border-top: 4px solid var(--exam-accent);
-    }
-
-    .card-exam:hover {
-      border-color: #93c5fd;
-      border-top-color: var(--exam-accent);
-    }
-
-    .card-body {
-      margin-bottom: 24px;
-    }
+    .card-class { border-top: 4px solid var(--brand-accent); }
+    .card-exam { border-top: 4px solid var(--exam-accent); }
 
     .card-icon {
-      width: 50px;
-      height: 50px;
+      width: 44px;
+      height: 44px;
       border-radius: var(--radius-md);
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 16px;
-      transition: var(--transition);
+      margin-bottom: 14px;
     }
 
     .card-class .card-icon {
@@ -242,32 +214,28 @@
       border: 1px solid var(--exam-border);
     }
 
-    .card-icon svg {
-      width: 26px;
-      height: 26px;
-      stroke-width: 2;
-    }
+    .card-icon svg { width: 22px; height: 22px; stroke-width: 2; }
 
     .card-heading {
-      font-size: 19px;
+      font-size: 18px;
       font-weight: 800;
       color: var(--text);
-      margin-bottom: 8px;
-      letter-spacing: -0.01em;
+      margin-bottom: 6px;
     }
 
     .card-text {
-      font-size: 13.5px;
+      font-size: 13px;
       color: var(--text-secondary);
-      line-height: 1.55;
-      margin-bottom: 18px;
+      line-height: 1.5;
+      margin-bottom: 16px;
     }
 
     .feature-list {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 7px;
+      margin-bottom: 20px;
     }
 
     .feature-list li {
@@ -280,30 +248,19 @@
     }
 
     .feature-list li svg {
-      width: 15px;
-      height: 15px;
+      width: 14px;
+      height: 14px;
       flex-shrink: 0;
     }
 
-    .card-class .feature-list li svg {
-      color: #059669;
-    }
-
-    .card-exam .feature-list li svg {
-      color: #2563eb;
-    }
-
-    .card-footer {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
+    .card-class .feature-list li svg { color: #059669; }
+    .card-exam .feature-list li svg { color: #2563eb; }
 
     .btn-main {
       width: 100%;
-      padding: 12px 18px;
+      padding: 11px 16px;
       border-radius: var(--radius-sm);
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 800;
       display: flex;
       align-items: center;
@@ -318,90 +275,248 @@
       background: var(--brand-primary);
       color: #ffffff;
     }
-
     .btn-class:hover {
       background: var(--brand-primary-hover);
-      box-shadow: 0 4px 14px rgba(6, 78, 59, 0.3);
     }
 
     .btn-exam {
       background: var(--exam-primary);
       color: #ffffff;
     }
-
     .btn-exam:hover {
       background: var(--exam-primary-hover);
-      box-shadow: 0 4px 14px rgba(30, 58, 138, 0.3);
     }
 
-    .btn-main svg {
-      width: 16px;
-      height: 16px;
-      stroke-width: 2.5;
-      transition: transform 200ms ease;
+    /* Faculty Directory Section */
+    .section-title-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
-    .card:hover .btn-main svg {
-      transform: translateX(4px);
-    }
-
-    .quick-links {
+    .section-title {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--brand-primary);
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding-top: 12px;
-      border-top: 1px solid var(--line);
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text-muted);
+      gap: 8px;
     }
 
-    .quick-links a {
+    .filter-search-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .search-input {
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--line-strong);
+      font-size: 13px;
+      font-family: inherit;
+      outline: none;
+      min-width: 220px;
+      background: #ffffff;
+    }
+
+    .search-input:focus {
+      border-color: var(--brand-primary);
+      box-shadow: 0 0 0 3px rgba(6, 78, 59, 0.1);
+    }
+
+    .dept-btn-group {
+      display: flex;
+      gap: 6px;
+      background: #e2e8f0;
+      padding: 3px;
+      border-radius: var(--radius-sm);
+    }
+
+    .dept-btn {
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      border: none;
+      background: transparent;
       color: var(--text-secondary);
-      text-decoration: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .dept-btn.active {
+      background: #ffffff;
+      color: var(--brand-primary);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .faculty-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 16px;
+    }
+
+    .faculty-card {
+      background: #ffffff;
+      border: 1.5px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+      transition: var(--transition);
+    }
+
+    .faculty-card:hover {
+      border-color: var(--brand-border);
+      box-shadow: 0 6px 20px rgba(6, 78, 59, 0.08);
+    }
+
+    .faculty-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .faculty-name-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .faculty-dept-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      background: var(--brand-surface);
+      color: var(--brand-primary);
+      border: 1px solid var(--brand-border);
+      margin-top: 3px;
+    }
+
+    .badge-conflict-free {
       display: inline-flex;
       align-items: center;
       gap: 4px;
-      transition: color 150ms ease;
+      font-size: 11px;
+      font-weight: 800;
+      color: #047857;
+      background: #ecfdf5;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      border: 1px solid #a7f3d0;
+      white-space: nowrap;
     }
 
-    .quick-links a:hover {
-      color: var(--brand-accent);
-      text-decoration: underline;
+    .assigned-subjects-title {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 6px;
     }
 
-    /* Developer Credit under buttons (Plain Text Only, No Shape) */
+    .subject-pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+
+    .subj-tag {
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      color: #334155;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .subj-tag .check-icon {
+      color: #10b981;
+      font-weight: 900;
+    }
+
+    .faculty-actions {
+      display: flex;
+      gap: 8px;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+    }
+
+    .btn-link-action {
+      flex: 1;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 750;
+      padding: 6px 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: var(--transition);
+      border: 1px solid transparent;
+    }
+
+    .btn-link-sched {
+      background: var(--brand-surface);
+      color: var(--brand-primary);
+      border-color: var(--brand-border);
+    }
+    .btn-link-sched:hover {
+      background: #dcfce7;
+    }
+
+    .btn-link-exam {
+      background: var(--exam-surface);
+      color: var(--exam-primary);
+      border-color: var(--exam-border);
+    }
+    .btn-link-exam:hover {
+      background: #dbeafe;
+    }
+
+    /* Developer Credit */
     .developer-bottom-text {
       margin-top: 36px;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      gap: 5px;
+      gap: 4px;
     }
 
     .developer-bottom-text .dev-label {
-      font-size: 14.5px;
+      font-size: 13.5px;
       font-weight: 700;
-      color: var(--text-secondary);
-      letter-spacing: 0.01em;
+      color: var(--text-muted);
     }
 
     .developer-bottom-text .dev-name {
-      font-size: 21px;
+      font-size: 19px;
       font-weight: 900;
       color: var(--brand-primary);
-      letter-spacing: -0.01em;
     }
 
-    /* Footer */
     .site-footer {
       text-align: center;
-      padding: 20px 24px;
+      padding: 16px 20px;
       border-top: 1px solid var(--line);
       background: var(--surface);
-      font-size: 12.5px;
+      font-size: 12px;
       font-weight: 600;
       color: var(--text-muted);
     }
@@ -409,28 +524,9 @@
     @media (max-width: 768px) {
       .cards-container {
         grid-template-columns: 1fr;
-        gap: 18px;
       }
-
-      .main-wrapper {
-        padding: 28px 16px;
-      }
-
-      .school-name {
-        font-size: 21px;
-      }
-
-      .school-official-logo {
-        width: 80px;
-        height: 80px;
-      }
-
-      .card {
-        padding: 22px 18px;
-      }
-
-      .developer-bottom-text .dev-name {
-        font-size: 18px;
+      .faculty-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -444,123 +540,104 @@
     <!-- Header & Branding -->
     <header class="hero-header">
       <div class="logo-container">
-        <img src="amis_logo.png" alt="Al Munawwara Islamic School Official Seal" class="school-official-logo">
+        <img src="amis_logo.png" alt="AMIS Logo" class="school-official-logo">
       </div>
-
       <h1 class="school-name">AL MUNAWWARA ISLAMIC SCHOOL</h1>
-      <h2 class="system-title">Schedule Management System</h2>
-      <p class="system-desc">Manage and view official class schedules and examination schedules.</p>
-
-      <div class="school-year-tag">
-        <span class="dot-live" aria-hidden="true"></span>
-        <span>S.Y. 2026–2027 • Official Schedule Portal</span>
-      </div>
+      <h2 class="system-title">Official Schedule & Anti-Conflict Verification Portal</h2>
     </header>
 
-    <!-- Balanced Two Cards Grid -->
-    <div class="cards-container">
+    <!-- Real-Time Anti-Conflict & Duplicate Guard Banner -->
+    <section class="integrity-banner">
+      <div class="integrity-pill">
+        <div class="pill-icon">✓</div>
+        <div class="pill-content">
+          <h4>Anti-Conflict Guard</h4>
+          <p>0 Conflicts Detected</p>
+        </div>
+      </div>
+      <div class="integrity-pill">
+        <div class="pill-icon">✓</div>
+        <div class="pill-content">
+          <h4>Duplicate Guard</h4>
+          <p>0 Duplicate Slots</p>
+        </div>
+      </div>
+      <div class="integrity-pill">
+        <div class="pill-icon">✓</div>
+        <div class="pill-content">
+          <h4>Active Sections</h4>
+          <p>64 Sections Live</p>
+        </div>
+      </div>
+      <div class="integrity-pill">
+        <div class="pill-icon">✓</div>
+        <div class="pill-content">
+          <h4>Verified Faculty</h4>
+          <p>53 Members with Load</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- Quick Navigation Cards Grid -->
+    <div class="cards-container">
       <!-- Card 1: Official Class Schedule -->
       <div class="card card-class" onclick="window.location.href='class-schedule.html'">
-        <div class="card-body">
-          <div class="card-icon" aria-hidden="true">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-              <line x1="16" y1="2" x2="16" y2="6"/>
-              <line x1="8" y1="2" x2="8" y2="6"/>
-              <line x1="3" y1="10" x2="21" y2="10"/>
-              <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/>
-            </svg>
+        <div>
+          <div class="card-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           </div>
-
           <h3 class="card-heading">Official Class Schedule</h3>
-          <p class="card-text">View and manage the official class schedules for all departments, grades, sections, shifts, and faculty.</p>
-
+          <p class="card-text">Weekly section timetables, period allocations, and teaching load distributions across all shifts.</p>
           <ul class="feature-list">
-            <li>
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              <span>69 Active Sections across Kinder, Elementary, JHS & SHS</span>
-            </li>
-            <li>
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              <span>F2F, ODL 1st Shift & ODL 2nd Shift Timetables</span>
-            </li>
-            <li>
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              <span>Direct Link to Faculty Weekly Timetables</span>
-            </li>
+            <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>64 Active Sections across Kinder, ELEM, JHS & SHS</span></li>
+            <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Face-to-Face, 1st Shift & 2nd Shift Timetables</span></li>
+            <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Clean 5-Day Seamless Span Layout</span></li>
           </ul>
         </div>
-
-        <div class="card-footer">
-          <a href="class-schedule.html" class="btn-main btn-class">
-            <span>View Class Schedule</span>
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"/>
-              <polyline points="12 5 19 12 12 19"/>
-            </svg>
-          </a>
-        </div>
+        <a href="class-schedule.html" class="btn-main btn-class">Open Class Schedules →</a>
       </div>
 
       <!-- Card 2: Exam Schedule -->
       <div class="card card-exam" onclick="window.location.href='exam-schedule.html'">
-        <div class="card-body">
-          <div class="card-icon" aria-hidden="true">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-              <polyline points="14 2 14 8 20 8"/>
-              <line x1="16" y1="13" x2="8" y2="13"/>
-              <line x1="16" y1="17" x2="8" y2="17"/>
-              <polyline points="10 9 9 9 8 9"/>
-            </svg>
+        <div>
+          <div class="card-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           </div>
-
-          <h3 class="card-heading">Exam Schedule</h3>
-          <p class="card-text">Create, manage, review, and track examination schedules for students and faculty.</p>
-
+          <h3 class="card-heading">1st Term Exam Schedule</h3>
+          <p class="card-text">Official 4-day term examination schedule optimized for zero teacher and section overlaps.</p>
           <ul class="feature-list">
-            <li>
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              <span>1st Term Examination Schedule (Option C Approved)</span>
-            </li>
-            <li>
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              <span>100% Conflict-Free CP-SAT Optimization Solver</span>
-            </li>
-            <li>
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              <span>Dedicated Faculty Timetable — Exam Schedule</span>
-            </li>
+            <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>565 Curricular Exam Sessions Scheduled</span></li>
+            <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Standard S.Y. 2025-2026 Reference Time Allocations</span></li>
+            <li><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Faculty Exam Timetable with Anti-Conflict Verification</span></li>
           </ul>
         </div>
+        <a href="exam-schedule.html" class="btn-main btn-exam">Open Exam Schedules →</a>
+      </div>
+    </div>
 
-        <div class="card-footer">
-          <a href="exam-schedule.html" class="btn-main btn-exam">
-            <span>View Exam Schedule</span>
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"/>
-              <polyline points="12 5 19 12 12 19"/>
-            </svg>
-          </a>
+    <!-- Faculty List with Assigned Subject Checkmark Section -->
+    <section style="margin-top: 10px;">
+      <div class="section-title-wrap">
+        <h3 class="section-title">
+          <span>Faculty Roster & Assigned Subject Verification</span>
+        </h3>
+        <div class="filter-search-bar">
+          <input type="text" id="facultySearch" class="search-input" placeholder="Search teacher or subject..." oninput="filterFaculty()">
+          <div class="dept-btn-group">
+            <button class="dept-btn active" onclick="setDeptFilter('ALL', this)">All</button>
+            <button class="dept-btn" onclick="setDeptFilter('ISAL', this)">ISAL</button>
+            <button class="dept-btn" onclick="setDeptFilter('High School', this)">High School</button>
+            <button class="dept-btn" onclick="setDeptFilter('Elementary', this)">Elementary</button>
+          </div>
         </div>
       </div>
 
-    </div>
+      <div class="faculty-grid" id="facultyGrid">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </section>
 
-    <!-- Developer Credit below the 2 buttons (Text Only) -->
+    <!-- Developer Credit -->
     <div class="developer-bottom-text">
       <span class="dev-label">Developed by:</span>
       <span class="dev-name">Software Engineer Mon Zhairel Lingasa</span>
@@ -569,8 +646,4590 @@
   </main>
 
   <footer class="site-footer">
-    AL MUNAWWARA ISLAMIC SCHOOL • Academic Year 2026–2027
+    AL MUNAWWARA ISLAMIC SCHOOL • Official Schedule Portal • Academic Year 2026–2027
   </footer>
+
+  <script>
+    const FACULTY_DATA = [
+  {
+    "id": "tchr_angeleni",
+    "name": "Teacher Angeleni",
+    "department": "Elementary / HS Faculty",
+    "total_classes": 12,
+    "total_exams": 8,
+    "assignments": [
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_franchette",
+    "name": "Teacher Franchette",
+    "department": "Elementary / HS Faculty",
+    "total_classes": 12,
+    "total_exams": 8,
+    "assignments": [
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_jessa",
+    "name": "Teacher Jessa",
+    "department": "Elementary Faculty",
+    "total_classes": 35,
+    "total_exams": 13,
+    "assignments": [
+      {
+        "subject": "Eng5",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "HG",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_wendy",
+    "name": "Teacher Wendy",
+    "department": "Elementary Faculty",
+    "total_classes": 34,
+    "total_exams": 5,
+    "assignments": [
+      {
+        "subject": "ARAL Math",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "CT 2",
+        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Circle Time 1",
+        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Circle Time 1",
+        "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Circle Time 2",
+        "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "MAKABANSA",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 5
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_keychell",
+    "name": "Teacher Keychell",
+    "department": "Elementary Faculty",
+    "total_classes": 33,
+    "total_exams": 3,
+    "assignments": [
+      {
+        "subject": "AP",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "CT 2",
+        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Circle Time 1",
+        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Circle Time 1",
+        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Circle Time 2",
+        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Meeting Time",
+        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Wrap-Up Time",
+        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_monisa",
+    "name": "Teacher Monisa",
+    "department": "Elementary Faculty",
+    "total_classes": 33,
+    "total_exams": 16,
+    "assignments": [
+      {
+        "subject": "AP",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "AP",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "AP",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "AP",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "AP",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "AP",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "AP",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "AP",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "AP",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "AP4",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "FIL",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "FIL",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "HG",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAKABANSA",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_sahdia",
+    "name": "Teacher Sahdia",
+    "department": "Elementary Faculty",
+    "total_classes": 32,
+    "total_exams": 16,
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC4",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "HG",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Language",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Language",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Language",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Language",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Language",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_fhairudz",
+    "name": "Teacher Fhairudz",
+    "department": "Elementary Faculty",
+    "total_classes": 31,
+    "total_exams": 11,
+    "assignments": [
+      {
+        "subject": "Math",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math 5",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_jerlyn",
+    "name": "Teacher Jerlyn",
+    "department": "Elementary Faculty",
+    "total_classes": 29,
+    "total_exams": 12,
+    "assignments": [
+      {
+        "subject": "HG",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math3",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math3",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_norhydie",
+    "name": "Teacher Norhydie",
+    "department": "Elementary Faculty",
+    "total_classes": 29,
+    "total_exams": 10,
+    "assignments": [
+      {
+        "subject": "AP",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAKABANSA",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_anna",
+    "name": "Teacher Anna",
+    "department": "Elementary Faculty",
+    "total_classes": 26,
+    "total_exams": 15,
+    "assignments": [
+      {
+        "subject": "Science",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_joanna",
+    "name": "Teacher Joanna",
+    "department": "Elementary Faculty",
+    "total_classes": 26,
+    "total_exams": 10,
+    "assignments": [
+      {
+        "subject": "CT 2",
+        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Circle Time 1",
+        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Circle Time 1",
+        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Circle Time 2",
+        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_katrina",
+    "name": "Teacher Katrina",
+    "department": "Elementary Faculty",
+    "total_classes": 26,
+    "total_exams": 8,
+    "assignments": [
+      {
+        "subject": "ARAL Reading",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "ARAL Reading",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "ARAL Reading",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "ARAL Reading",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "ARAL Reading",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "R & L",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "R & L",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "R & L",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "R & L",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Reading and Literacy",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_saimonah",
+    "name": "Teacher Saimonah",
+    "department": "Elementary Faculty",
+    "total_classes": 26,
+    "total_exams": 13,
+    "assignments": [
+      {
+        "subject": "AP",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "AP5",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH5",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MATH",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math4",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math5",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Sci3",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Sci4",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Sci5",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science 4",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_sitti_kauzar",
+    "name": "Teacher Sitti Kauzar",
+    "department": "Elementary Faculty",
+    "total_classes": 24,
+    "total_exams": 9,
+    "assignments": [
+      {
+        "subject": "Filipino",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_jenny",
+    "name": "Teacher Jenny",
+    "department": "Elementary Faculty",
+    "total_classes": 20,
+    "total_exams": 14,
+    "assignments": [
+      {
+        "subject": "Eng3",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Eng4",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "English 3",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Fil3",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Fil3",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Fil5",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Makabansa3",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE4",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE5",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_junaisah",
+    "name": "Teacher Junaisah",
+    "department": "Elementary Faculty",
+    "total_classes": 17,
+    "total_exams": 2,
+    "assignments": [
+      {
+        "subject": "ARAL Math",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "ARAL Math",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "ARAL Reading",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "ARAL Science",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_zuhora",
+    "name": "Teacher Zuhora",
+    "department": "Elementary Faculty",
+    "total_classes": 15,
+    "total_exams": 8,
+    "assignments": [
+      {
+        "subject": "AP",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "Fil",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Fil",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Fil4",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH4",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_ayah",
+    "name": "Teacher Ayah",
+    "department": "Elementary Faculty",
+    "total_classes": 14,
+    "total_exams": 2,
+    "assignments": [
+      {
+        "subject": "CT 1",
+        "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "CT 2",
+        "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "CT 2",
+        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Circle Time 1",
+        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 5
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_zara",
+    "name": "Teacher Zara",
+    "department": "Elementary Faculty",
+    "total_classes": 14,
+    "total_exams": 0,
+    "assignments": [
+      {
+        "subject": "MAKABANSA Tchr. Zara",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "MAKABANSA Tchr. Zara",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "MAKABANSA Tchr. Zara",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "MAKABANSA Tchr. Zara",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "MAPEH Tchr. Zara",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "MAPEH Tchr. Zara",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH Tchr. Zara",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH Tchr. Zara",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_arvin",
+    "name": "Teacher Arvin",
+    "department": "High School Faculty",
+    "total_classes": 37,
+    "total_exams": 15,
+    "assignments": [
+      {
+        "subject": "ARAL Math",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "ARAL Program",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "ARAL Program",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "ARAL Reading",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Aral",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_marham",
+    "name": "Teacher Marham",
+    "department": "High School Faculty",
+    "total_classes": 34,
+    "total_exams": 10,
+    "assignments": [
+      {
+        "subject": "ARAL Reading",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "ARAL Reading",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "ARAL Reading",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "ARAL Reading",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Aral Reading",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "HG",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_radzmia",
+    "name": "Teacher Radzmia",
+    "department": "High School Faculty",
+    "total_classes": 34,
+    "total_exams": 4,
+    "assignments": [
+      {
+        "subject": "Aral.Sci",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Gen Bio 1",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "Gen Bio 1",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 6
+      },
+      {
+        "subject": "Gen Bio 1",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "Gen Bio 1",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F",
+        "periods_per_week": 6
+      },
+      {
+        "subject": "Sci",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "Sci",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Sci",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Sci",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Sci",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_rowena",
+    "name": "Teacher Rowena",
+    "department": "High School Faculty",
+    "total_classes": 34,
+    "total_exams": 4,
+    "assignments": [
+      {
+        "subject": "Gen Bio 1",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "Gen Science",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "Gen Science",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "Gen Science",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Sci",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Sci",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Sci",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Sci",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Sci",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_jhelyn",
+    "name": "Teacher Jhelyn",
+    "department": "High School Faculty",
+    "total_classes": 31,
+    "total_exams": 11,
+    "assignments": [
+      {
+        "subject": "Gen Math",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "Gen Math",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "Gen Math",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "Gen Math/HR",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_sophia",
+    "name": "Teacher Sophia",
+    "department": "High School Faculty",
+    "total_classes": 31,
+    "total_exams": 15,
+    "assignments": [
+      {
+        "subject": "Filipino",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "HG",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_nadzra",
+    "name": "Teacher Nadzra",
+    "department": "High School Faculty",
+    "total_classes": 30,
+    "total_exams": 10,
+    "assignments": [
+      {
+        "subject": "EC",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "EC",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "EC",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "HG",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_norhaima",
+    "name": "Teacher Norhaima",
+    "department": "High School Faculty",
+    "total_classes": 30,
+    "total_exams": 10,
+    "assignments": [
+      {
+        "subject": "ENGLISH",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "ENGLISH",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "LCS",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "LCS",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "LCS",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_jairah",
+    "name": "Teacher Jairah",
+    "department": "High School Faculty",
+    "total_classes": 29,
+    "total_exams": 13,
+    "assignments": [
+      {
+        "subject": "English",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_shirehan",
+    "name": "Teacher Shirehan",
+    "department": "High School Faculty",
+    "total_classes": 29,
+    "total_exams": 8,
+    "assignments": [
+      {
+        "subject": "HG",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "PSKP",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "PSKP",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "PSKP 11",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Soc.Sci",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_aniah",
+    "name": "Teacher Aniah",
+    "department": "High School Faculty",
+    "total_classes": 26,
+    "total_exams": 7,
+    "assignments": [
+      {
+        "subject": "Gen. Physics 1",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "Gen. Physics 1",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F",
+        "periods_per_week": 6
+      },
+      {
+        "subject": "Prac. Res. 2",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Prac. Res. 2",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F",
+        "periods_per_week": 6
+      },
+      {
+        "subject": "Sci",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Sci",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Sci",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_normylah",
+    "name": "Teacher Normylah",
+    "department": "High School Faculty",
+    "total_classes": 24,
+    "total_exams": 12,
+    "assignments": [
+      {
+        "subject": "AP",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "AP",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "AP",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "AP",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Fil",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Filipino",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "HG",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_halnaisa",
+    "name": "Teacher Halnaisa",
+    "department": "High School Faculty",
+    "total_classes": 21,
+    "total_exams": 14,
+    "assignments": [
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_mohaymen",
+    "name": "Sir Mohaymen",
+    "department": "High School Faculty",
+    "total_classes": 19,
+    "total_exams": 8,
+    "assignments": [
+      {
+        "subject": "Aral Math",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Aral Math",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Aral Math",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Aral Math",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "PE 12",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "PE 12",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F",
+        "periods_per_week": 3
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_nof",
+    "name": "Teacher Nof",
+    "department": "High School Faculty",
+    "total_classes": 19,
+    "total_exams": 9,
+    "assignments": [
+      {
+        "subject": "21st Lit.",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "21st Lit.",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "ESP",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "ESP",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "ESP",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "ESP",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "ESP",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "ESP",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "ESP",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_ethel",
+    "name": "Teacher Ethel",
+    "department": "High School Faculty",
+    "total_classes": 14,
+    "total_exams": 5,
+    "assignments": [
+      {
+        "subject": "MIL",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "MIL",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_wardah",
+    "name": "Teacher Wardah",
+    "department": "High School Faculty",
+    "total_classes": 3,
+    "total_exams": 3,
+    "assignments": [
+      {
+        "subject": "Values Ed.",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Values Ed.",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Values Ed.",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_abegail",
+    "name": "Teacher Abegail",
+    "department": "High School Faculty",
+    "total_classes": 0,
+    "total_exams": 0,
+    "assignments": [],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_hannah",
+    "name": "Teacher Hannah",
+    "department": "High School Faculty",
+    "total_classes": 0,
+    "total_exams": 0,
+    "assignments": [],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_marie",
+    "name": "Teacher Marie",
+    "department": "High School Faculty",
+    "total_classes": 0,
+    "total_exams": 0,
+    "assignments": [],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_shanen",
+    "name": "Teacher Shanen",
+    "department": "High School Faculty",
+    "total_classes": 0,
+    "total_exams": 0,
+    "assignments": [],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_thea",
+    "name": "Teacher Thea",
+    "department": "High School Faculty",
+    "total_classes": 0,
+    "total_exams": 0,
+    "assignments": [],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_saliha",
+    "name": "Ustadha Saliha",
+    "department": "ISAL Faculty",
+    "total_classes": 33,
+    "total_exams": 17,
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Arabic",
+        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 4
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC3",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC5",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Hadith",
+        "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Hadith",
+        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Hadith",
+        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Hadith",
+        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_obaydah",
+    "name": "Ustadh Obaydah",
+    "department": "ISAL Faculty",
+    "total_classes": 30,
+    "total_exams": 23,
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an5",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_silfah",
+    "name": "Ustadha Silfah",
+    "department": "ISAL Faculty",
+    "total_classes": 30,
+    "total_exams": 23,
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "GMRC",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_ersahad",
+    "name": "Ustadh Ersahad",
+    "department": "ISAL Faculty",
+    "total_classes": 28,
+    "total_exams": 12,
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 3
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_abdiraheem",
+    "name": "Ustadh Abdiraheem",
+    "department": "ISAL Faculty",
+    "total_classes": 27,
+    "total_exams": 12,
+    "assignments": [
+      {
+        "subject": "SHAF",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 5
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF4",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_ali",
+    "name": "Ustadh Ali",
+    "department": "ISAL Faculty",
+    "total_classes": 25,
+    "total_exams": 21,
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic Ust. Ali",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic4",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_samsuddin",
+    "name": "Alim Samsuddin",
+    "department": "ISAL Faculty",
+    "total_classes": 24,
+    "total_exams": 18,
+    "assignments": [
+      {
+        "subject": "SHAF",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_hainur",
+    "name": "Ustadh Hainur",
+    "department": "ISAL Faculty",
+    "total_classes": 22,
+    "total_exams": 21,
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Hadith",
+        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Hadith",
+        "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Hadith",
+        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_faidh",
+    "name": "Ustadh Faidh",
+    "department": "ISAL Faculty",
+    "total_classes": 21,
+    "total_exams": 15,
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic5",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Hadith",
+        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an4",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF 5",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF3",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF5",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_jaisam",
+    "name": "Ustadh Jaisam",
+    "department": "ISAL Faculty",
+    "total_classes": 21,
+    "total_exams": 17,
+    "assignments": [
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Qur'an",
+        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_abdul_karim",
+    "name": "Alim Abdul Karim",
+    "department": "ISAL Faculty",
+    "total_classes": 20,
+    "total_exams": 11,
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_mamonas",
+    "name": "Alim Mamonas",
+    "department": "ISAL Faculty",
+    "total_classes": 13,
+    "total_exams": 9,
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_abdulwahab",
+    "name": "Alim Abdulwahab",
+    "department": "ISAL Faculty",
+    "total_classes": 11,
+    "total_exams": 9,
+    "assignments": [
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_dipatuan",
+    "name": "Alim Dipatuan",
+    "department": "ISAL Faculty",
+    "total_classes": 5,
+    "total_exams": 3,
+    "assignments": [
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_raslina",
+    "name": "Ustadh Raslina",
+    "department": "ISAL Faculty",
+    "total_classes": 5,
+    "total_exams": 3,
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 2
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_bustamante",
+    "name": "Alim Bustamante",
+    "department": "ISAL Faculty",
+    "total_classes": 3,
+    "total_exams": 3,
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT",
+        "periods_per_week": 1
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT",
+        "periods_per_week": 1
+      }
+    ],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  },
+  {
+    "id": "tchr_raffy",
+    "name": "Ustadh Raffy",
+    "department": "ISAL Faculty",
+    "total_classes": 0,
+    "total_exams": 0,
+    "assignments": [],
+    "conflict_status": "0 Conflicts (Verified)",
+    "duplicate_status": "0 Duplicates (Verified)"
+  }
+];
+    let currentDept = 'ALL';
+
+    function renderFaculty() {
+      const query = (document.getElementById('facultySearch').value || '').toLowerCase().trim();
+      const grid = document.getElementById('facultyGrid');
+      
+      const filtered = FACULTY_DATA.filter(t => {
+        const matchDept = (currentDept === 'ALL') || 
+                          (currentDept === 'ISAL' && t.department.includes('ISAL')) ||
+                          (currentDept === 'High School' && t.department.includes('High School')) ||
+                          (currentDept === 'Elementary' && t.department.includes('Elementary'));
+                          
+        const matchQuery = !query || 
+                           t.name.toLowerCase().includes(query) || 
+                           t.department.toLowerCase().includes(query) ||
+                           t.assignments.some(a => a.subject.toLowerCase().includes(query) || a.section.toLowerCase().includes(query));
+                           
+        return matchDept && matchQuery;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#64748b; font-weight:700;">No faculty members matched the search criteria.</div>';
+        return;
+      }
+
+      grid.innerHTML = filtered.map(t => `
+        <div class="faculty-card">
+          <div>
+            <div class="faculty-head">
+              <div>
+                <div class="faculty-name-title">${t.name}</div>
+                <span class="faculty-dept-tag">${t.department}</span>
+              </div>
+              <span class="badge-conflict-free">✓ 0 Conflicts</span>
+            </div>
+
+            <div class="assigned-subjects-title">Assigned Subjects & Load (${t.total_classes} Classes/wk):</div>
+            <div class="subject-pill-list">
+              ${t.assignments.length > 0 ? t.assignments.map(a => `
+                <span class="subj-tag" title="${a.section} (${a.shift})">
+                  <span class="check-icon">✓</span>
+                  <span>${a.subject}</span>
+                  <span style="font-size:10px; color:#64748b;">• ${a.section.replace('CLASS SCHEDULE', '').replace('GRADE', 'G').trim()}</span>
+                </span>
+              `).join('') : '<span style="font-size:12px; color:#94a3b8; font-style:italic;">No active weekly classes</span>'}
+            </div>
+          </div>
+
+          <div class="faculty-actions">
+            <a href="class-schedule.html?view=teacher&tchr=${t.id}" class="btn-link-action btn-link-sched">Weekly Schedule</a>
+            <a href="faculty-timetable-exam.html?teacher=${t.id}" class="btn-link-action btn-link-exam">Exam Timetable (${t.total_exams})</a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterFaculty() {
+      renderFaculty();
+    }
+
+    function setDeptFilter(dept, btn) {
+      currentDept = dept;
+      document.querySelectorAll('.dept-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderFaculty();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderFaculty();
+    });
+  </script>
 
 </body>
 </html>

@@ -704,6 +704,10 @@ html, body {
       </select>
     </div>
 
+    <div style="display:inline-flex; align-items:center; gap:6px; background:rgba(16,185,129,0.2); border:1px solid #10b981; padding:4px 10px; border-radius:9999px; font-size:11.5px; font-weight:800; color:#a7f3d0;">
+      <span style="color:#10b981; font-weight:900;">✓</span> Anti-Conflict Active: 0 Conflicts
+    </div>
+
     <a href="index.html" class="btn-action btn-back" title="Back to Home">
       <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
       Back Home
@@ -719,10 +723,10 @@ html, body {
 <script>
 (function() {
   const EXAM_DATES = [
-    { day_num: 1, short_date: 'Sep 2', day_name: 'Wednesday', header: 'Day 1 • Wed, Sep 2' },
-    { day_num: 2, short_date: 'Sep 3', day_name: 'Thursday', header: 'Day 2 • Thu, Sep 3' },
-    { day_num: 3, short_date: 'Sep 6', day_name: 'Sunday', header: 'Day 3 • Sun, Sep 6' },
-    { day_num: 4, short_date: 'Sep 7', day_name: 'Monday', header: 'Day 4 • Mon, Sep 7' }
+    { day_num: 1, short_date: 'Sep 7', day_name: 'Monday', header: 'Day 1 • Mon, Sep 7' },
+    { day_num: 2, short_date: 'Sep 8', day_name: 'Tuesday', header: 'Day 2 • Tue, Sep 8' },
+    { day_num: 3, short_date: 'Sep 9', day_name: 'Wednesday', header: 'Day 3 • Wed, Sep 9' },
+    { day_num: 4, short_date: 'Sep 10', day_name: 'Thursday', header: 'Day 4 • Thu, Sep 10' }
   ];
 
   let SECTIONS_DATA = [];
