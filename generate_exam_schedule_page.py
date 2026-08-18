@@ -1,4 +1,24 @@
-<!doctype html>
+#!/usr/bin/env python3
+import json
+import os
+
+BASE_DIR = "/home/tatsuya/Projects/AMIS/amis_exam_calendar"
+
+with open(os.path.join(BASE_DIR, "exam_data.json"), "r", encoding="utf-8") as f:
+    exam_data = json.load(f)
+
+with open(os.path.join(BASE_DIR, "class_schedules_data.json"), "r", encoding="utf-8") as f:
+    class_sections = json.load(f)
+
+with open(os.path.join(BASE_DIR, "teacher_weekly_schedules.json"), "r", encoding="utf-8") as f:
+    weekly_schedules = json.load(f)
+
+# Save exam_data.js for instant offline/zero-latency client-side rendering
+with open(os.path.join(BASE_DIR, "exam_data.js"), "w", encoding="utf-8") as f:
+    f.write(f"window.AMIS_EXAM_DATA = {json.dumps(exam_data, ensure_ascii=False, indent=2)};\n")
+    f.write("const AMIS_EXAM_DATA = window.AMIS_EXAM_DATA;\n")
+
+HTML_TEMPLATE = r"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -1238,3 +1258,9 @@ html, body {
 
 </body>
 </html>
+"""
+
+with open(os.path.join(BASE_DIR, "exam-schedule.html"), "w", encoding="utf-8") as f:
+    f.write(HTML_TEMPLATE)
+
+print("✓ Successfully regenerated exam-schedule.html using the official unified Class Schedule design system!")
