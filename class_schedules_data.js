@@ -1,4 +1,4 @@
-const ALL_SECTIONS_DATA = [
+const CLASS_SCHEDULES_DATA = [
   {
     "id": "sec_kinder_2_class_schedule_f2f",
     "section_id": "sec_kinder_2_class_schedule_f2f",
@@ -32266,7 +32266,7 @@ const ALL_SECTIONS_DATA = [
           "Sunday": {
             "raw": "SHAF - Ust. Raslina",
             "subject": "SHAF",
-            "teacher": "Ustadh Raslina",
+            "teacher": "Ustadh Hainur",
             "teacher_id": "tchr_raslina",
             "is_break": false,
             "label": null,
@@ -32286,7 +32286,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "SHAF - Ust. Raslina",
             "subject": "SHAF",
-            "teacher": "Ustadh Raslina",
+            "teacher": "Ustadh Hainur",
             "teacher_id": "tchr_raslina",
             "is_break": false,
             "label": null,
@@ -33215,7 +33215,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "SHAF - Ust. Raslina",
             "subject": "SHAF",
-            "teacher": "Ustadh Raslina",
+            "teacher": "Ustadh Hainur",
             "teacher_id": "tchr_raslina",
             "is_break": false,
             "label": null,
@@ -33235,7 +33235,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "SHAF - Ust. Raslina",
             "subject": "SHAF",
-            "teacher": "Ustadh Raslina",
+            "teacher": "Ustadh Hainur",
             "teacher_id": "tchr_raslina",
             "is_break": false,
             "label": null,
@@ -51818,7 +51818,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Arabic - Ust. Raslina",
             "subject": "Arabic",
-            "teacher": "Ustadh Raslina",
+            "teacher": "Ustadh Hainur",
             "teacher_id": "tchr_raslina",
             "is_break": false,
             "label": null,
@@ -65772,3 +65772,6 @@ const ALL_SECTIONS_DATA = [
     ]
   }
 ];
+
+if (typeof window !== "undefined") { window.CLASS_SCHEDULES_DATA = CLASS_SCHEDULES_DATA; }
+if (typeof module !== "undefined" && module.exports) { module.exports = CLASS_SCHEDULES_DATA; }

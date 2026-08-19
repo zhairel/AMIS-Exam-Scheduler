@@ -1,566 +1,566 @@
 ﻿Exam_ID,Day,Date,Time_Slot,Section,Department,Grade_Level,Shift,Subject,Teacher,Duration
-exam_1,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,KINDER 2 CLASS SCHEDULE (F2F),Elementary,Kinder 2,F2F,Arabic,Ustadha Saliha,60 min.
+exam_1,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Qur'an,Ustadh Hainur,60 min.
 exam_2,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Arabic,Ustadha Silfah,60 min.
-exam_3,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Hadith,Ustadh Hainur,60 min.
-exam_4,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Qur'an,Ustadh Faidh,60 min.
-exam_5,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Elementary,Kinder 1,ODL - 2ND SHIFT,Hadith,Ustadh Hainur,60 min.
-exam_6,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,KINDER 1 CLASS SCHEDULE (F2F),Elementary,Kinder 1,F2F,Arabic,Ustadha Saliha,60 min.
-exam_7,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,KINDER 1 CLASS SCHEDULE (F2F),Elementary,Kinder 1,F2F,Hadith,Ustadha Saliha,60 min.
-exam_8,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,Language,Teacher Sahdia,60 min.
-exam_9,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,Arabic,Teacher Sahdia,60 min.
-exam_10,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,GMRC,Teacher Sahdia,60 min.
-exam_11,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Reading & Literacy,Teacher Katrina,60 min.
-exam_12,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Math,Teacher Joanna,60 min.
-exam_13,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Language,Teacher Sahdia,60 min.
-exam_14,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,GMRC,Ustadha Saliha,60 min.
-exam_15,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Math,Teacher Joanna,60 min.
-exam_16,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Reading & Literacy,Teacher Katrina,60 min.
-exam_17,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Arabic,Ustadh Hainur,60 min.
-exam_18,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,Makabansa,Teacher Monisa,60 min.
-exam_19,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,Qur'an,Ustadh Obaydah,60 min.
-exam_20,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,English,Teacher Marham,60 min.
-exam_21,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Filipino,Teacher Sitti Kauzar,60 min.
-exam_22,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,SHAF,Alim Abdul Karim,60 min.
-exam_23,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,SHAF,Alim Abdul Karim,60 min.
-exam_24,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Arabic,Ustadh Hainur,60 min.
-exam_25,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Math,Teacher Sitti Kauzar,60 min.
-exam_26,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Arabic,Ustadh Hainur,60 min.
-exam_27,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,GMRC,Ustadha Saliha,60 min.
-exam_28,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Filipino,Teacher Sitti Kauzar,60 min.
-exam_29,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,English,Teacher Marham,60 min.
+exam_3,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Qur'an,Ustadh Hainur,60 min.
+exam_4,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Elementary,Kinder 1,ODL - 2ND SHIFT,Qur'an,Ustadh Hainur,60 min.
+exam_5,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,KINDER 1 CLASS SCHEDULE (F2F),Elementary,Kinder 1,F2F,Oral & Written Exam,Teacher Wendy,60 min.
+exam_6,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,KINDER 1 CLASS SCHEDULE (F2F),Elementary,Kinder 1,F2F,Qur'an,Ustadh Jaisam,60 min.
+exam_7,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,KINDER 1 CLASS SCHEDULE (F2F),Elementary,Kinder 1,F2F,Hadith,Ustadha Saliha,60 min.
+exam_8,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,Reading & Literacy,Teacher Katrina,60 min.
+exam_9,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,Makabansa,Teacher Norhydie,60 min.
+exam_10,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Makabansa,Teacher Norhydie,60 min.
+exam_11,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Arabic,Ustadh Hainur,60 min.
+exam_12,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Makabansa,Teacher Norhydie,60 min.
+exam_13,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,SHAF,Alim Abdul Karim,60 min.
+exam_14,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Makabansa,Teacher Norhydie,60 min.
+exam_15,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Qur'an,Ustadh Hainur,60 min.
+exam_16,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Math,Teacher Joanna,60 min.
+exam_17,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Qur'an,Ustadh Hainur,60 min.
+exam_18,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,Math,Teacher Sitti Kauzar,60 min.
+exam_19,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,Arabic,Ustadh Obaydah,60 min.
+exam_20,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,SHAF,Ustadh Ersahad,60 min.
+exam_21,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,English,Teacher Marham,60 min.
+exam_22,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Filipino,Teacher Sitti Kauzar,60 min.
+exam_23,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Makabansa,Teacher Zuhora,60 min.
+exam_24,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,SHAF,Alim Abdul Karim,60 min.
+exam_25,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Filipino,Teacher Sitti Kauzar,60 min.
+exam_26,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_27,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Math,Teacher Sitti Kauzar,60 min.
+exam_28,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_29,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,English,Teacher Marham,60 min.
 exam_30,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,Filipino,Teacher Normylah,60 min.
-exam_31,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,GMRC,Ustadha Silfah,60 min.
-exam_32,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,SHAF,Alim Abdul Karim,60 min.
+exam_31,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,Arabic,Ustadha Silfah,60 min.
+exam_32,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,Math,Teacher Jerlyn,60 min.
 exam_33,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,Filipino,Teacher Normylah,60 min.
-exam_34,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_35,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,English,Teacher Marham,60 min.
-exam_36,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,English,Teacher Jenny,60 min.
-exam_37,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_38,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,Makabansa,Teacher Jenny,60 min.
-exam_39,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,English,Teacher Marham,60 min.
-exam_40,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,GMRC,Ustadha Silfah,60 min.
-exam_41,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_42,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,Math,Teacher Jerlyn,60 min.
-exam_43,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,GMRC,Ustadha Saliha,60 min.
-exam_44,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,Arabic,Ustadh Ali,60 min.
-exam_45,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,Qur'an,Ustadh Obaydah,60 min.
-exam_46,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Halnaisa,60 min.
-exam_47,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,TLE,Teacher Monisa,60 min.
-exam_48,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Science,Teacher Anna,60 min.
-exam_49,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Math,Teacher Arvin,60 min.
-exam_50,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_51,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,Qur'an,Ustadh Faidh,60 min.
-exam_52,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,SHAF,Ustadh Abdiraheem,60 min.
-exam_53,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Math,Teacher Arvin,60 min.
-exam_54,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,TLE,Teacher Monisa,60 min.
-exam_55,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,SHAF,Ustadh Abdiraheem,60 min.
-exam_56,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,SHAF,Ustadh Abdiraheem,60 min.
-exam_57,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_58,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,GMRC,Teacher Sahdia,60 min.
-exam_59,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Monisa,60 min.
-exam_60,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,Filipino,Teacher Zuhora,60 min.
-exam_61,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,Science,Teacher Saimonah,60 min.
-exam_62,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,English,Teacher Jessa,60 min.
-exam_63,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,GMRC,Teacher Jairah,60 min.
-exam_64,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,TLE,Teacher Halnaisa,60 min.
-exam_65,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,SHAF,Ustadh Raslina,60 min.
-exam_66,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,English,Teacher Jessa,60 min.
-exam_67,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Qur'an,Ustadh Jaisam,60 min.
-exam_68,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Science,Teacher Anna,60 min.
-exam_69,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Keychell,60 min.
-exam_70,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_71,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Saimonah,60 min.
-exam_72,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,English,Teacher Jessa,60 min.
-exam_73,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Monisa,60 min.
-exam_74,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,TLE,Teacher Anna,60 min.
+exam_34,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_35,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,Makabansa,Teacher Jenny,60 min.
+exam_36,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,GMRC,Ustadha Silfah,60 min.
+exam_37,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,Arabic,Ustadha Silfah,60 min.
+exam_38,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_39,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,Math,Teacher Jerlyn,60 min.
+exam_40,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,GMRC,Ustadha Saliha,60 min.
+exam_41,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,Makabansa,Teacher Jenny,60 min.
+exam_42,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,Arabic,Ustadh Ali,60 min.
+exam_43,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,English,Teacher Norhydie,60 min.
+exam_44,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,TLE,Teacher Monisa,60 min.
+exam_45,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,FIL,Teacher Monisa,60 min.
+exam_46,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Science,Teacher Anna,60 min.
+exam_47,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Monisa,60 min.
+exam_48,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,Qur'an,Ustadh Faidh,60 min.
+exam_49,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,Math,Teacher Saimonah,60 min.
+exam_50,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,SHAF,Ustadh Abdiraheem,60 min.
+exam_51,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Math,Teacher Arvin,60 min.
+exam_52,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_53,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,English,Teacher Arvin,60 min.
+exam_54,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,English,Teacher Arvin,60 min.
+exam_55,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Science,Teacher Anna,60 min.
+exam_56,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,SHAF,Ustadh Abdiraheem,60 min.
+exam_57,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,Qur'an,Ustadh Faidh,60 min.
+exam_58,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
+exam_59,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,GMRC,Teacher Sahdia,60 min.
+exam_60,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,Science,Teacher Junaisah,60 min.
+exam_61,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,Filipino,Teacher Jessa,60 min.
+exam_62,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,SHAF,Ustadh Hainur,60 min.
+exam_63,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Filipino,Teacher Joanna,60 min.
+exam_64,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Qur'an,Ustadh Jaisam,60 min.
+exam_65,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Science,Teacher Anna,60 min.
+exam_66,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,TLE,Teacher Anna,60 min.
+exam_67,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Qur'an,Ustadh Jaisam,60 min.
+exam_68,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,GMRC,Ustadha Saliha,60 min.
+exam_69,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_70,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Arabic,Ustadh Faidh,60 min.
+exam_71,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Monisa,60 min.
+exam_72,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,TLE,Teacher Anna,60 min.
+exam_73,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,English,Teacher Jessa,60 min.
+exam_74,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,SHAF,Ustadh Ersahad,60 min.
 exam_75,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,GMRC,Teacher Jairah,60 min.
-exam_76,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Arabic,Ustadh Ersahad,60 min.
-exam_77,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,Arabic,Ustadh Faidh,60 min.
-exam_78,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,GMRC,Ustadha Saliha,60 min.
-exam_79,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_80,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Araling Panlipunan,Teacher Zuhora,60 min.
-exam_81,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Normylah,60 min.
-exam_82,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,TLE,Teacher Arvin,60 min.
-exam_83,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,GMRC,Ustadha Silfah,60 min.
-exam_84,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Qur'an,Ustadh Jaisam,60 min.
-exam_85,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Normylah,60 min.
+exam_76,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,Math,Teacher Saimonah,60 min.
+exam_77,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,GMRC,Ustadha Saliha,60 min.
+exam_78,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_79,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Math,Ustadh Ersahad,60 min.
+exam_80,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,GMRC,Ustadha Silfah,60 min.
+exam_81,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Normylah,60 min.
+exam_82,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,SHAF,Ustadh Abdiraheem,60 min.
+exam_83,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,TLE,Teacher Arvin,60 min.
+exam_84,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,GMRC,Ustadha Silfah,60 min.
+exam_85,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Fil,Teacher Zuhora,60 min.
 exam_86,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,GMRC,Ustadha Silfah,60 min.
 exam_87,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,Science,Teacher Fhairudz,60 min.
-exam_88,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,English,Teacher Jessa,60 min.
-exam_89,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,Math,Teacher Saimonah,60 min.
-exam_90,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,GMRC,Ustadha Silfah,60 min.
+exam_88,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,SHAF,Ustadh Faidh,60 min.
+exam_89,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,Math,Teacher Saimonah,60 min.
+exam_90,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Filipino,Teacher Sophia,60 min.
 exam_91,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 10:00 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Math,Teacher Fhairudz,120 min.
-exam_92,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Filipino,Teacher Sophia,60 min.
-exam_93,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,TLE,Teacher Halnaisa,60 min.
-exam_94,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,English,Teacher Jairah,60 min.
+exam_92,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Science,Teacher Radzmia,60 min.
+exam_93,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,TLE,Teacher Halnaisa,60 min.
+exam_94,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,SHAF,Alim Samsuddin,60 min.
 exam_95,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,SHAF,Alim Samsuddin,60 min.
 exam_96,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Arabic,Alim Mamonas,60 min.
 exam_97,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Social Science,Sir Mohaymen,60 min.
-exam_98,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Science,Teacher Rowena,60 min.
-exam_99,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 10:00 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Math,Teacher Jhelyn,120 min.
-exam_100,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,Science,Teacher Aniah,60 min.
-exam_101,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,English,Teacher Jairah,60 min.
-exam_102,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,SHAF,Alim Samsuddin,60 min.
-exam_103,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,English,Teacher Jairah,60 min.
+exam_98,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Science,Teacher Rowena,60 min.
+exam_99,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 11:25 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Math,Teacher Jhelyn,120 min.
+exam_100,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,TLE,Teacher Halnaisa,60 min.
+exam_101,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
+exam_102,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,Qur'an,Ustadh Jaisam,60 min.
+exam_103,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,GMRC,Ustadha Silfah,60 min.
 exam_104,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,Filipino,Teacher Sophia,60 min.
-exam_105,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 02:50 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,Math,Teacher Fhairudz,120 min.
-exam_106,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,Qur'an,Ustadh Jaisam,60 min.
-exam_107,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,Science,Teacher Rowena,60 min.
-exam_108,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,English,Teacher Norhaima,60 min.
-exam_109,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,Values Ed,Teacher Nof,60 min.
-exam_110,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,Qur'an,Alim Abdulwahab,60 min.
-exam_111,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,TLE,Teacher Angeleni,60 min.
-exam_112,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,Values Ed,Teacher Nof,60 min.
-exam_113,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,Qur'an,Ustadh Jaisam,60 min.
-exam_114,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,Filipino,Teacher Sophia,60 min.
-exam_115,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,TLE,Teacher Halnaisa,60 min.
-exam_116,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,Science,Teacher Shirehan,60 min.
-exam_117,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 06:30 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,Math,Teacher Fhairudz,120 min.
-exam_118,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,SHAF,Alim Samsuddin,60 min.
-exam_119,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
-exam_120,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,Science,Teacher Rowena,60 min.
-exam_121,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 06:30 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,Math,Teacher Jhelyn,120 min.
-exam_122,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,SHAF,Alim Samsuddin,60 min.
-exam_123,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,Science,Teacher Rowena,60 min.
-exam_124,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
-exam_125,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,SHAF,Alim Bustamante,60 min.
-exam_126,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,Filipino,Teacher Nadzra,60 min.
-exam_127,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,LCS,Teacher Norhaima,60 min.
-exam_128,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,PSKP,Teacher Shirehan,60 min.
-exam_129,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,Qur'an,Alim Dipatuan,60 min.
-exam_130,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,SHAF,Alim Samsuddin,60 min.
-exam_131,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,21st Lit.,Teacher Nof,60 min.
-exam_132,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,Arabic,Alim Mamonas,60 min.
-exam_133,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 04:10 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,Gen Math,Teacher Jhelyn,120 min.
-exam_134,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,LCS,Teacher Norhaima,60 min.
-exam_135,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,Gen Bio 1,Teacher Radzmia,60 min.
-exam_136,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,Qur'an,Alim Dipatuan,60 min.
-exam_137,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,PE 12,Sir Mohaymen,60 min.
-exam_138,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,PSKP 11,Teacher Shirehan,60 min.
+exam_105,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,Science,Teacher Shirehan,60 min.
+exam_106,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,TLE,Teacher Halnaisa,60 min.
+exam_107,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,Qur'an,Ustadh Jaisam,60 min.
+exam_108,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,TLE,Teacher Angeleni,60 min.
+exam_109,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,English,Teacher Norhaima,60 min.
+exam_110,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,Values Ed,Teacher Nof,60 min.
+exam_111,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,Qur'an,Alim Abdulwahab,60 min.
+exam_112,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,Social Science,Sir Mohaymen,60 min.
+exam_113,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,Filipino,Teacher Sophia,60 min.
+exam_114,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,TLE,Teacher Halnaisa,60 min.
+exam_115,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,English,Teacher Jairah,60 min.
+exam_116,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 06:30 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,Math,Teacher Fhairudz,120 min.
+exam_117,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,Qur'an,Ustadh Jaisam,60 min.
+exam_118,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,Filipino,Teacher Sophia,60 min.
+exam_119,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,English,Teacher Jairah,60 min.
+exam_120,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
+exam_121,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,Qur'an,Alim Abdulwahab,60 min.
+exam_122,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,Values Ed,Teacher Nof,60 min.
+exam_123,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,SHAF,Alim Samsuddin,60 min.
+exam_124,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,Qur'an,Alim Abdulwahab,60 min.
+exam_125,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,Values Ed,Teacher Nof,60 min.
+exam_126,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 05:20 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,Math,Teacher Jhelyn,120 min.
+exam_127,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,Values Ed,Teacher Nof,60 min.
+exam_128,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,LCS,Teacher Norhaima,60 min.
+exam_129,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,Arabic,Alim Mamonas,60 min.
+exam_130,Wednesday,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,Gen Bio 1,Teacher Radzmia,60 min.
+exam_131,Wednesday,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,SHAF,Alim Samsuddin,60 min.
+exam_132,Wednesday,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,21st Lit.,Teacher Nof,60 min.
+exam_133,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,Arabic,Alim Mamonas,60 min.
+exam_134,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,Qur'an,Alim Abdulwahab,60 min.
+exam_135,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,LCS,Teacher Norhaima,60 min.
+exam_136,Wednesday,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,Gen Bio 1,Teacher Radzmia,60 min.
+exam_137,Wednesday,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,PE 12,Sir Mohaymen,60 min.
+exam_138,Wednesday,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,Arabic,Alim Mamonas,60 min.
 exam_139,Wednesday,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,Qur'an,Alim Abdulwahab,60 min.
 exam_140,Wednesday,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,Gen Science,Teacher Rowena,60 min.
-exam_141,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,KINDER 2 CLASS SCHEDULE (F2F),Elementary,Kinder 2,F2F,Hadith,Ustadha Saliha,60 min.
-exam_142,Thursday,"Thursday, September 3, 2026",03:50 PM – 04:50 PM,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Oral & Written Exam,Teacher Joanna,60 min.
-exam_143,Thursday,"Thursday, September 3, 2026",01:30 PM – 02:30 PM,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Qur'an,Ustadh Hainur,60 min.
-exam_144,Thursday,"Thursday, September 3, 2026",03:50 PM – 04:50 PM,Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Qur'an,Ustadh Hainur,60 min.
-exam_145,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Oral & Written Exam,Teacher Ayah,60 min.
-exam_146,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Arabic,Ustadh Faidh,60 min.
-exam_147,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Hadith,Ustadh Faidh,60 min.
-exam_148,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,KINDER 1 CLASS SCHEDULE (F2F),Elementary,Kinder 1,F2F,Qur'an,Ustadh Jaisam,60 min.
-exam_149,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,SHAF,Ustadh Abdiraheem,60 min.
-exam_150,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,Makabansa,Teacher Norhydie,60 min.
-exam_151,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,Qur'an,Ustadh Obaydah,60 min.
-exam_152,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Makabansa,Teacher Norhydie,60 min.
-exam_153,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Makabansa,Teacher Norhydie,60 min.
-exam_154,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,SHAF,Alim Abdul Karim,60 min.
-exam_155,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,GMRC,Teacher Sahdia,60 min.
-exam_156,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Language,Teacher Sahdia,60 min.
-exam_157,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Arabic,Ustadh Hainur,60 min.
-exam_158,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,Filipino,Teacher Sitti Kauzar,60 min.
-exam_159,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,SHAF,Ustadh Ersahad,60 min.
-exam_160,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Math,Teacher Sitti Kauzar,60 min.
-exam_161,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Makabansa,Teacher Zuhora,60 min.
-exam_162,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_163,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,GMRC,Ustadha Saliha,60 min.
-exam_164,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,English,Teacher Marham,60 min.
-exam_165,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,GMRC,Ustadha Saliha,60 min.
-exam_166,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,English,Teacher Marham,60 min.
-exam_167,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Filipino,Teacher Zuhora,60 min.
-exam_168,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Arabic,Ustadh Hainur,60 min.
-exam_169,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Makabansa,Teacher Monisa,60 min.
-exam_170,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,Science,Teacher Jerlyn,60 min.
-exam_171,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,GMRC,Ustadha Saliha,60 min.
-exam_172,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,Science,Teacher Jerlyn,60 min.
-exam_173,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,Math,Teacher Jerlyn,60 min.
-exam_174,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,SHAF,Ustadh Ersahad,60 min.
-exam_175,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,Arabic,Ustadha Silfah,60 min.
-exam_176,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,Makabansa,Assigned Faculty,60 min.
-exam_177,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,Arabic,Ustadh Faidh,60 min.
-exam_178,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,Arabic,Ustadha Silfah,60 min.
+exam_141,Thursday,"Thursday, September 3, 2026",01:30 PM – 02:30 PM,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Hadith,Ustadha Saliha,60 min.
+exam_142,Thursday,"Thursday, September 3, 2026",03:50 PM – 04:50 PM,Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Hadith,Ustadha Saliha,60 min.
+exam_143,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Oral & Written Exam,Teacher Ayah,60 min.
+exam_144,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Hadith,Ustadh Hainur,60 min.
+exam_145,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Hadith,Ustadh Faidh,60 min.
+exam_146,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Elementary,Kinder 1,ODL - 2ND SHIFT,Hadith,Ustadh Hainur,60 min.
+exam_147,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,GMRC,Ustadha Saliha,60 min.
+exam_148,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,Language,Teacher Sahdia,60 min.
+exam_149,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Math,Teacher Joanna,60 min.
+exam_150,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Reading & Literacy,Teacher Katrina,60 min.
+exam_151,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Math,Teacher Joanna,60 min.
+exam_152,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Qur'an,Ustadh Hainur,60 min.
+exam_153,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Language,Teacher Sahdia,60 min.
+exam_154,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Reading & Literacy,Teacher Katrina,60 min.
+exam_155,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Math,Teacher Joanna,60 min.
+exam_156,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Arabic,Ustadh Hainur,60 min.
+exam_157,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,Makabansa,Teacher Monisa,60 min.
+exam_158,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,Qur'an,Ustadh Obaydah,60 min.
+exam_159,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Arabic,Ustadh Hainur,60 min.
+exam_160,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,SHAF,Alim Abdul Karim,60 min.
+exam_161,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Arabic,Ustadh Hainur,60 min.
+exam_162,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Filipino,Teacher Zuhora,60 min.
+exam_163,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Makabansa,Teacher Monisa,60 min.
+exam_164,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Arabic,Ustadh Hainur,60 min.
+exam_165,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Makabansa,Teacher Monisa,60 min.
+exam_166,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,Makabansa,Teacher Wendy,60 min.
+exam_167,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,English,Teacher Marham,60 min.
+exam_168,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,GMRC,Ustadha Saliha,60 min.
+exam_169,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,GMRC,Ustadha Silfah,60 min.
+exam_170,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_171,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,SHAF,Ustadh Ersahad,60 min.
+exam_172,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,Math,Teacher Jerlyn,60 min.
+exam_173,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,Makabansa,Assigned Faculty,60 min.
+exam_174,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,Fil3,Teacher Jenny,60 min.
+exam_175,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,GMRC,Teacher Zuhora,60 min.
+exam_176,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,Arabic,Ustadh Faidh,60 min.
+exam_177,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,Arabic,Ustadha Silfah,60 min.
+exam_178,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,English,Teacher Marham,60 min.
 exam_179,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,Math,Teacher Jerlyn,60 min.
-exam_180,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,Filipino,Teacher Normylah,60 min.
-exam_181,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,GMRC,Ustadha Silfah,60 min.
-exam_182,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,Arabic,Ustadha Silfah,60 min.
-exam_183,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,English,Teacher Marham,60 min.
-exam_184,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,Fil3,Teacher Jenny,60 min.
-exam_185,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_186,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,Science,Teacher Saimonah,60 min.
-exam_187,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,Araling Panlipunan,Teacher Halnaisa,60 min.
-exam_188,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,Filipino,Teacher Norhydie,60 min.
-exam_189,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Math,Teacher Arvin,60 min.
-exam_190,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Science,Teacher Anna,60 min.
-exam_191,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,FIL,Teacher Monisa,60 min.
+exam_180,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,English,Teacher Marham,60 min.
+exam_181,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,Math,Teacher Jerlyn,60 min.
+exam_182,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,Fil3,Teacher Jenny,60 min.
+exam_183,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_184,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,Science,Teacher Saimonah,60 min.
+exam_185,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,Math,Teacher Arvin,60 min.
+exam_186,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,SHAF,Ustadh Abdiraheem,60 min.
+exam_187,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,Filipino,Teacher Norhydie,60 min.
+exam_188,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,SHAF,Ustadh Abdiraheem,60 min.
+exam_189,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Science,Teacher Anna,60 min.
+exam_190,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,FIL,Teacher Monisa,60 min.
+exam_191,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Math,Teacher Arvin,60 min.
 exam_192,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,TLE,Teacher Monisa,60 min.
-exam_193,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,SHAF,Ustadh Abdiraheem,60 min.
-exam_194,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,Math,Teacher Saimonah,60 min.
-exam_195,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
-exam_196,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,TLE,Teacher Jenny,60 min.
-exam_197,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Filipino,Teacher Norhydie,60 min.
-exam_198,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Science,Teacher Anna,60 min.
-exam_199,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,English,Teacher Arvin,60 min.
-exam_200,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Halnaisa,60 min.
-exam_201,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,TLE,Teacher Monisa,60 min.
-exam_202,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,Math,Teacher Saimonah,60 min.
-exam_203,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,GMRC,Teacher Sahdia,60 min.
-exam_204,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,Qur'an,Ustadh Obaydah,60 min.
-exam_205,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,Math,Teacher Fhairudz,60 min.
-exam_206,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,Science,Teacher Junaisah,60 min.
-exam_207,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,GMRC,Teacher Jairah,60 min.
-exam_208,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Math,Teacher Fhairudz,60 min.
-exam_209,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,SHAF,Ustadh Raslina,60 min.
-exam_210,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Qur'an,Ustadh Jaisam,60 min.
-exam_211,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Math,Teacher Fhairudz,60 min.
-exam_212,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Fil5,Teacher Jenny,60 min.
-exam_213,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Arabic,Ustadh Faidh,60 min.
-exam_214,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,GMRC,Teacher Jairah,60 min.
-exam_215,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,English,Teacher Jessa,60 min.
-exam_216,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Arabic,Ustadh Ersahad,60 min.
-exam_217,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,SHAF,Ustadh Ersahad,60 min.
-exam_218,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Qur'an,Ustadh Jaisam,60 min.
-exam_219,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Saimonah,60 min.
-exam_220,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,English,Teacher Jessa,60 min.
-exam_221,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Filipino,Teacher Normylah,60 min.
-exam_222,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,English,Teacher Jessa,60 min.
-exam_223,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Science,Teacher Wendy,60 min.
-exam_224,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Math,Teacher Katrina,60 min.
-exam_225,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,SHAF,Ustadh Abdiraheem,60 min.
-exam_226,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
-exam_227,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,English,Teacher Jessa,60 min.
-exam_228,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
-exam_229,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,SHAF,Ustadh Abdiraheem,60 min.
-exam_230,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,Science,Teacher Anna,60 min.
-exam_231,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,Qur'an,Ustadh Jaisam,60 min.
-exam_232,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,Math,Teacher Katrina,60 min.
-exam_233,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Normylah,60 min.
-exam_234,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,Filipino,Teacher Normylah,60 min.
-exam_235,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,Arabic,Ustadh Ersahad,60 min.
-exam_236,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Arabic,Ustadh Ali,60 min.
-exam_237,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Qur'an,Ustadh Jaisam,60 min.
-exam_238,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,SHAF,Alim Samsuddin,60 min.
-exam_239,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Qur'an,Ustadh Jaisam,60 min.
-exam_240,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Filipino,Teacher Nadzra,60 min.
-exam_241,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Science,Teacher Rowena,60 min.
-exam_242,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Values Ed,Teacher Nof,60 min.
-exam_243,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Filipino,Teacher Nadzra,60 min.
-exam_244,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Social Science,Sir Mohaymen,60 min.
-exam_245,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,GMRC,Ustadha Silfah,60 min.
-exam_246,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,Social Science,Teacher Franchette,60 min.
-exam_247,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
-exam_248,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,GMRC,Ustadha Silfah,60 min.
-exam_249,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,Social Science,Teacher Franchette,60 min.
-exam_250,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,SHAF,Alim Samsuddin,60 min.
-exam_251,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,Science,Teacher Shirehan,60 min.
-exam_252,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,Values Ed,Teacher Wardah,60 min.
-exam_253,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,Qur'an,Alim Abdulwahab,60 min.
-exam_254,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,Social Science,Sir Mohaymen,60 min.
-exam_255,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,Filipino,Teacher Nadzra,60 min.
-exam_256,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,Arabic,Alim Mamonas,60 min.
-exam_257,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,Science,Teacher Rowena,60 min.
-exam_258,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,English,Teacher Jairah,60 min.
-exam_259,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,SHAF,Alim Samsuddin,60 min.
-exam_260,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
-exam_261,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
-exam_262,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,Values Ed,Teacher Wardah,60 min.
-exam_263,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,TLE,Teacher Halnaisa,60 min.
-exam_264,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,Science,Teacher Shirehan,60 min.
-exam_265,Thursday,"Thursday, September 3, 2026",03:10 PM – 05:20 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,Math,Teacher Fhairudz,120 min.
-exam_266,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
-exam_267,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,Qur'an,Alim Abdulwahab,60 min.
-exam_268,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,Values Ed,Teacher Nof,60 min.
-exam_269,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,TLE,Teacher Angeleni,60 min.
-exam_270,Thursday,"Thursday, September 3, 2026",03:10 PM – 05:20 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,Math,Teacher Jhelyn,120 min.
-exam_271,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,Qur'an,Alim Abdulwahab,60 min.
-exam_272,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,Arabic,Alim Mamonas,60 min.
-exam_273,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,Social Science,Sir Mohaymen,60 min.
-exam_274,Thursday,"Thursday, September 3, 2026",09:00 AM – 11:25 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,Gen Math/HR,Teacher Jhelyn,120 min.
-exam_275,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,SHAF,Alim Samsuddin,60 min.
-exam_276,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,Gen. Physics 1,Teacher Aniah,60 min.
-exam_277,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,PE 12,Sir Mohaymen,60 min.
-exam_278,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,Gen Bio 1,Teacher Radzmia,60 min.
-exam_279,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,Gen Bio 1,Teacher Rowena,60 min.
-exam_280,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,EC,Teacher Nadzra,60 min.
-exam_281,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,Gen. Physics 1,Teacher Aniah,60 min.
-exam_282,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,Arabic,Alim Mamonas,60 min.
-exam_283,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,Prac. Res. 2,Teacher Aniah,60 min.
-exam_284,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,Arabic,Alim Mamonas,60 min.
-exam_285,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,Gen Bio 1,Teacher Radzmia,60 min.
-exam_286,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,LCS 11 2nd shift,Assigned Faculty,60 min.
-exam_287,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,KINDER 2 CLASS SCHEDULE (F2F),Elementary,Kinder 2,F2F,Qur'an,Ustadh Jaisam,60 min.
-exam_288,Sunday,"Sunday, September 6, 2026",01:30 PM – 02:30 PM,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Arabic,Ustadha Silfah,60 min.
-exam_289,Sunday,"Sunday, September 6, 2026",01:30 PM – 02:30 PM,Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Arabic,Ustadha Silfah,60 min.
-exam_290,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Hadith,Ustadh Hainur,60 min.
-exam_291,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Oral & Written Exam,Teacher Joanna,60 min.
-exam_292,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Arabic,Ustadha Silfah,60 min.
-exam_293,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Oral & Written Exam,Teacher Keychell,60 min.
-exam_294,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Elementary,Kinder 1,ODL - 2ND SHIFT,Oral & Written Exam,Teacher Wendy,60 min.
-exam_295,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Elementary,Kinder 1,ODL - 2ND SHIFT,Arabic,Alim Bustamante,60 min.
-exam_296,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,KINDER 1 CLASS SCHEDULE (F2F),Elementary,Kinder 1,F2F,Oral & Written Exam,Teacher Wendy,60 min.
-exam_297,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,GMRC,Ustadha Saliha,60 min.
-exam_298,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,SHAF,Alim Abdul Karim,60 min.
-exam_299,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Language,Teacher Sahdia,60 min.
-exam_300,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Math,Teacher Joanna,60 min.
-exam_301,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Reading & Literacy,Teacher Katrina,60 min.
-exam_302,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,SHAF,Alim Abdul Karim,60 min.
-exam_303,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Reading & Literacy,Teacher Katrina,60 min.
-exam_304,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Language,Teacher Sahdia,60 min.
-exam_305,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,SHAF,Alim Abdul Karim,60 min.
-exam_306,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,GMRC,Teacher Sahdia,60 min.
-exam_307,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,Math,Teacher Sitti Kauzar,60 min.
-exam_308,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,GMRC,Ustadha Saliha,60 min.
-exam_309,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,GMRC,Ustadha Saliha,60 min.
-exam_310,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Arabic,Ustadh Hainur,60 min.
-exam_311,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_312,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Makabansa,Teacher Monisa,60 min.
-exam_313,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Math,Teacher Sitti Kauzar,60 min.
-exam_314,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,SHAF,Alim Abdul Karim,60 min.
-exam_315,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_316,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,English,Teacher Marham,60 min.
-exam_317,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,Makabansa,Teacher Wendy,60 min.
-exam_318,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,Arabic,Ustadha Silfah,60 min.
-exam_319,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,Makabansa,Assigned Faculty,60 min.
-exam_320,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_321,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,Filipino,Teacher Normylah,60 min.
-exam_322,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,Science,Teacher Jerlyn,60 min.
-exam_323,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,GMRC,Teacher Zuhora,60 min.
-exam_324,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,Science,Teacher Saimonah,60 min.
-exam_325,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,Math,Teacher Jerlyn,60 min.
-exam_326,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_327,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,Science,Teacher Jerlyn,60 min.
-exam_328,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,SHAF,Ustadh Ersahad,60 min.
-exam_329,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,Math,Teacher Jerlyn,60 min.
-exam_330,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,English,Teacher Jenny,60 min.
-exam_331,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,SHAF,Ustadh Faidh,60 min.
-exam_332,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,Filipino,Teacher Jenny,60 min.
-exam_333,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,Math,Teacher Arvin,60 min.
-exam_334,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,SHAF,Ustadh Abdiraheem,60 min.
-exam_335,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,Science,Teacher Junaisah,60 min.
-exam_336,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
-exam_337,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_338,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,English,Teacher Arvin,60 min.
-exam_339,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Halnaisa,60 min.
-exam_340,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,FIL,Teacher Monisa,60 min.
-exam_341,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Monisa,60 min.
-exam_342,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,English,Teacher Jenny,60 min.
-exam_343,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,GMRC,Teacher Sahdia,60 min.
-exam_344,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,English,Teacher Arvin,60 min.
-exam_345,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Filipino,Teacher Norhydie,60 min.
-exam_346,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
-exam_347,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,Qur'an,Ustadh Faidh,60 min.
-exam_348,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,SHAF,Ustadh Abdiraheem,60 min.
-exam_349,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,English,Teacher Arvin,60 min.
-exam_350,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,Arabic,Ustadh Ersahad,60 min.
-exam_351,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,SHAF,Ustadh Ersahad,60 min.
-exam_352,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,Filipino,Teacher Jessa,60 min.
-exam_353,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Filipino,Teacher Joanna,60 min.
-exam_354,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Arabic,Alim Abdul Karim,60 min.
-exam_355,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,English,Teacher Jessa,60 min.
-exam_356,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,TLE,Teacher Anna,60 min.
-exam_357,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,SHAF,Ustadh Faidh,60 min.
-exam_358,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,GMRC,Ustadha Saliha,60 min.
-exam_359,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,SHAF,Ustadh Hainur,60 min.
-exam_360,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Science,Teacher Anna,60 min.
-exam_361,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,English,Teacher Jessa,60 min.
-exam_362,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Filipino,Teacher Joanna,60 min.
-exam_363,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Science,Teacher Anna,60 min.
-exam_364,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,Math,Teacher Saimonah,60 min.
-exam_365,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,Filipino,Teacher Jenny,60 min.
-exam_366,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,SHAF,Ustadh Faidh,60 min.
-exam_367,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,GMRC,Ustadha Silfah,60 min.
-exam_368,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,TLE,Teacher Arvin,60 min.
-exam_369,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Arabic,Ustadh Ali,60 min.
-exam_370,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Science,Teacher Anna,60 min.
-exam_371,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Fil,Teacher Zuhora,60 min.
-exam_372,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Science,Teacher Anna,60 min.
-exam_373,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Math,Teacher Katrina,60 min.
-exam_374,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,Fil,Teacher Normylah,60 min.
-exam_375,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,SHAF,Ustadh Abdiraheem,60 min.
-exam_376,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_377,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,GMRC,Ustadha Silfah,60 min.
-exam_378,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,TLE,Teacher Arvin,60 min.
-exam_379,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Filipino,Teacher Sophia,60 min.
-exam_380,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Science,Teacher Shirehan,60 min.
-exam_381,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,SHAF,Alim Samsuddin,60 min.
-exam_382,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Science,Teacher Shirehan,60 min.
-exam_383,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Arabic,Ustadh Ali,60 min.
-exam_384,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Social Science,Teacher Franchette,60 min.
-exam_385,Sunday,"Sunday, September 6, 2026",08:00 AM – 10:00 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Math,Teacher Jhelyn,120 min.
-exam_386,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Qur'an,Alim Abdulwahab,60 min.
-exam_387,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,TLE,Teacher Angeleni,60 min.
-exam_388,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Values Ed,Teacher Nof,60 min.
-exam_389,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Arabic,Alim Mamonas,60 min.
-exam_390,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,Qur'an,Ustadh Jaisam,60 min.
-exam_391,Sunday,"Sunday, September 6, 2026",01:50 PM – 04:10 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,Math,Teacher Ethel,120 min.
-exam_392,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,TLE,Teacher Halnaisa,60 min.
-exam_393,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,Science,Teacher Aniah,60 min.
-exam_394,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
-exam_395,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,Social Science,Teacher Franchette,60 min.
-exam_396,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,English,Teacher Jairah,60 min.
-exam_397,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
-exam_398,Sunday,"Sunday, September 6, 2026",12:40 PM – 02:50 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,Math,Teacher Jhelyn,120 min.
-exam_399,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,SHAF,Alim Bustamante,60 min.
-exam_400,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,Social Science,Sir Mohaymen,60 min.
-exam_401,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,English,Teacher Norhaima,60 min.
-exam_402,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,GMRC,Ustadha Silfah,60 min.
-exam_403,Sunday,"Sunday, September 6, 2026",04:20 PM – 06:30 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,Math,Teacher Ethel,120 min.
-exam_404,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,Social Science,Teacher Franchette,60 min.
-exam_405,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,English,Teacher Jairah,60 min.
-exam_406,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,TLE,Teacher Halnaisa,60 min.
-exam_407,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,English,Teacher Jairah,60 min.
-exam_408,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,Values Ed,Teacher Wardah,60 min.
-exam_409,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,SHAF,Alim Samsuddin,60 min.
-exam_410,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,English,Teacher Norhaima,60 min.
-exam_411,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,Filipino,Teacher Nadzra,60 min.
-exam_412,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,Qur'an,Alim Abdulwahab,60 min.
-exam_413,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,Values Ed,Teacher Nof,60 min.
-exam_414,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,Science,Teacher Rowena,60 min.
-exam_415,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,TLE,Teacher Angeleni,60 min.
-exam_416,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,Values Ed,Teacher Nof,60 min.
-exam_417,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,Gen Science,Teacher Rowena,60 min.
-exam_418,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,Arabic,Alim Mamonas,60 min.
-exam_419,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,EC,Teacher Nadzra,60 min.
-exam_420,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,Prac. Res. 2,Teacher Aniah,60 min.
-exam_421,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,MIL,Teacher Ethel,60 min.
-exam_422,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,SHAF,Alim Samsuddin,60 min.
-exam_423,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,Gen Science,Teacher Rowena,60 min.
-exam_424,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,SHAF,Alim Samsuddin,60 min.
-exam_425,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,MIL,Teacher Ethel,60 min.
-exam_426,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,LCS,Teacher Norhaima,60 min.
-exam_427,Sunday,"Sunday, September 6, 2026",03:10 PM – 05:20 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,Gen Math,Teacher Jhelyn,120 min.
-exam_428,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,KINDER 2 CLASS SCHEDULE (F2F),Elementary,Kinder 2,F2F,Oral & Written Exam,Teacher Keychell,60 min.
-exam_429,Monday,"Monday, September 7, 2026",03:50 PM – 04:50 PM,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Hadith,Ustadha Saliha,60 min.
-exam_430,Monday,"Monday, September 7, 2026",03:50 PM – 04:50 PM,Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Oral & Written Exam,Teacher Ayah,60 min.
-exam_431,Monday,"Monday, September 7, 2026",01:30 PM – 02:30 PM,Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Hadith,Ustadha Saliha,60 min.
-exam_432,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Qur'an,Ustadh Hainur,60 min.
-exam_433,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Qur'an,Ustadh Hainur,60 min.
-exam_434,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Elementary,Kinder 1,ODL - 2ND SHIFT,Qur'an,Ustadh Hainur,60 min.
-exam_435,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,Reading & Literacy,Teacher Katrina,60 min.
-exam_436,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,Math,Teacher Wendy,60 min.
-exam_437,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Arabic,Ustadh Hainur,60 min.
-exam_438,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Qur'an,Ustadh Hainur,60 min.
-exam_439,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Arabic,Ustadh Hainur,60 min.
-exam_440,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Qur'an,Ustadh Hainur,60 min.
-exam_441,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Makabansa,Teacher Norhydie,60 min.
-exam_442,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Qur'an,Ustadh Hainur,60 min.
-exam_443,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Math,Teacher Joanna,60 min.
-exam_444,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Qur'an,Ustadh Hainur,60 min.
-exam_445,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Makabansa,Teacher Norhydie,60 min.
-exam_446,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,English,Teacher Marham,60 min.
-exam_447,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,Arabic,Ustadh Obaydah,60 min.
-exam_448,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Filipino,Teacher Sitti Kauzar,60 min.
-exam_449,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Makabansa,Teacher Monisa,60 min.
-exam_450,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_451,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Math,Teacher Sitti Kauzar,60 min.
-exam_452,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,SHAF,Alim Abdul Karim,60 min.
-exam_453,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,SHAF,Ustadh Ersahad,60 min.
-exam_454,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,Qur'an,Ustadh Obaydah,60 min.
-exam_455,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,Math,Teacher Jerlyn,60 min.
-exam_456,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,Arabic,Ustadha Silfah,60 min.
-exam_457,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,English,Teacher Marham,60 min.
-exam_458,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,Math,Teacher Jerlyn,60 min.
-exam_459,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,GMRC,Ustadha Silfah,60 min.
-exam_460,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,Fil3,Teacher Jenny,60 min.
-exam_461,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,SHAF,Ustadh Faidh,60 min.
-exam_462,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,SHAF,Ustadh Ersahad,60 min.
-exam_463,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,Makabansa,Assigned Faculty,60 min.
-exam_464,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,Makabansa,Assigned Faculty,60 min.
-exam_465,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,Filipino,Teacher Normylah,60 min.
-exam_466,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,Science,Teacher Jerlyn,60 min.
-exam_467,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,Arabic,Ustadh Faidh,60 min.
-exam_468,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,Makabansa,Teacher Jenny,60 min.
+exam_193,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
+exam_194,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,Science,Teacher Saimonah,60 min.
+exam_195,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Filipino,Teacher Norhydie,60 min.
+exam_196,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,GMRC,Teacher Sahdia,60 min.
+exam_197,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,TLE,Teacher Monisa,60 min.
+exam_198,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,GMRC,Teacher Sahdia,60 min.
+exam_199,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,Filipino,Teacher Zuhora,60 min.
+exam_200,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,Math,Teacher Saimonah,60 min.
+exam_201,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,English,Teacher Jessa,60 min.
+exam_202,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,Qur'an,Ustadh Obaydah,60 min.
+exam_203,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,Math,Teacher Fhairudz,60 min.
+exam_204,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,GMRC,Teacher Jairah,60 min.
+exam_205,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Math,Teacher Fhairudz,60 min.
+exam_206,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Keychell,60 min.
+exam_207,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Math,Teacher Fhairudz,60 min.
+exam_208,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Arabic,Alim Abdul Karim,60 min.
+exam_209,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,SHAF,Ustadh Faidh,60 min.
+exam_210,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Fil5,Teacher Jenny,60 min.
+exam_211,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,English,Teacher Jessa,60 min.
+exam_212,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,English,Teacher Jessa,60 min.
+exam_213,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Qur'an,Ustadh Jaisam,60 min.
+exam_214,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Science,Teacher Anna,60 min.
+exam_215,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Arabic,Ustadh Ersahad,60 min.
+exam_216,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Saimonah,60 min.
+exam_217,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,TLE,Teacher Jenny,60 min.
+exam_218,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,English,Teacher Jessa,60 min.
+exam_219,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Arabic,Ustadh Ali,60 min.
+exam_220,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Science,Teacher Wendy,60 min.
+exam_221,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Math,Teacher Katrina,60 min.
+exam_222,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,GMRC,Ustadha Silfah,60 min.
+exam_223,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,TLE,Teacher Arvin,60 min.
+exam_224,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,English,Teacher Jessa,60 min.
+exam_225,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Qur'an,Ustadh Jaisam,60 min.
+exam_226,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,Fil,Teacher Normylah,60 min.
+exam_227,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,SHAF,Ustadh Abdiraheem,60 min.
+exam_228,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
+exam_229,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,Filipino,Teacher Normylah,60 min.
+exam_230,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_231,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,TLE,Teacher Arvin,60 min.
+exam_232,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Social Science,Teacher Franchette,60 min.
+exam_233,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,SHAF,Alim Samsuddin,60 min.
+exam_234,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Filipino,Teacher Sophia,60 min.
+exam_235,Thursday,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Qur'an,Ustadh Jaisam,60 min.
+exam_236,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,English,Teacher Jairah,60 min.
+exam_237,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Science,Teacher Rowena,60 min.
+exam_238,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Values Ed,Teacher Nof,60 min.
+exam_239,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Filipino,Teacher Nadzra,60 min.
+exam_240,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Qur'an,Alim Abdulwahab,60 min.
+exam_241,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,Science,Teacher Aniah,60 min.
+exam_242,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,Social Science,Teacher Franchette,60 min.
+exam_243,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,SHAF,Alim Samsuddin,60 min.
+exam_244,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,TLE,Teacher Halnaisa,60 min.
+exam_245,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,English,Teacher Jairah,60 min.
+exam_246,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,SHAF,Alim Samsuddin,60 min.
+exam_247,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,Values Ed,Teacher Wardah,60 min.
+exam_248,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,Social Science,Teacher Franchette,60 min.
+exam_249,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,SHAF,Alim Samsuddin,60 min.
+exam_250,Thursday,"Thursday, September 3, 2026",01:50 PM – 04:10 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,Math,Teacher Jhelyn,120 min.
+exam_251,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,Filipino,Teacher Nadzra,60 min.
+exam_252,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,English,Teacher Norhaima,60 min.
+exam_253,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,Science,Teacher Rowena,60 min.
+exam_254,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,Values Ed,Teacher Nof,60 min.
+exam_255,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,Qur'an,Ustadh Jaisam,60 min.
+exam_256,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,Social Science,Teacher Franchette,60 min.
+exam_257,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
+exam_258,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
+exam_259,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,SHAF,Alim Samsuddin,60 min.
+exam_260,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,Filipino,Teacher Sophia,60 min.
+exam_261,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,SHAF,Alim Samsuddin,60 min.
+exam_262,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,TLE,Teacher Halnaisa,60 min.
+exam_263,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
+exam_264,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,Science,Teacher Rowena,60 min.
+exam_265,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,English,Teacher Norhaima,60 min.
+exam_266,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,Filipino,Teacher Nadzra,60 min.
+exam_267,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
+exam_268,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,TLE,Teacher Angeleni,60 min.
+exam_269,Thursday,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,Qur'an,Alim Abdulwahab,60 min.
+exam_270,Thursday,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,SHAF,Alim Bustamante,60 min.
+exam_271,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,Filipino,Teacher Nadzra,60 min.
+exam_272,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,Gen Science,Teacher Rowena,60 min.
+exam_273,Thursday,"Thursday, September 3, 2026",08:00 AM – 10:00 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,Gen Math/HR,Teacher Jhelyn,120 min.
+exam_274,Thursday,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,Prac. Res. 2,Teacher Aniah,60 min.
+exam_275,Thursday,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,MIL,Teacher Ethel,60 min.
+exam_276,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,Gen Bio 1,Teacher Rowena,60 min.
+exam_277,Thursday,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,EC,Teacher Nadzra,60 min.
+exam_278,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,PSKP,Teacher Shirehan,60 min.
+exam_279,Thursday,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,Gen. Physics 1,Teacher Aniah,60 min.
+exam_280,Thursday,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,MIL,Teacher Ethel,60 min.
+exam_281,Thursday,"Thursday, September 3, 2026",04:20 PM – 06:30 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,Gen Math,Teacher Jhelyn,120 min.
+exam_282,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,KINDER 2 CLASS SCHEDULE (F2F),Elementary,Kinder 2,F2F,Qur'an,Ustadh Jaisam,60 min.
+exam_283,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,KINDER 2 CLASS SCHEDULE (F2F),Elementary,Kinder 2,F2F,Hadith,Ustadha Saliha,60 min.
+exam_284,Sunday,"Sunday, September 6, 2026",02:40 PM – 03:40 PM,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Oral & Written Exam,Teacher Joanna,60 min.
+exam_285,Sunday,"Sunday, September 6, 2026",01:30 PM – 02:30 PM,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Arabic,Ustadha Silfah,60 min.
+exam_286,Sunday,"Sunday, September 6, 2026",01:30 PM – 02:30 PM,Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Oral & Written Exam,Teacher Ayah,60 min.
+exam_287,Sunday,"Sunday, September 6, 2026",02:40 PM – 03:40 PM,Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Arabic,Ustadha Silfah,60 min.
+exam_288,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Hadith,Ustadh Hainur,60 min.
+exam_289,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Arabic,Ustadha Silfah,60 min.
+exam_290,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Oral & Written Exam,Teacher Keychell,60 min.
+exam_291,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Elementary,Kinder 1,ODL - 2ND SHIFT,Arabic,Alim Bustamante,60 min.
+exam_292,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,KINDER 1 CLASS SCHEDULE (F2F),Elementary,Kinder 1,F2F,Arabic,Ustadha Saliha,60 min.
+exam_293,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,SHAF,Ustadh Abdiraheem,60 min.
+exam_294,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,Qur'an,Ustadh Obaydah,60 min.
+exam_295,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,GMRC,Teacher Sahdia,60 min.
+exam_296,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Language,Teacher Sahdia,60 min.
+exam_297,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,GMRC,Ustadha Saliha,60 min.
+exam_298,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Arabic,Ustadh Hainur,60 min.
+exam_299,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,GMRC,Teacher Sahdia,60 min.
+exam_300,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Arabic,Ustadh Hainur,60 min.
+exam_301,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Language,Teacher Sahdia,60 min.
+exam_302,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,SHAF,Alim Abdul Karim,60 min.
+exam_303,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,English,Teacher Marham,60 min.
+exam_304,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,GMRC,Ustadha Saliha,60 min.
+exam_305,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Makabansa,Teacher Monisa,60 min.
+exam_306,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Math,Teacher Sitti Kauzar,60 min.
+exam_307,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Math,Teacher Sitti Kauzar,60 min.
+exam_308,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Arabic,Ustadh Hainur,60 min.
+exam_309,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,SHAF,Alim Abdul Karim,60 min.
+exam_310,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,GMRC,Ustadha Saliha,60 min.
+exam_311,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,SHAF,Alim Abdul Karim,60 min.
+exam_312,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,Qur'an,Ustadh Obaydah,60 min.
+exam_313,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,Math,Teacher Jerlyn,60 min.
+exam_314,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,Makabansa,Assigned Faculty,60 min.
+exam_315,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,SHAF,Alim Abdul Karim,60 min.
+exam_316,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,Filipino,Teacher Normylah,60 min.
+exam_317,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,English,Teacher Marham,60 min.
+exam_318,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,English,Teacher Jenny,60 min.
+exam_319,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,Science,Teacher Saimonah,60 min.
+exam_320,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,Math,Teacher Jerlyn,60 min.
+exam_321,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_322,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,Science,Teacher Jerlyn,60 min.
+exam_323,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,Filipino,Teacher Normylah,60 min.
+exam_324,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,SHAF,Ustadh Ersahad,60 min.
+exam_325,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,Filipino,Teacher Normylah,60 min.
+exam_326,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,Arabic,Ustadh Faidh,60 min.
+exam_327,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,SHAF,Ustadh Faidh,60 min.
+exam_328,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,Filipino,Teacher Jenny,60 min.
+exam_329,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,Araling Panlipunan,Teacher Monisa,60 min.
+exam_330,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,Science,Teacher Junaisah,60 min.
+exam_331,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Monisa,60 min.
+exam_332,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Math,Teacher Arvin,60 min.
+exam_333,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
+exam_334,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,English,Teacher Arvin,60 min.
+exam_335,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,SHAF,Ustadh Abdiraheem,60 min.
+exam_336,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,Fil4,Teacher Zuhora,60 min.
+exam_337,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,GMRC,Teacher Sahdia,60 min.
+exam_338,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,English,Teacher Jenny,60 min.
+exam_339,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,TLE,Teacher Monisa,60 min.
+exam_340,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Monisa,60 min.
+exam_341,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Science,Teacher Anna,60 min.
+exam_342,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Filipino,Teacher Norhydie,60 min.
+exam_343,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Math,Teacher Arvin,60 min.
+exam_344,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_345,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Monisa,60 min.
+exam_346,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,SHAF,Ustadh Abdiraheem,60 min.
+exam_347,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,Science,Teacher Saimonah,60 min.
+exam_348,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,Arabic,Ustadh Ersahad,60 min.
+exam_349,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,TLE,Teacher Halnaisa,60 min.
+exam_350,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,SHAF,Ustadh Ersahad,60 min.
+exam_351,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,English,Teacher Jessa,60 min.
+exam_352,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Arabic,Alim Abdul Karim,60 min.
+exam_353,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,TLE,Teacher Anna,60 min.
+exam_354,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,SHAF,Ustadh Hainur,60 min.
+exam_355,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Filipino,Teacher Joanna,60 min.
+exam_356,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Saimonah,60 min.
+exam_357,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,GMRC,Teacher Jairah,60 min.
+exam_358,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Arabic,Ustadh Ersahad,60 min.
+exam_359,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Science,Teacher Anna,60 min.
+exam_360,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Filipino,Teacher Joanna,60 min.
+exam_361,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Math,Teacher Fhairudz,60 min.
+exam_362,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,Filipino,Teacher Jenny,60 min.
+exam_363,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,SHAF,Ustadh Faidh,60 min.
+exam_364,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Filipino,Teacher Normylah,60 min.
+exam_365,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,TLE,Teacher Arvin,60 min.
+exam_366,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,English,Teacher Jessa,60 min.
+exam_367,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
+exam_368,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Science,Teacher Anna,60 min.
+exam_369,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,SHAF,Ustadh Abdiraheem,60 min.
+exam_370,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,Qur'an,Ustadh Jaisam,60 min.
+exam_371,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,Math,Teacher Katrina,60 min.
+exam_372,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,TLE,Teacher Arvin,60 min.
+exam_373,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,English,Teacher Jessa,60 min.
+exam_374,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,Arabic,Ustadh Ersahad,60 min.
+exam_375,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Science,Teacher Radzmia,60 min.
+exam_376,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,English,Teacher Jairah,60 min.
+exam_377,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Qur'an,Ustadh Jaisam,60 min.
+exam_378,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Arabic,Ustadh Ali,60 min.
+exam_379,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Social Science,Teacher Franchette,60 min.
+exam_380,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,English,Teacher Norhaima,60 min.
+exam_381,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Filipino,Teacher Nadzra,60 min.
+exam_382,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Qur'an,Alim Abdulwahab,60 min.
+exam_383,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,TLE,Teacher Angeleni,60 min.
+exam_384,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,SHAF,Alim Samsuddin,60 min.
+exam_385,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Values Ed,Teacher Nof,60 min.
+exam_386,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,English,Teacher Jairah,60 min.
+exam_387,Sunday,"Sunday, September 6, 2026",12:40 PM – 02:50 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,Math,Teacher Ethel,120 min.
+exam_388,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,Science,Teacher Aniah,60 min.
+exam_389,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
+exam_390,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,Filipino,Teacher Sophia,60 min.
+exam_391,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
+exam_392,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,SHAF,Alim Samsuddin,60 min.
+exam_393,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,Qur'an,Alim Abdulwahab,60 min.
+exam_394,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,Arabic,Ustadh Hainur,60 min.
+exam_395,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,Arabic,Alim Mamonas,60 min.
+exam_396,Sunday,"Sunday, September 6, 2026",12:40 PM – 02:50 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,Math,Teacher Jhelyn,120 min.
+exam_397,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,GMRC,Ustadha Silfah,60 min.
+exam_398,Sunday,"Sunday, September 6, 2026",03:10 PM – 05:20 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,Math,Teacher Ethel,120 min.
+exam_399,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,Social Science,Teacher Franchette,60 min.
+exam_400,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,Qur'an,Ustadh Jaisam,60 min.
+exam_401,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,TLE,Teacher Halnaisa,60 min.
+exam_402,Sunday,"Sunday, September 6, 2026",04:20 PM – 06:30 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,Math,Teacher Fhairudz,120 min.
+exam_403,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,Values Ed,Teacher Wardah,60 min.
+exam_404,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,SHAF,Alim Samsuddin,60 min.
+exam_405,Sunday,"Sunday, September 6, 2026",03:10 PM – 05:20 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,Math,Teacher Jhelyn,120 min.
+exam_406,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,Social Science,Sir Mohaymen,60 min.
+exam_407,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,English,Teacher Norhaima,60 min.
+exam_408,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,Arabic,Alim Mamonas,60 min.
+exam_409,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,Social Science,Sir Mohaymen,60 min.
+exam_410,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,TLE,Teacher Angeleni,60 min.
+exam_411,Sunday,"Sunday, September 6, 2026",08:00 AM – 10:00 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,Gen Math,Teacher Jhelyn,120 min.
+exam_412,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,PSKP,Teacher Shirehan,60 min.
+exam_413,Sunday,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,Gen. Physics 1,Teacher Aniah,60 min.
+exam_414,Sunday,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,PE 12,Sir Mohaymen,60 min.
+exam_415,Sunday,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,Gen Bio 1,Teacher Radzmia,60 min.
+exam_416,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,SHAF,Alim Samsuddin,60 min.
+exam_417,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,Gen Science,Teacher Rowena,60 min.
+exam_418,Sunday,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,SHAF,Alim Samsuddin,60 min.
+exam_419,Sunday,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,Arabic,Alim Mamonas,60 min.
+exam_420,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,Prac. Res. 2,Teacher Aniah,60 min.
+exam_421,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,Research Consulatation,Assigned Faculty,60 min.
+exam_422,Sunday,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,LCS,Teacher Norhaima,60 min.
+exam_423,Sunday,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,LCS 11 2nd shift,Assigned Faculty,60 min.
+exam_424,Sunday,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,EC,Teacher Nadzra,60 min.
+exam_425,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,KINDER 2 CLASS SCHEDULE (F2F),Elementary,Kinder 2,F2F,Oral & Written Exam,Teacher Keychell,60 min.
+exam_426,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,KINDER 2 CLASS SCHEDULE (F2F),Elementary,Kinder 2,F2F,Arabic,Ustadha Saliha,60 min.
+exam_427,Monday,"Monday, September 7, 2026",02:40 PM – 03:40 PM,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Qur'an,Ustadh Hainur,60 min.
+exam_428,Monday,"Monday, September 7, 2026",03:50 PM – 04:50 PM,Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT),Elementary,Kinder 2,ODL - 1ST SHIFT,Qur'an,Ustadh Hainur,60 min.
+exam_429,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Oral & Written Exam,Teacher Joanna,60 min.
+exam_430,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Qur'an,Ustadh Faidh,60 min.
+exam_431,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),Elementary,Kinder 2,ODL - 2ND SHIFT,Arabic,Ustadh Faidh,60 min.
+exam_432,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,K1 - HUSAIN IBN ALI (2ND SHIFT),Elementary,Kinder 1,ODL - 2ND SHIFT,Oral & Written Exam,Teacher Wendy,60 min.
+exam_433,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,Math,Teacher Wendy,60 min.
+exam_434,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,Arabic,Teacher Sahdia,60 min.
+exam_435,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,SHAF,Alim Abdul Karim,60 min.
+exam_436,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Qur'an,Ustadh Hainur,60 min.
+exam_437,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Language,Teacher Sahdia,60 min.
+exam_438,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),Elementary,Grade 1,ODL - 1ST SHIFT,Reading & Literacy,Teacher Katrina,60 min.
+exam_439,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,SHAF,Alim Abdul Karim,60 min.
+exam_440,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Reading & Literacy,Teacher Katrina,60 min.
+exam_441,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,GMRC,Teacher Sahdia,60 min.
+exam_442,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,Makabansa,Teacher Norhydie,60 min.
+exam_443,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,GMRC,Ustadha Saliha,60 min.
+exam_444,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,Filipino,Teacher Sitti Kauzar,60 min.
+exam_445,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Math,Teacher Sitti Kauzar,60 min.
+exam_446,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_447,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,GMRC,Ustadha Saliha,60 min.
+exam_448,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_449,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),Elementary,Grade 2,ODL - 1ST SHIFT,English,Teacher Marham,60 min.
+exam_450,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,GMRC,Ustadha Saliha,60 min.
+exam_451,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,English,Teacher Marham,60 min.
+exam_452,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,Filipino,Teacher Sitti Kauzar,60 min.
+exam_453,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,Science,Teacher Jerlyn,60 min.
+exam_454,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,SHAF,Ustadh Ersahad,60 min.
+exam_455,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,Science,Teacher Jerlyn,60 min.
+exam_456,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,Arabic,Ustadha Silfah,60 min.
+exam_457,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,English,Teacher Marham,60 min.
+exam_458,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,Science,Teacher Jerlyn,60 min.
+exam_459,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,GMRC,Ustadha Silfah,60 min.
+exam_460,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,Elementary,Grade 3,ODL - 1ST SHIFT,Arabic,Ustadha Silfah,60 min.
+exam_461,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,SHAF,Ustadh Faidh,60 min.
+exam_462,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_463,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,SHAF,Ustadh Ersahad,60 min.
+exam_464,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,Elementary,Grade 3,ODL - 2ND SHIFT,Makabansa,Assigned Faculty,60 min.
+exam_465,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,GMRC,Ustadha Silfah,60 min.
+exam_466,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,Makabansa,Assigned Faculty,60 min.
+exam_467,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,Science,Teacher Jerlyn,60 min.
+exam_468,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,English,Teacher Jenny,60 min.
 exam_469,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,TLE,Teacher Monisa,60 min.
 exam_470,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,GMRC,Teacher Sahdia,60 min.
-exam_471,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,English,Teacher Norhydie,60 min.
-exam_472,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,GMRC,Teacher Sahdia,60 min.
-exam_473,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,SHAF,Ustadh Abdiraheem,60 min.
-exam_474,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,English,Teacher Arvin,60 min.
+exam_471,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,Qur'an,Ustadh Obaydah,60 min.
+exam_472,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,GMRC,Teacher Sahdia,60 min.
+exam_473,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_474,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,English,Teacher Arvin,60 min.
 exam_475,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
-exam_476,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,GMRC,Teacher Sahdia,60 min.
-exam_477,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,Fil4,Teacher Zuhora,60 min.
-exam_478,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,GMRC,Teacher Sahdia,60 min.
-exam_479,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,Science,Teacher Saimonah,60 min.
+exam_476,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,Qur'an,Ustadh Obaydah,60 min.
+exam_477,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),Elementary,Grade 4,ODL - 1ST SHIFT,GMRC,Teacher Sahdia,60 min.
+exam_478,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Monisa,60 min.
+exam_479,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,Elementary,Grade 4,ODL - 1ST SHIFT,TLE,Teacher Jenny,60 min.
 exam_480,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
-exam_481,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Qur'an,Ustadh Obaydah,60 min.
-exam_482,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Halnaisa,60 min.
-exam_483,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Science,Teacher Anna,60 min.
-exam_484,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Math,Teacher Arvin,60 min.
-exam_485,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
-exam_486,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,TLE,Teacher Jenny,60 min.
-exam_487,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,Araling Panlipunan,Teacher Keychell,60 min.
-exam_488,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Monisa,60 min.
-exam_489,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Science,Teacher Anna,60 min.
-exam_490,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,TLE,Teacher Anna,60 min.
-exam_491,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Filipino,Teacher Joanna,60 min.
-exam_492,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,GMRC,Teacher Jairah,60 min.
-exam_493,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Arabic,Alim Abdul Karim,60 min.
-exam_494,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Science,Teacher Saimonah,60 min.
-exam_495,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,TLE,Teacher Jenny,60 min.
-exam_496,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Math,Teacher Saimonah,60 min.
-exam_497,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Filipino,Teacher Joanna,60 min.
-exam_498,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Qur'an,Ustadh Jaisam,60 min.
-exam_499,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Math,Teacher Fhairudz,60 min.
-exam_500,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Monisa,60 min.
-exam_501,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,TLE,Teacher Anna,60 min.
-exam_502,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Math,Teacher Fhairudz,60 min.
-exam_503,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,Science,Teacher Saimonah,60 min.
-exam_504,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,TLE,Teacher Jenny,60 min.
-exam_505,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Math,Ustadh Ersahad,60 min.
-exam_506,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,SHAF,Ustadh Abdiraheem,60 min.
-exam_507,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Qur'an,Ustadh Faidh,60 min.
-exam_508,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,English,Teacher Jessa,60 min.
-exam_509,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,GMRC,Ustadha Silfah,60 min.
-exam_510,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Qur'an,Ustadh Jaisam,60 min.
-exam_511,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Normylah,60 min.
-exam_512,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,TLE,Teacher Arvin,60 min.
-exam_513,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Fil,Teacher Zuhora,60 min.
-exam_514,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,English,Teacher Jessa,60 min.
-exam_515,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
-exam_516,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,TLE,Teacher Arvin,60 min.
-exam_517,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,SHAF,Ustadh Faidh,60 min.
-exam_518,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Social Science,Teacher Franchette,60 min.
-exam_519,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,English,Teacher Jairah,60 min.
-exam_520,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,TLE,Teacher Halnaisa,60 min.
-exam_521,Monday,"Monday, September 7, 2026",08:00 AM – 10:00 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Math,Teacher Fhairudz,120 min.
-exam_522,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,GMRC,Ustadha Silfah,60 min.
-exam_523,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,English,Teacher Norhaima,60 min.
-exam_524,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,TLE,Teacher Angeleni,60 min.
-exam_525,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Qur'an,Alim Abdulwahab,60 min.
-exam_526,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,SHAF,Alim Samsuddin,60 min.
-exam_527,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,English,Teacher Norhaima,60 min.
-exam_528,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,TLE,Teacher Halnaisa,60 min.
-exam_529,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,Filipino,Teacher Sophia,60 min.
-exam_530,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,Qur'an,Ustadh Jaisam,60 min.
-exam_531,Monday,"Monday, September 7, 2026",01:50 PM – 04:10 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,Math,Teacher Ethel,120 min.
-exam_532,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,Filipino,Teacher Sophia,60 min.
-exam_533,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,TLE,Teacher Halnaisa,60 min.
-exam_534,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,SHAF,Alim Samsuddin,60 min.
-exam_535,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,SHAF,Alim Samsuddin,60 min.
-exam_536,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,TLE,Teacher Angeleni,60 min.
-exam_537,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,Arabic,Ustadh Raslina,60 min.
-exam_538,Monday,"Monday, September 7, 2026",12:40 PM – 02:50 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,Math,Teacher Jhelyn,120 min.
+exam_481,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,SHAF,Ustadh Abdiraheem,60 min.
+exam_482,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Monisa,60 min.
+exam_483,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),Elementary,Grade 4,ODL - 2ND SHIFT,Arabic,Ustadh Ali,60 min.
+exam_484,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,English,Teacher Arvin,60 min.
+exam_485,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,Elementary,Grade 4,ODL - 2ND SHIFT,TLE,Teacher Jenny,60 min.
+exam_486,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,GMRC,Teacher Jairah,60 min.
+exam_487,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,Araling Panlipunan,Teacher Norhydie,60 min.
+exam_488,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Monisa,60 min.
+exam_489,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Science,Teacher Anna,60 min.
+exam_490,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,English,Teacher Jessa,60 min.
+exam_491,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,GMRC,Teacher Jairah,60 min.
+exam_492,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Science,Teacher Saimonah,60 min.
+exam_493,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,TLE,Teacher Jenny,60 min.
+exam_494,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),Elementary,Grade 5,ODL - 1ST SHIFT,Math,Teacher Saimonah,60 min.
+exam_495,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,SHAF,Ustadh Hainur,60 min.
+exam_496,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Filipino,Teacher Joanna,60 min.
+exam_497,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Math,Teacher Fhairudz,60 min.
+exam_498,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Monisa,60 min.
+exam_499,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,TLE,Teacher Anna,60 min.
+exam_500,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),Elementary,Grade 5,ODL - 2ND SHIFT,Qur'an,Ustadh Jaisam,60 min.
+exam_501,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,Arabic,Ustadh Faidh,60 min.
+exam_502,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,Science,Teacher Saimonah,60 min.
+exam_503,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,Elementary,Grade 5,ODL - 2ND SHIFT,English,Teacher Jessa,60 min.
+exam_504,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Araling Panlipunan,Teacher Zuhora,60 min.
+exam_505,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,SHAF,Ustadh Abdiraheem,60 min.
+exam_506,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,Qur'an,Ustadh Faidh,60 min.
+exam_507,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Science,Teacher Anna,60 min.
+exam_508,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Qur'an,Ustadh Jaisam,60 min.
+exam_509,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Fil,Teacher Zuhora,60 min.
+exam_510,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Math,Teacher Katrina,60 min.
+exam_511,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Araling Panlipunan,Teacher Normylah,60 min.
+exam_512,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),Elementary,Grade 6,ODL - 1ST SHIFT,Arabic,Ustadh Ali,60 min.
+exam_513,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Normylah,60 min.
+exam_514,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,English,Teacher Jessa,60 min.
+exam_515,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),Elementary,Grade 6,ODL - 2ND SHIFT,Science,Teacher Anna,60 min.
+exam_516,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,Araling Panlipunan,Teacher Normylah,60 min.
+exam_517,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,Elementary,Grade 6,ODL - 2ND SHIFT,GMRC,Ustadha Silfah,60 min.
+exam_518,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,GMRC,Ustadha Silfah,60 min.
+exam_519,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Arabic,Ustadh Ali,60 min.
+exam_520,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 7 & 8 GIRLS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,TLE,Teacher Halnaisa,60 min.
+exam_521,Monday,"Monday, September 7, 2026",09:00 AM – 11:25 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,Math,Teacher Fhairudz,120 min.
+exam_522,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,GMRC,Ustadha Silfah,60 min.
+exam_523,Monday,"Monday, September 7, 2026",08:00 AM – 10:00 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Math,Teacher Jhelyn,120 min.
+exam_524,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,TLE,Teacher Angeleni,60 min.
+exam_525,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Social Science,Sir Mohaymen,60 min.
+exam_526,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,English,Teacher Norhaima,60 min.
+exam_527,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 9 & 10 BOYS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,Arabic,Alim Mamonas,60 min.
+exam_528,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,GMRC,Ustadha Silfah,60 min.
+exam_529,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,Qur'an,Ustadh Jaisam,60 min.
+exam_530,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,Junior High School,Grade 7,ODL - 1ST SHIFT,Filipino,Teacher Sophia,60 min.
+exam_531,Monday,"Monday, September 7, 2026",12:40 PM – 02:50 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,Math,Teacher Ethel,120 min.
+exam_532,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,Junior High School,Grade 7,ODL - 1ST SHIFT,Social Science,Teacher Franchette,60 min.
+exam_533,Monday,"Monday, September 7, 2026",01:50 PM – 04:10 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,Math,Teacher Fhairudz,120 min.
+exam_534,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,Junior High School,Grade 8,ODL - 1ST SHIFT,English,Teacher Jairah,60 min.
+exam_535,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,Science,Teacher Rowena,60 min.
+exam_536,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,Junior High School,Grade 9,ODL - 1ST SHIFT,Social Science,Sir Mohaymen,60 min.
+exam_537,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,TLE,Teacher Angeleni,60 min.
+exam_538,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,SHAF,Alim Bustamante,60 min.
 exam_539,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,Filipino,Teacher Nadzra,60 min.
-exam_540,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,Science,Teacher Aniah,60 min.
-exam_541,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,Social Science,Teacher Franchette,60 min.
-exam_542,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,SHAF,Alim Samsuddin,60 min.
-exam_543,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,Qur'an,Ustadh Jaisam,60 min.
-exam_544,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,Filipino,Teacher Sophia,60 min.
-exam_545,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,Social Science,Teacher Franchette,60 min.
-exam_546,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,Qur'an,Ustadh Jaisam,60 min.
-exam_547,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,Filipino,Teacher Sophia,60 min.
-exam_548,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,TLE,Teacher Angeleni,60 min.
-exam_549,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,Filipino,Teacher Nadzra,60 min.
-exam_550,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,Social Science,Teacher Angeleni,60 min.
-exam_551,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,Social Science,Sir Mohaymen,60 min.
-exam_552,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,English,Teacher Norhaima,60 min.
-exam_553,Monday,"Monday, September 7, 2026",04:20 PM – 06:30 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,Math,Teacher Jhelyn,120 min.
-exam_554,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,English,Teacher Norhaima,60 min.
-exam_555,Monday,"Monday, September 7, 2026",08:00 AM – 10:00 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,Gen Math,Teacher Jhelyn,120 min.
-exam_556,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,Gen Bio 1,Teacher Radzmia,60 min.
+exam_540,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,English,Teacher Jairah,60 min.
+exam_541,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,Science,Teacher Aniah,60 min.
+exam_542,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,Junior High School,Grade 7,ODL - 2ND SHIFT,SHAF,Alim Samsuddin,60 min.
+exam_543,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,Science,Teacher Shirehan,60 min.
+exam_544,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,Junior High School,Grade 8,ODL - 2ND SHIFT,Values Ed,Teacher Wardah,60 min.
+exam_545,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,Social Science,Teacher Franchette,60 min.
+exam_546,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,Junior High School,Grade 8,ODL - 2ND SHIFT,Science,Teacher Shirehan,60 min.
+exam_547,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,TLE,Teacher Angeleni,60 min.
+exam_548,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,Filipino,Teacher Nadzra,60 min.
+exam_549,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,Junior High School,Grade 9,ODL - 2ND SHIFT,Social Science,Teacher Angeleni,60 min.
+exam_550,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,Science,Teacher Rowena,60 min.
+exam_551,Monday,"Monday, September 7, 2026",04:20 PM – 06:30 PM,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,Junior High School,Grade 9,ODL - 2ND SHIFT,Math,Teacher Jhelyn,120 min.
+exam_552,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,English,Teacher Norhaima,60 min.
+exam_553,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,Science,Teacher Rowena,60 min.
+exam_554,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,SHAF,Alim Samsuddin,60 min.
+exam_555,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,EC,Teacher Nadzra,60 min.
+exam_556,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,Qur'an,Alim Dipatuan,60 min.
 exam_557,Monday,"Monday, September 7, 2026",10:25 AM – 11:25 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,Arabic,Alim Mamonas,60 min.
-exam_558,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,Research Consultation,Assigned Faculty,60 min.
-exam_559,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,Qur'an,Alim Dipatuan,60 min.
-exam_560,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,Qur'an,Alim Abdulwahab,60 min.
-exam_561,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,PSKP,Teacher Shirehan,60 min.
+exam_558,Monday,"Monday, September 7, 2026",08:00 AM – 09:00 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,Research Consultation,Assigned Faculty,60 min.
+exam_559,Monday,"Monday, September 7, 2026",09:00 AM – 10:00 AM,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,Qur'an,Alim Dipatuan,60 min.
+exam_560,Monday,"Monday, September 7, 2026",01:50 PM – 04:10 PM,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,Gen Math,Teacher Jhelyn,120 min.
+exam_561,Monday,"Monday, September 7, 2026",01:50 PM – 02:50 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,Qur'an,Alim Dipatuan,60 min.
 exam_562,Monday,"Monday, September 7, 2026",12:40 PM – 01:40 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,21st Lit.,Teacher Nof,60 min.
-exam_563,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,Research Consulatation,Assigned Faculty,60 min.
-exam_564,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,SHAF,Alim Samsuddin,60 min.
-exam_565,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,EC,Teacher Nadzra,60 min.
+exam_563,Monday,"Monday, September 7, 2026",05:30 PM – 06:30 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,SHAF,Alim Samsuddin,60 min.
+exam_564,Monday,"Monday, September 7, 2026",04:20 PM – 05:20 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,Gen Bio 1,Teacher Radzmia,60 min.
+exam_565,Monday,"Monday, September 7, 2026",03:10 PM – 04:10 PM,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,PSKP 11,Teacher Shirehan,60 min.

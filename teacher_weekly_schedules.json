@@ -4897,6 +4897,58 @@
         "raw_label": "Arabic"
       },
       {
+        "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
+        "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 2,
+        "time": "12:40 – 01:20 PM",
+        "minutes": "40 min.",
+        "day": "Sunday",
+        "subject": "SHAF",
+        "raw_label": "SHAF"
+      },
+      {
+        "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
+        "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 2,
+        "time": "12:40 – 01:20 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "SHAF",
+        "raw_label": "SHAF"
+      },
+      {
+        "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
+        "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 2,
+        "time": "12:40 – 01:20 PM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "SHAF",
+        "raw_label": "SHAF"
+      },
+      {
+        "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
+        "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 2,
+        "time": "12:40 – 01:20 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "SHAF",
+        "raw_label": "SHAF"
+      },
+      {
         "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
         "section_name": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
         "department": "Elementary",
@@ -4921,10 +4973,23 @@
         "day": "Tuesday",
         "subject": "SHAF",
         "raw_label": "SHAF"
+      },
+      {
+        "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
+        "section_name": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "department": "Junior High School",
+        "grade_level": "Grade 9",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 – 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "Arabic",
+        "raw_label": "Arabic"
       }
     ],
-    "total_classes": 22,
-    "total_teaching_periods": 22,
+    "total_classes": 27,
+    "total_teaching_periods": 27,
     "subjects": [
       "Arabic",
       "Hadith",
@@ -5183,10 +5248,70 @@
         "minutes": "40 min.",
         "is_break": false,
         "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "SHAF",
+            "label": "SHAF",
+            "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+            "section_short": "G5 - HAMZA IBN ABDUL (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#f3e8ff",
+              "border": "#d8b4fe",
+              "text": "#6b21a8"
+            },
+            "has_conflict": false
+          },
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "SHAF",
+            "label": "SHAF",
+            "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+            "section_short": "G5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#f3e8ff",
+              "border": "#d8b4fe",
+              "text": "#6b21a8"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "SHAF",
+            "label": "SHAF",
+            "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+            "section_short": "G5 - HAMZA IBN ABDUL (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#f3e8ff",
+              "border": "#d8b4fe",
+              "text": "#6b21a8"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "SHAF",
+            "label": "SHAF",
+            "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+            "section_short": "G5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#f3e8ff",
+              "border": "#d8b4fe",
+              "text": "#6b21a8"
+            },
+            "has_conflict": false
+          },
           "Thursday": {
             "occupied": true,
             "is_class": true,
@@ -5211,7 +5336,22 @@
         "is_break": false,
         "days": {
           "Sunday": null,
-          "Monday": null,
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Arabic",
+            "label": "Arabic",
+            "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+            "section_short": "G9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#f3e8ff",
+              "border": "#d8b4fe",
+              "text": "#6b21a8"
+            },
+            "has_conflict": false
+          },
           "Tuesday": {
             "occupied": true,
             "is_class": true,
@@ -7513,188 +7653,6 @@
             },
             "has_conflict": false
           }
-        }
-      }
-    ]
-  },
-  "tchr_raslina": {
-    "id": "tchr_raslina",
-    "teacher_id": "tchr_raslina",
-    "name": "Ustadh Raslina",
-    "teacher_name": "Ustadh Raslina",
-    "canonical_name": "Ustadh Raslina",
-    "department": "ISAL Faculty",
-    "periods": [
-      {
-        "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
-        "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
-        "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
-        "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
-        "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
-        "section_name": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "department": "Junior High School",
-        "grade_level": "Grade 9",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      }
-    ],
-    "total_classes": 5,
-    "total_teaching_periods": 5,
-    "subjects": [
-      "Arabic",
-      "SHAF"
-    ],
-    "rows": [
-      {
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-            "section_short": "G5 - HAMZA IBN ABDUL (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-            "section_short": "G5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-            "section_short": "G5 - HAMZA IBN ABDUL (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-            "section_short": "G5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": null
-        }
-      },
-      {
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": null,
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-            "section_short": "G9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
         }
       }
     ]

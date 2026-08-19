@@ -32266,7 +32266,7 @@
           "Sunday": {
             "raw": "SHAF - Ust. Raslina",
             "subject": "SHAF",
-            "teacher": "Ustadh Raslina",
+            "teacher": "Ustadh Hainur",
             "teacher_id": "tchr_raslina",
             "is_break": false,
             "label": null,
@@ -32286,7 +32286,7 @@
           "Tuesday": {
             "raw": "SHAF - Ust. Raslina",
             "subject": "SHAF",
-            "teacher": "Ustadh Raslina",
+            "teacher": "Ustadh Hainur",
             "teacher_id": "tchr_raslina",
             "is_break": false,
             "label": null,
@@ -33215,7 +33215,7 @@
           "Monday": {
             "raw": "SHAF - Ust. Raslina",
             "subject": "SHAF",
-            "teacher": "Ustadh Raslina",
+            "teacher": "Ustadh Hainur",
             "teacher_id": "tchr_raslina",
             "is_break": false,
             "label": null,
@@ -33235,7 +33235,7 @@
           "Wednesday": {
             "raw": "SHAF - Ust. Raslina",
             "subject": "SHAF",
-            "teacher": "Ustadh Raslina",
+            "teacher": "Ustadh Hainur",
             "teacher_id": "tchr_raslina",
             "is_break": false,
             "label": null,
@@ -51818,7 +51818,7 @@
           "Monday": {
             "raw": "Arabic - Ust. Raslina",
             "subject": "Arabic",
-            "teacher": "Ustadh Raslina",
+            "teacher": "Ustadh Hainur",
             "teacher_id": "tchr_raslina",
             "is_break": false,
             "label": null,
