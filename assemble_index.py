@@ -544,7 +544,7 @@ html_content = f'''<!DOCTYPE html>
             </svg>
           </div>
 
-          <h3 class="card-heading">1st Term Exam Schedule</h3>
+          <h3 class="card-heading">Term Exam Week</h3>
           <p class="card-text">Official 4-day term examination schedule, faculty timetables, and subject verification roster.</p>
 
           <ul class="feature-list">
@@ -564,7 +564,7 @@ html_content = f'''<!DOCTYPE html>
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Faculty Roster & Assigned Subject Verification Tabs</span>
+              <span>Faculty Roster &amp; Assigned Subject Verification Tabs</span>
             </li>
           </ul>
         </div>
