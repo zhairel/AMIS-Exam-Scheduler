@@ -1297,7 +1297,7 @@ td.cell-empty:focus-within .btn-cell-add-slot {
         <td>${esc(record.schedule_type)}</td>
         <td><span class="status-pill status-${record.status}">${record.status.toUpperCase()}</span></td>
         <td><div class="manual-actions">
-          <a class="manual-icon-action" href="/class-schedule/${encodeURIComponent(record.id)}/edit" title="Edit schedule" aria-label="Edit ${esc(record.subject)}">
+          <a class="manual-icon-action" href="/class-schedule/edit?id=${encodeURIComponent(record.id)}" title="Edit schedule" aria-label="Edit ${esc(record.subject)}">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
           </a>
           <button class="manual-icon-action manual-icon-delete" type="button" onclick="window.deleteManualSchedule('${record.id}')" title="Delete schedule" aria-label="Delete ${esc(record.subject)}">
@@ -1769,7 +1769,7 @@ td.cell-empty:focus-within .btn-cell-add-slot {
     return `
       <span class="manual-cell-badge">MANUAL</span>
       <div class="cell-actions-wrap is-visible">
-        <a class="btn-action-icon btn-action-edit" href="/class-schedule/${encodeURIComponent(manualId)}/edit" title="Edit manual schedule" aria-label="Edit manual schedule">
+        <a class="btn-action-icon btn-action-edit" href="/class-schedule/edit?id=${encodeURIComponent(manualId)}" title="Edit manual schedule" aria-label="Edit manual schedule">
           <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
         </a>
         <button class="btn-action-icon btn-action-delete" type="button" title="Delete manual schedule" onclick="window.deleteManualSchedule('${safeId}')">

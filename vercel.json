@@ -5,7 +5,7 @@
   "rewrites": [
     { "source": "/faculty-timetable/exam", "destination": "/faculty-timetable-exam.html" },
     { "source": "/admin", "destination": "/admin.html" },
-    { "source": "/class-schedule/:id/edit", "destination": "/class-schedule/edit.html?id=:id" }
+    { "source": "/class-schedule/:id/edit", "destination": "/class-schedule/edit" }
   ],
   "headers": [
     {
