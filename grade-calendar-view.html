@@ -640,6 +640,93 @@ body.no-navbar .calendar-poster {
   border: 0 !important;
   box-shadow: none !important;
 }
+/* Screen Advisory Banner */
+.advisory-banner {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 40%, #fef9c3 100%);
+  border: 1.5px solid #fde68a;
+  border-left: 5px solid #d97706;
+  border-radius: 12px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 12px rgba(217, 119, 6, 0.06);
+}
+
+.advisory-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #fde68a;
+  color: #b45309;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(180, 83, 9, 0.15);
+}
+
+.advisory-content {
+  flex: 1;
+}
+
+.advisory-header-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.advisory-pill-badge {
+  background: #b45309;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.advisory-term-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #92400e;
+}
+
+.advisory-main-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: #78350f;
+  margin-bottom: 3px;
+  letter-spacing: -0.01em;
+}
+
+.advisory-main-message {
+  font-size: 12.5px;
+  color: #854d0e;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.advisory-highlight {
+  background: rgba(245, 158, 11, 0.22);
+  color: #78350f;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 800;
+}
+
+@media print {
+  .advisory-banner {
+    display: none !important;
+  }
+}
+body.no-navbar .advisory-banner {
+  display: none !important;
+}
 body.no-navbar {
   background: #ffffff !important;
   padding: 0 !important;
@@ -684,14 +771,14 @@ body.no-navbar {
     <div class="nav-field">
       <label>Teacher / Staff</label>
       <select id="teacherNavSelect">
-        <option value="">All Teachers (55 Staff)</option>
+        <option value="">All Teachers / Staff</option>
       </select>
     </div>
     <div class="nav-field">
       <label>Modality</label>
       <select id="modalityNavSelect">
         <option value="">All Modalities</option>
-        <option value="F2F">F2F (Day)</option>
+        <option value="F2F">F2F (Face-to-Face)</option>
         <option value="ODL">ODL (Online)</option>
       </select>
     </div>
@@ -713,10 +800,9 @@ body.no-navbar {
     <div class="nav-field">
       <label>Gender</label>
       <select id="genderNavSelect">
-        <option value="">All Genders</option>
-        <option value="Boys">Boys</option>
-        <option value="Girls">Girls</option>
-        <option value="Mix">Mix</option>
+        <option value="">All</option>
+        <option value="BOYS">Boys</option>
+        <option value="GIRLS">Girls</option>
       </select>
     </div>
     <div class="nav-field">
@@ -732,6 +818,27 @@ body.no-navbar {
 </nav>
 
 <div class="container">
+  <!-- Advisory Banner -->
+  <div class="advisory-banner" role="alert">
+    <div class="advisory-icon-wrapper" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+        <line x1="12" y1="9" x2="12" y2="13"/>
+        <line x1="12" y1="17" x2="12.01" y2="17"/>
+      </svg>
+    </div>
+    <div class="advisory-content">
+      <div class="advisory-header-row">
+        <span class="advisory-pill-badge">FACULTY &amp; TEACHER ADVISORY</span>
+        <span class="advisory-term-label">S.Y. 2026–2027 • Official Scheduling</span>
+      </div>
+      <h3 class="advisory-main-title">Automatic Subject &amp; Schedule Assignment Notice</h3>
+      <p class="advisory-main-message">
+        Please be advised that <span class="advisory-highlight">some subjects and timetable slots are automatically assigned</span> and synchronized according to the official faculty teaching load distributions. All faculty members and teachers are requested to review their assigned subjects in their respective schedules. If you require any subject adjustments or reassignments, please coordinate directly with the Academic Coordinator / Department Head.
+      </p>
+    </div>
+  </div>
+
   <div id="calendarsRoot"></div>
 </div>
 

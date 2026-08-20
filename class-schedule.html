@@ -758,6 +758,96 @@ html, body {
     letter-spacing: 0.04em !important;
   }
 }
+
+/* Screen Advisory Banner */
+.screen-advisory-wrapper {
+  max-width: 1360px;
+  margin: 14px auto 0;
+  padding: 0 16px;
+}
+
+.advisory-banner {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 40%, #fef9c3 100%);
+  border: 1.5px solid #fde68a;
+  border-left: 5px solid #d97706;
+  border-radius: 12px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  box-shadow: 0 2px 12px rgba(217, 119, 6, 0.06);
+}
+
+.advisory-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #fde68a;
+  color: #b45309;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(180, 83, 9, 0.15);
+}
+
+.advisory-content {
+  flex: 1;
+}
+
+.advisory-header-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.advisory-pill-badge {
+  background: #b45309;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.advisory-term-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #92400e;
+}
+
+.advisory-main-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: #78350f;
+  margin-bottom: 3px;
+  letter-spacing: -0.01em;
+}
+
+.advisory-main-message {
+  font-size: 12.5px;
+  color: #854d0e;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.advisory-highlight {
+  background: rgba(245, 158, 11, 0.22);
+  color: #78350f;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-weight: 800;
+}
+
+@media print {
+  .screen-advisory-wrapper, .advisory-banner {
+    display: none !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -798,35 +888,63 @@ html, body {
     </div>
 
     <!-- Step 2: ODL Shift Selector (Visible when Modality = ODL) -->
-    <div class="filter-group" id="shiftGroup" style="display: none;">
+    <div class="filter-group" id="shiftGroup" style="display:none;">
       <span class="filter-label">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12A10 10 0 0 0 12 22A10 10 0 0 0 22 12A10 10 0 0 0 12 2M12 4A8 8 0 0 1 20 12A8 8 0 0 1 12 20A8 8 0 0 1 4 12A8 8 0 0 1 12 4M12.5 7V12.25L17 14.92L16.25 16.15L11 13V7H12.5Z"/></svg>
-        Shift:
+        ODL Shift:
       </span>
       <select id="shiftSelect" class="filter-select" aria-label="Select ODL Shift">
-        <option value="ODL1">1st Shift (12:30 PM)</option>
-        <option value="ODL2">2nd Shift (03:30 PM)</option>
-        <option value="ODL_ALL">All ODL Shifts</option>
+        <option value="ALL" selected>All Shifts (1st + 2nd)</option>
+        <option value="1">1st Shift (Morning)</option>
+        <option value="2">2nd Shift (Afternoon)</option>
       </select>
     </div>
 
-    <!-- Step 3: Grade / Section Selector -->
+    <!-- Step 3: Cascading Section Selector -->
     <div class="filter-group">
       <span class="filter-label">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13H5V11H3V13M3 17H5V15H3V17M3 9H5V7H3V9M7 13H21V11H7V13M7 17H21V15H7V17M7 7V9H21V7H7Z"/></svg>
-        Section:
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6H20V8H4V6M4 11H20V13H4V11M4 16H20V18H4V16Z"/></svg>
+        Class Section:
       </span>
       <select id="sectionSelect" class="filter-select filter-select-section" aria-label="Select Section">
-        <option value="">Loading sections...</option>
+        <option value="ALL">All Sections (64 Sections)</option>
       </select>
     </div>
 
-    <a href="index.html" class="btn-action btn-back" style="background:#ffffff; color:#0f172a; border-color:#cbd5e1; font-weight:750;" title="Back to Home">
+    <button id="btnPrint" class="btn-action btn-print">
+      <svg viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+      Print / PDF
+    </button>
+
+    <a href="index.html" class="btn-action btn-back">
       <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
       Back Home
     </a>
   </div>
 </header>
+
+<!-- Advisory Banner -->
+<div class="screen-advisory-wrapper">
+  <div class="advisory-banner" role="alert">
+    <div class="advisory-icon-wrapper" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+        <line x1="12" y1="9" x2="12" y2="13"/>
+        <line x1="12" y1="17" x2="12.01" y2="17"/>
+      </svg>
+    </div>
+    <div class="advisory-content">
+      <div class="advisory-header-row">
+        <span class="advisory-pill-badge">FACULTY &amp; TEACHER ADVISORY</span>
+        <span class="advisory-term-label">S.Y. 2026–2027 • Official Scheduling</span>
+      </div>
+      <h3 class="advisory-main-title">Automatic Subject &amp; Schedule Assignment Notice</h3>
+      <p class="advisory-main-message">
+        Please be advised that <span class="advisory-highlight">some subjects and timetable slots are automatically assigned</span> and synchronized according to the official faculty teaching load distributions. All faculty members and teachers are requested to review their assigned subjects in their respective schedules. If you require any subject adjustments or reassignments, please coordinate directly with the Academic Coordinator / Department Head.
+      </p>
+    </div>
+  </div>
+</div>
 
 <!-- Main Printable Landscape Container -->
 <main class="page-sheet-container" id="sheetsContainer">
