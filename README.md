@@ -20,5 +20,32 @@ An automated, conflict-free examination scheduling system and interactive web ap
 ## 🚀 Live Demo & Deployment
 - Open `index.html` in any web browser or deploy directly to [Vercel](https://vercel.com).
 
+## Manual Class Schedule Management
+
+The `/class-schedule` page includes a separate manual-schedule record system:
+
+- `/class-schedule/create` creates a manual assignment.
+- `/class-schedule/:id/edit` edits an existing manual assignment through the Vercel rewrite in `vercel.json`.
+- Records are stored transactionally in the browser's IndexedDB database (`AMIS_CLASS_SCHEDULE_DB`), rather than mixed into the generated official JSON or saved as UI state in `localStorage`.
+- Every active write is checked against the official generated timetable and all active manual records for teacher, section, room, and partial time overlaps.
+- Inactive records stay in the database but do not occupy a time slot.
+- Active manual records are overlaid onto the existing section and faculty timetable views without changing the generated source datasets.
+
+Because this repository is a static Vercel deployment, IndexedDB data belongs to the browser profile where it was created. A shared multi-device deployment would require connecting the same store interface to a hosted database service.
+
+### Admin portal
+
+Schedule mutation controls are protected by the `/admin` portal. Public visitors can view the official timetable, while create, edit, delete, activate, and deactivate actions require a valid server-signed admin session.
+
+Configure these Vercel environment variables for Production, Preview, and Development as appropriate, then redeploy:
+
+```text
+AMIS_ADMIN_USERNAME=admin
+AMIS_ADMIN_PASSWORD=<a unique password with at least 8 characters>
+AMIS_ADMIN_SESSION_SECRET=<at least 32 random characters>
+```
+
+Generate a strong session secret with `openssl rand -hex 32`. The session is stored in a Secure, HTTP-only, SameSite=Strict cookie and expires after eight hours.
+
 ## 📄 License
 MIT License.

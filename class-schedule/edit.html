@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edit Schedule | AMIS Class Timetable</title>
+  <link rel="icon" type="image/png" href="/amis_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/class-schedule/form.css">
+</head>
+<body class="admin-pending" data-mode="edit">
+  <header class="form-topbar">
+    <div class="form-brand"><img src="/amis_logo.png" alt="AMIS Logo"><div><strong>AMIS Schedule Management</strong><span>Manual class and subject assignment</span></div></div>
+    <a class="back-link" href="/class-schedule">← Back to Class Schedule</a>
+  </header>
+  <main class="form-shell">
+    <div class="page-heading"><h1 id="pageTitle">Edit Schedule</h1><p id="pageDescription">Loading the assignment and current conflict data…</p></div>
+    <form id="scheduleForm" class="schedule-form" novalidate>
+      <section class="form-section"><h2>Assignment Details</h2><div class="form-grid">
+        <div class="field field-wide"><label for="teacher">Teacher / Faculty / Staff <span class="required">*</span></label><select id="teacher" name="teacher" required><option value="">Loading personnel…</option></select></div>
+        <div class="field"><label for="subject">Subject <span class="required">*</span></label><input id="subject" name="subject" type="text" list="subjectList" placeholder="e.g. Mathematics" required></div>
+        <div class="field"><label for="schedule_type">Schedule Type <span class="required">*</span></label><select id="schedule_type" name="schedule_type" required><option>Academic Class</option><option>Examination</option><option>Faculty Meeting</option><option>Staff Duty</option><option>School Activity</option><option>Other</option></select></div>
+        <div class="field"><label for="grade_level">Grade Level <span class="required">*</span></label><input id="grade_level" name="grade_level" type="text" placeholder="e.g. Grade 3" required></div>
+        <div class="field"><label for="section">Section <span class="required">*</span></label><select id="section" name="section" required><option value="">Loading sections…</option></select></div>
+        <div class="field"><label for="room">Room</label><input id="room" name="room" type="text" placeholder="Optional room or online classroom"><span class="field-hint">Room conflicts are checked when a room is entered.</span></div>
+        <div class="field"><label for="status">Status <span class="required">*</span></label><select id="status" name="status" required><option value="active">ACTIVE</option><option value="inactive">INACTIVE</option></select><span class="field-hint">Inactive schedules remain saved but do not occupy the time.</span></div>
+      </div></section>
+      <section class="form-section"><h2>Day and Time</h2><div class="form-grid">
+        <div class="field field-wide"><label for="day">Day <span class="required">*</span></label><select id="day" name="day" required><option value="">Select day</option><option>Sunday</option><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option></select></div>
+        <div class="field"><label for="start_time">Start Time <span class="required">*</span></label><input id="start_time" name="start_time" type="time" required></div>
+        <div class="field"><label for="end_time">End Time <span class="required">*</span></label><input id="end_time" name="end_time" type="time" required></div>
+        <div class="field field-wide"><div class="availability-card" aria-live="polite"><div class="availability-title">TEACHER AVAILABILITY</div><div id="availabilityState" class="availability-state availability-idle">SELECT A TEACHER AND TIME</div><div id="availabilityDetail" class="availability-detail">Availability updates automatically as the teacher, day, and time change.</div></div></div>
+      </div>
+      <div id="conflictPanel" class="conflict-panel" aria-live="assertive"><h3>Conflict detected</h3><ul id="conflictList" class="conflict-list"></ul><div class="suggestion-comparison"><div class="comparison-card"><small>ORIGINAL</small><strong id="originalSlot"></strong></div><div class="comparison-card suggested"><small>SUGGESTED</small><strong id="suggestedSlot"></strong></div></div><div class="suggestion-actions"><button id="useSuggestion" class="btn btn-suggestion" type="button">Use Suggested Schedule</button><button id="keepEditing" class="btn btn-secondary" type="button">Keep Editing</button></div></div>
+      </section>
+      <div id="formError" class="form-error" role="alert"></div>
+      <div class="form-actions"><a class="btn btn-secondary" href="/class-schedule">Cancel</a><button id="saveButton" class="btn btn-primary" type="submit">Update Schedule</button></div>
+    </form>
+    <p id="loadingStatus" class="loading-cover">Loading schedule database…</p>
+  </main>
+  <datalist id="subjectList"><option value="Mathematics"><option value="Science"><option value="English"><option value="Filipino"><option value="Arabic"><option value="Qur'an"><option value="Hadith"><option value="SHAF"><option value="GMRC"><option value="Makabansa"><option value="Araling Panlipunan"><option value="MAPEH"><option value="TLE"></datalist>
+  <script src="/class-schedule/schedule-core.js"></script>
+  <script src="/class-schedule/admin-guard.js"></script>
+  <script src="/class-schedule/schedule-form.js"></script>
+</body>
+</html>

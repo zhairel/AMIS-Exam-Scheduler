@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Portal | AMIS Schedule</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="amis_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin-portal.css?v=20260820_1">
+</head>
+<body>
+  <header class="admin-topbar">
+    <a class="admin-brand" href="/"><img src="amis_logo.png" alt="AMIS Logo"><span><strong>AMIS Admin Portal</strong><small>Protected schedule management</small></span></a>
+    <a class="public-link" href="/class-schedule">View Public Schedule</a>
+  </header>
+
+  <main class="admin-shell">
+    <section id="sessionLoading" class="admin-card loading-card"><div class="spinner" aria-hidden="true"></div><p>Checking admin session…</p></section>
+
+    <section id="loginPanel" class="admin-card" hidden>
+      <div class="card-icon" aria-hidden="true">
+        <svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4m6-9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10c0-1.11.89-2 2-2h1V6a5 5 0 0 1 10 0v2h1m-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3Z"/></svg>
+      </div>
+      <h1>Administrator Sign In</h1>
+      <p class="card-description">Sign in to create, edit, activate, deactivate, or delete class schedules.</p>
+      <form id="adminLoginForm">
+        <label for="adminUsername">Username</label>
+        <input id="adminUsername" class="username-input" type="text" autocomplete="username" value="admin" required autofocus>
+        <label for="adminPassword">Admin Password</label>
+        <div class="password-row"><input id="adminPassword" type="password" autocomplete="current-password" minlength="8" required><button id="togglePassword" type="button" aria-label="Show password">Show</button></div>
+        <div id="loginError" class="login-error" role="alert" hidden></div>
+        <button id="loginButton" class="primary-button" type="submit">Sign In Securely</button>
+      </form>
+      <p class="security-note">Admin access uses a secure, HTTP-only, server-signed session cookie.</p>
+    </section>
+
+    <section id="portalPanel" class="admin-card portal-card" hidden>
+      <div class="portal-heading"><div><span class="authenticated-pill">AUTHENTICATED ADMIN</span><h1>Schedule Administration</h1><p>Choose a management action below.</p></div><button id="logoutButton" class="logout-button" type="button">Sign Out</button></div>
+      <div class="portal-actions">
+        <a class="portal-action primary-action" href="/class-schedule/create"><span class="action-icon">＋</span><span><strong>Create Schedule / Add Subject</strong><small>Add an assignment with automatic availability and conflict checking.</small></span></a>
+        <a class="portal-action" href="/class-schedule#manualManagerTitle"><span class="action-icon">▦</span><span><strong>Manage Existing Schedules</strong><small>Search, edit, activate, deactivate, or delete manual records.</small></span></a>
+        <a class="portal-action" href="/class-schedule"><span class="action-icon">◫</span><span><strong>Review All Timetables</strong><small>Open the official section and faculty timetable views.</small></span></a>
+      </div>
+    </section>
+  </main>
+  <script src="admin-portal.js?v=20260820_1"></script>
+</body>
+</html>

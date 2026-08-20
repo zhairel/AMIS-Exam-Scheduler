@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;850;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="class-schedule/manage.css?v=20260820_1">
 
 <!-- html2pdf.js CDN with offline fallback -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -15,6 +16,8 @@
 <!-- Embedded Master Section Class Data & Teacher Schedules -->
 <script src="class_schedules_data.js?v=20260820_1545"></script>
 <script src="teacher_weekly_schedules.js?v=20260820_1545"></script>
+<script src="class-schedule/schedule-core.js?v=20260820_1"></script>
+<script src="class-schedule/admin-guard.js?v=20260820_1"></script>
 
 <style>
 :root {
@@ -381,6 +384,7 @@ body {
   background: #ffffff;
   color: var(--ink);
   transition: all 0.15s ease;
+  text-decoration: none;
 }
 
 .btn-inpage-add {
@@ -822,6 +826,7 @@ td.cell-class:focus-within .cell-actions-wrap,
   opacity: 0;
   transition: all 0.15s ease;
   padding: 0;
+  text-decoration: none;
 }
 
 td.cell-empty:hover .btn-cell-add-slot,
@@ -1010,6 +1015,16 @@ td.cell-empty:focus-within .btn-cell-add-slot {
     </div>
 
     <!-- Management Controls -->
+    <a href="/class-schedule/create" class="btn-action admin-only" title="Create a manual schedule on a dedicated page">
+      <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      Create Schedule
+    </a>
+
+    <a href="/admin" class="btn-action btn-back" title="Open the protected administrator portal">
+      <svg viewBox="0 0 24 24"><path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4m6-9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10c0-1.11.89-2 2-2h1V6a5 5 0 0 1 10 0v2h1m-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3Z"/></svg>
+      Admin Portal
+    </a>
+
     <button id="btnExportJson" class="btn-action btn-export-nav" title="Export custom schedule JSON data">
       <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
       Export JSON
@@ -1055,6 +1070,37 @@ td.cell-empty:focus-within .btn-cell-add-slot {
   </div>
 </div>
 
+<div id="scheduleNotice" class="notice-banner" hidden></div>
+
+<section id="manualManager" class="manual-manager" aria-labelledby="manualManagerTitle" hidden>
+  <div class="manual-manager-header">
+    <div>
+      <h2 id="manualManagerTitle">Manual Schedule Management</h2>
+      <p>Create, edit, activate, deactivate, and safely remove database-backed assignments.</p>
+    </div>
+    <a class="manual-create-link" href="/class-schedule/create" aria-label="Create Schedule or Add Subject">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      Create Schedule / Add Subject
+    </a>
+  </div>
+  <div class="manual-filters" aria-label="Manual schedule filters">
+    <input id="manualSearch" type="search" placeholder="Search teacher, subject, section, room…" aria-label="Search manual schedules">
+    <select id="manualTeacherFilter" aria-label="Filter by teacher"><option value="">All Teachers</option></select>
+    <select id="manualGradeFilter" aria-label="Filter by grade"><option value="">All Grades</option></select>
+    <select id="manualSectionFilter" aria-label="Filter by section"><option value="">All Sections</option></select>
+    <select id="manualSubjectFilter" aria-label="Filter by subject"><option value="">All Subjects</option></select>
+    <select id="manualDayFilter" aria-label="Filter by day"><option value="">All Days</option><option>Sunday</option><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option></select>
+    <select id="manualStatusFilter" aria-label="Filter by status"><option value="">Active &amp; Inactive</option><option value="active">ACTIVE</option><option value="inactive">INACTIVE</option></select>
+  </div>
+  <div class="manual-table-wrap">
+    <table class="manual-table">
+      <thead><tr><th>Teacher / Faculty / Staff</th><th>Subject</th><th>Grade &amp; Section</th><th>Day</th><th>Time</th><th>Room</th><th>Type</th><th>Status</th><th>Actions</th></tr></thead>
+      <tbody id="manualScheduleRows"><tr><td colspan="9" class="manual-empty">Loading schedule database…</td></tr></tbody>
+    </table>
+  </div>
+  <div class="manual-db-note">Only ACTIVE manual schedules occupy a teacher, section, or room. INACTIVE records remain stored and are excluded from availability checks.</div>
+</section>
+
 <!-- Main Printable Landscape Container -->
 <main class="page-sheet-container" id="sheetsContainer">
   <!-- Dynamic Timetable Sheets rendered here -->
@@ -1097,8 +1143,12 @@ td.cell-empty:focus-within .btn-cell-add-slot {
 <script>
 (function() {
   const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
-  const STORAGE_KEY = 'AMIS_CUSTOM_CLASS_SCHEDULES_V1';
+  const scheduleCore = window.AMISScheduleCore;
+  const adminGuard = window.AMISAdminGuard;
   let SECTIONS_DATA = [];
+  let BASE_SECTIONS_DATA = [];
+  let MANUAL_SCHEDULES = [];
+  let IS_ADMIN = false;
   let ALL_TEACHERS_DATA = window.ALL_TEACHERS_DATA || window.AMIS_TEACHER_WEEKLY_SCHEDULES || {};
 
   const teacherSelect = document.getElementById('teacherSelect');
@@ -1110,6 +1160,8 @@ td.cell-empty:focus-within .btn-cell-add-slot {
   const btnResetData = document.getElementById('btnResetData');
   const btnExportJson = document.getElementById('btnExportJson');
   const btnPrint = document.getElementById('btnPrint');
+  const manualRows = document.getElementById('manualScheduleRows');
+  const manualFilterIds = ['manualSearch', 'manualTeacherFilter', 'manualGradeFilter', 'manualSectionFilter', 'manualSubjectFilter', 'manualDayFilter', 'manualStatusFilter'];
 
   function esc(s) {
     if (!s) return '';
@@ -1133,6 +1185,146 @@ td.cell-empty:focus-within .btn-cell-add-slot {
     s = s.replace(/a\.?[m|M]\.?/gi, 'AM').replace(/p\.?[m|M]\.?/gi, 'PM');
     return s;
   }
+
+  function cloneData(value) {
+    return typeof structuredClone === 'function' ? structuredClone(value) : JSON.parse(JSON.stringify(value));
+  }
+
+  function integrateActiveManualSchedules(baseSections, schedules) {
+    const sections = cloneData(baseSections || []);
+    if (!scheduleCore) return sections;
+
+    (schedules || []).filter(s => s.status === 'active').forEach(schedule => {
+      let section = sections.find(s =>
+        (schedule.section_id && (s.id === schedule.section_id || s.section_id === schedule.section_id)) ||
+        s.section_name === schedule.section
+      );
+      if (!section) {
+        section = {
+          id: schedule.section_id || `manual_section_${schedule.id}`,
+          section_id: schedule.section_id || `manual_section_${schedule.id}`,
+          section_name: schedule.section,
+          shift: 'MANUAL',
+          department: 'Manual Schedule',
+          grade_level: schedule.grade_level,
+          periods: []
+        };
+        sections.push(section);
+      }
+
+      const rangeText = scheduleCore.formatRange(schedule);
+      const rows = section.periods || section.rows || [];
+      if (!section.periods && !section.rows) section.periods = rows;
+      let row = rows.find(item => item.time === rangeText && !item.is_break);
+      if (!row) {
+        const range = scheduleCore.recordRange(schedule);
+        const minutes = range ? range.end - range.start : 0;
+        row = { time: rangeText, minutes: `${minutes} min.`, is_break: false, is_merged_all_days: false, days: {}, manual_row: true };
+        rows.push(row);
+      }
+      if (!row.days) row.days = {};
+      row.days[schedule.day] = {
+        occupied: true,
+        is_class: true,
+        is_break: false,
+        subject: schedule.subject,
+        teacher: schedule.teacher,
+        teacher_id: schedule.teacher_id,
+        room: schedule.room,
+        schedule_type: schedule.schedule_type,
+        manual_schedule_id: schedule.id,
+        source: 'manual',
+        raw: `${schedule.subject} - ${schedule.teacher}`
+      };
+      rows.sort((a, b) => {
+        const aRange = scheduleCore.parseTimeRange(a.time);
+        const bRange = scheduleCore.parseTimeRange(b.time);
+        return (aRange ? aRange.start : 9999) - (bRange ? bRange.start : 9999);
+      });
+    });
+    return sections;
+  }
+
+  function optionValues(records, field) {
+    return Array.from(new Set(records.map(record => record[field]).filter(Boolean))).sort((a, b) => a.localeCompare(b));
+  }
+
+  function populateManualFilters() {
+    const filterMap = {
+      manualTeacherFilter: 'teacher',
+      manualGradeFilter: 'grade_level',
+      manualSectionFilter: 'section',
+      manualSubjectFilter: 'subject'
+    };
+    Object.entries(filterMap).forEach(([id, field]) => {
+      const select = document.getElementById(id);
+      if (!select) return;
+      const firstLabel = select.options[0] ? select.options[0].textContent : 'All';
+      select.innerHTML = `<option value="">${esc(firstLabel)}</option>` + optionValues(MANUAL_SCHEDULES, field).map(value => `<option value="${esc(value)}">${esc(value)}</option>`).join('');
+    });
+  }
+
+  function renderManualScheduleList() {
+    if (!manualRows || !scheduleCore) return;
+    const search = (document.getElementById('manualSearch').value || '').trim().toLowerCase();
+    const filters = {
+      teacher: document.getElementById('manualTeacherFilter').value,
+      grade_level: document.getElementById('manualGradeFilter').value,
+      section: document.getElementById('manualSectionFilter').value,
+      subject: document.getElementById('manualSubjectFilter').value,
+      day: document.getElementById('manualDayFilter').value,
+      status: document.getElementById('manualStatusFilter').value
+    };
+    const records = MANUAL_SCHEDULES.filter(record => {
+      if (Object.entries(filters).some(([field, value]) => value && record[field] !== value)) return false;
+      if (!search) return true;
+      return [record.teacher, record.subject, record.grade_level, record.section, record.day, record.room, record.schedule_type, record.status].join(' ').toLowerCase().includes(search);
+    });
+
+    if (!records.length) {
+      manualRows.innerHTML = `<tr><td colspan="9" class="manual-empty">${MANUAL_SCHEDULES.length ? 'No schedules match the selected filters.' : 'No manual schedules yet. Use “Create Schedule / Add Subject” to add one.'}</td></tr>`;
+      return;
+    }
+
+    manualRows.innerHTML = records.map(record => `
+      <tr>
+        <td><strong>${esc(record.teacher)}</strong><br><span class="status-pill manual-source-pill">MANUAL</span></td>
+        <td>${esc(record.subject)}</td>
+        <td><strong>${esc(record.grade_level)}</strong><br>${esc(cleanSectionName(record.section))}</td>
+        <td>${esc(record.day)}</td>
+        <td>${esc(scheduleCore.formatRange(record))}</td>
+        <td>${record.room ? esc(record.room) : '—'}</td>
+        <td>${esc(record.schedule_type)}</td>
+        <td><span class="status-pill status-${record.status}">${record.status.toUpperCase()}</span></td>
+        <td><div class="manual-actions">
+          <a class="manual-icon-action" href="/class-schedule/${encodeURIComponent(record.id)}/edit" title="Edit schedule" aria-label="Edit ${esc(record.subject)}">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+          </a>
+          <button class="manual-icon-action manual-icon-delete" type="button" onclick="window.deleteManualSchedule('${record.id}')" title="Delete schedule" aria-label="Delete ${esc(record.subject)}">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+          </button>
+        </div></td>
+      </tr>`).join('');
+  }
+
+  window.deleteManualSchedule = async function(id) {
+    if (!adminGuard || !await adminGuard.requireAdmin(true)) return;
+    if (!window.confirm('Are you sure you want to delete this schedule?')) return;
+    try {
+      await scheduleCore.deleteSchedule(id);
+      MANUAL_SCHEDULES = await scheduleCore.listSchedules();
+      SECTIONS_DATA = integrateActiveManualSchedules(BASE_SECTIONS_DATA, MANUAL_SCHEDULES);
+      rebuildTeacherDataFromSections();
+      populateTeacherDropdown();
+      populateSectionDropdown();
+      populateManualFilters();
+      renderManualScheduleList();
+      renderCurrentView();
+      showToast('Schedule deleted successfully.');
+    } catch (error) {
+      window.alert(error.message || 'Unable to delete this schedule.');
+    }
+  };
 
   function getSubjectColor(subj) {
     const s = (subj || "").toLowerCase();
@@ -1224,6 +1416,9 @@ td.cell-empty:focus-within .btn-cell-add-slot {
               time: p.time,
               minutes: p.minutes,
               subject: cell.subject || p.subject,
+              manual_schedule_id: cell.manual_schedule_id || p.manual_schedule_id || '',
+              room: cell.room || p.room || '',
+              schedule_type: cell.schedule_type || p.schedule_type || '',
               section_name: sec.section_name,
               section_index: sIdx,
               shift: sec.shift,
@@ -1236,7 +1431,12 @@ td.cell-empty:focus-within .btn-cell-add-slot {
 
     // Build timeline rows for each teacher
     Object.values(teachersMap).forEach(t => {
-      const timeSlots = Array.from(new Set(t.periods.map(p => p.time))).sort();
+      const timeSlots = Array.from(new Set(t.periods.map(p => p.time))).sort((a, b) => {
+        if (!scheduleCore) return String(a).localeCompare(String(b));
+        const aRange = scheduleCore.parseTimeRange(a);
+        const bRange = scheduleCore.parseTimeRange(b);
+        return (aRange ? aRange.start : 9999) - (bRange ? bRange.start : 9999);
+      });
       t.rows = timeSlots.map(time => {
         const periodSample = t.periods.find(p => p.time === time);
         const daysObj = {};
@@ -1251,6 +1451,9 @@ td.cell-empty:focus-within .btn-cell-add-slot {
               section_short: match.section_name,
               shift: match.shift,
               modality: match.modality,
+              manual_schedule_id: match.manual_schedule_id,
+              room: match.room,
+              schedule_type: match.schedule_type,
               color: getSubjectColor(match.subject)
             };
           } else {
@@ -1269,40 +1472,42 @@ td.cell-empty:focus-within .btn-cell-add-slot {
     ALL_TEACHERS_DATA = teachersMap;
   }
 
-  function saveCustomSchedules(toastText) {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(SECTIONS_DATA));
-      rebuildTeacherDataFromSections();
-      populateTeacherDropdown();
-      if (toastText) showToast(toastText);
-    } catch (e) {
-      console.error('Storage error:', e);
-    }
-  }
-
   async function init() {
     let rawSections = null;
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) {
+    if (adminGuard) {
       try {
-        rawSections = JSON.parse(saved);
-      } catch (e) {}
-    }
-
-    if (!rawSections) {
-      try {
-        const resp = await fetch('class_schedules_data.json?v=' + Date.now());
-        if (resp.ok) {
-          rawSections = await resp.json();
-        } else if (window.CLASS_SCHEDULES_DATA) {
-          rawSections = window.CLASS_SCHEDULES_DATA;
-        }
-      } catch (e) {
-        if (window.CLASS_SCHEDULES_DATA) rawSections = window.CLASS_SCHEDULES_DATA;
+        const session = await adminGuard.check(true);
+        IS_ADMIN = Boolean(session.authenticated);
+      } catch (_) {
+        IS_ADMIN = false;
       }
     }
+    document.body.classList.toggle('admin-authenticated', IS_ADMIN);
+    const manualManager = document.getElementById('manualManager');
+    if (manualManager) manualManager.hidden = !IS_ADMIN;
 
-    SECTIONS_DATA = rawSections || [];
+    try {
+      const resp = await fetch('class_schedules_data.json?v=' + Date.now());
+      if (resp.ok) {
+        rawSections = await resp.json();
+      } else if (window.CLASS_SCHEDULES_DATA) {
+        rawSections = window.CLASS_SCHEDULES_DATA;
+      }
+    } catch (e) {
+      if (window.CLASS_SCHEDULES_DATA) rawSections = window.CLASS_SCHEDULES_DATA;
+    }
+
+    BASE_SECTIONS_DATA = cloneData(rawSections || []);
+
+    if (scheduleCore) {
+      try {
+        MANUAL_SCHEDULES = await scheduleCore.listSchedules();
+      } catch (error) {
+        console.error('Manual schedule database error:', error);
+        if (manualRows) manualRows.innerHTML = `<tr><td colspan="9" class="manual-empty">${esc(error.message || 'Unable to open the schedule database.')}</td></tr>`;
+      }
+    }
+    SECTIONS_DATA = integrateActiveManualSchedules(BASE_SECTIONS_DATA, MANUAL_SCHEDULES);
 
     try {
       const tResp = await fetch('teacher_weekly_schedules.json?v=' + Date.now());
@@ -1317,6 +1522,22 @@ td.cell-empty:focus-within .btn-cell-add-slot {
 
     rebuildTeacherDataFromSections();
     populateTeacherDropdown();
+    populateManualFilters();
+    renderManualScheduleList();
+
+    manualFilterIds.forEach(id => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.addEventListener(id === 'manualSearch' ? 'input' : 'change', renderManualScheduleList);
+      }
+    });
+
+    const noticeText = new URLSearchParams(window.location.search).get('notice');
+    const notice = document.getElementById('scheduleNotice');
+    if (noticeText && notice) {
+      notice.textContent = noticeText;
+      notice.hidden = false;
+    }
 
     const urlParams = new URLSearchParams(window.location.search);
     let initTeacher = urlParams.get('teacher') || '';
@@ -1388,14 +1609,14 @@ td.cell-empty:focus-within .btn-cell-add-slot {
   }
 
   async function resetToOfficialSchedules() {
-    const confirmReset = window.confirm("Are you sure you want to reset all customized timetable subjects back to the official school defaults?");
+    const confirmReset = window.confirm("Reload the official automatic timetable defaults? Your manual schedule database will not be deleted.");
     if (!confirmReset) return;
 
-    localStorage.removeItem(STORAGE_KEY);
     try {
       const resp = await fetch('class_schedules_data.json?v=' + Date.now());
       if (resp.ok) {
-        SECTIONS_DATA = await resp.json();
+        BASE_SECTIONS_DATA = await resp.json();
+        SECTIONS_DATA = integrateActiveManualSchedules(BASE_SECTIONS_DATA, MANUAL_SCHEDULES);
       }
     } catch (e) {}
 
@@ -1403,7 +1624,7 @@ td.cell-empty:focus-within .btn-cell-add-slot {
     populateTeacherDropdown();
     populateSectionDropdown();
     renderCurrentView();
-    showToast('Reset to official school schedule defaults!');
+    showToast('Official timetable reloaded. Manual schedules were preserved.');
   }
 
   function populateTeacherDropdown() {
@@ -1527,171 +1748,35 @@ td.cell-empty:focus-within .btn-cell-add-slot {
     return s;
   }
 
-  // ==========================================
-  // In-Page Interactive Handlers (NO Modal!)
-  // ==========================================
-
-  window.toggleInPageCreator = function(sheetId, forceState) {
-    const panel = document.getElementById('creatorPanel_' + sheetId);
-    if (!panel) return;
-    if (forceState !== undefined) {
-      panel.style.display = forceState ? 'block' : 'none';
-    } else {
-      panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
-    }
-  };
-
-  window.openCreatorForSlot = function(sheetId, day, timeStr) {
-    window.toggleInPageCreator(sheetId, true);
-    const panel = document.getElementById('creatorPanel_' + sheetId);
-    if (!panel) return;
-    const daySelect = panel.querySelector('select[name="day"]');
-    const timeSelect = panel.querySelector('select[name="time"]');
-    const subjInput = panel.querySelector('input[name="subject"]');
-    if (daySelect && day) daySelect.value = day;
-    if (timeSelect && timeStr) {
-      timeSelect.value = timeStr;
-      if (!timeSelect.value) {
-        for (let opt of timeSelect.options) {
-          if (opt.value.trim() === timeStr.trim()) {
-            opt.selected = true;
-            break;
-          }
-        }
-      }
-    }
-    if (subjInput) subjInput.focus();
-  };
-
-  window.handleInPageCreate = function(e, sheetId, targetId, isTeacherView) {
-    e.preventDefault();
-    const form = e.target;
-    const day = form.day.value;
-    const time = form.time.value;
-    const subject = form.subject.value.trim();
-    const assignee = form.assignee.value;
-
-    if (!subject) return;
-
-    if (isTeacherView) {
-      const tData = Object.values(ALL_TEACHERS_DATA).find(t => t.teacher_id === targetId || t.canonical_name === targetId);
-      const teacherDisplayName = tData ? (tData.canonical_name || tData.teacher_name) : targetId;
-      const secIdx = parseInt(assignee, 10);
-      const sec = SECTIONS_DATA[secIdx];
-      if (sec) {
-        const pList = sec.periods || sec.rows || [];
-        let pRow = pList.find(r => r.time === time);
-        if (!pRow) {
-          pRow = { time: time, minutes: '40 min.', is_break: false, days: {} };
-          pList.push(pRow);
-        }
-        if (!pRow.days) pRow.days = {};
-        pRow.days[day] = {
-          subject: subject,
-          teacher: teacherDisplayName,
-          is_break: false,
-          raw: `${subject} - ${teacherDisplayName}`
-        };
-        pRow.is_merged_all_days = false;
-      }
-    } else {
-      const secIdx = parseInt(targetId, 10);
-      const sec = SECTIONS_DATA[secIdx];
-      if (sec) {
-        const pList = sec.periods || sec.rows || [];
-        let pRow = pList.find(r => r.time === time);
-        if (!pRow) {
-          pRow = { time: time, minutes: '40 min.', is_break: false, days: {} };
-          pList.push(pRow);
-        }
-        if (!pRow.days) pRow.days = {};
-        pRow.days[day] = {
-          subject: subject,
-          teacher: assignee,
-          is_break: false,
-          raw: `${subject} - ${assignee}`
-        };
-        pRow.is_merged_all_days = false;
-      }
-    }
-
-    saveCustomSchedules(`Assigned ${subject} for ${day} at ${time}!`);
-    renderCurrentView();
-  };
-
-  window.startInlineCellEdit = function(btn, secIndex, day, timeStr, currentSubj, currentTchr) {
-    const td = btn.closest('td');
-    if (!td) return;
-
-    const facultyList = getAllFacultyList();
-    let teacherOptionsHtml = '<option value="">-- Select Faculty Staff --</option>';
-    facultyList.forEach(f => {
-      const isSel = (f.name === currentTchr) ? 'selected' : '';
-      teacherOptionsHtml += `<option value="${esc(f.name)}" ${isSel}>${esc(f.name)}</option>`;
+  function createScheduleUrl(values) {
+    const params = new URLSearchParams();
+    Object.entries(values || {}).forEach(([name, value]) => {
+      if (value) params.set(name, value);
     });
+    return `/class-schedule/create${params.toString() ? `?${params.toString()}` : ''}`;
+  }
 
-    td.innerHTML = `
-      <div class="inline-cell-editor" onclick="event.stopPropagation()">
-        <input type="text" class="inline-input-subj" value="${esc(currentSubj)}" placeholder="Subject Name" list="commonSubjectsList" required />
-        <select class="inline-select-tchr">
-          ${teacherOptionsHtml}
-        </select>
-        <div class="inline-editor-btns">
-          <button type="button" class="btn-inline-save" title="Save changes" onclick="window.saveInlineCellEdit(${secIndex}, '${day}', '${esc(timeStr)}', this)">✓ Save</button>
-          <button type="button" class="btn-inline-cancel" title="Cancel edit" onclick="window.renderCurrentView()">✕</button>
-        </div>
-      </div>
-    `;
+  function slotQueryValues(timeValue) {
+    if (!scheduleCore) return {};
+    const range = scheduleCore.parseTimeRange(timeValue);
+    return range ? { start_time: scheduleCore.formatInputTime(range.start), end_time: scheduleCore.formatInputTime(range.end) } : {};
+  }
 
-    const input = td.querySelector('.inline-input-subj');
-    if (input) input.focus();
-  };
-
-  window.saveInlineCellEdit = function(secIndex, day, timeStr, btn) {
-    const editor = btn.closest('.inline-cell-editor');
-    if (!editor) return;
-
-    const newSubj = editor.querySelector('.inline-input-subj').value.trim();
-    const newTchr = editor.querySelector('.inline-select-tchr').value;
-
-    if (!newSubj) {
-      window.deleteCellSubject(secIndex, day, timeStr);
-      return;
-    }
-
-    const sec = SECTIONS_DATA[secIndex];
-    if (sec) {
-      const pList = sec.periods || sec.rows || [];
-      const pRow = pList.find(r => r.time === timeStr);
-      if (pRow) {
-        if (!pRow.days) pRow.days = {};
-        pRow.days[day] = {
-          subject: newSubj,
-          teacher: newTchr,
-          is_break: false,
-          raw: `${newSubj} - ${newTchr}`
-        };
-        pRow.is_merged_all_days = false;
-      }
-    }
-
-    saveCustomSchedules(`Updated to ${newSubj}!`);
-    renderCurrentView();
-  };
-
-  window.deleteCellSubject = function(secIndex, day, timeStr) {
-    const sec = SECTIONS_DATA[secIndex];
-    if (sec) {
-      const pList = sec.periods || sec.rows || [];
-      const pRow = pList.find(r => r.time === timeStr);
-      if (pRow && pRow.days && pRow.days[day]) {
-        delete pRow.days[day];
-      }
-    }
-
-    saveCustomSchedules('Subject removed from slot.');
-    renderCurrentView();
-  };
+  function cellManagementHtml(manualId) {
+    if (!manualId) return '';
+    if (!IS_ADMIN) return '<span class="manual-cell-badge">MANUAL</span>';
+    const safeId = esc(manualId);
+    return `
+      <span class="manual-cell-badge">MANUAL</span>
+      <div class="cell-actions-wrap is-visible">
+        <a class="btn-action-icon btn-action-edit" href="/class-schedule/${encodeURIComponent(manualId)}/edit" title="Edit manual schedule" aria-label="Edit manual schedule">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+        </a>
+        <button class="btn-action-icon btn-action-delete" type="button" title="Delete manual schedule" onclick="window.deleteManualSchedule('${safeId}')">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+        </button>
+      </div>`;
+  }
 
   // ==========================================
   // Render Teacher Timetable Sheets
@@ -1699,7 +1784,6 @@ td.cell-empty:focus-within .btn-cell-add-slot {
 
   function renderMultipleTeacherSheets(tIds) {
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-    const facultyList = getAllFacultyList();
     let fullHtml = '';
 
     tIds.forEach(tid => {
@@ -1710,30 +1794,6 @@ td.cell-empty:focus-within .btn-cell-add-slot {
       const totalCount = data.total_classes || (data.periods ? data.periods.length : 0);
       const metaStr = `${totalCount} Teaching Period${totalCount === 1 ? '' : 's'}`;
       const safeTid = String(data.teacher_id || tid).replace(/[^a-zA-Z0-9_-]/g, '_');
-
-      let secOptionsHtml = '';
-      SECTIONS_DATA.forEach((s, sIdx) => {
-        secOptionsHtml += `<option value="${sIdx}">${esc(s.section_name)}</option>`;
-      });
-
-      const timeSlots = Array.from(new Set((data.rows || []).map(r => r.time))).filter(Boolean);
-      let timeOptionsHtml = '';
-      if (timeSlots.length > 0) {
-        timeSlots.forEach(t => {
-          timeOptionsHtml += `<option value="${esc(t)}">${esc(t)}</option>`;
-        });
-      } else {
-        timeOptionsHtml = `
-          <option value="8:00 – 9:00 AM">8:00 – 9:00 AM</option>
-          <option value="9:00 – 10:00 AM">9:00 – 10:00 AM</option>
-          <option value="10:25 – 11:25 AM">10:25 – 11:25 AM</option>
-          <option value="12:40 – 01:40 PM">12:40 – 01:40 PM</option>
-          <option value="01:50 – 02:50 PM">01:50 – 02:50 PM</option>
-          <option value="03:10 – 04:10 PM">03:10 – 04:10 PM</option>
-          <option value="04:20 – 05:20 PM">04:20 – 05:20 PM</option>
-          <option value="05:30 – 06:30 PM">05:30 – 06:30 PM</option>
-        `;
-      }
 
       fullHtml += `
         <div class="timetable-sheet">
@@ -1758,63 +1818,19 @@ td.cell-empty:focus-within .btn-cell-add-slot {
           </div>
 
           <!-- In-Page Action Bar -->
-          <div class="sheet-action-bar">
+          <div class="sheet-action-bar admin-only">
             <div class="sheet-action-left">
-              <button class="btn-inpage-action btn-inpage-add" onclick="window.toggleInPageCreator('t_${safeTid}')" title="Assign a subject and section to this faculty staff">
+              <a class="btn-inpage-action btn-inpage-add admin-only" href="${createScheduleUrl({ teacher: teacherDisplayName })}" title="Assign a subject and section to this faculty staff">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
                 <span>+ Add / Assign Subject to ${esc(teacherDisplayName)}</span>
-              </button>
-              <span class="sheet-edit-hint">💡 Hover or click any cell to edit ✏️ or delete 🗑️</span>
+              </a>
+              <span class="sheet-edit-hint">Manual assignments use dedicated create and edit pages.</span>
             </div>
             <div class="sheet-action-right">
-              <span class="save-status-pill">● Auto-saved locally</span>
+              <span class="save-status-pill">● Schedule database connected</span>
             </div>
           </div>
 
-          <!-- In-Page Manual Subject Creator Form (Page-only, NO modal!) -->
-          <div class="inpage-subject-creator" id="creatorPanel_t_${safeTid}" style="display:none;">
-            <div class="inpage-creator-header">
-              <h4>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                Manual Subject Assignment — ${esc(teacherDisplayName)}
-              </h4>
-              <button type="button" class="btn-inpage-close" onclick="window.toggleInPageCreator('t_${safeTid}', false)" title="Close Panel">✕</button>
-            </div>
-            <form class="inpage-creator-form" onsubmit="window.handleInPageCreate(event, 't_${safeTid}', '${safeTid}', true)">
-              <div class="inpage-form-grid">
-                <div class="inpage-form-group">
-                  <label>Day of Week</label>
-                  <select name="day" required>
-                    <option value="Sunday">Sunday</option>
-                    <option value="Monday">Monday</option>
-                    <option value="Tuesday">Tuesday</option>
-                    <option value="Wednesday">Wednesday</option>
-                    <option value="Thursday">Thursday</option>
-                  </select>
-                </div>
-                <div class="inpage-form-group">
-                  <label>Time Period</label>
-                  <select name="time" required>
-                    ${timeOptionsHtml}
-                  </select>
-                </div>
-                <div class="inpage-form-group">
-                  <label>Subject Name</label>
-                  <input type="text" name="subject" placeholder="e.g. Mathematics, Arabic, Science" list="commonSubjectsList" required />
-                </div>
-                <div class="inpage-form-group">
-                  <label>Class Section</label>
-                  <select name="assignee" required>
-                    ${secOptionsHtml}
-                  </select>
-                </div>
-              </div>
-              <div class="inpage-form-actions">
-                <button type="submit" class="btn-inpage-submit">✓ Save Subject Assignment</button>
-                <button type="button" class="btn-inpage-cancel" onclick="window.toggleInPageCreator('t_${safeTid}', false)">Cancel</button>
-              </div>
-            </form>
-          </div>
 
           <div class="table-responsive-wrapper">
             <table class="timetable-grid">
@@ -1878,23 +1894,16 @@ td.cell-empty:focus-within .btn-cell-add-slot {
                       <span class="cell-subject-sec">${esc(cell.subject || cell.label)}</span>
                       <span class="cell-section-name">${esc(cleanSec)}</span>
                       <span class="cell-mod-badge">${esc(cleanShift)}</span>
-                      <div class="cell-actions-wrap">
-                        <button class="btn-action-icon btn-action-edit" title="Edit Subject &amp; Teacher" onclick="window.startInlineCellEdit(this, ${sIdx > -1 ? sIdx : 0}, '${d}', '${esc(r.time)}', '${esc(cell.subject || cell.label)}', '${esc(teacherDisplayName)}')">
-                          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
-                        </button>
-                        <button class="btn-action-icon btn-action-delete" title="Delete / Clear Subject" onclick="window.deleteCellSubject(${sIdx > -1 ? sIdx : 0}, '${d}', '${esc(r.time)}')">
-                          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
-                        </button>
-                      </div>
+                      ${cellManagementHtml(cell.manual_schedule_id)}
                     </div>
                   </td>
                 `;
               } else {
                 fullHtml += `
                   <td class="cell-empty">
-                    <button class="btn-cell-add-slot" title="Add Subject for ${d} ${timeFormatted}" onclick="window.openCreatorForSlot('t_${safeTid}', '${d}', '${esc(r.time)}')">
+                    <a class="btn-cell-add-slot admin-only" title="Add Subject for ${d} ${timeFormatted}" href="${createScheduleUrl({ teacher: teacherDisplayName, day: d, ...slotQueryValues(r.time) })}">
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                    </button>
+                    </a>
                   </td>
                 `;
               }
@@ -1938,7 +1947,6 @@ td.cell-empty:focus-within .btn-cell-add-slot {
 
   function renderMultipleSections(list) {
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-    const facultyList = getAllFacultyList();
     let fullHtml = '';
 
     if (!list || list.length === 0) {
@@ -1950,29 +1958,7 @@ td.cell-empty:focus-within .btn-cell-add-slot {
       const secIndex = SECTIONS_DATA.indexOf(sec);
       const safeSecId = 's_' + secIndex;
 
-      let facultyOptionsHtml = '<option value="">-- Select Assigned Faculty Staff --</option>';
-      facultyList.forEach(f => {
-        facultyOptionsHtml += `<option value="${esc(f.name)}">${esc(f.name)}</option>`;
-      });
-
       const pList = sec.periods || sec.rows || [];
-      let timeOptionsHtml = '';
-      pList.forEach(p => {
-        if (!p.is_break) {
-          timeOptionsHtml += `<option value="${esc(p.time)}">${esc(formatTime(p.time))}</option>`;
-        }
-      });
-      if (!timeOptionsHtml) {
-        timeOptionsHtml = `
-          <option value="8:00 – 9:00 AM">8:00 – 9:00 AM</option>
-          <option value="9:00 – 10:00 AM">9:00 – 10:00 AM</option>
-          <option value="10:25 – 11:25 AM">10:25 – 11:25 AM</option>
-          <option value="12:40 – 01:40 PM">12:40 – 01:40 PM</option>
-          <option value="01:50 – 02:50 PM">01:50 – 02:50 PM</option>
-          <option value="03:10 – 04:10 PM">03:10 – 04:10 PM</option>
-        `;
-      }
-
       fullHtml += `
         <div class="timetable-sheet">
           <div class="school-header" style="display:flex; align-items:center; justify-content:center; gap:14px; margin-bottom:12px;">
@@ -1996,63 +1982,19 @@ td.cell-empty:focus-within .btn-cell-add-slot {
           </div>
 
           <!-- In-Page Action Bar -->
-          <div class="sheet-action-bar">
+          <div class="sheet-action-bar admin-only">
             <div class="sheet-action-left">
-              <button class="btn-inpage-action btn-inpage-add" onclick="window.toggleInPageCreator('${safeSecId}')" title="Add a subject assignment to this class schedule">
+              <a class="btn-inpage-action btn-inpage-add admin-only" href="${createScheduleUrl({ grade_level: sec.grade_level, section: sec.section_name })}" title="Add a subject assignment to this class schedule">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
                 <span>+ Add / Assign Subject</span>
-              </button>
-              <span class="sheet-edit-hint">💡 Hover or click any cell to edit ✏️ or delete 🗑️</span>
+              </a>
+              <span class="sheet-edit-hint">Manual assignments use dedicated create and edit pages.</span>
             </div>
             <div class="sheet-action-right">
-              <span class="save-status-pill">● Auto-saved locally</span>
+              <span class="save-status-pill">● Schedule database connected</span>
             </div>
           </div>
 
-          <!-- In-Page Manual Subject Creator Form (Page-only, NO modal!) -->
-          <div class="inpage-subject-creator" id="creatorPanel_${safeSecId}" style="display:none;">
-            <div class="inpage-creator-header">
-              <h4>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                Manual Subject Assignment — ${esc(sec.section_name)}
-              </h4>
-              <button type="button" class="btn-inpage-close" onclick="window.toggleInPageCreator('${safeSecId}', false)" title="Close Panel">✕</button>
-            </div>
-            <form class="inpage-creator-form" onsubmit="window.handleInPageCreate(event, '${safeSecId}', '${secIndex}', false)">
-              <div class="inpage-form-grid">
-                <div class="inpage-form-group">
-                  <label>Day of Week</label>
-                  <select name="day" required>
-                    <option value="Sunday">Sunday</option>
-                    <option value="Monday">Monday</option>
-                    <option value="Tuesday">Tuesday</option>
-                    <option value="Wednesday">Wednesday</option>
-                    <option value="Thursday">Thursday</option>
-                  </select>
-                </div>
-                <div class="inpage-form-group">
-                  <label>Time Period</label>
-                  <select name="time" required>
-                    ${timeOptionsHtml}
-                  </select>
-                </div>
-                <div class="inpage-form-group">
-                  <label>Subject Name</label>
-                  <input type="text" name="subject" placeholder="e.g. Mathematics, Arabic, Science" list="commonSubjectsList" required />
-                </div>
-                <div class="inpage-form-group">
-                  <label>Assigned Teacher / Faculty</label>
-                  <select name="assignee" required>
-                    ${facultyOptionsHtml}
-                  </select>
-                </div>
-              </div>
-              <div class="inpage-form-actions">
-                <button type="submit" class="btn-inpage-submit">✓ Save Subject Assignment</button>
-                <button type="button" class="btn-inpage-cancel" onclick="window.toggleInPageCreator('${safeSecId}', false)">Cancel</button>
-              </div>
-            </form>
-          </div>
 
           <div class="table-responsive-wrapper">
             <table class="timetable-grid">
@@ -2092,14 +2034,7 @@ td.cell-empty:focus-within .btn-cell-add-slot {
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(p.subject || p.label)}</span>
                     ${p.teacher ? `<span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(p.teacher)}</span>` : ''}
-                    <div class="cell-actions-wrap">
-                      <button class="btn-action-icon btn-action-edit" title="Edit Subject &amp; Teacher" onclick="window.startInlineCellEdit(this, ${secIndex}, 'Sunday', '${esc(p.time)}', '${esc(p.subject || p.label)}', '${esc(p.teacher || '')}')">
-                        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
-                      </button>
-                      <button class="btn-action-icon btn-action-delete" title="Delete / Clear Subject" onclick="window.deleteCellSubject(${secIndex}, 'Sunday', '${esc(p.time)}')">
-                        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
-                      </button>
-                    </div>
+                    ${cellManagementHtml(p.manual_schedule_id)}
                   </div>
                 </td>
               </tr>
@@ -2129,9 +2064,9 @@ td.cell-empty:focus-within .btn-cell-add-slot {
               if (!cell) {
                 fullHtml += `
                   <td class="cell-empty">
-                    <button class="btn-cell-add-slot" title="Add Subject for ${d} ${timeStr}" onclick="window.openCreatorForSlot('${safeSecId}', '${d}', '${esc(p.time)}')">
+                    <a class="btn-cell-add-slot admin-only" title="Add Subject for ${d} ${timeStr}" href="${createScheduleUrl({ grade_level: sec.grade_level, section: sec.section_name, day: d, ...slotQueryValues(p.time) })}">
                       <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                    </button>
+                    </a>
                   </td>
                 `;
               } else if (cell.is_break) {
@@ -2143,14 +2078,7 @@ td.cell-empty:focus-within .btn-cell-add-slot {
                     <div class="cell-class-inner">
                       <span class="cell-subject-sec">${esc(cell.subject)}</span>
                       ${cell.teacher ? `<span class="cell-mod-badge" style="color:${color.text}; font-weight:800;">${esc(cell.teacher)}</span>` : ''}
-                      <div class="cell-actions-wrap">
-                        <button class="btn-action-icon btn-action-edit" title="Edit Subject &amp; Teacher" onclick="window.startInlineCellEdit(this, ${secIndex}, '${d}', '${esc(p.time)}', '${esc(cell.subject)}', '${esc(cell.teacher || '')}')">
-                          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
-                        </button>
-                        <button class="btn-action-icon btn-action-delete" title="Delete / Clear Subject" onclick="window.deleteCellSubject(${secIndex}, '${d}', '${esc(p.time)}')">
-                          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
-                        </button>
-                      </div>
+                      ${cellManagementHtml(cell.manual_schedule_id)}
                     </div>
                   </td>
                 `;
