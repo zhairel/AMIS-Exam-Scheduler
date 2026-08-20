@@ -9546,9 +9546,9 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
   "tchr_silfah": {
     "id": "tchr_silfah",
     "teacher_id": "tchr_silfah",
-    "name": "Ustadha Silfah",
-    "teacher_name": "Ustadha Silfah",
-    "canonical_name": "Ustadha Silfah",
+    "name": "Ustadh Silfah",
+    "teacher_name": "Ustadh Silfah",
+    "canonical_name": "Ustadh Silfah",
     "department": "ISAL Faculty",
     "periods": [
       {

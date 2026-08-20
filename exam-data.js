@@ -647,7 +647,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -1235,7 +1235,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -1382,7 +1382,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 30
   },
   {
@@ -1823,7 +1823,7 @@ window.EXAM_DATA = [
     "gender": "GIRLS",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -1844,7 +1844,7 @@ window.EXAM_DATA = [
     "gender": "GIRLS",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -2663,7 +2663,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -2831,7 +2831,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 30
   },
   {
@@ -3335,7 +3335,7 @@ window.EXAM_DATA = [
     "gender": "BOYS",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -3356,7 +3356,7 @@ window.EXAM_DATA = [
     "gender": "BOYS",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -4112,7 +4112,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -4259,7 +4259,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 30
   },
   {
@@ -4742,7 +4742,7 @@ window.EXAM_DATA = [
     "gender": "GIRLS",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -4784,7 +4784,7 @@ window.EXAM_DATA = [
     "gender": "GIRLS",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -5435,7 +5435,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -5624,7 +5624,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 30
   },
   {
@@ -6086,7 +6086,7 @@ window.EXAM_DATA = [
     "gender": "BOYS",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -6128,7 +6128,7 @@ window.EXAM_DATA = [
     "gender": "BOYS",
     "subject": "Arabic Language",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -7010,7 +7010,7 @@ window.EXAM_DATA = [
     "gender": "GIRLS",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -7787,7 +7787,7 @@ window.EXAM_DATA = [
     "gender": "GIRLS",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -8018,7 +8018,7 @@ window.EXAM_DATA = [
     "gender": "BOYS",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -8837,7 +8837,7 @@ window.EXAM_DATA = [
     "gender": "GIRLS",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -9152,7 +9152,7 @@ window.EXAM_DATA = [
     "gender": "BOYS",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -10202,7 +10202,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "GMRC / Values",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60
   },
   {
@@ -12137,7 +12137,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -12725,7 +12725,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -12872,7 +12872,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -13313,7 +13313,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -13334,7 +13334,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -14153,7 +14153,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -14321,7 +14321,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -14825,7 +14825,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -14846,7 +14846,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -15602,7 +15602,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -15749,7 +15749,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -16232,7 +16232,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -16274,7 +16274,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -16925,7 +16925,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -17114,7 +17114,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -17576,7 +17576,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -17618,7 +17618,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -18500,7 +18500,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -19277,7 +19277,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -19508,7 +19508,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -20327,7 +20327,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -20642,7 +20642,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -21692,7 +21692,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -23626,7 +23626,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -24214,7 +24214,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -24361,7 +24361,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -24802,7 +24802,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -24823,7 +24823,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -25642,7 +25642,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -25810,7 +25810,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -26314,7 +26314,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -26335,7 +26335,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -27091,7 +27091,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -27238,7 +27238,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -27721,7 +27721,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -27763,7 +27763,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -28414,7 +28414,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -28603,7 +28603,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -29065,7 +29065,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -29107,7 +29107,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -29989,7 +29989,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -30766,7 +30766,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -30997,7 +30997,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -31816,7 +31816,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -32131,7 +32131,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -33181,7 +33181,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -35115,7 +35115,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -35703,7 +35703,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -35850,7 +35850,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -36291,7 +36291,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -36312,7 +36312,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -37131,7 +37131,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -37299,7 +37299,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -37803,7 +37803,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -37824,7 +37824,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -38580,7 +38580,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -38727,7 +38727,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -39210,7 +39210,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -39252,7 +39252,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -39903,7 +39903,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -40092,7 +40092,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -40554,7 +40554,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -40596,7 +40596,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -41478,7 +41478,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -42255,7 +42255,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -42486,7 +42486,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -43305,7 +43305,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -43620,7 +43620,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -44670,7 +44670,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -46604,7 +46604,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -47192,7 +47192,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -47339,7 +47339,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -47780,7 +47780,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -47801,7 +47801,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -48620,7 +48620,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -48788,7 +48788,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -49292,7 +49292,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -49313,7 +49313,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -50069,7 +50069,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -50216,7 +50216,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -50699,7 +50699,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -50741,7 +50741,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -51392,7 +51392,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -51581,7 +51581,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 30
     },
     {
@@ -52043,7 +52043,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -52085,7 +52085,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "Arabic Language",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -52967,7 +52967,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -53744,7 +53744,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -53975,7 +53975,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -54794,7 +54794,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "GIRLS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -55109,7 +55109,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "BOYS",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {
@@ -56159,7 +56159,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "GMRC / Values",
       "teacher_id": "tchr_silfah",
-      "teacher": "Ustadha Silfah",
+      "teacher": "Ustadh Silfah",
       "duration_minutes": 60
     },
     {

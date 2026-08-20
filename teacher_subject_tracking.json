@@ -4766,7 +4766,7 @@
   },
   "tchr_silfah": {
     "total_exams": 23,
-    "canonical_name": "Ustadha Silfah",
+    "canonical_name": "Ustadh Silfah",
     "sessions": [
       {
         "id": "exam_31",
@@ -4789,7 +4789,7 @@
         "subject_id": "subj_arabic",
         "subject": "Arabic Language",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -4814,7 +4814,7 @@
         "subject_id": "subj_gmrc_values",
         "subject": "GMRC / Values",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -4839,7 +4839,7 @@
         "subject_id": "subj_arabic",
         "subject": "Arabic Language",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 30,
         "teacher_status": "VERIFIED"
       },
@@ -4864,7 +4864,7 @@
         "subject_id": "subj_gmrc_values",
         "subject": "GMRC / Values",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -4889,7 +4889,7 @@
         "subject_id": "subj_arabic",
         "subject": "Arabic Language",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -4914,7 +4914,7 @@
         "subject_id": "subj_gmrc_values",
         "subject": "GMRC / Values",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -4939,7 +4939,7 @@
         "subject_id": "subj_arabic",
         "subject": "Arabic Language",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 30,
         "teacher_status": "VERIFIED"
       },
@@ -4964,7 +4964,7 @@
         "subject_id": "subj_gmrc_values",
         "subject": "GMRC / Values",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -4989,7 +4989,7 @@
         "subject_id": "subj_arabic",
         "subject": "Arabic Language",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -5014,7 +5014,7 @@
         "subject_id": "subj_gmrc_values",
         "subject": "GMRC / Values",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -5039,7 +5039,7 @@
         "subject_id": "subj_arabic",
         "subject": "Arabic Language",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 30,
         "teacher_status": "VERIFIED"
       },
@@ -5064,7 +5064,7 @@
         "subject_id": "subj_arabic",
         "subject": "Arabic Language",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -5089,7 +5089,7 @@
         "subject_id": "subj_gmrc_values",
         "subject": "GMRC / Values",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -5114,7 +5114,7 @@
         "subject_id": "subj_gmrc_values",
         "subject": "GMRC / Values",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -5139,7 +5139,7 @@
         "subject_id": "subj_arabic",
         "subject": "Arabic Language",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 30,
         "teacher_status": "VERIFIED"
       },
@@ -5164,7 +5164,7 @@
         "subject_id": "subj_gmrc_values",
         "subject": "GMRC / Values",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -5189,7 +5189,7 @@
         "subject_id": "subj_arabic",
         "subject": "Arabic Language",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -5214,7 +5214,7 @@
         "subject_id": "subj_gmrc_values",
         "subject": "GMRC / Values",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -5239,7 +5239,7 @@
         "subject_id": "subj_gmrc_values",
         "subject": "GMRC / Values",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -5264,7 +5264,7 @@
         "subject_id": "subj_gmrc_values",
         "subject": "GMRC / Values",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -5289,7 +5289,7 @@
         "subject_id": "subj_gmrc_values",
         "subject": "GMRC / Values",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -5314,7 +5314,7 @@
         "subject_id": "subj_gmrc_values",
         "subject": "GMRC / Values",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       },
@@ -5339,7 +5339,7 @@
         "subject_id": "subj_gmrc_values",
         "subject": "GMRC / Values",
         "teacher_id": "tchr_silfah",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       }

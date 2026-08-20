@@ -1,4 +1,4 @@
-const CLASS_SCHEDULES_DATA = [
+window.AMIS_CLASS_SCHEDULES_DATA = [
   {
     "id": "sec_kinder_2_class_schedule_f2f",
     "section_id": "sec_kinder_2_class_schedule_f2f",
@@ -1314,7 +1314,7 @@ const CLASS_SCHEDULES_DATA = [
           "Tuesday": {
             "raw": "Arabic  - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -1646,7 +1646,7 @@ const CLASS_SCHEDULES_DATA = [
           "Tuesday": {
             "raw": "Arabic  - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -1979,7 +1979,7 @@ const CLASS_SCHEDULES_DATA = [
           "Monday": {
             "raw": "Arabic  - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -2311,7 +2311,7 @@ const CLASS_SCHEDULES_DATA = [
           "Monday": {
             "raw": "Arabic  - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -2664,7 +2664,7 @@ const CLASS_SCHEDULES_DATA = [
           "Tuesday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -3062,7 +3062,7 @@ const CLASS_SCHEDULES_DATA = [
           "Tuesday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -3491,7 +3491,7 @@ const CLASS_SCHEDULES_DATA = [
           "Thursday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -3889,7 +3889,7 @@ const CLASS_SCHEDULES_DATA = [
           "Thursday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -16577,15 +16577,15 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "SHAF",
         "subject_id": "subj_shaf",
-        "teacher": "Alim Abdul Karim",
-        "teacher_id": "tchr_abdul_karim",
+        "teacher": "Alim Bustamante",
+        "teacher_id": "tchr_bustamante",
         "is_break": false,
         "days": {
           "Sunday": {
-            "raw": "SHAF - Alim Abdul Karim",
+            "raw": "SHAF - Alim Bustamante",
             "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Bustamante",
+            "teacher_id": "tchr_bustamante",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -16622,10 +16622,10 @@ const CLASS_SCHEDULES_DATA = [
             "source_cell": "AM45"
           },
           "Thursday": {
-            "raw": "SHAF - Alim Abdul Karim",
+            "raw": "SHAF - Alim Bustamante",
             "subject": "SHAF",
-            "teacher": "Alim Abdul Karim",
-            "teacher_id": "tchr_abdul_karim",
+            "teacher": "Alim Bustamante",
+            "teacher_id": "tchr_bustamante",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -17333,7 +17333,7 @@ const CLASS_SCHEDULES_DATA = [
           "Monday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -17353,7 +17353,7 @@ const CLASS_SCHEDULES_DATA = [
           "Wednesday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -18061,7 +18061,7 @@ const CLASS_SCHEDULES_DATA = [
           "Monday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -18081,7 +18081,7 @@ const CLASS_SCHEDULES_DATA = [
           "Wednesday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -18368,7 +18368,7 @@ const CLASS_SCHEDULES_DATA = [
           "Thursday": {
             "raw": "GMRC - Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -18453,14 +18453,14 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "Arabic",
         "subject_id": "subj_arabic",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "teacher_id": "tchr_silfah",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -18832,7 +18832,7 @@ const CLASS_SCHEDULES_DATA = [
           "Thursday": {
             "raw": "GMRC - Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -18917,14 +18917,14 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "Arabic",
         "subject_id": "subj_arabic",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "teacher_id": "tchr_silfah",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -18943,9 +18943,9 @@ const CLASS_SCHEDULES_DATA = [
           },
           "Tuesday": {
             "raw": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA Tchr. Zara",
-            "teacher": null,
-            "teacher_id": null,
+            "subject": "Makabansa",
+            "teacher": "Teacher Zara",
+            "teacher_id": "tchr_zara",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -18963,9 +18963,9 @@ const CLASS_SCHEDULES_DATA = [
           },
           "Thursday": {
             "raw": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA Tchr. Zara",
-            "teacher": null,
-            "teacher_id": null,
+            "subject": "Makabansa",
+            "teacher": "Teacher Zara",
+            "teacher_id": "tchr_zara",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -19419,7 +19419,7 @@ const CLASS_SCHEDULES_DATA = [
           "Tuesday": {
             "raw": "GMRC - Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -19524,14 +19524,14 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "Arabic",
         "subject_id": "subj_arabic",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "teacher_id": "tchr_silfah",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -19883,7 +19883,7 @@ const CLASS_SCHEDULES_DATA = [
           "Tuesday": {
             "raw": "GMRC - Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -19988,14 +19988,14 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "Arabic",
         "subject_id": "subj_arabic",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "teacher_id": "tchr_silfah",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -20014,9 +20014,9 @@ const CLASS_SCHEDULES_DATA = [
           },
           "Tuesday": {
             "raw": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA Tchr. Zara",
-            "teacher": null,
-            "teacher_id": null,
+            "subject": "Makabansa",
+            "teacher": "Teacher Zara",
+            "teacher_id": "tchr_zara",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -20034,9 +20034,9 @@ const CLASS_SCHEDULES_DATA = [
           },
           "Thursday": {
             "raw": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA Tchr. Zara",
-            "teacher": null,
-            "teacher_id": null,
+            "subject": "Makabansa",
+            "teacher": "Teacher Zara",
+            "teacher_id": "tchr_zara",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -21204,14 +21204,14 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "Arabic",
         "subject_id": "subj_arabic",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "teacher_id": "tchr_silfah",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -21231,7 +21231,7 @@ const CLASS_SCHEDULES_DATA = [
           "Tuesday": {
             "raw": "GMRC - Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -21668,14 +21668,14 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "Arabic",
         "subject_id": "subj_arabic",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "teacher_id": "tchr_silfah",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -21695,7 +21695,7 @@ const CLASS_SCHEDULES_DATA = [
           "Tuesday": {
             "raw": "GMRC - Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -21938,9 +21938,9 @@ const CLASS_SCHEDULES_DATA = [
         "days": {
           "Sunday": {
             "raw": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA Tchr. Zara",
-            "teacher": null,
-            "teacher_id": null,
+            "subject": "Makabansa",
+            "teacher": "Teacher Zara",
+            "teacher_id": "tchr_zara",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -21968,9 +21968,9 @@ const CLASS_SCHEDULES_DATA = [
           },
           "Wednesday": {
             "raw": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA Tchr. Zara",
-            "teacher": null,
-            "teacher_id": null,
+            "subject": "Makabansa",
+            "teacher": "Teacher Zara",
+            "teacher_id": "tchr_zara",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -22160,7 +22160,7 @@ const CLASS_SCHEDULES_DATA = [
           "Monday": {
             "raw": "GMRC - Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -22275,14 +22275,14 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "Arabic",
         "subject_id": "subj_arabic",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "teacher_id": "tchr_silfah",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -22624,7 +22624,7 @@ const CLASS_SCHEDULES_DATA = [
           "Monday": {
             "raw": "GMRC - Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -22633,9 +22633,9 @@ const CLASS_SCHEDULES_DATA = [
           },
           "Tuesday": {
             "raw": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA Tchr. Zara",
-            "teacher": null,
-            "teacher_id": null,
+            "subject": "Makabansa",
+            "teacher": "Teacher Zara",
+            "teacher_id": "tchr_zara",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -22653,9 +22653,9 @@ const CLASS_SCHEDULES_DATA = [
           },
           "Thursday": {
             "raw": "MAKABANSA Tchr. Zara",
-            "subject": "MAKABANSA Tchr. Zara",
-            "teacher": null,
-            "teacher_id": null,
+            "subject": "Makabansa",
+            "teacher": "Teacher Zara",
+            "teacher_id": "tchr_zara",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -22739,14 +22739,14 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "Arabic",
         "subject_id": "subj_arabic",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "teacher_id": "tchr_silfah",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Arabic - Ust. Silfah",
             "subject": "Arabic",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -37656,7 +37656,7 @@ const CLASS_SCHEDULES_DATA = [
           "Tuesday": {
             "raw": "GMRC- Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -37676,7 +37676,7 @@ const CLASS_SCHEDULES_DATA = [
           "Thursday": {
             "raw": "GMRC- Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -37695,14 +37695,14 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "GMRC",
         "subject_id": "subj_gmrc",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "teacher_id": "tchr_silfah",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "GMRC- Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -38450,7 +38450,7 @@ const CLASS_SCHEDULES_DATA = [
           "Tuesday": {
             "raw": "GMRC- Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -38470,7 +38470,7 @@ const CLASS_SCHEDULES_DATA = [
           "Thursday": {
             "raw": "GMRC- Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -38489,14 +38489,14 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "GMRC",
         "subject_id": "subj_gmrc",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "teacher_id": "tchr_silfah",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "GMRC- Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -39113,7 +39113,7 @@ const CLASS_SCHEDULES_DATA = [
           "Monday": {
             "raw": "GMRC- Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -39577,7 +39577,7 @@ const CLASS_SCHEDULES_DATA = [
           "Monday": {
             "raw": "GMRC- Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -40072,7 +40072,7 @@ const CLASS_SCHEDULES_DATA = [
           "Wednesday": {
             "raw": "GMRC- Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -40536,7 +40536,7 @@ const CLASS_SCHEDULES_DATA = [
           "Wednesday": {
             "raw": "GMRC- Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -41057,7 +41057,7 @@ const CLASS_SCHEDULES_DATA = [
           "Monday": {
             "raw": "GMRC- Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -41521,7 +41521,7 @@ const CLASS_SCHEDULES_DATA = [
           "Monday": {
             "raw": "GMRC- Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -41950,7 +41950,7 @@ const CLASS_SCHEDULES_DATA = [
           "Wednesday": {
             "raw": "GMRC - Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -42282,7 +42282,7 @@ const CLASS_SCHEDULES_DATA = [
           "Wednesday": {
             "raw": "GMRC - Ust. Silfah",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -42720,14 +42720,14 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "GMRC",
         "subject_id": "subj_gmrc",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "teacher_id": "tchr_silfah",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -42945,7 +42945,7 @@ const CLASS_SCHEDULES_DATA = [
           "Tuesday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -43097,7 +43097,7 @@ const CLASS_SCHEDULES_DATA = [
           "Thursday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -43514,14 +43514,14 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "GMRC",
         "subject_id": "subj_gmrc",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "teacher_id": "tchr_silfah",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -43739,7 +43739,7 @@ const CLASS_SCHEDULES_DATA = [
           "Tuesday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -43891,7 +43891,7 @@ const CLASS_SCHEDULES_DATA = [
           "Thursday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -44402,7 +44402,7 @@ const CLASS_SCHEDULES_DATA = [
           "Monday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -44422,7 +44422,7 @@ const CLASS_SCHEDULES_DATA = [
           "Wednesday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -44432,7 +44432,7 @@ const CLASS_SCHEDULES_DATA = [
           "Thursday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -45196,7 +45196,7 @@ const CLASS_SCHEDULES_DATA = [
           "Monday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -45216,7 +45216,7 @@ const CLASS_SCHEDULES_DATA = [
           "Wednesday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -45226,7 +45226,7 @@ const CLASS_SCHEDULES_DATA = [
           "Thursday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -48852,14 +48852,14 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "GMRC",
         "subject_id": "subj_gmrc",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "teacher_id": "tchr_silfah",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -49316,14 +49316,14 @@ const CLASS_SCHEDULES_DATA = [
         "label": null,
         "subject": "GMRC",
         "subject_id": "subj_gmrc",
-        "teacher": "Ustadha Silfah",
+        "teacher": "Ustadh Silfah",
         "teacher_id": "tchr_silfah",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -49970,7 +49970,7 @@ const CLASS_SCHEDULES_DATA = [
           "Thursday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -50434,7 +50434,7 @@ const CLASS_SCHEDULES_DATA = [
           "Thursday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -53660,7 +53660,7 @@ const CLASS_SCHEDULES_DATA = [
           "Thursday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -54124,7 +54124,7 @@ const CLASS_SCHEDULES_DATA = [
           "Thursday": {
             "raw": "GMRC - Ustadha Silfa",
             "subject": "GMRC",
-            "teacher": "Ustadha Silfah",
+            "teacher": "Ustadh Silfah",
             "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
@@ -65772,6 +65772,3 @@ const CLASS_SCHEDULES_DATA = [
     ]
   }
 ];
-
-if (typeof window !== "undefined") { window.CLASS_SCHEDULES_DATA = CLASS_SCHEDULES_DATA; }
-if (typeof module !== "undefined" && module.exports) { module.exports = CLASS_SCHEDULES_DATA; }

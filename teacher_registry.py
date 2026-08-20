@@ -117,10 +117,10 @@ TEACHER_REGISTRY = [
     },
     {
         "id": "tchr_silfah",
-        "canonical_name": "Ustadha Silfah",
+        "canonical_name": "Ustadh Silfah",
         "department": "ISAL Faculty",
         "title": "ISAL Teacher",
-        "aliases": ["silfah", "ust. silfah", "ustadha silfah", "ustadz silfah", "silfa", "ustadha silfa", "ust. silfa"]
+        "aliases": ["silfah", "ust. silfah", "ustadh silfah", "ustadha silfah", "ustadz silfah", "silfa", "ustadha silfa", "ust. silfa"]
     },
 
     # Academic & High School / Elementary Faculty

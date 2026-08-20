@@ -1,4 +1,4 @@
-const ALL_EXAM_RECORDS = [
+window.AMIS_EXAM_DATA = [
   {
     "id": "exam_1",
     "exam_term": "1st Term",
@@ -57,7 +57,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_arabic",
     "subject": "Arabic",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -956,7 +956,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_arabic",
     "subject": "Arabic",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -1111,7 +1111,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_gmrc",
     "subject": "GMRC",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -1142,7 +1142,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_arabic",
     "subject": "Arabic",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -2475,7 +2475,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_gmrc",
     "subject": "GMRC",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -2599,7 +2599,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_gmrc",
     "subject": "GMRC",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -2661,7 +2661,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_gmrc",
     "subject": "GMRC",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -3188,7 +3188,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_gmrc",
     "subject": "GMRC",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -5234,7 +5234,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_gmrc",
     "subject": "GMRC",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -5357,10 +5357,11 @@ const ALL_EXAM_RECORDS = [
     "gender": "MIXED",
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
-    "teacher_id": "tchr_assigned_faculty",
-    "teacher": "Assigned Faculty",
+    "teacher_id": "tchr_zara",
+    "teacher": "Teacher Zara",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "proctor": "Teacher Zara"
   },
   {
     "id": "exam_174",
@@ -5482,7 +5483,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_arabic",
     "subject": "Arabic",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -6877,7 +6878,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_gmrc",
     "subject": "GMRC",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -8830,7 +8831,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_arabic",
     "subject": "Arabic",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -8892,7 +8893,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_arabic",
     "subject": "Arabic",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -8954,7 +8955,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_arabic",
     "subject": "Arabic",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -9635,8 +9636,8 @@ const ALL_EXAM_RECORDS = [
     "gender": "MIXED",
     "subject_id": "subj_shaf",
     "subject": "SHAF",
-    "teacher_id": "tchr_abdul_karim",
-    "teacher": "Alim Abdul Karim",
+    "teacher_id": "tchr_bustamante",
+    "teacher": "Alim Bustamante",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -9728,10 +9729,11 @@ const ALL_EXAM_RECORDS = [
     "gender": "MIXED",
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
-    "teacher_id": "tchr_assigned_faculty",
-    "teacher": "Assigned Faculty",
+    "teacher_id": "tchr_zara",
+    "teacher": "Teacher Zara",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "proctor": "Teacher Zara"
   },
   {
     "id": "exam_315",
@@ -12302,7 +12304,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_gmrc",
     "subject": "GMRC",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -14131,7 +14133,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_arabic",
     "subject": "Arabic",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -14224,7 +14226,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_gmrc",
     "subject": "GMRC",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -14255,7 +14257,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_arabic",
     "subject": "Arabic",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -14378,10 +14380,11 @@ const ALL_EXAM_RECORDS = [
     "gender": "MIXED",
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
-    "teacher_id": "tchr_assigned_faculty",
-    "teacher": "Assigned Faculty",
+    "teacher_id": "tchr_zara",
+    "teacher": "Teacher Zara",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "proctor": "Teacher Zara"
   },
   {
     "id": "exam_465",
@@ -14410,7 +14413,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_gmrc",
     "subject": "GMRC",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -14440,10 +14443,11 @@ const ALL_EXAM_RECORDS = [
     "gender": "MIXED",
     "subject_id": "subj_makabansa",
     "subject": "Makabansa",
-    "teacher_id": "tchr_assigned_faculty",
-    "teacher": "Assigned Faculty",
+    "teacher_id": "tchr_zara",
+    "teacher": "Teacher Zara",
     "duration_minutes": 60,
-    "teacher_status": "VERIFIED"
+    "teacher_status": "VERIFIED",
+    "proctor": "Teacher Zara"
   },
   {
     "id": "exam_467",
@@ -16022,7 +16026,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_gmrc",
     "subject": "GMRC",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -16053,7 +16057,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_gmrc",
     "subject": "GMRC",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -16177,7 +16181,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_gmrc",
     "subject": "GMRC",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -16363,7 +16367,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_gmrc",
     "subject": "GMRC",
     "teacher_id": "tchr_silfah",
-    "teacher": "Ustadha Silfah",
+    "teacher": "Ustadh Silfah",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -17515,10 +17519,3 @@ const ALL_EXAM_RECORDS = [
     "teacher_status": "VERIFIED"
   }
 ];
-
-if (typeof window !== 'undefined') {
-  window.AMIS_EXAM_DATA = ALL_EXAM_RECORDS;
-}
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = ALL_EXAM_RECORDS;
-}
