@@ -41,6 +41,7 @@ function normalize(input, existingId) {
   output.room = clean(output.room, 100);
   output.schedule_type = clean(output.schedule_type || 'Academic Class', 100);
   output.status = clean(output.status || 'active', 20).toLowerCase();
+  output.source = 'manual';
   return output;
 }
 
@@ -58,7 +59,7 @@ function normalizeRows(rows) {
     ...row,
     start_time: normalizeTime(row.start_time),
     end_time: normalizeTime(row.end_time),
-    source: 'manual'
+    source: row.source === 'official' ? 'official' : 'manual'
   }));
 }
 
@@ -139,12 +140,17 @@ function buildOfficialEntries() {
 
 const OFFICIAL_ENTRIES = buildOfficialEntries();
 
+function editableOfficialEntries() {
+  return OFFICIAL_ENTRIES.filter((entry) => entry.teacher && entry.subject && entry.schedule_type !== 'Official Break / Assembly').map((entry) => ({ ...entry }));
+}
+
 function findConflicts(candidate, manualRows, excludeId) {
   if (candidate.status !== 'active') return [];
   const candidateRange = inputRange(candidate);
   if (!candidateRange) return [];
   const ignored = clean(excludeId || candidate.id);
   const conflicts = [];
+  const seen = new Set();
   OFFICIAL_ENTRIES.concat(normalizeRows(manualRows)).forEach((entry) => {
     if (!entry || entry.status !== 'active' || clean(entry.id) === ignored || key(entry.day) !== key(candidate.day)) return;
     const range = inputRange(entry);
@@ -153,9 +159,44 @@ function findConflicts(candidate, manualRows, excludeId) {
     if ((candidate.teacher_id && entry.teacher_id && key(candidate.teacher_id) === key(entry.teacher_id)) || (candidate.teacher && entry.teacher && key(candidate.teacher) === key(entry.teacher))) reasons.push('teacher');
     if ((candidate.section_id && entry.section_id && key(candidate.section_id) === key(entry.section_id)) || (candidate.section && entry.section && key(candidate.section) === key(entry.section))) reasons.push('section');
     if (candidate.room && entry.room && key(candidate.room) === key(entry.room)) reasons.push('room');
-    if (reasons.length) conflicts.push({ id: entry.id, source: entry.source, reasons });
+    if (reasons.length) {
+      const signature = `${clean(entry.id)}|${reasons.slice().sort().join(',')}`;
+      if (!seen.has(signature)) {
+        seen.add(signature);
+        conflicts.push({ id: entry.id, source: entry.source, reasons });
+      }
+    }
   });
   return conflicts;
 }
 
-module.exports = { normalize, validate, normalizeRows, findConflicts, officialEntryCount: OFFICIAL_ENTRIES.length };
+function sameOccupancy(left, right) {
+  if (!left || !right) return false;
+  return key(left.teacher_id || left.teacher) === key(right.teacher_id || right.teacher)
+    && key(left.section_id || left.section) === key(right.section_id || right.section)
+    && key(left.day) === key(right.day)
+    && normalizeTime(left.start_time) === normalizeTime(right.start_time)
+    && normalizeTime(left.end_time) === normalizeTime(right.end_time)
+    && key(left.room) === key(right.room);
+}
+
+function conflictKey(conflict) {
+  return `${clean(conflict.id)}|${(conflict.reasons || []).slice().sort().join(',')}`;
+}
+
+function findBlockingConflicts(candidate, manualRows, excludeId, current) {
+  const conflicts = findConflicts(candidate, manualRows, excludeId);
+  if (!sameOccupancy(candidate, current)) return conflicts;
+  const grandfathered = new Set(findConflicts(current, manualRows, excludeId).map(conflictKey));
+  return conflicts.filter((conflict) => !grandfathered.has(conflictKey(conflict)));
+}
+
+module.exports = {
+  normalize,
+  validate,
+  normalizeRows,
+  findConflicts,
+  findBlockingConflicts,
+  editableOfficialEntries,
+  officialEntryCount: OFFICIAL_ENTRIES.length
+};

@@ -51,7 +51,7 @@ body.admin-authenticated .sheet-action-bar.admin-only { display: flex !important
 
 .manual-filters {
   display: grid;
-  grid-template-columns: minmax(200px, 1.5fr) repeat(6, minmax(125px, 1fr));
+  grid-template-columns: minmax(200px, 1.5fr) repeat(7, minmax(115px, 1fr));
   gap: 9px;
   padding: 14px 20px;
   background: #f8fafc;

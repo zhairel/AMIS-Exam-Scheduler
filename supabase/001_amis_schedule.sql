@@ -40,7 +40,7 @@ create table if not exists public.manual_schedules (
   room text not null default '',
   schedule_type text not null default 'Academic Class',
   status text not null default 'active' check (status in ('active', 'inactive')),
-  source text not null default 'manual' check (source = 'manual'),
+  source text not null default 'manual' check (source in ('manual', 'official')),
   created_by uuid references auth.users(id) on delete set null default auth.uid(),
   updated_by uuid references auth.users(id) on delete set null default auth.uid(),
   created_at timestamptz not null default now(),
@@ -70,7 +70,7 @@ begin
     alter table public.manual_schedules
       add constraint manual_schedules_teacher_no_overlap
       exclude using gist (day with =, teacher_key with =, slot_range with &&)
-      where (status = 'active');
+      where (status = 'active' and source = 'manual');
   end if;
 
   if not exists (
@@ -81,7 +81,7 @@ begin
     alter table public.manual_schedules
       add constraint manual_schedules_section_no_overlap
       exclude using gist (day with =, section_key with =, slot_range with &&)
-      where (status = 'active');
+      where (status = 'active' and source = 'manual');
   end if;
 
   if not exists (
@@ -92,7 +92,7 @@ begin
     alter table public.manual_schedules
       add constraint manual_schedules_room_no_overlap
       exclude using gist (day with =, room_key with =, slot_range with &&)
-      where (status = 'active' and room_key <> '');
+      where (status = 'active' and source = 'manual' and room_key <> '');
   end if;
 end
 $$;
@@ -119,7 +119,7 @@ begin
   new.section_id := btrim(coalesce(new.section_id, ''));
   new.room := btrim(coalesce(new.room, ''));
   new.schedule_type := btrim(coalesce(new.schedule_type, 'Academic Class'));
-  new.source := 'manual';
+  new.source := case when new.source = 'official' then 'official' else 'manual' end;
   new.updated_at := now();
   new.updated_by := (select auth.uid());
   if tg_op = 'INSERT' then
@@ -130,7 +130,7 @@ begin
     raise exception using errcode = '23514', message = 'Complete all required schedule fields.';
   end if;
 
-  if new.status = 'active' and exists (
+  if new.source = 'manual' and new.status = 'active' and exists (
     select 1
     from public.manual_schedules existing
     where existing.id <> new.id
@@ -179,7 +179,7 @@ create policy "Public can view active AMIS schedules"
 on public.manual_schedules
 for select
 to anon, authenticated
-using (status = 'active');
+using (status = 'active' or source = 'official');
 
 drop policy if exists "AMIS admins can view every schedule" on public.manual_schedules;
 create policy "AMIS admins can view every schedule"

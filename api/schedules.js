@@ -11,6 +11,23 @@ function upstreamMessage(result, fallback) {
   return fallback;
 }
 
+async function readAllSchedules(config, accessToken, filter) {
+  const records = [];
+  const pageSize = 1000;
+  for (let offset = 0; ; offset += pageSize) {
+    const suffix = filter ? `&${filter}` : '';
+    const result = await supabase.restRequest(
+      config,
+      `/manual_schedules?select=*&order=day.asc,start_time.asc,teacher.asc&limit=${pageSize}&offset=${offset}${suffix}`,
+      { method: 'GET', accessToken }
+    );
+    if (!result.ok) return result;
+    const page = Array.isArray(result.data) ? result.data : [];
+    records.push(...page);
+    if (page.length < pageSize) return { ok: true, status: 200, data: records };
+  }
+}
+
 module.exports = async function scheduleApi(request, response) {
   supabase.noStore(response);
   const config = supabase.getConfig();
@@ -21,12 +38,9 @@ module.exports = async function scheduleApi(request, response) {
   if (request.method === 'GET') {
     const session = await supabase.getAdminSession(request, response).catch(() => ({ authenticated: false }));
     const id = String((request.query && request.query.id) || '').trim();
-    const filter = id ? `&id=eq.${encodeURIComponent(id)}` : '';
-    const result = await supabase.restRequest(
-      config,
-      `/manual_schedules?select=*&order=day.asc,start_time.asc,teacher.asc${filter}`,
-      { method: 'GET', accessToken: session.authenticated ? session.accessToken : '' }
-    ).catch(() => ({ ok: false, status: 502, data: {} }));
+    const filter = id ? `id=eq.${encodeURIComponent(id)}` : '';
+    const result = await readAllSchedules(config, session.authenticated ? session.accessToken : '', filter)
+      .catch(() => ({ ok: false, status: 502, data: {} }));
     if (!result.ok) {
       return response.status(result.status >= 500 ? 502 : result.status).json({
         ok: false,
@@ -47,6 +61,17 @@ module.exports = async function scheduleApi(request, response) {
   const queryId = String((request.query && request.query.id) || '').trim();
   if (request.method === 'DELETE') {
     if (!queryId) return response.status(400).json({ ok: false, error: 'A schedule ID is required.' });
+    if (queryId.startsWith('official:')) {
+      const result = await supabase.restRequest(config, `/manual_schedules?id=eq.${encodeURIComponent(queryId)}`, {
+        method: 'PATCH',
+        accessToken: session.accessToken,
+        headers: { 'Content-Type': 'application/json', Prefer: 'return=representation' },
+        body: JSON.stringify({ status: 'inactive' })
+      }).catch(() => ({ ok: false, status: 502, data: {} }));
+      if (!result.ok) return response.status(result.status >= 500 ? 502 : result.status).json({ ok: false, error: upstreamMessage(result, 'Unable to deactivate this official schedule.') });
+      if (!Array.isArray(result.data) || result.data.length === 0) return response.status(404).json({ ok: false, error: 'This schedule was not found.' });
+      return response.status(200).json({ ok: true, deactivated: true });
+    }
     const result = await supabase.restRequest(config, `/manual_schedules?id=eq.${encodeURIComponent(queryId)}`, {
       method: 'DELETE',
       accessToken: session.accessToken,
@@ -63,18 +88,17 @@ module.exports = async function scheduleApi(request, response) {
   if (validationError) return response.status(400).json({ ok: false, error: validationError });
 
   const isUpdate = request.method === 'PATCH';
-  const currentResult = await supabase.restRequest(
-    config,
-    '/manual_schedules?select=*',
-    { method: 'GET', accessToken: session.accessToken }
-  ).catch(() => ({ ok: false, status: 502, data: {} }));
+  const currentResult = await readAllSchedules(config, session.accessToken, '')
+    .catch(() => ({ ok: false, status: 502, data: {} }));
   if (!currentResult.ok) {
     return response.status(currentResult.status >= 500 ? 502 : currentResult.status).json({
       ok: false,
       error: upstreamMessage(currentResult, 'Unable to validate this schedule against current assignments.')
     });
   }
-  const conflicts = schedules.findConflicts(record, currentResult.data, record.id);
+  const current = currentResult.data.find((item) => item.id === record.id);
+  if (isUpdate && current) record.source = current.source === 'official' ? 'official' : 'manual';
+  const conflicts = schedules.findBlockingConflicts(record, currentResult.data, record.id, current);
   if (conflicts.length) {
     return response.status(409).json({
       ok: false,

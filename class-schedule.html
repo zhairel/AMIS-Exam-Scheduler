@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;850;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="class-schedule/manage.css?v=20260820_1">
+<link rel="stylesheet" href="class-schedule/manage.css?v=20260821_2">
 
 <!-- html2pdf.js CDN with offline fallback -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -16,8 +16,8 @@
 <!-- Embedded Master Section Class Data & Teacher Schedules -->
 <script src="class_schedules_data.js?v=20260820_1545"></script>
 <script src="teacher_weekly_schedules.js?v=20260820_1545"></script>
-<script src="class-schedule/schedule-core.js?v=20260821_1"></script>
-<script src="class-schedule/admin-guard.js?v=20260821_1"></script>
+<script src="class-schedule/schedule-core.js?v=20260821_2"></script>
+<script src="class-schedule/admin-guard.js?v=20260821_2"></script>
 
 <style>
 :root {
@@ -1075,8 +1075,8 @@ td.cell-empty:focus-within .btn-cell-add-slot {
 <section id="manualManager" class="manual-manager" aria-labelledby="manualManagerTitle" hidden>
   <div class="manual-manager-header">
     <div>
-      <h2 id="manualManagerTitle">Manual Schedule Management</h2>
-      <p>Create, edit, activate, deactivate, and safely remove database-backed assignments.</p>
+      <h2 id="manualManagerTitle">Schedule Database Management</h2>
+      <p>Manage imported official assignments and newly created schedules from one shared database.</p>
     </div>
     <a class="manual-create-link" href="/class-schedule/create" aria-label="Create Schedule or Add Subject">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
@@ -1091,6 +1091,7 @@ td.cell-empty:focus-within .btn-cell-add-slot {
     <select id="manualSubjectFilter" aria-label="Filter by subject"><option value="">All Subjects</option></select>
     <select id="manualDayFilter" aria-label="Filter by day"><option value="">All Days</option><option>Sunday</option><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option></select>
     <select id="manualStatusFilter" aria-label="Filter by status"><option value="">Active &amp; Inactive</option><option value="active">ACTIVE</option><option value="inactive">INACTIVE</option></select>
+    <select id="manualSourceFilter" aria-label="Filter by source"><option value="">Official &amp; Manual</option><option value="official">OFFICIAL DB</option><option value="manual">MANUAL</option></select>
   </div>
   <div class="manual-table-wrap">
     <table class="manual-table">
@@ -1098,7 +1099,7 @@ td.cell-empty:focus-within .btn-cell-add-slot {
       <tbody id="manualScheduleRows"><tr><td colspan="9" class="manual-empty">Loading shared Supabase schedules…</td></tr></tbody>
     </table>
   </div>
-  <div class="manual-db-note">Only ACTIVE manual schedules occupy a teacher, section, or room. INACTIVE records remain stored and are excluded from availability checks.</div>
+  <div class="manual-db-note">Official assignments are imported from the original timetable. Only ACTIVE records occupy a teacher, section, or room; INACTIVE records remain stored but are hidden from the public timetable.</div>
 </section>
 
 <!-- Main Printable Landscape Container -->
@@ -1161,7 +1162,7 @@ td.cell-empty:focus-within .btn-cell-add-slot {
   const btnExportJson = document.getElementById('btnExportJson');
   const btnPrint = document.getElementById('btnPrint');
   const manualRows = document.getElementById('manualScheduleRows');
-  const manualFilterIds = ['manualSearch', 'manualTeacherFilter', 'manualGradeFilter', 'manualSectionFilter', 'manualSubjectFilter', 'manualDayFilter', 'manualStatusFilter'];
+  const manualFilterIds = ['manualSearch', 'manualTeacherFilter', 'manualGradeFilter', 'manualSectionFilter', 'manualSubjectFilter', 'manualDayFilter', 'manualStatusFilter', 'manualSourceFilter'];
 
   function esc(s) {
     if (!s) return '';
@@ -1190,9 +1191,34 @@ td.cell-empty:focus-within .btn-cell-add-slot {
     return typeof structuredClone === 'function' ? structuredClone(value) : JSON.parse(JSON.stringify(value));
   }
 
+  function isOfficialDatabaseRecord(schedule) {
+    return Boolean(schedule && (schedule.source === 'official' || String(schedule.id || '').startsWith('official:')));
+  }
+
+  function sameScheduleRange(row, schedule) {
+    const rowRange = scheduleCore.parseTimeRange(row && row.time);
+    const scheduleRange = scheduleCore.recordRange(schedule);
+    return Boolean(rowRange && scheduleRange && rowRange.start === scheduleRange.start && rowRange.end === scheduleRange.end);
+  }
+
+  function clearOfficialOrigin(sections, schedule) {
+    const match = String(schedule.id || '').match(/^official:([^:]+):(\d+):(Sunday|Monday|Tuesday|Wednesday|Thursday)$/);
+    if (!match) return;
+    const section = sections.find(item => item.id === match[1] || item.section_id === match[1]);
+    if (!section) return;
+    const rows = section.periods || section.rows || [];
+    const row = rows.find(item => String(item.period_num) === match[2]);
+    if (!row) return;
+    row.is_merged_all_days = false;
+    if (!row.days) row.days = {};
+    row.days[match[3]] = null;
+  }
+
   function integrateActiveManualSchedules(baseSections, schedules) {
     const sections = cloneData(baseSections || []);
     if (!scheduleCore) return sections;
+
+    (schedules || []).filter(isOfficialDatabaseRecord).forEach(schedule => clearOfficialOrigin(sections, schedule));
 
     (schedules || []).filter(s => s.status === 'active').forEach(schedule => {
       let section = sections.find(s =>
@@ -1215,7 +1241,7 @@ td.cell-empty:focus-within .btn-cell-add-slot {
       const rangeText = scheduleCore.formatRange(schedule);
       const rows = section.periods || section.rows || [];
       if (!section.periods && !section.rows) section.periods = rows;
-      let row = rows.find(item => item.time === rangeText && !item.is_break);
+      let row = rows.find(item => !item.is_break && sameScheduleRange(item, schedule));
       if (!row) {
         const range = scheduleCore.recordRange(schedule);
         const minutes = range ? range.end - range.start : 0;
@@ -1233,7 +1259,7 @@ td.cell-empty:focus-within .btn-cell-add-slot {
         room: schedule.room,
         schedule_type: schedule.schedule_type,
         manual_schedule_id: schedule.id,
-        source: 'manual',
+        source: schedule.source,
         raw: `${schedule.subject} - ${schedule.teacher}`
       };
       rows.sort((a, b) => {
@@ -1273,22 +1299,23 @@ td.cell-empty:focus-within .btn-cell-add-slot {
       section: document.getElementById('manualSectionFilter').value,
       subject: document.getElementById('manualSubjectFilter').value,
       day: document.getElementById('manualDayFilter').value,
-      status: document.getElementById('manualStatusFilter').value
+      status: document.getElementById('manualStatusFilter').value,
+      source: document.getElementById('manualSourceFilter').value
     };
     const records = MANUAL_SCHEDULES.filter(record => {
       if (Object.entries(filters).some(([field, value]) => value && record[field] !== value)) return false;
       if (!search) return true;
-      return [record.teacher, record.subject, record.grade_level, record.section, record.day, record.room, record.schedule_type, record.status].join(' ').toLowerCase().includes(search);
+      return [record.teacher, record.subject, record.grade_level, record.section, record.day, record.room, record.schedule_type, record.status, record.source].join(' ').toLowerCase().includes(search);
     });
 
     if (!records.length) {
-      manualRows.innerHTML = `<tr><td colspan="9" class="manual-empty">${MANUAL_SCHEDULES.length ? 'No schedules match the selected filters.' : 'No manual schedules yet. Use “Create Schedule / Add Subject” to add one.'}</td></tr>`;
+      manualRows.innerHTML = `<tr><td colspan="9" class="manual-empty">${MANUAL_SCHEDULES.length ? 'No schedules match the selected filters.' : 'No database schedules yet. Use “Create Schedule / Add Subject” to add one.'}</td></tr>`;
       return;
     }
 
     manualRows.innerHTML = records.map(record => `
       <tr>
-        <td><strong>${esc(record.teacher)}</strong><br><span class="status-pill manual-source-pill">MANUAL</span></td>
+        <td><strong>${esc(record.teacher)}</strong><br><span class="status-pill manual-source-pill">${isOfficialDatabaseRecord(record) ? 'OFFICIAL DB' : 'MANUAL'}</span></td>
         <td>${esc(record.subject)}</td>
         <td><strong>${esc(record.grade_level)}</strong><br>${esc(cleanSectionName(record.section))}</td>
         <td>${esc(record.day)}</td>
@@ -1300,7 +1327,7 @@ td.cell-empty:focus-within .btn-cell-add-slot {
           <a class="manual-icon-action" href="/class-schedule/edit?id=${encodeURIComponent(record.id)}" title="Edit schedule" aria-label="Edit ${esc(record.subject)}">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
           </a>
-          <button class="manual-icon-action manual-icon-delete" type="button" onclick="window.deleteManualSchedule('${record.id}')" title="Delete schedule" aria-label="Delete ${esc(record.subject)}">
+          <button class="manual-icon-action manual-icon-delete" type="button" onclick="window.deleteManualSchedule('${record.id}')" title="${isOfficialDatabaseRecord(record) ? 'Deactivate official schedule' : 'Delete schedule'}" aria-label="${isOfficialDatabaseRecord(record) ? 'Deactivate' : 'Delete'} ${esc(record.subject)}">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
           </button>
         </div></td>
@@ -1309,7 +1336,9 @@ td.cell-empty:focus-within .btn-cell-add-slot {
 
   window.deleteManualSchedule = async function(id) {
     if (!adminGuard || !await adminGuard.requireAdmin(true)) return;
-    if (!window.confirm('Are you sure you want to delete this schedule?')) return;
+    const record = MANUAL_SCHEDULES.find(item => item.id === id);
+    const official = isOfficialDatabaseRecord(record);
+    if (!window.confirm(official ? 'Deactivate this official schedule? It will remain in the database and can be reactivated later.' : 'Are you sure you want to delete this schedule?')) return;
     try {
       await scheduleCore.deleteSchedule(id);
       MANUAL_SCHEDULES = await scheduleCore.listSchedules();
@@ -1320,7 +1349,7 @@ td.cell-empty:focus-within .btn-cell-add-slot {
       populateManualFilters();
       renderManualScheduleList();
       renderCurrentView();
-      showToast('Schedule deleted successfully.');
+      showToast(official ? 'Official schedule deactivated.' : 'Schedule deleted successfully.');
     } catch (error) {
       window.alert(error.message || 'Unable to delete this schedule.');
     }
@@ -1764,15 +1793,17 @@ td.cell-empty:focus-within .btn-cell-add-slot {
 
   function cellManagementHtml(manualId) {
     if (!manualId) return '';
-    if (!IS_ADMIN) return '<span class="manual-cell-badge">MANUAL</span>';
+    const record = MANUAL_SCHEDULES.find(item => item.id === manualId);
+    const official = isOfficialDatabaseRecord(record);
+    if (!IS_ADMIN) return official ? '' : '<span class="manual-cell-badge">MANUAL</span>';
     const safeId = esc(manualId);
     return `
-      <span class="manual-cell-badge">MANUAL</span>
+      ${official ? '' : '<span class="manual-cell-badge">MANUAL</span>'}
       <div class="cell-actions-wrap is-visible">
-        <a class="btn-action-icon btn-action-edit" href="/class-schedule/edit?id=${encodeURIComponent(manualId)}" title="Edit manual schedule" aria-label="Edit manual schedule">
+        <a class="btn-action-icon btn-action-edit" href="/class-schedule/edit?id=${encodeURIComponent(manualId)}" title="Edit database schedule" aria-label="Edit database schedule">
           <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
         </a>
-        <button class="btn-action-icon btn-action-delete" type="button" title="Delete manual schedule" onclick="window.deleteManualSchedule('${safeId}')">
+        <button class="btn-action-icon btn-action-delete" type="button" title="${official ? 'Deactivate official schedule' : 'Delete manual schedule'}" onclick="window.deleteManualSchedule('${safeId}')">
           <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
         </button>
       </div>`;

@@ -112,7 +112,7 @@
       return;
     }
 
-    const conflicts = core.findConflicts(candidate, allEntries(), currentId);
+    const conflicts = core.findBlockingConflicts(candidate, allEntries(), currentId, currentRecord);
     const teacherConflicts = conflicts.filter((conflict) => conflict.reasons.includes('teacher'));
     if (teacherConflicts.length) {
       setAvailability('unavailable', teacherConflicts.map(describeConflict).join('<br>'));
@@ -235,7 +235,7 @@
     setError('');
     if (!window.AMISAdminGuard || !await window.AMISAdminGuard.requireAdmin(true)) return;
     const candidate = recordFromForm();
-    const conflicts = core.findConflicts(candidate, allEntries(), currentId);
+    const conflicts = core.findBlockingConflicts(candidate, allEntries(), currentId, currentRecord);
     if (conflicts.length) {
       showConflict(candidate, conflicts);
       saveButton.disabled = true;

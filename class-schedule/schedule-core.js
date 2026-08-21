@@ -39,7 +39,7 @@
       room: clean(input.room),
       schedule_type: clean(input.schedule_type) || 'Academic Class',
       status: normalizeStatus(input.status),
-      source: 'manual',
+      source: clean(input.source) === 'official' || clean(input.id).startsWith('official:') ? 'official' : 'manual',
       created_at: clean(input.created_at) || now,
       updated_at: now
     };
@@ -156,6 +156,7 @@
     if (candidate.status !== 'active') return [];
     const ignoredId = clean(excludeId || candidate.id);
     const conflicts = [];
+    const seen = new Set();
 
     (entries || []).forEach((entry) => {
       if (!entry || normalizeStatus(entry.status) !== 'active') return;
@@ -171,13 +172,40 @@
       if (sameTeacher) reasons.push('teacher');
       if (sameSection) reasons.push('section');
       if (sameRoom) reasons.push('room');
-      if (reasons.length) conflicts.push({ entry, reasons });
+      if (reasons.length) {
+        const signature = `${clean(entry.id)}|${reasons.slice().sort().join(',')}`;
+        if (!seen.has(signature)) {
+          seen.add(signature);
+          conflicts.push({ entry, reasons });
+        }
+      }
     });
     return conflicts;
   }
 
   function findTeacherConflicts(candidate, entries, excludeId) {
     return findConflicts(candidate, entries, excludeId).filter((conflict) => conflict.reasons.includes('teacher'));
+  }
+
+  function sameOccupancy(left, right) {
+    if (!left || !right) return false;
+    return key(left.teacher_id || left.teacher) === key(right.teacher_id || right.teacher)
+      && key(left.section_id || left.section) === key(right.section_id || right.section)
+      && key(left.day) === key(right.day)
+      && clean(left.start_time) === clean(right.start_time)
+      && clean(left.end_time) === clean(right.end_time)
+      && key(left.room) === key(right.room);
+  }
+
+  function conflictKey(conflict) {
+    return `${clean(conflict && conflict.entry && conflict.entry.id)}|${(conflict.reasons || []).slice().sort().join(',')}`;
+  }
+
+  function findBlockingConflicts(candidate, entries, excludeId, current) {
+    const conflicts = findConflicts(candidate, entries, excludeId);
+    if (!sameOccupancy(candidate, current)) return conflicts;
+    const grandfathered = new Set(findConflicts(current, entries, excludeId).map(conflictKey));
+    return conflicts.filter((conflict) => !grandfathered.has(conflictKey(conflict)));
   }
 
   function findSuggestion(candidateInput, entries, excludeId) {
@@ -244,7 +272,7 @@
       const existing = await listSchedules();
       const current = existing.find((item) => item.id === record.id);
       if (current) record.created_at = current.created_at;
-      const conflicts = findConflicts(record, (officialEntries || []).concat(existing), record.id);
+      const conflicts = findBlockingConflicts(record, (officialEntries || []).concat(existing), record.id, current);
       if (conflicts.length) throw new ScheduleConflictError(conflicts);
       const result = await apiRequest(current ? `/api/schedules?id=${encodeURIComponent(record.id)}` : '/api/schedules', {
         method: current ? 'PATCH' : 'POST',
@@ -256,7 +284,8 @@
       if (error instanceof ScheduleConflictError) throw error;
       if (error.conflict) {
         const latest = await listSchedules().catch(() => []);
-        const conflicts = findConflicts(record, (officialEntries || []).concat(latest), record.id);
+        const current = latest.find((item) => item.id === record.id);
+        const conflicts = findBlockingConflicts(record, (officialEntries || []).concat(latest), record.id, current);
         if (conflicts.length) throw new ScheduleConflictError(conflicts);
       }
       throw error;
@@ -289,6 +318,7 @@
     gradeFromSection,
     officialEntriesFromSections,
     findConflicts,
+    findBlockingConflicts,
     findTeacherConflicts,
     findSuggestion,
     listSchedules,

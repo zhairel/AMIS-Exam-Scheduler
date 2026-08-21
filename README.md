@@ -33,6 +33,14 @@ The `/class-schedule` page includes a separate manual-schedule record system:
 
 Supabase makes active manual assignments immediately available to every device. Database constraints prevent overlapping active manual assignments during concurrent writes.
 
+The original generated timetable can also be imported as 1,196 editable `official` database records. Run [`supabase/002_imported_official_records.sql`](supabase/002_imported_official_records.sql), then execute the importer locally with an allowlisted admin password:
+
+```bash
+AMIS_ADMIN_PASSWORD='<admin password>' node scripts/import-official-schedules.js
+```
+
+Imported records replace their matching hardcoded cells, so the timetable does not duplicate them. Deactivating an imported official record creates a database tombstone that hides the original cell while preserving the option to reactivate it.
+
 ### Admin portal
 
 Schedule mutation controls are protected by Supabase Auth and Postgres Row Level Security (RLS). Public visitors can read active schedules, while create, edit, delete, activate, deactivate, and inactive-record access require an allowlisted Supabase user.
