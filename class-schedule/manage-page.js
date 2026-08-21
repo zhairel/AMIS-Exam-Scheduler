@@ -208,10 +208,23 @@
     return `/class-schedule-manage/create?${params.toString()}`;
   }
 
+  function subjectTone(subject) {
+    const value = String(subject || '').toLowerCase();
+    if (/arabic|qur['’]?an|quran|hadith|shaf|islamic/.test(value)) return 'tone-islamic';
+    if (/gmrc|values|esp|homeroom/.test(value)) return 'tone-values';
+    if (/math|physics|calculus|statistics|algebra/.test(value)) return 'tone-math';
+    if (/science|biology|chemistry|earth sci/.test(value)) return 'tone-science';
+    if (/english|reading|literature|oral|eapp|circle|meeting|wrap-up/.test(value)) return 'tone-english';
+    if (/filipino|makabansa|araling|social|soc\.?sci|philo|kompan|ucsp|\bap\b/.test(value)) return 'tone-social';
+    if (/mapeh|\btle\b|\bpe\b|entrep|e-tech|cpar|mil/.test(value)) return 'tone-mapeh';
+    return 'tone-default';
+  }
+
   function renderClassCard(record) {
     const event = isEvent(record);
     const pending = record._database === false;
-    return `<article class="calendar-card${event ? ' event' : ''}${record.status === 'inactive' ? ' inactive' : ''}" title="${esc(`${record.subject} — ${record.teacher || 'School event'}`)}">
+    const tone = event ? 'event' : subjectTone(record.subject);
+    return `<article class="calendar-card ${tone}${record.status === 'inactive' ? ' inactive' : ''}" title="${esc(`${record.subject} — ${record.teacher || 'School event'}`)}">
       <strong>${esc(record.subject)}</strong><span>${esc(record.teacher || 'School event')}</span><span>${pending ? 'Original timetable' : (record.status === 'inactive' ? 'INACTIVE' : 'ACTIVE')}</span>
       <div class="calendar-card-actions">${editLink(record, 'calendar-icon-action')}${removeButton(record, 'calendar-icon-action')}</div>
     </article>`;
