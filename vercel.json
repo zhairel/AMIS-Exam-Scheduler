@@ -6,8 +6,8 @@
     { "source": "/faculty-timetable/exam", "destination": "/faculty-timetable-exam.html" },
     { "source": "/admin", "destination": "/admin.html" },
     { "source": "/class-schedule-manage", "destination": "/class-schedule-manage.html" },
-    { "source": "/class-schedule-manage/create", "destination": "/class-schedule/create.html" },
-    { "source": "/class-schedule-manage/edit", "destination": "/class-schedule/edit.html" },
+    { "source": "/class-schedule-manage/create", "destination": "/class-schedule/create" },
+    { "source": "/class-schedule-manage/edit", "destination": "/class-schedule/edit" },
     { "source": "/class-schedule/:id/edit", "destination": "/class-schedule/edit" }
   ],
   "headers": [
