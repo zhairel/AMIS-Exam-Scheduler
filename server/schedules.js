@@ -47,7 +47,8 @@ function normalize(input, existingId) {
 
 function validate(record, requireId) {
   if (requireId && !record.id) return 'A schedule ID is required.';
-  if (!record.teacher || !record.subject || !record.grade_level || !record.section) return 'Complete all required schedule fields.';
+  const teacherRequired = record.source !== 'official' || record.schedule_type !== 'Official Break / Assembly';
+  if ((teacherRequired && !record.teacher) || !record.subject || !record.grade_level || !record.section) return 'Complete all required schedule fields.';
   if (!DAYS.has(record.day)) return 'Select a valid school day.';
   if (!record.start_time || !record.end_time || record.end_time <= record.start_time) return 'End time must be later than start time.';
   if (!STATUSES.has(record.status)) return 'Select a valid schedule status.';
@@ -129,6 +130,7 @@ function buildOfficialEntries() {
           start_time: inputTime(range.start),
           end_time: inputTime(range.end),
           room: clean(cell.room || row.room),
+          schedule_type: isBreak ? 'Official Break / Assembly' : 'Automatic / Official',
           status: 'active',
           source: 'official'
         });
@@ -142,6 +144,10 @@ const OFFICIAL_ENTRIES = buildOfficialEntries();
 
 function editableOfficialEntries() {
   return OFFICIAL_ENTRIES.filter((entry) => entry.teacher && entry.subject && entry.schedule_type !== 'Official Break / Assembly').map((entry) => ({ ...entry }));
+}
+
+function officialDatabaseEntries() {
+  return OFFICIAL_ENTRIES.map((entry) => ({ ...entry }));
 }
 
 function findConflicts(candidate, manualRows, excludeId) {
@@ -198,5 +204,6 @@ module.exports = {
   findConflicts,
   findBlockingConflicts,
   editableOfficialEntries,
+  officialDatabaseEntries,
   officialEntryCount: OFFICIAL_ENTRIES.length
 };

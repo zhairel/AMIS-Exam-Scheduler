@@ -262,7 +262,8 @@
 
   async function saveScheduleChecked(input, officialEntries) {
     const record = normalizeRecord(input);
-    if (!record.teacher || !record.subject || !record.grade_level || !record.section || !record.day) {
+    const teacherRequired = record.source !== 'official' || record.schedule_type !== 'Official Break / Assembly';
+    if ((teacherRequired && !record.teacher) || !record.subject || !record.grade_level || !record.section || !record.day) {
       throw new Error('Complete all required schedule fields.');
     }
     if (!SCHOOL_DAYS.includes(record.day)) throw new Error('Select a valid school day.');

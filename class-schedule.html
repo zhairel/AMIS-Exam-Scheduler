@@ -16,7 +16,7 @@
 <!-- Embedded Master Section Class Data & Teacher Schedules -->
 <script src="class_schedules_data.js?v=20260820_1545"></script>
 <script src="teacher_weekly_schedules.js?v=20260820_1545"></script>
-<script src="class-schedule/schedule-core.js?v=20260821_2"></script>
+<script src="class-schedule/schedule-core.js?v=20260821_4"></script>
 
 <style>
 :root {
@@ -1210,18 +1210,19 @@ td.cell-empty:focus-within .btn-cell-add-slot {
       const rangeText = scheduleCore.formatRange(schedule);
       const rows = section.periods || section.rows || [];
       if (!section.periods && !section.rows) section.periods = rows;
-      let row = rows.find(item => !item.is_break && sameScheduleRange(item, schedule));
+      const isBreak = schedule.schedule_type === 'Official Break / Assembly';
+      let row = rows.find(item => Boolean(item.is_break) === isBreak && sameScheduleRange(item, schedule));
       if (!row) {
         const range = scheduleCore.recordRange(schedule);
         const minutes = range ? range.end - range.start : 0;
-        row = { time: rangeText, minutes: `${minutes} min.`, is_break: false, is_merged_all_days: false, days: {}, manual_row: true };
+        row = { time: rangeText, minutes: `${minutes} min.`, is_break: isBreak, is_merged_all_days: false, days: {}, manual_row: true };
         rows.push(row);
       }
       if (!row.days) row.days = {};
       row.days[schedule.day] = {
         occupied: true,
-        is_class: true,
-        is_break: false,
+        is_class: !isBreak,
+        is_break: isBreak,
         subject: schedule.subject,
         teacher: schedule.teacher,
         teacher_id: schedule.teacher_id,

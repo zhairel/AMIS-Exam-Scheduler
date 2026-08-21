@@ -24,7 +24,11 @@ body.manage-pending .manage-shell { visibility: hidden; }
 .manage-stats strong, .manage-stats span { display: block; }
 .manage-stats strong { color: #064e3b; font-size: 23px; }
 .manage-stats span { margin-top: 3px; color: #64748b; font-size: 10px; font-weight: 750; }
+.workspace-tabs { display: inline-flex; gap: 4px; margin-bottom: 10px; padding: 4px; border: 1px solid #dbe4ee; border-radius: 10px; background: #fff; }
+.workspace-tab { padding: 8px 13px; border: 0; border-radius: 7px; color: #64748b; background: transparent; font-family: inherit; font-size: 10px; font-weight: 850; cursor: pointer; }
+.workspace-tab.active { color: #fff; background: #047857; box-shadow: 0 3px 8px rgba(4,120,87,.18); }
 .teacher-workspace { display: grid; grid-template-columns: 300px minmax(0, 1fr); min-height: 610px; margin-bottom: 18px; overflow: hidden; border: 1px solid #dbe4ee; border-radius: 14px; background: #fff; box-shadow: 0 6px 20px rgba(15,23,42,.06); }
+.teacher-workspace[hidden] { display: none; }
 .teacher-directory { min-width: 0; border-right: 1px solid #dbe4ee; background: #f8fafc; }
 .teacher-directory-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; padding: 18px 16px 12px; }
 .teacher-directory-heading h2 { margin: 0 0 4px; color: #0f172a; font-size: 14px; }
@@ -37,6 +41,8 @@ body.manage-pending .manage-shell { visibility: hidden; }
 .teacher-directory-item { width: 100%; display: grid; grid-template-columns: 34px minmax(0,1fr) auto; align-items: center; gap: 9px; padding: 9px; border: 1px solid transparent; border-radius: 9px; background: transparent; color: #1e293b; text-align: left; cursor: pointer; }
 .teacher-directory-item:hover { background: #fff; border-color: #dbe4ee; }
 .teacher-directory-item.selected { border-color: #6ee7b7; background: #ecfdf5; box-shadow: 0 2px 8px rgba(5,150,105,.08); }
+.class-directory-item { grid-template-columns: 42px minmax(0,1fr) auto; }
+.class-grade-badge { width: 42px; min-height: 34px; display: grid; place-items: center; padding: 4px; border-radius: 8px; color: #075985; background: #e0f2fe; text-align: center; font-size: 8px; font-weight: 900; line-height: 1.15; }
 .teacher-avatar { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 9px; color: #047857; background: #d1fae5; font-size: 11px; font-weight: 900; }
 .teacher-directory-copy { min-width: 0; }
 .teacher-directory-copy strong, .teacher-directory-copy small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -70,6 +76,7 @@ body.manage-pending .manage-shell { visibility: hidden; }
 .calendar-card { position: relative; min-height: 60px; padding: 8px 51px 7px 8px; border: 1px solid #a7f3d0; border-left: 4px solid #10b981; border-radius: 7px; color: #064e3b; background: #ecfdf5; }
 .calendar-card + .calendar-card { margin-top: 5px; }
 .calendar-card.inactive { border-color: #cbd5e1; border-left-color: #94a3b8; color: #475569; background: #f1f5f9; opacity: .8; }
+.calendar-card.event { border-color: #fde68a; border-left-color: #f59e0b; color: #92400e; background: #fffbeb; }
 .calendar-card strong, .calendar-card span { display: block; overflow: hidden; text-overflow: ellipsis; }
 .calendar-card strong { font-size: 10px; white-space: nowrap; }
 .calendar-card span { margin-top: 3px; font-size: 8px; font-weight: 650; line-height: 1.25; }
@@ -80,8 +87,15 @@ body.manage-pending .manage-shell { visibility: hidden; }
 .calendar-icon-action:hover { background: #fff; box-shadow: 0 2px 5px rgba(15,23,42,.12); }
 .calendar-help { display: flex; flex-wrap: wrap; gap: 14px; padding: 10px 2px 0; color: #64748b; font-size: 9px; font-weight: 650; }
 .legend-dot { width: 8px; height: 8px; display: inline-block; margin-right: 4px; border-radius: 50%; }
-.active-dot { background: #10b981; }.inactive-dot { background: #94a3b8; }
+.active-dot { background: #10b981; }.event-dot { background: #f59e0b; }.inactive-dot { background: #94a3b8; }
 .workspace-empty { padding: 30px 12px !important; color: #94a3b8; text-align: center; font-size: 10px; font-weight: 650; }
+.personnel-panel { min-height: 600px; }
+.personnel-table-wrap { max-height: 500px; overflow: auto; border: 1px solid #dbe4ee; border-radius: 10px; }
+.personnel-table { width: 100%; min-width: 800px; border-collapse: collapse; font-size: 10px; }
+.personnel-table th { position: sticky; top: 0; z-index: 2; padding: 10px; color: #eafff7; background: #065f46; text-align: left; white-space: nowrap; }
+.personnel-table td { padding: 10px; border-bottom: 1px solid #e5eaf0; vertical-align: middle; }
+.personnel-table tbody tr:hover { background: #f8fffc; }
+.personnel-subject strong, .personnel-subject small { display: block; }.personnel-subject small { margin-top: 3px; color: #64748b; font-size: 8px; }
 .manual-manager { width: 100%; margin: 0; }
 .manage-pagination { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 20px; color: #64748b; background: #fff; font-size: 11px; font-weight: 700; }
 .manage-pagination div { display: flex; gap: 7px; }

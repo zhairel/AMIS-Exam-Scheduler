@@ -69,6 +69,10 @@
     };
   }
 
+  function teacherIsOptional(candidate) {
+    return candidate.source === 'official' && candidate.schedule_type === 'Official Break / Assembly';
+  }
+
   function allEntries() {
     return officialEntries.concat(manualEntries);
   }
@@ -94,7 +98,8 @@
     conflictPanel.classList.remove('show');
     currentSuggestion = null;
 
-    if (!candidate.teacher || !candidate.day || !candidate.start_time || !candidate.end_time) {
+    fields.teacher.required = !teacherIsOptional(candidate);
+    if ((!candidate.teacher && !teacherIsOptional(candidate)) || !candidate.day || !candidate.start_time || !candidate.end_time) {
       setAvailability('idle', 'Availability updates automatically as the teacher, day, and time change.');
       saveButton.disabled = false;
       return;
@@ -112,11 +117,15 @@
       return;
     }
 
+    if (teacherIsOptional(candidate)) {
+      setAvailability('available', 'This official school event does not require an assigned teacher.');
+    }
+
     const conflicts = core.findBlockingConflicts(candidate, allEntries(), currentId, currentRecord);
     const teacherConflicts = conflicts.filter((conflict) => conflict.reasons.includes('teacher'));
     if (teacherConflicts.length) {
       setAvailability('unavailable', teacherConflicts.map(describeConflict).join('<br>'));
-    } else {
+    } else if (!teacherIsOptional(candidate)) {
       setAvailability('available', `${esc(candidate.teacher)} has no active schedule during this period.`);
     }
 

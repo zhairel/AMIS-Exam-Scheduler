@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/class-schedule/manage.css?v=20260821_4">
-  <link rel="stylesheet" href="/class-schedule/manage-page.css?v=20260821_2">
+  <link rel="stylesheet" href="/class-schedule/manage-page.css?v=20260821_3">
 </head>
 <body class="manage-pending">
   <header class="manage-topbar">
@@ -36,26 +36,52 @@
       <div><strong id="manualRecords">—</strong><span>Manual</span></div>
     </section>
 
-    <section class="teacher-workspace" aria-labelledby="teacherCalendarTitle">
+    <div class="workspace-tabs" role="tablist" aria-label="Schedule management views">
+      <button class="workspace-tab active" type="button" role="tab" aria-selected="true" data-workspace="classes">Class / Grade Calendars</button>
+      <button class="workspace-tab" type="button" role="tab" aria-selected="false" data-workspace="personnel">Faculty &amp; Staff Lists</button>
+    </div>
+
+    <section id="classWorkspace" class="teacher-workspace" aria-labelledby="classCalendarTitle">
       <aside class="teacher-directory">
-        <div class="teacher-directory-heading"><div><h2>Teachers, Faculty &amp; Staff</h2><p>Select a person to view subjects and weekly slots.</p></div><span id="teacherCount">—</span></div>
-        <label class="teacher-directory-search"><span class="sr-only">Search personnel</span><input id="teacherDirectorySearch" type="search" placeholder="Search teacher or subject…"></label>
-        <div id="teacherDirectoryList" class="teacher-directory-list"><div class="workspace-empty">Loading personnel…</div></div>
+        <div class="teacher-directory-heading"><div><h2>Grades &amp; Sections</h2><p>Select a class to manage its complete weekly calendar.</p></div><span id="classCount">—</span></div>
+        <label class="teacher-directory-search"><span class="sr-only">Search grades and sections</span><input id="classDirectorySearch" type="search" placeholder="Search grade or section…"></label>
+        <div id="classDirectoryList" class="teacher-directory-list"><div class="workspace-empty">Loading classes…</div></div>
       </aside>
 
       <div class="teacher-calendar-panel">
         <div class="teacher-calendar-heading">
-          <div><span class="calendar-eyebrow">SELECTED PERSONNEL</span><h2 id="teacherCalendarTitle">Teacher Weekly Calendar</h2><p id="selectedTeacherMeta">Choose a teacher from the directory.</p></div>
-          <a id="teacherCreateLink" class="calendar-create" href="/class-schedule-manage/create">＋ Add Subject</a>
+          <div><span class="calendar-eyebrow">SELECTED CLASS</span><h2 id="classCalendarTitle">Class Weekly Calendar</h2><p id="selectedClassMeta">Choose a grade and section.</p></div>
+          <a id="classCreateLink" class="calendar-create" href="/class-schedule-manage/create">＋ Add Subject / Event</a>
         </div>
-        <div class="teacher-subjects"><strong>Subjects</strong><div id="teacherSubjectList" class="subject-chip-list"><span class="subject-empty">Select a teacher to view subjects.</span></div></div>
+        <div class="teacher-subjects"><strong>Subjects &amp; Events</strong><div id="classSubjectList" class="subject-chip-list"><span class="subject-empty">Select a class to view its assignments.</span></div></div>
         <div class="teacher-calendar-wrap">
           <table class="teacher-calendar">
             <thead><tr><th>Time</th><th>Sunday</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th></tr></thead>
-            <tbody id="teacherCalendarRows"><tr><td colspan="6" class="workspace-empty">Loading weekly calendar…</td></tr></tbody>
+            <tbody id="classCalendarRows"><tr><td colspan="6" class="workspace-empty">Loading complete class calendar…</td></tr></tbody>
           </table>
         </div>
-        <div class="calendar-help"><span><i class="legend-dot active-dot"></i> Active assignment</span><span><i class="legend-dot inactive-dot"></i> Inactive</span><span>Use <strong>＋</strong> on an empty slot to create a prefilled schedule.</span></div>
+        <div class="calendar-help"><span><i class="legend-dot active-dot"></i> Subject</span><span><i class="legend-dot event-dot"></i> Assembly / break / event</span><span><i class="legend-dot inactive-dot"></i> Inactive</span><span>Use <strong>＋</strong> on an empty slot to add a schedule.</span></div>
+      </div>
+    </section>
+
+    <section id="personnelWorkspace" class="teacher-workspace" aria-labelledby="personnelListTitle" hidden>
+      <aside class="teacher-directory">
+        <div class="teacher-directory-heading"><div><h2>Faculty &amp; Staff</h2><p>Select a person to view their schedule as a list.</p></div><span id="teacherCount">—</span></div>
+        <label class="teacher-directory-search"><span class="sr-only">Search personnel</span><input id="teacherDirectorySearch" type="search" placeholder="Search person or subject…"></label>
+        <div id="teacherDirectoryList" class="teacher-directory-list"><div class="workspace-empty">Loading personnel…</div></div>
+      </aside>
+      <div class="teacher-calendar-panel personnel-panel">
+        <div class="teacher-calendar-heading">
+          <div><span class="calendar-eyebrow">SELECTED PERSONNEL</span><h2 id="personnelListTitle">Faculty / Staff Schedule</h2><p id="selectedTeacherMeta">Choose a person from the directory.</p></div>
+          <a id="teacherCreateLink" class="calendar-create" href="/class-schedule-manage/create">＋ Add Assignment</a>
+        </div>
+        <div class="teacher-subjects"><strong>Subjects</strong><div id="teacherSubjectList" class="subject-chip-list"><span class="subject-empty">Select a person to view subjects.</span></div></div>
+        <div class="personnel-table-wrap">
+          <table class="personnel-table">
+            <thead><tr><th>Day</th><th>Time</th><th>Subject / Activity</th><th>Grade &amp; Section</th><th>Type</th><th>Status</th><th>Actions</th></tr></thead>
+            <tbody id="personnelScheduleRows"><tr><td colspan="7" class="workspace-empty">Loading faculty and staff schedules…</td></tr></tbody>
+          </table>
+        </div>
       </div>
     </section>
 
@@ -82,8 +108,8 @@
     </section>
   </main>
 
-  <script src="/class-schedule/schedule-core.js?v=20260821_3"></script>
+  <script src="/class-schedule/schedule-core.js?v=20260821_4"></script>
   <script src="/class-schedule/admin-guard.js?v=20260821_3"></script>
-  <script src="/class-schedule/manage-page.js?v=20260821_2"></script>
+  <script src="/class-schedule/manage-page.js?v=20260821_3"></script>
 </body>
 </html>

@@ -84,9 +84,6 @@ module.exports = async function scheduleApi(request, response) {
 
   const body = supabase.readBody(request);
   const record = schedules.normalize(body, request.method === 'PATCH' ? queryId : '');
-  const validationError = schedules.validate(record, true);
-  if (validationError) return response.status(400).json({ ok: false, error: validationError });
-
   const isUpdate = request.method === 'PATCH';
   const currentResult = await readAllSchedules(config, session.accessToken, '')
     .catch(() => ({ ok: false, status: 502, data: {} }));
@@ -98,6 +95,8 @@ module.exports = async function scheduleApi(request, response) {
   }
   const current = currentResult.data.find((item) => item.id === record.id);
   if (isUpdate && current) record.source = current.source === 'official' ? 'official' : 'manual';
+  const validationError = schedules.validate(record, true);
+  if (validationError) return response.status(400).json({ ok: false, error: validationError });
   const conflicts = schedules.findBlockingConflicts(record, currentResult.data, record.id, current);
   if (conflicts.length) {
     return response.status(409).json({

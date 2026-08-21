@@ -38,7 +38,7 @@ async function main() {
   if (!login.ok) throw new Error('Unable to sign in as the allowlisted AMIS administrator.');
 
   try {
-    const records = schedules.editableOfficialEntries().map(importRecord);
+    const records = schedules.officialDatabaseEntries().map(importRecord);
     const batchSize = 100;
     for (let index = 0; index < records.length; index += batchSize) {
       const batch = records.slice(index, index + batchSize);
