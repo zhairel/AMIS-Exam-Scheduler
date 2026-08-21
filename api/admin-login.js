@@ -1,30 +1,35 @@
 'use strict';
 
-const auth = require('../server/admin-auth');
+const supabase = require('../server/supabase');
 
 module.exports = async function adminLogin(request, response) {
-  auth.noStore(response);
+  supabase.noStore(response);
   if (request.method !== 'POST') {
     response.setHeader('Allow', 'POST');
     return response.status(405).json({ ok: false, error: 'Method not allowed.' });
   }
 
-  const config = auth.getConfig();
+  const config = supabase.getConfig();
   if (!config.configured) {
     return response.status(503).json({
       ok: false,
-      error: 'Admin access is not configured. Set the AMIS admin credentials and session secret in Vercel.'
+      error: 'Supabase is not connected. Add the project URL and publishable key in Vercel, then redeploy.'
     });
   }
 
-  const credentials = auth.readCredentials(request);
-  const validUsername = credentials.username && auth.safeEqual(credentials.username.toLowerCase(), config.username.toLowerCase());
-  const validPassword = credentials.password && auth.safeEqual(credentials.password, config.password);
-  if (!validUsername || !validPassword) {
+  const body = supabase.readBody(request);
+  const result = await supabase.signIn(config, body.username, body.password).catch(() => ({ ok: false, status: 502 }));
+  if (!result.ok) {
     await new Promise((resolve) => setTimeout(resolve, 350));
+    if (result.status === 403) {
+      return response.status(403).json({ ok: false, error: 'This account is not authorized to manage AMIS schedules.' });
+    }
+    if (result.status >= 500) {
+      return response.status(502).json({ ok: false, error: 'Unable to reach Supabase Auth. Try again shortly.' });
+    }
     return response.status(401).json({ ok: false, error: 'Invalid username or password.' });
   }
 
-  response.setHeader('Set-Cookie', auth.sessionCookie(auth.createSessionToken(config.secret)));
+  response.setHeader('Set-Cookie', supabase.sessionCookies(result.session));
   return response.status(200).json({ ok: true, role: 'admin' });
 };

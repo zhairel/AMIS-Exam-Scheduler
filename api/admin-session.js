@@ -1,18 +1,18 @@
 'use strict';
 
-const auth = require('../server/admin-auth');
+const supabase = require('../server/supabase');
 
-module.exports = function adminSession(request, response) {
-  auth.noStore(response);
+module.exports = async function adminSession(request, response) {
+  supabase.noStore(response);
   if (request.method !== 'GET') {
     response.setHeader('Allow', 'GET');
     return response.status(405).json({ authenticated: false });
   }
-  const config = auth.getConfig();
-  const authenticated = auth.hasAdminSession(request);
+  const session = await supabase.getAdminSession(request, response).catch(() => ({ authenticated: false, configured: supabase.getConfig().configured }));
   return response.status(200).json({
-    authenticated,
-    configured: config.configured,
-    role: authenticated ? 'admin' : null
+    authenticated: session.authenticated,
+    configured: session.configured,
+    provider: session.configured ? 'supabase' : null,
+    role: session.authenticated ? 'admin' : null
   });
 };

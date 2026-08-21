@@ -77,7 +77,7 @@
       else show(portalPanel);
     } else {
       show(loginPanel);
-      if (!session.configured) setError('Admin access is not configured on this deployment. Add the required environment variables in Vercel, then redeploy.');
+      if (!session.configured) setError('Supabase is not connected on this deployment. Add SUPABASE_URL and SUPABASE_PUBLISHABLE_KEY in Vercel, then redeploy.');
     }
   }).catch((error) => {
     show(loginPanel);

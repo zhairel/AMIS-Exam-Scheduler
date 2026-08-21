@@ -174,7 +174,7 @@
     try {
       if (!window.AMISAdminGuard || !await window.AMISAdminGuard.requireAdmin(true)) return;
       document.body.classList.remove('admin-pending');
-      loadingStatus.textContent = 'Loading official schedules and database records…';
+      loadingStatus.textContent = 'Loading official schedules and shared Supabase records…';
       const [sections, teacherResponse, manuals] = await Promise.all([
         core.loadOfficialData('..'),
         fetch('../teacher_weekly_schedules.json?v=' + Date.now(), { cache: 'no-store' }),
@@ -199,7 +199,7 @@
           if (params.has(name) && fields[name]) fields[name].value = params.get(name);
         });
       }
-      loadingStatus.textContent = 'All changes are stored transactionally in the AMIS schedule database.';
+      loadingStatus.textContent = 'All changes are stored in the shared AMIS Supabase database.';
       evaluate();
     } catch (error) {
       setError(error.message || 'Unable to load the schedule form.');

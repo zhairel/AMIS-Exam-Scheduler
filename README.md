@@ -26,26 +26,28 @@ The `/class-schedule` page includes a separate manual-schedule record system:
 
 - `/class-schedule/create` creates a manual assignment.
 - `/class-schedule/:id/edit` edits an existing manual assignment through the Vercel rewrite in `vercel.json`.
-- Records are stored transactionally in the browser's IndexedDB database (`AMIS_CLASS_SCHEDULE_DB`), rather than mixed into the generated official JSON or saved as UI state in `localStorage`.
+- Records are stored in the shared Supabase Postgres database, rather than mixed into the generated official JSON or saved as browser-only state.
 - Every active write is checked against the official generated timetable and all active manual records for teacher, section, room, and partial time overlaps.
 - Inactive records stay in the database but do not occupy a time slot.
 - Active manual records are overlaid onto the existing section and faculty timetable views without changing the generated source datasets.
 
-Because this repository is a static Vercel deployment, IndexedDB data belongs to the browser profile where it was created. A shared multi-device deployment would require connecting the same store interface to a hosted database service.
+Supabase makes active manual assignments immediately available to every device. Database constraints prevent overlapping active manual assignments during concurrent writes.
 
 ### Admin portal
 
-Schedule mutation controls are protected by the `/admin` portal. Public visitors can view the official timetable, while create, edit, delete, activate, and deactivate actions require a valid server-signed admin session.
+Schedule mutation controls are protected by Supabase Auth and Postgres Row Level Security (RLS). Public visitors can read active schedules, while create, edit, delete, activate, deactivate, and inactive-record access require an allowlisted Supabase user.
 
-Configure these Vercel environment variables for Production, Preview, and Development as appropriate, then redeploy:
+1. Create a Supabase project and run [`supabase/001_amis_schedule.sql`](supabase/001_amis_schedule.sql) in **SQL Editor**.
+2. In **Authentication → Users**, create `admin@amis.local` with the chosen password. The portal username `admin` maps to this email.
+3. Run the allowlist statement shown at the bottom of the migration.
+4. Configure these Vercel environment variables for Production, Preview, and Development, then redeploy:
 
 ```text
-AMIS_ADMIN_USERNAME=admin
-AMIS_ADMIN_PASSWORD=<a unique password with at least 8 characters>
-AMIS_ADMIN_SESSION_SECRET=<at least 32 random characters>
+SUPABASE_URL=https://<project-ref>.supabase.co
+SUPABASE_PUBLISHABLE_KEY=<Supabase publishable key>
 ```
 
-Generate a strong session secret with `openssl rand -hex 32`. The session is stored in a Secure, HTTP-only, SameSite=Strict cookie and expires after eight hours.
+Legacy `SUPABASE_ANON_KEY` is also supported. Do not use or expose a Supabase secret/service-role key: all application requests use the low-privilege publishable key plus the signed-in user's token, and RLS remains authoritative. The session tokens are stored in Secure, HTTP-only, SameSite=Strict cookies.
 
 ## 📄 License
 MIT License.

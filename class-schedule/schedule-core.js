@@ -1,9 +1,6 @@
 (function (global) {
   'use strict';
 
-  const DB_NAME = 'AMIS_CLASS_SCHEDULE_DB';
-  const DB_VERSION = 1;
-  const STORE_NAME = 'manual_schedules';
   const SCHOOL_DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'];
 
   class ScheduleConflictError extends Error {
@@ -12,45 +9,6 @@
       this.name = 'ScheduleConflictError';
       this.conflicts = conflicts;
     }
-  }
-
-  function requestResult(request) {
-    return new Promise((resolve, reject) => {
-      request.onsuccess = () => resolve(request.result);
-      request.onerror = () => reject(request.error || new Error('Database request failed.'));
-    });
-  }
-
-  function transactionDone(transaction) {
-    return new Promise((resolve, reject) => {
-      transaction.oncomplete = () => resolve();
-      transaction.onerror = () => reject(transaction.error || new Error('Database transaction failed.'));
-      transaction.onabort = () => reject(transaction.error || new Error('Database transaction was aborted.'));
-    });
-  }
-
-  function openDatabase() {
-    if (!('indexedDB' in global)) {
-      return Promise.reject(new Error('This browser does not support the schedule database (IndexedDB).'));
-    }
-
-    return new Promise((resolve, reject) => {
-      const request = indexedDB.open(DB_NAME, DB_VERSION);
-      request.onupgradeneeded = () => {
-        const db = request.result;
-        const store = db.objectStoreNames.contains(STORE_NAME)
-          ? request.transaction.objectStore(STORE_NAME)
-          : db.createObjectStore(STORE_NAME, { keyPath: 'id' });
-
-        const indexes = ['teacher', 'grade_level', 'section', 'subject', 'day', 'status'];
-        indexes.forEach((name) => {
-          if (!store.indexNames.contains(name)) store.createIndex(name, name, { unique: false });
-        });
-      };
-      request.onsuccess = () => resolve(request.result);
-      request.onerror = () => reject(request.error || new Error('Unable to open the schedule database.'));
-      request.onblocked = () => reject(new Error('Close other AMIS schedule tabs, then try again.'));
-    });
   }
 
   function clean(value) {
@@ -246,28 +204,32 @@
     return null;
   }
 
-  async function listSchedules() {
-    const db = await openDatabase();
-    try {
-      const transaction = db.transaction(STORE_NAME, 'readonly');
-      const records = await requestResult(transaction.objectStore(STORE_NAME).getAll());
-      await transactionDone(transaction);
-      return records.sort((a, b) => `${a.day}|${a.start_time}|${a.teacher}`.localeCompare(`${b.day}|${b.start_time}|${b.teacher}`));
-    } finally {
-      db.close();
+  async function apiRequest(path, options) {
+    const requestOptions = options || {};
+    const response = await fetch(path, {
+      ...requestOptions,
+      credentials: 'same-origin',
+      cache: 'no-store',
+      headers: { Accept: 'application/json', ...(requestOptions.headers || {}) }
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      const error = new Error(result.error || 'The Supabase schedule database request failed.');
+      error.status = response.status;
+      error.conflict = Boolean(result.conflict);
+      throw error;
     }
+    return result;
+  }
+
+  async function listSchedules() {
+    const result = await apiRequest('/api/schedules');
+    return (result.schedules || []).map(normalizeRecord).sort((a, b) => `${a.day}|${a.start_time}|${a.teacher}`.localeCompare(`${b.day}|${b.start_time}|${b.teacher}`));
   }
 
   async function getSchedule(id) {
-    const db = await openDatabase();
-    try {
-      const transaction = db.transaction(STORE_NAME, 'readonly');
-      const record = await requestResult(transaction.objectStore(STORE_NAME).get(clean(id)));
-      await transactionDone(transaction);
-      return record || null;
-    } finally {
-      db.close();
-    }
+    const result = await apiRequest(`/api/schedules?id=${encodeURIComponent(clean(id))}`);
+    return result.schedules && result.schedules[0] ? normalizeRecord(result.schedules[0]) : null;
   }
 
   async function saveScheduleChecked(input, officialEntries) {
@@ -278,36 +240,31 @@
     if (!SCHOOL_DAYS.includes(record.day)) throw new Error('Select a valid school day.');
     if (!recordRange(record)) throw new Error('End time must be later than start time.');
 
-    const db = await openDatabase();
     try {
-      const transaction = db.transaction(STORE_NAME, 'readwrite');
-      const store = transaction.objectStore(STORE_NAME);
-      const existing = await requestResult(store.getAll());
+      const existing = await listSchedules();
       const current = existing.find((item) => item.id === record.id);
       if (current) record.created_at = current.created_at;
       const conflicts = findConflicts(record, (officialEntries || []).concat(existing), record.id);
-      if (conflicts.length) {
-        transaction.abort();
-        try { await transactionDone(transaction); } catch (_) {}
-        throw new ScheduleConflictError(conflicts);
+      if (conflicts.length) throw new ScheduleConflictError(conflicts);
+      const result = await apiRequest(current ? `/api/schedules?id=${encodeURIComponent(record.id)}` : '/api/schedules', {
+        method: current ? 'PATCH' : 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(record)
+      });
+      return normalizeRecord(result.schedule || record);
+    } catch (error) {
+      if (error instanceof ScheduleConflictError) throw error;
+      if (error.conflict) {
+        const latest = await listSchedules().catch(() => []);
+        const conflicts = findConflicts(record, (officialEntries || []).concat(latest), record.id);
+        if (conflicts.length) throw new ScheduleConflictError(conflicts);
       }
-      store.put(record);
-      await transactionDone(transaction);
-      return record;
-    } finally {
-      db.close();
+      throw error;
     }
   }
 
   async function deleteSchedule(id) {
-    const db = await openDatabase();
-    try {
-      const transaction = db.transaction(STORE_NAME, 'readwrite');
-      transaction.objectStore(STORE_NAME).delete(clean(id));
-      await transactionDone(transaction);
-    } finally {
-      db.close();
-    }
+    await apiRequest(`/api/schedules?id=${encodeURIComponent(clean(id))}`, { method: 'DELETE' });
   }
 
   async function loadOfficialData(basePath) {
