@@ -217,6 +217,29 @@
     </article>`;
   }
 
+  function mergedEventRow(dayRecords) {
+    if (dayRecords.length !== core.SCHOOL_DAYS.length || !dayRecords.every((record) => isEvent(record))) return false;
+    const first = dayRecords[0];
+    return dayRecords.every((record) => record.subject === first.subject
+      && record.start_time === first.start_time
+      && record.end_time === first.end_time
+      && record.schedule_type === first.schedule_type
+      && record.status === first.status);
+  }
+
+  function renderMergedEventCard(dayRecords) {
+    const first = dayRecords[0];
+    const databaseRecords = dayRecords.filter((record) => record._database !== false);
+    const ids = databaseRecords.map((record) => record.id);
+    const edit = ids.length === core.SCHOOL_DAYS.length
+      ? `<a class="calendar-icon-action" href="/class-schedule-manage/edit?id=${encodeURIComponent(ids[0])}&group_ids=${encodeURIComponent(ids.join(','))}" title="Edit this event for all school days" aria-label="Edit ${esc(first.subject)} for all school days">${ICONS.edit}</a>`
+      : '';
+    const remove = ids.length === core.SCHOOL_DAYS.length && first.status === 'active'
+      ? `<button class="calendar-icon-action calendar-icon-delete" type="button" data-action="remove-group" data-ids="${esc(ids.join(','))}" title="Deactivate this event for all school days" aria-label="Deactivate ${esc(first.subject)} for all school days">${ICONS.trash}</button>`
+      : '';
+    return `<article class="calendar-card event merged-event" title="${esc(first.subject)} — all school days"><strong>${esc(first.subject)}</strong><span>All School Days</span><span>${ids.length === core.SCHOOL_DAYS.length ? 'ACTIVE • DATABASE' : 'Original timetable'}</span><div class="calendar-card-actions">${edit}${remove}</div></article>`;
+  }
+
   function renderClassCalendar() {
     const selected = classes.find((item) => item.name === selectedSection);
     const classRecords = completeClassRecords(selectedSection);
@@ -235,6 +258,11 @@
     bands.sort((left, right) => `${left[0]}|${left[1]}`.localeCompare(`${right[0]}|${right[1]}`));
     classCalendarRows.innerHTML = bands.map(([startTime, endTime]) => {
       const label = core.formatRange({ start_time: startTime, end_time: endTime });
+      const dayRecords = core.SCHOOL_DAYS.map((day) => classRecords.filter((record) => record.day === day && record.start_time === startTime && record.end_time === endTime));
+      const mergeCandidates = dayRecords.map((items) => items.length === 1 ? items[0] : null);
+      if (mergeCandidates.every(Boolean) && mergedEventRow(mergeCandidates)) {
+        return `<tr><td class="calendar-time">${esc(label)}</td><td class="calendar-cell calendar-merged-cell" colspan="5">${renderMergedEventCard(mergeCandidates)}</td></tr>`;
+      }
       const cells = core.SCHOOL_DAYS.map((day) => {
         const exact = classRecords.filter((record) => record.day === day && record.start_time === startTime && record.end_time === endTime);
         const overlap = !exact.length && classRecords.some((record) => overlapsBand(record, day, startTime, endTime));
@@ -295,16 +323,18 @@
   }
 
   async function handleRemove(event) {
-    const button = event.target.closest('[data-action="remove"]');
+    const button = event.target.closest('[data-action="remove"], [data-action="remove-group"]');
     if (!button) return;
-    const record = records.find((item) => item.id === button.dataset.id);
-    if (!record) return;
-    const official = isOfficial(record);
-    if (!window.confirm(official ? 'Deactivate this official timetable item? It can be reactivated through Edit.' : 'Are you sure you want to permanently delete this manual schedule?')) return;
+    const ids = button.dataset.ids ? button.dataset.ids.split(',').filter(Boolean) : [button.dataset.id];
+    const targets = ids.map((id) => records.find((item) => item.id === id)).filter(Boolean);
+    if (!targets.length) return;
+    const official = targets.every(isOfficial);
+    const grouped = targets.length > 1;
+    if (!window.confirm(grouped ? `Deactivate ${targets[0].subject} for all school days?` : (official ? 'Deactivate this official timetable item? It can be reactivated through Edit.' : 'Are you sure you want to permanently delete this manual schedule?'))) return;
     button.disabled = true;
     try {
-      await core.deleteSchedule(record.id);
-      notice(official ? 'Official timetable item deactivated.' : 'Manual schedule deleted.');
+      for (const target of targets) await core.deleteSchedule(target.id);
+      notice(grouped ? 'All-day event deactivated for every school day.' : (official ? 'Official timetable item deactivated.' : 'Manual schedule deleted.'));
       await loadRecords();
     } catch (error) {
       notice(error.message || 'Unable to update this schedule.', true);

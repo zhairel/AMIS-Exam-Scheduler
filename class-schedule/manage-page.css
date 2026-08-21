@@ -77,6 +77,9 @@ body.manage-pending .manage-shell { visibility: hidden; }
 .calendar-card + .calendar-card { margin-top: 5px; }
 .calendar-card.inactive { border-color: #cbd5e1; border-left-color: #94a3b8; color: #475569; background: #f1f5f9; opacity: .8; }
 .calendar-card.event { border-color: #fde68a; border-left-color: #f59e0b; color: #92400e; background: #fffbeb; }
+.calendar-merged-cell { height: 64px !important; padding: 5px !important; }
+.calendar-card.merged-event { min-height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding-right: 55px; text-align: center; }
+.calendar-card.merged-event strong { max-width: 90%; }
 .calendar-card strong, .calendar-card span { display: block; overflow: hidden; text-overflow: ellipsis; }
 .calendar-card strong { font-size: 10px; white-space: nowrap; }
 .calendar-card span { margin-top: 3px; font-size: 8px; font-weight: 650; line-height: 1.25; }

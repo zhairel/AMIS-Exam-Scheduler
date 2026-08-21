@@ -23,6 +23,7 @@
   let manualEntries = [];
   let currentId = '';
   let currentRecord = null;
+  let groupedRecords = [];
   let currentSuggestion = null;
   let evaluationTimer = null;
 
@@ -202,6 +203,14 @@
         currentRecord = await core.getSchedule(currentId);
         if (!currentRecord) throw new Error('This manual schedule was not found. It may have been deleted.');
         applyRecord(currentRecord);
+        const groupIds = (new URLSearchParams(location.search).get('group_ids') || '').split(',').filter(Boolean);
+        groupedRecords = groupIds.map((id) => manualEntries.find((record) => record.id === id)).filter(Boolean);
+        if (groupedRecords.length > 1) {
+          fields.day.disabled = true;
+          document.getElementById('pageTitle').textContent = 'Edit All-Days Event';
+          document.getElementById('pageDescription').textContent = 'Changes will be applied to this merged event from Sunday through Thursday.';
+          saveButton.textContent = 'Update All School Days';
+        }
       } else {
         const params = new URLSearchParams(location.search);
         ['teacher', 'subject', 'grade_level', 'section', 'day', 'start_time', 'end_time', 'room', 'schedule_type', 'status'].forEach((name) => {
@@ -244,17 +253,24 @@
     setError('');
     if (!window.AMISAdminGuard || !await window.AMISAdminGuard.requireAdmin(true)) return;
     const candidate = recordFromForm();
-    const conflicts = core.findBlockingConflicts(candidate, allEntries(), currentId, currentRecord);
-    if (conflicts.length) {
-      showConflict(candidate, conflicts);
-      saveButton.disabled = true;
-      return;
+    const candidates = groupedRecords.length > 1
+      ? groupedRecords.map((record) => ({ ...candidate, id: record.id, day: record.day, source: record.source, created_at: record.created_at }))
+      : [candidate];
+    for (const item of candidates) {
+      const current = groupedRecords.find((record) => record.id === item.id) || currentRecord;
+      const conflicts = core.findBlockingConflicts(item, allEntries(), item.id, current);
+      if (conflicts.length) {
+        showConflict(item, conflicts);
+        saveButton.disabled = true;
+        return;
+      }
     }
     saveButton.disabled = true;
-    saveButton.textContent = mode === 'edit' ? 'Updating…' : 'Saving…';
+    saveButton.textContent = groupedRecords.length > 1 ? 'Updating All Days…' : (mode === 'edit' ? 'Updating…' : 'Saving…');
     try {
-      await core.saveScheduleChecked(candidate, officialEntries);
-      location.href = `/class-schedule-manage?notice=${encodeURIComponent(mode === 'edit' ? 'Schedule updated successfully.' : 'Schedule created successfully.')}`;
+      for (const item of candidates) await core.saveScheduleChecked(item, officialEntries);
+      const message = groupedRecords.length > 1 ? 'All-days event updated successfully.' : (mode === 'edit' ? 'Schedule updated successfully.' : 'Schedule created successfully.');
+      location.href = `/class-schedule-manage?notice=${encodeURIComponent(message)}`;
     } catch (error) {
       if (error instanceof core.ScheduleConflictError) {
         manualEntries = await core.listSchedules();
@@ -263,7 +279,7 @@
         setError(error.message || 'Unable to save this schedule.');
       }
       saveButton.disabled = false;
-      saveButton.textContent = mode === 'edit' ? 'Update Schedule' : 'Save Schedule';
+      saveButton.textContent = groupedRecords.length > 1 ? 'Update All School Days' : (mode === 'edit' ? 'Update Schedule' : 'Save Schedule');
     }
   });
 
