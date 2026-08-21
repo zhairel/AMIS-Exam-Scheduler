@@ -348,7 +348,7 @@
   }
 
   async function saveMergeGroup(items, mergeGroup) {
-    for (const item of items) await core.saveScheduleChecked({ ...item, merge_group: mergeGroup }, originalEntries);
+    await core.setMergeGroup(items.map((item) => item.id), mergeGroup);
     await loadRecords();
   }
 

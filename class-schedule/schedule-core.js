@@ -299,6 +299,15 @@
     await apiRequest(`/api/schedules?id=${encodeURIComponent(clean(id))}`, { method: 'DELETE' });
   }
 
+  async function setMergeGroup(ids, mergeGroup) {
+    const result = await apiRequest('/api/schedule-merge', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ids: Array.from(new Set(ids || [])), merge_group: clean(mergeGroup) })
+    });
+    return (result.schedules || []).map(normalizeRecord);
+  }
+
   async function loadOfficialData(basePath) {
     const prefix = clean(basePath || '.').replace(/\/$/, '');
     const response = await fetch(`${prefix}/class_schedules_data.json?v=${Date.now()}`, { cache: 'no-store' });
@@ -328,6 +337,7 @@
     getSchedule,
     saveScheduleChecked,
     deleteSchedule,
+    setMergeGroup,
     loadOfficialData
   });
 })(window);
