@@ -62,6 +62,14 @@
     element.classList.toggle('error', Boolean(error));
   }
 
+  function withTimeout(promise, milliseconds) {
+    let timeoutId;
+    const timeout = new Promise((_, reject) => {
+      timeoutId = window.setTimeout(() => reject(new Error('Schedule loading timed out. Check your connection, then retry.')), milliseconds);
+    });
+    return Promise.race([promise, timeout]).finally(() => window.clearTimeout(timeoutId));
+  }
+
   function unique(field) {
     return Array.from(new Set(records.map((record) => record[field]).filter(Boolean))).sort((a, b) => a.localeCompare(b));
   }
@@ -417,9 +425,9 @@
   }
 
   async function loadRecords() {
-    const [scheduleRecords, teacherResponse, classResponse] = await Promise.all([
+    const [scheduleRecords, teacherResponse, classResponse] = await withTimeout(Promise.all([
       core.listSchedules(), fetch('/teacher_weekly_schedules.json?v=' + Date.now(), { cache: 'no-store' }), fetch('/class_schedules_data.json?v=' + Date.now(), { cache: 'no-store' })
-    ]);
+    ]), 30000);
     records = scheduleRecords.map((record) => ({ ...record, _database: true }));
     const teacherData = teacherResponse.ok ? await teacherResponse.json() : {};
     const sectionData = classResponse.ok ? await classResponse.json() : [];
@@ -485,9 +493,13 @@
     try {
       await loadRecords();
     } catch (error) {
+      const message = esc(error.message || 'Unable to load schedule data.');
       rows.innerHTML = `<tr><td colspan="10" class="manual-empty">${esc(error.message || 'Unable to load Supabase schedules.')}</td></tr>`;
       classCalendarRows.innerHTML = '<tr><td colspan="6" class="workspace-empty">Unable to load class calendars.</td></tr>';
       personnelRows.innerHTML = '<tr><td colspan="7" class="workspace-empty">Unable to load personnel schedules.</td></tr>';
+      classDirectoryList.innerHTML = `<div class="workspace-empty">${message}<br><a href="/class-schedule-manage">Retry loading</a></div>`;
+      directoryList.innerHTML = `<div class="workspace-empty">${message}<br><a href="/class-schedule-manage">Retry loading</a></div>`;
+      document.getElementById('pageSummary').textContent = 'Load failed';
       notice(error.message || 'Unable to load schedule data.', true);
     }
   })();
