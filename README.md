@@ -29,6 +29,8 @@ The public timetable and administrator tools are intentionally separated:
 - `/class-schedule-manage/create` creates an assignment.
 - `/class-schedule-manage/edit?id=<schedule-id>` edits an existing assignment.
 
+The management page includes a searchable personnel directory, subject summaries, and a five-day weekly calendar. Occupied cards provide edit and delete/deactivate icons; empty calendar slots open the create page with the teacher, day, and time prefilled.
+
 Unauthenticated visitors who open a management route are redirected to `/admin`. The schedule APIs and Supabase Row Level Security also enforce authorization for every write.
 
 The administrator tools use a separate schedule-record system:

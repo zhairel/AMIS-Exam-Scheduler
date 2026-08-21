@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/class-schedule/manage.css?v=20260821_3">
-  <link rel="stylesheet" href="/class-schedule/manage-page.css?v=20260821_1">
+  <link rel="stylesheet" href="/class-schedule/manage.css?v=20260821_4">
+  <link rel="stylesheet" href="/class-schedule/manage-page.css?v=20260821_2">
 </head>
 <body class="manage-pending">
   <header class="manage-topbar">
@@ -36,8 +36,31 @@
       <div><strong id="manualRecords">—</strong><span>Manual</span></div>
     </section>
 
+    <section class="teacher-workspace" aria-labelledby="teacherCalendarTitle">
+      <aside class="teacher-directory">
+        <div class="teacher-directory-heading"><div><h2>Teachers, Faculty &amp; Staff</h2><p>Select a person to view subjects and weekly slots.</p></div><span id="teacherCount">—</span></div>
+        <label class="teacher-directory-search"><span class="sr-only">Search personnel</span><input id="teacherDirectorySearch" type="search" placeholder="Search teacher or subject…"></label>
+        <div id="teacherDirectoryList" class="teacher-directory-list"><div class="workspace-empty">Loading personnel…</div></div>
+      </aside>
+
+      <div class="teacher-calendar-panel">
+        <div class="teacher-calendar-heading">
+          <div><span class="calendar-eyebrow">SELECTED PERSONNEL</span><h2 id="teacherCalendarTitle">Teacher Weekly Calendar</h2><p id="selectedTeacherMeta">Choose a teacher from the directory.</p></div>
+          <a id="teacherCreateLink" class="calendar-create" href="/class-schedule-manage/create">＋ Add Subject</a>
+        </div>
+        <div class="teacher-subjects"><strong>Subjects</strong><div id="teacherSubjectList" class="subject-chip-list"><span class="subject-empty">Select a teacher to view subjects.</span></div></div>
+        <div class="teacher-calendar-wrap">
+          <table class="teacher-calendar">
+            <thead><tr><th>Time</th><th>Sunday</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th></tr></thead>
+            <tbody id="teacherCalendarRows"><tr><td colspan="6" class="workspace-empty">Loading weekly calendar…</td></tr></tbody>
+          </table>
+        </div>
+        <div class="calendar-help"><span><i class="legend-dot active-dot"></i> Active assignment</span><span><i class="legend-dot inactive-dot"></i> Inactive</span><span>Use <strong>＋</strong> on an empty slot to create a prefilled schedule.</span></div>
+      </div>
+    </section>
+
     <section class="manual-manager" aria-labelledby="managerTitle">
-      <div class="manual-manager-header"><div><h2 id="managerTitle">Schedule Database</h2><p>Use filters to find an assignment, then edit or deactivate it.</p></div></div>
+      <div class="manual-manager-header"><div><h2 id="managerTitle">All Schedule Records</h2><p>Detailed database list with filters, status, source, and management actions.</p></div></div>
       <div class="manual-filters" aria-label="Schedule filters">
         <input id="manageSearch" type="search" placeholder="Search teacher, subject, section, room…" aria-label="Search schedules">
         <select id="manageTeacher"><option value="">All Teachers</option></select>
@@ -61,6 +84,6 @@
 
   <script src="/class-schedule/schedule-core.js?v=20260821_3"></script>
   <script src="/class-schedule/admin-guard.js?v=20260821_3"></script>
-  <script src="/class-schedule/manage-page.js?v=20260821_1"></script>
+  <script src="/class-schedule/manage-page.js?v=20260821_2"></script>
 </body>
 </html>
