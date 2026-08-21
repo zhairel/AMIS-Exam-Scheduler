@@ -20,12 +20,19 @@ An automated, conflict-free examination scheduling system and interactive web ap
 ## 🚀 Live Demo & Deployment
 - Open `index.html` in any web browser or deploy directly to [Vercel](https://vercel.com).
 
-## Manual Class Schedule Management
+## Class Schedule Pages
 
-The `/class-schedule` page includes a separate manual-schedule record system:
+The public timetable and administrator tools are intentionally separated:
 
-- `/class-schedule/create` creates a manual assignment.
-- `/class-schedule/:id/edit` edits an existing manual assignment through the Vercel rewrite in `vercel.json`.
+- `/class-schedule` is the public, read-only timetable.
+- `/class-schedule-manage` is the protected schedule database manager.
+- `/class-schedule-manage/create` creates an assignment.
+- `/class-schedule-manage/edit?id=<schedule-id>` edits an existing assignment.
+
+Unauthenticated visitors who open a management route are redirected to `/admin`. The schedule APIs and Supabase Row Level Security also enforce authorization for every write.
+
+The administrator tools use a separate schedule-record system:
+
 - Records are stored in the shared Supabase Postgres database, rather than mixed into the generated official JSON or saved as browser-only state.
 - Every active write is checked against the official generated timetable and all active manual records for teacher, section, room, and partial time overlaps.
 - Inactive records stay in the database but do not occupy a time slot.

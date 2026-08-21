@@ -17,7 +17,6 @@
 <script src="class_schedules_data.js?v=20260820_1545"></script>
 <script src="teacher_weekly_schedules.js?v=20260820_1545"></script>
 <script src="class-schedule/schedule-core.js?v=20260821_2"></script>
-<script src="class-schedule/admin-guard.js?v=20260821_2"></script>
 
 <style>
 :root {
@@ -1071,36 +1070,6 @@ td.cell-empty:focus-within .btn-cell-add-slot {
 </div>
 
 <div id="scheduleNotice" class="notice-banner" hidden></div>
-
-<section id="manualManager" class="manual-manager" aria-labelledby="manualManagerTitle" hidden>
-  <div class="manual-manager-header">
-    <div>
-      <h2 id="manualManagerTitle">Schedule Database Management</h2>
-      <p>Manage imported official assignments and newly created schedules from one shared database.</p>
-    </div>
-    <a class="manual-create-link" href="/class-schedule/create" aria-label="Create Schedule or Add Subject">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-      Create Schedule / Add Subject
-    </a>
-  </div>
-  <div class="manual-filters" aria-label="Manual schedule filters">
-    <input id="manualSearch" type="search" placeholder="Search teacher, subject, section, room…" aria-label="Search manual schedules">
-    <select id="manualTeacherFilter" aria-label="Filter by teacher"><option value="">All Teachers</option></select>
-    <select id="manualGradeFilter" aria-label="Filter by grade"><option value="">All Grades</option></select>
-    <select id="manualSectionFilter" aria-label="Filter by section"><option value="">All Sections</option></select>
-    <select id="manualSubjectFilter" aria-label="Filter by subject"><option value="">All Subjects</option></select>
-    <select id="manualDayFilter" aria-label="Filter by day"><option value="">All Days</option><option>Sunday</option><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option></select>
-    <select id="manualStatusFilter" aria-label="Filter by status"><option value="">Active &amp; Inactive</option><option value="active">ACTIVE</option><option value="inactive">INACTIVE</option></select>
-    <select id="manualSourceFilter" aria-label="Filter by source"><option value="">Official &amp; Manual</option><option value="official">OFFICIAL DB</option><option value="manual">MANUAL</option></select>
-  </div>
-  <div class="manual-table-wrap">
-    <table class="manual-table">
-      <thead><tr><th>Teacher / Faculty / Staff</th><th>Subject</th><th>Grade &amp; Section</th><th>Day</th><th>Time</th><th>Room</th><th>Type</th><th>Status</th><th>Actions</th></tr></thead>
-      <tbody id="manualScheduleRows"><tr><td colspan="9" class="manual-empty">Loading shared Supabase schedules…</td></tr></tbody>
-    </table>
-  </div>
-  <div class="manual-db-note">Official assignments are imported from the original timetable. Only ACTIVE records occupy a teacher, section, or room; INACTIVE records remain stored but are hidden from the public timetable.</div>
-</section>
 
 <!-- Main Printable Landscape Container -->
 <main class="page-sheet-container" id="sheetsContainer">

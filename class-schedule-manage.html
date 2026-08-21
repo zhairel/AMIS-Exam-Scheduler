@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manage Class Schedules | AMIS</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="/amis_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/class-schedule/manage.css?v=20260821_3">
+  <link rel="stylesheet" href="/class-schedule/manage-page.css?v=20260821_1">
+</head>
+<body class="manage-pending">
+  <header class="manage-topbar">
+    <a class="manage-brand" href="/admin"><img src="/amis_logo.png" alt="AMIS Logo"><span><strong>AMIS Schedule Administration</strong><small>Protected database management</small></span></a>
+    <nav class="manage-nav" aria-label="Admin navigation">
+      <a href="/class-schedule">Public Timetable</a>
+      <a href="/admin">Admin Portal</a>
+      <button id="manageLogout" type="button">Sign Out</button>
+    </nav>
+  </header>
+
+  <main class="manage-shell">
+    <div class="manage-heading">
+      <div><span class="admin-pill">ADMIN ONLY</span><h1>Class Schedule Management</h1><p>Search and manage official database assignments and manually created schedules.</p></div>
+      <a class="manage-create" href="/class-schedule-manage/create">＋ Create Schedule / Add Subject</a>
+    </div>
+
+    <div id="manageNotice" class="manage-notice" hidden></div>
+    <section class="manage-stats" aria-label="Schedule database summary">
+      <div><strong id="totalRecords">—</strong><span>Total records</span></div>
+      <div><strong id="activeRecords">—</strong><span>Active</span></div>
+      <div><strong id="officialRecords">—</strong><span>Official DB</span></div>
+      <div><strong id="manualRecords">—</strong><span>Manual</span></div>
+    </section>
+
+    <section class="manual-manager" aria-labelledby="managerTitle">
+      <div class="manual-manager-header"><div><h2 id="managerTitle">Schedule Database</h2><p>Use filters to find an assignment, then edit or deactivate it.</p></div></div>
+      <div class="manual-filters" aria-label="Schedule filters">
+        <input id="manageSearch" type="search" placeholder="Search teacher, subject, section, room…" aria-label="Search schedules">
+        <select id="manageTeacher"><option value="">All Teachers</option></select>
+        <select id="manageGrade"><option value="">All Grades</option></select>
+        <select id="manageSection"><option value="">All Sections</option></select>
+        <select id="manageSubject"><option value="">All Subjects</option></select>
+        <select id="manageDay"><option value="">All Days</option><option>Sunday</option><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option></select>
+        <select id="manageStatus"><option value="">Active &amp; Inactive</option><option value="active">ACTIVE</option><option value="inactive">INACTIVE</option></select>
+        <select id="manageSource"><option value="">Official &amp; Manual</option><option value="official">OFFICIAL DB</option><option value="manual">MANUAL</option></select>
+      </div>
+      <div class="manual-table-wrap">
+        <table class="manual-table">
+          <thead><tr><th>Teacher / Staff</th><th>Subject</th><th>Grade &amp; Section</th><th>Day</th><th>Time</th><th>Room</th><th>Type</th><th>Source</th><th>Status</th><th>Actions</th></tr></thead>
+          <tbody id="manageRows"><tr><td colspan="10" class="manual-empty">Loading Supabase schedules…</td></tr></tbody>
+        </table>
+      </div>
+      <div class="manage-pagination"><span id="pageSummary">Loading…</span><div><button id="previousPage" type="button">← Previous</button><button id="nextPage" type="button">Next →</button></div></div>
+      <div class="manual-db-note">Official records are deactivated instead of permanently deleted, so they can be reactivated later. Manual records may be permanently deleted.</div>
+    </section>
+  </main>
+
+  <script src="/class-schedule/schedule-core.js?v=20260821_3"></script>
+  <script src="/class-schedule/admin-guard.js?v=20260821_3"></script>
+  <script src="/class-schedule/manage-page.js?v=20260821_1"></script>
+</body>
+</html>

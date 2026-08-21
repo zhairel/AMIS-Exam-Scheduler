@@ -245,7 +245,7 @@
     saveButton.textContent = mode === 'edit' ? 'Updating…' : 'Saving…';
     try {
       await core.saveScheduleChecked(candidate, officialEntries);
-      location.href = `/class-schedule?notice=${encodeURIComponent(mode === 'edit' ? 'Schedule updated successfully.' : 'Schedule created successfully.')}`;
+      location.href = `/class-schedule-manage?notice=${encodeURIComponent(mode === 'edit' ? 'Schedule updated successfully.' : 'Schedule created successfully.')}`;
     } catch (error) {
       if (error instanceof core.ScheduleConflictError) {
         manualEntries = await core.listSchedules();

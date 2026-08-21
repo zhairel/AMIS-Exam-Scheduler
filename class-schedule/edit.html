@@ -13,7 +13,7 @@
 <body class="admin-pending" data-mode="edit">
   <header class="form-topbar">
     <div class="form-brand"><img src="/amis_logo.png" alt="AMIS Logo"><div><strong>AMIS Schedule Management</strong><span>Manual class and subject assignment</span></div></div>
-    <a class="back-link" href="/class-schedule">← Back to Class Schedule</a>
+    <a class="back-link" href="/class-schedule-manage">← Back to Schedule Management</a>
   </header>
   <main class="form-shell">
     <div class="page-heading"><h1 id="pageTitle">Edit Schedule</h1><p id="pageDescription">Loading the assignment and current conflict data…</p></div>
@@ -36,7 +36,7 @@
       <div id="conflictPanel" class="conflict-panel" aria-live="assertive"><h3>Conflict detected</h3><ul id="conflictList" class="conflict-list"></ul><div class="suggestion-comparison"><div class="comparison-card"><small>ORIGINAL</small><strong id="originalSlot"></strong></div><div class="comparison-card suggested"><small>SUGGESTED</small><strong id="suggestedSlot"></strong></div></div><div class="suggestion-actions"><button id="useSuggestion" class="btn btn-suggestion" type="button">Use Suggested Schedule</button><button id="keepEditing" class="btn btn-secondary" type="button">Keep Editing</button></div></div>
       </section>
       <div id="formError" class="form-error" role="alert"></div>
-      <div class="form-actions"><a class="btn btn-secondary" href="/class-schedule">Cancel</a><button id="saveButton" class="btn btn-primary" type="submit">Update Schedule</button></div>
+      <div class="form-actions"><a class="btn btn-secondary" href="/class-schedule-manage">Cancel</a><button id="saveButton" class="btn btn-primary" type="submit">Update Schedule</button></div>
     </form>
     <p id="loadingStatus" class="loading-cover">Loading shared Supabase schedules…</p>
   </main>
