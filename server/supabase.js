@@ -3,6 +3,10 @@
 const ACCESS_COOKIE = '__Host-amis_sb_access';
 const REFRESH_COOKIE = '__Host-amis_sb_refresh';
 const SESSION_TTL_SECONDS = 8 * 60 * 60;
+// Supabase project URL and publishable key are intentionally public client
+// configuration. Authorization remains enforced by Auth plus database RLS.
+const DEPLOYMENT_SUPABASE_URL = 'https://teimwasccxsueeyggcep.supabase.co';
+const DEPLOYMENT_SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_1PEW79B-WILB9iosnWwzwA_ldZ9BXgJ';
 
 function clean(value) {
   return String(value == null ? '' : value).trim();
@@ -12,14 +16,16 @@ function getConfig() {
   const url = clean(
     process.env.SUPABASE_URL ||
     process.env.NEXT_PUBLIC_SUPABASE_URL ||
-    process.env.VITE_SUPABASE_URL
+    process.env.VITE_SUPABASE_URL ||
+    DEPLOYMENT_SUPABASE_URL
   ).replace(/\/$/, '');
   const key = clean(
     process.env.SUPABASE_PUBLISHABLE_KEY ||
     process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
     process.env.SUPABASE_ANON_KEY ||
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
-    process.env.VITE_SUPABASE_ANON_KEY
+    process.env.VITE_SUPABASE_ANON_KEY ||
+    DEPLOYMENT_SUPABASE_PUBLISHABLE_KEY
   );
   const emailDomain = clean(process.env.AMIS_ADMIN_EMAIL_DOMAIN || 'amis.local').toLowerCase();
   const configured = /^https:\/\/[^/]+$/i.test(url) && key.length >= 20 && /^[a-z0-9.-]+$/i.test(emailDomain);

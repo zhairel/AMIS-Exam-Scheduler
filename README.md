@@ -40,7 +40,7 @@ Schedule mutation controls are protected by Supabase Auth and Postgres Row Level
 1. Create a Supabase project and run [`supabase/001_amis_schedule.sql`](supabase/001_amis_schedule.sql) in **SQL Editor**.
 2. In **Authentication → Users**, create `admin@amis.local` with the chosen password. The portal username `admin` maps to this email.
 3. Run the allowlist statement shown at the bottom of the migration.
-4. Configure these Vercel environment variables for Production, Preview, and Development, then redeploy:
+4. This AMIS deployment includes its Supabase project URL and publishable key as public fallback configuration. To override them for another project, configure these Vercel environment variables and redeploy:
 
 ```text
 SUPABASE_URL=https://<project-ref>.supabase.co
