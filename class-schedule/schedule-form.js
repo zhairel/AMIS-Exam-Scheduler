@@ -207,9 +207,9 @@
         groupedRecords = groupIds.map((id) => manualEntries.find((record) => record.id === id)).filter(Boolean);
         if (groupedRecords.length > 1) {
           fields.day.disabled = true;
-          document.getElementById('pageTitle').textContent = 'Edit All-Days Event';
-          document.getElementById('pageDescription').textContent = 'Changes will be applied to this merged event from Sunday through Thursday.';
-          saveButton.textContent = 'Update All School Days';
+          document.getElementById('pageTitle').textContent = 'Edit Merged Cells';
+          document.getElementById('pageDescription').textContent = `Changes will be applied to all ${groupedRecords.length} selected day cells.`;
+          saveButton.textContent = 'Update Merged Cells';
         }
       } else {
         const params = new URLSearchParams(location.search);
@@ -279,7 +279,7 @@
         setError(error.message || 'Unable to save this schedule.');
       }
       saveButton.disabled = false;
-      saveButton.textContent = groupedRecords.length > 1 ? 'Update All School Days' : (mode === 'edit' ? 'Update Schedule' : 'Save Schedule');
+      saveButton.textContent = groupedRecords.length > 1 ? 'Update Merged Cells' : (mode === 'edit' ? 'Update Schedule' : 'Save Schedule');
     }
   });
 

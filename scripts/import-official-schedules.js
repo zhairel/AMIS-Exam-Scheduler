@@ -5,7 +5,7 @@ const schedules = require('../server/schedules');
 
 const IMPORT_FIELDS = [
   'id', 'teacher', 'teacher_id', 'subject', 'grade_level', 'section', 'section_id',
-  'day', 'start_time', 'end_time', 'room', 'schedule_type', 'status', 'source'
+  'day', 'start_time', 'end_time', 'room', 'schedule_type', 'status', 'source', 'merge_group'
 ];
 
 function importRecord(entry) {

@@ -29,7 +29,7 @@ The public timetable and administrator tools are intentionally separated:
 - `/class-schedule-manage/create` creates an assignment.
 - `/class-schedule-manage/edit?id=<schedule-id>` edits an existing assignment.
 
-The management page separates class and personnel workflows. Every grade/section has a complete five-day calendar with subjects, General Assembly, breaks, transitions, and other events. Faculty and staff schedules use a searchable list/table view. Database-backed items provide edit and delete/deactivate icons, while empty class-calendar slots open a prefilled create page.
+The management page separates class and personnel workflows. Every grade/section has a complete five-day calendar with subjects, General Assembly, breaks, transitions, and other events. Matching adjacent day cells can be merged or unmerged with the protected **Merge Cells** workflow, and those groups persist in Supabase. Faculty and staff schedules use a searchable list/table view. Database-backed items provide edit and delete/deactivate icons, while empty class-calendar slots open a prefilled create page.
 
 Unauthenticated visitors who open a management route are redirected to `/admin`. The schedule APIs and Supabase Row Level Security also enforce authorization for every write.
 
@@ -42,7 +42,7 @@ The administrator tools use a separate schedule-record system:
 
 Supabase makes active manual assignments immediately available to every device. Database constraints prevent overlapping active manual assignments during concurrent writes.
 
-The complete generated timetable can also be imported as 2,325 editable `official` database records. Run [`supabase/002_imported_official_records.sql`](supabase/002_imported_official_records.sql) and [`supabase/003_official_timetable_events.sql`](supabase/003_official_timetable_events.sql), then execute the importer locally with an allowlisted admin password:
+The complete generated timetable can also be imported as 2,325 editable `official` database records. Run [`supabase/002_imported_official_records.sql`](supabase/002_imported_official_records.sql), [`supabase/003_official_timetable_events.sql`](supabase/003_official_timetable_events.sql), and [`supabase/004_schedule_cell_merges.sql`](supabase/004_schedule_cell_merges.sql), then execute the importer locally with an allowlisted admin password:
 
 ```bash
 AMIS_ADMIN_PASSWORD='<admin password>' node scripts/import-official-schedules.js

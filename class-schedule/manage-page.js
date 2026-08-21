@@ -11,7 +11,8 @@
   ];
   const ICONS = {
     edit: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zm17.71-10.04a1 1 0 0 0 0-1.42l-2.5-2.5a1 1 0 0 0-1.42 0l-1.96 1.96 3.75 3.75 2.13-1.79z"/></svg>',
-    trash: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12zm3.46-8.88 1.41-1.41L12 9.84l1.13-1.13 1.41 1.41L13.41 11.25l1.13 1.13-1.41 1.41L12 12.66l-1.13 1.13-1.41-1.41 1.13-1.13-1.13-1.13zM15.5 4l-1-1h-5l-1 1H5v2h14V4z"/></svg>'
+    trash: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12zm3.46-8.88 1.41-1.41L12 9.84l1.13-1.13 1.41 1.41L13.41 11.25l1.13 1.13-1.41 1.41L12 12.66l-1.13 1.13-1.41-1.41 1.13-1.13-1.13-1.13zM15.5 4l-1-1h-5l-1 1H5v2h14V4z"/></svg>',
+    split: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v3H5v8h3v3l5-5-5-5v3H7v-2h1V5zm8 0-5 5 5 5v-3h1v2h-1v-3l-5 5 5 5v-3h3V8h-3V5z"/></svg>'
   };
 
   let records = [];
@@ -21,6 +22,8 @@
   let originalEntries = [];
   let selectedTeacher = '';
   let selectedSection = '';
+  let mergeMode = false;
+  const selectedMergeIds = new Set();
   let page = 1;
 
   const rows = document.getElementById('manageRows');
@@ -30,6 +33,9 @@
   const personnelRows = document.getElementById('personnelScheduleRows');
   const directoryList = document.getElementById('teacherDirectoryList');
   const directorySearch = document.getElementById('teacherDirectorySearch');
+  const mergeModeButton = document.getElementById('mergeModeButton');
+  const mergeToolbar = document.getElementById('mergeToolbar');
+  const mergeSelectedButton = document.getElementById('mergeSelectedButton');
   const filters = {
     search: document.getElementById('manageSearch'), teacher: document.getElementById('manageTeacher'),
     grade_level: document.getElementById('manageGrade'), section: document.getElementById('manageSection'),
@@ -230,27 +236,25 @@
     </article>`;
   }
 
-  function mergedEventRow(dayRecords) {
-    if (dayRecords.length !== core.SCHOOL_DAYS.length || !dayRecords.every((record) => isEvent(record))) return false;
-    const first = dayRecords[0];
-    return dayRecords.every((record) => record.subject === first.subject
-      && record.start_time === first.start_time
-      && record.end_time === first.end_time
-      && record.schedule_type === first.schedule_type
-      && record.status === first.status);
-  }
-
-  function renderMergedEventCard(dayRecords) {
+  function renderMergedCard(dayRecords) {
     const first = dayRecords[0];
     const databaseRecords = dayRecords.filter((record) => record._database !== false);
     const ids = databaseRecords.map((record) => record.id);
-    const edit = ids.length === core.SCHOOL_DAYS.length
-      ? `<a class="calendar-icon-action" href="/class-schedule-manage/edit?id=${encodeURIComponent(ids[0])}&group_ids=${encodeURIComponent(ids.join(','))}" title="Edit this event for all school days" aria-label="Edit ${esc(first.subject)} for all school days">${ICONS.edit}</a>`
+    const allPersisted = ids.length === dayRecords.length;
+    const edit = allPersisted
+      ? `<a class="calendar-icon-action" href="/class-schedule-manage/edit?id=${encodeURIComponent(ids[0])}&group_ids=${encodeURIComponent(ids.join(','))}" title="Edit these merged cells" aria-label="Edit merged ${esc(first.subject)} cells">${ICONS.edit}</a>`
       : '';
-    const remove = ids.length === core.SCHOOL_DAYS.length && first.status === 'active'
-      ? `<button class="calendar-icon-action calendar-icon-delete" type="button" data-action="remove-group" data-ids="${esc(ids.join(','))}" title="Deactivate this event for all school days" aria-label="Deactivate ${esc(first.subject)} for all school days">${ICONS.trash}</button>`
+    const unmerge = allPersisted
+      ? `<button class="calendar-icon-action" type="button" data-action="unmerge-group" data-ids="${esc(ids.join(','))}" title="Unmerge these cells" aria-label="Unmerge ${esc(first.subject)} cells">${ICONS.split}</button>`
       : '';
-    return `<article class="calendar-card event merged-event" title="${esc(first.subject)} — all school days"><strong>${esc(first.subject)}</strong><span>All School Days</span><span>${ids.length === core.SCHOOL_DAYS.length ? 'ACTIVE • DATABASE' : 'Original timetable'}</span><div class="calendar-card-actions">${edit}${remove}</div></article>`;
+    const remove = allPersisted && first.status === 'active'
+      ? `<button class="calendar-icon-action calendar-icon-delete" type="button" data-action="remove-group" data-ids="${esc(ids.join(','))}" title="Deactivate these merged cells" aria-label="Deactivate merged ${esc(first.subject)} cells">${ICONS.trash}</button>`
+      : '';
+    const firstDay = core.SCHOOL_DAYS.indexOf(dayRecords[0].day);
+    const lastDay = core.SCHOOL_DAYS.indexOf(dayRecords[dayRecords.length - 1].day);
+    const dayLabel = firstDay === 0 && lastDay === core.SCHOOL_DAYS.length - 1 ? 'All School Days' : `${dayRecords[0].day}–${dayRecords[dayRecords.length - 1].day}`;
+    const tone = isEvent(first) ? 'event' : subjectTone(first.subject);
+    return `<article class="calendar-card ${tone} merged-event" title="${esc(first.subject)} — ${esc(dayLabel)}"><strong>${esc(first.subject)}</strong><span>${esc(dayLabel)}</span><span>${allPersisted ? 'MERGED • DATABASE' : 'Original timetable'}</span><div class="calendar-card-actions">${edit}${unmerge}${remove}</div></article>`;
   }
 
   function renderClassCalendar() {
@@ -269,19 +273,35 @@
     let bands = Array.from(new Map(classRecords.map((record) => [`${record.start_time}|${record.end_time}`, [record.start_time, record.end_time]])).values());
     if (!bands.length) bands = DEFAULT_TIME_BANDS.slice();
     bands.sort((left, right) => `${left[0]}|${left[1]}`.localeCompare(`${right[0]}|${right[1]}`));
+    classCalendarRows.closest('table').classList.toggle('merge-mode', mergeMode);
     classCalendarRows.innerHTML = bands.map(([startTime, endTime]) => {
       const label = core.formatRange({ start_time: startTime, end_time: endTime });
-      const dayRecords = core.SCHOOL_DAYS.map((day) => classRecords.filter((record) => record.day === day && record.start_time === startTime && record.end_time === endTime));
-      const mergeCandidates = dayRecords.map((items) => items.length === 1 ? items[0] : null);
-      if (mergeCandidates.every(Boolean) && mergedEventRow(mergeCandidates)) {
-        return `<tr><td class="calendar-time">${esc(label)}</td><td class="calendar-cell calendar-merged-cell" colspan="5">${renderMergedEventCard(mergeCandidates)}</td></tr>`;
-      }
-      const cells = core.SCHOOL_DAYS.map((day) => {
-        const exact = classRecords.filter((record) => record.day === day && record.start_time === startTime && record.end_time === endTime);
+      const exactByDay = core.SCHOOL_DAYS.map((day) => classRecords.filter((record) => record.day === day && record.start_time === startTime && record.end_time === endTime));
+      let cells = '';
+      for (let dayIndex = 0; dayIndex < core.SCHOOL_DAYS.length;) {
+        const day = core.SCHOOL_DAYS[dayIndex];
+        const exact = exactByDay[dayIndex];
+        const record = exact.length === 1 ? exact[0] : null;
+        if (!mergeMode && record && record.merge_group) {
+          const grouped = [record];
+          let nextIndex = dayIndex + 1;
+          while (nextIndex < core.SCHOOL_DAYS.length && exactByDay[nextIndex].length === 1 && exactByDay[nextIndex][0].merge_group === record.merge_group) {
+            grouped.push(exactByDay[nextIndex][0]);
+            nextIndex += 1;
+          }
+          if (grouped.length > 1) {
+            cells += `<td class="calendar-cell calendar-merged-cell" colspan="${grouped.length}">${renderMergedCard(grouped)}</td>`;
+            dayIndex = nextIndex;
+            continue;
+          }
+        }
         const overlap = !exact.length && classRecords.some((record) => overlapsBand(record, day, startTime, endTime));
         const content = exact.length ? exact.map(renderClassCard).join('') : overlap ? '<div class="calendar-overlap-state"><span>Occupied</span><small>Overlapping time</small></div>' : `<a class="calendar-empty-link" href="${classCreateUrl(day, startTime, endTime)}"><strong>＋</strong><span>Available</span></a>`;
-        return `<td class="calendar-cell">${content}</td>`;
-      }).join('');
+        const selectable = mergeMode && record && record._database !== false && !record.merge_group;
+        const selectedClass = selectable && selectedMergeIds.has(record.id) ? ' merge-selected' : '';
+        cells += `<td class="calendar-cell${selectable ? ' merge-selectable' : ''}${selectedClass}"${selectable ? ` data-merge-id="${esc(record.id)}"` : ''}>${content}</td>`;
+        dayIndex += 1;
+      }
       return `<tr><td class="calendar-time">${esc(label)}</td>${cells}</tr>`;
     }).join('');
   }
@@ -297,7 +317,83 @@
     personnelRows.innerHTML = assignments.length ? assignments.map((record) => `<tr><td><strong>${esc(record.day)}</strong></td><td>${esc(core.formatRange(record))}</td><td class="personnel-subject"><strong>${esc(record.subject)}</strong><small>${esc(record.room || record.schedule_type)}</small></td><td><strong>${esc(record.grade_level)}</strong><br>${esc(record.section)}</td><td>${esc(record.schedule_type)}</td><td><span class="status-pill status-${esc(record.status)}">${esc(record.status.toUpperCase())}</span></td><td><div class="manual-actions">${editLink(record, 'manual-icon-action')}${removeButton(record, 'manual-icon-action')}</div></td></tr>`).join('') : '<tr><td colspan="7" class="workspace-empty">No schedule assignments for this person.</td></tr>';
   }
 
+  function updateMergeToolbar(message) {
+    mergeToolbar.hidden = !mergeMode;
+    mergeModeButton.classList.toggle('active', mergeMode);
+    mergeModeButton.textContent = mergeMode ? 'Selecting Cells…' : 'Merge Cells';
+    mergeSelectedButton.disabled = selectedMergeIds.size < 2;
+    document.getElementById('mergeSelectionSummary').textContent = message || (selectedMergeIds.size ? `${selectedMergeIds.size} cells selected. Choose matching adjacent cells.` : 'Select matching cells from the same time row.');
+  }
+
+  function setMergeMode(enabled) {
+    mergeMode = Boolean(enabled);
+    selectedMergeIds.clear();
+    updateMergeToolbar();
+    renderClassCalendar();
+  }
+
+  function selectedMergeRecords() {
+    return Array.from(selectedMergeIds).map((id) => records.find((record) => record.id === id)).filter(Boolean);
+  }
+
+  function validateMergeSelection(items) {
+    if (items.length < 2) return 'Select at least two cells.';
+    const first = items[0];
+    const sameContent = items.every((item) => item.section === first.section && item.start_time === first.start_time && item.end_time === first.end_time && item.subject === first.subject && item.teacher === first.teacher && item.schedule_type === first.schedule_type && item.status === first.status);
+    if (!sameContent) return 'Select cells with the same subject/event, teacher, time, section, and status.';
+    const dayIndexes = items.map((item) => core.SCHOOL_DAYS.indexOf(item.day)).sort((a, b) => a - b);
+    if (dayIndexes.some((index) => index < 0) || new Set(dayIndexes).size !== dayIndexes.length) return 'Select only one matching cell per day.';
+    if (dayIndexes.some((index, position) => position && index !== dayIndexes[position - 1] + 1)) return 'Selected days must be next to each other.';
+    return '';
+  }
+
+  async function saveMergeGroup(items, mergeGroup) {
+    for (const item of items) await core.saveScheduleChecked({ ...item, merge_group: mergeGroup }, originalEntries);
+    await loadRecords();
+  }
+
+  async function mergeSelectedCells() {
+    const items = selectedMergeRecords();
+    const validation = validateMergeSelection(items);
+    if (validation) {
+      updateMergeToolbar(validation);
+      return;
+    }
+    mergeSelectedButton.disabled = true;
+    mergeSelectedButton.textContent = 'Merging…';
+    try {
+      const mergeGroup = `admin-merge:${Date.now()}:${Math.random().toString(36).slice(2, 9)}`;
+      await saveMergeGroup(items, mergeGroup);
+      notice(`${items.length} matching cells merged successfully.`);
+      mergeMode = false;
+      selectedMergeIds.clear();
+      updateMergeToolbar();
+      renderClassCalendar();
+    } catch (error) {
+      notice(error.message || 'Unable to merge these cells. Run the latest Supabase migration first.', true);
+      mergeSelectedButton.disabled = false;
+    } finally {
+      mergeSelectedButton.textContent = 'Merge Selected';
+    }
+  }
+
+  async function handleUnmerge(event) {
+    const button = event.target.closest('[data-action="unmerge-group"]');
+    if (!button) return;
+    const items = button.dataset.ids.split(',').map((id) => records.find((record) => record.id === id)).filter(Boolean);
+    if (!items.length || !window.confirm(`Unmerge ${items[0].subject} into separate day cells?`)) return;
+    button.disabled = true;
+    try {
+      await saveMergeGroup(items, '');
+      notice('Cells unmerged successfully.');
+    } catch (error) {
+      notice(error.message || 'Unable to unmerge these cells.', true);
+      button.disabled = false;
+    }
+  }
+
   function selectSection(name) {
+    if (mergeMode) setMergeMode(false);
     selectedSection = name;
     renderClassDirectory();
     renderClassCalendar();
@@ -310,6 +406,7 @@
   }
 
   function switchWorkspace(name) {
+    if (mergeMode && name !== 'classes') setMergeMode(false);
     document.getElementById('classWorkspace').hidden = name !== 'classes';
     document.getElementById('personnelWorkspace').hidden = name !== 'personnel';
     document.querySelectorAll('[data-workspace]').forEach((button) => {
@@ -356,7 +453,21 @@
   }
 
   document.addEventListener('click', handleRemove);
+  document.addEventListener('click', handleUnmerge);
   document.querySelectorAll('[data-workspace]').forEach((button) => button.addEventListener('click', () => switchWorkspace(button.dataset.workspace)));
+  mergeModeButton.addEventListener('click', () => setMergeMode(!mergeMode));
+  mergeSelectedButton.addEventListener('click', mergeSelectedCells);
+  document.getElementById('cancelMergeButton').addEventListener('click', () => setMergeMode(false));
+  classCalendarRows.addEventListener('click', (event) => {
+    if (!mergeMode) return;
+    const cell = event.target.closest('[data-merge-id]');
+    if (!cell) return;
+    event.preventDefault();
+    const id = cell.dataset.mergeId;
+    if (selectedMergeIds.has(id)) selectedMergeIds.delete(id); else selectedMergeIds.add(id);
+    updateMergeToolbar();
+    renderClassCalendar();
+  });
   classDirectoryList.addEventListener('click', (event) => { const button = event.target.closest('[data-section]'); if (button) selectSection(button.dataset.section); });
   directoryList.addEventListener('click', (event) => { const button = event.target.closest('[data-teacher]'); if (button) selectTeacher(button.dataset.teacher); });
   classDirectorySearch.addEventListener('input', renderClassDirectory);

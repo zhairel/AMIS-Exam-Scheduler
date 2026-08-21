@@ -6,7 +6,7 @@ const SCHOOL_DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'];
 const officialSections = require('../class_schedules_data.json');
 const ALLOWED_FIELDS = [
   'id', 'teacher', 'teacher_id', 'subject', 'grade_level', 'section', 'section_id',
-  'day', 'start_time', 'end_time', 'room', 'schedule_type', 'status'
+  'day', 'start_time', 'end_time', 'room', 'schedule_type', 'status', 'merge_group'
 ];
 
 function clean(value, maxLength = 200) {
@@ -41,6 +41,7 @@ function normalize(input, existingId) {
   output.room = clean(output.room, 100);
   output.schedule_type = clean(output.schedule_type || 'Academic Class', 100);
   output.status = clean(output.status || 'active', 20).toLowerCase();
+  output.merge_group = clean(output.merge_group, 120);
   output.source = 'manual';
   return output;
 }
@@ -131,6 +132,7 @@ function buildOfficialEntries() {
           end_time: inputTime(range.end),
           room: clean(cell.room || row.room),
           schedule_type: isBreak ? 'Official Break / Assembly' : 'Automatic / Official',
+          merge_group: row.is_merged_all_days ? `official-merge:${section.id || section.section_id}:${row.period_num || row.time}` : '',
           status: 'active',
           source: 'official'
         });

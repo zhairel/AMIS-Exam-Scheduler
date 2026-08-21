@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/class-schedule/manage.css?v=20260821_4">
-  <link rel="stylesheet" href="/class-schedule/manage-page.css?v=20260821_5">
+  <link rel="stylesheet" href="/class-schedule/manage-page.css?v=20260821_6">
 </head>
 <body class="manage-pending">
   <header class="manage-topbar">
@@ -51,8 +51,9 @@
       <div class="teacher-calendar-panel">
         <div class="teacher-calendar-heading">
           <div><span class="calendar-eyebrow">SELECTED CLASS</span><h2 id="classCalendarTitle">Class Weekly Calendar</h2><p id="selectedClassMeta">Choose a grade and section.</p></div>
-          <a id="classCreateLink" class="calendar-create" href="/class-schedule-manage/create">＋ Add Subject / Event</a>
+          <div class="calendar-heading-actions"><button id="mergeModeButton" class="calendar-merge-button" type="button">Merge Cells</button><a id="classCreateLink" class="calendar-create" href="/class-schedule-manage/create">＋ Add Subject / Event</a></div>
         </div>
+        <div id="mergeToolbar" class="merge-toolbar" hidden><span id="mergeSelectionSummary">Select matching cells from the same time row.</span><div><button id="mergeSelectedButton" type="button" disabled>Merge Selected</button><button id="cancelMergeButton" type="button">Cancel</button></div></div>
         <div class="teacher-subjects"><strong>Subjects &amp; Events</strong><div id="classSubjectList" class="subject-chip-list"><span class="subject-empty">Select a class to view its assignments.</span></div></div>
         <div class="teacher-calendar-wrap">
           <table class="teacher-calendar">
@@ -108,8 +109,8 @@
     </section>
   </main>
 
-  <script src="/class-schedule/schedule-core.js?v=20260821_4"></script>
+  <script src="/class-schedule/schedule-core.js?v=20260821_5"></script>
   <script src="/class-schedule/admin-guard.js?v=20260821_3"></script>
-  <script src="/class-schedule/manage-page.js?v=20260821_5"></script>
+  <script src="/class-schedule/manage-page.js?v=20260821_6"></script>
 </body>
 </html>

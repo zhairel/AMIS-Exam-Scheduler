@@ -38,6 +38,7 @@
       end_time: clean(input.end_time),
       room: clean(input.room),
       schedule_type: clean(input.schedule_type) || 'Academic Class',
+      merge_group: clean(input.merge_group),
       status: normalizeStatus(input.status),
       source: clean(input.source) === 'official' || clean(input.id).startsWith('official:') ? 'official' : 'manual',
       created_at: clean(input.created_at) || now,
@@ -136,6 +137,7 @@
             end_time: formatInputTime(range.end),
             room: clean(cell.room || row.room),
             schedule_type: isBreak ? 'Official Break / Assembly' : 'Automatic / Official',
+            merge_group: row.is_merged_all_days ? `official-merge:${section.id || section.section_id || section.section_name}:${row.period_num || row.time}` : '',
             status: 'active',
             source: 'official'
           });
