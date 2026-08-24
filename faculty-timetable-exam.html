@@ -1028,54 +1028,54 @@ html, body {
 
 
     if (hasF2F) {
-      timeline.push({ is_break: true, time: '07:30 AM – 07:45 AM', minutes: '15 min.', label: 'GENERAL ASSEMBLY' });
-      timeline.push({ is_break: false, time: '08:00 AM – 09:00 AM', minutes: '60 min.', slot_id: 'f2f_s1' });
-      timeline.push({ is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60/120 min.', slot_id: 'f2f_s2' });
-      timeline.push({ is_break: true, time: '10:00 AM – 10:25 AM', minutes: '25 min.', label: 'RECESS' });
-      timeline.push({ is_break: false, time: '10:25 AM – 11:25 AM', minutes: '60 min.', slot_id: 'f2f_s3' });
-      timeline.push({ is_break: true, time: '11:25 AM – 12:40 PM', minutes: '75 min.', label: 'LUNCH AND SALAH' });
+      timeline.push({ is_break: true, time: '07:30 AM – 07:45 AM', minutes: '15 MIN', label: 'GENERAL ASSEMBLY' });
+      timeline.push({ is_break: false, time: '08:00 AM – 09:00 AM', minutes: '60 MIN', slot_id: 'f2f_s1' });
+      timeline.push({ is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60/120 MIN', slot_id: 'f2f_s2' });
+      timeline.push({ is_break: true, time: '10:00 AM – 10:25 AM', minutes: '25 MIN', label: 'RECESS' });
+      timeline.push({ is_break: false, time: '10:25 AM – 11:25 AM', minutes: '60 MIN', slot_id: 'f2f_s3' });
+      timeline.push({ is_break: true, time: '11:25 AM – 12:40 PM', minutes: '75 MIN', label: 'LUNCH AND SALAH' });
     }
 
     if (hasODL1) {
       if (!hasF2F) {
-        timeline.push({ is_break: true, time: '12:30 PM – 12:40 PM', minutes: '10 min.', label: 'GENERAL ASSEMBLY' });
+        timeline.push({ is_break: true, time: '12:30 PM – 12:40 PM', minutes: '10 MIN', label: 'GENERAL ASSEMBLY' });
       }
-      timeline.push({ is_break: false, time: '12:40 PM – 01:40 PM', minutes: '60 min.', slot_id: 'odl1_s1' });
-      timeline.push({ is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60/120 min.', slot_id: 'odl1_s2' });
-      timeline.push({ is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'TRANSITION AND SALAH BREAK' });
+      timeline.push({ is_break: false, time: '12:40 PM – 01:40 PM', minutes: '60 MIN', slot_id: 'odl1_s1' });
+      timeline.push({ is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60/120 MIN', slot_id: 'odl1_s2' });
+      timeline.push({ is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 MIN', label: 'TRANSITION AND SALAH BREAK' });
     }
 
     if (hasODL2) {
       if (!hasF2F && !hasODL1) {
-        timeline.push({ is_break: true, time: '02:45 PM – 03:10 PM', minutes: '25 min.', label: 'HOMEROOM GUIDANCE / GENERAL ASSEMBLY' });
+        timeline.push({ is_break: true, time: '02:45 PM – 03:10 PM', minutes: '25 MIN', label: 'HOMEROOM GUIDANCE / GENERAL ASSEMBLY' });
       }
-      timeline.push({ is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 'odl2_s1' });
-      timeline.push({ is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60/120 min.', slot_id: 'odl2_s2' });
-      timeline.push({ is_break: true, time: '05:20 PM – 05:30 PM', minutes: '10 min.', label: 'TRANSITION' });
-      timeline.push({ is_break: false, time: '05:30 PM – 06:30 PM', minutes: '60 min.', slot_id: 'odl2_s3' });
-      timeline.push({ is_break: true, time: '06:30 PM – 06:45 PM', minutes: '15 min.', label: 'SALAH & DISMISSAL' });
+      timeline.push({ is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 MIN', slot_id: 'odl2_s1' });
+      timeline.push({ is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60/120 MIN', slot_id: 'odl2_s2' });
+      timeline.push({ is_break: true, time: '05:20 PM – 05:30 PM', minutes: '10 MIN', label: 'TRANSITION' });
+      timeline.push({ is_break: false, time: '05:30 PM – 06:30 PM', minutes: '60 MIN', slot_id: 'odl2_s3' });
+      timeline.push({ is_break: true, time: '06:30 PM – 06:45 PM', minutes: '15 MIN', label: 'SALAH & DISMISSAL' });
     }
 
     if (hasF2F && !hasODL1 && !hasODL2) {
-      timeline.push({ is_break: true, time: '02:45 PM – 03:00 PM', minutes: '15 min.', label: 'SALAH / SALAH & DEPARTURE' });
+      timeline.push({ is_break: true, time: '02:45 PM – 03:00 PM', minutes: '15 MIN', label: 'SALAH / SALAH & DEPARTURE' });
     }
 
     if (timeline.length === 0) {
       timeline = [
-        { is_break: true, time: '07:30 AM – 07:45 AM', minutes: '15 min.', label: 'GENERAL ASSEMBLY' },
-        { is_break: false, time: '08:00 AM – 09:00 AM', minutes: '60 min.', slot_id: 'f2f_s1' },
-        { is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60/120 min.', slot_id: 'f2f_s2' },
-        { is_break: true, time: '10:00 AM – 10:25 AM', minutes: '25 min.', label: 'RECESS' },
-        { is_break: false, time: '10:25 AM – 11:25 AM', minutes: '60 min.', slot_id: 'f2f_s3' },
-        { is_break: true, time: '11:25 AM – 12:40 PM', minutes: '75 min.', label: 'LUNCH AND SALAH' },
-        { is_break: false, time: '12:40 PM – 01:40 PM', minutes: '60 min.', slot_id: 'odl1_s1' },
-        { is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60/120 min.', slot_id: 'odl1_s2' },
-        { is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 min.', label: 'TRANSITION AND SALAH BREAK' },
-        { is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 min.', slot_id: 'odl2_s1' },
-        { is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60/120 min.', slot_id: 'odl2_s2' },
-        { is_break: true, time: '05:20 PM – 05:30 PM', minutes: '10 min.', label: 'TRANSITION' },
-        { is_break: false, time: '05:30 PM – 06:30 PM', minutes: '60 min.', slot_id: 'odl2_s3' },
-        { is_break: true, time: '06:30 PM – 06:45 PM', minutes: '15 min.', label: 'SALAH & DISMISSAL' }
+        { is_break: true, time: '07:30 AM – 07:45 AM', minutes: '15 MIN', label: 'GENERAL ASSEMBLY' },
+        { is_break: false, time: '08:00 AM – 09:00 AM', minutes: '60 MIN', slot_id: 'f2f_s1' },
+        { is_break: false, time: '09:00 AM – 10:00 AM', minutes: '60/120 MIN', slot_id: 'f2f_s2' },
+        { is_break: true, time: '10:00 AM – 10:25 AM', minutes: '25 MIN', label: 'RECESS' },
+        { is_break: false, time: '10:25 AM – 11:25 AM', minutes: '60 MIN', slot_id: 'f2f_s3' },
+        { is_break: true, time: '11:25 AM – 12:40 PM', minutes: '75 MIN', label: 'LUNCH AND SALAH' },
+        { is_break: false, time: '12:40 PM – 01:40 PM', minutes: '60 MIN', slot_id: 'odl1_s1' },
+        { is_break: false, time: '01:50 PM – 02:50 PM', minutes: '60/120 MIN', slot_id: 'odl1_s2' },
+        { is_break: true, time: '02:50 PM – 03:10 PM', minutes: '20 MIN', label: 'TRANSITION AND SALAH BREAK' },
+        { is_break: false, time: '03:10 PM – 04:10 PM', minutes: '60 MIN', slot_id: 'odl2_s1' },
+        { is_break: false, time: '04:20 PM – 05:20 PM', minutes: '60/120 MIN', slot_id: 'odl2_s2' },
+        { is_break: true, time: '05:20 PM – 05:30 PM', minutes: '10 MIN', label: 'TRANSITION' },
+        { is_break: false, time: '05:30 PM – 06:30 PM', minutes: '60 MIN', slot_id: 'odl2_s3' },
+        { is_break: true, time: '06:30 PM – 06:45 PM', minutes: '15 MIN', label: 'SALAH & DISMISSAL' }
       ];
     }
 
@@ -1303,7 +1303,7 @@ html, body {
                     ` : `
                       <span class="cell-subject-sec">${esc(exam.subject)}</span>
                       <span class="cell-section-name">${esc(cleanSec)}</span>
-                      <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${exam.duration_minutes || 60} min.</span>
+                      <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${exam.duration_minutes || 60} MIN</span>
                     `}
                   </div>
                 </td>
@@ -1335,7 +1335,7 @@ html, body {
                     <div class="cell-class-inner">
                       <span class="cell-subject-sec">${esc(exam.subject)}</span>
                       <span class="cell-section-name">${esc(secsStr)} (Merged)</span>
-                      <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${exam.duration_minutes || 60} min.</span>
+                      <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${exam.duration_minutes || 60} MIN</span>
                     </div>
                   </td>
                 `;

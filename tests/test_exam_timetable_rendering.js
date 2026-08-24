@@ -85,5 +85,11 @@ assert(html.includes("second: '2<br>N<br>D<br><br>S<br>H<br>I<br>F<br>T'"));
 assert(!html.includes('shift-time-shared'));
 assert(!facultyHtml.includes('shift-time-shared'));
 assert(facultyHtml.includes('return { ...row, shift_group: shiftGroup };'));
+assert(!/\b\d+(?:\/\d+)? min\./i.test(html), 'Main timetable must not display lowercase min. labels.');
+assert(!/\b\d+(?:\/\d+)? min\./i.test(facultyHtml), 'Faculty timetable must not display lowercase min. labels.');
+assert(html.includes('60 MIN'));
+assert(facultyHtml.includes('60 MIN'));
+assert(html.includes('${match.duration_minutes || 60} MIN'));
+assert(facultyHtml.includes('${exam.duration_minutes || 60} MIN'));
 
 console.log('PASS Grade 11/12 canonical rendering and PROCTOR-only faculty timetable cell labels');
