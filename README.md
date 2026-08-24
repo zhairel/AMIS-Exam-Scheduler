@@ -42,7 +42,7 @@ The administrator tools use a separate schedule-record system:
 
 Supabase makes active manual assignments immediately available to every device. Database constraints prevent overlapping active manual assignments during concurrent writes.
 
-The complete generated timetable can also be imported as 2,325 editable `official` database records. Run [`supabase/002_imported_official_records.sql`](supabase/002_imported_official_records.sql), [`supabase/003_official_timetable_events.sql`](supabase/003_official_timetable_events.sql), and [`supabase/004_schedule_cell_merges.sql`](supabase/004_schedule_cell_merges.sql), then execute the importer locally with an allowlisted admin password:
+The approved `ELEM` and `HS SCHED (NEW)` timetables can be imported as 2,095 editable `official` database records. Run [`supabase/002_imported_official_records.sql`](supabase/002_imported_official_records.sql), [`supabase/003_official_timetable_events.sql`](supabase/003_official_timetable_events.sql), and [`supabase/004_schedule_cell_merges.sql`](supabase/004_schedule_cell_merges.sql), then execute the importer locally with an allowlisted admin password:
 
 ```bash
 AMIS_ADMIN_PASSWORD='<admin password>' node scripts/import-official-schedules.js
