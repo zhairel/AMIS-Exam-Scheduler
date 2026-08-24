@@ -10256,8 +10256,8 @@
     "gender": "",
     "subject_id": "subj_arabic",
     "subject": "Arabic",
-    "teacher_id": "tchr_hainur",
-    "teacher": "Ustadha Hainur",
+    "teacher_id": "tchr_mamonas",
+    "teacher": "Alim Mamonas",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -10876,8 +10876,8 @@
     "gender": "FEMALE",
     "subject_id": "subj_arabic",
     "subject": "Arabic",
-    "teacher_id": "tchr_raslina",
-    "teacher": "Ustadh Raslina",
+    "teacher_id": "tchr_hainur",
+    "teacher": "Ustadha Hainur",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },

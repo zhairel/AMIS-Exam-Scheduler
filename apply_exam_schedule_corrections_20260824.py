@@ -80,10 +80,12 @@ HAINUR_DAY4_FIXED_POSITIONS = {
 HAINUR_GRADE5_TRANSFER_IDS = {"exam_62", "exam_354"}
 
 # The official three-period ODL grids cannot hold every Hainur/Silfah duty
-# without double-booking them. These six same-subject faculty members provide
+# without double-booking them. These seven same-subject faculty assignments provide
 # qualified exam coverage; all former Raslina loads remain with Ustadha Hainur.
 EXAM_TEACHER_OVERRIDES = {
     "exam_3": "Ustadh Jaisam",          # Qur'an
+    "exam_394": "Ustadha Hainur",       # Arabic transferred from Raslina
+    "exam_298": "Alim Mamonas",         # Arabic exam coverage
     "exam_427": "Alim Abdulwahab",     # Qur'an
     "exam_428": "Alim Dipatuan",       # Qur'an
     "exam_86": "Teacher Zuhora",        # GMRC
@@ -880,7 +882,12 @@ def merge_previous_audit(audit, previous_audit, source_count):
         {
             "teacher": "Qualified exam coverage",
             "request": "Preserve zero conflicts after reducing both ODL grids to three official periods",
-            "result": "Six overloaded Hainur/Silfah duties received same-subject faculty coverage; all former Raslina Grade 5 SHAF duties remain with Ustadha Hainur",
+            "result": "Seven overloaded Hainur/Silfah duties received same-subject faculty coverage; all former Raslina duties remain with Ustadha Hainur",
+        },
+        {
+            "teacher": "Ustadha Hainur",
+            "request": "Transfer Grade 9 Abu Hurayrah Arabic from resigned Ustadh Raslina",
+            "result": "Grade 9 Abu Hurayrah Arabic remains on Sep 6 at 12:40 PM under Ustadha Hainur; Alim Mamonas covers a parallel Arabic duty so no teacher or section conflict is created",
         },
     ]
     return audit

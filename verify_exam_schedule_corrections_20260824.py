@@ -295,6 +295,8 @@ def main():
 
     expected_exam_coverage = {
         "exam_3": "tchr_jaisam",
+        "exam_298": "tchr_mamonas",
+        "exam_394": "tchr_hainur",
         "exam_427": "tchr_abdulwahab",
         "exam_428": "tchr_dipatuan",
         "exam_86": "tchr_zuhora",
@@ -303,6 +305,12 @@ def main():
     }
     for exam_id, teacher_id in expected_exam_coverage.items():
         assert by_id[exam_id]["teacher_id"] == teacher_id
+    assert not any(record["teacher_id"] == "tchr_raslina" for record in records)
+    assert (
+        by_id["exam_394"]["day_number"],
+        by_id["exam_394"]["start_m"],
+        by_id["exam_394"]["end_m"],
+    ) == (3, 760, 820)
 
     g11_girls_shaf = get_one(
         records,

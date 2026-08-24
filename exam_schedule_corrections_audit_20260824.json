@@ -584,6 +584,18 @@
       "subject": "Qur'an",
       "from": "Ustadha Hainur",
       "to": "Alim Dipatuan"
+    },
+    {
+      "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+      "subject": "Arabic",
+      "from": "Ustadha Hainur",
+      "to": "Alim Mamonas"
+    },
+    {
+      "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+      "subject": "Arabic",
+      "from": "Ustadh Raslina",
+      "to": "Ustadha Hainur"
     }
   ],
   "unresolved_official_teacher_links": [],
@@ -2051,7 +2063,12 @@
     {
       "teacher": "Qualified exam coverage",
       "request": "Preserve zero conflicts after reducing both ODL grids to three official periods",
-      "result": "Six overloaded Hainur/Silfah duties received same-subject faculty coverage; all former Raslina Grade 5 SHAF duties remain with Ustadha Hainur"
+      "result": "Seven overloaded Hainur/Silfah duties received same-subject faculty coverage; all former Raslina duties remain with Ustadha Hainur"
+    },
+    {
+      "teacher": "Ustadha Hainur",
+      "request": "Transfer Grade 9 Abu Hurayrah Arabic from resigned Ustadh Raslina",
+      "result": "Grade 9 Abu Hurayrah Arabic remains on Sep 6 at 12:40 PM under Ustadha Hainur; Alim Mamonas covers a parallel Arabic duty so no teacher or section conflict is created"
     }
   ],
   "final_exam_count": 589,
@@ -2059,5 +2076,5 @@
     "60": 564,
     "120": 25
   },
-  "teacher_count": 53
+  "teacher_count": 52
 }

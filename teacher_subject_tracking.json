@@ -1033,19 +1033,21 @@
   },
   {
     "teacher": "Alim Mamonas",
-    "total_exams": 10,
+    "total_exams": 11,
     "subjects": [
       "Arabic"
     ],
     "grades": [
+      "Grade 1",
       "Grade 10",
       "Grade 11",
       "Grade 12",
       "Grade 9 & 10",
       "Kinder 2"
     ],
-    "sections_count": 10,
+    "sections_count": 11,
     "sections": [
+      "Grade 1 — GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
       "Grade 10 — GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
       "Grade 10 — GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
       "Grade 11 — GRADE 11 (1ST SHIFT GIRLS)",
@@ -1212,6 +1214,37 @@
         "department": "Elementary",
         "grade": "Kinder 2",
         "grade_level": "Kinder 2",
+        "shift": "ODL - 1ST SHIFT",
+        "modality": "ODL",
+        "gender": "",
+        "subject_id": "subj_arabic",
+        "subject": "Arabic",
+        "teacher_id": "tchr_mamonas",
+        "teacher": "Alim Mamonas",
+        "duration_minutes": 60,
+        "teacher_status": "VERIFIED"
+      },
+      {
+        "id": "exam_298",
+        "exam_term": "1st Term",
+        "day_number": 3,
+        "date": "Sunday, September 6, 2026",
+        "short_date": "Sep 6",
+        "day_name": "Sunday",
+        "slot_number": 1,
+        "slots_spanned": 1,
+        "start_slot_index": 0,
+        "end_slot_index": 0,
+        "start_m": 760,
+        "end_m": 820,
+        "time_slot": "12:40 PM – 01:40 PM",
+        "time": "12:40 PM – 01:40 PM",
+        "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "section_name": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "department": "Elementary",
+        "grade": "Grade 1",
+        "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "modality": "ODL",
         "gender": "",
@@ -18268,59 +18301,6 @@
     ]
   },
   {
-    "teacher": "Ustadh Raslina",
-    "total_exams": 1,
-    "subjects": [
-      "Arabic"
-    ],
-    "grades": [
-      "Grade 9"
-    ],
-    "sections_count": 1,
-    "sections": [
-      "Grade 9 — GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS"
-    ],
-    "modalities": [
-      "ODL"
-    ],
-    "shifts": [
-      "ODL - 1ST SHIFT"
-    ],
-    "exams": [
-      {
-        "id": "exam_394",
-        "exam_term": "1st Term",
-        "day_number": 3,
-        "date": "Sunday, September 6, 2026",
-        "short_date": "Sep 6",
-        "day_name": "Sunday",
-        "slot_number": 1,
-        "slots_spanned": 1,
-        "start_slot_index": 0,
-        "end_slot_index": 0,
-        "start_m": 760,
-        "end_m": 820,
-        "time_slot": "12:40 PM – 01:40 PM",
-        "time": "12:40 PM – 01:40 PM",
-        "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "section_name": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "department": "Junior High School",
-        "grade": "Grade 9",
-        "grade_level": "Grade 9",
-        "shift": "ODL - 1ST SHIFT",
-        "modality": "ODL",
-        "gender": "FEMALE",
-        "subject_id": "subj_arabic",
-        "subject": "Arabic",
-        "teacher_id": "tchr_raslina",
-        "teacher": "Ustadh Raslina",
-        "duration_minutes": 60,
-        "teacher_status": "VERIFIED"
-      }
-    ]
-  },
-  {
     "teacher": "Ustadh Silfah",
     "total_exams": 20,
     "subjects": [
@@ -18998,10 +18978,11 @@
       "Grade 1",
       "Grade 2",
       "Grade 5",
+      "Grade 9",
       "Kinder 1",
       "Kinder 2"
     ],
-    "sections_count": 14,
+    "sections_count": 15,
     "sections": [
       "Grade 1 — GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
       "Grade 1 — GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
@@ -19014,6 +18995,7 @@
       "Grade 5 — GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
       "Grade 5 — GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
       "Grade 5 — GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+      "Grade 9 — GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
       "Kinder 1 — K1 - HUSAIN IBN ALI (2ND SHIFT)",
       "Kinder 2 — K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
       "Kinder 2 — K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)"
@@ -19337,7 +19319,7 @@
         "teacher_status": "VERIFIED"
       },
       {
-        "id": "exam_298",
+        "id": "exam_394",
         "exam_term": "1st Term",
         "day_number": 3,
         "date": "Sunday, September 6, 2026",
@@ -19351,15 +19333,15 @@
         "end_m": 820,
         "time_slot": "12:40 PM – 01:40 PM",
         "time": "12:40 PM – 01:40 PM",
-        "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
-        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "section_name": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "department": "Elementary",
-        "grade": "Grade 1",
-        "grade_level": "Grade 1",
+        "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "section_name": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "department": "Junior High School",
+        "grade": "Grade 9",
+        "grade_level": "Grade 9",
         "shift": "ODL - 1ST SHIFT",
         "modality": "ODL",
-        "gender": "",
+        "gender": "FEMALE",
         "subject_id": "subj_arabic",
         "subject": "Arabic",
         "teacher_id": "tchr_hainur",
