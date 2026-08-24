@@ -62,6 +62,8 @@ assert(abuMusa.every(record => record.start_m >= 760), 'Abu Musa exams must star
 
 const automaticCoverage = records.filter(record => record.proctor_assignment_source === 'AUTO_ACADEMIC_COVERAGE');
 assert.strictEqual(automaticCoverage.length, 12, 'All 12 Normylah exams must have automatic proctor coverage.');
+assert(html.includes("match.proctor_assignment_source === 'AUTO_ACADEMIC_COVERAGE'"));
+assert(html.includes('<span class="cell-proctor-duty-label">PROCTOR</span>'));
 assert(facultyHtml.includes("exam.proctor_assignment_source === 'AUTO_ACADEMIC_COVERAGE'"));
 assert(facultyHtml.includes('<span class="cell-proctor-label">PROCTOR</span>'));
 
