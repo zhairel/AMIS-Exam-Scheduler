@@ -30,6 +30,10 @@
   const classCalendarRows = document.getElementById('classCalendarRows');
   const classDirectoryList = document.getElementById('classDirectoryList');
   const classDirectorySearch = document.getElementById('classDirectorySearch');
+  const classGradeFilter = document.getElementById('classGradeFilter');
+  const classModalityFilter = document.getElementById('classModalityFilter');
+  const classShiftFilter = document.getElementById('classShiftFilter');
+  const classFilterSummary = document.getElementById('classFilterSummary');
   const personnelRows = document.getElementById('personnelScheduleRows');
   const directoryList = document.getElementById('teacherDirectoryList');
   const directorySearch = document.getElementById('teacherDirectorySearch');
@@ -151,8 +155,9 @@
     records.forEach((record) => {
       if (record.section && !map.has(record.section)) map.set(record.section, { name: record.section, id: record.section_id || '', grade: record.grade_level, department: '', shift: 'MANUAL' });
     });
-    classes = Array.from(map.values());
+    classes = Array.from(map.values()).sort(compareClasses);
     document.getElementById('classCount').textContent = classes.length.toLocaleString();
+    populateClassGradeFilter();
   }
 
   function recordsForTeacher(name) {
@@ -183,15 +188,74 @@
     return gradeNumber ? `G${gradeNumber[0]}` : String(grade).slice(0, 4);
   }
 
+  function gradeOrder(grade) {
+    const value = String(grade || '');
+    const kinder = value.match(/Kinder\s*(\d+)?/i);
+    if (kinder) return Number(kinder[1] || 0) - 20;
+    const gradeNumber = value.match(/\d+/);
+    return gradeNumber ? Number(gradeNumber[0]) : 100;
+  }
+
+  function classModality(item) {
+    const value = String(item.shift || '').toUpperCase();
+    if (value.includes('F2F')) return 'F2F';
+    if (value.includes('ODL')) return 'ODL';
+    return value;
+  }
+
+  function classShift(item) {
+    const value = String(item.shift || '').toUpperCase();
+    if (value.includes('1ST SHIFT')) return '1ST SHIFT';
+    if (value.includes('2ND SHIFT')) return '2ND SHIFT';
+    return '';
+  }
+
+  function compareClasses(left, right) {
+    const gradeDifference = gradeOrder(left.grade) - gradeOrder(right.grade);
+    if (gradeDifference) return gradeDifference;
+    const gradeNameDifference = left.grade.localeCompare(right.grade, undefined, { numeric: true });
+    if (gradeNameDifference) return gradeNameDifference;
+    const modeOrder = { F2F: 0, ODL: 1, MANUAL: 2 };
+    const modeDifference = (modeOrder[classModality(left)] ?? 3) - (modeOrder[classModality(right)] ?? 3);
+    if (modeDifference) return modeDifference;
+    const shiftOrder = { '': 0, '1ST SHIFT': 1, '2ND SHIFT': 2 };
+    const shiftDifference = (shiftOrder[classShift(left)] ?? 3) - (shiftOrder[classShift(right)] ?? 3);
+    return shiftDifference || left.name.localeCompare(right.name, undefined, { numeric: true });
+  }
+
+  function populateClassGradeFilter() {
+    const selected = classGradeFilter.value;
+    const grades = Array.from(new Set(classes.map((item) => item.grade).filter(Boolean))).sort((left, right) => gradeOrder(left) - gradeOrder(right) || left.localeCompare(right, undefined, { numeric: true }));
+    classGradeFilter.innerHTML = '<option value="">All grades</option>' + grades.map((grade) => `<option value="${esc(grade)}">${esc(gradeBadge(grade))} · ${esc(grade)}</option>`).join('');
+    classGradeFilter.value = grades.includes(selected) ? selected : '';
+  }
+
+  function updateShiftFilter() {
+    const odlSelected = classModalityFilter.value === 'ODL';
+    classShiftFilter.disabled = !odlSelected;
+    if (!odlSelected) classShiftFilter.value = '';
+    classShiftFilter.closest('.class-filter-field').classList.toggle('is-disabled', !odlSelected);
+  }
+
   function renderClassDirectory() {
     const query = classDirectorySearch.value.trim().toLowerCase();
-    const visible = classes.filter((item) => !query || `${item.grade} ${item.name} ${item.shift}`.toLowerCase().includes(query));
+    const grade = classGradeFilter.value;
+    const modality = classModalityFilter.value;
+    const shift = classShiftFilter.value;
+    const visible = classes.filter((item) => {
+      if (grade && item.grade !== grade) return false;
+      if (modality && classModality(item) !== modality) return false;
+      if (shift && classShift(item) !== shift) return false;
+      return !query || `${item.grade} ${item.name} ${item.shift}`.toLowerCase().includes(query);
+    });
+    const filterLabels = [grade ? gradeBadge(grade) : '', modality, shift ? shift.replace('ST SHIFT', 'st shift').replace('ND SHIFT', 'nd shift') : ''].filter(Boolean);
+    classFilterSummary.innerHTML = `<strong>${visible.length}</strong> of ${classes.length} sections${filterLabels.length ? ` · ${esc(filterLabels.join(' / '))}` : ''}`;
     classDirectoryList.innerHTML = visible.length ? visible.map((item) => {
       const count = completeClassRecords(item.name).length;
       return `<button class="teacher-directory-item class-directory-item${item.name === selectedSection ? ' selected' : ''}" type="button" data-section="${esc(item.name)}" aria-pressed="${item.name === selectedSection}">
         <span class="class-grade-badge">${esc(gradeBadge(item.grade))}</span><span class="teacher-directory-copy"><strong>${esc(item.name)}</strong><small>${esc([item.grade, item.shift].filter(Boolean).join(' • '))}</small></span><span class="teacher-record-count">${count}</span>
       </button>`;
-    }).join('') : '<div class="workspace-empty">No grade or section matches your search.</div>';
+    }).join('') : '<div class="workspace-empty">No sections match these filters.<br>Try another grade, modality, or shift.</div>';
   }
 
   function renderPersonnelDirectory() {
@@ -479,6 +543,9 @@
   classDirectoryList.addEventListener('click', (event) => { const button = event.target.closest('[data-section]'); if (button) selectSection(button.dataset.section); });
   directoryList.addEventListener('click', (event) => { const button = event.target.closest('[data-teacher]'); if (button) selectTeacher(button.dataset.teacher); });
   classDirectorySearch.addEventListener('input', renderClassDirectory);
+  classGradeFilter.addEventListener('change', renderClassDirectory);
+  classModalityFilter.addEventListener('change', () => { updateShiftFilter(); renderClassDirectory(); });
+  classShiftFilter.addEventListener('change', renderClassDirectory);
   directorySearch.addEventListener('input', renderPersonnelDirectory);
   Object.entries(filters).forEach(([name, element]) => element.addEventListener(element === filters.search ? 'input' : 'change', () => { page = 1; if (name === 'teacher' && element.value) selectTeacher(element.value); if (name === 'section' && element.value) selectSection(element.value); applyFilters(); }));
   document.getElementById('previousPage').addEventListener('click', () => { if (page > 1) { page -= 1; renderRows(); } });
@@ -490,6 +557,7 @@
     document.body.classList.remove('manage-pending');
     const message = new URLSearchParams(location.search).get('notice');
     if (message) notice(message);
+    updateShiftFilter();
     try {
       await loadRecords();
     } catch (error) {

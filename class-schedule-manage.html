@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/class-schedule/manage.css?v=20260821_4">
-  <link rel="stylesheet" href="/class-schedule/manage-page.css?v=20260821_6">
+  <link rel="stylesheet" href="/class-schedule/manage-page.css?v=20260824_1">
 </head>
 <body class="manage-pending">
   <header class="manage-topbar">
@@ -44,7 +44,13 @@
     <section id="classWorkspace" class="teacher-workspace" aria-labelledby="classCalendarTitle">
       <aside class="teacher-directory">
         <div class="teacher-directory-heading"><div><h2>Grades &amp; Sections</h2><p>Select a class to manage its complete weekly calendar.</p></div><span id="classCount">—</span></div>
-        <label class="teacher-directory-search"><span class="sr-only">Search grades and sections</span><input id="classDirectorySearch" type="search" placeholder="Search grade or section…"></label>
+        <div class="class-directory-filters" aria-label="Filter grades and sections">
+          <label class="class-filter-field class-filter-grade"><span>Grade</span><select id="classGradeFilter" aria-label="Filter by grade"><option value="">All grades</option></select></label>
+          <label class="class-filter-field class-filter-modality"><span>Modality</span><select id="classModalityFilter" aria-label="Filter by modality"><option value="">All</option><option value="F2F">F2F</option><option value="ODL">ODL</option></select></label>
+          <label class="class-filter-field class-filter-shift"><span>Shift</span><select id="classShiftFilter" aria-label="Filter by shift"><option value="">All shifts</option><option value="1ST SHIFT">1st shift</option><option value="2ND SHIFT">2nd shift</option></select></label>
+          <label class="teacher-directory-search class-filter-section"><span>Section</span><input id="classDirectorySearch" type="search" placeholder="Search section…"></label>
+        </div>
+        <div id="classFilterSummary" class="class-filter-summary" aria-live="polite">Showing all sections</div>
         <div id="classDirectoryList" class="teacher-directory-list"><div class="workspace-empty">Loading classes…</div></div>
       </aside>
 
@@ -111,6 +117,6 @@
 
   <script src="/class-schedule/schedule-core.js?v=20260821_6"></script>
   <script src="/class-schedule/admin-guard.js?v=20260821_3"></script>
-  <script src="/class-schedule/manage-page.js?v=20260821_8"></script>
+  <script src="/class-schedule/manage-page.js?v=20260824_1"></script>
 </body>
 </html>
