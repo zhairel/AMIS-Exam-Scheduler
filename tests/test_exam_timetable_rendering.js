@@ -80,8 +80,8 @@ for (const shiftColumnToken of ['col-shift', 'cell-shift', 'shift-stack']) {
   assert(facultyHtml.includes(shiftColumnToken), `Standalone faculty timetable must include ${shiftColumnToken}.`);
 }
 assert(html.includes("f2f: 'F<br>A<br>C<br>E<br><br>T<br>O<br><br>F<br>A<br>C<br>E'"));
-assert(html.includes("first: '1<br>S<br>T<br>S'"));
-assert(html.includes("second: '2<br>N<br>D<br>S'"));
+assert(html.includes("first: '1<br>S<br>T<br><br>S<br>H<br>I<br>F<br>T'"));
+assert(html.includes("second: '2<br>N<br>D<br><br>S<br>H<br>I<br>F<br>T'"));
 assert(!html.includes('shift-time-shared'));
 assert(!facultyHtml.includes('shift-time-shared'));
 assert(facultyHtml.includes('return { ...row, shift_group: shiftGroup };'));
