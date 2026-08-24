@@ -4,6 +4,7 @@
 import csv
 import json
 import os
+import re
 from collections import Counter, defaultdict
 
 import openpyxl
@@ -73,8 +74,14 @@ def main():
     for record in normylah_records:
         proctor = registry_by_id[record["proctor_id"]]
         assert proctor["title"] == "Faculty Member"
+        assert "isal" not in correction.clean(proctor.get("department")).lower()
+        assert not re.search(
+            r"\b(?:ustadh|ustadha|alim)\b",
+            correction.clean(proctor.get("canonical_name")).lower(),
+        )
         assert proctor.get("status", "active") != "inactive"
         assert proctor.get("is_active", True)
+        assert record["proctor_pool"] == "ACADEMIC_TEACHER_ONLY"
 
     expected_normylah_positions = {
         "exam_30": (1, 480, 540),
@@ -520,6 +527,11 @@ def main():
     assert len(proctor_assignments) == len(records)
     assert sum(item["replacement_teacher_required"] for item in proctor_assignments) == 12
     assert not any(item["proctor_id"] == "tchr_normylah" for item in proctor_assignments)
+    assert all(
+        item["proctor_pool"] == "ACADEMIC_TEACHER_ONLY"
+        for item in proctor_assignments
+        if item["replacement_teacher_required"]
+    )
 
     with open(os.path.join(BASE_DIR, "AMIS_Teacher_Exam_Subject_Assignments.csv"), encoding="utf-8-sig") as handle:
         assert sum(1 for _ in csv.reader(handle)) == len(records) + 1

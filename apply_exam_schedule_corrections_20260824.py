@@ -270,6 +270,7 @@ def apply_subject_teacher_status(records):
             record["proctor"] = subject_teacher
             record["proctor_id"] = subject_teacher_id
             record["proctor_status"] = "ACTIVE_ASSIGNED"
+            record["proctor_pool"] = "SUBJECT_TEACHER"
             record["proctor_assignment_source"] = "SUBJECT_TEACHER"
             record["proctor_department"] = teacher_by_id.get(subject_teacher_id, {}).get(
                 "department", record.get("department", "Faculty")
@@ -294,19 +295,37 @@ def weekly_blocks_by_teacher(teacher_weekly):
     return blocks
 
 
+def is_active_academic_teacher(teacher):
+    """Allow active academic faculty only; ISAL/Ustadh/Ustadha/Alim are excluded."""
+    title = clean(teacher.get("title")).lower()
+    department = clean(teacher.get("department")).lower()
+    canonical_name = clean(teacher.get("canonical_name")).lower()
+    is_isal_identity = (
+        "isal" in department
+        or re.search(r"\b(?:ustadh|ustadha|alim)\b", canonical_name) is not None
+    )
+    return (
+        title == "faculty member"
+        and "faculty" in department
+        and not is_isal_identity
+        and teacher.get("status", "active") != "inactive"
+        and teacher.get("employment_status", "active") != "resigned"
+        and teacher.get("is_active", True)
+        and teacher["id"] not in INACTIVE_TEACHER_IDS
+    )
+
+
 def assign_inactive_teacher_proctors(records, teacher_weekly):
     """Assign active Academic Teachers without changing the former subject teacher."""
     academic_teachers = [
         teacher for teacher in TEACHER_REGISTRY
-        if teacher.get("title") == "Faculty Member"
-        and teacher.get("status", "active") != "inactive"
-        and teacher.get("is_active", True)
-        and teacher["id"] not in INACTIVE_TEACHER_IDS
+        if is_active_academic_teacher(teacher)
     ]
     weekly_blocks = weekly_blocks_by_teacher(teacher_weekly)
     busy = defaultdict(list)
-    proctor_load = Counter()
-    proctor_day_load = Counter()
+    proctor_load_minutes = Counter()
+    proctor_day_load_minutes = Counter()
+    proctor_assignment_count = Counter()
 
     inactive_records = []
     for record in records:
@@ -320,8 +339,10 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
         start_m = int(record.get("_original_start_m") or record.get("start_m"))
         end_m = int(record.get("end_m") or (start_m + int(record.get("duration_minutes") or 60)))
         busy[(proctor_id, day_number)].append((start_m, end_m, record["id"]))
-        proctor_load[proctor_id] += 1
-        proctor_day_load[(proctor_id, day_number)] += 1
+        duration_minutes = end_m - start_m
+        proctor_load_minutes[proctor_id] += duration_minutes
+        proctor_day_load_minutes[(proctor_id, day_number)] += duration_minutes
+        proctor_assignment_count[proctor_id] += 1
 
     assignments = []
     for record in sorted(inactive_records, key=lambda item: (
@@ -360,9 +381,10 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
                 or (department in {"Junior High School", "Senior High School"} and "High School" in teacher_department)
             ) else 1
             candidates.append((
+                proctor_load_minutes[teacher_id],
+                proctor_day_load_minutes[(teacher_id, day_number)],
+                proctor_assignment_count[teacher_id],
                 department_penalty,
-                proctor_load[teacher_id],
-                proctor_day_load[(teacher_id, day_number)],
                 teacher["canonical_name"].lower(),
                 teacher,
             ))
@@ -378,11 +400,14 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
         record["proctor_id"] = selected["id"]
         record["proctor_status"] = "ACTIVE_ASSIGNED"
         record["proctor_department"] = selected.get("department", "Academic Faculty")
+        record["proctor_pool"] = "ACADEMIC_TEACHER_ONLY"
         record["proctor_assignment_source"] = "AUTO_ACADEMIC_COVERAGE"
         record["proctor_conflict_status"] = "CLEAR"
         busy[(selected["id"], day_number)].append((start_m, end_m, record["id"]))
-        proctor_load[selected["id"]] += 1
-        proctor_day_load[(selected["id"], day_number)] += 1
+        duration_minutes = end_m - start_m
+        proctor_load_minutes[selected["id"]] += duration_minutes
+        proctor_day_load_minutes[(selected["id"], day_number)] += duration_minutes
+        proctor_assignment_count[selected["id"]] += 1
         assignments.append({
             "exam_id": record["id"],
             "section": record["section_name"],
@@ -1203,6 +1228,7 @@ def write_outputs(records, audit):
         "proctor_id": record["proctor_id"],
         "proctor_status": record["proctor_status"],
         "proctor_department": record.get("proctor_department", ""),
+        "proctor_pool": record.get("proctor_pool", "SUBJECT_TEACHER"),
         "proctor_assignment_source": record.get("proctor_assignment_source", "SUBJECT_TEACHER"),
         "conflict_status": record.get("proctor_conflict_status", "CLEAR"),
     } for record in clean_records]

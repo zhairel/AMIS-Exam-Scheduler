@@ -22,6 +22,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -48,6 +49,7 @@
     "proctor_id": "tchr_katrina",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -74,6 +76,7 @@
     "proctor_id": "tchr_norhaima",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -100,6 +103,7 @@
     "proctor_id": "tchr_nof",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -126,6 +130,7 @@
     "proctor_id": "tchr_ersahad",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -152,6 +157,7 @@
     "proctor_id": "tchr_ayah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "ACADEMIC_TEACHER_ONLY",
     "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
     "conflict_status": "CLEAR"
   },
@@ -178,6 +184,7 @@
     "proctor_id": "tchr_halnaisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -204,6 +211,7 @@
     "proctor_id": "tchr_jessa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -230,6 +238,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -256,6 +265,7 @@
     "proctor_id": "tchr_fhairudz",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -282,6 +292,7 @@
     "proctor_id": "tchr_rowena",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -308,6 +319,7 @@
     "proctor_id": "tchr_mamonas",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -334,6 +346,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -360,6 +373,7 @@
     "proctor_id": "tchr_ersahad",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -386,6 +400,7 @@
     "proctor_id": "tchr_norhydie",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -412,6 +427,7 @@
     "proctor_id": "tchr_mamonas",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -438,6 +454,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -464,6 +481,7 @@
     "proctor_id": "tchr_sitti_kauzar",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -490,6 +508,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -516,6 +535,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -542,6 +562,7 @@
     "proctor_id": "tchr_junaisah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -568,6 +589,7 @@
     "proctor_id": "tchr_radzmia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -594,6 +616,7 @@
     "proctor_id": "tchr_jhelyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -620,6 +643,7 @@
     "proctor_id": "tchr_mohaymen",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -646,6 +670,7 @@
     "proctor_id": "tchr_wendy",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -672,6 +697,7 @@
     "proctor_id": "tchr_radzmia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -698,6 +724,7 @@
     "proctor_id": "tchr_jerlyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -724,6 +751,7 @@
     "proctor_id": "tchr_norhydie",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -750,6 +778,7 @@
     "proctor_id": "tchr_keychell",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -776,6 +805,7 @@
     "proctor_id": "tchr_halnaisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -802,6 +832,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -828,6 +859,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -854,6 +886,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -880,6 +913,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -906,6 +940,7 @@
     "proctor_id": "tchr_norhydie",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -932,6 +967,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -958,6 +994,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -984,6 +1021,7 @@
     "proctor_id": "tchr_abdulwahab",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1010,6 +1048,7 @@
     "proctor_id": "tchr_mohaymen",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1036,6 +1075,7 @@
     "proctor_id": "tchr_abdul_karim",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1062,6 +1102,7 @@
     "proctor_id": "tchr_sitti_kauzar",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1088,6 +1129,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1114,6 +1156,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1140,6 +1183,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1166,6 +1210,7 @@
     "proctor_id": "tchr_abdiraheem",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1192,6 +1237,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1218,6 +1264,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1244,6 +1291,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1270,6 +1318,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1296,6 +1345,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1322,6 +1372,7 @@
     "proctor_id": "tchr_halnaisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1348,6 +1399,7 @@
     "proctor_id": "tchr_shirehan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1374,6 +1426,7 @@
     "proctor_id": "tchr_norhaima",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1400,6 +1453,7 @@
     "proctor_id": "tchr_joanna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1426,6 +1480,7 @@
     "proctor_id": "tchr_ayah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1452,6 +1507,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1478,6 +1534,7 @@
     "proctor_id": "tchr_norhydie",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1504,6 +1561,7 @@
     "proctor_id": "tchr_abdulwahab",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1530,6 +1588,7 @@
     "proctor_id": "tchr_mamonas",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1556,6 +1615,7 @@
     "proctor_id": "tchr_radzmia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1582,6 +1642,7 @@
     "proctor_id": "tchr_sitti_kauzar",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1608,6 +1669,7 @@
     "proctor_id": "tchr_zuhora",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1630,10 +1692,11 @@
     "subject_teacher_status": "RESIGNED_INACTIVE",
     "replacement_teacher_required": true,
     "warning": "Teacher Normylah is inactive/resigned. Please assign a replacement teacher.",
-    "proctor": "Teacher Franchette",
-    "proctor_id": "tchr_franchette",
+    "proctor": "Teacher Wardah",
+    "proctor_id": "tchr_wardah",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_department": "Elementary / HS Faculty",
+    "proctor_department": "High School Faculty",
+    "proctor_pool": "ACADEMIC_TEACHER_ONLY",
     "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
     "conflict_status": "CLEAR"
   },
@@ -1660,6 +1723,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1686,6 +1750,7 @@
     "proctor_id": "tchr_halnaisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1712,6 +1777,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1738,6 +1804,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1764,6 +1831,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1790,6 +1858,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1816,6 +1885,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1842,6 +1912,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1868,6 +1939,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1894,6 +1966,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1920,6 +1993,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1946,6 +2020,7 @@
     "proctor_id": "tchr_nof",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1972,6 +2047,7 @@
     "proctor_id": "tchr_abdul_karim",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -1998,6 +2074,7 @@
     "proctor_id": "tchr_norhydie",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2024,6 +2101,7 @@
     "proctor_id": "tchr_jhelyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2050,6 +2128,7 @@
     "proctor_id": "tchr_mohaymen",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2076,6 +2155,7 @@
     "proctor_id": "tchr_norhaima",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2102,6 +2182,7 @@
     "proctor_id": "tchr_mamonas",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2128,6 +2209,7 @@
     "proctor_id": "tchr_sitti_kauzar",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2154,6 +2236,7 @@
     "proctor_id": "tchr_marham",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2180,6 +2263,7 @@
     "proctor_id": "tchr_jerlyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2206,6 +2290,7 @@
     "proctor_id": "tchr_jenny",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2232,6 +2317,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2258,6 +2344,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2284,6 +2371,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2310,6 +2398,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2336,6 +2425,7 @@
     "proctor_id": "tchr_abdiraheem",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2362,6 +2452,7 @@
     "proctor_id": "tchr_saimonah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2388,6 +2479,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2414,6 +2506,7 @@
     "proctor_id": "tchr_ersahad",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2440,6 +2533,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2466,6 +2560,7 @@
     "proctor_id": "tchr_joanna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2492,6 +2587,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2518,6 +2614,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2544,6 +2641,7 @@
     "proctor_id": "tchr_zuhora",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2570,6 +2668,7 @@
     "proctor_id": "tchr_junaisah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "ACADEMIC_TEACHER_ONLY",
     "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
     "conflict_status": "CLEAR"
   },
@@ -2596,6 +2695,7 @@
     "proctor_id": "tchr_fhairudz",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2622,6 +2722,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2648,6 +2749,7 @@
     "proctor_id": "tchr_aniah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2674,6 +2776,7 @@
     "proctor_id": "tchr_shirehan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2700,6 +2803,7 @@
     "proctor_id": "tchr_jairah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2726,6 +2830,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2752,6 +2857,7 @@
     "proctor_id": "tchr_halnaisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2778,6 +2884,7 @@
     "proctor_id": "tchr_abdulwahab",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2804,6 +2911,7 @@
     "proctor_id": "tchr_angeleni",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2830,6 +2938,7 @@
     "proctor_id": "tchr_nof",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2856,6 +2965,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2882,6 +2992,7 @@
     "proctor_id": "tchr_joanna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2908,6 +3019,7 @@
     "proctor_id": "tchr_abdulwahab",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2934,6 +3046,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2960,6 +3073,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -2986,6 +3100,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3012,6 +3127,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3038,6 +3154,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3064,6 +3181,7 @@
     "proctor_id": "tchr_jessa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3090,6 +3208,7 @@
     "proctor_id": "tchr_saimonah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3116,6 +3235,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3142,6 +3262,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3168,6 +3289,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3194,6 +3316,7 @@
     "proctor_id": "tchr_shirehan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3220,6 +3343,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3246,6 +3370,7 @@
     "proctor_id": "tchr_jairah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3272,6 +3397,7 @@
     "proctor_id": "tchr_nof",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3298,6 +3424,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3324,6 +3451,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3350,6 +3478,7 @@
     "proctor_id": "tchr_sitti_kauzar",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3376,6 +3505,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3402,6 +3532,7 @@
     "proctor_id": "tchr_nof",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3428,6 +3559,7 @@
     "proctor_id": "tchr_rowena",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3454,6 +3586,7 @@
     "proctor_id": "tchr_marham",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3480,6 +3613,7 @@
     "proctor_id": "tchr_jenny",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3506,6 +3640,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3532,6 +3667,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3558,6 +3694,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3584,6 +3721,7 @@
     "proctor_id": "tchr_jairah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3610,6 +3748,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3636,6 +3775,7 @@
     "proctor_id": "tchr_jessa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3662,6 +3802,7 @@
     "proctor_id": "tchr_zuhora",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3688,6 +3829,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3714,6 +3856,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3740,6 +3883,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3766,6 +3910,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3792,6 +3937,7 @@
     "proctor_id": "tchr_abdulwahab",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3818,6 +3964,7 @@
     "proctor_id": "tchr_joanna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3844,6 +3991,7 @@
     "proctor_id": "tchr_wendy",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3870,6 +4018,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3896,6 +4045,7 @@
     "proctor_id": "tchr_jhelyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3922,6 +4072,7 @@
     "proctor_id": "tchr_mohaymen",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3948,6 +4099,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -3974,6 +4126,7 @@
     "proctor_id": "tchr_marham",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4000,6 +4153,7 @@
     "proctor_id": "tchr_abdiraheem",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4026,6 +4180,7 @@
     "proctor_id": "tchr_fhairudz",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4052,6 +4207,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4078,6 +4234,7 @@
     "proctor_id": "tchr_shirehan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4104,6 +4261,7 @@
     "proctor_id": "tchr_abdulwahab",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4130,6 +4288,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4156,6 +4315,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4182,6 +4342,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4208,6 +4369,7 @@
     "proctor_id": "tchr_ethel",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4234,6 +4396,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4260,6 +4423,7 @@
     "proctor_id": "tchr_wendy",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4286,6 +4450,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4312,6 +4477,7 @@
     "proctor_id": "tchr_jessa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4338,6 +4504,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4364,6 +4531,7 @@
     "proctor_id": "tchr_franchette",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4390,6 +4558,7 @@
     "proctor_id": "tchr_nadzra",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4416,6 +4585,7 @@
     "proctor_id": "tchr_rowena",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4442,6 +4612,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4468,6 +4639,7 @@
     "proctor_id": "tchr_jessa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4494,6 +4666,7 @@
     "proctor_id": "tchr_rowena",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4520,6 +4693,7 @@
     "proctor_id": "tchr_aniah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4546,6 +4720,7 @@
     "proctor_id": "tchr_norhydie",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4572,6 +4747,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4598,6 +4774,7 @@
     "proctor_id": "tchr_jairah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4624,6 +4801,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4650,6 +4828,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4676,6 +4855,7 @@
     "proctor_id": "tchr_nof",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4702,6 +4882,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4728,6 +4909,7 @@
     "proctor_id": "tchr_katrina",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4754,6 +4936,7 @@
     "proctor_id": "tchr_rowena",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4780,6 +4963,7 @@
     "proctor_id": "tchr_shirehan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4806,6 +4990,7 @@
     "proctor_id": "tchr_aniah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4832,6 +5017,7 @@
     "proctor_id": "tchr_abdul_karim",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4858,6 +5044,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4884,6 +5071,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4910,6 +5098,7 @@
     "proctor_id": "tchr_jerlyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4936,6 +5125,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4962,6 +5152,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -4988,6 +5179,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5014,6 +5206,7 @@
     "proctor_id": "tchr_jessa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5040,6 +5233,7 @@
     "proctor_id": "tchr_keychell",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5066,6 +5260,7 @@
     "proctor_id": "tchr_fhairudz",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5092,6 +5287,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5118,6 +5314,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5144,6 +5341,7 @@
     "proctor_id": "tchr_jairah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5170,6 +5368,7 @@
     "proctor_id": "tchr_franchette",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5196,6 +5395,7 @@
     "proctor_id": "tchr_wardah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5222,6 +5422,7 @@
     "proctor_id": "tchr_nadzra",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5248,6 +5449,7 @@
     "proctor_id": "tchr_mamonas",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5274,6 +5476,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5300,6 +5503,7 @@
     "proctor_id": "tchr_joanna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5326,6 +5530,7 @@
     "proctor_id": "tchr_nof",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5352,6 +5557,7 @@
     "proctor_id": "tchr_nadzra",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5378,6 +5584,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5404,6 +5611,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5430,6 +5638,7 @@
     "proctor_id": "tchr_zuhora",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5456,6 +5665,7 @@
     "proctor_id": "tchr_zara",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5482,6 +5692,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5508,6 +5719,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5534,6 +5746,7 @@
     "proctor_id": "tchr_saimonah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5560,6 +5773,7 @@
     "proctor_id": "tchr_jenny",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5586,6 +5800,7 @@
     "proctor_id": "tchr_fhairudz",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5612,6 +5827,7 @@
     "proctor_id": "tchr_abdul_karim",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5638,6 +5854,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5664,6 +5881,7 @@
     "proctor_id": "tchr_katrina",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5690,6 +5908,7 @@
     "proctor_id": "tchr_halnaisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5716,6 +5935,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5742,6 +5962,7 @@
     "proctor_id": "tchr_franchette",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5768,6 +5989,7 @@
     "proctor_id": "tchr_jhelyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5794,6 +6016,7 @@
     "proctor_id": "tchr_joanna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5820,6 +6043,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5846,6 +6070,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5872,6 +6097,7 @@
     "proctor_id": "tchr_abdulwahab",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5898,6 +6124,7 @@
     "proctor_id": "tchr_norhaima",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5924,6 +6151,7 @@
     "proctor_id": "tchr_rowena",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5950,6 +6178,7 @@
     "proctor_id": "tchr_nadzra",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -5976,6 +6205,7 @@
     "proctor_id": "tchr_ethel",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6002,6 +6232,7 @@
     "proctor_id": "tchr_zuhora",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6028,6 +6259,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6054,6 +6286,7 @@
     "proctor_id": "tchr_abdul_karim",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6080,6 +6313,7 @@
     "proctor_id": "tchr_jenny",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6106,6 +6340,7 @@
     "proctor_id": "tchr_jerlyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6132,6 +6367,7 @@
     "proctor_id": "tchr_marham",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6158,6 +6394,7 @@
     "proctor_id": "tchr_ersahad",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6184,6 +6421,7 @@
     "proctor_id": "tchr_abdiraheem",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6210,6 +6448,7 @@
     "proctor_id": "tchr_norhydie",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6236,6 +6475,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6262,6 +6502,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6288,6 +6529,7 @@
     "proctor_id": "tchr_saimonah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6314,6 +6556,7 @@
     "proctor_id": "tchr_jairah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6340,6 +6583,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6366,6 +6610,7 @@
     "proctor_id": "tchr_keychell",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6392,6 +6637,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6418,6 +6664,7 @@
     "proctor_id": "tchr_jessa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6444,6 +6691,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6470,6 +6718,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6496,6 +6745,7 @@
     "proctor_id": "tchr_shirehan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6522,6 +6772,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6548,6 +6799,7 @@
     "proctor_id": "tchr_aniah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6574,6 +6826,7 @@
     "proctor_id": "tchr_radzmia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6600,6 +6853,7 @@
     "proctor_id": "tchr_halnaisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6626,6 +6880,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6652,6 +6907,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6678,6 +6934,7 @@
     "proctor_id": "tchr_angeleni",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6704,6 +6961,7 @@
     "proctor_id": "tchr_nadzra",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6730,6 +6988,7 @@
     "proctor_id": "tchr_jhelyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6756,6 +7015,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6782,6 +7042,7 @@
     "proctor_id": "tchr_abdul_karim",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6808,6 +7069,7 @@
     "proctor_id": "tchr_jenny",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6834,6 +7096,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6860,6 +7123,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6886,6 +7150,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6912,6 +7177,7 @@
     "proctor_id": "tchr_zuhora",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6938,6 +7204,7 @@
     "proctor_id": "tchr_ersahad",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6964,6 +7231,7 @@
     "proctor_id": "tchr_saimonah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -6990,6 +7258,7 @@
     "proctor_id": "tchr_norhydie",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7016,6 +7285,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7042,6 +7312,7 @@
     "proctor_id": "tchr_junaisah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "ACADEMIC_TEACHER_ONLY",
     "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
     "conflict_status": "CLEAR"
   },
@@ -7068,6 +7339,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7094,6 +7366,7 @@
     "proctor_id": "tchr_fhairudz",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7120,6 +7393,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7146,6 +7420,7 @@
     "proctor_id": "tchr_norhaima",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7172,6 +7447,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7198,6 +7474,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7224,6 +7501,7 @@
     "proctor_id": "tchr_ayah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7250,6 +7528,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7276,6 +7555,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7302,6 +7582,7 @@
     "proctor_id": "tchr_joanna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7328,6 +7609,7 @@
     "proctor_id": "tchr_katrina",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7354,6 +7636,7 @@
     "proctor_id": "tchr_bustamante",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7380,6 +7663,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7406,6 +7690,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7432,6 +7717,7 @@
     "proctor_id": "tchr_saimonah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7458,6 +7744,7 @@
     "proctor_id": "tchr_marham",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7484,6 +7771,7 @@
     "proctor_id": "tchr_jerlyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7510,6 +7798,7 @@
     "proctor_id": "tchr_halnaisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7536,6 +7825,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7562,6 +7852,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7588,6 +7879,7 @@
     "proctor_id": "tchr_jenny",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7614,6 +7906,7 @@
     "proctor_id": "tchr_jessa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7640,6 +7933,7 @@
     "proctor_id": "tchr_ayah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "ACADEMIC_TEACHER_ONLY",
     "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
     "conflict_status": "CLEAR"
   },
@@ -7666,6 +7960,7 @@
     "proctor_id": "tchr_abdiraheem",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7692,6 +7987,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7718,6 +8014,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7744,6 +8041,7 @@
     "proctor_id": "tchr_rowena",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7770,6 +8068,7 @@
     "proctor_id": "tchr_nadzra",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7796,6 +8095,7 @@
     "proctor_id": "tchr_abdiraheem",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7822,6 +8122,7 @@
     "proctor_id": "tchr_radzmia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7848,6 +8149,7 @@
     "proctor_id": "tchr_aniah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7874,6 +8176,7 @@
     "proctor_id": "tchr_sitti_kauzar",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7900,6 +8203,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7926,6 +8230,7 @@
     "proctor_id": "tchr_halnaisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7952,6 +8257,7 @@
     "proctor_id": "tchr_franchette",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -7978,6 +8284,7 @@
     "proctor_id": "tchr_jairah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8004,6 +8311,7 @@
     "proctor_id": "tchr_angeleni",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8030,6 +8338,7 @@
     "proctor_id": "tchr_nadzra",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8056,6 +8365,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8082,6 +8392,7 @@
     "proctor_id": "tchr_ayah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "ACADEMIC_TEACHER_ONLY",
     "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
     "conflict_status": "CLEAR"
   },
@@ -8108,6 +8419,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8134,6 +8446,7 @@
     "proctor_id": "tchr_nadzra",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8160,6 +8473,7 @@
     "proctor_id": "tchr_marham",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8186,6 +8500,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8212,6 +8527,7 @@
     "proctor_id": "tchr_junaisah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8238,6 +8554,7 @@
     "proctor_id": "tchr_ersahad",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8264,6 +8581,7 @@
     "proctor_id": "tchr_shirehan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8290,6 +8608,7 @@
     "proctor_id": "tchr_radzmia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8316,6 +8635,7 @@
     "proctor_id": "tchr_nof",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8342,6 +8662,7 @@
     "proctor_id": "tchr_abdulwahab",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8368,6 +8689,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8394,6 +8716,7 @@
     "proctor_id": "tchr_shirehan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8420,6 +8743,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8446,6 +8770,7 @@
     "proctor_id": "tchr_ersahad",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8472,6 +8797,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8498,6 +8824,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8524,6 +8851,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8550,6 +8878,7 @@
     "proctor_id": "tchr_norhaima",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8576,6 +8905,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8602,6 +8932,7 @@
     "proctor_id": "tchr_mamonas",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8628,6 +8959,7 @@
     "proctor_id": "tchr_jhelyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8654,6 +8986,7 @@
     "proctor_id": "tchr_nadzra",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8680,6 +9013,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8706,6 +9040,7 @@
     "proctor_id": "tchr_sitti_kauzar",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8732,6 +9067,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8758,6 +9094,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8784,6 +9121,7 @@
     "proctor_id": "tchr_jerlyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8810,6 +9148,7 @@
     "proctor_id": "tchr_zara",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "ACADEMIC_TEACHER_ONLY",
     "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
     "conflict_status": "CLEAR"
   },
@@ -8836,6 +9175,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8862,6 +9202,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8888,6 +9229,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8914,6 +9256,7 @@
     "proctor_id": "tchr_saimonah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8940,6 +9283,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8966,6 +9310,7 @@
     "proctor_id": "tchr_joanna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -8992,6 +9337,7 @@
     "proctor_id": "tchr_abdiraheem",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9018,6 +9364,7 @@
     "proctor_id": "tchr_jessa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9044,6 +9391,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9070,6 +9418,7 @@
     "proctor_id": "tchr_ethel",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9096,6 +9445,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9122,6 +9472,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9148,6 +9499,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9174,6 +9526,7 @@
     "proctor_id": "tchr_abdul_karim",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9200,6 +9553,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9226,6 +9580,7 @@
     "proctor_id": "tchr_rowena",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9252,6 +9607,7 @@
     "proctor_id": "tchr_mamonas",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9278,6 +9634,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9304,6 +9661,7 @@
     "proctor_id": "tchr_jerlyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9330,6 +9688,7 @@
     "proctor_id": "tchr_saimonah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9356,6 +9715,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9382,6 +9742,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9408,6 +9769,7 @@
     "proctor_id": "tchr_abdiraheem",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9434,6 +9796,7 @@
     "proctor_id": "tchr_jenny",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9460,6 +9823,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9486,6 +9850,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9512,6 +9877,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9538,6 +9904,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9564,6 +9931,7 @@
     "proctor_id": "tchr_aniah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9590,6 +9958,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9616,6 +9985,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9642,6 +10012,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9668,6 +10039,7 @@
     "proctor_id": "tchr_abdul_karim",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9694,6 +10066,7 @@
     "proctor_id": "tchr_mohaymen",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9720,6 +10093,7 @@
     "proctor_id": "tchr_mamonas",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9746,6 +10120,7 @@
     "proctor_id": "tchr_aniah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9772,6 +10147,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9798,6 +10174,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9824,6 +10201,7 @@
     "proctor_id": "tchr_zara",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9850,6 +10228,7 @@
     "proctor_id": "tchr_jenny",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9876,6 +10255,7 @@
     "proctor_id": "tchr_junaisah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "ACADEMIC_TEACHER_ONLY",
     "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
     "conflict_status": "CLEAR"
   },
@@ -9902,6 +10282,7 @@
     "proctor_id": "tchr_marham",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9928,6 +10309,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9954,6 +10336,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -9980,6 +10363,7 @@
     "proctor_id": "tchr_norhydie",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10006,6 +10390,7 @@
     "proctor_id": "tchr_zuhora",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10032,6 +10417,7 @@
     "proctor_id": "tchr_saimonah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10058,6 +10444,7 @@
     "proctor_id": "tchr_fhairudz",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10084,6 +10471,7 @@
     "proctor_id": "tchr_jessa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10110,6 +10498,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10136,6 +10525,7 @@
     "proctor_id": "tchr_keychell",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10162,6 +10552,7 @@
     "proctor_id": "tchr_ersahad",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10188,6 +10579,7 @@
     "proctor_id": "tchr_abdiraheem",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10214,6 +10606,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10240,6 +10633,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10266,6 +10660,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10292,6 +10687,7 @@
     "proctor_id": "tchr_ethel",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10318,6 +10714,7 @@
     "proctor_id": "tchr_jairah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10344,6 +10741,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10370,6 +10768,7 @@
     "proctor_id": "tchr_wardah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10396,6 +10795,7 @@
     "proctor_id": "tchr_radzmia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10422,6 +10822,7 @@
     "proctor_id": "tchr_jhelyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10448,6 +10849,7 @@
     "proctor_id": "tchr_abdulwahab",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10474,6 +10876,7 @@
     "proctor_id": "tchr_norhaima",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10500,6 +10903,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10526,6 +10930,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10552,6 +10957,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10578,6 +10984,7 @@
     "proctor_id": "tchr_angeleni",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10604,6 +11011,7 @@
     "proctor_id": "tchr_nadzra",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10630,6 +11038,7 @@
     "proctor_id": "tchr_abdul_karim",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10656,6 +11065,7 @@
     "proctor_id": "tchr_sitti_kauzar",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10682,6 +11092,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10708,6 +11119,7 @@
     "proctor_id": "tchr_ersahad",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10734,6 +11146,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10760,6 +11173,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10786,6 +11200,7 @@
     "proctor_id": "tchr_halnaisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10812,6 +11227,7 @@
     "proctor_id": "tchr_abdiraheem",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10838,6 +11254,7 @@
     "proctor_id": "tchr_norhydie",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10864,6 +11281,7 @@
     "proctor_id": "tchr_jenny",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10890,6 +11308,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10916,6 +11335,7 @@
     "proctor_id": "tchr_saimonah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10942,6 +11362,7 @@
     "proctor_id": "tchr_katrina",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10968,6 +11389,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -10994,6 +11416,7 @@
     "proctor_id": "tchr_fhairudz",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11020,6 +11443,7 @@
     "proctor_id": "tchr_mohaymen",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11046,6 +11470,7 @@
     "proctor_id": "tchr_bustamante",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11072,6 +11497,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11098,6 +11524,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11124,6 +11551,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11150,6 +11578,7 @@
     "proctor_id": "tchr_norhaima",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11176,6 +11605,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11202,6 +11632,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11228,6 +11659,7 @@
     "proctor_id": "tchr_jenny",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11250,10 +11682,11 @@
     "subject_teacher_status": "RESIGNED_INACTIVE",
     "replacement_teacher_required": true,
     "warning": "Teacher Normylah is inactive/resigned. Please assign a replacement teacher.",
-    "proctor": "Teacher Ayah",
-    "proctor_id": "tchr_ayah",
+    "proctor": "Teacher Wardah",
+    "proctor_id": "tchr_wardah",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_department": "Elementary Faculty",
+    "proctor_department": "High School Faculty",
+    "proctor_pool": "ACADEMIC_TEACHER_ONLY",
     "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
     "conflict_status": "CLEAR"
   },
@@ -11280,6 +11713,7 @@
     "proctor_id": "tchr_jerlyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11306,6 +11740,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11332,6 +11767,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11358,6 +11794,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11384,6 +11821,7 @@
     "proctor_id": "tchr_joanna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11410,6 +11848,7 @@
     "proctor_id": "tchr_jairah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11436,6 +11875,7 @@
     "proctor_id": "tchr_franchette",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11462,6 +11902,7 @@
     "proctor_id": "tchr_halnaisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11488,6 +11929,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11514,6 +11956,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11540,6 +11983,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11566,6 +12010,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11592,6 +12037,7 @@
     "proctor_id": "tchr_wendy",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11618,6 +12064,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11644,6 +12091,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11670,6 +12118,7 @@
     "proctor_id": "tchr_jerlyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11696,6 +12145,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11722,6 +12172,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11748,6 +12199,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11774,6 +12226,7 @@
     "proctor_id": "tchr_mamonas",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11800,6 +12253,7 @@
     "proctor_id": "tchr_jhelyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11826,6 +12280,7 @@
     "proctor_id": "tchr_keychell",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11852,6 +12307,7 @@
     "proctor_id": "tchr_abdiraheem",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11878,6 +12334,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11904,6 +12361,7 @@
     "proctor_id": "tchr_nadzra",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11930,6 +12388,7 @@
     "proctor_id": "tchr_dipatuan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11956,6 +12415,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -11982,6 +12442,7 @@
     "proctor_id": "tchr_ersahad",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12008,6 +12469,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12034,6 +12496,7 @@
     "proctor_id": "tchr_norhydie",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12060,6 +12523,7 @@
     "proctor_id": "tchr_fhairudz",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12086,6 +12550,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12112,6 +12577,7 @@
     "proctor_id": "tchr_mohaymen",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12138,6 +12604,7 @@
     "proctor_id": "tchr_zuhora",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12164,6 +12631,7 @@
     "proctor_id": "tchr_dipatuan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12190,6 +12658,7 @@
     "proctor_id": "tchr_mamonas",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12216,6 +12685,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12242,6 +12712,7 @@
     "proctor_id": "tchr_jairah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12268,6 +12739,7 @@
     "proctor_id": "tchr_halnaisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12294,6 +12766,7 @@
     "proctor_id": "tchr_norhaima",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12320,6 +12793,7 @@
     "proctor_id": "tchr_angeleni",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12346,6 +12820,7 @@
     "proctor_id": "tchr_katrina",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12372,6 +12847,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12398,6 +12874,7 @@
     "proctor_id": "tchr_angeleni",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12424,6 +12901,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12450,6 +12928,7 @@
     "proctor_id": "tchr_nof",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12476,6 +12955,7 @@
     "proctor_id": "tchr_marham",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12502,6 +12982,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12528,6 +13009,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12554,6 +13036,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12580,6 +13063,7 @@
     "proctor_id": "tchr_halnaisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12606,6 +13090,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12632,6 +13117,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12658,6 +13144,7 @@
     "proctor_id": "tchr_jenny",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12684,6 +13171,7 @@
     "proctor_id": "tchr_abdul_karim",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12710,6 +13198,7 @@
     "proctor_id": "tchr_jessa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12732,10 +13221,11 @@
     "subject_teacher_status": "RESIGNED_INACTIVE",
     "replacement_teacher_required": true,
     "warning": "Teacher Normylah is inactive/resigned. Please assign a replacement teacher.",
-    "proctor": "Teacher Zara",
-    "proctor_id": "tchr_zara",
+    "proctor": "Teacher Wardah",
+    "proctor_id": "tchr_wardah",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_department": "Elementary Faculty",
+    "proctor_department": "High School Faculty",
+    "proctor_pool": "ACADEMIC_TEACHER_ONLY",
     "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
     "conflict_status": "CLEAR"
   },
@@ -12762,6 +13252,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12788,6 +13279,7 @@
     "proctor_id": "tchr_ethel",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12814,6 +13306,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12840,6 +13333,7 @@
     "proctor_id": "tchr_jairah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12866,6 +13360,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12892,6 +13387,7 @@
     "proctor_id": "tchr_bustamante",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12918,6 +13414,7 @@
     "proctor_id": "tchr_jhelyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12944,6 +13441,7 @@
     "proctor_id": "tchr_dipatuan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12970,6 +13468,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -12996,6 +13495,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13022,6 +13522,7 @@
     "proctor_id": "tchr_marham",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13048,6 +13549,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13074,6 +13576,7 @@
     "proctor_id": "tchr_jerlyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13100,6 +13603,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13126,6 +13630,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13152,6 +13657,7 @@
     "proctor_id": "tchr_saimonah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13178,6 +13684,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13204,6 +13711,7 @@
     "proctor_id": "tchr_jairah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13230,6 +13738,7 @@
     "proctor_id": "tchr_katrina",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13256,6 +13765,7 @@
     "proctor_id": "tchr_zuhora",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13282,6 +13792,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13308,6 +13819,7 @@
     "proctor_id": "tchr_fhairudz",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13334,6 +13846,7 @@
     "proctor_id": "tchr_rowena",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13360,6 +13873,7 @@
     "proctor_id": "tchr_abdulwahab",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13386,6 +13900,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13412,6 +13927,7 @@
     "proctor_id": "tchr_abdul_karim",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13438,6 +13954,7 @@
     "proctor_id": "tchr_norhydie",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13464,6 +13981,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13490,6 +14008,7 @@
     "proctor_id": "tchr_mamonas",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13516,6 +14035,7 @@
     "proctor_id": "tchr_nadzra",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13542,6 +14062,7 @@
     "proctor_id": "tchr_shirehan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13568,6 +14089,7 @@
     "proctor_id": "tchr_saliha",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13594,6 +14116,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13620,6 +14143,7 @@
     "proctor_id": "tchr_sitti_kauzar",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13646,6 +14170,7 @@
     "proctor_id": "tchr_jerlyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13672,6 +14197,7 @@
     "proctor_id": "tchr_zara",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13698,6 +14224,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13724,6 +14251,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13750,6 +14278,7 @@
     "proctor_id": "tchr_abdiraheem",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13776,6 +14305,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13802,6 +14332,7 @@
     "proctor_id": "tchr_jenny",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13828,6 +14359,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13854,6 +14386,7 @@
     "proctor_id": "tchr_saimonah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13880,6 +14413,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13906,6 +14440,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13932,6 +14467,7 @@
     "proctor_id": "tchr_joanna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13958,6 +14494,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -13984,6 +14521,7 @@
     "proctor_id": "tchr_ersahad",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14010,6 +14548,7 @@
     "proctor_id": "tchr_jessa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14036,6 +14575,7 @@
     "proctor_id": "tchr_franchette",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14062,6 +14602,7 @@
     "proctor_id": "tchr_jairah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14088,6 +14629,7 @@
     "proctor_id": "tchr_sophia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14114,6 +14656,7 @@
     "proctor_id": "tchr_wardah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14140,6 +14683,7 @@
     "proctor_id": "tchr_radzmia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14166,6 +14710,7 @@
     "proctor_id": "tchr_angeleni",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14192,6 +14737,7 @@
     "proctor_id": "tchr_mohaymen",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14218,6 +14764,7 @@
     "proctor_id": "tchr_rowena",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14244,6 +14791,7 @@
     "proctor_id": "tchr_dipatuan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14270,6 +14818,7 @@
     "proctor_id": "tchr_sahdia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14296,6 +14845,7 @@
     "proctor_id": "tchr_abdul_karim",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14322,6 +14872,7 @@
     "proctor_id": "tchr_rowena",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14348,6 +14899,7 @@
     "proctor_id": "tchr_radzmia",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14374,6 +14926,7 @@
     "proctor_id": "tchr_sitti_kauzar",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14400,6 +14953,7 @@
     "proctor_id": "tchr_marham",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14426,6 +14980,7 @@
     "proctor_id": "tchr_jenny",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14452,6 +15007,7 @@
     "proctor_id": "tchr_ersahad",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14478,6 +15034,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14504,6 +15061,7 @@
     "proctor_id": "tchr_arvin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14530,6 +15088,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14556,6 +15115,7 @@
     "proctor_id": "tchr_saimonah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14582,6 +15142,7 @@
     "proctor_id": "tchr_fhairudz",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14608,6 +15169,7 @@
     "proctor_id": "tchr_junaisah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "ACADEMIC_TEACHER_ONLY",
     "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
     "conflict_status": "CLEAR"
   },
@@ -14634,6 +15196,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14660,6 +15223,7 @@
     "proctor_id": "tchr_halnaisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14686,6 +15250,7 @@
     "proctor_id": "tchr_franchette",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14712,6 +15277,7 @@
     "proctor_id": "tchr_shirehan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14738,6 +15304,7 @@
     "proctor_id": "tchr_nadzra",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14764,6 +15331,7 @@
     "proctor_id": "tchr_jhelyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14790,6 +15358,7 @@
     "proctor_id": "tchr_wendy",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14816,6 +15385,7 @@
     "proctor_id": "tchr_silfah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14842,6 +15412,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14868,6 +15439,7 @@
     "proctor_id": "tchr_katrina",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14894,6 +15466,7 @@
     "proctor_id": "tchr_norhaima",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14920,6 +15493,7 @@
     "proctor_id": "tchr_samsuddin",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14946,6 +15520,7 @@
     "proctor_id": "tchr_obaydah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14972,6 +15547,7 @@
     "proctor_id": "tchr_jerlyn",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -14998,6 +15574,7 @@
     "proctor_id": "tchr_zara",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -15024,6 +15601,7 @@
     "proctor_id": "tchr_ali",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -15050,6 +15628,7 @@
     "proctor_id": "tchr_monisa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -15076,6 +15655,7 @@
     "proctor_id": "tchr_jenny",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -15102,6 +15682,7 @@
     "proctor_id": "tchr_anna",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -15128,6 +15709,7 @@
     "proctor_id": "tchr_jessa",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -15154,6 +15736,7 @@
     "proctor_id": "tchr_hainur",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -15180,6 +15763,7 @@
     "proctor_id": "tchr_keychell",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary Faculty",
+    "proctor_pool": "ACADEMIC_TEACHER_ONLY",
     "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
     "conflict_status": "CLEAR"
   },
@@ -15206,6 +15790,7 @@
     "proctor_id": "tchr_jaisam",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -15232,6 +15817,7 @@
     "proctor_id": "tchr_shirehan",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -15258,6 +15844,7 @@
     "proctor_id": "tchr_franchette",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -15284,6 +15871,7 @@
     "proctor_id": "tchr_angeleni",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "Elementary / HS Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   },
@@ -15310,6 +15898,7 @@
     "proctor_id": "tchr_faidh",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "ISAL Faculty",
+    "proctor_pool": "SUBJECT_TEACHER",
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "conflict_status": "CLEAR"
   }
