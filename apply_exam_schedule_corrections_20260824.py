@@ -311,6 +311,8 @@ def is_active_academic_teacher(teacher):
         and teacher.get("status", "active") != "inactive"
         and teacher.get("employment_status", "active") != "resigned"
         and teacher.get("is_active", True)
+        and teacher.get("automatic_proctor_eligible", True)
+        and not clean(teacher.get("leadership_role"))
         and teacher["id"] not in INACTIVE_TEACHER_IDS
     )
 

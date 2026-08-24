@@ -81,6 +81,9 @@ def main():
         )
         assert proctor.get("status", "active") != "inactive"
         assert proctor.get("is_active", True)
+        assert proctor.get("automatic_proctor_eligible", True)
+        assert not correction.clean(proctor.get("leadership_role"))
+        assert record["proctor_id"] != "tchr_wardah"
         assert record["proctor_pool"] == "ACADEMIC_TEACHER_ONLY"
 
     expected_normylah_positions = {

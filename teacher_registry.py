@@ -363,6 +363,8 @@ TEACHER_REGISTRY = [
         "canonical_name": "Teacher Wardah",
         "department": "High School Faculty",
         "title": "Faculty Member",
+        "leadership_role": "Principal",
+        "automatic_proctor_eligible": False,
         "aliases": ["teacher wardah", "tchr. wardah", "tchr wardah", "wardah", "warda", "tr. wardah"]
     },
     {
