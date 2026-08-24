@@ -1,0 +1,847 @@
+{
+  "removed": [
+    {
+      "reason": "non-exam subject removed",
+      "record": {
+        "id": "exam_421",
+        "exam_term": "1st Term",
+        "day_number": 3,
+        "date": "Sunday, September 6, 2026",
+        "short_date": "Sep 6",
+        "day_name": "Sunday",
+        "slot_number": 3,
+        "slots_spanned": 1,
+        "start_slot_index": 2,
+        "end_slot_index": 2,
+        "start_m": 910,
+        "end_m": 970,
+        "time_slot": "03:10 PM – 04:10 PM",
+        "time": "03:10 PM – 04:10 PM",
+        "section_id": "sec_grade_12_abu_musa_al_ashari",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "department": "Senior High School",
+        "grade": "Grade 12",
+        "grade_level": "Grade 12",
+        "shift": "ODL - 1ST SHIFT",
+        "modality": "ODL",
+        "gender": "MIXED",
+        "subject_id": "subj_research_consulatation",
+        "subject": "Research Consulatation",
+        "teacher_id": "tchr_assigned_faculty",
+        "teacher": "Assigned Faculty",
+        "duration_minutes": 60,
+        "teacher_status": "VERIFIED"
+      }
+    },
+    {
+      "reason": "duplicate LCS 11 first entry removed",
+      "record": {
+        "id": "exam_423",
+        "exam_term": "1st Term",
+        "day_number": 3,
+        "date": "Sunday, September 6, 2026",
+        "short_date": "Sep 6",
+        "day_name": "Sunday",
+        "slot_number": 1,
+        "slots_spanned": 1,
+        "start_slot_index": 0,
+        "end_slot_index": 0,
+        "start_m": 910,
+        "end_m": 970,
+        "time_slot": "03:10 PM – 04:10 PM",
+        "time": "03:10 PM – 04:10 PM",
+        "section_id": "sec_grade_11_2nd_shift_boys",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+        "department": "Senior High School",
+        "grade": "Grade 11",
+        "grade_level": "Grade 11",
+        "shift": "ODL - 2ND SHIFT",
+        "modality": "ODL",
+        "gender": "MIXED",
+        "subject_id": "subj_lcs_11_2nd_shift",
+        "subject": "LCS 11 2nd shift",
+        "teacher_id": "tchr_assigned_faculty",
+        "teacher": "Assigned Faculty",
+        "duration_minutes": 60,
+        "teacher_status": "VERIFIED"
+      }
+    },
+    {
+      "reason": "non-exam subject removed",
+      "record": {
+        "id": "exam_558",
+        "exam_term": "1st Term",
+        "day_number": 4,
+        "date": "Monday, September 7, 2026",
+        "short_date": "Sep 7",
+        "day_name": "Monday",
+        "slot_number": 1,
+        "slots_spanned": 1,
+        "start_slot_index": 0,
+        "end_slot_index": 0,
+        "start_m": 480,
+        "end_m": 540,
+        "time_slot": "08:00 AM – 09:00 AM",
+        "time": "08:00 AM – 09:00 AM",
+        "section_id": "sec_grade_12_suhayb_ar_rumi",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+        "department": "Senior High School",
+        "grade": "Grade 12",
+        "grade_level": "Grade 12",
+        "shift": "F2F",
+        "modality": "F2F",
+        "gender": "MIXED",
+        "subject_id": "subj_research_consultation",
+        "subject": "Research Consultation",
+        "teacher_id": "tchr_assigned_faculty",
+        "teacher": "Assigned Faculty",
+        "duration_minutes": 60,
+        "teacher_status": "VERIFIED"
+      }
+    },
+    {
+      "reason": "duplicate Grade 3 As'ad Filipino entry removed",
+      "record": {
+        "id": "exam_182",
+        "exam_term": "1st Term",
+        "day_number": 2,
+        "date": "Thursday, September 3, 2026",
+        "short_date": "Sep 3",
+        "day_name": "Thursday",
+        "slot_number": 2,
+        "slots_spanned": 1,
+        "start_slot_index": 1,
+        "end_slot_index": 1,
+        "start_m": 980,
+        "end_m": 1040,
+        "time_slot": "04:20 PM – 05:20 PM",
+        "time": "04:20 PM – 05:20 PM",
+        "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "section_name": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "department": "Elementary",
+        "grade": "Grade 3",
+        "grade_level": "Grade 3",
+        "shift": "ODL - 2ND SHIFT",
+        "modality": "ODL",
+        "gender": "MIXED",
+        "subject_id": "subj_fil3",
+        "subject": "Fil3",
+        "teacher_id": "tchr_jenny",
+        "teacher": "Teacher Jenny",
+        "duration_minutes": 60,
+        "teacher_status": "VERIFIED",
+        "_added": false,
+        "_original_day": 2,
+        "_original_start_m": 980
+      }
+    }
+  ],
+  "renamed": [
+    {
+      "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+      "from": "Social Science",
+      "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+      "from": "Science",
+      "to": "Social Studies"
+    },
+    {
+      "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+      "from": "Social Science",
+      "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+      "from": "Social Science",
+      "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+      "from": "Social Science",
+      "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+      "from": "Social Science",
+      "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "from": "Social Science",
+      "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+      "from": "Social Science",
+      "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+      "from": "Social Science",
+      "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+      "from": "Social Science",
+      "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+      "from": "Social Science",
+      "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+      "from": "Social Science",
+      "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+      "from": "Social Science",
+      "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+      "from": "Social Science",
+      "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+      "from": "Science",
+      "to": "Social Studies"
+    },
+    {
+      "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+      "from": "Social Science",
+      "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+      "from": "Science",
+      "to": "Social Studies"
+    },
+    {
+      "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+      "from": "Social Science",
+      "to": "MAPEH"
+    }
+  ],
+  "added": [
+    {
+      "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+      "subject": "Social Studies"
+    },
+    {
+      "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+      "subject": "Social Studies"
+    },
+    {
+      "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+      "subject": "Social Science"
+    },
+    {
+      "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+      "subject": "Social Science"
+    },
+    {
+      "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+      "subject": "Social Studies"
+    },
+    {
+      "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+      "subject": "Social Studies"
+    },
+    {
+      "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+      "subject": "Science"
+    },
+    {
+      "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+      "subject": "Social Science"
+    },
+    {
+      "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+      "subject": "Social Science"
+    },
+    {
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "subject": "Social Studies"
+    },
+    {
+      "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+      "subject": "Science"
+    },
+    {
+      "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+      "subject": "Science"
+    },
+    {
+      "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+      "subject": "Social Science"
+    },
+    {
+      "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+      "subject": "Social Science"
+    },
+    {
+      "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+      "subject": "Social Science"
+    },
+    {
+      "section": "GRADE 11 (FACE TO FACE)",
+      "subject": "Mabisang Komunikasyon"
+    },
+    {
+      "section": "GRADE 11 (1ST SHIFT GIRLS)",
+      "subject": "Mabisang Komunikasyon"
+    },
+    {
+      "section": "GRADE 11 (2ND SHIFT BOYS)",
+      "subject": "Mabisang Komunikasyon"
+    },
+    {
+      "section": "GRADE 4 (FACE TO FACE)",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+      "subject": "MAPEH"
+    }
+  ],
+  "teacher_relinks": [
+    {
+      "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+      "subject": "SHAF",
+      "from": "Ustadh Hainur",
+      "to": "Ustadh Raslina"
+    },
+    {
+      "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+      "subject": "SHAF",
+      "from": "Alim Bustamante",
+      "to": "Alim Abdul Karim"
+    },
+    {
+      "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+      "subject": "SHAF",
+      "from": "Ustadh Hainur",
+      "to": "Ustadh Raslina"
+    },
+    {
+      "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+      "subject": "Arabic",
+      "from": "Ustadh Hainur",
+      "to": "Ustadh Raslina"
+    },
+    {
+      "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+      "subject": "Social Studies",
+      "from": "Assigned Faculty",
+      "to": "Teacher Shirehan"
+    },
+    {
+      "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+      "subject": "Social Studies",
+      "from": "Assigned Faculty",
+      "to": "Teacher Shirehan"
+    },
+    {
+      "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+      "subject": "Social Science",
+      "from": "Assigned Faculty",
+      "to": "Teacher Sophia"
+    },
+    {
+      "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+      "subject": "Social Science",
+      "from": "Assigned Faculty",
+      "to": "Teacher Sophia"
+    },
+    {
+      "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+      "subject": "Social Studies",
+      "from": "Assigned Faculty",
+      "to": "Teacher Shirehan"
+    },
+    {
+      "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+      "subject": "Social Studies",
+      "from": "Assigned Faculty",
+      "to": "Teacher Shirehan"
+    },
+    {
+      "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+      "subject": "Social Science",
+      "from": "Assigned Faculty",
+      "to": "Teacher Sophia"
+    },
+    {
+      "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+      "subject": "Social Science",
+      "from": "Assigned Faculty",
+      "to": "Teacher Sophia"
+    },
+    {
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "subject": "Social Studies",
+      "from": "Assigned Faculty",
+      "to": "Teacher Shirehan"
+    },
+    {
+      "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+      "subject": "Social Science",
+      "from": "Assigned Faculty",
+      "to": "Teacher Sophia"
+    },
+    {
+      "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+      "subject": "Social Science",
+      "from": "Assigned Faculty",
+      "to": "Teacher Sophia"
+    },
+    {
+      "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+      "subject": "Social Science",
+      "from": "Assigned Faculty",
+      "to": "Teacher Sophia"
+    }
+  ],
+  "unresolved_official_teacher_links": [],
+  "known_sections": 64,
+  "source_exam_count": 564,
+  "source_duration_counts": {
+    "60": 539,
+    "120": 25
+  },
+  "moved": [
+    {
+      "id": "exam_3",
+      "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 1,
+      "from_start_m": 980,
+      "to_day": 1,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_17",
+      "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 1,
+      "from_start_m": 910,
+      "to_day": 1,
+      "to_start_m": 1050
+    },
+    {
+      "id": "exam_26",
+      "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 1,
+      "from_start_m": 910,
+      "to_day": 1,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_34",
+      "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+      "subject": "Qur'an",
+      "from_day": 1,
+      "from_start_m": 830,
+      "to_day": 1,
+      "to_start_m": 760
+    },
+    {
+      "id": "exam_37",
+      "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+      "subject": "Arabic",
+      "from_day": 1,
+      "from_start_m": 980,
+      "to_day": 2,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_40",
+      "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+      "subject": "GMRC",
+      "from_day": 1,
+      "from_start_m": 980,
+      "to_day": 2,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_77",
+      "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+      "subject": "GMRC",
+      "from_day": 1,
+      "from_start_m": 1050,
+      "to_day": 1,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_78",
+      "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+      "subject": "Qur'an",
+      "from_day": 1,
+      "from_start_m": 910,
+      "to_day": 3,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_82",
+      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+      "subject": "SHAF",
+      "from_day": 1,
+      "from_start_m": 760,
+      "to_day": 3,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_111",
+      "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+      "subject": "Qur'an",
+      "from_day": 1,
+      "from_start_m": 760,
+      "to_day": 1,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_112",
+      "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+      "subject": "MAPEH",
+      "from_day": 1,
+      "from_start_m": 830,
+      "to_day": 1,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_138",
+      "section": "GRADE 11 (2ND SHIFT BOYS)",
+      "subject": "Arabic",
+      "from_day": 1,
+      "from_start_m": 980,
+      "to_day": 2,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_139",
+      "section": "GRADE 11 (2ND SHIFT BOYS)",
+      "subject": "Qur'an",
+      "from_day": 1,
+      "from_start_m": 910,
+      "to_day": 1,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_142",
+      "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+      "subject": "Hadith",
+      "from_day": 2,
+      "from_start_m": 950,
+      "to_day": 2,
+      "to_start_m": 810
+    },
+    {
+      "id": "exam_144",
+      "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+      "subject": "Hadith",
+      "from_day": 2,
+      "from_start_m": 980,
+      "to_day": 3,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_183",
+      "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+      "subject": "Qur'an",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 2,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_213",
+      "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 2,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_241",
+      "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+      "subject": "Science",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 1,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_246",
+      "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+      "subject": "SHAF",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 3,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_258",
+      "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+      "subject": "Arabic",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 2,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_260",
+      "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+      "subject": "Filipino",
+      "from_day": 2,
+      "from_start_m": 980,
+      "to_day": 4,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_267",
+      "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+      "subject": "Arabic",
+      "from_day": 2,
+      "from_start_m": 980,
+      "to_day": 3,
+      "to_start_m": 1050
+    },
+    {
+      "id": "exam_308",
+      "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+      "subject": "Arabic",
+      "from_day": 3,
+      "from_start_m": 980,
+      "to_day": 3,
+      "to_start_m": 1050
+    },
+    {
+      "id": "exam_309",
+      "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+      "subject": "SHAF",
+      "from_day": 3,
+      "from_start_m": 1050,
+      "to_day": 3,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_310",
+      "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+      "subject": "GMRC",
+      "from_day": 3,
+      "from_start_m": 1050,
+      "to_day": 4,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_311",
+      "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+      "subject": "SHAF",
+      "from_day": 3,
+      "from_start_m": 910,
+      "to_day": 3,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_321",
+      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+      "subject": "Qur'an",
+      "from_day": 3,
+      "from_start_m": 980,
+      "to_day": 4,
+      "to_start_m": 1050
+    },
+    {
+      "id": "exam_332",
+      "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+      "subject": "Math",
+      "from_day": 3,
+      "from_start_m": 830,
+      "to_day": 2,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_367",
+      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+      "subject": "Arabic",
+      "from_day": 3,
+      "from_start_m": 830,
+      "to_day": 1,
+      "to_start_m": 760
+    },
+    {
+      "id": "exam_374",
+      "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+      "subject": "Arabic",
+      "from_day": 3,
+      "from_start_m": 910,
+      "to_day": 4,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_378",
+      "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+      "subject": "Arabic",
+      "from_day": 3,
+      "from_start_m": 540,
+      "to_day": 3,
+      "to_start_m": 625
+    },
+    {
+      "id": "exam_389",
+      "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+      "subject": "Arabic",
+      "from_day": 3,
+      "from_start_m": 910,
+      "to_day": 3,
+      "to_start_m": 760
+    },
+    {
+      "id": "exam_408",
+      "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+      "subject": "Arabic",
+      "from_day": 3,
+      "from_start_m": 1050,
+      "to_day": 4,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_414",
+      "section": "GRADE 12 - SUHAYB AR-RUMI",
+      "subject": "PE 12",
+      "from_day": 1,
+      "from_start_m": 625,
+      "to_day": 2,
+      "to_start_m": 480
+    },
+    {
+      "id": "exam_415",
+      "section": "GRADE 12 - SUHAYB AR-RUMI",
+      "subject": "Gen Bio 1",
+      "from_day": 3,
+      "from_start_m": 625,
+      "to_day": 1,
+      "to_start_m": 625
+    },
+    {
+      "id": "exam_416",
+      "section": "GRADE 11 (1ST SHIFT GIRLS)",
+      "subject": "SHAF",
+      "from_day": 3,
+      "from_start_m": 760,
+      "to_day": 3,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_447",
+      "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+      "subject": "GMRC",
+      "from_day": 4,
+      "from_start_m": 910,
+      "to_day": 4,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_448",
+      "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 4,
+      "from_start_m": 830,
+      "to_day": 4,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_450",
+      "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+      "subject": "GMRC",
+      "from_day": 4,
+      "from_start_m": 1050,
+      "to_day": 4,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_473",
+      "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 4,
+      "from_start_m": 760,
+      "to_day": 3,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_516",
+      "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+      "subject": "Araling Panlipunan",
+      "from_day": 4,
+      "from_start_m": 910,
+      "to_day": 4,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_529",
+      "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+      "subject": "Qur'an",
+      "from_day": 4,
+      "from_start_m": 910,
+      "to_day": 4,
+      "to_start_m": 760
+    },
+    {
+      "id": "exam_530",
+      "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+      "subject": "Filipino",
+      "from_day": 4,
+      "from_start_m": 760,
+      "to_day": 4,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_552",
+      "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+      "subject": "English",
+      "from_day": 4,
+      "from_start_m": 910,
+      "to_day": 4,
+      "to_start_m": 1050
+    },
+    {
+      "id": "exam_563",
+      "section": "GRADE 11 (2ND SHIFT BOYS)",
+      "subject": "SHAF",
+      "from_day": 4,
+      "from_start_m": 1050,
+      "to_day": 1,
+      "to_start_m": 910
+    }
+  ],
+  "final_exam_count": 583,
+  "duration_counts": {
+    "60": 558,
+    "120": 25
+  },
+  "teacher_count": 53
+}
