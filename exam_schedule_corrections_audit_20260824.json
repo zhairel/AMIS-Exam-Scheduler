@@ -1961,6 +1961,15 @@
       "from_start_m": 980,
       "to_day": 1,
       "to_start_m": 1050
+    },
+    {
+      "id": "exam_582",
+      "section": "GRADE 11 (1ST SHIFT GIRLS)",
+      "subject": "Mabisang Komunikasyon",
+      "from_day": 3,
+      "from_start_m": 910,
+      "to_day": 3,
+      "to_start_m": 760
     }
   ],
   "teacher_accommodations": [
@@ -2033,6 +2042,11 @@
       "teacher": "All ODL sections",
       "request": "Use the official shift time allocation and remove premature examination periods",
       "result": "ODL 1st Shift now uses 12:40, 01:50, and 03:10; ODL 2nd Shift uses 03:10, 04:20, and 05:30; F2F and Kinder 2 special grids are unchanged"
+    },
+    {
+      "teacher": "Grade 11 (1st Shift Girls)",
+      "request": "Move Mabisang Komunikasyon to Sunday at 12:40 PM to reduce the Wednesday exam load",
+      "result": "Mabisang Komunikasyon is fixed on Sep 6 at 12:40 PM with Teacher Nadzra; the section and teacher remain conflict-free"
     },
     {
       "teacher": "Qualified exam coverage",

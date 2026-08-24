@@ -56,6 +56,17 @@ def main():
     mabisang = [record for record in grade11 if correction.subject_key(record["subject"]) == "mabisang_komunikasyon"]
     assert len(mabisang) == 3
     assert all(record["teacher_id"] == "tchr_nadzra" for record in mabisang)
+    g11_girls_mabisang = get_one(
+        records,
+        lambda record: section_has(record, "GRADE 11", "1ST SHIFT GIRLS")
+        and correction.subject_key(record["subject"]) == "mabisang_komunikasyon",
+        "Grade 11 Girls Mabisang Komunikasyon exam",
+    )
+    assert (
+        g11_girls_mabisang["day_number"],
+        g11_girls_mabisang["start_m"],
+        g11_girls_mabisang["end_m"],
+    ) == (3, 760, 820)
 
     suhayb_bio = get_one(
         records,

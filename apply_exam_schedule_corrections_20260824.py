@@ -491,6 +491,10 @@ def fixed_position(record):
         return 3, 910
     if record.get("id") == "exam_310":
         return 4, 910
+    # Grade 11 Girls: place Mabisang Komunikasyon in Sunday's first period so
+    # the section does not carry four examinations on Wednesday.
+    if record.get("id") == "exam_582":
+        return 3, 760
     # Keep Suhayb Biology on its requested Wednesday slot. Grade 11 F2F Biology
     # may move when needed so the shared official teacher is never double-booked.
     if is_fixed_suhayb_biology(record):
@@ -867,6 +871,11 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "All ODL sections",
             "request": "Use the official shift time allocation and remove premature examination periods",
             "result": "ODL 1st Shift now uses 12:40, 01:50, and 03:10; ODL 2nd Shift uses 03:10, 04:20, and 05:30; F2F and Kinder 2 special grids are unchanged",
+        },
+        {
+            "teacher": "Grade 11 (1st Shift Girls)",
+            "request": "Move Mabisang Komunikasyon to Sunday at 12:40 PM to reduce the Wednesday exam load",
+            "result": "Mabisang Komunikasyon is fixed on Sep 6 at 12:40 PM with Teacher Nadzra; the section and teacher remain conflict-free",
         },
         {
             "teacher": "Qualified exam coverage",
