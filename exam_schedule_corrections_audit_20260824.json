@@ -1247,6 +1247,33 @@
       "from_start_m": 1050,
       "to_day": 4,
       "to_start_m": 830
+    },
+    {
+      "id": "exam_575",
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "subject": "Social Studies",
+      "from_day": 1,
+      "from_start_m": 910,
+      "to_day": 1,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_241",
+      "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+      "subject": "Science",
+      "from_day": 1,
+      "from_start_m": 910,
+      "to_day": 2,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_541",
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "subject": "Science",
+      "from_day": 4,
+      "from_start_m": 980,
+      "to_day": 1,
+      "to_start_m": 910
     }
   ],
   "teacher_accommodations": [
@@ -1274,6 +1301,11 @@
       "teacher": "Ustadha Hainur",
       "request": "Correct honorific from Ustadh to Ustadha",
       "result": "Canonical teacher name corrected to Ustadha Hainur across exam outputs"
+    },
+    {
+      "teacher": "Teacher Aniah",
+      "request": "Keep Grade 7 Usama Science on Day 2 and reserve Day 1 03:10 PM for Grade 7 Anas Science only",
+      "result": "Usama Science retained on Sep 3 at 03:10 PM; Anas Science moved to Sep 2 at 03:10 PM; Anas Social Studies moved to the vacant Sep 2 first period"
     }
   ],
   "final_exam_count": 589,

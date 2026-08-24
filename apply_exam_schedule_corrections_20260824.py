@@ -450,8 +450,17 @@ def fixed_position(record):
         return 1, 625
     if section_contains(record, "GRADE 12", "SUHAYB") and subject_key(record["subject"]) == "pe_12":
         return 2, 480
+    # Teacher Aniah's final correction: Usama stays on Day 2 at 03:10 PM,
+    # while Anas alone uses the reserved Day 1 03:10 PM slot. Move Anas
+    # Social Studies to the vacant first period so Teacher Shirehan's exam
+    # remains complete without creating a teacher or section conflict.
     if section_contains(record, "GRADE 7", "USAMA") and subject_key(record["subject"]) == "science":
-        return 1, 910
+        return 2, 910
+    if section_contains(record, "GRADE 7", "ANAS"):
+        if subject_key(record["subject"]) == "science":
+            return 1, 910
+        if subject_key(record["subject"]) == "social_studies":
+            return 1, 830
     # Teacher Sophia accommodations: preserve the already-corrected Sep 2/Sep 3
     # placements and move her final Sep 7 duty to Sep 6. Swapping Mu'adh's
     # Filipino and MAPEH exams keeps the section complete without opening a gap.
@@ -739,6 +748,11 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "Ustadha Hainur",
             "request": "Correct honorific from Ustadh to Ustadha",
             "result": "Canonical teacher name corrected to Ustadha Hainur across exam outputs",
+        },
+        {
+            "teacher": "Teacher Aniah",
+            "request": "Keep Grade 7 Usama Science on Day 2 and reserve Day 1 03:10 PM for Grade 7 Anas Science only",
+            "result": "Usama Science retained on Sep 3 at 03:10 PM; Anas Science moved to Sep 2 at 03:10 PM; Anas Social Studies moved to the vacant Sep 2 first period",
         },
     ]
     return audit

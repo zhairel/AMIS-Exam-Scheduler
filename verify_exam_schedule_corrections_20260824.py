@@ -180,7 +180,25 @@ def main():
         lambda record: section_has(record, "GRADE 7", "USAMA") and correction.subject_key(record["subject"]) == "science",
         "Grade 7 Usama Science exam",
     )
-    assert (usama_science["day_number"], usama_science["start_m"], usama_science["end_m"]) == (1, 910, 970)
+    assert (usama_science["day_number"], usama_science["start_m"], usama_science["end_m"]) == (2, 910, 970)
+
+    anas_science = get_one(
+        records,
+        lambda record: section_has(record, "GRADE 7", "ANAS") and correction.subject_key(record["subject"]) == "science",
+        "Grade 7 Anas Science exam",
+    )
+    assert (anas_science["day_number"], anas_science["start_m"], anas_science["end_m"]) == (1, 910, 970)
+
+    anas_social_studies = get_one(
+        records,
+        lambda record: section_has(record, "GRADE 7", "ANAS") and correction.subject_key(record["subject"]) == "social_studies",
+        "Grade 7 Anas Social Studies exam",
+    )
+    assert (
+        anas_social_studies["day_number"],
+        anas_social_studies["start_m"],
+        anas_social_studies["end_m"],
+    ) == (1, 830, 890)
 
     for teacher_id, latest_end_m in correction.TEACHER_LATEST_END_M.items():
         teacher_records = [record for record in records if record["teacher_id"] == teacher_id]
