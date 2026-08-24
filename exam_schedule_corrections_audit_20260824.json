@@ -1274,6 +1274,42 @@
       "from_start_m": 980,
       "to_day": 1,
       "to_start_m": 910
+    },
+    {
+      "id": "exam_19",
+      "section": "GRADE 2 (FACE TO FACE)",
+      "subject": "Arabic",
+      "from_day": 1,
+      "from_start_m": 625,
+      "to_day": 4,
+      "to_start_m": 480
+    },
+    {
+      "id": "exam_294",
+      "section": "GRADE 1 (FACE TO FACE)",
+      "subject": "Qur'an",
+      "from_day": 3,
+      "from_start_m": 625,
+      "to_day": 3,
+      "to_start_m": 540
+    },
+    {
+      "id": "exam_303",
+      "section": "GRADE 2 (FACE TO FACE)",
+      "subject": "English",
+      "from_day": 3,
+      "from_start_m": 625,
+      "to_day": 3,
+      "to_start_m": 540
+    },
+    {
+      "id": "exam_444",
+      "section": "GRADE 2 (FACE TO FACE)",
+      "subject": "Filipino",
+      "from_day": 4,
+      "from_start_m": 625,
+      "to_day": 3,
+      "to_start_m": 480
     }
   ],
   "teacher_accommodations": [
@@ -1306,6 +1342,11 @@
       "teacher": "Teacher Aniah",
       "request": "Keep Grade 7 Usama Science on Day 2 and reserve Day 1 03:10 PM for Grade 7 Anas Science only",
       "result": "Usama Science retained on Sep 3 at 03:10 PM; Anas Science moved to Sep 2 at 03:10 PM; Anas Social Studies moved to the vacant Sep 2 first period"
+    },
+    {
+      "teacher": "Grade 1 and Grade 2 F2F",
+      "request": "Fill Sunday and remove vacant early periods before later exams",
+      "result": "Both sections now have exactly two exams per day at 08:00 AM and 09:00 AM, with no 10:25 AM third-period exam"
     }
   ],
   "final_exam_count": 589,

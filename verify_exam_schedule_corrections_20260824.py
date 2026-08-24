@@ -200,6 +200,18 @@ def main():
         anas_social_studies["end_m"],
     ) == (1, 830, 890)
 
+    for section_name in ("GRADE 1 (FACE TO FACE)", "GRADE 2 (FACE TO FACE)"):
+        compact_records = [
+            record for record in records
+            if correction.clean(record.get("section_name") or record.get("section")).upper() == section_name
+        ]
+        assert len(compact_records) == 8
+        for day_number in correction.EXAM_DAYS:
+            day_records = [record for record in compact_records if record["day_number"] == day_number]
+            assert len(day_records) == 2, f"{section_name} Day {day_number} must have exactly two exams"
+            assert {record["start_m"] for record in day_records} == {480, 540}
+            assert all(record["end_m"] <= 600 for record in day_records)
+
     for teacher_id, latest_end_m in correction.TEACHER_LATEST_END_M.items():
         teacher_records = [record for record in records if record["teacher_id"] == teacher_id]
         assert teacher_records

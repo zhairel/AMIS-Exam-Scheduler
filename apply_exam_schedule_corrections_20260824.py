@@ -204,6 +204,11 @@ def is_grade11(record):
     return clean(record.get("grade_level") or record.get("grade")) == "Grade 11"
 
 
+def is_compact_g1_g2_f2f(record):
+    section = clean(record.get("section_name") or record.get("section")).upper()
+    return section in {"GRADE 1 (FACE TO FACE)", "GRADE 2 (FACE TO FACE)"}
+
+
 def section_contains(record, *tokens):
     name = clean(record.get("section_name") or record.get("section")).upper()
     return all(token.upper() in name for token in tokens)
@@ -486,6 +491,11 @@ def candidate_positions(record):
         for start_index in range(len(slots) - span + 1):
             start_m = slots[start_index][0]
             end_m = slots[start_index + span - 1][1]
+            # Grade 1 and Grade 2 F2F each have eight exams. Keep exactly two
+            # compact exams per day in the first two periods so no class waits
+            # through an early vacancy or returns for the 10:25 third period.
+            if is_compact_g1_g2_f2f(record) and start_index >= 2:
+                continue
             latest_end_m = TEACHER_LATEST_END_M.get(record.get("teacher_id"))
             if latest_end_m is not None and end_m > latest_end_m:
                 continue
@@ -753,6 +763,11 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "Teacher Aniah",
             "request": "Keep Grade 7 Usama Science on Day 2 and reserve Day 1 03:10 PM for Grade 7 Anas Science only",
             "result": "Usama Science retained on Sep 3 at 03:10 PM; Anas Science moved to Sep 2 at 03:10 PM; Anas Social Studies moved to the vacant Sep 2 first period",
+        },
+        {
+            "teacher": "Grade 1 and Grade 2 F2F",
+            "request": "Fill Sunday and remove vacant early periods before later exams",
+            "result": "Both sections now have exactly two exams per day at 08:00 AM and 09:00 AM, with no 10:25 AM third-period exam",
         },
     ]
     return audit

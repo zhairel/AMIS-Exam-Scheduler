@@ -25,7 +25,6 @@
 1,"Wednesday, September 2, 2026",2,09:00 AM – 10:00 AM,sec_grade_9_10_girls_face_to_face,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,subj_mapeh,MAPEH,tchr_mohaymen,Sir Mohaymen,60
 1,"Wednesday, September 2, 2026",2,09:00 AM – 10:00 AM,sec_kinder_1_class_schedule_f2f,KINDER 1 CLASS SCHEDULE (F2F),Elementary,Kinder 1,F2F,subj_oral_written_exam,Oral & Written Exam,tchr_wendy,Teacher Wendy,60
 1,"Wednesday, September 2, 2026",3,10:25 AM – 11:25 AM,sec_grade_12_suhayb_ar_rumi,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,subj_gen_bio_1,Gen Bio 1,tchr_radzmia,Teacher Radzmia,60
-1,"Wednesday, September 2, 2026",3,10:25 AM – 11:25 AM,sec_grade_2_face_to_face,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,subj_arabic,Arabic,tchr_obaydah,Ustadh Obaydah,60
 1,"Wednesday, September 2, 2026",3,10:25 AM – 11:25 AM,sec_grade_3_face_to_face,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,subj_math,Math,tchr_jerlyn,Teacher Jerlyn,60
 1,"Wednesday, September 2, 2026",3,10:25 AM – 11:25 AM,sec_grade_4_face_to_face,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,subj_english,English,tchr_norhydie,Teacher Norhydie,60
 1,"Wednesday, September 2, 2026",3,10:25 AM – 11:25 AM,sec_grade_5_face_to_face,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,subj_mapeh,MAPEH,tchr_keychell,Teacher Keychell,60
@@ -299,6 +298,7 @@
 3,"Sunday, September 6, 2026",1,08:00 AM – 09:00 AM,sec_grade_1_face_to_face,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,subj_shaf,SHAF,tchr_abdiraheem,Ustadh Abdiraheem,60
 3,"Sunday, September 6, 2026",1,08:00 AM – 09:00 AM,sec_grade_11_face_to_face,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,subj_gen_bio_1,Gen Bio 1,tchr_radzmia,Teacher Radzmia,60
 3,"Sunday, September 6, 2026",1,08:00 AM – 10:00 AM,sec_grade_12_suhayb_ar_rumi,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,subj_gen_physics_1,General Physics 1,tchr_aniah,Teacher Aniah,120
+3,"Sunday, September 6, 2026",1,08:00 AM – 09:00 AM,sec_grade_2_face_to_face,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,subj_filipino,Filipino,tchr_sitti_kauzar,Teacher Sitti Kauzar,60
 3,"Sunday, September 6, 2026",1,08:00 AM – 09:00 AM,sec_grade_3_face_to_face,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,subj_qur_an,Qur'an,tchr_obaydah,Ustadh Obaydah,60
 3,"Sunday, September 6, 2026",1,08:00 AM – 09:00 AM,sec_grade_5_face_to_face,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,subj_tle,TLE,tchr_halnaisa,Teacher Halnaisa,60
 3,"Sunday, September 6, 2026",1,08:00 AM – 09:00 AM,sec_grade_7_8_boys_face_to_face,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,subj_mapeh,MAPEH,tchr_franchette,Teacher Franchette,60
@@ -307,7 +307,9 @@
 3,"Sunday, September 6, 2026",1,08:00 AM – 09:00 AM,sec_grade_9_10_girls_face_to_face,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,subj_filipino,Filipino,tchr_nadzra,Teacher Nadzra,60
 3,"Sunday, September 6, 2026",1,08:00 AM – 09:00 AM,sec_kinder_2_class_schedule_f2f,KINDER 2 CLASS SCHEDULE (F2F),Elementary,Kinder 2,F2F,subj_hadith,Hadith,tchr_saliha,Ustadha Saliha,60
 3,"Sunday, September 6, 2026",2,09:00 AM – 10:00 AM,sec_grade_6_face_to_face,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,subj_filipino,Filipino,tchr_normylah,Teacher Normylah,60
+3,"Sunday, September 6, 2026",2,09:00 AM – 10:00 AM,sec_grade_1_face_to_face,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,subj_qur_an,Qur'an,tchr_obaydah,Ustadh Obaydah,60
 3,"Sunday, September 6, 2026",2,09:00 AM – 10:00 AM,sec_grade_11_face_to_face,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,subj_mabisang_komunikasyon,Mabisang Komunikasyon,tchr_nadzra,Teacher Nadzra,60
+3,"Sunday, September 6, 2026",2,09:00 AM – 10:00 AM,sec_grade_2_face_to_face,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,subj_english,English,tchr_marham,Teacher Marham,60
 3,"Sunday, September 6, 2026",2,09:00 AM – 10:00 AM,sec_grade_4_face_to_face,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,subj_science,Science,tchr_junaisah,Teacher Junaisah,60
 3,"Sunday, September 6, 2026",2,09:00 AM – 10:00 AM,sec_grade_5_face_to_face,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,subj_shaf,SHAF,tchr_ersahad,Ustadh Ersahad,60
 3,"Sunday, September 6, 2026",2,09:00 AM – 10:00 AM,sec_grade_7_8_boys_face_to_face,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,subj_social_studies,Social Studies,tchr_shirehan,Teacher Shirehan,60
@@ -316,9 +318,7 @@
 3,"Sunday, September 6, 2026",2,09:00 AM – 10:00 AM,sec_grade_9_10_girls_face_to_face,GRADE 9 & 10 GIRLS (FACE TO FACE),Junior High School,Grade 9 & 10,F2F,subj_qur_an,Qur'an,tchr_abdulwahab,Alim Abdulwahab,60
 3,"Sunday, September 6, 2026",2,09:00 AM – 10:00 AM,sec_kinder_2_class_schedule_f2f,KINDER 2 CLASS SCHEDULE (F2F),Elementary,Kinder 2,F2F,subj_qur_an,Qur'an,tchr_jaisam,Ustadh Jaisam,60
 3,"Sunday, September 6, 2026",3,10:25 AM – 11:25 AM,sec_grade_6_face_to_face,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,subj_tle,TLE,tchr_arvin,Teacher Arvin,60
-3,"Sunday, September 6, 2026",3,10:25 AM – 11:25 AM,sec_grade_1_face_to_face,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,subj_qur_an,Qur'an,tchr_obaydah,Ustadh Obaydah,60
 3,"Sunday, September 6, 2026",3,10:25 AM – 11:25 AM,sec_grade_11_face_to_face,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,subj_pskp,PSKP,tchr_shirehan,Teacher Shirehan,60
-3,"Sunday, September 6, 2026",3,10:25 AM – 11:25 AM,sec_grade_2_face_to_face,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,subj_english,English,tchr_marham,Teacher Marham,60
 3,"Sunday, September 6, 2026",3,10:25 AM – 11:25 AM,sec_grade_4_face_to_face,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,subj_araling_panlipunan,Araling Panlipunan,tchr_monisa,Teacher Monisa,60
 3,"Sunday, September 6, 2026",3,10:25 AM – 11:25 AM,sec_grade_5_face_to_face,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,subj_arabic,Arabic,tchr_ersahad,Ustadh Ersahad,60
 3,"Sunday, September 6, 2026",3,10:25 AM – 11:25 AM,sec_grade_7_8_boys_face_to_face,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,subj_arabic,Arabic,tchr_ali,Ustadh Ali,60
@@ -447,6 +447,7 @@
 4,"Monday, September 7, 2026",1,08:00 AM – 09:00 AM,sec_grade_6_face_to_face,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,subj_qur_an,Qur'an,tchr_faidh,Ustadh Faidh,60
 4,"Monday, September 7, 2026",1,08:00 AM – 09:00 AM,sec_grade_1_face_to_face,GRADE 1 (FACE TO FACE),Elementary,Grade 1,F2F,subj_math,Math,tchr_wendy,Teacher Wendy,60
 4,"Monday, September 7, 2026",1,08:00 AM – 09:00 AM,sec_grade_11_face_to_face,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,subj_shaf,SHAF,tchr_samsuddin,Alim Samsuddin,60
+4,"Monday, September 7, 2026",1,08:00 AM – 09:00 AM,sec_grade_2_face_to_face,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,subj_arabic,Arabic,tchr_obaydah,Ustadh Obaydah,60
 4,"Monday, September 7, 2026",1,08:00 AM – 09:00 AM,sec_grade_3_face_to_face,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,subj_science,Science,tchr_jerlyn,Teacher Jerlyn,60
 4,"Monday, September 7, 2026",1,08:00 AM – 09:00 AM,sec_grade_4_face_to_face,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,subj_gmrc,GMRC,tchr_sahdia,Teacher Sahdia,60
 4,"Monday, September 7, 2026",1,08:00 AM – 09:00 AM,sec_grade_7_8_boys_face_to_face,GRADE 7 & 8 BOYS (FACE TO FACE),Junior High School,Grade 7 & 8,F2F,subj_gmrc,GMRC,tchr_silfah,Ustadh Silfah,60
@@ -467,7 +468,6 @@
 4,"Monday, September 7, 2026",3,10:25 AM – 11:25 AM,sec_grade_6_face_to_face,GRADE  6  FACE TO FACE,Elementary,Grade 6,F2F,subj_araling_panlipunan,Araling Panlipunan,tchr_zuhora,Teacher Zuhora,60
 4,"Monday, September 7, 2026",3,10:25 AM – 11:25 AM,sec_grade_11_face_to_face,GRADE 11 (FACE TO FACE),Senior High School,Grade 11,F2F,subj_qur_an,Qur'an,tchr_dipatuan,Alim Dipatuan,60
 4,"Monday, September 7, 2026",3,10:25 AM – 11:25 AM,sec_grade_12_suhayb_ar_rumi,GRADE 12 - SUHAYB AR-RUMI,Senior High School,Grade 12,F2F,subj_arabic,Arabic,tchr_mamonas,Alim Mamonas,60
-4,"Monday, September 7, 2026",3,10:25 AM – 11:25 AM,sec_grade_2_face_to_face,GRADE 2 (FACE TO FACE),Elementary,Grade 2,F2F,subj_filipino,Filipino,tchr_sitti_kauzar,Teacher Sitti Kauzar,60
 4,"Monday, September 7, 2026",3,10:25 AM – 11:25 AM,sec_grade_3_face_to_face,GRADE 3 (FACE TO FACE),Elementary,Grade 3,F2F,subj_shaf,SHAF,tchr_ersahad,Ustadh Ersahad,60
 4,"Monday, September 7, 2026",3,10:25 AM – 11:25 AM,sec_grade_4_face_to_face,GRADE 4 (FACE TO FACE),Elementary,Grade 4,F2F,subj_qur_an,Qur'an,tchr_obaydah,Ustadh Obaydah,60
 4,"Monday, September 7, 2026",3,10:25 AM – 11:25 AM,sec_grade_5_face_to_face,GRADE 5 (FACE TO FACE),Elementary,Grade 5,F2F,subj_gmrc,GMRC,tchr_jairah,Teacher Jairah,60
