@@ -36,6 +36,7 @@
     .clear-badge { white-space:nowrap; color:#047857; background:var(--mint); border:1px solid #6ee7b7; border-radius:999px; padding:6px 10px; font-size:11px; font-weight:900; }
     .clear-badge.conflict { color:var(--red); background:var(--red-bg); border-color:#fca5a5; }
     .filters { display:grid; grid-template-columns:2fr repeat(3,minmax(150px,1fr)); gap:9px; padding:12px 16px; border-bottom:1px solid var(--line); background:#f8fafc; }
+    .scope-note { margin:16px 0 0; padding:12px 14px; border:1px solid #6ee7b7; border-radius:10px; background:var(--mint); color:var(--green-dark); font-size:12px; font-weight:800; line-height:1.45; }
     input,select { width:100%; border:1px solid #b8c5d4; border-radius:8px; background:#fff; color:var(--ink); font:inherit; font-size:12px; font-weight:650; padding:9px 10px; }
     .table-wrap { overflow:auto; }
     table { width:100%; border-collapse:collapse; min-width:1160px; }
@@ -72,28 +73,29 @@
   <main>
     <section class="warning" role="alert">
       <div class="warning-icon" aria-hidden="true">!</div>
-      <div><h2>Teacher Normylah — Resigned / Inactive</h2><p><strong>Teacher Normylah is inactive/resigned. Please assign a replacement teacher.</strong> Her former subject assignments remain visible for reference. Automatic coverage uses active Academic Teachers only; ISAL, Ustadh, Ustadha, and Alim faculty are excluded. A proctor assignment does not replace the subject teacher.</p></div>
+      <div><h2>Teacher Normylah — Resigned / Inactive</h2><p><strong>Simple explanation:</strong> Teacher Normylah has 12 affected exams. Five available Academic Teachers were assigned only to supervise those exams. They are not replacement subject teachers. ISAL, Ustadh, Ustadha, and Alim faculty are not included in her automatic proctor coverage.</p></div>
     </section>
+    <p class="scope-note">Current default view: Teacher Normylah’s affected schedules and Academic Teacher proctors only. Choose “All existing exam duties” below only if you need the complete school-wide audit.</p>
 
     <section class="summary" aria-label="Proctor assignment summary">
-      <div class="stat"><strong id="totalAssignments">—</strong><span>Exam assignments</span></div>
-      <div class="stat"><strong id="replacementRequired">—</strong><span>Replacement required</span></div>
-      <div class="stat"><strong id="activeProctors">—</strong><span>Active proctors</span></div>
+      <div class="stat"><strong id="totalAssignments">—</strong><span id="totalLabel">Affected Normylah exams</span></div>
+      <div class="stat"><strong id="replacementRequired">—</strong><span id="coverageLabel">Academic coverage assigned</span></div>
+      <div class="stat"><strong id="activeProctors">—</strong><span id="proctorLabel">Academic Teacher proctors</span></div>
       <div class="stat"><strong id="conflictCount">—</strong><span>Proctor conflicts</span></div>
     </section>
 
     <section class="panel">
-      <div class="panel-head"><div><h2>Active Proctor Workload</h2><p>Conflict-cleared duties with least-loaded Academic Teachers prioritized for automatic coverage.</p></div><span id="guardBadge" class="clear-badge">Checking…</span></div>
+      <div class="panel-head"><div><h2 id="workloadTitle">Normylah Coverage — Academic Teacher Workload</h2><p id="workloadDescription">Only the five Academic Teachers covering Normylah’s affected exams are shown.</p></div><span id="guardBadge" class="clear-badge">Checking…</span></div>
       <div id="workloadGrid" class="workload-grid"></div>
     </section>
 
     <section class="panel">
-      <div class="panel-head"><div><h2>Proctor List</h2><p>Subject ownership and active proctor duty are shown separately.</p></div><span id="visibleCount" class="clear-badge">0 records</span></div>
+      <div class="panel-head"><div><h2 id="listTitle">Normylah’s 12 Proctor Assignments</h2><p>Former subject ownership and active Academic Teacher proctor duty are shown separately.</p></div><span id="visibleCount" class="clear-badge">0 records</span></div>
       <div class="filters">
         <input id="searchInput" type="search" placeholder="Search subject, section, former teacher, or proctor…" aria-label="Search proctor assignments">
+        <select id="scopeFilter" aria-label="Choose proctor list scope"><option value="coverage">Normylah Coverage Only</option><option value="all">All Existing Exam Duties</option></select>
         <select id="dayFilter" aria-label="Filter by exam day"><option value="">All Exam Days</option></select>
         <select id="proctorFilter" aria-label="Filter by proctor"><option value="">All Active Proctors</option></select>
-        <select id="statusFilter" aria-label="Filter by teacher status"><option value="">All Teacher Statuses</option><option value="replacement">Replacement Required</option><option value="active">Active Subject Teacher</option></select>
       </div>
       <div class="table-wrap">
         <table>
@@ -102,11 +104,12 @@
         </table>
       </div>
     </section>
-    <p class="footer-note">Automatic proctor coverage does not alter official subject ownership. A replacement subject teacher must be selected manually by an administrator. Proctor assignments are validated against exam overlaps and recorded weekly/blocked schedules.</p>
+    <p class="footer-note">Automatic proctor coverage does not alter official subject ownership. A replacement subject teacher must be selected manually by an administrator. In the optional school-wide audit, ISAL faculty may appear for their own existing subject duties; they are never selected as automatic coverage for Teacher Normylah.</p>
   </main>
 
   <script>
   (() => {
+    let allRecords = [];
     let records = [];
     const conflicts = new Set();
     const esc = value => String(value ?? '').replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
@@ -132,13 +135,13 @@
 
     function populateFilters() {
       const day = document.getElementById('dayFilter');
+      day.innerHTML = '<option value="">All Exam Days</option>';
       [...new Map(records.map(r => [r.day_number, `Day ${r.day_number} • ${r.day_name}`])).entries()]
         .sort((a,b) => a[0]-b[0]).forEach(([value,label]) => day.insertAdjacentHTML('beforeend', `<option value="${value}">${esc(label)}</option>`));
       const proctor = document.getElementById('proctorFilter');
+      proctor.innerHTML = '<option value="">All Active Proctors</option>';
       [...new Map(records.map(r => [r.proctor_id,r.proctor])).entries()].sort((a,b) => a[1].localeCompare(b[1]))
         .forEach(([value,label]) => proctor.insertAdjacentHTML('beforeend', `<option value="${esc(value)}">${esc(label)}</option>`));
-      const requestedStatus = new URLSearchParams(location.search).get('status');
-      if (requestedStatus === 'replacement') document.getElementById('statusFilter').value = 'replacement';
     }
 
     function renderSummary() {
@@ -148,6 +151,13 @@
       document.getElementById('replacementRequired').textContent = replacementCount;
       document.getElementById('activeProctors').textContent = proctorIds.size;
       document.getElementById('conflictCount').textContent = conflicts.size;
+      const coverageView = document.getElementById('scopeFilter').value === 'coverage';
+      document.getElementById('totalLabel').textContent = coverageView ? 'Affected Normylah exams' : 'All existing exam duties';
+      document.getElementById('coverageLabel').textContent = coverageView ? 'Academic coverage assigned' : 'Inactive-teacher coverage';
+      document.getElementById('proctorLabel').textContent = coverageView ? 'Academic Teacher proctors' : 'All active duty holders';
+      document.getElementById('workloadTitle').textContent = coverageView ? 'Normylah Coverage — Academic Teacher Workload' : 'School-Wide Existing Duty Workload';
+      document.getElementById('workloadDescription').textContent = coverageView ? 'Only Academic Teachers covering Normylah’s affected exams are shown.' : 'This optional audit includes teachers handling their own existing subject duties.';
+      document.getElementById('listTitle').textContent = coverageView ? `Normylah’s ${records.length} Proctor Assignments` : 'All Existing Exam Duties';
       const guard = document.getElementById('guardBadge');
       guard.textContent = conflicts.size ? `! ${conflicts.size} conflicting assignments` : '✓ Anti-Conflict Guard: 0 Conflicts';
       guard.classList.toggle('conflict', conflicts.size > 0);
@@ -167,13 +177,11 @@
       const query = document.getElementById('searchInput').value.toLowerCase().trim();
       const day = document.getElementById('dayFilter').value;
       const proctor = document.getElementById('proctorFilter').value;
-      const status = document.getElementById('statusFilter').value;
       const filtered = records.filter(record => {
         const haystack = `${record.subject} ${record.section_name} ${record.grade_level} ${record.subject_teacher} ${record.proctor}`.toLowerCase();
         return (!query || haystack.includes(query))
           && (!day || String(record.day_number) === day)
-          && (!proctor || record.proctor_id === proctor)
-          && (!status || (status === 'replacement' ? record.replacement_teacher_required : !record.replacement_teacher_required));
+          && (!proctor || record.proctor_id === proctor);
       });
       document.getElementById('visibleCount').textContent = `${filtered.length} record${filtered.length === 1 ? '' : 's'}`;
       document.getElementById('assignmentBody').innerHTML = filtered.length ? filtered.map(record => `
@@ -189,13 +197,22 @@
         </tr>`).join('') : '<tr><td colspan="8" class="empty">No proctor assignments match the selected filters.</td></tr>';
     }
 
+    function applyScope() {
+      const coverageView = document.getElementById('scopeFilter').value === 'coverage';
+      records = coverageView ? allRecords.filter(record => record.replacement_teacher_required) : [...allRecords];
+      document.getElementById('dayFilter').value = '';
+      document.getElementById('proctorFilter').value = '';
+      detectConflicts(); populateFilters(); renderSummary(); renderWorkload(); renderAssignments();
+    }
+
     async function init() {
       const response = await fetch(`proctor_assignments.json?v=${Date.now()}`);
       if (!response.ok) throw new Error('Unable to load proctor assignments.');
-      records = await response.json();
-      records.sort((a,b) => a.day_number-b.day_number || a.start_m-b.start_m || a.section_name.localeCompare(b.section_name));
-      detectConflicts(); populateFilters(); renderSummary(); renderWorkload(); renderAssignments();
-      ['searchInput','dayFilter','proctorFilter','statusFilter'].forEach(id => document.getElementById(id).addEventListener('input',renderAssignments));
+      allRecords = await response.json();
+      allRecords.sort((a,b) => a.day_number-b.day_number || a.start_m-b.start_m || a.section_name.localeCompare(b.section_name));
+      applyScope();
+      document.getElementById('scopeFilter').addEventListener('input', applyScope);
+      ['searchInput','dayFilter','proctorFilter'].forEach(id => document.getElementById(id).addEventListener('input',renderAssignments));
     }
     init().catch(error => { document.getElementById('assignmentBody').innerHTML = `<tr><td colspan="8" class="empty">${esc(error.message)}</td></tr>`; });
   })();
