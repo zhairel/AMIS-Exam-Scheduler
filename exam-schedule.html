@@ -266,6 +266,71 @@ body {
   color: #047857;
 }
 
+/* Grade-driven section tabs */
+.section-filter-tabs {
+  background: #f8fafc;
+  border-bottom: 1px solid var(--line);
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-filter-tabs[hidden] {
+  display: none !important;
+}
+
+.section-tabs-label {
+  flex: 0 0 auto;
+  color: var(--ink-secondary);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.section-tabs-scroll {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  overflow-x: auto;
+  padding: 2px 2px 5px;
+  scrollbar-width: thin;
+  scrollbar-color: #94a3b8 transparent;
+}
+
+.section-filter-tab {
+  flex: 0 0 auto;
+  max-width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 7px 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #334155;
+  font-size: 11.5px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+
+.section-filter-tab:hover {
+  background: #ecfdf5;
+  border-color: #6ee7b7;
+  color: #065f46;
+}
+
+.section-filter-tab.active {
+  background: var(--brand-deep);
+  border-color: var(--brand-deep);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(6, 78, 59, 0.2);
+}
+
 /* Printable Container */
 html, body {
   overflow-x: hidden;
@@ -836,7 +901,7 @@ html, body {
 
 /* Print Optimization */
 @media print {
-  .top-toolbar, .exam-tabs-bar, .btn-fullscreen, .roster-search-bar, .subject-filter-summary {
+  .top-toolbar, .exam-tabs-bar, .section-filter-tabs, .btn-fullscreen, .roster-search-bar, .subject-filter-summary {
     display: none !important;
   }
   body {
@@ -991,6 +1056,12 @@ html, body {
   <div class="badge-anti-conflict-top">
     <span style="color:#059669; font-weight:900;">✓</span> Anti-Conflict Guard Active: 0 Conflicts
   </div>
+</nav>
+
+<!-- Grade-filtered section navigation -->
+<nav class="section-filter-tabs" id="sectionTabsBar" aria-label="Section schedules" hidden>
+  <span class="section-tabs-label">Sections</span>
+  <div class="section-tabs-scroll" id="sectionTabsList" role="tablist"></div>
 </nav>
 
 <!-- Advisory Banner -->
@@ -5200,9 +5271,13 @@ html, body {
   let rosterDept = 'ALL';
   let sectionSubjectQuery = '';
   let sectionSubjectSearchTimer = null;
+  let selectedGrade = 'ALL';
+  let selectedSectionId = 'ALL_GROUP';
 
   const toolbarControls = document.getElementById('toolbarControls');
   const sheetsContainer = document.getElementById('sheetsContainer');
+  const sectionTabsBar = document.getElementById('sectionTabsBar');
+  const sectionTabsList = document.getElementById('sectionTabsList');
 
   function esc(s) {
     if (!s) return '';
@@ -5307,6 +5382,62 @@ html, body {
     return normalizedSubject.replace(/\s/g, '').includes(normalizedQuery.replace(/\s/g, ''));
   }
 
+  function gradeSortRank(gradeLevel) {
+    const grade = String(gradeLevel || '').toLowerCase().replace(/\s+/g, ' ').trim();
+    if (grade.includes('kinder 1') || grade === 'k1') return 1;
+    if (grade.includes('kinder 2') || grade === 'k2') return 2;
+
+    const numbers = (grade.match(/\d+/g) || []).map(Number);
+    if (numbers.length === 0) return 999;
+    return 100 + numbers.reduce((sum, value) => sum + value, 0) / numbers.length;
+  }
+
+  function compareGradeLevels(left, right) {
+    return gradeSortRank(left) - gradeSortRank(right)
+      || String(left).localeCompare(String(right), undefined, { numeric: true, sensitivity: 'base' });
+  }
+
+  function shiftSortRank(shift) {
+    if (shift === 'F2F') return 0;
+    if (shift === 'ODL - 1ST SHIFT') return 1;
+    if (shift === 'ODL - 2ND SHIFT') return 2;
+    return 9;
+  }
+
+  function compareSections(left, right) {
+    return compareGradeLevels(left.grade_level, right.grade_level)
+      || shiftSortRank(left.shift) - shiftSortRank(right.shift)
+      || String(left.section_name).localeCompare(String(right.section_name), undefined, { numeric: true, sensitivity: 'base' });
+  }
+
+  function gradeDisplayName(gradeLevel) {
+    if (gradeLevel === 'Kinder 1') return 'K1';
+    if (gradeLevel === 'Kinder 2') return 'K2';
+    return gradeLevel;
+  }
+
+  function getModalityFilteredSections() {
+    const mod = document.getElementById('modalitySelect') ? document.getElementById('modalitySelect').value : 'ALL';
+    const shift = document.getElementById('shiftSelect') ? document.getElementById('shiftSelect').value : 'ALL';
+    let filtered = [...SECTIONS_DATA];
+
+    if (mod === 'F2F') {
+      filtered = filtered.filter(section => section.shift === 'F2F');
+    } else if (mod === 'ODL') {
+      filtered = filtered.filter(section => section.shift !== 'F2F');
+      if (shift === 'ODL1') filtered = filtered.filter(section => section.shift === 'ODL - 1ST SHIFT');
+      else if (shift === 'ODL2') filtered = filtered.filter(section => section.shift === 'ODL - 2ND SHIFT');
+    }
+
+    return filtered.sort(compareSections);
+  }
+
+  function getGradeFilteredSections() {
+    const filtered = getModalityFilteredSections();
+    if (selectedGrade === 'ALL') return filtered;
+    return filtered.filter(section => section.grade_level === selectedGrade);
+  }
+
   async function init() {
     try {
       const sResp = await fetch('class_schedules_data.json?v=' + Date.now());
@@ -5337,6 +5468,8 @@ html, body {
 
   function switchTab(tabName, extraParam) {
     currentTab = tabName;
+
+    if (sectionTabsBar) sectionTabsBar.hidden = tabName !== 'SECTION';
 
     const btnSec = document.getElementById('tabBtnSection');
     const btnFac = document.getElementById('tabBtnFaculty');
@@ -5390,14 +5523,14 @@ html, body {
         </select>
       </div>
 
-      <!-- Section Selector -->
+      <!-- Grade Selector -->
       <div class="filter-group">
         <span class="filter-label">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13H5V11H3V13M3 17H5V15H3V17M3 9H5V7H3V9M7 13H21V11H7V13M7 17H21V15H7V17M7 7V9H21V7H7Z"/></svg>
-          Section:
+          Grade:
         </span>
-        <select id="sectionSelect" class="filter-select" style="min-width:220px;" onchange="renderSectionView()">
-          <option value="ALL_GROUP">All Filtered Sections</option>
+        <select id="gradeSelect" class="filter-select" style="min-width:190px;" onchange="onGradeChange(this.value)">
+          <option value="ALL">All Grades</option>
         </select>
       </div>
 
@@ -5420,7 +5553,8 @@ html, body {
     const subjectSearch = document.getElementById('subjectSearch');
     if (subjectSearch) subjectSearch.value = sectionSubjectQuery;
     populateSubjectOptions();
-    populateSectionDropdown();
+    populateGradeDropdown();
+    renderSectionTabs();
   }
 
   function populateSubjectOptions() {
@@ -5448,52 +5582,88 @@ html, body {
       shiftGroup.style.display = 'none';
       shiftSelect.value = 'ALL';
     }
-    populateSectionDropdown();
+    selectedSectionId = 'ALL_GROUP';
+    populateGradeDropdown();
+    renderSectionTabs();
     renderSectionView();
   };
 
   window.onShiftChange = function() {
-    populateSectionDropdown();
+    selectedSectionId = 'ALL_GROUP';
+    populateGradeDropdown();
+    renderSectionTabs();
     renderSectionView();
   };
 
-  function populateSectionDropdown() {
-    const mod = document.getElementById('modalitySelect') ? document.getElementById('modalitySelect').value : 'ALL';
-    const shift = document.getElementById('shiftSelect') ? document.getElementById('shiftSelect').value : 'ALL';
+  window.onGradeChange = function(value) {
+    selectedGrade = value || 'ALL';
+    selectedSectionId = 'ALL_GROUP';
+    renderSectionTabs();
+    renderSectionView();
+  };
 
-    let filtered = SECTIONS_DATA;
-    if (mod === 'F2F') {
-      filtered = filtered.filter(s => s.shift === 'F2F');
-    } else if (mod === 'ODL') {
-      if (shift === 'ODL1') filtered = filtered.filter(s => s.shift === 'ODL - 1ST SHIFT');
-      else if (shift === 'ODL2') filtered = filtered.filter(s => s.shift === 'ODL - 2ND SHIFT');
+  function populateGradeDropdown() {
+    const gradeSelect = document.getElementById('gradeSelect');
+    if (!gradeSelect) return;
+
+    const modalitySections = getModalityFilteredSections();
+    const gradeCounts = new Map();
+    modalitySections.forEach(section => {
+      gradeCounts.set(section.grade_level, (gradeCounts.get(section.grade_level) || 0) + 1);
+    });
+    const grades = [...gradeCounts.keys()].sort(compareGradeLevels);
+
+    if (selectedGrade !== 'ALL' && !gradeCounts.has(selectedGrade)) {
+      selectedGrade = 'ALL';
+      selectedSectionId = 'ALL_GROUP';
     }
 
-    const sSelect = document.getElementById('sectionSelect');
-    if (!sSelect) return;
-    let html = `<option value="ALL_GROUP">All Filtered Sections (${filtered.length})</option>`;
-    filtered.forEach(s => {
-      html += `<option value="${s.id}">${esc(s.section_name)} (${esc(s.shift)})</option>`;
-    });
-    sSelect.innerHTML = html;
+    gradeSelect.innerHTML = [
+      `<option value="ALL">All Grades (${modalitySections.length} sections)</option>`,
+      ...grades.map(grade => `<option value="${esc(grade)}">${esc(gradeDisplayName(grade))} (${gradeCounts.get(grade)})</option>`),
+    ].join('');
+    gradeSelect.value = selectedGrade;
   }
 
+  function sectionTabLabel(section) {
+    const shiftLabel = section.shift === 'F2F'
+      ? 'F2F'
+      : section.shift === 'ODL - 1ST SHIFT' ? '1st Shift' : '2nd Shift';
+    return `${cleanSectionName(section.section_name)} · ${shiftLabel}`;
+  }
+
+  function renderSectionTabs() {
+    if (!sectionTabsList || !sectionTabsBar || currentTab !== 'SECTION') return;
+    sectionTabsBar.hidden = false;
+
+    const sections = getGradeFilteredSections();
+    if (selectedSectionId !== 'ALL_GROUP' && !sections.some(section => section.id === selectedSectionId)) {
+      selectedSectionId = 'ALL_GROUP';
+    }
+
+    const allLabel = selectedGrade === 'ALL'
+      ? `All Sections (${sections.length})`
+      : `All ${gradeDisplayName(selectedGrade)} (${sections.length})`;
+    let html = `<button class="section-filter-tab ${selectedSectionId === 'ALL_GROUP' ? 'active' : ''}" type="button" role="tab" aria-selected="${selectedSectionId === 'ALL_GROUP'}" data-section-id="ALL_GROUP" onclick="selectSectionTab(this.dataset.sectionId)">${esc(allLabel)}</button>`;
+    sections.forEach(section => {
+      const label = sectionTabLabel(section);
+      html += `<button class="section-filter-tab ${selectedSectionId === section.id ? 'active' : ''}" type="button" role="tab" aria-selected="${selectedSectionId === section.id}" data-section-id="${esc(section.id)}" onclick="selectSectionTab(this.dataset.sectionId)" title="${esc(section.section_name)}">${esc(label)}</button>`;
+    });
+    sectionTabsList.innerHTML = html;
+  }
+
+  window.selectSectionTab = function(sectionId) {
+    selectedSectionId = sectionId || 'ALL_GROUP';
+    renderSectionTabs();
+    renderSectionView();
+  };
+
   function renderSectionView() {
-    const secSelect = document.getElementById('sectionSelect');
-    const selectedSecId = secSelect ? secSelect.value : 'ALL_GROUP';
-    const mod = document.getElementById('modalitySelect') ? document.getElementById('modalitySelect').value : 'ALL';
-    const shift = document.getElementById('shiftSelect') ? document.getElementById('shiftSelect').value : 'ALL';
     const subjectQuery = sectionSubjectQuery.trim();
 
-    let targetSections = SECTIONS_DATA;
-    if (selectedSecId && selectedSecId !== 'ALL_GROUP') {
-      targetSections = SECTIONS_DATA.filter(s => s.id === selectedSecId);
-    } else {
-      if (mod === 'F2F') targetSections = targetSections.filter(s => s.shift === 'F2F');
-      else if (mod === 'ODL') {
-        if (shift === 'ODL1') targetSections = targetSections.filter(s => s.shift === 'ODL - 1ST SHIFT');
-        else if (shift === 'ODL2') targetSections = targetSections.filter(s => s.shift === 'ODL - 2ND SHIFT');
-      }
+    let targetSections = getGradeFilteredSections();
+    if (selectedSectionId !== 'ALL_GROUP') {
+      targetSections = targetSections.filter(section => section.id === selectedSectionId);
     }
 
     if (subjectQuery) {
