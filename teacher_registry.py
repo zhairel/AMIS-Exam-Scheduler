@@ -304,6 +304,9 @@ TEACHER_REGISTRY = [
         "canonical_name": "Teacher Normylah",
         "department": "High School Faculty",
         "title": "Faculty Member",
+        "status": "inactive",
+        "employment_status": "resigned",
+        "is_active": False,
         "aliases": ["teacher normylah", "tchr. normylah", "tchr normylah", "normylah", "normilah", "tr. normylah", "normayla", "normaila", "tchr. normayla", "tchr normayla", "teacher normayla"]
     },
     {

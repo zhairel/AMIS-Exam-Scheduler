@@ -34,6 +34,8 @@ def main():
         records = json.load(handle)
     with open(os.path.join(BASE_DIR, "class_schedules_data.json"), encoding="utf-8") as handle:
         class_sections = json.load(handle)
+    with open(os.path.join(BASE_DIR, "teacher_weekly_schedules.json"), encoding="utf-8") as handle:
+        teacher_weekly = json.load(handle)
 
     assert len(records) == 589, f"Expected 589 final exams, got {len(records)}"
     assert Counter(record["duration_minutes"] for record in records) == Counter({60: 564, 120: 25})
@@ -51,6 +53,53 @@ def main():
 
     assert not any(correction.subject_key(record["subject"]) == "research_consultation" for record in records)
     assert not any(correction.subject_key(record["subject"]) == "aral_math" for record in records)
+
+    normylah_records = [record for record in records if record.get("subject_teacher_id") == "tchr_normylah"]
+    assert len(normylah_records) == 12
+    assert all(record["teacher"] == "Teacher Normylah" for record in normylah_records)
+    assert all(record["teacher_status"] == "RESIGNED_INACTIVE" for record in normylah_records)
+    assert all(record["subject_teacher_status"] == "RESIGNED_INACTIVE" for record in normylah_records)
+    assert all(record["subject_teacher_active"] is False for record in normylah_records)
+    assert all(record["replacement_teacher_required"] is True for record in normylah_records)
+    assert all(record["active_subject_teacher_id"] == "" for record in normylah_records)
+    assert all(record["proctor_id"] != "tchr_normylah" for record in normylah_records)
+    assert all(record["proctor_status"] == "ACTIVE_ASSIGNED" for record in normylah_records)
+    assert all(
+        record["inactive_teacher_warning"] == correction.NORMYLAH_INACTIVE_WARNING
+        for record in normylah_records
+    )
+
+    registry_by_id = {teacher["id"]: teacher for teacher in correction.TEACHER_REGISTRY}
+    for record in normylah_records:
+        proctor = registry_by_id[record["proctor_id"]]
+        assert proctor["title"] == "Faculty Member"
+        assert proctor.get("status", "active") != "inactive"
+        assert proctor.get("is_active", True)
+
+    expected_normylah_positions = {
+        "exam_30": (1, 480, 540),
+        "exam_33": (1, 830, 890),
+        "exam_81": (1, 910, 970),
+        "exam_226": (2, 980, 1040),
+        "exam_229": (2, 1050, 1110),
+        "exam_364": (3, 540, 600),
+        "exam_316": (3, 760, 820),
+        "exam_323": (3, 910, 970),
+        "exam_325": (3, 1050, 1110),
+        "exam_511": (4, 760, 820),
+        "exam_516": (4, 980, 1040),
+        "exam_513": (4, 1050, 1110),
+    }
+    for exam_id, expected in expected_normylah_positions.items():
+        record = next(item for item in normylah_records if item["id"] == exam_id)
+        assert (record["day_number"], record["start_m"], record["end_m"]) == expected
+
+    weekly_blocks = correction.weekly_blocks_by_teacher(teacher_weekly)
+    for record in normylah_records:
+        assert not any(
+            correction.intervals_overlap(record["start_m"], record["end_m"], start_m, end_m)
+            for start_m, end_m in weekly_blocks.get((record["proctor_id"], record["day_name"]), [])
+        ), f"Proctor weekly class conflict for {record['id']} / {record['proctor']}"
 
     grade11 = [record for record in records if record["grade_level"] == "Grade 11"]
     mabisang = [record for record in grade11 if correction.subject_key(record["subject"]) == "mabisang_komunikasyon"]
@@ -424,7 +473,7 @@ def main():
     by_teacher_day = defaultdict(list)
     for record in records:
         by_section_day[(record["section_id"], record["day_number"])].append(record)
-        by_teacher_day[(record["teacher_id"], record["day_number"])].append(record)
+        by_teacher_day[(correction.effective_proctor_id(record), record["day_number"])].append(record)
 
     for section_records in by_section_day.values():
         for index, left in enumerate(section_records):
@@ -465,6 +514,12 @@ def main():
     with open(os.path.join(BASE_DIR, "teacher_subject_tracking.json"), encoding="utf-8") as handle:
         tracking = json.load(handle)
     assert sum(item["total_exams"] for item in tracking) == len(records)
+
+    with open(os.path.join(BASE_DIR, "proctor_assignments.json"), encoding="utf-8") as handle:
+        proctor_assignments = json.load(handle)
+    assert len(proctor_assignments) == len(records)
+    assert sum(item["replacement_teacher_required"] for item in proctor_assignments) == 12
+    assert not any(item["proctor_id"] == "tchr_normylah" for item in proctor_assignments)
 
     with open(os.path.join(BASE_DIR, "AMIS_Teacher_Exam_Subject_Assignments.csv"), encoding="utf-8-sig") as handle:
         assert sum(1 for _ in csv.reader(handle)) == len(records) + 1

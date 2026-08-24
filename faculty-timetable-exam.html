@@ -939,7 +939,7 @@ html, body {
   function populateTeacherDropdown() {
     const teacherExamCounts = {};
     ALL_EXAM_RECORDS.forEach(e => {
-      const tid = e.teacher_id;
+      const tid = e.proctor_id || e.teacher_id;
       if (tid) {
         teacherExamCounts[tid] = (teacherExamCounts[tid] || 0) + 1;
       }
@@ -1025,7 +1025,7 @@ html, body {
     const tVal = teacherPicker.value;
     if (tVal === 'ALL_FACULTY') {
       const teacherIds = Object.values(ALL_TEACHERS_DATA)
-        .filter(t => ALL_EXAM_RECORDS.some(e => e.teacher_id === t.teacher_id))
+        .filter(t => ALL_EXAM_RECORDS.some(e => (e.proctor_id || e.teacher_id) === t.teacher_id))
         .sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name))
         .map(t => t.teacher_id);
       renderMultipleTeacherExamSheets(teacherIds);
@@ -1064,7 +1064,7 @@ html, body {
 
     tIds.forEach(tid => {
       const data = ALL_TEACHERS_DATA[tid];
-      const tExams = ALL_EXAM_RECORDS.filter(e => e.teacher_id === tid);
+      const tExams = ALL_EXAM_RECORDS.filter(e => (e.proctor_id || e.teacher_id) === tid);
       if (tExams.length === 0 && !data) return;
 
       const teacherDisplayName = data ? (data.canonical_name || data.teacher_name || tid) : (tExams[0].teacher || tid);

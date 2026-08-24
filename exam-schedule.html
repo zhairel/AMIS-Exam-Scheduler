@@ -233,6 +233,7 @@ body {
   align-items: center;
   gap: 7px;
   transition: all 180ms ease;
+  text-decoration: none;
 }
 
 .tab-btn:hover {
@@ -848,6 +849,38 @@ html, body {
   opacity: 1;
 }
 
+.cell-inactive-teacher {
+  color: #991b1b;
+  font-size: 11.5px;
+  line-height: 1.35;
+  font-weight: 900;
+  text-align: center;
+}
+
+.cell-proctor-name {
+  color: #075985;
+  background: #e0f2fe;
+  border: 1px solid #7dd3fc;
+  border-radius: 6px;
+  padding: 3px 7px;
+  font-size: 11.5px;
+  line-height: 1.3;
+  font-weight: 900;
+  text-align: center;
+}
+
+.cell-replacement-warning {
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  padding: 4px 7px;
+  font-size: 10px;
+  line-height: 1.3;
+  font-weight: 900;
+  text-align: center;
+}
+
 .gender-chip {
   display: inline-flex;
   align-items: center;
@@ -1060,6 +1093,24 @@ html, body {
   border-radius: 9999px;
   border: 1px solid #a7f3d0;
   white-space: nowrap;
+}
+
+.badge-resigned {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 900;
+  color: #991b1b;
+  background: #fef2f2;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  border: 1px solid #fca5a5;
+  white-space: nowrap;
+}
+
+.faculty-card.inactive-faculty {
+  border-color: #fca5a5;
+  background: #fffafa;
 }
 
 .assigned-subjects-title {
@@ -1290,6 +1341,10 @@ html, body {
       <svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
       Faculty Roster &amp; Assigned Subjects
     </button>
+    <a class="tab-btn" href="proctor-list.html">
+      <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+      Proctor Assignments
+    </a>
   </div>
 
   <div class="badge-anti-conflict-top" id="antiConflictBadge">
@@ -1355,6 +1410,8 @@ html, body {
     { day_num: 3, short_date: 'Sep 6', day_name: 'Sunday', header: 'Day 3 • Sun, Sep 6', date_str: 'Sunday, September 6, 2026' },
     { day_num: 4, short_date: 'Sep 7', day_name: 'Monday', header: 'Day 4 • Mon, Sep 7', date_str: 'Monday, September 7, 2026' }
   ];
+
+  const INACTIVE_TEACHER_IDS = new Set(['tchr_normylah']);
 
   const FACULTY_ROSTER_DATA = [
   {
@@ -5775,7 +5832,9 @@ html, body {
         const right = EXAM_RECORDS[rightIndex];
         if (!overlaps(left, right)) continue;
 
-        const sameTeacher = left.teacher_id && left.teacher_id === right.teacher_id;
+        const leftProctorId = left.proctor_id || left.teacher_id;
+        const rightProctorId = right.proctor_id || right.teacher_id;
+        const sameTeacher = leftProctorId && leftProctorId === rightProctorId;
         const sameCohort =
           left.grade_level === right.grade_level
           && left.modality === right.modality
@@ -6160,7 +6219,11 @@ html, body {
                 <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                    <span class="cell-teacher-name">${esc(match.teacher)}</span>
+                    ${match.replacement_teacher_required ? `
+                      <span class="cell-inactive-teacher">Former subject teacher: ${esc(match.subject_teacher || match.teacher)} — Resigned / Inactive</span>
+                      <span class="cell-proctor-name">Active proctor: ${esc(match.proctor || 'Pending assignment')}</span>
+                      <span class="cell-replacement-warning">${esc(match.inactive_teacher_warning || 'Inactive teacher. Please assign a replacement teacher.')}</span>
+                    ` : `<span class="cell-teacher-name">${esc(match.subject_teacher || match.teacher)}</span>`}
                     <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>
                   </div>
                 </td>
@@ -6208,7 +6271,7 @@ html, body {
   // TAB 2: FACULTY EXAM TIMETABLES
   // -------------------------------------------------------------
   function examCountForTeacher(teacherId) {
-    return EXAM_RECORDS.filter(exam => exam.teacher_id === teacherId).length;
+    return EXAM_RECORDS.filter(exam => (exam.proctor_id || exam.teacher_id) === teacherId).length;
   }
 
   function renderFacultyToolbar(targetTeacherId) {
@@ -6275,7 +6338,7 @@ html, body {
     let fullHtml = '';
 
     targetTeachers.forEach(t => {
-      const tExams = EXAM_RECORDS.filter(e => e.teacher_id === t.id);
+      const tExams = EXAM_RECORDS.filter(e => (e.proctor_id || e.teacher_id) === t.id);
       const teacherName = t.name;
       const teacherDept = t.department;
       const examDutyCount = tExams.length;
@@ -6470,17 +6533,19 @@ html, body {
 
         <div class="faculty-grid">
           ${filtered.length > 0 ? filtered.map(t => `
-            <div class="faculty-card">
+            <div class="faculty-card ${INACTIVE_TEACHER_IDS.has(t.id) ? 'inactive-faculty' : ''}">
               <div>
                 <div class="faculty-head">
                   <div>
                     <div class="faculty-name-title">${t.name}</div>
                     <span class="faculty-dept-tag">${t.department}</span>
                   </div>
-                  <span class="badge-conflict-free">✓ 0 Conflicts</span>
+                  ${INACTIVE_TEACHER_IDS.has(t.id)
+                    ? '<span class="badge-resigned">Resigned / Inactive</span>'
+                    : '<span class="badge-conflict-free">✓ 0 Conflicts</span>'}
                 </div>
 
-                <div class="assigned-subjects-title">Assigned Subjects &amp; Load (${t.total_classes} Classes/wk • ${examCountForTeacher(t.id)} Exams):</div>
+                <div class="assigned-subjects-title">${INACTIVE_TEACHER_IDS.has(t.id) ? 'Former Subject Assignments — Reference Only' : 'Assigned Subjects &amp; Load'} (${t.total_classes} Classes/wk • ${examCountForTeacher(t.id)} Active Proctor Duties):</div>
                 <div class="subject-pill-list">
                   ${t.assignments.length > 0 ? t.assignments.map(a => `
                     <span class="subj-tag" title="${a.section} (${a.shift})">
@@ -6493,8 +6558,10 @@ html, body {
               </div>
 
               <div class="faculty-actions">
-                <a href="class-schedule.html?view=teacher&tchr=${t.id}" class="btn-link-action btn-link-sched">Weekly Schedule</a>
-                <button onclick="switchTab('FACULTY', '${t.id}')" class="btn-link-action btn-link-exam">Exam Timetable (${examCountForTeacher(t.id)})</button>
+                <a href="class-schedule.html?view=teacher&tchr=${t.id}" class="btn-link-action btn-link-sched">${INACTIVE_TEACHER_IDS.has(t.id) ? 'Former Weekly Load' : 'Weekly Schedule'}</a>
+                ${INACTIVE_TEACHER_IDS.has(t.id)
+                  ? '<a href="proctor-list.html?status=replacement" class="btn-link-action btn-link-exam">Replacement Required</a>'
+                  : `<button onclick="switchTab('FACULTY', '${t.id}')" class="btn-link-action btn-link-exam">Proctor Timetable (${examCountForTeacher(t.id)})</button>`}
               </div>
             </div>
           `).join('') : '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#64748b; font-weight:700;">No faculty members matched your search.</div>'}

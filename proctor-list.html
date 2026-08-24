@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AMIS — Exam Proctor Assignments</title>
+  <style>
+    :root {
+      --green:#065f46; --green-dark:#064e3b; --mint:#ecfdf5; --line:#cbd5e1;
+      --ink:#0f172a; --muted:#64748b; --red:#b91c1c; --red-bg:#fef2f2;
+      --blue:#075985; --blue-bg:#e0f2fe; --surface:#fff; --page:#f8fafc;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--page); color:var(--ink); font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
+    .topbar { position:sticky; top:0; z-index:20; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:13px 22px; background:var(--green-dark); color:#fff; box-shadow:0 2px 12px #0f172a24; }
+    .brand { display:flex; align-items:center; gap:12px; min-width:220px; }
+    .brand img { width:42px; height:42px; object-fit:contain; background:#fff; border-radius:50%; }
+    .brand h1 { margin:0; font-size:18px; line-height:1.1; }
+    .brand p { margin:3px 0 0; font-size:11px; color:#a7f3d0; }
+    .nav { display:flex; flex-wrap:wrap; gap:8px; }
+    .nav a { color:#fff; text-decoration:none; font-size:12px; font-weight:800; padding:8px 11px; border:1px solid #ffffff55; border-radius:8px; background:#ffffff12; }
+    .nav a:hover { background:#ffffff25; }
+    main { width:min(1540px,calc(100% - 28px)); margin:20px auto 48px; }
+    .warning { display:flex; gap:13px; align-items:flex-start; padding:16px 18px; border:1px solid #fca5a5; border-left:6px solid #dc2626; border-radius:12px; background:var(--red-bg); color:#7f1d1d; box-shadow:0 4px 18px #7f1d1d0c; }
+    .warning-icon { width:34px; height:34px; flex:0 0 auto; display:grid; place-items:center; border-radius:9px; background:#fee2e2; font-size:20px; }
+    .warning h2 { margin:0 0 4px; font-size:15px; }
+    .warning p { margin:0; font-size:12px; line-height:1.55; font-weight:650; }
+    .summary { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:16px 0; }
+    .stat { background:var(--surface); border:1px solid var(--line); border-radius:11px; padding:14px 16px; }
+    .stat strong { display:block; font-size:25px; color:var(--green-dark); }
+    .stat span { display:block; margin-top:3px; color:var(--muted); font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.04em; }
+    .panel { margin-top:16px; background:var(--surface); border:1px solid var(--line); border-radius:13px; overflow:hidden; box-shadow:0 4px 18px #0f172a0a; }
+    .panel-head { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:14px 16px; border-bottom:1px solid var(--line); background:#fff; }
+    .panel-head h2 { margin:0; font-size:16px; }
+    .panel-head p { margin:4px 0 0; color:var(--muted); font-size:11px; }
+    .clear-badge { white-space:nowrap; color:#047857; background:var(--mint); border:1px solid #6ee7b7; border-radius:999px; padding:6px 10px; font-size:11px; font-weight:900; }
+    .clear-badge.conflict { color:var(--red); background:var(--red-bg); border-color:#fca5a5; }
+    .filters { display:grid; grid-template-columns:2fr repeat(3,minmax(150px,1fr)); gap:9px; padding:12px 16px; border-bottom:1px solid var(--line); background:#f8fafc; }
+    input,select { width:100%; border:1px solid #b8c5d4; border-radius:8px; background:#fff; color:var(--ink); font:inherit; font-size:12px; font-weight:650; padding:9px 10px; }
+    .table-wrap { overflow:auto; }
+    table { width:100%; border-collapse:collapse; min-width:1160px; }
+    th { position:sticky; top:0; z-index:1; background:var(--green-dark); color:#fff; padding:10px 9px; text-align:left; font-size:11px; letter-spacing:.02em; }
+    td { padding:10px 9px; border-bottom:1px solid #e2e8f0; vertical-align:top; font-size:11.5px; line-height:1.4; }
+    tbody tr:hover { background:#f8fafc; }
+    tbody tr.replacement-row { background:#fff7f7; }
+    tbody tr.replacement-row:hover { background:#fef2f2; }
+    .main-value { display:block; color:var(--ink); font-weight:850; }
+    .sub-value { display:block; margin-top:2px; color:var(--muted); font-size:10.5px; font-weight:650; }
+    .status { display:inline-flex; align-items:center; border-radius:999px; padding:3px 7px; font-size:9.5px; font-weight:900; text-transform:uppercase; white-space:nowrap; }
+    .status-active,.status-clear { color:#047857; background:var(--mint); border:1px solid #6ee7b7; }
+    .status-inactive { color:#991b1b; background:#fee2e2; border:1px solid #fca5a5; }
+    .proctor { display:inline-block; color:var(--blue); background:var(--blue-bg); border:1px solid #7dd3fc; border-radius:6px; padding:4px 7px; font-weight:900; }
+    .warning-text { display:block; max-width:240px; margin-top:5px; color:var(--red); font-size:10px; font-weight:800; }
+    .workload-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:8px; padding:14px 16px; max-height:360px; overflow:auto; }
+    .workload-card { display:flex; justify-content:space-between; align-items:center; gap:10px; border:1px solid #dbe4ee; border-radius:9px; padding:10px 11px; background:#fff; }
+    .workload-card strong { display:block; font-size:12px; }
+    .workload-card span { color:var(--muted); font-size:10px; font-weight:700; }
+    .duty-count { min-width:34px; height:34px; display:grid; place-items:center; border-radius:50%; color:#fff!important; background:var(--green); font-size:12px!important; font-weight:900!important; }
+    .empty { padding:32px; text-align:center; color:var(--muted); font-weight:750; }
+    .footer-note { margin-top:15px; color:var(--muted); font-size:10.5px; line-height:1.5; }
+    @media (max-width:900px) { .topbar{align-items:flex-start;flex-direction:column}.summary{grid-template-columns:repeat(2,1fr)}.filters{grid-template-columns:1fr 1fr} }
+    @media (max-width:560px) { main{width:min(100% - 16px,1540px)}.summary,.filters{grid-template-columns:1fr}.brand h1{font-size:16px} }
+    @media print { .topbar,.filters{display:none!important}main{width:100%;margin:0}.panel{box-shadow:none;break-inside:avoid}.warning{break-inside:avoid} }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><img src="amis_logo.png" alt="AMIS logo"><div><h1>Exam Proctor Assignments</h1><p>S.Y. 2026–2027 • Active coverage and inactive-teacher references</p></div></div>
+    <nav class="nav"><a href="exam-schedule.html">Exam Schedules</a><a href="faculty-timetable-exam.html">Faculty Timetables</a><a href="index.html">Home</a></nav>
+  </header>
+
+  <main>
+    <section class="warning" role="alert">
+      <div class="warning-icon" aria-hidden="true">!</div>
+      <div><h2>Teacher Normylah — Resigned / Inactive</h2><p><strong>Teacher Normylah is inactive/resigned. Please assign a replacement teacher.</strong> Her former subject assignments remain visible for reference. Academic Teachers shown below are active exam proctors only and do not become the replacement subject teacher.</p></div>
+    </section>
+
+    <section class="summary" aria-label="Proctor assignment summary">
+      <div class="stat"><strong id="totalAssignments">—</strong><span>Exam assignments</span></div>
+      <div class="stat"><strong id="replacementRequired">—</strong><span>Replacement required</span></div>
+      <div class="stat"><strong id="activeProctors">—</strong><span>Active proctors</span></div>
+      <div class="stat"><strong id="conflictCount">—</strong><span>Proctor conflicts</span></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><div><h2>Active Proctor Workload</h2><p>All assigned examination duties, including automatic academic coverage.</p></div><span id="guardBadge" class="clear-badge">Checking…</span></div>
+      <div id="workloadGrid" class="workload-grid"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><div><h2>Proctor List</h2><p>Subject ownership and active proctor duty are shown separately.</p></div><span id="visibleCount" class="clear-badge">0 records</span></div>
+      <div class="filters">
+        <input id="searchInput" type="search" placeholder="Search subject, section, former teacher, or proctor…" aria-label="Search proctor assignments">
+        <select id="dayFilter" aria-label="Filter by exam day"><option value="">All Exam Days</option></select>
+        <select id="proctorFilter" aria-label="Filter by proctor"><option value="">All Active Proctors</option></select>
+        <select id="statusFilter" aria-label="Filter by teacher status"><option value="">All Teacher Statuses</option><option value="replacement">Replacement Required</option><option value="active">Active Subject Teacher</option></select>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date &amp; Time</th><th>Grade / Section</th><th>Subject</th><th>Subject Teacher</th><th>Teacher Status</th><th>Active Proctor</th><th>Coverage</th><th>Conflict Check</th></tr></thead>
+          <tbody id="assignmentBody"></tbody>
+        </table>
+      </div>
+    </section>
+    <p class="footer-note">Automatic proctor coverage does not alter official subject ownership. A replacement subject teacher must be selected manually by an administrator. Proctor assignments are validated against exam overlaps and recorded weekly/blocked schedules.</p>
+  </main>
+
+  <script>
+  (() => {
+    let records = [];
+    const conflicts = new Set();
+    const esc = value => String(value ?? '').replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
+
+    function detectConflicts() {
+      conflicts.clear();
+      const grouped = new Map();
+      records.forEach(record => {
+        const key = `${record.proctor_id}|${record.day_number}`;
+        if (!grouped.has(key)) grouped.set(key, []);
+        grouped.get(key).push(record);
+      });
+      grouped.forEach(items => {
+        items.sort((a,b) => a.start_m - b.start_m);
+        for (let i=0;i<items.length;i++) for (let j=i+1;j<items.length;j++) {
+          if (items[j].start_m >= items[i].end_m) break;
+          if (items[i].start_m < items[j].end_m && items[j].start_m < items[i].end_m) {
+            conflicts.add(items[i].exam_id); conflicts.add(items[j].exam_id);
+          }
+        }
+      });
+    }
+
+    function populateFilters() {
+      const day = document.getElementById('dayFilter');
+      [...new Map(records.map(r => [r.day_number, `Day ${r.day_number} • ${r.day_name}`])).entries()]
+        .sort((a,b) => a[0]-b[0]).forEach(([value,label]) => day.insertAdjacentHTML('beforeend', `<option value="${value}">${esc(label)}</option>`));
+      const proctor = document.getElementById('proctorFilter');
+      [...new Map(records.map(r => [r.proctor_id,r.proctor])).entries()].sort((a,b) => a[1].localeCompare(b[1]))
+        .forEach(([value,label]) => proctor.insertAdjacentHTML('beforeend', `<option value="${esc(value)}">${esc(label)}</option>`));
+      const requestedStatus = new URLSearchParams(location.search).get('status');
+      if (requestedStatus === 'replacement') document.getElementById('statusFilter').value = 'replacement';
+    }
+
+    function renderSummary() {
+      const proctorIds = new Set(records.map(r => r.proctor_id).filter(Boolean));
+      const replacementCount = records.filter(r => r.replacement_teacher_required).length;
+      document.getElementById('totalAssignments').textContent = records.length;
+      document.getElementById('replacementRequired').textContent = replacementCount;
+      document.getElementById('activeProctors').textContent = proctorIds.size;
+      document.getElementById('conflictCount').textContent = conflicts.size;
+      const guard = document.getElementById('guardBadge');
+      guard.textContent = conflicts.size ? `! ${conflicts.size} conflicting assignments` : '✓ Anti-Conflict Guard: 0 Conflicts';
+      guard.classList.toggle('conflict', conflicts.size > 0);
+    }
+
+    function renderWorkload() {
+      const loads = new Map();
+      records.forEach(record => {
+        if (!loads.has(record.proctor_id)) loads.set(record.proctor_id,{name:record.proctor,department:record.proctor_department || 'Academic Faculty',count:0});
+        loads.get(record.proctor_id).count++;
+      });
+      document.getElementById('workloadGrid').innerHTML = [...loads.values()].sort((a,b) => a.name.localeCompare(b.name)).map(item => `
+        <div class="workload-card"><div><strong>${esc(item.name)}</strong><span>${esc(item.department)} • 0 conflicts</span></div><span class="duty-count">${item.count}</span></div>`).join('');
+    }
+
+    function renderAssignments() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const day = document.getElementById('dayFilter').value;
+      const proctor = document.getElementById('proctorFilter').value;
+      const status = document.getElementById('statusFilter').value;
+      const filtered = records.filter(record => {
+        const haystack = `${record.subject} ${record.section_name} ${record.grade_level} ${record.subject_teacher} ${record.proctor}`.toLowerCase();
+        return (!query || haystack.includes(query))
+          && (!day || String(record.day_number) === day)
+          && (!proctor || record.proctor_id === proctor)
+          && (!status || (status === 'replacement' ? record.replacement_teacher_required : !record.replacement_teacher_required));
+      });
+      document.getElementById('visibleCount').textContent = `${filtered.length} record${filtered.length === 1 ? '' : 's'}`;
+      document.getElementById('assignmentBody').innerHTML = filtered.length ? filtered.map(record => `
+        <tr class="${record.replacement_teacher_required ? 'replacement-row' : ''}">
+          <td><span class="main-value">Day ${record.day_number} • ${esc(record.day_name)}</span><span class="sub-value">${esc(record.date)}<br>${esc(record.time_slot)}</span></td>
+          <td><span class="main-value">${esc(record.grade_level)}</span><span class="sub-value">${esc(record.section_name)} • ${esc(record.shift)}</span></td>
+          <td><span class="main-value">${esc(record.subject)}</span></td>
+          <td><span class="main-value">${esc(record.subject_teacher)}</span>${record.replacement_teacher_required ? `<span class="warning-text">${esc(record.warning)}</span>` : ''}</td>
+          <td><span class="status ${record.replacement_teacher_required ? 'status-inactive' : 'status-active'}">${record.replacement_teacher_required ? 'Resigned / Inactive' : 'Active / Verified'}</span></td>
+          <td><span class="proctor">${esc(record.proctor)}</span><span class="sub-value">${esc(record.proctor_department || 'Academic Faculty')}</span></td>
+          <td><span class="main-value">${record.proctor_assignment_source === 'AUTO_ACADEMIC_COVERAGE' ? 'Academic coverage' : 'Subject teacher'}</span><span class="sub-value">${esc(record.proctor_status)}</span></td>
+          <td><span class="status ${conflicts.has(record.exam_id) ? 'status-inactive' : 'status-clear'}">${conflicts.has(record.exam_id) ? 'Conflict' : 'Clear'}</span></td>
+        </tr>`).join('') : '<tr><td colspan="8" class="empty">No proctor assignments match the selected filters.</td></tr>';
+    }
+
+    async function init() {
+      const response = await fetch(`proctor_assignments.json?v=${Date.now()}`);
+      if (!response.ok) throw new Error('Unable to load proctor assignments.');
+      records = await response.json();
+      records.sort((a,b) => a.day_number-b.day_number || a.start_m-b.start_m || a.section_name.localeCompare(b.section_name));
+      detectConflicts(); populateFilters(); renderSummary(); renderWorkload(); renderAssignments();
+      ['searchInput','dayFilter','proctorFilter','statusFilter'].forEach(id => document.getElementById(id).addEventListener('input',renderAssignments));
+    }
+    init().catch(error => { document.getElementById('assignmentBody').innerHTML = `<tr><td colspan="8" class="empty">${esc(error.message)}</td></tr>`; });
+  })();
+  </script>
+</body>
+</html>

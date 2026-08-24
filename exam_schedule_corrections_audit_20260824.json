@@ -606,6 +606,140 @@
   ],
   "unresolved_official_teacher_links": [],
   "known_sections": 64,
+  "inactive_teacher_proctor_assignments": [
+    {
+      "exam_id": "exam_30",
+      "section": "GRADE 3 (FACE TO FACE)",
+      "subject": "Filipino",
+      "former_subject_teacher": "Teacher Normylah",
+      "former_teacher_status": "RESIGNED_INACTIVE",
+      "proctor": "Teacher Ayah",
+      "proctor_id": "tchr_ayah",
+      "day_number": 1,
+      "time_slot": "08:00 AM – 09:00 AM"
+    },
+    {
+      "exam_id": "exam_33",
+      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+      "subject": "Filipino",
+      "former_subject_teacher": "Teacher Normylah",
+      "former_teacher_status": "RESIGNED_INACTIVE",
+      "proctor": "Teacher Franchette",
+      "proctor_id": "tchr_franchette",
+      "day_number": 1,
+      "time_slot": "01:50 PM – 02:50 PM"
+    },
+    {
+      "exam_id": "exam_81",
+      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+      "subject": "Araling Panlipunan",
+      "former_subject_teacher": "Teacher Normylah",
+      "former_teacher_status": "RESIGNED_INACTIVE",
+      "proctor": "Teacher Junaisah",
+      "proctor_id": "tchr_junaisah",
+      "day_number": 1,
+      "time_slot": "03:10 PM – 04:10 PM"
+    },
+    {
+      "exam_id": "exam_226",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "Fil",
+      "former_subject_teacher": "Teacher Normylah",
+      "former_teacher_status": "RESIGNED_INACTIVE",
+      "proctor": "Teacher Junaisah",
+      "proctor_id": "tchr_junaisah",
+      "day_number": 2,
+      "time_slot": "04:20 PM – 05:20 PM"
+    },
+    {
+      "exam_id": "exam_229",
+      "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+      "subject": "Filipino",
+      "former_subject_teacher": "Teacher Normylah",
+      "former_teacher_status": "RESIGNED_INACTIVE",
+      "proctor": "Teacher Ayah",
+      "proctor_id": "tchr_ayah",
+      "day_number": 2,
+      "time_slot": "05:30 PM – 06:30 PM"
+    },
+    {
+      "exam_id": "exam_364",
+      "section": "GRADE  6  FACE TO FACE",
+      "subject": "Filipino",
+      "former_subject_teacher": "Teacher Normylah",
+      "former_teacher_status": "RESIGNED_INACTIVE",
+      "proctor": "Teacher Ayah",
+      "proctor_id": "tchr_ayah",
+      "day_number": 3,
+      "time_slot": "09:00 AM – 10:00 AM"
+    },
+    {
+      "exam_id": "exam_316",
+      "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+      "subject": "Filipino",
+      "former_subject_teacher": "Teacher Normylah",
+      "former_teacher_status": "RESIGNED_INACTIVE",
+      "proctor": "Teacher Zara",
+      "proctor_id": "tchr_zara",
+      "day_number": 3,
+      "time_slot": "12:40 PM – 01:40 PM"
+    },
+    {
+      "exam_id": "exam_323",
+      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+      "subject": "Filipino",
+      "former_subject_teacher": "Teacher Normylah",
+      "former_teacher_status": "RESIGNED_INACTIVE",
+      "proctor": "Teacher Junaisah",
+      "proctor_id": "tchr_junaisah",
+      "day_number": 3,
+      "time_slot": "03:10 PM – 04:10 PM"
+    },
+    {
+      "exam_id": "exam_325",
+      "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+      "subject": "Filipino",
+      "former_subject_teacher": "Teacher Normylah",
+      "former_teacher_status": "RESIGNED_INACTIVE",
+      "proctor": "Teacher Ayah",
+      "proctor_id": "tchr_ayah",
+      "day_number": 3,
+      "time_slot": "05:30 PM – 06:30 PM"
+    },
+    {
+      "exam_id": "exam_511",
+      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+      "subject": "Araling Panlipunan",
+      "former_subject_teacher": "Teacher Normylah",
+      "former_teacher_status": "RESIGNED_INACTIVE",
+      "proctor": "Teacher Zara",
+      "proctor_id": "tchr_zara",
+      "day_number": 4,
+      "time_slot": "12:40 PM – 01:40 PM"
+    },
+    {
+      "exam_id": "exam_516",
+      "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+      "subject": "Araling Panlipunan",
+      "former_subject_teacher": "Teacher Normylah",
+      "former_teacher_status": "RESIGNED_INACTIVE",
+      "proctor": "Teacher Junaisah",
+      "proctor_id": "tchr_junaisah",
+      "day_number": 4,
+      "time_slot": "04:20 PM – 05:20 PM"
+    },
+    {
+      "exam_id": "exam_513",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "Araling Panlipunan",
+      "former_subject_teacher": "Teacher Normylah",
+      "former_teacher_status": "RESIGNED_INACTIVE",
+      "proctor": "Teacher Keychelle",
+      "proctor_id": "tchr_keychell",
+      "day_number": 4,
+      "time_slot": "05:30 PM – 06:30 PM"
+    }
+  ],
   "source_exam_count": 564,
   "source_duration_counts": {
     "60": 539,
@@ -2080,6 +2214,11 @@
       "teacher": "Teacher Sitti Kauzar",
       "request": "Transfer Kinder 2 Khabaab Oral & Written Exam from Teacher Keychelle",
       "result": "The Sep 2 04:20 PM Oral & Written Exam remains in place under Teacher Sitti Kauzar with no overlapping duty"
+    },
+    {
+      "teacher": "Teacher Normylah",
+      "request": "Mark the resigned teacher inactive without deleting her former subjects or exam schedules",
+      "result": "All 12 former exam assignments remain visible as Resigned / Inactive and Replacement Required; active Academic Teacher proctors are assigned separately with zero overlaps and no subject-teacher replacement"
     }
   ],
   "final_exam_count": 589,
@@ -2087,5 +2226,5 @@
     "60": 564,
     "120": 25
   },
-  "teacher_count": 52
+  "teacher_count": 51
 }

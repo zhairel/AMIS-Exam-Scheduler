@@ -4,6 +4,7 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/faculty-timetable/exam", "destination": "/faculty-timetable-exam.html" },
+    { "source": "/proctor-list", "destination": "/proctor-list.html" },
     { "source": "/admin", "destination": "/admin.html" },
     { "source": "/class-schedule-manage", "destination": "/class-schedule-manage.html" },
     { "source": "/class-schedule-manage/create", "destination": "/class-schedule/create" },

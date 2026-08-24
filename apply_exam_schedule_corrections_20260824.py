@@ -17,12 +17,13 @@ from copy import deepcopy
 import openpyxl
 from ortools.sat.python import cp_model
 
-from teacher_registry import resolve_teacher
+from teacher_registry import TEACHER_REGISTRY, resolve_teacher
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 EXAM_JSON = os.path.join(BASE_DIR, "exam_data.json")
 CLASS_JSON = os.path.join(BASE_DIR, "class_schedules_data.json")
+TEACHER_WEEKLY_JSON = os.path.join(BASE_DIR, "teacher_weekly_schedules.json")
 AUDIT_JSON = os.path.join(BASE_DIR, "exam_schedule_corrections_audit_20260824.json")
 SOURCE_EXAM_JSON = os.environ.get("AMIS_CORRECTION_SOURCE_EXAMS", EXAM_JSON)
 
@@ -78,6 +79,10 @@ HAINUR_DAY4_FIXED_POSITIONS = {
     "exam_495": (4, 1050),
 }
 HAINUR_GRADE5_TRANSFER_IDS = {"exam_62", "exam_354"}
+INACTIVE_TEACHER_IDS = {"tchr_normylah"}
+NORMYLAH_INACTIVE_WARNING = (
+    "Teacher Normylah is inactive/resigned. Please assign a replacement teacher."
+)
 
 # The official three-period ODL grids cannot hold every Hainur/Silfah duty
 # without double-booking them. These seven same-subject faculty assignments provide
@@ -186,6 +191,211 @@ def canonical_teacher(value):
         return resolved["canonical_name"], resolved["id"]
     fallback = clean(value) or "Assigned Faculty"
     return fallback, "tchr_" + re.sub(r"[^a-z0-9]+", "_", fallback.lower()).strip("_")
+
+
+def parse_clock_minutes(value, fallback_meridiem=None):
+    text = clean(value).upper().replace(".", "")
+    match = re.search(r"(\d{1,2}):(\d{2})\s*(AM|PM)?", text)
+    if not match:
+        return None
+    hour = int(match.group(1))
+    minute = int(match.group(2))
+    meridiem = match.group(3) or fallback_meridiem
+    if minute > 59 or hour > 23:
+        return None
+    if meridiem:
+        if not 1 <= hour <= 12:
+            return None
+        hour %= 12
+        if meridiem == "PM":
+            hour += 12
+    return hour * 60 + minute
+
+
+def parse_time_range_minutes(value):
+    parts = re.split(r"\s*(?:–|—|-)\s*", clean(value))
+    if len(parts) != 2:
+        return None
+    start_meridiem_match = re.search(r"\b(AM|PM)\b", parts[0].upper())
+    end_meridiem_match = re.search(r"\b(AM|PM)\b", parts[1].upper())
+    start_meridiem = start_meridiem_match.group(1) if start_meridiem_match else None
+    end_meridiem = end_meridiem_match.group(1) if end_meridiem_match else None
+    start_m = parse_clock_minutes(parts[0], end_meridiem)
+    end_m = parse_clock_minutes(parts[1], start_meridiem)
+    if start_m is None or end_m is None:
+        return None
+    if end_m <= start_m and not start_meridiem and end_meridiem and start_m >= 12 * 60:
+        start_m -= 12 * 60
+    if end_m <= start_m:
+        return None
+    return start_m, end_m
+
+
+def intervals_overlap(left_start, left_end, right_start, right_end):
+    return left_start < right_end and right_start < left_end
+
+
+def effective_proctor_id(record):
+    return clean(record.get("proctor_id") or record.get("teacher_id"))
+
+
+def apply_subject_teacher_status(records):
+    """Separate historical subject ownership from the active exam proctor role."""
+    teacher_by_id = {teacher["id"]: teacher for teacher in TEACHER_REGISTRY}
+    for record in records:
+        subject_teacher = clean(record.get("teacher"))
+        subject_teacher_id = clean(record.get("teacher_id"))
+        is_inactive = subject_teacher_id in INACTIVE_TEACHER_IDS
+
+        record["subject_teacher"] = subject_teacher
+        record["subject_teacher_id"] = subject_teacher_id
+        record["subject_teacher_active"] = not is_inactive
+        record["replacement_teacher_required"] = is_inactive
+
+        if is_inactive:
+            record["teacher_status"] = "RESIGNED_INACTIVE"
+            record["subject_teacher_status"] = "RESIGNED_INACTIVE"
+            record["active_subject_teacher"] = ""
+            record["active_subject_teacher_id"] = ""
+            record["inactive_teacher_warning"] = NORMYLAH_INACTIVE_WARNING
+            record["proctor"] = ""
+            record["proctor_id"] = ""
+            record["proctor_status"] = "PENDING_ASSIGNMENT"
+            record["proctor_assignment_source"] = "AUTO_ACADEMIC_COVERAGE"
+        else:
+            record["subject_teacher_status"] = "ACTIVE_VERIFIED"
+            record["active_subject_teacher"] = subject_teacher
+            record["active_subject_teacher_id"] = subject_teacher_id
+            record["inactive_teacher_warning"] = ""
+            record["proctor"] = subject_teacher
+            record["proctor_id"] = subject_teacher_id
+            record["proctor_status"] = "ACTIVE_ASSIGNED"
+            record["proctor_assignment_source"] = "SUBJECT_TEACHER"
+            record["proctor_department"] = teacher_by_id.get(subject_teacher_id, {}).get(
+                "department", record.get("department", "Faculty")
+            )
+            record["proctor_conflict_status"] = "CLEAR"
+
+
+def weekly_blocks_by_teacher(teacher_weekly):
+    blocks = defaultdict(list)
+    for teacher_id, teacher in (teacher_weekly or {}).items():
+        resolved_id = clean(teacher.get("teacher_id") or teacher.get("id") or teacher_id)
+        for period in teacher.get("periods") or []:
+            day_name = clean(period.get("day"))
+            parsed_range = parse_time_range_minutes(period.get("time"))
+            if day_name and parsed_range:
+                blocks[(resolved_id, day_name)].append(parsed_range)
+        for blocked in teacher.get("blocked_periods") or teacher.get("unavailable") or []:
+            day_name = clean(blocked.get("day"))
+            parsed_range = parse_time_range_minutes(blocked.get("time"))
+            if day_name and parsed_range:
+                blocks[(resolved_id, day_name)].append(parsed_range)
+    return blocks
+
+
+def assign_inactive_teacher_proctors(records, teacher_weekly):
+    """Assign active Academic Teachers without changing the former subject teacher."""
+    academic_teachers = [
+        teacher for teacher in TEACHER_REGISTRY
+        if teacher.get("title") == "Faculty Member"
+        and teacher.get("status", "active") != "inactive"
+        and teacher.get("is_active", True)
+        and teacher["id"] not in INACTIVE_TEACHER_IDS
+    ]
+    weekly_blocks = weekly_blocks_by_teacher(teacher_weekly)
+    busy = defaultdict(list)
+    proctor_load = Counter()
+    proctor_day_load = Counter()
+
+    inactive_records = []
+    for record in records:
+        if record.get("replacement_teacher_required"):
+            inactive_records.append(record)
+            continue
+        proctor_id = effective_proctor_id(record)
+        if not proctor_id:
+            continue
+        day_number = int(record.get("_original_day") or record.get("day_number"))
+        start_m = int(record.get("_original_start_m") or record.get("start_m"))
+        end_m = int(record.get("end_m") or (start_m + int(record.get("duration_minutes") or 60)))
+        busy[(proctor_id, day_number)].append((start_m, end_m, record["id"]))
+        proctor_load[proctor_id] += 1
+        proctor_day_load[(proctor_id, day_number)] += 1
+
+    assignments = []
+    for record in sorted(inactive_records, key=lambda item: (
+        int(item.get("_original_day") or item.get("day_number")),
+        int(item.get("_original_start_m") or item.get("start_m")),
+        clean(item.get("section_name")),
+    )):
+        day_number = int(record.get("_original_day") or record.get("day_number"))
+        day_name = EXAM_DAYS[day_number]["name"]
+        start_m = int(record.get("_original_start_m") or record.get("start_m"))
+        end_m = int(record.get("end_m") or (start_m + int(record.get("duration_minutes") or 60)))
+        department = clean(record.get("department"))
+        candidates = []
+
+        for teacher in academic_teachers:
+            teacher_id = teacher["id"]
+            latest_end_m = TEACHER_DAY_LATEST_END_M.get(
+                (teacher_id, day_number), TEACHER_LATEST_END_M.get(teacher_id)
+            )
+            if latest_end_m is not None and end_m > latest_end_m:
+                continue
+            if any(
+                intervals_overlap(start_m, end_m, blocked_start, blocked_end)
+                for blocked_start, blocked_end, *_ in busy[(teacher_id, day_number)]
+            ):
+                continue
+            if any(
+                intervals_overlap(start_m, end_m, blocked_start, blocked_end)
+                for blocked_start, blocked_end in weekly_blocks.get((teacher_id, day_name), [])
+            ):
+                continue
+
+            teacher_department = clean(teacher.get("department"))
+            department_penalty = 0 if (
+                (department == "Elementary" and "Elementary" in teacher_department)
+                or (department in {"Junior High School", "Senior High School"} and "High School" in teacher_department)
+            ) else 1
+            candidates.append((
+                department_penalty,
+                proctor_load[teacher_id],
+                proctor_day_load[(teacher_id, day_number)],
+                teacher["canonical_name"].lower(),
+                teacher,
+            ))
+
+        if not candidates:
+            raise RuntimeError(
+                f"No active Academic Teacher is available to proctor {record['section_name']} / "
+                f"{record['subject']} on {day_name} at {record.get('time_slot')}"
+            )
+
+        selected = min(candidates)[-1]
+        record["proctor"] = selected["canonical_name"]
+        record["proctor_id"] = selected["id"]
+        record["proctor_status"] = "ACTIVE_ASSIGNED"
+        record["proctor_department"] = selected.get("department", "Academic Faculty")
+        record["proctor_assignment_source"] = "AUTO_ACADEMIC_COVERAGE"
+        record["proctor_conflict_status"] = "CLEAR"
+        busy[(selected["id"], day_number)].append((start_m, end_m, record["id"]))
+        proctor_load[selected["id"]] += 1
+        proctor_day_load[(selected["id"], day_number)] += 1
+        assignments.append({
+            "exam_id": record["id"],
+            "section": record["section_name"],
+            "subject": record["subject"],
+            "former_subject_teacher": record["subject_teacher"],
+            "former_teacher_status": record["subject_teacher_status"],
+            "proctor": record["proctor"],
+            "proctor_id": record["proctor_id"],
+            "day_number": day_number,
+            "time_slot": record.get("time_slot"),
+        })
+
+    return assignments
 
 
 def slots_for(record):
@@ -457,6 +667,8 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
             record["id"] = f"exam_{next_id}"
             next_id += 1
 
+    apply_subject_teacher_status(records)
+
     return records, {
         "removed": removed,
         "renamed": renamed,
@@ -476,6 +688,8 @@ def is_fixed_g11_f2f_biology(record):
 
 
 def fixed_position(record):
+    if record.get("replacement_teacher_required"):
+        return int(record["_original_day"]), int(record["_original_start_m"])
     if record.get("id") in HAINUR_DAY4_FIXED_POSITIONS:
         return HAINUR_DAY4_FIXED_POSITIONS[record["id"]]
     # Grade 12 Abu Musa correction: the published exam day begins at 12:40 PM.
@@ -550,9 +764,10 @@ def candidate_positions(record):
             # an empty early slot before a later examination.
             if is_compact_g3_f2f(record) and day_number != 1 and start_index >= 2:
                 continue
+            proctor_id = effective_proctor_id(record)
             latest_end_m = TEACHER_DAY_LATEST_END_M.get(
-                (record.get("teacher_id"), day_number),
-                TEACHER_LATEST_END_M.get(record.get("teacher_id")),
+                (proctor_id, day_number),
+                TEACHER_LATEST_END_M.get(proctor_id),
             )
             if latest_end_m is not None and end_m > latest_end_m:
                 continue
@@ -640,7 +855,7 @@ def solve_minimal_changes(records):
     # assigned teachers and different section/cohort identities.
     records_by_teacher = defaultdict(list)
     for index, record in enumerate(records):
-        records_by_teacher[record["teacher_id"]].append(index)
+        records_by_teacher[effective_proctor_id(record)].append(index)
 
     for teacher_records in records_by_teacher.values():
         for left_pos, left_index in enumerate(teacher_records):
@@ -719,7 +934,7 @@ def strip_internal(record):
 def build_teacher_tracking(records):
     grouped = {}
     for record in records:
-        teacher = record["teacher"]
+        teacher = clean(record.get("proctor") or record.get("teacher"))
         if teacher not in grouped:
             grouped[teacher] = {
                 "teacher": teacher,
@@ -753,6 +968,7 @@ def build_teacher_tracking(records):
             "modalities": sorted(item["modalities"]),
             "shifts": sorted(item["shifts"]),
             "exams": sorted(item["exams"], key=lambda r: (r["day_number"], r["start_m"], r["section"])),
+            "role": "Active Exam Proctor",
         })
     return output
 
@@ -895,6 +1111,11 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "request": "Transfer Kinder 2 Khabaab Oral & Written Exam from Teacher Keychelle",
             "result": "The Sep 2 04:20 PM Oral & Written Exam remains in place under Teacher Sitti Kauzar with no overlapping duty",
         },
+        {
+            "teacher": "Teacher Normylah",
+            "request": "Mark the resigned teacher inactive without deleting her former subjects or exam schedules",
+            "result": "All 12 former exam assignments remain visible as Resigned / Inactive and Replacement Required; active Academic Teacher proctors are assigned separately with zero overlaps and no subject-teacher replacement",
+        },
     ]
     return audit
 
@@ -926,27 +1147,68 @@ def write_outputs(records, audit):
     with open(csv_path, "w", newline="", encoding="utf-8-sig") as handle:
         writer = csv.writer(handle, lineterminator="\n")
         writer.writerow([
-            "Teacher Name", "Total Exam Load", "Assigned Subject", "Grade Level", "Section",
-            "Gender", "Modality", "Shift", "Examination Date", "Examination Time", "Room", "Status",
+            "Subject Teacher (Reference)", "Subject Teacher Status", "Replacement Required",
+            "Assigned Proctor", "Proctor ID", "Proctor Load", "Proctor Status",
+            "Assigned Subject", "Grade Level", "Section", "Gender", "Modality", "Shift",
+            "Examination Date", "Examination Time", "Room", "Schedule Status", "Warning",
         ])
-        loads = Counter(record["teacher"] for record in clean_records)
-        for record in sorted(clean_records, key=lambda r: (r["teacher"].lower(), r["day_number"], r["start_m"])):
+        loads = Counter(record["proctor"] for record in clean_records)
+        for record in sorted(clean_records, key=lambda r: (r["proctor"].lower(), r["day_number"], r["start_m"])):
             writer.writerow([
-                record["teacher"], loads[record["teacher"]], record["subject"], record["grade"],
-                record["section"], record.get("gender", ""), record["modality"], record["shift"],
-                record["date"], record["time"], record.get("room", ""), record.get("status", "OK"),
+                record.get("subject_teacher", record["teacher"]), record.get("subject_teacher_status", "ACTIVE_VERIFIED"),
+                "YES" if record.get("replacement_teacher_required") else "NO",
+                record["proctor"], record["proctor_id"], loads[record["proctor"]], record["proctor_status"],
+                record["subject"], record["grade"], record["section"], record.get("gender", ""),
+                record["modality"], record["shift"], record["date"], record["time"],
+                record.get("room", ""), record.get("status", "OK"), record.get("inactive_teacher_warning", ""),
             ])
 
     export_headers = [
         "Day Number", "Date", "Slot Number", "Time Slot", "Section ID", "Section Name",
-        "Department", "Grade Level", "Shift", "Subject ID", "Subject", "Teacher ID", "Teacher", "Duration (Mins)",
+        "Department", "Grade Level", "Shift", "Subject ID", "Subject",
+        "Subject Teacher ID", "Subject Teacher (Reference)", "Subject Teacher Status",
+        "Replacement Required", "Proctor ID", "Assigned Proctor", "Proctor Status", "Duration (Mins)",
     ]
     export_rows = [[
         record["day_number"], record["date"], record["slot_number"], record["time_slot"],
         record["section_id"], record["section_name"], record["department"], record["grade_level"],
-        record["shift"], record["subject_id"], record["subject"], record["teacher_id"],
-        record["teacher"], record["duration_minutes"],
+        record["shift"], record["subject_id"], record["subject"],
+        record.get("subject_teacher_id", record["teacher_id"]),
+        record.get("subject_teacher", record["teacher"]),
+        record.get("subject_teacher_status", "ACTIVE_VERIFIED"),
+        "YES" if record.get("replacement_teacher_required") else "NO",
+        record["proctor_id"], record["proctor"], record["proctor_status"], record["duration_minutes"],
     ] for record in clean_records]
+
+    proctor_assignments = [{
+        "exam_id": record["id"],
+        "day_number": record["day_number"],
+        "date": record["date"],
+        "day_name": record["day_name"],
+        "time_slot": record["time_slot"],
+        "start_m": record["start_m"],
+        "end_m": record["end_m"],
+        "grade_level": record["grade_level"],
+        "section_id": record["section_id"],
+        "section_name": record["section_name"],
+        "department": record["department"],
+        "shift": record["shift"],
+        "subject": record["subject"],
+        "subject_teacher": record.get("subject_teacher", record["teacher"]),
+        "subject_teacher_id": record.get("subject_teacher_id", record["teacher_id"]),
+        "subject_teacher_status": record.get("subject_teacher_status", "ACTIVE_VERIFIED"),
+        "replacement_teacher_required": bool(record.get("replacement_teacher_required")),
+        "warning": record.get("inactive_teacher_warning", ""),
+        "proctor": record["proctor"],
+        "proctor_id": record["proctor_id"],
+        "proctor_status": record["proctor_status"],
+        "proctor_department": record.get("proctor_department", ""),
+        "proctor_assignment_source": record.get("proctor_assignment_source", "SUBJECT_TEACHER"),
+        "conflict_status": record.get("proctor_conflict_status", "CLEAR"),
+    } for record in clean_records]
+    with open(os.path.join(BASE_DIR, "proctor_assignments.json"), "w", encoding="utf-8") as handle:
+        json.dump(proctor_assignments, handle, indent=2, ensure_ascii=False)
+        handle.write("\n")
 
     with open(os.path.join(BASE_DIR, "Term_Examination_Schedule_S.Y._2026-2027_Optimized.csv"), "w", newline="", encoding="utf-8-sig") as handle:
         writer = csv.writer(handle, lineterminator="\n")
@@ -979,10 +1241,15 @@ def main():
         source_records = json.load(handle)
     with open(CLASS_JSON, "r", encoding="utf-8") as handle:
         class_sections = json.load(handle)
+    with open(TEACHER_WEEKLY_JSON, "r", encoding="utf-8") as handle:
+        teacher_weekly = json.load(handle)
 
     original_duration_counts = Counter(record["duration_minutes"] for record in source_records)
     official_lookup = build_official_teacher_lookup(class_sections)
     records, audit = apply_content_corrections(source_records, class_sections, official_lookup)
+    audit["inactive_teacher_proctor_assignments"] = assign_inactive_teacher_proctors(
+        records, teacher_weekly
+    )
     audit["source_exam_count"] = len(source_records)
     audit["source_duration_counts"] = dict(sorted(original_duration_counts.items()))
     audit["moved"] = solve_minimal_changes(records)

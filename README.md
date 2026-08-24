@@ -5,7 +5,8 @@
 An automated, conflict-free examination scheduling system and interactive web application built with Google OR-Tools CP-SAT constraint programming.
 
 ## 🌟 Features
-- **Deterministic 0-Conflict Scheduling**: Constraint satisfaction model solving 597 exam sessions across 63 individual sections (F2F Classroom, ODL 1st Shift, ODL 2nd Shift) with 0 teacher double-booking and 0 section overlaps.
+- **Deterministic 0-Conflict Scheduling**: Constraint satisfaction model solving 589 exam sessions across 64 individual sections (F2F Classroom, ODL 1st Shift, ODL 2nd Shift) with 0 proctor double-booking and 0 section overlaps.
+- **Inactive Teacher & Proctor Separation**: Former subject assignments remain visible as historical references, while active Academic Teacher proctors are assigned independently and validated against exam, class, unavailable, and blocked-time overlaps. Review the generated list at `/proctor-list`.
 - **Official Term Examination Hours**:
   - **F2F**: 8:00 AM – 11:25 AM (General Assembly, Exam 1, Exam 2, Recess 10:00–10:25 AM, Exam 3, Dismissal at 11:25 AM)
   - **ODL 1st Shift**: 12:40 PM – 4:10 PM (General Assembly, Exam 1, Exam 2, Salah Break 2:50–3:10 PM, Exam 3, Dismissal at 4:10 PM)
