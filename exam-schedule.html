@@ -639,6 +639,15 @@ html, body {
   letter-spacing: -0.01em;
 }
 
+.cell-tba-only {
+  color: #dc2626;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
 .cell-teacher-name,
 .cell-section-name {
   font-size: 11.5px;
@@ -5948,6 +5957,7 @@ html, body {
             });
 
             if (match) {
+              const isKindergarten = isKindergartenExam(match);
               const displayedSubject = publicExamSubject(match);
               const color = getSubjectColor(displayedSubject);
               const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
@@ -5968,9 +5978,11 @@ html, body {
               fullHtml += `
                 <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
-                    <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                    <span class="cell-teacher-name">${esc(match.teacher)}</span>
-                    <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>
+                    ${isKindergarten
+                      ? '<span class="cell-tba-only">TO BE ANNOUNCED</span>'
+                      : `<span class="cell-subject-sec">${esc(displayedSubject)}</span>
+                         <span class="cell-teacher-name">${esc(match.teacher)}</span>
+                         <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>`}
                   </div>
                 </td>
               `;
@@ -6176,6 +6188,7 @@ html, body {
             });
 
             if (match) {
+              const isKindergarten = isKindergartenExam(match);
               const displayedSubject = publicExamSubject(match);
               const color = getSubjectColor(displayedSubject);
               const genderChip = getExamGenderChip(match);
@@ -6197,10 +6210,12 @@ html, body {
               fullHtml += `
                 <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
-                    <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                    <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                    ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
-                    <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>
+                    ${isKindergarten
+                      ? '<span class="cell-tba-only">TO BE ANNOUNCED</span>'
+                      : `<span class="cell-subject-sec">${esc(displayedSubject)}</span>
+                         <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
+                         ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
+                         <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>`}
                   </div>
                 </td>
               `;
