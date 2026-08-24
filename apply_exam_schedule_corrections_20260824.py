@@ -80,6 +80,7 @@ HAINUR_DAY4_FIXED_POSITIONS = {
 }
 HAINUR_GRADE5_TRANSFER_IDS = {"exam_62", "exam_354"}
 INACTIVE_TEACHER_IDS = {"tchr_normylah"}
+AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER = 2
 NORMYLAH_INACTIVE_WARNING = (
     "Teacher Normylah is inactive/resigned. Please assign a replacement teacher."
 )
@@ -328,6 +329,7 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
     proctor_load_minutes = Counter()
     proctor_day_load_minutes = Counter()
     proctor_assignment_count = Counter()
+    automatic_coverage_count = Counter()
 
     inactive_records = []
     for record in records:
@@ -361,6 +363,8 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
 
         for teacher in academic_teachers:
             teacher_id = teacher["id"]
+            if automatic_coverage_count[teacher_id] >= AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER:
+                continue
             latest_end_m = TEACHER_DAY_LATEST_END_M.get(
                 (teacher_id, day_number), TEACHER_LATEST_END_M.get(teacher_id)
             )
@@ -383,6 +387,7 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
                 or (department in {"Junior High School", "Senior High School"} and "High School" in teacher_department)
             ) else 1
             candidates.append((
+                0 if automatic_coverage_count[teacher_id] == 1 else 1,
                 proctor_load_minutes[teacher_id],
                 proctor_day_load_minutes[(teacher_id, day_number)],
                 proctor_assignment_count[teacher_id],
@@ -410,6 +415,7 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
         proctor_load_minutes[selected["id"]] += duration_minutes
         proctor_day_load_minutes[(selected["id"], day_number)] += duration_minutes
         proctor_assignment_count[selected["id"]] += 1
+        automatic_coverage_count[selected["id"]] += 1
         assignments.append({
             "exam_id": record["id"],
             "section": record["section_name"],

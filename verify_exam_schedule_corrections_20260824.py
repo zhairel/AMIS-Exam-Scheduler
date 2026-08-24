@@ -71,6 +71,8 @@ def main():
     )
 
     registry_by_id = {teacher["id"]: teacher for teacher in correction.TEACHER_REGISTRY}
+    normylah_coverage_counts = Counter(record["proctor_id"] for record in normylah_records)
+    assert max(normylah_coverage_counts.values()) <= correction.AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
     for record in normylah_records:
         proctor = registry_by_id[record["proctor_id"]]
         assert proctor["title"] == "Faculty Member"
