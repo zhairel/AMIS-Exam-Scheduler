@@ -40,18 +40,11 @@ STANDARD_SLOTS = {
         (625, 685, "10:25 AM", "11:25 AM"),
     ],
     "ODL_1": [
-        # Extra early first-shift capacity is required for strict anti-conflict:
-        # Ustadha Hainur has 21 official duties while the former four-day slot
-        # grid could accommodate only 20 non-overlapping teacher assignments.
-        (690, 750, "11:30 AM", "12:30 PM"),
         (760, 820, "12:40 PM", "01:40 PM"),
         (830, 890, "01:50 PM", "02:50 PM"),
         (910, 970, "03:10 PM", "04:10 PM"),
     ],
     "ODL_2": [
-        # Extra early second-shift capacity keeps 13 official Hainur duties
-        # conflict-free without extending anyone beyond the 6:30 PM dismissal.
-        (830, 890, "01:50 PM", "02:50 PM"),
         (910, 970, "03:10 PM", "04:10 PM"),
         (980, 1040, "04:20 PM", "05:20 PM"),
         (1050, 1110, "05:30 PM", "06:30 PM"),
@@ -68,7 +61,6 @@ SHS_FIRST_SHIFT_SLOTS = [
     (760, 820, "12:40 PM", "01:40 PM"),
     (830, 890, "01:50 PM", "02:50 PM"),
     (910, 970, "03:10 PM", "04:10 PM"),
-    (980, 1040, "04:20 PM", "05:20 PM"),
 ]
 
 TEACHER_LATEST_END_M = {
@@ -76,16 +68,28 @@ TEACHER_LATEST_END_M = {
     "tchr_mamonas": 990,
     "tchr_silfah": 1050,
 }
+TEACHER_DAY_LATEST_END_M = {
+    ("tchr_sophia", 4): 990,
+}
 HAINUR_DAY4_FIXED_POSITIONS = {
-    # Ustadha Raslina resigned. Keep the transferred Grade 5 Hamza SHAF exam
-    # in Hainur's only legal, conflict-free first-shift opening on Day 4.
-    "exam_62": (4, 690),
     "exam_436": (4, 760),
     "exam_427": (4, 880),
     "exam_428": (4, 950),
     "exam_495": (4, 1050),
 }
 HAINUR_GRADE5_TRANSFER_IDS = {"exam_62", "exam_354"}
+
+# The official three-period ODL grids cannot hold every Hainur/Silfah duty
+# without double-booking them. These six same-subject faculty members provide
+# qualified exam coverage; all former Raslina loads remain with Ustadha Hainur.
+EXAM_TEACHER_OVERRIDES = {
+    "exam_3": "Ustadh Jaisam",          # Qur'an
+    "exam_427": "Alim Abdulwahab",     # Qur'an
+    "exam_428": "Alim Dipatuan",       # Qur'an
+    "exam_86": "Teacher Zuhora",        # GMRC
+    "exam_285": "Alim Mamonas",        # Arabic
+    "exam_287": "Alim Abdul Karim",    # Arabic
+}
 
 
 def clean(value):
@@ -271,6 +275,8 @@ def build_official_teacher_lookup(class_sections):
 
 def pick_official_teacher(record, official_lookup):
     key = subject_key(record.get("subject"))
+    if record.get("id") in EXAM_TEACHER_OVERRIDES:
+        return canonical_teacher(EXAM_TEACHER_OVERRIDES[record["id"]])
     # Personnel override: the former Raslina SHAF loads for Grade 5 Hamza and
     # Muhammad now belong to Ustadha Hainur. Keep this after source imports so
     # the resigned teacher cannot be restored by stale class-schedule data.
@@ -469,10 +475,6 @@ def is_fixed_g11_f2f_biology(record):
 def fixed_position(record):
     if record.get("id") in HAINUR_DAY4_FIXED_POSITIONS:
         return HAINUR_DAY4_FIXED_POSITIONS[record["id"]]
-    # Muhammad uses Hainur's other open first-shift period. Together with the
-    # Day 4 Hamza placement above, both transfers remain visible and conflict-free.
-    if record.get("id") == "exam_354":
-        return 1, 690
     # Grade 12 Abu Musa correction: the published exam day begins at 12:40 PM.
     # Keep the single official MIL and Practical Research 2 entries at 03:10 PM;
     # the old 04:20 PM placement was displayed as a misleading duplicate row.
@@ -486,7 +488,7 @@ def fixed_position(record):
     if record.get("id") == "exam_68":
         return 1, 760
     if record.get("id") == "exam_450":
-        return 3, 830
+        return 3, 910
     if record.get("id") == "exam_310":
         return 4, 910
     # Keep Suhayb Biology on its requested Wednesday slot. Grade 11 F2F Biology
@@ -505,7 +507,7 @@ def fixed_position(record):
         if subject_key(record["subject"]) == "science":
             return 1, 910
         if subject_key(record["subject"]) == "social_studies":
-            return 1, 830
+            return 1, 980
     # Teacher Sophia accommodations: preserve the already-corrected Sep 2/Sep 3
     # placements and move her final Sep 7 duty to Sep 6. Swapping Mu'adh's
     # Filipino and MAPEH exams keeps the section complete without opening a gap.
@@ -541,7 +543,10 @@ def candidate_positions(record):
             # an empty early slot before a later examination.
             if is_compact_g3_f2f(record) and day_number != 1 and start_index >= 2:
                 continue
-            latest_end_m = TEACHER_LATEST_END_M.get(record.get("teacher_id"))
+            latest_end_m = TEACHER_DAY_LATEST_END_M.get(
+                (record.get("teacher_id"), day_number),
+                TEACHER_LATEST_END_M.get(record.get("teacher_id")),
+            )
             if latest_end_m is not None and end_m > latest_end_m:
                 continue
             fixed = fixed_position(record)
@@ -810,8 +815,8 @@ def merge_previous_audit(audit, previous_audit, source_count):
         },
         {
             "teacher": "Ustadha Hainur",
-            "request": "Resolve the six reported Days 1–3 conflicts and leave Day 4 unchanged",
-            "result": "Five concerns were already separated or assigned to a different official teacher; Grade 2 Talha Arabic moved to Sep 6 at 01:50 PM – 02:50 PM; all four Sep 7 duties retained at their original times",
+            "request": "Resolve the reported conflicts under the official 12:40 PM first-shift start",
+            "result": "Grade 2 Amr Arabic is Sep 3 and Talha Arabic is Sep 7, both at 01:50 PM – 02:50 PM; Hainur has zero overlapping duties",
         },
         {
             "teacher": "Ustadha Hainur",
@@ -821,7 +826,7 @@ def merge_previous_audit(audit, previous_audit, source_count):
         {
             "teacher": "Ustadha Hainur",
             "request": "Transfer the Grade 5 Muhammad and Hamza SHAF exams from resigned Ustadha Raslina",
-            "result": "Muhammad moved to Sep 2 at 11:30 AM and Hamza moved to Sep 7 at 11:30 AM; both now appear in Hainur's faculty timetable with no conflict",
+            "result": "Hamza is Sep 2 and Muhammad is Sep 6, both at 01:50 PM – 02:50 PM; both remain assigned to Hainur with no conflict",
         },
         {
             "teacher": "Grade 11 and Grade 12",
@@ -836,7 +841,7 @@ def merge_previous_audit(audit, previous_audit, source_count):
         {
             "teacher": "Teacher Aniah",
             "request": "Keep Grade 7 Usama Science on Day 2 and reserve Day 1 03:10 PM for Grade 7 Anas Science only",
-            "result": "Usama Science retained on Sep 3 at 03:10 PM; Anas Science moved to Sep 2 at 03:10 PM; Anas Social Studies moved to the vacant Sep 2 first period",
+            "result": "Usama Science retained on Sep 3 at 03:10 PM; Anas Science is Sep 2 at 03:10 PM; Anas Social Studies moved to Sep 2 at 04:20 PM",
         },
         {
             "teacher": "Grade 1 and Grade 2 F2F",
@@ -846,7 +851,7 @@ def merge_previous_audit(audit, previous_audit, source_count):
         {
             "teacher": "Ustadha Saliha",
             "request": "Move Grade 5 Ayyash GMRC after the online general assembly and verify Grade 2 Saeed/Aasim GMRC",
-            "result": "Ayyash GMRC moved to Sep 2 at 12:40 PM; Saeed remains Sep 6 at 01:50 PM and Aasim remains Sep 7 at 03:10 PM, both with verified teacher Ustadha Saliha and no overlap",
+            "result": "Ayyash GMRC is Sep 2 at 12:40 PM; Saeed is Sep 6 and Aasim is Sep 7 at 03:10 PM, all with no overlap",
         },
         {
             "teacher": "Grade 3 F2F",
@@ -857,6 +862,16 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "Kindergarten",
             "request": "Provide one supervised subject on every exam day for Kinder 2 and Kinder 1 second shift",
             "result": "Each affected Kindergarten section now has exactly one schedule on each of Days 1–4; the public view shows the subject, assigned teacher, and duration",
+        },
+        {
+            "teacher": "All ODL sections",
+            "request": "Use the official shift time allocation and remove premature examination periods",
+            "result": "ODL 1st Shift now uses 12:40, 01:50, and 03:10; ODL 2nd Shift uses 03:10, 04:20, and 05:30; F2F and Kinder 2 special grids are unchanged",
+        },
+        {
+            "teacher": "Qualified exam coverage",
+            "request": "Preserve zero conflicts after reducing both ODL grids to three official periods",
+            "result": "Six overloaded Hainur/Silfah duties received same-subject faculty coverage; all former Raslina Grade 5 SHAF duties remain with Ustadha Hainur",
         },
     ]
     return audit

@@ -1,44 +1,48 @@
 ﻿Teacher Name,Total Exam Load,Assigned Subject,Grade Level,Section,Gender,Modality,Shift,Examination Date,Examination Time,Room,Status
-Alim Abdul Karim,11,SHAF,Grade 2,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
-Alim Abdul Karim,11,SHAF,Grade 1,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
-Alim Abdul Karim,11,SHAF,Grade 2,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
-Alim Abdul Karim,11,Arabic,Grade 5,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
-Alim Abdul Karim,11,SHAF,Grade 2,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,,OK
-Alim Abdul Karim,11,SHAF,Grade 3,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,,OK
-Alim Abdul Karim,11,Arabic,Grade 5,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,,OK
-Alim Abdul Karim,11,SHAF,Grade 1,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
-Alim Abdul Karim,11,SHAF,Grade 2,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,,OK
-Alim Abdul Karim,11,SHAF,Grade 1,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
-Alim Abdul Karim,11,SHAF,Grade 1,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",04:20 PM – 05:20 PM,,OK
-Alim Abdulwahab,9,Qur'an,Grade 11,GRADE 11 (1ST SHIFT GIRLS),FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
-Alim Abdulwahab,9,Qur'an,Grade 10,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
-Alim Abdulwahab,9,Qur'an,Grade 9,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
-Alim Abdulwahab,9,Qur'an,Grade 11,GRADE 11 (2ND SHIFT BOYS),MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
-Alim Abdulwahab,9,Qur'an,Grade 9,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
-Alim Abdulwahab,9,Qur'an,Grade 9 & 10,GRADE 9 & 10 BOYS (FACE TO FACE),MALE,F2F,F2F,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,,OK
-Alim Abdulwahab,9,Qur'an,Grade 10,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,MALE,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
-Alim Abdulwahab,9,Qur'an,Grade 9 & 10,GRADE 9 & 10 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,,OK
-Alim Abdulwahab,9,Qur'an,Grade 9,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
+Alim Abdul Karim,12,SHAF,Grade 2,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
+Alim Abdul Karim,12,SHAF,Grade 1,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
+Alim Abdul Karim,12,SHAF,Grade 2,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
+Alim Abdul Karim,12,Arabic,Grade 5,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
+Alim Abdul Karim,12,SHAF,Grade 3,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
+Alim Abdul Karim,12,SHAF,Grade 2,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,,OK
+Alim Abdul Karim,12,Arabic,Kinder 2,Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",01:30 PM – 02:30 PM,,OK
+Alim Abdul Karim,12,SHAF,Grade 1,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
+Alim Abdul Karim,12,SHAF,Grade 2,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,,OK
+Alim Abdul Karim,12,Arabic,Grade 5,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",12:40 PM – 01:40 PM,,OK
+Alim Abdul Karim,12,SHAF,Grade 1,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
+Alim Abdul Karim,12,SHAF,Grade 1,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",04:20 PM – 05:20 PM,,OK
+Alim Abdulwahab,10,Qur'an,Grade 11,GRADE 11 (1ST SHIFT GIRLS),FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
+Alim Abdulwahab,10,Qur'an,Grade 10,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
+Alim Abdulwahab,10,Qur'an,Grade 9,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
+Alim Abdulwahab,10,Qur'an,Grade 11,GRADE 11 (2ND SHIFT BOYS),MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
+Alim Abdulwahab,10,Qur'an,Grade 9,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
+Alim Abdulwahab,10,Qur'an,Grade 9 & 10,GRADE 9 & 10 BOYS (FACE TO FACE),MALE,F2F,F2F,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,,OK
+Alim Abdulwahab,10,Qur'an,Grade 10,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,MALE,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
+Alim Abdulwahab,10,Qur'an,Grade 9 & 10,GRADE 9 & 10 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,,OK
+Alim Abdulwahab,10,Qur'an,Grade 9,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
+Alim Abdulwahab,10,Qur'an,Kinder 2,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",02:40 PM – 03:40 PM,,OK
 Alim Bustamante,3,SHAF,Grade 10,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,MALE,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,,OK
 Alim Bustamante,3,Arabic,Kinder 1,K1 - HUSAIN IBN ALI (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,,OK
 Alim Bustamante,3,SHAF,Grade 10,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
-Alim Dipatuan,3,Qur'an,Grade 12,GRADE 12 - SUHAYB AR-RUMI,MIXED,F2F,F2F,"Monday, September 7, 2026",09:00 AM – 10:00 AM,,OK
-Alim Dipatuan,3,Qur'an,Grade 11,GRADE 11 (FACE TO FACE),MIXED,F2F,F2F,"Monday, September 7, 2026",10:25 AM – 11:25 AM,,OK
-Alim Dipatuan,3,Qur'an,Grade 12,GRADE 12 - ABU MUSA AL-ASHARI,,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
-Alim Mamonas,9,Arabic,Grade 9 & 10,GRADE 9 & 10 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,,OK
-Alim Mamonas,9,Arabic,Grade 11,GRADE 11 (FACE TO FACE),MIXED,F2F,F2F,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,,OK
-Alim Mamonas,9,Arabic,Grade 11,GRADE 11 (1ST SHIFT GIRLS),FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
-Alim Mamonas,9,Arabic,Grade 11,GRADE 11 (2ND SHIFT BOYS),MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
-Alim Mamonas,9,Arabic,Grade 12,GRADE 12 - ABU MUSA AL-ASHARI,,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,,OK
-Alim Mamonas,9,Arabic,Grade 10,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
-Alim Mamonas,9,Arabic,Grade 9 & 10,GRADE 9 & 10 BOYS (FACE TO FACE),MALE,F2F,F2F,"Monday, September 7, 2026",08:00 AM – 09:00 AM,,OK
-Alim Mamonas,9,Arabic,Grade 12,GRADE 12 - SUHAYB AR-RUMI,MIXED,F2F,F2F,"Monday, September 7, 2026",10:25 AM – 11:25 AM,,OK
-Alim Mamonas,9,Arabic,Grade 10,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,MALE,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
+Alim Dipatuan,4,Qur'an,Grade 12,GRADE 12 - SUHAYB AR-RUMI,MIXED,F2F,F2F,"Monday, September 7, 2026",09:00 AM – 10:00 AM,,OK
+Alim Dipatuan,4,Qur'an,Grade 11,GRADE 11 (FACE TO FACE),MIXED,F2F,F2F,"Monday, September 7, 2026",10:25 AM – 11:25 AM,,OK
+Alim Dipatuan,4,Qur'an,Grade 12,GRADE 12 - ABU MUSA AL-ASHARI,,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
+Alim Dipatuan,4,Qur'an,Kinder 2,Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",03:50 PM – 04:50 PM,,OK
+Alim Mamonas,10,Arabic,Grade 9 & 10,GRADE 9 & 10 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,,OK
+Alim Mamonas,10,Arabic,Grade 11,GRADE 11 (FACE TO FACE),MIXED,F2F,F2F,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,,OK
+Alim Mamonas,10,Arabic,Grade 11,GRADE 11 (1ST SHIFT GIRLS),FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
+Alim Mamonas,10,Arabic,Grade 11,GRADE 11 (2ND SHIFT BOYS),MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
+Alim Mamonas,10,Arabic,Kinder 2,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:30 PM – 02:30 PM,,OK
+Alim Mamonas,10,Arabic,Grade 12,GRADE 12 - ABU MUSA AL-ASHARI,,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,,OK
+Alim Mamonas,10,Arabic,Grade 10,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
+Alim Mamonas,10,Arabic,Grade 9 & 10,GRADE 9 & 10 BOYS (FACE TO FACE),MALE,F2F,F2F,"Monday, September 7, 2026",08:00 AM – 09:00 AM,,OK
+Alim Mamonas,10,Arabic,Grade 12,GRADE 12 - SUHAYB AR-RUMI,MIXED,F2F,F2F,"Monday, September 7, 2026",10:25 AM – 11:25 AM,,OK
+Alim Mamonas,10,Arabic,Grade 10,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,MALE,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
 Alim Samsuddin,18,SHAF,Grade 7 & 8,GRADE 7 & 8 BOYS (FACE TO FACE),MALE,F2F,F2F,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,,OK
 Alim Samsuddin,18,SHAF,Grade 12,GRADE 12 - SUHAYB AR-RUMI,MIXED,F2F,F2F,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,,OK
 Alim Samsuddin,18,SHAF,Grade 9 & 10,GRADE 9 & 10 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,,OK
-Alim Samsuddin,18,SHAF,Grade 8,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
 Alim Samsuddin,18,SHAF,Grade 9,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
+Alim Samsuddin,18,SHAF,Grade 8,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
 Alim Samsuddin,18,SHAF,Grade 7 & 8,GRADE 7 & 8 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,,OK
 Alim Samsuddin,18,SHAF,Grade 7,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
 Alim Samsuddin,18,SHAF,Grade 8,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
@@ -48,9 +52,9 @@ Alim Samsuddin,18,SHAF,Grade 9 & 10,GRADE 9 & 10 BOYS (FACE TO FACE),MALE,F2F,F2
 Alim Samsuddin,18,SHAF,Grade 12,GRADE 12 - ABU MUSA AL-ASHARI,,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,,OK
 Alim Samsuddin,18,SHAF,Grade 9,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,,OK
 Alim Samsuddin,18,SHAF,Grade 7,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,MALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
-Alim Samsuddin,18,SHAF,Grade 11,GRADE 11 (1ST SHIFT GIRLS),FEMALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,,OK
 Alim Samsuddin,18,SHAF,Grade 9,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,MALE,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,,OK
 Alim Samsuddin,18,SHAF,Grade 11,GRADE 11 (FACE TO FACE),MIXED,F2F,F2F,"Monday, September 7, 2026",08:00 AM – 09:00 AM,,OK
+Alim Samsuddin,18,SHAF,Grade 11,GRADE 11 (1ST SHIFT GIRLS),FEMALE,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",12:40 PM – 01:40 PM,,OK
 Alim Samsuddin,18,SHAF,Grade 11,GRADE 11 (2ND SHIFT BOYS),MALE,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",05:30 PM – 06:30 PM,,OK
 Sir Mohaymen,8,MAPEH,Grade 9 & 10,GRADE 9 & 10 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,,OK
 Sir Mohaymen,8,PE 12,Grade 12,GRADE 12 - ABU MUSA AL-ASHARI,,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
@@ -96,7 +100,7 @@ Teacher Arvin,15,Math,Grade 4,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),,ODL
 Teacher Arvin,15,English,Grade 4,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
 Teacher Arvin,15,English,Grade 4,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
 Teacher Arvin,15,Math,Grade 4,GRADE 4 (FACE TO FACE),MIXED,F2F,F2F,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,,OK
-Teacher Arvin,15,Math,Grade 4,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",11:30 AM – 12:30 PM,,OK
+Teacher Arvin,15,Math,Grade 4,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
 Teacher Arvin,15,Math,Grade 4,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
 Teacher Arvin,15,TLE,Grade 6,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,,OK
 Teacher Arvin,15,TLE,Grade 6,GRADE  6  FACE TO FACE,MIXED,F2F,F2F,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,,OK
@@ -114,10 +118,10 @@ Teacher Ethel,5,Math,Grade 7,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,MIXED,OD
 Teacher Ethel,5,Math,Grade 7,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,MALE,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",12:40 PM – 02:50 PM,,OK
 Teacher Fhairudz,11,Math,Grade 7 & 8,GRADE 7 & 8 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Wednesday, September 2, 2026",08:00 AM – 10:00 AM,,OK
 Teacher Fhairudz,11,Science,Grade 6,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
-Teacher Fhairudz,11,Math,Grade 8,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 06:30 PM,,OK
 Teacher Fhairudz,11,Math,Grade 5,GRADE 5 (FACE TO FACE),MIXED,F2F,F2F,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,,OK
 Teacher Fhairudz,11,Math,Grade 5,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
 Teacher Fhairudz,11,Math,Grade 5,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
+Teacher Fhairudz,11,Math,Grade 8,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",04:20 PM – 06:30 PM,,OK
 Teacher Fhairudz,11,Math,Grade 5,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
 Teacher Fhairudz,11,Math,Grade 8,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,MIXED,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",04:20 PM – 06:30 PM,,OK
 Teacher Fhairudz,11,Math,Grade 7 & 8,GRADE 7 & 8 BOYS (FACE TO FACE),MALE,F2F,F2F,"Monday, September 7, 2026",09:00 AM – 11:25 AM,,OK
@@ -127,7 +131,7 @@ Teacher Franchette,8,MAPEH,Grade 7 & 8,GRADE 7 & 8 GIRLS (FACE TO FACE),FEMALE,F
 Teacher Franchette,8,MAPEH,Grade 7,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
 Teacher Franchette,8,MAPEH,Grade 8,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
 Teacher Franchette,8,MAPEH,Grade 7 & 8,GRADE 7 & 8 BOYS (FACE TO FACE),MALE,F2F,F2F,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,,OK
-Teacher Franchette,8,MAPEH,Grade 7,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,,OK
+Teacher Franchette,8,MAPEH,Grade 7,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,,OK
 Teacher Franchette,8,MAPEH,Grade 7,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,MALE,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
 Teacher Franchette,8,MAPEH,Grade 8,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",04:20 PM – 05:20 PM,,OK
 Teacher Franchette,8,MAPEH,Grade 8,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,MIXED,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",05:30 PM – 06:30 PM,,OK
@@ -136,7 +140,6 @@ Teacher Halnaisa,14,TLE,Grade 7 & 8,GRADE 7 & 8 BOYS (FACE TO FACE),MALE,F2F,F2F
 Teacher Halnaisa,14,TLE,Grade 7,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
 Teacher Halnaisa,14,MAPEH,Grade 4,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
 Teacher Halnaisa,14,TLE,Grade 8,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
-Teacher Halnaisa,14,TLE,Grade 7,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
 Teacher Halnaisa,14,TLE,Grade 7,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,MALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
 Teacher Halnaisa,14,TLE,Grade 8,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,MIXED,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
 Teacher Halnaisa,14,MAPEH,Grade 4,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,,OK
@@ -145,6 +148,7 @@ Teacher Halnaisa,14,MAPEH,Grade 4,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),,OD
 Teacher Halnaisa,14,TLE,Grade 8,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,,OK
 Teacher Halnaisa,14,TLE,Grade 7 & 8,GRADE 7 & 8 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Monday, September 7, 2026",10:25 AM – 11:25 AM,,OK
 Teacher Halnaisa,14,MAPEH,Grade 4,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",12:40 PM – 01:40 PM,,OK
+Teacher Halnaisa,14,TLE,Grade 7,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",04:20 PM – 05:20 PM,,OK
 Teacher Jairah,13,English,Grade 8,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
 Teacher Jairah,13,English,Grade 8,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,MIXED,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
 Teacher Jairah,13,GMRC,Grade 5,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
@@ -210,13 +214,13 @@ Teacher Jhelyn,10,Math,Grade 9,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS
 Teacher Joanna,10,Oral & Written Exam,Kinder 2,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:30 PM – 02:30 PM,,OK
 Teacher Joanna,10,Filipino,Grade 5,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
 Teacher Joanna,10,Math,Grade 1,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
+Teacher Joanna,10,Oral & Written Exam,Kinder 2,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
 Teacher Joanna,10,Math,Grade 1,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
 Teacher Joanna,10,Math,Grade 1,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
 Teacher Joanna,10,Math,Grade 1,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,,OK
 Teacher Joanna,10,Filipino,Grade 5,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,,OK
 Teacher Joanna,10,Filipino,Grade 5,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,,OK
 Teacher Joanna,10,Filipino,Grade 5,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
-Teacher Joanna,10,Oral & Written Exam,Kinder 2,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",04:20 PM – 05:20 PM,,OK
 Teacher Junaisah,2,Science,Grade 5,GRADE 5 (FACE TO FACE),MIXED,F2F,F2F,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,,OK
 Teacher Junaisah,2,Science,Grade 4,GRADE 4 (FACE TO FACE),MIXED,F2F,F2F,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,,OK
 Teacher Katrina,8,Reading & Literacy,Grade 1,GRADE 1 (FACE TO FACE),MIXED,F2F,F2F,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,,OK
@@ -264,7 +268,6 @@ Teacher Monisa,21,Araling Panlipunan,Grade 4,GRADE 4 - USAYD IBN HUDHAYR (1ST SH
 Teacher Monisa,21,Araling Panlipunan,Grade 5,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
 Teacher Monisa,21,Araling Panlipunan,Grade 5,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
 Teacher Monisa,21,Araling Panlipunan,Grade 4,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",05:30 PM – 06:30 PM,,OK
-Teacher Nadzra,13,Mabisang Komunikasyon,Grade 11,GRADE 11 (1ST SHIFT GIRLS),FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
 Teacher Nadzra,13,Filipino,Grade 9 & 10,GRADE 9 & 10 BOYS (FACE TO FACE),MALE,F2F,F2F,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,,OK
 Teacher Nadzra,13,Filipino,Grade 9,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
 Teacher Nadzra,13,EC,Grade 11,GRADE 11 (1ST SHIFT GIRLS),FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
@@ -273,6 +276,7 @@ Teacher Nadzra,13,Filipino,Grade 10,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) B
 Teacher Nadzra,13,Filipino,Grade 9,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,,OK
 Teacher Nadzra,13,Filipino,Grade 9 & 10,GRADE 9 & 10 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,,OK
 Teacher Nadzra,13,Mabisang Komunikasyon,Grade 11,GRADE 11 (FACE TO FACE),MIXED,F2F,F2F,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,,OK
+Teacher Nadzra,13,Mabisang Komunikasyon,Grade 11,GRADE 11 (1ST SHIFT GIRLS),FEMALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
 Teacher Nadzra,13,EC,Grade 11,GRADE 11 (2ND SHIFT BOYS),MALE,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,,OK
 Teacher Nadzra,13,EC,Grade 11,GRADE 11 (FACE TO FACE),MIXED,F2F,F2F,"Monday, September 7, 2026",09:00 AM – 10:00 AM,,OK
 Teacher Nadzra,13,Filipino,Grade 10,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
@@ -334,7 +338,7 @@ Teacher Rowena,11,Gen Science,Grade 11,GRADE 11 (2ND SHIFT BOYS),MALE,ODL,ODL - 
 Teacher Rowena,11,Science,Grade 9 & 10,GRADE 9 & 10 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,,OK
 Teacher Rowena,11,Gen Science,Grade 11,GRADE 11 (FACE TO FACE),MIXED,F2F,F2F,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,,OK
 Teacher Rowena,11,Science,Grade 10,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
-Teacher Rowena,11,Gen Bio 1,Grade 11,GRADE 11 (1ST SHIFT GIRLS),FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,,OK
+Teacher Rowena,11,Gen Bio 1,Grade 11,GRADE 11 (1ST SHIFT GIRLS),FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
 Teacher Rowena,11,Science,Grade 9,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,MALE,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,,OK
 Teacher Rowena,11,Gen Science,Grade 11,GRADE 11 (1ST SHIFT GIRLS),FEMALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,,OK
 Teacher Rowena,11,Science,Grade 9,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
@@ -370,9 +374,9 @@ Teacher Saimonah,13,Math,Grade 5,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),,OD
 Teacher Saimonah,13,Science,Grade 5,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
 Teacher Saimonah,13,Science,Grade 5,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",04:20 PM – 05:20 PM,,OK
 Teacher Shirehan,11,Social Studies,Grade 8,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
-Teacher Shirehan,11,Social Studies,Grade 7,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
+Teacher Shirehan,11,Social Studies,Grade 7,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
+Teacher Shirehan,11,Social Studies,Grade 7,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
 Teacher Shirehan,11,Social Studies,Grade 7 & 8,GRADE 7 & 8 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,,OK
-Teacher Shirehan,11,Social Studies,Grade 7,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",11:30 AM – 12:30 PM,,OK
 Teacher Shirehan,11,PSKP,Grade 11,GRADE 11 (1ST SHIFT GIRLS),FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
 Teacher Shirehan,11,Social Studies,Grade 7,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,MALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
 Teacher Shirehan,11,Social Studies,Grade 7 & 8,GRADE 7 & 8 BOYS (FACE TO FACE),MALE,F2F,F2F,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,,OK
@@ -386,14 +390,14 @@ Teacher Sitti Kauzar,9,Filipino,Grade 2,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),,
 Teacher Sitti Kauzar,9,Math,Grade 2,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
 Teacher Sitti Kauzar,9,Filipino,Grade 2,GRADE 2 (FACE TO FACE),MIXED,F2F,F2F,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,,OK
 Teacher Sitti Kauzar,9,Math,Grade 2,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,,OK
-Teacher Sitti Kauzar,9,Math,Grade 2,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
-Teacher Sitti Kauzar,9,Math,Grade 2,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
+Teacher Sitti Kauzar,9,Math,Grade 2,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,,OK
+Teacher Sitti Kauzar,9,Math,Grade 2,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
 Teacher Sitti Kauzar,9,Filipino,Grade 2,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",04:20 PM – 05:20 PM,,OK
 Teacher Sophia,15,Filipino,Grade 7 & 8,GRADE 7 & 8 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,,OK
 Teacher Sophia,15,Social Science,Grade 10,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
 Teacher Sophia,15,Filipino,Grade 7,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,MALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
 Teacher Sophia,15,Filipino,Grade 8,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,MIXED,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
-Teacher Sophia,15,Filipino,Grade 7,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
+Teacher Sophia,15,Filipino,Grade 7,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
 Teacher Sophia,15,Social Science,Grade 9 & 10,GRADE 9 & 10 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,,OK
 Teacher Sophia,15,Filipino,Grade 7 & 8,GRADE 7 & 8 BOYS (FACE TO FACE),MALE,F2F,F2F,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,,OK
 Teacher Sophia,15,Social Science,Grade 9 & 10,GRADE 9 & 10 BOYS (FACE TO FACE),MALE,F2F,F2F,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,,OK
@@ -414,20 +418,21 @@ Teacher Wendy,5,Math,Grade 1,GRADE 1 (FACE TO FACE),MIXED,F2F,F2F,"Monday, Septe
 Teacher Wendy,5,Oral & Written Exam,Kinder 1,K1 - HUSAIN IBN ALI (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",04:20 PM – 05:20 PM,,OK
 Teacher Zara,4,Makabansa,Grade 3,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,MALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
 Teacher Zara,4,Makabansa,Grade 3,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
-Teacher Zara,4,Makabansa,Grade 3,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
 Teacher Zara,4,Makabansa,Grade 3,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
-Teacher Zuhora,8,Makabansa,Grade 2,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
-Teacher Zuhora,8,Fil,Grade 6,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
-Teacher Zuhora,8,GMRC,Grade 3,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,MIXED,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
-Teacher Zuhora,8,Filipino,Grade 2,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
-Teacher Zuhora,8,Filipino,Grade 4,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,,OK
-Teacher Zuhora,8,Fil4,Grade 4,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,MIXED,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
-Teacher Zuhora,8,Araling Panlipunan,Grade 6,GRADE  6  FACE TO FACE,MIXED,F2F,F2F,"Monday, September 7, 2026",10:25 AM – 11:25 AM,,OK
-Teacher Zuhora,8,Fil,Grade 6,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
+Teacher Zara,4,Makabansa,Grade 3,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",05:30 PM – 06:30 PM,,OK
+Teacher Zuhora,9,Makabansa,Grade 2,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
+Teacher Zuhora,9,Fil,Grade 6,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
+Teacher Zuhora,9,GMRC,Grade 6,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
+Teacher Zuhora,9,GMRC,Grade 3,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,MIXED,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
+Teacher Zuhora,9,Filipino,Grade 2,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
+Teacher Zuhora,9,Filipino,Grade 4,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,,OK
+Teacher Zuhora,9,Fil4,Grade 4,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,MIXED,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
+Teacher Zuhora,9,Araling Panlipunan,Grade 6,GRADE  6  FACE TO FACE,MIXED,F2F,F2F,"Monday, September 7, 2026",10:25 AM – 11:25 AM,,OK
+Teacher Zuhora,9,Fil,Grade 6,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
 Ustadh Abdiraheem,12,SHAF,Grade 4,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,MIXED,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
 Ustadh Abdiraheem,12,SHAF,Grade 4,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
 Ustadh Abdiraheem,12,SHAF,Grade 4,GRADE 4 (FACE TO FACE),MIXED,F2F,F2F,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,,OK
-Ustadh Abdiraheem,12,SHAF,Grade 4,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
+Ustadh Abdiraheem,12,SHAF,Grade 4,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
 Ustadh Abdiraheem,12,SHAF,Grade 6,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,,OK
 Ustadh Abdiraheem,12,SHAF,Grade 1,GRADE 1 (FACE TO FACE),MIXED,F2F,F2F,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,,OK
 Ustadh Abdiraheem,12,SHAF,Grade 6,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,,OK
@@ -440,6 +445,7 @@ Ustadh Ali,21,Arabic,Grade 4,GRADE 4 (FACE TO FACE),MIXED,F2F,F2F,"Wednesday, Se
 Ustadh Ali,21,Arabic,Grade 6,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
 Ustadh Ali,21,Arabic,Grade 7,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
 Ustadh Ali,21,Arabic,Grade 4,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
+Ustadh Ali,21,Arabic,Grade 8,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
 Ustadh Ali,21,Arabic,Grade 9,GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS,MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
 Ustadh Ali,21,Arabic,Grade 6,GRADE  6  FACE TO FACE,MIXED,F2F,F2F,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,,OK
 Ustadh Ali,21,Arabic,Grade 4,GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX,MIXED,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
@@ -453,7 +459,6 @@ Ustadh Ali,21,Arabic,Grade 8,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,FEMA
 Ustadh Ali,21,Arabic,Grade 4,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
 Ustadh Ali,21,Arabic,Grade 9,GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,,OK
 Ustadh Ali,21,Arabic,Grade 7 & 8,GRADE 7 & 8 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Monday, September 7, 2026",08:00 AM – 09:00 AM,,OK
-Ustadh Ali,21,Arabic,Grade 8,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
 Ustadh Ali,21,Arabic,Grade 4,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
 Ustadh Ali,21,Arabic,Grade 4,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",04:20 PM – 05:20 PM,,OK
 Ustadh Ali,21,Arabic,Grade 4,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",05:30 PM – 06:30 PM,,OK
@@ -474,33 +479,34 @@ Ustadh Faidh,15,Arabic,Grade 5,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),,ODL,
 Ustadh Faidh,15,SHAF,Grade 6,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
 Ustadh Faidh,15,Qur'an,Grade 4,GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
 Ustadh Faidh,15,Arabic,Grade 3,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,MIXED,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
-Ustadh Faidh,15,SHAF,Grade 5,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
+Ustadh Faidh,15,SHAF,Grade 5,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
 Ustadh Faidh,15,Hadith,Kinder 2,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,,OK
-Ustadh Faidh,15,Arabic,Kinder 2,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,,OK
+Ustadh Faidh,15,SHAF,Grade 5,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,,OK
 Ustadh Faidh,15,Arabic,Grade 3,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,MIXED,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
 Ustadh Faidh,15,SHAF,Grade 3,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,MIXED,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,,OK
-Ustadh Faidh,15,SHAF,Grade 5,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,,OK
+Ustadh Faidh,15,Arabic,Kinder 2,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,,OK
 Ustadh Faidh,15,Qur'an,Grade 6,GRADE  6  FACE TO FACE,MIXED,F2F,F2F,"Monday, September 7, 2026",08:00 AM – 09:00 AM,,OK
 Ustadh Faidh,15,SHAF,Grade 3,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,MIXED,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
 Ustadh Faidh,15,Arabic,Grade 5,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
 Ustadh Faidh,15,Qur'an,Kinder 2,Kinder 2 KHABAAB IBN ARAT (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",05:30 PM – 06:30 PM,,OK
-Ustadh Jaisam,17,Qur'an,Kinder 1,KINDER 1 CLASS SCHEDULE (F2F),MIXED,F2F,F2F,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 5,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",11:30 AM – 12:30 PM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 5,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 8,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 7,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,MALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 6,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 8,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,MIXED,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 7 & 8,GRADE 7 & 8 BOYS (FACE TO FACE),MALE,F2F,F2F,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,,OK
-Ustadh Jaisam,17,Qur'an,Kinder 2,KINDER 2 CLASS SCHEDULE (F2F),MIXED,F2F,F2F,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 6,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 5,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 7 & 8,GRADE 7 & 8 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 8,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 7,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",12:40 PM – 01:40 PM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 6,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 5,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",04:20 PM – 05:20 PM,,OK
-Ustadh Jaisam,17,Qur'an,Grade 7,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",05:30 PM – 06:30 PM,,OK
+Ustadh Jaisam,18,Qur'an,Kinder 1,KINDER 1 CLASS SCHEDULE (F2F),MIXED,F2F,F2F,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 5,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 8,GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 7,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,MALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 6,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 8,GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX,MIXED,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 7 & 8,GRADE 7 & 8 BOYS (FACE TO FACE),MALE,F2F,F2F,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,,OK
+Ustadh Jaisam,18,Qur'an,Kinder 2,KINDER 2 CLASS SCHEDULE (F2F),MIXED,F2F,F2F,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 6,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 5,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
+Ustadh Jaisam,18,Qur'an,Kinder 2,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 7 & 8,GRADE 7 & 8 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 5,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 8,GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 7,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",12:40 PM – 01:40 PM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 6,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 5,GRADE 5 - AL HARITH BIN AWF (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",04:20 PM – 05:20 PM,,OK
+Ustadh Jaisam,18,Qur'an,Grade 7,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",05:30 PM – 06:30 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 3,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,MALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 5,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 3,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
@@ -508,83 +514,77 @@ Ustadh Obaydah,23,Qur'an,Grade 2,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),,ODL,ODL -
 Ustadh Obaydah,23,Qur'an,Grade 4,GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 2,GRADE 2 (FACE TO FACE),MIXED,F2F,F2F,"Thursday, September 3, 2026",09:00 AM – 10:00 AM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 5,GRADE 5 (FACE TO FACE),MIXED,F2F,F2F,"Thursday, September 3, 2026",10:25 AM – 11:25 AM,,OK
-Ustadh Obaydah,23,Qur'an,Grade 3,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
+Ustadh Obaydah,23,Qur'an,Grade 3,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 6,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 4,GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 3,GRADE 3 (FACE TO FACE),MIXED,F2F,F2F,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 1,GRADE 1 (FACE TO FACE),MIXED,F2F,F2F,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,,OK
+Ustadh Obaydah,23,Qur'an,Grade 2,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 4,GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 5,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 3,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 2,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,,OK
 Ustadh Obaydah,23,Arabic,Grade 2,GRADE 2 (FACE TO FACE),MIXED,F2F,F2F,"Monday, September 7, 2026",08:00 AM – 09:00 AM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 4,GRADE 4 (FACE TO FACE),MIXED,F2F,F2F,"Monday, September 7, 2026",10:25 AM – 11:25 AM,,OK
-Ustadh Obaydah,23,Qur'an,Grade 2,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",11:30 AM – 12:30 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 3,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,MIXED,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",12:40 PM – 01:40 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 4,GRADE 4 - HAKIM IBN HAZM(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 2,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
 Ustadh Obaydah,23,Qur'an,Grade 3,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,MIXED,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",05:30 PM – 06:30 PM,,OK
 Ustadh Raslina,1,Arabic,Grade 9,GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,,OK
-Ustadh Silfah,23,GMRC,Grade 6,GRADE  6  FACE TO FACE,MIXED,F2F,F2F,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,,OK
-Ustadh Silfah,23,Arabic,Grade 3,GRADE 3 (FACE TO FACE),MIXED,F2F,F2F,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,,OK
-Ustadh Silfah,23,GMRC,Grade 6,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",11:30 AM – 12:30 PM,,OK
-Ustadh Silfah,23,GMRC,Grade 7,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,MALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
-Ustadh Silfah,23,GMRC,Grade 6,GRADE 6 - KHALEED IBN WALEED (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
-Ustadh Silfah,23,GMRC,Grade 3,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
-Ustadh Silfah,23,GMRC,Grade 3,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
-Ustadh Silfah,23,GMRC,Grade 3,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",11:30 AM – 12:30 PM,,OK
-Ustadh Silfah,23,GMRC,Grade 6,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
-Ustadh Silfah,23,Arabic,Grade 3,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
-Ustadh Silfah,23,GMRC,Grade 7,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
-Ustadh Silfah,23,Arabic,Grade 3,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,,OK
-Ustadh Silfah,23,GMRC,Grade 7,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",11:30 AM – 12:30 PM,,OK
-Ustadh Silfah,23,Arabic,Kinder 2,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",01:30 PM – 02:30 PM,,OK
-Ustadh Silfah,23,Arabic,Kinder 2,Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",02:40 PM – 03:40 PM,,OK
-Ustadh Silfah,23,Arabic,Kinder 2,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,,OK
-Ustadh Silfah,23,GMRC,Grade 7 & 8,GRADE 7 & 8 BOYS (FACE TO FACE),MALE,F2F,F2F,"Monday, September 7, 2026",08:00 AM – 09:00 AM,,OK
-Ustadh Silfah,23,GMRC,Grade 7 & 8,GRADE 7 & 8 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Monday, September 7, 2026",09:00 AM – 10:00 AM,,OK
-Ustadh Silfah,23,Arabic,Grade 3,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",11:30 AM – 12:30 PM,,OK
-Ustadh Silfah,23,Arabic,Grade 3,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,MALE,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",12:40 PM – 01:40 PM,,OK
-Ustadh Silfah,23,GMRC,Grade 6,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
-Ustadh Silfah,23,GMRC,Grade 3,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,MALE,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
-Ustadh Silfah,23,Arabic,Kinder 2,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",04:20 PM – 05:20 PM,,OK
-Ustadha Hainur,23,SHAF,Grade 5,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",11:30 AM – 12:30 PM,,OK
-Ustadha Hainur,23,Arabic,Grade 1,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
-Ustadha Hainur,23,Qur'an,Kinder 2,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
-Ustadha Hainur,23,Qur'an,Kinder 2,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
-Ustadha Hainur,23,Qur'an,Kinder 1,K1 - HUSAIN IBN ALI (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
-Ustadha Hainur,23,Qur'an,Grade 1,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
-Ustadha Hainur,23,Arabic,Grade 2,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",11:30 AM – 12:30 PM,,OK
-Ustadha Hainur,23,Qur'an,Grade 1,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
-Ustadha Hainur,23,Hadith,Kinder 2,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
-Ustadha Hainur,23,Arabic,Grade 1,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
-Ustadha Hainur,23,Hadith,Kinder 1,K1 - HUSAIN IBN ALI (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,,OK
-Ustadha Hainur,23,Arabic,Grade 2,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,,OK
-Ustadha Hainur,23,Arabic,Grade 2,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",11:30 AM – 12:30 PM,,OK
-Ustadha Hainur,23,Arabic,Grade 1,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,,OK
-Ustadha Hainur,23,Hadith,Kinder 2,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,,OK
-Ustadha Hainur,23,Qur'an,Grade 1,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
-Ustadha Hainur,23,Arabic,Grade 1,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,,OK
-Ustadha Hainur,23,Arabic,Grade 2,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,,OK
-Ustadha Hainur,23,SHAF,Grade 5,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",11:30 AM – 12:30 PM,,OK
-Ustadha Hainur,23,Qur'an,Grade 1,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",12:40 PM – 01:40 PM,,OK
-Ustadha Hainur,23,Qur'an,Kinder 2,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",02:40 PM – 03:40 PM,,OK
-Ustadha Hainur,23,Qur'an,Kinder 2,Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",03:50 PM – 04:50 PM,,OK
-Ustadha Hainur,23,SHAF,Grade 5,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",05:30 PM – 06:30 PM,,OK
+Ustadh Silfah,20,GMRC,Grade 6,GRADE  6  FACE TO FACE,MIXED,F2F,F2F,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,,OK
+Ustadh Silfah,20,Arabic,Grade 3,GRADE 3 (FACE TO FACE),MIXED,F2F,F2F,"Wednesday, September 2, 2026",09:00 AM – 10:00 AM,,OK
+Ustadh Silfah,20,GMRC,Grade 7,GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS,MALE,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
+Ustadh Silfah,20,GMRC,Grade 6,GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
+Ustadh Silfah,20,GMRC,Grade 3,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
+Ustadh Silfah,20,GMRC,Grade 3,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
+Ustadh Silfah,20,GMRC,Grade 6,GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
+Ustadh Silfah,20,GMRC,Grade 3,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
+Ustadh Silfah,20,GMRC,Grade 7,GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
+Ustadh Silfah,20,Arabic,Grade 3,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,MALE,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,,OK
+Ustadh Silfah,20,Arabic,Grade 3,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,,OK
+Ustadh Silfah,20,GMRC,Grade 3,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,MALE,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,,OK
+Ustadh Silfah,20,GMRC,Grade 6,GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
+Ustadh Silfah,20,Arabic,Kinder 2,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,,OK
+Ustadh Silfah,20,GMRC,Grade 7 & 8,GRADE 7 & 8 BOYS (FACE TO FACE),MALE,F2F,F2F,"Monday, September 7, 2026",08:00 AM – 09:00 AM,,OK
+Ustadh Silfah,20,GMRC,Grade 7 & 8,GRADE 7 & 8 GIRLS (FACE TO FACE),FEMALE,F2F,F2F,"Monday, September 7, 2026",09:00 AM – 10:00 AM,,OK
+Ustadh Silfah,20,Arabic,Grade 3,GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS,MALE,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",12:40 PM – 01:40 PM,,OK
+Ustadh Silfah,20,GMRC,Grade 7,GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS,FEMALE,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
+Ustadh Silfah,20,Arabic,Grade 3,GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS,FEMALE,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
+Ustadh Silfah,20,Arabic,Kinder 2,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",04:20 PM – 05:20 PM,,OK
+Ustadha Hainur,20,Arabic,Grade 1,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
+Ustadha Hainur,20,SHAF,Grade 5,GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
+Ustadha Hainur,20,Qur'an,Kinder 2,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
+Ustadha Hainur,20,Qur'an,Kinder 1,K1 - HUSAIN IBN ALI (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",04:20 PM – 05:20 PM,,OK
+Ustadha Hainur,20,Qur'an,Grade 1,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",05:30 PM – 06:30 PM,,OK
+Ustadha Hainur,20,Qur'an,Grade 1,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",12:40 PM – 01:40 PM,,OK
+Ustadha Hainur,20,Arabic,Grade 2,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:50 PM – 02:50 PM,,OK
+Ustadha Hainur,20,Arabic,Grade 1,GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
+Ustadha Hainur,20,Hadith,Kinder 1,K1 - HUSAIN IBN ALI (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",04:20 PM – 05:20 PM,,OK
+Ustadha Hainur,20,Arabic,Grade 2,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",05:30 PM – 06:30 PM,,OK
+Ustadha Hainur,20,Arabic,Grade 1,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,,OK
+Ustadha Hainur,20,SHAF,Grade 5,GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,,OK
+Ustadha Hainur,20,Hadith,Kinder 2,K2 - ABDULLAH IBN MAS'UD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
+Ustadha Hainur,20,Arabic,Grade 1,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",04:20 PM – 05:20 PM,,OK
+Ustadha Hainur,20,Arabic,Grade 2,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",05:30 PM – 06:30 PM,,OK
+Ustadha Hainur,20,Qur'an,Grade 1,GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",12:40 PM – 01:40 PM,,OK
+Ustadha Hainur,20,Arabic,Grade 2,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
+Ustadha Hainur,20,Qur'an,Grade 1,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK
+Ustadha Hainur,20,Hadith,Kinder 2,K2 - UMAR IBN AL-KHATTAB (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",04:20 PM – 05:20 PM,,OK
+Ustadha Hainur,20,SHAF,Grade 5,GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",05:30 PM – 06:30 PM,,OK
 Ustadha Saliha,17,Hadith,Kinder 1,KINDER 1 CLASS SCHEDULE (F2F),MIXED,F2F,F2F,"Wednesday, September 2, 2026",08:00 AM – 09:00 AM,,OK
 Ustadha Saliha,17,Arabic,Kinder 2,KINDER 2 CLASS SCHEDULE (F2F),MIXED,F2F,F2F,"Wednesday, September 2, 2026",10:25 AM – 11:25 AM,,OK
 Ustadha Saliha,17,GMRC,Grade 5,GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",12:40 PM – 01:40 PM,,OK
-Ustadha Saliha,17,GMRC,Grade 3,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,MIXED,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
+Ustadha Saliha,17,GMRC,Grade 1,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Wednesday, September 2, 2026",01:50 PM – 02:50 PM,,OK
 Ustadha Saliha,17,GMRC,Grade 5,GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX,MIXED,ODL,ODL - 2ND SHIFT,"Wednesday, September 2, 2026",03:10 PM – 04:10 PM,,OK
 Ustadha Saliha,17,GMRC,Grade 1,GRADE 1 (FACE TO FACE),MIXED,F2F,F2F,"Thursday, September 3, 2026",08:00 AM – 09:00 AM,,OK
-Ustadha Saliha,17,Hadith,Kinder 2,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:30 PM – 02:30 PM,,OK
-Ustadha Saliha,17,Hadith,Kinder 2,Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",02:40 PM – 03:40 PM,,OK
+Ustadha Saliha,17,Hadith,Kinder 2,Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Thursday, September 3, 2026",01:30 PM – 02:30 PM,,OK
+Ustadha Saliha,17,GMRC,Grade 3,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,MIXED,ODL,ODL - 2ND SHIFT,"Thursday, September 3, 2026",03:10 PM – 04:10 PM,,OK
 Ustadha Saliha,17,Hadith,Kinder 2,KINDER 2 CLASS SCHEDULE (F2F),MIXED,F2F,F2F,"Sunday, September 6, 2026",08:00 AM – 09:00 AM,,OK
 Ustadha Saliha,17,GMRC,Grade 3,GRADE 3 (FACE TO FACE),MIXED,F2F,F2F,"Sunday, September 6, 2026",09:00 AM – 10:00 AM,,OK
 Ustadha Saliha,17,Arabic,Kinder 1,KINDER 1 CLASS SCHEDULE (F2F),MIXED,F2F,F2F,"Sunday, September 6, 2026",10:25 AM – 11:25 AM,,OK
-Ustadha Saliha,17,GMRC,Grade 2,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",12:40 PM – 01:40 PM,,OK
-Ustadha Saliha,17,GMRC,Grade 2,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",01:50 PM – 02:50 PM,,OK
-Ustadha Saliha,17,GMRC,Grade 1,GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
+Ustadha Saliha,17,Hadith,Kinder 2,Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Sunday, September 6, 2026",01:30 PM – 02:30 PM,,OK
+Ustadha Saliha,17,GMRC,Grade 2,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Sunday, September 6, 2026",03:10 PM – 04:10 PM,,OK
 Ustadha Saliha,17,GMRC,Grade 2,GRADE 2 (FACE TO FACE),MIXED,F2F,F2F,"Monday, September 7, 2026",09:00 AM – 10:00 AM,,OK
+Ustadha Saliha,17,GMRC,Grade 2,GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",12:40 PM – 01:40 PM,,OK
 Ustadha Saliha,17,GMRC,Grade 2,GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT),,ODL,ODL - 1ST SHIFT,"Monday, September 7, 2026",01:50 PM – 02:50 PM,,OK
 Ustadha Saliha,17,GMRC,Grade 2,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),,ODL,ODL - 2ND SHIFT,"Monday, September 7, 2026",03:10 PM – 04:10 PM,,OK

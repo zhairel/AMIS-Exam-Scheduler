@@ -19,15 +19,12 @@ function rowTimesFor(record) {
   }
   if (record.shift === 'ODL - 1ST SHIFT') {
     return [
-      '11:30 AM – 12:30 PM',
       '12:40 PM – 01:40 PM',
       '01:50 PM – 02:50 PM',
       '03:10 PM – 04:10 PM',
-      '04:20 PM – 05:20 PM',
     ];
   }
   return [
-    '01:50 PM – 02:50 PM',
     '03:10 PM – 04:10 PM',
     '04:20 PM – 05:20 PM',
     '05:30 PM – 06:30 PM',

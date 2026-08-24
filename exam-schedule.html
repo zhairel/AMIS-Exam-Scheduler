@@ -5673,9 +5673,8 @@ html, body {
     const examStart = scheduleStartLabel(examTime);
     const rowStart = scheduleStartLabel(rowTime);
 
-    // Time is authoritative. SHS numbering begins at 12:40 PM, while the
-    // shared ODL table also contains an 11:30 AM row; comparing slot numbers
-    // first painted the same Grade 11/12 exam in both visual rows.
+    // Time is authoritative. This prevents 120-minute or legacy slot numbers
+    // from painting an exam in more than one visual row.
     if (examStart && rowStart) return examStart === rowStart;
 
     return Number(exam && exam.slot_number) === Number(fallbackSlotNumber);
@@ -6034,28 +6033,22 @@ html, body {
         ];
       } else if (isODL1) {
         timeRows = [
-          { time: '11:30 AM – 12:30 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
           { time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
-          { time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
+          { time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
           { time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
-          { time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 3 },
+          { time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
           { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION AND SALAH BREAK' },
-          { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 4 }
+          { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3 },
+          { time: '04:10 PM', mins: '--', type: 'break', label: 'DISMISSAL' }
         ];
-        if (isSHS) {
-          timeRows.push({ time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' });
-          timeRows.push({ time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 5 });
-        }
-        timeRows.push({ time: isSHS ? '05:20 PM' : '04:10 PM', mins: '--', type: 'break', label: 'DISMISSAL' });
       } else if (isODL2) {
         timeRows = [
-          { time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
           { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'GENERAL ASSEMBLY & SALAH BREAK' },
-          { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
+          { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
           { time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
-          { time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 3 },
+          { time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
           { time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
-          { time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_num: 4 },
+          { time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_num: 3 },
           { time: '06:30 PM', mins: '--', type: 'break', label: 'DISMISSAL' }
         ];
       }
@@ -6262,7 +6255,6 @@ html, body {
       { time: '10:00 AM – 10:25 AM', mins: '25 min.', type: 'break', label: 'RECESS' },
       { time: '10:25 AM – 11:25 AM', mins: '60 min.', type: 'exam', slot_num: 3 },
       { time: '11:25 AM', mins: '--', type: 'break', label: 'FACE TO FACE DISMISSAL' },
-      { time: '11:30 AM – 12:30 PM', mins: '60 min.', type: 'exam', slot_num: 1, shift_tag: 'ODL1' },
       { time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
       { time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1, shift_tag: 'ODL1' },
       { time: '01:30 PM – 02:30 PM', mins: '60 min.', type: 'exam', slot_num: 1, shift_tag: 'K2_1ST' },

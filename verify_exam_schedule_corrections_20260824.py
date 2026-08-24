@@ -170,29 +170,29 @@ def main():
 
     talha_arabic = by_id["exam_159"]
     amr_arabic = by_id["exam_161"]
-    assert (talha_arabic["day_number"], talha_arabic["start_m"]) == (3, 690)
-    assert (amr_arabic["day_number"], amr_arabic["start_m"]) == (2, 690)
+    assert (talha_arabic["day_number"], talha_arabic["start_m"]) == (4, 830)
+    assert (amr_arabic["day_number"], amr_arabic["start_m"]) == (2, 830)
 
     hainur_records = [record for record in records if record["teacher_id"] == "tchr_hainur"]
-    assert len(hainur_records) == 23
+    assert len(hainur_records) == 20
     assert all(record["teacher"] == "Ustadha Hainur" for record in hainur_records)
-    assert (by_id["exam_354"]["day_number"], by_id["exam_354"]["start_m"]) == (1, 690)
-    assert (by_id["exam_62"]["day_number"], by_id["exam_62"]["start_m"]) == (4, 690)
+    assert (by_id["exam_354"]["day_number"], by_id["exam_354"]["start_m"]) == (3, 830)
+    assert (by_id["exam_62"]["day_number"], by_id["exam_62"]["start_m"]) == (1, 830)
     assert all(by_id[exam_id]["teacher_id"] == "tchr_hainur" for exam_id in ("exam_62", "exam_354"))
     hainur_day4 = {
         record["id"]: (record["day_number"], record["start_m"], record["end_m"])
         for record in hainur_records if record["day_number"] == 4
     }
     assert hainur_day4 == {
-        "exam_62": (4, 690, 750),
         "exam_436": (4, 760, 820),
-        "exam_427": (4, 880, 940),
-        "exam_428": (4, 950, 1010),
+        "exam_159": (4, 830, 890),
+        "exam_15": (4, 910, 970),
+        "exam_144": (4, 980, 1040),
         "exam_495": (4, 1050, 1110),
     }
 
     silfah_records = [record for record in records if record["teacher_id"] == "tchr_silfah"]
-    assert len(silfah_records) == 23
+    assert len(silfah_records) == 20
     assert all(record["teacher"] == "Ustadh Silfah" for record in silfah_records)
     assert all(record["end_m"] <= 1050 for record in silfah_records), "Ustadha Silfah exceeds 5:30 PM"
 
@@ -219,7 +219,7 @@ def main():
         anas_social_studies["day_number"],
         anas_social_studies["start_m"],
         anas_social_studies["end_m"],
-    ) == (1, 830, 890)
+    ) == (1, 980, 1040)
 
     for section_name in ("GRADE 1 (FACE TO FACE)", "GRADE 2 (FACE TO FACE)"):
         compact_records = [
@@ -248,7 +248,7 @@ def main():
 
     elementary_gmrc_positions = {
         "exam_68": (1, 760, 820, "tchr_saliha"),
-        "exam_450": (3, 830, 890, "tchr_saliha"),
+        "exam_450": (3, 910, 970, "tchr_saliha"),
         "exam_310": (4, 910, 970, "tchr_saliha"),
     }
     for exam_id, expected in elementary_gmrc_positions.items():
@@ -268,6 +268,30 @@ def main():
         teacher_records = [record for record in records if record["teacher_id"] == teacher_id]
         assert teacher_records
         assert max(record["end_m"] for record in teacher_records) <= latest_end_m
+
+    # Official time allocation: no standard ODL first-shift class starts at
+    # 11:30 AM, and no ODL second-shift class starts at 01:50 PM.
+    for record in records:
+        if record["shift"] == "F2F":
+            assert record["start_m"] in {480, 540, 625}
+        elif record["shift"] == "ODL - 1ST SHIFT":
+            if record["grade_level"] == "Kinder 2":
+                assert record["start_m"] in {810, 880, 950}
+            else:
+                assert record["start_m"] in {760, 830, 910}
+        elif record["shift"] == "ODL - 2ND SHIFT":
+            assert record["start_m"] in {910, 980, 1050}
+
+    expected_exam_coverage = {
+        "exam_3": "tchr_jaisam",
+        "exam_427": "tchr_abdulwahab",
+        "exam_428": "tchr_dipatuan",
+        "exam_86": "tchr_zuhora",
+        "exam_285": "tchr_mamonas",
+        "exam_287": "tchr_abdul_karim",
+    }
+    for exam_id, teacher_id in expected_exam_coverage.items():
+        assert by_id[exam_id]["teacher_id"] == teacher_id
 
     g11_girls_shaf = get_one(
         records,
