@@ -143,6 +143,11 @@ function buildOfficialEntries() {
 }
 
 const OFFICIAL_ENTRIES = buildOfficialEntries();
+const OFFICIAL_ENTRY_IDS = new Set(OFFICIAL_ENTRIES.map((entry) => entry.id));
+
+function isApprovedDatabaseRecord(record) {
+  return !record || record.source !== 'official' || OFFICIAL_ENTRY_IDS.has(clean(record.id, 100));
+}
 
 function editableOfficialEntries() {
   return OFFICIAL_ENTRIES.filter((entry) => entry.teacher && entry.subject && entry.schedule_type !== 'Official Break / Assembly').map((entry) => ({ ...entry }));
@@ -207,5 +212,6 @@ module.exports = {
   findBlockingConflicts,
   editableOfficialEntries,
   officialDatabaseEntries,
+  isApprovedDatabaseRecord,
   officialEntryCount: OFFICIAL_ENTRIES.length
 };

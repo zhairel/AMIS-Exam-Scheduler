@@ -24,7 +24,7 @@ async function readAllSchedules(config, accessToken, filter) {
     );
     if (!result.ok) return result;
     const page = Array.isArray(result.data) ? result.data : [];
-    records.push(...page.filter((record) => !scheduleLocks.isLockRecord(record)));
+    records.push(...page.filter((record) => !scheduleLocks.isLockRecord(record) && schedules.isApprovedDatabaseRecord(record)));
     if (page.length < pageSize) return { ok: true, status: 200, data: records };
   }
 }

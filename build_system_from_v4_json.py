@@ -2,6 +2,7 @@
 """
 Complete System Rebuild Strictly from AMIS_CLASS_DATASET_CANONICAL_LATEST_V4.json
 Zero dependence on old databases or stale registries.
+Only ELEM and HS SCHED (NEW) are permitted schedule sources.
 """
 
 import json, re, os, datetime
@@ -21,6 +22,7 @@ with open(V4_JSON_PATH, 'r', encoding='utf-8') as f:
     v4_data = json.load(f)
 
 DAYS_OF_WEEK = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
+ALLOWED_SOURCE_SHEETS = {"ELEM", "HS SCHED (NEW)"}
 
 def col2num(col):
     num = 0
@@ -116,15 +118,12 @@ SECTION_DEFS = [
     {"sheet": "HS SCHED (NEW)", "header_cell": "S28", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 30, "end_row": 36, "shift": "ODL - 2ND SHIFT", "grade": "Grade 8", "dept": "Junior High School"},
     {"sheet": "HS SCHED (NEW)", "header_cell": "S40", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 42, "end_row": 48, "shift": "ODL - 2ND SHIFT", "grade": "Grade 9", "dept": "Junior High School"},
     {"sheet": "HS SCHED (NEW)", "header_cell": "S51", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 53, "end_row": 59, "shift": "ODL - 2ND SHIFT", "grade": "Grade 9", "dept": "Junior High School"},
-    {"sheet": "HS SCHED (NEW)", "header_cell": "S62", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 64, "end_row": 70, "shift": "ODL - 2ND SHIFT", "grade": "Grade 10", "dept": "Junior High School"},
-
-    # --- SHS (Grade 11 & Grade 12 FIRST TERM ONLY, Rows 1:46) ---
-    {"sheet": "SHS", "header_cell": "B4", "time_col": 2, "min_col": 3, "day_cols": [4,5,6,7,8], "start_row": 6, "end_row": 17, "shift": "F2F", "grade": "Grade 11", "dept": "Senior High School"},
-    {"sheet": "SHS", "header_cell": "K4", "time_col": 11, "min_col": 12, "day_cols": [13,14,15,16,17], "start_row": 6, "end_row": 17, "shift": "F2F", "grade": "Grade 12", "dept": "Senior High School"},
-    {"sheet": "SHS", "header_cell": "B20", "time_col": 2, "min_col": 3, "day_cols": [4,5,6,7,8], "start_row": 22, "end_row": 30, "shift": "ODL - 1ST SHIFT", "grade": "Grade 11", "dept": "Senior High School"},
-    {"sheet": "SHS", "header_cell": "K20", "time_col": 11, "min_col": 12, "day_cols": [13,14,15,16,17], "start_row": 22, "end_row": 30, "shift": "ODL - 1ST SHIFT", "grade": "Grade 12", "dept": "Senior High School"},
-    {"sheet": "SHS", "header_cell": "B33", "time_col": 2, "min_col": 3, "day_cols": [4,5,6,7,8], "start_row": 35, "end_row": 42, "shift": "ODL - 2ND SHIFT", "grade": "Grade 11", "dept": "Senior High School"}
+    {"sheet": "HS SCHED (NEW)", "header_cell": "S62", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 64, "end_row": 70, "shift": "ODL - 2ND SHIFT", "grade": "Grade 10", "dept": "Junior High School"}
 ]
+
+unexpected_sheets = {item["sheet"] for item in SECTION_DEFS} - ALLOWED_SOURCE_SHEETS
+if unexpected_sheets:
+    raise ValueError(f"Disallowed schedule source sheets: {sorted(unexpected_sheets)}")
 
 BREAK_KEYWORDS = [
     'GENERAL ASSEMBLY', 'RECESS', 'TRANSITION', 'LUNCH AND SALAH', 

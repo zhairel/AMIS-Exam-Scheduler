@@ -12,8 +12,8 @@ function importRecord(entry) {
   return Object.fromEntries(IMPORT_FIELDS.map((field) => [field, entry[field] == null ? '' : entry[field]]));
 }
 
-async function countImported(config, accessToken) {
-  let count = 0;
+async function importedIds(config, accessToken) {
+  const ids = [];
   const pageSize = 1000;
   for (let offset = 0; ; offset += pageSize) {
     const result = await supabase.restRequest(
@@ -23,8 +23,8 @@ async function countImported(config, accessToken) {
     );
     if (!result.ok) throw new Error('Unable to verify the imported schedule count.');
     const page = Array.isArray(result.data) ? result.data : [];
-    count += page.length;
-    if (page.length < pageSize) return count;
+    ids.push(...page.map((record) => record.id));
+    if (page.length < pageSize) return ids;
   }
 }
 
@@ -57,10 +57,13 @@ async function main() {
       }
       process.stdout.write(`Imported ${Math.min(index + batch.length, records.length)} / ${records.length}\r`);
     }
-    const count = await countImported(config, login.session.access_token);
+    const liveIds = new Set(await importedIds(config, login.session.access_token));
+    const expectedIds = new Set(records.map((record) => record.id));
+    const missing = [...expectedIds].filter((id) => !liveIds.has(id));
+    const stale = [...liveIds].filter((id) => !expectedIds.has(id));
     process.stdout.write('\n');
-    console.log(JSON.stringify({ expected: records.length, imported: count, complete: count === records.length }));
-    if (count !== records.length) process.exitCode = 1;
+    console.log(JSON.stringify({ expected: records.length, imported: expectedIds.size - missing.length, missing: missing.length, stale_ignored: stale.length, complete: missing.length === 0 }));
+    if (missing.length) process.exitCode = 1;
   } finally {
     await supabase.signOut(config, login.session.access_token).catch(() => {});
   }

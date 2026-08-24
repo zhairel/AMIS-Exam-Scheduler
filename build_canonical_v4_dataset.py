@@ -4,7 +4,6 @@ Canonical V4 AMIS Class & Exam Dataset Builder
 Sources of Truth:
   1. ELEM: Kinder to Grade 6 (all rows)
   2. HS SCHED (NEW): Grade 7 to Grade 10 ONLY (Regions: F2F B1:H68, 1st Shift K1:Q62, 2nd Shift S1:Y75)
-  3. SHS: Grade 11 to Grade 12 FIRST TERM ONLY (Rows 1:46)
 """
 
 import json, re, os, datetime
@@ -28,8 +27,10 @@ v4_meta = {
     "schema_version": 4,
     "generated_at_utc": datetime.datetime.utcnow().isoformat() + "Z",
     "source_file": "SCHEDULE SY 2026-2027 TW.xlsx",
-    "purpose": "Canonical AMIS class dataset with G11-12 overlap removed from HS SCHED (NEW)."
+    "purpose": "Canonical AMIS class dataset sourced only from ELEM and HS SCHED (NEW)."
 }
+
+ALLOWED_SOURCE_SHEETS = {"ELEM", "HS SCHED (NEW)"}
 
 # Define Section Bounds
 SECTION_DEFINITIONS = [
@@ -163,19 +164,11 @@ SECTION_DEFINITIONS = [
     # Grade 9 Abu Jandal (2nd Shift Girls)
     {"sheet": "HS SCHED (NEW)", "header_cell": "S51", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 53, "end_row": 59, "shift": "ODL - 2ND SHIFT", "grade": "Grade 9", "dept": "Junior High School"},
     # Grade 10 Abu Ayyub (2nd Shift Boys)
-    {"sheet": "HS SCHED (NEW)", "header_cell": "S62", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 64, "end_row": 70, "shift": "ODL - 2ND SHIFT", "grade": "Grade 10", "dept": "Junior High School"},
-
-    # --- SHS (Grade 11 & Grade 12 FIRST TERM ONLY, Rows 1:46) ---
-    # Grade 11 F2F
-    {"sheet": "SHS", "header_cell": "B4", "time_col": 2, "min_col": 3, "day_cols": [4,5,6,7,8], "start_row": 6, "end_row": 17, "shift": "F2F", "grade": "Grade 11", "dept": "Senior High School"},
-    # Grade 12 Suhayb Ar-Rumi (F2F)
-    {"sheet": "SHS", "header_cell": "K4", "time_col": 11, "min_col": 12, "day_cols": [13,14,15,16,17], "start_row": 6, "end_row": 17, "shift": "F2F", "grade": "Grade 12", "dept": "Senior High School"},
-    # Grade 11 (1st Shift Girls)
-    {"sheet": "SHS", "header_cell": "B20", "time_col": 2, "min_col": 3, "day_cols": [4,5,6,7,8], "start_row": 22, "end_row": 30, "shift": "ODL - 1ST SHIFT", "grade": "Grade 11", "dept": "Senior High School"},
-    # Grade 12 Abu Musa (1st Shift)
-    {"sheet": "SHS", "header_cell": "K20", "time_col": 11, "min_col": 12, "day_cols": [13,14,15,16,17], "start_row": 22, "end_row": 30, "shift": "ODL - 1ST SHIFT", "grade": "Grade 12", "dept": "Senior High School"},
-    # Grade 11 (2nd Shift Boys)
-    {"sheet": "SHS", "header_cell": "B33", "time_col": 2, "min_col": 3, "day_cols": [4,5,6,7,8], "start_row": 35, "end_row": 42, "shift": "ODL - 2ND SHIFT", "grade": "Grade 11", "dept": "Senior High School"}
+    {"sheet": "HS SCHED (NEW)", "header_cell": "S62", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 64, "end_row": 70, "shift": "ODL - 2ND SHIFT", "grade": "Grade 10", "dept": "Junior High School"}
 ]
+
+unexpected_sheets = {item["sheet"] for item in SECTION_DEFINITIONS} - ALLOWED_SOURCE_SHEETS
+if unexpected_sheets:
+    raise ValueError(f"Disallowed schedule source sheets: {sorted(unexpected_sheets)}")
 
 print(f"Total Canonical Section Definitions: {len(SECTION_DEFINITIONS)}")
