@@ -266,63 +266,7 @@ body {
   color: #047857;
 }
 
-/* Collapsible Grade > Modality/Shift > Section sidebar */
-.section-sidebar-launcher {
-  background: #f8fafc;
-  border-bottom: 1px solid var(--line);
-  padding: 8px 20px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.section-sidebar-launcher[hidden],
-.section-sidebar-overlay[hidden] {
-  display: none !important;
-}
-
-.section-sidebar-toggle {
-  min-width: 0;
-  max-width: min(520px, 100%);
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  padding: 8px 12px;
-  border: 1px solid #a7f3d0;
-  border-radius: 9px;
-  background: #ffffff;
-  color: #065f46;
-  font-size: 12px;
-  font-weight: 850;
-  cursor: pointer;
-  box-shadow: 0 2px 7px rgba(6, 78, 59, 0.08);
-}
-
-.section-sidebar-toggle:hover {
-  background: #ecfdf5;
-  border-color: #34d399;
-}
-
-.section-sidebar-toggle-icon {
-  flex: 0 0 auto;
-  font-size: 16px;
-  line-height: 1;
-}
-
-.section-sidebar-current {
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.section-sidebar-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 2500;
-  background: rgba(15, 23, 42, 0.42);
-  backdrop-filter: blur(2px);
-}
+/* Sticky Grade > Modality/Shift > Section sidebar */
 
 .section-sidebar-panel {
   width: min(390px, calc(100vw - 28px));
@@ -354,18 +298,6 @@ body {
   color: #a7f3d0;
   font-size: 10.5px;
   font-weight: 650;
-}
-
-.section-sidebar-close {
-  width: 32px;
-  height: 32px;
-  border: 1px solid rgba(255, 255, 255, 0.38);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.12);
-  color: #ffffff;
-  font-size: 20px;
-  line-height: 1;
-  cursor: pointer;
 }
 
 .section-sidebar-list {
@@ -506,8 +438,54 @@ body {
   white-space: nowrap;
 }
 
-body.section-sidebar-open {
-  overflow: hidden;
+.section-workspace {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(270px, 310px) minmax(0, 1fr);
+  align-items: start;
+}
+
+.section-workspace.sidebar-hidden {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.section-workspace-content {
+  min-width: 0;
+}
+
+.section-sticky-sidebar {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  border-right: 1px solid #cbd5e1;
+  box-shadow: 4px 0 16px rgba(15, 23, 42, 0.08);
+}
+
+.section-sticky-sidebar[hidden] {
+  display: none !important;
+}
+
+.section-sticky-sidebar .section-sidebar-head {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 880px) {
+  .section-workspace,
+  .section-workspace.sidebar-hidden {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .section-sticky-sidebar {
+    position: relative;
+    height: auto;
+    max-height: 52vh;
+    border-right: 0;
+    border-bottom: 1px solid #cbd5e1;
+    box-shadow: 0 5px 14px rgba(15, 23, 42, 0.08);
+  }
 }
 
 /* Printable Container */
@@ -1123,8 +1101,12 @@ html, body {
 
 /* Print Optimization */
 @media print {
-  .top-toolbar, .exam-tabs-bar, .section-sidebar-launcher, .section-sidebar-overlay, .btn-fullscreen, .roster-search-bar, .subject-filter-summary {
+  .top-toolbar, .exam-tabs-bar, .section-sticky-sidebar, .btn-fullscreen, .roster-search-bar, .subject-filter-summary {
     display: none !important;
+  }
+  .section-workspace,
+  .section-workspace.sidebar-hidden {
+    display: block !important;
   }
   body {
     background: #fff !important;
@@ -1280,27 +1262,19 @@ html, body {
   </div>
 </nav>
 
-<!-- Collapsible grade/modality/section navigation -->
-<div class="section-sidebar-launcher" id="sectionTabsBar" hidden>
-  <button class="section-sidebar-toggle" id="sectionSidebarToggle" type="button" aria-expanded="false" aria-controls="sectionSidebarOverlay" onclick="toggleSectionSidebar()">
-    <span class="section-sidebar-toggle-icon" aria-hidden="true">☰</span>
-    <span>Browse Sections:</span>
-    <span class="section-sidebar-current" id="sectionSidebarCurrent">All Sections</span>
-  </button>
-</div>
-
-<div class="section-sidebar-overlay" id="sectionSidebarOverlay" hidden onclick="if (event.target === this) closeSectionSidebar()">
-  <aside class="section-sidebar-panel" aria-label="Grade and section menu">
+<div class="section-workspace sidebar-hidden" id="sectionWorkspace">
+  <!-- Sticky grade/modality/section navigation -->
+  <aside class="section-sidebar-panel section-sticky-sidebar" id="sectionTabsBar" aria-label="Grade and section menu" hidden>
     <div class="section-sidebar-head">
       <div>
         <div class="section-sidebar-title">Grades &amp; Sections</div>
         <div class="section-sidebar-subtitle">Grade → Modality / Shift → Section</div>
       </div>
-      <button class="section-sidebar-close" type="button" aria-label="Close section menu" onclick="closeSectionSidebar()">×</button>
     </div>
     <div class="section-sidebar-list" id="sectionTabsList" role="navigation"></div>
   </aside>
-</div>
+
+  <div class="section-workspace-content">
 
 <!-- Advisory Banner -->
 <div class="screen-advisory-wrapper">
@@ -1329,6 +1303,8 @@ html, body {
 <main class="page-sheet-container" id="sheetsContainer">
   <!-- Dynamic Exam Timetable Sheets rendered here -->
 </main>
+  </div>
+</div>
 
 <script>
 (function() {
@@ -5514,11 +5490,9 @@ html, body {
 
   const toolbarControls = document.getElementById('toolbarControls');
   const sheetsContainer = document.getElementById('sheetsContainer');
+  const sectionWorkspace = document.getElementById('sectionWorkspace');
   const sectionTabsBar = document.getElementById('sectionTabsBar');
   const sectionTabsList = document.getElementById('sectionTabsList');
-  const sectionSidebarOverlay = document.getElementById('sectionSidebarOverlay');
-  const sectionSidebarToggle = document.getElementById('sectionSidebarToggle');
-  const sectionSidebarCurrent = document.getElementById('sectionSidebarCurrent');
 
   function esc(s) {
     if (!s) return '';
@@ -5714,25 +5688,24 @@ html, body {
     return filtered.filter(section => section.grade_level === selectedGrade);
   }
 
-  function openSectionSidebar() {
-    if (!sectionSidebarOverlay || currentTab !== 'SECTION') return;
-    renderSectionTabs();
-    sectionSidebarOverlay.hidden = false;
-    document.body.classList.add('section-sidebar-open');
-    if (sectionSidebarToggle) sectionSidebarToggle.setAttribute('aria-expanded', 'true');
-  }
-
   function closeSectionSidebar() {
-    if (sectionSidebarOverlay) sectionSidebarOverlay.hidden = true;
-    document.body.classList.remove('section-sidebar-open');
-    if (sectionSidebarToggle) sectionSidebarToggle.setAttribute('aria-expanded', 'false');
+    if (!sectionTabsList) return;
+    sectionTabsList.querySelectorAll('details[open]').forEach(details => {
+      details.open = false;
+    });
   }
 
-  window.openSectionSidebar = openSectionSidebar;
   window.closeSectionSidebar = closeSectionSidebar;
-  window.toggleSectionSidebar = function() {
-    if (!sectionSidebarOverlay || sectionSidebarOverlay.hidden) openSectionSidebar();
-    else closeSectionSidebar();
+  window.keepOnlySidebarGroupOpen = function(details, group) {
+    if (!details || !details.open || !sectionTabsList) return;
+    const selector = group === 'shift' ? '.section-sidebar-shift' : '.section-sidebar-grade';
+    const scope = group === 'shift'
+      ? details.closest('.section-sidebar-grade-body')
+      : sectionTabsList;
+    if (!scope) return;
+    scope.querySelectorAll(`${selector}[open]`).forEach(other => {
+      if (other !== details) other.open = false;
+    });
   };
 
   function strictScheduleConflicts() {
@@ -5805,6 +5778,7 @@ html, body {
 
     if (tabName !== 'SECTION') closeSectionSidebar();
     if (sectionTabsBar) sectionTabsBar.hidden = tabName !== 'SECTION';
+    if (sectionWorkspace) sectionWorkspace.classList.toggle('sidebar-hidden', tabName !== 'SECTION');
 
     const btnSec = document.getElementById('tabBtnSection');
     const btnFac = document.getElementById('tabBtnFaculty');
@@ -5933,6 +5907,7 @@ html, body {
   };
 
   window.onGradeChange = function(value) {
+    closeSectionSidebar();
     selectedGrade = value || 'ALL';
     selectedSectionId = 'ALL_GROUP';
     renderSectionTabs();
@@ -5978,15 +5953,6 @@ html, body {
       selectedSectionId = 'ALL_GROUP';
     }
 
-    const selectedSection = sections.find(section => section.id === selectedSectionId);
-    if (sectionSidebarCurrent) {
-      sectionSidebarCurrent.textContent = selectedSection
-        ? `${gradeDisplayName(selectedSection.grade_level)} · ${sidebarShiftLabel(selectedSection.shift)} · ${cleanSectionName(selectedSection.section_name)}`
-        : selectedGrade === 'ALL'
-          ? `All Sections (${sections.length})`
-          : `${gradeDisplayName(selectedGrade)} · All Sections`;
-    }
-
     const sectionsByGrade = new Map();
     sections.forEach(section => {
       if (!sectionsByGrade.has(section.grade_level)) sectionsByGrade.set(section.grade_level, []);
@@ -5997,8 +5963,7 @@ html, body {
 
     [...sectionsByGrade.keys()].sort(compareGradeLevels).forEach(grade => {
       const gradeSections = sectionsByGrade.get(grade).sort(compareSections);
-      const gradeIsOpen = selectedGrade === grade || gradeSections.some(section => section.id === selectedSectionId);
-      html += `<details class="section-sidebar-grade" ${gradeIsOpen ? 'open' : ''}>
+      html += `<details class="section-sidebar-grade" ontoggle="keepOnlySidebarGroupOpen(this, 'grade')">
         <summary><span>${esc(gradeDisplayName(grade))}</span><span class="section-sidebar-count">${gradeSections.length} section${gradeSections.length === 1 ? '' : 's'} ▾</span></summary>
         <div class="section-sidebar-grade-body">
           <button class="section-sidebar-grade-all ${selectedGrade === grade && selectedSectionId === 'ALL_GROUP' ? 'active' : ''}" type="button" data-grade="${esc(grade)}" onclick="selectSidebarGrade(this.dataset.grade)">
@@ -6013,8 +5978,7 @@ html, body {
 
       [...sectionsByShift.keys()].sort((left, right) => shiftSortRank(left) - shiftSortRank(right)).forEach(shift => {
         const shiftSections = sectionsByShift.get(shift);
-        const shiftIsOpen = shiftSections.some(section => section.id === selectedSectionId);
-        html += `<details class="section-sidebar-shift" ${shiftIsOpen ? 'open' : ''}>
+        html += `<details class="section-sidebar-shift" ontoggle="keepOnlySidebarGroupOpen(this, 'shift')">
           <summary><span>${esc(sidebarShiftLabel(shift))}</span><span class="section-sidebar-count">${shiftSections.length} ▾</span></summary>
           <div class="section-sidebar-sections">`;
 
