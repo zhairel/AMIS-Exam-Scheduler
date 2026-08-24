@@ -12930,7 +12930,7 @@
       "teacher_status": "VERIFIED"
     },
     {
-      "id": "exam_399",
+      "id": "exam_260",
       "exam_term": "1st Term",
       "day_number": 3,
       "date": "Sunday, September 6, 2026",
@@ -12953,10 +12953,10 @@
       "shift": "ODL - 2ND SHIFT",
       "modality": "ODL",
       "gender": "MIXED",
-      "subject_id": "subj_mapeh",
-      "subject": "MAPEH",
-      "teacher_id": "tchr_franchette",
-      "teacher": "Teacher Franchette",
+      "subject_id": "subj_filipino",
+      "subject": "Filipino",
+      "teacher_id": "tchr_sophia",
+      "teacher": "Teacher Sophia",
       "duration_minutes": 60,
       "teacher_status": "VERIFIED"
     },
@@ -17396,7 +17396,7 @@
       "teacher_status": "VERIFIED"
     },
     {
-      "id": "exam_260",
+      "id": "exam_399",
       "exam_term": "1st Term",
       "day_number": 4,
       "date": "Monday, September 7, 2026",
@@ -17419,10 +17419,10 @@
       "shift": "ODL - 2ND SHIFT",
       "modality": "ODL",
       "gender": "MIXED",
-      "subject_id": "subj_filipino",
-      "subject": "Filipino",
-      "teacher_id": "tchr_sophia",
-      "teacher": "Teacher Sophia",
+      "subject_id": "subj_mapeh",
+      "subject": "MAPEH",
+      "teacher_id": "tchr_franchette",
+      "teacher": "Teacher Franchette",
       "duration_minutes": 60,
       "teacher_status": "VERIFIED"
     },
@@ -31102,7 +31102,7 @@
       "teacher_status": "VERIFIED"
     },
     {
-      "id": "exam_399",
+      "id": "exam_260",
       "exam_term": "1st Term",
       "day_number": 3,
       "date": "Sunday, September 6, 2026",
@@ -31125,10 +31125,10 @@
       "shift": "ODL - 2ND SHIFT",
       "modality": "ODL",
       "gender": "MIXED",
-      "subject_id": "subj_mapeh",
-      "subject": "MAPEH",
-      "teacher_id": "tchr_franchette",
-      "teacher": "Teacher Franchette",
+      "subject_id": "subj_filipino",
+      "subject": "Filipino",
+      "teacher_id": "tchr_sophia",
+      "teacher": "Teacher Sophia",
       "duration_minutes": 60,
       "teacher_status": "VERIFIED"
     },
@@ -35568,7 +35568,7 @@
       "teacher_status": "VERIFIED"
     },
     {
-      "id": "exam_260",
+      "id": "exam_399",
       "exam_term": "1st Term",
       "day_number": 4,
       "date": "Monday, September 7, 2026",
@@ -35591,10 +35591,10 @@
       "shift": "ODL - 2ND SHIFT",
       "modality": "ODL",
       "gender": "MIXED",
-      "subject_id": "subj_filipino",
-      "subject": "Filipino",
-      "teacher_id": "tchr_sophia",
-      "teacher": "Teacher Sophia",
+      "subject_id": "subj_mapeh",
+      "subject": "MAPEH",
+      "teacher_id": "tchr_franchette",
+      "teacher": "Teacher Franchette",
       "duration_minutes": 60,
       "teacher_status": "VERIFIED"
     },
@@ -49274,7 +49274,7 @@
       "teacher_status": "VERIFIED"
     },
     {
-      "id": "exam_399",
+      "id": "exam_260",
       "exam_term": "1st Term",
       "day_number": 3,
       "date": "Sunday, September 6, 2026",
@@ -49297,10 +49297,10 @@
       "shift": "ODL - 2ND SHIFT",
       "modality": "ODL",
       "gender": "MIXED",
-      "subject_id": "subj_mapeh",
-      "subject": "MAPEH",
-      "teacher_id": "tchr_franchette",
-      "teacher": "Teacher Franchette",
+      "subject_id": "subj_filipino",
+      "subject": "Filipino",
+      "teacher_id": "tchr_sophia",
+      "teacher": "Teacher Sophia",
       "duration_minutes": 60,
       "teacher_status": "VERIFIED"
     },
@@ -53740,7 +53740,7 @@
       "teacher_status": "VERIFIED"
     },
     {
-      "id": "exam_260",
+      "id": "exam_399",
       "exam_term": "1st Term",
       "day_number": 4,
       "date": "Monday, September 7, 2026",
@@ -53763,10 +53763,10 @@
       "shift": "ODL - 2ND SHIFT",
       "modality": "ODL",
       "gender": "MIXED",
-      "subject_id": "subj_filipino",
-      "subject": "Filipino",
-      "teacher_id": "tchr_sophia",
-      "teacher": "Teacher Sophia",
+      "subject_id": "subj_mapeh",
+      "subject": "MAPEH",
+      "teacher_id": "tchr_franchette",
+      "teacher": "Teacher Franchette",
       "duration_minutes": 60,
       "teacher_status": "VERIFIED"
     },
@@ -67446,7 +67446,7 @@
       "teacher_status": "VERIFIED"
     },
     {
-      "id": "exam_399",
+      "id": "exam_260",
       "exam_term": "1st Term",
       "day_number": 3,
       "date": "Sunday, September 6, 2026",
@@ -67469,10 +67469,10 @@
       "shift": "ODL - 2ND SHIFT",
       "modality": "ODL",
       "gender": "MIXED",
-      "subject_id": "subj_mapeh",
-      "subject": "MAPEH",
-      "teacher_id": "tchr_franchette",
-      "teacher": "Teacher Franchette",
+      "subject_id": "subj_filipino",
+      "subject": "Filipino",
+      "teacher_id": "tchr_sophia",
+      "teacher": "Teacher Sophia",
       "duration_minutes": 60,
       "teacher_status": "VERIFIED"
     },
@@ -71912,7 +71912,7 @@
       "teacher_status": "VERIFIED"
     },
     {
-      "id": "exam_260",
+      "id": "exam_399",
       "exam_term": "1st Term",
       "day_number": 4,
       "date": "Monday, September 7, 2026",
@@ -71935,10 +71935,10 @@
       "shift": "ODL - 2ND SHIFT",
       "modality": "ODL",
       "gender": "MIXED",
-      "subject_id": "subj_filipino",
-      "subject": "Filipino",
-      "teacher_id": "tchr_sophia",
-      "teacher": "Teacher Sophia",
+      "subject_id": "subj_mapeh",
+      "subject": "MAPEH",
+      "teacher_id": "tchr_franchette",
+      "teacher": "Teacher Franchette",
       "duration_minutes": 60,
       "teacher_status": "VERIFIED"
     },

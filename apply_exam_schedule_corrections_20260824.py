@@ -23,6 +23,7 @@ from teacher_registry import resolve_teacher
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 EXAM_JSON = os.path.join(BASE_DIR, "exam_data.json")
 CLASS_JSON = os.path.join(BASE_DIR, "class_schedules_data.json")
+AUDIT_JSON = os.path.join(BASE_DIR, "exam_schedule_corrections_audit_20260824.json")
 SOURCE_EXAM_JSON = os.environ.get("AMIS_CORRECTION_SOURCE_EXAMS", EXAM_JSON)
 
 EXAM_DAYS = {
@@ -274,7 +275,11 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
             continue
 
         # These JHS rows were generated from MAPEH but mislabeled Social Science.
-        if is_jhs(record) and clean(record.get("subject")).lower() == "social science":
+        if (
+            is_jhs(record)
+            and clean(record.get("subject")).lower() == "social science"
+            and record.get("teacher_id") != "tchr_sophia"
+        ):
             renamed.append({"section": record["section_name"], "from": record["subject"], "to": "MAPEH"})
             record["subject"] = "MAPEH"
             record["subject_id"] = "subj_mapeh"
@@ -406,6 +411,20 @@ def fixed_position(record):
         return 2, 480
     if section_contains(record, "GRADE 7", "USAMA") and subject_key(record["subject"]) == "science":
         return 1, 910
+    # Teacher Sophia accommodations: preserve the already-corrected Sep 2/Sep 3
+    # placements and move her final Sep 7 duty to Sep 6. Swapping Mu'adh's
+    # Filipino and MAPEH exams keeps the section complete without opening a gap.
+    if section_contains(record, "GRADE 7", "ABU SUFYAN") and subject_key(record["subject"]) == "filipino":
+        return 1, 830
+    if section_contains(record, "GRADE 10", "UTBAH") and subject_key(record["subject"]) == "social_studies":
+        return 1, 760
+    if section_contains(record, "GRADE 9", "ABU DHARR") and subject_key(record["subject"]) == "social_studies":
+        return 2, 910
+    if section_contains(record, "GRADE 8", "MU'ADH", "2ND SHIFT"):
+        if subject_key(record["subject"]) == "filipino":
+            return 3, 980
+        if subject_key(record["subject"]) == "mapeh":
+            return 4, 980
     return None
 
 
@@ -610,6 +629,69 @@ def build_teacher_tracking(records):
     return output
 
 
+def merge_previous_audit(audit, previous_audit, source_count):
+    """Keep the original correction trail when rerunning against corrected output."""
+    if not previous_audit or source_count != previous_audit.get("final_exam_count"):
+        return audit
+
+    for key in ("removed", "renamed", "added", "teacher_relinks"):
+        if not audit.get(key) and previous_audit.get(key):
+            audit[key] = deepcopy(previous_audit[key])
+
+    previous_moves = previous_audit.get("moved", [])
+    new_moves = audit.get("moved", [])
+    accommodation_moves = [
+        {
+            "id": "exam_399",
+            "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+            "subject": "MAPEH",
+            "from_day": 3,
+            "from_start_m": 980,
+            "to_day": 4,
+            "to_start_m": 980,
+        },
+        {
+            "id": "exam_260",
+            "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+            "subject": "Filipino",
+            "from_day": 4,
+            "from_start_m": 980,
+            "to_day": 3,
+            "to_start_m": 980,
+        },
+    ]
+    seen_moves = {
+        (move.get("id"), move.get("to_day"), move.get("to_start_m"))
+        for move in previous_moves
+    }
+    audit["moved"] = deepcopy(previous_moves) + [
+        move for move in new_moves + accommodation_moves
+        if (move.get("id"), move.get("to_day"), move.get("to_start_m")) not in seen_moves
+    ]
+    audit["source_exam_count"] = previous_audit.get("source_exam_count", audit["source_exam_count"])
+    audit["source_duration_counts"] = previous_audit.get(
+        "source_duration_counts", audit["source_duration_counts"]
+    )
+    audit["teacher_accommodations"] = [
+        {
+            "teacher": "Teacher Sophia",
+            "request": "Remove Sep 2 overlap between Grade 7 Abu Sufyan and Grade 10 Utbah",
+            "result": "Abu Sufyan retained at 01:50 PM – 02:50 PM; Utbah retained at 12:40 PM – 01:40 PM",
+        },
+        {
+            "teacher": "Teacher Sophia",
+            "request": "Avoid a 06:30 PM Grade 9 Abu Dharr dismissal duty",
+            "result": "Abu Dharr retained at 03:10 PM – 04:10 PM on Sep 3",
+        },
+        {
+            "teacher": "Teacher Sophia",
+            "request": "Do not exceed 04:30 PM on Sep 7",
+            "result": "Grade 8 Mu'adh Filipino moved to Sep 6 at 04:20 PM – 05:20 PM; Sep 7 duties now end at 04:10 PM",
+        },
+    ]
+    return audit
+
+
 def write_outputs(records, audit):
     records.sort(key=lambda r: (r["day_number"], r["start_m"], r["section"].lower(), r["subject"].lower()))
     clean_records = [strip_internal(record) for record in records]
@@ -675,12 +757,17 @@ def write_outputs(records, audit):
     audit["final_exam_count"] = len(clean_records)
     audit["duration_counts"] = dict(sorted(Counter(record["duration_minutes"] for record in clean_records).items()))
     audit["teacher_count"] = len(tracking)
-    with open(os.path.join(BASE_DIR, "exam_schedule_corrections_audit_20260824.json"), "w", encoding="utf-8") as handle:
+    with open(AUDIT_JSON, "w", encoding="utf-8") as handle:
         json.dump(audit, handle, indent=2, ensure_ascii=False)
         handle.write("\n")
 
 
 def main():
+    previous_audit = None
+    if os.path.exists(AUDIT_JSON):
+        with open(AUDIT_JSON, "r", encoding="utf-8") as handle:
+            previous_audit = json.load(handle)
+
     with open(SOURCE_EXAM_JSON, "r", encoding="utf-8") as handle:
         source_records = json.load(handle)
     with open(CLASS_JSON, "r", encoding="utf-8") as handle:
@@ -692,6 +779,7 @@ def main():
     audit["source_exam_count"] = len(source_records)
     audit["source_duration_counts"] = dict(sorted(original_duration_counts.items()))
     audit["moved"] = solve_minimal_changes(records)
+    audit = merge_previous_audit(audit, previous_audit, len(source_records))
     write_outputs(records, audit)
 
     print(f"Source exams: {len(source_records)}")

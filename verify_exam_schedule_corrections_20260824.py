@@ -97,6 +97,46 @@ def main():
     assert all(record["teacher_id"] == "tchr_sophia" for record in grade9_10_social)
     assert all(record["subject"] == "Social Science" for record in grade9_10_social)
 
+    sophia_abu_sufyan = get_one(
+        records,
+        lambda record: section_has(record, "GRADE 7", "ABU SUFYAN")
+        and correction.subject_key(record["subject"]) == "filipino",
+        "Teacher Sophia Grade 7 Abu Sufyan Filipino exam",
+    )
+    sophia_utbah = get_one(
+        records,
+        lambda record: section_has(record, "GRADE 10", "UTBAH")
+        and correction.subject_key(record["subject"]) == "social_studies",
+        "Teacher Sophia Grade 10 Utbah Social Science exam",
+    )
+    sophia_abu_dharr = get_one(
+        records,
+        lambda record: section_has(record, "GRADE 9", "ABU DHARR")
+        and correction.subject_key(record["subject"]) == "social_studies",
+        "Teacher Sophia Grade 9 Abu Dharr Social Science exam",
+    )
+    muadh_filipino = get_one(
+        records,
+        lambda record: section_has(record, "GRADE 8", "MU'ADH", "2ND SHIFT")
+        and correction.subject_key(record["subject"]) == "filipino",
+        "Teacher Sophia Grade 8 Mu'adh Filipino exam",
+    )
+    muadh_mapeh = get_one(
+        records,
+        lambda record: section_has(record, "GRADE 8", "MU'ADH", "2ND SHIFT")
+        and correction.subject_key(record["subject"]) == "mapeh",
+        "Grade 8 Mu'adh MAPEH exam",
+    )
+    assert (sophia_abu_sufyan["day_number"], sophia_abu_sufyan["start_m"]) == (1, 830)
+    assert (sophia_utbah["day_number"], sophia_utbah["start_m"]) == (1, 760)
+    assert not overlaps(sophia_abu_sufyan, sophia_utbah)
+    assert (sophia_abu_dharr["day_number"], sophia_abu_dharr["start_m"], sophia_abu_dharr["end_m"]) == (2, 910, 970)
+    assert (muadh_filipino["day_number"], muadh_filipino["start_m"]) == (3, 980)
+    assert (muadh_mapeh["day_number"], muadh_mapeh["start_m"]) == (4, 980)
+    sophia_last_day = [record for record in records if record["teacher_id"] == "tchr_sophia" and record["day_number"] == 4]
+    assert sophia_last_day
+    assert max(record["end_m"] for record in sophia_last_day) <= 970
+
     usama_science = get_one(
         records,
         lambda record: section_has(record, "GRADE 7", "USAMA") and correction.subject_key(record["subject"]) == "science",

@@ -821,6 +821,41 @@
       "from_start_m": 910,
       "to_day": 4,
       "to_start_m": 1050
+    },
+    {
+      "id": "exam_399",
+      "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+      "subject": "MAPEH",
+      "from_day": 3,
+      "from_start_m": 980,
+      "to_day": 4,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_260",
+      "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+      "subject": "Filipino",
+      "from_day": 4,
+      "from_start_m": 980,
+      "to_day": 3,
+      "to_start_m": 980
+    }
+  ],
+  "teacher_accommodations": [
+    {
+      "teacher": "Teacher Sophia",
+      "request": "Remove Sep 2 overlap between Grade 7 Abu Sufyan and Grade 10 Utbah",
+      "result": "Abu Sufyan retained at 01:50 PM – 02:50 PM; Utbah retained at 12:40 PM – 01:40 PM"
+    },
+    {
+      "teacher": "Teacher Sophia",
+      "request": "Avoid a 06:30 PM Grade 9 Abu Dharr dismissal duty",
+      "result": "Abu Dharr retained at 03:10 PM – 04:10 PM on Sep 3"
+    },
+    {
+      "teacher": "Teacher Sophia",
+      "request": "Do not exceed 04:30 PM on Sep 7",
+      "result": "Grade 8 Mu'adh Filipino moved to Sep 6 at 04:20 PM – 05:20 PM; Sep 7 duties now end at 04:10 PM"
     }
   ],
   "final_exam_count": 586,
