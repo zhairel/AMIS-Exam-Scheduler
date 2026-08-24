@@ -2,6 +2,7 @@
 
 const supabase = require('../server/supabase');
 const schedules = require('../server/schedules');
+const scheduleLocks = require('../server/schedule-locks');
 
 function upstreamMessage(result, fallback) {
   const data = result && result.data;
@@ -23,9 +24,17 @@ async function readAllSchedules(config, accessToken, filter) {
     );
     if (!result.ok) return result;
     const page = Array.isArray(result.data) ? result.data : [];
-    records.push(...page);
+    records.push(...page.filter((record) => !scheduleLocks.isLockRecord(record)));
     if (page.length < pageSize) return { ok: true, status: 200, data: records };
   }
+}
+
+async function lockedResponse(config, accessToken, record) {
+  if (!record || !record.section) return null;
+  const result = await scheduleLocks.findLock(config, accessToken, record.section, record.section_id)
+    .catch(() => ({ ok: false, status: 502 }));
+  if (!result.ok) return { status: result.status >= 500 ? 502 : result.status, error: 'Unable to verify the schedule lock.' };
+  return result.data ? { status: 423, error: `${record.section} is locked after review. Unlock the class schedule before making changes.` } : null;
 }
 
 module.exports = async function scheduleApi(request, response) {
@@ -61,6 +70,13 @@ module.exports = async function scheduleApi(request, response) {
   const queryId = String((request.query && request.query.id) || '').trim();
   if (request.method === 'DELETE') {
     if (!queryId) return response.status(400).json({ ok: false, error: 'A schedule ID is required.' });
+    const targetResult = await readAllSchedules(config, session.accessToken, `id=eq.${encodeURIComponent(queryId)}`)
+      .catch(() => ({ ok: false, status: 502, data: [] }));
+    if (!targetResult.ok) return response.status(targetResult.status >= 500 ? 502 : targetResult.status).json({ ok: false, error: 'Unable to verify the selected schedule.' });
+    const target = targetResult.data[0];
+    if (!target) return response.status(404).json({ ok: false, error: 'This schedule was not found.' });
+    const lock = await lockedResponse(config, session.accessToken, target);
+    if (lock) return response.status(lock.status).json({ ok: false, locked: lock.status === 423, error: lock.error });
     if (queryId.startsWith('official:')) {
       const result = await supabase.restRequest(config, `/manual_schedules?id=eq.${encodeURIComponent(queryId)}`, {
         method: 'PATCH',
@@ -95,6 +111,8 @@ module.exports = async function scheduleApi(request, response) {
   }
   const current = currentResult.data.find((item) => item.id === record.id);
   if (isUpdate && current) record.source = current.source === 'official' ? 'official' : 'manual';
+  const lock = await lockedResponse(config, session.accessToken, current || record);
+  if (lock) return response.status(lock.status).json({ ok: false, locked: lock.status === 423, error: lock.error });
   const validationError = schedules.validate(record, true);
   if (validationError) return response.status(400).json({ ok: false, error: validationError });
   const conflicts = schedules.findBlockingConflicts(record, currentResult.data, record.id, current);

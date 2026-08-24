@@ -21,6 +21,7 @@
   let officialSections = [];
   let officialEntries = [];
   let manualEntries = [];
+  let scheduleLocks = [];
   let currentId = '';
   let currentRecord = null;
   let groupedRecords = [];
@@ -74,6 +75,16 @@
     return candidate.source === 'official' && candidate.schedule_type === 'Official Break / Assembly';
   }
 
+  function sectionIsLocked(candidate) {
+    const section = core.key(candidate && candidate.section);
+    const sectionId = core.key(candidate && candidate.section_id);
+    return scheduleLocks.some((lock) => {
+      const lockId = core.key(lock.section_id);
+      if (sectionId && lockId && sectionId === lockId) return true;
+      return Boolean(section && section === core.key(lock.section));
+    });
+  }
+
   function allEntries() {
     return officialEntries.concat(manualEntries);
   }
@@ -100,6 +111,11 @@
     currentSuggestion = null;
 
     fields.teacher.required = !teacherIsOptional(candidate);
+    if (candidate.section && sectionIsLocked(candidate)) {
+      setAvailability('unavailable', `<strong>${esc(candidate.section)} is locked after review.</strong> Unlock it from Class / Grade Calendars before making changes.`);
+      saveButton.disabled = true;
+      return;
+    }
     if ((!candidate.teacher && !teacherIsOptional(candidate)) || !candidate.day || !candidate.start_time || !candidate.end_time) {
       setAvailability('idle', 'Availability updates automatically as the teacher, day, and time change.');
       saveButton.disabled = false;
@@ -185,14 +201,16 @@
       if (!window.AMISAdminGuard || !await window.AMISAdminGuard.requireAdmin(true)) return;
       document.body.classList.remove('admin-pending');
       loadingStatus.textContent = 'Loading official schedules and shared Supabase records…';
-      const [sections, teacherResponse, manuals] = await Promise.all([
+      const [sections, teacherResponse, manuals, locks] = await Promise.all([
         core.loadOfficialData('..'),
         fetch('../teacher_weekly_schedules.json?v=' + Date.now(), { cache: 'no-store' }),
-        core.listSchedules()
+        core.listSchedules(),
+        core.listScheduleLocks()
       ]);
       officialSections = sections;
       officialEntries = core.officialEntriesFromSections(sections);
       manualEntries = manuals;
+      scheduleLocks = locks;
       const teacherData = teacherResponse.ok ? await teacherResponse.json() : {};
       populateTeachers(teacherData);
       populateSections();

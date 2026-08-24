@@ -308,6 +308,24 @@
     return (result.schedules || []).map(normalizeRecord);
   }
 
+  async function listScheduleLocks() {
+    const result = await apiRequest('/api/schedule-locks');
+    return Array.isArray(result.locks) ? result.locks : [];
+  }
+
+  async function setScheduleLock(input, locked) {
+    return apiRequest('/api/schedule-locks', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        grade_level: clean(input && input.grade_level),
+        section: clean(input && input.section),
+        section_id: clean(input && input.section_id),
+        locked: Boolean(locked)
+      })
+    });
+  }
+
   async function loadOfficialData(basePath) {
     const prefix = clean(basePath || '.').replace(/\/$/, '');
     const response = await fetch(`${prefix}/class_schedules_data.json?v=${Date.now()}`, { cache: 'no-store' });
@@ -338,6 +356,8 @@
     saveScheduleChecked,
     deleteSchedule,
     setMergeGroup,
+    listScheduleLocks,
+    setScheduleLock,
     loadOfficialData
   });
 })(window);

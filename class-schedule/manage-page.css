@@ -53,6 +53,8 @@ body.manage-pending .manage-shell { visibility: hidden; }
 .teacher-directory-item { width: 100%; display: grid; grid-template-columns: 34px minmax(0,1fr) auto; align-items: center; gap: 9px; padding: 9px; border: 1px solid transparent; border-radius: 9px; background: transparent; color: #1e293b; text-align: left; cursor: pointer; }
 .teacher-directory-item:hover { background: #fff; border-color: #dbe4ee; }
 .teacher-directory-item.selected { border-color: #6ee7b7; background: #ecfdf5; box-shadow: 0 2px 8px rgba(5,150,105,.08); }
+.teacher-directory-item.locked-class { border-left-color: #fca5a5; }
+.directory-lock { display: inline; margin-left: 4px; font-size: 9px; }
 .class-directory-item { grid-template-columns: 42px minmax(0,1fr) auto; }
 .class-grade-badge { width: 42px; min-height: 34px; display: grid; place-items: center; padding: 4px; border-radius: 8px; color: #075985; background: #e0f2fe; text-align: center; font-size: 8px; font-weight: 900; line-height: 1.15; }
 .teacher-avatar { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 9px; color: #047857; background: #d1fae5; font-size: 11px; font-weight: 900; }
@@ -68,8 +70,18 @@ body.manage-pending .manage-shell { visibility: hidden; }
 .teacher-calendar-heading p { margin: 0; color: #64748b; font-size: 10px; font-weight: 650; }
 .calendar-heading-actions { display: flex; align-items: center; gap: 7px; }
 .calendar-create { flex: 0 0 auto; padding: 9px 12px; border-radius: 8px; color: #fff; background: #059669; text-decoration: none; font-size: 10px; font-weight: 850; }
+.calendar-create.locked { pointer-events: none; color: #64748b; background: #e2e8f0; box-shadow: none; }
+.calendar-lock-button { padding: 8px 11px; border: 1px solid #d97706; border-radius: 8px; color: #92400e; background: #fffbeb; font-family: inherit; font-size: 10px; font-weight: 850; cursor: pointer; }
+.calendar-lock-button::before { content: '🔒'; margin-right: 5px; font-size: 9px; }
+.calendar-lock-button.locked { border-color: #b91c1c; color: #fff; background: #b91c1c; }
+.calendar-lock-button.locked::before { content: '🔓'; }
+.calendar-lock-button:disabled, .calendar-merge-button:disabled { opacity: .45; cursor: not-allowed; }
 .calendar-merge-button { padding: 8px 11px; border: 1px solid #059669; border-radius: 8px; color: #047857; background: #ecfdf5; font-family: inherit; font-size: 10px; font-weight: 850; cursor: pointer; }
 .calendar-merge-button.active { color: #fff; background: #047857; }
+.class-lock-notice { display: flex; align-items: center; gap: 8px; margin: -3px 0 12px; padding: 10px 12px; border: 1px solid #fca5a5; border-radius: 9px; color: #991b1b; background: #fff7ed; font-size: 9px; }
+.class-lock-notice[hidden] { display: none; }
+.class-lock-notice strong { flex: 0 0 auto; font-size: 10px; }
+.class-lock-notice span { color: #7f1d1d; font-weight: 650; }
 .merge-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: -3px 0 12px; padding: 9px 11px; border: 1px solid #93c5fd; border-radius: 9px; color: #1e40af; background: #eff6ff; font-size: 9px; font-weight: 750; }
 .merge-toolbar[hidden] { display: none; }
 .merge-toolbar div { display: flex; gap: 6px; }.merge-toolbar button { padding: 6px 9px; border: 1px solid #93c5fd; border-radius: 6px; color: #1e3a8a; background: #fff; font-family: inherit; font-size: 9px; font-weight: 850; cursor: pointer; }
@@ -96,6 +108,9 @@ body.manage-pending .manage-shell { visibility: hidden; }
 .calendar-empty-link { width: 100%; height: 100%; min-height: 60px; display: flex; align-items: center; justify-content: center; gap: 5px; border: 1px dashed #d3dde8; border-radius: 7px; color: #94a3b8; background: #fbfdfe; text-decoration: none; font-size: 9px; font-weight: 750; opacity: .7; }
 .calendar-empty-link strong { font-size: 15px; font-weight: 500; }
 .calendar-empty-link:hover { border-color: #34d399; color: #047857; background: #ecfdf5; opacity: 1; }
+.calendar-locked-slot { color: #94a3b8; background: #f1f5f9; cursor: not-allowed; }
+.calendar-locked-slot:hover { border-color: #d3dde8; color: #94a3b8; background: #f1f5f9; opacity: .7; }
+.schedule-locked .calendar-card { box-shadow: none; }
 .calendar-overlap-state { min-height: 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px dashed #fed7aa; border-radius: 7px; color: #9a3412; background: #fff7ed; text-align: center; }
 .calendar-overlap-state span { font-size: 9px; font-weight: 850; }.calendar-overlap-state small { margin-top: 2px; font-size: 8px; }
 .calendar-card { position: relative; min-height: 60px; padding: 8px 51px 7px 8px; border: 1px solid #a7f3d0; border-left: 4px solid #10b981; border-radius: 7px; color: #064e3b; background: #ecfdf5; }
@@ -133,9 +148,10 @@ body.manage-pending .manage-shell { visibility: hidden; }
 .personnel-table tbody tr:hover { background: #f8fffc; }
 .personnel-subject strong, .personnel-subject small { display: block; }.personnel-subject small { margin-top: 3px; color: #64748b; font-size: 8px; }
 .manual-manager { width: 100%; margin: 0; }
+.locked-action { display: inline-flex; align-items: center; gap: 4px; padding: 5px 7px; border-radius: 999px; color: #991b1b; background: #fee2e2; white-space: nowrap; font-size: 8px; font-weight: 850; }
 .manage-pagination { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 20px; color: #64748b; background: #fff; font-size: 11px; font-weight: 700; }
 .manage-pagination div { display: flex; gap: 7px; }
 .manage-pagination button { padding: 7px 10px; border: 1px solid #cbd5e1; border-radius: 7px; background: #fff; color: #334155; font-family: inherit; font-size: 10px; font-weight: 800; cursor: pointer; }
 .manage-pagination button:disabled { opacity: .4; cursor: default; }
 @media (max-width: 980px) { .teacher-workspace { grid-template-columns: 1fr; } .teacher-directory { border-right: 0; border-bottom: 1px solid #dbe4ee; } .teacher-directory-list { max-height: 260px; } }
-@media (max-width: 760px) { .manage-topbar, .manage-heading, .teacher-calendar-heading { align-items: flex-start; flex-direction: column; } .manage-nav { width: 100%; flex-wrap: wrap; } .manage-stats { grid-template-columns: repeat(2, 1fr); } .manage-create, .calendar-create { width: 100%; text-align: center; } .teacher-calendar-panel { padding: 14px 10px; } }
+@media (max-width: 760px) { .manage-topbar, .manage-heading, .teacher-calendar-heading { align-items: flex-start; flex-direction: column; } .manage-nav, .calendar-heading-actions { width: 100%; flex-wrap: wrap; } .manage-stats { grid-template-columns: repeat(2, 1fr); } .manage-create, .calendar-create { width: 100%; text-align: center; } .teacher-calendar-panel { padding: 14px 10px; } .class-lock-notice { align-items: flex-start; flex-direction: column; } }

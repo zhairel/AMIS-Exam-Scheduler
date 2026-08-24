@@ -19,6 +19,7 @@
   let filteredRecords = [];
   let personnel = [];
   let classes = [];
+  let classLocks = [];
   let originalEntries = [];
   let selectedTeacher = '';
   let selectedSection = '';
@@ -34,6 +35,9 @@
   const classModalityFilter = document.getElementById('classModalityFilter');
   const classShiftFilter = document.getElementById('classShiftFilter');
   const classFilterSummary = document.getElementById('classFilterSummary');
+  const classLockButton = document.getElementById('classLockButton');
+  const classLockNotice = document.getElementById('classLockNotice');
+  const classCreateLink = document.getElementById('classCreateLink');
   const personnelRows = document.getElementById('personnelScheduleRows');
   const directoryList = document.getElementById('teacherDirectoryList');
   const directorySearch = document.getElementById('teacherDirectorySearch');
@@ -125,7 +129,7 @@
       <td>${esc(core.formatRange(record))}</td><td>${record.room ? esc(record.room) : '—'}</td><td>${esc(record.schedule_type)}</td>
       <td><span class="status-pill manual-source-pill">${isOfficial(record) ? 'OFFICIAL DB' : 'MANUAL'}</span></td>
       <td><span class="status-pill status-${esc(record.status)}">${esc(record.status.toUpperCase())}</span></td>
-      <td><div class="manual-actions">${editLink(record, 'manual-icon-action')}${removeButton(record, 'manual-icon-action')}</div></td>
+      <td>${recordLock(record) ? '<span class="locked-action">🔒 Locked</span>' : `<div class="manual-actions">${editLink(record, 'manual-icon-action')}${removeButton(record, 'manual-icon-action')}</div>`}</td>
     </tr>`).join('') : '<tr><td colspan="10" class="manual-empty">No schedules match the selected filters.</td></tr>';
     const end = Math.min(start + PAGE_SIZE, filteredRecords.length);
     document.getElementById('pageSummary').textContent = filteredRecords.length ? `Showing ${start + 1}–${end} of ${filteredRecords.length.toLocaleString()} records` : '0 records';
@@ -169,6 +173,30 @@
     originalEntries.filter((record) => record.section === name).forEach((record) => combined.set(record.id, { ...record, _database: false }));
     records.filter((record) => record.section === name).forEach((record) => combined.set(record.id, { ...record, _database: true }));
     return Array.from(combined.values());
+  }
+
+  function lockKey(value) {
+    return core.clean(value).toLocaleLowerCase();
+  }
+
+  function classLock(item) {
+    if (!item) return null;
+    return lockForSection(item.name, item.id);
+  }
+
+  function lockForSection(section, sectionId) {
+    return classLocks.find((lock) => {
+      if (sectionId && lock.section_id && lockKey(sectionId) === lockKey(lock.section_id)) return true;
+      return lockKey(section) === lockKey(lock.section);
+    }) || null;
+  }
+
+  function recordLock(record) {
+    return record ? lockForSection(record.section, record.section_id) : null;
+  }
+
+  function selectedClassLock() {
+    return classLock(classes.find((item) => item.name === selectedSection));
   }
 
   function subjectCounts(items) {
@@ -252,8 +280,9 @@
     classFilterSummary.innerHTML = `<strong>${visible.length}</strong> of ${classes.length} sections${filterLabels.length ? ` · ${esc(filterLabels.join(' / '))}` : ''}`;
     classDirectoryList.innerHTML = visible.length ? visible.map((item) => {
       const count = completeClassRecords(item.name).length;
-      return `<button class="teacher-directory-item class-directory-item${item.name === selectedSection ? ' selected' : ''}" type="button" data-section="${esc(item.name)}" aria-pressed="${item.name === selectedSection}">
-        <span class="class-grade-badge">${esc(gradeBadge(item.grade))}</span><span class="teacher-directory-copy"><strong>${esc(item.name)}</strong><small>${esc([item.grade, item.shift].filter(Boolean).join(' • '))}</small></span><span class="teacher-record-count">${count}</span>
+      const locked = Boolean(classLock(item));
+      return `<button class="teacher-directory-item class-directory-item${item.name === selectedSection ? ' selected' : ''}${locked ? ' locked-class' : ''}" type="button" data-section="${esc(item.name)}" aria-pressed="${item.name === selectedSection}">
+        <span class="class-grade-badge">${esc(gradeBadge(item.grade))}</span><span class="teacher-directory-copy"><strong>${esc(item.name)}${locked ? ' <span class="directory-lock" title="Locked after review">🔒</span>' : ''}</strong><small>${esc([item.grade, item.shift].filter(Boolean).join(' • '))}</small></span><span class="teacher-record-count">${count}</span>
       </button>`;
     }).join('') : '<div class="workspace-empty">No sections match these filters.<br>Try another grade, modality, or shift.</div>';
   }
@@ -302,9 +331,10 @@
     const event = isEvent(record);
     const pending = record._database === false;
     const tone = event ? 'event' : subjectTone(record.subject);
+    const actions = selectedClassLock() ? '' : `${editLink(record, 'calendar-icon-action')}${removeButton(record, 'calendar-icon-action')}`;
     return `<article class="calendar-card ${tone}${record.status === 'inactive' ? ' inactive' : ''}" title="${esc(`${record.subject} — ${record.teacher || 'School event'}`)}">
       <strong>${esc(record.subject)}</strong><span>${esc(record.teacher || 'School event')}</span><span>${pending ? 'Original timetable' : (record.status === 'inactive' ? 'INACTIVE' : 'ACTIVE')}</span>
-      <div class="calendar-card-actions">${editLink(record, 'calendar-icon-action')}${removeButton(record, 'calendar-icon-action')}</div>
+      <div class="calendar-card-actions">${actions}</div>
     </article>`;
   }
 
@@ -313,13 +343,14 @@
     const databaseRecords = dayRecords.filter((record) => record._database !== false);
     const ids = databaseRecords.map((record) => record.id);
     const allPersisted = ids.length === dayRecords.length;
-    const edit = allPersisted
+    const locked = Boolean(selectedClassLock());
+    const edit = allPersisted && !locked
       ? `<a class="calendar-icon-action" href="/class-schedule-manage/edit?id=${encodeURIComponent(ids[0])}&group_ids=${encodeURIComponent(ids.join(','))}" title="Edit these merged cells" aria-label="Edit merged ${esc(first.subject)} cells">${ICONS.edit}</a>`
       : '';
-    const unmerge = allPersisted
+    const unmerge = allPersisted && !locked
       ? `<button class="calendar-icon-action" type="button" data-action="unmerge-group" data-ids="${esc(ids.join(','))}" title="Unmerge these cells" aria-label="Unmerge ${esc(first.subject)} cells">${ICONS.split}</button>`
       : '';
-    const remove = allPersisted && first.status === 'active'
+    const remove = allPersisted && first.status === 'active' && !locked
       ? `<button class="calendar-icon-action calendar-icon-delete" type="button" data-action="remove-group" data-ids="${esc(ids.join(','))}" title="Deactivate these merged cells" aria-label="Deactivate merged ${esc(first.subject)} cells">${ICONS.trash}</button>`
       : '';
     const firstDay = core.SCHOOL_DAYS.indexOf(dayRecords[0].day);
@@ -368,10 +399,26 @@
   function renderClassCalendar() {
     const selected = classes.find((item) => item.name === selectedSection);
     const classRecords = completeClassRecords(selectedSection);
+    const lock = classLock(selected);
+    if (lock && mergeMode) {
+      mergeMode = false;
+      selectedMergeIds.clear();
+      updateMergeToolbar();
+    }
+    classLockButton.disabled = !selected;
+    classLockButton.classList.toggle('locked', Boolean(lock));
+    classLockButton.textContent = lock ? 'Unlock Schedule' : 'Lock Schedule';
+    classLockButton.setAttribute('aria-pressed', String(Boolean(lock)));
+    mergeModeButton.disabled = !selected || Boolean(lock);
+    classCreateLink.classList.toggle('locked', Boolean(lock));
+    classCreateLink.setAttribute('aria-disabled', String(Boolean(lock)));
+    classLockNotice.hidden = !lock;
+    classCalendarRows.closest('.teacher-calendar-panel').classList.toggle('schedule-locked', Boolean(lock));
     document.getElementById('classCalendarTitle').textContent = selected ? selected.name : 'Class Weekly Calendar';
-    document.getElementById('selectedClassMeta').textContent = selected ? `${selected.grade}${selected.shift ? ` • ${selected.shift}` : ''} • ${classRecords.length} timetable cells` : 'Choose a grade and section.';
+    document.getElementById('selectedClassMeta').textContent = selected ? `${selected.grade}${selected.shift ? ` • ${selected.shift}` : ''} • ${classRecords.length} timetable cells${lock ? ' • LOCKED AFTER REVIEW' : ''}` : 'Choose a grade and section.';
     const createParams = selected ? `?grade_level=${encodeURIComponent(selected.grade)}&section=${encodeURIComponent(selected.name)}` : '';
-    document.getElementById('classCreateLink').href = `/class-schedule-manage/create${createParams}`;
+    if (lock) classCreateLink.removeAttribute('href');
+    else classCreateLink.href = `/class-schedule-manage/create${createParams}`;
     const subjects = subjectCounts(classRecords);
     document.getElementById('classSubjectList').innerHTML = subjects.length ? subjects.map(([subject, count]) => `<span class="subject-chip">${esc(subject)} <b>${count}</b></span>`).join('') : '<span class="subject-empty">No assignments or events yet.</span>';
     if (!selected) {
@@ -404,7 +451,10 @@
           }
         }
         const overlap = !exact.length && classRecords.some((record) => overlapsBand(record, day, startTime, endTime));
-        const content = exact.length ? exact.map(renderClassCard).join('') : overlap ? '<div class="calendar-overlap-state"><span>Occupied</span><small>Overlapping time</small></div>' : `<a class="calendar-empty-link" href="${classCreateUrl(day, startTime, endTime)}"><strong>＋</strong><span>Available</span></a>`;
+        const emptyContent = lock
+          ? '<span class="calendar-empty-link calendar-locked-slot"><strong>🔒</strong><span>Locked</span></span>'
+          : `<a class="calendar-empty-link" href="${classCreateUrl(day, startTime, endTime)}"><strong>＋</strong><span>Available</span></a>`;
+        const content = exact.length ? exact.map(renderClassCard).join('') : overlap ? '<div class="calendar-overlap-state"><span>Occupied</span><small>Overlapping time</small></div>' : emptyContent;
         const selectable = mergeMode && canSelectForMerge(record, classRecords);
         const unavailable = mergeMode && record && !selectable ? ' merge-unavailable' : '';
         const selectedClass = selectable && selectedMergeIds.has(record.id) ? ' merge-selected' : '';
@@ -423,7 +473,7 @@
     document.getElementById('teacherCreateLink').href = selectedTeacher ? `/class-schedule-manage/create?teacher=${encodeURIComponent(selectedTeacher)}` : '/class-schedule-manage/create';
     const subjects = subjectCounts(assignments);
     document.getElementById('teacherSubjectList').innerHTML = subjects.length ? subjects.map(([subject, count]) => `<span class="subject-chip">${esc(subject)} <b>${count}</b></span>`).join('') : '<span class="subject-empty">No assigned subjects yet.</span>';
-    personnelRows.innerHTML = assignments.length ? assignments.map((record) => `<tr><td><strong>${esc(record.day)}</strong></td><td>${esc(core.formatRange(record))}</td><td class="personnel-subject"><strong>${esc(record.subject)}</strong><small>${esc(record.room || record.schedule_type)}</small></td><td><strong>${esc(record.grade_level)}</strong><br>${esc(record.section)}</td><td>${esc(record.schedule_type)}</td><td><span class="status-pill status-${esc(record.status)}">${esc(record.status.toUpperCase())}</span></td><td><div class="manual-actions">${editLink(record, 'manual-icon-action')}${removeButton(record, 'manual-icon-action')}</div></td></tr>`).join('') : '<tr><td colspan="7" class="workspace-empty">No schedule assignments for this person.</td></tr>';
+    personnelRows.innerHTML = assignments.length ? assignments.map((record) => `<tr><td><strong>${esc(record.day)}</strong></td><td>${esc(core.formatRange(record))}</td><td class="personnel-subject"><strong>${esc(record.subject)}</strong><small>${esc(record.room || record.schedule_type)}</small></td><td><strong>${esc(record.grade_level)}</strong><br>${esc(record.section)}</td><td>${esc(record.schedule_type)}</td><td><span class="status-pill status-${esc(record.status)}">${esc(record.status.toUpperCase())}</span></td><td>${recordLock(record) ? '<span class="locked-action">🔒 Locked</span>' : `<div class="manual-actions">${editLink(record, 'manual-icon-action')}${removeButton(record, 'manual-icon-action')}</div>`}</td></tr>`).join('') : '<tr><td colspan="7" class="workspace-empty">No schedule assignments for this person.</td></tr>';
   }
 
   function updateMergeToolbar(message) {
@@ -438,6 +488,10 @@
   }
 
   function setMergeMode(enabled) {
+    if (enabled && selectedClassLock()) {
+      notice('This class schedule is locked. Unlock it before merging cells.', true);
+      return;
+    }
     mergeMode = Boolean(enabled);
     selectedMergeIds.clear();
     updateMergeToolbar();
@@ -528,10 +582,11 @@
   }
 
   async function loadRecords() {
-    const [scheduleRecords, teacherResponse, classResponse] = await withTimeout(Promise.all([
-      core.listSchedules(), fetch('/teacher_weekly_schedules.json?v=' + Date.now(), { cache: 'no-store' }), fetch('/class_schedules_data.json?v=' + Date.now(), { cache: 'no-store' })
+    const [scheduleRecords, teacherResponse, classResponse, scheduleLocks] = await withTimeout(Promise.all([
+      core.listSchedules(), fetch('/teacher_weekly_schedules.json?v=' + Date.now(), { cache: 'no-store' }), fetch('/class_schedules_data.json?v=' + Date.now(), { cache: 'no-store' }), core.listScheduleLocks()
     ]), 30000);
     records = scheduleRecords.map((record) => ({ ...record, _database: true }));
+    classLocks = scheduleLocks;
     const teacherData = teacherResponse.ok ? await teacherResponse.json() : {};
     const sectionData = classResponse.ok ? await classResponse.json() : [];
     originalEntries = core.officialEntriesFromSections(sectionData);
@@ -541,6 +596,28 @@
     if (!selectedTeacher) selectedTeacher = (personnel.find((person) => recordsForTeacher(person.name).length) || personnel[0] || {}).name || '';
     if (!selectedSection) selectedSection = (classes[0] || {}).name || '';
     updateStats(); renderClassDirectory(); renderClassCalendar(); renderPersonnelDirectory(); renderPersonnelList(); applyFilters();
+  }
+
+  async function toggleClassLock() {
+    const selected = classes.find((item) => item.name === selectedSection);
+    if (!selected) return;
+    const lock = classLock(selected);
+    const locking = !lock;
+    const question = locking
+      ? `Lock ${selected.name} after your final review? Add, edit, delete, merge, and unmerge actions will be blocked.`
+      : `Unlock ${selected.name}? Schedule changes will be allowed again.`;
+    if (!window.confirm(question)) return;
+    if (mergeMode) setMergeMode(false);
+    classLockButton.disabled = true;
+    classLockButton.textContent = locking ? 'Locking…' : 'Unlocking…';
+    try {
+      await core.setScheduleLock({ grade_level: selected.grade, section: selected.name, section_id: selected.id }, locking);
+      notice(locking ? `${selected.name} is locked after review.` : `${selected.name} is unlocked and editable again.`);
+      await loadRecords();
+    } catch (error) {
+      notice(error.message || 'Unable to update this schedule lock.', true);
+      renderClassCalendar();
+    }
   }
 
   async function handleRemove(event) {
@@ -567,6 +644,7 @@
   document.addEventListener('click', handleUnmerge);
   document.querySelectorAll('[data-workspace]').forEach((button) => button.addEventListener('click', () => switchWorkspace(button.dataset.workspace)));
   mergeModeButton.addEventListener('click', () => setMergeMode(!mergeMode));
+  classLockButton.addEventListener('click', toggleClassLock);
   mergeSelectedButton.addEventListener('click', mergeSelectedCells);
   document.getElementById('cancelMergeButton').addEventListener('click', () => setMergeMode(false));
   classCalendarRows.addEventListener('click', (event) => {

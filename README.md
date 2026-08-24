@@ -29,7 +29,7 @@ The public timetable and administrator tools are intentionally separated:
 - `/class-schedule-manage/create` creates an assignment.
 - `/class-schedule-manage/edit?id=<schedule-id>` edits an existing assignment.
 
-The management page separates class and personnel workflows. Every grade/section has a complete five-day calendar with subjects, General Assembly, breaks, transitions, and other events. Matching adjacent day cells can be merged or unmerged with the protected **Merge Cells** workflow, and those groups persist in Supabase. Faculty and staff schedules use a searchable list/table view. Database-backed items provide edit and delete/deactivate icons, while empty class-calendar slots open a prefilled create page.
+The management page separates class and personnel workflows. Every grade/section has a complete five-day calendar with subjects, General Assembly, breaks, transitions, and other events. Matching adjacent day cells can be merged or unmerged with the protected **Merge Cells** workflow, and those groups persist in Supabase. After final review, an administrator can **Lock Schedule** for a section; locked sections block add, edit, delete, merge, and unmerge operations until explicitly unlocked. Faculty and staff schedules use a searchable list/table view. Database-backed items provide edit and delete/deactivate icons, while empty class-calendar slots open a prefilled create page.
 
 Unauthenticated visitors who open a management route are redirected to `/admin`. The schedule APIs and Supabase Row Level Security also enforce authorization for every write.
 

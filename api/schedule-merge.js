@@ -2,6 +2,7 @@
 
 const supabase = require('../server/supabase');
 const schedules = require('../server/schedules');
+const scheduleLocks = require('../server/schedule-locks');
 
 const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'];
 
@@ -56,6 +57,17 @@ module.exports = async function scheduleMergeApi(request, response) {
   if (!current.ok) return response.status(current.status >= 500 ? 502 : current.status).json({ ok: false, error: 'Unable to load the selected schedule cells.' });
   const rows = schedules.normalizeRows(current.data);
   if (rows.length !== ids.length) return response.status(404).json({ ok: false, error: 'One or more selected schedule cells no longer exist.' });
+
+  const sections = [];
+  rows.forEach((row) => {
+    if (!sections.some((item) => key(item.section_id || item.section) === key(row.section_id || row.section))) sections.push(row);
+  });
+  for (const row of sections) {
+    const lock = await scheduleLocks.findLock(config, session.accessToken, row.section, row.section_id)
+      .catch(() => ({ ok: false, status: 502 }));
+    if (!lock.ok) return response.status(lock.status >= 500 ? 502 : lock.status).json({ ok: false, error: 'Unable to verify the schedule lock.' });
+    if (lock.data) return response.status(423).json({ ok: false, locked: true, error: `${row.section} is locked after review. Unlock it before merging or unmerging cells.` });
+  }
 
   if (mergeGroup) {
     if (!sameMergeContent(rows)) return response.status(409).json({ ok: false, error: 'Selected cells must have the same subject/event, teacher, section, time, type, and status.' });
