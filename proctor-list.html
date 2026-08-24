@@ -192,7 +192,7 @@
           <td><span class="main-value">${esc(record.subject_teacher)}</span>${record.replacement_teacher_required ? `<span class="warning-text">${esc(record.warning)}</span>` : ''}</td>
           <td><span class="status ${record.replacement_teacher_required ? 'status-inactive' : 'status-active'}">${record.replacement_teacher_required ? 'Resigned / Inactive' : 'Active / Verified'}</span></td>
           <td><span class="proctor">${esc(record.proctor)}</span><span class="sub-value">${esc(record.proctor_department || 'Academic Faculty')}</span></td>
-          <td><span class="main-value">${record.replacement_teacher_required ? (record.proctor_assignment_source === 'MANUAL_ADMIN_COVERAGE' ? 'Manual admin coverage' : 'Academic coverage') : 'Subject teacher'}</span><span class="sub-value">${esc(record.proctor_status)}</span></td>
+          <td><span class="main-value">${record.proctor_assignment_source === 'SUBJECT_TEACHER' ? 'Subject teacher' : (record.proctor_assignment_source === 'MANUAL_ADMIN_COVERAGE' ? 'Manual admin coverage' : 'Academic proctor coverage')}</span><span class="sub-value">${esc(record.proctor_status)}</span></td>
           <td><span class="status ${conflicts.has(record.exam_id) ? 'status-inactive' : 'status-clear'}">${conflicts.has(record.exam_id) ? 'Conflict' : 'Clear'}</span></td>
         </tr>`).join('') : '<tr><td colspan="8" class="empty">No proctor assignments match the selected filters.</td></tr>';
     }

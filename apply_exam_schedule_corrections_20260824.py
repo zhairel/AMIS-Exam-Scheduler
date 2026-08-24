@@ -86,6 +86,12 @@ NORMYLAH_MANUAL_PROCTOR_OVERRIDES = {
     "exam_81": "tchr_wardah",
 }
 NORMYLAH_AUTO_PROCTOR_EXCLUDED_IDS = {"tchr_ayah"}
+TEACHER_IDENTITY_CANONICAL_IDS = {"tchr_zara": "tchr_franchette"}
+IDENTITY_CONFLICT_PROCTOR_OVERRIDES = {
+    "exam_173": "tchr_keychell",
+    "exam_466": "tchr_ayah",
+    "exam_464": "tchr_junaisah",
+}
 NORMYLAH_INACTIVE_WARNING = (
     "Teacher Normylah is inactive/resigned. Please assign a replacement teacher."
 )
@@ -241,8 +247,13 @@ def intervals_overlap(left_start, left_end, right_start, right_end):
     return left_start < right_end and right_start < left_end
 
 
+def canonical_teacher_identity_id(teacher_id):
+    teacher_id = clean(teacher_id)
+    return TEACHER_IDENTITY_CANONICAL_IDS.get(teacher_id, teacher_id)
+
+
 def effective_proctor_id(record):
-    return clean(record.get("proctor_id") or record.get("teacher_id"))
+    return canonical_teacher_identity_id(record.get("proctor_id") or record.get("teacher_id"))
 
 
 def apply_subject_teacher_status(records):
@@ -251,6 +262,10 @@ def apply_subject_teacher_status(records):
     for record in records:
         subject_teacher = clean(record.get("teacher"))
         subject_teacher_id = clean(record.get("teacher_id"))
+        canonical_identity_id = canonical_teacher_identity_id(subject_teacher_id)
+        if canonical_identity_id != subject_teacher_id:
+            subject_teacher = teacher_by_id[canonical_identity_id]["canonical_name"]
+            record["teacher"] = subject_teacher
         is_inactive = subject_teacher_id in INACTIVE_TEACHER_IDS
 
         record["subject_teacher"] = subject_teacher
@@ -273,8 +288,8 @@ def apply_subject_teacher_status(records):
             record["active_subject_teacher"] = subject_teacher
             record["active_subject_teacher_id"] = subject_teacher_id
             record["inactive_teacher_warning"] = ""
-            record["proctor"] = subject_teacher
-            record["proctor_id"] = subject_teacher_id
+            record["proctor"] = teacher_by_id.get(canonical_identity_id, {}).get("canonical_name", subject_teacher)
+            record["proctor_id"] = canonical_identity_id
             record["proctor_status"] = "ACTIVE_ASSIGNED"
             record["proctor_pool"] = "SUBJECT_TEACHER"
             record["proctor_assignment_source"] = "SUBJECT_TEACHER"
@@ -284,10 +299,41 @@ def apply_subject_teacher_status(records):
             record["proctor_conflict_status"] = "CLEAR"
 
 
+def apply_identity_conflict_proctor_overrides(records):
+    """Cover different-subject clashes exposed by the Franchette/Zara identity merge."""
+    teacher_by_id = {teacher["id"]: teacher for teacher in TEACHER_REGISTRY}
+    assignments = []
+    for record in records:
+        proctor_id = IDENTITY_CONFLICT_PROCTOR_OVERRIDES.get(record["id"])
+        if not proctor_id:
+            continue
+        proctor = teacher_by_id[proctor_id]
+        record["proctor"] = proctor["canonical_name"]
+        record["proctor_id"] = proctor_id
+        record["proctor_status"] = "ACTIVE_ASSIGNED"
+        record["proctor_department"] = proctor.get("department", "Academic Faculty")
+        record["proctor_pool"] = "ACADEMIC_TEACHER_ONLY"
+        record["proctor_assignment_source"] = "IDENTITY_CONFLICT_COVERAGE"
+        record["proctor_conflict_status"] = "CLEAR"
+        record["proctor_coverage_reason"] = "FRANCHETTE_ZARA_IDENTITY_MERGE_CONFLICT"
+        assignments.append({
+            "exam_id": record["id"],
+            "subject_teacher": record["subject_teacher"],
+            "proctor": record["proctor"],
+            "section": record["section_name"],
+            "subject": record["subject"],
+            "day_number": record["day_number"],
+            "time": record["time"],
+        })
+    return assignments
+
+
 def weekly_blocks_by_teacher(teacher_weekly):
     blocks = defaultdict(list)
     for teacher_id, teacher in (teacher_weekly or {}).items():
-        resolved_id = clean(teacher.get("teacher_id") or teacher.get("id") or teacher_id)
+        resolved_id = canonical_teacher_identity_id(
+            teacher.get("teacher_id") or teacher.get("id") or teacher_id
+        )
         for period in teacher.get("periods") or []:
             day_name = clean(period.get("day"))
             parsed_range = parse_time_range_minutes(period.get("time"))
@@ -1291,6 +1337,7 @@ def main():
     original_duration_counts = Counter(record["duration_minutes"] for record in source_records)
     official_lookup = build_official_teacher_lookup(class_sections)
     records, audit = apply_content_corrections(source_records, class_sections, official_lookup)
+    audit["identity_merge_proctor_overrides"] = apply_identity_conflict_proctor_overrides(records)
     audit["inactive_teacher_proctor_assignments"] = assign_inactive_teacher_proctors(
         records, teacher_weekly
     )

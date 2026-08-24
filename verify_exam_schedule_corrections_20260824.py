@@ -71,6 +71,21 @@ def main():
     )
 
     registry_by_id = {teacher["id"]: teacher for teacher in correction.TEACHER_REGISTRY}
+    merged_identity_name = "Teacher Franchette Zarah M. Ranain"
+    assert registry_by_id["tchr_franchette"]["canonical_name"] == merged_identity_name
+    assert registry_by_id["tchr_zara"]["same_person_as"] == "tchr_franchette"
+    merged_identity_records = [
+        record for record in records
+        if record["teacher_id"] in {"tchr_franchette", "tchr_zara"}
+    ]
+    assert merged_identity_records
+    assert all(record["subject_teacher"] == merged_identity_name for record in merged_identity_records)
+    assert not any(record["proctor_id"] == "tchr_zara" for record in records)
+    for exam_id, proctor_id in correction.IDENTITY_CONFLICT_PROCTOR_OVERRIDES.items():
+        record = next(item for item in records if item["id"] == exam_id)
+        assert record["proctor_id"] == proctor_id
+        assert record["proctor_assignment_source"] == "IDENTITY_CONFLICT_COVERAGE"
+
     normylah_coverage_counts = Counter(record["proctor_id"] for record in normylah_records)
     assert max(normylah_coverage_counts.values()) <= correction.AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
     assert normylah_coverage_counts["tchr_wardah"] == 2

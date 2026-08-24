@@ -16394,9 +16394,9 @@
   "tchr_franchette": {
     "id": "tchr_franchette",
     "teacher_id": "tchr_franchette",
-    "name": "Teacher Franchette",
-    "teacher_name": "Teacher Franchette",
-    "canonical_name": "Teacher Franchette",
+    "name": "Teacher Franchette Zarah M. Ranain",
+    "teacher_name": "Teacher Franchette Zarah M. Ranain",
+    "canonical_name": "Teacher Franchette Zarah M. Ranain",
     "department": "Elementary / HS Faculty",
     "periods": [
       {
@@ -39795,9 +39795,9 @@
   "tchr_zara": {
     "id": "tchr_zara",
     "teacher_id": "tchr_zara",
-    "name": "Teacher Zara",
-    "teacher_name": "Teacher Zara",
-    "canonical_name": "Teacher Zara",
+    "name": "Teacher Franchette Zarah M. Ranain",
+    "teacher_name": "Teacher Franchette Zarah M. Ranain",
+    "canonical_name": "Teacher Franchette Zarah M. Ranain",
     "department": "Elementary Faculty",
     "periods": [
       {

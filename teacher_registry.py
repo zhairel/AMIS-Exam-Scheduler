@@ -182,10 +182,10 @@ TEACHER_REGISTRY = [
     },
     {
         "id": "tchr_franchette",
-        "canonical_name": "Teacher Franchette",
+        "canonical_name": "Teacher Franchette Zarah M. Ranain",
         "department": "Elementary / HS Faculty",
         "title": "Faculty Member",
-        "aliases": ["teacher franchette", "tchr. franchette", "tchr franchette", "franchette", "tr. franchette"]
+        "aliases": ["teacher franchette", "tchr. franchette", "tchr franchette", "franchette", "tr. franchette", "teacher zara", "teacher zarah", "zara", "zarah", "franchette zarah m. ranain", "franchette zarah m ranain"]
     },
     {
         "id": "tchr_halnaisa",
@@ -376,9 +376,12 @@ TEACHER_REGISTRY = [
     },
     {
         "id": "tchr_zara",
-        "canonical_name": "Teacher Zara",
+        "canonical_name": "Teacher Franchette Zarah M. Ranain",
         "department": "Elementary Faculty",
         "title": "Faculty Member",
+        "same_person_as": "tchr_franchette",
+        "duplicate_identity": True,
+        "automatic_proctor_eligible": False,
         "aliases": ["teacher zara", "tchr. zara", "tchr zara", "zara", "zahra", "teacher zahra"]
     },
     {

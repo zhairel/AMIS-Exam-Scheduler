@@ -1426,6 +1426,7 @@ html, body {
   ];
 
   const INACTIVE_TEACHER_IDS = new Set(['tchr_normylah']);
+  const DUPLICATE_TEACHER_IDENTITY_IDS = new Set(['tchr_zara']);
 
   const FACULTY_ROSTER_DATA = [
   {
@@ -2296,7 +2297,7 @@ html, body {
   },
   {
     "id": "tchr_franchette",
-    "name": "Teacher Franchette",
+    "name": "Teacher Franchette Zarah M. Ranain",
     "department": "Elementary / HS Faculty",
     "assignments": [
       {
@@ -4514,7 +4515,7 @@ html, body {
   },
   {
     "id": "tchr_zara",
-    "name": "Teacher Zara",
+    "name": "Teacher Franchette Zarah M. Ranain",
     "department": "Elementary Faculty",
     "assignments": [
       {
@@ -6237,6 +6238,9 @@ html, body {
                       <span class="cell-inactive-teacher">Former subject teacher: ${esc(match.subject_teacher || match.teacher)} — Resigned / Inactive</span>
                       <span class="cell-proctor-name">Active proctor: ${esc(match.proctor || 'Pending assignment')}</span>
                       <span class="cell-replacement-warning">${esc(match.inactive_teacher_warning || 'Inactive teacher. Please assign a replacement teacher.')}</span>
+                    ` : match.proctor_assignment_source !== 'SUBJECT_TEACHER' ? `
+                      <span class="cell-teacher-name">Subject teacher: ${esc(match.subject_teacher || match.teacher)}</span>
+                      <span class="cell-proctor-name">Proctor: ${esc(match.proctor)}</span>
                     ` : `<span class="cell-teacher-name">${esc(match.subject_teacher || match.teacher)}</span>`}
                     <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>
                   </div>
@@ -6441,7 +6445,7 @@ html, body {
               const color = getSubjectColor(displayedSubject);
               const genderChip = getExamGenderChip(match);
               const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
-              const isAutomaticProctorCoverage = Boolean(match.replacement_teacher_required && match.proctor_id);
+              const isAutomaticProctorCoverage = match.proctor_assignment_source !== 'SUBJECT_TEACHER';
               let calcRowspan = 1;
 
               if (is120) {
@@ -6528,6 +6532,7 @@ html, body {
     const query = (document.getElementById('rosterSearchInput') ? document.getElementById('rosterSearchInput').value : '').toLowerCase().trim();
 
     const filtered = FACULTY_ROSTER_DATA.filter(t => {
+      if (DUPLICATE_TEACHER_IDENTITY_IDS.has(t.id)) return false;
       const matchDept = (rosterDept === 'ALL') || 
                         (rosterDept === 'ISAL' && t.department.includes('ISAL')) ||
                         (rosterDept === 'High School' && t.department.includes('High School')) ||
@@ -6546,7 +6551,7 @@ html, body {
         <div class="roster-search-bar">
           <input type="text" id="rosterSearchInput" class="roster-search-input" placeholder="Search teacher, subject, or section..." value="${query}" oninput="renderRosterView()">
           <div class="roster-dept-group">
-            <button class="roster-dept-btn ${rosterDept === 'ALL' ? 'active' : ''}" onclick="setRosterDept('ALL')">All Faculty (${FACULTY_ROSTER_DATA.length})</button>
+            <button class="roster-dept-btn ${rosterDept === 'ALL' ? 'active' : ''}" onclick="setRosterDept('ALL')">All Faculty (${FACULTY_ROSTER_DATA.filter(t => !DUPLICATE_TEACHER_IDENTITY_IDS.has(t.id)).length})</button>
             <button class="roster-dept-btn ${rosterDept === 'ISAL' ? 'active' : ''}" onclick="setRosterDept('ISAL')">ISAL Faculty</button>
             <button class="roster-dept-btn ${rosterDept === 'High School' ? 'active' : ''}" onclick="setRosterDept('High School')">High School</button>
             <button class="roster-dept-btn ${rosterDept === 'Elementary' ? 'active' : ''}" onclick="setRosterDept('Elementary')">Elementary</button>

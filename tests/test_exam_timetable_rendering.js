@@ -62,12 +62,15 @@ assert(abuMusa.every(record => record.start_m >= 760), 'Abu Musa exams must star
 
 const proctorCoverage = records.filter(record => record.replacement_teacher_required && record.proctor_id);
 assert.strictEqual(proctorCoverage.length, 12, 'All 12 Normylah exams must have active proctor coverage.');
-assert(html.includes('Boolean(match.replacement_teacher_required && match.proctor_id)'));
+const mergedIdentityRecords = records.filter(record => ['tchr_franchette','tchr_zara'].includes(record.teacher_id));
+assert(mergedIdentityRecords.every(record => record.subject_teacher === 'Teacher Franchette Zarah M. Ranain'));
+assert(!records.some(record => record.proctor_id === 'tchr_zara'), 'The duplicate Zara identity must never remain an active proctor ID.');
+assert(html.includes("match.proctor_assignment_source !== 'SUBJECT_TEACHER'"));
 assert(html.includes('<span class="cell-proctor-duty-label">PROCTOR</span>'));
 assert(html.includes("<span class=\"cell-section-name\">${esc(cleanSectionName(match.section_name))}</span>"));
 assert(!html.includes('Gender not specified'));
 assert(!facultyHtml.includes('Gender not specified'));
-assert(facultyHtml.includes('Boolean(exam.replacement_teacher_required && exam.proctor_id)'));
+assert(facultyHtml.includes("exam.proctor_assignment_source !== 'SUBJECT_TEACHER'"));
 assert(facultyHtml.includes('<span class="cell-proctor-label">PROCTOR</span>'));
 assert(facultyHtml.includes("<span class=\"cell-section-name\">${esc(cleanSec)}</span>"));
 

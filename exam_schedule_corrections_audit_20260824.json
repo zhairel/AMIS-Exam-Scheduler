@@ -602,10 +602,111 @@
       "subject": "Oral & Written Exam",
       "from": "Teacher Keychelle",
       "to": "Teacher Sitti Kauzar"
+    },
+    {
+      "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+      "subject": "Makabansa",
+      "from": "Teacher Zara",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+      "subject": "Makabansa",
+      "from": "Teacher Zara",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+      "subject": "Makabansa",
+      "from": "Teacher Zara",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+      "subject": "Makabansa",
+      "from": "Teacher Zara",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette",
+      "to": "Teacher Franchette Zarah M. Ranain"
     }
   ],
   "unresolved_official_teacher_links": [],
   "known_sections": 64,
+  "identity_merge_proctor_overrides": [
+    {
+      "exam_id": "exam_173",
+      "subject_teacher": "Teacher Franchette Zarah M. Ranain",
+      "proctor": "Teacher Keychelle",
+      "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+      "subject": "Makabansa",
+      "day_number": 2,
+      "time": "01:50 PM – 02:50 PM"
+    },
+    {
+      "exam_id": "exam_466",
+      "subject_teacher": "Teacher Franchette Zarah M. Ranain",
+      "proctor": "Teacher Ayah",
+      "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+      "subject": "Makabansa",
+      "day_number": 4,
+      "time": "03:10 PM – 04:10 PM"
+    },
+    {
+      "exam_id": "exam_464",
+      "subject_teacher": "Teacher Franchette Zarah M. Ranain",
+      "proctor": "Teacher Junaisah",
+      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+      "subject": "Makabansa",
+      "day_number": 4,
+      "time": "05:30 PM – 06:30 PM"
+    }
+  ],
   "inactive_teacher_proctor_assignments": [
     {
       "exam_id": "exam_30",
@@ -624,8 +725,8 @@
       "subject": "Filipino",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Franchette",
-      "proctor_id": "tchr_franchette",
+      "proctor": "Teacher Rowena",
+      "proctor_id": "tchr_rowena",
       "day_number": 1,
       "time_slot": "01:50 PM – 02:50 PM"
     },
@@ -646,8 +747,8 @@
       "subject": "Fil",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Franchette",
-      "proctor_id": "tchr_franchette",
+      "proctor": "Teacher Junaisah",
+      "proctor_id": "tchr_junaisah",
       "day_number": 2,
       "time_slot": "04:20 PM – 05:20 PM"
     },
@@ -679,8 +780,8 @@
       "subject": "Filipino",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Zara",
-      "proctor_id": "tchr_zara",
+      "proctor": "Teacher Rowena",
+      "proctor_id": "tchr_rowena",
       "day_number": 3,
       "time_slot": "12:40 PM – 01:40 PM"
     },
@@ -690,8 +791,8 @@
       "subject": "Filipino",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Junaisah",
-      "proctor_id": "tchr_junaisah",
+      "proctor": "Teacher Wendy",
+      "proctor_id": "tchr_wendy",
       "day_number": 3,
       "time_slot": "03:10 PM – 04:10 PM"
     },
@@ -712,8 +813,8 @@
       "subject": "Araling Panlipunan",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Zara",
-      "proctor_id": "tchr_zara",
+      "proctor": "Teacher Norhaima",
+      "proctor_id": "tchr_norhaima",
       "day_number": 4,
       "time_slot": "12:40 PM – 01:40 PM"
     },
@@ -2226,5 +2327,5 @@
     "60": 564,
     "120": 25
   },
-  "teacher_count": 51
+  "teacher_count": 50
 }
