@@ -834,15 +834,6 @@ html, body {
   letter-spacing: -0.01em;
 }
 
-.cell-tba-only {
-  color: #dc2626;
-  font-size: 14px;
-  font-weight: 900;
-  line-height: 1.25;
-  text-align: center;
-  letter-spacing: 0.01em;
-}
-
 .cell-teacher-name,
 .cell-section-name {
   font-size: 11.5px;
@@ -5537,6 +5528,7 @@ html, body {
   const sectionTabsBar = document.getElementById('sectionTabsBar');
   const sectionTabsList = document.getElementById('sectionTabsList');
   const examTabsBar = document.querySelector('.exam-tabs-bar');
+  let sidebarPositionFrame = null;
 
   function syncSectionSidebarPosition() {
     if (!examTabsBar) return;
@@ -5544,7 +5536,16 @@ html, body {
     document.documentElement.style.setProperty('--section-sidebar-top', `${headerBottom}px`);
   }
 
-  window.addEventListener('resize', syncSectionSidebarPosition, { passive: true });
+  function requestSectionSidebarPositionSync() {
+    if (sidebarPositionFrame !== null) return;
+    sidebarPositionFrame = window.requestAnimationFrame(() => {
+      sidebarPositionFrame = null;
+      syncSectionSidebarPosition();
+    });
+  }
+
+  window.addEventListener('scroll', requestSectionSidebarPositionSync, { passive: true });
+  window.addEventListener('resize', requestSectionSidebarPositionSync, { passive: true });
 
   function esc(s) {
     if (!s) return '';
@@ -5645,7 +5646,7 @@ html, body {
   }
 
   function publicExamSubject(exam) {
-    return isKindergartenExam(exam) ? 'TO BE ANNOUNCED' : String(exam.subject || '').trim();
+    return String(exam && exam.subject || '').trim();
   }
 
   function subjectMatchesQuery(subject, query) {
@@ -6154,7 +6155,7 @@ html, body {
                 <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
                     ${isKindergarten
-                      ? '<span class="cell-tba-only">TO BE ANNOUNCED</span>'
+                      ? `<span class="cell-subject-sec">${esc(displayedSubject)}</span>`
                       : `<span class="cell-subject-sec">${esc(displayedSubject)}</span>
                          <span class="cell-teacher-name">${esc(match.teacher)}</span>
                          <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>`}
@@ -6386,7 +6387,7 @@ html, body {
                 <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
                     ${isKindergarten
-                      ? '<span class="cell-tba-only">TO BE ANNOUNCED</span>'
+                      ? `<span class="cell-subject-sec">${esc(displayedSubject)}</span>`
                       : `<span class="cell-subject-sec">${esc(displayedSubject)}</span>
                          <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
                          ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
