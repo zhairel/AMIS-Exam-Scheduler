@@ -1287,14 +1287,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Qur'an",
         "subject_id": "subj_qur_an",
-        "teacher": "Ustadh Hainur",
+        "teacher": "Ustadha Hainur",
         "teacher_id": "tchr_hainur",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -1619,14 +1619,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Qur'an",
         "subject_id": "subj_qur_an",
-        "teacher": "Ustadh Hainur",
+        "teacher": "Ustadha Hainur",
         "teacher_id": "tchr_hainur",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -1989,7 +1989,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -2321,7 +2321,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -2769,14 +2769,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Qur'an",
         "subject_id": "subj_qur_an",
-        "teacher": "Ustadh Hainur",
+        "teacher": "Ustadha Hainur",
         "teacher_id": "tchr_hainur",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -2816,7 +2816,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Hadith - Ust. Hainur",
             "subject": "Hadith",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -3167,14 +3167,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Qur'an",
         "subject_id": "subj_qur_an",
-        "teacher": "Ustadh Hainur",
+        "teacher": "Ustadha Hainur",
         "teacher_id": "tchr_hainur",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -3214,7 +3214,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Hadith - Ust. Hainur",
             "subject": "Hadith",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -3444,14 +3444,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Qur'an",
         "subject_id": "subj_qur_an",
-        "teacher": "Ustadh Hainur",
+        "teacher": "Ustadha Hainur",
         "teacher_id": "tchr_hainur",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -3471,7 +3471,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Hadith - Ust. Hainur",
             "subject": "Hadith",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -3842,14 +3842,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Qur'an",
         "subject_id": "subj_qur_an",
-        "teacher": "Ustadh Hainur",
+        "teacher": "Ustadha Hainur",
         "teacher_id": "tchr_hainur",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -3869,7 +3869,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Hadith - Ust. Hainur",
             "subject": "Hadith",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -4887,7 +4887,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -4897,7 +4897,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Hadith - Ust. Hainur",
             "subject": "Hadith",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -5219,7 +5219,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -5229,7 +5229,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Hadith - Ust. Hainur",
             "subject": "Hadith",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -7798,7 +7798,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Arabic - Ust. Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -7930,7 +7930,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -8262,7 +8262,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Arabic - Ust. Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -8394,7 +8394,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -8859,7 +8859,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Arabic - Ust. Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -8991,7 +8991,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -9323,7 +9323,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Arabic - Ust. Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -9455,7 +9455,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -9742,7 +9742,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -9864,7 +9864,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Arabic - Ust. Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -10206,7 +10206,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -10328,7 +10328,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Arabic - Ust. Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -10813,7 +10813,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -10915,7 +10915,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Arabic - Ust. Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -11277,7 +11277,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Qur'an - Ust. Hainur",
             "subject": "Qur'an",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -11379,7 +11379,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Arabic - Ust. Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -13273,7 +13273,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Arabic - Ust. Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -13737,7 +13737,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Arabic - Ust. Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -14364,7 +14364,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Arabic - Ust. Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -14828,7 +14828,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Arabic - Ust. Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -15207,7 +15207,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Arabic - Ust.Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -15671,7 +15671,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Arabic - Ust.Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -16034,7 +16034,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Arabic - Ust. Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -16498,7 +16498,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Arabic - Ust. Hainur",
             "subject": "Arabic",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -34902,14 +34902,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "SHAF",
         "subject_id": "subj_shaf",
-        "teacher": "Ustadh Hainur",
+        "teacher": "Ustadha Hainur",
         "teacher_id": "tchr_hainur",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "SHAF - Hainur",
             "subject": "SHAF",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -34929,7 +34929,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "SHAF - Hainur",
             "subject": "SHAF",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -35366,14 +35366,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "SHAF",
         "subject_id": "subj_shaf",
-        "teacher": "Ustadh Hainur",
+        "teacher": "Ustadha Hainur",
         "teacher_id": "tchr_hainur",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "SHAF - Hainur",
             "subject": "SHAF",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,
@@ -35393,7 +35393,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "SHAF - Hainur",
             "subject": "SHAF",
-            "teacher": "Ustadh Hainur",
+            "teacher": "Ustadha Hainur",
             "teacher_id": "tchr_hainur",
             "is_break": false,
             "label": null,

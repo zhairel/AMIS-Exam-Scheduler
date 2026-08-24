@@ -10,7 +10,7 @@ Ustadh Obaydah             |    23 |    6 |     8 |     9 |         0 | Arabic, 
 Ustadha Silfah             |    23 |    4 |    10 |     9 |         0 | Arabic, GMRC
 Teacher Monisa             |    21 |    3 |     9 |     9 |         0 | AP, Filipino, Makabansa, TLE
 Ustadh Ali                 |    21 |    4 |     8 |     9 |         0 | Arabic
-Ustadh Hainur              |    19 |    0 |     8 |    11 |         0 | Arabic, Hadith, Qur'an, SHAF
+Ustadha Hainur              |    19 |    0 |     8 |    11 |         0 | Arabic, Hadith, Qur'an, SHAF
 Alim Samsuddin             |    18 |    6 |     6 |     6 |         0 | SHAF
 Ustadh Jaisam              |    17 |    4 |     7 |     6 |         0 | Qur'an
 Ustadha Saliha             |    17 |    7 |     6 |     4 |         0 | Arabic, GMRC, Hadith

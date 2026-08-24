@@ -9,19 +9,19 @@
     "Wrap-Up Time": "Tchr. Keychell"
   },
   "ELEM: K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)": {
-    "Qur'an": "Ustadh Hainur",
+    "Qur'an": "Ustadha Hainur",
     "Circle Time 1": "Tchr. Joanna",
-    "Hadith": "Ustadh Hainur",
+    "Hadith": "Ustadha Hainur",
     "Arabic": "Ustadh Silfah",
     "Circle Time 2": "Tchr. Joanna"
   },
   "ELEM: GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)": {
     "GMRC": "Tchr. Sahdia",
     "Makabansa": "Teacher Norhydie",
-    "Arabic": "Ustadh Hainur",
+    "Arabic": "Ustadha Hainur",
     "SHAF": "Alim Abdul Karim",
     "Language": "Tchr. Sahdia",
-    "Qur'an": "Ustadh Hainur",
+    "Qur'an": "Ustadha Hainur",
     "Math": "Tchr. Joanna",
     "R & L": "Teacher Kat",
     "ARAL Reading": "Teacher Kat"
@@ -32,10 +32,10 @@
     "Makabansa": "Teacher Norhydie",
     "GMRC": "Ustadha Saliha",
     "SHAF": "Alim Abdul Karim",
-    "Arabic": "Ustadh Hainur",
+    "Arabic": "Ustadha Hainur",
     "ARAL Reading": "Teacher Kat",
     "R & L": "Teacher Kat",
-    "Qur'an": "Ustadh Hainur"
+    "Qur'an": "Ustadha Hainur"
   },
   "ELEM: GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)": {
     "GMRC": "Ustadha Saliha",
@@ -43,7 +43,7 @@
     "ARAL Reading": "Teacher Marham",
     "Filipino": "Teacher Sitti",
     "Math": "Teacher Sitti",
-    "Arabic": "Ustadh Hainur",
+    "Arabic": "Ustadha Hainur",
     "SHAF": "Alim Abdul Karim",
     "Makabansa": "Teacher Zuhora",
     "Qur'an": "Ustadh Obaydah"
@@ -57,14 +57,14 @@
     "ARAL Reading": "Teacher Marham",
     "Filipino": "Teacher Sitti",
     "Math": "Teacher Sitti",
-    "Arabic": "Ustadh Hainur"
+    "Arabic": "Ustadha Hainur"
   },
   "ELEM: GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)": {
     "Math": "Teacher Sitti",
     "GMRC": "Ustadha Saliha",
     "Aral Reading": "Teacher Marham",
     "English": "Teacher Marham",
-    "Arabic": "Ustadh Hainur",
+    "Arabic": "Ustadha Hainur",
     "Filipino": "Teacher Zuhora",
     "Makabansa": "Teacher Monisa",
     "SHAF": "Alim Abdul Karim",
@@ -73,7 +73,7 @@
   "ELEM: GRADE 2 - AASIM IBN THABIT (2ND SHIFT)": {
     "GMRC": "Ustadha Saliha",
     "Math": "Teacher Sitti",
-    "Arabic": "Ustadh Hainur",
+    "Arabic": "Ustadha Hainur",
     "SHAF": "Alim Abdul Karim",
     "Makabansa": "Teacher Monisa",
     "Qur'an": "Ustadh Obaydah",
@@ -207,7 +207,7 @@
     "AP5": "Saimona"
   },
   "ELEM: GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)": {
-    "SHAF": "Ustadh Hainur",
+    "SHAF": "Ustadha Hainur",
     "AP": "Teacher Monisa",
     "Filipino": "Tchr. Joanna",
     "GMRC": "Teacher Jairah",

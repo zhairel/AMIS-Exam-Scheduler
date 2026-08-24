@@ -65,10 +65,10 @@ TEACHER_REGISTRY = [
     },
     {
         "id": "tchr_hainur",
-        "canonical_name": "Ustadh Hainur",
+        "canonical_name": "Ustadha Hainur",
         "department": "ISAL Faculty",
         "title": "ISAL Teacher",
-        "aliases": ["hainur", "ust. hainur", "ustadh hainur", "ustadz hainur", "haynur", "ustadh haynur"]
+        "aliases": ["hainur", "ust. hainur", "ustadh hainur", "ustadha hainur", "ustadz hainur", "haynur", "ustadh haynur", "ustadha haynur"]
     },
     {
         "id": "tchr_jaisam",

@@ -98,9 +98,9 @@ for sec in sections:
         
         kinder_exams = [
             ('Oral & Written Exam', homeroom_tchr),
-            ('Qur\'an', list(sec_subjs.get('Qur\'an', ['Ustadh Hainur']))[0]),
+            ('Qur\'an', list(sec_subjs.get('Qur\'an', ['Ustadha Hainur']))[0]),
             ('Arabic', list(sec_subjs.get('Arabic', ['Ustadha Silfah']))[0]),
-            ('Hadith', list(sec_subjs.get('Hadith', ['Ustadh Hainur']))[0]),
+            ('Hadith', list(sec_subjs.get('Hadith', ['Ustadha Hainur']))[0]),
         ]
         for subj_name, tchr_name in kinder_exams:
             if 'KHABAAB' in sec_name.upper() and subj_name == 'Arabic':

@@ -4631,9 +4631,9 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
   "tchr_hainur": {
     "id": "tchr_hainur",
     "teacher_id": "tchr_hainur",
-    "name": "Ustadh Hainur",
-    "teacher_name": "Ustadh Hainur",
-    "canonical_name": "Ustadh Hainur",
+    "name": "Ustadha Hainur",
+    "teacher_name": "Ustadha Hainur",
+    "canonical_name": "Ustadha Hainur",
     "department": "ISAL Faculty",
     "periods": [
       {

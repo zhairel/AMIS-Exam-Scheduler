@@ -199,7 +199,7 @@ OFFICIAL_FACULTY_ASSIGNMENTS = {
     "Ustadh Ali": [
         ("Arabic", ["Grade 4 F2F", "Grade 6 F2F", "Grade 4 ODL_1", "Grade 6 ODL_1", "Grade 7 ODL_1", "Grade 8 ODL_1", "Grade 4 ODL_2", "Grade 6 ODL_2", "Grade 7 ODL_2", "Grade 8 ODL_2", "Grade 9 ODL_2"]),
     ],
-    "Ustadh Hainur": [
+    "Ustadha Hainur": [
         ("Qur'an", ["Kinder 2 ODL_1", "Grade 1 ODL_1", "Kinder 1 ODL_2", "Kinder 2 ODL_2", "Grade 1 ODL_2"]),
         ("Arabic", ["Grade 1 ODL_1", "Grade 2 ODL_1", "Grade 1 ODL_2", "Grade 2 ODL_2"]),
         ("Hadith", ["Kinder 1 ODL_2", "Kinder 2 ODL_2"]),

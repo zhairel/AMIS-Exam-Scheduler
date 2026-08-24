@@ -204,7 +204,7 @@ def solve_all_sections():
             def sort_sub(item):
                 sub, cands = item
                 if "Ustadha Silfah" in cands and s_data['m_key'] == 'ODL_2': return (-100, len(cands), random.random())
-                if "Ustadh Hainur" in cands and s_data['m_key'] == 'ODL_2': return (-95, len(cands), random.random())
+                if "Ustadha Hainur" in cands and s_data['m_key'] == 'ODL_2': return (-95, len(cands), random.random())
                 max_l = max(teacher_load[t] for t in cands)
                 return (len(cands), -max_l, random.random())
 

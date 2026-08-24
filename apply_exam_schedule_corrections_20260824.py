@@ -65,6 +65,12 @@ SHS_FIRST_SHIFT_SLOTS = [
 ]
 
 EARLY_FINISH_TEACHERS = {"tchr_saliha", "tchr_mamonas"}
+HAINUR_DAY4_FIXED_POSITIONS = {
+    "exam_436": (4, 760),
+    "exam_427": (4, 880),
+    "exam_428": (4, 950),
+    "exam_495": (4, 1050),
+}
 
 
 def clean(value):
@@ -405,6 +411,8 @@ def is_fixed_g11_f2f_biology(record):
 
 
 def fixed_position(record):
+    if record.get("id") in HAINUR_DAY4_FIXED_POSITIONS:
+        return HAINUR_DAY4_FIXED_POSITIONS[record["id"]]
     if is_fixed_suhayb_biology(record) or is_fixed_g11_f2f_biology(record):
         return 1, 625
     if section_contains(record, "GRADE 12", "SUHAYB") and subject_key(record["subject"]) == "pe_12":
@@ -437,6 +445,12 @@ def candidate_positions(record):
             start_m = slots[start_index][0]
             end_m = slots[start_index + span - 1][1]
             if record.get("teacher_id") in EARLY_FINISH_TEACHERS and end_m > 990:
+                continue
+            if (
+                record.get("teacher_id") == "tchr_hainur"
+                and record.get("id") not in HAINUR_DAY4_FIXED_POSITIONS
+                and day_number == 4
+            ):
                 continue
             fixed = fixed_position(record)
             if fixed and (day_number, start_m) != fixed:
@@ -527,7 +541,15 @@ def solve_minimal_changes(records):
                             left_candidate["start_m"] == right_candidate["start_m"]
                             and left_candidate["end_m"] == right_candidate["end_m"]
                         )
-                        if explicit_shared_biology or (same_cohort and exact_same_time):
+                        reported_hainur_conflict = {
+                            left_record.get("id"), right_record.get("id")
+                        } == {"exam_159", "exam_161"}
+                        shared_cohort_allowed = (
+                            not reported_hainur_conflict
+                            and same_cohort
+                            and exact_same_time
+                        )
+                        if explicit_shared_biology or shared_cohort_allowed:
                             continue
                         model.Add(
                             variables[(left_index, left_candidate_index)]
@@ -635,8 +657,12 @@ def merge_previous_audit(audit, previous_audit, source_count):
         return audit
 
     for key in ("removed", "renamed", "added", "teacher_relinks"):
-        if not audit.get(key) and previous_audit.get(key):
-            audit[key] = deepcopy(previous_audit[key])
+        previous_items = deepcopy(previous_audit.get(key, []))
+        seen_items = {json.dumps(item, sort_keys=True, ensure_ascii=False) for item in previous_items}
+        audit[key] = previous_items + [
+            item for item in audit.get(key, [])
+            if json.dumps(item, sort_keys=True, ensure_ascii=False) not in seen_items
+        ]
 
     previous_moves = previous_audit.get("moved", [])
     new_moves = audit.get("moved", [])
@@ -687,6 +713,16 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "Teacher Sophia",
             "request": "Do not exceed 04:30 PM on Sep 7",
             "result": "Grade 8 Mu'adh Filipino moved to Sep 6 at 04:20 PM – 05:20 PM; Sep 7 duties now end at 04:10 PM",
+        },
+        {
+            "teacher": "Ustadha Hainur",
+            "request": "Resolve the six reported Days 1–3 conflicts and leave Day 4 unchanged",
+            "result": "Five concerns were already separated or assigned to a different official teacher; Grade 2 Talha Arabic moved to Sep 6 at 01:50 PM – 02:50 PM; all four Sep 7 duties retained at their original times",
+        },
+        {
+            "teacher": "Ustadha Hainur",
+            "request": "Correct honorific from Ustadh to Ustadha",
+            "result": "Canonical teacher name corrected to Ustadha Hainur across exam outputs",
         },
     ]
     return audit

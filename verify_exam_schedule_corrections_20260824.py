@@ -137,6 +137,40 @@ def main():
     assert sophia_last_day
     assert max(record["end_m"] for record in sophia_last_day) <= 970
 
+    by_id = {record["id"]: record for record in records}
+    hainur_reported_pairs = [
+        ("exam_1", "exam_17"),
+        ("exam_3", "exam_4"),
+        ("exam_159", "exam_161"),
+        ("exam_144", "exam_146"),
+        ("exam_298", "exam_394"),
+        ("exam_300", "exam_308"),
+    ]
+    for left_id, right_id in hainur_reported_pairs:
+        left, right = by_id[left_id], by_id[right_id]
+        both_hainur = left["teacher_id"] == right["teacher_id"] == "tchr_hainur"
+        same_day_overlap = left["day_number"] == right["day_number"] and overlaps(left, right)
+        assert not (both_hainur and same_day_overlap), f"Unresolved Hainur conflict: {left_id} / {right_id}"
+
+    talha_arabic = by_id["exam_159"]
+    amr_arabic = by_id["exam_161"]
+    assert (talha_arabic["day_number"], talha_arabic["start_m"]) == (3, 830)
+    assert (amr_arabic["day_number"], amr_arabic["start_m"]) == (2, 830)
+
+    hainur_records = [record for record in records if record["teacher_id"] == "tchr_hainur"]
+    assert len(hainur_records) == 21
+    assert all(record["teacher"] == "Ustadha Hainur" for record in hainur_records)
+    hainur_day4 = {
+        record["id"]: (record["day_number"], record["start_m"], record["end_m"])
+        for record in hainur_records if record["day_number"] == 4
+    }
+    assert hainur_day4 == {
+        "exam_436": (4, 760, 820),
+        "exam_427": (4, 880, 940),
+        "exam_428": (4, 950, 1010),
+        "exam_495": (4, 1050, 1110),
+    }
+
     usama_science = get_one(
         records,
         lambda record: section_has(record, "GRADE 7", "USAMA") and correction.subject_key(record["subject"]) == "science",

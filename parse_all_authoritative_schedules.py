@@ -99,7 +99,7 @@ def normalize_teacher_name(raw):
     if 'ersahad' in s_low:
         return 'Ustadh Ersahad'
     if 'hainur' in s_low:
-        return 'Ustadh Hainur'
+        return 'Ustadha Hainur'
     if 'abdul karim' in s_low or 'abdulkarim' in s_low:
         return 'Alim Abdul Karim'
     if 'zuhora' in s_low:
