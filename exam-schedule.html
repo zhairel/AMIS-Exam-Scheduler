@@ -5403,6 +5403,18 @@ html, body {
       .trim();
   }
 
+  function isKindergartenExam(exam) {
+    const grade = String(exam && (exam.grade_level || exam.grade) || '')
+      .toLowerCase()
+      .replace(/\s+/g, ' ')
+      .trim();
+    return grade === 'k1' || grade === 'k2' || grade.includes('kinder');
+  }
+
+  function publicExamSubject(exam) {
+    return isKindergartenExam(exam) ? 'TO BE ANNOUNCED' : String(exam.subject || '').trim();
+  }
+
   function subjectMatchesQuery(subject, query) {
     const normalizedQuery = normalizeSubjectSearch(query);
     if (!normalizedQuery) return true;
@@ -5655,7 +5667,7 @@ html, body {
     const dataList = document.getElementById('subjectOptions');
     if (!dataList) return;
 
-    const subjects = [...new Set(EXAM_RECORDS.map(e => String(e.subject || '').trim()).filter(Boolean))]
+    const subjects = [...new Set(EXAM_RECORDS.map(publicExamSubject).filter(Boolean))]
       .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
     dataList.innerHTML = subjects.map(subject => `<option value="${esc(subject)}"></option>`).join('');
   }
@@ -5763,7 +5775,7 @@ html, body {
     if (subjectQuery) {
       const matchingSectionIds = new Set(
         EXAM_RECORDS
-          .filter(exam => subjectMatchesQuery(exam.subject, subjectQuery))
+          .filter(exam => subjectMatchesQuery(publicExamSubject(exam), subjectQuery))
           .map(exam => exam.section_id)
       );
       targetSections = targetSections.filter(section => matchingSectionIds.has(section.id));
@@ -5783,7 +5795,7 @@ html, body {
     if (subjectQuery) {
       const targetSectionIds = new Set(targetSections.map(section => section.id));
       const matchingExamCount = EXAM_RECORDS.filter(exam =>
-        targetSectionIds.has(exam.section_id) && subjectMatchesQuery(exam.subject, subjectQuery)
+        targetSectionIds.has(exam.section_id) && subjectMatchesQuery(publicExamSubject(exam), subjectQuery)
       ).length;
       fullHtml += `<div class="subject-filter-summary" role="status">Showing ${matchingExamCount} matching exam${matchingExamCount === 1 ? '' : 's'} across ${targetSections.length} grade/section table${targetSections.length === 1 ? '' : 's'} for “${esc(subjectQuery)}”.</div>`;
     }
@@ -5846,7 +5858,7 @@ html, body {
 
       const allSecExams = EXAM_RECORDS.filter(e => e.section_id === sec.id);
       const secExams = subjectQuery
-        ? allSecExams.filter(e => subjectMatchesQuery(e.subject, subjectQuery))
+        ? allSecExams.filter(e => subjectMatchesQuery(publicExamSubject(e), subjectQuery))
         : allSecExams;
       const totalSubjectCount = secExams.length;
 
@@ -5936,7 +5948,8 @@ html, body {
             });
 
             if (match) {
-              const color = getSubjectColor(match.subject);
+              const displayedSubject = publicExamSubject(match);
+              const color = getSubjectColor(displayedSubject);
               const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
               let calcRowspan = 1;
 
@@ -5955,7 +5968,7 @@ html, body {
               fullHtml += `
                 <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
-                    <span class="cell-subject-sec">${esc(match.subject)}</span>
+                    <span class="cell-subject-sec">${esc(displayedSubject)}</span>
                     <span class="cell-teacher-name">${esc(match.teacher)}</span>
                     <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>
                   </div>
@@ -6163,7 +6176,8 @@ html, body {
             });
 
             if (match) {
-              const color = getSubjectColor(match.subject);
+              const displayedSubject = publicExamSubject(match);
+              const color = getSubjectColor(displayedSubject);
               const genderChip = getExamGenderChip(match);
               const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
               let calcRowspan = 1;
@@ -6183,7 +6197,7 @@ html, body {
               fullHtml += `
                 <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
-                    <span class="cell-subject-sec">${esc(match.subject)}</span>
+                    <span class="cell-subject-sec">${esc(displayedSubject)}</span>
                     <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
                     ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
                     <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>
