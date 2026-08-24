@@ -747,8 +747,8 @@
       "subject": "Fil",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Junaisah",
-      "proctor_id": "tchr_junaisah",
+      "proctor": "Teacher Franchette Zarah M. Ranain",
+      "proctor_id": "tchr_franchette",
       "day_number": 2,
       "time_slot": "04:20 PM – 05:20 PM"
     },
@@ -758,8 +758,8 @@
       "subject": "Filipino",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Junaisah",
-      "proctor_id": "tchr_junaisah",
+      "proctor": "Teacher Franchette Zarah M. Ranain",
+      "proctor_id": "tchr_franchette",
       "day_number": 2,
       "time_slot": "05:30 PM – 06:30 PM"
     },
@@ -802,8 +802,8 @@
       "subject": "Filipino",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Sir Mohaymen",
-      "proctor_id": "tchr_mohaymen",
+      "proctor": "Teacher Junaisah",
+      "proctor_id": "tchr_junaisah",
       "day_number": 3,
       "time_slot": "05:30 PM – 06:30 PM"
     },
@@ -824,8 +824,8 @@
       "subject": "Araling Panlipunan",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Sir Mohaymen",
-      "proctor_id": "tchr_mohaymen",
+      "proctor": "Teacher Junaisah",
+      "proctor_id": "tchr_junaisah",
       "day_number": 4,
       "time_slot": "04:20 PM – 05:20 PM"
     },

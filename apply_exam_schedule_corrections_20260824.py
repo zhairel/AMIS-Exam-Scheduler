@@ -84,6 +84,8 @@ AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER = 2
 NORMYLAH_MANUAL_PROCTOR_OVERRIDES = {
     "exam_30": "tchr_wardah",
     "exam_81": "tchr_wardah",
+    "exam_226": "tchr_franchette",
+    "exam_229": "tchr_franchette",
 }
 NORMYLAH_AUTO_PROCTOR_EXCLUDED_IDS = {"tchr_ayah"}
 TEACHER_IDENTITY_CANONICAL_IDS = {"tchr_zara": "tchr_franchette"}

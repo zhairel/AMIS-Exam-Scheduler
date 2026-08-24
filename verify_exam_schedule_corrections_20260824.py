@@ -89,6 +89,11 @@ def main():
     normylah_coverage_counts = Counter(record["proctor_id"] for record in normylah_records)
     assert max(normylah_coverage_counts.values()) <= correction.AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
     assert normylah_coverage_counts["tchr_wardah"] == 2
+    assert normylah_coverage_counts["tchr_franchette"] == 2
+    assert {
+        record["id"] for record in normylah_records
+        if record["proctor_id"] == "tchr_franchette"
+    } == {"exam_226", "exam_229"}
     assert normylah_coverage_counts["tchr_ayah"] == 0
     for record in normylah_records:
         proctor = registry_by_id[record["proctor_id"]]
@@ -102,7 +107,7 @@ def main():
         assert proctor.get("is_active", True)
         manual_proctor_id = correction.NORMYLAH_MANUAL_PROCTOR_OVERRIDES.get(record["id"])
         if manual_proctor_id:
-            assert record["proctor_id"] == manual_proctor_id == "tchr_wardah"
+            assert record["proctor_id"] == manual_proctor_id
             assert record["proctor_pool"] == "MANUAL_ADMIN_OVERRIDE"
             assert record["proctor_assignment_source"] == "MANUAL_ADMIN_COVERAGE"
         else:
