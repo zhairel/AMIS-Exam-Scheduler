@@ -400,18 +400,20 @@ body {
 }
 
 .section-sidebar-grade > summary,
-.section-sidebar-shift > summary {
+.section-sidebar-shift-label {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  list-style: none;
-  cursor: pointer;
   font-weight: 900;
 }
 
-.section-sidebar-grade > summary::-webkit-details-marker,
-.section-sidebar-shift > summary::-webkit-details-marker {
+.section-sidebar-grade > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.section-sidebar-grade > summary::-webkit-details-marker {
   display: none;
 }
 
@@ -448,17 +450,12 @@ body {
   overflow: hidden;
 }
 
-.section-sidebar-shift > summary {
+.section-sidebar-shift-label {
   padding: 8px 9px;
   color: #475569;
   background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
   font-size: 11px;
-}
-
-.section-sidebar-shift[open] > summary {
-  color: #065f46;
-  background: #f0fdf4;
-  border-bottom: 1px solid #d1fae5;
 }
 
 .section-sidebar-sections {
@@ -5739,14 +5736,9 @@ html, body {
   }
 
   window.closeSectionSidebar = closeSectionSidebar;
-  window.keepOnlySidebarGroupOpen = function(details, group) {
+  window.keepOnlySidebarGroupOpen = function(details) {
     if (!details || !details.open || !sectionTabsList) return;
-    const selector = group === 'shift' ? '.section-sidebar-shift' : '.section-sidebar-grade';
-    const scope = group === 'shift'
-      ? details.closest('.section-sidebar-grade-body')
-      : sectionTabsList;
-    if (!scope) return;
-    scope.querySelectorAll(`${selector}[open]`).forEach(other => {
+    sectionTabsList.querySelectorAll('.section-sidebar-grade[open]').forEach(other => {
       if (other !== details) other.open = false;
     });
   };
@@ -5904,7 +5896,7 @@ html, body {
 
     [...sectionsByGrade.keys()].sort(compareGradeLevels).forEach(grade => {
       const gradeSections = sectionsByGrade.get(grade).sort(compareSections);
-      html += `<details class="section-sidebar-grade" ontoggle="keepOnlySidebarGroupOpen(this, 'grade')">
+      html += `<details class="section-sidebar-grade" ontoggle="keepOnlySidebarGroupOpen(this)">
         <summary><span>${esc(gradeDisplayName(grade))}</span><span class="section-sidebar-count">${gradeSections.length} section${gradeSections.length === 1 ? '' : 's'} ▾</span></summary>
         <div class="section-sidebar-grade-body">
           <button class="section-sidebar-grade-all ${selectedGrade === grade && selectedSectionId === 'ALL_GROUP' ? 'active' : ''}" type="button" data-grade="${esc(grade)}" onclick="selectSidebarGrade(this.dataset.grade)">
@@ -5919,8 +5911,8 @@ html, body {
 
       [...sectionsByShift.keys()].sort((left, right) => shiftSortRank(left) - shiftSortRank(right)).forEach(shift => {
         const shiftSections = sectionsByShift.get(shift);
-        html += `<details class="section-sidebar-shift" ontoggle="keepOnlySidebarGroupOpen(this, 'shift')">
-          <summary><span>${esc(sidebarShiftLabel(shift))}</span><span class="section-sidebar-count">${shiftSections.length} ▾</span></summary>
+        html += `<div class="section-sidebar-shift">
+          <div class="section-sidebar-shift-label"><span>${esc(sidebarShiftLabel(shift))}</span><span class="section-sidebar-count">${shiftSections.length}</span></div>
           <div class="section-sidebar-sections">`;
 
         shiftSections.forEach(section => {
@@ -5931,7 +5923,7 @@ html, body {
           </button>`;
         });
 
-        html += `</div></details>`;
+        html += `</div></div>`;
       });
 
       html += `</div></details>`;
