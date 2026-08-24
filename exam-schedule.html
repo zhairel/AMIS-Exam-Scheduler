@@ -650,6 +650,40 @@ html, body {
   opacity: 0.92;
 }
 
+.gender-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  font-size: 9.5px;
+  font-weight: 850;
+  line-height: 1.25;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.gender-chip-female {
+  background: #fce7f3;
+  border-color: #f9a8d4;
+  color: #9d174d;
+}
+
+.gender-chip-male {
+  background: #dbeafe;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+}
+
+.gender-chip-mixed {
+  background: #ede9fe;
+  border-color: #c4b5fd;
+  color: #6d28d9;
+}
+
 .cell-duration-badge {
   font-size: 10px;
   font-weight: 800;
@@ -5382,6 +5416,28 @@ html, body {
     return normalizedSubject.replace(/\s/g, '').includes(normalizedQuery.replace(/\s/g, ''));
   }
 
+  function getExamGenderChip(exam) {
+    const sectionLabel = `${exam.section_name || ''} ${exam.section || ''}`.toUpperCase();
+
+    if (/\bGIRLS?\b|\bFEMALES?\b/.test(sectionLabel)) {
+      return { label: 'Female', className: 'gender-chip-female' };
+    }
+    if (/\bBOYS?\b|\bMALES?\b/.test(sectionLabel)) {
+      return { label: 'Male', className: 'gender-chip-male' };
+    }
+    if (/\bMIX(?:ED)?\b|\bCO[ -]?ED\b/.test(sectionLabel)) {
+      return { label: 'Mixed', className: 'gender-chip-mixed' };
+    }
+
+    const modality = String(exam.modality || '').toUpperCase();
+    const shift = String(exam.shift || '').toUpperCase();
+    if (modality === 'F2F' || shift === 'F2F' || sectionLabel.includes('FACE TO FACE')) {
+      return { label: 'Mixed', className: 'gender-chip-mixed' };
+    }
+
+    return null;
+  }
+
   function gradeSortRank(gradeLevel) {
     const grade = String(gradeLevel || '').toLowerCase().replace(/\s+/g, ' ').trim();
     if (grade.includes('kinder 1') || grade === 'k1') return 1;
@@ -6063,6 +6119,7 @@ html, body {
 
             if (match) {
               const color = getSubjectColor(match.subject);
+              const genderChip = getExamGenderChip(match);
               const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
               let calcRowspan = 1;
 
@@ -6083,6 +6140,7 @@ html, body {
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(match.subject)}</span>
                     <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
+                    ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
                     <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>
                   </div>
                 </td>
