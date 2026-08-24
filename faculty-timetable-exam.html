@@ -513,6 +513,37 @@ html, body {
   padding: 8px 4px;
 }
 
+/* Shift bands: keep the left time columns easy to scan at a glance. */
+.timetable-grid tbody td.shift-time-f2f {
+  background: #dcfce7;
+  color: #14532d;
+}
+
+.timetable-grid tbody td.shift-time-first {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+.timetable-grid tbody td.shift-time-second {
+  background: #ffedd5;
+  color: #7c2d12;
+}
+
+.timetable-grid tbody td.shift-time-shared {
+  background: linear-gradient(135deg, #dbeafe 0 50%, #ffedd5 50% 100%);
+  color: #312e81;
+}
+
+.timetable-grid tbody td[class*="shift-time-"] {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.timetable-grid tbody td.cell-time.shift-time-f2f { box-shadow: inset 5px 0 0 #16a34a; }
+.timetable-grid tbody td.cell-time.shift-time-first { box-shadow: inset 5px 0 0 #2563eb; }
+.timetable-grid tbody td.cell-time.shift-time-second { box-shadow: inset 5px 0 0 #ea580c; }
+.timetable-grid tbody td.cell-time.shift-time-shared { box-shadow: inset 5px 0 0 #7c3aed; }
+
 /* Special Break Row */
 .timetable-grid tbody tr.row-break td.cell-break {
   background: var(--break-bg) !important;
@@ -1049,7 +1080,29 @@ html, body {
       ];
     }
 
-    return timeline;
+    return timeline.map(row => {
+      const slotId = String(row.slot_id || '').toLowerCase();
+      const start = String(row.time || '').split('–')[0].trim();
+      let shiftGroup = 'f2f';
+
+      if (slotId.startsWith('odl1')) {
+        shiftGroup = 'first';
+      } else if (slotId.startsWith('odl2')) {
+        shiftGroup = slotId === 'odl2_s1' && hasODL1 ? 'shared' : 'second';
+      } else if (/^(12:|01:)/.test(start)) {
+        shiftGroup = 'first';
+      } else if (start === '02:50 PM') {
+        shiftGroup = hasODL2 ? 'shared' : 'first';
+      } else if (start === '03:10 PM') {
+        shiftGroup = hasODL1 && hasODL2 ? 'shared' : (hasODL2 ? 'second' : 'first');
+      } else if (/^(04:|05:|06:)/.test(start)) {
+        shiftGroup = 'second';
+      } else if (start === '02:45 PM' && hasODL2) {
+        shiftGroup = 'second';
+      }
+
+      return { ...row, shift_group: shiftGroup };
+    });
   }
 
   function renderCurrentView() {
@@ -1151,11 +1204,12 @@ html, body {
       const activeRowspan = { 'Sep 2': 0, 'Sep 3': 0, 'Sep 6': 0, 'Sep 7': 0 };
 
       timeline.forEach((row, rowIdx) => {
+        const shiftTimeClass = `shift-time-${row.shift_group || 'f2f'}`;
         if (row.is_break) {
           fullHtml += `
             <tr class="row-break">
-              <td class="cell-time">${esc(row.time)}</td>
-              <td class="cell-mins">${esc(row.minutes)}</td>
+              <td class="cell-time ${shiftTimeClass}">${esc(row.time)}</td>
+              <td class="cell-mins ${shiftTimeClass}">${esc(row.minutes)}</td>
           `;
 
           let currentSpan = 0;
@@ -1179,8 +1233,8 @@ html, body {
         } else {
           fullHtml += `
             <tr>
-              <td class="cell-time">${esc(row.time)}</td>
-              <td class="cell-mins">${esc(row.minutes)}</td>
+              <td class="cell-time ${shiftTimeClass}">${esc(row.time)}</td>
+              <td class="cell-mins ${shiftTimeClass}">${esc(row.minutes)}</td>
           `;
 
           EXAM_DATES.forEach(d => {
