@@ -222,6 +222,14 @@ def main():
         actual = (record["day_number"], record["start_m"], record["end_m"], record["teacher_id"])
         assert actual == expected, f"Unexpected GMRC position for {exam_id}: {actual}"
 
+    kinder_daily_sections = {
+        record["section_id"] for record in records if correction.is_daily_kinder_section(record)
+    }
+    for section_id in kinder_daily_sections:
+        section_records = [record for record in records if record["section_id"] == section_id]
+        assert len(section_records) == 4, f"{section_id} must retain exactly four schedules"
+        assert Counter(record["day_number"] for record in section_records) == Counter({1: 1, 2: 1, 3: 1, 4: 1})
+
     for teacher_id, latest_end_m in correction.TEACHER_LATEST_END_M.items():
         teacher_records = [record for record in records if record["teacher_id"] == teacher_id]
         assert teacher_records

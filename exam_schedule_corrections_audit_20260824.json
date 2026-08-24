@@ -1337,6 +1337,96 @@
       "from_start_m": 910,
       "to_day": 1,
       "to_start_m": 830
+    },
+    {
+      "id": "exam_2",
+      "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+      "subject": "Arabic",
+      "from_day": 1,
+      "from_start_m": 980,
+      "to_day": 4,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_15",
+      "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 2,
+      "from_start_m": 830,
+      "to_day": 3,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_282",
+      "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+      "subject": "Qur'an",
+      "from_day": 3,
+      "from_start_m": 540,
+      "to_day": 2,
+      "to_start_m": 540
+    },
+    {
+      "id": "exam_286",
+      "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+      "subject": "Oral & Written Exam",
+      "from_day": 3,
+      "from_start_m": 810,
+      "to_day": 1,
+      "to_start_m": 810
+    },
+    {
+      "id": "exam_284",
+      "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+      "subject": "Oral & Written Exam",
+      "from_day": 3,
+      "from_start_m": 880,
+      "to_day": 1,
+      "to_start_m": 810
+    },
+    {
+      "id": "exam_144",
+      "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+      "subject": "Hadith",
+      "from_day": 3,
+      "from_start_m": 910,
+      "to_day": 2,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_290",
+      "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+      "subject": "Oral & Written Exam",
+      "from_day": 3,
+      "from_start_m": 980,
+      "to_day": 1,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_426",
+      "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+      "subject": "Arabic",
+      "from_day": 4,
+      "from_start_m": 625,
+      "to_day": 1,
+      "to_start_m": 625
+    },
+    {
+      "id": "exam_465",
+      "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+      "subject": "GMRC",
+      "from_day": 4,
+      "from_start_m": 980,
+      "to_day": 1,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_431",
+      "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+      "subject": "Arabic",
+      "from_day": 4,
+      "from_start_m": 980,
+      "to_day": 3,
+      "to_start_m": 830
     }
   ],
   "teacher_accommodations": [
@@ -1379,6 +1469,11 @@
       "teacher": "Ustadha Saliha",
       "request": "Move Grade 5 Ayyash GMRC after the online general assembly and verify Grade 2 Saeed/Aasim GMRC",
       "result": "Ayyash GMRC moved to Sep 2 at 12:40 PM; Saeed remains Sep 6 at 01:50 PM and Aasim remains Sep 7 at 03:10 PM, both with verified teacher Ustadha Saliha and no overlap"
+    },
+    {
+      "teacher": "Kindergarten",
+      "request": "Provide one supervised subject on every exam day for Kinder 2 and Kinder 1 second shift",
+      "result": "Each affected Kindergarten section now has exactly one underlying schedule on each of Days 1–4; public subject, teacher, and minute details remain masked as TO BE ANNOUNCED"
     }
   ],
   "final_exam_count": 589,

@@ -209,6 +209,12 @@ def is_compact_g1_g2_f2f(record):
     return section in {"GRADE 1 (FACE TO FACE)", "GRADE 2 (FACE TO FACE)"}
 
 
+def is_daily_kinder_section(record):
+    grade = clean(record.get("grade_level") or record.get("grade"))
+    section = clean(record.get("section_name") or record.get("section")).upper()
+    return grade == "Kinder 2" or section == "K1 - HUSAIN IBN ALI (2ND SHIFT)"
+
+
 def section_contains(record, *tokens):
     name = clean(record.get("section_name") or record.get("section")).upper()
     return all(token.upper() in name for token in tokens)
@@ -531,6 +537,7 @@ def solve_minimal_changes(records):
     candidates_by_record = {}
     section_slot_vars = defaultdict(list)
     cohort_slot_vars = defaultdict(list)
+    kinder_section_day_vars = defaultdict(list)
     objective_terms = []
 
     for index, record in enumerate(records):
@@ -553,6 +560,9 @@ def solve_minimal_changes(records):
                 )
                 cohort_slot_vars[(cohort_identity, candidate["day"], occupied_slot)].append(var)
 
+            if is_daily_kinder_section(record):
+                kinder_section_day_vars[(record["section_id"], candidate["day"])].append(var)
+
             if record.get("_added"):
                 cost = (candidate["day"] - 1) * 20 + candidate["start_index"] * 3
             else:
@@ -571,6 +581,16 @@ def solve_minimal_changes(records):
         model.AddAtMostOne(vars_at_slot)
     for vars_at_slot in cohort_slot_vars.values():
         model.AddAtMostOne(vars_at_slot)
+
+    # Kinder 2 (all modalities/shifts) and the single Kinder 1 second-shift
+    # section each carry four underlying schedules. Spread them evenly so
+    # every class has exactly one supervised subject on each exam day.
+    kinder_section_ids = {
+        record["section_id"] for record in records if is_daily_kinder_section(record)
+    }
+    for section_id in kinder_section_ids:
+        for day_number in EXAM_DAYS:
+            model.AddExactlyOne(kinder_section_day_vars[(section_id, day_number)])
 
     # Absolute anti-conflict rule: a teacher can cover only one exam at a time.
     # There are no same-grade, same-subject, shared-cohort, modality, or gender
@@ -782,6 +802,11 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "Ustadha Saliha",
             "request": "Move Grade 5 Ayyash GMRC after the online general assembly and verify Grade 2 Saeed/Aasim GMRC",
             "result": "Ayyash GMRC moved to Sep 2 at 12:40 PM; Saeed remains Sep 6 at 01:50 PM and Aasim remains Sep 7 at 03:10 PM, both with verified teacher Ustadha Saliha and no overlap",
+        },
+        {
+            "teacher": "Kindergarten",
+            "request": "Provide one supervised subject on every exam day for Kinder 2 and Kinder 1 second shift",
+            "result": "Each affected Kindergarten section now has exactly one underlying schedule on each of Days 1–4; public subject, teacher, and minute details remain masked as TO BE ANNOUNCED",
         },
     ]
     return audit
