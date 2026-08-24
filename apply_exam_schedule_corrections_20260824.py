@@ -449,6 +449,15 @@ def is_fixed_g11_f2f_biology(record):
 def fixed_position(record):
     if record.get("id") in HAINUR_DAY4_FIXED_POSITIONS:
         return HAINUR_DAY4_FIXED_POSITIONS[record["id"]]
+    # Elementary GMRC confirmations: Ayyash must begin after the online
+    # general assembly, while Saeed and Aasim retain their already-separated
+    # Ustadha Saliha schedules.
+    if record.get("id") == "exam_68":
+        return 1, 760
+    if record.get("id") == "exam_450":
+        return 3, 830
+    if record.get("id") == "exam_310":
+        return 4, 910
     # Keep Suhayb Biology on its requested Wednesday slot. Grade 11 F2F Biology
     # may move when needed so the shared official teacher is never double-booked.
     if is_fixed_suhayb_biology(record):
@@ -768,6 +777,11 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "Grade 1 and Grade 2 F2F",
             "request": "Fill Sunday and remove vacant early periods before later exams",
             "result": "Both sections now have exactly two exams per day at 08:00 AM and 09:00 AM, with no 10:25 AM third-period exam",
+        },
+        {
+            "teacher": "Ustadha Saliha",
+            "request": "Move Grade 5 Ayyash GMRC after the online general assembly and verify Grade 2 Saeed/Aasim GMRC",
+            "result": "Ayyash GMRC moved to Sep 2 at 12:40 PM; Saeed remains Sep 6 at 01:50 PM and Aasim remains Sep 7 at 03:10 PM, both with verified teacher Ustadha Saliha and no overlap",
         },
     ]
     return audit

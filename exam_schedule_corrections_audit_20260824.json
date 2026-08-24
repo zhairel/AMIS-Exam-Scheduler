@@ -1310,6 +1310,33 @@
       "from_start_m": 625,
       "to_day": 3,
       "to_start_m": 480
+    },
+    {
+      "id": "exam_68",
+      "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+      "subject": "GMRC",
+      "from_day": 1,
+      "from_start_m": 690,
+      "to_day": 1,
+      "to_start_m": 760
+    },
+    {
+      "id": "exam_142",
+      "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+      "subject": "Hadith",
+      "from_day": 1,
+      "from_start_m": 810,
+      "to_day": 2,
+      "to_start_m": 880
+    },
+    {
+      "id": "exam_40",
+      "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+      "subject": "GMRC",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 1,
+      "to_start_m": 830
     }
   ],
   "teacher_accommodations": [
@@ -1347,6 +1374,11 @@
       "teacher": "Grade 1 and Grade 2 F2F",
       "request": "Fill Sunday and remove vacant early periods before later exams",
       "result": "Both sections now have exactly two exams per day at 08:00 AM and 09:00 AM, with no 10:25 AM third-period exam"
+    },
+    {
+      "teacher": "Ustadha Saliha",
+      "request": "Move Grade 5 Ayyash GMRC after the online general assembly and verify Grade 2 Saeed/Aasim GMRC",
+      "result": "Ayyash GMRC moved to Sep 2 at 12:40 PM; Saeed remains Sep 6 at 01:50 PM and Aasim remains Sep 7 at 03:10 PM, both with verified teacher Ustadha Saliha and no overlap"
     }
   ],
   "final_exam_count": 589,

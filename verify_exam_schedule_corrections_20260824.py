@@ -212,6 +212,16 @@ def main():
             assert {record["start_m"] for record in day_records} == {480, 540}
             assert all(record["end_m"] <= 600 for record in day_records)
 
+    elementary_gmrc_positions = {
+        "exam_68": (1, 760, 820, "tchr_saliha"),
+        "exam_450": (3, 830, 890, "tchr_saliha"),
+        "exam_310": (4, 910, 970, "tchr_saliha"),
+    }
+    for exam_id, expected in elementary_gmrc_positions.items():
+        record = by_id[exam_id]
+        actual = (record["day_number"], record["start_m"], record["end_m"], record["teacher_id"])
+        assert actual == expected, f"Unexpected GMRC position for {exam_id}: {actual}"
+
     for teacher_id, latest_end_m in correction.TEACHER_LATEST_END_M.items():
         teacher_records = [record for record in records if record["teacher_id"] == teacher_id]
         assert teacher_records
