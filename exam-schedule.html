@@ -300,6 +300,41 @@ body {
   font-weight: 650;
 }
 
+.section-sidebar-search {
+  flex: 0 0 auto;
+  padding: 10px 12px;
+  background: #f8fafc;
+  border-bottom: 1px solid #dbe4ee;
+}
+
+.section-sidebar-search-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #475569;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.section-sidebar-search-input {
+  width: 100%;
+  min-width: 0;
+  padding: 9px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #0f172a;
+  font: inherit;
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+.section-sidebar-search-input:focus {
+  outline: 2px solid #a7f3d0;
+  border-color: #10b981;
+}
+
 .section-sidebar-list {
   flex: 1;
   overflow-y: auto;
@@ -1270,6 +1305,11 @@ html, body {
         <div class="section-sidebar-title">Grades &amp; Sections</div>
         <div class="section-sidebar-subtitle">Grade → Modality / Shift → Section</div>
       </div>
+    </div>
+    <div class="section-sidebar-search">
+      <label class="section-sidebar-search-label" for="subjectSearch">Subject Search</label>
+      <input id="subjectSearch" class="section-sidebar-search-input" type="search" list="subjectOptions" autocomplete="off" placeholder="Search subject..." oninput="onSubjectSearch(this.value)" aria-label="Search exam subject">
+      <datalist id="subjectOptions"></datalist>
     </div>
     <div class="section-sidebar-list" id="sectionTabsList" role="navigation"></div>
   </aside>
@@ -5667,19 +5707,7 @@ html, body {
   }
 
   function getModalityFilteredSections() {
-    const mod = document.getElementById('modalitySelect') ? document.getElementById('modalitySelect').value : 'ALL';
-    const shift = document.getElementById('shiftSelect') ? document.getElementById('shiftSelect').value : 'ALL';
-    let filtered = [...SECTIONS_DATA];
-
-    if (mod === 'F2F') {
-      filtered = filtered.filter(section => section.shift === 'F2F');
-    } else if (mod === 'ODL') {
-      filtered = filtered.filter(section => section.shift !== 'F2F');
-      if (shift === 'ODL1') filtered = filtered.filter(section => section.shift === 'ODL - 1ST SHIFT');
-      else if (shift === 'ODL2') filtered = filtered.filter(section => section.shift === 'ODL - 2ND SHIFT');
-    }
-
-    return filtered.sort(compareSections);
+    return [...SECTIONS_DATA].sort(compareSections);
   }
 
   function getGradeFilteredSections() {
@@ -5806,53 +5834,6 @@ html, body {
   // -------------------------------------------------------------
   function renderSectionToolbar() {
     toolbarControls.innerHTML = `
-      <!-- Modality Filter -->
-      <div class="filter-group">
-        <span class="filter-label">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-          Modality:
-        </span>
-        <select id="modalitySelect" class="filter-select" onchange="onModalityChange()">
-          <option value="ALL">All Modalities (F2F + ODL)</option>
-          <option value="F2F">Face-to-Face (F2F)</option>
-          <option value="ODL">Online Distance Learning (ODL)</option>
-        </select>
-      </div>
-
-      <!-- Shift Filter -->
-      <div class="filter-group" id="shiftGroup" style="display:none;">
-        <span class="filter-label">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-          Shift:
-        </span>
-        <select id="shiftSelect" class="filter-select" onchange="onShiftChange()">
-          <option value="ALL">All ODL Shifts (1st + 2nd)</option>
-          <option value="ODL1">1st Shift (Afternoon)</option>
-          <option value="ODL2">2nd Shift (Late Afternoon)</option>
-        </select>
-      </div>
-
-      <!-- Grade Selector -->
-      <div class="filter-group">
-        <span class="filter-label">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13H5V11H3V13M3 17H5V15H3V17M3 9H5V7H3V9M7 13H21V11H7V13M7 17H21V15H7V17M7 7V9H21V7H7Z"/></svg>
-          Grade:
-        </span>
-        <select id="gradeSelect" class="filter-select" style="min-width:190px;" onchange="onGradeChange(this.value)">
-          <option value="ALL">All Grades</option>
-        </select>
-      </div>
-
-      <!-- Subject Search -->
-      <div class="filter-group">
-        <label class="filter-label" for="subjectSearch">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 3a6.5 6.5 0 1 0 3.98 11.64L19.85 21 21 19.85l-6.36-6.37A6.5 6.5 0 0 0 9.5 3zm0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z"/></svg>
-          Subject:
-        </label>
-        <input id="subjectSearch" class="filter-select filter-search-input" type="search" list="subjectOptions" autocomplete="off" placeholder="Search subject..." oninput="onSubjectSearch(this.value)" aria-label="Search exam subject">
-        <datalist id="subjectOptions"></datalist>
-      </div>
-
       <a href="index.html" class="btn-action btn-back" title="Back to Home">
         <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
         Back Home
@@ -5862,7 +5843,6 @@ html, body {
     const subjectSearch = document.getElementById('subjectSearch');
     if (subjectSearch) subjectSearch.value = sectionSubjectQuery;
     populateSubjectOptions();
-    populateGradeDropdown();
     renderSectionTabs();
   }
 
@@ -5880,62 +5860,6 @@ html, body {
     window.clearTimeout(sectionSubjectSearchTimer);
     sectionSubjectSearchTimer = window.setTimeout(renderSectionView, 120);
   };
-
-  window.onModalityChange = function() {
-    const mod = document.getElementById('modalitySelect').value;
-    const shiftGroup = document.getElementById('shiftGroup');
-    const shiftSelect = document.getElementById('shiftSelect');
-    if (mod === 'ODL') {
-      shiftGroup.style.display = 'inline-flex';
-    } else {
-      shiftGroup.style.display = 'none';
-      shiftSelect.value = 'ALL';
-    }
-    closeSectionSidebar();
-    selectedSectionId = 'ALL_GROUP';
-    populateGradeDropdown();
-    renderSectionTabs();
-    renderSectionView();
-  };
-
-  window.onShiftChange = function() {
-    closeSectionSidebar();
-    selectedSectionId = 'ALL_GROUP';
-    populateGradeDropdown();
-    renderSectionTabs();
-    renderSectionView();
-  };
-
-  window.onGradeChange = function(value) {
-    closeSectionSidebar();
-    selectedGrade = value || 'ALL';
-    selectedSectionId = 'ALL_GROUP';
-    renderSectionTabs();
-    renderSectionView();
-  };
-
-  function populateGradeDropdown() {
-    const gradeSelect = document.getElementById('gradeSelect');
-    if (!gradeSelect) return;
-
-    const modalitySections = getModalityFilteredSections();
-    const gradeCounts = new Map();
-    modalitySections.forEach(section => {
-      gradeCounts.set(section.grade_level, (gradeCounts.get(section.grade_level) || 0) + 1);
-    });
-    const grades = [...gradeCounts.keys()].sort(compareGradeLevels);
-
-    if (selectedGrade !== 'ALL' && !gradeCounts.has(selectedGrade)) {
-      selectedGrade = 'ALL';
-      selectedSectionId = 'ALL_GROUP';
-    }
-
-    gradeSelect.innerHTML = [
-      `<option value="ALL">All Grades (${modalitySections.length} sections)</option>`,
-      ...grades.map(grade => `<option value="${esc(grade)}">${esc(gradeDisplayName(grade))} (${gradeCounts.get(grade)})</option>`),
-    ].join('');
-    gradeSelect.value = selectedGrade;
-  }
 
   function sidebarShiftLabel(shift) {
     if (shift === 'F2F') return 'F2F';
@@ -6001,7 +5925,6 @@ html, body {
   window.selectSidebarGrade = function(grade) {
     selectedGrade = grade || 'ALL';
     selectedSectionId = 'ALL_GROUP';
-    populateGradeDropdown();
     renderSectionTabs();
     renderSectionView();
     closeSectionSidebar();
@@ -6011,7 +5934,6 @@ html, body {
     selectedSectionId = sectionId || 'ALL_GROUP';
     const selectedSection = SECTIONS_DATA.find(section => section.id === selectedSectionId);
     if (selectedSection) selectedGrade = selectedSection.grade_level;
-    populateGradeDropdown();
     renderSectionTabs();
     renderSectionView();
     closeSectionSidebar();
