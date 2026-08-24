@@ -65,7 +65,8 @@ assert.strictEqual(proctorCoverage.length, 12, 'All 12 Normylah exams must have 
 assert(html.includes('Boolean(match.replacement_teacher_required && match.proctor_id)'));
 assert(html.includes('<span class="cell-proctor-duty-label">PROCTOR</span>'));
 assert(html.includes("<span class=\"cell-section-name\">${esc(cleanSectionName(match.section_name))}</span>"));
-assert(html.includes('Gender not specified'));
+assert(!html.includes('Gender not specified'));
+assert(!facultyHtml.includes('Gender not specified'));
 assert(facultyHtml.includes('Boolean(exam.replacement_teacher_required && exam.proctor_id)'));
 assert(facultyHtml.includes('<span class="cell-proctor-label">PROCTOR</span>'));
 assert(facultyHtml.includes("<span class=\"cell-section-name\">${esc(cleanSec)}</span>"));

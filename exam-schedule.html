@@ -929,12 +929,6 @@ html, body {
   color: #4c1d95;
 }
 
-.gender-chip-unspecified {
-  background: #f1f5f9;
-  border-color: #94a3b8;
-  color: #334155;
-}
-
 .cell-duration-badge {
   color: #0f172a;
   font-size: 11.5px;
@@ -6469,9 +6463,7 @@ html, body {
                       <span class="cell-proctor-duty-label">PROCTOR</span>
                       <span class="cell-subject-sec">${esc(displayedSubject)}</span>
                       <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                      ${genderChip
-                        ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>`
-                        : '<span class="gender-chip gender-chip-unspecified">Gender not specified</span>'}
+                      ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
                     ` : `
                       <span class="cell-subject-sec">${esc(displayedSubject)}</span>
                       <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>

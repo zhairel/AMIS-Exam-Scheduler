@@ -587,7 +587,6 @@ html, body {
 .gender-chip-female { background:#fce7f3; border-color:#db2777; color:#831843; }
 .gender-chip-male { background:#dbeafe; border-color:#3b82f6; color:#1e3a8a; }
 .gender-chip-mixed { background:#ede9fe; border-color:#8b5cf6; color:#4c1d95; }
-.gender-chip-unspecified { background:#f1f5f9; border-color:#94a3b8; color:#334155; }
 
 .cell-section-name {
   font-size: 11px;
@@ -1231,9 +1230,7 @@ html, body {
                       <span class="cell-proctor-label">PROCTOR</span>
                       <span class="cell-subject-sec">${esc(exam.subject)}</span>
                       <span class="cell-section-name">${esc(cleanSec)}</span>
-                      ${genderChip
-                        ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>`
-                        : '<span class="gender-chip gender-chip-unspecified">Gender not specified</span>'}
+                      ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
                     ` : `
                       <span class="cell-subject-sec">${esc(exam.subject)}</span>
                       <span class="cell-section-name">${esc(cleanSec)}</span>
