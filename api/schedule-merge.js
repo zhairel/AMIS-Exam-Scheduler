@@ -13,15 +13,23 @@ function idFilter(ids) {
   return ids.map((id) => encodeURIComponent(id)).join(',');
 }
 
+function key(value) {
+  return clean(value).toLowerCase();
+}
+
+function identity(row, idField, nameField) {
+  return key(row[idField] || row[nameField]);
+}
+
 function sameMergeContent(rows) {
   const first = rows[0];
-  return rows.every((row) => row.section === first.section
+  return rows.every((row) => identity(row, 'section_id', 'section') === identity(first, 'section_id', 'section')
     && row.start_time === first.start_time
     && row.end_time === first.end_time
-    && row.subject === first.subject
-    && row.teacher === first.teacher
-    && row.schedule_type === first.schedule_type
-    && row.status === first.status);
+    && key(row.subject) === key(first.subject)
+    && identity(row, 'teacher_id', 'teacher') === identity(first, 'teacher_id', 'teacher')
+    && key(row.schedule_type) === key(first.schedule_type)
+    && key(row.status) === key(first.status));
 }
 
 module.exports = async function scheduleMergeApi(request, response) {

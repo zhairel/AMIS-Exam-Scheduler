@@ -329,6 +329,42 @@
     return `<article class="calendar-card ${tone} merged-event" title="${esc(first.subject)} — ${esc(dayLabel)}"><strong>${esc(first.subject)}</strong><span>${esc(dayLabel)}</span><span>${allPersisted ? 'MERGED • DATABASE' : 'Original timetable'}</span><div class="calendar-card-actions">${edit}${unmerge}${remove}</div></article>`;
   }
 
+  function mergeValue(value) {
+    return core.clean(value).toLocaleLowerCase();
+  }
+
+  function sameMergeContent(left, right) {
+    if (!left || !right) return false;
+    return mergeValue(left.section_id || left.section) === mergeValue(right.section_id || right.section)
+      && core.parseClock(left.start_time) === core.parseClock(right.start_time)
+      && core.parseClock(left.end_time) === core.parseClock(right.end_time)
+      && mergeValue(left.subject) === mergeValue(right.subject)
+      && mergeValue(left.teacher_id || left.teacher) === mergeValue(right.teacher_id || right.teacher)
+      && mergeValue(left.schedule_type) === mergeValue(right.schedule_type)
+      && mergeValue(left.status) === mergeValue(right.status);
+  }
+
+  function persistedUnmerged(record) {
+    return Boolean(record && record._database !== false && record.id && !record.merge_group);
+  }
+
+  function canSelectForMerge(record, classRecords) {
+    if (!persistedUnmerged(record)) return false;
+    const recordDay = core.SCHOOL_DAYS.indexOf(record.day);
+    if (recordDay < 0) return false;
+    const selected = selectedMergeRecords();
+    if (selectedMergeIds.has(record.id)) return true;
+    if (selected.length) {
+      if (!selected.every((item) => sameMergeContent(item, record))) return false;
+      const selectedDays = selected.map((item) => core.SCHOOL_DAYS.indexOf(item.day));
+      return recordDay === Math.min(...selectedDays) - 1 || recordDay === Math.max(...selectedDays) + 1;
+    }
+    return classRecords.some((item) => persistedUnmerged(item)
+      && item.id !== record.id
+      && sameMergeContent(item, record)
+      && Math.abs(core.SCHOOL_DAYS.indexOf(item.day) - recordDay) === 1);
+  }
+
   function renderClassCalendar() {
     const selected = classes.find((item) => item.name === selectedSection);
     const classRecords = completeClassRecords(selectedSection);
@@ -369,9 +405,10 @@
         }
         const overlap = !exact.length && classRecords.some((record) => overlapsBand(record, day, startTime, endTime));
         const content = exact.length ? exact.map(renderClassCard).join('') : overlap ? '<div class="calendar-overlap-state"><span>Occupied</span><small>Overlapping time</small></div>' : `<a class="calendar-empty-link" href="${classCreateUrl(day, startTime, endTime)}"><strong>＋</strong><span>Available</span></a>`;
-        const selectable = mergeMode && record && record._database !== false && !record.merge_group;
+        const selectable = mergeMode && canSelectForMerge(record, classRecords);
+        const unavailable = mergeMode && record && !selectable ? ' merge-unavailable' : '';
         const selectedClass = selectable && selectedMergeIds.has(record.id) ? ' merge-selected' : '';
-        cells += `<td class="calendar-cell${selectable ? ' merge-selectable' : ''}${selectedClass}"${selectable ? ` data-merge-id="${esc(record.id)}"` : ''}>${content}</td>`;
+        cells += `<td class="calendar-cell${selectable ? ' merge-selectable' : ''}${unavailable}${selectedClass}"${selectable ? ` data-merge-id="${esc(record.id)}"` : ''}>${content}</td>`;
         dayIndex += 1;
       }
       return `<tr><td class="calendar-time">${esc(label)}</td>${cells}</tr>`;
@@ -394,7 +431,10 @@
     mergeModeButton.classList.toggle('active', mergeMode);
     mergeModeButton.textContent = mergeMode ? 'Selecting Cells…' : 'Merge Cells';
     mergeSelectedButton.disabled = selectedMergeIds.size < 2;
-    document.getElementById('mergeSelectionSummary').textContent = message || (selectedMergeIds.size ? `${selectedMergeIds.size} cells selected. Choose matching adjacent cells.` : 'Select matching cells from the same time row.');
+    const selectionMessage = selectedMergeIds.size === 1
+      ? '1 matching cell selected. Choose a highlighted neighboring day.'
+      : `${selectedMergeIds.size} matching cells selected. Add another highlighted day or merge now.`;
+    document.getElementById('mergeSelectionSummary').textContent = message || (selectedMergeIds.size ? selectionMessage : 'Choose a highlighted cell, then select its matching neighbor.');
   }
 
   function setMergeMode(enabled) {
@@ -411,8 +451,7 @@
   function validateMergeSelection(items) {
     if (items.length < 2) return 'Select at least two cells.';
     const first = items[0];
-    const sameContent = items.every((item) => item.section === first.section && item.start_time === first.start_time && item.end_time === first.end_time && item.subject === first.subject && item.teacher === first.teacher && item.schedule_type === first.schedule_type && item.status === first.status);
-    if (!sameContent) return 'Select cells with the same subject/event, teacher, time, section, and status.';
+    if (!items.every((item) => sameMergeContent(item, first))) return 'Select cells with the same subject/event, teacher, time, section, and status.';
     const dayIndexes = items.map((item) => core.SCHOOL_DAYS.indexOf(item.day)).sort((a, b) => a - b);
     if (dayIndexes.some((index) => index < 0) || new Set(dayIndexes).size !== dayIndexes.length) return 'Select only one matching cell per day.';
     if (dayIndexes.some((index, position) => position && index !== dayIndexes[position - 1] + 1)) return 'Selected days must be next to each other.';
