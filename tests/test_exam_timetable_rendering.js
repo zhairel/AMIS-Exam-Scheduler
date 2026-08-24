@@ -3,6 +3,7 @@ const fs = require('fs');
 const vm = require('vm');
 
 const html = fs.readFileSync('exam-schedule.html', 'utf8');
+const facultyHtml = fs.readFileSync('faculty-timetable-exam.html', 'utf8');
 const records = require('../exam_data.json');
 
 const helperStart = html.indexOf('  function scheduleStartLabel');
@@ -59,4 +60,9 @@ const abuMusa = seniorHighRecords.filter(record => record.section === 'GRADE 12 
 assert.strictEqual(abuMusa.length, 9);
 assert(abuMusa.every(record => record.start_m >= 760), 'Abu Musa exams must start at 12:40 PM or later.');
 
-console.log('PASS Grade 11/12 exams render once at their authoritative time; Abu Musa starts at 12:40 PM');
+const automaticCoverage = records.filter(record => record.proctor_assignment_source === 'AUTO_ACADEMIC_COVERAGE');
+assert.strictEqual(automaticCoverage.length, 12, 'All 12 Normylah exams must have automatic proctor coverage.');
+assert(facultyHtml.includes("exam.proctor_assignment_source === 'AUTO_ACADEMIC_COVERAGE'"));
+assert(facultyHtml.includes('<span class="cell-proctor-label">PROCTOR</span>'));
+
+console.log('PASS Grade 11/12 canonical rendering and PROCTOR-only faculty timetable cell labels');

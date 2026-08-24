@@ -557,6 +557,20 @@ html, body {
   overflow-wrap: break-word;
 }
 
+.cell-proctor-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+}
+
 .cell-section-name {
   font-size: 11px;
   font-weight: 700;
@@ -1166,6 +1180,7 @@ html, body {
               const cleanSec = cleanSectionName(exam.section_name);
               const cleanShift = formatModalityShift(exam.shift);
               const is120 = exam.duration_minutes >= 90;
+              const isAutomaticProctorCoverage = exam.proctor_assignment_source === 'AUTO_ACADEMIC_COVERAGE';
               let calcRowspan = 1;
 
               if (is120) {
@@ -1183,9 +1198,14 @@ html, body {
               fullHtml += `
                 <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
-                    <span class="cell-subject-sec">${esc(exam.subject)}</span>
-                    <span class="cell-section-name">${esc(cleanSec)}</span>
-                    <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${exam.duration_minutes || 60} min.</span>
+                    ${isAutomaticProctorCoverage ? `
+                      <span class="cell-proctor-label">PROCTOR</span>
+                      <span class="cell-subject-sec">${esc(exam.subject)}</span>
+                    ` : `
+                      <span class="cell-subject-sec">${esc(exam.subject)}</span>
+                      <span class="cell-section-name">${esc(cleanSec)}</span>
+                      <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${exam.duration_minutes || 60} min.</span>
+                    `}
                   </div>
                 </td>
               `;
