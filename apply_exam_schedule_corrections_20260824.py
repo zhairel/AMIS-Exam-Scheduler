@@ -806,7 +806,7 @@ def merge_previous_audit(audit, previous_audit, source_count):
         {
             "teacher": "Kindergarten",
             "request": "Provide one supervised subject on every exam day for Kinder 2 and Kinder 1 second shift",
-            "result": "Each affected Kindergarten section now has exactly one schedule on each of Days 1–4; the public view shows the subject name while teacher and minute details remain hidden",
+            "result": "Each affected Kindergarten section now has exactly one schedule on each of Days 1–4; the public view shows the subject, assigned teacher, and duration",
         },
     ]
     return audit

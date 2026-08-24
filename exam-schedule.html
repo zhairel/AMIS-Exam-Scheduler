@@ -5637,14 +5637,6 @@ html, body {
       .trim();
   }
 
-  function isKindergartenExam(exam) {
-    const grade = String(exam && (exam.grade_level || exam.grade) || '')
-      .toLowerCase()
-      .replace(/\s+/g, ' ')
-      .trim();
-    return grade === 'k1' || grade === 'k2' || grade.includes('kinder');
-  }
-
   function publicExamSubject(exam) {
     return String(exam && exam.subject || '').trim();
   }
@@ -6133,7 +6125,6 @@ html, body {
             });
 
             if (match) {
-              const isKindergarten = isKindergartenExam(match);
               const displayedSubject = publicExamSubject(match);
               const color = getSubjectColor(displayedSubject);
               const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
@@ -6154,11 +6145,9 @@ html, body {
               fullHtml += `
                 <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
-                    ${isKindergarten
-                      ? `<span class="cell-subject-sec">${esc(displayedSubject)}</span>`
-                      : `<span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                         <span class="cell-teacher-name">${esc(match.teacher)}</span>
-                         <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>`}
+                    <span class="cell-subject-sec">${esc(displayedSubject)}</span>
+                    <span class="cell-teacher-name">${esc(match.teacher)}</span>
+                    <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>
                   </div>
                 </td>
               `;
@@ -6364,7 +6353,6 @@ html, body {
             });
 
             if (match) {
-              const isKindergarten = isKindergartenExam(match);
               const displayedSubject = publicExamSubject(match);
               const color = getSubjectColor(displayedSubject);
               const genderChip = getExamGenderChip(match);
@@ -6386,12 +6374,10 @@ html, body {
               fullHtml += `
                 <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
-                    ${isKindergarten
-                      ? `<span class="cell-subject-sec">${esc(displayedSubject)}</span>`
-                      : `<span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                         <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                         ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
-                         <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>`}
+                    <span class="cell-subject-sec">${esc(displayedSubject)}</span>
+                    <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
+                    ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
+                    <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>
                   </div>
                 </td>
               `;
