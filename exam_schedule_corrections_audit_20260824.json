@@ -101,43 +101,6 @@
         "duration_minutes": 60,
         "teacher_status": "VERIFIED"
       }
-    },
-    {
-      "reason": "duplicate Grade 3 As'ad Filipino entry removed",
-      "record": {
-        "id": "exam_182",
-        "exam_term": "1st Term",
-        "day_number": 2,
-        "date": "Thursday, September 3, 2026",
-        "short_date": "Sep 3",
-        "day_name": "Thursday",
-        "slot_number": 2,
-        "slots_spanned": 1,
-        "start_slot_index": 1,
-        "end_slot_index": 1,
-        "start_m": 980,
-        "end_m": 1040,
-        "time_slot": "04:20 PM – 05:20 PM",
-        "time": "04:20 PM – 05:20 PM",
-        "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
-        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "section_name": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "department": "Elementary",
-        "grade": "Grade 3",
-        "grade_level": "Grade 3",
-        "shift": "ODL - 2ND SHIFT",
-        "modality": "ODL",
-        "gender": "MIXED",
-        "subject_id": "subj_fil3",
-        "subject": "Fil3",
-        "teacher_id": "tchr_jenny",
-        "teacher": "Teacher Jenny",
-        "duration_minutes": 60,
-        "teacher_status": "VERIFIED",
-        "_added": false,
-        "_original_day": 2,
-        "_original_start_m": 980
-      }
     }
   ],
   "renamed": [
@@ -230,6 +193,11 @@
       "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
       "from": "Social Science",
       "to": "MAPEH"
+    },
+    {
+      "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+      "from": "Fil3",
+      "to": "Filipino"
     }
   ],
   "added": [
@@ -323,6 +291,14 @@
     },
     {
       "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
       "subject": "MAPEH"
     }
   ],
@@ -537,7 +513,7 @@
       "subject": "Arabic",
       "from_day": 1,
       "from_start_m": 980,
-      "to_day": 2,
+      "to_day": 1,
       "to_start_m": 910
     },
     {
@@ -573,17 +549,8 @@
       "subject": "Qur'an",
       "from_day": 2,
       "from_start_m": 910,
-      "to_day": 2,
-      "to_start_m": 980
-    },
-    {
-      "id": "exam_213",
-      "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-      "subject": "Qur'an",
-      "from_day": 2,
-      "from_start_m": 910,
-      "to_day": 2,
-      "to_start_m": 980
+      "to_day": 4,
+      "to_start_m": 1050
     },
     {
       "id": "exam_241",
@@ -601,6 +568,24 @@
       "from_day": 2,
       "from_start_m": 910,
       "to_day": 3,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_255",
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "subject": "Qur'an",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 4,
+      "to_start_m": 1050
+    },
+    {
+      "id": "exam_256",
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "subject": "MAPEH",
+      "from_day": 2,
+      "from_start_m": 980,
+      "to_day": 2,
       "to_start_m": 910
     },
     {
@@ -667,15 +652,6 @@
       "to_start_m": 980
     },
     {
-      "id": "exam_321",
-      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-      "subject": "Qur'an",
-      "from_day": 3,
-      "from_start_m": 980,
-      "to_day": 4,
-      "to_start_m": 1050
-    },
-    {
       "id": "exam_332",
       "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
       "subject": "Math",
@@ -683,6 +659,15 @@
       "from_start_m": 830,
       "to_day": 2,
       "to_start_m": 910
+    },
+    {
+      "id": "exam_344",
+      "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 3,
+      "from_start_m": 980,
+      "to_day": 2,
+      "to_start_m": 980
     },
     {
       "id": "exam_367",
@@ -820,6 +805,15 @@
       "to_start_m": 910
     },
     {
+      "id": "exam_542",
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "subject": "SHAF",
+      "from_day": 4,
+      "from_start_m": 1050,
+      "to_day": 2,
+      "to_start_m": 980
+    },
+    {
       "id": "exam_552",
       "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
       "subject": "English",
@@ -827,20 +821,11 @@
       "from_start_m": 910,
       "to_day": 4,
       "to_start_m": 1050
-    },
-    {
-      "id": "exam_563",
-      "section": "GRADE 11 (2ND SHIFT BOYS)",
-      "subject": "SHAF",
-      "from_day": 4,
-      "from_start_m": 1050,
-      "to_day": 1,
-      "to_start_m": 910
     }
   ],
-  "final_exam_count": 583,
+  "final_exam_count": 586,
   "duration_counts": {
-    "60": 558,
+    "60": 561,
     "120": 25
   },
   "teacher_count": 53

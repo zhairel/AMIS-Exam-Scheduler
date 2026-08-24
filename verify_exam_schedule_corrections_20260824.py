@@ -35,11 +35,13 @@ def main():
     with open(os.path.join(BASE_DIR, "class_schedules_data.json"), encoding="utf-8") as handle:
         class_sections = json.load(handle)
 
-    assert len(records) == 583, f"Expected 583 final exams, got {len(records)}"
-    assert Counter(record["duration_minutes"] for record in records) == Counter({60: 558, 120: 25})
+    assert len(records) == 586, f"Expected 586 final exams, got {len(records)}"
+    assert Counter(record["duration_minutes"] for record in records) == Counter({60: 561, 120: 25})
     assert all(record["slots_spanned"] == (2 if record["duration_minutes"] == 120 else 1) for record in records)
     assert len({record["id"] for record in records}) == len(records)
-    assert len({(record["section_id"], record["subject_id"]) for record in records}) == len(records)
+    subject_counts = Counter((record["section_id"], record["subject_id"]) for record in records)
+    repeated_subjects = {key: count for key, count in subject_counts.items() if count > 1}
+    assert repeated_subjects == {("sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix", "subj_filipino"): 2}
 
     assert not any(correction.subject_key(record["subject"]) == "research_consultation" for record in records)
     assert not any(correction.subject_key(record["subject"]) == "aral_math" for record in records)
@@ -153,7 +155,17 @@ def main():
         record for record in records
         if section_has(record, "GRADE 3", "AS'AD") and correction.subject_key(record["subject"]) == "filipino"
     ]
-    assert len(asad_filipino) == 1
+    assert len(asad_filipino) == 2
+    assert all(record["subject"] == "Filipino" and record["teacher_id"] == "tchr_jenny" for record in asad_filipino)
+
+    grade5_requested_mapeh = [
+        record for record in records
+        if record["grade_level"] == "Grade 5"
+        and any(token in record["section_name"].upper() for token in ("AL HARITH", "MUS'AB"))
+        and correction.subject_key(record["subject"]) == "mapeh"
+    ]
+    assert len(grade5_requested_mapeh) == 2
+    assert all(record["teacher_id"] == "tchr_norhydie" for record in grade5_requested_mapeh)
 
     official_lookup = correction.build_official_teacher_lookup(class_sections)
     unmatched = []
@@ -215,8 +227,8 @@ def main():
     assert workbook.active.max_row == len(records) + 1
     workbook.close()
 
-    print("PASS: 583 official exam records")
-    print("PASS: 558 x 60-minute and 25 x 120-minute exams")
+    print("PASS: 586 official exam records")
+    print("PASS: 561 x 60-minute and 25 x 120-minute exams")
     print("PASS: all requested removals, additions, moves, and teacher corrections")
     print("PASS: exact official section+subject teacher linkage")
     print("PASS: zero section conflicts and zero unapproved teacher conflicts")

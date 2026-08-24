@@ -287,18 +287,18 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
 
         records.append(record)
 
-    # Grade 3 As'ad had Fil3 and Filipino as two exam rows. Keep the canonical Filipino row.
+    # Clarified item 21 requires two Filipino examination schedules for Grade 3
+    # As'ad, both handled by Teacher Jenny. Preserve both source records and only
+    # normalize the older Fil3 display label.
     asad_filipino = [
         r for r in records
         if section_contains(r, "GRADE 3", "AS'AD") and subject_key(r.get("subject")) == "filipino"
     ]
-    if len(asad_filipino) > 1:
-        keep = next((r for r in asad_filipino if clean(r.get("subject")).lower() == "filipino"), asad_filipino[0])
-        for duplicate in asad_filipino:
-            if duplicate is keep:
-                continue
-            records.remove(duplicate)
-            removed.append({"reason": "duplicate Grade 3 As'ad Filipino entry removed", "record": duplicate})
+    for record in asad_filipino:
+        if clean(record.get("subject")) != "Filipino":
+            renamed.append({"section": record["section_name"], "from": record["subject"], "to": "Filipino"})
+            record["subject"] = "Filipino"
+            record["subject_id"] = "subj_filipino"
 
     section_by_id = {section["section_id"]: section for section in class_sections}
     additions = []
@@ -338,6 +338,17 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
         if not any(token in upper_name for token in grade4_mapeh_tokens):
             continue
         if ensure_subject(records, section["section_id"], "MAPEH", "Teacher Halnaisa"):
+            additions.append({"section": section["section_name"], "subject": "MAPEH"})
+
+    # Clarified item 22: Grade 5 Al Harith and Mus'ab need MAPEH under
+    # their official subject teacher, Teacher Norhydie.
+    for section in class_sections:
+        if section.get("grade_level") != "Grade 5":
+            continue
+        upper_name = section["section_name"].upper()
+        if not any(token in upper_name for token in ("AL HARITH", "MUS'AB")):
+            continue
+        if ensure_subject(records, section["section_id"], "MAPEH", "Teacher Norhydie"):
             additions.append({"section": section["section_name"], "subject": "MAPEH"})
 
     # Re-link every exam with an exact section+subject teacher from the official class schedule.
