@@ -16,9 +16,14 @@ import re
 import csv
 from collections import defaultdict
 from ortools.sat.python import cp_model
+from schedule_optimization import (
+    PlacementChoice,
+    add_vacancy_gap_indicators,
+    minimize_early_compact_schedule,
+)
 from teacher_registry import resolve_teacher
 
-BASE_DIR = "/home/tatsuya/Projects/AMIS/amis_exam_calendar"
+BASE_DIR = os.environ.get("AMIS_BASE_DIR", os.path.dirname(os.path.abspath(__file__)))
 CLASS_DATA_PATH = os.path.join(BASE_DIR, "class_schedules_data.json")
 EXAM_DATA_JSON = os.path.join(BASE_DIR, "exam_data.json")
 EXAM_DATA_JS = os.path.join(BASE_DIR, "exam_data.js")
@@ -233,6 +238,7 @@ for i, item in enumerate(all_exam_items):
 
 # Constraint 2: Section constraint (at most 1 exam occupying any slot, max daily units <= 3 or 4)
 by_sec = defaultdict(list)
+section_day_occupancy = {}
 for i, item in enumerate(all_exam_items):
     by_sec[item['section_id']].append(i)
 
@@ -247,6 +253,9 @@ for sec_id, items in by_sec.items():
                 for s_start in range(max(0, s - k + 1), min(s + 1, num_slots - k + 1)):
                     occupying.append(x[i, d, s_start])
             model.Add(sum(occupying) <= 1)
+            occupied = model.NewBoolVar(f"section_{sec_id}_{d}_{s}_occupied")
+            model.Add(occupied == sum(occupying))
+            section_day_occupancy.setdefault((sec_id, d), []).append(occupied)
             
         max_daily_units = 4 if 'Senior High' in all_exam_items[items[0]]['department'] else 3
         daily_units = []
@@ -292,17 +301,79 @@ for tid, items in by_teacher.items():
                                 continue
                             model.Add(x[i1, d, s1] + x[i2, d, s2] <= 1)
 
+# Track chronological teacher occupancy separately from conflict prevention.
+# A shared/cohort exam may contain multiple assignment variables at the same
+# time, so AddMaxEquality turns them into one occupied time block.
+teacher_day_time_vars = defaultdict(lambda: defaultdict(list))
+for tid, items in by_teacher.items():
+    for i in items:
+        slots = get_slots_for_item(all_exam_items[i])
+        slots_needed = all_exam_items[i]['slots_needed']
+        for d in DAYS:
+            for start_index in range(len(slots) - slots_needed + 1):
+                placement = x[i, d, start_index]
+                for occupied_index in range(start_index, start_index + slots_needed):
+                    teacher_day_time_vars[(tid, d)][slots[occupied_index]['start_m']].append(placement)
+
+teacher_day_occupancy = {}
+for resource_day, variables_by_time in teacher_day_time_vars.items():
+    chronological = []
+    for time_index, start_minute in enumerate(sorted(variables_by_time)):
+        variables_at_time = variables_by_time[start_minute]
+        if len(variables_at_time) == 1:
+            chronological.append(variables_at_time[0])
+        else:
+            occupied = model.NewBoolVar(
+                f"teacher_{resource_day[0]}_{resource_day[1]}_{time_index}_occupied"
+            )
+            model.AddMaxEquality(occupied, variables_at_time)
+            chronological.append(occupied)
+    teacher_day_occupancy[resource_day] = chronological
+
+# Hard rules above remain absolute. This objective only ranks the legal choices:
+# Day 1 -> Day 2 -> Day 3 -> Day 4, earliest slot, then fewest section/teacher gaps.
+gap_variables = []
+gap_variables.extend(
+    add_vacancy_gap_indicators(model, section_day_occupancy, "section")
+)
+gap_variables.extend(
+    add_vacancy_gap_indicators(model, teacher_day_occupancy, "teacher")
+)
+placement_choices = []
+for i, item in enumerate(all_exam_items):
+    slots = get_slots_for_item(item)
+    for d in DAYS:
+        for start_index in range(len(slots) - item['slots_needed'] + 1):
+            placement_choices.append(
+                PlacementChoice(
+                    variable=x[i, d, start_index],
+                    day_rank=d - 1,
+                    start_rank=start_index,
+                )
+            )
+
+objective_weights = minimize_early_compact_schedule(
+    model,
+    placement_choices,
+    assignment_count=len(all_exam_items),
+    gap_variables=gap_variables,
+)
+
 print("Solving Official Examination CP-SAT model with zero conflicts...")
 solver = cp_model.CpSolver()
 solver.parameters.max_time_in_seconds = 60.0
 solver.parameters.num_search_workers = 8
+solver.parameters.random_seed = 0
 status = solver.Solve(model)
 
 if status not in (cp_model.OPTIMAL, cp_model.FEASIBLE):
     print("Error: Could not find feasible exam schedule!")
     exit(1)
 
-print(f"✓ Solved successfully with 0 conflicts!")
+print(
+    f"✓ Solver status {solver.StatusName(status)} with 0 conflicts using chronological compaction "
+    f"(objective bound {objective_weights.maximum_cost})."
+)
 
 # Build Final Exam Records
 final_exam_records = []

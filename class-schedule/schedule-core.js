@@ -212,23 +212,37 @@
     return conflicts.filter((conflict) => !grandfathered.has(conflictKey(conflict)));
   }
 
+  function suggestionBounds(candidate, range) {
+    const descriptor = key(`${candidate.section} ${candidate.shift || ''} ${candidate.schedule_type || ''}`);
+    if (descriptor.includes('2nd shift') || descriptor.includes('second shift')) {
+      return { start: 15 * 60 + 30, end: 19 * 60 };
+    }
+    if (descriptor.includes('1st shift') || descriptor.includes('first shift') || descriptor.includes('odl')) {
+      return { start: 12 * 60 + 30, end: 17 * 60 };
+    }
+    if (descriptor.includes('f2f') || descriptor.includes('face to face')) {
+      return { start: 7 * 60 + 30, end: 15 * 60 + 30 };
+    }
+
+    // Unlabelled manual assignments stay in their original school-day band.
+    if (range.start < 12 * 60) return { start: 7 * 60 + 30, end: 12 * 60 };
+    if (range.start < 15 * 60 + 30) return { start: 12 * 60 + 30, end: 17 * 60 };
+    return { start: 15 * 60 + 30, end: 19 * 60 };
+  }
+
   function findSuggestion(candidateInput, entries, excludeId) {
     const candidate = normalizeRecord(candidateInput);
     const range = recordRange(candidate);
     if (!range || candidate.status !== 'active') return null;
     const duration = range.end - range.start;
-    const dayOrder = [candidate.day].concat(SCHOOL_DAYS.filter((day) => day !== candidate.day));
-    const increments = [];
-    for (let offset = 15; offset <= 12 * 60; offset += 15) {
-      increments.push(offset, -offset);
-    }
+    const bounds = suggestionBounds(candidate, range);
 
-    for (const day of dayOrder) {
-      const bases = day === candidate.day ? increments : [0].concat(increments);
-      for (const offset of bases) {
-        const start = range.start + offset;
+    // Chronological first-fit is intentional: Day 1 is exhausted before Day 2,
+    // and an earlier valid start always wins over a later one. Existing active
+    // records remain immutable blockers through findConflicts.
+    for (const day of SCHOOL_DAYS) {
+      for (let start = bounds.start; start + duration <= bounds.end; start += 15) {
         const end = start + duration;
-        if (start < 7 * 60 + 30 || end > 19 * 60) continue;
         const suggested = { ...candidate, day, start_time: formatInputTime(start), end_time: formatInputTime(end) };
         if (findConflicts(suggested, entries, excludeId).length === 0) return suggested;
       }
