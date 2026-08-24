@@ -300,6 +300,18 @@
     {
       "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
       "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 5 (FACE TO FACE)",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+      "subject": "MAPEH"
     }
   ],
   "teacher_relinks": [
@@ -974,6 +986,204 @@
       "from_start_m": 830,
       "to_day": 3,
       "to_start_m": 830
+    },
+    {
+      "id": "exam_130",
+      "section": "GRADE 11 (FACE TO FACE)",
+      "subject": "Gen Bio 1",
+      "from_day": 1,
+      "from_start_m": 625,
+      "to_day": 3,
+      "to_start_m": 480
+    },
+    {
+      "id": "exam_68",
+      "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+      "subject": "GMRC",
+      "from_day": 1,
+      "from_start_m": 760,
+      "to_day": 1,
+      "to_start_m": 690
+    },
+    {
+      "id": "exam_64",
+      "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 1,
+      "from_start_m": 760,
+      "to_day": 1,
+      "to_start_m": 690
+    },
+    {
+      "id": "exam_3",
+      "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 1,
+      "from_start_m": 910,
+      "to_day": 1,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_28",
+      "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 1,
+      "from_start_m": 980,
+      "to_day": 3,
+      "to_start_m": 1050
+    },
+    {
+      "id": "exam_15",
+      "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 1,
+      "from_start_m": 1050,
+      "to_day": 2,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_569",
+      "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+      "subject": "Social Science",
+      "from_day": 2,
+      "from_start_m": 480,
+      "to_day": 2,
+      "to_start_m": 625
+    },
+    {
+      "id": "exam_240",
+      "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+      "subject": "Qur'an",
+      "from_day": 2,
+      "from_start_m": 625,
+      "to_day": 2,
+      "to_start_m": 480
+    },
+    {
+      "id": "exam_142",
+      "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+      "subject": "Hadith",
+      "from_day": 2,
+      "from_start_m": 810,
+      "to_day": 1,
+      "to_start_m": 810
+    },
+    {
+      "id": "exam_161",
+      "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+      "subject": "Arabic",
+      "from_day": 2,
+      "from_start_m": 830,
+      "to_day": 2,
+      "to_start_m": 690
+    },
+    {
+      "id": "exam_332",
+      "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+      "subject": "Math",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 2,
+      "to_start_m": 690
+    },
+    {
+      "id": "exam_570",
+      "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+      "subject": "Social Studies",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 2,
+      "to_start_m": 690
+    },
+    {
+      "id": "exam_177",
+      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+      "subject": "Arabic",
+      "from_day": 2,
+      "from_start_m": 980,
+      "to_day": 2,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_258",
+      "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+      "subject": "Arabic",
+      "from_day": 2,
+      "from_start_m": 980,
+      "to_day": 4,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_259",
+      "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+      "subject": "SHAF",
+      "from_day": 2,
+      "from_start_m": 1050,
+      "to_day": 1,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_159",
+      "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+      "subject": "Arabic",
+      "from_day": 3,
+      "from_start_m": 830,
+      "to_day": 3,
+      "to_start_m": 690
+    },
+    {
+      "id": "exam_288",
+      "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+      "subject": "Hadith",
+      "from_day": 3,
+      "from_start_m": 910,
+      "to_day": 3,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_309",
+      "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+      "subject": "SHAF",
+      "from_day": 3,
+      "from_start_m": 980,
+      "to_day": 2,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_456",
+      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+      "subject": "Arabic",
+      "from_day": 4,
+      "from_start_m": 760,
+      "to_day": 4,
+      "to_start_m": 690
+    },
+    {
+      "id": "exam_450",
+      "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+      "subject": "GMRC",
+      "from_day": 4,
+      "from_start_m": 910,
+      "to_day": 3,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_446",
+      "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 4,
+      "from_start_m": 910,
+      "to_day": 4,
+      "to_start_m": 690
+    },
+    {
+      "id": "exam_464",
+      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+      "subject": "Makabansa",
+      "from_day": 4,
+      "from_start_m": 910,
+      "to_day": 4,
+      "to_start_m": 830
     }
   ],
   "teacher_accommodations": [
@@ -1003,9 +1213,9 @@
       "result": "Canonical teacher name corrected to Ustadha Hainur across exam outputs"
     }
   ],
-  "final_exam_count": 586,
+  "final_exam_count": 589,
   "duration_counts": {
-    "60": 561,
+    "60": 564,
     "120": 25
   },
   "teacher_count": 53

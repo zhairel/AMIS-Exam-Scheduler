@@ -40,11 +40,18 @@ STANDARD_SLOTS = {
         (625, 685, "10:25 AM", "11:25 AM"),
     ],
     "ODL_1": [
+        # Extra early first-shift capacity is required for strict anti-conflict:
+        # Ustadha Hainur has 21 official duties while the former four-day slot
+        # grid could accommodate only 20 non-overlapping teacher assignments.
+        (690, 750, "11:30 AM", "12:30 PM"),
         (760, 820, "12:40 PM", "01:40 PM"),
         (830, 890, "01:50 PM", "02:50 PM"),
         (910, 970, "03:10 PM", "04:10 PM"),
     ],
     "ODL_2": [
+        # Extra early second-shift capacity keeps 13 official Hainur duties
+        # conflict-free without extending anyone beyond the 6:30 PM dismissal.
+        (830, 890, "01:50 PM", "02:50 PM"),
         (910, 970, "03:10 PM", "04:10 PM"),
         (980, 1040, "04:20 PM", "05:20 PM"),
         (1050, 1110, "05:30 PM", "06:30 PM"),
@@ -196,6 +203,20 @@ def is_grade11(record):
 def section_contains(record, *tokens):
     name = clean(record.get("section_name") or record.get("section")).upper()
     return all(token.upper() in name for token in tokens)
+
+
+def infer_gender(record):
+    """Return the cohort gender encoded by the official section identity."""
+    section = clean(record.get("section_name") or record.get("section")).upper()
+    if re.search(r"\bGIRLS?\b|\bFEMALES?\b", section):
+        return "FEMALE"
+    if re.search(r"\bBOYS?\b|\bMALES?\b", section):
+        return "MALE"
+    if re.search(r"\bMIX(?:ED)?\b|\bCO[ -]?ED\b", section):
+        return "MIXED"
+    if clean(record.get("modality")).upper() == "F2F" or clean(record.get("shift")).upper() == "F2F":
+        return "MIXED"
+    return ""
 
 
 def build_official_teacher_lookup(class_sections):
@@ -351,15 +372,20 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
         if ensure_subject(records, section["section_id"], "MAPEH", "Teacher Halnaisa"):
             additions.append({"section": section["section_name"], "subject": "MAPEH"})
 
-    # Clarified item 22: Grade 5 Al Harith and Mus'ab need MAPEH under
-    # their official subject teacher, Teacher Norhydie.
+    # Clarified items 22, 25, and 26: these five Grade 5 sections need
+    # MAPEH under the exact teacher assigned in the official class schedule.
+    requested_grade5_mapeh = {
+        "sec_grade_5_face_to_face": "Teacher Keychell",
+        "sec_grade_5_hamza_ibn_abdul_1st_shift": "Teacher Keychell",
+        "sec_grade_5_muhammad_ibn_maslamah_1st_shift": "Teacher Keychell",
+        "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift": "Teacher Norhydie",
+        "sec_grade_5_al_harith_bin_awf_2nd_shift": "Teacher Norhydie",
+    }
     for section in class_sections:
-        if section.get("grade_level") != "Grade 5":
+        teacher = requested_grade5_mapeh.get(section.get("section_id"))
+        if not teacher:
             continue
-        upper_name = section["section_name"].upper()
-        if not any(token in upper_name for token in ("AL HARITH", "MUS'AB")):
-            continue
-        if ensure_subject(records, section["section_id"], "MAPEH", "Teacher Norhydie"):
+        if ensure_subject(records, section["section_id"], "MAPEH", teacher):
             additions.append({"section": section["section_name"], "subject": "MAPEH"})
 
     # Re-link every exam with an exact section+subject teacher from the official class schedule.
@@ -384,6 +410,7 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
             record["teacher_status"] = "VERIFIED"
         else:
             unresolved.append({"section": record["section_name"], "subject": record["subject"]})
+        record["gender"] = infer_gender(record)
 
     # IDs for additions follow the existing sequence; original IDs never change.
     next_id = max(int(re.search(r"(\d+)$", r["id"]).group(1)) for r in source_records if r.get("id")) + 1
@@ -413,7 +440,9 @@ def is_fixed_g11_f2f_biology(record):
 def fixed_position(record):
     if record.get("id") in HAINUR_DAY4_FIXED_POSITIONS:
         return HAINUR_DAY4_FIXED_POSITIONS[record["id"]]
-    if is_fixed_suhayb_biology(record) or is_fixed_g11_f2f_biology(record):
+    # Keep Suhayb Biology on its requested Wednesday slot. Grade 11 F2F Biology
+    # may move when needed so the shared official teacher is never double-booked.
+    if is_fixed_suhayb_biology(record):
         return 1, 625
     if section_contains(record, "GRADE 12", "SUHAYB") and subject_key(record["subject"]) == "pe_12":
         return 2, 480
@@ -446,12 +475,6 @@ def candidate_positions(record):
             end_m = slots[start_index + span - 1][1]
             if record.get("teacher_id") in EARLY_FINISH_TEACHERS and end_m > 990:
                 continue
-            if (
-                record.get("teacher_id") == "tchr_hainur"
-                and record.get("id") not in HAINUR_DAY4_FIXED_POSITIONS
-                and day_number == 4
-            ):
-                continue
             fixed = fixed_position(record)
             if fixed and (day_number, start_m) != fixed:
                 continue
@@ -474,6 +497,7 @@ def solve_minimal_changes(records):
     variables = {}
     candidates_by_record = {}
     section_slot_vars = defaultdict(list)
+    cohort_slot_vars = defaultdict(list)
     objective_terms = []
 
     for index, record in enumerate(records):
@@ -488,6 +512,13 @@ def solve_minimal_changes(records):
 
             for occupied_slot in range(candidate["start_index"], candidate["end_index"] + 1):
                 section_slot_vars[(record["section_id"], candidate["day"], occupied_slot)].append(var)
+                cohort_identity = (
+                    clean(record.get("grade_level") or record.get("grade")),
+                    clean(record.get("modality")),
+                    clean(record.get("section_name") or record.get("section")),
+                    infer_gender(record) or "NONE",
+                )
+                cohort_slot_vars[(cohort_identity, candidate["day"], occupied_slot)].append(var)
 
             if record.get("_added"):
                 cost = (candidate["day"] - 1) * 20 + candidate["start_index"] * 3
@@ -505,10 +536,13 @@ def solve_minimal_changes(records):
 
     for vars_at_slot in section_slot_vars.values():
         model.AddAtMostOne(vars_at_slot)
+    for vars_at_slot in cohort_slot_vars.values():
+        model.AddAtMostOne(vars_at_slot)
 
-    # A teacher cannot cover overlapping exams. The sole general exception is a
-    # synchronized cohort: same grade, subject, shift, and exact time. The Suhayb
-    # Biology + Grade 11 F2F Biology pairing is also explicitly requested.
+    # Absolute anti-conflict rule: a teacher can cover only one exam at a time.
+    # There are no same-grade, same-subject, shared-cohort, modality, or gender
+    # exceptions. Parallel exams remain valid only when they have different
+    # assigned teachers and different section/cohort identities.
     records_by_teacher = defaultdict(list)
     for index, record in enumerate(records):
         records_by_teacher[record["teacher_id"]].append(index)
@@ -518,15 +552,6 @@ def solve_minimal_changes(records):
             left_record = records[left_index]
             for right_index in teacher_records[left_pos + 1:]:
                 right_record = records[right_index]
-                explicit_shared_biology = (
-                    (is_fixed_suhayb_biology(left_record) and is_fixed_g11_f2f_biology(right_record))
-                    or (is_fixed_suhayb_biology(right_record) and is_fixed_g11_f2f_biology(left_record))
-                )
-                same_cohort = (
-                    subject_key(left_record["subject"]) == subject_key(right_record["subject"])
-                    and clean(left_record.get("grade_level")) == clean(right_record.get("grade_level"))
-                    and clean(left_record.get("shift")) == clean(right_record.get("shift"))
-                )
                 for left_candidate_index, left_candidate in enumerate(candidates_by_record[left_index]):
                     for right_candidate_index, right_candidate in enumerate(candidates_by_record[right_index]):
                         if left_candidate["day"] != right_candidate["day"]:
@@ -536,20 +561,6 @@ def solve_minimal_changes(records):
                             or left_candidate["start_m"] >= right_candidate["end_m"]
                         )
                         if not overlaps:
-                            continue
-                        exact_same_time = (
-                            left_candidate["start_m"] == right_candidate["start_m"]
-                            and left_candidate["end_m"] == right_candidate["end_m"]
-                        )
-                        reported_hainur_conflict = {
-                            left_record.get("id"), right_record.get("id")
-                        } == {"exam_159", "exam_161"}
-                        shared_cohort_allowed = (
-                            not reported_hainur_conflict
-                            and same_cohort
-                            and exact_same_time
-                        )
-                        if explicit_shared_biology or shared_cohort_allowed:
                             continue
                         model.Add(
                             variables[(left_index, left_candidate_index)]

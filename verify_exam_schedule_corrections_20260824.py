@@ -35,10 +35,11 @@ def main():
     with open(os.path.join(BASE_DIR, "class_schedules_data.json"), encoding="utf-8") as handle:
         class_sections = json.load(handle)
 
-    assert len(records) == 586, f"Expected 586 final exams, got {len(records)}"
-    assert Counter(record["duration_minutes"] for record in records) == Counter({60: 561, 120: 25})
+    assert len(records) == 589, f"Expected 589 final exams, got {len(records)}"
+    assert Counter(record["duration_minutes"] for record in records) == Counter({60: 564, 120: 25})
     assert all(record["slots_spanned"] == (2 if record["duration_minutes"] == 120 else 1) for record in records)
     assert len({record["id"] for record in records}) == len(records)
+    assert all(record.get("gender", "") == correction.infer_gender(record) for record in records)
     subject_counts = Counter((record["section_id"], record["subject_id"]) for record in records)
     repeated_subjects = {key: count for key, count in subject_counts.items() if count > 1}
     assert repeated_subjects == {("sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix", "subj_filipino"): 2}
@@ -62,9 +63,7 @@ def main():
         "Grade 11 F2F General Biology 1 exam",
     )
     assert (suhayb_bio["day_number"], suhayb_bio["start_m"], suhayb_bio["end_m"]) == (1, 625, 685)
-    assert (suhayb_bio["day_number"], suhayb_bio["start_m"], suhayb_bio["end_m"]) == (
-        grade11_f2f_bio["day_number"], grade11_f2f_bio["start_m"], grade11_f2f_bio["end_m"]
-    )
+    assert not overlaps(suhayb_bio, grade11_f2f_bio), "Biology teacher remains double-booked"
 
     suhayb_pe = get_one(
         records,
@@ -154,8 +153,8 @@ def main():
 
     talha_arabic = by_id["exam_159"]
     amr_arabic = by_id["exam_161"]
-    assert (talha_arabic["day_number"], talha_arabic["start_m"]) == (3, 830)
-    assert (amr_arabic["day_number"], amr_arabic["start_m"]) == (2, 830)
+    assert (talha_arabic["day_number"], talha_arabic["start_m"]) == (3, 690)
+    assert (amr_arabic["day_number"], amr_arabic["start_m"]) == (2, 690)
 
     hainur_records = [record for record in records if record["teacher_id"] == "tchr_hainur"]
     assert len(hainur_records) == 21
@@ -235,11 +234,45 @@ def main():
     grade5_requested_mapeh = [
         record for record in records
         if record["grade_level"] == "Grade 5"
-        and any(token in record["section_name"].upper() for token in ("AL HARITH", "MUS'AB"))
+        and record["section_id"] in {
+            "sec_grade_5_face_to_face",
+            "sec_grade_5_hamza_ibn_abdul_1st_shift",
+            "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
+            "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
+            "sec_grade_5_al_harith_bin_awf_2nd_shift",
+        }
         and correction.subject_key(record["subject"]) == "mapeh"
     ]
-    assert len(grade5_requested_mapeh) == 2
-    assert all(record["teacher_id"] == "tchr_norhydie" for record in grade5_requested_mapeh)
+    assert len(grade5_requested_mapeh) == 5
+    grade5_mapeh_by_section = {record["section_id"]: record for record in grade5_requested_mapeh}
+    assert grade5_mapeh_by_section["sec_grade_5_face_to_face"]["teacher_id"] == "tchr_keychell"
+    assert grade5_mapeh_by_section["sec_grade_5_hamza_ibn_abdul_1st_shift"]["teacher_id"] == "tchr_keychell"
+    assert grade5_mapeh_by_section["sec_grade_5_muhammad_ibn_maslamah_1st_shift"]["teacher_id"] == "tchr_keychell"
+    assert grade5_mapeh_by_section["sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift"]["teacher_id"] == "tchr_norhydie"
+    assert grade5_mapeh_by_section["sec_grade_5_al_harith_bin_awf_2nd_shift"]["teacher_id"] == "tchr_norhydie"
+
+    gmrc2_saeed = get_one(
+        records,
+        lambda record: section_has(record, "GRADE 2", "SAEED")
+        and correction.subject_key(record["subject"]) == "gmrc",
+        "Grade 2 Saeed GMRC exam",
+    )
+    hadith_k2_uthman = get_one(
+        records,
+        lambda record: section_has(record, "KINDER 2", "UTHMAN")
+        and correction.subject_key(record["subject"]) == "hadith",
+        "Kinder 2 Uthman Hadith exam",
+    )
+    arabic12_f2f = get_one(
+        records,
+        lambda record: record["grade_level"] == "Grade 12"
+        and record["modality"] == "F2F"
+        and correction.subject_key(record["subject"]) == "arabic",
+        "Grade 12 F2F Arabic exam",
+    )
+    assert gmrc2_saeed["teacher_id"] == "tchr_saliha"
+    assert hadith_k2_uthman["teacher_id"] == "tchr_saliha"
+    assert arabic12_f2f["teacher_id"] == "tchr_mamonas"
 
     official_lookup = correction.build_official_teacher_lookup(class_sections)
     unmatched = []
@@ -268,20 +301,26 @@ def main():
             for right in teacher_records[index + 1:]:
                 if not overlaps(left, right):
                     continue
-                explicit_biology = (
-                    (correction.is_fixed_suhayb_biology(left) and correction.is_fixed_g11_f2f_biology(right))
-                    or (correction.is_fixed_suhayb_biology(right) and correction.is_fixed_g11_f2f_biology(left))
-                )
-                same_cohort = (
-                    correction.subject_key(left["subject"]) == correction.subject_key(right["subject"])
-                    and left["grade_level"] == right["grade_level"]
-                    and left["shift"] == right["shift"]
-                    and left["start_m"] == right["start_m"]
-                    and left["end_m"] == right["end_m"]
-                )
-                if not explicit_biology and not same_cohort:
-                    teacher_conflicts.append((left["id"], right["id"]))
+                teacher_conflicts.append((left["id"], right["id"]))
     assert not teacher_conflicts, f"Teacher conflicts: {teacher_conflicts[:10]}"
+
+    # Explicit cohort identity check: grade + modality + section + gender.
+    # This supplements section_id validation and guards future imports whose IDs
+    # may change while the visible cohort identity remains the same.
+    by_cohort_day = defaultdict(list)
+    for record in records:
+        cohort_key = (
+            record["grade_level"],
+            record["modality"],
+            record["section_name"],
+            record.get("gender") or "NONE",
+            record["day_number"],
+        )
+        by_cohort_day[cohort_key].append(record)
+    for cohort_records in by_cohort_day.values():
+        for index, left in enumerate(cohort_records):
+            for right in cohort_records[index + 1:]:
+                assert not overlaps(left, right), f"Cohort conflict: {left['id']} / {right['id']}"
 
     with open(os.path.join(BASE_DIR, "options_exam_data.json"), encoding="utf-8") as handle:
         options = json.load(handle)
@@ -301,11 +340,11 @@ def main():
     assert workbook.active.max_row == len(records) + 1
     workbook.close()
 
-    print("PASS: 586 official exam records")
-    print("PASS: 561 x 60-minute and 25 x 120-minute exams")
+    print("PASS: 589 official exam records")
+    print("PASS: 564 x 60-minute and 25 x 120-minute exams")
     print("PASS: all requested removals, additions, moves, and teacher corrections")
     print("PASS: exact official section+subject teacher linkage")
-    print("PASS: zero section conflicts and zero unapproved teacher conflicts")
+    print("PASS: zero teacher, section, and grade/modality/section/gender cohort conflicts")
     print("PASS: JSON, JS source, options, teacher tracking, CSV, and XLSX synchronized")
 
 

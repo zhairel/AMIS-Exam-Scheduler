@@ -1087,7 +1087,7 @@ html, body {
     </button>
   </div>
 
-  <div class="badge-anti-conflict-top">
+  <div class="badge-anti-conflict-top" id="antiConflictBadge">
     <span style="color:#059669; font-weight:900;">✓</span> Anti-Conflict Guard Active: 0 Conflicts
   </div>
 </nav>
@@ -5418,14 +5418,15 @@ html, body {
 
   function getExamGenderChip(exam) {
     const sectionLabel = `${exam.section_name || ''} ${exam.section || ''}`.toUpperCase();
+    const explicitGender = String(exam.gender || '').toUpperCase();
 
-    if (/\bGIRLS?\b|\bFEMALES?\b/.test(sectionLabel)) {
+    if (explicitGender === 'FEMALE' || /\bGIRLS?\b|\bFEMALES?\b/.test(sectionLabel)) {
       return { label: 'Female', className: 'gender-chip-female' };
     }
-    if (/\bBOYS?\b|\bMALES?\b/.test(sectionLabel)) {
+    if (explicitGender === 'MALE' || /\bBOYS?\b|\bMALES?\b/.test(sectionLabel)) {
       return { label: 'Male', className: 'gender-chip-male' };
     }
-    if (/\bMIX(?:ED)?\b|\bCO[ -]?ED\b/.test(sectionLabel)) {
+    if (explicitGender === 'MIXED' || /\bMIX(?:ED)?\b|\bCO[ -]?ED\b/.test(sectionLabel)) {
       return { label: 'Mixed', className: 'gender-chip-mixed' };
     }
 
@@ -5494,6 +5495,42 @@ html, body {
     return filtered.filter(section => section.grade_level === selectedGrade);
   }
 
+  function strictScheduleConflicts() {
+    const conflicts = [];
+    const overlaps = (left, right) =>
+      Number(left.day_number) === Number(right.day_number)
+      && Number(left.start_m) < Number(right.end_m)
+      && Number(right.start_m) < Number(left.end_m);
+
+    for (let leftIndex = 0; leftIndex < EXAM_RECORDS.length; leftIndex++) {
+      const left = EXAM_RECORDS[leftIndex];
+      for (let rightIndex = leftIndex + 1; rightIndex < EXAM_RECORDS.length; rightIndex++) {
+        const right = EXAM_RECORDS[rightIndex];
+        if (!overlaps(left, right)) continue;
+
+        const sameTeacher = left.teacher_id && left.teacher_id === right.teacher_id;
+        const sameCohort =
+          left.grade_level === right.grade_level
+          && left.modality === right.modality
+          && (left.section_id || left.section_name) === (right.section_id || right.section_name)
+          && String(left.gender || 'NONE') === String(right.gender || 'NONE');
+        if (sameTeacher || sameCohort) conflicts.push([left.id, right.id]);
+      }
+    }
+    return conflicts;
+  }
+
+  function updateAntiConflictBadge() {
+    const badge = document.getElementById('antiConflictBadge');
+    if (!badge) return;
+    const conflictCount = strictScheduleConflicts().length;
+    const isClear = conflictCount === 0;
+    badge.innerHTML = `<span style="color:${isClear ? '#059669' : '#dc2626'}; font-weight:900;">${isClear ? '✓' : '!'}</span> Anti-Conflict Guard Active: ${conflictCount} Conflict${conflictCount === 1 ? '' : 's'}`;
+    badge.style.color = isClear ? '#047857' : '#b91c1c';
+    badge.style.background = isClear ? '#ecfdf5' : '#fef2f2';
+    badge.style.borderColor = isClear ? '#a7f3d0' : '#fecaca';
+  }
+
   async function init() {
     try {
       const sResp = await fetch('class_schedules_data.json?v=' + Date.now());
@@ -5519,6 +5556,7 @@ html, body {
       if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
     }
 
+    updateAntiConflictBadge();
     switchTab('SECTION');
   }
 
@@ -5780,26 +5818,28 @@ html, body {
         ];
       } else if (isODL1) {
         timeRows = [
+          { time: '11:30 AM – 12:30 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
           { time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
-          { time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
+          { time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
           { time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
-          { time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
+          { time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 3 },
           { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION AND SALAH BREAK' },
-          { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3 }
+          { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 4 }
         ];
         if (isSHS) {
           timeRows.push({ time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' });
-          timeRows.push({ time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 4 });
+          timeRows.push({ time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 5 });
         }
         timeRows.push({ time: isSHS ? '05:20 PM' : '04:10 PM', mins: '--', type: 'break', label: 'DISMISSAL' });
       } else if (isODL2) {
         timeRows = [
+          { time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
           { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'GENERAL ASSEMBLY & SALAH BREAK' },
-          { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
+          { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
           { time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
-          { time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
+          { time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 3 },
           { time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
-          { time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_num: 3 },
+          { time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_num: 4 },
           { time: '06:30 PM', mins: '--', type: 'break', label: 'DISMISSAL' }
         ];
       }
@@ -5963,12 +6003,16 @@ html, body {
   // -------------------------------------------------------------
   // TAB 2: FACULTY EXAM TIMETABLES
   // -------------------------------------------------------------
+  function examCountForTeacher(teacherId) {
+    return EXAM_RECORDS.filter(exam => exam.teacher_id === teacherId).length;
+  }
+
   function renderFacultyToolbar(targetTeacherId) {
-    const teachersWithExams = FACULTY_ROSTER_DATA.filter(t => t.total_exams > 0);
+    const teachersWithExams = FACULTY_ROSTER_DATA.filter(t => examCountForTeacher(t.id) > 0);
     let optionsHtml = '<option value="ALL_FACULTY">All Staff / Faculty (Print All Timetables)</option>';
     teachersWithExams.forEach(t => {
       const isSel = (targetTeacherId && t.id === targetTeacherId) ? 'selected' : '';
-      optionsHtml += `<option value="${t.id}" ${isSel}>${esc(t.name)} (${esc(t.department)} • ${t.total_exams} Exams)</option>`;
+      optionsHtml += `<option value="${t.id}" ${isSel}>${esc(t.name)} (${esc(t.department)} • ${examCountForTeacher(t.id)} Exams)</option>`;
     });
 
     toolbarControls.innerHTML = `
@@ -5990,7 +6034,7 @@ html, body {
   }
 
   function renderFacultyView(selectedTid = 'ALL_FACULTY') {
-    let targetTeachers = FACULTY_ROSTER_DATA.filter(t => t.total_exams > 0);
+    let targetTeachers = FACULTY_ROSTER_DATA.filter(t => examCountForTeacher(t.id) > 0);
     if (selectedTid && selectedTid !== 'ALL_FACULTY') {
       targetTeachers = targetTeachers.filter(t => t.id === selectedTid);
     }
@@ -6007,6 +6051,7 @@ html, body {
       { time: '10:00 AM – 10:25 AM', mins: '25 min.', type: 'break', label: 'RECESS' },
       { time: '10:25 AM – 11:25 AM', mins: '60 min.', type: 'exam', slot_num: 3 },
       { time: '11:25 AM', mins: '--', type: 'break', label: 'FACE TO FACE DISMISSAL' },
+      { time: '11:30 AM – 12:30 PM', mins: '60 min.', type: 'exam', slot_num: 1, shift_tag: 'ODL1' },
       { time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
       { time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1, shift_tag: 'ODL1' },
       { time: '01:30 PM – 02:30 PM', mins: '60 min.', type: 'exam', slot_num: 1, shift_tag: 'K2_1ST' },
@@ -6030,7 +6075,7 @@ html, body {
       const tExams = EXAM_RECORDS.filter(e => e.teacher_id === t.id);
       const teacherName = t.name;
       const teacherDept = t.department;
-      const examDutyCount = t.total_exams;
+      const examDutyCount = tExams.length;
 
       fullHtml += `
         <div class="timetable-sheet" id="sheet_${t.id}">
@@ -6237,7 +6282,7 @@ html, body {
                   <span class="badge-conflict-free">✓ 0 Conflicts</span>
                 </div>
 
-                <div class="assigned-subjects-title">Assigned Subjects &amp; Load (${t.total_classes} Classes/wk • ${t.total_exams} Exams):</div>
+                <div class="assigned-subjects-title">Assigned Subjects &amp; Load (${t.total_classes} Classes/wk • ${examCountForTeacher(t.id)} Exams):</div>
                 <div class="subject-pill-list">
                   ${t.assignments.length > 0 ? t.assignments.map(a => `
                     <span class="subj-tag" title="${a.section} (${a.shift})">
@@ -6251,7 +6296,7 @@ html, body {
 
               <div class="faculty-actions">
                 <a href="class-schedule.html?view=teacher&tchr=${t.id}" class="btn-link-action btn-link-sched">Weekly Schedule</a>
-                <button onclick="switchTab('FACULTY', '${t.id}')" class="btn-link-action btn-link-exam">Exam Timetable (${t.total_exams})</button>
+                <button onclick="switchTab('FACULTY', '${t.id}')" class="btn-link-action btn-link-exam">Exam Timetable (${examCountForTeacher(t.id)})</button>
               </div>
             </div>
           `).join('') : '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#64748b; font-weight:700;">No faculty members matched your search.</div>'}
