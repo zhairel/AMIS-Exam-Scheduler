@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/class-schedule/manage.css?v=20260821_4">
-  <link rel="stylesheet" href="/class-schedule/manage-page.css?v=20260824_5">
+  <link rel="stylesheet" href="/class-schedule/manage-page.css?v=20260824_6">
 </head>
 <body class="manage-pending">
   <header class="manage-topbar">
@@ -57,7 +57,7 @@
       <div class="teacher-calendar-panel">
         <div class="teacher-calendar-heading">
           <div><span class="calendar-eyebrow">SELECTED CLASS</span><h2 id="classCalendarTitle">Class Weekly Calendar</h2><p id="selectedClassMeta">Choose a grade and section.</p></div>
-          <div class="calendar-heading-actions"><button id="classLockButton" class="calendar-lock-button" type="button" disabled>Lock Schedule</button><button id="mergeModeButton" class="calendar-merge-button" type="button">Merge Cells</button><a id="classCreateLink" class="calendar-create" href="/class-schedule-manage/create">＋ Add Subject / Event</a></div>
+          <div class="calendar-heading-actions"><button id="classLockButton" class="calendar-lock-button" type="button" disabled>Lock Schedule</button><button id="autoMergeButton" class="calendar-auto-merge-button" type="button" disabled>Auto Merge Same</button><button id="mergeModeButton" class="calendar-merge-button" type="button">Merge Cells</button><a id="classCreateLink" class="calendar-create" href="/class-schedule-manage/create">＋ Add Subject / Event</a></div>
         </div>
         <div id="classLockNotice" class="class-lock-notice" hidden><strong>Schedule locked after review.</strong><span>Unlock this class before adding, editing, deleting, merging, or unmerging cells.</span></div>
         <div id="mergeToolbar" class="merge-toolbar" hidden><span id="mergeSelectionSummary">Choose a highlighted cell, then select its matching neighbor.</span><div><button id="mergeSelectedButton" type="button" disabled>Merge Selected</button><button id="cancelMergeButton" type="button">Cancel</button></div></div>
@@ -118,6 +118,6 @@
 
   <script src="/class-schedule/schedule-core.js?v=20260824_1"></script>
   <script src="/class-schedule/admin-guard.js?v=20260821_3"></script>
-  <script src="/class-schedule/manage-page.js?v=20260824_3"></script>
+  <script src="/class-schedule/manage-page.js?v=20260824_4"></script>
 </body>
 </html>

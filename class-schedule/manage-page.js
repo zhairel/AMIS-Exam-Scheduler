@@ -41,6 +41,7 @@
   const personnelRows = document.getElementById('personnelScheduleRows');
   const directoryList = document.getElementById('teacherDirectoryList');
   const directorySearch = document.getElementById('teacherDirectorySearch');
+  const autoMergeButton = document.getElementById('autoMergeButton');
   const mergeModeButton = document.getElementById('mergeModeButton');
   const mergeToolbar = document.getElementById('mergeToolbar');
   const mergeSelectedButton = document.getElementById('mergeSelectedButton');
@@ -379,6 +380,25 @@
     return Boolean(record && record._database !== false && record.id && !record.merge_group);
   }
 
+  function workbookMergeGroups(sectionName) {
+    const grouped = new Map();
+    originalEntries.forEach((record) => {
+      if (record.section !== sectionName || !record.merge_group) return;
+      if (!grouped.has(record.merge_group)) grouped.set(record.merge_group, []);
+      grouped.get(record.merge_group).push(record);
+    });
+    return Array.from(grouped.entries()).map(([mergeGroup, expected]) => {
+      const expectedIds = new Set(expected.map((record) => record.id));
+      const databaseRecords = records.filter((record) => expectedIds.has(record.id));
+      const completeRecords = completeClassRecords(sectionName).filter((record) => expectedIds.has(record.id));
+      const currentMergeGroup = completeRecords[0] && completeRecords[0].merge_group;
+      const alreadyMerged = completeRecords.length === expected.length
+        && currentMergeGroup
+        && completeRecords.every((record) => record.merge_group === currentMergeGroup);
+      return { mergeGroup, expected, databaseRecords, alreadyMerged };
+    }).filter((group) => group.databaseRecords.length >= 2 && !group.alreadyMerged);
+  }
+
   function canSelectForMerge(record, classRecords) {
     if (!persistedUnmerged(record)) return false;
     const recordDay = core.SCHOOL_DAYS.indexOf(record.day);
@@ -409,6 +429,9 @@
     classLockButton.classList.toggle('locked', Boolean(lock));
     classLockButton.textContent = lock ? 'Unlock Schedule' : 'Lock Schedule';
     classLockButton.setAttribute('aria-pressed', String(Boolean(lock)));
+    const autoMergeGroups = selected ? workbookMergeGroups(selected.name) : [];
+    autoMergeButton.disabled = !selected || Boolean(lock) || !autoMergeGroups.length;
+    autoMergeButton.textContent = autoMergeGroups.length ? `Auto Merge Same (${autoMergeGroups.length})` : 'Auto Merge Same';
     mergeModeButton.disabled = !selected || Boolean(lock);
     classCreateLink.classList.toggle('locked', Boolean(lock));
     classCreateLink.setAttribute('aria-disabled', String(Boolean(lock)));
@@ -542,6 +565,31 @@
     }
   }
 
+  async function autoMergeWorkbookCells() {
+    const selected = classes.find((item) => item.name === selectedSection);
+    if (!selected || selectedClassLock()) return;
+    const groups = workbookMergeGroups(selected.name);
+    if (!groups.length) {
+      notice('All workbook-defined matching cells are already merged.');
+      renderClassCalendar();
+      return;
+    }
+    const cellCount = groups.reduce((total, group) => total + group.databaseRecords.length, 0);
+    if (!window.confirm(`Auto-merge ${groups.length} matching row${groups.length === 1 ? '' : 's'} (${cellCount} database cells) for ${selected.name}?`)) return;
+    autoMergeButton.disabled = true;
+    autoMergeButton.textContent = 'Auto Merging…';
+    try {
+      for (const group of groups) {
+        await core.setMergeGroup(group.databaseRecords.map((record) => record.id), group.mergeGroup);
+      }
+      await loadRecords();
+      notice(`${groups.length} matching timetable row${groups.length === 1 ? '' : 's'} auto-merged successfully.`);
+    } catch (error) {
+      notice(error.message || 'Unable to auto-merge matching cells. Run the latest Supabase migration first.', true);
+      renderClassCalendar();
+    }
+  }
+
   async function handleUnmerge(event) {
     const button = event.target.closest('[data-action="unmerge-group"]');
     if (!button) return;
@@ -643,6 +691,7 @@
   document.addEventListener('click', handleRemove);
   document.addEventListener('click', handleUnmerge);
   document.querySelectorAll('[data-workspace]').forEach((button) => button.addEventListener('click', () => switchWorkspace(button.dataset.workspace)));
+  autoMergeButton.addEventListener('click', autoMergeWorkbookCells);
   mergeModeButton.addEventListener('click', () => setMergeMode(!mergeMode));
   classLockButton.addEventListener('click', toggleClassLock);
   mergeSelectedButton.addEventListener('click', mergeSelectedCells);

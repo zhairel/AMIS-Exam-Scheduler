@@ -75,7 +75,10 @@ body.manage-pending .manage-shell { visibility: hidden; }
 .calendar-lock-button::before { content: '🔒'; margin-right: 5px; font-size: 9px; }
 .calendar-lock-button.locked { border-color: #b91c1c; color: #fff; background: #b91c1c; }
 .calendar-lock-button.locked::before { content: '🔓'; }
-.calendar-lock-button:disabled, .calendar-merge-button:disabled { opacity: .45; cursor: not-allowed; }
+.calendar-lock-button:disabled, .calendar-auto-merge-button:disabled, .calendar-merge-button:disabled { opacity: .45; cursor: not-allowed; }
+.calendar-auto-merge-button { padding: 8px 11px; border: 1px solid #0284c7; border-radius: 8px; color: #075985; background: #f0f9ff; font-family: inherit; font-size: 10px; font-weight: 850; cursor: pointer; }
+.calendar-auto-merge-button::before { content: '⚡'; margin-right: 5px; font-size: 9px; }
+.calendar-auto-merge-button:not(:disabled):hover { background: #e0f2fe; }
 .calendar-merge-button { padding: 8px 11px; border: 1px solid #059669; border-radius: 8px; color: #047857; background: #ecfdf5; font-family: inherit; font-size: 10px; font-weight: 850; cursor: pointer; }
 .calendar-merge-button.active { color: #fff; background: #047857; }
 .class-lock-notice { display: flex; align-items: center; gap: 8px; margin: -3px 0 12px; padding: 10px 12px; border: 1px solid #fca5a5; border-radius: 9px; color: #991b1b; background: #fff7ed; font-size: 9px; }
