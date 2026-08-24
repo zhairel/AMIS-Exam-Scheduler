@@ -73,6 +73,8 @@ def main():
     registry_by_id = {teacher["id"]: teacher for teacher in correction.TEACHER_REGISTRY}
     normylah_coverage_counts = Counter(record["proctor_id"] for record in normylah_records)
     assert max(normylah_coverage_counts.values()) <= correction.AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
+    assert normylah_coverage_counts["tchr_wardah"] == 2
+    assert normylah_coverage_counts["tchr_ayah"] == 0
     for record in normylah_records:
         proctor = registry_by_id[record["proctor_id"]]
         assert proctor["title"] == "Faculty Member"
@@ -83,10 +85,16 @@ def main():
         )
         assert proctor.get("status", "active") != "inactive"
         assert proctor.get("is_active", True)
-        assert proctor.get("automatic_proctor_eligible", True)
-        assert not correction.clean(proctor.get("leadership_role"))
-        assert record["proctor_id"] != "tchr_wardah"
-        assert record["proctor_pool"] == "ACADEMIC_TEACHER_ONLY"
+        manual_proctor_id = correction.NORMYLAH_MANUAL_PROCTOR_OVERRIDES.get(record["id"])
+        if manual_proctor_id:
+            assert record["proctor_id"] == manual_proctor_id == "tchr_wardah"
+            assert record["proctor_pool"] == "MANUAL_ADMIN_OVERRIDE"
+            assert record["proctor_assignment_source"] == "MANUAL_ADMIN_COVERAGE"
+        else:
+            assert proctor.get("automatic_proctor_eligible", True)
+            assert not correction.clean(proctor.get("leadership_role"))
+            assert record["proctor_id"] != "tchr_wardah"
+            assert record["proctor_pool"] == "ACADEMIC_TEACHER_ONLY"
 
     expected_normylah_positions = {
         "exam_30": (1, 480, 540),
@@ -532,8 +540,11 @@ def main():
     assert len(proctor_assignments) == len(records)
     assert sum(item["replacement_teacher_required"] for item in proctor_assignments) == 12
     assert not any(item["proctor_id"] == "tchr_normylah" for item in proctor_assignments)
+    manual_assignment_ids = set(correction.NORMYLAH_MANUAL_PROCTOR_OVERRIDES)
     assert all(
-        item["proctor_pool"] == "ACADEMIC_TEACHER_ONLY"
+        item["proctor_pool"] == (
+            "MANUAL_ADMIN_OVERRIDE" if item["exam_id"] in manual_assignment_ids else "ACADEMIC_TEACHER_ONLY"
+        )
         for item in proctor_assignments
         if item["replacement_teacher_required"]
     )

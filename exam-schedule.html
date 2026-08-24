@@ -6441,7 +6441,7 @@ html, body {
               const color = getSubjectColor(displayedSubject);
               const genderChip = getExamGenderChip(match);
               const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
-              const isAutomaticProctorCoverage = match.proctor_assignment_source === 'AUTO_ACADEMIC_COVERAGE';
+              const isAutomaticProctorCoverage = Boolean(match.replacement_teacher_required && match.proctor_id);
               let calcRowspan = 1;
 
               if (is120) {

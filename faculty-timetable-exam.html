@@ -1180,7 +1180,7 @@ html, body {
               const cleanSec = cleanSectionName(exam.section_name);
               const cleanShift = formatModalityShift(exam.shift);
               const is120 = exam.duration_minutes >= 90;
-              const isAutomaticProctorCoverage = exam.proctor_assignment_source === 'AUTO_ACADEMIC_COVERAGE';
+              const isAutomaticProctorCoverage = Boolean(exam.replacement_teacher_required && exam.proctor_id);
               let calcRowspan = 1;
 
               if (is120) {
