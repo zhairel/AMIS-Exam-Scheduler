@@ -142,6 +142,28 @@ body {
   box-shadow: 0 0 0 2px #34d399;
 }
 
+.filter-search-input {
+  width: 220px;
+  min-width: 180px;
+  cursor: text;
+}
+
+.filter-search-input::placeholder {
+  color: #64748b;
+  font-weight: 650;
+}
+
+.subject-filter-summary {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #a7f3d0;
+  border-radius: 10px;
+  background: #ecfdf5;
+  color: #065f46;
+  font-size: 12.5px;
+  font-weight: 750;
+}
+
 .btn-action {
   background: #ffffff;
   color: var(--brand-deep);
@@ -814,7 +836,7 @@ html, body {
 
 /* Print Optimization */
 @media print {
-  .top-toolbar, .exam-tabs-bar, .btn-fullscreen, .roster-search-bar {
+  .top-toolbar, .exam-tabs-bar, .btn-fullscreen, .roster-search-bar, .subject-filter-summary {
     display: none !important;
   }
   body {
@@ -5176,6 +5198,8 @@ html, body {
 
   let currentTab = 'SECTION';
   let rosterDept = 'ALL';
+  let sectionSubjectQuery = '';
+  let sectionSubjectSearchTimer = null;
 
   const toolbarControls = document.getElementById('toolbarControls');
   const sheetsContainer = document.getElementById('sheetsContainer');
@@ -5258,6 +5282,29 @@ html, body {
       .replace(/\s+/g, ' ')
       .trim();
     return s;
+  }
+
+  function normalizeSubjectSearch(value) {
+    return String(value || '')
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function subjectMatchesQuery(subject, query) {
+    const normalizedQuery = normalizeSubjectSearch(query);
+    if (!normalizedQuery) return true;
+
+    const normalizedSubject = normalizeSubjectSearch(subject);
+    if (normalizedSubject.includes(normalizedQuery)) return true;
+
+    const queryTokens = normalizedQuery.split(' ').filter(Boolean);
+    if (queryTokens.every(token => normalizedSubject.includes(token))) return true;
+
+    return normalizedSubject.replace(/\s/g, '').includes(normalizedQuery.replace(/\s/g, ''));
   }
 
   async function init() {
@@ -5354,14 +5401,42 @@ html, body {
         </select>
       </div>
 
+      <!-- Subject Search -->
+      <div class="filter-group">
+        <label class="filter-label" for="subjectSearch">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 3a6.5 6.5 0 1 0 3.98 11.64L19.85 21 21 19.85l-6.36-6.37A6.5 6.5 0 0 0 9.5 3zm0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z"/></svg>
+          Subject:
+        </label>
+        <input id="subjectSearch" class="filter-select filter-search-input" type="search" list="subjectOptions" autocomplete="off" placeholder="Search subject..." oninput="onSubjectSearch(this.value)" aria-label="Search exam subject">
+        <datalist id="subjectOptions"></datalist>
+      </div>
+
       <a href="index.html" class="btn-action btn-back" title="Back to Home">
         <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
         Back Home
       </a>
     `;
 
+    const subjectSearch = document.getElementById('subjectSearch');
+    if (subjectSearch) subjectSearch.value = sectionSubjectQuery;
+    populateSubjectOptions();
     populateSectionDropdown();
   }
+
+  function populateSubjectOptions() {
+    const dataList = document.getElementById('subjectOptions');
+    if (!dataList) return;
+
+    const subjects = [...new Set(EXAM_RECORDS.map(e => String(e.subject || '').trim()).filter(Boolean))]
+      .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+    dataList.innerHTML = subjects.map(subject => `<option value="${esc(subject)}"></option>`).join('');
+  }
+
+  window.onSubjectSearch = function(value) {
+    sectionSubjectQuery = value || '';
+    window.clearTimeout(sectionSubjectSearchTimer);
+    sectionSubjectSearchTimer = window.setTimeout(renderSectionView, 120);
+  };
 
   window.onModalityChange = function() {
     const mod = document.getElementById('modalitySelect').value;
@@ -5408,6 +5483,7 @@ html, body {
     const selectedSecId = secSelect ? secSelect.value : 'ALL_GROUP';
     const mod = document.getElementById('modalitySelect') ? document.getElementById('modalitySelect').value : 'ALL';
     const shift = document.getElementById('shiftSelect') ? document.getElementById('shiftSelect').value : 'ALL';
+    const subjectQuery = sectionSubjectQuery.trim();
 
     let targetSections = SECTIONS_DATA;
     if (selectedSecId && selectedSecId !== 'ALL_GROUP') {
@@ -5420,13 +5496,33 @@ html, body {
       }
     }
 
+    if (subjectQuery) {
+      const matchingSectionIds = new Set(
+        EXAM_RECORDS
+          .filter(exam => subjectMatchesQuery(exam.subject, subjectQuery))
+          .map(exam => exam.section_id)
+      );
+      targetSections = targetSections.filter(section => matchingSectionIds.has(section.id));
+    }
+
     if (targetSections.length === 0) {
-      sheetsContainer.innerHTML = '<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">No sections match the current filter.</div>';
+      const message = subjectQuery
+        ? `No subject schedules match “${esc(subjectQuery)}” in the selected grade/section filters.`
+        : 'No sections match the current filter.';
+      sheetsContainer.innerHTML = `<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">${message}</div>`;
       return;
     }
 
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     let fullHtml = '';
+
+    if (subjectQuery) {
+      const targetSectionIds = new Set(targetSections.map(section => section.id));
+      const matchingExamCount = EXAM_RECORDS.filter(exam =>
+        targetSectionIds.has(exam.section_id) && subjectMatchesQuery(exam.subject, subjectQuery)
+      ).length;
+      fullHtml += `<div class="subject-filter-summary" role="status">Showing ${matchingExamCount} matching exam${matchingExamCount === 1 ? '' : 's'} across ${targetSections.length} grade/section table${targetSections.length === 1 ? '' : 's'} for “${esc(subjectQuery)}”.</div>`;
+    }
 
     targetSections.forEach(sec => {
       const isF2F = sec.shift === 'F2F';
@@ -5482,7 +5578,10 @@ html, body {
         ];
       }
 
-      const secExams = EXAM_RECORDS.filter(e => e.section_id === sec.id);
+      const allSecExams = EXAM_RECORDS.filter(e => e.section_id === sec.id);
+      const secExams = subjectQuery
+        ? allSecExams.filter(e => subjectMatchesQuery(e.subject, subjectQuery))
+        : allSecExams;
       const totalSubjectCount = secExams.length;
 
       fullHtml += `
@@ -5499,7 +5598,7 @@ html, body {
           <div class="teacher-banner">
             <span class="teacher-name-title">${esc(sec.section_name.toUpperCase())}</span>
             <div style="display:flex; align-items:center; gap:8px;">
-              <span class="teacher-meta-tag">${esc(sec.department)} • ${esc(sec.shift)} • ${totalSubjectCount} Subjects • ✓ 0 Conflicts</span>
+              <span class="teacher-meta-tag">${esc(sec.department)} • ${esc(sec.shift)} • ${totalSubjectCount} ${subjectQuery ? 'Matching ' : ''}Subject${totalSubjectCount === 1 ? '' : 's'} • ✓ 0 Conflicts</span>
               <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
                 <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
                 <svg class="icon-compress" viewBox="0 0 24 24" style="display:none;"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
@@ -5978,6 +6077,11 @@ html, body {
       }
     }
   });
+
+  // Expose renderers used by inline controls generated above.
+  window.renderSectionView = renderSectionView;
+  window.renderFacultyView = renderFacultyView;
+  window.renderRosterView = renderRosterView;
 
   init();
 })();
