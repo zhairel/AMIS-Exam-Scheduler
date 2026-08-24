@@ -233,6 +233,7 @@
 2,"Thursday, September 3, 2026",2,03:10 PM – 04:10 PM,sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,subj_qur_an,Qur'an,tchr_abdulwahab,Alim Abdulwahab,60
 2,"Thursday, September 3, 2026",4,03:10 PM – 04:10 PM,sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,subj_english,English,tchr_norhaima,Teacher Norhaima,60
 2,"Thursday, September 3, 2026",2,03:10 PM – 04:10 PM,sec_grade_11_2nd_shift_boys,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,subj_mabisang_komunikasyon,Mabisang Komunikasyon,tchr_nadzra,Teacher Nadzra,60
+2,"Thursday, September 3, 2026",3,03:10 PM – 04:10 PM,sec_grade_12_abu_musa_al_ashari,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,subj_mil,MIL,tchr_ethel,Teacher Ethel,60
 2,"Thursday, September 3, 2026",2,03:10 PM – 04:10 PM,sec_grade_2_saeed_ibn_zayd_2nd_shift,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,subj_filipino,Filipino,tchr_zuhora,Teacher Zuhora,60
 2,"Thursday, September 3, 2026",4,03:10 PM – 04:10 PM,sec_grade_3_salman_al_farsi_1st_shift_mix,GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX,Elementary,Grade 3,ODL - 1ST SHIFT,subj_fil3,Fil3,tchr_jenny,Teacher Jenny,60
 2,"Thursday, September 3, 2026",2,03:10 PM – 04:10 PM,sec_grade_3_thabit_ibn_qays_2nd_shift_boys,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,subj_math,Math,tchr_jerlyn,Teacher Jerlyn,60
@@ -260,7 +261,6 @@
 2,"Thursday, September 3, 2026",3,04:20 PM – 05:20 PM,sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,subj_filipino,Filipino,tchr_nadzra,Teacher Nadzra,60
 2,"Thursday, September 3, 2026",4,04:20 PM – 05:20 PM,sec_grade_11_1st_shift_girls,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,subj_gen_bio_1,Gen Bio 1,tchr_rowena,Teacher Rowena,60
 2,"Thursday, September 3, 2026",3,04:20 PM – 06:30 PM,sec_grade_11_2nd_shift_boys,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,subj_gen_math,Gen Math,tchr_jhelyn,Teacher Jhelyn,120
-2,"Thursday, September 3, 2026",4,04:20 PM – 05:20 PM,sec_grade_12_abu_musa_al_ashari,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,subj_mil,MIL,tchr_ethel,Teacher Ethel,60
 2,"Thursday, September 3, 2026",3,04:20 PM – 05:20 PM,sec_grade_2_aasim_ibn_thabit_2nd_shift,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,subj_makabansa,Makabansa,tchr_monisa,Teacher Monisa,60
 2,"Thursday, September 3, 2026",3,04:20 PM – 05:20 PM,sec_grade_2_saeed_ibn_zayd_2nd_shift,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,subj_shaf,SHAF,tchr_abdul_karim,Alim Abdul Karim,60
 2,"Thursday, September 3, 2026",3,04:20 PM – 05:20 PM,sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,subj_filipino,Filipino,tchr_jenny,Teacher Jenny,60
@@ -378,6 +378,7 @@
 3,"Sunday, September 6, 2026",2,03:10 PM – 04:10 PM,sec_grade_1_suhayb_ar_rumi_2nd_shift,GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT),Elementary,Grade 1,ODL - 2ND SHIFT,subj_qur_an,Qur'an,tchr_hainur,Ustadha Hainur,60
 3,"Sunday, September 6, 2026",2,03:10 PM – 04:10 PM,sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,subj_mapeh,MAPEH,tchr_mohaymen,Sir Mohaymen,60
 3,"Sunday, September 6, 2026",4,03:10 PM – 04:10 PM,sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls,GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS,Junior High School,Grade 10,ODL - 1ST SHIFT,subj_arabic,Arabic,tchr_mamonas,Alim Mamonas,60
+3,"Sunday, September 6, 2026",3,03:10 PM – 04:10 PM,sec_grade_12_abu_musa_al_ashari,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,subj_prac_res_2,Prac. Res. 2,tchr_aniah,Teacher Aniah,60
 3,"Sunday, September 6, 2026",2,03:10 PM – 04:10 PM,sec_grade_2_saeed_ibn_zayd_2nd_shift,GRADE 2 - SAEED IBN ZAYD (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,subj_math,Math,tchr_sitti_kauzar,Teacher Sitti Kauzar,60
 3,"Sunday, September 6, 2026",2,03:10 PM – 04:10 PM,sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,subj_arabic,Arabic,tchr_faidh,Ustadh Faidh,60
 3,"Sunday, September 6, 2026",4,03:10 PM – 04:10 PM,sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls,Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS,Elementary,Grade 3,ODL - 1ST SHIFT,subj_makabansa,Makabansa,tchr_zara,Teacher Zara,60
@@ -410,7 +411,6 @@
 3,"Sunday, September 6, 2026",3,04:20 PM – 05:20 PM,sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys,GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS,Junior High School,Grade 10,ODL - 2ND SHIFT,subj_tle,TLE,tchr_angeleni,Teacher Angeleni,60
 3,"Sunday, September 6, 2026",4,04:20 PM – 05:20 PM,sec_grade_11_1st_shift_girls,GRADE 11 (1ST SHIFT GIRLS),Senior High School,Grade 11,ODL - 1ST SHIFT,subj_shaf,SHAF,tchr_samsuddin,Alim Samsuddin,60
 3,"Sunday, September 6, 2026",3,04:20 PM – 05:20 PM,sec_grade_11_2nd_shift_boys,GRADE 11 (2ND SHIFT BOYS),Senior High School,Grade 11,ODL - 2ND SHIFT,subj_ec,EC,tchr_nadzra,Teacher Nadzra,60
-3,"Sunday, September 6, 2026",4,04:20 PM – 05:20 PM,sec_grade_12_abu_musa_al_ashari,GRADE 12 - ABU MUSA AL-ASHARI,Senior High School,Grade 12,ODL - 1ST SHIFT,subj_prac_res_2,Prac. Res. 2,tchr_aniah,Teacher Aniah,60
 3,"Sunday, September 6, 2026",3,04:20 PM – 05:20 PM,sec_grade_2_aasim_ibn_thabit_2nd_shift,GRADE 2 - AASIM IBN THABIT (2ND SHIFT),Elementary,Grade 2,ODL - 2ND SHIFT,subj_shaf,SHAF,tchr_abdul_karim,Alim Abdul Karim,60
 3,"Sunday, September 6, 2026",3,04:20 PM – 05:20 PM,sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix,GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX,Elementary,Grade 3,ODL - 2ND SHIFT,subj_shaf,SHAF,tchr_faidh,Ustadh Faidh,60
 3,"Sunday, September 6, 2026",3,04:20 PM – 05:20 PM,sec_grade_3_thabit_ibn_qays_2nd_shift_boys,GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS,Elementary,Grade 3,ODL - 2ND SHIFT,subj_shaf,SHAF,tchr_ersahad,Ustadh Ersahad,60

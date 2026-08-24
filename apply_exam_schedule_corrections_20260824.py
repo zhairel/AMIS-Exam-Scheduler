@@ -473,6 +473,13 @@ def fixed_position(record):
     # Day 4 Hamza placement above, both transfers remain visible and conflict-free.
     if record.get("id") == "exam_354":
         return 1, 690
+    # Grade 12 Abu Musa correction: the published exam day begins at 12:40 PM.
+    # Keep the single official MIL and Practical Research 2 entries at 03:10 PM;
+    # the old 04:20 PM placement was displayed as a misleading duplicate row.
+    if record.get("id") == "exam_280":
+        return 2, 910
+    if record.get("id") == "exam_420":
+        return 3, 910
     # Elementary GMRC confirmations: Ayyash must begin after the online
     # general assembly, while Saeed and Aasim retain their already-separated
     # Ustadha Saliha schedules.
@@ -815,6 +822,11 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "Ustadha Hainur",
             "request": "Transfer the Grade 5 Muhammad and Hamza SHAF exams from resigned Ustadha Raslina",
             "result": "Muhammad moved to Sep 2 at 11:30 AM and Hamza moved to Sep 7 at 11:30 AM; both now appear in Hainur's faculty timetable with no conflict",
+        },
+        {
+            "teacher": "Grade 11 and Grade 12",
+            "request": "Remove visually duplicated SHS subjects and make Grade 12 Abu Musa begin at 12:40 PM",
+            "result": "SHS cells now render only at their authoritative time; Abu Musa MIL and Practical Research 2 moved from 04:20 PM to 03:10 PM while its 12:40 PM and 120-minute exams remain intact",
         },
         {
             "teacher": "Teacher Aniah",

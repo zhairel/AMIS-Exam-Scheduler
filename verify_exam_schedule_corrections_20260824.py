@@ -72,6 +72,18 @@ def main():
     )
     assert (suhayb_pe["day_number"], suhayb_pe["start_m"]) == (2, 480)
 
+    abu_musa_records = [
+        record for record in records
+        if correction.clean(record.get("section_name") or record.get("section")).upper()
+        == "GRADE 12 - ABU MUSA AL-ASHARI"
+    ]
+    assert len(abu_musa_records) == 9
+    assert len({correction.subject_key(record["subject"]) for record in abu_musa_records}) == 9
+    assert all(record["start_m"] >= 760 for record in abu_musa_records)
+    abu_musa_by_id = {record["id"]: record for record in abu_musa_records}
+    assert abu_musa_by_id["exam_280"]["start_m"] == 910
+    assert abu_musa_by_id["exam_420"]["start_m"] == 910
+
     jhs_sections = sorted({record["section_id"] for record in records if correction.is_jhs(record)})
     assert len(jhs_sections) == 15
     for section_id in jhs_sections:

@@ -5660,6 +5660,27 @@ html, body {
     return normalizedSubject.replace(/\s/g, '').includes(normalizedQuery.replace(/\s/g, ''));
   }
 
+  function scheduleStartLabel(value) {
+    return String(value || '')
+      .split(/\s*[–—-]\s*/)[0]
+      .replace(/\s+/g, ' ')
+      .trim()
+      .toUpperCase();
+  }
+
+  function examStartsAtScheduleRow(exam, rowTime, fallbackSlotNumber) {
+    const examTime = exam && (exam.time_slot || exam.time);
+    const examStart = scheduleStartLabel(examTime);
+    const rowStart = scheduleStartLabel(rowTime);
+
+    // Time is authoritative. SHS numbering begins at 12:40 PM, while the
+    // shared ODL table also contains an 11:30 AM row; comparing slot numbers
+    // first painted the same Grade 11/12 exam in both visual rows.
+    if (examStart && rowStart) return examStart === rowStart;
+
+    return Number(exam && exam.slot_number) === Number(fallbackSlotNumber);
+  }
+
   function getExamGenderChip(exam) {
     const sectionLabel = `${exam.section_name || ''} ${exam.section || ''}`.toUpperCase();
     const explicitGender = String(exam.gender || '').toUpperCase();
@@ -6121,13 +6142,7 @@ html, body {
 
             const match = secExams.find(e => {
               if (e.day_number !== d.day_num && e.short_date !== d.short_date) return false;
-              if (e.slot_number === row.slot_num) return true;
-              if (e.time_slot && e.time_slot.includes('–')) {
-                const sStart = e.time_slot.split('–')[0].trim();
-                const rStart = row.time.split('–')[0].trim();
-                return sStart === rStart;
-              }
-              return false;
+              return examStartsAtScheduleRow(e, row.time, row.slot_num);
             });
 
             if (match) {
@@ -6349,13 +6364,7 @@ html, body {
 
             const match = tExams.find(e => {
               if (e.day_number !== d.day_num && e.short_date !== d.short_date) return false;
-              if (e.time_slot === slot.time || e.time === slot.time) return true;
-              if (e.time_slot && e.time_slot.includes('–')) {
-                const sStart = e.time_slot.split('–')[0].trim();
-                const slStart = slot.time.split('–')[0].trim();
-                return sStart === slStart;
-              }
-              return false;
+              return examStartsAtScheduleRow(e, slot.time, slot.slot_num);
             });
 
             if (match) {
