@@ -8070,7 +8070,7 @@
   },
   {
     "teacher": "Teacher Keychelle",
-    "total_exams": 6,
+    "total_exams": 5,
     "subjects": [
       "Araling Panlipunan",
       "MAPEH",
@@ -8080,13 +8080,12 @@
       "Grade 5",
       "Kinder 2"
     ],
-    "sections_count": 5,
+    "sections_count": 4,
     "sections": [
       "Grade 5 — GRADE 5 (FACE TO FACE)",
       "Grade 5 — GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
       "Grade 5 — GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-      "Kinder 2 — KINDER 2 CLASS SCHEDULE (F2F)",
-      "Kinder 2 — Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)"
+      "Kinder 2 — KINDER 2 CLASS SCHEDULE (F2F)"
     ],
     "modalities": [
       "F2F",
@@ -8094,8 +8093,7 @@
     ],
     "shifts": [
       "F2F",
-      "ODL - 1ST SHIFT",
-      "ODL - 2ND SHIFT"
+      "ODL - 1ST SHIFT"
     ],
     "exams": [
       {
@@ -8124,37 +8122,6 @@
         "gender": "MIXED",
         "subject_id": "subj_mapeh",
         "subject": "MAPEH",
-        "teacher_id": "tchr_keychell",
-        "teacher": "Teacher Keychelle",
-        "duration_minutes": 60,
-        "teacher_status": "VERIFIED"
-      },
-      {
-        "id": "exam_290",
-        "exam_term": "1st Term",
-        "day_number": 1,
-        "date": "Wednesday, September 2, 2026",
-        "short_date": "Sep 2",
-        "day_name": "Wednesday",
-        "slot_number": 2,
-        "slots_spanned": 1,
-        "start_slot_index": 1,
-        "end_slot_index": 1,
-        "start_m": 980,
-        "end_m": 1040,
-        "time_slot": "04:20 PM – 05:20 PM",
-        "time": "04:20 PM – 05:20 PM",
-        "section_id": "sec_kinder_2_khabaab_ibn_arat_2nd_shift",
-        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
-        "section_name": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
-        "department": "Elementary",
-        "grade": "Kinder 2",
-        "grade_level": "Kinder 2",
-        "shift": "ODL - 2ND SHIFT",
-        "modality": "ODL",
-        "gender": "",
-        "subject_id": "subj_oral_written_exam",
-        "subject": "Oral & Written Exam",
         "teacher_id": "tchr_keychell",
         "teacher": "Teacher Keychelle",
         "duration_minutes": 60,
@@ -13304,21 +13271,24 @@
   },
   {
     "teacher": "Teacher Sitti Kauzar",
-    "total_exams": 9,
+    "total_exams": 10,
     "subjects": [
       "Filipino",
-      "Math"
+      "Math",
+      "Oral & Written Exam"
     ],
     "grades": [
-      "Grade 2"
+      "Grade 2",
+      "Kinder 2"
     ],
-    "sections_count": 5,
+    "sections_count": 6,
     "sections": [
       "Grade 2 — GRADE 2 (FACE TO FACE)",
       "Grade 2 — GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
       "Grade 2 — GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
       "Grade 2 — GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-      "Grade 2 — GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)"
+      "Grade 2 — GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+      "Kinder 2 — Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)"
     ],
     "modalities": [
       "F2F",
@@ -13449,6 +13419,37 @@
         "gender": "",
         "subject_id": "subj_math",
         "subject": "Math",
+        "teacher_id": "tchr_sitti_kauzar",
+        "teacher": "Teacher Sitti Kauzar",
+        "duration_minutes": 60,
+        "teacher_status": "VERIFIED"
+      },
+      {
+        "id": "exam_290",
+        "exam_term": "1st Term",
+        "day_number": 1,
+        "date": "Wednesday, September 2, 2026",
+        "short_date": "Sep 2",
+        "day_name": "Wednesday",
+        "slot_number": 2,
+        "slots_spanned": 1,
+        "start_slot_index": 1,
+        "end_slot_index": 1,
+        "start_m": 980,
+        "end_m": 1040,
+        "time_slot": "04:20 PM – 05:20 PM",
+        "time": "04:20 PM – 05:20 PM",
+        "section_id": "sec_kinder_2_khabaab_ibn_arat_2nd_shift",
+        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "section_name": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "department": "Elementary",
+        "grade": "Kinder 2",
+        "grade_level": "Kinder 2",
+        "shift": "ODL - 2ND SHIFT",
+        "modality": "ODL",
+        "gender": "",
+        "subject_id": "subj_oral_written_exam",
+        "subject": "Oral & Written Exam",
         "teacher_id": "tchr_sitti_kauzar",
         "teacher": "Teacher Sitti Kauzar",
         "duration_minutes": 60,

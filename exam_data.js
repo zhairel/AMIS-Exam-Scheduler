@@ -3993,8 +3993,8 @@ const ALL_EXAM_RECORDS = [
     "gender": "",
     "subject_id": "subj_oral_written_exam",
     "subject": "Oral & Written Exam",
-    "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychelle",
+    "teacher_id": "tchr_sitti_kauzar",
+    "teacher": "Teacher Sitti Kauzar",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },

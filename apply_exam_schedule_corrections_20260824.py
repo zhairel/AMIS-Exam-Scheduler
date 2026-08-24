@@ -91,6 +91,7 @@ EXAM_TEACHER_OVERRIDES = {
     "exam_86": "Teacher Zuhora",        # GMRC
     "exam_285": "Alim Mamonas",        # Arabic
     "exam_287": "Alim Abdul Karim",    # Arabic
+    "exam_290": "Teacher Sitti Kauzar", # Oral & Written Exam
 }
 
 
@@ -888,6 +889,11 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "Ustadha Hainur",
             "request": "Transfer Grade 9 Abu Hurayrah Arabic from resigned Ustadh Raslina",
             "result": "Grade 9 Abu Hurayrah Arabic remains on Sep 6 at 12:40 PM under Ustadha Hainur; Alim Mamonas covers a parallel Arabic duty so no teacher or section conflict is created",
+        },
+        {
+            "teacher": "Teacher Sitti Kauzar",
+            "request": "Transfer Kinder 2 Khabaab Oral & Written Exam from Teacher Keychelle",
+            "result": "The Sep 2 04:20 PM Oral & Written Exam remains in place under Teacher Sitti Kauzar with no overlapping duty",
         },
     ]
     return audit
