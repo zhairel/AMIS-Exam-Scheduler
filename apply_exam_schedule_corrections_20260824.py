@@ -209,6 +209,11 @@ def is_compact_g1_g2_f2f(record):
     return section in {"GRADE 1 (FACE TO FACE)", "GRADE 2 (FACE TO FACE)"}
 
 
+def is_compact_g3_f2f(record):
+    section = clean(record.get("section_name") or record.get("section")).upper()
+    return section == "GRADE 3 (FACE TO FACE)"
+
+
 def is_daily_kinder_section(record):
     grade = clean(record.get("grade_level") or record.get("grade"))
     section = clean(record.get("section_name") or record.get("section")).upper()
@@ -511,6 +516,11 @@ def candidate_positions(record):
             # through an early vacancy or returns for the 10:25 third period.
             if is_compact_g1_g2_f2f(record) and start_index >= 2:
                 continue
+            # Grade 3 F2F has nine exams, so Day 1 necessarily keeps three.
+            # Days 2–4 use only the first two periods to fill Sunday and avoid
+            # an empty early slot before a later examination.
+            if is_compact_g3_f2f(record) and day_number != 1 and start_index >= 2:
+                continue
             latest_end_m = TEACHER_LATEST_END_M.get(record.get("teacher_id"))
             if latest_end_m is not None and end_m > latest_end_m:
                 continue
@@ -802,6 +812,11 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "Ustadha Saliha",
             "request": "Move Grade 5 Ayyash GMRC after the online general assembly and verify Grade 2 Saeed/Aasim GMRC",
             "result": "Ayyash GMRC moved to Sep 2 at 12:40 PM; Saeed remains Sep 6 at 01:50 PM and Aasim remains Sep 7 at 03:10 PM, both with verified teacher Ustadha Saliha and no overlap",
+        },
+        {
+            "teacher": "Grade 3 F2F",
+            "request": "Fill Sunday and remove vacant early periods before later exams",
+            "result": "All nine exams are compacted: three on Day 1 and two each on Days 2–4, with Sunday filled at 08:00 AM and 09:00 AM",
         },
         {
             "teacher": "Kindergarten",

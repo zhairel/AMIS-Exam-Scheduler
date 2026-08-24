@@ -1427,6 +1427,24 @@
       "from_start_m": 980,
       "to_day": 3,
       "to_start_m": 830
+    },
+    {
+      "id": "exam_168",
+      "section": "GRADE 3 (FACE TO FACE)",
+      "subject": "GMRC",
+      "from_day": 2,
+      "from_start_m": 625,
+      "to_day": 3,
+      "to_start_m": 540
+    },
+    {
+      "id": "exam_454",
+      "section": "GRADE 3 (FACE TO FACE)",
+      "subject": "SHAF",
+      "from_day": 4,
+      "from_start_m": 625,
+      "to_day": 4,
+      "to_start_m": 540
     }
   ],
   "teacher_accommodations": [
@@ -1469,6 +1487,11 @@
       "teacher": "Ustadha Saliha",
       "request": "Move Grade 5 Ayyash GMRC after the online general assembly and verify Grade 2 Saeed/Aasim GMRC",
       "result": "Ayyash GMRC moved to Sep 2 at 12:40 PM; Saeed remains Sep 6 at 01:50 PM and Aasim remains Sep 7 at 03:10 PM, both with verified teacher Ustadha Saliha and no overlap"
+    },
+    {
+      "teacher": "Grade 3 F2F",
+      "request": "Fill Sunday and remove vacant early periods before later exams",
+      "result": "All nine exams are compacted: three on Day 1 and two each on Days 2–4, with Sunday filled at 08:00 AM and 09:00 AM"
     },
     {
       "teacher": "Kindergarten",

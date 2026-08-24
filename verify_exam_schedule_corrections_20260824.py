@@ -212,6 +212,19 @@ def main():
             assert {record["start_m"] for record in day_records} == {480, 540}
             assert all(record["end_m"] <= 600 for record in day_records)
 
+    grade3_f2f_records = [record for record in records if correction.is_compact_g3_f2f(record)]
+    assert len(grade3_f2f_records) == 9
+    for day_number, expected_starts in {
+        1: {480, 540, 625},
+        2: {480, 540},
+        3: {480, 540},
+        4: {480, 540},
+    }.items():
+        actual_starts = {
+            record["start_m"] for record in grade3_f2f_records if record["day_number"] == day_number
+        }
+        assert actual_starts == expected_starts, f"Grade 3 F2F Day {day_number}: {actual_starts}"
+
     elementary_gmrc_positions = {
         "exam_68": (1, 760, 820, "tchr_saliha"),
         "exam_450": (3, 830, 890, "tchr_saliha"),
