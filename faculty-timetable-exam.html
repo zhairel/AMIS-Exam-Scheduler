@@ -571,6 +571,24 @@ html, body {
   line-height: 1.2;
 }
 
+.gender-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 9px;
+  border: 1.5px solid #94a3b8;
+  border-radius: 9999px;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.gender-chip-female { background:#fce7f3; border-color:#db2777; color:#831843; }
+.gender-chip-male { background:#dbeafe; border-color:#3b82f6; color:#1e3a8a; }
+.gender-chip-mixed { background:#ede9fe; border-color:#8b5cf6; color:#4c1d95; }
+.gender-chip-unspecified { background:#f1f5f9; border-color:#94a3b8; color:#334155; }
+
 .cell-section-name {
   font-size: 11px;
   font-weight: 700;
@@ -1072,6 +1090,16 @@ html, body {
     return s;
   }
 
+  function getExamGenderChip(exam) {
+    const sectionLabel = `${exam.section_name || ''} ${exam.section || ''}`.toUpperCase();
+    const explicitGender = String(exam.gender || '').toUpperCase();
+    if (explicitGender === 'FEMALE' || /\bGIRLS?\b|\bFEMALES?\b/.test(sectionLabel)) return { label:'Female', className:'gender-chip-female' };
+    if (explicitGender === 'MALE' || /\bBOYS?\b|\bMALES?\b/.test(sectionLabel)) return { label:'Male', className:'gender-chip-male' };
+    if (explicitGender === 'MIXED' || /\bMIX(?:ED)?\b|\bCO[ -]?ED\b/.test(sectionLabel)) return { label:'Mixed', className:'gender-chip-mixed' };
+    if (String(exam.shift || '').toUpperCase() === 'F2F' || sectionLabel.includes('FACE TO FACE')) return { label:'Mixed', className:'gender-chip-mixed' };
+    return null;
+  }
+
   function renderMultipleTeacherExamSheets(tIds) {
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
     let fullHtml = '';
@@ -1181,6 +1209,7 @@ html, body {
               const cleanShift = formatModalityShift(exam.shift);
               const is120 = exam.duration_minutes >= 90;
               const isAutomaticProctorCoverage = Boolean(exam.replacement_teacher_required && exam.proctor_id);
+              const genderChip = getExamGenderChip(exam);
               let calcRowspan = 1;
 
               if (is120) {
@@ -1201,6 +1230,10 @@ html, body {
                     ${isAutomaticProctorCoverage ? `
                       <span class="cell-proctor-label">PROCTOR</span>
                       <span class="cell-subject-sec">${esc(exam.subject)}</span>
+                      <span class="cell-section-name">${esc(cleanSec)}</span>
+                      ${genderChip
+                        ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>`
+                        : '<span class="gender-chip gender-chip-unspecified">Gender not specified</span>'}
                     ` : `
                       <span class="cell-subject-sec">${esc(exam.subject)}</span>
                       <span class="cell-section-name">${esc(cleanSec)}</span>

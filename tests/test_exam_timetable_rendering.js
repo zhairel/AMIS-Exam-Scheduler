@@ -64,7 +64,10 @@ const proctorCoverage = records.filter(record => record.replacement_teacher_requ
 assert.strictEqual(proctorCoverage.length, 12, 'All 12 Normylah exams must have active proctor coverage.');
 assert(html.includes('Boolean(match.replacement_teacher_required && match.proctor_id)'));
 assert(html.includes('<span class="cell-proctor-duty-label">PROCTOR</span>'));
+assert(html.includes("<span class=\"cell-section-name\">${esc(cleanSectionName(match.section_name))}</span>"));
+assert(html.includes('Gender not specified'));
 assert(facultyHtml.includes('Boolean(exam.replacement_teacher_required && exam.proctor_id)'));
 assert(facultyHtml.includes('<span class="cell-proctor-label">PROCTOR</span>'));
+assert(facultyHtml.includes("<span class=\"cell-section-name\">${esc(cleanSec)}</span>"));
 
 console.log('PASS Grade 11/12 canonical rendering and PROCTOR-only faculty timetable cell labels');
