@@ -88,8 +88,14 @@ def main():
 
     normylah_coverage_counts = Counter(record["proctor_id"] for record in normylah_records)
     assert max(normylah_coverage_counts.values()) <= correction.AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
-    assert normylah_coverage_counts["tchr_wardah"] == 2
-    assert normylah_coverage_counts["tchr_franchette"] == 2
+    assert normylah_coverage_counts == Counter({
+        "tchr_wardah": 2,
+        "tchr_franchette": 2,
+        "tchr_zuhora": 2,
+        "tchr_junaisah": 2,
+        "tchr_mohaymen": 2,
+        "tchr_shirehan": 2,
+    })
     assert {
         record["id"] for record in normylah_records
         if record["proctor_id"] == "tchr_franchette"

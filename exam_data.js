@@ -267,11 +267,11 @@ const ALL_EXAM_RECORDS = [
     "active_subject_teacher": "",
     "active_subject_teacher_id": "",
     "inactive_teacher_warning": "Teacher Normylah is inactive/resigned. Please assign a replacement teacher.",
-    "proctor": "Teacher Wardah",
-    "proctor_id": "tchr_wardah",
+    "proctor": "Teacher Zuhora",
+    "proctor_id": "tchr_zuhora",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_assignment_source": "MANUAL_ADMIN_COVERAGE",
-    "proctor_department": "High School Faculty",
+    "proctor_department": "Elementary Faculty",
     "proctor_conflict_status": "CLEAR",
     "proctor_pool": "MANUAL_ADMIN_OVERRIDE"
   },
@@ -2889,13 +2889,13 @@ const ALL_EXAM_RECORDS = [
     "active_subject_teacher": "",
     "active_subject_teacher_id": "",
     "inactive_teacher_warning": "Teacher Normylah is inactive/resigned. Please assign a replacement teacher.",
-    "proctor": "Teacher Rowena",
-    "proctor_id": "tchr_rowena",
+    "proctor": "Teacher Wardah",
+    "proctor_id": "tchr_wardah",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
+    "proctor_assignment_source": "MANUAL_ADMIN_COVERAGE",
     "proctor_department": "High School Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "ACADEMIC_TEACHER_ONLY"
+    "proctor_pool": "MANUAL_ADMIN_OVERRIDE"
   },
   {
     "id": "exam_45",
@@ -4545,11 +4545,11 @@ const ALL_EXAM_RECORDS = [
     "active_subject_teacher": "",
     "active_subject_teacher_id": "",
     "inactive_teacher_warning": "Teacher Normylah is inactive/resigned. Please assign a replacement teacher.",
-    "proctor": "Teacher Wardah",
-    "proctor_id": "tchr_wardah",
+    "proctor": "Teacher Junaisah",
+    "proctor_id": "tchr_junaisah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_assignment_source": "MANUAL_ADMIN_COVERAGE",
-    "proctor_department": "High School Faculty",
+    "proctor_department": "Elementary Faculty",
     "proctor_conflict_status": "CLEAR",
     "proctor_pool": "MANUAL_ADMIN_OVERRIDE"
   },
@@ -14301,10 +14301,10 @@ const ALL_EXAM_RECORDS = [
     "proctor": "Teacher Zuhora",
     "proctor_id": "tchr_zuhora",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
+    "proctor_assignment_source": "MANUAL_ADMIN_COVERAGE",
     "proctor_department": "Elementary Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "ACADEMIC_TEACHER_ONLY"
+    "proctor_pool": "MANUAL_ADMIN_OVERRIDE"
   },
   {
     "id": "exam_294",
@@ -15586,13 +15586,13 @@ const ALL_EXAM_RECORDS = [
     "active_subject_teacher": "",
     "active_subject_teacher_id": "",
     "inactive_teacher_warning": "Teacher Normylah is inactive/resigned. Please assign a replacement teacher.",
-    "proctor": "Teacher Rowena",
-    "proctor_id": "tchr_rowena",
+    "proctor": "Teacher Wardah",
+    "proctor_id": "tchr_wardah",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
+    "proctor_assignment_source": "MANUAL_ADMIN_COVERAGE",
     "proctor_department": "High School Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "ACADEMIC_TEACHER_ONLY"
+    "proctor_pool": "MANUAL_ADMIN_OVERRIDE"
   },
   {
     "id": "exam_331",
@@ -17472,13 +17472,13 @@ const ALL_EXAM_RECORDS = [
     "active_subject_teacher": "",
     "active_subject_teacher_id": "",
     "inactive_teacher_warning": "Teacher Normylah is inactive/resigned. Please assign a replacement teacher.",
-    "proctor": "Teacher Wendy",
-    "proctor_id": "tchr_wendy",
+    "proctor": "Teacher Junaisah",
+    "proctor_id": "tchr_junaisah",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
+    "proctor_assignment_source": "MANUAL_ADMIN_COVERAGE",
     "proctor_department": "Elementary Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "ACADEMIC_TEACHER_ONLY"
+    "proctor_pool": "MANUAL_ADMIN_OVERRIDE"
   },
   {
     "id": "exam_317",
@@ -19910,13 +19910,13 @@ const ALL_EXAM_RECORDS = [
     "active_subject_teacher": "",
     "active_subject_teacher_id": "",
     "inactive_teacher_warning": "Teacher Normylah is inactive/resigned. Please assign a replacement teacher.",
-    "proctor": "Teacher Junaisah",
-    "proctor_id": "tchr_junaisah",
+    "proctor": "Teacher Shirehan",
+    "proctor_id": "tchr_shirehan",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
-    "proctor_department": "Elementary Faculty",
+    "proctor_assignment_source": "MANUAL_ADMIN_COVERAGE",
+    "proctor_department": "High School Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "ACADEMIC_TEACHER_ONLY"
+    "proctor_pool": "MANUAL_ADMIN_OVERRIDE"
   },
   {
     "id": "exam_322",
@@ -22532,13 +22532,13 @@ const ALL_EXAM_RECORDS = [
     "active_subject_teacher": "",
     "active_subject_teacher_id": "",
     "inactive_teacher_warning": "Teacher Normylah is inactive/resigned. Please assign a replacement teacher.",
-    "proctor": "Teacher Norhaima",
-    "proctor_id": "tchr_norhaima",
+    "proctor": "Teacher Shirehan",
+    "proctor_id": "tchr_shirehan",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
+    "proctor_assignment_source": "MANUAL_ADMIN_COVERAGE",
     "proctor_department": "High School Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "ACADEMIC_TEACHER_ONLY"
+    "proctor_pool": "MANUAL_ADMIN_OVERRIDE"
   },
   {
     "id": "exam_507",
@@ -25845,13 +25845,13 @@ const ALL_EXAM_RECORDS = [
     "active_subject_teacher": "",
     "active_subject_teacher_id": "",
     "inactive_teacher_warning": "Teacher Normylah is inactive/resigned. Please assign a replacement teacher.",
-    "proctor": "Teacher Junaisah",
-    "proctor_id": "tchr_junaisah",
+    "proctor": "Sir Mohaymen",
+    "proctor_id": "tchr_mohaymen",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
-    "proctor_department": "Elementary Faculty",
+    "proctor_assignment_source": "MANUAL_ADMIN_COVERAGE",
+    "proctor_department": "High School Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "ACADEMIC_TEACHER_ONLY"
+    "proctor_pool": "MANUAL_ADMIN_OVERRIDE"
   },
   {
     "id": "exam_515",
@@ -26858,13 +26858,13 @@ const ALL_EXAM_RECORDS = [
     "active_subject_teacher": "",
     "active_subject_teacher_id": "",
     "inactive_teacher_warning": "Teacher Normylah is inactive/resigned. Please assign a replacement teacher.",
-    "proctor": "Teacher Zuhora",
-    "proctor_id": "tchr_zuhora",
+    "proctor": "Sir Mohaymen",
+    "proctor_id": "tchr_mohaymen",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
-    "proctor_department": "Elementary Faculty",
+    "proctor_assignment_source": "MANUAL_ADMIN_COVERAGE",
+    "proctor_department": "High School Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "ACADEMIC_TEACHER_ONLY"
+    "proctor_pool": "MANUAL_ADMIN_OVERRIDE"
   },
   {
     "id": "exam_255",

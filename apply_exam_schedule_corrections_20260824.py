@@ -82,10 +82,18 @@ HAINUR_GRADE5_TRANSFER_IDS = {"exam_62", "exam_354"}
 INACTIVE_TEACHER_IDS = {"tchr_normylah"}
 AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER = 2
 NORMYLAH_MANUAL_PROCTOR_OVERRIDES = {
-    "exam_30": "tchr_wardah",
-    "exam_81": "tchr_wardah",
+    "exam_30": "tchr_zuhora",
+    "exam_33": "tchr_wardah",
+    "exam_81": "tchr_junaisah",
     "exam_226": "tchr_franchette",
     "exam_229": "tchr_franchette",
+    "exam_316": "tchr_wardah",
+    "exam_323": "tchr_junaisah",
+    "exam_325": "tchr_shirehan",
+    "exam_364": "tchr_zuhora",
+    "exam_511": "tchr_shirehan",
+    "exam_513": "tchr_mohaymen",
+    "exam_516": "tchr_mohaymen",
 }
 NORMYLAH_AUTO_PROCTOR_EXCLUDED_IDS = {"tchr_ayah"}
 TEACHER_IDENTITY_CANONICAL_IDS = {"tchr_zara": "tchr_franchette"}

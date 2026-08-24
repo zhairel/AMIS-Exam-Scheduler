@@ -714,8 +714,8 @@
       "subject": "Filipino",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Wardah",
-      "proctor_id": "tchr_wardah",
+      "proctor": "Teacher Zuhora",
+      "proctor_id": "tchr_zuhora",
       "day_number": 1,
       "time_slot": "08:00 AM – 09:00 AM"
     },
@@ -725,8 +725,8 @@
       "subject": "Filipino",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Rowena",
-      "proctor_id": "tchr_rowena",
+      "proctor": "Teacher Wardah",
+      "proctor_id": "tchr_wardah",
       "day_number": 1,
       "time_slot": "01:50 PM – 02:50 PM"
     },
@@ -736,8 +736,8 @@
       "subject": "Araling Panlipunan",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Wardah",
-      "proctor_id": "tchr_wardah",
+      "proctor": "Teacher Junaisah",
+      "proctor_id": "tchr_junaisah",
       "day_number": 1,
       "time_slot": "03:10 PM – 04:10 PM"
     },
@@ -780,8 +780,8 @@
       "subject": "Filipino",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Rowena",
-      "proctor_id": "tchr_rowena",
+      "proctor": "Teacher Wardah",
+      "proctor_id": "tchr_wardah",
       "day_number": 3,
       "time_slot": "12:40 PM – 01:40 PM"
     },
@@ -791,8 +791,8 @@
       "subject": "Filipino",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Wendy",
-      "proctor_id": "tchr_wendy",
+      "proctor": "Teacher Junaisah",
+      "proctor_id": "tchr_junaisah",
       "day_number": 3,
       "time_slot": "03:10 PM – 04:10 PM"
     },
@@ -802,8 +802,8 @@
       "subject": "Filipino",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Junaisah",
-      "proctor_id": "tchr_junaisah",
+      "proctor": "Teacher Shirehan",
+      "proctor_id": "tchr_shirehan",
       "day_number": 3,
       "time_slot": "05:30 PM – 06:30 PM"
     },
@@ -813,8 +813,8 @@
       "subject": "Araling Panlipunan",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Norhaima",
-      "proctor_id": "tchr_norhaima",
+      "proctor": "Teacher Shirehan",
+      "proctor_id": "tchr_shirehan",
       "day_number": 4,
       "time_slot": "12:40 PM – 01:40 PM"
     },
@@ -824,8 +824,8 @@
       "subject": "Araling Panlipunan",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Junaisah",
-      "proctor_id": "tchr_junaisah",
+      "proctor": "Sir Mohaymen",
+      "proctor_id": "tchr_mohaymen",
       "day_number": 4,
       "time_slot": "04:20 PM – 05:20 PM"
     },
@@ -835,8 +835,8 @@
       "subject": "Araling Panlipunan",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Zuhora",
-      "proctor_id": "tchr_zuhora",
+      "proctor": "Sir Mohaymen",
+      "proctor_id": "tchr_mohaymen",
       "day_number": 4,
       "time_slot": "05:30 PM – 06:30 PM"
     }
