@@ -75,11 +75,15 @@ assert(!facultyHtml.includes('Gender not specified'));
 assert(facultyHtml.includes("exam.proctor_assignment_source !== 'SUBJECT_TEACHER'"));
 assert(facultyHtml.includes('<span class="cell-proctor-label">PROCTOR</span>'));
 assert(facultyHtml.includes("<span class=\"cell-section-name\">${esc(cleanSec)}</span>"));
-for (const shiftClass of ['shift-time-f2f', 'shift-time-first', 'shift-time-shared', 'shift-time-second']) {
-  assert(html.includes(shiftClass), `Main faculty timetable must include ${shiftClass}.`);
-  assert(facultyHtml.includes(shiftClass), `Standalone faculty timetable must include ${shiftClass}.`);
+for (const shiftColumnToken of ['col-shift', 'cell-shift', 'shift-stack']) {
+  assert(html.includes(shiftColumnToken), `Main faculty timetable must include ${shiftColumnToken}.`);
+  assert(facultyHtml.includes(shiftColumnToken), `Standalone faculty timetable must include ${shiftColumnToken}.`);
 }
-assert(html.includes("shift_group: 'shared'"));
+assert(html.includes("f2f: 'F<br>2<br>F'"));
+assert(html.includes("first: '1<br>S<br>T<br>S'"));
+assert(html.includes("second: '2<br>N<br>D<br>S'"));
+assert(!html.includes('shift-time-shared'));
+assert(!facultyHtml.includes('shift-time-shared'));
 assert(facultyHtml.includes('return { ...row, shift_group: shiftGroup };'));
 
 console.log('PASS Grade 11/12 canonical rendering and PROCTOR-only faculty timetable cell labels');

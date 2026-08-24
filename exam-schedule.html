@@ -793,36 +793,30 @@ html, body {
   padding: 8px 4px;
 }
 
-/* Faculty time bands: F2F, first shift, shared boundary, and second shift. */
-.timetable-grid tbody td.shift-time-f2f {
-  background: #dcfce7;
-  color: #14532d;
+/* Compact merged shift marker shown before the Time column. */
+.timetable-grid thead th.col-shift,
+.timetable-grid tbody td.cell-shift {
+  width: 42px;
+  min-width: 42px;
+  max-width: 42px;
 }
 
-.timetable-grid tbody td.shift-time-first {
-  background: #dbeafe;
-  color: #1e3a8a;
+.timetable-grid tbody td.cell-shift {
+  padding: 6px 3px;
+  background: #f8fafc;
+  color: #065f46;
+  border-left: 4px solid #047857;
+  font-weight: 950;
+  vertical-align: middle;
 }
 
-.timetable-grid tbody td.shift-time-second {
-  background: #ffedd5;
-  color: #7c2d12;
+.shift-stack {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
-
-.timetable-grid tbody td.shift-time-shared {
-  background: linear-gradient(135deg, #dbeafe 0 50%, #ffedd5 50% 100%);
-  color: #312e81;
-}
-
-.timetable-grid tbody td[class*="shift-time-"] {
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
-}
-
-.timetable-grid tbody td.cell-time.shift-time-f2f { box-shadow: inset 5px 0 0 #16a34a; }
-.timetable-grid tbody td.cell-time.shift-time-first { box-shadow: inset 5px 0 0 #2563eb; }
-.timetable-grid tbody td.cell-time.shift-time-second { box-shadow: inset 5px 0 0 #ea580c; }
-.timetable-grid tbody td.cell-time.shift-time-shared { box-shadow: inset 5px 0 0 #7c3aed; }
 
 .timetable-grid tbody td.cell-break {
   background: var(--break-bg);
@@ -6373,8 +6367,8 @@ html, body {
       { time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION', shift_group: 'first' },
       { time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'ODL1', shift_group: 'first' },
       { time: '02:40 PM – 03:40 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'K2_1ST', shift_group: 'first' },
-      { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION AND SALAH', shift_group: 'shared' },
-      { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3, shift_tag: 'ODL1', shift_group: 'shared' },
+      { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION AND SALAH', shift_group: 'first' },
+      { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3, shift_tag: 'ODL1', shift_group: 'first' },
       { time: '03:50 PM – 04:50 PM', mins: '60 min.', type: 'exam', slot_num: 3, shift_tag: 'K2_1ST', shift_group: 'first' },
       { time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION', shift_group: 'second' },
       { time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'ODL2', shift_group: 'second' },
@@ -6418,6 +6412,7 @@ html, body {
             <table class="timetable-grid">
               <thead>
                 <tr>
+                  <th class="col-shift">Shift</th>
                   <th class="col-time">Time</th>
                   <th class="col-mins">Minutes</th>
                   ${EXAM_DATES.map(d => `<th>${esc(d.header)}</th>`).join('')}
@@ -6427,14 +6422,24 @@ html, body {
       `;
 
       const activeRowspan = { 1: 0, 2: 0, 3: 0, 4: 0 };
+      const shiftLabels = { f2f: 'F<br>2<br>F', first: '1<br>S<br>T<br>S', second: '2<br>N<br>D<br>S' };
 
       masterSlots.forEach((slot, rowIdx) => {
-        const shiftTimeClass = `shift-time-${slot.shift_group || 'f2f'}`;
+        const beginsShift = rowIdx === 0 || masterSlots[rowIdx - 1].shift_group !== slot.shift_group;
+        let shiftCellHtml = '';
+        if (beginsShift) {
+          let shiftRowspan = 1;
+          while (rowIdx + shiftRowspan < masterSlots.length && masterSlots[rowIdx + shiftRowspan].shift_group === slot.shift_group) {
+            shiftRowspan++;
+          }
+          shiftCellHtml = `<td class="cell-shift" rowspan="${shiftRowspan}" aria-label="${slot.shift_group} shift"><span class="shift-stack">${shiftLabels[slot.shift_group]}</span></td>`;
+        }
         if (slot.type === 'break') {
           fullHtml += `
             <tr>
-              <td class="cell-time ${shiftTimeClass}">${esc(slot.time)}</td>
-              <td class="cell-mins ${shiftTimeClass}">${esc(slot.mins)}</td>
+              ${shiftCellHtml}
+              <td class="cell-time">${esc(slot.time)}</td>
+              <td class="cell-mins">${esc(slot.mins)}</td>
           `;
 
           let currentSpan = 0;
@@ -6457,8 +6462,9 @@ html, body {
         } else {
           fullHtml += `
             <tr>
-              <td class="cell-time ${shiftTimeClass}">${esc(slot.time)}</td>
-              <td class="cell-mins ${shiftTimeClass}">${esc(slot.mins)}</td>
+              ${shiftCellHtml}
+              <td class="cell-time">${esc(slot.time)}</td>
+              <td class="cell-mins">${esc(slot.mins)}</td>
           `;
 
           EXAM_DATES.forEach(d => {

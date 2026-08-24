@@ -98,9 +98,9 @@ NORMYLAH_MANUAL_PROCTOR_OVERRIDES = {
 NORMYLAH_AUTO_PROCTOR_EXCLUDED_IDS = {"tchr_ayah"}
 TEACHER_IDENTITY_CANONICAL_IDS = {"tchr_zara": "tchr_franchette"}
 IDENTITY_CONFLICT_PROCTOR_OVERRIDES = {
-    "exam_173": "tchr_junaisah",
-    "exam_466": "tchr_junaisah",
-    "exam_464": "tchr_junaisah",
+    "exam_173": "tchr_keychell",
+    "exam_466": "tchr_wendy",
+    "exam_464": "tchr_ethel",
 }
 NORMYLAH_INACTIVE_WARNING = (
     "Teacher Normylah is inactive/resigned. Please assign a replacement teacher."

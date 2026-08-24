@@ -90,6 +90,9 @@ def main():
         record = next(item for item in records if item["id"] == exam_id)
         assert record["proctor_id"] == proctor_id
         assert record["proctor_assignment_source"] == "IDENTITY_CONFLICT_COVERAGE"
+    assert set(correction.IDENTITY_CONFLICT_PROCTOR_OVERRIDES.values()) == {
+        "tchr_keychell", "tchr_wendy", "tchr_ethel"
+    }
 
     normylah_coverage_counts = Counter(record["proctor_id"] for record in normylah_records)
     assert max(normylah_coverage_counts.values()) <= correction.AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
@@ -101,6 +104,11 @@ def main():
         "tchr_mohaymen": 2,
         "tchr_shirehan": 2,
     })
+    assert sum(
+        record["proctor_id"] == "tchr_junaisah"
+        and record["proctor_assignment_source"] != "SUBJECT_TEACHER"
+        for record in records
+    ) == 2
     assert {
         record["id"] for record in normylah_records
         if record["proctor_id"] == "tchr_franchette"
