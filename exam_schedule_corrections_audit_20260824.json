@@ -1184,6 +1184,69 @@
       "from_start_m": 910,
       "to_day": 4,
       "to_start_m": 830
+    },
+    {
+      "id": "exam_84",
+      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+      "subject": "GMRC",
+      "from_day": 1,
+      "from_start_m": 830,
+      "to_day": 1,
+      "to_start_m": 690
+    },
+    {
+      "id": "exam_86",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "GMRC",
+      "from_day": 1,
+      "from_start_m": 1050,
+      "to_day": 1,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_169",
+      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+      "subject": "GMRC",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 2,
+      "to_start_m": 690
+    },
+    {
+      "id": "exam_256",
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "subject": "MAPEH",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 3,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_397",
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "subject": "GMRC",
+      "from_day": 3,
+      "from_start_m": 1050,
+      "to_day": 2,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_528",
+      "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+      "subject": "GMRC",
+      "from_day": 4,
+      "from_start_m": 830,
+      "to_day": 3,
+      "to_start_m": 690
+    },
+    {
+      "id": "exam_517",
+      "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+      "subject": "GMRC",
+      "from_day": 4,
+      "from_start_m": 1050,
+      "to_day": 4,
+      "to_start_m": 830
     }
   ],
   "teacher_accommodations": [

@@ -170,6 +170,11 @@ def main():
         "exam_495": (4, 1050, 1110),
     }
 
+    silfah_records = [record for record in records if record["teacher_id"] == "tchr_silfah"]
+    assert len(silfah_records) == 23
+    assert all(record["teacher"] == "Ustadh Silfah" for record in silfah_records)
+    assert all(record["end_m"] <= 1050 for record in silfah_records), "Ustadha Silfah exceeds 5:30 PM"
+
     usama_science = get_one(
         records,
         lambda record: section_has(record, "GRADE 7", "USAMA") and correction.subject_key(record["subject"]) == "science",
@@ -177,10 +182,10 @@ def main():
     )
     assert (usama_science["day_number"], usama_science["start_m"], usama_science["end_m"]) == (1, 910, 970)
 
-    for teacher_id in correction.EARLY_FINISH_TEACHERS:
+    for teacher_id, latest_end_m in correction.TEACHER_LATEST_END_M.items():
         teacher_records = [record for record in records if record["teacher_id"] == teacher_id]
         assert teacher_records
-        assert max(record["end_m"] for record in teacher_records) <= 990
+        assert max(record["end_m"] for record in teacher_records) <= latest_end_m
 
     g11_girls_shaf = get_one(
         records,

@@ -71,7 +71,11 @@ SHS_FIRST_SHIFT_SLOTS = [
     (980, 1040, "04:20 PM", "05:20 PM"),
 ]
 
-EARLY_FINISH_TEACHERS = {"tchr_saliha", "tchr_mamonas"}
+TEACHER_LATEST_END_M = {
+    "tchr_saliha": 990,
+    "tchr_mamonas": 990,
+    "tchr_silfah": 1050,
+}
 HAINUR_DAY4_FIXED_POSITIONS = {
     "exam_436": (4, 760),
     "exam_427": (4, 880),
@@ -473,7 +477,8 @@ def candidate_positions(record):
         for start_index in range(len(slots) - span + 1):
             start_m = slots[start_index][0]
             end_m = slots[start_index + span - 1][1]
-            if record.get("teacher_id") in EARLY_FINISH_TEACHERS and end_m > 990:
+            latest_end_m = TEACHER_LATEST_END_M.get(record.get("teacher_id"))
+            if latest_end_m is not None and end_m > latest_end_m:
                 continue
             fixed = fixed_position(record)
             if fixed and (day_number, start_m) != fixed:
