@@ -6156,7 +6156,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "D27"
+            "source_cell": "D27",
+            "merge_group": "official-merge:sec_grade_1_face_to_face:source:D27:G27"
           },
           "Monday": {
             "raw": "GMRC - Ust. Saliha",
@@ -6166,7 +6167,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "E27"
+            "source_cell": "E27",
+            "merge_group": "official-merge:sec_grade_1_face_to_face:source:D27:G27"
           },
           "Tuesday": {
             "raw": "GMRC - Ust. Saliha",
@@ -6176,7 +6178,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "F27"
+            "source_cell": "F27",
+            "merge_group": "official-merge:sec_grade_1_face_to_face:source:D27:G27"
           },
           "Wednesday": {
             "raw": "GMRC - Ust. Saliha",
@@ -6186,7 +6189,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "G27"
+            "source_cell": "G27",
+            "merge_group": "official-merge:sec_grade_1_face_to_face:source:D27:G27"
           },
           "Thursday": {
             "raw": "HG - Tchr. Sahdia",
@@ -6950,7 +6954,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "D27"
+            "source_cell": "D27",
+            "merge_group": "official-merge:sec_grade_1_face_to_face:source:D27:G27"
           },
           "Monday": {
             "raw": "GMRC - Ust. Saliha",
@@ -6960,7 +6965,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "E27"
+            "source_cell": "E27",
+            "merge_group": "official-merge:sec_grade_1_face_to_face:source:D27:G27"
           },
           "Tuesday": {
             "raw": "GMRC - Ust. Saliha",
@@ -6970,7 +6976,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "F27"
+            "source_cell": "F27",
+            "merge_group": "official-merge:sec_grade_1_face_to_face:source:D27:G27"
           },
           "Wednesday": {
             "raw": "GMRC - Ust. Saliha",
@@ -6980,7 +6987,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "G27"
+            "source_cell": "G27",
+            "merge_group": "official-merge:sec_grade_1_face_to_face:source:D27:G27"
           },
           "Thursday": {
             "raw": "HG - Tchr. Sahdia",
@@ -11785,7 +11793,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "E46"
+            "source_cell": "E46",
+            "merge_group": "official-merge:sec_grade_2_face_to_face:source:E46:H46"
           },
           "Tuesday": {
             "raw": "GMRC - Ustadha Saliha",
@@ -11795,7 +11804,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "F46"
+            "source_cell": "F46",
+            "merge_group": "official-merge:sec_grade_2_face_to_face:source:E46:H46"
           },
           "Wednesday": {
             "raw": "GMRC - Ustadha Saliha",
@@ -11805,7 +11815,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "G46"
+            "source_cell": "G46",
+            "merge_group": "official-merge:sec_grade_2_face_to_face:source:E46:H46"
           },
           "Thursday": {
             "raw": "GMRC - Ustadha Saliha",
@@ -11815,7 +11826,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "H46"
+            "source_cell": "H46",
+            "merge_group": "official-merge:sec_grade_2_face_to_face:source:E46:H46"
           }
         },
         "source_sheet": "ELEM",
@@ -12579,7 +12591,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "E46"
+            "source_cell": "E46",
+            "merge_group": "official-merge:sec_grade_2_face_to_face:source:E46:H46"
           },
           "Tuesday": {
             "raw": "GMRC - Ustadha Saliha",
@@ -12589,7 +12602,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "F46"
+            "source_cell": "F46",
+            "merge_group": "official-merge:sec_grade_2_face_to_face:source:E46:H46"
           },
           "Wednesday": {
             "raw": "GMRC - Ustadha Saliha",
@@ -12599,7 +12613,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "G46"
+            "source_cell": "G46",
+            "merge_group": "official-merge:sec_grade_2_face_to_face:source:E46:H46"
           },
           "Thursday": {
             "raw": "GMRC - Ustadha Saliha",
@@ -12609,7 +12624,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "H46"
+            "source_cell": "H46",
+            "merge_group": "official-merge:sec_grade_2_face_to_face:source:E46:H46"
           }
         },
         "source_sheet": "ELEM",
@@ -24297,7 +24313,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "D82"
+            "source_cell": "D82",
+            "merge_group": "official-merge:sec_grade_4_face_to_face:source:D82:E82"
           },
           "Monday": {
             "raw": "Filipino - Tchr. Norhydie",
@@ -24307,7 +24324,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "E82"
+            "source_cell": "E82",
+            "merge_group": "official-merge:sec_grade_4_face_to_face:source:D82:E82"
           },
           "Tuesday": {
             "raw": "TLE - Tchr. Monisa",
@@ -24327,7 +24345,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "G82"
+            "source_cell": "G82",
+            "merge_group": "official-merge:sec_grade_4_face_to_face:source:G82:H82"
           },
           "Thursday": {
             "raw": "Filipino - Tchr. Norhydie",
@@ -24337,7 +24356,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "H82"
+            "source_cell": "H82",
+            "merge_group": "official-merge:sec_grade_4_face_to_face:source:G82:H82"
           }
         },
         "source_sheet": "ELEM",
@@ -25091,7 +25111,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "D82"
+            "source_cell": "D82",
+            "merge_group": "official-merge:sec_grade_4_face_to_face:source:D82:E82"
           },
           "Monday": {
             "raw": "Filipino - Tchr. Norhydie",
@@ -25101,7 +25122,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "E82"
+            "source_cell": "E82",
+            "merge_group": "official-merge:sec_grade_4_face_to_face:source:D82:E82"
           },
           "Tuesday": {
             "raw": "TLE - Tchr. Monisa",
@@ -25121,7 +25143,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "G82"
+            "source_cell": "G82",
+            "merge_group": "official-merge:sec_grade_4_face_to_face:source:G82:H82"
           },
           "Thursday": {
             "raw": "Filipino - Tchr. Norhydie",
@@ -25131,7 +25154,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "H82"
+            "source_cell": "H82",
+            "merge_group": "official-merge:sec_grade_4_face_to_face:source:G82:H82"
           }
         },
         "source_sheet": "ELEM",
@@ -37377,7 +37401,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "D107"
+            "source_cell": "D107",
+            "merge_group": "official-merge:sec_grade_6_face_to_face:source:D107:G107"
           },
           "Monday": {
             "raw": "Filipino - Tchr. Normylah",
@@ -37387,7 +37412,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "E107"
+            "source_cell": "E107",
+            "merge_group": "official-merge:sec_grade_6_face_to_face:source:D107:G107"
           },
           "Tuesday": {
             "raw": "Filipino - Tchr. Normylah",
@@ -37397,7 +37423,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "F107"
+            "source_cell": "F107",
+            "merge_group": "official-merge:sec_grade_6_face_to_face:source:D107:G107"
           },
           "Wednesday": {
             "raw": "Filipino - Tchr. Normylah",
@@ -37407,7 +37434,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "G107"
+            "source_cell": "G107",
+            "merge_group": "official-merge:sec_grade_6_face_to_face:source:D107:G107"
           },
           "Thursday": {
             "raw": "HG - Tchr. Normylah",
@@ -38171,7 +38199,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "D107"
+            "source_cell": "D107",
+            "merge_group": "official-merge:sec_grade_6_face_to_face:source:D107:G107"
           },
           "Monday": {
             "raw": "Filipino - Tchr. Normylah",
@@ -38181,7 +38210,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "E107"
+            "source_cell": "E107",
+            "merge_group": "official-merge:sec_grade_6_face_to_face:source:D107:G107"
           },
           "Tuesday": {
             "raw": "Filipino - Tchr. Normylah",
@@ -38191,7 +38221,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "F107"
+            "source_cell": "F107",
+            "merge_group": "official-merge:sec_grade_6_face_to_face:source:D107:G107"
           },
           "Wednesday": {
             "raw": "Filipino - Tchr. Normylah",
@@ -38201,7 +38232,8 @@ const ALL_SECTIONS_DATA = [
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
-            "source_cell": "G107"
+            "source_cell": "G107",
+            "merge_group": "official-merge:sec_grade_6_face_to_face:source:D107:G107"
           },
           "Thursday": {
             "raw": "HG - Tchr. Normylah",
@@ -59093,6 +59125,6699 @@ const ALL_SECTIONS_DATA = [
         },
         "source_sheet": "HS SCHED (NEW)",
         "source_cell": "S62"
+      }
+    ]
+  },
+  {
+    "id": "sec_grade_11_face_to_face",
+    "section_id": "sec_grade_11_face_to_face",
+    "section_name": "GRADE 11 (FACE TO FACE)",
+    "shift": "F2F",
+    "department": "Senior High School",
+    "grade_level": "Grade 11",
+    "total_periods": 12,
+    "source_sheet": "SHS",
+    "source_cell": "B4",
+    "periods": [
+      {
+        "period_num": 1,
+        "time": "7:30 \u2013 7:40 AM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "subject_id": "subj_general_assembly",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "D6"
+          },
+          "Monday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "E6"
+          },
+          "Tuesday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "F6"
+          },
+          "Wednesday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "G6"
+          },
+          "Thursday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "H6"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 2,
+        "time": "7:40 \u2013 8:25 AM",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "Gen Science",
+        "subject_id": "subj_gen_science",
+        "teacher": "Teacher Rowena",
+        "teacher_id": "tchr_rowena",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D7"
+          },
+          "Monday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E7"
+          },
+          "Tuesday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F7"
+          },
+          "Wednesday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G7"
+          },
+          "Thursday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H7"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 3,
+        "time": "8:25 \u2013 9:05 AM",
+        "minutes": "40 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "LCS",
+        "subject_id": "subj_lcs",
+        "teacher": "Teacher Norhaima",
+        "teacher_id": "tchr_norhaima",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D8"
+          },
+          "Monday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E8"
+          },
+          "Tuesday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F8"
+          },
+          "Wednesday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G8"
+          },
+          "Thursday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H8"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 4,
+        "time": "9:05 \u2013 9:45 AM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Gen Math",
+        "subject_id": "subj_gen_math",
+        "teacher": "Teacher Jhelyn",
+        "teacher_id": "tchr_jhelyn",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D9"
+          },
+          "Monday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E9"
+          },
+          "Tuesday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F9"
+          },
+          "Wednesday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G9"
+          },
+          "Thursday": {
+            "raw": "Gen Math/HR - Tchr. Jhelyn",
+            "subject": "Gen Math/HR",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H9"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 5,
+        "time": "9:45 \u2013 10:00 AM",
+        "minutes": "15 min.",
+        "is_merged_all_days": true,
+        "label": "RECESS",
+        "subject": "RECESS",
+        "subject_id": "subj_recess",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "D10"
+          },
+          "Monday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "E10"
+          },
+          "Tuesday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "F10"
+          },
+          "Wednesday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "G10"
+          },
+          "Thursday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "H10"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 AM",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "PSKP",
+        "subject_id": "subj_pskp",
+        "teacher": "Teacher Shirehan",
+        "teacher_id": "tchr_shirehan",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D11"
+          },
+          "Monday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E11"
+          },
+          "Tuesday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F11"
+          },
+          "Wednesday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G11"
+          },
+          "Thursday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H11"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 7,
+        "time": "10:45:11:30 AM",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "label": "Arabic",
+        "subject": "Arabic",
+        "subject_id": "subj_arabic",
+        "teacher": "Alim Mamonas",
+        "teacher_id": "tchr_mamonas",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "teacher_id": "tchr_mamonas",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D12"
+          },
+          "Monday": {
+            "raw": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "teacher_id": "tchr_samsuddin",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E12"
+          },
+          "Tuesday": {
+            "raw": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "teacher_id": "tchr_samsuddin",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F12"
+          },
+          "Wednesday": {
+            "raw": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "teacher_id": "tchr_mamonas",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G12"
+          },
+          "Thursday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "H12"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 PM",
+        "minutes": "70 min.",
+        "is_merged_all_days": true,
+        "label": "LUNCH and SALAH",
+        "subject": "LUNCH and SALAH",
+        "subject_id": "subj_lunch_and_salah",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "D13"
+          },
+          "Monday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "E13"
+          },
+          "Tuesday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "F13"
+          },
+          "Wednesday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "G13"
+          },
+          "Thursday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "H13"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 9,
+        "time": "12:40 \u2013 1:25 PM",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "EC",
+        "subject_id": "subj_ec",
+        "teacher": "Teacher Nadzra",
+        "teacher_id": "tchr_nadzra",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D14"
+          },
+          "Monday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E14"
+          },
+          "Tuesday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F14"
+          },
+          "Wednesday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G14"
+          },
+          "Thursday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H14"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 10,
+        "time": "1:25 \u2013 2:10 PM",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "Gen Bio 1",
+        "subject_id": "subj_gen_bio_1",
+        "teacher": "Teacher Radzmia",
+        "teacher_id": "tchr_radzmia",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D15"
+          },
+          "Monday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E15"
+          },
+          "Tuesday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F15"
+          },
+          "Wednesday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G15"
+          },
+          "Thursday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H15"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 11,
+        "time": "2:15 \u2013 3:00 PM",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "label": "Qur'an",
+        "subject": "Qur'an",
+        "subject_id": "subj_qur_an",
+        "teacher": "Alim Dipatuan",
+        "teacher_id": "tchr_dipatuan",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Qur'an - Alim Dipatuan",
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "teacher_id": "tchr_dipatuan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D16"
+          },
+          "Monday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E16"
+          },
+          "Tuesday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "F16"
+          },
+          "Wednesday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "G16"
+          },
+          "Thursday": {
+            "raw": "Qur'an - Alim Dipatuan",
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "teacher_id": "tchr_dipatuan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H16"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 12,
+        "time": "3:00 \u2013 3:30",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "SALAH & DEPARTURE",
+        "subject": "SALAH & DEPARTURE",
+        "subject_id": "subj_salah_departure",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "D17"
+          },
+          "Monday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "E17"
+          },
+          "Tuesday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "F17"
+          },
+          "Wednesday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "G17"
+          },
+          "Thursday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "H17"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      }
+    ],
+    "rows": [
+      {
+        "period_num": 1,
+        "time": "7:30 \u2013 7:40 AM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "subject_id": "subj_general_assembly",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "D6"
+          },
+          "Monday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "E6"
+          },
+          "Tuesday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "F6"
+          },
+          "Wednesday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "G6"
+          },
+          "Thursday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "H6"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 2,
+        "time": "7:40 \u2013 8:25 AM",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "Gen Science",
+        "subject_id": "subj_gen_science",
+        "teacher": "Teacher Rowena",
+        "teacher_id": "tchr_rowena",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D7"
+          },
+          "Monday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E7"
+          },
+          "Tuesday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F7"
+          },
+          "Wednesday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G7"
+          },
+          "Thursday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H7"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 3,
+        "time": "8:25 \u2013 9:05 AM",
+        "minutes": "40 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "LCS",
+        "subject_id": "subj_lcs",
+        "teacher": "Teacher Norhaima",
+        "teacher_id": "tchr_norhaima",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D8"
+          },
+          "Monday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E8"
+          },
+          "Tuesday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F8"
+          },
+          "Wednesday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G8"
+          },
+          "Thursday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H8"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 4,
+        "time": "9:05 \u2013 9:45 AM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Gen Math",
+        "subject_id": "subj_gen_math",
+        "teacher": "Teacher Jhelyn",
+        "teacher_id": "tchr_jhelyn",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D9"
+          },
+          "Monday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E9"
+          },
+          "Tuesday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F9"
+          },
+          "Wednesday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G9"
+          },
+          "Thursday": {
+            "raw": "Gen Math/HR - Tchr. Jhelyn",
+            "subject": "Gen Math/HR",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H9"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 5,
+        "time": "9:45 \u2013 10:00 AM",
+        "minutes": "15 min.",
+        "is_merged_all_days": true,
+        "label": "RECESS",
+        "subject": "RECESS",
+        "subject_id": "subj_recess",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "D10"
+          },
+          "Monday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "E10"
+          },
+          "Tuesday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "F10"
+          },
+          "Wednesday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "G10"
+          },
+          "Thursday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "H10"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 AM",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "PSKP",
+        "subject_id": "subj_pskp",
+        "teacher": "Teacher Shirehan",
+        "teacher_id": "tchr_shirehan",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D11"
+          },
+          "Monday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E11"
+          },
+          "Tuesday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F11"
+          },
+          "Wednesday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G11"
+          },
+          "Thursday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H11"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 7,
+        "time": "10:45:11:30 AM",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "label": "Arabic",
+        "subject": "Arabic",
+        "subject_id": "subj_arabic",
+        "teacher": "Alim Mamonas",
+        "teacher_id": "tchr_mamonas",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "teacher_id": "tchr_mamonas",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D12"
+          },
+          "Monday": {
+            "raw": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "teacher_id": "tchr_samsuddin",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E12"
+          },
+          "Tuesday": {
+            "raw": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "teacher_id": "tchr_samsuddin",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F12"
+          },
+          "Wednesday": {
+            "raw": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "teacher_id": "tchr_mamonas",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G12"
+          },
+          "Thursday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "H12"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 PM",
+        "minutes": "70 min.",
+        "is_merged_all_days": true,
+        "label": "LUNCH and SALAH",
+        "subject": "LUNCH and SALAH",
+        "subject_id": "subj_lunch_and_salah",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "D13"
+          },
+          "Monday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "E13"
+          },
+          "Tuesday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "F13"
+          },
+          "Wednesday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "G13"
+          },
+          "Thursday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "H13"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 9,
+        "time": "12:40 \u2013 1:25 PM",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "EC",
+        "subject_id": "subj_ec",
+        "teacher": "Teacher Nadzra",
+        "teacher_id": "tchr_nadzra",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D14"
+          },
+          "Monday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E14"
+          },
+          "Tuesday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F14"
+          },
+          "Wednesday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G14"
+          },
+          "Thursday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H14"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 10,
+        "time": "1:25 \u2013 2:10 PM",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "Gen Bio 1",
+        "subject_id": "subj_gen_bio_1",
+        "teacher": "Teacher Radzmia",
+        "teacher_id": "tchr_radzmia",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D15"
+          },
+          "Monday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E15"
+          },
+          "Tuesday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F15"
+          },
+          "Wednesday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G15"
+          },
+          "Thursday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H15"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 11,
+        "time": "2:15 \u2013 3:00 PM",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "label": "Qur'an",
+        "subject": "Qur'an",
+        "subject_id": "subj_qur_an",
+        "teacher": "Alim Dipatuan",
+        "teacher_id": "tchr_dipatuan",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Qur'an - Alim Dipatuan",
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "teacher_id": "tchr_dipatuan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D16"
+          },
+          "Monday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E16"
+          },
+          "Tuesday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "F16"
+          },
+          "Wednesday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "G16"
+          },
+          "Thursday": {
+            "raw": "Qur'an - Alim Dipatuan",
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "teacher_id": "tchr_dipatuan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H16"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      },
+      {
+        "period_num": 12,
+        "time": "3:00 \u2013 3:30",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "SALAH & DEPARTURE",
+        "subject": "SALAH & DEPARTURE",
+        "subject_id": "subj_salah_departure",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "D17"
+          },
+          "Monday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "E17"
+          },
+          "Tuesday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "F17"
+          },
+          "Wednesday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "G17"
+          },
+          "Thursday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "H17"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B4"
+      }
+    ]
+  },
+  {
+    "id": "sec_grade_12_suhayb_ar_rumi",
+    "section_id": "sec_grade_12_suhayb_ar_rumi",
+    "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+    "shift": "F2F",
+    "department": "Senior High School",
+    "grade_level": "Grade 12",
+    "total_periods": 12,
+    "source_sheet": "SHS",
+    "source_cell": "K4",
+    "periods": [
+      {
+        "period_num": 1,
+        "time": "7:30 \u2013 7:40 AM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "subject_id": "subj_general_assembly",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "M6"
+          },
+          "Monday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "N6"
+          },
+          "Tuesday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "O6"
+          },
+          "Wednesday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "P6"
+          },
+          "Thursday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "Q6"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 2,
+        "time": "7:40 \u2013 8:25 AM",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "Prac. Res. 2",
+        "subject_id": "subj_prac_res_2",
+        "teacher": "Teacher Aniah",
+        "teacher_id": "tchr_aniah",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M7"
+          },
+          "Monday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N7"
+          },
+          "Tuesday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O7"
+          },
+          "Wednesday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P7"
+          },
+          "Thursday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q7"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 3,
+        "time": "8:25 \u2013 9:05 AM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Prac. Res. 2",
+        "subject_id": "subj_prac_res_2",
+        "teacher": "Teacher Aniah",
+        "teacher_id": "tchr_aniah",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M8"
+          },
+          "Monday": {
+            "raw": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "teacher_id": "tchr_mamonas",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N8"
+          },
+          "Tuesday": {
+            "raw": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "teacher_id": "tchr_samsuddin",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O8"
+          },
+          "Wednesday": {
+            "raw": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "teacher_id": "tchr_mamonas",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P8"
+          },
+          "Thursday": {
+            "raw": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "teacher_id": "tchr_samsuddin",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q8"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 4,
+        "time": "9:05 \u2013 9:45 AM",
+        "minutes": "40 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "MIL",
+        "subject_id": "subj_mil",
+        "teacher": "Teacher Ethel",
+        "teacher_id": "tchr_ethel",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M9"
+          },
+          "Monday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N9"
+          },
+          "Tuesday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O9"
+          },
+          "Wednesday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P9"
+          },
+          "Thursday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q9"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 5,
+        "time": "9:45 \u2013 10:00 AM",
+        "minutes": "15 min.",
+        "is_merged_all_days": true,
+        "label": "RECESS",
+        "subject": "RECESS",
+        "subject_id": "subj_recess",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "M10"
+          },
+          "Monday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "N10"
+          },
+          "Tuesday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "O10"
+          },
+          "Wednesday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "P10"
+          },
+          "Thursday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "Q10"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 AM",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "21st Lit.",
+        "subject_id": "subj_21st_lit",
+        "teacher": "Teacher Nof",
+        "teacher_id": "tchr_nof",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M11"
+          },
+          "Monday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N11"
+          },
+          "Tuesday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O11"
+          },
+          "Wednesday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P11"
+          },
+          "Thursday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q11"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 7,
+        "time": "10:45:11:30 AM",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "Gen. Physics 1",
+        "subject_id": "subj_gen_physics_1",
+        "teacher": "Teacher Aniah",
+        "teacher_id": "tchr_aniah",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M12"
+          },
+          "Monday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N12"
+          },
+          "Tuesday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O12"
+          },
+          "Wednesday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P12"
+          },
+          "Thursday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q12"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 PM",
+        "minutes": "70 min.",
+        "is_merged_all_days": true,
+        "label": "LUNCH and SALAH",
+        "subject": "LUNCH and SALAH",
+        "subject_id": "subj_lunch_and_salah",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "M13"
+          },
+          "Monday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "N13"
+          },
+          "Tuesday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "O13"
+          },
+          "Wednesday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "P13"
+          },
+          "Thursday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "Q13"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 9,
+        "time": "12:40 \u2013 1:25 PM",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "label": "PE 12",
+        "subject": "PE 12",
+        "subject_id": "subj_pe_12",
+        "teacher": "Sir Mohaymen",
+        "teacher_id": "tchr_mohaymen",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher": "Sir Mohaymen",
+            "teacher_id": "tchr_mohaymen",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M14"
+          },
+          "Monday": {
+            "raw": "Research Consultation",
+            "subject": "Research Consultation",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N14"
+          },
+          "Tuesday": {
+            "raw": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher": "Sir Mohaymen",
+            "teacher_id": "tchr_mohaymen",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O14"
+          },
+          "Wednesday": {
+            "raw": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher": "Sir Mohaymen",
+            "teacher_id": "tchr_mohaymen",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P14"
+          },
+          "Thursday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "Q14"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 10,
+        "time": "1:25 \u2013 2:10 PM",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Gen Bio 1",
+        "subject_id": "subj_gen_bio_1",
+        "teacher": "Teacher Radzmia",
+        "teacher_id": "tchr_radzmia",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M15"
+          },
+          "Monday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N15"
+          },
+          "Tuesday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia+",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O15"
+          },
+          "Wednesday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P15"
+          },
+          "Thursday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q15"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 11,
+        "time": "2:15 \u2013 3:00 PM",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Research Consultation",
+        "subject_id": "subj_research_consultation",
+        "teacher": "Teacher Radzmia",
+        "teacher_id": "tchr_radzmia",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Research Consultation",
+            "subject": "Research Consultation",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M16"
+          },
+          "Monday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N16"
+          },
+          "Tuesday": {
+            "raw": "Qur'an - Alim Dipatuan",
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "teacher_id": "tchr_dipatuan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O16"
+          },
+          "Wednesday": {
+            "raw": "Qur'an - Alim Dipatuan",
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "teacher_id": "tchr_dipatuan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P16"
+          },
+          "Thursday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q16"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 12,
+        "time": "3:00 \u2013 3:30",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "SALAH & DEPARTURE",
+        "subject": "SALAH & DEPARTURE",
+        "subject_id": "subj_salah_departure",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "M17"
+          },
+          "Monday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "N17"
+          },
+          "Tuesday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "O17"
+          },
+          "Wednesday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "P17"
+          },
+          "Thursday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "Q17"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      }
+    ],
+    "rows": [
+      {
+        "period_num": 1,
+        "time": "7:30 \u2013 7:40 AM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "GENERAL ASSEMBLY",
+        "subject": "GENERAL ASSEMBLY",
+        "subject_id": "subj_general_assembly",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "M6"
+          },
+          "Monday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "N6"
+          },
+          "Tuesday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "O6"
+          },
+          "Wednesday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "P6"
+          },
+          "Thursday": {
+            "raw": "GENERAL ASSEMBLY",
+            "subject": "GENERAL ASSEMBLY",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "GENERAL ASSEMBLY",
+            "source_sheet": "SHS",
+            "source_cell": "Q6"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 2,
+        "time": "7:40 \u2013 8:25 AM",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "Prac. Res. 2",
+        "subject_id": "subj_prac_res_2",
+        "teacher": "Teacher Aniah",
+        "teacher_id": "tchr_aniah",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M7"
+          },
+          "Monday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N7"
+          },
+          "Tuesday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O7"
+          },
+          "Wednesday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P7"
+          },
+          "Thursday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q7"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 3,
+        "time": "8:25 \u2013 9:05 AM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Prac. Res. 2",
+        "subject_id": "subj_prac_res_2",
+        "teacher": "Teacher Aniah",
+        "teacher_id": "tchr_aniah",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M8"
+          },
+          "Monday": {
+            "raw": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "teacher_id": "tchr_mamonas",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N8"
+          },
+          "Tuesday": {
+            "raw": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "teacher_id": "tchr_samsuddin",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O8"
+          },
+          "Wednesday": {
+            "raw": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "teacher_id": "tchr_mamonas",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P8"
+          },
+          "Thursday": {
+            "raw": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "teacher_id": "tchr_samsuddin",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q8"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 4,
+        "time": "9:05 \u2013 9:45 AM",
+        "minutes": "40 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "MIL",
+        "subject_id": "subj_mil",
+        "teacher": "Teacher Ethel",
+        "teacher_id": "tchr_ethel",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M9"
+          },
+          "Monday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N9"
+          },
+          "Tuesday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O9"
+          },
+          "Wednesday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P9"
+          },
+          "Thursday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q9"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 5,
+        "time": "9:45 \u2013 10:00 AM",
+        "minutes": "15 min.",
+        "is_merged_all_days": true,
+        "label": "RECESS",
+        "subject": "RECESS",
+        "subject_id": "subj_recess",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "M10"
+          },
+          "Monday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "N10"
+          },
+          "Tuesday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "O10"
+          },
+          "Wednesday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "P10"
+          },
+          "Thursday": {
+            "raw": "RECESS",
+            "subject": "RECESS",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "RECESS",
+            "source_sheet": "SHS",
+            "source_cell": "Q10"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 AM",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "21st Lit.",
+        "subject_id": "subj_21st_lit",
+        "teacher": "Teacher Nof",
+        "teacher_id": "tchr_nof",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M11"
+          },
+          "Monday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N11"
+          },
+          "Tuesday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O11"
+          },
+          "Wednesday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P11"
+          },
+          "Thursday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q11"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 7,
+        "time": "10:45:11:30 AM",
+        "minutes": "45 min.",
+        "is_merged_all_days": true,
+        "label": null,
+        "subject": "Gen. Physics 1",
+        "subject_id": "subj_gen_physics_1",
+        "teacher": "Teacher Aniah",
+        "teacher_id": "tchr_aniah",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M12"
+          },
+          "Monday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N12"
+          },
+          "Tuesday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O12"
+          },
+          "Wednesday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P12"
+          },
+          "Thursday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q12"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 8,
+        "time": "11:30:00 \u2013 12:40 PM",
+        "minutes": "70 min.",
+        "is_merged_all_days": true,
+        "label": "LUNCH and SALAH",
+        "subject": "LUNCH and SALAH",
+        "subject_id": "subj_lunch_and_salah",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "M13"
+          },
+          "Monday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "N13"
+          },
+          "Tuesday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "O13"
+          },
+          "Wednesday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "P13"
+          },
+          "Thursday": {
+            "raw": "LUNCH and SALAH",
+            "subject": "LUNCH and SALAH",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "LUNCH and SALAH",
+            "source_sheet": "SHS",
+            "source_cell": "Q13"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 9,
+        "time": "12:40 \u2013 1:25 PM",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "label": "PE 12",
+        "subject": "PE 12",
+        "subject_id": "subj_pe_12",
+        "teacher": "Sir Mohaymen",
+        "teacher_id": "tchr_mohaymen",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher": "Sir Mohaymen",
+            "teacher_id": "tchr_mohaymen",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M14"
+          },
+          "Monday": {
+            "raw": "Research Consultation",
+            "subject": "Research Consultation",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N14"
+          },
+          "Tuesday": {
+            "raw": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher": "Sir Mohaymen",
+            "teacher_id": "tchr_mohaymen",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O14"
+          },
+          "Wednesday": {
+            "raw": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher": "Sir Mohaymen",
+            "teacher_id": "tchr_mohaymen",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P14"
+          },
+          "Thursday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "Q14"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 10,
+        "time": "1:25 \u2013 2:10 PM",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Gen Bio 1",
+        "subject_id": "subj_gen_bio_1",
+        "teacher": "Teacher Radzmia",
+        "teacher_id": "tchr_radzmia",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M15"
+          },
+          "Monday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N15"
+          },
+          "Tuesday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia+",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O15"
+          },
+          "Wednesday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P15"
+          },
+          "Thursday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q15"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 11,
+        "time": "2:15 \u2013 3:00 PM",
+        "minutes": "45 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Research Consultation",
+        "subject_id": "subj_research_consultation",
+        "teacher": "Teacher Radzmia",
+        "teacher_id": "tchr_radzmia",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Research Consultation",
+            "subject": "Research Consultation",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M16"
+          },
+          "Monday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N16"
+          },
+          "Tuesday": {
+            "raw": "Qur'an - Alim Dipatuan",
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "teacher_id": "tchr_dipatuan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O16"
+          },
+          "Wednesday": {
+            "raw": "Qur'an - Alim Dipatuan",
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "teacher_id": "tchr_dipatuan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P16"
+          },
+          "Thursday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q16"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      },
+      {
+        "period_num": 12,
+        "time": "3:00 \u2013 3:30",
+        "minutes": "30 min.",
+        "is_merged_all_days": true,
+        "label": "SALAH & DEPARTURE",
+        "subject": "SALAH & DEPARTURE",
+        "subject_id": "subj_salah_departure",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "M17"
+          },
+          "Monday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "N17"
+          },
+          "Tuesday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "O17"
+          },
+          "Wednesday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "P17"
+          },
+          "Thursday": {
+            "raw": "SALAH & DEPARTURE",
+            "subject": "SALAH & DEPARTURE",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "SALAH & DEPARTURE",
+            "source_sheet": "SHS",
+            "source_cell": "Q17"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K4"
+      }
+    ]
+  },
+  {
+    "id": "sec_grade_11_1st_shift_girls",
+    "section_id": "sec_grade_11_1st_shift_girls",
+    "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
+    "shift": "ODL - 1ST SHIFT",
+    "department": "Senior High School",
+    "grade_level": "Grade 11",
+    "total_periods": 9,
+    "source_sheet": "SHS",
+    "source_cell": "B20",
+    "periods": [
+      {
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "subject_id": "subj_general_assembly",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "D22"
+          },
+          "Monday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "E22"
+          },
+          "Tuesday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "F22"
+          },
+          "Wednesday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "G22"
+          },
+          "Thursday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "H22"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Arabic",
+        "subject_id": "subj_arabic",
+        "teacher": "Alim Mamonas",
+        "teacher_id": "tchr_mamonas",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "teacher_id": "tchr_mamonas",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D23"
+          },
+          "Monday": {
+            "raw": "Gen Bio 1 - Tchr. Rowena",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E23"
+          },
+          "Tuesday": {
+            "raw": "Gen Bio 1 - Tchr. Rowena",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F23"
+          },
+          "Wednesday": {
+            "raw": "Gen Bio 1 - Tchr. Rowena",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G23"
+          },
+          "Thursday": {
+            "raw": "Qur'an - Alim Abdulwahab",
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "teacher_id": "tchr_abdulwahab",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H23"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "subject_id": "subj_transition",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "D24"
+          },
+          "Monday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "E24"
+          },
+          "Tuesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "F24"
+          },
+          "Wednesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "G24"
+          },
+          "Thursday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "H24"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Gen Math",
+        "subject_id": "subj_gen_math",
+        "teacher": "Teacher Jhelyn",
+        "teacher_id": "tchr_jhelyn",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D25"
+          },
+          "Monday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E25"
+          },
+          "Tuesday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F25"
+          },
+          "Wednesday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G25"
+          },
+          "Thursday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H25"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "subject_id": "subj_transition",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "D26"
+          },
+          "Monday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "E26"
+          },
+          "Tuesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "F26"
+          },
+          "Wednesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "G26"
+          },
+          "Thursday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "H26"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "LCS",
+        "subject_id": "subj_lcs",
+        "teacher": "Teacher Norhaima",
+        "teacher_id": "tchr_norhaima",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D27"
+          },
+          "Monday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E27"
+          },
+          "Tuesday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F27"
+          },
+          "Wednesday": {
+            "raw": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "teacher_id": "tchr_samsuddin",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G27"
+          },
+          "Thursday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H27"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:10 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "BREAK",
+        "subject": "BREAK",
+        "subject_id": "subj_break",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "BREAK",
+            "subject": "BREAK",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "BREAK",
+            "source_sheet": "SHS",
+            "source_cell": "D28"
+          },
+          "Monday": {
+            "raw": "BREAK",
+            "subject": "BREAK",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "BREAK",
+            "source_sheet": "SHS",
+            "source_cell": "E28"
+          },
+          "Tuesday": {
+            "raw": "BREAK",
+            "subject": "BREAK",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "BREAK",
+            "source_sheet": "SHS",
+            "source_cell": "F28"
+          },
+          "Wednesday": {
+            "raw": "BREAK",
+            "subject": "BREAK",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "BREAK",
+            "source_sheet": "SHS",
+            "source_cell": "G28"
+          },
+          "Thursday": {
+            "raw": "BREAK",
+            "subject": "BREAK",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "BREAK",
+            "source_sheet": "SHS",
+            "source_cell": "H28"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 8,
+        "time": "03:00 \u2013 03:40 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "EC",
+        "subject_id": "subj_ec",
+        "teacher": "Teacher Nadzra",
+        "teacher_id": "tchr_nadzra",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D29"
+          },
+          "Monday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E29"
+          },
+          "Tuesday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F29"
+          },
+          "Wednesday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G29"
+          },
+          "Thursday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H29"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 9,
+        "time": "3:50 \u2013 4:30 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": "Gen Math",
+        "subject": "Gen Math",
+        "subject_id": "subj_gen_math",
+        "teacher": "Teacher Jhelyn",
+        "teacher_id": "tchr_jhelyn",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "D30",
+            "merge_group": "official-merge:sec_grade_11_1st_shift_girls:source:D30:G30"
+          },
+          "Monday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "E30",
+            "merge_group": "official-merge:sec_grade_11_1st_shift_girls:source:D30:G30"
+          },
+          "Tuesday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "F30",
+            "merge_group": "official-merge:sec_grade_11_1st_shift_girls:source:D30:G30"
+          },
+          "Wednesday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "G30",
+            "merge_group": "official-merge:sec_grade_11_1st_shift_girls:source:D30:G30"
+          },
+          "Thursday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H30"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      }
+    ],
+    "rows": [
+      {
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "subject_id": "subj_general_assembly",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "D22"
+          },
+          "Monday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "E22"
+          },
+          "Tuesday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "F22"
+          },
+          "Wednesday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "G22"
+          },
+          "Thursday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "H22"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Arabic",
+        "subject_id": "subj_arabic",
+        "teacher": "Alim Mamonas",
+        "teacher_id": "tchr_mamonas",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "teacher_id": "tchr_mamonas",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D23"
+          },
+          "Monday": {
+            "raw": "Gen Bio 1 - Tchr. Rowena",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E23"
+          },
+          "Tuesday": {
+            "raw": "Gen Bio 1 - Tchr. Rowena",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F23"
+          },
+          "Wednesday": {
+            "raw": "Gen Bio 1 - Tchr. Rowena",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G23"
+          },
+          "Thursday": {
+            "raw": "Qur'an - Alim Abdulwahab",
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "teacher_id": "tchr_abdulwahab",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H23"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "subject_id": "subj_transition",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "D24"
+          },
+          "Monday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "E24"
+          },
+          "Tuesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "F24"
+          },
+          "Wednesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "G24"
+          },
+          "Thursday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "H24"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Gen Math",
+        "subject_id": "subj_gen_math",
+        "teacher": "Teacher Jhelyn",
+        "teacher_id": "tchr_jhelyn",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D25"
+          },
+          "Monday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E25"
+          },
+          "Tuesday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F25"
+          },
+          "Wednesday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G25"
+          },
+          "Thursday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H25"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "subject_id": "subj_transition",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "D26"
+          },
+          "Monday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "E26"
+          },
+          "Tuesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "F26"
+          },
+          "Wednesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "G26"
+          },
+          "Thursday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "H26"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "LCS",
+        "subject_id": "subj_lcs",
+        "teacher": "Teacher Norhaima",
+        "teacher_id": "tchr_norhaima",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D27"
+          },
+          "Monday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E27"
+          },
+          "Tuesday": {
+            "raw": "PSKP - Tchr. Shi",
+            "subject": "PSKP",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F27"
+          },
+          "Wednesday": {
+            "raw": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "teacher_id": "tchr_samsuddin",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G27"
+          },
+          "Thursday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H27"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:10 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "BREAK",
+        "subject": "BREAK",
+        "subject_id": "subj_break",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "BREAK",
+            "subject": "BREAK",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "BREAK",
+            "source_sheet": "SHS",
+            "source_cell": "D28"
+          },
+          "Monday": {
+            "raw": "BREAK",
+            "subject": "BREAK",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "BREAK",
+            "source_sheet": "SHS",
+            "source_cell": "E28"
+          },
+          "Tuesday": {
+            "raw": "BREAK",
+            "subject": "BREAK",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "BREAK",
+            "source_sheet": "SHS",
+            "source_cell": "F28"
+          },
+          "Wednesday": {
+            "raw": "BREAK",
+            "subject": "BREAK",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "BREAK",
+            "source_sheet": "SHS",
+            "source_cell": "G28"
+          },
+          "Thursday": {
+            "raw": "BREAK",
+            "subject": "BREAK",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "BREAK",
+            "source_sheet": "SHS",
+            "source_cell": "H28"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 8,
+        "time": "03:00 \u2013 03:40 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "EC",
+        "subject_id": "subj_ec",
+        "teacher": "Teacher Nadzra",
+        "teacher_id": "tchr_nadzra",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D29"
+          },
+          "Monday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E29"
+          },
+          "Tuesday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F29"
+          },
+          "Wednesday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G29"
+          },
+          "Thursday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H29"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      },
+      {
+        "period_num": 9,
+        "time": "3:50 \u2013 4:30 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": "Gen Math",
+        "subject": "Gen Math",
+        "subject_id": "subj_gen_math",
+        "teacher": "Teacher Jhelyn",
+        "teacher_id": "tchr_jhelyn",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "D30",
+            "merge_group": "official-merge:sec_grade_11_1st_shift_girls:source:D30:G30"
+          },
+          "Monday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "E30",
+            "merge_group": "official-merge:sec_grade_11_1st_shift_girls:source:D30:G30"
+          },
+          "Tuesday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "F30",
+            "merge_group": "official-merge:sec_grade_11_1st_shift_girls:source:D30:G30"
+          },
+          "Wednesday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "G30",
+            "merge_group": "official-merge:sec_grade_11_1st_shift_girls:source:D30:G30"
+          },
+          "Thursday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H30"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B20"
+      }
+    ]
+  },
+  {
+    "id": "sec_grade_12_abu_musa_al_ashari",
+    "section_id": "sec_grade_12_abu_musa_al_ashari",
+    "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+    "shift": "ODL - 1ST SHIFT",
+    "department": "Senior High School",
+    "grade_level": "Grade 12",
+    "total_periods": 9,
+    "source_sheet": "SHS",
+    "source_cell": "K20",
+    "periods": [
+      {
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "subject_id": "subj_general_assembly",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "M22"
+          },
+          "Monday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "N22"
+          },
+          "Tuesday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "O22"
+          },
+          "Wednesday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "P22"
+          },
+          "Thursday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "Q22"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Gen. Physics 1",
+        "subject_id": "subj_gen_physics_1",
+        "teacher": "Teacher Aniah",
+        "teacher_id": "tchr_aniah",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M23"
+          },
+          "Monday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N23"
+          },
+          "Tuesday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O23"
+          },
+          "Wednesday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P23"
+          },
+          "Thursday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q23"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "subject_id": "subj_transition",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "M24"
+          },
+          "Monday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "N24"
+          },
+          "Tuesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "O24"
+          },
+          "Wednesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "P24"
+          },
+          "Thursday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "Q24"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "SHAF",
+        "subject_id": "subj_shaf",
+        "teacher": "Alim Samsuddin",
+        "teacher_id": "tchr_samsuddin",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "teacher_id": "tchr_samsuddin",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M25"
+          },
+          "Monday": {
+            "raw": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "teacher_id": "tchr_mamonas",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N25"
+          },
+          "Tuesday": {
+            "raw": "Qur'an - Alim Dipatuan",
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "teacher_id": "tchr_dipatuan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O25"
+          },
+          "Wednesday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P25"
+          },
+          "Thursday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q25"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "subject_id": "subj_transition",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "M26"
+          },
+          "Monday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "N26"
+          },
+          "Tuesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "O26"
+          },
+          "Wednesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "P26"
+          },
+          "Thursday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "Q26"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Prac. Res. 2",
+        "subject_id": "subj_prac_res_2",
+        "teacher": "Teacher Aniah",
+        "teacher_id": "tchr_aniah",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M27"
+          },
+          "Monday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N27"
+          },
+          "Tuesday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O27"
+          },
+          "Wednesday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P27"
+          },
+          "Thursday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q27"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:40 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Prac. Res. 2",
+        "subject_id": "subj_prac_res_2",
+        "teacher": "Teacher Aniah",
+        "teacher_id": "tchr_aniah",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M28"
+          },
+          "Monday": {
+            "raw": "Research Consulatation",
+            "subject": "Research Consulatation",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N28"
+          },
+          "Tuesday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O28"
+          },
+          "Wednesday": {
+            "raw": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher": "Sir Mohaymen",
+            "teacher_id": "tchr_mohaymen",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P28"
+          },
+          "Thursday": {
+            "raw": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher": "Sir Mohaymen",
+            "teacher_id": "tchr_mohaymen",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q28"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 8,
+        "time": "03:40 \u2013 03:50 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "subject_id": "subj_transition",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "M29"
+          },
+          "Monday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "N29"
+          },
+          "Tuesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "O29"
+          },
+          "Wednesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "P29"
+          },
+          "Thursday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "Q29"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 9,
+        "time": "3:50 \u2013 4:30 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": "MIL",
+        "subject": "MIL",
+        "subject_id": "subj_mil",
+        "teacher": "Teacher Ethel",
+        "teacher_id": "tchr_ethel",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M30"
+          },
+          "Monday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N30"
+          },
+          "Tuesday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O30"
+          },
+          "Wednesday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "P30",
+            "merge_group": "official-merge:sec_grade_12_abu_musa_al_ashari:source:P30:Q30"
+          },
+          "Thursday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "Q30",
+            "merge_group": "official-merge:sec_grade_12_abu_musa_al_ashari:source:P30:Q30"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      }
+    ],
+    "rows": [
+      {
+        "period_num": 1,
+        "time": "12:30 \u2013 12:40 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "subject_id": "subj_general_assembly",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "M22"
+          },
+          "Monday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "N22"
+          },
+          "Tuesday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "O22"
+          },
+          "Wednesday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "P22"
+          },
+          "Thursday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "Q22"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Gen. Physics 1",
+        "subject_id": "subj_gen_physics_1",
+        "teacher": "Teacher Aniah",
+        "teacher_id": "tchr_aniah",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M23"
+          },
+          "Monday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N23"
+          },
+          "Tuesday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O23"
+          },
+          "Wednesday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P23"
+          },
+          "Thursday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q23"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 3,
+        "time": "01:20 \u2013 01:30 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "subject_id": "subj_transition",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "M24"
+          },
+          "Monday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "N24"
+          },
+          "Tuesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "O24"
+          },
+          "Wednesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "P24"
+          },
+          "Thursday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "Q24"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "SHAF",
+        "subject_id": "subj_shaf",
+        "teacher": "Alim Samsuddin",
+        "teacher_id": "tchr_samsuddin",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "teacher_id": "tchr_samsuddin",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M25"
+          },
+          "Monday": {
+            "raw": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "teacher_id": "tchr_mamonas",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N25"
+          },
+          "Tuesday": {
+            "raw": "Qur'an - Alim Dipatuan",
+            "subject": "Qur'an",
+            "teacher": "Alim Dipatuan",
+            "teacher_id": "tchr_dipatuan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O25"
+          },
+          "Wednesday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P25"
+          },
+          "Thursday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q25"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 5,
+        "time": "02:10 \u2013 02:20 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "subject_id": "subj_transition",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "M26"
+          },
+          "Monday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "N26"
+          },
+          "Tuesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "O26"
+          },
+          "Wednesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "P26"
+          },
+          "Thursday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "Q26"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Prac. Res. 2",
+        "subject_id": "subj_prac_res_2",
+        "teacher": "Teacher Aniah",
+        "teacher_id": "tchr_aniah",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M27"
+          },
+          "Monday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N27"
+          },
+          "Tuesday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O27"
+          },
+          "Wednesday": {
+            "raw": "Gen. Physics 1 - Tchr. Aniah",
+            "subject": "Gen. Physics 1",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P27"
+          },
+          "Thursday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q27"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 7,
+        "time": "03:00 \u2013 03:40 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "Prac. Res. 2",
+        "subject_id": "subj_prac_res_2",
+        "teacher": "Teacher Aniah",
+        "teacher_id": "tchr_aniah",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M28"
+          },
+          "Monday": {
+            "raw": "Research Consulatation",
+            "subject": "Research Consulatation",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N28"
+          },
+          "Tuesday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O28"
+          },
+          "Wednesday": {
+            "raw": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher": "Sir Mohaymen",
+            "teacher_id": "tchr_mohaymen",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "P28"
+          },
+          "Thursday": {
+            "raw": "PE 12 - Sir Moh",
+            "subject": "PE 12",
+            "teacher": "Sir Mohaymen",
+            "teacher_id": "tchr_mohaymen",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "Q28"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 8,
+        "time": "03:40 \u2013 03:50 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "subject_id": "subj_transition",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "M29"
+          },
+          "Monday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "N29"
+          },
+          "Tuesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "O29"
+          },
+          "Wednesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "P29"
+          },
+          "Thursday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "Q29"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      },
+      {
+        "period_num": 9,
+        "time": "3:50 \u2013 4:30 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": "MIL",
+        "subject": "MIL",
+        "subject_id": "subj_mil",
+        "teacher": "Teacher Ethel",
+        "teacher_id": "tchr_ethel",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "MIL - Tchr. Ethel",
+            "subject": "MIL",
+            "teacher": "Teacher Ethel",
+            "teacher_id": "tchr_ethel",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "M30"
+          },
+          "Monday": {
+            "raw": "Prac. Res. 2 - Tchr. Aniah",
+            "subject": "Prac. Res. 2",
+            "teacher": "Teacher Aniah",
+            "teacher_id": "tchr_aniah",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "N30"
+          },
+          "Tuesday": {
+            "raw": "21st Lit. -Tchr Nof",
+            "subject": "21st Lit.",
+            "teacher": "Teacher Nof",
+            "teacher_id": "tchr_nof",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "O30"
+          },
+          "Wednesday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "P30",
+            "merge_group": "official-merge:sec_grade_12_abu_musa_al_ashari:source:P30:Q30"
+          },
+          "Thursday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "Q30",
+            "merge_group": "official-merge:sec_grade_12_abu_musa_al_ashari:source:P30:Q30"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "K20"
+      }
+    ]
+  },
+  {
+    "id": "sec_grade_11_2nd_shift_boys",
+    "section_id": "sec_grade_11_2nd_shift_boys",
+    "section_name": "GRADE 11 (2ND SHIFT BOYS)",
+    "shift": "ODL - 2ND SHIFT",
+    "department": "Senior High School",
+    "grade_level": "Grade 11",
+    "total_periods": 8,
+    "source_sheet": "SHS",
+    "source_cell": "B33",
+    "periods": [
+      {
+        "period_num": 1,
+        "time": "2:20 \u2013 3:00 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "SHAF",
+        "subject_id": "subj_shaf",
+        "teacher": "Alim Samsuddin",
+        "teacher_id": "tchr_samsuddin",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "teacher_id": "tchr_samsuddin",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D35"
+          },
+          "Monday": {
+            "raw": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "teacher_id": "tchr_mamonas",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E35"
+          },
+          "Tuesday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F35"
+          },
+          "Wednesday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G35"
+          },
+          "Thursday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H35"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      },
+      {
+        "period_num": 2,
+        "time": "3:00 \u2013 3:30 PM",
+        "minutes": "30 min.",
+        "is_merged_all_days": false,
+        "label": "LCS 11 2nd shift",
+        "subject": "LCS 11 2nd shift",
+        "subject_id": "subj_lcs_11_2nd_shift",
+        "teacher": "Teacher Nadzra",
+        "teacher_id": "tchr_nadzra",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "LCS 11 2nd shift",
+            "subject": "LCS 11 2nd shift",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D36"
+          },
+          "Monday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "E36",
+            "merge_group": "official-merge:sec_grade_11_2nd_shift_boys:source:E36:G36"
+          },
+          "Tuesday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "F36",
+            "merge_group": "official-merge:sec_grade_11_2nd_shift_boys:source:E36:G36"
+          },
+          "Wednesday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "G36",
+            "merge_group": "official-merge:sec_grade_11_2nd_shift_boys:source:E36:G36"
+          },
+          "Thursday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H36"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      },
+      {
+        "period_num": 3,
+        "time": "3:30 \u2013 3:40 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "subject_id": "subj_general_assembly",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "D37"
+          },
+          "Monday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "E37"
+          },
+          "Tuesday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "F37"
+          },
+          "Wednesday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "G37"
+          },
+          "Thursday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "H37"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      },
+      {
+        "period_num": 4,
+        "time": "3:40 \u2013 4:20 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "PSKP 11",
+        "subject_id": "subj_pskp_11",
+        "teacher": "Teacher Shirehan",
+        "teacher_id": "tchr_shirehan",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "PSKP 11 - Tchr. Shirehan",
+            "subject": "PSKP 11",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D38"
+          },
+          "Monday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E38"
+          },
+          "Tuesday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F38"
+          },
+          "Wednesday": {
+            "raw": "Qur'an - Alim Abdulwahab",
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "teacher_id": "tchr_abdulwahab",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G38"
+          },
+          "Thursday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H38"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      },
+      {
+        "period_num": 5,
+        "time": "4:20 \u2013 4:30 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "subject_id": "subj_transition",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "D39"
+          },
+          "Monday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "E39"
+          },
+          "Tuesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "F39"
+          },
+          "Wednesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "G39"
+          },
+          "Thursday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "H39"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      },
+      {
+        "period_num": 6,
+        "time": "4:30 \u2013 5:10 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "EC",
+        "subject_id": "subj_ec",
+        "teacher": "Teacher Nadzra",
+        "teacher_id": "tchr_nadzra",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D40"
+          },
+          "Monday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E40"
+          },
+          "Tuesday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F40"
+          },
+          "Wednesday": {
+            "raw": "PSKP 11 - Tchr. Shirehan",
+            "subject": "PSKP 11",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G40"
+          },
+          "Thursday": {
+            "raw": "PSKP 11 - Tchr. Shirehan",
+            "subject": "PSKP 11",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H40"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      },
+      {
+        "period_num": 7,
+        "time": "5:10 \u2013 5:20 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "subject_id": "subj_transition",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "D41"
+          },
+          "Monday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "E41"
+          },
+          "Tuesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "F41"
+          },
+          "Wednesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "G41"
+          },
+          "Thursday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "H41"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      },
+      {
+        "period_num": 8,
+        "time": "5:20 \u2013 6:00 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": "Gen Science",
+        "subject": "Gen Science",
+        "subject_id": "subj_gen_science",
+        "teacher": "Teacher Rowena",
+        "teacher_id": "tchr_rowena",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D42"
+          },
+          "Monday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E42"
+          },
+          "Tuesday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F42"
+          },
+          "Wednesday": {
+            "raw": "",
+            "subject": "",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "",
+            "source_sheet": "SHS",
+            "source_cell": "G42"
+          },
+          "Thursday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H42"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      }
+    ],
+    "rows": [
+      {
+        "period_num": 1,
+        "time": "2:20 \u2013 3:00 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "SHAF",
+        "subject_id": "subj_shaf",
+        "teacher": "Alim Samsuddin",
+        "teacher_id": "tchr_samsuddin",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "SHAF - Alim Samsuddin",
+            "subject": "SHAF",
+            "teacher": "Alim Samsuddin",
+            "teacher_id": "tchr_samsuddin",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D35"
+          },
+          "Monday": {
+            "raw": "Arabic - Alim Mamonas",
+            "subject": "Arabic",
+            "teacher": "Alim Mamonas",
+            "teacher_id": "tchr_mamonas",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E35"
+          },
+          "Tuesday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F35"
+          },
+          "Wednesday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G35"
+          },
+          "Thursday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H35"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      },
+      {
+        "period_num": 2,
+        "time": "3:00 \u2013 3:30 PM",
+        "minutes": "30 min.",
+        "is_merged_all_days": false,
+        "label": "LCS 11 2nd shift",
+        "subject": "LCS 11 2nd shift",
+        "subject_id": "subj_lcs_11_2nd_shift",
+        "teacher": "Teacher Nadzra",
+        "teacher_id": "tchr_nadzra",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "LCS 11 2nd shift",
+            "subject": "LCS 11 2nd shift",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D36"
+          },
+          "Monday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "E36",
+            "merge_group": "official-merge:sec_grade_11_2nd_shift_boys:source:E36:G36"
+          },
+          "Tuesday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "F36",
+            "merge_group": "official-merge:sec_grade_11_2nd_shift_boys:source:E36:G36"
+          },
+          "Wednesday": {
+            "raw": "HOMEROOM",
+            "subject": "HOMEROOM",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "HOMEROOM",
+            "source_sheet": "SHS",
+            "source_cell": "G36",
+            "merge_group": "official-merge:sec_grade_11_2nd_shift_boys:source:E36:G36"
+          },
+          "Thursday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H36"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      },
+      {
+        "period_num": 3,
+        "time": "3:30 \u2013 3:40 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "General Assembly",
+        "subject": "General Assembly",
+        "subject_id": "subj_general_assembly",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "D37"
+          },
+          "Monday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "E37"
+          },
+          "Tuesday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "F37"
+          },
+          "Wednesday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "G37"
+          },
+          "Thursday": {
+            "raw": "General Assembly",
+            "subject": "General Assembly",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "General Assembly",
+            "source_sheet": "SHS",
+            "source_cell": "H37"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      },
+      {
+        "period_num": 4,
+        "time": "3:40 \u2013 4:20 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "PSKP 11",
+        "subject_id": "subj_pskp_11",
+        "teacher": "Teacher Shirehan",
+        "teacher_id": "tchr_shirehan",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "PSKP 11 - Tchr. Shirehan",
+            "subject": "PSKP 11",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D38"
+          },
+          "Monday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E38"
+          },
+          "Tuesday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F38"
+          },
+          "Wednesday": {
+            "raw": "Qur'an - Alim Abdulwahab",
+            "subject": "Qur'an",
+            "teacher": "Alim Abdulwahab",
+            "teacher_id": "tchr_abdulwahab",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G38"
+          },
+          "Thursday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H38"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      },
+      {
+        "period_num": 5,
+        "time": "4:20 \u2013 4:30 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "subject_id": "subj_transition",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "D39"
+          },
+          "Monday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "E39"
+          },
+          "Tuesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "F39"
+          },
+          "Wednesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "G39"
+          },
+          "Thursday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "H39"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      },
+      {
+        "period_num": 6,
+        "time": "4:30 \u2013 5:10 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": null,
+        "subject": "EC",
+        "subject_id": "subj_ec",
+        "teacher": "Teacher Nadzra",
+        "teacher_id": "tchr_nadzra",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "EC - Tchr.  Nadzra",
+            "subject": "EC",
+            "teacher": "Teacher Nadzra",
+            "teacher_id": "tchr_nadzra",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D40"
+          },
+          "Monday": {
+            "raw": "Gen Bio 1 - Tchr. Radzmia",
+            "subject": "Gen Bio 1",
+            "teacher": "Teacher Radzmia",
+            "teacher_id": "tchr_radzmia",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E40"
+          },
+          "Tuesday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F40"
+          },
+          "Wednesday": {
+            "raw": "PSKP 11 - Tchr. Shirehan",
+            "subject": "PSKP 11",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "G40"
+          },
+          "Thursday": {
+            "raw": "PSKP 11 - Tchr. Shirehan",
+            "subject": "PSKP 11",
+            "teacher": "Teacher Shirehan",
+            "teacher_id": "tchr_shirehan",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H40"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      },
+      {
+        "period_num": 7,
+        "time": "5:10 \u2013 5:20 PM",
+        "minutes": "10 min.",
+        "is_merged_all_days": true,
+        "label": "Transition",
+        "subject": "Transition",
+        "subject_id": "subj_transition",
+        "teacher": null,
+        "teacher_id": null,
+        "is_break": true,
+        "days": {
+          "Sunday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "D41"
+          },
+          "Monday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "E41"
+          },
+          "Tuesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "F41"
+          },
+          "Wednesday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "G41"
+          },
+          "Thursday": {
+            "raw": "Transition",
+            "subject": "Transition",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "Transition",
+            "source_sheet": "SHS",
+            "source_cell": "H41"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
+      },
+      {
+        "period_num": 8,
+        "time": "5:20 \u2013 6:00 PM",
+        "minutes": "40 min.",
+        "is_merged_all_days": false,
+        "label": "Gen Science",
+        "subject": "Gen Science",
+        "subject_id": "subj_gen_science",
+        "teacher": "Teacher Rowena",
+        "teacher_id": "tchr_rowena",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "raw": "Gen Science - Tchr. Rowena",
+            "subject": "Gen Science",
+            "teacher": "Teacher Rowena",
+            "teacher_id": "tchr_rowena",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "D42"
+          },
+          "Monday": {
+            "raw": "LCS - Tchr. Norhaima",
+            "subject": "LCS",
+            "teacher": "Teacher Norhaima",
+            "teacher_id": "tchr_norhaima",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "E42"
+          },
+          "Tuesday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "F42"
+          },
+          "Wednesday": {
+            "raw": "",
+            "subject": "",
+            "teacher": null,
+            "teacher_id": null,
+            "is_break": true,
+            "label": "",
+            "source_sheet": "SHS",
+            "source_cell": "G42"
+          },
+          "Thursday": {
+            "raw": "Gen Math - Tchr. Jhelyn",
+            "subject": "Gen Math",
+            "teacher": "Teacher Jhelyn",
+            "teacher_id": "tchr_jhelyn",
+            "is_break": false,
+            "label": null,
+            "source_sheet": "SHS",
+            "source_cell": "H42"
+          }
+        },
+        "source_sheet": "SHS",
+        "source_cell": "B33"
       }
     ]
   }

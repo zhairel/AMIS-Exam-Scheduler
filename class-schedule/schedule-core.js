@@ -137,7 +137,9 @@
             end_time: formatInputTime(range.end),
             room: clean(cell.room || row.room),
             schedule_type: isBreak ? 'Official Break / Assembly' : 'Automatic / Official',
-            merge_group: row.is_merged_all_days ? `official-merge:${section.id || section.section_id || section.section_name}:${row.period_num || row.time}` : '',
+            merge_group: row.is_merged_all_days
+              ? `official-merge:${section.id || section.section_id || section.section_name}:${row.period_num || row.time}`
+              : clean(cell.merge_group),
             status: 'active',
             source: 'official'
           });

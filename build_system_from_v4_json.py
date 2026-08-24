@@ -2,7 +2,7 @@
 """
 Complete System Rebuild Strictly from AMIS_CLASS_DATASET_CANONICAL_LATEST_V4.json
 Zero dependence on old databases or stale registries.
-Only ELEM and HS SCHED (NEW) are permitted schedule sources.
+Only ELEM, HS SCHED (NEW), and SHS first term are permitted schedule sources.
 """
 
 import json, re, os, datetime
@@ -22,7 +22,7 @@ with open(V4_JSON_PATH, 'r', encoding='utf-8') as f:
     v4_data = json.load(f)
 
 DAYS_OF_WEEK = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
-ALLOWED_SOURCE_SHEETS = {"ELEM", "HS SCHED (NEW)"}
+ALLOWED_SOURCE_SHEETS = {"ELEM", "HS SCHED (NEW)", "SHS"}
 
 def col2num(col):
     num = 0
@@ -39,12 +39,36 @@ def num2col(num):
 
 sheets_by_name = {s['sheet_name']: s for s in v4_data.get('sheets', [])}
 
+def merged_range_bounds(range_ref):
+    start, end = range_ref.split(':')
+    start_match = re.fullmatch(r'([A-Z]+)(\d+)', start)
+    end_match = re.fullmatch(r'([A-Z]+)(\d+)', end)
+    if not start_match or not end_match:
+        return None
+    return (int(start_match.group(2)), col2num(start_match.group(1)), int(end_match.group(2)), col2num(end_match.group(1)))
+
+def get_v4_merge_range(sheet_name, row, col):
+    sheet = sheets_by_name.get(sheet_name) or {}
+    for range_ref in sheet.get('merged_ranges', []):
+        bounds = merged_range_bounds(range_ref)
+        if not bounds:
+            continue
+        min_row, min_col, max_row, max_col = bounds
+        if min_row == max_row == row and min_col <= col <= max_col and max_col > min_col:
+            return range_ref
+    return ''
+
 def get_v4_cell(sheet_name, cell_ref):
     sheet = sheets_by_name.get(sheet_name)
     if not sheet: return ""
     cell = sheet.get('cells', {}).get(cell_ref)
-    if not cell: return ""
-    v = cell.get('value')
+    v = cell.get('value') if cell else None
+    if v is None or not str(v).strip():
+        match = re.fullmatch(r'([A-Z]+)(\d+)', cell_ref)
+        merge_range = get_v4_merge_range(sheet_name, int(match.group(2)), col2num(match.group(1))) if match else ''
+        anchor = merge_range.split(':')[0] if merge_range else ''
+        anchor_cell = sheet.get('cells', {}).get(anchor) if anchor else None
+        v = anchor_cell.get('value') if anchor_cell else None
     return str(v).strip() if v is not None else ""
 
 SECTION_DEFS = [
@@ -118,7 +142,14 @@ SECTION_DEFS = [
     {"sheet": "HS SCHED (NEW)", "header_cell": "S28", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 30, "end_row": 36, "shift": "ODL - 2ND SHIFT", "grade": "Grade 8", "dept": "Junior High School"},
     {"sheet": "HS SCHED (NEW)", "header_cell": "S40", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 42, "end_row": 48, "shift": "ODL - 2ND SHIFT", "grade": "Grade 9", "dept": "Junior High School"},
     {"sheet": "HS SCHED (NEW)", "header_cell": "S51", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 53, "end_row": 59, "shift": "ODL - 2ND SHIFT", "grade": "Grade 9", "dept": "Junior High School"},
-    {"sheet": "HS SCHED (NEW)", "header_cell": "S62", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 64, "end_row": 70, "shift": "ODL - 2ND SHIFT", "grade": "Grade 10", "dept": "Junior High School"}
+    {"sheet": "HS SCHED (NEW)", "header_cell": "S62", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 64, "end_row": 70, "shift": "ODL - 2ND SHIFT", "grade": "Grade 10", "dept": "Junior High School"},
+
+    # --- SHS (Grade 11 & Grade 12 FIRST TERM ONLY, Rows 1:46) ---
+    {"sheet": "SHS", "header_cell": "B4", "time_col": 2, "min_col": 3, "day_cols": [4,5,6,7,8], "start_row": 6, "end_row": 17, "shift": "F2F", "grade": "Grade 11", "dept": "Senior High School"},
+    {"sheet": "SHS", "header_cell": "K4", "time_col": 11, "min_col": 12, "day_cols": [13,14,15,16,17], "start_row": 6, "end_row": 17, "shift": "F2F", "grade": "Grade 12", "dept": "Senior High School"},
+    {"sheet": "SHS", "header_cell": "B20", "time_col": 2, "min_col": 3, "day_cols": [4,5,6,7,8], "start_row": 22, "end_row": 30, "shift": "ODL - 1ST SHIFT", "grade": "Grade 11", "dept": "Senior High School"},
+    {"sheet": "SHS", "header_cell": "K20", "time_col": 11, "min_col": 12, "day_cols": [13,14,15,16,17], "start_row": 22, "end_row": 30, "shift": "ODL - 1ST SHIFT", "grade": "Grade 12", "dept": "Senior High School"},
+    {"sheet": "SHS", "header_cell": "B33", "time_col": 2, "min_col": 3, "day_cols": [4,5,6,7,8], "start_row": 35, "end_row": 42, "shift": "ODL - 2ND SHIFT", "grade": "Grade 11", "dept": "Senior High School"}
 ]
 
 unexpected_sheets = {item["sheet"] for item in SECTION_DEFS} - ALLOWED_SOURCE_SHEETS
@@ -399,6 +430,9 @@ for sdef in SECTION_DEFS:
                 "source_sheet": sdef['sheet'],
                 "source_cell": cell_ref
             }
+            source_merge_range = get_v4_merge_range(sdef['sheet'], r, c)
+            if source_merge_range:
+                day_cells[dname]["merge_group"] = f"official-merge:{sec_id}:source:{source_merge_range}"
             
             if is_break_cell:
                 is_break_row = True
@@ -457,6 +491,9 @@ for sdef in SECTION_DEFS:
                 
         first_day_val = day_cells["Sunday"]["raw"] if "Sunday" in day_cells else ""
         all_same = all(day_cells[d]["raw"] == first_day_val for d in DAYS_OF_WEEK)
+        if all_same:
+            for day_cell in day_cells.values():
+                day_cell.pop("merge_group", None)
         
         main_subj = row_subjects[0] if row_subjects else (first_day_val if first_day_val else "BREAK / ASSEMBLY")
         main_tchr = row_teachers[0] if row_teachers else None

@@ -4,6 +4,7 @@ Complete Rebuilder from Canonical Dataset V4 (SCHEDULE SY 2026-2027 TW.xlsx)
 Only Sources:
   - ELEM (Kinder to Grade 6)
   - HS SCHED (NEW) (Grade 7 to Grade 10 ONLY: B1:H68, K1:Q62, S1:Y75)
+  - SHS (Grade 11 to Grade 12 FIRST TERM ONLY: Rows 1:46)
 """
 
 import json, re, os, datetime
@@ -23,7 +24,7 @@ AUDIT_LOG_PATH = '/home/tatsuya/Projects/AMIS/amis_exam_calendar/canonical_v4_te
 
 wb = openpyxl.load_workbook(EXCEL_PATH, data_only=True)
 DAYS_OF_WEEK = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"]
-ALLOWED_SOURCE_SHEETS = {"ELEM", "HS SCHED (NEW)"}
+ALLOWED_SOURCE_SHEETS = {"ELEM", "HS SCHED (NEW)", "SHS"}
 
 SECTION_DEFS = [
     # --- ELEM (Kinder to Grade 6) ---
@@ -96,7 +97,14 @@ SECTION_DEFS = [
     {"sheet": "HS SCHED (NEW)", "header_cell": "S28", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 30, "end_row": 36, "shift": "ODL - 2ND SHIFT", "grade": "Grade 8", "dept": "Junior High School"},
     {"sheet": "HS SCHED (NEW)", "header_cell": "S40", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 42, "end_row": 48, "shift": "ODL - 2ND SHIFT", "grade": "Grade 9", "dept": "Junior High School"},
     {"sheet": "HS SCHED (NEW)", "header_cell": "S51", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 53, "end_row": 59, "shift": "ODL - 2ND SHIFT", "grade": "Grade 9", "dept": "Junior High School"},
-    {"sheet": "HS SCHED (NEW)", "header_cell": "S62", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 64, "end_row": 70, "shift": "ODL - 2ND SHIFT", "grade": "Grade 10", "dept": "Junior High School"}
+    {"sheet": "HS SCHED (NEW)", "header_cell": "S62", "time_col": 19, "min_col": 20, "day_cols": [21,22,23,24,25], "start_row": 64, "end_row": 70, "shift": "ODL - 2ND SHIFT", "grade": "Grade 10", "dept": "Junior High School"},
+
+    # --- SHS (Grade 11 & Grade 12 FIRST TERM ONLY, Rows 1:46) ---
+    {"sheet": "SHS", "header_cell": "B4", "time_col": 2, "min_col": 3, "day_cols": [4,5,6,7,8], "start_row": 6, "end_row": 17, "shift": "F2F", "grade": "Grade 11", "dept": "Senior High School"},
+    {"sheet": "SHS", "header_cell": "K4", "time_col": 11, "min_col": 12, "day_cols": [13,14,15,16,17], "start_row": 6, "end_row": 17, "shift": "F2F", "grade": "Grade 12", "dept": "Senior High School"},
+    {"sheet": "SHS", "header_cell": "B20", "time_col": 2, "min_col": 3, "day_cols": [4,5,6,7,8], "start_row": 22, "end_row": 30, "shift": "ODL - 1ST SHIFT", "grade": "Grade 11", "dept": "Senior High School"},
+    {"sheet": "SHS", "header_cell": "K20", "time_col": 11, "min_col": 12, "day_cols": [13,14,15,16,17], "start_row": 22, "end_row": 30, "shift": "ODL - 1ST SHIFT", "grade": "Grade 12", "dept": "Senior High School"},
+    {"sheet": "SHS", "header_cell": "B33", "time_col": 2, "min_col": 3, "day_cols": [4,5,6,7,8], "start_row": 35, "end_row": 42, "shift": "ODL - 2ND SHIFT", "grade": "Grade 11", "dept": "Senior High School"}
 ]
 
 unexpected_sheets = {item["sheet"] for item in SECTION_DEFS} - ALLOWED_SOURCE_SHEETS
@@ -165,6 +173,12 @@ def get_cell_value_merged(ws, row, col):
             top_val = ws.cell(rng.min_row, rng.min_col).value
             if top_val is not None and str(top_val).strip():
                 return str(top_val).strip()
+    return ''
+
+def get_horizontal_merge_range(ws, row, col):
+    for rng in ws.merged_cells.ranges:
+        if rng.min_row == rng.max_row == row and rng.min_col <= col <= rng.max_col and rng.max_col > rng.min_col:
+            return str(rng)
     return ''
 
 print("Building Canonical V4 Class Schedules...")
@@ -242,6 +256,9 @@ for sdef in SECTION_DEFS:
                 "source_sheet": sdef['sheet'],
                 "source_cell": cell_ref
             }
+            source_merge_range = get_horizontal_merge_range(ws, r, c)
+            if source_merge_range:
+                day_cells[dname]["merge_group"] = f"official-merge:{sec_id}:source:{source_merge_range}"
             
             if is_break_cell:
                 is_break_row = True
@@ -275,6 +292,9 @@ for sdef in SECTION_DEFS:
         # Determine if merged across all days
         first_day_val = day_cells["Sunday"]["raw"] if "Sunday" in day_cells else ""
         all_same = bool(first_day_val) and all(day_cells[d]["raw"] == first_day_val for d in DAYS_OF_WEEK)
+        if all_same:
+            for day_cell in day_cells.values():
+                day_cell.pop("merge_group", None)
         
         main_subj = row_subjects[0] if row_subjects else (first_day_val if first_day_val else "BREAK / ASSEMBLY")
         main_tchr = row_teachers[0] if row_teachers else None
