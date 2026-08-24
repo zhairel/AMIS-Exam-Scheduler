@@ -1532,6 +1532,11 @@
       "result": "SHS cells now render only at their authoritative time; Abu Musa MIL and Practical Research 2 moved from 04:20 PM to 03:10 PM while its 12:40 PM and 120-minute exams remain intact"
     },
     {
+      "teacher": "Teacher Keychelle",
+      "request": "Correct the displayed name from Keychell to Keychelle",
+      "result": "Canonical display name corrected across class schedules, exam schedules, faculty views, and exports while preserving tchr_keychell and the former spelling as an import alias"
+    },
+    {
       "teacher": "Teacher Aniah",
       "request": "Keep Grade 7 Usama Science on Day 2 and reserve Day 1 03:10 PM for Grade 7 Anas Science only",
       "result": "Usama Science retained on Sep 3 at 03:10 PM; Anas Science moved to Sep 2 at 03:10 PM; Anas Social Studies moved to the vacant Sep 2 first period"

@@ -16,8 +16,8 @@ OFFICIAL_CURRICULUM_TEACHERS = {
     },
     "Kinder 2": {
         "F2F": [
-            ("Circle Time 1", ["Teacher Keychell"]),
-            ("Circle Time 2", ["Teacher Keychell"]),
+            ("Circle Time 1", ["Teacher Keychelle"]),
+            ("Circle Time 2", ["Teacher Keychelle"]),
             ("Qur'an", ["Ustadh Jaisam"]),
             ("Arabic", ["Ustadha Saliha"]),
             ("Hadith", ["Ustadha Saliha"])
@@ -30,8 +30,8 @@ OFFICIAL_CURRICULUM_TEACHERS = {
             ("Hadith", ["Ustadha Saliha"])
         ],
         "ODL_2": [
-            ("Circle Time 1", ["Teacher Keychell"]),
-            ("Circle Time 2", ["Teacher Keychell"]),
+            ("Circle Time 1", ["Teacher Keychelle"]),
+            ("Circle Time 2", ["Teacher Keychelle"]),
             ("Qur'an", ["Ustadh Faidh"]),
             ("Arabic", ["Ustadha Silfah"]),
             ("Hadith", ["Ustadh Faidh"])
@@ -185,7 +185,7 @@ OFFICIAL_CURRICULUM_TEACHERS = {
             ("GMRC", ["Teacher Jayra"]),
             ("English", ["Teacher Jessa"]),
             ("Qur'an", ["Ustadh Obaydah"]),
-            ("MAPEH", ["Teacher Keychell"]),
+            ("MAPEH", ["Teacher Keychelle"]),
             ("Arabic", ["Ustadh Ersahad"]),
             ("Science", ["Teacher Junaisah"]),
             ("Math", ["Teacher Fhairudz"]),
@@ -193,12 +193,12 @@ OFFICIAL_CURRICULUM_TEACHERS = {
         ],
         "ODL_1": [
             ("SHAF", ["Ustadh Raslina", "Ustadh Faidh"]),
-            ("AP", ["Teacher Monisa", "Teacher Keychell", "Teacher Saimonah"]),
+            ("AP", ["Teacher Monisa", "Teacher Keychelle", "Teacher Saimonah"]),
             ("Filipino", ["Teacher Joanna", "Teacher Jenny"]),
             ("GMRC", ["Teacher Jayra", "Ustadha Saliha"]),
             ("English", ["Teacher Jessa"]),
             ("Qur'an", ["Ustadh Jaisam", "Ustadh Obaydah"]),
-            ("MAPEH", ["Teacher Keychell", "Teacher Saimonah"]),
+            ("MAPEH", ["Teacher Keychelle", "Teacher Saimonah"]),
             ("Arabic", ["Alim Abdul Karim", "Ustadh Faidh"]),
             ("Science", ["Teacher Anna", "Teacher Saimonah"]),
             ("Math", ["Teacher Hannah", "Teacher Saimonah"]),

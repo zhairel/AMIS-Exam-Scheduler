@@ -252,10 +252,10 @@ TEACHER_REGISTRY = [
     },
     {
         "id": "tchr_keychell",
-        "canonical_name": "Teacher Keychell",
+        "canonical_name": "Teacher Keychelle",
         "department": "Elementary Faculty",
         "title": "Faculty Member",
-        "aliases": ["teacher keychell", "tchr. keychell", "tchr keychell", "keychell", "kaychell", "tr. keychell"]
+        "aliases": ["teacher keychelle", "tchr. keychelle", "tchr keychelle", "keychelle", "tr. keychelle", "teacher keychell", "tchr. keychell", "tchr keychell", "keychell", "kaychell", "tr. keychell"]
     },
     {
         "id": "tchr_marham",

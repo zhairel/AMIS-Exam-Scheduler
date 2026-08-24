@@ -40,6 +40,11 @@ def main():
     assert all(record["slots_spanned"] == (2 if record["duration_minutes"] == 120 else 1) for record in records)
     assert len({record["id"] for record in records}) == len(records)
     assert all(record.get("gender", "") == correction.infer_gender(record) for record in records)
+    keychelle_records = [record for record in records if record["teacher_id"] == "tchr_keychell"]
+    assert keychelle_records
+    assert all(record["teacher"] == "Teacher Keychelle" for record in keychelle_records)
+    assert correction.canonical_teacher("Teacher Keychell") == ("Teacher Keychelle", "tchr_keychell")
+    assert correction.canonical_teacher("Teacher Keychelle") == ("Teacher Keychelle", "tchr_keychell")
     subject_counts = Counter((record["section_id"], record["subject_id"]) for record in records)
     repeated_subjects = {key: count for key, count in subject_counts.items() if count > 1}
     assert repeated_subjects == {("sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix", "subj_filipino"): 2}

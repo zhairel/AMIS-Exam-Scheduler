@@ -404,9 +404,9 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
     # Clarified items 22, 25, and 26: these five Grade 5 sections need
     # MAPEH under the exact teacher assigned in the official class schedule.
     requested_grade5_mapeh = {
-        "sec_grade_5_face_to_face": "Teacher Keychell",
-        "sec_grade_5_hamza_ibn_abdul_1st_shift": "Teacher Keychell",
-        "sec_grade_5_muhammad_ibn_maslamah_1st_shift": "Teacher Keychell",
+        "sec_grade_5_face_to_face": "Teacher Keychelle",
+        "sec_grade_5_hamza_ibn_abdul_1st_shift": "Teacher Keychelle",
+        "sec_grade_5_muhammad_ibn_maslamah_1st_shift": "Teacher Keychelle",
         "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift": "Teacher Norhydie",
         "sec_grade_5_al_harith_bin_awf_2nd_shift": "Teacher Norhydie",
     }
@@ -827,6 +827,11 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "Grade 11 and Grade 12",
             "request": "Remove visually duplicated SHS subjects and make Grade 12 Abu Musa begin at 12:40 PM",
             "result": "SHS cells now render only at their authoritative time; Abu Musa MIL and Practical Research 2 moved from 04:20 PM to 03:10 PM while its 12:40 PM and 120-minute exams remain intact",
+        },
+        {
+            "teacher": "Teacher Keychelle",
+            "request": "Correct the displayed name from Keychell to Keychelle",
+            "result": "Canonical display name corrected across class schedules, exam schedules, faculty views, and exports while preserving tchr_keychell and the former spelling as an import alias",
         },
         {
             "teacher": "Teacher Aniah",

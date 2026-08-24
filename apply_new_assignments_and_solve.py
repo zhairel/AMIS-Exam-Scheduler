@@ -228,7 +228,7 @@ Teacher Katrina — TOTAL 8
   ODL 1st Shift: G1 — ALI IBN ABI TALIB; G1 — HUDHAYFAH IBN AL-YAM
   ODL 2nd Shift: G1 — SA'AD IBN ABI WAQQAAS; G1 — SUHAYB AR-RUMI
 
-Teacher Keychell — TOTAL 8
+Teacher Keychelle — TOTAL 8
 - AP
   ODL 1st Shift: G5 — MUHAMMAD IBN MASLAMAH
 - Circle Time 1

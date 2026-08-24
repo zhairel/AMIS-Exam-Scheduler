@@ -84,7 +84,7 @@ OFFICIAL_FACULTY_ASSIGNMENTS = {
         ("Filipino", ["Grade 3 F2F", "Grade 6 F2F", "Grade 3 ODL_1", "Grade 3 ODL_2", "Grade 6 ODL_2"]),
         ("AP", ["Grade 6 ODL_1", "Grade 6 ODL_2"]),
     ],
-    "Teacher Keychell": [
+    "Teacher Keychelle": [
         ("Circle Time 1", ["Kinder 2 F2F", "Kinder 2 ODL_2"]),
         ("Circle Time 2", ["Kinder 2 F2F", "Kinder 2 ODL_2"]),
         ("MAPEH", ["Grade 5 F2F", "Grade 5 ODL_1"]),

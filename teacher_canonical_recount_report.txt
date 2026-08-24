@@ -47,7 +47,7 @@ Sir Mohaymen               |     8 |    3 |     3 |     2 |         0 | MAPEH, P
 Teacher Angeleni           |     8 |    2 |     2 |     4 |         0 | MAPEH, TLE
 Teacher Franchette         |     8 |    2 |     3 |     3 |         0 | MAPEH
 Teacher Katrina            |     8 |    1 |     4 |     3 |         0 | Math, Reading and Literacy
-Teacher Keychell           |     8 |    3 |     3 |     2 |         0 | AP, Circle Time 1, Circle Time 2, MAPEH
+Teacher Keychelle           |     8 |    3 |     3 |     2 |         0 | AP, Circle Time 1, Circle Time 2, MAPEH
 Teacher Zara               |     8 |    1 |     4 |     3 |         0 | MAPEH, Makabansa
 Teacher Aniah              |     7 |    2 |     4 |     1 |         0 | General Physics 1, Practical Research 2, Science
 Teacher Fhairudz           |     6 |    1 |     2 |     3 |         0 | Math, Science

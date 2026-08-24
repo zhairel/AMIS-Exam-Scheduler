@@ -84,14 +84,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Meeting Time",
         "subject_id": "subj_meeting_time",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Meeting Time -Tchr. Keychell",
             "subject": "Meeting Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -101,7 +101,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Meeting Time -Tchr. Keychell",
             "subject": "Meeting Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -111,7 +111,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Meeting Time -Tchr. Keychell",
             "subject": "Meeting Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -121,7 +121,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Meeting Time -Tchr. Keychell",
             "subject": "Meeting Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -131,7 +131,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Meeting Time -Tchr. Keychell",
             "subject": "Meeting Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -150,14 +150,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Circle Time 1",
         "subject_id": "subj_circle_time_1",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -167,7 +167,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -177,7 +177,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -187,7 +187,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -197,7 +197,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -348,14 +348,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Circle Time 2",
         "subject_id": "subj_circle_time_2",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Circle Time 2 - Tchr. Keychell",
             "subject": "Circle Time 2",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -365,7 +365,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Circle Time 2 - Tchr. Keychell",
             "subject": "Circle Time 2",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -375,7 +375,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Circle Time 2 - Tchr. Keychell",
             "subject": "Circle Time 2",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -385,7 +385,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Circle Time 2 - Tchr. Keychell",
             "subject": "Circle Time 2",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -395,7 +395,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Circle Time 2 - Tchr. Keychell",
             "subject": "Circle Time 2",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -414,14 +414,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Wrap-Up Time",
         "subject_id": "subj_wrap_up_time",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Wrap-Up Time - Tchr.Keychell",
             "subject": "Wrap-Up Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -431,7 +431,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Wrap-Up Time - Tchr.Keychell",
             "subject": "Wrap-Up Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -441,7 +441,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Wrap-Up Time - Tchr.Keychell",
             "subject": "Wrap-Up Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -451,7 +451,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Wrap-Up Time - Tchr.Keychell",
             "subject": "Wrap-Up Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -461,7 +461,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Wrap-Up Time - Tchr.Keychell",
             "subject": "Wrap-Up Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -614,14 +614,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Meeting Time",
         "subject_id": "subj_meeting_time",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Meeting Time -Tchr. Keychell",
             "subject": "Meeting Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -631,7 +631,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Meeting Time -Tchr. Keychell",
             "subject": "Meeting Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -641,7 +641,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Meeting Time -Tchr. Keychell",
             "subject": "Meeting Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -651,7 +651,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Meeting Time -Tchr. Keychell",
             "subject": "Meeting Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -661,7 +661,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Meeting Time -Tchr. Keychell",
             "subject": "Meeting Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -680,14 +680,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Circle Time 1",
         "subject_id": "subj_circle_time_1",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -697,7 +697,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -707,7 +707,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -717,7 +717,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -727,7 +727,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -878,14 +878,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Circle Time 2",
         "subject_id": "subj_circle_time_2",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Circle Time 2 - Tchr. Keychell",
             "subject": "Circle Time 2",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -895,7 +895,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Circle Time 2 - Tchr. Keychell",
             "subject": "Circle Time 2",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -905,7 +905,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Circle Time 2 - Tchr. Keychell",
             "subject": "Circle Time 2",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -915,7 +915,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Circle Time 2 - Tchr. Keychell",
             "subject": "Circle Time 2",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -925,7 +925,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Circle Time 2 - Tchr. Keychell",
             "subject": "Circle Time 2",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -944,14 +944,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Wrap-Up Time",
         "subject_id": "subj_wrap_up_time",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Wrap-Up Time - Tchr.Keychell",
             "subject": "Wrap-Up Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -961,7 +961,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Wrap-Up Time - Tchr.Keychell",
             "subject": "Wrap-Up Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -971,7 +971,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Wrap-Up Time - Tchr.Keychell",
             "subject": "Wrap-Up Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -981,7 +981,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Wrap-Up Time - Tchr.Keychell",
             "subject": "Wrap-Up Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -991,7 +991,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Wrap-Up Time - Tchr.Keychell",
             "subject": "Wrap-Up Time",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -4119,14 +4119,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Circle Time 1",
         "subject_id": "subj_circle_time_1",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -4136,7 +4136,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -4146,7 +4146,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -4156,7 +4156,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -4166,7 +4166,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -4251,14 +4251,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "CT 2",
         "subject_id": "subj_ct_2",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "CT 2 - Tchr. Keychell",
             "subject": "CT 2",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -4278,7 +4278,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "CT 2 - Tchr. Keychell",
             "subject": "CT 2",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -4385,14 +4385,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "Circle Time 1",
         "subject_id": "subj_circle_time_1",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -4402,7 +4402,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -4412,7 +4412,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -4422,7 +4422,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -4432,7 +4432,7 @@ const ALL_SECTIONS_DATA = [
           "Thursday": {
             "raw": "Circle Time 1 - Tchr. Keychell",
             "subject": "Circle Time 1",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -4517,14 +4517,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "CT 2",
         "subject_id": "subj_ct_2",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "CT 2 - Tchr. Keychell",
             "subject": "CT 2",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -4544,7 +4544,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "CT 2 - Tchr. Keychell",
             "subject": "CT 2",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -31212,14 +31212,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "MAPEH",
         "subject_id": "subj_mapeh",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "MAPEH - Tchr. Keychell",
             "subject": "MAPEH",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -31239,7 +31239,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "MAPEH - Tchr. Keychell",
             "subject": "MAPEH",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -31295,7 +31295,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "MAPEH - Tchr.  Keychell",
             "subject": "MAPEH",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -32006,14 +32006,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "MAPEH",
         "subject_id": "subj_mapeh",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "MAPEH - Tchr. Keychell",
             "subject": "MAPEH",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -32033,7 +32033,7 @@ const ALL_SECTIONS_DATA = [
           "Tuesday": {
             "raw": "MAPEH - Tchr. Keychell",
             "subject": "MAPEH",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -32089,7 +32089,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "MAPEH - Tchr.  Keychell",
             "subject": "MAPEH",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -32452,7 +32452,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "MAPEH - Tchr. Keychell",
             "subject": "MAPEH",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -32916,7 +32916,7 @@ const ALL_SECTIONS_DATA = [
           "Wednesday": {
             "raw": "MAPEH - Tchr. Keychell",
             "subject": "MAPEH",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -33371,7 +33371,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "MAPEH - Tchr. Keychell",
             "subject": "MAPEH",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -33486,14 +33486,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "AP",
         "subject_id": "subj_ap",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "AP - Tchr. Keychell",
             "subject": "AP",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -33835,7 +33835,7 @@ const ALL_SECTIONS_DATA = [
           "Monday": {
             "raw": "MAPEH - Tchr. Keychell",
             "subject": "MAPEH",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,
@@ -33950,14 +33950,14 @@ const ALL_SECTIONS_DATA = [
         "label": null,
         "subject": "AP",
         "subject_id": "subj_ap",
-        "teacher": "Teacher Keychell",
+        "teacher": "Teacher Keychelle",
         "teacher_id": "tchr_keychell",
         "is_break": false,
         "days": {
           "Sunday": {
             "raw": "AP - Tchr. Keychell",
             "subject": "AP",
-            "teacher": "Teacher Keychell",
+            "teacher": "Teacher Keychelle",
             "teacher_id": "tchr_keychell",
             "is_break": false,
             "label": null,

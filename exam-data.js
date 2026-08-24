@@ -17,7 +17,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "Circle Time",
     "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychell",
+    "teacher": "Teacher Keychelle",
     "duration_minutes": 30
   },
   {
@@ -1067,7 +1067,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychell",
+    "teacher": "Teacher Keychelle",
     "duration_minutes": 60
   },
   {
@@ -2495,7 +2495,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychell",
+    "teacher": "Teacher Keychelle",
     "duration_minutes": 60
   },
   {
@@ -3902,7 +3902,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "Araling Panlipunan (AP)",
     "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychell",
+    "teacher": "Teacher Keychelle",
     "duration_minutes": 60
   },
   {
@@ -5645,7 +5645,7 @@ window.EXAM_DATA = [
     "gender": "MIXED",
     "subject": "Circle Time",
     "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychell",
+    "teacher": "Teacher Keychelle",
     "duration_minutes": 30
   },
   {
@@ -11507,7 +11507,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Circle Time",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 30
     },
     {
@@ -12557,7 +12557,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Araling Panlipunan (AP)",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 60
     },
     {
@@ -13985,7 +13985,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Araling Panlipunan (AP)",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 60
     },
     {
@@ -15392,7 +15392,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Araling Panlipunan (AP)",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 60
     },
     {
@@ -17135,7 +17135,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Circle Time",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 30
     },
     {
@@ -22996,7 +22996,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Circle Time",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 30
     },
     {
@@ -24046,7 +24046,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Araling Panlipunan (AP)",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 60
     },
     {
@@ -25474,7 +25474,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Araling Panlipunan (AP)",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 60
     },
     {
@@ -26881,7 +26881,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Araling Panlipunan (AP)",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 60
     },
     {
@@ -28624,7 +28624,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Circle Time",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 30
     },
     {
@@ -34485,7 +34485,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Circle Time",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 30
     },
     {
@@ -35535,7 +35535,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Araling Panlipunan (AP)",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 60
     },
     {
@@ -36963,7 +36963,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Araling Panlipunan (AP)",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 60
     },
     {
@@ -38370,7 +38370,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Araling Panlipunan (AP)",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 60
     },
     {
@@ -40113,7 +40113,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Circle Time",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 30
     },
     {
@@ -45974,7 +45974,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Circle Time",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 30
     },
     {
@@ -47024,7 +47024,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Araling Panlipunan (AP)",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 60
     },
     {
@@ -48452,7 +48452,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Araling Panlipunan (AP)",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 60
     },
     {
@@ -49859,7 +49859,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Araling Panlipunan (AP)",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 60
     },
     {
@@ -51602,7 +51602,7 @@ window.OPTIONS_EXAM_DATA = {
       "gender": "MIXED",
       "subject": "Circle Time",
       "teacher_id": "tchr_keychell",
-      "teacher": "Teacher Keychell",
+      "teacher": "Teacher Keychelle",
       "duration_minutes": 30
     },
     {

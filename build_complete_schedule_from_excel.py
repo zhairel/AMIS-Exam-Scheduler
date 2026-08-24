@@ -115,7 +115,7 @@ def normalize_teacher_name(raw):
     if 'amerah' in s_low:
         return 'Teacher Amerah'
     if 'keychell' in s_low:
-        return 'Teacher Keychell'
+        return 'Teacher Keychelle'
     if 'normylah' in s_low or 'normayla' in s_low:
         return 'Teacher Normylah'
     if 'fhairudz' in s_low or 'fairudz' in s_low:

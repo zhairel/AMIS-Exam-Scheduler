@@ -42,7 +42,7 @@ FACULTY_ELEMENTARY = {
     "Teacher Zuhora": ["Filipino", "Makabansa", "MAPEH", "GMRC", "AP"],
     "Teacher Monisa": ["Makabansa", "AP", "TLE", "Filipino"],
     "Teacher Normylah": ["Filipino", "AP"],
-    "Teacher Keychell": ["Circle Time 1", "Circle Time 2", "MAPEH", "AP"],
+    "Teacher Keychelle": ["Circle Time 1", "Circle Time 2", "MAPEH", "AP"],
     "Teacher Jenny": ["English", "Filipino", "TLE", "Makabansa"],
     "Teacher Hannah": ["Math"],
     "Teacher Zara": ["Makabansa", "MAPEH"],

@@ -894,7 +894,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_mapeh",
     "subject": "MAPEH",
     "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychell",
+    "teacher": "Teacher Keychelle",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -4149,7 +4149,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_oral_written_exam",
     "subject": "Oral & Written Exam",
     "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychell",
+    "teacher": "Teacher Keychelle",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -6164,7 +6164,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_mapeh",
     "subject": "MAPEH",
     "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychell",
+    "teacher": "Teacher Keychelle",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -7653,7 +7653,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_araling_panlipunan",
     "subject": "Araling Panlipunan",
     "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychell",
+    "teacher": "Teacher Keychelle",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -12242,7 +12242,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_mapeh",
     "subject": "MAPEH",
     "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychell",
+    "teacher": "Teacher Keychelle",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
@@ -14164,7 +14164,7 @@ const ALL_EXAM_RECORDS = [
     "subject_id": "subj_oral_written_exam",
     "subject": "Oral & Written Exam",
     "teacher_id": "tchr_keychell",
-    "teacher": "Teacher Keychell",
+    "teacher": "Teacher Keychelle",
     "duration_minutes": 60,
     "teacher_status": "VERIFIED"
   },
