@@ -536,6 +536,18 @@
       "subject": "SHAF",
       "from": "Ustadha Hainur",
       "to": "Ustadha Hainur"
+    },
+    {
+      "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+      "subject": "SHAF",
+      "from": "Ustadh Raslina",
+      "to": "Ustadha Hainur"
+    },
+    {
+      "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+      "subject": "SHAF",
+      "from": "Ustadh Raslina",
+      "to": "Ustadha Hainur"
     }
   ],
   "unresolved_official_teacher_links": [],
@@ -1445,6 +1457,24 @@
       "from_start_m": 625,
       "to_day": 4,
       "to_start_m": 540
+    },
+    {
+      "id": "exam_62",
+      "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+      "subject": "SHAF",
+      "from_day": 1,
+      "from_start_m": 830,
+      "to_day": 4,
+      "to_start_m": 690
+    },
+    {
+      "id": "exam_354",
+      "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+      "subject": "SHAF",
+      "from_day": 3,
+      "from_start_m": 830,
+      "to_day": 1,
+      "to_start_m": 690
     }
   ],
   "teacher_accommodations": [
@@ -1472,6 +1502,11 @@
       "teacher": "Ustadha Hainur",
       "request": "Correct honorific from Ustadh to Ustadha",
       "result": "Canonical teacher name corrected to Ustadha Hainur across exam outputs"
+    },
+    {
+      "teacher": "Ustadha Hainur",
+      "request": "Transfer the Grade 5 Muhammad and Hamza SHAF exams from resigned Ustadha Raslina",
+      "result": "Muhammad moved to Sep 2 at 11:30 AM and Hamza moved to Sep 7 at 11:30 AM; both now appear in Hainur's faculty timetable with no conflict"
     },
     {
       "teacher": "Teacher Aniah",

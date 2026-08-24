@@ -77,11 +77,15 @@ TEACHER_LATEST_END_M = {
     "tchr_silfah": 1050,
 }
 HAINUR_DAY4_FIXED_POSITIONS = {
+    # Ustadha Raslina resigned. Keep the transferred Grade 5 Hamza SHAF exam
+    # in Hainur's only legal, conflict-free first-shift opening on Day 4.
+    "exam_62": (4, 690),
     "exam_436": (4, 760),
     "exam_427": (4, 880),
     "exam_428": (4, 950),
     "exam_495": (4, 1050),
 }
+HAINUR_GRADE5_TRANSFER_IDS = {"exam_62", "exam_354"}
 
 
 def clean(value):
@@ -267,6 +271,11 @@ def build_official_teacher_lookup(class_sections):
 
 def pick_official_teacher(record, official_lookup):
     key = subject_key(record.get("subject"))
+    # Personnel override: the former Raslina SHAF loads for Grade 5 Hamza and
+    # Muhammad now belong to Ustadha Hainur. Keep this after source imports so
+    # the resigned teacher cannot be restored by stale class-schedule data.
+    if record.get("id") in HAINUR_GRADE5_TRANSFER_IDS and key == "shaf":
+        return canonical_teacher("Ustadha Hainur")
     if key == "mabisang_komunikasyon":
         return canonical_teacher("Teacher Nadzra")
     candidates = official_lookup.get(record["section_id"], {}).get(key)
@@ -460,6 +469,10 @@ def is_fixed_g11_f2f_biology(record):
 def fixed_position(record):
     if record.get("id") in HAINUR_DAY4_FIXED_POSITIONS:
         return HAINUR_DAY4_FIXED_POSITIONS[record["id"]]
+    # Muhammad uses Hainur's other open first-shift period. Together with the
+    # Day 4 Hamza placement above, both transfers remain visible and conflict-free.
+    if record.get("id") == "exam_354":
+        return 1, 690
     # Elementary GMRC confirmations: Ayyash must begin after the online
     # general assembly, while Saeed and Aasim retain their already-separated
     # Ustadha Saliha schedules.
@@ -797,6 +810,11 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "Ustadha Hainur",
             "request": "Correct honorific from Ustadh to Ustadha",
             "result": "Canonical teacher name corrected to Ustadha Hainur across exam outputs",
+        },
+        {
+            "teacher": "Ustadha Hainur",
+            "request": "Transfer the Grade 5 Muhammad and Hamza SHAF exams from resigned Ustadha Raslina",
+            "result": "Muhammad moved to Sep 2 at 11:30 AM and Hamza moved to Sep 7 at 11:30 AM; both now appear in Hainur's faculty timetable with no conflict",
         },
         {
             "teacher": "Teacher Aniah",

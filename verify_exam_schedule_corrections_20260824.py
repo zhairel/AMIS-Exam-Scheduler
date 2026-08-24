@@ -157,13 +157,17 @@ def main():
     assert (amr_arabic["day_number"], amr_arabic["start_m"]) == (2, 690)
 
     hainur_records = [record for record in records if record["teacher_id"] == "tchr_hainur"]
-    assert len(hainur_records) == 21
+    assert len(hainur_records) == 23
     assert all(record["teacher"] == "Ustadha Hainur" for record in hainur_records)
+    assert (by_id["exam_354"]["day_number"], by_id["exam_354"]["start_m"]) == (1, 690)
+    assert (by_id["exam_62"]["day_number"], by_id["exam_62"]["start_m"]) == (4, 690)
+    assert all(by_id[exam_id]["teacher_id"] == "tchr_hainur" for exam_id in ("exam_62", "exam_354"))
     hainur_day4 = {
         record["id"]: (record["day_number"], record["start_m"], record["end_m"])
         for record in hainur_records if record["day_number"] == 4
     }
     assert hainur_day4 == {
+        "exam_62": (4, 690, 750),
         "exam_436": (4, 760, 820),
         "exam_427": (4, 880, 940),
         "exam_428": (4, 950, 1010),
