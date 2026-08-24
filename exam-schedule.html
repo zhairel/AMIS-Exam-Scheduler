@@ -796,9 +796,14 @@ html, body {
 /* Compact merged shift marker shown before the Time column. */
 .timetable-grid thead th.col-shift,
 .timetable-grid tbody td.cell-shift {
-  width: 42px;
-  min-width: 42px;
-  max-width: 42px;
+  width: 52px;
+  min-width: 52px;
+  max-width: 52px;
+}
+
+.timetable-grid thead th.col-shift {
+  white-space: nowrap !important;
+  font-size: 11px;
 }
 
 .timetable-grid tbody td.cell-shift {
@@ -6422,7 +6427,11 @@ html, body {
       `;
 
       const activeRowspan = { 1: 0, 2: 0, 3: 0, 4: 0 };
-      const shiftLabels = { f2f: 'F<br>2<br>F', first: '1<br>S<br>T<br>S', second: '2<br>N<br>D<br>S' };
+      const shiftLabels = {
+        f2f: 'F<br>A<br>C<br>E<br><br>T<br>O<br><br>F<br>A<br>C<br>E',
+        first: '1<br>S<br>T<br>S',
+        second: '2<br>N<br>D<br>S'
+      };
 
       masterSlots.forEach((slot, rowIdx) => {
         const beginsShift = rowIdx === 0 || masterSlots[rowIdx - 1].shift_group !== slot.shift_group;
