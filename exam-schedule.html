@@ -338,6 +338,7 @@ body {
 .section-sidebar-list {
   flex: 1;
   overflow-y: auto;
+  overscroll-behavior: contain;
   padding: 12px;
   background: #f8fafc;
 }
@@ -475,13 +476,12 @@ body {
 
 .section-workspace {
   width: 100%;
-  display: grid;
-  grid-template-columns: minmax(270px, 310px) minmax(0, 1fr);
-  align-items: start;
+  display: block;
+  padding-left: 310px;
 }
 
 .section-workspace.sidebar-hidden {
-  grid-template-columns: minmax(0, 1fr);
+  padding-left: 0;
 }
 
 .section-workspace-content {
@@ -489,12 +489,14 @@ body {
 }
 
 .section-sticky-sidebar {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: var(--section-sidebar-top, 112px);
+  bottom: 0;
+  left: 0;
   z-index: 60;
-  width: 100%;
-  height: 100vh;
-  max-height: 100vh;
+  width: 310px;
+  height: auto;
+  max-height: none;
   border-right: 1px solid #cbd5e1;
   box-shadow: 4px 0 16px rgba(15, 23, 42, 0.08);
 }
@@ -510,11 +512,15 @@ body {
 @media (max-width: 880px) {
   .section-workspace,
   .section-workspace.sidebar-hidden {
-    grid-template-columns: minmax(0, 1fr);
+    padding-left: 0;
   }
 
   .section-sticky-sidebar {
     position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    width: 100%;
     height: auto;
     max-height: 52vh;
     border-right: 0;
@@ -5533,6 +5539,15 @@ html, body {
   const sectionWorkspace = document.getElementById('sectionWorkspace');
   const sectionTabsBar = document.getElementById('sectionTabsBar');
   const sectionTabsList = document.getElementById('sectionTabsList');
+  const examTabsBar = document.querySelector('.exam-tabs-bar');
+
+  function syncSectionSidebarPosition() {
+    if (!examTabsBar) return;
+    const headerBottom = Math.max(0, Math.round(examTabsBar.getBoundingClientRect().bottom));
+    document.documentElement.style.setProperty('--section-sidebar-top', `${headerBottom}px`);
+  }
+
+  window.addEventListener('resize', syncSectionSidebarPosition, { passive: true });
 
   function esc(s) {
     if (!s) return '';
@@ -5826,6 +5841,8 @@ html, body {
       renderRosterToolbar();
       renderRosterView();
     }
+
+    window.requestAnimationFrame(syncSectionSidebarPosition);
   }
   window.switchTab = switchTab;
 
