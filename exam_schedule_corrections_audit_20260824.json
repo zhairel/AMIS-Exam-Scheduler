@@ -198,6 +198,46 @@
       "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
       "from": "Fil3",
       "to": "Filipino"
+    },
+    {
+      "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+      "from": "FIL",
+      "to": "Filipino"
+    },
+    {
+      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+      "from": "Fil",
+      "to": "Filipino"
+    },
+    {
+      "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+      "from": "FIL",
+      "to": "Filipino"
+    },
+    {
+      "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+      "from": "Fil5",
+      "to": "Filipino"
+    },
+    {
+      "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+      "from": "Fil3",
+      "to": "Filipino"
+    },
+    {
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "from": "Fil",
+      "to": "Filipino"
+    },
+    {
+      "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+      "from": "Fil4",
+      "to": "Filipino"
+    },
+    {
+      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+      "from": "Fil",
+      "to": "Filipino"
     }
   ],
   "added": [
@@ -744,7 +784,7 @@
     {
       "exam_id": "exam_226",
       "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
-      "subject": "Fil",
+      "subject": "Filipino",
       "former_subject_teacher": "Teacher Normylah",
       "former_teacher_status": "RESIGNED_INACTIVE",
       "proctor": "Teacher Franchette Zarah M. Ranain",

@@ -641,6 +641,12 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
         record["_original_start_m"] = record["start_m"]
         key = subject_key(record.get("subject"))
 
+        # Normalize legacy Fil/Fil3/Fil4/Fil5 labels to the official display name.
+        if key == "filipino" and clean(record.get("subject")) != "Filipino":
+            renamed.append({"section": record["section_name"], "from": record["subject"], "to": "Filipino"})
+            record["subject"] = "Filipino"
+            record["subject_id"] = "subj_filipino"
+
         if key in {"research_consultation", "aral_math"}:
             removed.append({"reason": "non-exam subject removed", "record": source})
             continue

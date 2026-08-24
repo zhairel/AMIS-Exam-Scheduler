@@ -43,6 +43,11 @@ def main():
     assert all(record["slots_spanned"] == (2 if record["duration_minutes"] == 120 else 1) for record in records)
     assert len({record["id"] for record in records}) == len(records)
     assert all(record.get("gender", "") == correction.infer_gender(record) for record in records)
+    assert all(
+        record["subject"] == "Filipino"
+        for record in records
+        if correction.subject_key(record.get("subject")) == "filipino"
+    )
     keychelle_records = [record for record in records if record["teacher_id"] == "tchr_keychell"]
     assert keychelle_records
     assert all(record["teacher"] == "Teacher Keychelle" for record in keychelle_records)

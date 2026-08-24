@@ -62,6 +62,8 @@ assert(abuMusa.every(record => record.start_m >= 760), 'Abu Musa exams must star
 
 const proctorCoverage = records.filter(record => record.replacement_teacher_required && record.proctor_id);
 assert.strictEqual(proctorCoverage.length, 12, 'All 12 Normylah exams must have active proctor coverage.');
+assert(records.filter(record => /^fil(?:ipino|\d*)$/i.test(record.subject)).every(record => record.subject === 'Filipino'));
+assert(!/"subject": "Fil\d*"/.test(html), 'Faculty roster must display Filipino instead of legacy Fil labels.');
 const mergedIdentityRecords = records.filter(record => ['tchr_franchette','tchr_zara'].includes(record.teacher_id));
 assert(mergedIdentityRecords.every(record => record.subject_teacher === 'Teacher Franchette Zarah M. Ranain'));
 assert(!records.some(record => record.proctor_id === 'tchr_zara'), 'The duplicate Zara identity must never remain an active proctor ID.');
