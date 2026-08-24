@@ -88,8 +88,8 @@ NORMYLAH_MANUAL_PROCTOR_OVERRIDES = {
 NORMYLAH_AUTO_PROCTOR_EXCLUDED_IDS = {"tchr_ayah"}
 TEACHER_IDENTITY_CANONICAL_IDS = {"tchr_zara": "tchr_franchette"}
 IDENTITY_CONFLICT_PROCTOR_OVERRIDES = {
-    "exam_173": "tchr_keychell",
-    "exam_466": "tchr_ayah",
+    "exam_173": "tchr_junaisah",
+    "exam_466": "tchr_junaisah",
     "exam_464": "tchr_junaisah",
 }
 NORMYLAH_INACTIVE_WARNING = (
