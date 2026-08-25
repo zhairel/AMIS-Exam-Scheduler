@@ -170,6 +170,10 @@ MOHAYMEN_MAPEH_SECTION_IDS = {
     "sec_grade_9_10_boys_face_to_face",
     "sec_grade_9_10_girls_face_to_face",
 }
+MOHAYMEN_PE12_SECTION_IDS = {
+    "sec_grade_12_abu_musa_al_ashari",  # ODL
+    "sec_grade_12_suhayb_ar_rumi",      # F2F
+}
 
 
 def clean(value):
@@ -717,6 +721,8 @@ def pick_official_teacher(record, official_lookup):
     if key == "mabisang_komunikasyon":
         return canonical_teacher("Teacher Nadzra")
     if key == "mapeh" and record.get("section_id") in MOHAYMEN_MAPEH_SECTION_IDS:
+        return canonical_teacher("Sir Mohaymen")
+    if key == "pe_12" and record.get("section_id") in MOHAYMEN_PE12_SECTION_IDS:
         return canonical_teacher("Sir Mohaymen")
     candidates = official_lookup.get(record["section_id"], {}).get(key)
     if not candidates:

@@ -60,6 +60,33 @@ def main():
     assert not any(correction.subject_key(record["subject"]) == "research_consultation" for record in records)
     assert not any(correction.subject_key(record["subject"]) == "aral_math" for record in records)
 
+    # Sir Mohaymen's confirmed official subject load is exactly nine sections:
+    # seven MAPEH (3 Grade 9 ODL, 2 Grade 10 ODL, 2 Grade 9 & 10 F2F)
+    # and two PE 12 (one ODL, one F2F). Proctor-only duties are excluded.
+    mohaymen_subject_records = [
+        record for record in records if record.get("subject_teacher_id") == "tchr_mohaymen"
+    ]
+    assert len(mohaymen_subject_records) == 9
+    assert {
+        record["section_id"]
+        for record in mohaymen_subject_records
+        if correction.subject_key(record["subject"]) == "mapeh"
+    } == correction.MOHAYMEN_MAPEH_SECTION_IDS
+    assert {
+        record["section_id"]
+        for record in mohaymen_subject_records
+        if correction.subject_key(record["subject"]) == "pe_12"
+    } == correction.MOHAYMEN_PE12_SECTION_IDS
+    assert Counter(
+        (record["modality"], correction.subject_key(record["subject"]))
+        for record in mohaymen_subject_records
+    ) == Counter({
+        ("ODL", "mapeh"): 5,
+        ("F2F", "mapeh"): 2,
+        ("ODL", "pe_12"): 1,
+        ("F2F", "pe_12"): 1,
+    })
+
     normylah_records = [record for record in records if record.get("subject_teacher_id") == "tchr_normylah"]
     # One former Normylah Filipino load (Grade 3 Zayd) now has the confirmed
     # active replacement Teacher Wendelyn, leaving eleven unresolved loads.
