@@ -624,7 +624,7 @@ def main():
     assert hainur_k1_quran["subject_teacher_id"] == ""
     assert hainur_k1_quran["former_subject_teacher_id"] == "tchr_hainur"
     assert hainur_k1_quran["subject_teacher_status"] == "VACANT_REPLACEMENT_REQUIRED"
-    assert hainur_k1_quran["proctor_id"] == "tchr_rowena"
+    assert hainur_k1_quran["proctor_id"] == "tchr_junaisah"
     assert hainur_k1_quran["proctor_assignment_source"] == "AUTO_ACADEMIC_COVERAGE"
     assert hainur_k1_quran["proctor_conflict_status"] == "CLEAR"
     k1_husain_hadith = get_one(

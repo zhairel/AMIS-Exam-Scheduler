@@ -3528,10 +3528,10 @@
     "subject_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
     "replacement_teacher_required": true,
     "warning": "Ustadha Hainur confirmed that K1 Husain Qur'an is not her assigned subject. Please assign the correct subject teacher.",
-    "proctor": "Teacher Rowena",
-    "proctor_id": "tchr_rowena",
+    "proctor": "Teacher Junaisah",
+    "proctor_id": "tchr_junaisah",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_department": "High School Faculty",
+    "proctor_department": "Elementary Faculty",
     "proctor_pool": "ACADEMIC_TEACHER_ONLY",
     "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
     "conflict_status": "CLEAR"

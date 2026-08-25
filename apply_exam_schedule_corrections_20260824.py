@@ -118,9 +118,10 @@ FRANCHETTE_VACANT_PROCTOR_OVERRIDES = {
     "exam_464": "tchr_ethel",
 }
 PRESERVED_AUTO_PROCTOR_OVERRIDES = {
-    # Keep the already-published vacant K1 Qur'an coverage unchanged while
-    # reassigning a separate Normylah proctor duty.
-    "exam_4": "tchr_rowena",
+    # K1 Husain Qur'an stays scheduled but is outside Ustadha Hainur's
+    # confirmed subject scope. Teacher Junaisah provides the lightest-load,
+    # conflict-free Academic Teacher coverage.
+    "exam_4": "tchr_junaisah",
 }
 SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS = {
     "exam_594",  # Grade 6 F2F

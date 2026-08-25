@@ -11317,24 +11317,29 @@
   },
   {
     "teacher": "Teacher Junaisah",
-    "total_exams": 2,
+    "total_exams": 3,
     "subjects": [
+      "Qur'an",
       "Science"
     ],
     "grades": [
       "Grade 4",
-      "Grade 5"
+      "Grade 5",
+      "Kinder 1"
     ],
-    "sections_count": 2,
+    "sections_count": 3,
     "sections": [
       "Grade 4 — GRADE 4 (FACE TO FACE)",
-      "Grade 5 — GRADE 5 (FACE TO FACE)"
+      "Grade 5 — GRADE 5 (FACE TO FACE)",
+      "Kinder 1 — K1 - HUSAIN IBN ALI (2ND SHIFT)"
     ],
     "modalities": [
-      "F2F"
+      "F2F",
+      "ODL"
     ],
     "shifts": [
-      "F2F"
+      "F2F",
+      "ODL - 2ND SHIFT"
     ],
     "exams": [
       {
@@ -11382,6 +11387,54 @@
         "proctor_department": "Elementary Faculty",
         "proctor_conflict_status": "CLEAR",
         "proctor_pool": "SUBJECT_TEACHER"
+      },
+      {
+        "id": "exam_4",
+        "exam_term": "1st Term",
+        "day_number": 1,
+        "date": "Wednesday, September 2, 2026",
+        "short_date": "Sep 2",
+        "day_name": "Wednesday",
+        "slot_number": 2,
+        "slots_spanned": 1,
+        "start_slot_index": 1,
+        "end_slot_index": 1,
+        "start_m": 980,
+        "end_m": 1040,
+        "time_slot": "04:20 PM – 05:20 PM",
+        "time": "04:20 PM – 05:20 PM",
+        "section_id": "sec_k1_husain_ibn_ali_2nd_shift",
+        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "section_name": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "department": "Elementary",
+        "grade": "Kinder 1",
+        "grade_level": "Kinder 1",
+        "shift": "ODL - 2ND SHIFT",
+        "modality": "ODL",
+        "gender": "",
+        "subject_id": "subj_qur_an",
+        "subject": "Qur'an",
+        "teacher_id": "",
+        "teacher": "",
+        "duration_minutes": 60,
+        "teacher_status": "VACANT_REPLACEMENT_REQUIRED",
+        "subject_teacher": "Unassigned",
+        "subject_teacher_id": "",
+        "subject_teacher_active": false,
+        "replacement_teacher_required": true,
+        "subject_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
+        "active_subject_teacher": "",
+        "active_subject_teacher_id": "",
+        "inactive_teacher_warning": "Ustadha Hainur confirmed that K1 Husain Qur'an is not her assigned subject. Please assign the correct subject teacher.",
+        "proctor": "Teacher Junaisah",
+        "proctor_id": "tchr_junaisah",
+        "proctor_status": "ACTIVE_ASSIGNED",
+        "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
+        "proctor_department": "Elementary Faculty",
+        "proctor_conflict_status": "CLEAR",
+        "proctor_pool": "ACADEMIC_TEACHER_ONLY",
+        "former_subject_teacher": "Ustadha Hainur",
+        "former_subject_teacher_id": "tchr_hainur"
       },
       {
         "id": "exam_330",
@@ -16392,21 +16445,19 @@
   },
   {
     "teacher": "Teacher Rowena",
-    "total_exams": 12,
+    "total_exams": 11,
     "subjects": [
       "Gen Bio 1",
       "Gen Science",
-      "Qur'an",
       "Science"
     ],
     "grades": [
       "Grade 10",
       "Grade 11",
       "Grade 9",
-      "Grade 9 & 10",
-      "Kinder 1"
+      "Grade 9 & 10"
     ],
-    "sections_count": 11,
+    "sections_count": 10,
     "sections": [
       "Grade 10 — GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
       "Grade 10 — GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
@@ -16417,8 +16468,7 @@
       "Grade 9 & 10 — GRADE 9 & 10 GIRLS (FACE TO FACE)",
       "Grade 9 — GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
       "Grade 9 — GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-      "Grade 9 — GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-      "Kinder 1 — K1 - HUSAIN IBN ALI (2ND SHIFT)"
+      "Grade 9 — GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS"
     ],
     "modalities": [
       "F2F",
@@ -16475,54 +16525,6 @@
         "proctor_department": "High School Faculty",
         "proctor_conflict_status": "CLEAR",
         "proctor_pool": "SUBJECT_TEACHER"
-      },
-      {
-        "id": "exam_4",
-        "exam_term": "1st Term",
-        "day_number": 1,
-        "date": "Wednesday, September 2, 2026",
-        "short_date": "Sep 2",
-        "day_name": "Wednesday",
-        "slot_number": 2,
-        "slots_spanned": 1,
-        "start_slot_index": 1,
-        "end_slot_index": 1,
-        "start_m": 980,
-        "end_m": 1040,
-        "time_slot": "04:20 PM – 05:20 PM",
-        "time": "04:20 PM – 05:20 PM",
-        "section_id": "sec_k1_husain_ibn_ali_2nd_shift",
-        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-        "section_name": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-        "department": "Elementary",
-        "grade": "Kinder 1",
-        "grade_level": "Kinder 1",
-        "shift": "ODL - 2ND SHIFT",
-        "modality": "ODL",
-        "gender": "",
-        "subject_id": "subj_qur_an",
-        "subject": "Qur'an",
-        "teacher_id": "",
-        "teacher": "",
-        "duration_minutes": 60,
-        "teacher_status": "VACANT_REPLACEMENT_REQUIRED",
-        "subject_teacher": "Unassigned",
-        "subject_teacher_id": "",
-        "subject_teacher_active": false,
-        "replacement_teacher_required": true,
-        "subject_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
-        "active_subject_teacher": "",
-        "active_subject_teacher_id": "",
-        "inactive_teacher_warning": "Ustadha Hainur confirmed that K1 Husain Qur'an is not her assigned subject. Please assign the correct subject teacher.",
-        "proctor": "Teacher Rowena",
-        "proctor_id": "tchr_rowena",
-        "proctor_status": "ACTIVE_ASSIGNED",
-        "proctor_assignment_source": "AUTO_ACADEMIC_COVERAGE",
-        "proctor_department": "High School Faculty",
-        "proctor_conflict_status": "CLEAR",
-        "proctor_pool": "ACADEMIC_TEACHER_ONLY",
-        "former_subject_teacher": "Ustadha Hainur",
-        "former_subject_teacher_id": "tchr_hainur"
       },
       {
         "id": "exam_140",
