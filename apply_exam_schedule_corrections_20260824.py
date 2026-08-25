@@ -102,8 +102,16 @@ IDENTITY_CONFLICT_PROCTOR_OVERRIDES = {
 ACCOMMODATION_PROCTOR_OVERRIDES = {
     "exam_575": "tchr_keychell",
     # Teacher Wendelyn took over this Filipino subject, but confirmed that
-    # Teacher Junaisah remains its exam proctor.
-    "exam_323": "tchr_junaisah",
+    # Teacher Ethel will cover its Grade 3 Zayd examination.
+    "exam_323": "tchr_ethel",
+    # Transfer Teacher Ethel's overlapping 120-minute Grade 7 Anas Math
+    # proctor duty to the only fully available Academic Teacher.
+    "exam_398": "tchr_nof",
+}
+ACCOMMODATION_PROCTOR_REASONS = {
+    "exam_575": "SOPHIA_ANAS_DAY1_EARLY_RELEASE",
+    "exam_323": "ETHEL_ZAYD_FILIPINO_REQUEST",
+    "exam_398": "ETHEL_ZAYD_FILIPINO_CONFLICT_COVERAGE",
 }
 FRANCHETTE_VACANT_PROCTOR_OVERRIDES = {
     "exam_173": "tchr_keychell",
@@ -431,7 +439,7 @@ def apply_identity_conflict_proctor_overrides(records):
         )
         record["proctor_conflict_status"] = "CLEAR"
         record["proctor_coverage_reason"] = (
-            "SOPHIA_ANAS_DAY1_EARLY_RELEASE"
+            ACCOMMODATION_PROCTOR_REASONS[record["id"]]
             if is_accommodation
             else "MOHAYMEN_EXISTING_PROCTOR_DUTY_CONFLICT"
         )

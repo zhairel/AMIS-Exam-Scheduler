@@ -17672,14 +17672,14 @@ const ALL_EXAM_RECORDS = [
     "active_subject_teacher": "Teacher Wendelyn",
     "active_subject_teacher_id": "tchr_wendy",
     "inactive_teacher_warning": "",
-    "proctor": "Teacher Junaisah",
-    "proctor_id": "tchr_junaisah",
+    "proctor": "Teacher Ethel",
+    "proctor_id": "tchr_ethel",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_assignment_source": "TEACHER_ACCOMMODATION_COVERAGE",
-    "proctor_department": "Elementary Faculty",
+    "proctor_department": "High School Faculty",
     "proctor_conflict_status": "CLEAR",
     "proctor_pool": "ACADEMIC_TEACHER_ONLY",
-    "proctor_coverage_reason": "SOPHIA_ANAS_DAY1_EARLY_RELEASE"
+    "proctor_coverage_reason": "ETHEL_ZAYD_FILIPINO_REQUEST"
   },
   {
     "id": "exam_317",
@@ -18457,13 +18457,14 @@ const ALL_EXAM_RECORDS = [
     "active_subject_teacher": "Teacher Ethel",
     "active_subject_teacher_id": "tchr_ethel",
     "inactive_teacher_warning": "",
-    "proctor": "Teacher Ethel",
-    "proctor_id": "tchr_ethel",
+    "proctor": "Teacher Nof",
+    "proctor_id": "tchr_nof",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_assignment_source": "SUBJECT_TEACHER",
+    "proctor_assignment_source": "TEACHER_ACCOMMODATION_COVERAGE",
     "proctor_department": "High School Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "SUBJECT_TEACHER"
+    "proctor_pool": "ACADEMIC_TEACHER_ONLY",
+    "proctor_coverage_reason": "ETHEL_ZAYD_FILIPINO_CONFLICT_COVERAGE"
   },
   {
     "id": "exam_386",

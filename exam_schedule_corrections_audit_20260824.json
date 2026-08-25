@@ -916,11 +916,20 @@
     {
       "exam_id": "exam_323",
       "subject_teacher": "Teacher Wendelyn",
-      "proctor": "Teacher Junaisah",
+      "proctor": "Teacher Ethel",
       "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
       "subject": "Filipino",
       "day_number": 3,
       "time": "03:10 PM – 04:10 PM"
+    },
+    {
+      "exam_id": "exam_398",
+      "subject_teacher": "Teacher Ethel",
+      "proctor": "Teacher Nof",
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "subject": "Math",
+      "day_number": 3,
+      "time": "03:10 PM – 05:20 PM"
     },
     {
       "exam_id": "exam_549",
