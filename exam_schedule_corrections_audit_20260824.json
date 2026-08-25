@@ -840,33 +840,48 @@
       "to": "Teacher Franchette Zarah M. Ranain"
     }
   ],
-  "unresolved_official_teacher_links": [],
+  "unresolved_official_teacher_links": [
+    {
+      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+      "subject": "Makabansa"
+    },
+    {
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+      "subject": "Makabansa"
+    },
+    {
+      "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+      "subject": "Makabansa"
+    },
+    {
+      "section": "GRADE  6  FACE TO FACE",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+      "subject": "Makabansa"
+    }
+  ],
   "known_sections": 64,
   "identity_merge_proctor_overrides": [
     {
-      "exam_id": "exam_173",
-      "subject_teacher": "Teacher Franchette Zarah M. Ranain",
-      "proctor": "Teacher Keychelle",
-      "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
-      "subject": "Makabansa",
-      "day_number": 2,
-      "time": "01:50 PM – 02:50 PM"
-    },
-    {
-      "exam_id": "exam_466",
-      "subject_teacher": "Teacher Franchette Zarah M. Ranain",
-      "proctor": "Teacher Wendy",
-      "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
-      "subject": "Makabansa",
-      "day_number": 4,
-      "time": "03:10 PM – 04:10 PM"
-    },
-    {
-      "exam_id": "exam_464",
-      "subject_teacher": "Teacher Franchette Zarah M. Ranain",
-      "proctor": "Teacher Ethel",
-      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-      "subject": "Makabansa",
+      "exam_id": "exam_549",
+      "subject_teacher": "Sir Mohaymen",
+      "proctor": "Teacher Franchette Zarah M. Ranain",
+      "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+      "subject": "MAPEH",
       "day_number": 4,
       "time": "05:30 PM – 06:30 PM"
     }
@@ -882,6 +897,17 @@
       "proctor_id": "tchr_zuhora",
       "day_number": 1,
       "time_slot": "08:00 AM – 09:00 AM"
+    },
+    {
+      "exam_id": "exam_314",
+      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+      "subject": "Makabansa",
+      "former_subject_teacher": "Unassigned",
+      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
+      "proctor": "Teacher Ethel",
+      "proctor_id": "tchr_ethel",
+      "day_number": 1,
+      "time_slot": "12:40 PM – 01:40 PM"
     },
     {
       "exam_id": "exam_33",
@@ -904,6 +930,39 @@
       "proctor_id": "tchr_junaisah",
       "day_number": 1,
       "time_slot": "03:10 PM – 04:10 PM"
+    },
+    {
+      "exam_id": "exam_597",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "MAPEH",
+      "former_subject_teacher": "Unassigned",
+      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
+      "proctor": "Teacher Ethel",
+      "proctor_id": "tchr_ethel",
+      "day_number": 1,
+      "time_slot": "03:10 PM – 04:10 PM"
+    },
+    {
+      "exam_id": "exam_464",
+      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+      "subject": "Makabansa",
+      "former_subject_teacher": "Unassigned",
+      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
+      "proctor": "Teacher Ethel",
+      "proctor_id": "tchr_ethel",
+      "day_number": 1,
+      "time_slot": "04:20 PM – 05:20 PM"
+    },
+    {
+      "exam_id": "exam_173",
+      "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+      "subject": "Makabansa",
+      "former_subject_teacher": "Unassigned",
+      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
+      "proctor": "Teacher Keychelle",
+      "proctor_id": "tchr_keychell",
+      "day_number": 2,
+      "time_slot": "01:50 PM – 02:50 PM"
     },
     {
       "exam_id": "exam_226",
@@ -939,6 +998,17 @@
       "time_slot": "09:00 AM – 10:00 AM"
     },
     {
+      "exam_id": "exam_594",
+      "section": "GRADE  6  FACE TO FACE",
+      "subject": "MAPEH",
+      "former_subject_teacher": "Unassigned",
+      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
+      "proctor": "Teacher Radzmia",
+      "proctor_id": "tchr_radzmia",
+      "day_number": 3,
+      "time_slot": "10:25 AM – 11:25 AM"
+    },
+    {
       "exam_id": "exam_316",
       "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
       "subject": "Filipino",
@@ -950,6 +1020,17 @@
       "time_slot": "12:40 PM – 01:40 PM"
     },
     {
+      "exam_id": "exam_595",
+      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+      "subject": "MAPEH",
+      "former_subject_teacher": "Unassigned",
+      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
+      "proctor": "Sir Mohaymen",
+      "proctor_id": "tchr_mohaymen",
+      "day_number": 3,
+      "time_slot": "01:50 PM – 02:50 PM"
+    },
+    {
       "exam_id": "exam_323",
       "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
       "subject": "Filipino",
@@ -957,6 +1038,17 @@
       "former_teacher_status": "RESIGNED_INACTIVE",
       "proctor": "Teacher Junaisah",
       "proctor_id": "tchr_junaisah",
+      "day_number": 3,
+      "time_slot": "03:10 PM – 04:10 PM"
+    },
+    {
+      "exam_id": "exam_596",
+      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+      "subject": "MAPEH",
+      "former_subject_teacher": "Unassigned",
+      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
+      "proctor": "Teacher Wendy",
+      "proctor_id": "tchr_wendy",
       "day_number": 3,
       "time_slot": "03:10 PM – 04:10 PM"
     },
@@ -981,6 +1073,17 @@
       "proctor_id": "tchr_shirehan",
       "day_number": 4,
       "time_slot": "12:40 PM – 01:40 PM"
+    },
+    {
+      "exam_id": "exam_466",
+      "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+      "subject": "Makabansa",
+      "former_subject_teacher": "Unassigned",
+      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
+      "proctor": "Teacher Wendy",
+      "proctor_id": "tchr_wendy",
+      "day_number": 4,
+      "time_slot": "03:10 PM – 04:10 PM"
     },
     {
       "exam_id": "exam_516",

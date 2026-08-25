@@ -95,16 +95,22 @@ NORMYLAH_MANUAL_PROCTOR_OVERRIDES = {
     "exam_513": "tchr_mohaymen",
     "exam_516": "tchr_mohaymen",
 }
-NORMYLAH_AUTO_PROCTOR_EXCLUDED_IDS = {"tchr_ayah"}
+NORMYLAH_AUTO_PROCTOR_EXCLUDED_IDS = {"tchr_ayah", "tchr_angeleni"}
 TEACHER_IDENTITY_CANONICAL_IDS = {"tchr_zara": "tchr_franchette"}
 IDENTITY_CONFLICT_PROCTOR_OVERRIDES = {
+    "exam_549": "tchr_franchette",
+}
+FRANCHETTE_VACANT_PROCTOR_OVERRIDES = {
     "exam_173": "tchr_keychell",
     "exam_466": "tchr_wendy",
     "exam_464": "tchr_ethel",
-    "exam_549": "tchr_franchette",
 }
 NORMYLAH_INACTIVE_WARNING = (
     "Teacher Normylah is inactive/resigned. Please assign a replacement teacher."
+)
+FRANCHETTE_SCOPE_WARNING = (
+    "Teacher Franchette confirmed this is not her assigned subject. "
+    "Please assign the correct subject teacher."
 )
 
 # The official three-period ODL grids cannot hold every Hainur/Silfah duty
@@ -122,9 +128,14 @@ EXAM_TEACHER_OVERRIDES = {
     "exam_290": "Teacher Sitti Kauzar", # Oral & Written Exam
 }
 
-# Official MAPEH load corrections confirmed by the faculty. Teacher Zara in
-# the source sheet is the same person as Teacher Franchette Zarah M. Ranain.
-FRANCHETTE_MAPEH_SECTION_IDS = {
+# Teacher Franchette confirmed that her subject scope is MAPEH Grades 7 and 8
+# only. Preserve these previously scheduled exams, but leave their subject
+# teacher vacant until an admin selects the correct replacement.
+FRANCHETTE_VACANT_SUBJECT_EXAM_IDS = {
+    "exam_173", "exam_314", "exam_464", "exam_466",
+    "exam_594", "exam_595", "exam_596", "exam_597",
+}
+FRANCHETTE_GRADE6_MAPEH_SECTION_IDS = {
     "sec_grade_6_face_to_face",
     "sec_grade_6_abdullah_ibn_salaam_1st_shift",
     "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
@@ -296,6 +307,26 @@ def apply_subject_teacher_status(records):
     for record in records:
         subject_teacher = clean(record.get("teacher"))
         subject_teacher_id = clean(record.get("teacher_id"))
+        is_scope_vacancy = record.get("id") in FRANCHETTE_VACANT_SUBJECT_EXAM_IDS
+        if is_scope_vacancy:
+            record["former_subject_teacher"] = subject_teacher or "Teacher Franchette Zarah M. Ranain"
+            record["former_subject_teacher_id"] = subject_teacher_id or "tchr_franchette"
+            record["teacher"] = ""
+            record["teacher_id"] = ""
+            record["teacher_status"] = "VACANT_REPLACEMENT_REQUIRED"
+            record["subject_teacher"] = "Unassigned"
+            record["subject_teacher_id"] = ""
+            record["subject_teacher_active"] = False
+            record["replacement_teacher_required"] = True
+            record["subject_teacher_status"] = "VACANT_REPLACEMENT_REQUIRED"
+            record["active_subject_teacher"] = ""
+            record["active_subject_teacher_id"] = ""
+            record["inactive_teacher_warning"] = FRANCHETTE_SCOPE_WARNING
+            record["proctor"] = ""
+            record["proctor_id"] = ""
+            record["proctor_status"] = "PENDING_ASSIGNMENT"
+            record["proctor_assignment_source"] = "AUTO_ACADEMIC_COVERAGE"
+            continue
         canonical_identity_id = canonical_teacher_identity_id(subject_teacher_id)
         if canonical_identity_id != subject_teacher_id:
             subject_teacher = teacher_by_id[canonical_identity_id]["canonical_name"]
@@ -413,6 +444,11 @@ def is_active_academic_teacher(teacher):
 def assign_inactive_teacher_proctors(records, teacher_weekly):
     """Assign active Academic Teachers without changing the former subject teacher."""
     teacher_by_id = {teacher["id"]: teacher for teacher in TEACHER_REGISTRY}
+    manual_proctor_overrides = {
+        **NORMYLAH_MANUAL_PROCTOR_OVERRIDES,
+        **FRANCHETTE_VACANT_PROCTOR_OVERRIDES,
+    }
+    reserved_manual_counts = Counter(manual_proctor_overrides.values())
     academic_teachers = [
         teacher for teacher in TEACHER_REGISTRY
         if is_active_academic_teacher(teacher)
@@ -455,12 +491,20 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
         department = clean(record.get("department"))
         candidates = []
 
-        manual_proctor_id = NORMYLAH_MANUAL_PROCTOR_OVERRIDES.get(record["id"])
+        manual_proctor_id = manual_proctor_overrides.get(record["id"])
         candidate_teachers = [teacher_by_id[manual_proctor_id]] if manual_proctor_id else academic_teachers
 
         for teacher in candidate_teachers:
             teacher_id = teacher["id"]
-            if automatic_coverage_count[teacher_id] >= AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER:
+            reserved_count = 0 if manual_proctor_id else reserved_manual_counts[teacher_id]
+            coverage_limit = (
+                4 if record.get("id") in FRANCHETTE_VACANT_SUBJECT_EXAM_IDS
+                else AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
+            )
+            if not manual_proctor_id and (
+                automatic_coverage_count[teacher_id] + reserved_count
+                >= coverage_limit
+            ):
                 continue
             latest_end_m = TEACHER_DAY_LATEST_END_M.get(
                 (teacher_id, day_number), TEACHER_LATEST_END_M.get(teacher_id)
@@ -618,6 +662,8 @@ def build_official_teacher_lookup(class_sections):
 
 def pick_official_teacher(record, official_lookup):
     key = subject_key(record.get("subject"))
+    if record.get("id") in FRANCHETTE_VACANT_SUBJECT_EXAM_IDS:
+        return None
     if record.get("id") in EXAM_TEACHER_OVERRIDES:
         return canonical_teacher(EXAM_TEACHER_OVERRIDES[record["id"]])
     # Personnel override: the former Raslina SHAF loads for Grade 5 Hamza and
@@ -629,8 +675,6 @@ def pick_official_teacher(record, official_lookup):
         return canonical_teacher("Teacher Nadzra")
     if key == "mapeh" and record.get("section_id") in MOHAYMEN_MAPEH_SECTION_IDS:
         return canonical_teacher("Sir Mohaymen")
-    if key == "mapeh" and record.get("section_id") in FRANCHETTE_MAPEH_SECTION_IDS:
-        return canonical_teacher("Teacher Franchette Zarah M. Ranain")
     candidates = official_lookup.get(record["section_id"], {}).get(key)
     if not candidates:
         return None
@@ -793,19 +837,6 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
         if ensure_subject(records, section["section_id"], "MAPEH", teacher):
             additions.append({"section": section["section_name"], "subject": "MAPEH"})
 
-    # Confirmed Grade 6 MAPEH exams belong to Teacher Franchette Zarah M.
-    # Ranain. Existing section exams are preserved; only missing rows are added.
-    for section in class_sections:
-        if section.get("section_id") not in FRANCHETTE_MAPEH_SECTION_IDS:
-            continue
-        if ensure_subject(
-            records,
-            section["section_id"],
-            "MAPEH",
-            "Teacher Franchette Zarah M. Ranain",
-        ):
-            additions.append({"section": section["section_name"], "subject": "MAPEH"})
-
     # Grade 9, Grade 10, and combined Grade 9 & 10 MAPEH loads belong to
     # Sir Mohaymen according to the official weekly class schedule.
     for section in class_sections:
@@ -890,8 +921,8 @@ def fixed_position(record):
     # the section does not carry four examinations on Wednesday.
     if record.get("id") == "exam_582":
         return 3, 760
-    # Grade 3 Zayd Makabansa: Teacher Franchette Zarah and active proctor
-    # Teacher Ethel are both clear on Wednesday's 04:20 PM period.
+    # Grade 3 Zayd Makabansa has a vacant subject-teacher assignment; its active
+    # proctor Teacher Ethel is clear on Wednesday's 04:20 PM period.
     if record.get("id") == "exam_464":
         return 1, 980
     # Keep Suhayb Biology on its requested Wednesday slot. Grade 11 F2F Biology

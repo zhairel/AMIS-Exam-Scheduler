@@ -94,9 +94,7 @@ def main():
             else "IDENTITY_CONFLICT_COVERAGE"
         )
         assert record["proctor_assignment_source"] == expected_source
-    assert set(correction.IDENTITY_CONFLICT_PROCTOR_OVERRIDES.values()) == {
-        "tchr_keychell", "tchr_wendy", "tchr_ethel", "tchr_franchette"
-    }
+    assert correction.IDENTITY_CONFLICT_PROCTOR_OVERRIDES == {"exam_549": "tchr_franchette"}
 
     normylah_coverage_counts = Counter(record["proctor_id"] for record in normylah_records)
     assert max(normylah_coverage_counts.values()) <= correction.AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
@@ -503,18 +501,30 @@ def main():
     assert grade5_mapeh_by_section["sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift"]["teacher_id"] == "tchr_norhydie"
     assert grade5_mapeh_by_section["sec_grade_5_al_harith_bin_awf_2nd_shift"]["teacher_id"] == "tchr_norhydie"
 
-    franchette_mapeh = [
+    franchette_subjects = [
         record for record in records
-        if record["section_id"] in correction.FRANCHETTE_MAPEH_SECTION_IDS
-        and correction.subject_key(record["subject"]) == "mapeh"
+        if record["subject_teacher_id"] == "tchr_franchette"
     ]
-    assert len(franchette_mapeh) == len(correction.FRANCHETTE_MAPEH_SECTION_IDS) == 4
-    assert {record["section_id"] for record in franchette_mapeh} == correction.FRANCHETTE_MAPEH_SECTION_IDS
-    assert all(record["teacher_id"] == "tchr_franchette" for record in franchette_mapeh)
-    assert all(
-        record["teacher"] == "Teacher Franchette Zarah M. Ranain"
-        for record in franchette_mapeh
-    )
+    assert len(franchette_subjects) == 8
+    assert all(correction.subject_key(record["subject"]) == "mapeh" for record in franchette_subjects)
+    assert all(record["grade_level"] in {"Grade 7", "Grade 8", "Grade 7 & 8"} for record in franchette_subjects)
+    assert all(record["teacher"] == "Teacher Franchette Zarah M. Ranain" for record in franchette_subjects)
+
+    franchette_scope_vacancies = [
+        record for record in records
+        if record["id"] in correction.FRANCHETTE_VACANT_SUBJECT_EXAM_IDS
+    ]
+    assert len(franchette_scope_vacancies) == len(correction.FRANCHETTE_VACANT_SUBJECT_EXAM_IDS) == 8
+    assert {record["id"] for record in franchette_scope_vacancies} == correction.FRANCHETTE_VACANT_SUBJECT_EXAM_IDS
+    assert all(record["subject_teacher"] == "Unassigned" for record in franchette_scope_vacancies)
+    assert all(record["subject_teacher_id"] == "" for record in franchette_scope_vacancies)
+    assert all(record["subject_teacher_status"] == "VACANT_REPLACEMENT_REQUIRED" for record in franchette_scope_vacancies)
+    assert all(record["replacement_teacher_required"] is True for record in franchette_scope_vacancies)
+    assert all(record["former_subject_teacher_id"] == "tchr_franchette" for record in franchette_scope_vacancies)
+    assert all(record["proctor_id"] and record["proctor_conflict_status"] == "CLEAR" for record in franchette_scope_vacancies)
+    for exam_id, proctor_id in correction.FRANCHETTE_VACANT_PROCTOR_OVERRIDES.items():
+        record = next(item for item in franchette_scope_vacancies if item["id"] == exam_id)
+        assert record["proctor_id"] == proctor_id
 
     mohaymen_mapeh = [
         record for record in records
@@ -559,7 +569,10 @@ def main():
     official_lookup = correction.build_official_teacher_lookup(class_sections)
     unmatched = []
     for record in records:
-        if correction.subject_key(record["subject"]) == "oral_written":
+        if (
+            correction.subject_key(record["subject"]) == "oral_written"
+            or record["id"] in correction.FRANCHETTE_VACANT_SUBJECT_EXAM_IDS
+        ):
             continue
         official = correction.pick_official_teacher(record, official_lookup)
         if not official or official[1] != record["teacher_id"]:
@@ -615,9 +628,12 @@ def main():
     with open(os.path.join(BASE_DIR, "proctor_assignments.json"), encoding="utf-8") as handle:
         proctor_assignments = json.load(handle)
     assert len(proctor_assignments) == len(records)
-    assert sum(item["replacement_teacher_required"] for item in proctor_assignments) == 12
+    assert sum(item["replacement_teacher_required"] for item in proctor_assignments) == 20
     assert not any(item["proctor_id"] == "tchr_normylah" for item in proctor_assignments)
-    manual_assignment_ids = set(correction.NORMYLAH_MANUAL_PROCTOR_OVERRIDES)
+    manual_assignment_ids = {
+        *correction.NORMYLAH_MANUAL_PROCTOR_OVERRIDES,
+        *correction.FRANCHETTE_VACANT_PROCTOR_OVERRIDES,
+    }
     assert all(
         item["proctor_pool"] == (
             "MANUAL_ADMIN_OVERRIDE" if item["exam_id"] in manual_assignment_ids else "ACADEMIC_TEACHER_ONLY"
