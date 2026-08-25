@@ -95,4 +95,10 @@ assert(facultyHtml.includes('60 MIN'));
 assert(html.includes('${match.duration_minutes || 60} MIN'));
 assert(facultyHtml.includes('${exam.duration_minutes || 60} MIN'));
 
+assert(html.includes('@media (max-width: 720px)'), 'Exam schedule must include a phone layout breakpoint.');
+assert(html.includes('Swipe left or right to view all exam days'), 'Mobile timetables must explain horizontal swiping.');
+assert(html.includes('-webkit-overflow-scrolling: touch'), 'Timetable scrolling must be touch optimized.');
+assert(/\.table-responsive-wrapper\s*\{[\s\S]*?overflow-x:\s*scroll;/.test(html), 'Phone timetable wrapper must scroll horizontally.');
+assert(/\.timetable-grid\s*\{\s*width:\s*820px;\s*min-width:\s*820px;\s*\}/.test(html), 'Phone timetable columns must retain readable widths.');
+
 console.log('PASS Grade 11/12 canonical rendering and PROCTOR-only faculty timetable cell labels');
