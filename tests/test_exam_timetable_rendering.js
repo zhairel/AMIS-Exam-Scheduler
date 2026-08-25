@@ -68,6 +68,9 @@ const mergedIdentityRecords = records.filter(record => ['tchr_franchette','tchr_
 assert(mergedIdentityRecords.every(record => record.subject_teacher === 'Teacher Franchette Zarah M. Ranain'));
 assert(!records.some(record => record.proctor_id === 'tchr_zara'), 'The duplicate Zara identity must never remain an active proctor ID.');
 assert(html.includes("match.proctor_assignment_source !== 'SUBJECT_TEACHER'"));
+assert(html.includes('Active proctor: ${esc(match.proctor'));
+assert(!html.includes('Former subject teacher:'));
+assert(!html.includes('Inactive teacher. Please assign a replacement teacher.'));
 assert(html.includes('<span class="cell-proctor-duty-label">PROCTOR</span>'));
 assert(html.includes("<span class=\"cell-section-name\">${esc(cleanSectionName(match.section_name))}</span>"));
 assert(!html.includes('Gender not specified'));
