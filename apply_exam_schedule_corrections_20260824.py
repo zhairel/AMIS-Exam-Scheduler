@@ -117,11 +117,10 @@ FRANCHETTE_VACANT_PROCTOR_OVERRIDES = {
     "exam_466": "tchr_wendy",
     "exam_464": "tchr_ethel",
 }
-PRESERVED_AUTO_PROCTOR_OVERRIDES = {
-    # K1 Husain Qur'an stays scheduled but is outside Ustadha Hainur's
-    # confirmed subject scope. Teacher Junaisah provides the lightest-load,
-    # conflict-free Academic Teacher coverage.
-    "exam_4": "tchr_junaisah",
+REQUESTED_NO_PROCTOR_EXAM_IDS = {
+    # Keep K1 Husain Qur'an in the section schedule, but do not assign it to
+    # Ustadha Hainur or add it as a proctor duty to any faculty timetable.
+    "exam_4",
 }
 SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS = {
     "exam_594",  # Grade 6 F2F
@@ -130,6 +129,9 @@ SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS = {
     "exam_597",  # Grade 6 Khaleed
     "exam_549",  # Grade 9 Abu Dharr
 }
+ALL_SUPPRESSED_PROCTOR_IDS = (
+    REQUESTED_NO_PROCTOR_EXAM_IDS | SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS
+)
 NORMYLAH_INACTIVE_WARNING = (
     "Teacher Normylah is inactive/resigned. Please assign a replacement teacher."
 )
@@ -338,7 +340,7 @@ def canonical_teacher_identity_id(teacher_id):
 
 
 def effective_proctor_id(record):
-    if record.get("id") in SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS:
+    if record.get("id") in ALL_SUPPRESSED_PROCTOR_IDS:
         return ""
     return canonical_teacher_identity_id(record.get("proctor_id") or record.get("teacher_id"))
 
@@ -364,6 +366,30 @@ def suppress_non_normylah_mapeh_proctors(records):
         record["proctor_assignment_source"] = "ADMIN_REMOVED_NON_NORMYLAH_MAPEH"
         record["proctor_conflict_status"] = "NOT_ASSIGNED"
         record["proctor_coverage_reason"] = "NON_NORMYLAH_MAPEH_PROCTOR_REMOVED"
+    return suppressed
+
+
+def suppress_requested_no_proctor_assignments(records):
+    """Keep requested exams visible without creating any faculty duty."""
+    suppressed = []
+    for record in records:
+        if record.get("id") not in REQUESTED_NO_PROCTOR_EXAM_IDS:
+            continue
+        suppressed.append({
+            "exam_id": record["id"],
+            "subject": record["subject"],
+            "section": record["section_name"],
+            "former_proctor": clean(record.get("proctor")),
+            "former_proctor_id": clean(record.get("proctor_id")),
+        })
+        record["proctor"] = ""
+        record["proctor_id"] = ""
+        record["proctor_status"] = "NOT_ASSIGNED"
+        record["proctor_department"] = ""
+        record["proctor_pool"] = "NONE"
+        record["proctor_assignment_source"] = "ADMIN_NO_PROCTOR_REQUEST"
+        record["proctor_conflict_status"] = "CLEAR"
+        record["proctor_coverage_reason"] = "NO_PROCTOR_REQUESTED"
     return suppressed
 
 
@@ -544,11 +570,7 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
         **NORMYLAH_MANUAL_PROCTOR_OVERRIDES,
         **FRANCHETTE_VACANT_PROCTOR_OVERRIDES,
     }
-    forced_proctor_overrides = {
-        **manual_proctor_overrides,
-        **PRESERVED_AUTO_PROCTOR_OVERRIDES,
-    }
-    reserved_forced_counts = Counter(forced_proctor_overrides.values())
+    reserved_manual_counts = Counter(manual_proctor_overrides.values())
     academic_teachers = [
         teacher for teacher in TEACHER_REGISTRY
         if is_active_academic_teacher(teacher)
@@ -564,7 +586,7 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
     inactive_records = []
     for record in records:
         if record.get("replacement_teacher_required"):
-            if record.get("id") in SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS:
+            if record.get("id") in ALL_SUPPRESSED_PROCTOR_IDS:
                 continue
             inactive_records.append(record)
             continue
@@ -593,18 +615,18 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
         department = clean(record.get("department"))
         candidates = []
 
-        forced_proctor_id = forced_proctor_overrides.get(record["id"])
-        is_manual_override = record["id"] in manual_proctor_overrides
-        candidate_teachers = [teacher_by_id[forced_proctor_id]] if forced_proctor_id else academic_teachers
+        manual_proctor_id = manual_proctor_overrides.get(record["id"])
+        is_manual_override = bool(manual_proctor_id)
+        candidate_teachers = [teacher_by_id[manual_proctor_id]] if manual_proctor_id else academic_teachers
 
         for teacher in candidate_teachers:
             teacher_id = teacher["id"]
-            reserved_count = 0 if forced_proctor_id else reserved_forced_counts[teacher_id]
+            reserved_count = 0 if manual_proctor_id else reserved_manual_counts[teacher_id]
             coverage_limit = (
                 4 if record.get("id") in VACANT_SUBJECT_TEACHER_EXAM_IDS
                 else AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
             )
-            if not forced_proctor_id and (
+            if not manual_proctor_id and (
                 automatic_coverage_count[teacher_id] + reserved_count
                 >= coverage_limit
             ):
@@ -1584,6 +1606,7 @@ def main():
     audit["source_duration_counts"] = dict(sorted(original_duration_counts.items()))
     audit["moved"] = solve_minimal_changes(records)
     audit["suppressed_non_normylah_mapeh_proctors"] = suppress_non_normylah_mapeh_proctors(records)
+    audit["requested_no_proctor_assignments"] = suppress_requested_no_proctor_assignments(records)
     audit = merge_previous_audit(audit, previous_audit, len(source_records))
     write_outputs(records, audit)
 

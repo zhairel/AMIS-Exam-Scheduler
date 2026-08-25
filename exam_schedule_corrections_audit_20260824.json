@@ -989,17 +989,6 @@
       "time_slot": "04:20 PM – 05:20 PM"
     },
     {
-      "exam_id": "exam_4",
-      "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-      "subject": "Qur'an",
-      "former_subject_teacher": "Unassigned",
-      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
-      "proctor": "Teacher Junaisah",
-      "proctor_id": "tchr_junaisah",
-      "day_number": 1,
-      "time_slot": "04:20 PM – 05:20 PM"
-    },
-    {
       "exam_id": "exam_173",
       "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
       "subject": "Makabansa",
@@ -2601,6 +2590,15 @@
       "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
       "former_proctor": "Sir Mohaymen",
       "former_proctor_id": "tchr_mohaymen"
+    }
+  ],
+  "requested_no_proctor_assignments": [
+    {
+      "exam_id": "exam_4",
+      "subject": "Qur'an",
+      "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+      "former_proctor": "",
+      "former_proctor_id": ""
     }
   ],
   "teacher_accommodations": [

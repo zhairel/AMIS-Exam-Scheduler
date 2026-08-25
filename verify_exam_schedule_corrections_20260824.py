@@ -624,8 +624,11 @@ def main():
     assert hainur_k1_quran["subject_teacher_id"] == ""
     assert hainur_k1_quran["former_subject_teacher_id"] == "tchr_hainur"
     assert hainur_k1_quran["subject_teacher_status"] == "VACANT_REPLACEMENT_REQUIRED"
-    assert hainur_k1_quran["proctor_id"] == "tchr_junaisah"
-    assert hainur_k1_quran["proctor_assignment_source"] == "AUTO_ACADEMIC_COVERAGE"
+    assert hainur_k1_quran["proctor"] == ""
+    assert hainur_k1_quran["proctor_id"] == ""
+    assert hainur_k1_quran["proctor_status"] == "NOT_ASSIGNED"
+    assert hainur_k1_quran["proctor_pool"] == "NONE"
+    assert hainur_k1_quran["proctor_assignment_source"] == "ADMIN_NO_PROCTOR_REQUEST"
     assert hainur_k1_quran["proctor_conflict_status"] == "CLEAR"
     k1_husain_hadith = get_one(
         records,
@@ -754,7 +757,7 @@ def main():
         )
         for item in proctor_assignments
         if item["replacement_teacher_required"]
-        and item["exam_id"] not in correction.SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS
+        and item["exam_id"] not in correction.ALL_SUPPRESSED_PROCTOR_IDS
     )
 
     with open(os.path.join(BASE_DIR, "AMIS_Teacher_Exam_Subject_Assignments.csv"), encoding="utf-8-sig") as handle:
