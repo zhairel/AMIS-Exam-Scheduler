@@ -112,6 +112,10 @@ FRANCHETTE_SCOPE_WARNING = (
     "Teacher Franchette confirmed this is not her assigned subject. "
     "Please assign the correct subject teacher."
 )
+HAINUR_K1_QURAN_WARNING = (
+    "Ustadha Hainur confirmed that K1 Husain Qur'an is not her assigned subject. "
+    "Please assign the correct subject teacher."
+)
 
 # The official three-period ODL grids cannot hold every Hainur/Silfah duty
 # without double-booking them. These seven same-subject faculty assignments provide
@@ -135,6 +139,10 @@ FRANCHETTE_VACANT_SUBJECT_EXAM_IDS = {
     "exam_173", "exam_314", "exam_464", "exam_466",
     "exam_594", "exam_595", "exam_596", "exam_597",
 }
+HAINUR_VACANT_SUBJECT_EXAM_IDS = {"exam_4"}
+VACANT_SUBJECT_TEACHER_EXAM_IDS = (
+    FRANCHETTE_VACANT_SUBJECT_EXAM_IDS | HAINUR_VACANT_SUBJECT_EXAM_IDS
+)
 FRANCHETTE_GRADE6_MAPEH_SECTION_IDS = {
     "sec_grade_6_face_to_face",
     "sec_grade_6_abdullah_ibn_salaam_1st_shift",
@@ -307,10 +315,24 @@ def apply_subject_teacher_status(records):
     for record in records:
         subject_teacher = clean(record.get("teacher"))
         subject_teacher_id = clean(record.get("teacher_id"))
-        is_scope_vacancy = record.get("id") in FRANCHETTE_VACANT_SUBJECT_EXAM_IDS
+        is_scope_vacancy = record.get("id") in VACANT_SUBJECT_TEACHER_EXAM_IDS
         if is_scope_vacancy:
-            record["former_subject_teacher"] = subject_teacher or "Teacher Franchette Zarah M. Ranain"
-            record["former_subject_teacher_id"] = subject_teacher_id or "tchr_franchette"
+            record["former_subject_teacher"] = (
+                clean(record.get("former_subject_teacher")) or subject_teacher
+                or (
+                    "Teacher Franchette Zarah M. Ranain"
+                    if record.get("id") in FRANCHETTE_VACANT_SUBJECT_EXAM_IDS
+                    else "Ustadha Hainur"
+                )
+            )
+            record["former_subject_teacher_id"] = (
+                clean(record.get("former_subject_teacher_id")) or subject_teacher_id
+                or (
+                    "tchr_franchette"
+                    if record.get("id") in FRANCHETTE_VACANT_SUBJECT_EXAM_IDS
+                    else "tchr_hainur"
+                )
+            )
             record["teacher"] = ""
             record["teacher_id"] = ""
             record["teacher_status"] = "VACANT_REPLACEMENT_REQUIRED"
@@ -321,7 +343,11 @@ def apply_subject_teacher_status(records):
             record["subject_teacher_status"] = "VACANT_REPLACEMENT_REQUIRED"
             record["active_subject_teacher"] = ""
             record["active_subject_teacher_id"] = ""
-            record["inactive_teacher_warning"] = FRANCHETTE_SCOPE_WARNING
+            record["inactive_teacher_warning"] = (
+                HAINUR_K1_QURAN_WARNING
+                if record.get("id") in HAINUR_VACANT_SUBJECT_EXAM_IDS
+                else FRANCHETTE_SCOPE_WARNING
+            )
             record["proctor"] = ""
             record["proctor_id"] = ""
             record["proctor_status"] = "PENDING_ASSIGNMENT"
@@ -498,7 +524,7 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
             teacher_id = teacher["id"]
             reserved_count = 0 if manual_proctor_id else reserved_manual_counts[teacher_id]
             coverage_limit = (
-                4 if record.get("id") in FRANCHETTE_VACANT_SUBJECT_EXAM_IDS
+                4 if record.get("id") in VACANT_SUBJECT_TEACHER_EXAM_IDS
                 else AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
             )
             if not manual_proctor_id and (
@@ -662,7 +688,7 @@ def build_official_teacher_lookup(class_sections):
 
 def pick_official_teacher(record, official_lookup):
     key = subject_key(record.get("subject"))
-    if record.get("id") in FRANCHETTE_VACANT_SUBJECT_EXAM_IDS:
+    if record.get("id") in VACANT_SUBJECT_TEACHER_EXAM_IDS:
         return None
     if record.get("id") in EXAM_TEACHER_OVERRIDES:
         return canonical_teacher(EXAM_TEACHER_OVERRIDES[record["id"]])

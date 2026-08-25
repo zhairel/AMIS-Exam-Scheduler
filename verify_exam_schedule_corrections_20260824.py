@@ -109,7 +109,7 @@ def main():
     assert sum(
         record["proctor_id"] == "tchr_junaisah"
         and record["proctor_assignment_source"] != "SUBJECT_TEACHER"
-        for record in records
+        for record in normylah_records
     ) == 2
     assert {
         record["id"] for record in normylah_records
@@ -295,7 +295,7 @@ def main():
     assert (amr_arabic["day_number"], amr_arabic["start_m"]) == (2, 830)
 
     hainur_records = [record for record in records if record["teacher_id"] == "tchr_hainur"]
-    assert len(hainur_records) == 20
+    assert len(hainur_records) == 19
     assert all(record["teacher"] == "Ustadha Hainur" for record in hainur_records)
     assert (by_id["exam_354"]["day_number"], by_id["exam_354"]["start_m"]) == (3, 830)
     assert (by_id["exam_62"]["day_number"], by_id["exam_62"]["start_m"]) == (1, 830)
@@ -526,6 +526,25 @@ def main():
         record = next(item for item in franchette_scope_vacancies if item["id"] == exam_id)
         assert record["proctor_id"] == proctor_id
 
+    hainur_k1_quran = get_one(
+        records,
+        lambda record: record["id"] == "exam_4",
+        "K1 Husain Qur'an exam",
+    )
+    assert hainur_k1_quran["subject"] == "Qur'an"
+    assert hainur_k1_quran["subject_teacher"] == "Unassigned"
+    assert hainur_k1_quran["subject_teacher_id"] == ""
+    assert hainur_k1_quran["former_subject_teacher_id"] == "tchr_hainur"
+    assert hainur_k1_quran["subject_teacher_status"] == "VACANT_REPLACEMENT_REQUIRED"
+    assert hainur_k1_quran["proctor_id"] and hainur_k1_quran["proctor_conflict_status"] == "CLEAR"
+    k1_husain_hadith = get_one(
+        records,
+        lambda record: record["id"] == "exam_146",
+        "K1 Husain Hadith exam",
+    )
+    assert k1_husain_hadith["subject_teacher_id"] == "tchr_hainur"
+    assert k1_husain_hadith["subject_teacher"] == "Ustadha Hainur"
+
     mohaymen_mapeh = [
         record for record in records
         if record["section_id"] in correction.MOHAYMEN_MAPEH_SECTION_IDS
@@ -571,7 +590,7 @@ def main():
     for record in records:
         if (
             correction.subject_key(record["subject"]) == "oral_written"
-            or record["id"] in correction.FRANCHETTE_VACANT_SUBJECT_EXAM_IDS
+            or record["id"] in correction.VACANT_SUBJECT_TEACHER_EXAM_IDS
         ):
             continue
         official = correction.pick_official_teacher(record, official_lookup)
@@ -628,7 +647,7 @@ def main():
     with open(os.path.join(BASE_DIR, "proctor_assignments.json"), encoding="utf-8") as handle:
         proctor_assignments = json.load(handle)
     assert len(proctor_assignments) == len(records)
-    assert sum(item["replacement_teacher_required"] for item in proctor_assignments) == 20
+    assert sum(item["replacement_teacher_required"] for item in proctor_assignments) == 21
     assert not any(item["proctor_id"] == "tchr_normylah" for item in proctor_assignments)
     manual_assignment_ids = {
         *correction.NORMYLAH_MANUAL_PROCTOR_OVERRIDES,
