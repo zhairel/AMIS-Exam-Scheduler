@@ -86,7 +86,7 @@ NORMYLAH_MANUAL_PROCTOR_OVERRIDES = {
     "exam_33": "tchr_wardah",
     "exam_81": "tchr_junaisah",
     "exam_226": "tchr_ethel",
-    "exam_229": "tchr_ethel",
+    "exam_229": "tchr_wendy",
     "exam_316": "tchr_wardah",
     "exam_325": "tchr_shirehan",
     "exam_364": "tchr_zuhora",
