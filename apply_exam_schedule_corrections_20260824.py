@@ -707,13 +707,30 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
 
         records.append(record)
 
-    # Clarified item 21 requires two Filipino examination schedules for Grade 3
-    # As'ad, both handled by Teacher Jenny. Preserve both source records and only
-    # normalize the older Fil3 display label.
+    # The Grade 3 As'ad Filipino concern refers to a duplicate examination entry,
+    # not a requirement for two exams. Keep the earlier Thursday assignment and
+    # remove the later Sunday duplicate so future regeneration cannot restore it.
     asad_filipino = [
         r for r in records
         if section_contains(r, "GRADE 3", "AS'AD") and subject_key(r.get("subject")) == "filipino"
     ]
+    if len(asad_filipino) > 1:
+        keep = next(
+            (record for record in asad_filipino if record.get("id") == "exam_182"),
+            min(asad_filipino, key=lambda record: (record.get("day_number", 99), record.get("start_m", 9999))),
+        )
+        duplicate_ids = {
+            record["id"] for record in asad_filipino
+            if record is not keep
+        }
+        for duplicate in asad_filipino:
+            if duplicate["id"] in duplicate_ids:
+                removed.append({
+                    "reason": "duplicate Grade 3 As'ad Filipino exam removed",
+                    "record": deepcopy(duplicate),
+                })
+        records = [record for record in records if record.get("id") not in duplicate_ids]
+        asad_filipino = [keep]
     for record in asad_filipino:
         if clean(record.get("subject")) != "Filipino":
             renamed.append({"section": record["section_name"], "from": record["subject"], "to": "Filipino"})

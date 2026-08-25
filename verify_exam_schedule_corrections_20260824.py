@@ -38,8 +38,8 @@ def main():
     with open(os.path.join(BASE_DIR, "teacher_weekly_schedules.json"), encoding="utf-8") as handle:
         teacher_weekly = json.load(handle)
 
-    assert len(records) == 593, f"Expected 593 final exams, got {len(records)}"
-    assert Counter(record["duration_minutes"] for record in records) == Counter({60: 568, 120: 25})
+    assert len(records) == 592, f"Expected 592 final exams, got {len(records)}"
+    assert Counter(record["duration_minutes"] for record in records) == Counter({60: 567, 120: 25})
     assert all(record["slots_spanned"] == (2 if record["duration_minutes"] == 120 else 1) for record in records)
     assert len({record["id"] for record in records}) == len(records)
     assert all(record.get("gender", "") == correction.infer_gender(record) for record in records)
@@ -55,7 +55,7 @@ def main():
     assert correction.canonical_teacher("Teacher Keychelle") == ("Teacher Keychelle", "tchr_keychell")
     subject_counts = Counter((record["section_id"], record["subject_id"]) for record in records)
     repeated_subjects = {key: count for key, count in subject_counts.items() if count > 1}
-    assert repeated_subjects == {("sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix", "subj_filipino"): 2}
+    assert repeated_subjects == {}
 
     assert not any(correction.subject_key(record["subject"]) == "research_consultation" for record in records)
     assert not any(correction.subject_key(record["subject"]) == "aral_math" for record in records)
@@ -476,8 +476,12 @@ def main():
         record for record in records
         if section_has(record, "GRADE 3", "AS'AD") and correction.subject_key(record["subject"]) == "filipino"
     ]
-    assert len(asad_filipino) == 2
-    assert all(record["subject"] == "Filipino" and record["teacher_id"] == "tchr_jenny" for record in asad_filipino)
+    assert len(asad_filipino) == 1
+    assert asad_filipino[0]["id"] == "exam_182"
+    assert asad_filipino[0]["subject"] == "Filipino"
+    assert asad_filipino[0]["teacher_id"] == "tchr_jenny"
+    assert asad_filipino[0]["day_number"] == 2
+    assert asad_filipino[0]["start_m"] == 980
 
     grade5_requested_mapeh = [
         record for record in records
@@ -632,8 +636,8 @@ def main():
     assert workbook.active.max_row == len(records) + 1
     workbook.close()
 
-    print("PASS: 593 official exam records")
-    print("PASS: 568 x 60-minute and 25 x 120-minute exams")
+    print("PASS: 592 official exam records")
+    print("PASS: 567 x 60-minute and 25 x 120-minute exams")
     print("PASS: all requested removals, additions, moves, and teacher corrections")
     print("PASS: exact official section+subject teacher linkage")
     print("PASS: zero teacher, section, and grade/modality/section/gender cohort conflicts")

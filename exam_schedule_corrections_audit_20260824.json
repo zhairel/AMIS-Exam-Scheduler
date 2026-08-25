@@ -2540,9 +2540,9 @@
       "result": "All 12 former exam assignments remain visible as Resigned / Inactive and Replacement Required; active Academic Teacher proctors are assigned separately with zero overlaps and no subject-teacher replacement"
     }
   ],
-  "final_exam_count": 593,
+  "final_exam_count": 592,
   "duration_counts": {
-    "60": 568,
+    "60": 567,
     "120": 25
   },
   "teacher_count": 50
