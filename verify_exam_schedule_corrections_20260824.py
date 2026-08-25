@@ -38,8 +38,8 @@ def main():
     with open(os.path.join(BASE_DIR, "teacher_weekly_schedules.json"), encoding="utf-8") as handle:
         teacher_weekly = json.load(handle)
 
-    assert len(records) == 589, f"Expected 589 final exams, got {len(records)}"
-    assert Counter(record["duration_minutes"] for record in records) == Counter({60: 564, 120: 25})
+    assert len(records) == 593, f"Expected 593 final exams, got {len(records)}"
+    assert Counter(record["duration_minutes"] for record in records) == Counter({60: 568, 120: 25})
     assert all(record["slots_spanned"] == (2 if record["duration_minutes"] == 120 else 1) for record in records)
     assert len({record["id"] for record in records}) == len(records)
     assert all(record.get("gender", "") == correction.infer_gender(record) for record in records)
@@ -495,6 +495,19 @@ def main():
     assert grade5_mapeh_by_section["sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift"]["teacher_id"] == "tchr_norhydie"
     assert grade5_mapeh_by_section["sec_grade_5_al_harith_bin_awf_2nd_shift"]["teacher_id"] == "tchr_norhydie"
 
+    franchette_mapeh = [
+        record for record in records
+        if record["section_id"] in correction.FRANCHETTE_MAPEH_SECTION_IDS
+        and correction.subject_key(record["subject"]) == "mapeh"
+    ]
+    assert len(franchette_mapeh) == len(correction.FRANCHETTE_MAPEH_SECTION_IDS) == 9
+    assert {record["section_id"] for record in franchette_mapeh} == correction.FRANCHETTE_MAPEH_SECTION_IDS
+    assert all(record["teacher_id"] == "tchr_franchette" for record in franchette_mapeh)
+    assert all(
+        record["teacher"] == "Teacher Franchette Zarah M. Ranain"
+        for record in franchette_mapeh
+    )
+
     gmrc2_saeed = get_one(
         records,
         lambda record: section_has(record, "GRADE 2", "SAEED")
@@ -598,8 +611,8 @@ def main():
     assert workbook.active.max_row == len(records) + 1
     workbook.close()
 
-    print("PASS: 589 official exam records")
-    print("PASS: 564 x 60-minute and 25 x 120-minute exams")
+    print("PASS: 593 official exam records")
+    print("PASS: 568 x 60-minute and 25 x 120-minute exams")
     print("PASS: all requested removals, additions, moves, and teacher corrections")
     print("PASS: exact official section+subject teacher linkage")
     print("PASS: zero teacher, section, and grade/modality/section/gender cohort conflicts")

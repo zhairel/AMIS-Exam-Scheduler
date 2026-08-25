@@ -352,6 +352,22 @@
     {
       "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
       "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE  6  FACE TO FACE",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "MAPEH"
     }
   ],
   "teacher_relinks": [
@@ -713,6 +729,114 @@
       "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
       "subject": "MAPEH",
       "from": "Teacher Franchette",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+      "subject": "MAPEH",
+      "from": "Sir Mohaymen",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+      "subject": "MAPEH",
+      "from": "Sir Mohaymen",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+      "subject": "MAPEH",
+      "from": "Sir Mohaymen",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+      "subject": "MAPEH",
+      "from": "Sir Mohaymen",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+      "subject": "MAPEH",
+      "from": "Teacher Angeleni",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette Zarah M. Ranain",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+      "subject": "Makabansa",
+      "from": "Teacher Franchette Zarah M. Ranain",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette Zarah M. Ranain",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+      "subject": "Makabansa",
+      "from": "Teacher Franchette Zarah M. Ranain",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE  6  FACE TO FACE",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette Zarah M. Ranain",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette Zarah M. Ranain",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette Zarah M. Ranain",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette Zarah M. Ranain",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette Zarah M. Ranain",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+      "subject": "Makabansa",
+      "from": "Teacher Franchette Zarah M. Ranain",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette Zarah M. Ranain",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+      "subject": "Makabansa",
+      "from": "Teacher Franchette Zarah M. Ranain",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+      "subject": "MAPEH",
+      "from": "Teacher Franchette Zarah M. Ranain",
       "to": "Teacher Franchette Zarah M. Ranain"
     }
   ],
@@ -2263,6 +2387,60 @@
       "from_start_m": 910,
       "to_day": 3,
       "to_start_m": 760
+    },
+    {
+      "id": "exam_262",
+      "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+      "subject": "TLE",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 4,
+      "to_start_m": 1050
+    },
+    {
+      "id": "exam_365",
+      "section": "GRADE  6  FACE TO FACE",
+      "subject": "TLE",
+      "from_day": 3,
+      "from_start_m": 625,
+      "to_day": 3,
+      "to_start_m": 480
+    },
+    {
+      "id": "exam_314",
+      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+      "subject": "Makabansa",
+      "from_day": 3,
+      "from_start_m": 910,
+      "to_day": 1,
+      "to_start_m": 760
+    },
+    {
+      "id": "exam_531",
+      "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+      "subject": "Math",
+      "from_day": 4,
+      "from_start_m": 760,
+      "to_day": 4,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_532",
+      "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+      "subject": "MAPEH",
+      "from_day": 4,
+      "from_start_m": 910,
+      "to_day": 4,
+      "to_start_m": 760
+    },
+    {
+      "id": "exam_545",
+      "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+      "subject": "MAPEH",
+      "from_day": 4,
+      "from_start_m": 1050,
+      "to_day": 2,
+      "to_start_m": 910
     }
   ],
   "teacher_accommodations": [
@@ -2362,9 +2540,9 @@
       "result": "All 12 former exam assignments remain visible as Resigned / Inactive and Replacement Required; active Academic Teacher proctors are assigned separately with zero overlaps and no subject-teacher replacement"
     }
   ],
-  "final_exam_count": 589,
+  "final_exam_count": 593,
   "duration_counts": {
-    "60": 564,
+    "60": 568,
     "120": 25
   },
   "teacher_count": 50

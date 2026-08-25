@@ -121,6 +121,21 @@ EXAM_TEACHER_OVERRIDES = {
     "exam_290": "Teacher Sitti Kauzar", # Oral & Written Exam
 }
 
+# Official MAPEH load correction confirmed by the faculty. Teacher Zara in the
+# source sheet is the same person as Teacher Franchette Zarah M. Ranain; keep
+# the canonical identity here so these exams appear in one faculty timetable.
+FRANCHETTE_MAPEH_SECTION_IDS = {
+    "sec_grade_6_face_to_face",
+    "sec_grade_6_abdullah_ibn_salaam_1st_shift",
+    "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
+    "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
+    "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
+    "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
+    "sec_grade_9_abu_hurayrah_1st_shift_girls",
+    "sec_grade_9_10_boys_face_to_face",
+    "sec_grade_9_10_girls_face_to_face",
+}
+
 
 def clean(value):
     return re.sub(r"\s+", " ", str(value or "")).strip()
@@ -210,7 +225,12 @@ def subject_key(value):
 def canonical_teacher(value):
     resolved = resolve_teacher(value)
     if resolved:
-        return resolved["canonical_name"], resolved["id"]
+        # Collapse legacy duplicate identities (for example Teacher Zara) at
+        # the source so subject ownership and faculty timetables use one ID.
+        teacher_id = TEACHER_IDENTITY_CANONICAL_IDS.get(resolved["id"], resolved["id"])
+        teacher_by_id = {teacher["id"]: teacher for teacher in TEACHER_REGISTRY}
+        canonical_name = teacher_by_id.get(teacher_id, resolved)["canonical_name"]
+        return canonical_name, teacher_id
     fallback = clean(value) or "Assigned Faculty"
     return fallback, "tchr_" + re.sub(r"[^a-z0-9]+", "_", fallback.lower()).strip("_")
 
@@ -596,6 +616,8 @@ def pick_official_teacher(record, official_lookup):
         return canonical_teacher("Ustadha Hainur")
     if key == "mabisang_komunikasyon":
         return canonical_teacher("Teacher Nadzra")
+    if key == "mapeh" and record.get("section_id") in FRANCHETTE_MAPEH_SECTION_IDS:
+        return canonical_teacher("Teacher Franchette Zarah M. Ranain")
     candidates = official_lookup.get(record["section_id"], {}).get(key)
     if not candidates:
         return None
@@ -739,6 +761,20 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
         if not teacher:
             continue
         if ensure_subject(records, section["section_id"], "MAPEH", teacher):
+            additions.append({"section": section["section_name"], "subject": "MAPEH"})
+
+    # Confirmed missing Grade 6 MAPEH exams and corrected Grade 9/9&10 MAPEH
+    # ownership all belong to Teacher Franchette Zarah M. Ranain. Existing
+    # section exams are preserved; only genuinely missing rows are added.
+    for section in class_sections:
+        if section.get("section_id") not in FRANCHETTE_MAPEH_SECTION_IDS:
+            continue
+        if ensure_subject(
+            records,
+            section["section_id"],
+            "MAPEH",
+            "Teacher Franchette Zarah M. Ranain",
+        ):
             additions.append({"section": section["section_name"], "subject": "MAPEH"})
 
     # Re-link every exam with an exact section+subject teacher from the official class schedule.
