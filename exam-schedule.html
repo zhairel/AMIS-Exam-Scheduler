@@ -6494,12 +6494,7 @@ html, body {
                 <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
                     <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                    ${match.replacement_teacher_required ? `
-                      <span class="cell-proctor-name">Active proctor: ${esc(match.proctor || 'Pending assignment')}</span>
-                    ` : match.proctor_assignment_source !== 'SUBJECT_TEACHER' ? `
-                      <span class="cell-teacher-name">Subject teacher: ${esc(match.subject_teacher || match.teacher)}</span>
-                      <span class="cell-proctor-name">Proctor: ${esc(match.proctor)}</span>
-                    ` : `<span class="cell-teacher-name">${esc(match.subject_teacher || match.teacher)}</span>`}
+                    <span class="cell-teacher-name">${esc(match.subject_teacher || match.teacher)}</span>
                     <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
                   </div>
                 </td>

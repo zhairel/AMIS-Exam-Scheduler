@@ -60,15 +60,25 @@ const abuMusa = seniorHighRecords.filter(record => record.section === 'GRADE 12 
 assert.strictEqual(abuMusa.length, 9);
 assert(abuMusa.every(record => record.start_m >= 760), 'Abu Musa exams must start at 12:40 PM or later.');
 
-const proctorCoverage = records.filter(record => record.replacement_teacher_required && record.proctor_id);
-assert.strictEqual(proctorCoverage.length, 12, 'All 12 Normylah exams must have active proctor coverage.');
+const normylahExams = records.filter(record => record.subject_teacher === 'Teacher Normylah');
+assert(normylahExams.length > 0, 'Normylah reference assignments must remain in the official data.');
+assert(
+  normylahExams.every(record => record.proctor_id && record.proctor_status === 'ACTIVE_ASSIGNED'),
+  'Every Normylah exam must retain active proctor coverage.'
+);
 assert(records.filter(record => /^fil(?:ipino|\d*)$/i.test(record.subject)).every(record => record.subject === 'Filipino'));
 assert(!/"subject": "Fil\d*"/.test(html), 'Faculty roster must display Filipino instead of legacy Fil labels.');
 const mergedIdentityRecords = records.filter(record => ['tchr_franchette','tchr_zara'].includes(record.teacher_id));
 assert(mergedIdentityRecords.every(record => record.subject_teacher === 'Teacher Franchette Zarah M. Ranain'));
 assert(!records.some(record => record.proctor_id === 'tchr_zara'), 'The duplicate Zara identity must never remain an active proctor ID.');
 assert(html.includes("match.proctor_assignment_source !== 'SUBJECT_TEACHER'"));
-assert(html.includes('Active proctor: ${esc(match.proctor'));
+const sectionRenderer = html.slice(
+  html.indexOf('// TAB 1: SECTION EXAM SCHEDULES'),
+  html.indexOf('// TAB 2: FACULTY EXAM TIMETABLES')
+);
+assert(!sectionRenderer.includes('match.proctor'), 'Section schedules must not display proctor details.');
+assert(!sectionRenderer.includes('Active proctor:'), 'Section schedules must not display active-proctor text.');
+assert(!sectionRenderer.includes('Proctor:'), 'Section schedules must not display proctor labels.');
 assert(!html.includes('Former subject teacher:'));
 assert(!html.includes('Inactive teacher. Please assign a replacement teacher.'));
 assert(html.includes('<span class="cell-proctor-duty-label">PROCTOR</span>'));
