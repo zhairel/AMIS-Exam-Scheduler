@@ -123,7 +123,7 @@ def main():
             else "IDENTITY_CONFLICT_COVERAGE"
         )
         assert record["proctor_assignment_source"] == expected_source
-    assert correction.IDENTITY_CONFLICT_PROCTOR_OVERRIDES == {"exam_549": "tchr_franchette"}
+    assert correction.IDENTITY_CONFLICT_PROCTOR_OVERRIDES == {}
     for exam_id, proctor_id in correction.ACCOMMODATION_PROCTOR_OVERRIDES.items():
         record = next(item for item in records if item["id"] == exam_id)
         assert record["proctor_id"] == proctor_id
@@ -144,7 +144,6 @@ def main():
     assert anas_math["duration_minutes"] == 120
     assert anas_math["proctor_assignment_source"] == "TEACHER_ACCOMMODATION_COVERAGE"
     assert anas_math["proctor_coverage_reason"] == "ETHEL_ZAYD_FILIPINO_CONFLICT_COVERAGE"
-    assert next(item for item in records if item["id"] == "exam_596")["proctor_id"] == "tchr_katrina"
 
     normylah_coverage_counts = Counter(record["proctor_id"] for record in normylah_records)
     assert max(normylah_coverage_counts.values()) <= correction.AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
@@ -580,7 +579,28 @@ def main():
     assert all(record["subject_teacher_status"] == "VACANT_REPLACEMENT_REQUIRED" for record in franchette_scope_vacancies)
     assert all(record["replacement_teacher_required"] is True for record in franchette_scope_vacancies)
     assert all(record["former_subject_teacher_id"] == "tchr_franchette" for record in franchette_scope_vacancies)
-    assert all(record["proctor_id"] and record["proctor_conflict_status"] == "CLEAR" for record in franchette_scope_vacancies)
+    suppressed_mapeh_proctors = [
+        record for record in records
+        if record["id"] in correction.SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS
+    ]
+    assert len(suppressed_mapeh_proctors) == 5
+    assert all(correction.subject_key(record["subject"]) == "mapeh" for record in suppressed_mapeh_proctors)
+    assert all(record["proctor_id"] == "" for record in suppressed_mapeh_proctors)
+    assert all(record["proctor"] == "" for record in suppressed_mapeh_proctors)
+    assert all(record["proctor_status"] == "NOT_ASSIGNED" for record in suppressed_mapeh_proctors)
+    assert all(record["proctor_pool"] == "NONE" for record in suppressed_mapeh_proctors)
+    assert all(
+        record["proctor_assignment_source"] == "ADMIN_REMOVED_NON_NORMYLAH_MAPEH"
+        for record in suppressed_mapeh_proctors
+    )
+    active_franchette_vacancy_proctors = [
+        record for record in franchette_scope_vacancies
+        if record["id"] not in correction.SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS
+    ]
+    assert all(
+        record["proctor_id"] and record["proctor_conflict_status"] == "CLEAR"
+        for record in active_franchette_vacancy_proctors
+    )
     for exam_id, proctor_id in correction.FRANCHETTE_VACANT_PROCTOR_OVERRIDES.items():
         record = next(item for item in franchette_scope_vacancies if item["id"] == exam_id)
         assert record["proctor_id"] == proctor_id
@@ -661,7 +681,9 @@ def main():
     by_teacher_day = defaultdict(list)
     for record in records:
         by_section_day[(record["section_id"], record["day_number"])].append(record)
-        by_teacher_day[(correction.effective_proctor_id(record), record["day_number"])].append(record)
+        proctor_id = correction.effective_proctor_id(record)
+        if proctor_id:
+            by_teacher_day[(proctor_id, record["day_number"])].append(record)
 
     for section_records in by_section_day.values():
         for index, left in enumerate(section_records):
@@ -701,7 +723,10 @@ def main():
 
     with open(os.path.join(BASE_DIR, "teacher_subject_tracking.json"), encoding="utf-8") as handle:
         tracking = json.load(handle)
-    assert sum(item["total_exams"] for item in tracking) == len(records)
+    assert sum(item["total_exams"] for item in tracking) == sum(
+        bool(correction.clean(record.get("proctor") or record.get("teacher")))
+        for record in records
+    )
 
     with open(os.path.join(BASE_DIR, "proctor_assignments.json"), encoding="utf-8") as handle:
         proctor_assignments = json.load(handle)
@@ -718,6 +743,7 @@ def main():
         )
         for item in proctor_assignments
         if item["replacement_teacher_required"]
+        and item["exam_id"] not in correction.SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS
     )
 
     with open(os.path.join(BASE_DIR, "AMIS_Teacher_Exam_Subject_Assignments.csv"), encoding="utf-8-sig") as handle:

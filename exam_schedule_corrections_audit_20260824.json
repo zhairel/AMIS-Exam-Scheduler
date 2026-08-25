@@ -930,15 +930,6 @@
       "subject": "Math",
       "day_number": 3,
       "time": "03:10 PM – 05:20 PM"
-    },
-    {
-      "exam_id": "exam_549",
-      "subject_teacher": "Sir Mohaymen",
-      "proctor": "Teacher Franchette Zarah M. Ranain",
-      "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-      "subject": "MAPEH",
-      "day_number": 4,
-      "time": "05:30 PM – 06:30 PM"
     }
   ],
   "inactive_teacher_proctor_assignments": [
@@ -983,17 +974,6 @@
       "former_teacher_status": "RESIGNED_INACTIVE",
       "proctor": "Teacher Junaisah",
       "proctor_id": "tchr_junaisah",
-      "day_number": 1,
-      "time_slot": "03:10 PM – 04:10 PM"
-    },
-    {
-      "exam_id": "exam_597",
-      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
-      "subject": "MAPEH",
-      "former_subject_teacher": "Unassigned",
-      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
-      "proctor": "Teacher Keychelle",
-      "proctor_id": "tchr_keychell",
       "day_number": 1,
       "time_slot": "03:10 PM – 04:10 PM"
     },
@@ -1064,17 +1044,6 @@
       "time_slot": "09:00 AM – 10:00 AM"
     },
     {
-      "exam_id": "exam_594",
-      "section": "GRADE  6  FACE TO FACE",
-      "subject": "MAPEH",
-      "former_subject_teacher": "Unassigned",
-      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
-      "proctor": "Teacher Franchette Zarah M. Ranain",
-      "proctor_id": "tchr_franchette",
-      "day_number": 3,
-      "time_slot": "10:25 AM – 11:25 AM"
-    },
-    {
       "exam_id": "exam_316",
       "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
       "subject": "Filipino",
@@ -1084,28 +1053,6 @@
       "proctor_id": "tchr_wardah",
       "day_number": 3,
       "time_slot": "12:40 PM – 01:40 PM"
-    },
-    {
-      "exam_id": "exam_595",
-      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
-      "subject": "MAPEH",
-      "former_subject_teacher": "Unassigned",
-      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
-      "proctor": "Sir Mohaymen",
-      "proctor_id": "tchr_mohaymen",
-      "day_number": 3,
-      "time_slot": "01:50 PM – 02:50 PM"
-    },
-    {
-      "exam_id": "exam_596",
-      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
-      "subject": "MAPEH",
-      "former_subject_teacher": "Unassigned",
-      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
-      "proctor": "Teacher Katrina",
-      "proctor_id": "tchr_katrina",
-      "day_number": 3,
-      "time_slot": "03:10 PM – 04:10 PM"
     },
     {
       "exam_id": "exam_325",
@@ -2617,6 +2564,43 @@
       "from_start_m": 1050,
       "to_day": 1,
       "to_start_m": 980
+    }
+  ],
+  "suppressed_non_normylah_mapeh_proctors": [
+    {
+      "exam_id": "exam_597",
+      "subject": "MAPEH",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "former_proctor": "",
+      "former_proctor_id": ""
+    },
+    {
+      "exam_id": "exam_594",
+      "subject": "MAPEH",
+      "section": "GRADE  6  FACE TO FACE",
+      "former_proctor": "",
+      "former_proctor_id": ""
+    },
+    {
+      "exam_id": "exam_595",
+      "subject": "MAPEH",
+      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+      "former_proctor": "",
+      "former_proctor_id": ""
+    },
+    {
+      "exam_id": "exam_596",
+      "subject": "MAPEH",
+      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+      "former_proctor": "",
+      "former_proctor_id": ""
+    },
+    {
+      "exam_id": "exam_549",
+      "subject": "MAPEH",
+      "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+      "former_proctor": "Sir Mohaymen",
+      "former_proctor_id": "tchr_mohaymen"
     }
   ],
   "teacher_accommodations": [

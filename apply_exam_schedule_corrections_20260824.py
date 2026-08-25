@@ -97,7 +97,6 @@ NORMYLAH_MANUAL_PROCTOR_OVERRIDES = {
 NORMYLAH_AUTO_PROCTOR_EXCLUDED_IDS = {"tchr_ayah", "tchr_angeleni"}
 TEACHER_IDENTITY_CANONICAL_IDS = {"tchr_zara": "tchr_franchette"}
 IDENTITY_CONFLICT_PROCTOR_OVERRIDES = {
-    "exam_549": "tchr_franchette",
 }
 ACCOMMODATION_PROCTOR_OVERRIDES = {
     "exam_575": "tchr_keychell",
@@ -117,10 +116,13 @@ FRANCHETTE_VACANT_PROCTOR_OVERRIDES = {
     "exam_173": "tchr_keychell",
     "exam_466": "tchr_wendy",
     "exam_464": "tchr_ethel",
-    # Keep Teacher Wendelyn free for her replacement Filipino subject at the
-    # same Sunday time slot.
-    "exam_596": "tchr_katrina",
-    "exam_597": "tchr_keychell",
+}
+SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS = {
+    "exam_594",  # Grade 6 F2F
+    "exam_595",  # Grade 6 Abdullah
+    "exam_596",  # Grade 6 Abbas
+    "exam_597",  # Grade 6 Khaleed
+    "exam_549",  # Grade 9 Abu Dharr
 }
 NORMYLAH_INACTIVE_WARNING = (
     "Teacher Normylah is inactive/resigned. Please assign a replacement teacher."
@@ -330,7 +332,33 @@ def canonical_teacher_identity_id(teacher_id):
 
 
 def effective_proctor_id(record):
+    if record.get("id") in SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS:
+        return ""
     return canonical_teacher_identity_id(record.get("proctor_id") or record.get("teacher_id"))
+
+
+def suppress_non_normylah_mapeh_proctors(records):
+    """Keep the MAPEH exams but remove extra proctor-only assignments."""
+    suppressed = []
+    for record in records:
+        if record.get("id") not in SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS:
+            continue
+        suppressed.append({
+            "exam_id": record["id"],
+            "subject": record["subject"],
+            "section": record["section_name"],
+            "former_proctor": clean(record.get("proctor")),
+            "former_proctor_id": clean(record.get("proctor_id")),
+        })
+        record["proctor"] = ""
+        record["proctor_id"] = ""
+        record["proctor_status"] = "NOT_ASSIGNED"
+        record["proctor_department"] = ""
+        record["proctor_pool"] = "NONE"
+        record["proctor_assignment_source"] = "ADMIN_REMOVED_NON_NORMYLAH_MAPEH"
+        record["proctor_conflict_status"] = "NOT_ASSIGNED"
+        record["proctor_coverage_reason"] = "NON_NORMYLAH_MAPEH_PROCTOR_REMOVED"
+    return suppressed
 
 
 def apply_subject_teacher_status(records):
@@ -519,6 +547,8 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
     inactive_records = []
     for record in records:
         if record.get("replacement_teacher_required"):
+            if record.get("id") in SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS:
+                continue
             inactive_records.append(record)
             continue
         proctor_id = effective_proctor_id(record)
@@ -1126,7 +1156,9 @@ def solve_minimal_changes(records):
     # assigned teachers and different section/cohort identities.
     records_by_teacher = defaultdict(list)
     for index, record in enumerate(records):
-        records_by_teacher[effective_proctor_id(record)].append(index)
+        proctor_id = effective_proctor_id(record)
+        if proctor_id:
+            records_by_teacher[proctor_id].append(index)
 
     for teacher_records in records_by_teacher.values():
         for left_pos, left_index in enumerate(teacher_records):
@@ -1206,6 +1238,8 @@ def build_teacher_tracking(records):
     grouped = {}
     for record in records:
         teacher = clean(record.get("proctor") or record.get("teacher"))
+        if not teacher:
+            continue
         if teacher not in grouped:
             grouped[teacher] = {
                 "teacher": teacher,
@@ -1531,6 +1565,7 @@ def main():
     audit["source_exam_count"] = len(source_records)
     audit["source_duration_counts"] = dict(sorted(original_duration_counts.items()))
     audit["moved"] = solve_minimal_changes(records)
+    audit["suppressed_non_normylah_mapeh_proctors"] = suppress_non_normylah_mapeh_proctors(records)
     audit = merge_previous_audit(audit, previous_audit, len(source_records))
     write_outputs(records, audit)
 
