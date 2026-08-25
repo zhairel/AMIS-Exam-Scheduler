@@ -5620,7 +5620,7 @@
     "teacher": "Teacher Ayah",
     "total_exams": 2,
     "subjects": [
-      "Oral & Written Exam"
+      "Circle Time 1"
     ],
     "grades": [
       "Kinder 2"
@@ -5662,8 +5662,8 @@
         "shift": "ODL - 1ST SHIFT",
         "modality": "ODL",
         "gender": "",
-        "subject_id": "subj_oral_written_exam",
-        "subject": "Oral & Written Exam",
+        "subject_id": "subj_circle_time_1",
+        "subject": "Circle Time 1",
         "teacher_id": "tchr_ayah",
         "teacher": "Teacher Ayah",
         "duration_minutes": 60,
@@ -5708,8 +5708,8 @@
         "shift": "ODL - 2ND SHIFT",
         "modality": "ODL",
         "gender": "",
-        "subject_id": "subj_oral_written_exam",
-        "subject": "Oral & Written Exam",
+        "subject_id": "subj_circle_time_1",
+        "subject": "Circle Time 1",
         "teacher_id": "tchr_ayah",
         "teacher": "Teacher Ayah",
         "duration_minutes": 60,
@@ -10917,9 +10917,9 @@
     "teacher": "Teacher Joanna",
     "total_exams": 10,
     "subjects": [
+      "Circle Time 1",
       "Filipino",
-      "Math",
-      "Oral & Written Exam"
+      "Math"
     ],
     "grades": [
       "Grade 1",
@@ -10971,8 +10971,8 @@
         "shift": "ODL - 1ST SHIFT",
         "modality": "ODL",
         "gender": "",
-        "subject_id": "subj_oral_written_exam",
-        "subject": "Oral & Written Exam",
+        "subject_id": "subj_circle_time_1",
+        "subject": "Circle Time 1",
         "teacher_id": "tchr_joanna",
         "teacher": "Teacher Joanna",
         "duration_minutes": 60,
@@ -11109,8 +11109,8 @@
         "shift": "ODL - 2ND SHIFT",
         "modality": "ODL",
         "gender": "",
-        "subject_id": "subj_oral_written_exam",
-        "subject": "Oral & Written Exam",
+        "subject_id": "subj_circle_time_1",
+        "subject": "Circle Time 1",
         "teacher_id": "tchr_joanna",
         "teacher": "Teacher Joanna",
         "duration_minutes": 60,
@@ -11935,8 +11935,8 @@
     "total_exams": 6,
     "subjects": [
       "Araling Panlipunan",
+      "Circle Time 1",
       "MAPEH",
-      "Oral & Written Exam",
       "Social Studies"
     ],
     "grades": [
@@ -12217,8 +12217,8 @@
         "shift": "F2F",
         "modality": "F2F",
         "gender": "MIXED",
-        "subject_id": "subj_oral_written_exam",
-        "subject": "Oral & Written Exam",
+        "subject_id": "subj_circle_time_1",
+        "subject": "Circle Time 1",
         "teacher_id": "tchr_keychell",
         "teacher": "Teacher Keychelle",
         "duration_minutes": 60,
@@ -18990,9 +18990,9 @@
     "teacher": "Teacher Sitti Kauzar",
     "total_exams": 10,
     "subjects": [
+      "Circle Time 1",
       "Filipino",
-      "Math",
-      "Oral & Written Exam"
+      "Math"
     ],
     "grades": [
       "Grade 2",
@@ -19225,8 +19225,8 @@
         "shift": "ODL - 2ND SHIFT",
         "modality": "ODL",
         "gender": "",
-        "subject_id": "subj_oral_written_exam",
-        "subject": "Oral & Written Exam",
+        "subject_id": "subj_circle_time_1",
+        "subject": "Circle Time 1",
         "teacher_id": "tchr_sitti_kauzar",
         "teacher": "Teacher Sitti Kauzar",
         "duration_minutes": 60,

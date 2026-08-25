@@ -711,11 +711,34 @@ def main():
     assert hadith_k2_uthman["teacher_id"] == "tchr_saliha"
     assert arabic12_f2f["teacher_id"] == "tchr_mamonas"
 
+    kinder2_circle_time_1 = [
+        record for record in records
+        if record["grade_level"] == "Kinder 2"
+        and correction.subject_key(record["subject"]) == "circle_time_1"
+    ]
+    assert len(kinder2_circle_time_1) == 6
+    assert all(record["subject"] == "Circle Time 1" for record in kinder2_circle_time_1)
+    assert all(record["subject_id"] == "subj_circle_time_1" for record in kinder2_circle_time_1)
+    assert not any(
+        record["grade_level"] == "Kinder 2"
+        and correction.subject_key(record["subject"]) == "oral_written"
+        for record in records
+    )
+    assert len([
+        record for record in records
+        if record["grade_level"] == "Kinder 1"
+        and correction.subject_key(record["subject"]) == "oral_written"
+    ]) == 2
+
     official_lookup = correction.build_official_teacher_lookup(class_sections)
     unmatched = []
     for record in records:
         if (
             correction.subject_key(record["subject"]) == "oral_written"
+            or (
+                record["grade_level"] == "Kinder 2"
+                and correction.subject_key(record["subject"]) == "circle_time_1"
+            )
             or record["id"] in correction.VACANT_SUBJECT_TEACHER_EXAM_IDS
         ):
             continue

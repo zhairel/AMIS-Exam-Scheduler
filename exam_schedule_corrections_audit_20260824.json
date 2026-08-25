@@ -238,6 +238,36 @@
       "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
       "from": "Fil",
       "to": "Filipino"
+    },
+    {
+      "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+      "from": "Oral & Written Exam",
+      "to": "Circle Time 1"
+    },
+    {
+      "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+      "from": "Oral & Written Exam",
+      "to": "Circle Time 1"
+    },
+    {
+      "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+      "from": "Oral & Written Exam",
+      "to": "Circle Time 1"
+    },
+    {
+      "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+      "from": "Oral & Written Exam",
+      "to": "Circle Time 1"
+    },
+    {
+      "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+      "from": "Oral & Written Exam",
+      "to": "Circle Time 1"
+    },
+    {
+      "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+      "from": "Oral & Written Exam",
+      "to": "Circle Time 1"
     }
   ],
   "added": [
@@ -2667,8 +2697,8 @@
     },
     {
       "teacher": "Teacher Sitti Kauzar",
-      "request": "Transfer Kinder 2 Khabaab Oral & Written Exam from Teacher Keychelle",
-      "result": "The Sep 2 04:20 PM Oral & Written Exam remains in place under Teacher Sitti Kauzar with no overlapping duty"
+      "request": "Transfer Kinder 2 Khabaab Circle Time 1 from Teacher Keychelle",
+      "result": "The Sep 2 04:20 PM Circle Time 1 exam remains in place under Teacher Sitti Kauzar with no overlapping duty"
     },
     {
       "teacher": "Teacher Normylah",

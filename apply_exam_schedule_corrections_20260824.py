@@ -158,7 +158,7 @@ EXAM_TEACHER_OVERRIDES = {
     "exam_86": "Teacher Zuhora",        # GMRC
     "exam_285": "Alim Mamonas",        # Arabic
     "exam_287": "Alim Abdul Karim",    # Arabic
-    "exam_290": "Teacher Sitti Kauzar", # Oral & Written Exam
+    "exam_290": "Teacher Sitti Kauzar", # Circle Time 1
     # Teacher Wendelyn officially took over Filipino for Grade 3 Zayd after
     # the former teacher resigned. This is subject ownership, not proctoring.
     "exam_323": "Teacher Wendelyn",
@@ -872,6 +872,21 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
             record["subject"] = "Filipino"
             record["subject_id"] = "subj_filipino"
 
+        # Kinder 2 uses the official class-subject name Circle Time 1. Keep
+        # Kinder 1 Oral & Written Exam records unchanged.
+        if (
+            clean(record.get("grade_level") or record.get("grade")) == "Kinder 2"
+            and key == "oral_written"
+        ):
+            renamed.append({
+                "section": record["section_name"],
+                "from": record["subject"],
+                "to": "Circle Time 1",
+            })
+            record["subject"] = "Circle Time 1"
+            record["subject_id"] = "subj_circle_time_1"
+            key = "circle_time_1"
+
         if key in {"research_consultation", "aral_math"}:
             removed.append({"reason": "non-exam subject removed", "record": source})
             continue
@@ -1007,8 +1022,15 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
                     "from": old[0],
                     "to": official[0],
                 })
-        elif subject_key(record.get("subject")) == "oral_written":
-            # Kinder oral/written examination is a combined homeroom assessment.
+        elif (
+            subject_key(record.get("subject")) == "oral_written"
+            or (
+                clean(record.get("grade_level") or record.get("grade")) == "Kinder 2"
+                and subject_key(record.get("subject")) == "circle_time_1"
+            )
+        ):
+            # Kinder Oral & Written / Circle Time 1 is a combined homeroom
+            # assessment; preserve its verified assigned teacher.
             record["teacher"], record["teacher_id"] = canonical_teacher(record.get("teacher"))
             record["teacher_status"] = "VERIFIED"
         else:
@@ -1482,8 +1504,8 @@ def merge_previous_audit(audit, previous_audit, source_count):
         },
         {
             "teacher": "Teacher Sitti Kauzar",
-            "request": "Transfer Kinder 2 Khabaab Oral & Written Exam from Teacher Keychelle",
-            "result": "The Sep 2 04:20 PM Oral & Written Exam remains in place under Teacher Sitti Kauzar with no overlapping duty",
+            "request": "Transfer Kinder 2 Khabaab Circle Time 1 from Teacher Keychelle",
+            "result": "The Sep 2 04:20 PM Circle Time 1 exam remains in place under Teacher Sitti Kauzar with no overlapping duty",
         },
         {
             "teacher": "Teacher Normylah",
