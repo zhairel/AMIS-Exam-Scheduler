@@ -83,7 +83,7 @@ INACTIVE_TEACHER_IDS = {"tchr_normylah"}
 AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER = 2
 NORMYLAH_MANUAL_PROCTOR_OVERRIDES = {
     "exam_30": "tchr_zuhora",
-    "exam_33": "tchr_rowena",
+    "exam_33": "tchr_franchette",
     "exam_81": "tchr_wendy",
     "exam_226": "tchr_ethel",
     "exam_229": "tchr_wendy",
@@ -116,6 +116,11 @@ FRANCHETTE_VACANT_PROCTOR_OVERRIDES = {
     "exam_173": "tchr_keychell",
     "exam_466": "tchr_wendy",
     "exam_464": "tchr_ethel",
+}
+PRESERVED_AUTO_PROCTOR_OVERRIDES = {
+    # Keep the already-published vacant K1 Qur'an coverage unchanged while
+    # reassigning a separate Normylah proctor duty.
+    "exam_4": "tchr_rowena",
 }
 SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS = {
     "exam_594",  # Grade 6 F2F
@@ -486,9 +491,16 @@ def apply_identity_conflict_proctor_overrides(records):
 def weekly_blocks_by_teacher(teacher_weekly):
     blocks = defaultdict(list)
     for teacher_id, teacher in (teacher_weekly or {}).items():
+        source_teacher_id = teacher.get("teacher_id") or teacher.get("id") or teacher_id
         resolved_id = canonical_teacher_identity_id(
-            teacher.get("teacher_id") or teacher.get("id") or teacher_id
+            source_teacher_id
         )
+        # tchr_zara is the duplicate identity formerly merged into Franchette.
+        # Its Grade 3 Makabansa and Grade 6 MAPEH rows are outside Franchette's
+        # confirmed official scope (MAPEH Grades 7–8 only), so they must not
+        # create false availability conflicts for her exam-proctor duties.
+        if source_teacher_id == "tchr_zara" and resolved_id == "tchr_franchette":
+            continue
         for period in teacher.get("periods") or []:
             day_name = clean(period.get("day"))
             parsed_range = parse_time_range_minutes(period.get("time"))
@@ -531,7 +543,11 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
         **NORMYLAH_MANUAL_PROCTOR_OVERRIDES,
         **FRANCHETTE_VACANT_PROCTOR_OVERRIDES,
     }
-    reserved_manual_counts = Counter(manual_proctor_overrides.values())
+    forced_proctor_overrides = {
+        **manual_proctor_overrides,
+        **PRESERVED_AUTO_PROCTOR_OVERRIDES,
+    }
+    reserved_forced_counts = Counter(forced_proctor_overrides.values())
     academic_teachers = [
         teacher for teacher in TEACHER_REGISTRY
         if is_active_academic_teacher(teacher)
@@ -576,17 +592,18 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
         department = clean(record.get("department"))
         candidates = []
 
-        manual_proctor_id = manual_proctor_overrides.get(record["id"])
-        candidate_teachers = [teacher_by_id[manual_proctor_id]] if manual_proctor_id else academic_teachers
+        forced_proctor_id = forced_proctor_overrides.get(record["id"])
+        is_manual_override = record["id"] in manual_proctor_overrides
+        candidate_teachers = [teacher_by_id[forced_proctor_id]] if forced_proctor_id else academic_teachers
 
         for teacher in candidate_teachers:
             teacher_id = teacher["id"]
-            reserved_count = 0 if manual_proctor_id else reserved_manual_counts[teacher_id]
+            reserved_count = 0 if forced_proctor_id else reserved_forced_counts[teacher_id]
             coverage_limit = (
                 4 if record.get("id") in VACANT_SUBJECT_TEACHER_EXAM_IDS
                 else AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
             )
-            if not manual_proctor_id and (
+            if not forced_proctor_id and (
                 automatic_coverage_count[teacher_id] + reserved_count
                 >= coverage_limit
             ):
@@ -633,8 +650,8 @@ def assign_inactive_teacher_proctors(records, teacher_weekly):
         record["proctor_id"] = selected["id"]
         record["proctor_status"] = "ACTIVE_ASSIGNED"
         record["proctor_department"] = selected.get("department", "Academic Faculty")
-        record["proctor_pool"] = "MANUAL_ADMIN_OVERRIDE" if manual_proctor_id else "ACADEMIC_TEACHER_ONLY"
-        record["proctor_assignment_source"] = "MANUAL_ADMIN_COVERAGE" if manual_proctor_id else "AUTO_ACADEMIC_COVERAGE"
+        record["proctor_pool"] = "MANUAL_ADMIN_OVERRIDE" if is_manual_override else "ACADEMIC_TEACHER_ONLY"
+        record["proctor_assignment_source"] = "MANUAL_ADMIN_COVERAGE" if is_manual_override else "AUTO_ACADEMIC_COVERAGE"
         record["proctor_conflict_status"] = "CLEAR"
         busy[(selected["id"], day_number)].append((start_m, end_m, record["id"]))
         duration_minutes = end_m - start_m

@@ -152,7 +152,7 @@ def main():
         "tchr_ethel": 1,
         "tchr_wendy": 2,
         "tchr_zuhora": 2,
-        "tchr_rowena": 1,
+        "tchr_franchette": 1,
         "tchr_mohaymen": 2,
         "tchr_shirehan": 2,
     })
@@ -167,7 +167,7 @@ def main():
     } == {"exam_81", "exam_229"}
     assert {
         record["id"] for record in normylah_records
-        if record["proctor_id"] == "tchr_rowena"
+        if record["proctor_id"] == "tchr_franchette"
     } == {"exam_33"}
     assert {
         record["id"] for record in normylah_records
@@ -624,7 +624,9 @@ def main():
     assert hainur_k1_quran["subject_teacher_id"] == ""
     assert hainur_k1_quran["former_subject_teacher_id"] == "tchr_hainur"
     assert hainur_k1_quran["subject_teacher_status"] == "VACANT_REPLACEMENT_REQUIRED"
-    assert hainur_k1_quran["proctor_id"] and hainur_k1_quran["proctor_conflict_status"] == "CLEAR"
+    assert hainur_k1_quran["proctor_id"] == "tchr_rowena"
+    assert hainur_k1_quran["proctor_assignment_source"] == "AUTO_ACADEMIC_COVERAGE"
+    assert hainur_k1_quran["proctor_conflict_status"] == "CLEAR"
     k1_husain_hadith = get_one(
         records,
         lambda record: record["id"] == "exam_146",

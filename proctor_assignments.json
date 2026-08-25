@@ -1719,10 +1719,10 @@
     "subject_teacher_status": "RESIGNED_INACTIVE",
     "replacement_teacher_required": true,
     "warning": "Teacher Normylah is inactive/resigned. Please assign a replacement teacher.",
-    "proctor": "Teacher Rowena",
-    "proctor_id": "tchr_rowena",
+    "proctor": "Teacher Franchette Zarah M. Ranain",
+    "proctor_id": "tchr_franchette",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_department": "High School Faculty",
+    "proctor_department": "Elementary / HS Faculty",
     "proctor_pool": "MANUAL_ADMIN_OVERRIDE",
     "proctor_assignment_source": "MANUAL_ADMIN_COVERAGE",
     "conflict_status": "CLEAR"
