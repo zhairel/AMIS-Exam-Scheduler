@@ -1838,7 +1838,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_22",
@@ -3540,7 +3541,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_14",
@@ -8745,7 +8747,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_170",
@@ -10079,7 +10082,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_512",
@@ -10861,7 +10865,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_174",
@@ -12149,7 +12154,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_182",
@@ -29091,7 +29097,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_22",
@@ -30793,7 +30800,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_14",
@@ -35998,7 +36006,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_170",
@@ -37332,7 +37341,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_512",
@@ -38114,7 +38124,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_174",
@@ -39402,7 +39413,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_182",
@@ -56344,7 +56356,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_22",
@@ -58046,7 +58059,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_14",
@@ -63251,7 +63265,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_170",
@@ -64585,7 +64600,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_512",
@@ -65367,7 +65383,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_174",
@@ -66655,7 +66672,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_182",
@@ -83597,7 +83615,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_22",
@@ -85299,7 +85318,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_14",
@@ -90504,7 +90524,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_170",
@@ -91838,7 +91859,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_512",
@@ -92620,7 +92642,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_174",
@@ -93908,7 +93931,8 @@
       "proctor_assignment_source": "SUBJECT_TEACHER",
       "proctor_department": "ISAL Faculty",
       "proctor_conflict_status": "CLEAR",
-      "proctor_pool": "SUBJECT_TEACHER"
+      "proctor_pool": "SUBJECT_TEACHER",
+      "display_as_proctor_duty": true
     },
     {
       "id": "exam_182",

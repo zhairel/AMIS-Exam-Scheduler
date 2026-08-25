@@ -655,6 +655,15 @@ def main():
     assert k1_husain_hadith["subject_teacher_id"] == "tchr_hainur"
     assert k1_husain_hadith["subject_teacher"] == "Ustadha Hainur"
 
+    abdul_karim_proctor_chip_records = [
+        record for record in records
+        if record.get("display_as_proctor_duty") is True
+    ]
+    assert {record["id"] for record in abdul_karim_proctor_chip_records} == correction.ABDUL_KARIM_EXPLICIT_PROCTOR_LABEL_EXAM_IDS
+    assert all(record["proctor_id"] == "tchr_abdul_karim" for record in abdul_karim_proctor_chip_records)
+    assert all(record["proctor"] == "Alim Abdul Karim" for record in abdul_karim_proctor_chip_records)
+    assert all(record["day_number"] in {1, 2} for record in abdul_karim_proctor_chip_records)
+
     mohaymen_mapeh = [
         record for record in records
         if record["section_id"] in correction.MOHAYMEN_MAPEH_SECTION_IDS

@@ -118,6 +118,12 @@ REQUESTED_NO_PROCTOR_EXAM_IDS = {
     # Ustadha Hainur or add it as a proctor duty to any faculty timetable.
     "exam_4",
 }
+ABDUL_KARIM_EXPLICIT_PROCTOR_LABEL_EXAM_IDS = {
+    # These six Sep 2–3 ISAL assignments were explicitly confirmed as Alim
+    # Abdul Karim proctor duties. Keep their subject ownership unchanged, but
+    # show the PROCTOR chip in his faculty timetable.
+    "exam_13", "exam_24", "exam_160", "exam_208", "exam_309", "exam_315",
+}
 SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS = {
     "exam_594",  # Grade 6 F2F
     "exam_595",  # Grade 6 Abdullah
@@ -462,6 +468,10 @@ def apply_subject_teacher_status(records):
             record["proctor_status"] = "PENDING_ASSIGNMENT"
             record["proctor_assignment_source"] = "AUTO_ACADEMIC_COVERAGE"
         else:
+            if record.get("id") in ABDUL_KARIM_EXPLICIT_PROCTOR_LABEL_EXAM_IDS:
+                record["display_as_proctor_duty"] = True
+            else:
+                record.pop("display_as_proctor_duty", None)
             if record.get("id") in FRANCHETTE_GRADE3_MAKABANSA_EXAM_IDS:
                 # This is restored subject ownership, not historical or
                 # substitute-proctor coverage. Remove stale vacancy metadata.

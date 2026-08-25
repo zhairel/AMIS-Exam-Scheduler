@@ -6730,7 +6730,8 @@ html, body {
               const color = getSubjectColor(displayedSubject);
               const genderChip = getExamGenderChip(match);
               const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
-              const isAutomaticProctorCoverage = match.proctor_assignment_source !== 'SUBJECT_TEACHER';
+              const isAutomaticProctorCoverage = match.display_as_proctor_duty === true
+                || match.proctor_assignment_source !== 'SUBJECT_TEACHER';
               let calcRowspan = 1;
 
               if (is120) {

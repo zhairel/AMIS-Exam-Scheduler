@@ -80,7 +80,8 @@
         "proctor_assignment_source": "SUBJECT_TEACHER",
         "proctor_department": "ISAL Faculty",
         "proctor_conflict_status": "CLEAR",
-        "proctor_pool": "SUBJECT_TEACHER"
+        "proctor_pool": "SUBJECT_TEACHER",
+        "display_as_proctor_duty": true
       },
       {
         "id": "exam_13",
@@ -126,7 +127,8 @@
         "proctor_assignment_source": "SUBJECT_TEACHER",
         "proctor_department": "ISAL Faculty",
         "proctor_conflict_status": "CLEAR",
-        "proctor_pool": "SUBJECT_TEACHER"
+        "proctor_pool": "SUBJECT_TEACHER",
+        "display_as_proctor_duty": true
       },
       {
         "id": "exam_160",
@@ -172,7 +174,8 @@
         "proctor_assignment_source": "SUBJECT_TEACHER",
         "proctor_department": "ISAL Faculty",
         "proctor_conflict_status": "CLEAR",
-        "proctor_pool": "SUBJECT_TEACHER"
+        "proctor_pool": "SUBJECT_TEACHER",
+        "display_as_proctor_duty": true
       },
       {
         "id": "exam_208",
@@ -218,7 +221,8 @@
         "proctor_assignment_source": "SUBJECT_TEACHER",
         "proctor_department": "ISAL Faculty",
         "proctor_conflict_status": "CLEAR",
-        "proctor_pool": "SUBJECT_TEACHER"
+        "proctor_pool": "SUBJECT_TEACHER",
+        "display_as_proctor_duty": true
       },
       {
         "id": "exam_315",
@@ -264,7 +268,8 @@
         "proctor_assignment_source": "SUBJECT_TEACHER",
         "proctor_department": "ISAL Faculty",
         "proctor_conflict_status": "CLEAR",
-        "proctor_pool": "SUBJECT_TEACHER"
+        "proctor_pool": "SUBJECT_TEACHER",
+        "display_as_proctor_duty": true
       },
       {
         "id": "exam_309",
@@ -310,7 +315,8 @@
         "proctor_assignment_source": "SUBJECT_TEACHER",
         "proctor_department": "ISAL Faculty",
         "proctor_conflict_status": "CLEAR",
-        "proctor_pool": "SUBJECT_TEACHER"
+        "proctor_pool": "SUBJECT_TEACHER",
+        "display_as_proctor_duty": true
       },
       {
         "id": "exam_287",

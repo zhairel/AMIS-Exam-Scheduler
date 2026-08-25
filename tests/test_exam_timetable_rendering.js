@@ -86,6 +86,8 @@ assert(html.includes("<span class=\"cell-section-name\">${esc(cleanSectionName(m
 assert(!html.includes('Gender not specified'));
 assert(!facultyHtml.includes('Gender not specified'));
 assert(facultyHtml.includes("exam.proctor_assignment_source !== 'SUBJECT_TEACHER'"));
+assert(html.includes('match.display_as_proctor_duty === true'));
+assert(facultyHtml.includes('exam.display_as_proctor_duty === true'));
 assert(facultyHtml.includes('<span class="cell-proctor-label">PROCTOR</span>'));
 assert(facultyHtml.includes("<span class=\"cell-section-name\">${esc(cleanSec)}</span>"));
 for (const shiftColumnToken of ['col-shift', 'cell-shift', 'shift-stack']) {
@@ -104,6 +106,14 @@ assert(html.includes('60 MIN'));
 assert(facultyHtml.includes('60 MIN'));
 assert(html.includes('${match.duration_minutes || 60} MIN'));
 assert(facultyHtml.includes('${exam.duration_minutes || 60} MIN'));
+
+const abdulKarimProctorChipIds = new Set(['exam_13', 'exam_24', 'exam_160', 'exam_208', 'exam_309', 'exam_315']);
+const abdulKarimProctorChipRecords = records.filter(record => record.display_as_proctor_duty === true);
+assert.strictEqual(abdulKarimProctorChipRecords.length, 6);
+assert.deepStrictEqual(new Set(abdulKarimProctorChipRecords.map(record => record.id)), abdulKarimProctorChipIds);
+assert(abdulKarimProctorChipRecords.every(record => record.proctor_id === 'tchr_abdul_karim'));
+assert(abdulKarimProctorChipRecords.every(record => record.proctor === 'Alim Abdul Karim'));
+assert(abdulKarimProctorChipRecords.every(record => [1, 2].includes(record.day_number)));
 
 const conflictHelperStart = html.indexOf('  function activeScheduleProctorId');
 const conflictHelperEnd = html.indexOf('  function updateAntiConflictBadge', conflictHelperStart);

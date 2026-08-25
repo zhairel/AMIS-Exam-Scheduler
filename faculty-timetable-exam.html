@@ -1341,7 +1341,8 @@ html, body {
               const cleanSec = cleanSectionName(exam.section_name);
               const cleanShift = formatModalityShift(exam.shift);
               const is120 = exam.duration_minutes >= 90;
-              const isAutomaticProctorCoverage = exam.proctor_assignment_source !== 'SUBJECT_TEACHER';
+              const isAutomaticProctorCoverage = exam.display_as_proctor_duty === true
+                || exam.proctor_assignment_source !== 'SUBJECT_TEACHER';
               const genderChip = getExamGenderChip(exam);
               let calcRowspan = 1;
 
