@@ -101,6 +101,7 @@ IDENTITY_CONFLICT_PROCTOR_OVERRIDES = {
     "exam_173": "tchr_keychell",
     "exam_466": "tchr_wendy",
     "exam_464": "tchr_ethel",
+    "exam_549": "tchr_franchette",
 }
 NORMYLAH_INACTIVE_WARNING = (
     "Teacher Normylah is inactive/resigned. Please assign a replacement teacher."
@@ -121,14 +122,17 @@ EXAM_TEACHER_OVERRIDES = {
     "exam_290": "Teacher Sitti Kauzar", # Oral & Written Exam
 }
 
-# Official MAPEH load correction confirmed by the faculty. Teacher Zara in the
-# source sheet is the same person as Teacher Franchette Zarah M. Ranain; keep
-# the canonical identity here so these exams appear in one faculty timetable.
+# Official MAPEH load corrections confirmed by the faculty. Teacher Zara in
+# the source sheet is the same person as Teacher Franchette Zarah M. Ranain.
 FRANCHETTE_MAPEH_SECTION_IDS = {
     "sec_grade_6_face_to_face",
     "sec_grade_6_abdullah_ibn_salaam_1st_shift",
     "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
     "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
+}
+MOHAYMEN_MAPEH_SECTION_IDS = {
+    "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
+    "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
     "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
     "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
     "sec_grade_9_abu_hurayrah_1st_shift_girls",
@@ -343,9 +347,16 @@ def apply_identity_conflict_proctor_overrides(records):
         record["proctor_status"] = "ACTIVE_ASSIGNED"
         record["proctor_department"] = proctor.get("department", "Academic Faculty")
         record["proctor_pool"] = "ACADEMIC_TEACHER_ONLY"
-        record["proctor_assignment_source"] = "IDENTITY_CONFLICT_COVERAGE"
+        is_mohaymen_conflict = record["id"] == "exam_549"
+        record["proctor_assignment_source"] = (
+            "SUBJECT_TEACHER_CONFLICT_COVERAGE" if is_mohaymen_conflict
+            else "IDENTITY_CONFLICT_COVERAGE"
+        )
         record["proctor_conflict_status"] = "CLEAR"
-        record["proctor_coverage_reason"] = "FRANCHETTE_ZARA_IDENTITY_MERGE_CONFLICT"
+        record["proctor_coverage_reason"] = (
+            "MOHAYMEN_EXISTING_PROCTOR_DUTY_CONFLICT" if is_mohaymen_conflict
+            else "FRANCHETTE_ZARA_IDENTITY_MERGE_CONFLICT"
+        )
         assignments.append({
             "exam_id": record["id"],
             "subject_teacher": record["subject_teacher"],
@@ -616,6 +627,8 @@ def pick_official_teacher(record, official_lookup):
         return canonical_teacher("Ustadha Hainur")
     if key == "mabisang_komunikasyon":
         return canonical_teacher("Teacher Nadzra")
+    if key == "mapeh" and record.get("section_id") in MOHAYMEN_MAPEH_SECTION_IDS:
+        return canonical_teacher("Sir Mohaymen")
     if key == "mapeh" and record.get("section_id") in FRANCHETTE_MAPEH_SECTION_IDS:
         return canonical_teacher("Teacher Franchette Zarah M. Ranain")
     candidates = official_lookup.get(record["section_id"], {}).get(key)
@@ -763,9 +776,8 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
         if ensure_subject(records, section["section_id"], "MAPEH", teacher):
             additions.append({"section": section["section_name"], "subject": "MAPEH"})
 
-    # Confirmed missing Grade 6 MAPEH exams and corrected Grade 9/9&10 MAPEH
-    # ownership all belong to Teacher Franchette Zarah M. Ranain. Existing
-    # section exams are preserved; only genuinely missing rows are added.
+    # Confirmed Grade 6 MAPEH exams belong to Teacher Franchette Zarah M.
+    # Ranain. Existing section exams are preserved; only missing rows are added.
     for section in class_sections:
         if section.get("section_id") not in FRANCHETTE_MAPEH_SECTION_IDS:
             continue
@@ -775,6 +787,14 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
             "MAPEH",
             "Teacher Franchette Zarah M. Ranain",
         ):
+            additions.append({"section": section["section_name"], "subject": "MAPEH"})
+
+    # Grade 9, Grade 10, and combined Grade 9 & 10 MAPEH loads belong to
+    # Sir Mohaymen according to the official weekly class schedule.
+    for section in class_sections:
+        if section.get("section_id") not in MOHAYMEN_MAPEH_SECTION_IDS:
+            continue
+        if ensure_subject(records, section["section_id"], "MAPEH", "Sir Mohaymen"):
             additions.append({"section": section["section_name"], "subject": "MAPEH"})
 
     # Re-link every exam with an exact section+subject teacher from the official class schedule.
@@ -853,6 +873,10 @@ def fixed_position(record):
     # the section does not carry four examinations on Wednesday.
     if record.get("id") == "exam_582":
         return 3, 760
+    # Grade 3 Zayd Makabansa: Teacher Franchette Zarah and active proctor
+    # Teacher Ethel are both clear on Wednesday's 04:20 PM period.
+    if record.get("id") == "exam_464":
+        return 1, 980
     # Keep Suhayb Biology on its requested Wednesday slot. Grade 11 F2F Biology
     # may move when needed so the shared official teacher is never double-booked.
     if is_fixed_suhayb_biology(record):

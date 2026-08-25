@@ -89,9 +89,13 @@ def main():
     for exam_id, proctor_id in correction.IDENTITY_CONFLICT_PROCTOR_OVERRIDES.items():
         record = next(item for item in records if item["id"] == exam_id)
         assert record["proctor_id"] == proctor_id
-        assert record["proctor_assignment_source"] == "IDENTITY_CONFLICT_COVERAGE"
+        expected_source = (
+            "SUBJECT_TEACHER_CONFLICT_COVERAGE" if exam_id == "exam_549"
+            else "IDENTITY_CONFLICT_COVERAGE"
+        )
+        assert record["proctor_assignment_source"] == expected_source
     assert set(correction.IDENTITY_CONFLICT_PROCTOR_OVERRIDES.values()) == {
-        "tchr_keychell", "tchr_wendy", "tchr_ethel"
+        "tchr_keychell", "tchr_wendy", "tchr_ethel", "tchr_franchette"
     }
 
     normylah_coverage_counts = Counter(record["proctor_id"] for record in normylah_records)
@@ -500,13 +504,30 @@ def main():
         if record["section_id"] in correction.FRANCHETTE_MAPEH_SECTION_IDS
         and correction.subject_key(record["subject"]) == "mapeh"
     ]
-    assert len(franchette_mapeh) == len(correction.FRANCHETTE_MAPEH_SECTION_IDS) == 9
+    assert len(franchette_mapeh) == len(correction.FRANCHETTE_MAPEH_SECTION_IDS) == 4
     assert {record["section_id"] for record in franchette_mapeh} == correction.FRANCHETTE_MAPEH_SECTION_IDS
     assert all(record["teacher_id"] == "tchr_franchette" for record in franchette_mapeh)
     assert all(
         record["teacher"] == "Teacher Franchette Zarah M. Ranain"
         for record in franchette_mapeh
     )
+
+    mohaymen_mapeh = [
+        record for record in records
+        if record["section_id"] in correction.MOHAYMEN_MAPEH_SECTION_IDS
+        and correction.subject_key(record["subject"]) == "mapeh"
+    ]
+    assert len(mohaymen_mapeh) == len(correction.MOHAYMEN_MAPEH_SECTION_IDS) == 7
+    assert {record["section_id"] for record in mohaymen_mapeh} == correction.MOHAYMEN_MAPEH_SECTION_IDS
+    assert all(record["teacher_id"] == "tchr_mohaymen" for record in mohaymen_mapeh)
+
+    zayd_makabansa = get_one(
+        records,
+        lambda record: record["id"] == "exam_464",
+        "Grade 3 Zayd Makabansa exam",
+    )
+    assert (zayd_makabansa["day_number"], zayd_makabansa["start_m"]) == (1, 980)
+    assert zayd_makabansa["proctor_id"] == "tchr_ethel"
 
     gmrc2_saeed = get_one(
         records,
