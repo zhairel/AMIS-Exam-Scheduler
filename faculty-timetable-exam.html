@@ -9,8 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<!-- html2pdf.js CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<!-- Client-side schedule export libraries -->
+<script src="html2canvas.min.js?v=20260825_1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="schedule-export.js?v=20260825_1"></script>
 
 <!-- Embedded Master Datasets with Cache-Busting -->
 <script src="class_schedules_data.js?v=20260818_1023"></script>
@@ -347,6 +349,66 @@ html, body {
   height: 16px;
   fill: currentColor;
 }
+
+.sheet-export-actions { display: inline-flex; align-items: center; gap: 5px; }
+.btn-sheet-export {
+  min-height: 28px;
+  padding: 4px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #064e3b;
+  font: inherit;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.btn-sheet-export:hover { background: #ecfdf5; transform: translateY(-1px); }
+.btn-sheet-export:disabled, .btn-export-all:disabled { cursor: wait; opacity: 0.72; }
+.btn-export-all { background: #ffffff; color: #064e3b; border-color: rgba(255, 255, 255, 0.7); }
+.export-spinner {
+  width: 11px;
+  height: 11px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: export-spin 0.7s linear infinite;
+}
+@keyframes export-spin { to { transform: rotate(360deg); } }
+.schedule-export-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -99999;
+  pointer-events: none;
+  background: #ffffff;
+}
+.schedule-export-toast {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 100000;
+  max-width: min(380px, calc(100vw - 36px));
+  padding: 11px 15px;
+  border-radius: 9px;
+  background: #064e3b;
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
+  font-size: 12px;
+  font-weight: 800;
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+.schedule-export-toast.is-visible { opacity: 1; transform: translateY(0); }
+.schedule-export-toast.is-error { background: #b91c1c; }
 
 /* Institutional Header */
 .school-header {
@@ -701,7 +763,7 @@ html, body {
 
 /* Print Optimization */
 @media print {
-  .top-toolbar, .btn-fullscreen {
+  .top-toolbar, .btn-fullscreen, .sheet-export-actions {
     display: none !important;
   }
   body {
@@ -841,6 +903,8 @@ html, body {
         <option value="ALL_FACULTY">All Staff / Faculty (Print All)</option>
       </select>
     </div>
+
+    <span id="facultyExportAllButton"></span>
 
     <a href="index.html" class="btn-action btn-back" title="Back to Home">
       <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
@@ -1168,7 +1232,7 @@ html, body {
       const timeline = getFacultyTimeline(shiftsSet);
 
       fullHtml += `
-        <div class="timetable-sheet">
+        <div class="timetable-sheet" id="sheet_${esc(tid)}" data-export-kind="Faculty" data-export-name="${esc(teacherDisplayName)}">
           <div class="school-header" style="display:flex; align-items:center; justify-content:center; gap:14px; margin-bottom:14px;">
             <img src="amis_logo.png" alt="AMIS Logo" style="width:48px; height:48px; border-radius:50%; object-fit:contain;">
             <div>
@@ -1181,6 +1245,7 @@ html, body {
             <span class="teacher-name-title">${esc(teacherDisplayName.toUpperCase())}</span>
             <div style="display:flex; align-items:center; gap:8px;">
               <span class="teacher-meta-tag">${esc(metaStr)}</span>
+              ${AMISScheduleExport.controlsHtml()}
               <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
                 <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
                 <svg class="icon-compress" viewBox="0 0 24 24" style="display:none;"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
@@ -1386,6 +1451,8 @@ html, body {
     });
 
     sheetsContainer.innerHTML = fullHtml;
+    const exportAllSlot = document.getElementById('facultyExportAllButton');
+    if (exportAllSlot) exportAllSlot.innerHTML = AMISScheduleExport.toolbarButtonHtml();
   }
 
   window.toggleFullscreenSheet = function(btn) {
