@@ -369,7 +369,7 @@ TEACHER_REGISTRY = [
     },
     {
         "id": "tchr_wendy",
-        "canonical_name": "Teacher Wendy",
+        "canonical_name": "Teacher Wendelyn",
         "department": "Elementary Faculty",
         "title": "Faculty Member",
         "aliases": ["teacher wendy", "tchr. wendy", "tchr wendy", "wendy", "windi", "tr. wendy", "wendelyn", "tchr. wendelyn", "tchr wendelyn", "teacher wendelyn", "wendelin", "tchr. wendelin"]

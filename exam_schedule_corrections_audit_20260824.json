@@ -838,6 +838,30 @@
       "subject": "MAPEH",
       "from": "Teacher Franchette Zarah M. Ranain",
       "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE  6  FACE TO FACE",
+      "subject": "Science",
+      "from": "Teacher Wendy",
+      "to": "Teacher Wendelyn"
+    },
+    {
+      "section": "GRADE 3 (FACE TO FACE)",
+      "subject": "Makabansa",
+      "from": "Teacher Wendy",
+      "to": "Teacher Wendelyn"
+    },
+    {
+      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+      "subject": "Filipino",
+      "from": "Teacher Normylah",
+      "to": "Teacher Wendelyn"
+    },
+    {
+      "section": "GRADE 1 (FACE TO FACE)",
+      "subject": "Math",
+      "from": "Teacher Wendy",
+      "to": "Teacher Wendelyn"
     }
   ],
   "unresolved_official_teacher_links": [
@@ -888,6 +912,15 @@
       "subject": "Social Studies",
       "day_number": 1,
       "time": "05:30 PM – 06:30 PM"
+    },
+    {
+      "exam_id": "exam_323",
+      "subject_teacher": "Teacher Wendelyn",
+      "proctor": "Teacher Junaisah",
+      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+      "subject": "Filipino",
+      "day_number": 3,
+      "time": "03:10 PM – 04:10 PM"
     },
     {
       "exam_id": "exam_549",
@@ -1055,24 +1088,13 @@
       "time_slot": "01:50 PM – 02:50 PM"
     },
     {
-      "exam_id": "exam_323",
-      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-      "subject": "Filipino",
-      "former_subject_teacher": "Teacher Normylah",
-      "former_teacher_status": "RESIGNED_INACTIVE",
-      "proctor": "Teacher Junaisah",
-      "proctor_id": "tchr_junaisah",
-      "day_number": 3,
-      "time_slot": "03:10 PM – 04:10 PM"
-    },
-    {
       "exam_id": "exam_596",
       "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
       "subject": "MAPEH",
       "former_subject_teacher": "Unassigned",
       "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
-      "proctor": "Teacher Wendy",
-      "proctor_id": "tchr_wendy",
+      "proctor": "Teacher Katrina",
+      "proctor_id": "tchr_katrina",
       "day_number": 3,
       "time_slot": "03:10 PM – 04:10 PM"
     },
@@ -1104,7 +1126,7 @@
       "subject": "Makabansa",
       "former_subject_teacher": "Unassigned",
       "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
-      "proctor": "Teacher Wendy",
+      "proctor": "Teacher Wendelyn",
       "proctor_id": "tchr_wendy",
       "day_number": 4,
       "time_slot": "03:10 PM – 04:10 PM"

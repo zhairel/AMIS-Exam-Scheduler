@@ -88,7 +88,6 @@ NORMYLAH_MANUAL_PROCTOR_OVERRIDES = {
     "exam_226": "tchr_ethel",
     "exam_229": "tchr_ethel",
     "exam_316": "tchr_wardah",
-    "exam_323": "tchr_junaisah",
     "exam_325": "tchr_shirehan",
     "exam_364": "tchr_zuhora",
     "exam_511": "tchr_shirehan",
@@ -102,11 +101,17 @@ IDENTITY_CONFLICT_PROCTOR_OVERRIDES = {
 }
 ACCOMMODATION_PROCTOR_OVERRIDES = {
     "exam_575": "tchr_keychell",
+    # Teacher Wendelyn took over this Filipino subject, but confirmed that
+    # Teacher Junaisah remains its exam proctor.
+    "exam_323": "tchr_junaisah",
 }
 FRANCHETTE_VACANT_PROCTOR_OVERRIDES = {
     "exam_173": "tchr_keychell",
     "exam_466": "tchr_wendy",
     "exam_464": "tchr_ethel",
+    # Keep Teacher Wendelyn free for her replacement Filipino subject at the
+    # same Sunday time slot.
+    "exam_596": "tchr_katrina",
     "exam_597": "tchr_keychell",
 }
 NORMYLAH_INACTIVE_WARNING = (
@@ -134,6 +139,9 @@ EXAM_TEACHER_OVERRIDES = {
     "exam_285": "Alim Mamonas",        # Arabic
     "exam_287": "Alim Abdul Karim",    # Arabic
     "exam_290": "Teacher Sitti Kauzar", # Oral & Written Exam
+    # Teacher Wendelyn officially took over Filipino for Grade 3 Zayd after
+    # the former teacher resigned. This is subject ownership, not proctoring.
+    "exam_323": "Teacher Wendelyn",
 }
 
 # Teacher Franchette confirmed that her subject scope is MAPEH Grades 7 and 8

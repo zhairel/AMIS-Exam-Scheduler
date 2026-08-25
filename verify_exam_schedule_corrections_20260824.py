@@ -61,7 +61,9 @@ def main():
     assert not any(correction.subject_key(record["subject"]) == "aral_math" for record in records)
 
     normylah_records = [record for record in records if record.get("subject_teacher_id") == "tchr_normylah"]
-    assert len(normylah_records) == 12
+    # One former Normylah Filipino load (Grade 3 Zayd) now has the confirmed
+    # active replacement Teacher Wendelyn, leaving eleven unresolved loads.
+    assert len(normylah_records) == 11
     assert all(record["teacher"] == "Teacher Normylah" for record in normylah_records)
     assert all(record["teacher_status"] == "RESIGNED_INACTIVE" for record in normylah_records)
     assert all(record["subject_teacher_status"] == "RESIGNED_INACTIVE" for record in normylah_records)
@@ -101,13 +103,23 @@ def main():
         assert record["proctor_assignment_source"] == "TEACHER_ACCOMMODATION_COVERAGE"
         assert record["proctor_conflict_status"] == "CLEAR"
 
+    wendelyn_zayd_filipino = next(item for item in records if item["id"] == "exam_323")
+    assert registry_by_id["tchr_wendy"]["canonical_name"] == "Teacher Wendelyn"
+    assert wendelyn_zayd_filipino["subject"] == "Filipino"
+    assert wendelyn_zayd_filipino["subject_teacher_id"] == "tchr_wendy"
+    assert wendelyn_zayd_filipino["subject_teacher"] == "Teacher Wendelyn"
+    assert wendelyn_zayd_filipino["replacement_teacher_required"] is False
+    assert wendelyn_zayd_filipino["proctor_id"] == "tchr_junaisah"
+    assert wendelyn_zayd_filipino["proctor_assignment_source"] == "TEACHER_ACCOMMODATION_COVERAGE"
+    assert next(item for item in records if item["id"] == "exam_596")["proctor_id"] == "tchr_katrina"
+
     normylah_coverage_counts = Counter(record["proctor_id"] for record in normylah_records)
     assert max(normylah_coverage_counts.values()) <= correction.AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
     assert normylah_coverage_counts == Counter({
         "tchr_wardah": 2,
         "tchr_ethel": 2,
         "tchr_zuhora": 2,
-        "tchr_junaisah": 2,
+        "tchr_junaisah": 1,
         "tchr_mohaymen": 2,
         "tchr_shirehan": 2,
     })
@@ -115,7 +127,7 @@ def main():
         record["proctor_id"] == "tchr_junaisah"
         and record["proctor_assignment_source"] != "SUBJECT_TEACHER"
         for record in normylah_records
-    ) == 2
+    ) == 1
     assert {
         record["id"] for record in normylah_records
         if record["proctor_id"] == "tchr_ethel"
@@ -150,7 +162,6 @@ def main():
         "exam_229": (2, 1050, 1110),
         "exam_364": (3, 540, 600),
         "exam_316": (3, 760, 820),
-        "exam_323": (3, 910, 970),
         "exam_325": (3, 1050, 1110),
         "exam_511": (4, 760, 820),
         "exam_516": (4, 980, 1040),
@@ -662,7 +673,7 @@ def main():
     with open(os.path.join(BASE_DIR, "proctor_assignments.json"), encoding="utf-8") as handle:
         proctor_assignments = json.load(handle)
     assert len(proctor_assignments) == len(records)
-    assert sum(item["replacement_teacher_required"] for item in proctor_assignments) == 21
+    assert sum(item["replacement_teacher_required"] for item in proctor_assignments) == 20
     assert not any(item["proctor_id"] == "tchr_normylah" for item in proctor_assignments)
     manual_assignment_ids = {
         *correction.NORMYLAH_MANUAL_PROCTOR_OVERRIDES,
