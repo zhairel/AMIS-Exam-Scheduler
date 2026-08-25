@@ -100,6 +100,9 @@ TEACHER_IDENTITY_CANONICAL_IDS = {"tchr_zara": "tchr_franchette"}
 IDENTITY_CONFLICT_PROCTOR_OVERRIDES = {
     "exam_549": "tchr_franchette",
 }
+ACCOMMODATION_PROCTOR_OVERRIDES = {
+    "exam_575": "tchr_keychell",
+}
 FRANCHETTE_VACANT_PROCTOR_OVERRIDES = {
     "exam_173": "tchr_keychell",
     "exam_466": "tchr_wendy",
@@ -391,11 +394,14 @@ def apply_subject_teacher_status(records):
 
 
 def apply_identity_conflict_proctor_overrides(records):
-    """Cover different-subject clashes exposed by the Franchette/Zara identity merge."""
+    """Apply explicit conflict-free coverage for identity and accommodation clashes."""
     teacher_by_id = {teacher["id"]: teacher for teacher in TEACHER_REGISTRY}
     assignments = []
     for record in records:
-        proctor_id = IDENTITY_CONFLICT_PROCTOR_OVERRIDES.get(record["id"])
+        proctor_id = (
+            IDENTITY_CONFLICT_PROCTOR_OVERRIDES.get(record["id"])
+            or ACCOMMODATION_PROCTOR_OVERRIDES.get(record["id"])
+        )
         if not proctor_id:
             continue
         proctor = teacher_by_id[proctor_id]
@@ -404,15 +410,17 @@ def apply_identity_conflict_proctor_overrides(records):
         record["proctor_status"] = "ACTIVE_ASSIGNED"
         record["proctor_department"] = proctor.get("department", "Academic Faculty")
         record["proctor_pool"] = "ACADEMIC_TEACHER_ONLY"
-        is_mohaymen_conflict = record["id"] == "exam_549"
+        is_accommodation = record["id"] in ACCOMMODATION_PROCTOR_OVERRIDES
         record["proctor_assignment_source"] = (
-            "SUBJECT_TEACHER_CONFLICT_COVERAGE" if is_mohaymen_conflict
-            else "IDENTITY_CONFLICT_COVERAGE"
+            "TEACHER_ACCOMMODATION_COVERAGE"
+            if is_accommodation
+            else "SUBJECT_TEACHER_CONFLICT_COVERAGE"
         )
         record["proctor_conflict_status"] = "CLEAR"
         record["proctor_coverage_reason"] = (
-            "MOHAYMEN_EXISTING_PROCTOR_DUTY_CONFLICT" if is_mohaymen_conflict
-            else "FRANCHETTE_ZARA_IDENTITY_MERGE_CONFLICT"
+            "SOPHIA_ANAS_DAY1_EARLY_RELEASE"
+            if is_accommodation
+            else "MOHAYMEN_EXISTING_PROCTOR_DUTY_CONFLICT"
         )
         assignments.append({
             "exam_id": record["id"],
@@ -957,16 +965,17 @@ def fixed_position(record):
         return 1, 625
     if section_contains(record, "GRADE 12", "SUHAYB") and subject_key(record["subject"]) == "pe_12":
         return 2, 480
-    # Teacher Aniah's final correction: Usama stays on Day 2 at 03:10 PM,
-    # while Anas alone uses the reserved Day 1 03:10 PM slot. Move Anas
-    # Social Studies to the vacant first period so Teacher Shirehan's exam
-    # remains complete without creating a teacher or section conflict.
+    # Teacher Aniah's final correction keeps Anas Science at Day 1 03:10 PM.
+    # Teacher Sophia's transport accommodation moves Anas Filipino forward to
+    # 04:20 PM; Social Studies uses the 05:30 PM period with an active proctor.
     if section_contains(record, "GRADE 7", "USAMA") and subject_key(record["subject"]) == "science":
         return 2, 910
     if section_contains(record, "GRADE 7", "ANAS"):
         if subject_key(record["subject"]) == "science":
             return 1, 910
         if subject_key(record["subject"]) == "social_studies":
+            return 1, 1050
+        if subject_key(record["subject"]) == "filipino":
             return 1, 980
     # Teacher Sophia accommodations: preserve the already-corrected Sep 2/Sep 3
     # placements and move her final Sep 7 duty to Sep 6. Swapping Mu'adh's
@@ -1274,6 +1283,11 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "Teacher Sophia",
             "request": "Do not exceed 04:30 PM on Sep 7",
             "result": "Grade 8 Mu'adh Filipino moved to Sep 6 at 04:20 PM – 05:20 PM; Sep 7 duties now end at 04:10 PM",
+        },
+        {
+            "teacher": "Teacher Sophia",
+            "request": "Remove the weekday 05:30 PM – 06:30 PM Anas Filipino duty on Sep 2",
+            "result": "Anas Filipino moved to 04:20 PM – 05:20 PM; Social Studies moved to 05:30 PM with Teacher Keychelle as the clear active proctor",
         },
         {
             "teacher": "Ustadha Hainur",

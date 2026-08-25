@@ -95,6 +95,11 @@ def main():
         )
         assert record["proctor_assignment_source"] == expected_source
     assert correction.IDENTITY_CONFLICT_PROCTOR_OVERRIDES == {"exam_549": "tchr_franchette"}
+    for exam_id, proctor_id in correction.ACCOMMODATION_PROCTOR_OVERRIDES.items():
+        record = next(item for item in records if item["id"] == exam_id)
+        assert record["proctor_id"] == proctor_id
+        assert record["proctor_assignment_source"] == "TEACHER_ACCOMMODATION_COVERAGE"
+        assert record["proctor_conflict_status"] == "CLEAR"
 
     normylah_coverage_counts = Counter(record["proctor_id"] for record in normylah_records)
     assert max(normylah_coverage_counts.values()) <= correction.AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
@@ -340,7 +345,17 @@ def main():
         anas_social_studies["day_number"],
         anas_social_studies["start_m"],
         anas_social_studies["end_m"],
-    ) == (1, 980, 1040)
+    ) == (1, 1050, 1110)
+    assert anas_social_studies["proctor_id"] == "tchr_keychell"
+
+    anas_filipino = get_one(
+        records,
+        lambda record: section_has(record, "GRADE 7", "ANAS") and correction.subject_key(record["subject"]) == "filipino",
+        "Grade 7 Anas Filipino exam",
+    )
+    assert (anas_filipino["day_number"], anas_filipino["start_m"], anas_filipino["end_m"]) == (1, 980, 1040)
+    assert anas_filipino["teacher_id"] == "tchr_sophia"
+    assert anas_filipino["proctor_id"] == "tchr_sophia"
 
     for section_name in ("GRADE 1 (FACE TO FACE)", "GRADE 2 (FACE TO FACE)"):
         compact_records = [

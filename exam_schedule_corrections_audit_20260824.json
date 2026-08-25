@@ -881,6 +881,15 @@
   "known_sections": 64,
   "identity_merge_proctor_overrides": [
     {
+      "exam_id": "exam_575",
+      "subject_teacher": "Teacher Shirehan",
+      "proctor": "Teacher Keychelle",
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "subject": "Social Studies",
+      "day_number": 1,
+      "time": "05:30 PM – 06:30 PM"
+    },
+    {
       "exam_id": "exam_549",
       "subject_teacher": "Sir Mohaymen",
       "proctor": "Teacher Franchette Zarah M. Ranain",
@@ -2559,6 +2568,24 @@
       "from_start_m": 1050,
       "to_day": 2,
       "to_start_m": 910
+    },
+    {
+      "id": "exam_575",
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "subject": "Social Studies",
+      "from_day": 1,
+      "from_start_m": 980,
+      "to_day": 1,
+      "to_start_m": 1050
+    },
+    {
+      "id": "exam_113",
+      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+      "subject": "Filipino",
+      "from_day": 1,
+      "from_start_m": 1050,
+      "to_day": 1,
+      "to_start_m": 980
     }
   ],
   "teacher_accommodations": [
@@ -2576,6 +2603,11 @@
       "teacher": "Teacher Sophia",
       "request": "Do not exceed 04:30 PM on Sep 7",
       "result": "Grade 8 Mu'adh Filipino moved to Sep 6 at 04:20 PM – 05:20 PM; Sep 7 duties now end at 04:10 PM"
+    },
+    {
+      "teacher": "Teacher Sophia",
+      "request": "Remove the weekday 05:30 PM – 06:30 PM Anas Filipino duty on Sep 2",
+      "result": "Anas Filipino moved to 04:20 PM – 05:20 PM; Social Studies moved to 05:30 PM with Teacher Keychelle as the clear active proctor"
     },
     {
       "teacher": "Ustadha Hainur",
