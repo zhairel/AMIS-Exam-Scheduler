@@ -612,19 +612,19 @@ html, body {
   margin-top: 2px;
 }
 
-.school-header--faculty {
+.school-header--branded {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   gap: 24px;
   min-height: 104px;
 }
 
-.faculty-header-title {
+.document-header-title {
   justify-self: start;
   text-align: left;
 }
 
-.faculty-header-title h2 {
+.document-header-title h2 {
   margin: 0;
   color: var(--brand-deep);
   font-size: 15px;
@@ -633,7 +633,7 @@ html, body {
   letter-spacing: 0.025em;
 }
 
-.faculty-header-title p {
+.document-header-title p {
   margin: 5px 0 0;
   color: var(--brand-accent);
   font-size: 12px;
@@ -642,7 +642,7 @@ html, body {
   letter-spacing: 0.04em;
 }
 
-.faculty-header-school {
+.document-header-school {
   grid-column: 2;
   justify-self: center;
   display: flex;
@@ -652,12 +652,12 @@ html, body {
   line-height: 1;
 }
 
-.faculty-header-school .school-header-logo {
+.document-header-school .school-header-logo {
   width: 48px;
   height: 48px;
 }
 
-.faculty-header-arabic {
+.document-header-arabic {
   margin-top: 4px;
   color: var(--brand-deep);
   font-family: Tahoma, "Noto Naskh Arabic", Arial, sans-serif;
@@ -666,7 +666,7 @@ html, body {
   direction: rtl;
 }
 
-.faculty-header-school h1 {
+.document-header-school h1 {
   margin: 4px 0 0;
   color: var(--brand-deep);
   font-size: 14px;
@@ -675,7 +675,7 @@ html, body {
   letter-spacing: 0.08em;
 }
 
-.faculty-header-balance {
+.document-header-balance {
   grid-column: 3;
 }
 
@@ -1455,25 +1455,25 @@ html, body {
   .school-header h2 { font-size: 10.5px; }
   .school-header p { font-size: 9px; letter-spacing: 0.03em; }
 
-  .school-header--faculty {
+  .school-header--branded {
     grid-template-columns: 1fr;
     gap: 10px;
   }
-  .faculty-header-school {
+  .document-header-school {
     grid-column: 1;
     grid-row: 1;
   }
-  .faculty-header-title {
+  .document-header-title {
     grid-column: 1;
     grid-row: 2;
     justify-self: center;
     text-align: center;
   }
-  .faculty-header-title h2 { font-size: 11px; }
-  .faculty-header-title p { font-size: 9px; }
-  .faculty-header-arabic { font-size: 15px; }
-  .faculty-header-school h1 { font-size: 12px; }
-  .faculty-header-balance { display: none; }
+  .document-header-title h2 { font-size: 11px; }
+  .document-header-title p { font-size: 9px; }
+  .document-header-arabic { font-size: 15px; }
+  .document-header-school h1 { font-size: 12px; }
+  .document-header-balance { display: none; }
 
   .teacher-banner { align-items: flex-start; padding: 9px 10px; gap: 8px; }
   .teacher-name-title {
@@ -6486,13 +6486,17 @@ html, body {
 
       fullHtml += `
         <div class="timetable-sheet" id="sheet_${sec.id}" data-export-kind="Section" data-export-name="${esc(sec.section_name)}">
-          <div class="school-header">
-            <img src="amis_logo.png" alt="AMIS Logo" class="school-header-logo">
-            <div class="school-header-text">
-              <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
+          <div class="school-header school-header--branded">
+            <div class="document-header-title">
               <h2>TERM EXAM WEEK 2026 – 2027</h2>
               <p>OFFICIAL 1ST TERM EXAMINATION SCHEDULE</p>
             </div>
+            <div class="document-header-school">
+              <img src="amis_logo.png" alt="AMIS school logo" class="school-header-logo">
+              <div class="document-header-arabic" lang="ar" dir="rtl">المدرسة المنورة الإسلامية</div>
+              <h1>AL MUNAWWARA</h1>
+            </div>
+            <div class="document-header-balance" aria-hidden="true"></div>
           </div>
 
           <div class="teacher-banner">
@@ -6713,17 +6717,17 @@ html, body {
 
       fullHtml += `
         <div class="timetable-sheet" id="sheet_${t.id}" data-export-kind="Faculty" data-export-name="${esc(teacherName)}">
-          <div class="school-header school-header--faculty">
-            <div class="faculty-header-title">
+          <div class="school-header school-header--branded">
+            <div class="document-header-title">
               <h2>TERM EXAM WEEK 2026 – 2027</h2>
               <p>FACULTY EXAMINATION TIMETABLE</p>
             </div>
-            <div class="faculty-header-school">
+            <div class="document-header-school">
               <img src="amis_logo.png" alt="AMIS school logo" class="school-header-logo">
-              <div class="faculty-header-arabic" lang="ar" dir="rtl">المدرسة المنورة الإسلامية</div>
+              <div class="document-header-arabic" lang="ar" dir="rtl">المدرسة المنورة الإسلامية</div>
               <h1>AL MUNAWWARA</h1>
             </div>
-            <div class="faculty-header-balance" aria-hidden="true"></div>
+            <div class="document-header-balance" aria-hidden="true"></div>
           </div>
 
           <div class="teacher-banner">
