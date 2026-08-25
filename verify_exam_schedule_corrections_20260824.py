@@ -148,19 +148,15 @@ def main():
     normylah_coverage_counts = Counter(record["proctor_id"] for record in normylah_records)
     assert max(normylah_coverage_counts.values()) <= correction.AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
     assert normylah_coverage_counts == Counter({
-        "tchr_wardah": 2,
+        "tchr_wardah": 1,
         "tchr_ethel": 1,
-        "tchr_wendy": 1,
+        "tchr_wendy": 2,
         "tchr_zuhora": 2,
-        "tchr_junaisah": 1,
+        "tchr_rowena": 1,
         "tchr_mohaymen": 2,
         "tchr_shirehan": 2,
     })
-    assert sum(
-        record["proctor_id"] == "tchr_junaisah"
-        and record["proctor_assignment_source"] != "SUBJECT_TEACHER"
-        for record in normylah_records
-    ) == 1
+    assert normylah_coverage_counts["tchr_junaisah"] == 0
     assert {
         record["id"] for record in normylah_records
         if record["proctor_id"] == "tchr_ethel"
@@ -168,7 +164,15 @@ def main():
     assert {
         record["id"] for record in normylah_records
         if record["proctor_id"] == "tchr_wendy"
-    } == {"exam_229"}
+    } == {"exam_81", "exam_229"}
+    assert {
+        record["id"] for record in normylah_records
+        if record["proctor_id"] == "tchr_rowena"
+    } == {"exam_33"}
+    assert {
+        record["id"] for record in normylah_records
+        if record["proctor_id"] == "tchr_wardah"
+    } == {"exam_316"}
     assert normylah_coverage_counts["tchr_ayah"] == 0
     for record in normylah_records:
         proctor = registry_by_id[record["proctor_id"]]
