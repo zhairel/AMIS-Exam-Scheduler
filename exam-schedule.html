@@ -612,6 +612,73 @@ html, body {
   margin-top: 2px;
 }
 
+.school-header--faculty {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 24px;
+  min-height: 104px;
+}
+
+.faculty-header-title {
+  justify-self: start;
+  text-align: left;
+}
+
+.faculty-header-title h2 {
+  margin: 0;
+  color: var(--brand-deep);
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: 0.025em;
+}
+
+.faculty-header-title p {
+  margin: 5px 0 0;
+  color: var(--brand-accent);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+}
+
+.faculty-header-school {
+  grid-column: 2;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+}
+
+.faculty-header-school .school-header-logo {
+  width: 48px;
+  height: 48px;
+}
+
+.faculty-header-arabic {
+  margin-top: 4px;
+  color: var(--brand-deep);
+  font-family: Tahoma, "Noto Naskh Arabic", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  direction: rtl;
+}
+
+.faculty-header-school h1 {
+  margin: 4px 0 0;
+  color: var(--brand-deep);
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+.faculty-header-balance {
+  grid-column: 3;
+}
+
 /* Banner Strip */
 .teacher-banner {
   background: var(--brand-green);
@@ -1386,6 +1453,26 @@ html, body {
   .school-header h1 { font-size: 13px; line-height: 1.2; letter-spacing: 0.02em; }
   .school-header h2 { font-size: 10.5px; }
   .school-header p { font-size: 9px; letter-spacing: 0.03em; }
+
+  .school-header--faculty {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .faculty-header-school {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .faculty-header-title {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    text-align: center;
+  }
+  .faculty-header-title h2 { font-size: 11px; }
+  .faculty-header-title p { font-size: 9px; }
+  .faculty-header-arabic { font-size: 15px; }
+  .faculty-header-school h1 { font-size: 12px; }
+  .faculty-header-balance { display: none; }
 
   .teacher-banner { align-items: flex-start; padding: 9px 10px; gap: 8px; }
   .teacher-name-title {
@@ -6626,13 +6713,17 @@ html, body {
 
       fullHtml += `
         <div class="timetable-sheet" id="sheet_${t.id}" data-export-kind="Faculty" data-export-name="${esc(teacherName)}">
-          <div class="school-header">
-            <img src="amis_logo.png" alt="AMIS Logo" class="school-header-logo">
-            <div class="school-header-text">
-              <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
+          <div class="school-header school-header--faculty">
+            <div class="faculty-header-title">
               <h2>TERM EXAM WEEK 2026 – 2027</h2>
               <p>FACULTY EXAMINATION TIMETABLE</p>
             </div>
+            <div class="faculty-header-school">
+              <img src="amis_logo.png" alt="AMIS school logo" class="school-header-logo">
+              <div class="faculty-header-arabic" lang="ar" dir="rtl">المدرسة المنورة الإسلامية</div>
+              <h1>AL MUNAWWARA</h1>
+            </div>
+            <div class="faculty-header-balance" aria-hidden="true"></div>
           </div>
 
           <div class="teacher-banner">
