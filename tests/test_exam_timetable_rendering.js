@@ -17,6 +17,8 @@ assert(html.includes('faculty-header-arabic'));
 assert(html.includes('المدرسة المنورة الإسلامية'));
 assert(/\.teacher-meta-tag\s*\{\s*display:\s*none;/.test(html));
 assert(/\.teacher-meta-tag\s*\{\s*display:\s*none;/.test(facultyHtml));
+assert(!html.includes('<span class="teacher-meta-tag">'));
+assert(!facultyHtml.includes('<span class="teacher-meta-tag">'));
 
 const helperStart = html.indexOf('  function scheduleStartLabel');
 const helperEnd = html.indexOf('  function getExamGenderChip', helperStart);
