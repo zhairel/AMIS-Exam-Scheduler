@@ -85,8 +85,8 @@ NORMYLAH_MANUAL_PROCTOR_OVERRIDES = {
     "exam_30": "tchr_zuhora",
     "exam_33": "tchr_wardah",
     "exam_81": "tchr_junaisah",
-    "exam_226": "tchr_franchette",
-    "exam_229": "tchr_franchette",
+    "exam_226": "tchr_ethel",
+    "exam_229": "tchr_ethel",
     "exam_316": "tchr_wardah",
     "exam_323": "tchr_junaisah",
     "exam_325": "tchr_shirehan",
@@ -107,6 +107,7 @@ FRANCHETTE_VACANT_PROCTOR_OVERRIDES = {
     "exam_173": "tchr_keychell",
     "exam_466": "tchr_wendy",
     "exam_464": "tchr_ethel",
+    "exam_597": "tchr_keychell",
 }
 NORMYLAH_INACTIVE_WARNING = (
     "Teacher Normylah is inactive/resigned. Please assign a replacement teacher."
