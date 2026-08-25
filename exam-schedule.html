@@ -6088,6 +6088,14 @@ html, body {
     });
   };
 
+  function activeScheduleProctorId(record) {
+    if (!record) return '';
+    if (record.proctor_status === 'NOT_ASSIGNED' || record.proctor_pool === 'NONE') {
+      return '';
+    }
+    return record.proctor_id || record.teacher_id || '';
+  }
+
   function strictScheduleConflicts() {
     const conflicts = [];
     const overlaps = (left, right) =>
@@ -6101,8 +6109,8 @@ html, body {
         const right = EXAM_RECORDS[rightIndex];
         if (!overlaps(left, right)) continue;
 
-        const leftProctorId = left.proctor_id || left.teacher_id;
-        const rightProctorId = right.proctor_id || right.teacher_id;
+        const leftProctorId = activeScheduleProctorId(left);
+        const rightProctorId = activeScheduleProctorId(right);
         const sameTeacher = leftProctorId && leftProctorId === rightProctorId;
         const sameCohort =
           left.grade_level === right.grade_level

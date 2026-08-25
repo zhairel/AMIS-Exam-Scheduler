@@ -105,6 +105,36 @@ assert(facultyHtml.includes('60 MIN'));
 assert(html.includes('${match.duration_minutes || 60} MIN'));
 assert(facultyHtml.includes('${exam.duration_minutes || 60} MIN'));
 
+const conflictHelperStart = html.indexOf('  function activeScheduleProctorId');
+const conflictHelperEnd = html.indexOf('  function updateAntiConflictBadge', conflictHelperStart);
+assert(conflictHelperStart >= 0 && conflictHelperEnd > conflictHelperStart, 'Strict conflict helpers are missing.');
+const conflictContext = {
+  EXAM_RECORDS: [
+    {
+      id: 'covered-exam', day_number: 4, start_m: 1050, end_m: 1110,
+      grade_level: 'Grade 6', modality: 'ODL', section_id: 'grade-6', gender: '',
+      teacher_id: 'inactive-teacher', proctor_id: 'shared-teacher',
+      proctor_status: 'ACTIVE_ASSIGNED', proctor_pool: 'MANUAL_ADMIN_OVERRIDE',
+    },
+    {
+      id: 'explicitly-unproctored-exam', day_number: 4, start_m: 1050, end_m: 1110,
+      grade_level: 'Grade 9', modality: 'ODL', section_id: 'grade-9', gender: 'MALE',
+      teacher_id: 'shared-teacher', proctor_id: '',
+      proctor_status: 'NOT_ASSIGNED', proctor_pool: 'NONE',
+    },
+  ],
+};
+vm.createContext(conflictContext);
+vm.runInContext(
+  `${html.slice(conflictHelperStart, conflictHelperEnd)}\nthis.strictScheduleConflicts = strictScheduleConflicts;`,
+  conflictContext
+);
+assert.strictEqual(
+  conflictContext.strictScheduleConflicts().length,
+  0,
+  'An explicitly unproctored exam must not fall back to its subject teacher in conflict checks.'
+);
+
 assert(html.includes('@media (max-width: 720px)'), 'Exam schedule must include a phone layout breakpoint.');
 assert(html.includes('Swipe left or right to view all exam days'), 'Mobile timetables must explain horizontal swiping.');
 assert(html.includes('-webkit-overflow-scrolling: touch'), 'Timetable scrolling must be touch optimized.');
