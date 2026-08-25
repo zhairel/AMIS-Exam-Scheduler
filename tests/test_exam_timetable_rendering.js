@@ -6,6 +6,12 @@ const html = fs.readFileSync('exam-schedule.html', 'utf8');
 const facultyHtml = fs.readFileSync('faculty-timetable-exam.html', 'utf8');
 const records = require('../exam_data.json');
 
+assert(facultyHtml.includes('faculty-document-heading'));
+assert(facultyHtml.includes('TERM EXAM WEEK 2026 – 2027'));
+assert(facultyHtml.includes('FACULTY EXAMINATION TIMETABLE'));
+assert(facultyHtml.includes('المدرسة المنورة الإسلامية'));
+assert(facultyHtml.includes('<h1>AL MUNAWWARA</h1>'));
+
 const helperStart = html.indexOf('  function scheduleStartLabel');
 const helperEnd = html.indexOf('  function getExamGenderChip', helperStart);
 assert(helperStart >= 0 && helperEnd > helperStart, 'Schedule-row matching helpers are missing.');
