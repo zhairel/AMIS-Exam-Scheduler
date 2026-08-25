@@ -112,11 +112,7 @@ ACCOMMODATION_PROCTOR_REASONS = {
     "exam_323": "ETHEL_ZAYD_FILIPINO_REQUEST",
     "exam_398": "ETHEL_ZAYD_FILIPINO_CONFLICT_COVERAGE",
 }
-FRANCHETTE_VACANT_PROCTOR_OVERRIDES = {
-    "exam_173": "tchr_keychell",
-    "exam_466": "tchr_wendy",
-    "exam_464": "tchr_ethel",
-}
+FRANCHETTE_VACANT_PROCTOR_OVERRIDES = {}
 REQUESTED_NO_PROCTOR_EXAM_IDS = {
     # Keep K1 Husain Qur'an in the section schedule, but do not assign it to
     # Ustadha Hainur or add it as a proctor duty to any faculty timetable.
@@ -160,14 +156,21 @@ EXAM_TEACHER_OVERRIDES = {
     # Teacher Wendelyn officially took over Filipino for Grade 3 Zayd after
     # the former teacher resigned. This is subject ownership, not proctoring.
     "exam_323": "Teacher Wendelyn",
+    # Teacher Franchette Zarah officially owns these Grade 3 Makabansa
+    # classes. They are regular subject assignments, not proctor-only duties.
+    "exam_173": "Teacher Franchette Zarah M. Ranain",
+    "exam_314": "Teacher Franchette Zarah M. Ranain",
+    "exam_464": "Teacher Franchette Zarah M. Ranain",
+    "exam_466": "Teacher Franchette Zarah M. Ranain",
 }
 
-# Teacher Franchette confirmed that her subject scope is MAPEH Grades 7 and 8
-# only. Preserve these previously scheduled exams, but leave their subject
-# teacher vacant until an admin selects the correct replacement.
+# Grade 3 Makabansa is restored to Teacher Franchette above. These Grade 6
+# MAPEH exams remain vacant until an admin selects the correct subject teacher.
 FRANCHETTE_VACANT_SUBJECT_EXAM_IDS = {
-    "exam_173", "exam_314", "exam_464", "exam_466",
     "exam_594", "exam_595", "exam_596", "exam_597",
+}
+FRANCHETTE_GRADE3_MAKABANSA_EXAM_IDS = {
+    "exam_173", "exam_314", "exam_464", "exam_466",
 }
 HAINUR_VACANT_SUBJECT_EXAM_IDS = {"exam_4"}
 VACANT_SUBJECT_TEACHER_EXAM_IDS = (
@@ -459,6 +462,12 @@ def apply_subject_teacher_status(records):
             record["proctor_status"] = "PENDING_ASSIGNMENT"
             record["proctor_assignment_source"] = "AUTO_ACADEMIC_COVERAGE"
         else:
+            if record.get("id") in FRANCHETTE_GRADE3_MAKABANSA_EXAM_IDS:
+                # This is restored subject ownership, not historical or
+                # substitute-proctor coverage. Remove stale vacancy metadata.
+                record.pop("former_subject_teacher", None)
+                record.pop("former_subject_teacher_id", None)
+                record.pop("proctor_coverage_reason", None)
             record["subject_teacher_status"] = "ACTIVE_VERIFIED"
             record["active_subject_teacher"] = subject_teacher
             record["active_subject_teacher_id"] = subject_teacher_id
@@ -1048,10 +1057,15 @@ def fixed_position(record):
     # the section does not carry four examinations on Wednesday.
     if record.get("id") == "exam_582":
         return 3, 760
-    # Grade 3 Zayd Makabansa has a vacant subject-teacher assignment; its active
-    # proctor Teacher Ethel is clear on Wednesday's 04:20 PM period.
+    # Grade 3 Zayd Makabansa is Teacher Franchette's own subject and remains on
+    # Wednesday's 04:20 PM period.
     if record.get("id") == "exam_464":
         return 1, 980
+    # Ammar Makabansa is also Teacher Franchette's own subject. Move it from
+    # Thursday 01:50 PM, where it overlaps her Grade 8 Sa'ad MAPEH exam, into
+    # the section's open Wednesday 03:10 PM period.
+    if record.get("id") == "exam_173":
+        return 1, 910
     # Keep Suhayb Biology on its requested Wednesday slot. Grade 11 F2F Biology
     # may move when needed so the shared official teacher is never double-booked.
     if is_fixed_suhayb_biology(record):

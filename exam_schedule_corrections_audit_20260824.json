@@ -862,28 +862,40 @@
       "subject": "Math",
       "from": "Teacher Wendy",
       "to": "Teacher Wendelyn"
+    },
+    {
+      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+      "subject": "Makabansa",
+      "from": "",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+      "subject": "Makabansa",
+      "from": "",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+      "subject": "Makabansa",
+      "from": "",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+      "subject": "Makabansa",
+      "from": "",
+      "to": "Teacher Franchette Zarah M. Ranain"
     }
   ],
   "unresolved_official_teacher_links": [
-    {
-      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-      "subject": "Makabansa"
-    },
     {
       "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
       "subject": "MAPEH"
     },
     {
-      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-      "subject": "Makabansa"
-    },
-    {
       "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
       "subject": "Qur'an"
-    },
-    {
-      "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
-      "subject": "Makabansa"
     },
     {
       "section": "GRADE  6  FACE TO FACE",
@@ -896,10 +908,6 @@
     {
       "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
       "subject": "MAPEH"
-    },
-    {
-      "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
-      "subject": "Makabansa"
     }
   ],
   "known_sections": 64,
@@ -945,17 +953,6 @@
       "time_slot": "08:00 AM – 09:00 AM"
     },
     {
-      "exam_id": "exam_314",
-      "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-      "subject": "Makabansa",
-      "former_subject_teacher": "Unassigned",
-      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
-      "proctor": "Teacher Ethel",
-      "proctor_id": "tchr_ethel",
-      "day_number": 1,
-      "time_slot": "12:40 PM – 01:40 PM"
-    },
-    {
       "exam_id": "exam_33",
       "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
       "subject": "Filipino",
@@ -976,28 +973,6 @@
       "proctor_id": "tchr_wendy",
       "day_number": 1,
       "time_slot": "03:10 PM – 04:10 PM"
-    },
-    {
-      "exam_id": "exam_464",
-      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-      "subject": "Makabansa",
-      "former_subject_teacher": "Unassigned",
-      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
-      "proctor": "Teacher Ethel",
-      "proctor_id": "tchr_ethel",
-      "day_number": 1,
-      "time_slot": "04:20 PM – 05:20 PM"
-    },
-    {
-      "exam_id": "exam_173",
-      "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
-      "subject": "Makabansa",
-      "former_subject_teacher": "Unassigned",
-      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
-      "proctor": "Teacher Keychelle",
-      "proctor_id": "tchr_keychell",
-      "day_number": 2,
-      "time_slot": "01:50 PM – 02:50 PM"
     },
     {
       "exam_id": "exam_226",
@@ -1064,17 +1039,6 @@
       "proctor_id": "tchr_shirehan",
       "day_number": 4,
       "time_slot": "12:40 PM – 01:40 PM"
-    },
-    {
-      "exam_id": "exam_466",
-      "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
-      "subject": "Makabansa",
-      "former_subject_teacher": "Unassigned",
-      "former_teacher_status": "VACANT_REPLACEMENT_REQUIRED",
-      "proctor": "Teacher Wendelyn",
-      "proctor_id": "tchr_wendy",
-      "day_number": 4,
-      "time_slot": "03:10 PM – 04:10 PM"
     },
     {
       "exam_id": "exam_516",
@@ -2553,6 +2517,15 @@
       "from_start_m": 1050,
       "to_day": 1,
       "to_start_m": 980
+    },
+    {
+      "id": "exam_173",
+      "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+      "subject": "Makabansa",
+      "from_day": 2,
+      "from_start_m": 830,
+      "to_day": 1,
+      "to_start_m": 910
     }
   ],
   "suppressed_non_normylah_mapeh_proctors": [
