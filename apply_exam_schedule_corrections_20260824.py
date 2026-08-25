@@ -872,10 +872,9 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
             record["subject"] = "Filipino"
             record["subject_id"] = "subj_filipino"
 
-        # Kinder 2 uses the official class-subject name Circle Time 1. Keep
-        # Kinder 1 Oral & Written Exam records unchanged.
+        # Kindergarten uses the official class-subject name Circle Time 1.
         if (
-            clean(record.get("grade_level") or record.get("grade")) == "Kinder 2"
+            clean(record.get("grade_level") or record.get("grade")) in {"Kinder 1", "Kinder 2"}
             and key == "oral_written"
         ):
             renamed.append({
@@ -1025,7 +1024,7 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
         elif (
             subject_key(record.get("subject")) == "oral_written"
             or (
-                clean(record.get("grade_level") or record.get("grade")) == "Kinder 2"
+                clean(record.get("grade_level") or record.get("grade")) in {"Kinder 1", "Kinder 2"}
                 and subject_key(record.get("subject")) == "circle_time_1"
             )
         ):

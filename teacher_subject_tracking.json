@@ -20434,10 +20434,10 @@
     "total_exams": 7,
     "subjects": [
       "Araling Panlipunan",
+      "Circle Time 1",
       "Filipino",
       "Makabansa",
       "Math",
-      "Oral & Written Exam",
       "Science"
     ],
     "grades": [
@@ -20490,8 +20490,8 @@
         "shift": "F2F",
         "modality": "F2F",
         "gender": "MIXED",
-        "subject_id": "subj_oral_written_exam",
-        "subject": "Oral & Written Exam",
+        "subject_id": "subj_circle_time_1",
+        "subject": "Circle Time 1",
         "teacher_id": "tchr_wendy",
         "teacher": "Teacher Wendelyn",
         "duration_minutes": 60,
@@ -20766,8 +20766,8 @@
         "shift": "ODL - 2ND SHIFT",
         "modality": "ODL",
         "gender": "",
-        "subject_id": "subj_oral_written_exam",
-        "subject": "Oral & Written Exam",
+        "subject_id": "subj_circle_time_1",
+        "subject": "Circle Time 1",
         "teacher_id": "tchr_wendy",
         "teacher": "Teacher Wendelyn",
         "duration_minutes": 60,

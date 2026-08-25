@@ -724,11 +724,19 @@ def main():
         and correction.subject_key(record["subject"]) == "oral_written"
         for record in records
     )
-    assert len([
+    kinder1_circle_time_1 = [
         record for record in records
         if record["grade_level"] == "Kinder 1"
+        and correction.subject_key(record["subject"]) == "circle_time_1"
+    ]
+    assert len(kinder1_circle_time_1) == 2
+    assert all(record["subject"] == "Circle Time 1" for record in kinder1_circle_time_1)
+    assert all(record["subject_id"] == "subj_circle_time_1" for record in kinder1_circle_time_1)
+    assert not any(
+        record["grade_level"] in {"Kinder 1", "Kinder 2"}
         and correction.subject_key(record["subject"]) == "oral_written"
-    ]) == 2
+        for record in records
+    )
 
     official_lookup = correction.build_official_teacher_lookup(class_sections)
     unmatched = []
@@ -736,7 +744,7 @@ def main():
         if (
             correction.subject_key(record["subject"]) == "oral_written"
             or (
-                record["grade_level"] == "Kinder 2"
+                record["grade_level"] in {"Kinder 1", "Kinder 2"}
                 and correction.subject_key(record["subject"]) == "circle_time_1"
             )
             or record["id"] in correction.VACANT_SUBJECT_TEACHER_EXAM_IDS
