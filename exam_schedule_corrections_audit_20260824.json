@@ -960,24 +960,6 @@
       "subject": "Social Studies",
       "day_number": 1,
       "time": "05:30 PM – 06:30 PM"
-    },
-    {
-      "exam_id": "exam_323",
-      "subject_teacher": "Teacher Wendelyn",
-      "proctor": "Teacher Ethel",
-      "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-      "subject": "Filipino",
-      "day_number": 3,
-      "time": "03:10 PM – 04:10 PM"
-    },
-    {
-      "exam_id": "exam_398",
-      "subject_teacher": "Teacher Ethel",
-      "proctor": "Teacher Nof",
-      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-      "subject": "Math",
-      "day_number": 3,
-      "time": "03:10 PM – 05:20 PM"
     }
   ],
   "inactive_teacher_proctor_assignments": [
@@ -2714,6 +2696,11 @@
       "teacher": "Teacher Normylah",
       "request": "Mark the resigned teacher inactive without deleting her former subjects or exam schedules",
       "result": "All 12 former exam assignments remain visible as Resigned / Inactive and Replacement Required; active Academic Teacher proctors are assigned separately with zero overlaps and no subject-teacher replacement"
+    },
+    {
+      "teacher": "Teacher Ethel",
+      "request": "Restore Grade 7 Anas Mathematics to her timetable and remove its overlap with the Grade 3 Zayd Filipino proctor duty",
+      "result": "Teacher Ethel handles her own 120-minute Grade 7 Anas Mathematics exam; Teacher Wendelyn handles her own Grade 3 Zayd Filipino exam at the overlapping time"
     }
   ],
   "final_exam_count": 592,

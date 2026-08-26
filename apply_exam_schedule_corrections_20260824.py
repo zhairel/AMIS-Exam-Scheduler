@@ -100,17 +100,9 @@ IDENTITY_CONFLICT_PROCTOR_OVERRIDES = {
 }
 ACCOMMODATION_PROCTOR_OVERRIDES = {
     "exam_575": "tchr_keychell",
-    # Teacher Wendelyn took over this Filipino subject, but confirmed that
-    # Teacher Ethel will cover its Grade 3 Zayd examination.
-    "exam_323": "tchr_ethel",
-    # Transfer Teacher Ethel's overlapping 120-minute Grade 7 Anas Math
-    # proctor duty to the only fully available Academic Teacher.
-    "exam_398": "tchr_nof",
 }
 ACCOMMODATION_PROCTOR_REASONS = {
     "exam_575": "SOPHIA_ANAS_DAY1_EARLY_RELEASE",
-    "exam_323": "ETHEL_ZAYD_FILIPINO_REQUEST",
-    "exam_398": "ETHEL_ZAYD_FILIPINO_CONFLICT_COVERAGE",
 }
 FRANCHETTE_VACANT_PROCTOR_OVERRIDES = {}
 REQUESTED_NO_PROCTOR_EXAM_IDS = {
@@ -487,6 +479,7 @@ def apply_subject_teacher_status(records):
             record["proctor_status"] = "ACTIVE_ASSIGNED"
             record["proctor_pool"] = "SUBJECT_TEACHER"
             record["proctor_assignment_source"] = "SUBJECT_TEACHER"
+            record.pop("proctor_coverage_reason", None)
             record["proctor_department"] = teacher_by_id.get(subject_teacher_id, {}).get(
                 "department", record.get("department", "Faculty")
             )
@@ -1510,6 +1503,11 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "Teacher Normylah",
             "request": "Mark the resigned teacher inactive without deleting her former subjects or exam schedules",
             "result": "All 12 former exam assignments remain visible as Resigned / Inactive and Replacement Required; active Academic Teacher proctors are assigned separately with zero overlaps and no subject-teacher replacement",
+        },
+        {
+            "teacher": "Teacher Ethel",
+            "request": "Restore Grade 7 Anas Mathematics to her timetable and remove its overlap with the Grade 3 Zayd Filipino proctor duty",
+            "result": "Teacher Ethel handles her own 120-minute Grade 7 Anas Mathematics exam; Teacher Wendelyn handles her own Grade 3 Zayd Filipino exam at the overlapping time",
         },
     ]
     return audit

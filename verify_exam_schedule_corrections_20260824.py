@@ -136,14 +136,15 @@ def main():
     assert wendelyn_zayd_filipino["subject_teacher_id"] == "tchr_wendy"
     assert wendelyn_zayd_filipino["subject_teacher"] == "Teacher Wendelyn"
     assert wendelyn_zayd_filipino["replacement_teacher_required"] is False
-    assert wendelyn_zayd_filipino["proctor_id"] == "tchr_ethel"
-    assert wendelyn_zayd_filipino["proctor_assignment_source"] == "TEACHER_ACCOMMODATION_COVERAGE"
-    assert wendelyn_zayd_filipino["proctor_coverage_reason"] == "ETHEL_ZAYD_FILIPINO_REQUEST"
+    assert wendelyn_zayd_filipino["proctor_id"] == "tchr_wendy"
+    assert wendelyn_zayd_filipino["proctor_assignment_source"] == "SUBJECT_TEACHER"
+    assert "proctor_coverage_reason" not in wendelyn_zayd_filipino
     anas_math = next(item for item in records if item["id"] == "exam_398")
-    assert anas_math["proctor_id"] == "tchr_nof"
+    assert anas_math["subject_teacher_id"] == "tchr_ethel"
+    assert anas_math["proctor_id"] == "tchr_ethel"
     assert anas_math["duration_minutes"] == 120
-    assert anas_math["proctor_assignment_source"] == "TEACHER_ACCOMMODATION_COVERAGE"
-    assert anas_math["proctor_coverage_reason"] == "ETHEL_ZAYD_FILIPINO_CONFLICT_COVERAGE"
+    assert anas_math["proctor_assignment_source"] == "SUBJECT_TEACHER"
+    assert "proctor_coverage_reason" not in anas_math
 
     normylah_coverage_counts = Counter(record["proctor_id"] for record in normylah_records)
     assert max(normylah_coverage_counts.values()) <= correction.AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
