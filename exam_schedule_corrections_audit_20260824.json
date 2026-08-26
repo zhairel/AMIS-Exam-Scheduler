@@ -951,17 +951,7 @@
     }
   ],
   "known_sections": 64,
-  "identity_merge_proctor_overrides": [
-    {
-      "exam_id": "exam_575",
-      "subject_teacher": "Teacher Shirehan",
-      "proctor": "Teacher Keychelle",
-      "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-      "subject": "Social Studies",
-      "day_number": 1,
-      "time": "05:30 PM – 06:30 PM"
-    }
-  ],
+  "identity_merge_proctor_overrides": [],
   "inactive_teacher_proctor_assignments": [
     {
       "exam_id": "exam_30",
@@ -2701,6 +2691,11 @@
       "teacher": "Teacher Ethel",
       "request": "Restore Grade 7 Anas Mathematics to her timetable and remove its overlap with the Grade 3 Zayd Filipino proctor duty",
       "result": "Teacher Ethel handles her own 120-minute Grade 7 Anas Mathematics exam; Teacher Wendelyn handles her own Grade 3 Zayd Filipino exam at the overlapping time"
+    },
+    {
+      "teacher": "Teacher Shirehan",
+      "request": "Remove the stale Teacher Keychelle proctor assignment from Grade 7 Anas Social Studies",
+      "result": "Teacher Shirehan handles her own Grade 7 Anas Social Studies exam with no separate proctor label or schedule conflict"
     }
   ],
   "final_exam_count": 592,

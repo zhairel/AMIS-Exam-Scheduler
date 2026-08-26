@@ -146,6 +146,14 @@ def main():
     assert anas_math["proctor_assignment_source"] == "SUBJECT_TEACHER"
     assert "proctor_coverage_reason" not in anas_math
 
+    anas_social_studies = next(item for item in records if item["id"] == "exam_575")
+    assert anas_social_studies["subject"] == "Social Studies"
+    assert anas_social_studies["subject_teacher_id"] == "tchr_shirehan"
+    assert anas_social_studies["proctor_id"] == "tchr_shirehan"
+    assert anas_social_studies["proctor_assignment_source"] == "SUBJECT_TEACHER"
+    assert anas_social_studies.get("display_as_proctor_duty") is not True
+    assert "proctor_coverage_reason" not in anas_social_studies
+
     normylah_coverage_counts = Counter(record["proctor_id"] for record in normylah_records)
     assert max(normylah_coverage_counts.values()) <= correction.AUTO_COVERAGE_MAX_ASSIGNMENTS_PER_TEACHER
     assert normylah_coverage_counts == Counter({
@@ -399,7 +407,9 @@ def main():
         anas_social_studies["start_m"],
         anas_social_studies["end_m"],
     ) == (1, 1050, 1110)
-    assert anas_social_studies["proctor_id"] == "tchr_keychell"
+    assert anas_social_studies["subject_teacher_id"] == "tchr_shirehan"
+    assert anas_social_studies["proctor_id"] == "tchr_shirehan"
+    assert anas_social_studies["proctor_assignment_source"] == "SUBJECT_TEACHER"
 
     anas_filipino = get_one(
         records,

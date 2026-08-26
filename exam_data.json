@@ -6715,14 +6715,13 @@
     "active_subject_teacher": "Teacher Shirehan",
     "active_subject_teacher_id": "tchr_shirehan",
     "inactive_teacher_warning": "",
-    "proctor": "Teacher Keychelle",
-    "proctor_id": "tchr_keychell",
+    "proctor": "Teacher Shirehan",
+    "proctor_id": "tchr_shirehan",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_assignment_source": "TEACHER_ACCOMMODATION_COVERAGE",
-    "proctor_department": "Elementary Faculty",
+    "proctor_assignment_source": "SUBJECT_TEACHER",
+    "proctor_department": "High School Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "ACADEMIC_TEACHER_ONLY",
-    "proctor_coverage_reason": "SOPHIA_ANAS_DAY1_EARLY_RELEASE"
+    "proctor_pool": "SUBJECT_TEACHER"
   },
   {
     "id": "exam_259",

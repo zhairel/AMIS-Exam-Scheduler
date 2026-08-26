@@ -98,12 +98,8 @@ NORMYLAH_AUTO_PROCTOR_EXCLUDED_IDS = {"tchr_ayah", "tchr_angeleni"}
 TEACHER_IDENTITY_CANONICAL_IDS = {"tchr_zara": "tchr_franchette"}
 IDENTITY_CONFLICT_PROCTOR_OVERRIDES = {
 }
-ACCOMMODATION_PROCTOR_OVERRIDES = {
-    "exam_575": "tchr_keychell",
-}
-ACCOMMODATION_PROCTOR_REASONS = {
-    "exam_575": "SOPHIA_ANAS_DAY1_EARLY_RELEASE",
-}
+ACCOMMODATION_PROCTOR_OVERRIDES = {}
+ACCOMMODATION_PROCTOR_REASONS = {}
 FRANCHETTE_VACANT_PROCTOR_OVERRIDES = {}
 REQUESTED_NO_PROCTOR_EXAM_IDS = {
     # Keep K1 Husain Qur'an in the section schedule, but do not assign it to
@@ -1508,6 +1504,11 @@ def merge_previous_audit(audit, previous_audit, source_count):
             "teacher": "Teacher Ethel",
             "request": "Restore Grade 7 Anas Mathematics to her timetable and remove its overlap with the Grade 3 Zayd Filipino proctor duty",
             "result": "Teacher Ethel handles her own 120-minute Grade 7 Anas Mathematics exam; Teacher Wendelyn handles her own Grade 3 Zayd Filipino exam at the overlapping time",
+        },
+        {
+            "teacher": "Teacher Shirehan",
+            "request": "Remove the stale Teacher Keychelle proctor assignment from Grade 7 Anas Social Studies",
+            "result": "Teacher Shirehan handles her own Grade 7 Anas Social Studies exam with no separate proctor label or schedule conflict",
         },
     ]
     return audit
