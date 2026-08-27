@@ -38,8 +38,8 @@ def main():
     with open(os.path.join(BASE_DIR, "teacher_weekly_schedules.json"), encoding="utf-8") as handle:
         teacher_weekly = json.load(handle)
 
-    assert len(records) == 592, f"Expected 592 final exams, got {len(records)}"
-    assert Counter(record["duration_minutes"] for record in records) == Counter({60: 567, 120: 25})
+    assert len(records) == 594, f"Expected 594 final exams, got {len(records)}"
+    assert Counter(record["duration_minutes"] for record in records) == Counter({60: 569, 120: 25})
     assert all(record["slots_spanned"] == (2 if record["duration_minutes"] == 120 else 1) for record in records)
     assert len({record["id"] for record in records}) == len(records)
     assert all(record.get("gender", "") == correction.infer_gender(record) for record in records)
@@ -56,6 +56,13 @@ def main():
     subject_counts = Counter((record["section_id"], record["subject_id"]) for record in records)
     repeated_subjects = {key: count for key, count in subject_counts.items() if count > 1}
     assert repeated_subjects == {}
+
+    grade4_mapeh = [record for record in records if correction.is_monisa_grade4_mapeh(record)]
+    assert len(grade4_mapeh) == 7
+    assert {record["section_id"] for record in grade4_mapeh} == correction.MONISA_GRADE4_MAPEH_SECTION_IDS
+    assert all(record["teacher_id"] == "tchr_monisa" for record in grade4_mapeh)
+    assert all(record["teacher"] == "Teacher Monisa" for record in grade4_mapeh)
+    assert {record["modality"] for record in grade4_mapeh} == {"F2F", "ODL"}
 
     assert not any(correction.subject_key(record["subject"]) == "research_consultation" for record in records)
     assert not any(correction.subject_key(record["subject"]) == "aral_math" for record in records)
@@ -754,6 +761,7 @@ def main():
     for record in records:
         if (
             correction.subject_key(record["subject"]) == "oral_written"
+            or correction.is_monisa_grade4_mapeh(record)
             or (
                 record["grade_level"] in {"Kinder 1", "Kinder 2"}
                 and correction.subject_key(record["subject"]) == "circle_time_1"
@@ -784,6 +792,8 @@ def main():
         for index, left in enumerate(teacher_records):
             for right in teacher_records[index + 1:]:
                 if not overlaps(left, right):
+                    continue
+                if correction.is_allowed_monisa_grade4_mapeh_merge(left, right):
                     continue
                 teacher_conflicts.append((left["id"], right["id"]))
     assert not teacher_conflicts, f"Teacher conflicts: {teacher_conflicts[:10]}"
@@ -845,11 +855,11 @@ def main():
     assert workbook.active.max_row == len(records) + 1
     workbook.close()
 
-    print("PASS: 592 official exam records")
-    print("PASS: 567 x 60-minute and 25 x 120-minute exams")
+    print("PASS: 594 official exam records")
+    print("PASS: 569 x 60-minute and 25 x 120-minute exams")
     print("PASS: all requested removals, additions, moves, and teacher corrections")
     print("PASS: exact official section+subject teacher linkage")
-    print("PASS: zero teacher, section, and grade/modality/section/gender cohort conflicts")
+    print("PASS: zero section/cohort conflicts and zero teacher conflicts outside approved merged Grade 4 ODL MAPEH sessions")
     print("PASS: JSON, JS source, options, teacher tracking, CSV, and XLSX synchronized")
 
 

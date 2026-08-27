@@ -408,6 +408,14 @@
     {
       "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
       "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+      "subject": "MAPEH"
     }
   ],
   "teacher_relinks": [
@@ -926,6 +934,36 @@
       "subject": "Makabansa",
       "from": "",
       "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 4 (FACE TO FACE)",
+      "subject": "MAPEH",
+      "from": "Teacher Halnaisa",
+      "to": "Teacher Monisa"
+    },
+    {
+      "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+      "subject": "MAPEH",
+      "from": "Teacher Halnaisa",
+      "to": "Teacher Monisa"
+    },
+    {
+      "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+      "subject": "MAPEH",
+      "from": "Teacher Halnaisa",
+      "to": "Teacher Monisa"
+    },
+    {
+      "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+      "subject": "MAPEH",
+      "from": "Teacher Halnaisa",
+      "to": "Teacher Monisa"
+    },
+    {
+      "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+      "subject": "MAPEH",
+      "from": "Teacher Halnaisa",
+      "to": "Teacher Monisa"
     }
   ],
   "unresolved_official_teacher_links": [
@@ -2538,6 +2576,87 @@
       "from_start_m": 830,
       "to_day": 1,
       "to_start_m": 910
+    },
+    {
+      "id": "exam_586",
+      "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+      "subject": "MAPEH",
+      "from_day": 1,
+      "from_start_m": 830,
+      "to_day": 4,
+      "to_start_m": 760
+    },
+    {
+      "id": "exam_153",
+      "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+      "subject": "Language",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 1,
+      "to_start_m": 1050
+    },
+    {
+      "id": "exam_197",
+      "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+      "subject": "TLE",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 3,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_163",
+      "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+      "subject": "Makabansa",
+      "from_day": 2,
+      "from_start_m": 1050,
+      "to_day": 1,
+      "to_start_m": 1050
+    },
+    {
+      "id": "exam_198",
+      "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+      "subject": "GMRC",
+      "from_day": 2,
+      "from_start_m": 1050,
+      "to_day": 2,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_339",
+      "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+      "subject": "TLE",
+      "from_day": 3,
+      "from_start_m": 980,
+      "to_day": 4,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_588",
+      "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+      "subject": "MAPEH",
+      "from_day": 3,
+      "from_start_m": 980,
+      "to_day": 2,
+      "to_start_m": 1050
+    },
+    {
+      "id": "exam_477",
+      "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+      "subject": "GMRC",
+      "from_day": 4,
+      "from_start_m": 760,
+      "to_day": 1,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_478",
+      "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+      "subject": "Araling Panlipunan",
+      "from_day": 4,
+      "from_start_m": 760,
+      "to_day": 2,
+      "to_start_m": 910
     }
   ],
   "suppressed_non_normylah_mapeh_proctors": [
@@ -2698,9 +2817,9 @@
       "result": "Teacher Shirehan handles her own Grade 7 Anas Social Studies exam with no separate proctor label or schedule conflict"
     }
   ],
-  "final_exam_count": 592,
+  "final_exam_count": 594,
   "duration_counts": {
-    "60": 567,
+    "60": 569,
     "120": 25
   },
   "teacher_count": 50
