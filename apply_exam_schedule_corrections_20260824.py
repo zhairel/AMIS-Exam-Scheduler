@@ -186,7 +186,7 @@ MOHAYMEN_MAPEH_SECTION_IDS = {
     "sec_grade_9_10_girls_face_to_face",
 }
 GRADE4_MAPEH_TEACHER_BY_SECTION_ID = {
-    "sec_grade_4_face_to_face": "Teacher Monisa",
+    "sec_grade_4_face_to_face": "Teacher Halnaisa",
     "sec_grade_4_abdur_rahman_ibn_awf_1st_shift": "Teacher Halnaisa",
     "sec_grade_4_hakim_ibn_hazm_1st_shift": "Teacher Halnaisa",
     "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix": "Teacher Zuhora",
@@ -981,8 +981,8 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
             additions.append({"section": section["section_name"], "subject": "Mabisang Komunikasyon"})
 
     # Apply the confirmed Grade 4 MAPEH subject ownership for F2F and both ODL
-    # shifts. The F2F assignment remains with Teacher Monisa; the six named ODL
-    # sections are split between Teacher Halnaisa and Teacher Zuhora.
+    # shifts. Teacher Halnaisa handles F2F plus four named ODL sections, while
+    # Teacher Zuhora handles the Usayd and Hassan ODL sections.
     for section in class_sections:
         teacher = GRADE4_MAPEH_TEACHER_BY_SECTION_ID.get(section.get("section_id"))
         if not teacher:
