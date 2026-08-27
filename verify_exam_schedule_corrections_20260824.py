@@ -57,11 +57,17 @@ def main():
     repeated_subjects = {key: count for key, count in subject_counts.items() if count > 1}
     assert repeated_subjects == {}
 
-    grade4_mapeh = [record for record in records if correction.is_monisa_grade4_mapeh(record)]
+    grade4_mapeh = [record for record in records if correction.is_grade4_mapeh(record)]
     assert len(grade4_mapeh) == 7
-    assert {record["section_id"] for record in grade4_mapeh} == correction.MONISA_GRADE4_MAPEH_SECTION_IDS
-    assert all(record["teacher_id"] == "tchr_monisa" for record in grade4_mapeh)
-    assert all(record["teacher"] == "Teacher Monisa" for record in grade4_mapeh)
+    assert {record["section_id"] for record in grade4_mapeh} == correction.GRADE4_MAPEH_SECTION_IDS
+    expected_grade4_mapeh_teachers = {
+        section_id: correction.canonical_teacher(teacher)
+        for section_id, teacher in correction.GRADE4_MAPEH_TEACHER_BY_SECTION_ID.items()
+    }
+    assert {
+        record["section_id"]: (record["teacher"], record["teacher_id"])
+        for record in grade4_mapeh
+    } == expected_grade4_mapeh_teachers
     assert {record["modality"] for record in grade4_mapeh} == {"F2F", "ODL"}
 
     assert not any(correction.subject_key(record["subject"]) == "research_consultation" for record in records)
@@ -761,7 +767,7 @@ def main():
     for record in records:
         if (
             correction.subject_key(record["subject"]) == "oral_written"
-            or correction.is_monisa_grade4_mapeh(record)
+            or correction.is_grade4_mapeh(record)
             or (
                 record["grade_level"] in {"Kinder 1", "Kinder 2"}
                 and correction.subject_key(record["subject"]) == "circle_time_1"
@@ -793,7 +799,7 @@ def main():
             for right in teacher_records[index + 1:]:
                 if not overlaps(left, right):
                     continue
-                if correction.is_allowed_monisa_grade4_mapeh_merge(left, right):
+                if correction.is_allowed_grade4_mapeh_merge(left, right):
                     continue
                 teacher_conflicts.append((left["id"], right["id"]))
     assert not teacher_conflicts, f"Teacher conflicts: {teacher_conflicts[:10]}"

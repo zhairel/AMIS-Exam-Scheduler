@@ -185,15 +185,16 @@ MOHAYMEN_MAPEH_SECTION_IDS = {
     "sec_grade_9_10_boys_face_to_face",
     "sec_grade_9_10_girls_face_to_face",
 }
-MONISA_GRADE4_MAPEH_SECTION_IDS = {
-    "sec_grade_4_face_to_face",
-    "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
-    "sec_grade_4_hakim_ibn_hazm_1st_shift",
-    "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix",
-    "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
-    "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
-    "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix",
+GRADE4_MAPEH_TEACHER_BY_SECTION_ID = {
+    "sec_grade_4_face_to_face": "Teacher Monisa",
+    "sec_grade_4_abdur_rahman_ibn_awf_1st_shift": "Teacher Halnaisa",
+    "sec_grade_4_hakim_ibn_hazm_1st_shift": "Teacher Halnaisa",
+    "sec_grade_4_usayd_ibn_hudhayr_1st_shift_mix": "Teacher Zuhora",
+    "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift": "Teacher Halnaisa",
+    "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift": "Teacher Halnaisa",
+    "sec_grade_4_hassan_ibn_thabit_2nd_shift_mix": "Teacher Zuhora",
 }
+GRADE4_MAPEH_SECTION_IDS = set(GRADE4_MAPEH_TEACHER_BY_SECTION_ID)
 MOHAYMEN_PE12_SECTION_IDS = {
     "sec_grade_12_abu_musa_al_ashari",  # ODL
     "sec_grade_12_suhayb_ar_rumi",      # F2F
@@ -285,18 +286,18 @@ def subject_key(value):
     return re.sub(r"[^a-z0-9]+", "_", s).strip("_")
 
 
-def is_monisa_grade4_mapeh(record):
+def is_grade4_mapeh(record):
     return (
-        record.get("section_id") in MONISA_GRADE4_MAPEH_SECTION_IDS
+        record.get("section_id") in GRADE4_MAPEH_SECTION_IDS
         and subject_key(record.get("subject")) == "mapeh"
     )
 
 
-def is_allowed_monisa_grade4_mapeh_merge(left, right):
+def is_allowed_grade4_mapeh_merge(left, right):
     """Allow same-shift ODL Grade 4 MAPEH sections to share one live session."""
     return (
-        is_monisa_grade4_mapeh(left)
-        and is_monisa_grade4_mapeh(right)
+        is_grade4_mapeh(left)
+        and is_grade4_mapeh(right)
         and clean(left.get("shift")) == clean(right.get("shift"))
         and "ODL" in clean(left.get("shift")).upper()
     )
@@ -979,13 +980,14 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
         if ensure_subject(records, section["section_id"], "Mabisang Komunikasyon", "Teacher Nadzra"):
             additions.append({"section": section["section_name"], "subject": "Mabisang Komunikasyon"})
 
-    # Teacher Monisa handles MAPEH for every Grade 4 section, covering F2F
-    # and both ODL shifts. Restore the two missing rows and correct the five
-    # rows that were linked to another teacher.
+    # Apply the confirmed Grade 4 MAPEH subject ownership for F2F and both ODL
+    # shifts. The F2F assignment remains with Teacher Monisa; the six named ODL
+    # sections are split between Teacher Halnaisa and Teacher Zuhora.
     for section in class_sections:
-        if section.get("section_id") not in MONISA_GRADE4_MAPEH_SECTION_IDS:
+        teacher = GRADE4_MAPEH_TEACHER_BY_SECTION_ID.get(section.get("section_id"))
+        if not teacher:
             continue
-        if ensure_subject(records, section["section_id"], "MAPEH", "Teacher Monisa"):
+        if ensure_subject(records, section["section_id"], "MAPEH", teacher):
             additions.append({"section": section["section_name"], "subject": "MAPEH"})
 
     # Clarified items 22, 25, and 26: these five Grade 5 sections need
@@ -1017,8 +1019,8 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
     unresolved = []
     for record in records:
         official = (
-            canonical_teacher("Teacher Monisa")
-            if is_monisa_grade4_mapeh(record)
+            canonical_teacher(GRADE4_MAPEH_TEACHER_BY_SECTION_ID[record["section_id"]])
+            if is_grade4_mapeh(record)
             else pick_official_teacher(record, official_lookup)
         )
         if official:
@@ -1261,7 +1263,7 @@ def solve_minimal_changes(records):
             left_record = records[left_index]
             for right_index in teacher_records[left_pos + 1:]:
                 right_record = records[right_index]
-                if is_allowed_monisa_grade4_mapeh_merge(left_record, right_record):
+                if is_allowed_grade4_mapeh_merge(left_record, right_record):
                     continue
                 for left_candidate_index, left_candidate in enumerate(candidates_by_record[left_index]):
                     for right_candidate_index, right_candidate in enumerate(candidates_by_record[right_index]):
