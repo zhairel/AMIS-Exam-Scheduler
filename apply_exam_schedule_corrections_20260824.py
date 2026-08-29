@@ -113,10 +113,6 @@ ABDUL_KARIM_EXPLICIT_PROCTOR_LABEL_EXAM_IDS = {
     "exam_13", "exam_24", "exam_160", "exam_208", "exam_309", "exam_315",
 }
 SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS = {
-    "exam_594",  # Grade 6 F2F
-    "exam_595",  # Grade 6 Abdullah
-    "exam_596",  # Grade 6 Abbas
-    "exam_597",  # Grade 6 Khaleed
     "exam_549",  # Grade 9 Abu Dharr
 }
 ALL_SUPPRESSED_PROCTOR_IDS = (
@@ -158,9 +154,10 @@ EXAM_TEACHER_OVERRIDES = {
     "exam_466": "Teacher Franchette Zarah M. Ranain",
 }
 
-# Grade 3 Makabansa is restored to Teacher Franchette above. These Grade 6
-# MAPEH exams remain vacant until an admin selects the correct subject teacher.
-FRANCHETTE_VACANT_SUBJECT_EXAM_IDS = {
+# Teacher Franchette's Grade 6 MAPEH assignment has now been confirmed for
+# F2F and the Abdullah, Abbas, and Khaleed ODL sections.
+FRANCHETTE_VACANT_SUBJECT_EXAM_IDS = set()
+FRANCHETTE_GRADE6_MAPEH_EXAM_IDS = {
     "exam_594", "exam_595", "exam_596", "exam_597",
 }
 FRANCHETTE_GRADE3_MAKABANSA_EXAM_IDS = {
@@ -487,8 +484,11 @@ def apply_subject_teacher_status(records):
                 record["display_as_proctor_duty"] = True
             else:
                 record.pop("display_as_proctor_duty", None)
-            if record.get("id") in FRANCHETTE_GRADE3_MAKABANSA_EXAM_IDS:
-                # This is restored subject ownership, not historical or
+            if record.get("id") in (
+                FRANCHETTE_GRADE3_MAKABANSA_EXAM_IDS
+                | FRANCHETTE_GRADE6_MAPEH_EXAM_IDS
+            ):
+                # These are confirmed subject assignments, not historical or
                 # substitute-proctor coverage. Remove stale vacancy metadata.
                 record.pop("former_subject_teacher", None)
                 record.pop("former_subject_teacher_id", None)
@@ -557,10 +557,8 @@ def weekly_blocks_by_teacher(teacher_weekly):
         resolved_id = canonical_teacher_identity_id(
             source_teacher_id
         )
-        # tchr_zara is the duplicate identity formerly merged into Franchette.
-        # Its Grade 3 Makabansa and Grade 6 MAPEH rows are outside Franchette's
-        # confirmed official scope (MAPEH Grades 7–8 only), so they must not
-        # create false availability conflicts for her exam-proctor duties.
+        # tchr_zara is a duplicate identity merged into Franchette. Ignore its
+        # duplicate weekly blocks so the same person is not counted twice.
         if source_teacher_id == "tchr_zara" and resolved_id == "tchr_franchette":
             continue
         for period in teacher.get("periods") or []:
@@ -833,6 +831,8 @@ def pick_official_teacher(record, official_lookup):
         return canonical_teacher("Ustadha Hainur")
     if key == "mabisang_komunikasyon":
         return canonical_teacher("Teacher Nadzra")
+    if key == "mapeh" and record.get("section_id") in FRANCHETTE_GRADE6_MAPEH_SECTION_IDS:
+        return canonical_teacher("Teacher Franchette Zarah M. Ranain")
     if key == "mapeh" and record.get("section_id") in MOHAYMEN_MAPEH_SECTION_IDS:
         return canonical_teacher("Sir Mohaymen")
     if key == "pe_12" and record.get("section_id") in MOHAYMEN_PE12_SECTION_IDS:
@@ -1004,6 +1004,19 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
         if not teacher:
             continue
         if ensure_subject(records, section["section_id"], "MAPEH", teacher):
+            additions.append({"section": section["section_name"], "subject": "MAPEH"})
+
+    # Teacher Franchette handles Grade 6 MAPEH for F2F and the Abdullah,
+    # Abbas, and Khaleed ODL sections. Dihya is intentionally not included.
+    for section in class_sections:
+        if section.get("section_id") not in FRANCHETTE_GRADE6_MAPEH_SECTION_IDS:
+            continue
+        if ensure_subject(
+            records,
+            section["section_id"],
+            "MAPEH",
+            "Teacher Franchette Zarah M. Ranain",
+        ):
             additions.append({"section": section["section_name"], "subject": "MAPEH"})
 
     # Grade 9, Grade 10, and combined Grade 9 & 10 MAPEH loads belong to

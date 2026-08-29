@@ -1006,28 +1006,36 @@
       "subject": "MAPEH",
       "from": "Teacher Monisa",
       "to": "Teacher Halnaisa"
+    },
+    {
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "MAPEH",
+      "from": "",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE  6  FACE TO FACE",
+      "subject": "MAPEH",
+      "from": "",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+      "subject": "MAPEH",
+      "from": "",
+      "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+      "subject": "MAPEH",
+      "from": "",
+      "to": "Teacher Franchette Zarah M. Ranain"
     }
   ],
   "unresolved_official_teacher_links": [
     {
-      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
-      "subject": "MAPEH"
-    },
-    {
       "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
       "subject": "Qur'an"
-    },
-    {
-      "section": "GRADE  6  FACE TO FACE",
-      "subject": "MAPEH"
-    },
-    {
-      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
-      "subject": "MAPEH"
-    },
-    {
-      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
-      "subject": "MAPEH"
     }
   ],
   "known_sections": 64,
@@ -2699,37 +2707,36 @@
       "from_start_m": 760,
       "to_day": 2,
       "to_start_m": 910
+    },
+    {
+      "id": "exam_597",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "MAPEH",
+      "from_day": 1,
+      "from_start_m": 910,
+      "to_day": 3,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_370",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 1,
+      "from_start_m": 980,
+      "to_day": 3,
+      "to_start_m": 1050
+    },
+    {
+      "id": "exam_371",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "Math",
+      "from_day": 3,
+      "from_start_m": 980,
+      "to_day": 1,
+      "to_start_m": 910
     }
   ],
   "suppressed_non_normylah_mapeh_proctors": [
-    {
-      "exam_id": "exam_597",
-      "subject": "MAPEH",
-      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
-      "former_proctor": "",
-      "former_proctor_id": ""
-    },
-    {
-      "exam_id": "exam_594",
-      "subject": "MAPEH",
-      "section": "GRADE  6  FACE TO FACE",
-      "former_proctor": "",
-      "former_proctor_id": ""
-    },
-    {
-      "exam_id": "exam_595",
-      "subject": "MAPEH",
-      "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
-      "former_proctor": "",
-      "former_proctor_id": ""
-    },
-    {
-      "exam_id": "exam_596",
-      "subject": "MAPEH",
-      "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
-      "former_proctor": "",
-      "former_proctor_id": ""
-    },
     {
       "exam_id": "exam_549",
       "subject": "MAPEH",
