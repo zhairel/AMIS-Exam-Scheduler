@@ -38,8 +38,8 @@ def main():
     with open(os.path.join(BASE_DIR, "teacher_weekly_schedules.json"), encoding="utf-8") as handle:
         teacher_weekly = json.load(handle)
 
-    assert len(records) == 594, f"Expected 594 final exams, got {len(records)}"
-    assert Counter(record["duration_minutes"] for record in records) == Counter({60: 569, 120: 25})
+    assert len(records) == 595, f"Expected 595 final exams, got {len(records)}"
+    assert Counter(record["duration_minutes"] for record in records) == Counter({60: 570, 120: 25})
     assert all(record["slots_spanned"] == (2 if record["duration_minutes"] == 120 else 1) for record in records)
     assert len({record["id"] for record in records}) == len(records)
     assert all(record.get("gender", "") == correction.infer_gender(record) for record in records)
@@ -910,7 +910,7 @@ def main():
     assert workbook.active.max_row == len(records) + 1
     workbook.close()
 
-    print("PASS: 594 official exam records")
+    print("PASS: 595 official exam records")
     print("PASS: 569 x 60-minute and 25 x 120-minute exams")
     print("PASS: all requested removals, additions, moves, and teacher corrections")
     print("PASS: exact official section+subject teacher linkage")

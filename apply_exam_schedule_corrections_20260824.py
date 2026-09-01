@@ -1026,7 +1026,7 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
             additions.append({"section": section["section_name"], "subject": "MAPEH"})
 
     # Teacher Franchette handles Grade 6 MAPEH for F2F and the Abdullah,
-    # Abbas, and Khaleed ODL sections. Dihya is intentionally not included.
+    # Abbas, and Khaleed ODL sections.
     for section in class_sections:
         if section.get("section_id") not in FRANCHETTE_GRADE6_MAPEH_SECTION_IDS:
             continue
@@ -1037,6 +1037,12 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
             "Teacher Franchette Zarah M. Ranain",
         ):
             additions.append({"section": section["section_name"], "subject": "MAPEH"})
+
+    # Grade 6 Dihya MAPEH belongs to Teacher Zuhora
+    for section in class_sections:
+        if section.get("section_id") == "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls":
+            if ensure_subject(records, section["section_id"], "MAPEH", "Teacher Zuhora"):
+                additions.append({"section": section["section_name"], "subject": "MAPEH"})
 
     # Grade 9, Grade 10, and combined Grade 9 & 10 MAPEH loads belong to
     # Sir Mohaymen according to the official weekly class schedule.
@@ -1147,6 +1153,9 @@ def fixed_position(record):
     # Sunday 04:20–05:20 PM ODL slot so the conflict cannot return on rebuild.
     if record.get("id") == "exam_597":
         return 3, 980
+    # Teacher requested Grade 6 Dihya MAPEH on the last day, last period (Day 4 at 05:30 PM - 06:30 PM)
+    if section_contains(record, "GRADE 6", "DIHYA") and subject_key(record["subject"]) == "mapeh":
+        return 4, 1050
     # Keep Suhayb Biology on its requested Wednesday slot. Grade 11 F2F Biology
     # may move when needed so the shared official teacher is never double-booked.
     if is_fixed_suhayb_biology(record):
