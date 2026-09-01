@@ -1434,7 +1434,7 @@ html, body {
                 <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
                     ${isAutomaticProctorCoverage ? `
-                      <span class="cell-proctor-label">PROCTOR</span>
+                      <span class="cell-proctor-label">PROCTOR - ${esc(exam.proctor || exam.teacher)}</span>
                       <span class="cell-subject-sec">${esc(exam.subject)}</span>
                       <span class="cell-section-name">${esc(cleanSec)}</span>
                       ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}

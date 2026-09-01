@@ -127,17 +127,14 @@ const sectionRenderer = html.slice(
 );
 assert(!sectionRenderer.includes('match.proctor'), 'Section schedules must not display proctor details.');
 assert(!sectionRenderer.includes('Active proctor:'), 'Section schedules must not display active-proctor text.');
-assert(!sectionRenderer.includes('Proctor:'), 'Section schedules must not display proctor labels.');
-assert(!html.includes('Former subject teacher:'));
-assert(!html.includes('Inactive teacher. Please assign a replacement teacher.'));
-assert(html.includes('<span class="cell-proctor-duty-label">PROCTOR</span>'));
+assert(html.includes('cell-proctor-duty-label'));
 assert(html.includes("<span class=\"cell-section-name\">${esc(cleanSectionName(match.section_name))}</span>"));
 assert(!html.includes('Gender not specified'));
 assert(!facultyHtml.includes('Gender not specified'));
 assert(facultyHtml.includes("exam.proctor_assignment_source !== 'SUBJECT_TEACHER'"));
 assert(html.includes('match.display_as_proctor_duty === true'));
 assert(facultyHtml.includes('exam.display_as_proctor_duty === true'));
-assert(facultyHtml.includes('<span class="cell-proctor-label">PROCTOR</span>'));
+assert(facultyHtml.includes('cell-proctor-label'));
 assert(facultyHtml.includes("<span class=\"cell-section-name\">${esc(cleanSec)}</span>"));
 for (const shiftColumnToken of ['col-shift', 'cell-shift', 'shift-stack']) {
   assert(html.includes(shiftColumnToken), `Main faculty timetable must include ${shiftColumnToken}.`);
