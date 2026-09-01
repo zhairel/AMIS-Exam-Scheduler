@@ -2873,6 +2873,33 @@
       "from_start_m": 760,
       "to_day": 3,
       "to_start_m": 910
+    },
+    {
+      "id": "exam_381",
+      "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+      "subject": "Filipino",
+      "from_day": 3,
+      "from_start_m": 480,
+      "to_day": 3,
+      "to_start_m": 625
+    },
+    {
+      "id": "exam_382",
+      "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+      "subject": "Qur'an",
+      "from_day": 3,
+      "from_start_m": 540,
+      "to_day": 3,
+      "to_start_m": 480
+    },
+    {
+      "id": "exam_380",
+      "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+      "subject": "English",
+      "from_day": 3,
+      "from_start_m": 625,
+      "to_day": 3,
+      "to_start_m": 540
     }
   ],
   "suppressed_non_normylah_mapeh_proctors": [
