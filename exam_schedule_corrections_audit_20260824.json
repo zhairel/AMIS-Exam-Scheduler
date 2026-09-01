@@ -2900,6 +2900,24 @@
       "from_start_m": 625,
       "to_day": 3,
       "to_start_m": 540
+    },
+    {
+      "id": "exam_96",
+      "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+      "subject": "Arabic",
+      "from_day": 1,
+      "from_start_m": 480,
+      "to_day": 3,
+      "to_start_m": 480
+    },
+    {
+      "id": "exam_382",
+      "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+      "subject": "Qur'an",
+      "from_day": 3,
+      "from_start_m": 480,
+      "to_day": 1,
+      "to_start_m": 480
     }
   ],
   "suppressed_non_normylah_mapeh_proctors": [

@@ -1191,7 +1191,7 @@ def fixed_position(record):
         if subject_key(record["subject"]) == "mapeh":
             return 4, 980
     if section_contains(record, "GRADE 9 & 10", "GIRLS", "FACE TO FACE") and subject_key(record["subject"]) == "quran":
-        return 3, 480
+        return 1, 480
     return None
 
 
