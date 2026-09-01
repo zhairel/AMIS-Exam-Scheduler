@@ -1009,7 +1009,7 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
         if ensure_subject(records, section["section_id"], "MAPEH", teacher):
             additions.append({"section": section["section_name"], "subject": "MAPEH"})
 
-    # Confirmed Grade 5 MAPEH loads: these seven sections need
+    # Clarified items 22, 25, and 26: these five Grade 5 sections need
     # MAPEH under the exact teacher assigned in the official class schedule.
     requested_grade5_mapeh = {
         "sec_grade_5_face_to_face": "Teacher Keychelle",
@@ -1017,8 +1017,6 @@ def apply_content_corrections(source_records, class_sections, official_lookup):
         "sec_grade_5_muhammad_ibn_maslamah_1st_shift": "Teacher Keychelle",
         "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift": "Teacher Norhydie",
         "sec_grade_5_al_harith_bin_awf_2nd_shift": "Teacher Norhydie",
-        "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift": "Teacher Saimonah",
-        "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix": "Teacher Saimonah",
     }
     for section in class_sections:
         teacher = requested_grade5_mapeh.get(section.get("section_id"))

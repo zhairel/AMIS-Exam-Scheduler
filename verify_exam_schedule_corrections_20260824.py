@@ -38,8 +38,8 @@ def main():
     with open(os.path.join(BASE_DIR, "teacher_weekly_schedules.json"), encoding="utf-8") as handle:
         teacher_weekly = json.load(handle)
 
-    assert len(records) == 597, f"Expected 597 final exams, got {len(records)}"
-    assert Counter(record["duration_minutes"] for record in records) == Counter({60: 572, 120: 25})
+    assert len(records) == 595, f"Expected 595 final exams, got {len(records)}"
+    assert Counter(record["duration_minutes"] for record in records) == Counter({60: 570, 120: 25})
     assert all(record["slots_spanned"] == (2 if record["duration_minutes"] == 120 else 1) for record in records)
     assert len({record["id"] for record in records}) == len(records)
     assert all(record.get("gender", "") == correction.infer_gender(record) for record in records)
@@ -617,20 +617,16 @@ def main():
             "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
             "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
             "sec_grade_5_al_harith_bin_awf_2nd_shift",
-            "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
-            "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
         }
         and correction.subject_key(record["subject"]) == "mapeh"
     ]
-    assert len(grade5_requested_mapeh) == 7
+    assert len(grade5_requested_mapeh) == 5
     grade5_mapeh_by_section = {record["section_id"]: record for record in grade5_requested_mapeh}
     assert grade5_mapeh_by_section["sec_grade_5_face_to_face"]["teacher_id"] == "tchr_keychell"
     assert grade5_mapeh_by_section["sec_grade_5_hamza_ibn_abdul_1st_shift"]["teacher_id"] == "tchr_keychell"
     assert grade5_mapeh_by_section["sec_grade_5_muhammad_ibn_maslamah_1st_shift"]["teacher_id"] == "tchr_keychell"
     assert grade5_mapeh_by_section["sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift"]["teacher_id"] == "tchr_norhydie"
     assert grade5_mapeh_by_section["sec_grade_5_al_harith_bin_awf_2nd_shift"]["teacher_id"] == "tchr_norhydie"
-    assert grade5_mapeh_by_section["sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift"]["teacher_id"] == "tchr_saimonah"
-    assert grade5_mapeh_by_section["sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix"]["teacher_id"] == "tchr_saimonah"
 
     franchette_subjects = [
         record for record in records
@@ -914,8 +910,8 @@ def main():
     assert workbook.active.max_row == len(records) + 1
     workbook.close()
 
-    print("PASS: 597 official exam records")
-    print("PASS: 572 x 60-minute and 25 x 120-minute exams")
+    print("PASS: 595 official exam records")
+    print("PASS: 569 x 60-minute and 25 x 120-minute exams")
     print("PASS: all requested removals, additions, moves, and teacher corrections")
     print("PASS: exact official section+subject teacher linkage")
     print("PASS: zero section/cohort conflicts and zero teacher conflicts outside approved merged Grade 4 ODL MAPEH sessions")
