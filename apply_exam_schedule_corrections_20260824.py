@@ -95,8 +95,17 @@ NORMYLAH_MANUAL_PROCTOR_OVERRIDES = {
     "exam_516": "tchr_mohaymen",
 }
 NORMYLAH_AUTO_PROCTOR_EXCLUDED_IDS = {"tchr_ayah", "tchr_angeleni"}
-TEACHER_IDENTITY_CANONICAL_IDS = {"tchr_zara": "tchr_franchette"}
+TEACHER_IDENTITY_CANONICAL_IDS = {
+    "tchr_zara": "tchr_franchette",
+    "tchr_abdulwahab": "tchr_dipatuan",
+}
 IDENTITY_CONFLICT_PROCTOR_OVERRIDES = {
+}
+OFFICIAL_TEACHER_CONFLICT_PROCTOR_OVERRIDES = {
+    # Keep the official Elementary subject owners while assigning qualified
+    # ISAL coverage where those owners already have simultaneous exam duties.
+    "exam_285": "tchr_bustamante",  # K2 Abu Bakr Arabic; owner: Ustadh Silfah
+    "exam_298": "tchr_bustamante",  # Grade 1 Ali Arabic; owner: Ustadha Hainur
 }
 ACCOMMODATION_PROCTOR_OVERRIDES = {}
 ACCOMMODATION_PROCTOR_REASONS = {}
@@ -130,17 +139,15 @@ HAINUR_K1_QURAN_WARNING = (
     "Please assign the correct subject teacher."
 )
 
-# The official three-period ODL grids cannot hold every Hainur/Silfah duty
-# without double-booking them. These seven same-subject faculty assignments provide
-# qualified exam coverage; all former Raslina loads remain with Ustadha Hainur.
+# Explicit personnel corrections that differ from the imported class timetable.
+# Keep subject ownership aligned with the official class timetable unless an
+# administrator has confirmed an exception here.
 EXAM_TEACHER_OVERRIDES = {
     "exam_3": "Ustadh Jaisam",          # Qur'an
     "exam_394": "Ustadha Hainur",       # Arabic transferred from Raslina
-    "exam_298": "Alim Mamonas",         # Arabic exam coverage
     "exam_427": "Alim Abdulwahab",     # Qur'an
     "exam_428": "Alim Dipatuan",       # Qur'an
     "exam_86": "Teacher Zuhora",        # GMRC
-    "exam_285": "Alim Mamonas",        # Arabic
     "exam_287": "Alim Abdul Karim",    # Arabic
     "exam_290": "Teacher Sitti Kauzar", # Circle Time 1
     # Teacher Wendelyn officially took over Filipino for Grade 3 Zayd after
@@ -516,6 +523,7 @@ def apply_identity_conflict_proctor_overrides(records):
     for record in records:
         proctor_id = (
             IDENTITY_CONFLICT_PROCTOR_OVERRIDES.get(record["id"])
+            or OFFICIAL_TEACHER_CONFLICT_PROCTOR_OVERRIDES.get(record["id"])
             or ACCOMMODATION_PROCTOR_OVERRIDES.get(record["id"])
         )
         if not proctor_id:
@@ -525,7 +533,14 @@ def apply_identity_conflict_proctor_overrides(records):
         record["proctor_id"] = proctor_id
         record["proctor_status"] = "ACTIVE_ASSIGNED"
         record["proctor_department"] = proctor.get("department", "Academic Faculty")
-        record["proctor_pool"] = "ACADEMIC_TEACHER_ONLY"
+        is_official_teacher_conflict = (
+            record["id"] in OFFICIAL_TEACHER_CONFLICT_PROCTOR_OVERRIDES
+        )
+        record["proctor_pool"] = (
+            "QUALIFIED_ISAL_FACULTY"
+            if is_official_teacher_conflict
+            else "ACADEMIC_TEACHER_ONLY"
+        )
         is_accommodation = record["id"] in ACCOMMODATION_PROCTOR_OVERRIDES
         record["proctor_assignment_source"] = (
             "TEACHER_ACCOMMODATION_COVERAGE"
@@ -536,7 +551,11 @@ def apply_identity_conflict_proctor_overrides(records):
         record["proctor_coverage_reason"] = (
             ACCOMMODATION_PROCTOR_REASONS[record["id"]]
             if is_accommodation
-            else "MOHAYMEN_EXISTING_PROCTOR_DUTY_CONFLICT"
+            else (
+                "OFFICIAL_SUBJECT_TEACHER_EXAM_CONFLICT"
+                if is_official_teacher_conflict
+                else "IDENTITY_MERGE_EXAM_CONFLICT"
+            )
         )
         assignments.append({
             "exam_id": record["id"],
@@ -1123,6 +1142,11 @@ def fixed_position(record):
     # the section's open Wednesday 03:10 PM period.
     if record.get("id") == "exam_173":
         return 1, 910
+    # Teacher Franchette confirmed that Grade 6 Khaleed MAPEH conflicts with
+    # Ammar Makabansa on Wednesday at 03:10 PM. Lock Khaleed into her available
+    # Sunday 04:20–05:20 PM ODL slot so the conflict cannot return on rebuild.
+    if record.get("id") == "exam_597":
+        return 3, 980
     # Keep Suhayb Biology on its requested Wednesday slot. Grade 11 F2F Biology
     # may move when needed so the shared official teacher is never double-booked.
     if is_fixed_suhayb_biology(record):

@@ -86,6 +86,32 @@ assert(!/"subject": "Fil\d*"/.test(html), 'Faculty roster must display Filipino 
 const mergedIdentityRecords = records.filter(record => ['tchr_franchette','tchr_zara'].includes(record.teacher_id));
 assert(mergedIdentityRecords.every(record => record.subject_teacher === 'Teacher Franchette Zarah M. Ranain'));
 assert(!records.some(record => record.proctor_id === 'tchr_zara'), 'The duplicate Zara identity must never remain an active proctor ID.');
+const mergedAlimRecords = records.filter(record => ['tchr_dipatuan', 'tchr_abdulwahab'].includes(record.teacher_id));
+assert.strictEqual(mergedAlimRecords.length, 14, 'Dipatuan must own the combined 14-exam load.');
+assert(mergedAlimRecords.every(record => record.subject_teacher === 'Alim Dipatuan'));
+assert(!records.some(record => record.proctor_id === 'tchr_abdulwahab'), 'The duplicate Abdulwahab identity must never remain an active proctor ID.');
+assert(html.includes("new Set(['tchr_zara', 'tchr_abdulwahab'])"), 'Both duplicate faculty identities must be hidden from the roster.');
+assert(
+  !records.some(record =>
+    record.department === 'Elementary' &&
+    (record.teacher_id === 'tchr_mamonas' || record.proctor_id === 'tchr_mamonas')
+  ),
+  'Alim Mamonas must not own or proctor Kinder or Elementary exams.'
+);
+const franchetteKhaleedMapeh = records.find(record =>
+  record.id === 'exam_597' && record.subject_teacher_id === 'tchr_franchette'
+);
+const franchetteAmmarMakabansa = records.find(record => record.id === 'exam_173');
+assert.deepStrictEqual(
+  [franchetteKhaleedMapeh.day_number, franchetteKhaleedMapeh.start_m, franchetteKhaleedMapeh.end_m],
+  [3, 980, 1040],
+  'Franchette Grade 6 Khaleed MAPEH must stay on Sunday at 4:20 PM.'
+);
+assert.deepStrictEqual(
+  [franchetteAmmarMakabansa.day_number, franchetteAmmarMakabansa.start_m, franchetteAmmarMakabansa.end_m],
+  [1, 910, 970],
+  'Franchette Grade 3 Ammar Makabansa must stay on Wednesday at 3:10 PM.'
+);
 assert(html.includes("match.proctor_assignment_source !== 'SUBJECT_TEACHER'"));
 const sectionRenderer = html.slice(
   html.indexOf('// TAB 1: SECTION EXAM SCHEDULES'),

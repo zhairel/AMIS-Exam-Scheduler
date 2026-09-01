@@ -128,6 +128,18 @@ def main():
     assert merged_identity_records
     assert all(record["subject_teacher"] == merged_identity_name for record in merged_identity_records)
     assert not any(record["proctor_id"] == "tchr_zara" for record in records)
+    merged_alim_name = "Alim Dipatuan"
+    assert registry_by_id["tchr_dipatuan"]["canonical_name"] == merged_alim_name
+    assert registry_by_id["tchr_abdulwahab"]["same_person_as"] == "tchr_dipatuan"
+    assert correction.canonical_teacher("Alim Abdulwahab") == (merged_alim_name, "tchr_dipatuan")
+    assert correction.canonical_teacher("Alim Abdulawahab") == (merged_alim_name, "tchr_dipatuan")
+    merged_alim_records = [
+        record for record in records
+        if record["teacher_id"] in {"tchr_dipatuan", "tchr_abdulwahab"}
+    ]
+    assert merged_alim_records
+    assert all(record["subject_teacher"] == merged_alim_name for record in merged_alim_records)
+    assert not any(record["proctor_id"] == "tchr_abdulwahab" for record in records)
     for exam_id, proctor_id in correction.IDENTITY_CONFLICT_PROCTOR_OVERRIDES.items():
         record = next(item for item in records if item["id"] == exam_id)
         assert record["proctor_id"] == proctor_id
@@ -364,9 +376,13 @@ def main():
     ]
     for left_id, right_id in hainur_reported_pairs:
         left, right = by_id[left_id], by_id[right_id]
-        both_hainur = left["teacher_id"] == right["teacher_id"] == "tchr_hainur"
+        same_active_proctor = (
+            correction.effective_proctor_id(left)
+            and correction.effective_proctor_id(left)
+            == correction.effective_proctor_id(right)
+        )
         same_day_overlap = left["day_number"] == right["day_number"] and overlaps(left, right)
-        assert not (both_hainur and same_day_overlap), f"Unresolved Hainur conflict: {left_id} / {right_id}"
+        assert not (same_active_proctor and same_day_overlap), f"Unresolved proctor conflict: {left_id} / {right_id}"
 
     talha_arabic = by_id["exam_159"]
     amr_arabic = by_id["exam_161"]
@@ -374,7 +390,7 @@ def main():
     assert (amr_arabic["day_number"], amr_arabic["start_m"]) == (2, 830)
 
     hainur_records = [record for record in records if record["teacher_id"] == "tchr_hainur"]
-    assert len(hainur_records) == 19
+    assert len(hainur_records) == 20
     assert all(record["teacher"] == "Ustadha Hainur" for record in hainur_records)
     assert (by_id["exam_354"]["day_number"], by_id["exam_354"]["start_m"]) == (3, 830)
     assert (by_id["exam_62"]["day_number"], by_id["exam_62"]["start_m"]) == (1, 830)
@@ -392,7 +408,7 @@ def main():
     }
 
     silfah_records = [record for record in records if record["teacher_id"] == "tchr_silfah"]
-    assert len(silfah_records) == 20
+    assert len(silfah_records) == 21
     assert all(record["teacher"] == "Ustadh Silfah" for record in silfah_records)
     assert all(record["end_m"] <= 1050 for record in silfah_records), "Ustadha Silfah exceeds 5:30 PM"
 
@@ -496,17 +512,37 @@ def main():
 
     expected_exam_coverage = {
         "exam_3": "tchr_jaisam",
-        "exam_298": "tchr_mamonas",
+        "exam_298": "tchr_hainur",
         "exam_394": "tchr_hainur",
-        "exam_427": "tchr_abdulwahab",
+        "exam_427": "tchr_dipatuan",
         "exam_428": "tchr_dipatuan",
         "exam_86": "tchr_zuhora",
-        "exam_285": "tchr_mamonas",
+        "exam_285": "tchr_silfah",
         "exam_287": "tchr_abdul_karim",
         "exam_290": "tchr_sitti_kauzar",
     }
     for exam_id, teacher_id in expected_exam_coverage.items():
         assert by_id[exam_id]["teacher_id"] == teacher_id
+    assert not any(
+        (
+            record["teacher_id"] == "tchr_mamonas"
+            or record["proctor_id"] == "tchr_mamonas"
+        )
+        and record["department"] == "Elementary"
+        for record in records
+    )
+    assert by_id["exam_285"]["proctor_id"] == "tchr_bustamante"
+    assert by_id["exam_298"]["proctor_id"] == "tchr_bustamante"
+    assert all(
+        by_id[exam_id]["proctor_assignment_source"] == "SUBJECT_TEACHER_CONFLICT_COVERAGE"
+        for exam_id in {"exam_285", "exam_298"}
+    )
+    for exam_id in {"exam_285", "exam_298"}:
+        record = by_id[exam_id]
+        assert not any(
+            correction.intervals_overlap(record["start_m"], record["end_m"], start_m, end_m)
+            for start_m, end_m in weekly_blocks.get((record["proctor_id"], record["day_name"]), [])
+        ), f"Elementary Arabic coverage overlaps a weekly class: {exam_id}"
     assert not any(record["teacher_id"] == "tchr_raslina" for record in records)
     assert (
         by_id["exam_394"]["day_number"],
@@ -619,6 +655,24 @@ def main():
     assert all(record["proctor_assignment_source"] == "SUBJECT_TEACHER" for record in franchette_grade6_mapeh)
     assert all("former_subject_teacher_id" not in record for record in franchette_grade6_mapeh)
     assert correction.FRANCHETTE_VACANT_SUBJECT_EXAM_IDS == set()
+    franchette_khaleed_mapeh = next(
+        record for record in franchette_grade6_mapeh
+        if "KHALEED" in record["section_name"].upper()
+    )
+    franchette_ammar_makabansa = next(
+        record for record in records if record["id"] == "exam_173"
+    )
+    assert (
+        franchette_khaleed_mapeh["day_number"],
+        franchette_khaleed_mapeh["start_m"],
+        franchette_khaleed_mapeh["end_m"],
+    ) == (3, 980, 1040)
+    assert (
+        franchette_ammar_makabansa["day_number"],
+        franchette_ammar_makabansa["start_m"],
+        franchette_ammar_makabansa["end_m"],
+    ) == (1, 910, 970)
+    assert not overlaps(franchette_khaleed_mapeh, franchette_ammar_makabansa)
     suppressed_mapeh_proctors = [
         record for record in records
         if record["id"] in correction.SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS

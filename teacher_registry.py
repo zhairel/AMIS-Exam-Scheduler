@@ -30,10 +30,13 @@ TEACHER_REGISTRY = [
     },
     {
         "id": "tchr_abdulwahab",
-        "canonical_name": "Alim Abdulwahab",
+        "canonical_name": "Alim Dipatuan",
         "department": "ISAL Faculty",
         "title": "ISAL Teacher",
-        "aliases": ["alim abdulwahab", "abdulwahab", "alim wahab", "abdul wahab", "alim abdul wahab"]
+        "same_person_as": "tchr_dipatuan",
+        "duplicate_identity": True,
+        "automatic_proctor_eligible": False,
+        "aliases": ["alim abdulwahab", "alim abdulawahab", "abdulwahab", "abdulawahab", "alim wahab", "abdul wahab", "alim abdul wahab", "alim abdul awahab"]
     },
     {
         "id": "tchr_bustamante",
@@ -47,7 +50,7 @@ TEACHER_REGISTRY = [
         "canonical_name": "Alim Dipatuan",
         "department": "ISAL Faculty",
         "title": "ISAL Teacher",
-        "aliases": ["alim dipatuan", "dipatuan", "ustadh dipatuan", "ustadz dipatuan"]
+        "aliases": ["alim dipatuan", "dipatuan", "ustadh dipatuan", "ustadz dipatuan", "alim abdulwahab", "alim abdulawahab", "abdulwahab", "abdulawahab", "alim wahab", "abdul wahab", "alim abdul wahab", "alim abdul awahab"]
     },
     {
         "id": "tchr_ersahad",

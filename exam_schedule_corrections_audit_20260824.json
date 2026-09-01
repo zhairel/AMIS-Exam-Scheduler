@@ -1030,6 +1030,78 @@
       "subject": "MAPEH",
       "from": "",
       "to": "Teacher Franchette Zarah M. Ranain"
+    },
+    {
+      "section": "GRADE 11 (1ST SHIFT GIRLS)",
+      "subject": "Qur'an",
+      "from": "Alim Abdulwahab",
+      "to": "Alim Dipatuan"
+    },
+    {
+      "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+      "subject": "Qur'an",
+      "from": "Alim Abdulwahab",
+      "to": "Alim Dipatuan"
+    },
+    {
+      "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+      "subject": "Qur'an",
+      "from": "Alim Abdulwahab",
+      "to": "Alim Dipatuan"
+    },
+    {
+      "section": "GRADE 11 (2ND SHIFT BOYS)",
+      "subject": "Qur'an",
+      "from": "Alim Abdulwahab",
+      "to": "Alim Dipatuan"
+    },
+    {
+      "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+      "subject": "Qur'an",
+      "from": "Alim Abdulwahab",
+      "to": "Alim Dipatuan"
+    },
+    {
+      "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+      "subject": "Qur'an",
+      "from": "Alim Abdulwahab",
+      "to": "Alim Dipatuan"
+    },
+    {
+      "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+      "subject": "Qur'an",
+      "from": "Alim Abdulwahab",
+      "to": "Alim Dipatuan"
+    },
+    {
+      "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+      "subject": "Qur'an",
+      "from": "Alim Abdulwahab",
+      "to": "Alim Dipatuan"
+    },
+    {
+      "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+      "subject": "Qur'an",
+      "from": "Alim Abdulwahab",
+      "to": "Alim Dipatuan"
+    },
+    {
+      "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+      "subject": "Qur'an",
+      "from": "Alim Abdulwahab",
+      "to": "Alim Dipatuan"
+    },
+    {
+      "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+      "subject": "Arabic",
+      "from": "Alim Mamonas",
+      "to": "Ustadh Silfah"
+    },
+    {
+      "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+      "subject": "Arabic",
+      "from": "Alim Mamonas",
+      "to": "Ustadha Hainur"
     }
   ],
   "unresolved_official_teacher_links": [
@@ -1039,7 +1111,26 @@
     }
   ],
   "known_sections": 64,
-  "identity_merge_proctor_overrides": [],
+  "identity_merge_proctor_overrides": [
+    {
+      "exam_id": "exam_285",
+      "subject_teacher": "Ustadh Silfah",
+      "proctor": "Alim Bustamante",
+      "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+      "subject": "Arabic",
+      "day_number": 2,
+      "time": "01:30 PM – 02:30 PM"
+    },
+    {
+      "exam_id": "exam_298",
+      "subject_teacher": "Ustadha Hainur",
+      "proctor": "Alim Bustamante",
+      "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+      "subject": "Arabic",
+      "day_number": 3,
+      "time": "12:40 PM – 01:40 PM"
+    }
+  ],
   "inactive_teacher_proctor_assignments": [
     {
       "exam_id": "exam_30",
@@ -2734,6 +2825,24 @@
       "from_start_m": 980,
       "to_day": 1,
       "to_start_m": 910
+    },
+    {
+      "id": "exam_562",
+      "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "subject": "21st Lit.",
+      "from_day": 4,
+      "from_start_m": 760,
+      "to_day": 4,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_561",
+      "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+      "subject": "Qur'an",
+      "from_day": 4,
+      "from_start_m": 830,
+      "to_day": 4,
+      "to_start_m": 760
     }
   ],
   "suppressed_non_normylah_mapeh_proctors": [
@@ -2871,5 +2980,5 @@
     "60": 569,
     "120": 25
   },
-  "teacher_count": 50
+  "teacher_count": 49
 }
