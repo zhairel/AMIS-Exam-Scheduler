@@ -420,6 +420,14 @@
     {
       "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
       "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+      "subject": "MAPEH"
+    },
+    {
+      "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+      "subject": "MAPEH"
     }
   ],
   "teacher_relinks": [
@@ -2847,6 +2855,24 @@
       "from_start_m": 830,
       "to_day": 4,
       "to_start_m": 760
+    },
+    {
+      "id": "exam_318",
+      "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+      "subject": "English",
+      "from_day": 3,
+      "from_start_m": 910,
+      "to_day": 1,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_493",
+      "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+      "subject": "TLE",
+      "from_day": 4,
+      "from_start_m": 760,
+      "to_day": 3,
+      "to_start_m": 910
     }
   ],
   "suppressed_non_normylah_mapeh_proctors": [
@@ -2979,9 +3005,9 @@
       "result": "Teacher Shirehan handles her own Grade 7 Anas Social Studies exam with no separate proctor label or schedule conflict"
     }
   ],
-  "final_exam_count": 595,
+  "final_exam_count": 597,
   "duration_counts": {
-    "60": 570,
+    "60": 572,
     "120": 25
   },
   "teacher_count": 49

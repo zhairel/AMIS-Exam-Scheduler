@@ -112,6 +112,14 @@ assert.deepStrictEqual(
   [1, 910, 970],
   'Franchette Grade 3 Ammar Makabansa must stay on Wednesday at 3:10 PM.'
 );
+for (const sectionId of [
+  'sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift',
+  'sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix',
+]) {
+  const mapeh = records.find(record => record.section_id === sectionId && record.subject === 'MAPEH');
+  assert(mapeh, `${sectionId} must include its confirmed MAPEH exam.`);
+  assert.strictEqual(mapeh.subject_teacher_id, 'tchr_saimonah');
+}
 assert(html.includes("match.proctor_assignment_source !== 'SUBJECT_TEACHER'"));
 const sectionRenderer = html.slice(
   html.indexOf('// TAB 1: SECTION EXAM SCHEDULES'),
