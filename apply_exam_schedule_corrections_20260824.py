@@ -71,6 +71,7 @@ TEACHER_LATEST_END_M = {
 }
 TEACHER_DAY_LATEST_END_M = {
     ("tchr_sophia", 4): 990,
+    ("tchr_dipatuan", 3): 0,
 }
 HAINUR_DAY4_FIXED_POSITIONS = {
     "exam_436": (4, 760),
