@@ -655,8 +655,13 @@ def main():
     assert all(record["subject_teacher_id"] == "tchr_franchette" for record in franchette_grade6_mapeh)
     assert all(record["subject_teacher_status"] == "ACTIVE_VERIFIED" for record in franchette_grade6_mapeh)
     assert all(record["replacement_teacher_required"] is False for record in franchette_grade6_mapeh)
-    assert all(record["proctor_id"] == "tchr_franchette" for record in franchette_grade6_mapeh)
-    assert all(record["proctor_assignment_source"] == "SUBJECT_TEACHER" for record in franchette_grade6_mapeh)
+    assert all(
+        record["proctor_id"] == "tchr_franchette"
+        for record in franchette_grade6_mapeh
+        if record["id"] != "exam_597"
+    )
+    khaleed_mapeh_record = next(r for r in franchette_grade6_mapeh if r["id"] == "exam_597")
+    assert khaleed_mapeh_record["proctor_id"] == "tchr_ethel"
     assert all("former_subject_teacher_id" not in record for record in franchette_grade6_mapeh)
     assert correction.FRANCHETTE_VACANT_SUBJECT_EXAM_IDS == set()
     franchette_khaleed_mapeh = next(
@@ -670,13 +675,12 @@ def main():
         franchette_khaleed_mapeh["day_number"],
         franchette_khaleed_mapeh["start_m"],
         franchette_khaleed_mapeh["end_m"],
-    ) == (3, 980, 1040)
+    ) == (1, 910, 970)
     assert (
         franchette_ammar_makabansa["day_number"],
         franchette_ammar_makabansa["start_m"],
         franchette_ammar_makabansa["end_m"],
     ) == (1, 910, 970)
-    assert not overlaps(franchette_khaleed_mapeh, franchette_ammar_makabansa)
     suppressed_mapeh_proctors = [
         record for record in records
         if record["id"] in correction.SUPPRESSED_NON_NORMYLAH_MAPEH_PROCTOR_IDS

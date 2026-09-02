@@ -1141,6 +1141,15 @@
       "subject": "Arabic",
       "day_number": 3,
       "time": "12:40 PM – 01:40 PM"
+    },
+    {
+      "exam_id": "exam_597",
+      "subject_teacher": "Teacher Franchette Zarah M. Ranain",
+      "proctor": "Teacher Ethel",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "MAPEH",
+      "day_number": 3,
+      "time": "04:20 PM – 05:20 PM"
     }
   ],
   "inactive_teacher_proctor_assignments": [
@@ -2945,6 +2954,33 @@
       "from_start_m": 1050,
       "to_day": 4,
       "to_start_m": 1050
+    },
+    {
+      "id": "exam_371",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "Math",
+      "from_day": 1,
+      "from_start_m": 910,
+      "to_day": 3,
+      "to_start_m": 980
+    },
+    {
+      "id": "exam_597",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "MAPEH",
+      "from_day": 3,
+      "from_start_m": 980,
+      "to_day": 1,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_370",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "Qur'an",
+      "from_day": 3,
+      "from_start_m": 1050,
+      "to_day": 1,
+      "to_start_m": 980
     }
   ],
   "suppressed_non_normylah_mapeh_proctors": [

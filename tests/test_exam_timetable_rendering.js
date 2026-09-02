@@ -104,8 +104,13 @@ const franchetteKhaleedMapeh = records.find(record =>
 const franchetteAmmarMakabansa = records.find(record => record.id === 'exam_173');
 assert.deepStrictEqual(
   [franchetteKhaleedMapeh.day_number, franchetteKhaleedMapeh.start_m, franchetteKhaleedMapeh.end_m],
-  [3, 980, 1040],
-  'Franchette Grade 6 Khaleed MAPEH must stay on Sunday at 4:20 PM.'
+  [1, 910, 970],
+  'Franchette Grade 6 Khaleed MAPEH must stay on Wednesday at 3:10 PM.'
+);
+assert.strictEqual(
+  franchetteKhaleedMapeh.proctor_id,
+  'tchr_ethel',
+  'Grade 6 Khaleed MAPEH must be proctored by Teacher Ethel to cover Teacher Franchette Grade 3 Makabansa.'
 );
 assert.deepStrictEqual(
   [franchetteAmmarMakabansa.day_number, franchetteAmmarMakabansa.start_m, franchetteAmmarMakabansa.end_m],

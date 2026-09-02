@@ -104,9 +104,10 @@ IDENTITY_CONFLICT_PROCTOR_OVERRIDES = {
 }
 OFFICIAL_TEACHER_CONFLICT_PROCTOR_OVERRIDES = {
     # Keep the official Elementary subject owners while assigning qualified
-    # ISAL coverage where those owners already have simultaneous exam duties.
+    # coverage where those owners already have simultaneous exam duties.
     "exam_285": "tchr_bustamante",  # K2 Abu Bakr Arabic; owner: Ustadh Silfah
     "exam_298": "tchr_bustamante",  # Grade 1 Ali Arabic; owner: Ustadha Hainur
+    "exam_597": "tchr_ethel",       # Grade 6 Khaleed MAPEH; owner: Teacher Franchette
 }
 ACCOMMODATION_PROCTOR_OVERRIDES = {}
 ACCOMMODATION_PROCTOR_REASONS = {}
@@ -371,6 +372,8 @@ def canonical_teacher_identity_id(teacher_id):
 def effective_proctor_id(record):
     if record.get("id") in ALL_SUPPRESSED_PROCTOR_IDS:
         return ""
+    if record.get("id") in OFFICIAL_TEACHER_CONFLICT_PROCTOR_OVERRIDES:
+        return canonical_teacher_identity_id(OFFICIAL_TEACHER_CONFLICT_PROCTOR_OVERRIDES[record["id"]])
     return canonical_teacher_identity_id(record.get("proctor_id") or record.get("teacher_id"))
 
 
@@ -1151,11 +1154,10 @@ def fixed_position(record):
     # the section's open Wednesday 03:10 PM period.
     if record.get("id") == "exam_173":
         return 1, 910
-    # Teacher Franchette confirmed that Grade 6 Khaleed MAPEH conflicts with
-    # Ammar Makabansa on Wednesday at 03:10 PM. Lock Khaleed into her available
-    # Sunday 04:20–05:20 PM ODL slot so the conflict cannot return on rebuild.
+    # Grade 6 Khaleed MAPEH is restored to Wednesday 03:10 PM (matching official
+    # distributed schedule) with Teacher Ethel assigned as exam proctor.
     if record.get("id") == "exam_597":
-        return 3, 980
+        return 1, 910
     # Teacher requested Grade 6 Dihya MAPEH on the last day, last period (Day 4 at 05:30 PM - 06:30 PM)
     if section_contains(record, "GRADE 6", "DIHYA") and subject_key(record["subject"]) == "mapeh":
         return 4, 1050
@@ -1195,6 +1197,13 @@ def fixed_position(record):
         return 1, 480
     if section_contains(record, "GRADE 1", "SUHAYB") and subject_key(record["subject"]) == "language":
         return 4, 1050
+    if section_contains(record, "GRADE 6", "KHALEED"):
+        if subject_key(record["subject"]) == "mapeh":
+            return 1, 910
+        if subject_key(record["subject"]) == "quran":
+            return 1, 980
+        if subject_key(record["subject"]) == "math":
+            return 3, 980
     return None
 
 
