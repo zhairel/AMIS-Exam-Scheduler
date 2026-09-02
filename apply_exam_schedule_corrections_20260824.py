@@ -1193,6 +1193,8 @@ def fixed_position(record):
             return 4, 980
     if section_contains(record, "GRADE 9 & 10", "GIRLS", "FACE TO FACE") and subject_key(record["subject"]) == "quran":
         return 1, 480
+    if section_contains(record, "GRADE 1", "SUHAYB") and subject_key(record["subject"]) == "language":
+        return 4, 1050
     return None
 
 

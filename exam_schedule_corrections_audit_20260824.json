@@ -2936,6 +2936,15 @@
       "from_start_m": 910,
       "to_day": 2,
       "to_start_m": 760
+    },
+    {
+      "id": "exam_153",
+      "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+      "subject": "Language",
+      "from_day": 1,
+      "from_start_m": 1050,
+      "to_day": 4,
+      "to_start_m": 1050
     }
   ],
   "suppressed_non_normylah_mapeh_proctors": [
