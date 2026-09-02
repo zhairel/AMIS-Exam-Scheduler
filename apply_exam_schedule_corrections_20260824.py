@@ -155,6 +155,8 @@ EXAM_TEACHER_OVERRIDES = {
     # Teacher Wendelyn officially took over Filipino for Grade 3 Zayd after
     # the former teacher resigned. This is subject ownership, not proctoring.
     "exam_323": "Teacher Wendelyn",
+    # Teacher Keychelle is the official English teacher for Grade 3 Salman Al Farsi.
+    "exam_318": "Teacher Keychelle",
     # Teacher Franchette Zarah officially owns these Grade 3 Makabansa
     # classes. They are regular subject assignments, not proctor-only duties.
     "exam_173": "Teacher Franchette Zarah M. Ranain",
@@ -1204,8 +1206,25 @@ def fixed_position(record):
             return 1, 980
         if subject_key(record["subject"]) == "math":
             return 3, 980
-    if section_contains(record, "GRADE 3", "SALMAN") and subject_key(record["subject"]) == "english":
-        return 3, 910
+    if section_contains(record, "GRADE 3", "SALMAN"):
+        if subject_key(record["subject"]) == "english":
+            return 1, 830
+        if subject_key(record["subject"]) == "makabansa":
+            return 1, 910
+        if subject_key(record["subject"]) == "arabic":
+            return 2, 760
+        if subject_key(record["subject"]) == "gmrc":
+            return 2, 830
+        if subject_key(record["subject"]) == "filipino":
+            return 2, 910
+        if subject_key(record["subject"]) == "math":
+            return 3, 760
+        if subject_key(record["subject"]) == "science":
+            return 3, 830
+        if subject_key(record["subject"]) == "quran":
+            return 4, 760
+        if subject_key(record["subject"]) == "shaf":
+            return 4, 830
     return None
 
 

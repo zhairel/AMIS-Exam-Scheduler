@@ -1114,6 +1114,12 @@
       "subject": "Arabic",
       "from": "Alim Mamonas",
       "to": "Ustadha Hainur"
+    },
+    {
+      "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+      "subject": "English",
+      "from": "Teacher Jenny",
+      "to": "Teacher Keychelle"
     }
   ],
   "unresolved_official_teacher_links": [
@@ -3006,6 +3012,15 @@
       "subject": "TLE",
       "from_day": 3,
       "from_start_m": 910,
+      "to_day": 2,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_174",
+      "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+      "subject": "Filipino",
+      "from_day": 1,
+      "from_start_m": 830,
       "to_day": 2,
       "to_start_m": 910
     }
