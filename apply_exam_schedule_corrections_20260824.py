@@ -108,6 +108,7 @@ OFFICIAL_TEACHER_CONFLICT_PROCTOR_OVERRIDES = {
     "exam_285": "tchr_bustamante",  # K2 Abu Bakr Arabic; owner: Ustadh Silfah
     "exam_298": "tchr_bustamante",  # Grade 1 Ali Arabic; owner: Ustadha Hainur
     "exam_597": "tchr_ethel",       # Grade 6 Khaleed MAPEH; owner: Teacher Franchette
+    "exam_586": "tchr_aniah",       # Grade 4 Hakim MAPEH; owner: Teacher Halnaisa
 }
 ACCOMMODATION_PROCTOR_OVERRIDES = {}
 ACCOMMODATION_PROCTOR_REASONS = {}

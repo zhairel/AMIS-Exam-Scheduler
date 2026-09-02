@@ -13248,12 +13248,12 @@
     "subject_teacher_status": "ACTIVE_VERIFIED",
     "replacement_teacher_required": false,
     "warning": "",
-    "proctor": "Teacher Halnaisa",
-    "proctor_id": "tchr_halnaisa",
+    "proctor": "Teacher Aniah",
+    "proctor_id": "tchr_aniah",
     "proctor_status": "ACTIVE_ASSIGNED",
     "proctor_department": "High School Faculty",
-    "proctor_pool": "SUBJECT_TEACHER",
-    "proctor_assignment_source": "SUBJECT_TEACHER",
+    "proctor_pool": "QUALIFIED_ISAL_FACULTY",
+    "proctor_assignment_source": "SUBJECT_TEACHER_CONFLICT_COVERAGE",
     "conflict_status": "CLEAR"
   },
   {

@@ -22589,13 +22589,14 @@
     "active_subject_teacher": "Teacher Halnaisa",
     "active_subject_teacher_id": "tchr_halnaisa",
     "inactive_teacher_warning": "",
-    "proctor": "Teacher Halnaisa",
-    "proctor_id": "tchr_halnaisa",
+    "proctor": "Teacher Aniah",
+    "proctor_id": "tchr_aniah",
     "proctor_status": "ACTIVE_ASSIGNED",
-    "proctor_assignment_source": "SUBJECT_TEACHER",
+    "proctor_assignment_source": "SUBJECT_TEACHER_CONFLICT_COVERAGE",
     "proctor_department": "High School Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "SUBJECT_TEACHER"
+    "proctor_pool": "QUALIFIED_ISAL_FACULTY",
+    "proctor_coverage_reason": "OFFICIAL_SUBJECT_TEACHER_EXAM_CONFLICT"
   },
   {
     "id": "exam_598",
