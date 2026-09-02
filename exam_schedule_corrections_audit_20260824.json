@@ -1125,6 +1125,15 @@
   "known_sections": 64,
   "identity_merge_proctor_overrides": [
     {
+      "exam_id": "exam_597",
+      "subject_teacher": "Teacher Franchette Zarah M. Ranain",
+      "proctor": "Teacher Ethel",
+      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+      "subject": "MAPEH",
+      "day_number": 1,
+      "time": "03:10 PM – 04:10 PM"
+    },
+    {
       "exam_id": "exam_285",
       "subject_teacher": "Ustadh Silfah",
       "proctor": "Alim Bustamante",
@@ -1141,15 +1150,6 @@
       "subject": "Arabic",
       "day_number": 3,
       "time": "12:40 PM – 01:40 PM"
-    },
-    {
-      "exam_id": "exam_597",
-      "subject_teacher": "Teacher Franchette Zarah M. Ranain",
-      "proctor": "Teacher Ethel",
-      "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
-      "subject": "MAPEH",
-      "day_number": 3,
-      "time": "04:20 PM – 05:20 PM"
     }
   ],
   "inactive_teacher_proctor_assignments": [
@@ -2981,6 +2981,33 @@
       "from_start_m": 1050,
       "to_day": 1,
       "to_start_m": 980
+    },
+    {
+      "id": "exam_318",
+      "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+      "subject": "English",
+      "from_day": 1,
+      "from_start_m": 830,
+      "to_day": 3,
+      "to_start_m": 910
+    },
+    {
+      "id": "exam_174",
+      "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+      "subject": "Filipino",
+      "from_day": 2,
+      "from_start_m": 910,
+      "to_day": 1,
+      "to_start_m": 830
+    },
+    {
+      "id": "exam_493",
+      "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+      "subject": "TLE",
+      "from_day": 3,
+      "from_start_m": 910,
+      "to_day": 2,
+      "to_start_m": 910
     }
   ],
   "suppressed_non_normylah_mapeh_proctors": [

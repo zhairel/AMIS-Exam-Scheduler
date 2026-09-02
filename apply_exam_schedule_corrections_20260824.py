@@ -1204,6 +1204,8 @@ def fixed_position(record):
             return 1, 980
         if subject_key(record["subject"]) == "math":
             return 3, 980
+    if section_contains(record, "GRADE 3", "SALMAN") and subject_key(record["subject"]) == "english":
+        return 3, 910
     return None
 
 
