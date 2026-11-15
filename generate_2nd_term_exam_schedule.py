@@ -104,6 +104,11 @@ def apply_authoritative_2nd_term_updates(records):
             if "11 (1ST SHIFT GIRLS)" in sec or "11 (2ND SHIFT BOYS)" in sec or "ABU AYYUB" in sec:
                 continue
 
+        # Exclude removed GMRC subjects for Ustadha Saliha as requested
+        if (tid == "tchr_saliha" or "saliha" in t.lower()) and sub == "GMRC":
+            if "AS'AD" in sec or "AASIM" in sec or "JA'FAR" in sec or "JA FAR" in sec:
+                continue
+
         # 1. Fix missing/empty teacher in exam_4
         if not t or t == "Unassigned":
             if "K1 - HUSAIN" in sec and sub == "Qur'an":
