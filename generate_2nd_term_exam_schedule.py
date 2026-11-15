@@ -97,6 +97,12 @@ def apply_authoritative_2nd_term_updates(records):
         sec = r.get("section_name", "")
         sub = r.get("subject", "")
         t = r.get("teacher", "")
+        tid = r.get("teacher_id", "")
+
+        # Exclude removed Arabic subjects for Alim Mamonas as requested
+        if (tid == "tchr_mamonas" or "mamonas" in t.lower()) and sub == "Arabic":
+            if "11 (1ST SHIFT GIRLS)" in sec or "11 (2ND SHIFT BOYS)" in sec or "ABU AYYUB" in sec:
+                continue
 
         # 1. Fix missing/empty teacher in exam_4
         if not t or t == "Unassigned":
