@@ -106,7 +106,7 @@ def apply_authoritative_2nd_term_updates(records):
 
         # Exclude removed GMRC subjects for Ustadha Saliha as requested
         if (tid == "tchr_saliha" or "saliha" in t.lower()) and sub == "GMRC":
-            if "AS'AD" in sec or "AASIM" in sec or "JA'FAR" in sec or "JA FAR" in sec:
+            if "AS'AD" in sec or "AASIM" in sec or "JA'FAR" in sec or "JA FAR" in sec or "SAEED" in sec:
                 continue
 
         # 1. Fix missing/empty teacher in exam_4
