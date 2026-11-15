@@ -265,7 +265,7 @@
     /* Cards Grid */
     .cards-container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 24px;
       width: 100%;
       margin-bottom: 20px;
@@ -289,22 +289,86 @@
       box-shadow: var(--shadow-hover);
     }
 
-    .card-class {
-      border-top: 4px solid var(--brand-accent);
+    /* Loads Schedule Card */
+    .card-loads {
+      border-top: 4px solid #4f46e5;
+      position: relative;
     }
 
-    .card-class:hover {
-      border-color: #5eead4;
-      border-top-color: var(--brand-accent);
+    .card-loads:hover {
+      border-color: #a5b4fc;
+      border-top-color: #4338ca;
     }
 
-    .card-exam {
-      border-top: 4px solid var(--exam-accent);
+    .card-icon-loads {
+      background: #eef2ff;
+      color: #4f46e5;
     }
 
-    .card-exam:hover {
-      border-color: #93c5fd;
-      border-top-color: var(--exam-accent);
+    /* 1st Term Card (Archive / Tapos na) */
+    .card-exam-1st {
+      border-top: 4px solid #64748b;
+    }
+
+    .card-exam-1st:hover {
+      border-color: #94a3b8;
+      border-top-color: #475569;
+    }
+
+    /* 2nd Term Card (New / Active) */
+    .card-exam-2nd {
+      border-top: 4px solid #059669;
+      position: relative;
+    }
+
+    .card-exam-2nd:hover {
+      border-color: #6ee7b7;
+      border-top-color: #047857;
+    }
+
+    .card-top-badge-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .badge-status-completed {
+      font-size: 11px;
+      font-weight: 800;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 3.5px 10px;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .badge-status-new {
+      font-size: 11px;
+      font-weight: 800;
+      background: #ecfdf5;
+      color: #047857;
+      padding: 3.5px 10px;
+      border-radius: 6px;
+      border: 1px solid #a7f3d0;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .badge-term-id {
+      font-size: 11px;
+      font-weight: 700;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
     }
 
     .card-body {
@@ -322,16 +386,16 @@
       transition: var(--transition);
     }
 
-    .card-class .card-icon {
-      background: var(--brand-surface);
-      color: var(--brand-primary);
-      border: 1px solid var(--brand-border);
+    .card-icon-1st {
+      background: #f8fafc;
+      color: #475569;
+      border: 1px solid #e2e8f0;
     }
 
-    .card-exam .card-icon {
-      background: var(--exam-surface);
-      color: var(--exam-primary);
-      border: 1px solid var(--exam-border);
+    .card-icon-2nd {
+      background: #ecfdf5;
+      color: #059669;
+      border: 1px solid #a7f3d0;
     }
 
     .card-icon svg {
@@ -341,7 +405,7 @@
     }
 
     .card-heading {
-      font-size: 19px;
+      font-size: 20px;
       font-weight: 800;
       color: var(--text);
       margin-bottom: 8px;
@@ -377,18 +441,18 @@
       flex-shrink: 0;
     }
 
-    .card-class .feature-list li svg {
-      color: #059669;
+    .card-exam-1st .feature-list li svg {
+      color: #64748b;
     }
 
-    .card-exam .feature-list li svg {
-      color: #2563eb;
+    .card-exam-2nd .feature-list li svg {
+      color: #059669;
     }
 
     .card-footer {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 12px;
     }
 
     .btn-main {
@@ -406,24 +470,24 @@
       border: none;
     }
 
-    .btn-class {
-      background: var(--brand-primary);
+    .btn-exam-1st {
+      background: #475569;
       color: #ffffff;
     }
 
-    .btn-class:hover {
-      background: var(--brand-primary-hover);
-      box-shadow: 0 4px 14px rgba(6, 78, 59, 0.3);
+    .btn-exam-1st:hover {
+      background: #334155;
+      box-shadow: 0 4px 14px rgba(71, 85, 105, 0.3);
     }
 
-    .btn-exam {
-      background: var(--exam-primary);
+    .btn-exam-2nd {
+      background: linear-gradient(135deg, #059669 0%, #047857 100%);
       color: #ffffff;
     }
 
-    .btn-exam:hover {
-      background: var(--exam-primary-hover);
-      box-shadow: 0 4px 14px rgba(30, 58, 138, 0.3);
+    .btn-exam-2nd:hover {
+      background: linear-gradient(135deg, #047857 0%, #064e3b 100%);
+      box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
     }
 
     .btn-main svg {
@@ -437,29 +501,28 @@
       transform: translateX(4px);
     }
 
-    /* Developer Credit below buttons (Text Only) */
-    .developer-bottom-text {
-      margin-top: 32px;
+    .sub-link-action {
+      display: block;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-    }
-
-    .developer-bottom-text .dev-label {
-      font-size: 14px;
+      font-size: 12.5px;
       font-weight: 700;
-      color: var(--text-secondary);
-      letter-spacing: 0.01em;
+      color: #64748b;
+      text-decoration: none;
+      padding: 2px 4px;
+      transition: color 150ms ease;
     }
 
-    .developer-bottom-text .dev-name {
-      font-size: 20px;
-      font-weight: 900;
-      color: var(--brand-primary);
-      letter-spacing: -0.01em;
+    .sub-link-action:hover {
+      color: #0f172a;
+      text-decoration: underline;
+    }
+
+    .sub-link-action.highlight {
+      color: #059669;
+    }
+
+    .sub-link-action.highlight:hover {
+      color: #047857;
     }
 
     /* Footer */
@@ -520,7 +583,7 @@
         </div>
         <h3 class="advisory-main-title">Automatic Subject &amp; Schedule Assignment Notice</h3>
         <p class="advisory-main-message">
-          Please be advised that <span class="advisory-highlight">some subjects and class schedule slots are automatically assigned</span> and synchronized according to the official faculty teaching load distributions. All faculty members and teachers are requested to review their assigned subjects in their respective schedules. If you require any subject adjustments or reassignments, please coordinate directly with <strong>Mon Zhairel Lingasa</strong>.
+          Please be advised that <span class="advisory-highlight">some subjects and class schedule slots are automatically assigned</span> and synchronized according to the official faculty teaching load distributions. All faculty members and teachers are requested to review their assigned subjects in their respective schedules. If you require any subject adjustments or reassignments, please coordinate directly with <strong>AMIS IT Support</strong>.
         </p>
       </div>
     </div>
@@ -557,62 +620,81 @@
       </div>
     </section>
 
-    <!-- Balanced Two Cards Grid -->
+    <!-- Three Cards Grid: Loads Schedule, 2nd Term (Live), and 1st Term (Archive) -->
     <div class="cards-container">
 
-      <!-- Card 1: Official Class Schedule -->
-      <div class="card card-class" onclick="window.location.href='class-schedule.html'">
+      <!-- Card 0: Regular Loads Schedule -->
+      <div class="card card-loads" onclick="window.location.href='loads-schedule.html'">
         <div class="card-body">
-          <div class="card-icon" aria-hidden="true">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <div class="card-top-badge-row">
+            <span class="badge-status-new" style="background:#eef2ff; color:#4338ca; border-color:#c7d2fe;">★ OFFICIAL TIMETABLE</span>
+            <span class="badge-term-id">Loads Schedule</span>
+          </div>
+
+          <div class="card-icon card-icon-loads" aria-hidden="true">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
               <line x1="16" y1="2" x2="16" y2="6"/>
               <line x1="8" y1="2" x2="8" y2="6"/>
               <line x1="3" y1="10" x2="21" y2="10"/>
-              <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/>
+              <line x1="10" y1="14" x2="14" y2="14"/>
             </svg>
           </div>
 
-          <h3 class="card-heading">Official Class Schedule</h3>
-          <p class="card-text">View and manage the official class schedules for all departments, grades, sections, shifts, and faculty.</p>
+          <h3 class="card-heading">Faculty Loads Schedule</h3>
+          <p class="card-text">Weekly faculty teaching loads and class timetables across Elementary, High School, and ISAL departments with color-coded subjects.</p>
 
           <ul class="feature-list">
             <li>
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>64 Active Sections across Kinder, Elementary, JHS & SHS</span>
+              <span>77 Active Timetables (Faculty &amp; Class Sections)</span>
             </li>
             <li>
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Face-to-Face, ODL 1st Shift & ODL 2nd Shift Timetables</span>
+              <span>Color-Coded Subjects (Arabic, SHAF, Qur'an, Math, Science...)</span>
             </li>
             <li>
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Clean 5-Day Merged Span Timetable Layout</span>
+              <span>Sunday to Thursday Equal Width Grids &amp; Dual Shifts</span>
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Quick Jump Filter &amp; Printable Official Sheets</span>
             </li>
           </ul>
         </div>
 
         <div class="card-footer">
-          <a href="class-schedule.html" class="btn-main btn-class">
-            <span>View Class Schedule</span>
+          <a href="loads-schedule.html" class="btn-main" style="background:#4f46e5; color:#ffffff;">
+            <span>Open Loads Schedule</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"/>
               <polyline points="12 5 19 12 12 19"/>
             </svg>
           </a>
+          <a href="loads-schedule.html" class="sub-link-action" style="color:#4f46e5;" onclick="event.stopPropagation()">
+            View Faculty Weekly Loads &rarr;
+          </a>
         </div>
       </div>
 
-      <!-- Card 2: Exam Schedule -->
-      <div class="card card-exam" onclick="window.location.href='exam-schedule.html'">
+      <!-- Card 1: 1st Term Exam Schedule (Tapos na / Archive) -->
+      <div class="card card-exam-1st" onclick="window.location.href='exam-schedule.html'">
         <div class="card-body">
-          <div class="card-icon" aria-hidden="true">
+          <div class="card-top-badge-row">
+            <span class="badge-status-completed">✓ Tapos Na • Concluded</span>
+            <span class="badge-term-id">1st Term Archive</span>
+          </div>
+
+          <div class="card-icon card-icon-1st" aria-hidden="true">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
               <polyline points="14 2 14 8 20 8"/>
@@ -622,54 +704,114 @@
             </svg>
           </div>
 
-          <h3 class="card-heading">Term Exam Week</h3>
-          <p class="card-text">Official 4-day term examination schedule, faculty timetables, and subject verification roster.</p>
+          <h3 class="card-heading">1st Term Exam Schedule</h3>
+          <p class="card-text">Archived examination schedule, concluded timetables, and historical grade rosters for S.Y. 2026–2027.</p>
 
           <ul class="feature-list">
             <li>
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>589 Official Exam Sessions (Zero Conflicts)</span>
+              <span>589 Exam Sessions Concluded (Zero Conflicts)</span>
             </li>
             <li>
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Standard S.Y. 2025–2026 Reference Time Allocations</span>
+              <span>Archived F2F, ODL 1st &amp; 2nd Shift Timetables</span>
             </li>
             <li>
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Faculty Roster &amp; Assigned Subject Verification Tabs</span>
+              <span>Kindergarten to Grade 12 Grade Posters</span>
             </li>
             <li>
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Active Proctor List &amp; Inactive-Teacher Coverage</span>
+              <span>Historical Proctor &amp; Faculty Assignments</span>
             </li>
           </ul>
         </div>
 
         <div class="card-footer">
-          <a href="exam-schedule.html" class="btn-main btn-exam">
-            <span>View Exam Schedule</span>
+          <a href="exam-schedule.html" class="btn-main btn-exam-1st">
+            <span>View 1st Term Schedule (Archive)</span>
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"/>
               <polyline points="12 5 19 12 12 19"/>
             </svg>
           </a>
+          <a href="grade-calendar-view.html" class="sub-link-action" onclick="event.stopPropagation()">
+            Open 1st Term Grade Visual Calendar →
+          </a>
         </div>
       </div>
 
-    </div>
+      <!-- Card 2: 2nd Term Exam Schedule (NEW) -->
+      <div class="card card-exam-2nd" onclick="window.location.href='exam-schedule-2nd-term.html'">
+        <div class="card-body">
+          <div class="card-top-badge-row">
+            <span class="badge-status-new">★ NEW • S.Y. 2026–2027</span>
+            <span class="badge-term-id">Active Term</span>
+          </div>
 
-    <!-- Developer Credit below the 2 buttons (Text Only) -->
-    <div class="developer-bottom-text">
-      <span class="dev-label">Developed by:</span>
-      <span class="dev-name">Software Engineer Mon Zhairel Lingasa</span>
+          <div class="card-icon card-icon-2nd" aria-hidden="true">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+              <path d="M9 16l2 2 4-4"/>
+            </svg>
+          </div>
+
+          <h3 class="card-heading">2nd Term Exam Schedule</h3>
+          <p class="card-text">Official 2nd Term Examination schedule (December 1–3 &amp; 6, 2026). Complete timetables for Kinder, Elementary, JHS, and SHS.</p>
+
+          <ul class="feature-list">
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Official Exam Dates: Dec 1, 2, 3, &amp; 6, 2026 (4 Days)</span>
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>64 Sections (F2F, ODL 1st Shift &amp; ODL 2nd Shift)</span>
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Faculty Exam Timetables &amp; Verified Proctor Roster</span>
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Recognition Day (Dec 17) &amp; PTC Viewing (Dec 19)</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card-footer">
+          <a href="exam-schedule-2nd-term.html" class="btn-main btn-exam-2nd">
+            <span>Open 2nd Term Exam Schedule</span>
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+          <a href="grade-calendar-view-2nd-term.html" class="sub-link-action highlight" onclick="event.stopPropagation()">
+            Open 2nd Term Grade Visual Calendar →
+          </a>
+        </div>
+      </div>
+
     </div>
 
   </main>
