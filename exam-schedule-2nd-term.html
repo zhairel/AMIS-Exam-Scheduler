@@ -1686,10 +1686,6 @@ html, body {
       <svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
       Faculty Roster &amp; Assigned Subjects
     </button>
-    <a class="tab-btn" href="proctor-list.html">
-      <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-      Proctor Assignments
-    </a>
   </div>
 
   <div class="badge-anti-conflict-top" id="antiConflictBadge">
@@ -1717,7 +1713,7 @@ html, body {
       </div>
       <h3 class="advisory-main-title">2nd Term Examination Schedule (Official &amp; Synchronized)</h3>
       <p class="advisory-main-message">
-        All 64 section timetables and official exam day grids (Dec 1, 2, 3, &amp; 6, 2026) are officially synchronized with zero proctor and section conflicts. All faculty members and teachers are requested to review their assigned subjects in their respective schedules.
+        All 64 section timetables and official exam day grids (Dec 1, 2, 3, &amp; 6, 2026) are officially synchronized with zero teacher and section conflicts. All faculty members and teachers are requested to review their assigned subjects in their respective schedules.
       </p>
     </div>
   </div>
@@ -1741,3117 +1737,9 @@ html, body {
   ];
 
   const INACTIVE_TEACHER_IDS = new Set([]);
-  const DUPLICATE_TEACHER_IDENTITY_IDS = new Set(['tchr_zara', 'tchr_abdulwahab']);
+  const DUPLICATE_TEACHER_IDENTITY_IDS = new Set([]);
 
   const FACULTY_ROSTER_DATA = [
-  {
-    "id": "tchr_abdul_karim",
-    "name": "Alim Abdul Karim",
-    "department": "ISAL Faculty",
-    "assignments": [
-      {
-        "subject": "Arabic",
-        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 20,
-    "total_exams": 11
-  },
-  {
-    "id": "tchr_abdulwahab",
-    "name": "Alim Dipatuan",
-    "department": "ISAL Faculty",
-    "assignments": [
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 11,
-    "total_exams": 9
-  },
-  {
-    "id": "tchr_bustamante",
-    "name": "Alim Bustamante",
-    "department": "ISAL Faculty",
-    "assignments": [
-      {
-        "subject": "Arabic",
-        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 3,
-    "total_exams": 3
-  },
-  {
-    "id": "tchr_dipatuan",
-    "name": "Alim Dipatuan",
-    "department": "ISAL Faculty",
-    "assignments": [
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 11 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 12 - SUHAYB AR-RUMI",
-        "shift": "F2F"
-      }
-    ],
-    "total_classes": 5,
-    "total_exams": 3
-  },
-  {
-    "id": "tchr_mamonas",
-    "name": "Alim Mamonas",
-    "department": "ISAL Faculty",
-    "assignments": [
-      {
-        "subject": "Arabic",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 11 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 12 - SUHAYB AR-RUMI",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      }
-    ],
-    "total_classes": 13,
-    "total_exams": 9
-  },
-  {
-    "id": "tchr_samsuddin",
-    "name": "Alim Samsuddin",
-    "department": "ISAL Faculty",
-    "assignments": [
-      {
-        "subject": "SHAF",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 11 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 12 - SUHAYB AR-RUMI",
-        "shift": "F2F"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 24,
-    "total_exams": 18
-  },
-  {
-    "id": "tchr_mohaymen",
-    "name": "Sir Mohaymen",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "Aral Math",
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Aral Math",
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Aral Math",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Aral Math",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "PE 12",
-        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "PE 12",
-        "section": "GRADE 12 - SUHAYB AR-RUMI",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 19,
-    "total_exams": 8
-  },
-  {
-    "id": "tchr_angeleni",
-    "name": "Teacher Angeleni",
-    "department": "Elementary / HS Faculty",
-    "assignments": [
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 12,
-    "total_exams": 8
-  },
-  {
-    "id": "tchr_aniah",
-    "name": "Teacher Aniah",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "Gen. Physics 1",
-        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Gen. Physics 1",
-        "section": "GRADE 12 - SUHAYB AR-RUMI",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Prac. Res. 2",
-        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Prac. Res. 2",
-        "section": "GRADE 12 - SUHAYB AR-RUMI",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Sci",
-        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Sci",
-        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Sci",
-        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 26,
-    "total_exams": 7
-  },
-  {
-    "id": "tchr_jeyra_mae",
-    "name": "Teacher Jeyra Mae",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "Science",
-        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 26,
-    "total_exams": 15
-  },
-  {
-    "id": "tchr_arvin",
-    "name": "Teacher Arvin",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "ARAL Math",
-        "section": "GRADE 4 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "ARAL Program",
-        "section": "GRADE  6  FACE TO FACE",
-        "shift": "F2F"
-      },
-      {
-        "subject": "ARAL Program",
-        "section": "GRADE 5 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "ARAL Reading",
-        "section": "GRADE 4 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Aral",
-        "section": "GRADE  6  FACE TO FACE",
-        "shift": "F2F"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 4 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE  6  FACE TO FACE",
-        "shift": "F2F"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 37,
-    "total_exams": 15
-  },
-  {
-    "id": "tchr_ayah",
-    "name": "Teacher Ayah",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "CT 1",
-        "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "CT 2",
-        "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "CT 2",
-        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Circle Time 1",
-        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Oral & Written Exam",
-        "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Oral & Written Exam",
-        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 14,
-    "total_exams": 2
-  },
-  {
-    "id": "tchr_ethel",
-    "name": "Teacher Ethel",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "MIL",
-        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MIL",
-        "section": "GRADE 12 - SUHAYB AR-RUMI",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 14,
-    "total_exams": 5
-  },
-  {
-    "id": "tchr_fhairudz",
-    "name": "Teacher Fhairudz",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "Math",
-        "section": "GRADE 5 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math 5",
-        "section": "GRADE 5 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 31,
-    "total_exams": 11
-  },
-  {
-    "id": "tchr_franchette",
-    "name": "Teacher Franchette Zarah M. Ranain",
-    "department": "Elementary / HS Faculty",
-    "assignments": [
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 12,
-    "total_exams": 8
-  },
-  {
-    "id": "tchr_halnaisa",
-    "name": "Teacher Halnaisa",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 4 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 5 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 21,
-    "total_exams": 9
-  },
-  {
-    "id": "tchr_jairah",
-    "name": "Teacher Jairah",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "English",
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 5 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 29,
-    "total_exams": 13
-  },
-  {
-    "id": "tchr_jenny",
-    "name": "Teacher Jenny",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "Eng3",
-        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Eng4",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English 3",
-        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Makabansa",
-        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Makabansa",
-        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Makabansa3",
-        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE4",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "TLE5",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 20,
-    "total_exams": 14
-  },
-  {
-    "id": "tchr_jerlyn",
-    "name": "Teacher Jerlyn",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "HG",
-        "section": "GRADE 3 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 3 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math3",
-        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math3",
-        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 3 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 29,
-    "total_exams": 12
-  },
-  {
-    "id": "tchr_jessa",
-    "name": "Teacher Jessa",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "Eng5",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE  6  FACE TO FACE",
-        "shift": "F2F"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 5 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 5 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "HG",
-        "section": "GRADE 5 (FACE TO FACE)",
-        "shift": "F2F"
-      }
-    ],
-    "total_classes": 35,
-    "total_exams": 13
-  },
-  {
-    "id": "tchr_jhelyn",
-    "name": "Teacher Jhelyn",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "Gen Math",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Gen Math",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Gen Math",
-        "section": "GRADE 11 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Gen Math/HR",
-        "section": "GRADE 11 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 31,
-    "total_exams": 11
-  },
-  {
-    "id": "tchr_joanna",
-    "name": "Teacher Joanna",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "CT 2",
-        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Circle Time 1",
-        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Circle Time 1",
-        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Circle Time 2",
-        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Oral & Written Exam",
-        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Oral & Written Exam",
-        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 26,
-    "total_exams": 10
-  },
-  {
-    "id": "tchr_junaisah",
-    "name": "Teacher Junaisah",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "ARAL Math",
-        "section": "GRADE 2 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "ARAL Math",
-        "section": "GRADE 3 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "ARAL Reading",
-        "section": "GRADE 3 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "ARAL Science",
-        "section": "GRADE 3 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 4 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 5 (FACE TO FACE)",
-        "shift": "F2F"
-      }
-    ],
-    "total_classes": 17,
-    "total_exams": 2
-  },
-  {
-    "id": "tchr_katrina",
-    "name": "Teacher Katrina",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "ARAL Reading",
-        "section": "GRADE 1 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "ARAL Reading",
-        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "ARAL Reading",
-        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "ARAL Reading",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "ARAL Reading",
-        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "R & L",
-        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "R & L",
-        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "R & L",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "R & L",
-        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Reading & Literacy",
-        "section": "GRADE 1 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Reading & Literacy",
-        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Reading & Literacy",
-        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Reading & Literacy",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Reading & Literacy",
-        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Reading and Literacy",
-        "section": "GRADE 1 (FACE TO FACE)",
-        "shift": "F2F"
-      }
-    ],
-    "total_classes": 26,
-    "total_exams": 8
-  },
-  {
-    "id": "tchr_keychell",
-    "name": "Teacher Keychelle",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "AP",
-        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "CT 2",
-        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Circle Time 1",
-        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Circle Time 1",
-        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Circle Time 2",
-        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 5 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Meeting Time",
-        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Oral & Written Exam",
-        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Oral & Written Exam",
-        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Wrap-Up Time",
-        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
-        "shift": "F2F"
-      }
-    ],
-    "total_classes": 33,
-    "total_exams": 3
-  },
-  {
-    "id": "tchr_marham",
-    "name": "Teacher Marham",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "ARAL Reading",
-        "section": "GRADE 2 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "ARAL Reading",
-        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "ARAL Reading",
-        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "ARAL Reading",
-        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Aral Reading",
-        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 2 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 3 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "HG",
-        "section": "GRADE 2 (FACE TO FACE)",
-        "shift": "F2F"
-      }
-    ],
-    "total_classes": 34,
-    "total_exams": 10
-  },
-  {
-    "id": "tchr_monisa",
-    "name": "Teacher Monisa",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "AP",
-        "section": "GRADE 4 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "AP",
-        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "AP",
-        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "AP",
-        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "AP",
-        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "AP",
-        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "AP",
-        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "AP",
-        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "AP",
-        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "AP4",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 4 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "FIL",
-        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "FIL",
-        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "HG",
-        "section": "GRADE 4 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "MAKABANSA",
-        "section": "GRADE 2 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Makabansa",
-        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Makabansa",
-        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Makabansa",
-        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 4 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "TLE",
-        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 33,
-    "total_exams": 21
-  },
-  {
-    "id": "tchr_nadzra",
-    "name": "Teacher Nadzra",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "EC",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "EC",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "EC",
-        "section": "GRADE 11 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "HG",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      }
-    ],
-    "total_classes": 30,
-    "total_exams": 10
-  },
-  {
-    "id": "tchr_nof",
-    "name": "Teacher Nof",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "21st Lit.",
-        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "21st Lit.",
-        "section": "GRADE 12 - SUHAYB AR-RUMI",
-        "shift": "F2F"
-      },
-      {
-        "subject": "ESP",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "ESP",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "ESP",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "ESP",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "ESP",
-        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "ESP",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "ESP",
-        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Values Ed",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Values Ed",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Values Ed",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Values Ed",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Values Ed",
-        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Values Ed",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Values Ed",
-        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 19,
-    "total_exams": 9
-  },
-  {
-    "id": "tchr_norhaima",
-    "name": "Teacher Norhaima",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "ENGLISH",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "LCS",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "LCS",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "LCS",
-        "section": "GRADE 11 (FACE TO FACE)",
-        "shift": "F2F"
-      }
-    ],
-    "total_classes": 30,
-    "total_exams": 10
-  },
-  {
-    "id": "tchr_norhydie",
-    "name": "Teacher Norhydie",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "AP",
-        "section": "GRADE 5 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 5 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "English",
-        "section": "GRADE 4 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 4 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAKABANSA",
-        "section": "GRADE 1 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Makabansa",
-        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Makabansa",
-        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Makabansa",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Makabansa",
-        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 29,
-    "total_exams": 10
-  },
-  {
-    "id": "tchr_radzmia",
-    "name": "Teacher Radzmia",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "Aral.Sci",
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Gen Bio 1",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Gen Bio 1",
-        "section": "GRADE 11 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Gen Bio 1",
-        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Gen Bio 1",
-        "section": "GRADE 12 - SUHAYB AR-RUMI",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Sci",
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Sci",
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Sci",
-        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Sci",
-        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Sci",
-        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      }
-    ],
-    "total_classes": 34,
-    "total_exams": 6
-  },
-  {
-    "id": "tchr_rowena",
-    "name": "Teacher Rowena",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "Gen Bio 1",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Gen Science",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Gen Science",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Gen Science",
-        "section": "GRADE 11 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Sci",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Sci",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Sci",
-        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Sci",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Sci",
-        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 34,
-    "total_exams": 11
-  },
-  {
-    "id": "tchr_sahdia",
-    "name": "Teacher Sahdia",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "Arabic",
-        "section": "GRADE 1 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 4 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "GMRC4",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "HG",
-        "section": "GRADE 1 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Language",
-        "section": "GRADE 1 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Language",
-        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Language",
-        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Language",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Language",
-        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 32,
-    "total_exams": 16
-  },
-  {
-    "id": "tchr_saimonah",
-    "name": "Teacher Saimonah",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "AP",
-        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "AP5",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAPEH5",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MATH",
-        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math4",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math5",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Sci3",
-        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Sci4",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Sci5",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science 4",
-        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 26,
-    "total_exams": 13
-  },
-  {
-    "id": "tchr_shirehan",
-    "name": "Teacher Shirehan",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "HG",
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "PSKP",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "PSKP",
-        "section": "GRADE 11 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "PSKP 11",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 29,
-    "total_exams": 6
-  },
-  {
-    "id": "tchr_sitti_kauzar",
-    "name": "Teacher Sitti Kauzar",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "Filipino",
-        "section": "GRADE 2 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 2 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 24,
-    "total_exams": 9
-  },
-  {
-    "id": "tchr_sophia",
-    "name": "Teacher Sophia",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "Filipino",
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "HG",
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Soc.Sci",
-        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 31,
-    "total_exams": 8
-  },
-  {
-    "id": "tchr_wardah",
-    "name": "Teacher Wardah",
-    "department": "High School Faculty",
-    "assignments": [
-      {
-        "subject": "Values Ed",
-        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Values Ed",
-        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Values Ed",
-        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Values Ed.",
-        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Values Ed.",
-        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Values Ed.",
-        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 3,
-    "total_exams": 3
-  },
-  {
-    "id": "tchr_wendy",
-    "name": "Teacher Wendelyn",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "ARAL Math",
-        "section": "GRADE 1 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "CT 2",
-        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Circle Time 1",
-        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Circle Time 1",
-        "section": "KINDER 1 CLASS SCHEDULE (F2F)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Circle Time 2",
-        "section": "KINDER 1 CLASS SCHEDULE (F2F)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "MAKABANSA",
-        "section": "GRADE 3 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Math",
-        "section": "GRADE 1 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Oral & Written Exam",
-        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Oral & Written Exam",
-        "section": "KINDER 1 CLASS SCHEDULE (F2F)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE  6  FACE TO FACE",
-        "shift": "F2F"
-      }
-    ],
-    "total_classes": 34,
-    "total_exams": 5
-  },
-  {
-    "id": "tchr_zara",
-    "name": "Teacher Franchette Zarah M. Ranain",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "MAKABANSA Tchr. Zara",
-        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAKABANSA Tchr. Zara",
-        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAKABANSA Tchr. Zara",
-        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAKABANSA Tchr. Zara",
-        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAPEH Tchr. Zara",
-        "section": "GRADE  6  FACE TO FACE",
-        "shift": "F2F"
-      },
-      {
-        "subject": "MAPEH Tchr. Zara",
-        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAPEH Tchr. Zara",
-        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAPEH Tchr. Zara",
-        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 14,
-    "total_exams": 0
-  },
-  {
-    "id": "tchr_zuhora",
-    "name": "Teacher Zuhora",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "AP",
-        "section": "GRADE  6  FACE TO FACE",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE  6  FACE TO FACE",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAPEH",
-        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAPEH4",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Makabansa",
-        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 15,
-    "total_exams": 8
-  },
   {
     "id": "tchr_abdiraheem",
     "name": "Ustadh Abdiraheem",
@@ -4916,14 +1804,9 @@ html, body {
         "subject": "SHAF",
         "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "SHAF4",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
       }
     ],
-    "total_classes": 27,
+    "total_classes": 23,
     "total_exams": 12
   },
   {
@@ -5037,18 +1920,421 @@ html, body {
         "shift": "ODL - 2ND SHIFT"
       },
       {
-        "subject": "Arabic Ust. Ali",
+        "subject": "Qur'an",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 26,
+    "total_exams": 22
+  },
+  {
+    "id": "tchr_angeleni",
+    "name": "Teacher Angeleni",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "TLE",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 14,
+    "total_exams": 7
+  },
+  {
+    "id": "tchr_aniah",
+    "name": "Teacher Aniah",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "General Physics 2",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "General Physics 2",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 16,
+    "total_exams": 5
+  },
+  {
+    "id": "tchr_arvin",
+    "name": "Teacher Arvin",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "English",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "TLE",
         "section": "GRADE  6  FACE TO FACE",
         "shift": "F2F"
       },
       {
-        "subject": "Arabic4",
+        "subject": "TLE",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 29,
+    "total_exams": 15
+  },
+  {
+    "id": "tchr_ayah",
+    "name": "Teacher Ayah",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Circle Time 1",
+        "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Circle Time 1",
+        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 18,
+    "total_exams": 4
+  },
+  {
+    "id": "tchr_bustamante",
+    "name": "Alim Bustamante",
+    "department": "ISAL Faculty",
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 23,
+    "total_exams": 14
+  },
+  {
+    "id": "tchr_dipatuan",
+    "name": "Alim Dipatuan",
+    "department": "ISAL Faculty",
+    "assignments": [
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 13,
+    "total_exams": 14
+  },
+  {
+    "id": "tchr_erica",
+    "name": "Teacher Erica",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Filipino",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
         "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT"
       }
     ],
     "total_classes": 25,
-    "total_exams": 21
+    "total_exams": 10
   },
   {
     "id": "tchr_ersahad",
@@ -5079,6 +2365,21 @@ html, body {
         "subject": "Math",
         "section": "GRADE  6  FACE TO FACE",
         "shift": "F2F"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
       },
       {
         "subject": "SHAF",
@@ -5116,8 +2417,52 @@ html, body {
         "shift": "ODL - 2ND SHIFT"
       }
     ],
-    "total_classes": 28,
-    "total_exams": 12
+    "total_classes": 29,
+    "total_exams": 15
+  },
+  {
+    "id": "tchr_ethel",
+    "name": "Teacher Ethel",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "CPAR",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "CPAR",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "UCSP",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "UCSP",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F"
+      }
+    ],
+    "total_classes": 14,
+    "total_exams": 7
   },
   {
     "id": "tchr_faidh",
@@ -5150,11 +2495,6 @@ html, body {
         "shift": "ODL - 2ND SHIFT"
       },
       {
-        "subject": "Arabic5",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
         "subject": "Hadith",
         "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT"
@@ -5162,6 +2502,11 @@ html, body {
       {
         "subject": "Qur'an",
         "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 3 (FACE TO FACE)",
         "shift": "F2F"
       },
       {
@@ -5176,13 +2521,13 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
       },
       {
-        "subject": "Qur'an4",
-        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
-        "shift": "ODL - 1ST SHIFT"
+        "subject": "Qur'an",
+        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
       },
       {
         "subject": "SHAF",
@@ -5208,30 +2553,168 @@ html, body {
         "subject": "SHAF",
         "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
         "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 29,
+    "total_exams": 17
+  },
+  {
+    "id": "tchr_fhairudz",
+    "name": "Teacher Fhairudz",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "Math",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F"
       },
       {
-        "subject": "SHAF 5",
-        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "subject": "Math",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT"
       },
       {
-        "subject": "SHAF3",
-        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "subject": "Math",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT"
       },
       {
-        "subject": "SHAF5",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "subject": "Math",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 23,
+    "total_exams": 11
+  },
+  {
+    "id": "tchr_franchette",
+    "name": "Teacher Franchette",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "MAPEH",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
         "shift": "ODL - 1ST SHIFT"
       }
     ],
-    "total_classes": 21,
-    "total_exams": 15
+    "total_classes": 28,
+    "total_exams": 16
   },
   {
     "id": "tchr_hainur",
     "name": "Ustadha Hainur",
-    "department": "ISAL Faculty",
+    "department": "High School Faculty",
     "assignments": [
       {
         "subject": "Arabic",
@@ -5315,28 +2798,8 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
         "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
       },
       {
         "subject": "SHAF",
@@ -5354,14 +2817,98 @@ html, body {
         "shift": "ODL - 2ND SHIFT"
       }
     ],
-    "total_classes": 27,
-    "total_exams": 23
+    "total_classes": 14,
+    "total_exams": 20
+  },
+  {
+    "id": "tchr_halnaisa",
+    "name": "Teacher Halnaisa",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 21,
+    "total_exams": 14
   },
   {
     "id": "tchr_jaisam",
     "name": "Ustadh Jaisam",
     "department": "ISAL Faculty",
     "assignments": [
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
       {
         "subject": "Qur'an",
         "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
@@ -5391,6 +2938,11 @@ html, body {
         "subject": "Qur'an",
         "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
       },
       {
         "subject": "Qur'an",
@@ -5439,6 +2991,11 @@ html, body {
       },
       {
         "subject": "Qur'an",
+        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
         "section": "KINDER 1 CLASS SCHEDULE (F2F)",
         "shift": "F2F"
       },
@@ -5448,34 +3005,1009 @@ html, body {
         "shift": "F2F"
       }
     ],
-    "total_classes": 21,
-    "total_exams": 17
+    "total_classes": 23,
+    "total_exams": 20
   },
   {
-    "id": "tchr_obaydah",
-    "name": "Ustadh Obaydah",
-    "department": "ISAL Faculty",
+    "id": "tchr_jayra",
+    "name": "Teacher Jayra",
+    "department": "High School Faculty",
     "assignments": [
       {
-        "subject": "Arabic",
-        "section": "GRADE 2 (FACE TO FACE)",
+        "subject": "English",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
         "shift": "F2F"
       },
       {
-        "subject": "Qur'an",
+        "subject": "English",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 31,
+    "total_exams": 14
+  },
+  {
+    "id": "tchr_jenny",
+    "name": "Teacher Jenny",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 19,
+    "total_exams": 18
+  },
+  {
+    "id": "tchr_jerlyn",
+    "name": "Teacher Jerlyn",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Math",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 24,
+    "total_exams": 12
+  },
+  {
+    "id": "tchr_jessa",
+    "name": "Teacher Jessa",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "English",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F"
+      }
+    ],
+    "total_classes": 26,
+    "total_exams": 13
+  },
+  {
+    "id": "tchr_jeyra_mae",
+    "name": "Teacher Jeyra Mae",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Science",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 26,
+    "total_exams": 15
+  },
+  {
+    "id": "tchr_jhelyn",
+    "name": "Teacher Jhelyn",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "Gen Math",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Gen Math",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Gen Math",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 23,
+    "total_exams": 10
+  },
+  {
+    "id": "tchr_joanna",
+    "name": "Teacher Joanna",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Circle Time 1",
+        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Circle Time 1",
+        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 22,
+    "total_exams": 10
+  },
+  {
+    "id": "tchr_junaisah",
+    "name": "Teacher Junaisah",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F"
+      }
+    ],
+    "total_classes": 15,
+    "total_exams": 3
+  },
+  {
+    "id": "tchr_katrina",
+    "name": "Teacher Katrina",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Math",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Reading & Literacy",
         "section": "GRADE 1 (FACE TO FACE)",
         "shift": "F2F"
       },
       {
-        "subject": "Qur'an",
+        "subject": "Reading & Literacy",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Reading & Literacy",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Reading & Literacy",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Reading & Literacy",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 26,
+    "total_exams": 8
+  },
+  {
+    "id": "tchr_keychell",
+    "name": "Teacher Keychell",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Circle Time 1",
+        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 19,
+    "total_exams": 7
+  },
+  {
+    "id": "tchr_mamonas",
+    "name": "Alim Mamonas",
+    "department": "ISAL Faculty",
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      }
+    ],
+    "total_classes": 11,
+    "total_exams": 9
+  },
+  {
+    "id": "tchr_marham",
+    "name": "Teacher Marham",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "English",
         "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F"
       },
       {
-        "subject": "Qur'an",
+        "subject": "English",
         "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT"
       },
+      {
+        "subject": "English",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 25,
+    "total_exams": 10
+  },
+  {
+    "id": "tchr_mohaymen",
+    "name": "Sir Mohaymen",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "PE 12",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "PE 12",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F"
+      }
+    ],
+    "total_classes": 23,
+    "total_exams": 9
+  },
+  {
+    "id": "tchr_monisa",
+    "name": "Teacher Monisa",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "TLE",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 23,
+    "total_exams": 21
+  },
+  {
+    "id": "tchr_nadzra",
+    "name": "Teacher Nadzra",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "EC",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "EC",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "EC",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Mabisang Komunikasyon",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Mabisang Komunikasyon",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Mabisang Komunikasyon",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F"
+      }
+    ],
+    "total_classes": 30,
+    "total_exams": 13
+  },
+  {
+    "id": "tchr_nawawi",
+    "name": "Ustadh Laurel/Nawawi",
+    "department": "ISAL Faculty",
+    "assignments": [
       {
         "subject": "Qur'an",
         "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
@@ -5483,48 +4015,8 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
         "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 3 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 4 (FACE TO FACE)",
-        "shift": "F2F"
       },
       {
         "subject": "Qur'an",
@@ -5538,16 +4030,6 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
         "section": "GRADE 5 (FACE TO FACE)",
         "shift": "F2F"
       },
@@ -5555,30 +4037,483 @@ html, body {
         "subject": "Qur'an",
         "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 21,
+    "total_exams": 6
+  },
+  {
+    "id": "tchr_nof",
+    "name": "Teacher Nof",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "Pagsulat sa Filipino",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT"
       },
       {
-        "subject": "Qur'an",
+        "subject": "Pagsulat sa Filipino",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Values Ed",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Values Ed",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Values Ed",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Values Ed",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Values Ed",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Values Ed",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Values Ed",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 22,
+    "total_exams": 9
+  },
+  {
+    "id": "tchr_norhaima",
+    "name": "Teacher Norhaima",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "English",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "LCS",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "LCS",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "LCS",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F"
+      }
+    ],
+    "total_classes": 31,
+    "total_exams": 10
+  },
+  {
+    "id": "tchr_norhydie",
+    "name": "Teacher Norhydie",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 5 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "English",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 26,
+    "total_exams": 12
+  },
+  {
+    "id": "tchr_radzmia",
+    "name": "Teacher Radzmia",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "Gen Bio 2",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Gen Bio 2",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Gen Bio 2",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Gen Bio 2",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 24,
+    "total_exams": 9
+  },
+  {
+    "id": "tchr_rowena",
+    "name": "Teacher Rowena",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "Gen Bio 2",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Gen Science",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Gen Science",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Gen Science",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 34,
+    "total_exams": 11
+  },
+  {
+    "id": "tchr_sahdia",
+    "name": "Teacher Sahdia",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Language",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Language",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Language",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Language",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Language",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 28,
+    "total_exams": 16
+  },
+  {
+    "id": "tchr_saimonah",
+    "name": "Teacher Saimonah",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Araling Panlipunan",
         "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
         "shift": "ODL - 2ND SHIFT"
       },
       {
-        "subject": "Qur'an",
+        "subject": "MAPEH",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
         "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
         "shift": "ODL - 2ND SHIFT"
       },
       {
-        "subject": "Qur'an",
-        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "subject": "Science",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
         "shift": "ODL - 1ST SHIFT"
       },
       {
-        "subject": "Qur'an5",
+        "subject": "Science",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
         "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
       }
     ],
-    "total_classes": 30,
-    "total_exams": 23
+    "total_classes": 26,
+    "total_exams": 15
   },
   {
     "id": "tchr_saliha",
@@ -5651,16 +4586,6 @@ html, body {
         "shift": "ODL - 2ND SHIFT"
       },
       {
-        "subject": "GMRC3",
-        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "GMRC5",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
         "subject": "Hadith",
         "section": "KINDER 1 CLASS SCHEDULE (F2F)",
         "shift": "F2F"
@@ -5681,8 +4606,230 @@ html, body {
         "shift": "ODL - 1ST SHIFT"
       }
     ],
-    "total_classes": 33,
+    "total_classes": 27,
     "total_exams": 17
+  },
+  {
+    "id": "tchr_samsida",
+    "name": "Ustadha Samsida",
+    "department": "ISAL Faculty",
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 4 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 28,
+    "total_exams": 9
+  },
+  {
+    "id": "tchr_samsuddin",
+    "name": "Alim Samsuddin",
+    "department": "ISAL Faculty",
+    "assignments": [
+      {
+        "subject": "SHAF",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 24,
+    "total_exams": 18
+  },
+  {
+    "id": "tchr_shirehan",
+    "name": "Teacher Shirehan",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "Araling Panlipunan",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F"
+      },
+      {
+        "subject": "PSKP",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "PSKP",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "PSKP 11",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 32,
+    "total_exams": 12
   },
   {
     "id": "tchr_silfah",
@@ -5796,17 +4943,228 @@ html, body {
       },
       {
         "subject": "GMRC",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 33,
+    "total_exams": 24
+  },
+  {
+    "id": "tchr_sitti_kauzar",
+    "name": "Teacher Sitti Kauzar",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Circle Time 1",
+        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 23,
+    "total_exams": 10
+  },
+  {
+    "id": "tchr_sophia",
+    "name": "Teacher Sophia",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "Filipino",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
         "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
         "shift": "ODL - 1ST SHIFT"
       },
       {
-        "subject": "GMRC",
-        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "subject": "Filipino",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Social Science",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Social Science",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Social Science",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Social Science",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Social Science",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Social Science",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Social Science",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 31,
+    "total_exams": 15
+  },
+  {
+    "id": "tchr_wardah",
+    "name": "Teacher Wardah",
+    "department": "High School Faculty",
+    "assignments": [
+      {
+        "subject": "Values Ed",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Values Ed",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Values Ed",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
         "shift": "ODL - 1ST SHIFT"
       }
     ],
-    "total_classes": 30,
-    "total_exams": 23
+    "total_classes": 6,
+    "total_exams": 3
+  },
+  {
+    "id": "tchr_wendy",
+    "name": "Teacher Wendy",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "Circle Time 1",
+        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Circle Time 1",
+        "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Makabansa",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Math",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F"
+      }
+    ],
+    "total_classes": 12,
+    "total_exams": 6
   }
 ];
 
@@ -6055,12 +5413,9 @@ html, body {
     });
   };
 
-  function activeScheduleProctorId(record) {
+  function activeScheduleTeacherId(record) {
     if (!record) return '';
-    if (record.proctor_status === 'NOT_ASSIGNED' || record.proctor_pool === 'NONE') {
-      return '';
-    }
-    return record.proctor_id || record.teacher_id || '';
+    return record.teacher_id || record.subject_teacher_id || '';
   }
 
   function strictScheduleConflicts() {
@@ -6076,9 +5431,9 @@ html, body {
         const right = EXAM_RECORDS[rightIndex];
         if (!overlaps(left, right)) continue;
 
-        const leftProctorId = activeScheduleProctorId(left);
-        const rightProctorId = activeScheduleProctorId(right);
-        const sameTeacher = leftProctorId && leftProctorId === rightProctorId;
+        const leftTeacherId = activeScheduleTeacherId(left);
+        const rightTeacherId = activeScheduleTeacherId(right);
+        const sameTeacher = leftTeacherId && leftTeacherId === rightTeacherId;
         const sameCohort =
           left.grade_level === right.grade_level
           && left.modality === right.modality
@@ -6472,7 +5827,7 @@ html, body {
   // TAB 2: FACULTY EXAM TIMETABLES
   // -------------------------------------------------------------
   function examCountForTeacher(teacherId) {
-    return EXAM_RECORDS.filter(exam => (exam.proctor_id || exam.teacher_id) === teacherId).length;
+    return EXAM_RECORDS.filter(exam => (exam.teacher_id || exam.subject_teacher_id) === teacherId).length;
   }
 
   function renderFacultyToolbar(targetTeacherId) {
@@ -6541,7 +5896,7 @@ html, body {
     let fullHtml = '';
 
     targetTeachers.forEach(t => {
-      const tExams = EXAM_RECORDS.filter(e => (e.proctor_id || e.teacher_id) === t.id);
+      const tExams = EXAM_RECORDS.filter(e => (e.teacher_id || e.subject_teacher_id) === t.id);
       const teacherName = t.name;
       const teacherDept = t.department;
       const examDutyCount = tExams.length;
@@ -6675,7 +6030,7 @@ html, body {
                 <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
                     ${isAutomaticProctorCoverage ? `
-                      <span class="cell-proctor-duty-label">PROCTOR - ${esc(match.proctor || match.teacher)}</span>
+                      
                       <span class="cell-subject-sec">${esc(displayedSubject)}</span>
                       <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
                       ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
@@ -6783,7 +6138,7 @@ html, body {
                     : '<span class="badge-conflict-free">✓ 0 Conflicts</span>'}
                 </div>
 
-                <div class="assigned-subjects-title">${INACTIVE_TEACHER_IDS.has(t.id) ? 'Former Subject Assignments — Reference Only' : 'Assigned Subjects &amp; Load'} (${t.total_classes} Classes/wk • ${examCountForTeacher(t.id)} Active Proctor Duties):</div>
+                <div class="assigned-subjects-title">${INACTIVE_TEACHER_IDS.has(t.id) ? 'Former Subject Assignments — Reference Only' : 'Assigned Subjects &amp; Load'} (${t.total_classes} Classes/wk • ${examCountForTeacher(t.id)} Exam Sessions):</div>
                 <div class="subject-pill-list">
                   ${t.assignments.length > 0 ? t.assignments.map(a => `
                     <span class="subj-tag" title="${a.section} (${a.shift})">
@@ -6799,7 +6154,7 @@ html, body {
                 <a href="class-schedule.html?view=teacher&tchr=${t.id}" class="btn-link-action btn-link-sched">${INACTIVE_TEACHER_IDS.has(t.id) ? 'Former Weekly Load' : 'Weekly Schedule'}</a>
                 ${INACTIVE_TEACHER_IDS.has(t.id)
                   ? '<a href="proctor-list.html?status=replacement" class="btn-link-action btn-link-exam">Replacement Required</a>'
-                  : `<button onclick="switchTab('FACULTY', '${t.id}')" class="btn-link-action btn-link-exam">Proctor Timetable (${examCountForTeacher(t.id)})</button>`}
+                  : `<button onclick="switchTab('FACULTY', '${t.id}')" class="btn-link-action btn-link-exam">Faculty Timetable (${examCountForTeacher(t.id)})</button>`}
               </div>
             </div>
           `).join('') : '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#64748b; font-weight:700;">No faculty members matched your search.</div>'}

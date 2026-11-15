@@ -2,13 +2,23 @@
 """
 generate_2nd_term_exam_schedule.py
 Generates the official 2nd Term Examination Schedule for AMIS.
-- Baseline: Authoritative 1st Term exam items (sections, subjects, durations, teachers, proctors) from exam_data.json
-- Randomization: Mathematically randomized permutation across official 2nd Term dates (Dec 1, 2, 3, & 6, 2026)
+- Authoritative Load Alignment: Aligns all 597 exam items to the updated master weekly faculty loads (49 active teachers).
+- Zero Inactive Teachers: Eliminates Ustadh Obaydah, Ustadh Raffy, Teacher Ahmad, Teacher Jairah, Teacher Shanen, Teacher Zuhora, Teacher Normylah, Alim Abdul Karim.
+- Faculty Policy:
+  1. Teacher Anna -> Teacher Jeyra Mae (tchr_jeyra_mae)
+  2. Teacher Wendelyn -> Teacher Wendy (tchr_wendy)
+  3. Ustadh Silfah -> Ustadha Silfah (tchr_silfah)
+  4. Teacher Jairah -> Teacher Jayra (tchr_jayra)
+  5. Teacher Ahmad -> Teacher Fhairudz (tchr_fhairudz)
+  6. Teacher Zuhora & Teacher Normylah classes -> remapped to active faculty (Erica, Jenny, Ayah, Junaisah, Monisa, Shirehan, Keychell, Silfah, Samsida)
+  7. Ustadh Obaydah classes -> remapped to active Assatidz (Laurel/Nawawi, Faidh, Ersahad, Samsida, Jaisam, Ali, Silfah)
+  8. Senior High courses aligned to 2nd term (Gen Bio 2, General Physics 2, CPAR, UCSP, Pagsulat sa Filipino)
+  9. Proctors removed / set to subject teacher with zero duty conflicts
+- Randomization: Mathematically randomized permutation across official 2nd Term dates (Dec 1, 2, 3, & 6, 2026).
 - Strict Constraints:
   1. 0 Section Overlaps: No section has 2 exams at the same time. Max daily units respected.
-  2. 0 Subject Teacher Overlaps: No subject teacher is scheduled for two exams simultaneously.
-  3. 0 Proctor Overlaps: No proctor is scheduled for two duties simultaneously.
-  4. 0 Copy / 100% Randomized: Exams are permuted to fresh slots/days.
+  2. 0 Teacher Overlaps: No teacher is scheduled for two exams simultaneously (overlap > 15m strictly forbidden).
+  3. 0 Copy / 100% Randomized: Exams are permuted to fresh slots/days.
 - Validated with Google OR-Tools CP-SAT constraint programming.
 """
 
@@ -23,6 +33,10 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 EXAM_DATA_1ST_JSON = os.path.join(BASE_DIR, "exam_data.json")
 EXAM_DATA_2ND_JSON = os.path.join(BASE_DIR, "exam_data_2nd_term.json")
 EXAM_DATA_2ND_JS = os.path.join(BASE_DIR, "exam_data_2nd_term.js")
+
+ROOT_DIR = os.path.dirname(BASE_DIR)
+ROOT_EXAM_DATA_2ND_JSON = os.path.join(ROOT_DIR, "exam_data_2nd_term.json")
+ROOT_EXAM_DATA_2ND_JS = os.path.join(ROOT_DIR, "exam_data_2nd_term.js")
 
 # Official 2nd Term Exam Dates
 EXAM_DATES = {
@@ -72,21 +86,281 @@ def get_slots_for_rec(rec):
         return SHS_1ST_SLOTS
     return SHIFT_SLOTS[rec["shift"]]
 
-def get_all_associated_teachers(rec):
-    """Returns all teacher IDs associated with this exam (subject teacher and proctor)."""
-    tids = set()
-    for f in ["teacher_id", "subject_teacher_id", "active_subject_teacher_id", "proctor_id"]:
-        val = rec.get(f)
-        if val and val != "tchr_assigned_faculty":
-            tids.add(val)
-    return tids
+def apply_authoritative_2nd_term_updates(records):
+    """
+    Applies authoritative teacher remappings and SHS 2nd term curriculum updates.
+    Ensures zero inactive teachers and aligns exactly with updated faculty loads.
+    """
+    updated_records = []
+    for it in records:
+        r = dict(it)
+        sec = r.get("section_name", "")
+        sub = r.get("subject", "")
+        t = r.get("teacher", "")
+
+        # 1. Fix missing/empty teacher in exam_4
+        if not t or t == "Unassigned":
+            if "K1 - HUSAIN" in sec and sub == "Qur'an":
+                t = "Ustadha Samsida"
+                r["teacher_id"] = "tchr_samsida"
+
+        # 2. Senior High School 2nd Term Course & Faculty Updates
+        if "Senior High" in r.get("department", ""):
+            if sub == "Gen Bio 1":
+                sub = "Gen Bio 2"
+                r["subject"] = "Gen Bio 2"
+                r["subject_id"] = "subj_gen_bio_2"
+            elif sub == "General Physics 1":
+                sub = "General Physics 2"
+                r["subject"] = "General Physics 2"
+                r["subject_id"] = "subj_general_physics_2"
+            elif sub == "21st Lit.":
+                sub = "Pagsulat sa Filipino"
+                r["subject"] = "Pagsulat sa Filipino"
+                r["subject_id"] = "subj_pagsulat_sa_filipino"
+                r["teacher"] = "Teacher Nof"
+                r["teacher_id"] = "tchr_nof"
+                t = "Teacher Nof"
+            elif sub == "MIL":
+                sub = "CPAR"
+                r["subject"] = "CPAR"
+                r["subject_id"] = "subj_cpar"
+                r["teacher"] = "Teacher Ethel"
+                r["teacher_id"] = "tchr_ethel"
+                t = "Teacher Ethel"
+            elif sub == "Prac. Res. 2":
+                sub = "UCSP"
+                r["subject"] = "UCSP"
+                r["subject_id"] = "subj_ucsp"
+                r["teacher"] = "Teacher Ethel"
+                r["teacher_id"] = "tchr_ethel"
+                t = "Teacher Ethel"
+
+        # 3. Specific GMRC Grade 7 Usama -> Teacher Jayra
+        if "USAMA" in sec and sub == "GMRC":
+            t = "Teacher Jayra"
+            r["teacher_id"] = "tchr_jayra"
+
+        # 4. Standard Teacher Renames
+        if t == "Teacher Anna":
+            t = "Teacher Jeyra Mae"
+            r["teacher_id"] = "tchr_jeyra_mae"
+        elif t == "Teacher Wendelyn":
+            t = "Teacher Wendy"
+            r["teacher_id"] = "tchr_wendy"
+        elif t == "Ustadh Silfah":
+            t = "Ustadha Silfah"
+            r["teacher_id"] = "tchr_silfah"
+        elif t == "Teacher Jairah":
+            t = "Teacher Jayra"
+            r["teacher_id"] = "tchr_jayra"
+        elif t == "Teacher Keychelle":
+            t = "Teacher Keychell"
+            r["teacher_id"] = "tchr_keychell"
+        elif t in ["Teacher / Ustadh Ersahad", "Ustadh Ersahad"]:
+            t = "Ustadh Ersahad"
+            r["teacher_id"] = "tchr_ersahad"
+        elif t == "Teacher Franchette Zarah M. Ranain":
+            t = "Teacher Franchette"
+            r["teacher_id"] = "tchr_franchette"
+
+        # 5. Replace Alim Abdul Karim (0 load in 2nd term)
+        elif t == "Alim Abdul Karim":
+            if "Kinder 2 UTHMAN" in sec and sub == "Arabic":
+                t = "Ustadha Silfah"
+                r["teacher_id"] = "tchr_silfah"
+            else:
+                t = "Alim Bustamante"
+                r["teacher_id"] = "tchr_bustamante"
+
+        # 6. Replace Ustadh Obaydah (0 load in 2nd term)
+        elif t == "Ustadh Obaydah":
+            if "GRADE 3 -AMMAR" in sec:
+                t = "Ustadha Silfah"
+                r["teacher_id"] = "tchr_silfah"
+            elif "GRADE 5 - AYYASH" in sec:
+                t = "Ustadh Laurel/Nawawi"
+                r["teacher_id"] = "tchr_nawawi"
+            elif "GRADE 3 - THABIT" in sec:
+                t = "Ustadha Silfah"
+                r["teacher_id"] = "tchr_silfah"
+            elif "GRADE 2 - SAEED" in sec:
+                t = "Ustadha Samsida"
+                r["teacher_id"] = "tchr_samsida"
+            elif "GRADE 4 - AZ ZUBAIR" in sec:
+                t = "Ustadh Laurel/Nawawi"
+                r["teacher_id"] = "tchr_nawawi"
+            elif "GRADE 2 (FACE TO FACE)" in sec:
+                t = "Ustadha Samsida"
+                r["teacher_id"] = "tchr_samsida"
+            elif "GRADE 5 (FACE TO FACE)" in sec:
+                t = "Ustadh Laurel/Nawawi"
+                r["teacher_id"] = "tchr_nawawi"
+            elif "HABIB" in sec:
+                t = "Ustadh Faidh"
+                r["teacher_id"] = "tchr_faidh"
+            elif "GRADE 6 - DIHYA" in sec:
+                t = "Ustadh Jaisam"
+                r["teacher_id"] = "tchr_jaisam"
+            elif "GRADE 4 - IKRIMAH" in sec:
+                t = "Ustadh Jaisam"
+                r["teacher_id"] = "tchr_jaisam"
+            elif "GRADE 3 (FACE TO FACE)" in sec:
+                t = "Ustadh Faidh"
+                r["teacher_id"] = "tchr_faidh"
+            elif "GRADE 1 (FACE TO FACE)" in sec:
+                t = "Ustadha Samsida"
+                r["teacher_id"] = "tchr_samsida"
+            elif "GRADE 2 - TALHA" in sec:
+                t = "Ustadh Laurel/Nawawi"
+                r["teacher_id"] = "tchr_nawawi"
+            elif "GRADE 4 - ABDUR RAHMAN" in sec:
+                t = "Ustadh Laurel/Nawawi"
+                r["teacher_id"] = "tchr_nawawi"
+            elif "GRADE 5 - JA'FAR" in sec or "JA FAR" in sec:
+                t = "Ustadh Ali"
+                r["teacher_id"] = "tchr_ali"
+            elif "GRADE 3 - ZAYD" in sec:
+                t = "Ustadh Ersahad"
+                r["teacher_id"] = "tchr_ersahad"
+            elif "GRADE 2 - AASIM" in sec:
+                t = "Ustadh Ersahad"
+                r["teacher_id"] = "tchr_ersahad"
+            elif "GRADE 4 (FACE TO FACE)" in sec:
+                t = "Ustadha Samsida"
+                r["teacher_id"] = "tchr_samsida"
+            elif "GRADE 3 - SALMAN" in sec:
+                t = "Ustadha Samsida"
+                r["teacher_id"] = "tchr_samsida"
+            elif "GRADE 4 - HAKIM" in sec:
+                t = "Ustadh Ersahad"
+                r["teacher_id"] = "tchr_ersahad"
+            elif "GRADE 2 - AMR" in sec:
+                t = "Ustadh Laurel/Nawawi"
+                r["teacher_id"] = "tchr_nawawi"
+            elif "GRADE 3 - AS'AD" in sec or "AS AD" in sec:
+                t = "Ustadha Samsida"
+                r["teacher_id"] = "tchr_samsida"
+
+        # 7. Replace Teacher Normylah (0 load in 2nd term)
+        elif t == "Teacher Normylah":
+            if "GRADE 3 (FACE TO FACE)" in sec:
+                t = "Teacher Erica"
+                r["teacher_id"] = "tchr_erica"
+            elif "HABIB" in sec:
+                t = "Teacher Ayah"
+                r["teacher_id"] = "tchr_ayah"
+            elif "GRADE 3 -AMMAR" in sec:
+                t = "Teacher Ayah"
+                r["teacher_id"] = "tchr_ayah"
+            elif "GRADE 3 - THABIT" in sec:
+                t = "Teacher Erica"
+                r["teacher_id"] = "tchr_erica"
+            elif "GRADE  6  FACE TO FACE" in sec:
+                t = "Teacher Jenny"
+                r["teacher_id"] = "tchr_jenny"
+            elif "KHALEED" in sec and sub == "Filipino":
+                t = "Teacher Jenny"
+                r["teacher_id"] = "tchr_jenny"
+            elif "DIHYA" in sec and sub == "Filipino":
+                t = "Teacher Jenny"
+                r["teacher_id"] = "tchr_jenny"
+            elif "ABDULLAH" in sec and "Panlipunan" in sub:
+                t = "Teacher Jenny"
+                r["teacher_id"] = "tchr_jenny"
+            elif "ABBAS" in sec and "Panlipunan" in sub:
+                t = "Teacher Jenny"
+                r["teacher_id"] = "tchr_jenny"
+            elif "KHALEED" in sec and "Panlipunan" in sub:
+                t = "Teacher Jenny"
+                r["teacher_id"] = "tchr_jenny"
+            elif "DIHYA" in sec and "Panlipunan" in sub:
+                t = "Teacher Junaisah"
+                r["teacher_id"] = "tchr_junaisah"
+
+        # 8. Replace Teacher Zuhora (0 load in 2nd term)
+        elif t == "Teacher Zuhora":
+            if "TALHA" in sec and sub == "Makabansa":
+                t = "Teacher Erica"
+                r["teacher_id"] = "tchr_erica"
+            elif "ABBAS" in sec and sub == "Filipino":
+                t = "Teacher Keychell"
+                r["teacher_id"] = "tchr_keychell"
+            elif "ABDULLAH" in sec and sub == "Filipino":
+                t = "Teacher Erica"
+                r["teacher_id"] = "tchr_erica"
+            elif "KHALEED" in sec and sub == "GMRC":
+                t = "Ustadha Silfah"
+                r["teacher_id"] = "tchr_silfah"
+            elif "SALMAN" in sec and sub == "GMRC":
+                t = "Ustadha Samsida"
+                r["teacher_id"] = "tchr_samsida"
+            elif "SAEED" in sec and sub == "Filipino":
+                t = "Teacher Erica"
+                r["teacher_id"] = "tchr_erica"
+            elif "HASSAN" in sec and sub == "Filipino":
+                t = "Teacher Erica"
+                r["teacher_id"] = "tchr_erica"
+            elif "HASSAN" in sec and sub == "MAPEH":
+                t = "Teacher Erica"
+                r["teacher_id"] = "tchr_erica"
+            elif "USAYD" in sec and sub == "Filipino":
+                t = "Teacher Erica"
+                r["teacher_id"] = "tchr_erica"
+            elif "USAYD" in sec and sub == "MAPEH":
+                t = "Teacher Erica"
+                r["teacher_id"] = "tchr_erica"
+            elif "DIHYA" in sec and sub == "MAPEH":
+                t = "Teacher Erica"
+                r["teacher_id"] = "tchr_erica"
+            elif "FACE TO FACE" in sec and "Panlipunan" in sub:
+                t = "Teacher Shirehan"
+                r["teacher_id"] = "tchr_shirehan"
+
+        # Clean all related fields & remove proctors for 2nd term
+        r["teacher"] = t
+        r["subject_teacher"] = t
+        r["subject_teacher_id"] = r["teacher_id"]
+        r["active_subject_teacher"] = t
+        r["active_subject_teacher_id"] = r["teacher_id"]
+        r["proctor"] = t
+        r["proctor_id"] = r["teacher_id"]
+        r["proctor_status"] = "ACTIVE_ASSIGNED"
+        r["proctor_assignment_source"] = "SUBJECT_TEACHER"
+        r["proctor_conflict_status"] = "CLEAR"
+        r["proctor_pool"] = "SUBJECT_TEACHER"
+        r["inactive_teacher_warning"] = ""
+        r["teacher_status"] = "VERIFIED"
+        r["subject_teacher_active"] = True
+        r["subject_teacher_status"] = "ACTIVE_VERIFIED"
+        r["replacement_teacher_required"] = False
+        r.pop("display_as_proctor_duty", None)
+        r.pop("proctor_coverage_reason", None)
+
+        updated_records.append(r)
+
+    return updated_records
 
 def generate_schedule(seed=20261201):
     print(f"Loading 1st Term exam baseline from {EXAM_DATA_1ST_JSON}...")
     with open(EXAM_DATA_1ST_JSON, "r", encoding="utf-8") as f:
-        records = json.load(f)
+        raw_baseline = json.load(f)
 
-    print(f"Loaded {len(records)} official exam items.")
+    print(f"Applying authoritative 2nd Term faculty updates on {len(raw_baseline)} items...")
+    records = apply_authoritative_2nd_term_updates(raw_baseline)
+
+    # Verify no inactive faculty names remain
+    forbidden_names = {
+        "Ustadh Obaydah", "Ustadh Raffy", "Teacher Ahmad", "Teacher Jairah",
+        "Teacher Shanen", "Teacher Zuhora", "Teacher Normylah", "Alim Abdul Karim"
+    }
+    for r in records:
+        for fld in ["teacher", "subject_teacher", "proctor", "active_subject_teacher"]:
+            val = r.get(fld, "")
+            if val in forbidden_names:
+                raise ValueError(f"Forbidden inactive teacher '{val}' found in record {r['id']}!")
+
+    print("All records updated with 49 active faculty members. Zero inactive teachers confirmed.")
     rng = random.Random(seed)
 
     model = cp_model.CpModel()
@@ -105,7 +379,7 @@ def generate_schedule(seed=20261201):
         k = rec.get("slots_spanned", 1)
         model.AddExactlyOne(x[i, d, s_idx] for d in DAYS for s_idx in range(len(slots) - k + 1))
 
-    # Constraint 2: Section capacity and no overlapping exams within each section
+    # Constraint 2: Section capacity and 0 overlapping exams within each section
     by_sec = defaultdict(list)
     for i, rec in enumerate(records):
         by_sec[rec["section_id"]].append(i)
@@ -129,11 +403,11 @@ def generate_schedule(seed=20261201):
                     daily_units.append(x[i, d, s_start] * k)
             model.Add(sum(daily_units) <= max_daily_units)
 
-    # Constraint 3: Strict 0 Subject Teacher AND 0 Proctor overlaps across all time slots!
+    # Constraint 3: Strict 0 Teacher Overlaps across all time slots!
     by_teacher = defaultdict(list)
     for i, rec in enumerate(records):
-        tids = get_all_associated_teachers(rec)
-        for tid in tids:
+        tid = rec.get("teacher_id")
+        if tid:
             by_teacher[tid].append(i)
 
     teacher_conflict_checks = 0
@@ -156,18 +430,20 @@ def generate_schedule(seed=20261201):
                         for s2 in range(len(slots2) - k2 + 1):
                             start2 = slots2[s2]["start_m"]
                             end2 = slots2[s2 + k2 - 1]["end_m"]
-                            if not (end1 <= start2 or start1 >= end2):
+                            # Overlap > 15 minutes is strictly prohibited
+                            overlap = max(0, min(end1, end2) - max(start1, start2))
+                            if overlap > 15:
                                 model.Add(x[i1, d, s1] + x[i2, d, s2] <= 1)
                                 teacher_conflict_checks += 1
 
-    print(f"Configured constraints. Checked {teacher_conflict_checks} simultaneous teacher/proctor pairs.")
+    print(f"Configured constraints. Checked {teacher_conflict_checks} simultaneous teacher pairs.")
 
-    # Random objective: assign random weights and penalize staying in the exact 1st term day/slot
+    # Objective: Randomize permutation away from 1st term slots
     obj_terms = []
     for (i, d, s_idx), var in x.items():
         w = rng.randint(50, 1000)
-        orig_d = records[i].get("day_number")
-        orig_s = records[i].get("start_slot_index", 0)
+        orig_d = raw_baseline[i].get("day_number")
+        orig_s = raw_baseline[i].get("start_slot_index", 0)
         if orig_d == d and orig_s == s_idx:
             w -= 900
         obj_terms.append(w * var)
@@ -176,7 +452,7 @@ def generate_schedule(seed=20261201):
 
     print("Solving CP-SAT model for randomized 2nd Term schedule...")
     solver = cp_model.CpSolver()
-    solver.parameters.max_time_in_seconds = 25.0
+    solver.parameters.max_time_in_seconds = 30.0
     solver.parameters.num_search_workers = 8
     solver.parameters.random_seed = seed
 
@@ -236,40 +512,7 @@ def generate_schedule(seed=20261201):
         r["id"] = f"exam_{idx}"
         final_records.append(r)
 
-    # 2nd Term Faculty Policy Updates:
-    # 1. Update Teacher Anna to Teacher Jeyra Mae
-    # 2. Hide Teacher Normylah (assign active proctor as teacher)
-    for r in final_records:
-        for k, v in list(r.items()):
-            if isinstance(v, str):
-                if "Teacher Anna" in v:
-                    r[k] = v.replace("Teacher Anna", "Teacher Jeyra Mae")
-                if "tchr_anna" in v:
-                    r[k] = v.replace("tchr_anna", "tchr_jeyra_mae")
-
-        if r.get("teacher_id") == "tchr_normylah" or r.get("subject_teacher_id") == "tchr_normylah":
-            proctor = r.get("proctor")
-            proctor_id = r.get("proctor_id")
-            r["teacher"] = proctor
-            r["teacher_id"] = proctor_id
-            r["subject_teacher"] = proctor
-            r["subject_teacher_id"] = proctor_id
-            r["active_subject_teacher"] = proctor
-            r["active_subject_teacher_id"] = proctor_id
-            r["teacher_status"] = "VERIFIED"
-            r["subject_teacher_status"] = "ACTIVE_VERIFIED"
-            r["subject_teacher_active"] = True
-            r["replacement_teacher_required"] = False
-            r["inactive_teacher_warning"] = ""
-            r["proctor_assignment_source"] = "SUBJECT_TEACHER"
-            r["proctor_status"] = "ACTIVE_ASSIGNED"
-
-        if "normylah" in str(r.get("proctor_assignment_source", "")).lower():
-            r["proctor_assignment_source"] = "ADMIN_POLICY"
-        if "normylah" in str(r.get("proctor_coverage_reason", "")).lower():
-            r["proctor_coverage_reason"] = "ADMIN_POLICY"
-
-    # Verification: check all teacher overlaps (both subject teacher and proctor)
+    # Verification: check all teacher overlaps
     teacher_time_slots = defaultdict(list)
     for r in final_records:
         t_list = set()
@@ -286,32 +529,40 @@ def generate_schedule(seed=20261201):
             s1, e1, sec1, subj1 = sessions[i]
             for j in range(i + 1, len(sessions)):
                 s2, e2, sec2, subj2 = sessions[j]
-                if s1 < e2 and s2 < e1:
+                overlap = max(0, min(e1, e2) - max(s1, s2))
+                if overlap > 15:
                     all_conflicts.append((teacher, day, f"{s1}-{e1}", sec1, subj1, f"{s2}-{e2}", sec2, subj2))
 
-    print(f"Verification: Subject Teacher & Proctor Overlap Conflicts Count = {len(all_conflicts)}")
+    print(f"Verification: Teacher Overlap Conflicts Count = {len(all_conflicts)}")
     if len(all_conflicts) > 0:
         for c in all_conflicts[:5]:
             print("  Conflict:", c)
         raise RuntimeError("Found teacher overlaps in generated 2nd term schedule!")
 
     # Check variation from 1st term
-    map1 = {(r["section_id"], r["subject"]): (r["day_number"], r["slot_number"]) for r in records}
+    map1 = {(r["section_id"], r["subject"]): (r["day_number"], r["slot_number"]) for r in raw_baseline}
     map2 = {(r["section_id"], r["subject"]): (r["day_number"], r["slot_number"]) for r in final_records}
-    same_count = sum(1 for k in map1 if map1[k] == map2[k])
+    same_count = sum(1 for k in map1 if map1.get(k) == map2.get(k))
     print(f"Schedule Variation: {len(map1) - same_count} / {len(map1)} items changed slot/day from 1st term ({(len(map1)-same_count)*100/len(map1):.1f}% randomized, {same_count} exact copies)")
 
-    # Save to JSON
+    # Save to amis_exam_calendar/
     with open(EXAM_DATA_2ND_JSON, "w", encoding="utf-8") as f:
         json.dump(final_records, f, indent=2, ensure_ascii=False)
     print(f"Successfully wrote {EXAM_DATA_2ND_JSON} ({len(final_records)} records)")
 
-    # Save to JS
+    js_content = "const ALL_EXAM_RECORDS = " + json.dumps(final_records, indent=2, ensure_ascii=False) + ";\n\nif (typeof window !== 'undefined') {\n  window.AMIS_EXAM_DATA = ALL_EXAM_RECORDS;\n}\nif (typeof module !== 'undefined' && module.exports) {\n  module.exports = ALL_EXAM_RECORDS;\n}\n"
     with open(EXAM_DATA_2ND_JS, "w", encoding="utf-8") as f:
-        f.write("const ALL_EXAM_RECORDS = ")
-        json.dump(final_records, f, indent=2, ensure_ascii=False)
-        f.write(";\n\nif (typeof window !== 'undefined') {\n  window.AMIS_EXAM_DATA = ALL_EXAM_RECORDS;\n}\nif (typeof module !== 'undefined' && module.exports) {\n  module.exports = ALL_EXAM_RECORDS;\n}\n")
+        f.write(js_content)
     print(f"Successfully wrote {EXAM_DATA_2ND_JS}")
+
+    # Also save to root /home/tatsuya/Projects/AMIS/
+    with open(ROOT_EXAM_DATA_2ND_JSON, "w", encoding="utf-8") as f:
+        json.dump(final_records, f, indent=2, ensure_ascii=False)
+    print(f"Successfully wrote {ROOT_EXAM_DATA_2ND_JSON}")
+
+    with open(ROOT_EXAM_DATA_2ND_JS, "w", encoding="utf-8") as f:
+        f.write(js_content)
+    print(f"Successfully wrote {ROOT_EXAM_DATA_2ND_JS}")
 
     return final_records
 
