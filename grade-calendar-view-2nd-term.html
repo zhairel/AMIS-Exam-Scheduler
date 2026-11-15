@@ -966,7 +966,7 @@ body.no-navbar {
     ).join('');
 
     // 2. Populate Teacher Selector
-    let allTeachers = [...new Set(records.map(r => r.teacher).filter(t => t && !/^(tbd|tba|none)$/i.test(t)))].sort((a, b) => a.localeCompare(b));
+    let allTeachers = [...new Set(records.map(r => r.teacher).filter(t => t && !/^(tbd|tba|none|teacher normylah)$/i.test(t)))].sort((a, b) => a.localeCompare(b));
     teacherNavSelect.innerHTML = '<option value="">All Teachers (' + allTeachers.length + ' Staff)</option>' + allTeachers.map(t => {
       const count = records.filter(r => r.teacher === t).length;
       return `<option value="${esc(t)}" ${t.toLowerCase() === (filterTeacher || '').toLowerCase() ? 'selected' : ''}>${esc(t)} (${count} exams)</option>`;

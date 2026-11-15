@@ -236,6 +236,39 @@ def generate_schedule(seed=20261201):
         r["id"] = f"exam_{idx}"
         final_records.append(r)
 
+    # 2nd Term Faculty Policy Updates:
+    # 1. Update Teacher Anna to Teacher Jeyra Mae
+    # 2. Hide Teacher Normylah (assign active proctor as teacher)
+    for r in final_records:
+        for k, v in list(r.items()):
+            if isinstance(v, str):
+                if "Teacher Anna" in v:
+                    r[k] = v.replace("Teacher Anna", "Teacher Jeyra Mae")
+                if "tchr_anna" in v:
+                    r[k] = v.replace("tchr_anna", "tchr_jeyra_mae")
+
+        if r.get("teacher_id") == "tchr_normylah" or r.get("subject_teacher_id") == "tchr_normylah":
+            proctor = r.get("proctor")
+            proctor_id = r.get("proctor_id")
+            r["teacher"] = proctor
+            r["teacher_id"] = proctor_id
+            r["subject_teacher"] = proctor
+            r["subject_teacher_id"] = proctor_id
+            r["active_subject_teacher"] = proctor
+            r["active_subject_teacher_id"] = proctor_id
+            r["teacher_status"] = "VERIFIED"
+            r["subject_teacher_status"] = "ACTIVE_VERIFIED"
+            r["subject_teacher_active"] = True
+            r["replacement_teacher_required"] = False
+            r["inactive_teacher_warning"] = ""
+            r["proctor_assignment_source"] = "SUBJECT_TEACHER"
+            r["proctor_status"] = "ACTIVE_ASSIGNED"
+
+        if "normylah" in str(r.get("proctor_assignment_source", "")).lower():
+            r["proctor_assignment_source"] = "ADMIN_POLICY"
+        if "normylah" in str(r.get("proctor_coverage_reason", "")).lower():
+            r["proctor_coverage_reason"] = "ADMIN_POLICY"
+
     # Verification: check all teacher overlaps (both subject teacher and proctor)
     teacher_time_slots = defaultdict(list)
     for r in final_records:
