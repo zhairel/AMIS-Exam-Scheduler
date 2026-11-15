@@ -328,6 +328,35 @@ def apply_authoritative_2nd_term_updates(records):
                 t = "Teacher Shirehan"
                 r["teacher_id"] = "tchr_shirehan"
 
+        # 9. Replace Ustadha Hainur (0 load in 2nd term - inactive/resigned)
+        elif t == "Ustadha Hainur" or tid == "tchr_hainur":
+            # Ustadh Laurel/Nawawi (7 classes: Qur'an G1 Ali, Qur'an 1 Hudhayfah, Qur'an G1 Sa'ad, Qur'an 1 Suhayb, SHAF 5 Hamza, SHAF 5 Muhammad, SHAF 5 Mus'ab)
+            if "ALI" in sec and sub == "Qur'an":
+                t = "Ustadh Laurel/Nawawi"
+                r["teacher_id"] = "tchr_nawawi"
+            elif "HUDHAYFAH" in sec and sub == "Qur'an":
+                t = "Ustadh Laurel/Nawawi"
+                r["teacher_id"] = "tchr_nawawi"
+            elif "SA'AD" in sec and sub == "Qur'an":
+                t = "Ustadh Laurel/Nawawi"
+                r["teacher_id"] = "tchr_nawawi"
+            elif "SUHAYB" in sec and sub == "Qur'an":
+                t = "Ustadh Laurel/Nawawi"
+                r["teacher_id"] = "tchr_nawawi"
+            elif "HAMZA" in sec and sub == "SHAF":
+                t = "Ustadh Laurel/Nawawi"
+                r["teacher_id"] = "tchr_nawawi"
+            elif "MUHAMMAD" in sec and sub == "SHAF":
+                t = "Ustadh Laurel/Nawawi"
+                r["teacher_id"] = "tchr_nawawi"
+            elif "MUS'AB" in sec and sub == "SHAF":
+                t = "Ustadh Laurel/Nawawi"
+                r["teacher_id"] = "tchr_nawawi"
+            # Ustadha Samsida (14 classes: Hadith K1 Husain, Hadith K2 Abdullah, Hadith K2 Umar, Qur'an K2 Abdullah, and all Arabic)
+            else:
+                t = "Ustadha Samsida"
+                r["teacher_id"] = "tchr_samsida"
+
         # Clean all related fields & remove proctors for 2nd term
         r["teacher"] = t
         r["subject_teacher"] = t
@@ -347,6 +376,8 @@ def apply_authoritative_2nd_term_updates(records):
         r["replacement_teacher_required"] = False
         r.pop("display_as_proctor_duty", None)
         r.pop("proctor_coverage_reason", None)
+        r.pop("former_subject_teacher", None)
+        r.pop("former_subject_teacher_id", None)
 
         updated_records.append(r)
 
@@ -363,7 +394,8 @@ def generate_schedule(seed=20261201):
     # Verify no inactive faculty names remain
     forbidden_names = {
         "Ustadh Obaydah", "Ustadh Raffy", "Teacher Ahmad", "Teacher Jairah",
-        "Teacher Shanen", "Teacher Zuhora", "Teacher Normylah", "Alim Abdul Karim"
+        "Teacher Shanen", "Teacher Zuhora", "Teacher Normylah", "Alim Abdul Karim",
+        "Ustadha Hainur"
     }
     for r in records:
         for fld in ["teacher", "subject_teacher", "proctor", "active_subject_teacher"]:
@@ -371,7 +403,7 @@ def generate_schedule(seed=20261201):
             if val in forbidden_names:
                 raise ValueError(f"Forbidden inactive teacher '{val}' found in record {r['id']}!")
 
-    print("All records updated with 49 active faculty members. Zero inactive teachers confirmed.")
+    print("All records updated with 48 active faculty members. Zero inactive teachers confirmed.")
     rng = random.Random(seed)
 
     model = cp_model.CpModel()
