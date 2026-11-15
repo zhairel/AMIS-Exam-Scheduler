@@ -143,6 +143,22 @@ body {
   min-width: 260px;
 }
 
+.filter-select optgroup {
+  font-weight: 800;
+  color: #065f46;
+  background: #f1f5f9;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.filter-select option:disabled.dropdown-divider-line,
+option.dropdown-divider-line {
+  color: #94a3b8 !important;
+  background: #f8fafc !important;
+  font-size: 11px !important;
+  text-align: center !important;
+}
+
 .btn-action {
   padding: 7px 14px;
   border-radius: 8px;
@@ -1130,6 +1146,7 @@ html, body {
   }
 
   function populateTeacherDropdown() {
+    const isUstadh = (name) => /^(ustadh|ustadha|alim)\b/i.test((name || '').trim());
     const teacherExamCounts = {};
     ALL_EXAM_RECORDS.forEach(e => {
       const tid = e.proctor_id || e.teacher_id;
@@ -1139,15 +1156,35 @@ html, body {
     });
 
     let teachers = Object.values(ALL_TEACHERS_DATA || {}).filter(t => (teacherExamCounts[t.teacher_id] || 0) > 0);
-    teachers = teachers.sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name));
+    let academic = teachers.filter(t => !isUstadh(t.canonical_name || t.teacher_name)).sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name));
+    let ustadhs = teachers.filter(t => isUstadh(t.canonical_name || t.teacher_name)).sort((a, b) => (a.canonical_name || a.teacher_name).localeCompare(b.canonical_name || b.teacher_name));
 
     let html = '<option value="ALL_FACULTY">All Staff / Faculty (Print All)</option>';
-    teachers.forEach(t => {
-      const name = t.canonical_name || t.teacher_name;
-      const count = teacherExamCounts[t.teacher_id] || 0;
-      const countLabel = count ? ` (${count} exam sessions)` : '';
-      html += `<option value="${t.teacher_id}">${esc(name)}${countLabel}</option>`;
-    });
+
+    if (academic.length > 0) {
+      html += '<optgroup label="TEACHERS">';
+      academic.forEach(t => {
+        const name = t.canonical_name || t.teacher_name;
+        const count = teacherExamCounts[t.teacher_id] || 0;
+        const countLabel = count ? ` (${count} Exam${count === 1 ? '' : 's'})` : '';
+        html += `<option value="${t.teacher_id}">${esc(name)}${countLabel}</option>`;
+      });
+      html += '</optgroup>';
+    }
+
+    html += '<option disabled class="dropdown-divider-line">──────────────────────────────</option>';
+
+    if (ustadhs.length > 0) {
+      html += '<optgroup label="USTADHS / USTADHA">';
+      ustadhs.forEach(t => {
+        const name = t.canonical_name || t.teacher_name;
+        const count = teacherExamCounts[t.teacher_id] || 0;
+        const countLabel = count ? ` (${count} Exam${count === 1 ? '' : 's'})` : '';
+        html += `<option value="${t.teacher_id}">${esc(name)}${countLabel}</option>`;
+      });
+      html += '</optgroup>';
+    }
+
     teacherPicker.innerHTML = html;
   }
 

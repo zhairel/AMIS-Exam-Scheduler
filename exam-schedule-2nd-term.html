@@ -144,6 +144,29 @@ body {
   box-shadow: 0 0 0 2px #34d399;
 }
 
+.filter-select optgroup {
+  font-weight: 800;
+  color: #065f46;
+  background: #f1f5f9;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  padding: 4px 0;
+}
+
+.filter-select option {
+  font-weight: 600;
+  color: #0f172a;
+  background: #ffffff;
+}
+
+.filter-select option:disabled.dropdown-divider-line,
+option.dropdown-divider-line {
+  color: #94a3b8 !important;
+  background: #f8fafc !important;
+  font-size: 11px !important;
+  text-align: center !important;
+}
+
 .filter-search-input {
   width: 220px;
   min-width: 180px;
@@ -5830,13 +5853,38 @@ html, body {
     return EXAM_RECORDS.filter(exam => (exam.teacher_id || exam.subject_teacher_id) === teacherId).length;
   }
 
+  function isUstadhFaculty(name) {
+    return /^(ustadh|ustadha|alim)\b/i.test((name || '').trim());
+  }
+
   function renderFacultyToolbar(targetTeacherId) {
     const teachersWithExams = FACULTY_ROSTER_DATA.filter(t => examCountForTeacher(t.id) > 0);
+    const academicTeachers = teachersWithExams.filter(t => !isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
+    const ustadhsFaculty = teachersWithExams.filter(t => isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
+
     let optionsHtml = '<option value="ALL_FACULTY">All Staff / Faculty (Print All Timetables)</option>';
-    teachersWithExams.forEach(t => {
-      const isSel = (targetTeacherId && t.id === targetTeacherId) ? 'selected' : '';
-      optionsHtml += `<option value="${t.id}" ${isSel}>${esc(t.name)} (${esc(t.department)} • ${examCountForTeacher(t.id)} Exams)</option>`;
-    });
+
+    if (academicTeachers.length > 0) {
+      optionsHtml += '<optgroup label="TEACHERS">';
+      academicTeachers.forEach(t => {
+        const isSel = (targetTeacherId && t.id === targetTeacherId) ? 'selected' : '';
+        const count = examCountForTeacher(t.id);
+        optionsHtml += `<option value="${t.id}" ${isSel}>${esc(t.name)} (${count} Exam${count === 1 ? '' : 's'})</option>`;
+      });
+      optionsHtml += '</optgroup>';
+    }
+
+    optionsHtml += '<option disabled class="dropdown-divider-line">──────────────────────────────</option>';
+
+    if (ustadhsFaculty.length > 0) {
+      optionsHtml += '<optgroup label="USTADHS / USTADHA">';
+      ustadhsFaculty.forEach(t => {
+        const isSel = (targetTeacherId && t.id === targetTeacherId) ? 'selected' : '';
+        const count = examCountForTeacher(t.id);
+        optionsHtml += `<option value="${t.id}" ${isSel}>${esc(t.name)} (${count} Exam${count === 1 ? '' : 's'})</option>`;
+      });
+      optionsHtml += '</optgroup>';
+    }
 
     toolbarControls.innerHTML = `
       <div class="filter-group">
@@ -5862,6 +5910,10 @@ html, body {
     let targetTeachers = FACULTY_ROSTER_DATA.filter(t => examCountForTeacher(t.id) > 0);
     if (selectedTid && selectedTid !== 'ALL_FACULTY') {
       targetTeachers = targetTeachers.filter(t => t.id === selectedTid);
+    } else {
+      const academic = targetTeachers.filter(t => !isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
+      const asatidz = targetTeachers.filter(t => isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
+      targetTeachers = [...academic, ...asatidz];
     }
 
     if (targetTeachers.length === 0) {

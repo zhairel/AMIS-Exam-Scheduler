@@ -126,6 +126,22 @@ body {
   color: #0f172a;
 }
 
+.nav-field select optgroup {
+  font-weight: 800;
+  color: #065f46;
+  background: #f1f5f9;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.nav-field select option:disabled.dropdown-divider-line,
+option.dropdown-divider-line {
+  color: #94a3b8 !important;
+  background: #f8fafc !important;
+  font-size: 11px !important;
+  text-align: center !important;
+}
+
 .btn-nav {
   display: inline-flex;
   align-items: center;
@@ -966,11 +982,32 @@ body.no-navbar {
     ).join('');
 
     // 2. Populate Teacher Selector
-    let allTeachers = [...new Set(records.map(r => r.teacher).filter(t => t && !/^(tbd|tba|none)$/i.test(t)))].sort((a, b) => a.localeCompare(b));
-    teacherNavSelect.innerHTML = '<option value="">All Teachers (' + allTeachers.length + ' Staff)</option>' + allTeachers.map(t => {
-      const count = records.filter(r => r.teacher === t).length;
-      return `<option value="${esc(t)}" ${t.toLowerCase() === (filterTeacher || '').toLowerCase() ? 'selected' : ''}>${esc(t)} (${count} exams)</option>`;
-    }).join('');
+    const isUstadhFaculty = (name) => /^(ustadh|ustadha|alim)\b/i.test((name || '').trim());
+    let allTeachers = [...new Set(records.map(r => r.teacher).filter(t => t && !/^(tbd|tba|none)$/i.test(t)))];
+    let academicTeachers = allTeachers.filter(t => !isUstadhFaculty(t)).sort((a, b) => a.localeCompare(b));
+    let ustadhsFaculty = allTeachers.filter(t => isUstadhFaculty(t)).sort((a, b) => a.localeCompare(b));
+
+    let teacherOptionsHtml = '<option value="">All Teachers (' + allTeachers.length + ' Staff)</option>';
+    if (academicTeachers.length > 0) {
+      teacherOptionsHtml += '<optgroup label="TEACHERS">';
+      academicTeachers.forEach(t => {
+        const count = records.filter(r => r.teacher === t).length;
+        const isSel = t.toLowerCase() === (filterTeacher || '').toLowerCase() ? 'selected' : '';
+        teacherOptionsHtml += `<option value="${esc(t)}" ${isSel}>${esc(t)} (${count} Exam${count === 1 ? '' : 's'})</option>`;
+      });
+      teacherOptionsHtml += '</optgroup>';
+    }
+    teacherOptionsHtml += '<option disabled class="dropdown-divider-line">──────────────────────────────</option>';
+    if (ustadhsFaculty.length > 0) {
+      teacherOptionsHtml += '<optgroup label="USTADHS / USTADHA">';
+      ustadhsFaculty.forEach(t => {
+        const count = records.filter(r => r.teacher === t).length;
+        const isSel = t.toLowerCase() === (filterTeacher || '').toLowerCase() ? 'selected' : '';
+        teacherOptionsHtml += `<option value="${esc(t)}" ${isSel}>${esc(t)} (${count} Exam${count === 1 ? '' : 's'})</option>`;
+      });
+      teacherOptionsHtml += '</optgroup>';
+    }
+    teacherNavSelect.innerHTML = teacherOptionsHtml;
 
     if (filterMod) modalityNavSelect.value = filterMod;
     if (filterShift) shiftNavSelect.value = filterShift;
