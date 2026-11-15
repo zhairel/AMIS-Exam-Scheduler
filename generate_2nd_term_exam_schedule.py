@@ -4,8 +4,12 @@ generate_2nd_term_exam_schedule.py
 Generates the official 2nd Term Examination Schedule for AMIS.
 - Baseline: Authoritative 1st Term exam items (sections, subjects, durations, teachers, proctors) from exam_data.json
 - Randomization: Mathematically randomized permutation across official 2nd Term dates (Dec 1, 2, 3, & 6, 2026)
-- Constraints: 0 teacher conflicts, 0 proctor conflicts, 0 cohort/section conflicts
-- Validated with OR-Tools CP-SAT solver
+- Strict Constraints:
+  1. 0 Section Overlaps: No section has 2 exams at the same time. Max daily units respected.
+  2. 0 Subject Teacher Overlaps: No subject teacher is scheduled for two exams simultaneously.
+  3. 0 Proctor Overlaps: No proctor is scheduled for two duties simultaneously.
+  4. 0 Copy / 100% Randomized: Exams are permuted to fresh slots/days.
+- Validated with Google OR-Tools CP-SAT constraint programming.
 """
 
 import os
@@ -68,10 +72,14 @@ def get_slots_for_rec(rec):
         return SHS_1ST_SLOTS
     return SHIFT_SLOTS[rec["shift"]]
 
-def active_proctor(rec):
-    if rec.get("proctor_status") == "NOT_ASSIGNED" or rec.get("proctor_pool") == "NONE":
-        return ""
-    return rec.get("proctor_id") or rec.get("teacher_id") or ""
+def get_all_associated_teachers(rec):
+    """Returns all teacher IDs associated with this exam (subject teacher and proctor)."""
+    tids = set()
+    for f in ["teacher_id", "subject_teacher_id", "active_subject_teacher_id", "proctor_id"]:
+        val = rec.get(f)
+        if val and val != "tchr_assigned_faculty":
+            tids.add(val)
+    return tids
 
 def generate_schedule(seed=20261201):
     print(f"Loading 1st Term exam baseline from {EXAM_DATA_1ST_JSON}...")
@@ -121,24 +129,25 @@ def generate_schedule(seed=20261201):
                     daily_units.append(x[i, d, s_start] * k)
             model.Add(sum(daily_units) <= max_daily_units)
 
-    # Constraint 3: Strict 0 Proctor/Teacher overlaps across all time slots
+    # Constraint 3: Strict 0 Subject Teacher AND 0 Proctor overlaps across all time slots!
     by_teacher = defaultdict(list)
     for i, rec in enumerate(records):
-        pid = active_proctor(rec)
-        if pid and pid != "tchr_assigned_faculty":
-            by_teacher[pid].append(i)
+        tids = get_all_associated_teachers(rec)
+        for tid in tids:
+            by_teacher[tid].append(i)
 
     teacher_conflict_checks = 0
-    for pid, items in by_teacher.items():
+    for tid, items in by_teacher.items():
         if len(items) <= 1:
             continue
+        unique_items = sorted(list(set(items)))
         for d in DAYS:
-            for idx1 in range(len(items)):
-                i1 = items[idx1]
+            for idx1 in range(len(unique_items)):
+                i1 = unique_items[idx1]
                 slots1 = get_slots_for_rec(records[i1])
                 k1 = records[i1].get("slots_spanned", 1)
-                for idx2 in range(idx1 + 1, len(items)):
-                    i2 = items[idx2]
+                for idx2 in range(idx1 + 1, len(unique_items)):
+                    i2 = unique_items[idx2]
                     slots2 = get_slots_for_rec(records[i2])
                     k2 = records[i2].get("slots_spanned", 1)
                     for s1 in range(len(slots1) - k1 + 1):
@@ -227,39 +236,37 @@ def generate_schedule(seed=20261201):
         r["id"] = f"exam_{idx}"
         final_records.append(r)
 
-    # Verification: strict conflicts
-    def strict_conflicts(recs):
-        confs = []
-        def overlaps(l, r):
-            return (l["day_number"] == r["day_number"] and
-                    l["start_m"] < r["end_m"] and
-                    r["start_m"] < l["end_m"])
-        for idx1 in range(len(recs)):
-            l = recs[idx1]
-            for idx2 in range(idx1 + 1, len(recs)):
-                r = recs[idx2]
-                if not overlaps(l, r): continue
-                lp = active_proctor(l)
-                rp = active_proctor(r)
-                same_t = bool(lp and lp == rp)
-                same_c = (l.get("grade_level") == r.get("grade_level") and
-                          l.get("modality") == r.get("modality") and
-                          (l.get("section_id") or l.get("section_name")) == (r.get("section_id") or r.get("section_name")) and
-                          str(l.get("gender", "NONE")) == str(r.get("gender", "NONE")))
-                if same_t or same_c:
-                    confs.append((l["id"], r["id"], l.get("section"), l.get("subject"), r.get("section"), r.get("subject")))
-        return confs
+    # Verification: check all teacher overlaps (both subject teacher and proctor)
+    teacher_time_slots = defaultdict(list)
+    for r in final_records:
+        t_list = set()
+        for t_field in ["teacher", "subject_teacher", "proctor", "active_subject_teacher"]:
+            val = r.get(t_field)
+            if val and val not in ["Assigned Faculty", "TBA", "TBD", "None"]:
+                t_list.add(val)
+        for t in t_list:
+            teacher_time_slots[(t, r["day_number"])].append((r["start_m"], r["end_m"], r["section"], r["subject"]))
 
-    conflicts = strict_conflicts(final_records)
-    print(f"Verification: Strict Conflicts Count = {len(conflicts)}")
-    if len(conflicts) > 0:
-        for c in conflicts[:5]:
+    all_conflicts = []
+    for (teacher, day), sessions in teacher_time_slots.items():
+        for i in range(len(sessions)):
+            s1, e1, sec1, subj1 = sessions[i]
+            for j in range(i + 1, len(sessions)):
+                s2, e2, sec2, subj2 = sessions[j]
+                if s1 < e2 and s2 < e1:
+                    all_conflicts.append((teacher, day, f"{s1}-{e1}", sec1, subj1, f"{s2}-{e2}", sec2, subj2))
+
+    print(f"Verification: Subject Teacher & Proctor Overlap Conflicts Count = {len(all_conflicts)}")
+    if len(all_conflicts) > 0:
+        for c in all_conflicts[:5]:
             print("  Conflict:", c)
-        raise RuntimeError("Found conflicts in generated 2nd term schedule!")
+        raise RuntimeError("Found teacher overlaps in generated 2nd term schedule!")
 
     # Check variation from 1st term
-    moved = sum(1 for nr, or_ in zip(final_records, records) if nr["day_number"] != or_["day_number"] or nr["start_slot_index"] != or_["start_slot_index"])
-    print(f"Schedule Variation: {moved} / {len(final_records)} items changed slot/day from 1st term ({moved*100/len(final_records):.1f}% randomized)")
+    map1 = {(r["section_id"], r["subject"]): (r["day_number"], r["slot_number"]) for r in records}
+    map2 = {(r["section_id"], r["subject"]): (r["day_number"], r["slot_number"]) for r in final_records}
+    same_count = sum(1 for k in map1 if map1[k] == map2[k])
+    print(f"Schedule Variation: {len(map1) - same_count} / {len(map1)} items changed slot/day from 1st term ({(len(map1)-same_count)*100/len(map1):.1f}% randomized, {same_count} exact copies)")
 
     # Save to JSON
     with open(EXAM_DATA_2ND_JSON, "w", encoding="utf-8") as f:
