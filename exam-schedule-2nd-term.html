@@ -16,7 +16,7 @@
 
 <!-- Embedded Master Datasets with Cache-Busting -->
 <script src="class_schedules_data.js?v=20260819_0055"></script>
-<script src="exam_data_2nd_term.js?v=20261109_2"></script>
+<script src="exam_data_2nd_term.js?v=20261116_3"></script>
 <script src="teacher_weekly_schedules.js?v=20260819_0055"></script>
 
 <style>
@@ -5599,11 +5599,25 @@ html, body {
       const isODL1 = sec.shift === 'ODL - 1ST SHIFT';
       const isODL2 = sec.shift === 'ODL - 2ND SHIFT';
       const gLevel = sec.grade_level || '';
+      const isK1_F2F = isF2F && (
+        gLevel.toLowerCase().includes('kinder 1') ||
+        gLevel.toLowerCase() === 'k1' ||
+        sec.id === 'sec_kinder_1_class_schedule_f2f' ||
+        sec.section_name.toUpperCase().includes('KINDER 1')
+      );
       const isK2_1st = (gLevel.includes('Kinder') || gLevel.includes('K2') || gLevel.includes('Kindergarten')) && isODL1;
       const isSHS = sec.department && sec.department.includes('Senior High');
 
       let timeRows = [];
-      if (isF2F) {
+      if (isK1_F2F) {
+        timeRows = [
+          { time: '12:30 PM – 12:40 PM', mins: '10 MIN', type: 'break', label: 'GENERAL ASSEMBLY' },
+          { time: '12:40 PM – 01:40 PM', mins: '60 MIN', type: 'exam', slot_num: 1 },
+          { time: '01:40 PM – 01:50 PM', mins: '10 MIN', type: 'break', label: 'RECESS / TRANSITION' },
+          { time: '01:50 PM – 02:50 PM', mins: '60 MIN', type: 'exam', slot_num: 2 },
+          { time: '02:50 PM', mins: '--', type: 'break', label: 'DISMISSAL' }
+        ];
+      } else if (isF2F) {
         timeRows = [
           { time: '07:30 AM – 07:45 AM', mins: '15 MIN', type: 'break', label: 'GENERAL ASSEMBLY' },
           { time: '08:00 AM – 09:00 AM', mins: '60 MIN', type: 'exam', slot_num: 1 },
