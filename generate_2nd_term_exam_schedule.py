@@ -126,6 +126,11 @@ def apply_authoritative_2nd_term_updates(records):
                 r["subject"] = "Gen Bio 2"
                 r["subject_id"] = "subj_gen_bio_2"
 
+        # Normalize Grade 6 F2F Math to 60m (1 slot, like G4 and G5) to fit all 12 subjects into 12 slots
+        if "GRADE  6  FACE TO FACE" in sec and sub == "Math":
+            r["slots_spanned"] = 1
+            r["duration_minutes"] = 60
+
         # 3. Specific GMRC Grade 7 Usama -> Teacher Jayra
         if "USAMA" in sec and sub == "GMRC":
             t = "Teacher Jayra"
@@ -454,6 +459,47 @@ def apply_authoritative_2nd_term_updates(records):
             "proctor_pool": "SUBJECT_TEACHER",
             "slots_spanned": span,
             "duration_minutes": dur,
+            "teacher_status": "VERIFIED",
+            "subject_teacher_active": True,
+            "subject_teacher_status": "ACTIVE_VERIFIED",
+            "replacement_teacher_required": False,
+            "inactive_teacher_warning": ""
+        })
+
+    # Add ARAL Program for Grade 4, 5, 6 (F2F) with Teacher Arvin
+    aral_f2f_items = [
+        ("sec_grade_4_face_to_face", "GRADE 4 (FACE TO FACE)", "Grade 4"),
+        ("sec_grade_5_face_to_face", "GRADE 5 (FACE TO FACE)", "Grade 5"),
+        ("sec_grade_6_face_to_face", "GRADE  6  FACE TO FACE", "Grade 6"),
+    ]
+    for sec_id, sec_name, gr in aral_f2f_items:
+        updated_records.append({
+            "section_id": sec_id,
+            "section": sec_name,
+            "section_name": sec_name,
+            "department": "Elementary",
+            "grade": gr,
+            "grade_level": gr,
+            "shift": "F2F",
+            "modality": "F2F",
+            "gender": "MIXED",
+            "subject_id": "subj_aral_program",
+            "subject": "ARAL Program",
+            "teacher_id": "tchr_arvin",
+            "teacher": "Teacher Arvin",
+            "subject_teacher": "Teacher Arvin",
+            "subject_teacher_id": "tchr_arvin",
+            "active_subject_teacher": "Teacher Arvin",
+            "active_subject_teacher_id": "tchr_arvin",
+            "proctor": "Teacher Arvin",
+            "proctor_id": "tchr_arvin",
+            "proctor_department": "Elementary",
+            "proctor_status": "ACTIVE_ASSIGNED",
+            "proctor_assignment_source": "SUBJECT_TEACHER",
+            "proctor_conflict_status": "CLEAR",
+            "proctor_pool": "SUBJECT_TEACHER",
+            "slots_spanned": 1,
+            "duration_minutes": 60,
             "teacher_status": "VERIFIED",
             "subject_teacher_active": True,
             "subject_teacher_status": "ACTIVE_VERIFIED",
