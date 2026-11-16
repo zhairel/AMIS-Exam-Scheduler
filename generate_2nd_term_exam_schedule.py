@@ -66,12 +66,6 @@ SHIFT_SLOTS = {
     ]
 }
 
-K2_1ST_SLOTS = [
-    {"slot_num": 1, "time_slot": "01:30 PM – 02:30 PM", "start_m": 810, "end_m": 870},
-    {"slot_num": 2, "time_slot": "02:40 PM – 03:40 PM", "start_m": 880, "end_m": 940},
-    {"slot_num": 3, "time_slot": "03:50 PM – 04:50 PM", "start_m": 950, "end_m": 1010}
-]
-
 SHS_1ST_SLOTS = [
     {"slot_num": 1, "time_slot": "12:40 PM – 01:40 PM", "start_m": 760, "end_m": 820},
     {"slot_num": 2, "time_slot": "01:50 PM – 02:50 PM", "start_m": 830, "end_m": 890},
@@ -88,8 +82,6 @@ K1_F2F_AFTERNOON_SLOTS = [
 def get_slots_for_rec(rec):
     if "Kinder 1" in rec.get("grade_level", "") and rec.get("modality", "") == "F2F":
         return K1_F2F_AFTERNOON_SLOTS
-    if "Kinder" in rec.get("grade_level", "") and "1ST" in rec.get("shift", ""):
-        return K2_1ST_SLOTS
     if "Senior High" in rec.get("department", "") and rec.get("shift", "") == "ODL - 1ST SHIFT":
         return SHS_1ST_SLOTS
     return SHIFT_SLOTS[rec["shift"]]

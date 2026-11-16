@@ -571,8 +571,8 @@ html, body {{
 }}
 
 .timetable-grid thead th.col-time {{
-  width: 165px;
-  min-width: 165px;
+  width: 175px;
+  min-width: 175px;
   white-space: nowrap !important;
 }}
 
@@ -606,9 +606,27 @@ html, body {{
   font-size: 12px;
   color: var(--ink);
   background: #f8fafc;
-  white-space: nowrap !important;
-  line-height: 1.2;
+  line-height: 1.25;
   padding: 8px 6px;
+  vertical-align: middle;
+}}
+
+.timetable-grid tbody td.cell-time .cell-time-val {{
+  display: block;
+  white-space: nowrap !important;
+  font-weight: 800;
+  font-size: 12px;
+}}
+
+.timetable-grid tbody td.cell-time .cell-time-note {{
+  font-size: 9.5px;
+  color: #475569;
+  font-weight: 700;
+  margin-top: 3px;
+  white-space: normal !important;
+  line-height: 1.25;
+  word-break: normal;
+  display: block;
 }}
 
 .timetable-grid tbody td.cell-mins {{
@@ -1278,7 +1296,6 @@ html, body {{
         sec.id === 'sec_kinder_1_class_schedule_f2f' ||
         sec.section_name.toUpperCase().includes('KINDER 1')
       );
-      const isK2_1st = (gLevel.includes('Kinder') || gLevel.includes('K2') || gLevel.includes('Kindergarten')) && isODL1;
       const isSHS = sec.department && sec.department.includes('Senior High');
 
       let timeRows = [];
@@ -1298,16 +1315,6 @@ html, body {{
           {{ time: '10:00 AM – 10:25 AM', mins: '25 min.', type: 'break', label: 'RECESS' }},
           {{ time: '10:25 AM – 11:25 AM', mins: '60 min.', type: 'exam', slot_num: 3 }},
           {{ time: '11:25 AM', mins: '--', type: 'break', label: 'DISMISSAL' }}
-        ];
-      }} else if (isK2_1st) {{
-        timeRows = [
-          {{ time: '01:20 PM – 01:30 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' }},
-          {{ time: '01:30 PM – 02:30 PM', mins: '60 min.', type: 'exam', slot_num: 1 }},
-          {{ time: '02:30 PM – 02:40 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }},
-          {{ time: '02:40 PM – 03:40 PM', mins: '60 min.', type: 'exam', slot_num: 2 }},
-          {{ time: '03:40 PM – 03:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }},
-          {{ time: '03:50 PM – 04:50 PM', mins: '60 min.', type: 'exam', slot_num: 3 }},
-          {{ time: '04:50 PM', mins: '--', type: 'break', label: 'DISMISSAL' }}
         ];
       }} else if (isODL1) {{
         timeRows = [
@@ -1566,13 +1573,10 @@ html, body {{
       {{ time: '11:25 AM', mins: '--', type: 'break', label: 'FACE TO FACE DISMISSAL' }},
       {{ time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' }},
       {{ time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1, shift_tag: 'ODL1' }},
-      {{ time: '01:30 PM – 02:30 PM', mins: '60 min.', type: 'exam', slot_num: 1, shift_tag: 'K2_1ST' }},
       {{ time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION - BREAK' }},
       {{ time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'ODL1' }},
-      {{ time: '02:40 PM – 03:40 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'K2_1ST' }},
       {{ time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION - SALAH BREAK' }},
       {{ time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3, note: '3rd & 1st Subject · Mix of 1st & 2nd Shift', shift_tag: 'MIXED' }},
-      {{ time: '03:50 PM – 04:50 PM', mins: '60 min.', type: 'exam', slot_num: 3, shift_tag: 'K2_1ST' }},
       {{ time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }},
       {{ time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'ODL2' }},
       {{ time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION - BREAK' }},
@@ -1629,7 +1633,7 @@ html, body {{
         if (slot.type === 'break') {{
           fullHtml += `
             <tr>
-              <td class="cell-time">${{esc(slot.time)}}</td>
+              <td class="cell-time"><span class="cell-time-val">${{esc(slot.time)}}</span></td>
               <td class="cell-mins">${{esc(slot.mins)}}</td>
           `;
 
@@ -1654,8 +1658,8 @@ html, body {{
           fullHtml += `
             <tr>
               <td class="cell-time">
-                ${{esc(slot.time)}}
-                ${{slot.note ? `<div style="font-size:10px; color:#475569; font-weight:700; margin-top:2px;">${{esc(slot.note)}}</div>` : ''}}
+                <span class="cell-time-val">${{esc(slot.time)}}</span>
+                ${{slot.note ? `<div class="cell-time-note">${{esc(slot.note)}}</div>` : ''}}
               </td>
               <td class="cell-mins">${{esc(slot.mins)}}</td>
           `;
