@@ -567,32 +567,25 @@ html, body {
 .timetable-grid tbody td.cell-shift {
   padding: 6px 3px;
   background: #f8fafc;
-  color: #065f46;
-  border-left: 4px solid #047857;
+  color: var(--ink);
   font-weight: 950;
   vertical-align: middle;
 }
 
-/* Distinct Low Color / Transparent Shift Columns */
+/* Distinct Low Color / Transparent Shift Columns - No Colored Lines */
 .timetable-grid tbody td.cell-shift.cell-shift--f2f {
   background: rgba(16, 185, 129, 0.08) !important;
   color: #047857 !important;
-  border-left: 4px solid #10b981 !important;
-  box-shadow: none !important;
 }
 
 .timetable-grid tbody td.cell-shift.cell-shift--first {
   background: rgba(37, 99, 235, 0.08) !important;
   color: #1d4ed8 !important;
-  border-left: 4px solid #3b82f6 !important;
-  box-shadow: none !important;
 }
 
 .timetable-grid tbody td.cell-shift.cell-shift--second {
   background: rgba(245, 158, 11, 0.08) !important;
   color: #b45309 !important;
-  border-left: 4px solid #f59e0b !important;
-  box-shadow: none !important;
 }
 
 .shift-stack {
@@ -617,7 +610,7 @@ html, body {
   background: #ffffff;
 }
 
-/* Shift-Themed Low Color / Transparent Fade Rows and Cells */
+/* Shift-Themed Low Color / Transparent Fade Rows and Cells - No Colored Lines */
 /* Face to Face: Subtle Mint Transparent Fade */
 .timetable-grid tbody tr.row-shift-f2f td.cell-time,
 .timetable-grid tbody tr.row-shift-f2f td.cell-mins {
@@ -631,8 +624,6 @@ html, body {
 .timetable-grid tbody tr.row-shift-f2f td.cell-break {
   background: rgba(16, 185, 129, 0.06) !important;
   color: #065f46 !important;
-  border-top: 1px solid rgba(16, 185, 129, 0.2) !important;
-  border-bottom: 1px solid rgba(16, 185, 129, 0.2) !important;
   font-weight: 800 !important;
 }
 .timetable-grid tbody tr.row-shift-f2f td.cell-empty {
@@ -652,8 +643,6 @@ html, body {
 .timetable-grid tbody tr.row-shift-first td.cell-break {
   background: rgba(37, 99, 235, 0.06) !important;
   color: #1e40af !important;
-  border-top: 1px solid rgba(37, 99, 235, 0.2) !important;
-  border-bottom: 1px solid rgba(37, 99, 235, 0.2) !important;
   font-weight: 800 !important;
 }
 .timetable-grid tbody tr.row-shift-first td.cell-empty {
@@ -673,8 +662,6 @@ html, body {
 .timetable-grid tbody tr.row-shift-second td.cell-break {
   background: rgba(245, 158, 11, 0.06) !important;
   color: #92400e !important;
-  border-top: 1px solid rgba(245, 158, 11, 0.2) !important;
-  border-bottom: 1px solid rgba(245, 158, 11, 0.2) !important;
   font-weight: 800 !important;
 }
 .timetable-grid tbody tr.row-shift-second td.cell-empty {
