@@ -424,6 +424,11 @@ option.dropdown-divider-line {
   color: #334155;
   border: 1.5px solid #cbd5e1;
 }
+.break-row.transition-row .break-banner {
+  background: #f8fafc;
+  color: #334155;
+  border: 1.5px solid #cbd5e1;
+}
 
 /* Time Axis Cell (Left Column) */
 .time-cell {
@@ -1215,8 +1220,8 @@ body.no-navbar {
       // Collect unique exam time slots for this grade
       const uniqueGradeSlots = [...new Set(gradeRecords.map(r => r.time))].sort((a,b) => minutes(a) - minutes(b));
       const hasF2F = gradeRecords.some(r => r.modality === 'F2F');
-      const hasODL1 = gradeRecords.some(r => r.shift && r.shift.includes('1st'));
-      const hasODL2 = gradeRecords.some(r => r.shift && r.shift.includes('2nd'));
+      const hasODL1 = gradeRecords.some(r => (r.shift || '').toUpperCase().includes('1ST'));
+      const hasODL2 = gradeRecords.some(r => (r.shift || '').toUpperCase().includes('2ND'));
 
       // Build unified chronological timeline including official breaks
       let timelineItems = uniqueGradeSlots.map(timeStr => ({
@@ -1250,8 +1255,16 @@ body.no-navbar {
       if (hasODL1) {
         timelineItems.push({
           isBreak: true,
+          type: 'transition',
+          label: 'TRANSITION - BREAK (1:40 PM – 1:50 PM)',
+          time: '1:40 PM – 1:50 PM',
+          tag: 'TRANSITION',
+          startM: 820
+        });
+        timelineItems.push({
+          isBreak: true,
           type: 'lunch',
-          label: 'TRANSITION AND SALAH BREAK (2:50 PM – 3:10 PM)',
+          label: 'TRANSITION - SALAH BREAK (2:50 PM – 3:10 PM)',
           time: '2:50 PM – 3:10 PM',
           tag: 'SALAH BREAK',
           startM: 890
@@ -1262,10 +1275,29 @@ body.no-navbar {
         timelineItems.push({
           isBreak: true,
           type: 'lunch',
-          label: 'TRANSITION AND SALAH BREAK (2:50 PM – 3:10 PM)',
+          label: 'TRANSITION - SALAH BREAK (2:50 PM – 3:10 PM)',
           time: '2:50 PM – 3:10 PM',
           tag: 'SALAH BREAK',
           startM: 890
+        });
+      }
+
+      if (hasODL2) {
+        timelineItems.push({
+          isBreak: true,
+          type: 'transition',
+          label: 'TRANSITION (4:10 PM – 4:20 PM)',
+          time: '4:10 PM – 4:20 PM',
+          tag: 'TRANSITION',
+          startM: 970
+        });
+        timelineItems.push({
+          isBreak: true,
+          type: 'transition',
+          label: 'TRANSITION - BREAK (5:20 PM – 5:30 PM)',
+          time: '5:20 PM – 5:30 PM',
+          tag: 'TRANSITION',
+          startM: 1040
         });
       }
 
@@ -1345,7 +1377,7 @@ body.no-navbar {
                           <td class="slot-cell">
                             <div class="slot-events-list">
                               ${cellExams.map(ex => {
-                                let typeClass = ex.modality === 'F2F' ? 'f2f' : (ex.shift.includes('2nd') ? 'odl2' : 'odl1');
+                                let typeClass = ex.modality === 'F2F' ? 'f2f' : ((ex.shift || '').toUpperCase().includes('2ND') ? 'odl2' : 'odl1');
                                 return `
                                   <div class="cal-event-card ${typeClass}">
                                     <div class="cal-event-top-row">
@@ -1363,7 +1395,7 @@ body.no-navbar {
                                       ${ex.room ? `<span class="pill-sm">Rm ${esc(ex.room)}</span>` : ''}
                                     </div>
                                     <div style="margin-top:4px; font-size:11px; font-weight:800; color:#64748b; text-transform:uppercase;">
-                                      <span>${ex.modality === 'F2F' ? 'F2F Classroom' : (ex.shift.includes('2nd') ? 'ODL 2nd Shift' : 'ODL 1st Shift')}</span>
+                                      <span>${ex.modality === 'F2F' ? 'F2F Classroom' : ((ex.shift || '').toUpperCase().includes('2ND') ? 'ODL 2nd Shift' : 'ODL 1st Shift')}</span>
                                     </div>
                                   </div>
                                 `;
@@ -1390,22 +1422,38 @@ body.no-navbar {
 
   function getSlotPeriodLabel(timeStr) {
     const m = minutes(timeStr);
-    if (m >= 440 && m < 500) return 'Period 1';
-    if (m >= 500 && m < 585) return 'Period 2';
-    if (m >= 585 && m < 680) return 'Period 3';
-    if (m >= 700 && m < 800) return 'Period 4';
-    if (m >= 800 && m < 880) return 'Period 5';
-    if (m >= 880 && m < 960) return 'Afternoon Period';
-    if (m >= 960 && m < 1050) return 'Evening Period 1';
-    if (m >= 1050 && m < 1120) return 'Evening Period 2';
-    return 'Evening Period 3';
+    const is120 = (timeStr.includes('02:50 PM') && timeStr.includes('12:40 PM')) ||
+                  (timeStr.includes('04:10 PM') && timeStr.includes('01:50 PM')) ||
+                  (timeStr.includes('06:30 PM') && timeStr.includes('04:20 PM'));
+    if (is120) {
+      if (m < 800) return '1st & 2nd Subject (120 Min)';
+      return '2nd & 3rd Subject (120 Min)';
+    }
+
+    // K2 1st shift special slots
+    if (m === 810) return '1st Subject (K2 1st Shift)';
+    if (m === 880) return '2nd Subject (K2 1st Shift)';
+    if (m === 950) return '3rd Subject (K2 1st Shift)';
+
+    // Morning F2F slots
+    if (m >= 440 && m < 520) return '1st Subject';
+    if (m >= 520 && m < 610) return '2nd Subject';
+    if (m >= 610 && m < 680) return '3rd Subject';
+
+    // Afternoon & Evening Online slots
+    if (m >= 740 && m < 800) return '1st Subject';
+    if (m >= 800 && m < 860) return '2nd Subject';
+    if (m >= 860 && m < 960) return '3rd & 1st Subject (Mix of 1st & 2nd Shift)';
+    if (m >= 960 && m < 1040) return '2nd Subject';
+    if (m >= 1040) return '3rd Subject';
+    return 'Exam Subject';
   }
 
   function getShiftCategoryLabel(timeStr) {
     const m = minutes(timeStr);
     if (m >= 440 && m < 700) return 'F2F Morning';
-    if (m >= 700 && m < 900) return 'F2F / ODL 1st Shift';
-    if (m >= 900 && m < 960) return 'ODL 1st Shift';
+    if (m >= 700 && m < 860) return 'ODL 1st Shift';
+    if (m >= 860 && m < 960) return 'ODL 1st & 2nd Shift (Mix)';
     return 'ODL 2nd Shift';
   }
 

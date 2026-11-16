@@ -1567,15 +1567,15 @@ html, body {{
       {{ time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' }},
       {{ time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1, shift_tag: 'ODL1' }},
       {{ time: '01:30 PM – 02:30 PM', mins: '60 min.', type: 'exam', slot_num: 1, shift_tag: 'K2_1ST' }},
-      {{ time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }},
+      {{ time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION - BREAK' }},
       {{ time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'ODL1' }},
       {{ time: '02:40 PM – 03:40 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'K2_1ST' }},
-      {{ time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION AND SALAH' }},
-      {{ time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3, shift_tag: 'ODL1' }},
+      {{ time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION - SALAH BREAK' }},
+      {{ time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3, note: '3rd & 1st Subject · Mix of 1st & 2nd Shift', shift_tag: 'MIXED' }},
       {{ time: '03:50 PM – 04:50 PM', mins: '60 min.', type: 'exam', slot_num: 3, shift_tag: 'K2_1ST' }},
       {{ time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }},
       {{ time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'ODL2' }},
-      {{ time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }},
+      {{ time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION - BREAK' }},
       {{ time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_num: 3, shift_tag: 'ODL2' }},
       {{ time: '06:30 PM', mins: '--', type: 'break', label: 'DISMISSAL' }}
     ];
@@ -1653,7 +1653,10 @@ html, body {{
         }} else {{
           fullHtml += `
             <tr>
-              <td class="cell-time">${{esc(slot.time)}}</td>
+              <td class="cell-time">
+                ${{esc(slot.time)}}
+                ${{slot.note ? `<div style="font-size:10px; color:#475569; font-weight:700; margin-top:2px;">${{esc(slot.note)}}</div>` : ''}}
+              </td>
               <td class="cell-mins">${{esc(slot.mins)}}</td>
           `;
 
