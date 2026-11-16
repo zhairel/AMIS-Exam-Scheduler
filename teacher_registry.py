@@ -149,6 +149,13 @@ TEACHER_REGISTRY = [
         "aliases": ["teacher aniah", "tchr. aniah", "tchr aniah", "aniah", "tr. aniah", "tr aniah"]
     },
     {
+        "id": "tchr_abegail",
+        "canonical_name": "Teacher Abegail",
+        "department": "High School Faculty",
+        "title": "Faculty Member",
+        "aliases": ["teacher abegail", "tchr. abegail", "tchr abegail", "abegail", "abigail", "teacher abigail", "tchr. abigail", "tr. abegail", "tr. abigail"]
+    },
+    {
         "id": "tchr_anna",
         "canonical_name": "Teacher Anna",
         "department": "Elementary Faculty",
@@ -341,6 +348,13 @@ TEACHER_REGISTRY = [
         "aliases": ["teacher saimonah", "tchr. saimonah", "tchr saimonah", "saimonah", "saimona", "teacher saimona", "tchr. saimona"]
     },
     {
+        "id": "tchr_shanen",
+        "canonical_name": "Teacher Shanen",
+        "department": "High School Faculty",
+        "title": "Faculty Member",
+        "aliases": ["teacher shanen", "tchr. shanen", "tchr shanen", "shanen", "tr. shanen"]
+    },
+    {
         "id": "tchr_shirehan",
         "canonical_name": "Teacher Shirehan",
         "department": "High School Faculty",
@@ -360,6 +374,13 @@ TEACHER_REGISTRY = [
         "department": "High School Faculty",
         "title": "Faculty Member",
         "aliases": ["teacher sophia", "tchr. sophia", "tchr sophia", "sophia", "sofia", "tr. sophia"]
+    },
+    {
+        "id": "tchr_thea",
+        "canonical_name": "Teacher Thea",
+        "department": "High School Faculty",
+        "title": "Faculty Member",
+        "aliases": ["teacher thea", "tchr. thea", "tchr thea", "thea", "tr. thea"]
     },
     {
         "id": "tchr_wardah",

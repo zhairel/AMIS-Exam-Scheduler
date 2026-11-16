@@ -115,37 +115,16 @@ def apply_authoritative_2nd_term_updates(records):
                 t = "Ustadha Samsida"
                 r["teacher_id"] = "tchr_samsida"
 
-        # 2. Senior High School 2nd Term Course & Faculty Updates
+        # Filter out 1st Term Grade 12 records; they are fully replaced with the 10 official 2nd Term subjects
+        if "12" in r.get("grade_level", "") or "12" in sec:
+            continue
+
+        # 2. Senior High School Grade 11 2nd Term Course Updates
         if "Senior High" in r.get("department", ""):
             if sub == "Gen Bio 1":
                 sub = "Gen Bio 2"
                 r["subject"] = "Gen Bio 2"
                 r["subject_id"] = "subj_gen_bio_2"
-            elif sub == "General Physics 1":
-                sub = "General Physics 2"
-                r["subject"] = "General Physics 2"
-                r["subject_id"] = "subj_general_physics_2"
-            elif sub == "21st Lit.":
-                sub = "Pagsulat sa Filipino"
-                r["subject"] = "Pagsulat sa Filipino"
-                r["subject_id"] = "subj_pagsulat_sa_filipino"
-                r["teacher"] = "Teacher Nof"
-                r["teacher_id"] = "tchr_nof"
-                t = "Teacher Nof"
-            elif sub == "MIL":
-                sub = "CPAR"
-                r["subject"] = "CPAR"
-                r["subject_id"] = "subj_cpar"
-                r["teacher"] = "Teacher Ethel"
-                r["teacher_id"] = "tchr_ethel"
-                t = "Teacher Ethel"
-            elif sub == "Prac. Res. 2":
-                sub = "UCSP"
-                r["subject"] = "UCSP"
-                r["subject_id"] = "subj_ucsp"
-                r["teacher"] = "Teacher Ethel"
-                r["teacher_id"] = "tchr_ethel"
-                t = "Teacher Ethel"
 
         # 3. Specific GMRC Grade 7 Usama -> Teacher Jayra
         if "USAMA" in sec and sub == "GMRC":
@@ -381,6 +360,107 @@ def apply_authoritative_2nd_term_updates(records):
 
         updated_records.append(r)
 
+    # 10. Append Authoritative Grade 12 - Term 2 Subjects & Faculty (10 subjects each)
+    g12_abu_subjects = [
+        ("Gen Bio 2", "Teacher Rowena", "tchr_rowena", "High School Faculty", 1, 60),
+        ("General Physics 2", "Teacher Abegail", "tchr_abegail", "High School Faculty", 2, 120),
+        ("CPAR", "Teacher Nof", "tchr_nof", "High School Faculty", 1, 60),
+        ("EAPP", "Teacher Sophia", "tchr_sophia", "High School Faculty", 1, 60),
+        ("Entrepreneurship", "Teacher Shanen", "tchr_shanen", "High School Faculty", 1, 60),
+        ("3I's", "Teacher Thea", "tchr_thea", "High School Faculty", 1, 60),
+        ("PE 12", "Sir Mohaymen", "tchr_mohaymen", "High School Faculty", 1, 60),
+        ("Arabic", "Alim Mamonas", "tchr_mamonas", "ISAL Faculty", 1, 60),
+        ("Qur'an", "Alim Dipatuan", "tchr_dipatuan", "ISAL Faculty", 1, 60),
+        ("SHAF", "Alim Samsuddin", "tchr_samsuddin", "ISAL Faculty", 1, 60),
+    ]
+
+    g12_suhayb_subjects = [
+        ("Gen Bio 2", "Teacher Rowena", "tchr_rowena", "High School Faculty", 1, 60),
+        ("General Physics 2", "Teacher Abegail", "tchr_abegail", "High School Faculty", 2, 120),
+        ("CPAR", "Teacher Nof", "tchr_nof", "High School Faculty", 1, 60),
+        ("EAPP", "Teacher Sophia", "tchr_sophia", "High School Faculty", 1, 60),
+        ("Entrepreneurship", "Teacher Shanen", "tchr_shanen", "High School Faculty", 1, 60),
+        ("3I's", "Teacher Thea", "tchr_thea", "High School Faculty", 1, 60),
+        ("PE 12", "Sir Mohaymen", "tchr_mohaymen", "High School Faculty", 1, 60),
+        ("Arabic", "Alim Mamonas", "tchr_mamonas", "ISAL Faculty", 1, 60),
+        ("Qur'an", "Alim Dipatuan", "tchr_dipatuan", "ISAL Faculty", 1, 60),
+        ("SHAF", "Alim Samsuddin", "tchr_samsuddin", "ISAL Faculty", 1, 60),
+    ]
+
+    for sub, tchr, tid, dept, span, dur in g12_abu_subjects:
+        clean_name = sub.lower().replace(' ', '_').replace("'", "")
+        subj_id = f"subj_{clean_name}"
+        updated_records.append({
+            "section_id": "sec_grade_12_abu_musa_al_ashari",
+            "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+            "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+            "department": "Senior High School",
+            "grade": "Grade 12",
+            "grade_level": "Grade 12",
+            "shift": "ODL - 1ST SHIFT",
+            "modality": "ODL",
+            "gender": "GIRLS",
+            "subject_id": subj_id,
+            "subject": sub,
+            "teacher_id": tid,
+            "teacher": tchr,
+            "subject_teacher": tchr,
+            "subject_teacher_id": tid,
+            "active_subject_teacher": tchr,
+            "active_subject_teacher_id": tid,
+            "proctor": tchr,
+            "proctor_id": tid,
+            "proctor_department": dept,
+            "proctor_status": "ACTIVE_ASSIGNED",
+            "proctor_assignment_source": "SUBJECT_TEACHER",
+            "proctor_conflict_status": "CLEAR",
+            "proctor_pool": "SUBJECT_TEACHER",
+            "slots_spanned": span,
+            "duration_minutes": dur,
+            "teacher_status": "VERIFIED",
+            "subject_teacher_active": True,
+            "subject_teacher_status": "ACTIVE_VERIFIED",
+            "replacement_teacher_required": False,
+            "inactive_teacher_warning": ""
+        })
+
+    for sub, tchr, tid, dept, span, dur in g12_suhayb_subjects:
+        clean_name = sub.lower().replace(' ', '_').replace("'", "")
+        subj_id = f"subj_{clean_name}"
+        updated_records.append({
+            "section_id": "sec_grade_12_suhayb_ar_rumi",
+            "section": "GRADE 12 - SUHAYB AR-RUMI",
+            "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+            "department": "Senior High School",
+            "grade": "Grade 12",
+            "grade_level": "Grade 12",
+            "shift": "F2F",
+            "modality": "F2F",
+            "gender": "BOYS",
+            "subject_id": subj_id,
+            "subject": sub,
+            "teacher_id": tid,
+            "teacher": tchr,
+            "subject_teacher": tchr,
+            "subject_teacher_id": tid,
+            "active_subject_teacher": tchr,
+            "active_subject_teacher_id": tid,
+            "proctor": tchr,
+            "proctor_id": tid,
+            "proctor_department": dept,
+            "proctor_status": "ACTIVE_ASSIGNED",
+            "proctor_assignment_source": "SUBJECT_TEACHER",
+            "proctor_conflict_status": "CLEAR",
+            "proctor_pool": "SUBJECT_TEACHER",
+            "slots_spanned": span,
+            "duration_minutes": dur,
+            "teacher_status": "VERIFIED",
+            "subject_teacher_active": True,
+            "subject_teacher_status": "ACTIVE_VERIFIED",
+            "replacement_teacher_required": False,
+            "inactive_teacher_warning": ""
+        })
+
     return updated_records
 
 def generate_schedule(seed=20261201):
@@ -394,7 +474,7 @@ def generate_schedule(seed=20261201):
     # Verify no inactive faculty names remain
     forbidden_names = {
         "Ustadh Obaydah", "Ustadh Raffy", "Teacher Ahmad", "Teacher Jairah",
-        "Teacher Shanen", "Teacher Zuhora", "Teacher Normylah", "Alim Abdul Karim",
+        "Teacher Zuhora", "Teacher Normylah", "Alim Abdul Karim",
         "Ustadha Hainur"
     }
     for r in records:
@@ -485,8 +565,8 @@ def generate_schedule(seed=20261201):
     obj_terms = []
     for (i, d, s_idx), var in x.items():
         w = rng.randint(50, 1000)
-        orig_d = raw_baseline[i].get("day_number")
-        orig_s = raw_baseline[i].get("start_slot_index", 0)
+        orig_d = raw_baseline[i].get("day_number") if i < len(raw_baseline) else None
+        orig_s = raw_baseline[i].get("start_slot_index", 0) if i < len(raw_baseline) else 0
         if orig_d == d and orig_s == s_idx:
             w -= 900
         obj_terms.append(w * var)
