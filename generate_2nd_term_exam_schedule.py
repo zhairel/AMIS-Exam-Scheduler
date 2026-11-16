@@ -79,7 +79,15 @@ SHS_1ST_SLOTS = [
     {"slot_num": 4, "time_slot": "04:20 PM – 05:20 PM", "start_m": 980, "end_m": 1040}
 ]
 
+# Kinder 1 Face-to-Face Afternoon Examination Slots (matching regular 12:40 PM – 03:00 PM school hours)
+K1_F2F_AFTERNOON_SLOTS = [
+    {"slot_num": 1, "time_slot": "12:40 PM – 01:40 PM", "start_m": 760, "end_m": 820},
+    {"slot_num": 2, "time_slot": "01:50 PM – 02:50 PM", "start_m": 830, "end_m": 890}
+]
+
 def get_slots_for_rec(rec):
+    if "Kinder 1" in rec.get("grade_level", "") and rec.get("modality", "") == "F2F":
+        return K1_F2F_AFTERNOON_SLOTS
     if "Kinder" in rec.get("grade_level", "") and "1ST" in rec.get("shift", ""):
         return K2_1ST_SLOTS
     if "Senior High" in rec.get("department", "") and rec.get("shift", "") == "ODL - 1ST SHIFT":
@@ -571,6 +579,12 @@ def generate_schedule(seed=20261201):
                 for s_start in range(num_slots - k + 1):
                     daily_units.append(x[i, d, s_start] * k)
             model.Add(sum(daily_units) <= max_daily_units)
+
+    # Constraint 2b: Kinder 1 F2F exactly 1 exam per day in afternoon slots (4 subjects across 4 days)
+    k1_f2f_items = [i for i, r in enumerate(records) if "Kinder 1" in r.get("grade_level", "") and r.get("modality") == "F2F"]
+    if k1_f2f_items:
+        for d in DAYS:
+            model.Add(sum(x[i, d, s] for i in k1_f2f_items for s in range(len(K1_F2F_AFTERNOON_SLOTS))) == 1)
 
     # Constraint 3: Strict 0 Teacher Overlaps across all time slots!
     by_teacher = defaultdict(list)
