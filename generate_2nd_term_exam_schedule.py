@@ -591,6 +591,14 @@ def generate_schedule(seed=20261201):
         for d in DAYS:
             model.Add(sum(x[i, d, s] for i in k1_f2f_items for s in range(len(K1_F2F_AFTERNOON_SLOTS))) == 1)
 
+    # Constraint 2c: Pin PE 12 for Grade 12 - Abu Musa Al-Ashari to Day 4 at 03:10 PM – 04:10 PM (Slot 3)
+    for i, r in enumerate(records):
+        if r.get("section_id") == "sec_grade_12_abu_musa_al_ashari" and r.get("subject") == "PE 12":
+            slots = get_slots_for_rec(r)
+            for s_idx, sl in enumerate(slots):
+                if sl["start_m"] == 910: # 03:10 PM – 04:10 PM
+                    model.Add(x[i, 4, s_idx] == 1)
+
     # Constraint 3: Strict 0 Teacher Overlaps across all time slots!
     by_teacher = defaultdict(list)
     for i, rec in enumerate(records):
