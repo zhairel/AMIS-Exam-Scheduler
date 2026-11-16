@@ -652,6 +652,64 @@ html, body {{
   background: #ffffff;
 }}
 
+/* Shift-Themed Color Fade Rows and Cells */
+/* Face to Face: Morning Emerald Fade */
+.timetable-grid tbody tr.row-shift-f2f td.cell-time,
+.timetable-grid tbody tr.row-shift-f2f td.cell-mins {{
+  background: linear-gradient(90deg, #ecfdf5 0%, #f7fdf9 60%, #f8fafc 100%);
+  color: #064e3b;
+}}
+.timetable-grid tbody tr.row-shift-f2f td.cell-time .cell-time-val {{
+  color: #064e3b;
+}}
+.timetable-grid tbody tr.row-shift-f2f td.cell-break {{
+  background: linear-gradient(90deg, #ecfdf5 0%, #dcfce7 50%, #ecfdf5 100%);
+  color: #065f46;
+  border-top: 1.5px solid #a7f3d0;
+  border-bottom: 1.5px solid #a7f3d0;
+}}
+.timetable-grid tbody tr.row-shift-f2f td.cell-empty {{
+  background: linear-gradient(135deg, rgba(236, 253, 245, 0.55) 0%, rgba(240, 253, 244, 0.2) 100%);
+}}
+
+/* 1st Shift: Afternoon Sky Blue Fade */
+.timetable-grid tbody tr.row-shift-first td.cell-time,
+.timetable-grid tbody tr.row-shift-first td.cell-mins {{
+  background: linear-gradient(90deg, #eff6ff 0%, #f4f8fe 60%, #f8fafc 100%);
+  color: #1e3a8a;
+}}
+.timetable-grid tbody tr.row-shift-first td.cell-time .cell-time-val {{
+  color: #1e3a8a;
+}}
+.timetable-grid tbody tr.row-shift-first td.cell-break {{
+  background: linear-gradient(90deg, #eff6ff 0%, #dbeafe 50%, #eff6ff 100%);
+  color: #1e40af;
+  border-top: 1.5px solid #bfdbfe;
+  border-bottom: 1.5px solid #bfdbfe;
+}}
+.timetable-grid tbody tr.row-shift-first td.cell-empty {{
+  background: linear-gradient(135deg, rgba(239, 246, 255, 0.55) 0%, rgba(240, 249, 255, 0.2) 100%);
+}}
+
+/* 2nd Shift: Warm Sunset Amber Fade */
+.timetable-grid tbody tr.row-shift-second td.cell-time,
+.timetable-grid tbody tr.row-shift-second td.cell-mins {{
+  background: linear-gradient(90deg, #fffbeb 0%, #fefdf6 60%, #f8fafc 100%);
+  color: #78350f;
+}}
+.timetable-grid tbody tr.row-shift-second td.cell-time .cell-time-val {{
+  color: #78350f;
+}}
+.timetable-grid tbody tr.row-shift-second td.cell-break {{
+  background: linear-gradient(90deg, #fffbeb 0%, #fef3c7 50%, #fffbeb 100%);
+  color: #92400e;
+  border-top: 1.5px solid #fde68a;
+  border-bottom: 1.5px solid #fde68a;
+}}
+.timetable-grid tbody tr.row-shift-second td.cell-empty {{
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.55) 0%, rgba(255, 251, 235, 0.2) 100%);
+}}
+
 .timetable-grid tbody td.cell-class {{
   transition: transform 0.1s ease, box-shadow 0.1s ease;
   vertical-align: middle;
@@ -1381,11 +1439,13 @@ html, body {{
 
       const activeRowspan = {{ 1: 0, 2: 0, 3: 0, 4: 0 }};
 
+      const secShiftGroup = isF2F ? 'f2f' : (isODL2 ? 'second' : 'first');
+
       timeRows.forEach((row, rowIdx) => {{
         if (row.type === 'break') {{
           fullHtml += `
-            <tr>
-              <td class="cell-time">${{esc(row.time)}}</td>
+            <tr class="row-shift-${{secShiftGroup}}">
+              <td class="cell-time"><span class="cell-time-val">${{esc(row.time)}}</span></td>
               <td class="cell-mins">${{esc(row.mins)}}</td>
           `;
 
@@ -1408,8 +1468,8 @@ html, body {{
           fullHtml += `</tr>`;
         }} else {{
           fullHtml += `
-            <tr>
-              <td class="cell-time">${{esc(row.time)}}</td>
+            <tr class="row-shift-${{secShiftGroup}}">
+              <td class="cell-time"><span class="cell-time-val">${{esc(row.time)}}</span></td>
               <td class="cell-mins">${{esc(row.mins)}}</td>
           `;
 
@@ -1565,23 +1625,23 @@ html, body {{
     }}
 
     const masterSlots = [
-      {{ time: '07:30 AM – 07:45 AM', mins: '15 min.', type: 'break', label: 'GENERAL ASSEMBLY' }},
-      {{ time: '08:00 AM – 09:00 AM', mins: '60 min.', type: 'exam', slot_num: 1 }},
-      {{ time: '09:00 AM – 10:00 AM', mins: '60 min.', type: 'exam', slot_num: 2 }},
-      {{ time: '10:00 AM – 10:25 AM', mins: '25 min.', type: 'break', label: 'RECESS' }},
-      {{ time: '10:25 AM – 11:25 AM', mins: '60 min.', type: 'exam', slot_num: 3 }},
-      {{ time: '11:25 AM', mins: '--', type: 'break', label: 'FACE TO FACE DISMISSAL' }},
-      {{ time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' }},
-      {{ time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1, shift_tag: 'ODL1' }},
-      {{ time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION - BREAK' }},
-      {{ time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'ODL1' }},
-      {{ time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION - SALAH BREAK' }},
-      {{ time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3, note: '3rd & 1st Subject · Mix of 1st & 2nd Shift', shift_tag: 'MIXED' }},
-      {{ time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' }},
-      {{ time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'ODL2' }},
-      {{ time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION - BREAK' }},
-      {{ time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_num: 3, shift_tag: 'ODL2' }},
-      {{ time: '06:30 PM', mins: '--', type: 'break', label: 'DISMISSAL' }}
+      {{ time: '07:30 AM – 07:45 AM', mins: '15 min.', type: 'break', label: 'GENERAL ASSEMBLY', shift_group: 'f2f' }},
+      {{ time: '08:00 AM – 09:00 AM', mins: '60 min.', type: 'exam', slot_num: 1, shift_group: 'f2f' }},
+      {{ time: '09:00 AM – 10:00 AM', mins: '60 min.', type: 'exam', slot_num: 2, shift_group: 'f2f' }},
+      {{ time: '10:00 AM – 10:25 AM', mins: '25 min.', type: 'break', label: 'RECESS', shift_group: 'f2f' }},
+      {{ time: '10:25 AM – 11:25 AM', mins: '60 min.', type: 'exam', slot_num: 3, shift_group: 'f2f' }},
+      {{ time: '11:25 AM', mins: '--', type: 'break', label: 'FACE TO FACE DISMISSAL', shift_group: 'f2f' }},
+      {{ time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY', shift_group: 'first' }},
+      {{ time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1, shift_tag: 'ODL1', shift_group: 'first' }},
+      {{ time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION - BREAK', shift_group: 'first' }},
+      {{ time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'ODL1', shift_group: 'first' }},
+      {{ time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION - SALAH BREAK', shift_group: 'first' }},
+      {{ time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3, note: '3rd & 1st Subject · Mix of 1st & 2nd Shift', shift_tag: 'MIXED', shift_group: 'first' }},
+      {{ time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION', shift_group: 'second' }},
+      {{ time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'ODL2', shift_group: 'second' }},
+      {{ time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION - BREAK', shift_group: 'second' }},
+      {{ time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_num: 3, shift_tag: 'ODL2', shift_group: 'second' }},
+      {{ time: '06:30 PM', mins: '--', type: 'break', label: 'DISMISSAL', shift_group: 'second' }}
     ];
 
     const todayStr = new Date().toLocaleDateString('en-US', {{ month: 'short', day: 'numeric', year: 'numeric' }});
@@ -1632,7 +1692,7 @@ html, body {{
       masterSlots.forEach((slot, rowIdx) => {{
         if (slot.type === 'break') {{
           fullHtml += `
-            <tr>
+            <tr class="row-shift-${{slot.shift_group}}">
               <td class="cell-time"><span class="cell-time-val">${{esc(slot.time)}}</span></td>
               <td class="cell-mins">${{esc(slot.mins)}}</td>
           `;
@@ -1656,7 +1716,7 @@ html, body {{
           fullHtml += `</tr>`;
         }} else {{
           fullHtml += `
-            <tr>
+            <tr class="row-shift-${{slot.shift_group}}">
               <td class="cell-time">
                 <span class="cell-time-val">${{esc(slot.time)}}</span>
                 ${{slot.note ? `<div class="cell-time-note">${{esc(slot.note)}}</div>` : ''}}

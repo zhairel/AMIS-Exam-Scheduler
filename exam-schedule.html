@@ -994,6 +994,25 @@ html, body {
   vertical-align: middle;
 }
 
+/* Distinct Color Fade Shift Columns */
+.timetable-grid tbody td.cell-shift.cell-shift--f2f {
+  background: linear-gradient(180deg, #ecfdf5 0%, #d1fae5 50%, #ecfdf5 100%);
+  color: #064e3b;
+  border-left: 5px solid #059669;
+}
+
+.timetable-grid tbody td.cell-shift.cell-shift--first {
+  background: linear-gradient(180deg, #eff6ff 0%, #dbeafe 50%, #eff6ff 100%);
+  color: #1e3a8a;
+  border-left: 5px solid #2563eb;
+}
+
+.timetable-grid tbody td.cell-shift.cell-shift--second {
+  background: linear-gradient(180deg, #fffbeb 0%, #fef3c7 50%, #fffbeb 100%);
+  color: #78350f;
+  border-left: 5px solid #d97706;
+}
+
 .shift-stack {
   display: inline-block;
   font-size: 12px;
@@ -1013,6 +1032,64 @@ html, body {
 
 .timetable-grid tbody td.cell-empty {
   background: #ffffff;
+}
+
+/* Shift-Themed Color Fade Rows and Cells */
+/* Face to Face: Morning Emerald Fade */
+.timetable-grid tbody tr.row-shift-f2f td.cell-time,
+.timetable-grid tbody tr.row-shift-f2f td.cell-mins {
+  background: linear-gradient(90deg, #ecfdf5 0%, #f7fdf9 60%, #f8fafc 100%);
+  color: #064e3b;
+}
+.timetable-grid tbody tr.row-shift-f2f td.cell-time .cell-time-val {
+  color: #064e3b;
+}
+.timetable-grid tbody tr.row-shift-f2f td.cell-break {
+  background: linear-gradient(90deg, #ecfdf5 0%, #dcfce7 50%, #ecfdf5 100%);
+  color: #065f46;
+  border-top: 1.5px solid #a7f3d0;
+  border-bottom: 1.5px solid #a7f3d0;
+}
+.timetable-grid tbody tr.row-shift-f2f td.cell-empty {
+  background: linear-gradient(135deg, rgba(236, 253, 245, 0.55) 0%, rgba(240, 253, 244, 0.2) 100%);
+}
+
+/* 1st Shift: Afternoon Sky Blue Fade */
+.timetable-grid tbody tr.row-shift-first td.cell-time,
+.timetable-grid tbody tr.row-shift-first td.cell-mins {
+  background: linear-gradient(90deg, #eff6ff 0%, #f4f8fe 60%, #f8fafc 100%);
+  color: #1e3a8a;
+}
+.timetable-grid tbody tr.row-shift-first td.cell-time .cell-time-val {
+  color: #1e3a8a;
+}
+.timetable-grid tbody tr.row-shift-first td.cell-break {
+  background: linear-gradient(90deg, #eff6ff 0%, #dbeafe 50%, #eff6ff 100%);
+  color: #1e40af;
+  border-top: 1.5px solid #bfdbfe;
+  border-bottom: 1.5px solid #bfdbfe;
+}
+.timetable-grid tbody tr.row-shift-first td.cell-empty {
+  background: linear-gradient(135deg, rgba(239, 246, 255, 0.55) 0%, rgba(240, 249, 255, 0.2) 100%);
+}
+
+/* 2nd Shift: Warm Sunset Amber Fade */
+.timetable-grid tbody tr.row-shift-second td.cell-time,
+.timetable-grid tbody tr.row-shift-second td.cell-mins {
+  background: linear-gradient(90deg, #fffbeb 0%, #fefdf6 60%, #f8fafc 100%);
+  color: #78350f;
+}
+.timetable-grid tbody tr.row-shift-second td.cell-time .cell-time-val {
+  color: #78350f;
+}
+.timetable-grid tbody tr.row-shift-second td.cell-break {
+  background: linear-gradient(90deg, #fffbeb 0%, #fef3c7 50%, #fffbeb 100%);
+  color: #92400e;
+  border-top: 1.5px solid #fde68a;
+  border-bottom: 1.5px solid #fde68a;
+}
+.timetable-grid tbody tr.row-shift-second td.cell-empty {
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.55) 0%, rgba(255, 251, 235, 0.2) 100%);
 }
 
 .timetable-grid tbody td.cell-class {
@@ -6574,11 +6651,13 @@ html, body {
 
       const activeRowspan = { 1: 0, 2: 0, 3: 0, 4: 0 };
 
+      const secShiftGroup = isF2F ? 'f2f' : (isODL2 ? 'second' : 'first');
+
       timeRows.forEach((row, rowIdx) => {
         if (row.type === 'break') {
           fullHtml += `
-            <tr>
-              <td class="cell-time">${esc(row.time)}</td>
+            <tr class="row-shift-${secShiftGroup}">
+              <td class="cell-time"><span class="cell-time-val">${esc(row.time)}</span></td>
               <td class="cell-mins">${esc(row.mins)}</td>
           `;
 
@@ -6601,8 +6680,8 @@ html, body {
           fullHtml += `</tr>`;
         } else {
           fullHtml += `
-            <tr>
-              <td class="cell-time">${esc(row.time)}</td>
+            <tr class="row-shift-${secShiftGroup}">
+              <td class="cell-time"><span class="cell-time-val">${esc(row.time)}</span></td>
               <td class="cell-mins">${esc(row.mins)}</td>
           `;
 
@@ -6845,11 +6924,11 @@ html, body {
           while (rowIdx + shiftRowspan < masterSlots.length && masterSlots[rowIdx + shiftRowspan].shift_group === slot.shift_group) {
             shiftRowspan++;
           }
-          shiftCellHtml = `<td class="cell-shift" rowspan="${shiftRowspan}" aria-label="${slot.shift_group} shift"><span class="shift-stack">${shiftLabels[slot.shift_group]}</span></td>`;
+          shiftCellHtml = `<td class="cell-shift cell-shift--${slot.shift_group}" rowspan="${shiftRowspan}" aria-label="${slot.shift_group} shift"><span class="shift-stack">${shiftLabels[slot.shift_group]}</span></td>`;
         }
         if (slot.type === 'break') {
           fullHtml += `
-            <tr>
+            <tr class="row-shift-${slot.shift_group}">
               ${shiftCellHtml}
               <td class="cell-time"><span class="cell-time-val">${esc(slot.time)}</span></td>
               <td class="cell-mins">${esc(slot.mins)}</td>
@@ -6874,7 +6953,7 @@ html, body {
           fullHtml += `</tr>`;
         } else {
           fullHtml += `
-            <tr>
+            <tr class="row-shift-${slot.shift_group}">
               ${shiftCellHtml}
               <td class="cell-time">
                 <span class="cell-time-val">${esc(slot.time)}</span>
