@@ -4885,20 +4885,20 @@
             "source_cell": "AC21"
           },
           "Tuesday": {
-            "raw": "Qur'an - Ust. Hainur",
+            "raw": "Qur'an - Ust. Samsida",
             "subject": "Qur'an",
-            "teacher": "Ustadha Hainur",
-            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadha Samsida",
+            "teacher_id": "tchr_samsida",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
             "source_cell": "AD21"
           },
           "Wednesday": {
-            "raw": "Hadith - Ust. Hainur",
+            "raw": "Hadith - Ust. Silfah",
             "subject": "Hadith",
-            "teacher": "Ustadha Hainur",
-            "teacher_id": "tchr_hainur",
+            "teacher": "Ustadha Silfah",
+            "teacher_id": "tchr_silfah",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -25583,10 +25583,10 @@
         "is_break": false,
         "days": {
           "Sunday": {
-            "raw": "AP - Tchr. Monisa",
+            "raw": "AP - Tchr. Erica",
             "subject": "AP",
-            "teacher": "Teacher Monisa",
-            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Erica",
+            "teacher_id": "tchr_erica",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -26562,10 +26562,10 @@
             "source_cell": "W77"
           },
           "Thursday": {
-            "raw": "AP - Tchr. Monisa",
+            "raw": "AP - Tchr. Erica",
             "subject": "AP",
-            "teacher": "Teacher Monisa",
-            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Erica",
+            "teacher_id": "tchr_erica",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -26674,10 +26674,10 @@
             "source_cell": "U79"
           },
           "Tuesday": {
-            "raw": "TLE - Tchr. Monisa",
+            "raw": "TLE - Tchr. Erica",
             "subject": "TLE",
-            "teacher": "Teacher Monisa",
-            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Erica",
+            "teacher_id": "tchr_erica",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -27491,10 +27491,10 @@
             "source_cell": "N67"
           },
           "Wednesday": {
-            "raw": "AP4-Monisa",
+            "raw": "AP4 - Tchr. Erica",
             "subject": "AP4",
-            "teacher": "Teacher Monisa",
-            "teacher_id": "tchr_monisa",
+            "teacher": "Teacher Erica",
+            "teacher_id": "tchr_erica",
             "is_break": false,
             "label": null,
             "source_sheet": "ELEM",
@@ -50680,7 +50680,7 @@
   {
     "id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
     "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
-    "section_name": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+    "section_name": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX",
     "shift": "ODL - 1ST SHIFT",
     "department": "Junior High School",
     "grade_level": "Grade 8",
@@ -51614,7 +51614,8 @@
         "source_sheet": "HS SCHED (NEW)",
         "source_cell": "K28"
       }
-    ]
+    ],
+    "gender": "MIX"
   },
   {
     "id": "sec_grade_9_abu_hurayrah_1st_shift_girls",

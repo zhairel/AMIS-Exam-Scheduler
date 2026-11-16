@@ -336,7 +336,10 @@ def apply_authoritative_2nd_term_updates(records):
             elif "MUS'AB" in sec and sub == "SHAF":
                 t = "Ustadh Laurel/Nawawi"
                 r["teacher_id"] = "tchr_nawawi"
-            # Ustadha Samsida (14 classes: Hadith K1 Husain, Hadith K2 Abdullah, Hadith K2 Umar, Qur'an K2 Abdullah, and all Arabic)
+            elif "HUSAIN" in sec and sub == "Hadith":
+                t = "Ustadha Silfah"
+                r["teacher_id"] = "tchr_silfah"
+            # Ustadha Samsida (13 classes: Hadith K2 Abdullah, Hadith K2 Umar, Qur'an K2 Abdullah, and all Arabic)
             else:
                 t = "Ustadha Samsida"
                 r["teacher_id"] = "tchr_samsida"
@@ -355,6 +358,12 @@ def apply_authoritative_2nd_term_updates(records):
             elif "HAMZA" in sec and "Panlipunan" in sub:
                 t = "Teacher Jenny"
                 r["teacher_id"] = "tchr_jenny"
+
+        # 11. Grade 8 - Sa'ad section name & gender to MIX
+        if "GRADE 8 - SA'AD" in sec or r.get("section_id") == "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls":
+            r["section"] = "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX"
+            r["section_name"] = "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX"
+            r["gender"] = "MIX"
 
         # Clean all related fields & remove proctors for 2nd term
         r["teacher"] = t
