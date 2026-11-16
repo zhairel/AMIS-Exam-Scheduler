@@ -1,4 +1,4 @@
-const ALL_SECTIONS_DATA = [
+window.OFFICIAL_CLASS_SCHEDULES = [
   {
     "id": "sec_kinder_2_class_schedule_f2f",
     "section_id": "sec_kinder_2_class_schedule_f2f",
@@ -12,7 +12,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -78,7 +78,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 7:50 AM",
+        "time": "07:40 – 7:50 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -144,7 +144,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "7:50 \u2013 8:25 AM",
+        "time": "7:50 – 8:25 AM",
         "minutes": "35 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -210,7 +210,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "8:25 \u2013 9:10 AM",
+        "time": "8:25 – 9:10 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -276,7 +276,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:10 \u2013 9:30 AM",
+        "time": "9:10 – 9:30 AM",
         "minutes": "20 min.",
         "is_merged_all_days": true,
         "label": "SUPERVISED RECESS - Tchr. Ayah and Ustadha Saliha",
@@ -342,7 +342,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "9:30 \u2013 10:15 AM",
+        "time": "9:30 – 10:15 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -408,7 +408,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:15 \u2013 10:30 AM",
+        "time": "10:15 – 10:30 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -542,7 +542,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -608,7 +608,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "07:40 \u2013 7:50 AM",
+        "time": "07:40 – 7:50 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -674,7 +674,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "7:50 \u2013 8:25 AM",
+        "time": "7:50 – 8:25 AM",
         "minutes": "35 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -740,7 +740,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "8:25 \u2013 9:10 AM",
+        "time": "8:25 – 9:10 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -806,7 +806,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:10 \u2013 9:30 AM",
+        "time": "9:10 – 9:30 AM",
         "minutes": "20 min.",
         "is_merged_all_days": true,
         "label": "SUPERVISED RECESS - Tchr. Ayah and Ustadha Saliha",
@@ -872,7 +872,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "9:30 \u2013 10:15 AM",
+        "time": "9:30 – 10:15 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -938,7 +938,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "10:15 \u2013 10:30 AM",
+        "time": "10:15 – 10:30 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -1083,7 +1083,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -1149,7 +1149,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -1215,7 +1215,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -1281,7 +1281,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -1347,7 +1347,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "QUR'AN READING (GENERAL ASSEMBLY)",
@@ -1415,7 +1415,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -1481,7 +1481,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -1547,7 +1547,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -1613,7 +1613,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -1679,7 +1679,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "QUR'AN READING (GENERAL ASSEMBLY)",
@@ -1758,7 +1758,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -1824,7 +1824,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -1890,7 +1890,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -1956,7 +1956,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -2022,7 +2022,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -2090,7 +2090,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -2156,7 +2156,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -2222,7 +2222,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -2288,7 +2288,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -2354,7 +2354,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -2433,7 +2433,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -2499,7 +2499,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -2565,7 +2565,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -2631,7 +2631,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -2697,7 +2697,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -2763,7 +2763,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -2831,7 +2831,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -2897,7 +2897,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -2963,7 +2963,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3029,7 +3029,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -3095,7 +3095,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3161,7 +3161,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -3240,7 +3240,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -3306,7 +3306,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -3372,7 +3372,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3438,7 +3438,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -3504,7 +3504,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3570,7 +3570,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -3638,7 +3638,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -3704,7 +3704,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -3770,7 +3770,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3836,7 +3836,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -3902,7 +3902,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -3968,7 +3968,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -4047,7 +4047,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -4113,7 +4113,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -4179,7 +4179,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -4245,7 +4245,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -4313,7 +4313,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -4379,7 +4379,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -4445,7 +4445,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -4511,7 +4511,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -4590,7 +4590,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -4656,7 +4656,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -4722,7 +4722,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -4788,7 +4788,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -4854,7 +4854,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -4922,7 +4922,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -4988,7 +4988,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -5054,7 +5054,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -5120,7 +5120,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -5186,7 +5186,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -5265,7 +5265,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:00 \u2013 12:40",
+        "time": "12:00 – 12:40",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "SALAH",
@@ -5331,7 +5331,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -5397,7 +5397,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -5463,7 +5463,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "2:10 \u2013 2:20 PM",
+        "time": "2:10 – 2:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "SHORT BREAK",
@@ -5529,7 +5529,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "2:10 \u2013 2:55 PM",
+        "time": "2:10 – 2:55 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -5663,7 +5663,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:00 \u2013 12:40",
+        "time": "12:00 – 12:40",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": "SALAH",
@@ -5729,7 +5729,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -5795,7 +5795,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -5861,7 +5861,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "2:10 \u2013 2:20 PM",
+        "time": "2:10 – 2:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "SHORT BREAK",
@@ -5927,7 +5927,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "2:10 \u2013 2:55 PM",
+        "time": "2:10 – 2:55 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -6072,7 +6072,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -6138,7 +6138,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -6208,7 +6208,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -6274,7 +6274,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -6340,7 +6340,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -6406,7 +6406,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -6538,7 +6538,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -6604,7 +6604,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -6670,7 +6670,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -6736,7 +6736,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -6802,7 +6802,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -6870,7 +6870,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -6936,7 +6936,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -7006,7 +7006,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -7072,7 +7072,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -7138,7 +7138,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -7204,7 +7204,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -7336,7 +7336,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -7402,7 +7402,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -7468,7 +7468,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -7534,7 +7534,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -7600,7 +7600,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -7679,7 +7679,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -7745,7 +7745,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -7811,7 +7811,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -7877,7 +7877,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -7943,7 +7943,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -8009,7 +8009,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -8075,7 +8075,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -8143,7 +8143,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -8209,7 +8209,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -8275,7 +8275,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -8341,7 +8341,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -8407,7 +8407,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -8473,7 +8473,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -8539,7 +8539,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -8618,7 +8618,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -8684,7 +8684,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -8750,7 +8750,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -8816,7 +8816,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -8882,7 +8882,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -8948,7 +8948,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -9014,7 +9014,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -9082,7 +9082,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -9148,7 +9148,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -9214,7 +9214,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -9280,7 +9280,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -9346,7 +9346,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -9412,7 +9412,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -9478,7 +9478,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -9557,7 +9557,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -9623,7 +9623,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -9689,7 +9689,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -9755,7 +9755,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -9821,7 +9821,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -9887,7 +9887,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -9953,7 +9953,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -10021,7 +10021,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -10087,7 +10087,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -10153,7 +10153,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -10219,7 +10219,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10285,7 +10285,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -10351,7 +10351,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10417,7 +10417,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -10496,7 +10496,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -10562,7 +10562,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -10628,7 +10628,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -10694,7 +10694,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10760,7 +10760,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -10826,7 +10826,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -10892,7 +10892,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -10960,7 +10960,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -11026,7 +11026,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -11092,7 +11092,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -11158,7 +11158,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -11224,7 +11224,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -11290,7 +11290,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -11356,7 +11356,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -11435,7 +11435,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -11501,7 +11501,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -11567,7 +11567,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -11633,7 +11633,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -11699,7 +11699,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -11765,7 +11765,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -11901,7 +11901,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -11967,7 +11967,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -12033,7 +12033,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -12099,7 +12099,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -12165,7 +12165,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -12233,7 +12233,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -12299,7 +12299,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -12365,7 +12365,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -12431,7 +12431,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -12497,7 +12497,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -12563,7 +12563,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -12699,7 +12699,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -12765,7 +12765,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -12831,7 +12831,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -12897,7 +12897,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -12963,7 +12963,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -13042,7 +13042,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -13108,7 +13108,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -13174,7 +13174,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -13240,7 +13240,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -13306,7 +13306,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -13372,7 +13372,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -13438,7 +13438,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -13506,7 +13506,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -13572,7 +13572,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -13638,7 +13638,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -13704,7 +13704,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -13770,7 +13770,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -13836,7 +13836,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -13902,7 +13902,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -13981,7 +13981,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -14047,7 +14047,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -14113,7 +14113,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14179,7 +14179,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -14245,7 +14245,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14311,7 +14311,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -14377,7 +14377,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -14445,7 +14445,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -14511,7 +14511,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -14577,7 +14577,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14643,7 +14643,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -14709,7 +14709,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -14775,7 +14775,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -14841,7 +14841,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -14920,7 +14920,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -14986,7 +14986,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -15052,7 +15052,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -15118,7 +15118,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -15184,7 +15184,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -15250,7 +15250,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -15316,7 +15316,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -15384,7 +15384,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -15450,7 +15450,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -15516,7 +15516,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -15582,7 +15582,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -15648,7 +15648,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -15714,7 +15714,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -15780,7 +15780,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -15859,7 +15859,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -15925,7 +15925,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -15991,7 +15991,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -16057,7 +16057,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -16123,7 +16123,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -16189,7 +16189,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -16255,7 +16255,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -16323,7 +16323,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL MATH",
@@ -16389,7 +16389,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -16455,7 +16455,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -16521,7 +16521,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -16587,7 +16587,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -16653,7 +16653,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -16719,7 +16719,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -16798,7 +16798,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -16864,7 +16864,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -16930,7 +16930,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -16996,7 +16996,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -17062,7 +17062,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -17128,7 +17128,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -17260,7 +17260,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -17326,7 +17326,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -17392,7 +17392,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -17458,7 +17458,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -17526,7 +17526,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -17592,7 +17592,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -17658,7 +17658,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -17724,7 +17724,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -17790,7 +17790,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -17856,7 +17856,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -17988,7 +17988,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -18054,7 +18054,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -18120,7 +18120,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -18186,7 +18186,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -18265,7 +18265,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -18331,7 +18331,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -18397,7 +18397,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -18463,7 +18463,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -18529,7 +18529,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -18595,7 +18595,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -18661,7 +18661,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -18729,7 +18729,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -18795,7 +18795,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -18861,7 +18861,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -18927,7 +18927,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -18993,7 +18993,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -19059,7 +19059,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -19125,7 +19125,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -19204,7 +19204,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -19270,7 +19270,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -19336,7 +19336,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -19402,7 +19402,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -19468,7 +19468,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -19534,7 +19534,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -19600,7 +19600,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -19668,7 +19668,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -19734,7 +19734,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -19800,7 +19800,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -19866,7 +19866,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -19932,7 +19932,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -19998,7 +19998,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -20064,7 +20064,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -20143,7 +20143,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -20209,7 +20209,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -20275,7 +20275,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -20341,7 +20341,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -20407,7 +20407,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -20473,7 +20473,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -20539,7 +20539,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -20607,7 +20607,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -20673,7 +20673,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -20739,7 +20739,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -20805,7 +20805,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -20871,7 +20871,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -20937,7 +20937,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -21003,7 +21003,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -21082,7 +21082,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -21148,7 +21148,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -21214,7 +21214,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -21280,7 +21280,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -21346,7 +21346,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -21412,7 +21412,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -21478,7 +21478,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -21546,7 +21546,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -21612,7 +21612,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -21678,7 +21678,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -21744,7 +21744,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -21810,7 +21810,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -21876,7 +21876,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -21942,7 +21942,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -22021,7 +22021,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -22087,7 +22087,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -22153,7 +22153,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -22219,7 +22219,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -22285,7 +22285,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -22351,7 +22351,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -22417,7 +22417,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -22485,7 +22485,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -22551,7 +22551,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -22617,7 +22617,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -22683,7 +22683,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -22749,7 +22749,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -22815,7 +22815,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -22881,7 +22881,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -22960,7 +22960,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -23026,7 +23026,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -23092,7 +23092,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -23158,7 +23158,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -23224,7 +23224,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -23290,7 +23290,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -23356,7 +23356,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -23424,7 +23424,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -23490,7 +23490,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -23556,7 +23556,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -23622,7 +23622,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -23688,7 +23688,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -23754,7 +23754,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -23820,7 +23820,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -23899,7 +23899,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -23965,7 +23965,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -24031,7 +24031,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -24097,7 +24097,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -24163,7 +24163,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -24229,7 +24229,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -24365,7 +24365,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -24431,7 +24431,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -24497,7 +24497,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -24563,7 +24563,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -24629,7 +24629,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -24697,7 +24697,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -24763,7 +24763,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -24829,7 +24829,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -24895,7 +24895,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -24961,7 +24961,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -25027,7 +25027,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -25163,7 +25163,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -25229,7 +25229,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -25295,7 +25295,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -25361,7 +25361,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -25427,7 +25427,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -25506,7 +25506,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -25572,7 +25572,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -25638,7 +25638,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -25704,7 +25704,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -25770,7 +25770,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -25836,7 +25836,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -25902,7 +25902,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -25970,7 +25970,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -26036,7 +26036,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -26102,7 +26102,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -26168,7 +26168,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -26234,7 +26234,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -26300,7 +26300,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -26366,7 +26366,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -26445,7 +26445,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -26511,7 +26511,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -26577,7 +26577,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -26643,7 +26643,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -26709,7 +26709,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -26775,7 +26775,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -26841,7 +26841,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -26909,7 +26909,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -26975,7 +26975,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -27041,7 +27041,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -27107,7 +27107,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -27173,7 +27173,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -27239,7 +27239,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -27305,7 +27305,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -27384,7 +27384,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -27450,7 +27450,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -27516,7 +27516,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -27582,7 +27582,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -27648,7 +27648,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -27716,7 +27716,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -27782,7 +27782,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -27848,7 +27848,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -27914,7 +27914,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -27980,7 +27980,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -28059,7 +28059,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -28125,7 +28125,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -28191,7 +28191,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -28257,7 +28257,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -28323,7 +28323,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -28389,7 +28389,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -28455,7 +28455,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -28523,7 +28523,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -28589,7 +28589,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -28655,7 +28655,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -28721,7 +28721,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -28787,7 +28787,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -28853,7 +28853,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -28919,7 +28919,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -28998,7 +28998,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -29064,7 +29064,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -29130,7 +29130,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -29196,7 +29196,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -29262,7 +29262,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -29328,7 +29328,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -29394,7 +29394,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -29462,7 +29462,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -29528,7 +29528,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -29594,7 +29594,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -29660,7 +29660,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -29726,7 +29726,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -29792,7 +29792,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -29858,7 +29858,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -29937,7 +29937,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -30003,7 +30003,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -30069,7 +30069,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -30135,7 +30135,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -30201,7 +30201,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -30269,7 +30269,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE",
@@ -30335,7 +30335,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -30401,7 +30401,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -30467,7 +30467,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -30533,7 +30533,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -30612,7 +30612,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -30678,7 +30678,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -30744,7 +30744,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -30810,7 +30810,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -30876,7 +30876,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -30942,7 +30942,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -31074,7 +31074,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -31140,7 +31140,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -31206,7 +31206,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -31272,7 +31272,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -31338,7 +31338,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -31406,7 +31406,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -31472,7 +31472,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -31538,7 +31538,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -31604,7 +31604,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -31670,7 +31670,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -31736,7 +31736,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -31868,7 +31868,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -31934,7 +31934,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -32000,7 +32000,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -32066,7 +32066,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -32132,7 +32132,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -32211,7 +32211,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -32277,7 +32277,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -32343,7 +32343,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -32409,7 +32409,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -32475,7 +32475,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -32541,7 +32541,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -32607,7 +32607,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -32675,7 +32675,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -32741,7 +32741,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -32807,7 +32807,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -32873,7 +32873,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -32939,7 +32939,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -33005,7 +33005,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -33071,7 +33071,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -33150,7 +33150,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -33216,7 +33216,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -33282,7 +33282,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -33348,7 +33348,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -33414,7 +33414,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -33480,7 +33480,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -33546,7 +33546,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -33614,7 +33614,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -33680,7 +33680,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -33746,7 +33746,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -33812,7 +33812,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -33878,7 +33878,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -33944,7 +33944,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -34010,7 +34010,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -34089,7 +34089,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -34155,7 +34155,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -34221,7 +34221,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -34287,7 +34287,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -34353,7 +34353,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -34421,7 +34421,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -34487,7 +34487,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -34553,7 +34553,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -34619,7 +34619,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -34685,7 +34685,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -34764,7 +34764,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -34830,7 +34830,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -34896,7 +34896,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -34962,7 +34962,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -35028,7 +35028,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -35094,7 +35094,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -35160,7 +35160,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -35228,7 +35228,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -35294,7 +35294,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -35360,7 +35360,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -35426,7 +35426,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -35492,7 +35492,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -35558,7 +35558,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -35624,7 +35624,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -35703,7 +35703,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -35769,7 +35769,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -35835,7 +35835,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -35901,7 +35901,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -35967,7 +35967,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -36033,7 +36033,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -36099,7 +36099,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -36167,7 +36167,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -36233,7 +36233,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -36299,7 +36299,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -36365,7 +36365,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -36431,7 +36431,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -36497,7 +36497,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -36563,7 +36563,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -36642,7 +36642,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -36708,7 +36708,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -36774,7 +36774,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -36840,7 +36840,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -36906,7 +36906,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -36974,7 +36974,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -37040,7 +37040,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -37106,7 +37106,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -37172,7 +37172,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -37238,7 +37238,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -37317,7 +37317,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -37383,7 +37383,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -37453,7 +37453,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -37519,7 +37519,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -37585,7 +37585,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -37651,7 +37651,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -37783,7 +37783,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -37849,7 +37849,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -37915,7 +37915,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -37981,7 +37981,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -38047,7 +38047,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -38115,7 +38115,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -38181,7 +38181,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -38251,7 +38251,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -38317,7 +38317,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -38383,7 +38383,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -38449,7 +38449,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -38581,7 +38581,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -38647,7 +38647,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -38713,7 +38713,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -38779,7 +38779,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -38845,7 +38845,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -38924,7 +38924,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -38990,7 +38990,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -39056,7 +39056,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -39122,7 +39122,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -39188,7 +39188,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -39254,7 +39254,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -39320,7 +39320,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -39388,7 +39388,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -39454,7 +39454,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -39520,7 +39520,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -39586,7 +39586,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -39652,7 +39652,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -39718,7 +39718,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -39784,7 +39784,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -39863,7 +39863,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -39929,7 +39929,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -39995,7 +39995,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -40061,7 +40061,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -40127,7 +40127,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -40193,7 +40193,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -40259,7 +40259,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -40327,7 +40327,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -40393,7 +40393,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -40459,7 +40459,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -40525,7 +40525,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -40591,7 +40591,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -40657,7 +40657,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -40723,7 +40723,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -40802,7 +40802,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -40868,7 +40868,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -40934,7 +40934,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -41000,7 +41000,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -41066,7 +41066,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -41132,7 +41132,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -41198,7 +41198,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -41266,7 +41266,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -41332,7 +41332,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -41398,7 +41398,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -41464,7 +41464,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -41530,7 +41530,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -41596,7 +41596,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -41662,7 +41662,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -41741,7 +41741,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -41807,7 +41807,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -41873,7 +41873,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -41939,7 +41939,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -42005,7 +42005,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -42073,7 +42073,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -42139,7 +42139,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -42205,7 +42205,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -42271,7 +42271,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -42337,7 +42337,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -42416,7 +42416,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -42482,7 +42482,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -42548,7 +42548,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -42614,7 +42614,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -42680,7 +42680,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -42746,7 +42746,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -42878,7 +42878,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -42944,7 +42944,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -43010,7 +43010,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -43076,7 +43076,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -43142,7 +43142,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -43210,7 +43210,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -43276,7 +43276,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -43342,7 +43342,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -43408,7 +43408,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -43474,7 +43474,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -43540,7 +43540,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -43672,7 +43672,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -43738,7 +43738,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -43804,7 +43804,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -43870,7 +43870,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -43936,7 +43936,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -44015,7 +44015,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -44081,7 +44081,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -44147,7 +44147,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -44213,7 +44213,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -44279,7 +44279,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -44345,7 +44345,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -44477,7 +44477,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -44543,7 +44543,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -44609,7 +44609,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -44675,7 +44675,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -44741,7 +44741,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -44809,7 +44809,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -44875,7 +44875,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -44941,7 +44941,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -45007,7 +45007,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -45073,7 +45073,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -45139,7 +45139,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -45271,7 +45271,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -45337,7 +45337,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -45403,7 +45403,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -45469,7 +45469,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -45535,7 +45535,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -45614,7 +45614,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -45680,7 +45680,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -45746,7 +45746,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -45812,7 +45812,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": "Filipino",
@@ -45878,7 +45878,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -45944,7 +45944,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -46076,7 +46076,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -46142,7 +46142,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -46208,7 +46208,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -46274,7 +46274,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -46340,7 +46340,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -46408,7 +46408,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -46474,7 +46474,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -46540,7 +46540,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -46606,7 +46606,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": "Filipino",
@@ -46672,7 +46672,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -46738,7 +46738,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -46870,7 +46870,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -46936,7 +46936,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -47002,7 +47002,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -47068,7 +47068,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -47134,7 +47134,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -47213,7 +47213,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -47279,7 +47279,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -47345,7 +47345,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -47411,7 +47411,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -47477,7 +47477,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -47543,7 +47543,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -47675,7 +47675,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -47741,7 +47741,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -47807,7 +47807,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -47873,7 +47873,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -47939,7 +47939,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -48007,7 +48007,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -48073,7 +48073,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -48139,7 +48139,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -48205,7 +48205,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -48271,7 +48271,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -48337,7 +48337,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -48469,7 +48469,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -48535,7 +48535,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -48601,7 +48601,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -48667,7 +48667,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -48733,7 +48733,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -48812,7 +48812,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -48878,7 +48878,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -48944,7 +48944,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -49010,7 +49010,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -49076,7 +49076,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -49142,7 +49142,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -49208,7 +49208,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -49276,7 +49276,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -49342,7 +49342,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -49408,7 +49408,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -49474,7 +49474,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -49540,7 +49540,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -49606,7 +49606,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -49672,7 +49672,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -49751,7 +49751,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -49817,7 +49817,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -49883,7 +49883,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -49949,7 +49949,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -50015,7 +50015,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -50081,7 +50081,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -50147,7 +50147,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -50215,7 +50215,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -50281,7 +50281,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -50347,7 +50347,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -50413,7 +50413,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -50479,7 +50479,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -50545,7 +50545,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -50611,7 +50611,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -50690,7 +50690,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -50756,7 +50756,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -50822,7 +50822,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -50888,7 +50888,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -50954,7 +50954,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -51020,7 +51020,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -51086,7 +51086,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -51154,7 +51154,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -51220,7 +51220,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -51286,7 +51286,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -51352,7 +51352,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -51418,7 +51418,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -51484,7 +51484,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -51550,7 +51550,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -51629,7 +51629,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -51695,7 +51695,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -51761,7 +51761,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -51827,7 +51827,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -51893,7 +51893,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -51959,7 +51959,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -52025,7 +52025,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -52093,7 +52093,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -52159,7 +52159,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -52225,7 +52225,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -52291,7 +52291,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -52357,7 +52357,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -52423,7 +52423,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -52489,7 +52489,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -52568,7 +52568,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -52634,7 +52634,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -52700,7 +52700,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -52766,7 +52766,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -52832,7 +52832,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -52898,7 +52898,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -52964,7 +52964,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -53032,7 +53032,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -53098,7 +53098,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -53164,7 +53164,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -53230,7 +53230,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -53296,7 +53296,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -53362,7 +53362,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -53428,7 +53428,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -53507,7 +53507,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -53573,7 +53573,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -53639,7 +53639,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -53705,7 +53705,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -53771,7 +53771,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -53837,7 +53837,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -53903,7 +53903,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -53971,7 +53971,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -54037,7 +54037,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -54103,7 +54103,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -54169,7 +54169,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -54235,7 +54235,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -54301,7 +54301,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -54367,7 +54367,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -54446,7 +54446,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -54512,7 +54512,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -54578,7 +54578,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -54644,7 +54644,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -54710,7 +54710,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -54776,7 +54776,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -54842,7 +54842,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -54910,7 +54910,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -54976,7 +54976,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -55042,7 +55042,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -55108,7 +55108,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -55174,7 +55174,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -55240,7 +55240,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -55306,7 +55306,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -55385,7 +55385,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -55451,7 +55451,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -55517,7 +55517,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -55583,7 +55583,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -55649,7 +55649,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -55715,7 +55715,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -55781,7 +55781,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -55849,7 +55849,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -55915,7 +55915,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -55981,7 +55981,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -56047,7 +56047,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -56113,7 +56113,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -56179,7 +56179,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -56245,7 +56245,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -56324,7 +56324,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -56390,7 +56390,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -56456,7 +56456,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -56522,7 +56522,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -56588,7 +56588,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -56654,7 +56654,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -56720,7 +56720,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -56788,7 +56788,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -56854,7 +56854,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -56920,7 +56920,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -56986,7 +56986,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -57052,7 +57052,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -57118,7 +57118,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -57184,7 +57184,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -57263,7 +57263,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -57329,7 +57329,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -57395,7 +57395,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -57461,7 +57461,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -57527,7 +57527,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -57593,7 +57593,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -57659,7 +57659,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -57727,7 +57727,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -57793,7 +57793,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -57859,7 +57859,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -57925,7 +57925,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -57991,7 +57991,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -58057,7 +58057,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -58123,7 +58123,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -58202,7 +58202,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -58268,7 +58268,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -58334,7 +58334,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -58400,7 +58400,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -58466,7 +58466,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -58532,7 +58532,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -58598,7 +58598,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -58666,7 +58666,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "03:00 \u2013 03:30 PM",
+        "time": "03:00 – 03:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "HOMEROOM GUIDANCE/ARAL PROGRAM",
@@ -58732,7 +58732,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -58798,7 +58798,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -58864,7 +58864,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -58930,7 +58930,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -58996,7 +58996,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -59062,7 +59062,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -59141,7 +59141,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -59207,7 +59207,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -59273,7 +59273,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -59339,7 +59339,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -59405,7 +59405,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -59471,7 +59471,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -59603,7 +59603,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -59669,7 +59669,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -59735,7 +59735,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -59801,7 +59801,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": "Qur'an",
@@ -59867,7 +59867,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -59935,7 +59935,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -60001,7 +60001,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -60067,7 +60067,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -60133,7 +60133,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -60199,7 +60199,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -60265,7 +60265,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -60397,7 +60397,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -60463,7 +60463,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -60529,7 +60529,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -60595,7 +60595,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": "Qur'an",
@@ -60661,7 +60661,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -60740,7 +60740,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -60806,61 +60806,61 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
-        "subject": "Prac. Res. 2",
-        "subject_id": "subj_prac_res_2",
-        "teacher": "Teacher Aniah",
-        "teacher_id": "tchr_aniah",
+        "subject": null,
+        "subject_id": null,
+        "teacher": null,
+        "teacher_id": null,
         "is_break": false,
         "days": {
           "Sunday": {
-            "raw": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Teacher Aniah",
-            "teacher_id": "tchr_aniah",
+            "raw": "",
+            "subject": null,
+            "teacher": null,
+            "teacher_id": null,
             "is_break": false,
             "label": null,
             "source_sheet": "SHS",
             "source_cell": "M7"
           },
           "Monday": {
-            "raw": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Teacher Aniah",
-            "teacher_id": "tchr_aniah",
+            "raw": "",
+            "subject": null,
+            "teacher": null,
+            "teacher_id": null,
             "is_break": false,
             "label": null,
             "source_sheet": "SHS",
             "source_cell": "N7"
           },
           "Tuesday": {
-            "raw": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Teacher Aniah",
-            "teacher_id": "tchr_aniah",
+            "raw": "",
+            "subject": null,
+            "teacher": null,
+            "teacher_id": null,
             "is_break": false,
             "label": null,
             "source_sheet": "SHS",
             "source_cell": "O7"
           },
           "Wednesday": {
-            "raw": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Teacher Aniah",
-            "teacher_id": "tchr_aniah",
+            "raw": "",
+            "subject": null,
+            "teacher": null,
+            "teacher_id": null,
             "is_break": false,
             "label": null,
             "source_sheet": "SHS",
             "source_cell": "P7"
           },
           "Thursday": {
-            "raw": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Teacher Aniah",
-            "teacher_id": "tchr_aniah",
+            "raw": "",
+            "subject": null,
+            "teacher": null,
+            "teacher_id": null,
             "is_break": false,
             "label": null,
             "source_sheet": "SHS",
@@ -60872,21 +60872,21 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
-        "subject": "Prac. Res. 2",
-        "subject_id": "subj_prac_res_2",
-        "teacher": "Teacher Aniah",
-        "teacher_id": "tchr_aniah",
+        "subject": null,
+        "subject_id": null,
+        "teacher": null,
+        "teacher_id": null,
         "is_break": false,
         "days": {
           "Sunday": {
-            "raw": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Teacher Aniah",
-            "teacher_id": "tchr_aniah",
+            "raw": "",
+            "subject": null,
+            "teacher": null,
+            "teacher_id": null,
             "is_break": false,
             "label": null,
             "source_sheet": "SHS",
@@ -60938,7 +60938,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -61004,7 +61004,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -61070,7 +61070,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -61202,7 +61202,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -61268,7 +61268,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": "PE 12",
@@ -61334,7 +61334,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -61400,7 +61400,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -61466,7 +61466,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -61534,7 +61534,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "7:30 \u2013 7:40 AM",
+        "time": "7:30 – 7:40 AM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "GENERAL ASSEMBLY",
@@ -61600,7 +61600,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "7:40 \u2013 8:25 AM",
+        "time": "7:40 – 8:25 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -61666,7 +61666,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
+        "time": "8:25 – 9:05 AM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -61732,7 +61732,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
+        "time": "9:05 – 9:45 AM",
         "minutes": "40 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -61798,7 +61798,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "9:45 \u2013 10:00 AM",
+        "time": "9:45 – 10:00 AM",
         "minutes": "15 min.",
         "is_merged_all_days": true,
         "label": "RECESS",
@@ -61864,7 +61864,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
+        "time": "10:00 – 10:45 AM",
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
@@ -61996,7 +61996,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "11:30:00 \u2013 12:40 PM",
+        "time": "11:30:00 – 12:40 PM",
         "minutes": "70 min.",
         "is_merged_all_days": true,
         "label": "LUNCH and SALAH",
@@ -62062,7 +62062,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
+        "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": "PE 12",
@@ -62128,7 +62128,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
+        "time": "1:25 – 2:10 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -62194,7 +62194,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
+        "time": "2:15 – 3:00 PM",
         "minutes": "45 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -62260,7 +62260,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 12,
-        "time": "3:00 \u2013 3:30",
+        "time": "3:00 – 3:30",
         "minutes": "30 min.",
         "is_merged_all_days": true,
         "label": "SALAH & DEPARTURE",
@@ -62339,7 +62339,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -62405,7 +62405,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -62471,7 +62471,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -62537,7 +62537,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -62603,7 +62603,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -62669,7 +62669,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -62735,7 +62735,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:10 PM",
+        "time": "03:00 – 03:10 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "BREAK",
@@ -62801,7 +62801,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "03:00 \u2013 03:40 PM",
+        "time": "03:00 – 03:40 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -62867,7 +62867,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "3:50 \u2013 4:30 PM",
+        "time": "3:50 – 4:30 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": "Gen Math",
@@ -62939,7 +62939,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -63005,7 +63005,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -63071,7 +63071,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -63137,7 +63137,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -63203,7 +63203,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -63269,7 +63269,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -63335,7 +63335,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:10 PM",
+        "time": "03:00 – 03:10 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "BREAK",
@@ -63401,7 +63401,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "03:00 \u2013 03:40 PM",
+        "time": "03:00 – 03:40 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -63467,7 +63467,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "3:50 \u2013 4:30 PM",
+        "time": "3:50 – 4:30 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": "Gen Math",
@@ -63550,7 +63550,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -63616,7 +63616,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -63682,7 +63682,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -63748,7 +63748,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -63814,7 +63814,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -63880,21 +63880,21 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
-        "subject": "Prac. Res. 2",
-        "subject_id": "subj_prac_res_2",
-        "teacher": "Teacher Aniah",
-        "teacher_id": "tchr_aniah",
+        "subject": null,
+        "subject_id": null,
+        "teacher": null,
+        "teacher_id": null,
         "is_break": false,
         "days": {
           "Sunday": {
-            "raw": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Teacher Aniah",
-            "teacher_id": "tchr_aniah",
+            "raw": "",
+            "subject": null,
+            "teacher": null,
+            "teacher_id": null,
             "is_break": false,
             "label": null,
             "source_sheet": "SHS",
@@ -63911,10 +63911,10 @@ const ALL_SECTIONS_DATA = [
             "source_cell": "N27"
           },
           "Tuesday": {
-            "raw": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Teacher Aniah",
-            "teacher_id": "tchr_aniah",
+            "raw": "",
+            "subject": null,
+            "teacher": null,
+            "teacher_id": null,
             "is_break": false,
             "label": null,
             "source_sheet": "SHS",
@@ -63946,21 +63946,21 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:40 PM",
+        "time": "03:00 – 03:40 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
-        "subject": "Prac. Res. 2",
-        "subject_id": "subj_prac_res_2",
-        "teacher": "Teacher Aniah",
-        "teacher_id": "tchr_aniah",
+        "subject": null,
+        "subject_id": null,
+        "teacher": null,
+        "teacher_id": null,
         "is_break": false,
         "days": {
           "Sunday": {
-            "raw": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Teacher Aniah",
-            "teacher_id": "tchr_aniah",
+            "raw": "",
+            "subject": null,
+            "teacher": null,
+            "teacher_id": null,
             "is_break": false,
             "label": null,
             "source_sheet": "SHS",
@@ -63977,10 +63977,10 @@ const ALL_SECTIONS_DATA = [
             "source_cell": "N28"
           },
           "Tuesday": {
-            "raw": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Teacher Aniah",
-            "teacher_id": "tchr_aniah",
+            "raw": "",
+            "subject": null,
+            "teacher": null,
+            "teacher_id": null,
             "is_break": false,
             "label": null,
             "source_sheet": "SHS",
@@ -64012,7 +64012,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "03:40 \u2013 03:50 PM",
+        "time": "03:40 – 03:50 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -64078,7 +64078,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "3:50 \u2013 4:30 PM",
+        "time": "3:50 – 4:30 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": "MIL",
@@ -64099,10 +64099,10 @@ const ALL_SECTIONS_DATA = [
             "source_cell": "M30"
           },
           "Monday": {
-            "raw": "Prac. Res. 2 - Tchr. Aniah",
-            "subject": "Prac. Res. 2",
-            "teacher": "Teacher Aniah",
-            "teacher_id": "tchr_aniah",
+            "raw": "",
+            "subject": null,
+            "teacher": null,
+            "teacher_id": null,
             "is_break": false,
             "label": null,
             "source_sheet": "SHS",
@@ -64148,7 +64148,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "12:30 \u2013 12:40 PM",
+        "time": "12:30 – 12:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -64214,7 +64214,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
+        "time": "12:40 – 01:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -64280,7 +64280,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "01:20 \u2013 01:30 PM",
+        "time": "01:20 – 01:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -64346,7 +64346,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
+        "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -64412,7 +64412,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "02:10 \u2013 02:20 PM",
+        "time": "02:10 – 02:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -64478,7 +64478,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
+        "time": "02:20 – 03:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -64544,7 +64544,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "03:00 \u2013 03:40 PM",
+        "time": "03:00 – 03:40 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -64610,7 +64610,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "03:40 \u2013 03:50 PM",
+        "time": "03:40 – 03:50 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -64676,7 +64676,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 9,
-        "time": "3:50 \u2013 4:30 PM",
+        "time": "3:50 – 4:30 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": "MIL",
@@ -64757,7 +64757,7 @@ const ALL_SECTIONS_DATA = [
     "periods": [
       {
         "period_num": 1,
-        "time": "2:20 \u2013 3:00 PM",
+        "time": "2:20 – 3:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -64823,7 +64823,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:00 \u2013 3:30 PM",
+        "time": "3:00 – 3:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": false,
         "label": "LCS 11 2nd shift",
@@ -64892,7 +64892,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -64958,7 +64958,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -65024,7 +65024,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -65090,7 +65090,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -65156,7 +65156,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -65222,7 +65222,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": "Gen Science",
@@ -65290,7 +65290,7 @@ const ALL_SECTIONS_DATA = [
     "rows": [
       {
         "period_num": 1,
-        "time": "2:20 \u2013 3:00 PM",
+        "time": "2:20 – 3:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -65356,7 +65356,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 2,
-        "time": "3:00 \u2013 3:30 PM",
+        "time": "3:00 – 3:30 PM",
         "minutes": "30 min.",
         "is_merged_all_days": false,
         "label": "LCS 11 2nd shift",
@@ -65425,7 +65425,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 3,
-        "time": "3:30 \u2013 3:40 PM",
+        "time": "3:30 – 3:40 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "General Assembly",
@@ -65491,7 +65491,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 4,
-        "time": "3:40 \u2013 4:20 PM",
+        "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -65557,7 +65557,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 5,
-        "time": "4:20 \u2013 4:30 PM",
+        "time": "4:20 – 4:30 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -65623,7 +65623,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 6,
-        "time": "4:30 \u2013 5:10 PM",
+        "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
@@ -65689,7 +65689,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 7,
-        "time": "5:10 \u2013 5:20 PM",
+        "time": "5:10 – 5:20 PM",
         "minutes": "10 min.",
         "is_merged_all_days": true,
         "label": "Transition",
@@ -65755,7 +65755,7 @@ const ALL_SECTIONS_DATA = [
       },
       {
         "period_num": 8,
-        "time": "5:20 \u2013 6:00 PM",
+        "time": "5:20 – 6:00 PM",
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": "Gen Science",

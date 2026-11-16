@@ -373,14 +373,13 @@ def apply_authoritative_2nd_term_updates(records):
 
         updated_records.append(r)
 
-    # 10. Append Authoritative Grade 12 - Term 2 Subjects & Faculty (10 subjects each)
+    # 10. Append Authoritative Grade 12 - Term 2 Subjects & Faculty (9 examination subjects each, Research/3Is removed)
     g12_abu_subjects = [
         ("Gen Bio 2", "Teacher Rowena", "tchr_rowena", "High School Faculty", 1, 60),
         ("General Physics 2", "Teacher Abegail", "tchr_abegail", "High School Faculty", 2, 120),
         ("CPAR", "Teacher Nof", "tchr_nof", "High School Faculty", 1, 60),
         ("EAPP", "Teacher Sophia", "tchr_sophia", "High School Faculty", 1, 60),
         ("Entrepreneurship", "Teacher Shanen", "tchr_shanen", "High School Faculty", 1, 60),
-        ("3I's", "Teacher Thea", "tchr_thea", "High School Faculty", 1, 60),
         ("PE 12", "Sir Mohaymen", "tchr_mohaymen", "High School Faculty", 1, 60),
         ("Arabic", "Alim Mamonas", "tchr_mamonas", "ISAL Faculty", 1, 60),
         ("Qur'an", "Alim Dipatuan", "tchr_dipatuan", "ISAL Faculty", 1, 60),
@@ -393,7 +392,6 @@ def apply_authoritative_2nd_term_updates(records):
         ("CPAR", "Teacher Nof", "tchr_nof", "High School Faculty", 1, 60),
         ("EAPP", "Teacher Sophia", "tchr_sophia", "High School Faculty", 1, 60),
         ("Entrepreneurship", "Teacher Shanen", "tchr_shanen", "High School Faculty", 1, 60),
-        ("3I's", "Teacher Thea", "tchr_thea", "High School Faculty", 1, 60),
         ("PE 12", "Sir Mohaymen", "tchr_mohaymen", "High School Faculty", 1, 60),
         ("Arabic", "Alim Mamonas", "tchr_mamonas", "ISAL Faculty", 1, 60),
         ("Qur'an", "Alim Dipatuan", "tchr_dipatuan", "ISAL Faculty", 1, 60),

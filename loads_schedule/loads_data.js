@@ -27620,7 +27620,7 @@ var AMIS_PORTAL_DATA = {
           "cells": [
             {
               "day": "Sunday",
-              "val": "Practical Research 2 F2F",
+              "val": "",
               "colspan": 1,
               "is_break": false
             },
@@ -27632,7 +27632,7 @@ var AMIS_PORTAL_DATA = {
             },
             {
               "day": "Tuesday",
-              "val": "Practical Research 2 F2F",
+              "val": "",
               "colspan": 1,
               "is_break": false
             },
@@ -27644,7 +27644,7 @@ var AMIS_PORTAL_DATA = {
             },
             {
               "day": "Thursday",
-              "val": "Practical Research 2 F2F",
+              "val": "",
               "colspan": 1,
               "is_break": false
             }
@@ -27880,8 +27880,7 @@ var AMIS_PORTAL_DATA = {
         "GeneraL Physics 12": 5,
         "Biology 12 - Tchr. Rowena": 4,
         "SHAF - Alim Samsuddin": 2,
-        "Practical Research 2 F2F": 3,
-        "Consultation Time (Research) F2F": 6,
+                "Consultation Time (Research) F2F": 6,
         "UCSP - Tchr. Shirehan": 3,
         "Arabic - Alim Mamonas": 2,
         "MIL 12 - Tchr. Thea": 3,
@@ -27971,7 +27970,7 @@ var AMIS_PORTAL_DATA = {
           "cells": [
             {
               "day": "Sunday",
-              "val": "Practical Research 2 ODL",
+              "val": "",
               "colspan": 1,
               "is_break": false
             },
@@ -28094,8 +28093,7 @@ var AMIS_PORTAL_DATA = {
         "Biology 12 - Tchr. Rowena": 2,
         "UCSP 12 - Tchr Shirehan": 1,
         "21st Literature - Tr Nof": 1,
-        "Practical Research 2 ODL": 1,
-        "SHAF 12 - Ust. Silfah": 1,
+                "SHAF 12 - Ust. Silfah": 1,
         "MIL 12 - Tchr. Thea": 1,
         "General Physics 12 ODL": 2,
         "Consultation Time (Research)": 2,
@@ -28222,7 +28220,7 @@ var AMIS_PORTAL_DATA = {
           "cells": [
             {
               "day": "Sunday",
-              "val": "Practical Research 2 ODL",
+              "val": "",
               "colspan": 1,
               "is_break": false
             },
@@ -28309,8 +28307,7 @@ var AMIS_PORTAL_DATA = {
         "SHAF  - Alim Samsuddin": 1,
         "MIL 12 - Tchr. Thea": 1,
         "General Physics 12 ODL": 2,
-        "Practical Research 2 ODL": 1,
-        "PE 12 - Sir Moh": 1,
+                "PE 12 - Sir Moh": 1,
         "Arabic 12 - Alim Mamonas": 1,
         "Biology 12 - Tchr. Rowena": 2,
         "PFPL 12 - Tchr. Thea": 2,
