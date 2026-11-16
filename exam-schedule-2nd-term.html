@@ -20,7 +20,7 @@
 
 <!-- Embedded Master Datasets with Cache-Busting -->
 <script src="class_schedules_data.js?v=20260819_0055"></script>
-<script src="exam_data_2nd_term.js?v=20261116_7"></script>
+<script src="exam_data_2nd_term.js?v=20261116_8"></script>
 <script src="teacher_weekly_schedules.js?v=20260819_0055"></script>
 
 <style>
@@ -987,26 +987,26 @@ html, body {
   vertical-align: middle;
 }
 
-/* Distinct Color Fade Shift Columns */
+/* Distinct Low Color / Transparent Shift Columns */
 .timetable-grid tbody td.cell-shift.cell-shift--f2f {
-  background: linear-gradient(180deg, #dcfce7 0%, #bbf7d0 50%, #86efac 100%) !important;
-  color: #064e3b !important;
-  border-left: 6px solid #16a34a !important;
-  box-shadow: inset 0 0 10px rgba(22, 163, 74, 0.15) !important;
+  background: rgba(16, 185, 129, 0.08) !important;
+  color: #047857 !important;
+  border-left: 4px solid #10b981 !important;
+  box-shadow: none !important;
 }
 
 .timetable-grid tbody td.cell-shift.cell-shift--first {
-  background: linear-gradient(180deg, #dbeafe 0%, #bfdbfe 50%, #93c5fd 100%) !important;
-  color: #1e3a8a !important;
-  border-left: 6px solid #2563eb !important;
-  box-shadow: inset 0 0 10px rgba(37, 99, 235, 0.15) !important;
+  background: rgba(37, 99, 235, 0.08) !important;
+  color: #1d4ed8 !important;
+  border-left: 4px solid #3b82f6 !important;
+  box-shadow: none !important;
 }
 
 .timetable-grid tbody td.cell-shift.cell-shift--second {
-  background: linear-gradient(180deg, #fef3c7 0%, #fde68a 50%, #fcd34d 100%) !important;
-  color: #78350f !important;
-  border-left: 6px solid #d97706 !important;
-  box-shadow: inset 0 0 10px rgba(217, 119, 6, 0.15) !important;
+  background: rgba(245, 158, 11, 0.08) !important;
+  color: #b45309 !important;
+  border-left: 4px solid #f59e0b !important;
+  box-shadow: none !important;
 }
 
 .shift-stack {
@@ -1031,74 +1031,68 @@ html, body {
   background: #ffffff;
 }
 
-/* Shift-Themed Color Fade Rows and Cells */
-/* Face to Face: Morning Emerald Fade */
+/* Shift-Themed Low Color / Transparent Fade Rows and Cells */
+/* Face to Face: Subtle Mint Transparent Fade */
 .timetable-grid tbody tr.row-shift-f2f td.cell-time,
 .timetable-grid tbody tr.row-shift-f2f td.cell-mins {
-  background: linear-gradient(90deg, #dcfce7 0%, #ebfbf0 60%, #f0fdf4 100%) !important;
-  color: #064e3b !important;
-  border-color: #a7f3d0 !important;
+  background: #f8fafc !important;
+  color: #1e293b !important;
 }
 .timetable-grid tbody tr.row-shift-f2f td.cell-time .cell-time-val {
-  color: #064e3b !important;
+  color: #1e293b !important;
   font-weight: 850 !important;
 }
 .timetable-grid tbody tr.row-shift-f2f td.cell-break {
-  background: linear-gradient(90deg, #bbf7d0 0%, #dcfce7 50%, #bbf7d0 100%) !important;
-  color: #064e3b !important;
-  border-top: 2px solid #86efac !important;
-  border-bottom: 2px solid #86efac !important;
-  font-weight: 900 !important;
+  background: rgba(16, 185, 129, 0.06) !important;
+  color: #065f46 !important;
+  border-top: 1px solid rgba(16, 185, 129, 0.2) !important;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.2) !important;
+  font-weight: 800 !important;
 }
 .timetable-grid tbody tr.row-shift-f2f td.cell-empty {
-  background: linear-gradient(135deg, #dcfce7 0%, #ebfbf2 50%, #d1fae5 100%) !important;
-  border-color: #bbf7d0 !important;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(16, 185, 129, 0.015) 100%) !important;
 }
 
-/* 1st Shift: Afternoon Sky Blue Fade */
+/* 1st Shift: Subtle Sky Blue Transparent Fade */
 .timetable-grid tbody tr.row-shift-first td.cell-time,
 .timetable-grid tbody tr.row-shift-first td.cell-mins {
-  background: linear-gradient(90deg, #dbeafe 0%, #eaf2ff 60%, #eff6ff 100%) !important;
-  color: #1e3a8a !important;
-  border-color: #bfdbfe !important;
+  background: #f8fafc !important;
+  color: #1e293b !important;
 }
 .timetable-grid tbody tr.row-shift-first td.cell-time .cell-time-val {
-  color: #1e3a8a !important;
+  color: #1e293b !important;
   font-weight: 850 !important;
 }
 .timetable-grid tbody tr.row-shift-first td.cell-break {
-  background: linear-gradient(90deg, #bfdbfe 0%, #dbeafe 50%, #bfdbfe 100%) !important;
-  color: #1e3a8a !important;
-  border-top: 2px solid #93c5fd !important;
-  border-bottom: 2px solid #93c5fd !important;
-  font-weight: 900 !important;
+  background: rgba(37, 99, 235, 0.06) !important;
+  color: #1e40af !important;
+  border-top: 1px solid rgba(37, 99, 235, 0.2) !important;
+  border-bottom: 1px solid rgba(37, 99, 235, 0.2) !important;
+  font-weight: 800 !important;
 }
 .timetable-grid tbody tr.row-shift-first td.cell-empty {
-  background: linear-gradient(135deg, #dbeafe 0%, #eef5ff 50%, #cfe3fe 100%) !important;
-  border-color: #bfdbfe !important;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(37, 99, 235, 0.015) 100%) !important;
 }
 
-/* 2nd Shift: Warm Sunset Amber Fade */
+/* 2nd Shift: Subtle Amber Transparent Fade */
 .timetable-grid tbody tr.row-shift-second td.cell-time,
 .timetable-grid tbody tr.row-shift-second td.cell-mins {
-  background: linear-gradient(90deg, #fef3c7 0%, #fef8e3 60%, #fffbeb 100%) !important;
-  color: #78350f !important;
-  border-color: #fde68a !important;
+  background: #f8fafc !important;
+  color: #1e293b !important;
 }
 .timetable-grid tbody tr.row-shift-second td.cell-time .cell-time-val {
-  color: #78350f !important;
+  color: #1e293b !important;
   font-weight: 850 !important;
 }
 .timetable-grid tbody tr.row-shift-second td.cell-break {
-  background: linear-gradient(90deg, #fde68a 0%, #fef3c7 50%, #fde68a 100%) !important;
-  color: #78350f !important;
-  border-top: 2px solid #fcd34d !important;
-  border-bottom: 2px solid #fcd34d !important;
-  font-weight: 900 !important;
+  background: rgba(245, 158, 11, 0.06) !important;
+  color: #92400e !important;
+  border-top: 1px solid rgba(245, 158, 11, 0.2) !important;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.2) !important;
+  font-weight: 800 !important;
 }
 .timetable-grid tbody tr.row-shift-second td.cell-empty {
-  background: linear-gradient(135deg, #fef3c7 0%, #fff9e6 50%, #fdebb0 100%) !important;
-  border-color: #fde68a !important;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(245, 158, 11, 0.015) 100%) !important;
 }
 
 .timetable-grid tbody td.cell-class {
