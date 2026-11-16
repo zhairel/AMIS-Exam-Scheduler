@@ -639,6 +639,59 @@ html, body {{
   padding: 8px 4px;
 }}
 
+/* Compact merged shift marker shown before the Time column. */
+.timetable-grid thead th.col-shift,
+.timetable-grid tbody td.cell-shift {{
+  width: 52px;
+  min-width: 52px;
+  max-width: 52px;
+}}
+
+.timetable-grid thead th.col-shift {{
+  white-space: nowrap !important;
+  font-size: 11px;
+}}
+
+.timetable-grid tbody td.cell-shift {{
+  padding: 6px 3px;
+  background: #f8fafc;
+  color: #065f46;
+  border-left: 4px solid #047857;
+  font-weight: 950;
+  vertical-align: middle;
+}}
+
+/* Distinct Color Fade Shift Columns */
+.timetable-grid tbody td.cell-shift.cell-shift--f2f {{
+  background: linear-gradient(180deg, #dcfce7 0%, #bbf7d0 50%, #86efac 100%) !important;
+  color: #064e3b !important;
+  border-left: 6px solid #16a34a !important;
+  box-shadow: inset 0 0 10px rgba(22, 163, 74, 0.15) !important;
+}}
+
+.timetable-grid tbody td.cell-shift.cell-shift--first {{
+  background: linear-gradient(180deg, #dbeafe 0%, #bfdbfe 50%, #93c5fd 100%) !important;
+  color: #1e3a8a !important;
+  border-left: 6px solid #2563eb !important;
+  box-shadow: inset 0 0 10px rgba(37, 99, 235, 0.15) !important;
+}}
+
+.timetable-grid tbody td.cell-shift.cell-shift--second {{
+  background: linear-gradient(180deg, #fef3c7 0%, #fde68a 50%, #fcd34d 100%) !important;
+  color: #78350f !important;
+  border-left: 6px solid #d97706 !important;
+  box-shadow: inset 0 0 10px rgba(217, 119, 6, 0.15) !important;
+}}
+
+.shift-stack {{
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.05;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+  text-align: center;
+}}
+
 .timetable-grid tbody td.cell-break {{
   background: var(--break-bg);
   color: var(--break-text);
@@ -656,58 +709,70 @@ html, body {{
 /* Face to Face: Morning Emerald Fade */
 .timetable-grid tbody tr.row-shift-f2f td.cell-time,
 .timetable-grid tbody tr.row-shift-f2f td.cell-mins {{
-  background: linear-gradient(90deg, #ecfdf5 0%, #f7fdf9 60%, #f8fafc 100%);
-  color: #064e3b;
+  background: linear-gradient(90deg, #dcfce7 0%, #ebfbf0 60%, #f0fdf4 100%) !important;
+  color: #064e3b !important;
+  border-color: #a7f3d0 !important;
 }}
 .timetable-grid tbody tr.row-shift-f2f td.cell-time .cell-time-val {{
-  color: #064e3b;
+  color: #064e3b !important;
+  font-weight: 850 !important;
 }}
 .timetable-grid tbody tr.row-shift-f2f td.cell-break {{
-  background: linear-gradient(90deg, #ecfdf5 0%, #dcfce7 50%, #ecfdf5 100%);
-  color: #065f46;
-  border-top: 1.5px solid #a7f3d0;
-  border-bottom: 1.5px solid #a7f3d0;
+  background: linear-gradient(90deg, #bbf7d0 0%, #dcfce7 50%, #bbf7d0 100%) !important;
+  color: #064e3b !important;
+  border-top: 2px solid #86efac !important;
+  border-bottom: 2px solid #86efac !important;
+  font-weight: 900 !important;
 }}
 .timetable-grid tbody tr.row-shift-f2f td.cell-empty {{
-  background: linear-gradient(135deg, rgba(236, 253, 245, 0.55) 0%, rgba(240, 253, 244, 0.2) 100%);
+  background: linear-gradient(135deg, #dcfce7 0%, #ebfbf2 50%, #d1fae5 100%) !important;
+  border-color: #bbf7d0 !important;
 }}
 
 /* 1st Shift: Afternoon Sky Blue Fade */
 .timetable-grid tbody tr.row-shift-first td.cell-time,
 .timetable-grid tbody tr.row-shift-first td.cell-mins {{
-  background: linear-gradient(90deg, #eff6ff 0%, #f4f8fe 60%, #f8fafc 100%);
-  color: #1e3a8a;
+  background: linear-gradient(90deg, #dbeafe 0%, #eaf2ff 60%, #eff6ff 100%) !important;
+  color: #1e3a8a !important;
+  border-color: #bfdbfe !important;
 }}
 .timetable-grid tbody tr.row-shift-first td.cell-time .cell-time-val {{
-  color: #1e3a8a;
+  color: #1e3a8a !important;
+  font-weight: 850 !important;
 }}
 .timetable-grid tbody tr.row-shift-first td.cell-break {{
-  background: linear-gradient(90deg, #eff6ff 0%, #dbeafe 50%, #eff6ff 100%);
-  color: #1e40af;
-  border-top: 1.5px solid #bfdbfe;
-  border-bottom: 1.5px solid #bfdbfe;
+  background: linear-gradient(90deg, #bfdbfe 0%, #dbeafe 50%, #bfdbfe 100%) !important;
+  color: #1e3a8a !important;
+  border-top: 2px solid #93c5fd !important;
+  border-bottom: 2px solid #93c5fd !important;
+  font-weight: 900 !important;
 }}
 .timetable-grid tbody tr.row-shift-first td.cell-empty {{
-  background: linear-gradient(135deg, rgba(239, 246, 255, 0.55) 0%, rgba(240, 249, 255, 0.2) 100%);
+  background: linear-gradient(135deg, #dbeafe 0%, #eef5ff 50%, #cfe3fe 100%) !important;
+  border-color: #bfdbfe !important;
 }}
 
 /* 2nd Shift: Warm Sunset Amber Fade */
 .timetable-grid tbody tr.row-shift-second td.cell-time,
 .timetable-grid tbody tr.row-shift-second td.cell-mins {{
-  background: linear-gradient(90deg, #fffbeb 0%, #fefdf6 60%, #f8fafc 100%);
-  color: #78350f;
+  background: linear-gradient(90deg, #fef3c7 0%, #fef8e3 60%, #fffbeb 100%) !important;
+  color: #78350f !important;
+  border-color: #fde68a !important;
 }}
 .timetable-grid tbody tr.row-shift-second td.cell-time .cell-time-val {{
-  color: #78350f;
+  color: #78350f !important;
+  font-weight: 850 !important;
 }}
 .timetable-grid tbody tr.row-shift-second td.cell-break {{
-  background: linear-gradient(90deg, #fffbeb 0%, #fef3c7 50%, #fffbeb 100%);
-  color: #92400e;
-  border-top: 1.5px solid #fde68a;
-  border-bottom: 1.5px solid #fde68a;
+  background: linear-gradient(90deg, #fde68a 0%, #fef3c7 50%, #fde68a 100%) !important;
+  color: #78350f !important;
+  border-top: 2px solid #fcd34d !important;
+  border-bottom: 2px solid #fcd34d !important;
+  font-weight: 900 !important;
 }}
 .timetable-grid tbody tr.row-shift-second td.cell-empty {{
-  background: linear-gradient(135deg, rgba(254, 243, 199, 0.55) 0%, rgba(255, 251, 235, 0.2) 100%);
+  background: linear-gradient(135deg, #fef3c7 0%, #fff9e6 50%, #fdebb0 100%) !important;
+  border-color: #fde68a !important;
 }}
 
 .timetable-grid tbody td.cell-class {{

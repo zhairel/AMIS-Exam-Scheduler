@@ -9,14 +9,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<!-- Client-side schedule export libraries -->
-<script src="html2canvas.min.js?v=20260825_1"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="schedule-export.js?v=20260825_1"></script>
+<!-- html2pdf.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <!-- Embedded Master Datasets with Cache-Busting -->
 <script src="class_schedules_data.js?v=20260819_0055"></script>
-<script src="exam_data.js?v=20260901_2"></script>
+<script src="exam_data.js?v=20260819_0055"></script>
 <script src="teacher_weekly_schedules.js?v=20260819_0055"></script>
 
 <style>
@@ -167,28 +165,6 @@ option.dropdown-divider-line {
   text-align: center !important;
 }
 
-.filter-search-input {
-  width: 220px;
-  min-width: 180px;
-  cursor: text;
-}
-
-.filter-search-input::placeholder {
-  color: #64748b;
-  font-weight: 650;
-}
-
-.subject-filter-summary {
-  width: 100%;
-  padding: 10px 14px;
-  border: 1px solid #a7f3d0;
-  border-radius: 10px;
-  background: #ecfdf5;
-  color: #065f46;
-  font-size: 12.5px;
-  font-weight: 750;
-}
-
 .btn-action {
   background: #ffffff;
   color: var(--brand-deep);
@@ -258,7 +234,6 @@ option.dropdown-divider-line {
   align-items: center;
   gap: 7px;
   transition: all 180ms ease;
-  text-decoration: none;
 }
 
 .tab-btn:hover {
@@ -290,266 +265,6 @@ option.dropdown-divider-line {
   font-size: 11.5px;
   font-weight: 800;
   color: #047857;
-}
-
-/* Sticky Grade > Modality/Shift > Section sidebar */
-
-.section-sidebar-panel {
-  width: min(390px, calc(100vw - 28px));
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  background: #ffffff;
-  border-right: 1px solid #cbd5e1;
-  box-shadow: 12px 0 34px rgba(15, 23, 42, 0.2);
-}
-
-.section-sidebar-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 16px 16px 13px;
-  color: #ffffff;
-  background: var(--brand-deep);
-}
-
-.section-sidebar-title {
-  font-size: 15px;
-  font-weight: 900;
-}
-
-.section-sidebar-subtitle {
-  margin-top: 2px;
-  color: #a7f3d0;
-  font-size: 10.5px;
-  font-weight: 650;
-}
-
-.section-sidebar-search {
-  flex: 0 0 auto;
-  padding: 10px 12px;
-  background: #f8fafc;
-  border-bottom: 1px solid #dbe4ee;
-}
-
-.section-sidebar-search-label {
-  display: block;
-  margin-bottom: 5px;
-  color: #475569;
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.section-sidebar-search-input {
-  width: 100%;
-  min-width: 0;
-  padding: 9px 10px;
-  border: 1px solid #cbd5e1;
-  border-radius: 8px;
-  background: #ffffff;
-  color: #0f172a;
-  font: inherit;
-  font-size: 11.5px;
-  font-weight: 700;
-}
-
-.section-sidebar-search-input:focus {
-  outline: 2px solid #a7f3d0;
-  border-color: #10b981;
-}
-
-.section-sidebar-list {
-  flex: 1;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  padding: 12px;
-  background: #f8fafc;
-}
-
-.section-sidebar-all,
-.section-sidebar-grade-all,
-.section-sidebar-section {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  border: 1px solid #dbe4ee;
-  border-radius: 8px;
-  background: #ffffff;
-  color: #334155;
-  text-align: left;
-  font-size: 11.5px;
-  font-weight: 800;
-  cursor: pointer;
-}
-
-.section-sidebar-all,
-.section-sidebar-grade-all {
-  padding: 9px 10px;
-}
-
-.section-sidebar-all {
-  margin-bottom: 10px;
-}
-
-.section-sidebar-section {
-  padding: 8px 9px;
-}
-
-.section-sidebar-all:hover,
-.section-sidebar-grade-all:hover,
-.section-sidebar-section:hover {
-  background: #ecfdf5;
-  border-color: #6ee7b7;
-  color: #065f46;
-}
-
-.section-sidebar-all.active,
-.section-sidebar-grade-all.active,
-.section-sidebar-section.active {
-  background: var(--brand-deep);
-  border-color: var(--brand-deep);
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(6, 78, 59, 0.2);
-}
-
-.section-sidebar-grade {
-  margin-bottom: 8px;
-  overflow: hidden;
-  border: 1px solid #cbd5e1;
-  border-radius: 10px;
-  background: #ffffff;
-}
-
-.section-sidebar-grade > summary,
-.section-sidebar-shift-label {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  font-weight: 900;
-}
-
-.section-sidebar-grade > summary {
-  list-style: none;
-  cursor: pointer;
-}
-
-.section-sidebar-grade > summary::-webkit-details-marker {
-  display: none;
-}
-
-.section-sidebar-grade > summary {
-  padding: 10px 11px;
-  color: #0f172a;
-  background: #ffffff;
-}
-
-.section-sidebar-grade[open] > summary {
-  color: #065f46;
-  background: #ecfdf5;
-  border-bottom: 1px solid #a7f3d0;
-}
-
-.section-sidebar-count {
-  color: #64748b;
-  font-size: 10px;
-  font-weight: 800;
-}
-
-.section-sidebar-grade-body {
-  padding: 8px;
-}
-
-.section-sidebar-grade-all {
-  margin-bottom: 7px;
-}
-
-.section-sidebar-shift {
-  margin-top: 6px;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.section-sidebar-shift-label {
-  padding: 8px 9px;
-  color: #475569;
-  background: #f8fafc;
-  border-bottom: 1px solid #e2e8f0;
-  font-size: 11px;
-}
-
-.section-sidebar-sections {
-  display: grid;
-  gap: 6px;
-  padding: 7px;
-}
-
-.section-sidebar-section-label {
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.section-workspace {
-  width: 100%;
-  display: block;
-  padding-left: 310px;
-}
-
-.section-workspace.sidebar-hidden {
-  padding-left: 0;
-}
-
-.section-workspace-content {
-  min-width: 0;
-}
-
-.section-sticky-sidebar {
-  position: fixed;
-  top: var(--section-sidebar-top, 112px);
-  bottom: 0;
-  left: 0;
-  z-index: 60;
-  width: 310px;
-  height: auto;
-  max-height: none;
-  border-right: 1px solid #cbd5e1;
-  box-shadow: 4px 0 16px rgba(15, 23, 42, 0.08);
-}
-
-.section-sticky-sidebar[hidden] {
-  display: none !important;
-}
-
-.section-sticky-sidebar .section-sidebar-head {
-  flex: 0 0 auto;
-}
-
-@media (max-width: 880px) {
-  .section-workspace,
-  .section-workspace.sidebar-hidden {
-    padding-left: 0;
-  }
-
-  .section-sticky-sidebar {
-    position: relative;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    width: 100%;
-    height: auto;
-    max-height: 52vh;
-    border-right: 0;
-    border-bottom: 1px solid #cbd5e1;
-    box-shadow: 0 5px 14px rgba(15, 23, 42, 0.08);
-  }
 }
 
 /* Printable Container */
@@ -635,73 +350,6 @@ html, body {
   margin-top: 2px;
 }
 
-.school-header--branded {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-  gap: 24px;
-  min-height: 104px;
-}
-
-.document-header-title {
-  justify-self: start;
-  text-align: left;
-}
-
-.document-header-title h2 {
-  margin: 0;
-  color: var(--brand-deep);
-  font-size: 15px;
-  font-weight: 900;
-  line-height: 1.25;
-  letter-spacing: 0.025em;
-}
-
-.document-header-title p {
-  margin: 5px 0 0;
-  color: var(--brand-accent);
-  font-size: 12px;
-  font-weight: 800;
-  line-height: 1.25;
-  letter-spacing: 0.04em;
-}
-
-.document-header-school {
-  grid-column: 2;
-  justify-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  line-height: 1;
-}
-
-.document-header-school .school-header-logo {
-  width: 48px;
-  height: 48px;
-}
-
-.document-header-arabic {
-  margin-top: 4px;
-  color: var(--brand-deep);
-  font-family: Tahoma, "Noto Naskh Arabic", Arial, sans-serif;
-  font-size: 17px;
-  font-weight: 800;
-  direction: rtl;
-}
-
-.document-header-school h1 {
-  margin: 4px 0 0;
-  color: var(--brand-deep);
-  font-size: 14px;
-  font-weight: 900;
-  line-height: 1;
-  letter-spacing: 0.08em;
-}
-
-.document-header-balance {
-  grid-column: 3;
-}
-
 /* Banner Strip */
 .teacher-banner {
   background: var(--brand-green);
@@ -724,7 +372,6 @@ html, body {
 }
 
 .teacher-meta-tag {
-  display: none;
   background: rgba(255, 255, 255, 0.18);
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 3px 10px;
@@ -757,66 +404,6 @@ html, body {
   fill: currentColor;
 }
 
-.sheet-export-actions { display: inline-flex; align-items: center; gap: 5px; }
-.btn-sheet-export {
-  min-height: 28px;
-  padding: 4px 8px;
-  border: 1px solid rgba(255, 255, 255, 0.48);
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.96);
-  color: #064e3b;
-  font: inherit;
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 0.02em;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  transition: background 0.15s ease, transform 0.15s ease;
-}
-.btn-sheet-export:hover { background: #ecfdf5; transform: translateY(-1px); }
-.btn-sheet-export:disabled, .btn-export-all:disabled { cursor: wait; opacity: 0.72; }
-.btn-export-all { background: #ffffff; color: #064e3b; border-color: rgba(255, 255, 255, 0.7); }
-.export-spinner {
-  width: 11px;
-  height: 11px;
-  border: 2px solid currentColor;
-  border-right-color: transparent;
-  border-radius: 50%;
-  animation: export-spin 0.7s linear infinite;
-}
-@keyframes export-spin { to { transform: rotate(360deg); } }
-.schedule-export-stage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -99999;
-  pointer-events: none;
-  background: #ffffff;
-}
-.schedule-export-toast {
-  position: fixed;
-  right: 18px;
-  bottom: 18px;
-  z-index: 100000;
-  max-width: min(380px, calc(100vw - 36px));
-  padding: 11px 15px;
-  border-radius: 9px;
-  background: #064e3b;
-  color: #ffffff;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
-  font-size: 12px;
-  font-weight: 800;
-  opacity: 0;
-  transform: translateY(12px);
-  pointer-events: none;
-  transition: opacity 0.18s ease, transform 0.18s ease;
-}
-.schedule-export-toast.is-visible { opacity: 1; transform: translateY(0); }
-.schedule-export-toast.is-error { background: #b91c1c; }
-
 /* Fullscreen Mode */
 .timetable-sheet.is-fullscreen {
   position: fixed !important;
@@ -846,18 +433,10 @@ html, body {
 /* Table Responsive Wrapper */
 .table-responsive-wrapper {
   width: 100%;
-  max-width: 100%;
   overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior-inline: contain;
   border: 1.5px solid var(--line-strong);
   border-top: none;
   background: #ffffff;
-}
-
-.mobile-scroll-hint {
-  display: none;
 }
 
 .table-responsive-wrapper::-webkit-scrollbar {
@@ -890,8 +469,8 @@ html, body {
 .timetable-grid thead th {
   background: var(--brand-green);
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 900;
+  font-size: 13px;
+  font-weight: 800;
   text-align: center;
   padding: 10px 8px;
   border: 1.5px solid #043828;
@@ -924,7 +503,7 @@ html, body {
   border: 1.5px solid var(--line-strong);
   padding: 8px 10px;
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
   vertical-align: middle;
   white-space: normal;
   overflow-wrap: break-word;
@@ -935,8 +514,8 @@ html, body {
 }
 
 .timetable-grid tbody td.cell-time {
-  font-weight: 900;
-  font-size: 13px;
+  font-weight: 800;
+  font-size: 12px;
   color: var(--ink);
   background: #f8fafc;
   line-height: 1.25;
@@ -947,8 +526,8 @@ html, body {
 .timetable-grid tbody td.cell-time .cell-time-val {
   display: block;
   white-space: nowrap !important;
-  font-weight: 900;
-  font-size: 13px;
+  font-weight: 800;
+  font-size: 12px;
 }
 
 .timetable-grid tbody td.cell-time .cell-time-note {
@@ -963,8 +542,8 @@ html, body {
 }
 
 .timetable-grid tbody td.cell-mins {
-  font-weight: 850;
-  font-size: 12.5px;
+  font-weight: 750;
+  font-size: 11.5px;
   color: var(--ink-secondary);
   background: #f8fafc;
   white-space: nowrap !important;
@@ -996,28 +575,32 @@ html, body {
 
 /* Distinct Color Fade Shift Columns */
 .timetable-grid tbody td.cell-shift.cell-shift--f2f {
-  background: linear-gradient(180deg, #ecfdf5 0%, #d1fae5 50%, #ecfdf5 100%);
-  color: #064e3b;
-  border-left: 5px solid #059669;
+  background: linear-gradient(180deg, #dcfce7 0%, #bbf7d0 50%, #86efac 100%) !important;
+  color: #064e3b !important;
+  border-left: 6px solid #16a34a !important;
+  box-shadow: inset 0 0 10px rgba(22, 163, 74, 0.15) !important;
 }
 
 .timetable-grid tbody td.cell-shift.cell-shift--first {
-  background: linear-gradient(180deg, #eff6ff 0%, #dbeafe 50%, #eff6ff 100%);
-  color: #1e3a8a;
-  border-left: 5px solid #2563eb;
+  background: linear-gradient(180deg, #dbeafe 0%, #bfdbfe 50%, #93c5fd 100%) !important;
+  color: #1e3a8a !important;
+  border-left: 6px solid #2563eb !important;
+  box-shadow: inset 0 0 10px rgba(37, 99, 235, 0.15) !important;
 }
 
 .timetable-grid tbody td.cell-shift.cell-shift--second {
-  background: linear-gradient(180deg, #fffbeb 0%, #fef3c7 50%, #fffbeb 100%);
-  color: #78350f;
-  border-left: 5px solid #d97706;
+  background: linear-gradient(180deg, #fef3c7 0%, #fde68a 50%, #fcd34d 100%) !important;
+  color: #78350f !important;
+  border-left: 6px solid #d97706 !important;
+  box-shadow: inset 0 0 10px rgba(217, 119, 6, 0.15) !important;
 }
 
 .shift-stack {
   display: inline-block;
   font-size: 12px;
   line-height: 1.05;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
+  font-weight: 900;
   text-align: center;
 }
 
@@ -1025,7 +608,7 @@ html, body {
   background: var(--break-bg);
   color: var(--break-text);
   font-weight: 800;
-  font-size: 12.5px;
+  font-size: 11.5px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -1038,66 +621,76 @@ html, body {
 /* Face to Face: Morning Emerald Fade */
 .timetable-grid tbody tr.row-shift-f2f td.cell-time,
 .timetable-grid tbody tr.row-shift-f2f td.cell-mins {
-  background: linear-gradient(90deg, #ecfdf5 0%, #f7fdf9 60%, #f8fafc 100%);
-  color: #064e3b;
+  background: linear-gradient(90deg, #dcfce7 0%, #ebfbf0 60%, #f0fdf4 100%) !important;
+  color: #064e3b !important;
+  border-color: #a7f3d0 !important;
 }
 .timetable-grid tbody tr.row-shift-f2f td.cell-time .cell-time-val {
-  color: #064e3b;
+  color: #064e3b !important;
+  font-weight: 850 !important;
 }
 .timetable-grid tbody tr.row-shift-f2f td.cell-break {
-  background: linear-gradient(90deg, #ecfdf5 0%, #dcfce7 50%, #ecfdf5 100%);
-  color: #065f46;
-  border-top: 1.5px solid #a7f3d0;
-  border-bottom: 1.5px solid #a7f3d0;
+  background: linear-gradient(90deg, #bbf7d0 0%, #dcfce7 50%, #bbf7d0 100%) !important;
+  color: #064e3b !important;
+  border-top: 2px solid #86efac !important;
+  border-bottom: 2px solid #86efac !important;
+  font-weight: 900 !important;
 }
 .timetable-grid tbody tr.row-shift-f2f td.cell-empty {
-  background: linear-gradient(135deg, rgba(236, 253, 245, 0.55) 0%, rgba(240, 253, 244, 0.2) 100%);
+  background: linear-gradient(135deg, #dcfce7 0%, #ebfbf2 50%, #d1fae5 100%) !important;
+  border-color: #bbf7d0 !important;
 }
 
 /* 1st Shift: Afternoon Sky Blue Fade */
 .timetable-grid tbody tr.row-shift-first td.cell-time,
 .timetable-grid tbody tr.row-shift-first td.cell-mins {
-  background: linear-gradient(90deg, #eff6ff 0%, #f4f8fe 60%, #f8fafc 100%);
-  color: #1e3a8a;
+  background: linear-gradient(90deg, #dbeafe 0%, #eaf2ff 60%, #eff6ff 100%) !important;
+  color: #1e3a8a !important;
+  border-color: #bfdbfe !important;
 }
 .timetable-grid tbody tr.row-shift-first td.cell-time .cell-time-val {
-  color: #1e3a8a;
+  color: #1e3a8a !important;
+  font-weight: 850 !important;
 }
 .timetable-grid tbody tr.row-shift-first td.cell-break {
-  background: linear-gradient(90deg, #eff6ff 0%, #dbeafe 50%, #eff6ff 100%);
-  color: #1e40af;
-  border-top: 1.5px solid #bfdbfe;
-  border-bottom: 1.5px solid #bfdbfe;
+  background: linear-gradient(90deg, #bfdbfe 0%, #dbeafe 50%, #bfdbfe 100%) !important;
+  color: #1e3a8a !important;
+  border-top: 2px solid #93c5fd !important;
+  border-bottom: 2px solid #93c5fd !important;
+  font-weight: 900 !important;
 }
 .timetable-grid tbody tr.row-shift-first td.cell-empty {
-  background: linear-gradient(135deg, rgba(239, 246, 255, 0.55) 0%, rgba(240, 249, 255, 0.2) 100%);
+  background: linear-gradient(135deg, #dbeafe 0%, #eef5ff 50%, #cfe3fe 100%) !important;
+  border-color: #bfdbfe !important;
 }
 
 /* 2nd Shift: Warm Sunset Amber Fade */
 .timetable-grid tbody tr.row-shift-second td.cell-time,
 .timetable-grid tbody tr.row-shift-second td.cell-mins {
-  background: linear-gradient(90deg, #fffbeb 0%, #fefdf6 60%, #f8fafc 100%);
-  color: #78350f;
+  background: linear-gradient(90deg, #fef3c7 0%, #fef8e3 60%, #fffbeb 100%) !important;
+  color: #78350f !important;
+  border-color: #fde68a !important;
 }
 .timetable-grid tbody tr.row-shift-second td.cell-time .cell-time-val {
-  color: #78350f;
+  color: #78350f !important;
+  font-weight: 850 !important;
 }
 .timetable-grid tbody tr.row-shift-second td.cell-break {
-  background: linear-gradient(90deg, #fffbeb 0%, #fef3c7 50%, #fffbeb 100%);
-  color: #92400e;
-  border-top: 1.5px solid #fde68a;
-  border-bottom: 1.5px solid #fde68a;
+  background: linear-gradient(90deg, #fde68a 0%, #fef3c7 50%, #fde68a 100%) !important;
+  color: #78350f !important;
+  border-top: 2px solid #fcd34d !important;
+  border-bottom: 2px solid #fcd34d !important;
+  font-weight: 900 !important;
 }
 .timetable-grid tbody tr.row-shift-second td.cell-empty {
-  background: linear-gradient(135deg, rgba(254, 243, 199, 0.55) 0%, rgba(255, 251, 235, 0.2) 100%);
+  background: linear-gradient(135deg, #fef3c7 0%, #fff9e6 50%, #fdebb0 100%) !important;
+  border-color: #fde68a !important;
 }
 
 .timetable-grid tbody td.cell-class {
   transition: transform 0.1s ease, box-shadow 0.1s ease;
   vertical-align: middle;
-  min-height: 76px;
-  padding: 12px 10px;
-  background-clip: padding-box;
+  padding: 8px 6px;
 }
 
 .timetable-grid tbody td.cell-class:hover {
@@ -1109,14 +702,14 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 4px;
   width: 100%;
 }
 
 .cell-subject-sec {
-  font-size: 15.5px;
-  font-weight: 900;
-  line-height: 1.2;
+  font-size: 13.5px;
+  font-weight: 800;
+  line-height: 1.25;
   text-align: center;
   word-break: normal;
   overflow-wrap: break-word;
@@ -1125,87 +718,23 @@ html, body {
 
 .cell-teacher-name,
 .cell-section-name {
-  color: #1e293b;
-  font-size: 12.5px;
-  line-height: 1.35;
-  font-weight: 800;
+  font-size: 11.5px;
+  line-height: 1.25;
+  font-weight: 650;
   text-align: center;
   word-break: normal;
   overflow-wrap: break-word;
-  opacity: 1;
-}
-
-.cell-proctor-name {
-  color: #075985;
-  background: #e0f2fe;
-  border: 1px solid #7dd3fc;
-  border-radius: 6px;
-  padding: 3px 7px;
-  font-size: 11.5px;
-  line-height: 1.3;
-  font-weight: 900;
-  text-align: center;
-}
-
-.cell-proctor-duty-label {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: #0f172a;
-  color: #ffffff;
-  font-size: 11px;
-  line-height: 1.2;
-  font-weight: 950;
-  letter-spacing: 0.09em;
-}
-
-.gender-chip {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3px 9px;
-  border: 1.5px solid transparent;
-  border-radius: 9999px;
-  font-size: 10.5px;
-  font-weight: 900;
-  line-height: 1.25;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
-}
-
-.gender-chip-female {
-  background: #fce7f3;
-  border-color: #db2777;
-  color: #831843;
-}
-
-.gender-chip-male {
-  background: #dbeafe;
-  border-color: #3b82f6;
-  color: #1e3a8a;
-}
-
-.gender-chip-mixed {
-  background: #ede9fe;
-  border-color: #8b5cf6;
-  color: #4c1d95;
+  opacity: 0.92;
 }
 
 .cell-duration-badge {
-  color: #0f172a;
-  font-size: 11.5px;
-  font-weight: 900;
-  background: #ffffff;
-  border: 1.5px solid #64748b;
-  padding: 3px 10px;
+  font-size: 10px;
+  font-weight: 800;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 2px 8px;
   border-radius: 9999px;
-  margin-top: 2px;
+  margin-top: 3px;
   letter-spacing: 0.02em;
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
 }
 
 .badge-120 {
@@ -1375,24 +904,6 @@ html, body {
   white-space: nowrap;
 }
 
-.badge-resigned {
-  display: inline-flex;
-  align-items: center;
-  font-size: 11px;
-  font-weight: 900;
-  color: #991b1b;
-  background: #fef2f2;
-  padding: 3px 8px;
-  border-radius: 9999px;
-  border: 1px solid #fca5a5;
-  white-space: nowrap;
-}
-
-.faculty-card.inactive-faculty {
-  border-color: #fca5a5;
-  background: #fffafa;
-}
-
 .assigned-subjects-title {
   font-size: 11.5px;
   font-weight: 800;
@@ -1465,210 +976,10 @@ html, body {
   background: #dbeafe;
 }
 
-/* Phone and small-tablet layout: keep the timetable readable and swipeable. */
-@media (max-width: 720px) {
-  body { padding-bottom: 24px; }
-
-  .top-toolbar {
-    position: relative;
-    padding: 8px 10px;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .brand-title { min-width: 0; gap: 8px; }
-  .brand-logo { width: 32px; height: 32px; flex: 0 0 32px; }
-  .brand-text { min-width: 0; }
-  .brand-text h1 { font-size: 13px; white-space: nowrap; }
-  .brand-text p {
-    max-width: 175px;
-    overflow: hidden;
-    font-size: 9.5px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .toolbar-controls {
-    width: 100%;
-    flex: 1 0 100%;
-    justify-content: flex-end;
-    margin-left: auto;
-    gap: 6px;
-  }
-  .btn-action { min-height: 34px; padding: 6px 9px; font-size: 10.5px; }
-  .filter-group { flex: 1 1 180px; max-width: none; padding: 3px 5px; }
-  .filter-label { display: none; }
-  .filter-select,
-  .filter-search-input {
-    width: 100%;
-    min-width: 0;
-    max-width: none;
-    font-size: 11px;
-  }
-
-  .exam-tabs-bar {
-    position: relative;
-    top: auto;
-    display: block;
-    padding: 7px 8px;
-    overflow: hidden;
-  }
-
-  .tab-buttons-wrap {
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    flex-wrap: nowrap;
-    gap: 6px;
-    padding-bottom: 2px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-  }
-
-  .tab-btn {
-    flex: 0 0 auto;
-    min-height: 36px;
-    padding: 7px 10px;
-    font-size: 10.5px;
-    white-space: nowrap;
-  }
-
-  .badge-anti-conflict-top {
-    width: max-content;
-    max-width: 100%;
-    margin-top: 7px;
-    padding: 4px 9px;
-    font-size: 10px;
-  }
-
-  .section-sticky-sidebar { max-height: 44vh; }
-  .section-sidebar-head { padding: 10px 12px 9px; }
-  .section-sidebar-search { padding: 8px 10px; }
-  .section-sidebar-list { padding: 8px 10px 10px; }
-
-  .screen-advisory-wrapper { margin-top: 10px; padding: 0 8px; }
-  .advisory-banner { padding: 10px 11px; gap: 9px; }
-  .advisory-icon-wrapper { width: 30px; height: 30px; }
-  .advisory-main-title { font-size: 12px; }
-  .advisory-main-message { font-size: 10.5px; line-height: 1.4; }
-
-  .page-sheet-container {
-    width: 100%;
-    margin-top: 10px;
-    padding: 0 7px;
-    gap: 16px;
-  }
-
-  .timetable-sheet {
-    min-width: 0;
-    padding: 10px 7px 12px;
-    border-width: 1.5px;
-    border-radius: 9px;
-    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.07);
-  }
-
-  .school-header { gap: 8px; margin-bottom: 9px; }
-  .school-header-logo { width: 34px; height: 34px; }
-  .school-header h1 { font-size: 13px; line-height: 1.2; letter-spacing: 0.02em; }
-  .school-header h2 { font-size: 10.5px; }
-  .school-header p { font-size: 9px; letter-spacing: 0.03em; }
-
-  .school-header--branded {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  .document-header-school {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .document-header-title {
-    grid-column: 1;
-    grid-row: 2;
-    justify-self: center;
-    text-align: center;
-  }
-  .document-header-title h2 { font-size: 11px; }
-  .document-header-title p { font-size: 9px; }
-  .document-header-arabic { font-size: 15px; }
-  .document-header-school h1 { font-size: 12px; }
-  .document-header-balance { display: none; }
-
-  .teacher-banner { align-items: flex-start; padding: 9px 10px; gap: 8px; }
-  .teacher-name-title {
-    min-width: 0;
-    font-size: 11.5px;
-    line-height: 1.3;
-    overflow-wrap: anywhere;
-  }
-  .teacher-meta-tag { display: none; }
-  .btn-fullscreen { flex: 0 0 auto; min-width: 32px; min-height: 32px; }
-  .sheet-export-actions { gap: 4px; }
-  .btn-sheet-export { min-height: 32px; padding: 4px 7px; font-size: 9px; }
-
-  .mobile-scroll-hint {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    padding: 7px 10px;
-    border-right: 1.5px solid var(--line-strong);
-    border-left: 1.5px solid var(--line-strong);
-    background: #eff6ff;
-    color: #1e40af;
-    font-size: 10px;
-    font-weight: 850;
-    text-align: center;
-  }
-
-  .mobile-scroll-hint svg { width: 16px; height: 16px; flex: 0 0 16px; fill: currentColor; }
-
-  .table-responsive-wrapper {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    touch-action: pan-x pan-y;
-    scrollbar-width: thin;
-    scrollbar-color: #64748b #e2e8f0;
-  }
-
-  .table-responsive-wrapper::-webkit-scrollbar { height: 9px; }
-  .table-responsive-wrapper::-webkit-scrollbar-thumb { background: #64748b; }
-
-  .timetable-grid { width: 820px; min-width: 820px; }
-  .timetable-grid thead th { padding: 8px 5px; font-size: 10.5px; }
-  .timetable-grid thead th.col-time { width: 145px; min-width: 145px; }
-  .timetable-grid thead th.col-mins { width: 58px; min-width: 58px; }
-  .timetable-grid thead th.col-shift,
-  .timetable-grid tbody td.cell-shift { width: 46px; min-width: 46px; max-width: 46px; }
-  .timetable-grid tbody td { padding: 7px 6px; font-size: 11px; }
-  .timetable-grid tbody td.cell-time { font-size: 11px; }
-  .timetable-grid tbody td.cell-time .cell-time-val { font-size: 11px; }
-  .timetable-grid tbody td.cell-time .cell-time-note { font-size: 8.5px; }
-  .timetable-grid tbody td.cell-mins { font-size: 10.5px; }
-  .timetable-grid tbody td.cell-class { min-height: 70px; padding: 9px 6px; }
-  .cell-subject-sec { font-size: 13px; }
-  .cell-teacher-name,
-  .cell-section-name { font-size: 10.5px; }
-  .cell-duration-badge,
-  .gender-chip { font-size: 9.5px; }
-
-  .sheet-footer { margin-top: 9px; padding-top: 8px; font-size: 9.5px; }
-  .legend-strip { gap: 7px; }
-  .roster-search-input { min-width: 0; width: 100%; }
-  .faculty-grid { width: 100%; grid-template-columns: 1fr; }
-  .timetable-sheet.is-fullscreen { padding: 8px 6px !important; }
-}
-
 /* Print Optimization */
 @media print {
-  .top-toolbar, .exam-tabs-bar, .section-sticky-sidebar, .btn-fullscreen, .sheet-export-actions, .roster-search-bar, .subject-filter-summary {
+  .top-toolbar, .exam-tabs-bar, .btn-fullscreen, .roster-search-bar {
     display: none !important;
-  }
-  .section-workspace,
-  .section-workspace.sidebar-hidden {
-    display: block !important;
   }
   body {
     background: #fff !important;
@@ -1693,96 +1004,6 @@ html, body {
     margin: 8mm;
   }
 }
-
-/* Screen Advisory Banner */
-.screen-advisory-wrapper {
-  max-width: 1360px;
-  margin: 14px auto 0;
-  padding: 0 16px;
-}
-
-.advisory-banner {
-  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 40%, #fef9c3 100%);
-  border: 1.5px solid #fde68a;
-  border-left: 5px solid #d97706;
-  border-radius: 12px;
-  padding: 14px 18px;
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  box-shadow: 0 2px 12px rgba(217, 119, 6, 0.06);
-}
-
-.advisory-icon-wrapper {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  background: #fde68a;
-  color: #b45309;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  box-shadow: 0 2px 6px rgba(180, 83, 9, 0.15);
-}
-
-.advisory-content {
-  flex: 1;
-}
-
-.advisory-header-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 4px;
-  flex-wrap: wrap;
-}
-
-.advisory-pill-badge {
-  background: #b45309;
-  color: #ffffff;
-  font-size: 10px;
-  font-weight: 800;
-  padding: 2px 7px;
-  border-radius: 5px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.advisory-term-label {
-  font-size: 11px;
-  font-weight: 700;
-  color: #92400e;
-}
-
-.advisory-main-title {
-  font-size: 14px;
-  font-weight: 800;
-  color: #78350f;
-  margin-bottom: 3px;
-  letter-spacing: -0.01em;
-}
-
-.advisory-main-message {
-  font-size: 12.5px;
-  color: #854d0e;
-  line-height: 1.5;
-  font-weight: 600;
-}
-
-.advisory-highlight {
-  background: rgba(245, 158, 11, 0.22);
-  color: #78350f;
-  padding: 1px 5px;
-  border-radius: 4px;
-  font-weight: 800;
-}
-
-@media print {
-  .screen-advisory-wrapper, .advisory-banner {
-    display: none !important;
-  }
-}
 </style>
 </head>
 <body>
@@ -1792,8 +1013,8 @@ html, body {
   <div class="brand-title">
     <img src="amis_logo.png" alt="AMIS Logo" class="brand-logo">
     <div class="brand-text">
-      <h1>1st Term Exam Week</h1>
-      <p>S.Y. 2026 – 2027 • Completed / Archived Schedule</p>
+      <h1>Term Exam Week</h1>
+      <p>S.Y. 2026 – 2027 • Official Schedule</p>
     </div>
   </div>
 
@@ -1817,65 +1038,17 @@ html, body {
       <svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
       Faculty Roster &amp; Assigned Subjects
     </button>
-    <a class="tab-btn" href="proctor-list.html">
-      <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-      Proctor Assignments
-    </a>
   </div>
 
-  <div class="badge-anti-conflict-top" id="antiConflictBadge">
+  <div class="badge-anti-conflict-top">
     <span style="color:#059669; font-weight:900;">✓</span> Anti-Conflict Guard Active: 0 Conflicts
   </div>
 </nav>
-
-<div class="section-workspace sidebar-hidden" id="sectionWorkspace">
-  <!-- Sticky grade/modality/section navigation -->
-  <aside class="section-sidebar-panel section-sticky-sidebar" id="sectionTabsBar" aria-label="Grade and section menu" hidden>
-    <div class="section-sidebar-head">
-      <div>
-        <div class="section-sidebar-title">Grades &amp; Sections</div>
-        <div class="section-sidebar-subtitle">Grade → Modality / Shift → Section</div>
-      </div>
-    </div>
-    <div class="section-sidebar-search">
-      <label class="section-sidebar-search-label" for="subjectSearch">Subject Search</label>
-      <input id="subjectSearch" class="section-sidebar-search-input" type="search" list="subjectOptions" autocomplete="off" placeholder="Search subject..." oninput="onSubjectSearch(this.value)" aria-label="Search exam subject">
-      <datalist id="subjectOptions"></datalist>
-    </div>
-    <div class="section-sidebar-list" id="sectionTabsList" role="navigation"></div>
-  </aside>
-
-  <div class="section-workspace-content">
-
-<!-- Advisory Banner -->
-<div class="screen-advisory-wrapper">
-  <div class="advisory-banner" role="alert">
-    <div class="advisory-icon-wrapper" aria-hidden="true">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-        <line x1="12" y1="9" x2="12" y2="13"/>
-        <line x1="12" y1="17" x2="12.01" y2="17"/>
-      </svg>
-    </div>
-    <div class="advisory-content">
-      <div class="advisory-header-row">
-        <span class="advisory-pill-badge">FACULTY &amp; TEACHER ADVISORY</span>
-        <span class="advisory-term-label">S.Y. 2026–2027 • Official Scheduling</span>
-      </div>
-      <h3 class="advisory-main-title">Automatic Subject &amp; Schedule Assignment Notice</h3>
-      <p class="advisory-main-message">
-        Please be advised that <span class="advisory-highlight">some subjects and exam schedule slots are automatically assigned</span> and synchronized according to the official faculty teaching load distributions. All faculty members and teachers are requested to review their assigned subjects in their respective schedules. If you require any subject adjustments or reassignments, please coordinate directly with <strong>AMIS IT Support</strong>.
-      </p>
-    </div>
-  </div>
-</div>
 
 <!-- Main Printable Landscape Container -->
 <main class="page-sheet-container" id="sheetsContainer">
   <!-- Dynamic Exam Timetable Sheets rendered here -->
 </main>
-  </div>
-</div>
 
 <script>
 (function() {
@@ -1886,9 +1059,6 @@ html, body {
     { day_num: 3, short_date: 'Sep 6', day_name: 'Sunday', header: 'Day 3 • Sun, Sep 6', date_str: 'Sunday, September 6, 2026' },
     { day_num: 4, short_date: 'Sep 7', day_name: 'Monday', header: 'Day 4 • Mon, Sep 7', date_str: 'Monday, September 7, 2026' }
   ];
-
-  const INACTIVE_TEACHER_IDS = new Set(['tchr_normylah']);
-  const DUPLICATE_TEACHER_IDENTITY_IDS = new Set(['tchr_zara', 'tchr_abdulwahab']);
 
   const FACULTY_ROSTER_DATA = [
   {
@@ -1904,6 +1074,11 @@ html, body {
       {
         "subject": "Arabic",
         "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT"
       },
       {
@@ -1953,11 +1128,11 @@ html, body {
       }
     ],
     "total_classes": 20,
-    "total_exams": 11
+    "total_exams": 12
   },
   {
     "id": "tchr_abdulwahab",
-    "name": "Alim Dipatuan",
+    "name": "Alim Abdulwahab",
     "department": "ISAL Faculty",
     "assignments": [
       {
@@ -2007,7 +1182,7 @@ html, body {
       }
     ],
     "total_classes": 11,
-    "total_exams": 9
+    "total_exams": 0
   },
   {
     "id": "tchr_bustamante",
@@ -2040,6 +1215,26 @@ html, body {
     "assignments": [
       {
         "subject": "Qur'an",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
         "section": "GRADE 11 (FACE TO FACE)",
         "shift": "F2F"
       },
@@ -2052,10 +1247,45 @@ html, body {
         "subject": "Qur'an",
         "section": "GRADE 12 - SUHAYB AR-RUMI",
         "shift": "F2F"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
       }
     ],
     "total_classes": 5,
-    "total_exams": 3
+    "total_exams": 14
   },
   {
     "id": "tchr_mamonas",
@@ -2257,6 +1487,11 @@ html, body {
       },
       {
         "subject": "MAPEH",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAPEH",
         "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
         "shift": "ODL - 1ST SHIFT"
       },
@@ -2274,40 +1509,10 @@ html, body {
         "subject": "PE 12",
         "section": "GRADE 12 - SUHAYB AR-RUMI",
         "shift": "F2F"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "shift": "ODL - 2ND SHIFT"
       }
     ],
     "total_classes": 19,
-    "total_exams": 8
+    "total_exams": 9
   },
   {
     "id": "tchr_angeleni",
@@ -2316,11 +1521,6 @@ html, body {
     "assignments": [
       {
         "subject": "MAPEH",
-        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Social Science",
         "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
         "shift": "ODL - 2ND SHIFT"
       },
@@ -2361,7 +1561,7 @@ html, body {
       }
     ],
     "total_classes": 12,
-    "total_exams": 8
+    "total_exams": 7
   },
   {
     "id": "tchr_aniah",
@@ -2375,6 +1575,16 @@ html, body {
       },
       {
         "subject": "Gen. Physics 1",
+        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "shift": "F2F"
+      },
+      {
+        "subject": "General Physics 1",
+        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "General Physics 1",
         "section": "GRADE 12 - SUHAYB AR-RUMI",
         "shift": "F2F"
       },
@@ -2420,7 +1630,7 @@ html, body {
       }
     ],
     "total_classes": 26,
-    "total_exams": 7
+    "total_exams": 5
   },
   {
     "id": "tchr_anna",
@@ -2637,16 +1847,11 @@ html, body {
       },
       {
         "subject": "Circle Time 1",
-        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Oral & Written Exam",
         "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT"
       },
       {
-        "subject": "Oral & Written Exam",
+        "subject": "Circle Time 1",
         "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT"
       }
@@ -2764,6 +1969,26 @@ html, body {
     "assignments": [
       {
         "subject": "MAPEH",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAPEH",
         "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
         "shift": "F2F"
       },
@@ -2803,48 +2028,77 @@ html, body {
         "shift": "ODL - 1ST SHIFT"
       },
       {
-        "subject": "Social Science",
-        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "shift": "F2F"
+        "subject": "Makabansa",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
       },
       {
-        "subject": "Social Science",
-        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "shift": "F2F"
+        "subject": "Makabansa",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT"
       },
       {
-        "subject": "Social Science",
-        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "subject": "Makabansa",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
         "shift": "ODL - 1ST SHIFT"
       },
       {
-        "subject": "Social Science",
-        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Social Science",
-        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "subject": "Makabansa",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
         "shift": "ODL - 1ST SHIFT"
       }
     ],
     "total_classes": 12,
-    "total_exams": 8
+    "total_exams": 16
+  },
+  {
+    "id": "tchr_zara",
+    "name": "Teacher Franchette Zarah M. Ranain",
+    "department": "Elementary Faculty",
+    "assignments": [
+      {
+        "subject": "MAKABANSA Tchr. Zara",
+        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAKABANSA Tchr. Zara",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAKABANSA Tchr. Zara",
+        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAKABANSA Tchr. Zara",
+        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH Tchr. Zara",
+        "section": "GRADE  6  FACE TO FACE",
+        "shift": "F2F"
+      },
+      {
+        "subject": "MAPEH Tchr. Zara",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH Tchr. Zara",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH Tchr. Zara",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 14,
+    "total_exams": 0
   },
   {
     "id": "tchr_halnaisa",
@@ -2923,7 +2177,7 @@ html, body {
       }
     ],
     "total_classes": 21,
-    "total_exams": 9
+    "total_exams": 14
   },
   {
     "id": "tchr_jairah",
@@ -3021,11 +2275,6 @@ html, body {
       },
       {
         "subject": "English",
-        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "English",
         "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
         "shift": "ODL - 1ST SHIFT"
       },
@@ -3033,6 +2282,21 @@ html, body {
         "subject": "English 3",
         "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
         "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Fil3",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Fil3",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Fil5",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
       },
       {
         "subject": "Filipino",
@@ -3048,11 +2312,6 @@ html, body {
         "subject": "Filipino",
         "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Filipino",
-        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
       },
       {
         "subject": "Filipino",
@@ -3106,7 +2365,7 @@ html, body {
       }
     ],
     "total_classes": 20,
-    "total_exams": 14
+    "total_exams": 12
   },
   {
     "id": "tchr_jerlyn",
@@ -3338,7 +2597,7 @@ html, body {
       }
     ],
     "total_classes": 31,
-    "total_exams": 11
+    "total_exams": 10
   },
   {
     "id": "tchr_joanna",
@@ -3404,16 +2663,6 @@ html, body {
         "subject": "Math",
         "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Oral & Written Exam",
-        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Oral & Written Exam",
-        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
       }
     ],
     "total_classes": 26,
@@ -3593,6 +2842,11 @@ html, body {
         "shift": "F2F"
       },
       {
+        "subject": "English",
+        "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
         "subject": "MAPEH",
         "section": "GRADE 5 (FACE TO FACE)",
         "shift": "F2F"
@@ -3613,23 +2867,13 @@ html, body {
         "shift": "F2F"
       },
       {
-        "subject": "Oral & Written Exam",
-        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Oral & Written Exam",
-        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
         "subject": "Wrap-Up Time",
         "section": "KINDER 2 CLASS SCHEDULE (F2F)",
         "shift": "F2F"
       }
     ],
     "total_classes": 33,
-    "total_exams": 3
+    "total_exams": 6
   },
   {
     "id": "tchr_marham",
@@ -3836,6 +3080,16 @@ html, body {
         "shift": "ODL - 1ST SHIFT"
       },
       {
+        "subject": "Filipino",
+        "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
         "subject": "HG",
         "section": "GRADE 4 (FACE TO FACE)",
         "shift": "F2F"
@@ -3948,10 +3202,25 @@ html, body {
         "subject": "HG",
         "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
         "shift": "F2F"
+      },
+      {
+        "subject": "Mabisang Komunikasyon",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Mabisang Komunikasyon",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Mabisang Komunikasyon",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F"
       }
     ],
     "total_classes": 30,
-    "total_exams": 10
+    "total_exams": 13
   },
   {
     "id": "tchr_nof",
@@ -4173,7 +3442,7 @@ html, body {
       }
     ],
     "total_classes": 29,
-    "total_exams": 10
+    "total_exams": 12
   },
   {
     "id": "tchr_normylah",
@@ -4221,7 +3490,7 @@ html, body {
         "shift": "ODL - 2ND SHIFT"
       },
       {
-        "subject": "Filipino",
+        "subject": "Fil",
         "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT"
       },
@@ -4257,6 +3526,11 @@ html, body {
       },
       {
         "subject": "Filipino",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Filipino",
         "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
         "shift": "ODL - 1ST SHIFT"
       },
@@ -4267,7 +3541,7 @@ html, body {
       }
     ],
     "total_classes": 24,
-    "total_exams": 12
+    "total_exams": 11
   },
   {
     "id": "tchr_radzmia",
@@ -4333,10 +3607,25 @@ html, body {
         "subject": "Science",
         "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
         "shift": "F2F"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Science",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
       }
     ],
     "total_classes": 34,
-    "total_exams": 6
+    "total_exams": 9
   },
   {
     "id": "tchr_rowena",
@@ -4553,6 +3842,11 @@ html, body {
       },
       {
         "subject": "MAPEH",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "MAPEH",
         "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
         "shift": "ODL - 2ND SHIFT"
       },
@@ -4648,7 +3942,7 @@ html, body {
       }
     ],
     "total_classes": 26,
-    "total_exams": 13
+    "total_exams": 15
   },
   {
     "id": "tchr_shirehan",
@@ -4674,21 +3968,6 @@ html, body {
         "subject": "PSKP 11",
         "section": "GRADE 11 (2ND SHIFT BOYS)",
         "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Science",
-        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
       },
       {
         "subject": "Soc.Sci",
@@ -4729,16 +4008,61 @@ html, body {
         "subject": "Soc.Sci",
         "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
         "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Social Studies",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "shift": "ODL - 1ST SHIFT"
       }
     ],
     "total_classes": 29,
-    "total_exams": 6
+    "total_exams": 11
   },
   {
     "id": "tchr_sitti_kauzar",
     "name": "Teacher Sitti Kauzar",
     "department": "Elementary Faculty",
     "assignments": [
+      {
+        "subject": "Circle Time 1",
+        "section": "Kinder 2 KHABAAB IBN ARAT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
       {
         "subject": "Filipino",
         "section": "GRADE 2 (FACE TO FACE)",
@@ -4786,7 +4110,7 @@ html, body {
       }
     ],
     "total_classes": 24,
-    "total_exams": 9
+    "total_exams": 10
   },
   {
     "id": "tchr_sophia",
@@ -4872,10 +4196,45 @@ html, body {
         "subject": "Soc.Sci",
         "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
         "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Social Science",
+        "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Social Science",
+        "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Social Science",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Social Science",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Social Science",
+        "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Social Science",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Social Science",
+        "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
+        "shift": "ODL - 2ND SHIFT"
       }
     ],
     "total_classes": 31,
-    "total_exams": 8
+    "total_exams": 15
   },
   {
     "id": "tchr_wardah",
@@ -4918,7 +4277,7 @@ html, body {
   },
   {
     "id": "tchr_wendy",
-    "name": "Teacher Wendelyn",
+    "name": "Teacher Wendy",
     "department": "Elementary Faculty",
     "assignments": [
       {
@@ -4947,6 +4306,11 @@ html, body {
         "shift": "F2F"
       },
       {
+        "subject": "Filipino",
+        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
         "subject": "MAKABANSA",
         "section": "GRADE 3 (FACE TO FACE)",
         "shift": "F2F"
@@ -4957,72 +4321,13 @@ html, body {
         "shift": "F2F"
       },
       {
-        "subject": "Oral & Written Exam",
-        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Oral & Written Exam",
-        "section": "KINDER 1 CLASS SCHEDULE (F2F)",
-        "shift": "F2F"
-      },
-      {
         "subject": "Science",
         "section": "GRADE  6  FACE TO FACE",
         "shift": "F2F"
       }
     ],
     "total_classes": 34,
-    "total_exams": 5
-  },
-  {
-    "id": "tchr_zara",
-    "name": "Teacher Franchette Zarah M. Ranain",
-    "department": "Elementary Faculty",
-    "assignments": [
-      {
-        "subject": "MAKABANSA Tchr. Zara",
-        "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAKABANSA Tchr. Zara",
-        "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "MAKABANSA Tchr. Zara",
-        "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAKABANSA Tchr. Zara",
-        "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAPEH Tchr. Zara",
-        "section": "GRADE  6  FACE TO FACE",
-        "shift": "F2F"
-      },
-      {
-        "subject": "MAPEH Tchr. Zara",
-        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAPEH Tchr. Zara",
-        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "MAPEH Tchr. Zara",
-        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 14,
-    "total_exams": 0
+    "total_exams": 6
   },
   {
     "id": "tchr_zuhora",
@@ -5040,17 +4345,17 @@ html, body {
         "shift": "F2F"
       },
       {
-        "subject": "Filipino",
+        "subject": "Fil",
         "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT"
       },
       {
-        "subject": "Filipino",
+        "subject": "Fil",
         "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT"
       },
       {
-        "subject": "Filipino",
+        "subject": "Fil4",
         "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
         "shift": "ODL - 1ST SHIFT"
       },
@@ -5061,12 +4366,37 @@ html, body {
       },
       {
         "subject": "Filipino",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
         "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
         "shift": "ODL - 2ND SHIFT"
       },
       {
+        "subject": "Filipino",
+        "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Filipino",
+        "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
         "subject": "GMRC",
         "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "MAPEH",
+        "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
         "shift": "ODL - 1ST SHIFT"
       },
       {
@@ -5091,7 +4421,7 @@ html, body {
       }
     ],
     "total_classes": 15,
-    "total_exams": 8
+    "total_exams": 12
   },
   {
     "id": "tchr_abdiraheem",
@@ -5470,135 +4800,6 @@ html, body {
     "total_exams": 15
   },
   {
-    "id": "tchr_hainur",
-    "name": "Ustadha Hainur",
-    "department": "ISAL Faculty",
-    "assignments": [
-      {
-        "subject": "Arabic",
-        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Arabic",
-        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Hadith",
-        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Hadith",
-        "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Hadith",
-        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Qur'an",
-        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "SHAF",
-        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      }
-    ],
-    "total_classes": 27,
-    "total_exams": 23
-  },
-  {
     "id": "tchr_jaisam",
     "name": "Ustadh Jaisam",
     "department": "ISAL Faculty",
@@ -5680,6 +4881,11 @@ html, body {
       },
       {
         "subject": "Qur'an",
+        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
         "section": "KINDER 1 CLASS SCHEDULE (F2F)",
         "shift": "F2F"
       },
@@ -5690,7 +4896,7 @@ html, body {
       }
     ],
     "total_classes": 21,
-    "total_exams": 17
+    "total_exams": 18
   },
   {
     "id": "tchr_obaydah",
@@ -5822,112 +5028,8 @@ html, body {
     "total_exams": 23
   },
   {
-    "id": "tchr_saliha",
-    "name": "Ustadha Saliha",
-    "department": "ISAL Faculty",
-    "assignments": [
-      {
-        "subject": "Arabic",
-        "section": "KINDER 1 CLASS SCHEDULE (F2F)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Arabic",
-        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 1 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 2 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 3 (FACE TO FACE)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "GMRC",
-        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "GMRC3",
-        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "shift": "ODL - 2ND SHIFT"
-      },
-      {
-        "subject": "GMRC5",
-        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Hadith",
-        "section": "KINDER 1 CLASS SCHEDULE (F2F)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Hadith",
-        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
-        "shift": "F2F"
-      },
-      {
-        "subject": "Hadith",
-        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      },
-      {
-        "subject": "Hadith",
-        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
-        "shift": "ODL - 1ST SHIFT"
-      }
-    ],
-    "total_classes": 33,
-    "total_exams": 17
-  },
-  {
     "id": "tchr_silfah",
-    "name": "Ustadha Silfah",
+    "name": "Ustadh Silfah",
     "department": "ISAL Faculty",
     "assignments": [
       {
@@ -6047,7 +5149,240 @@ html, body {
       }
     ],
     "total_classes": 30,
-    "total_exams": 23
+    "total_exams": 21
+  },
+  {
+    "id": "tchr_hainur",
+    "name": "Ustadha Hainur",
+    "department": "ISAL Faculty",
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Arabic",
+        "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Hadith",
+        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Hadith",
+        "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Hadith",
+        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Qur'an",
+        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "SHAF",
+        "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      }
+    ],
+    "total_classes": 27,
+    "total_exams": 20
+  },
+  {
+    "id": "tchr_saliha",
+    "name": "Ustadha Saliha",
+    "department": "ISAL Faculty",
+    "assignments": [
+      {
+        "subject": "Arabic",
+        "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Arabic",
+        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 1 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 2 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 3 (FACE TO FACE)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "GMRC",
+        "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "GMRC3",
+        "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
+        "shift": "ODL - 2ND SHIFT"
+      },
+      {
+        "subject": "GMRC5",
+        "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Hadith",
+        "section": "KINDER 1 CLASS SCHEDULE (F2F)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Hadith",
+        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
+        "shift": "F2F"
+      },
+      {
+        "subject": "Hadith",
+        "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      },
+      {
+        "subject": "Hadith",
+        "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
+        "shift": "ODL - 1ST SHIFT"
+      }
+    ],
+    "total_classes": 33,
+    "total_exams": 17
   }
 ];
 
@@ -6057,35 +5392,9 @@ html, body {
 
   let currentTab = 'SECTION';
   let rosterDept = 'ALL';
-  let sectionSubjectQuery = '';
-  let sectionSubjectSearchTimer = null;
-  let selectedGrade = 'ALL';
-  let selectedSectionId = 'ALL_GROUP';
 
   const toolbarControls = document.getElementById('toolbarControls');
   const sheetsContainer = document.getElementById('sheetsContainer');
-  const sectionWorkspace = document.getElementById('sectionWorkspace');
-  const sectionTabsBar = document.getElementById('sectionTabsBar');
-  const sectionTabsList = document.getElementById('sectionTabsList');
-  const examTabsBar = document.querySelector('.exam-tabs-bar');
-  let sidebarPositionFrame = null;
-
-  function syncSectionSidebarPosition() {
-    if (!examTabsBar) return;
-    const headerBottom = Math.max(0, Math.round(examTabsBar.getBoundingClientRect().bottom));
-    document.documentElement.style.setProperty('--section-sidebar-top', `${headerBottom}px`);
-  }
-
-  function requestSectionSidebarPositionSync() {
-    if (sidebarPositionFrame !== null) return;
-    sidebarPositionFrame = window.requestAnimationFrame(() => {
-      sidebarPositionFrame = null;
-      syncSectionSidebarPosition();
-    });
-  }
-
-  window.addEventListener('scroll', requestSectionSidebarPositionSync, { passive: true });
-  window.addEventListener('resize', requestSectionSidebarPositionSync, { passive: true });
 
   function esc(s) {
     if (!s) return '';
@@ -6101,55 +5410,55 @@ html, body {
 
     // 1. Islamic Studies & Arabic (Purple / Violet)
     if (s.includes('arabic') || s.includes("qur'an") || s.includes('quran') || s.includes('hadith') || s.includes('shaf') || s.includes('islamic') || s.includes('fiqh') || s.includes('aqeedah') || s.includes('seerah')) {
-      return { bg: '#f5f3ff', border: '#a78bfa', text: '#3b0764', accent: '#7c3aed' };
+      return { bg: '#f3e8ff', border: '#d8b4fe', text: '#581c87' };
     }
 
     // 2. Values Education / GMRC / Homeroom (Emerald Green)
     if (s.includes('gmrc') || s.includes('values') || s.includes('esp') || s.includes('homeroom') || s.includes('hg') || s.includes('guidance') || s.includes('character')) {
-      return { bg: '#ecfdf5', border: '#6ee7b7', text: '#052e16', accent: '#059669' };
+      return { bg: '#dcfce7', border: '#86efac', text: '#14532d' };
     }
 
     // 3. Mathematics & Quantitative (Sky Blue)
     if (s.includes('math') || s.includes('mathematics') || s.includes('algebra') || s.includes('calculus') || s.includes('statistics') || s.includes('geometry')) {
-      return { bg: '#eff6ff', border: '#60a5fa', text: '#172554', accent: '#2563eb' };
+      return { bg: '#e0f2fe', border: '#7dd3fc', text: '#0369a1' };
     }
 
     // 4. Sciences, Biology, Physics, Chemistry (Teal / Mint)
     if (s.includes('sci') || s.includes('science') || s.includes('bio') || s.includes('biology') || s.includes('physics') || s.includes('chem') || s.includes('earth')) {
-      return { bg: '#f0fdfa', border: '#5eead4', text: '#042f2e', accent: '#0f766e' };
+      return { bg: '#ccfbf1', border: '#5eead4', text: '#115e59' };
     }
 
     // 5. Filipino, Makabansa, Social Science, AP, PSKP (Warm Orange)
     if (s.includes('filipino') || s.includes('fil') || s.includes('makabansa') || s.includes('ap') || s.includes('araling panlipunan') || s.includes('social science') || s.includes('soc.sci') || s.includes('pskp') || s.includes('kompan') || s.includes('ucsp') || s.includes('philo')) {
-      return { bg: '#fff7ed', border: '#fb923c', text: '#431407', accent: '#ea580c' };
+      return { bg: '#ffedd5', border: '#fdba74', text: '#9a3412' };
     }
 
     // 6. English, Literature, Reading, Communication, LCS, EC (Warm Gold)
     if (s.includes('english') || s.includes('eng') || s.includes('reading') || s.includes('literacy') || s.includes('language') || s.includes('lcs') || s.includes('lit') || s.includes('oral com') || s.includes('eapp') || s.includes('circle time') || s.includes('ct 1') || s.includes('ct 2') || s.includes('meeting time') || s.includes('wrap-up') || s.includes('ec') || s.includes('r & l') || s.includes('r&l')) {
-      return { bg: '#fffbeb', border: '#facc15', text: '#422006', accent: '#ca8a04' };
+      return { bg: '#fef3c7', border: '#fde047', text: '#854d0e' };
     }
 
     // 7. MAPEH, Physical Education, TLE, TVL, Arts (Magenta / Pink)
     if (s.includes('mapeh') || s.includes('pe') || s.includes('tle') || s.includes('tvl') || s.includes('music') || s.includes('arts') || s.includes('health') || s.includes('entrep') || s.includes('cpar') || s.includes('e-tech')) {
-      return { bg: '#fdf4ff', border: '#e879f9', text: '#4a044e', accent: '#c026d3' };
+      return { bg: '#fae8ff', border: '#f0abfc', text: '#86198f' };
     }
 
     // 8. Research & Media / Information Literacy (Indigo)
     if (s.includes('res') || s.includes('research') || s.includes('mil') || s.includes('inquiries') || s.includes('immersion')) {
-      return { bg: '#eef2ff', border: '#818cf8', text: '#1e1b4b', accent: '#4f46e5' };
+      return { bg: '#e0e7ff', border: '#a5b4fc', text: '#3730a3' };
     }
 
     // 9. Kinder Comprehensive Exam (Oral & Written Exam) (Coral Rose)
     if (s.includes('oral & written') || s.includes('oral and written') || s.includes('written exam') || s.includes('oral exam')) {
-      return { bg: '#fff1f2', border: '#fb7185', text: '#4c0519', accent: '#e11d48' };
+      return { bg: '#fee2e2', border: '#fca5a5', text: '#991b1b' };
     }
 
     // 10. ARAL Program (Amber Cream)
     if (s.includes('aral')) {
-      return { bg: '#fefce8', border: '#facc15', text: '#422006', accent: '#a16207' };
+      return { bg: '#fef9c3', border: '#fef08a', text: '#713f12' };
     }
 
-    return { bg: '#f8fafc', border: '#94a3b8', text: '#0f172a', accent: '#475569' };
+    return { bg: '#f1f5f9', border: '#cbd5e1', text: '#334155' };
   }
 
   function cleanSectionName(name) {
@@ -6165,181 +5474,6 @@ html, body {
       .replace(/\s+/g, ' ')
       .trim();
     return s;
-  }
-
-  function normalizeSubjectSearch(value) {
-    return String(value || '')
-      .normalize('NFKD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, ' ')
-      .replace(/\s+/g, ' ')
-      .trim();
-  }
-
-  function publicExamSubject(exam) {
-    return String(exam && exam.subject || '').trim();
-  }
-
-  function subjectMatchesQuery(subject, query) {
-    const normalizedQuery = normalizeSubjectSearch(query);
-    if (!normalizedQuery) return true;
-
-    const normalizedSubject = normalizeSubjectSearch(subject);
-    if (normalizedSubject.includes(normalizedQuery)) return true;
-
-    const queryTokens = normalizedQuery.split(' ').filter(Boolean);
-    if (queryTokens.every(token => normalizedSubject.includes(token))) return true;
-
-    return normalizedSubject.replace(/\s/g, '').includes(normalizedQuery.replace(/\s/g, ''));
-  }
-
-  function scheduleStartLabel(value) {
-    return String(value || '')
-      .split(/\s*[–—-]\s*/)[0]
-      .replace(/\s+/g, ' ')
-      .trim()
-      .toUpperCase();
-  }
-
-  function examStartsAtScheduleRow(exam, rowTime, fallbackSlotNumber) {
-    const examTime = exam && (exam.time_slot || exam.time);
-    const examStart = scheduleStartLabel(examTime);
-    const rowStart = scheduleStartLabel(rowTime);
-
-    // Time is authoritative. This prevents 120-minute or legacy slot numbers
-    // from painting an exam in more than one visual row.
-    if (examStart && rowStart) return examStart === rowStart;
-
-    return Number(exam && exam.slot_number) === Number(fallbackSlotNumber);
-  }
-
-  function getExamGenderChip(exam) {
-    const sectionLabel = `${exam.section_name || ''} ${exam.section || ''}`.toUpperCase();
-    const explicitGender = String(exam.gender || '').toUpperCase();
-
-    if (explicitGender === 'FEMALE' || /\bGIRLS?\b|\bFEMALES?\b/.test(sectionLabel)) {
-      return { label: 'Female', className: 'gender-chip-female' };
-    }
-    if (explicitGender === 'MALE' || /\bBOYS?\b|\bMALES?\b/.test(sectionLabel)) {
-      return { label: 'Male', className: 'gender-chip-male' };
-    }
-    if (explicitGender === 'MIXED' || /\bMIX(?:ED)?\b|\bCO[ -]?ED\b/.test(sectionLabel)) {
-      return { label: 'Mixed', className: 'gender-chip-mixed' };
-    }
-
-    const modality = String(exam.modality || '').toUpperCase();
-    const shift = String(exam.shift || '').toUpperCase();
-    if (modality === 'F2F' || shift === 'F2F' || sectionLabel.includes('FACE TO FACE')) {
-      return { label: 'Mixed', className: 'gender-chip-mixed' };
-    }
-
-    return null;
-  }
-
-  function gradeSortRank(gradeLevel) {
-    const grade = String(gradeLevel || '').toLowerCase().replace(/\s+/g, ' ').trim();
-    if (grade.includes('kinder 1') || grade === 'k1') return 1;
-    if (grade.includes('kinder 2') || grade === 'k2') return 2;
-
-    const numbers = (grade.match(/\d+/g) || []).map(Number);
-    if (numbers.length === 0) return 999;
-    return 100 + numbers.reduce((sum, value) => sum + value, 0) / numbers.length;
-  }
-
-  function compareGradeLevels(left, right) {
-    return gradeSortRank(left) - gradeSortRank(right)
-      || String(left).localeCompare(String(right), undefined, { numeric: true, sensitivity: 'base' });
-  }
-
-  function shiftSortRank(shift) {
-    if (shift === 'F2F') return 0;
-    if (shift === 'ODL - 1ST SHIFT') return 1;
-    if (shift === 'ODL - 2ND SHIFT') return 2;
-    return 9;
-  }
-
-  function compareSections(left, right) {
-    return compareGradeLevels(left.grade_level, right.grade_level)
-      || shiftSortRank(left.shift) - shiftSortRank(right.shift)
-      || String(left.section_name).localeCompare(String(right.section_name), undefined, { numeric: true, sensitivity: 'base' });
-  }
-
-  function gradeDisplayName(gradeLevel) {
-    if (gradeLevel === 'Kinder 1') return 'K1';
-    if (gradeLevel === 'Kinder 2') return 'K2';
-    return gradeLevel;
-  }
-
-  function getModalityFilteredSections() {
-    return [...SECTIONS_DATA].sort(compareSections);
-  }
-
-  function getGradeFilteredSections() {
-    const filtered = getModalityFilteredSections();
-    if (selectedGrade === 'ALL') return filtered;
-    return filtered.filter(section => section.grade_level === selectedGrade);
-  }
-
-  function closeSectionSidebar() {
-    if (!sectionTabsList) return;
-    sectionTabsList.querySelectorAll('details[open]').forEach(details => {
-      details.open = false;
-    });
-  }
-
-  window.closeSectionSidebar = closeSectionSidebar;
-  window.keepOnlySidebarGroupOpen = function(details) {
-    if (!details || !details.open || !sectionTabsList) return;
-    sectionTabsList.querySelectorAll('.section-sidebar-grade[open]').forEach(other => {
-      if (other !== details) other.open = false;
-    });
-  };
-
-  function activeScheduleProctorId(record) {
-    if (!record) return '';
-    if (record.proctor_status === 'NOT_ASSIGNED' || record.proctor_pool === 'NONE') {
-      return '';
-    }
-    return record.proctor_id || record.teacher_id || '';
-  }
-
-  function strictScheduleConflicts() {
-    const conflicts = [];
-    const overlaps = (left, right) =>
-      Number(left.day_number) === Number(right.day_number)
-      && Number(left.start_m) < Number(right.end_m)
-      && Number(right.start_m) < Number(left.end_m);
-
-    for (let leftIndex = 0; leftIndex < EXAM_RECORDS.length; leftIndex++) {
-      const left = EXAM_RECORDS[leftIndex];
-      for (let rightIndex = leftIndex + 1; rightIndex < EXAM_RECORDS.length; rightIndex++) {
-        const right = EXAM_RECORDS[rightIndex];
-        if (!overlaps(left, right)) continue;
-
-        const leftProctorId = activeScheduleProctorId(left);
-        const rightProctorId = activeScheduleProctorId(right);
-        const sameTeacher = leftProctorId && leftProctorId === rightProctorId;
-        const sameCohort =
-          left.grade_level === right.grade_level
-          && left.modality === right.modality
-          && (left.section_id || left.section_name) === (right.section_id || right.section_name)
-          && String(left.gender || 'NONE') === String(right.gender || 'NONE');
-        if (sameTeacher || sameCohort) conflicts.push([left.id, right.id]);
-      }
-    }
-    return conflicts;
-  }
-
-  function updateAntiConflictBadge() {
-    const badge = document.getElementById('antiConflictBadge');
-    if (!badge) return;
-    const conflictCount = strictScheduleConflicts().length;
-    const isClear = conflictCount === 0;
-    badge.innerHTML = `<span style="color:${isClear ? '#059669' : '#dc2626'}; font-weight:900;">${isClear ? '✓' : '!'}</span> Anti-Conflict Guard Active: ${conflictCount} Conflict${conflictCount === 1 ? '' : 's'}`;
-    badge.style.color = isClear ? '#047857' : '#b91c1c';
-    badge.style.background = isClear ? '#ecfdf5' : '#fef2f2';
-    badge.style.borderColor = isClear ? '#a7f3d0' : '#fecaca';
   }
 
   async function init() {
@@ -6367,16 +5501,11 @@ html, body {
       if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
     }
 
-    updateAntiConflictBadge();
     switchTab('SECTION');
   }
 
   function switchTab(tabName, extraParam) {
     currentTab = tabName;
-
-    if (tabName !== 'SECTION') closeSectionSidebar();
-    if (sectionTabsBar) sectionTabsBar.hidden = tabName !== 'SECTION';
-    if (sectionWorkspace) sectionWorkspace.classList.toggle('sidebar-hidden', tabName !== 'SECTION');
 
     const btnSec = document.getElementById('tabBtnSection');
     const btnFac = document.getElementById('tabBtnFaculty');
@@ -6396,8 +5525,6 @@ html, body {
       renderRosterToolbar();
       renderRosterView();
     }
-
-    window.requestAnimationFrame(syncSectionSidebarPosition);
   }
   window.switchTab = switchTab;
 
@@ -6406,147 +5533,116 @@ html, body {
   // -------------------------------------------------------------
   function renderSectionToolbar() {
     toolbarControls.innerHTML = `
-      ${AMISScheduleExport.toolbarButtonHtml()}
+      <!-- Modality Filter -->
+      <div class="filter-group">
+        <span class="filter-label">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          Modality:
+        </span>
+        <select id="modalitySelect" class="filter-select" onchange="onModalityChange()">
+          <option value="ALL">All Modalities (F2F + ODL)</option>
+          <option value="F2F">Face-to-Face (F2F)</option>
+          <option value="ODL">Online Distance Learning (ODL)</option>
+        </select>
+      </div>
+
+      <!-- Shift Filter -->
+      <div class="filter-group" id="shiftGroup" style="display:none;">
+        <span class="filter-label">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+          Shift:
+        </span>
+        <select id="shiftSelect" class="filter-select" onchange="onShiftChange()">
+          <option value="ALL">All ODL Shifts (1st + 2nd)</option>
+          <option value="ODL1">1st Shift (Afternoon)</option>
+          <option value="ODL2">2nd Shift (Late Afternoon)</option>
+        </select>
+      </div>
+
+      <!-- Section Selector -->
+      <div class="filter-group">
+        <span class="filter-label">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13H5V11H3V13M3 17H5V15H3V17M3 9H5V7H3V9M7 13H21V11H7V13M7 17H21V15H7V17M7 7V9H21V7H7Z"/></svg>
+          Section:
+        </span>
+        <select id="sectionSelect" class="filter-select" style="min-width:220px;" onchange="renderSectionView()">
+          <option value="ALL_GROUP">All Filtered Sections</option>
+        </select>
+      </div>
+
       <a href="index.html" class="btn-action btn-back" title="Back to Home">
         <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
         Back Home
       </a>
     `;
 
-    const subjectSearch = document.getElementById('subjectSearch');
-    if (subjectSearch) subjectSearch.value = sectionSubjectQuery;
-    populateSubjectOptions();
-    renderSectionTabs();
+    populateSectionDropdown();
   }
 
-  function populateSubjectOptions() {
-    const dataList = document.getElementById('subjectOptions');
-    if (!dataList) return;
-
-    const subjects = [...new Set(EXAM_RECORDS.map(publicExamSubject).filter(Boolean))]
-      .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
-    dataList.innerHTML = subjects.map(subject => `<option value="${esc(subject)}"></option>`).join('');
-  }
-
-  window.onSubjectSearch = function(value) {
-    sectionSubjectQuery = value || '';
-    window.clearTimeout(sectionSubjectSearchTimer);
-    sectionSubjectSearchTimer = window.setTimeout(renderSectionView, 120);
+  window.onModalityChange = function() {
+    const mod = document.getElementById('modalitySelect').value;
+    const shiftGroup = document.getElementById('shiftGroup');
+    const shiftSelect = document.getElementById('shiftSelect');
+    if (mod === 'ODL') {
+      shiftGroup.style.display = 'inline-flex';
+    } else {
+      shiftGroup.style.display = 'none';
+      shiftSelect.value = 'ALL';
+    }
+    populateSectionDropdown();
+    renderSectionView();
   };
 
-  function sidebarShiftLabel(shift) {
-    if (shift === 'F2F') return 'F2F';
-    if (shift === 'ODL - 1ST SHIFT') return 'ODL · 1st Shift';
-    if (shift === 'ODL - 2ND SHIFT') return 'ODL · 2nd Shift';
-    return shift || 'Other';
-  }
+  window.onShiftChange = function() {
+    populateSectionDropdown();
+    renderSectionView();
+  };
 
-  function renderSectionTabs() {
-    if (!sectionTabsList || !sectionTabsBar || currentTab !== 'SECTION') return;
-    sectionTabsBar.hidden = false;
+  function populateSectionDropdown() {
+    const mod = document.getElementById('modalitySelect') ? document.getElementById('modalitySelect').value : 'ALL';
+    const shift = document.getElementById('shiftSelect') ? document.getElementById('shiftSelect').value : 'ALL';
 
-    const sections = getModalityFilteredSections();
-    if (selectedSectionId !== 'ALL_GROUP' && !sections.some(section => section.id === selectedSectionId)) {
-      selectedSectionId = 'ALL_GROUP';
+    let filtered = SECTIONS_DATA;
+    if (mod === 'F2F') {
+      filtered = filtered.filter(s => s.shift === 'F2F');
+    } else if (mod === 'ODL') {
+      if (shift === 'ODL1') filtered = filtered.filter(s => s.shift === 'ODL - 1ST SHIFT');
+      else if (shift === 'ODL2') filtered = filtered.filter(s => s.shift === 'ODL - 2ND SHIFT');
     }
 
-    const sectionsByGrade = new Map();
-    sections.forEach(section => {
-      if (!sectionsByGrade.has(section.grade_level)) sectionsByGrade.set(section.grade_level, []);
-      sectionsByGrade.get(section.grade_level).push(section);
+    const sSelect = document.getElementById('sectionSelect');
+    if (!sSelect) return;
+    let html = `<option value="ALL_GROUP">All Filtered Sections (${filtered.length})</option>`;
+    filtered.forEach(s => {
+      html += `<option value="${s.id}">${esc(s.section_name)} (${esc(s.shift)})</option>`;
     });
-
-    let html = `<button class="section-sidebar-all ${selectedGrade === 'ALL' && selectedSectionId === 'ALL_GROUP' ? 'active' : ''}" type="button" onclick="selectSidebarGrade('ALL')"><span>All Sections</span><span class="section-sidebar-count">${sections.length}</span></button>`;
-
-    [...sectionsByGrade.keys()].sort(compareGradeLevels).forEach(grade => {
-      const gradeSections = sectionsByGrade.get(grade).sort(compareSections);
-      html += `<details class="section-sidebar-grade" ontoggle="keepOnlySidebarGroupOpen(this)">
-        <summary><span>${esc(gradeDisplayName(grade))}</span><span class="section-sidebar-count">${gradeSections.length} section${gradeSections.length === 1 ? '' : 's'} ▾</span></summary>
-        <div class="section-sidebar-grade-body">
-          <button class="section-sidebar-grade-all ${selectedGrade === grade && selectedSectionId === 'ALL_GROUP' ? 'active' : ''}" type="button" data-grade="${esc(grade)}" onclick="selectSidebarGrade(this.dataset.grade)">
-            <span>Show all ${esc(gradeDisplayName(grade))}</span><span class="section-sidebar-count">${gradeSections.length}</span>
-          </button>`;
-
-      const sectionsByShift = new Map();
-      gradeSections.forEach(section => {
-        if (!sectionsByShift.has(section.shift)) sectionsByShift.set(section.shift, []);
-        sectionsByShift.get(section.shift).push(section);
-      });
-
-      [...sectionsByShift.keys()].sort((left, right) => shiftSortRank(left) - shiftSortRank(right)).forEach(shift => {
-        const shiftSections = sectionsByShift.get(shift);
-        html += `<div class="section-sidebar-shift">
-          <div class="section-sidebar-shift-label"><span>${esc(sidebarShiftLabel(shift))}</span><span class="section-sidebar-count">${shiftSections.length}</span></div>
-          <div class="section-sidebar-sections">`;
-
-        shiftSections.forEach(section => {
-          const gender = getExamGenderChip(section);
-          html += `<button class="section-sidebar-section ${selectedSectionId === section.id ? 'active' : ''}" type="button" data-section-id="${esc(section.id)}" onclick="selectSectionTab(this.dataset.sectionId)" title="${esc(section.section_name)}">
-            <span class="section-sidebar-section-label">${esc(cleanSectionName(section.section_name))}</span>
-            ${gender ? `<span class="gender-chip ${gender.className}">${gender.label}</span>` : ''}
-          </button>`;
-        });
-
-        html += `</div></div>`;
-      });
-
-      html += `</div></details>`;
-    });
-    sectionTabsList.innerHTML = html;
+    sSelect.innerHTML = html;
   }
-
-  window.selectSidebarGrade = function(grade) {
-    selectedGrade = grade || 'ALL';
-    selectedSectionId = 'ALL_GROUP';
-    renderSectionTabs();
-    renderSectionView();
-    closeSectionSidebar();
-  };
-
-  window.selectSectionTab = function(sectionId) {
-    selectedSectionId = sectionId || 'ALL_GROUP';
-    const selectedSection = SECTIONS_DATA.find(section => section.id === selectedSectionId);
-    if (selectedSection) selectedGrade = selectedSection.grade_level;
-    renderSectionTabs();
-    renderSectionView();
-    closeSectionSidebar();
-  };
 
   function renderSectionView() {
-    const subjectQuery = sectionSubjectQuery.trim();
+    const secSelect = document.getElementById('sectionSelect');
+    const selectedSecId = secSelect ? secSelect.value : 'ALL_GROUP';
+    const mod = document.getElementById('modalitySelect') ? document.getElementById('modalitySelect').value : 'ALL';
+    const shift = document.getElementById('shiftSelect') ? document.getElementById('shiftSelect').value : 'ALL';
 
-    let targetSections = getGradeFilteredSections();
-    if (selectedSectionId !== 'ALL_GROUP') {
-      targetSections = targetSections.filter(section => section.id === selectedSectionId);
-    }
-
-    if (subjectQuery) {
-      const matchingSectionIds = new Set(
-        EXAM_RECORDS
-          .filter(exam => subjectMatchesQuery(publicExamSubject(exam), subjectQuery))
-          .map(exam => exam.section_id)
-      );
-      targetSections = targetSections.filter(section => matchingSectionIds.has(section.id));
+    let targetSections = SECTIONS_DATA;
+    if (selectedSecId && selectedSecId !== 'ALL_GROUP') {
+      targetSections = SECTIONS_DATA.filter(s => s.id === selectedSecId);
+    } else {
+      if (mod === 'F2F') targetSections = targetSections.filter(s => s.shift === 'F2F');
+      else if (mod === 'ODL') {
+        if (shift === 'ODL1') targetSections = targetSections.filter(s => s.shift === 'ODL - 1ST SHIFT');
+        else if (shift === 'ODL2') targetSections = targetSections.filter(s => s.shift === 'ODL - 2ND SHIFT');
+      }
     }
 
     if (targetSections.length === 0) {
-      const message = subjectQuery
-        ? `No subject schedules match “${esc(subjectQuery)}” in the selected grade/section filters.`
-        : 'No sections match the current filter.';
-      sheetsContainer.innerHTML = `<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">${message}</div>`;
+      sheetsContainer.innerHTML = '<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">No sections match the current filter.</div>';
       return;
     }
 
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     let fullHtml = '';
-
-    if (subjectQuery) {
-      const targetSectionIds = new Set(targetSections.map(section => section.id));
-      const matchingExamCount = EXAM_RECORDS.filter(exam =>
-        targetSectionIds.has(exam.section_id) && subjectMatchesQuery(publicExamSubject(exam), subjectQuery)
-      ).length;
-      fullHtml += `<div class="subject-filter-summary" role="status">Showing ${matchingExamCount} matching exam${matchingExamCount === 1 ? '' : 's'} across ${targetSections.length} grade/section table${targetSections.length === 1 ? '' : 's'} for “${esc(subjectQuery)}”.</div>`;
-    }
 
     targetSections.forEach(sec => {
       const isF2F = sec.shift === 'F2F';
@@ -6564,68 +5660,65 @@ html, body {
       let timeRows = [];
       if (isK1_F2F && EXAM_RECORDS.some(e => e.section_id === sec.id && (e.time || '').includes('PM'))) {
         timeRows = [
-          { time: '12:30 PM – 12:40 PM', mins: '10 MIN', type: 'break', label: 'GENERAL ASSEMBLY' },
-          { time: '12:40 PM – 01:40 PM', mins: '60 MIN', type: 'exam', slot_num: 1 },
-          { time: '01:40 PM – 01:50 PM', mins: '10 MIN', type: 'break', label: 'RECESS / TRANSITION' },
-          { time: '01:50 PM – 02:50 PM', mins: '60 MIN', type: 'exam', slot_num: 2 },
+          { time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
+          { time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
+          { time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'RECESS / TRANSITION' },
+          { time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
           { time: '02:50 PM', mins: '--', type: 'break', label: 'DISMISSAL' }
         ];
       } else if (isF2F) {
         timeRows = [
-          { time: '07:30 AM – 07:45 AM', mins: '15 MIN', type: 'break', label: 'GENERAL ASSEMBLY' },
-          { time: '08:00 AM – 09:00 AM', mins: '60 MIN', type: 'exam', slot_num: 1 },
-          { time: '09:00 AM – 10:00 AM', mins: '60 MIN', type: 'exam', slot_num: 2 },
-          { time: '10:00 AM – 10:25 AM', mins: '25 MIN', type: 'break', label: 'RECESS' },
-          { time: '10:25 AM – 11:25 AM', mins: '60 MIN', type: 'exam', slot_num: 3 },
+          { time: '07:30 AM – 07:45 AM', mins: '15 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
+          { time: '08:00 AM – 09:00 AM', mins: '60 min.', type: 'exam', slot_num: 1 },
+          { time: '09:00 AM – 10:00 AM', mins: '60 min.', type: 'exam', slot_num: 2 },
+          { time: '10:00 AM – 10:25 AM', mins: '25 min.', type: 'break', label: 'RECESS' },
+          { time: '10:25 AM – 11:25 AM', mins: '60 min.', type: 'exam', slot_num: 3 },
           { time: '11:25 AM', mins: '--', type: 'break', label: 'DISMISSAL' }
         ];
       } else if (isODL1) {
         timeRows = [
-          { time: '12:30 PM – 12:40 PM', mins: '10 MIN', type: 'break', label: 'GENERAL ASSEMBLY' },
-          { time: '12:40 PM – 01:40 PM', mins: '60 MIN', type: 'exam', slot_num: 1 },
-          { time: '01:40 PM – 01:50 PM', mins: '10 MIN', type: 'break', label: 'TRANSITION' },
-          { time: '01:50 PM – 02:50 PM', mins: '60 MIN', type: 'exam', slot_num: 2 },
-          { time: '02:50 PM – 03:10 PM', mins: '20 MIN', type: 'break', label: 'TRANSITION AND SALAH BREAK' },
-          { time: '03:10 PM – 04:10 PM', mins: '60 MIN', type: 'exam', slot_num: 3 },
-          { time: '04:10 PM', mins: '--', type: 'break', label: 'DISMISSAL' }
+          { time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY' },
+          { time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
+          { time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
+          { time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
+          { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION AND SALAH BREAK' },
+          { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3 }
         ];
+        if (isSHS) {
+          timeRows.push({ time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' });
+          timeRows.push({ time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 4 });
+        }
+        timeRows.push({ time: isSHS ? '05:20 PM' : '04:10 PM', mins: '--', type: 'break', label: 'DISMISSAL' });
       } else if (isODL2) {
         timeRows = [
-          { time: '02:50 PM – 03:10 PM', mins: '20 MIN', type: 'break', label: 'GENERAL ASSEMBLY & SALAH BREAK' },
-          { time: '03:10 PM – 04:10 PM', mins: '60 MIN', type: 'exam', slot_num: 1 },
-          { time: '04:10 PM – 04:20 PM', mins: '10 MIN', type: 'break', label: 'TRANSITION' },
-          { time: '04:20 PM – 05:20 PM', mins: '60 MIN', type: 'exam', slot_num: 2 },
-          { time: '05:20 PM – 05:30 PM', mins: '10 MIN', type: 'break', label: 'TRANSITION' },
-          { time: '05:30 PM – 06:30 PM', mins: '60 MIN', type: 'exam', slot_num: 3 },
+          { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'GENERAL ASSEMBLY & SALAH BREAK' },
+          { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 1 },
+          { time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
+          { time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 2 },
+          { time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION' },
+          { time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_num: 3 },
           { time: '06:30 PM', mins: '--', type: 'break', label: 'DISMISSAL' }
         ];
       }
 
-      const allSecExams = EXAM_RECORDS.filter(e => e.section_id === sec.id);
-      const secExams = subjectQuery
-        ? allSecExams.filter(e => subjectMatchesQuery(publicExamSubject(e), subjectQuery))
-        : allSecExams;
+      const secExams = EXAM_RECORDS.filter(e => e.section_id === sec.id);
       const totalSubjectCount = secExams.length;
 
       fullHtml += `
-        <div class="timetable-sheet" id="sheet_${sec.id}" data-export-kind="Section" data-export-name="${esc(sec.section_name)}">
-          <div class="school-header school-header--branded">
-            <div class="document-header-title">
+        <div class="timetable-sheet" id="sheet_${sec.id}">
+          <div class="school-header">
+            <img src="amis_logo.png" alt="AMIS Logo" class="school-header-logo">
+            <div class="school-header-text">
+              <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
               <h2>TERM EXAM WEEK 2026 – 2027</h2>
               <p>OFFICIAL 1ST TERM EXAMINATION SCHEDULE</p>
             </div>
-            <div class="document-header-school">
-              <img src="amis_logo.png" alt="AMIS school logo" class="school-header-logo">
-              <div class="document-header-arabic" lang="ar" dir="rtl">المدرسة المنورة الإسلامية</div>
-              <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
-            </div>
-            <div class="document-header-balance" aria-hidden="true"></div>
           </div>
 
           <div class="teacher-banner">
             <span class="teacher-name-title">${esc(sec.section_name.toUpperCase())}</span>
             <div style="display:flex; align-items:center; gap:8px;">
-              ${AMISScheduleExport.controlsHtml()}
+              <span class="teacher-meta-tag">${esc(sec.department)} • ${esc(sec.shift)} • ${totalSubjectCount} Subjects • ✓ 0 Conflicts</span>
               <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
                 <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
                 <svg class="icon-compress" viewBox="0 0 24 24" style="display:none;"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
@@ -6633,10 +5726,6 @@ html, body {
             </div>
           </div>
 
-          <div class="mobile-scroll-hint" role="note">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59 3 13l4.41 4.41L8.83 16l-2-2H17v2l4-3-4-3v2H6.83l2-2-1.42-1.41z"/></svg>
-            Swipe left or right to view all exam days
-          </div>
           <div class="table-responsive-wrapper">
             <table class="timetable-grid">
               <thead>
@@ -6693,12 +5782,17 @@ html, body {
 
             const match = secExams.find(e => {
               if (e.day_number !== d.day_num && e.short_date !== d.short_date) return false;
-              return examStartsAtScheduleRow(e, row.time, row.slot_num);
+              if (e.slot_number === row.slot_num) return true;
+              if (e.time_slot && e.time_slot.includes('–')) {
+                const sStart = e.time_slot.split('–')[0].trim();
+                const rStart = row.time.split('–')[0].trim();
+                return sStart === rStart;
+              }
+              return false;
             });
 
             if (match) {
-              const displayedSubject = publicExamSubject(match);
-              const color = getSubjectColor(displayedSubject);
+              const color = getSubjectColor(match.subject);
               const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
               let calcRowspan = 1;
 
@@ -6715,11 +5809,11 @@ html, body {
               }
 
               fullHtml += `
-                <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
-                    <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                    <span class="cell-teacher-name">${esc(match.subject_teacher || match.teacher)}</span>
-                    <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
+                    <span class="cell-subject-sec">${esc(match.subject)}</span>
+                    <span class="cell-teacher-name">${esc(match.teacher)}</span>
+                    <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>
                   </div>
                 </td>
               `;
@@ -6765,16 +5859,12 @@ html, body {
   // -------------------------------------------------------------
   // TAB 2: FACULTY EXAM TIMETABLES
   // -------------------------------------------------------------
-  function examCountForTeacher(teacherId) {
-    return EXAM_RECORDS.filter(exam => (exam.proctor_id || exam.teacher_id) === teacherId).length;
-  }
-
   function isUstadhFaculty(name) {
-    return /^(ustadh|ustadha|alim)\b/i.test((name || '').trim());
+    return /^(ustadh|ustadha|alim)/i.test((name || '').trim());
   }
 
   function renderFacultyToolbar(targetTeacherId) {
-    const teachersWithExams = FACULTY_ROSTER_DATA.filter(t => examCountForTeacher(t.id) > 0);
+    const teachersWithExams = FACULTY_ROSTER_DATA.filter(t => t.total_exams > 0);
     const academicTeachers = teachersWithExams.filter(t => !isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
     const ustadhsFaculty = teachersWithExams.filter(t => isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
 
@@ -6784,7 +5874,7 @@ html, body {
       optionsHtml += '<optgroup label="TEACHERS">';
       academicTeachers.forEach(t => {
         const isSel = (targetTeacherId && t.id === targetTeacherId) ? 'selected' : '';
-        const count = examCountForTeacher(t.id);
+        const count = t.total_exams;
         optionsHtml += `<option value="${t.id}" ${isSel}>${esc(t.name)} (${count} Exam${count === 1 ? '' : 's'})</option>`;
       });
       optionsHtml += '</optgroup>';
@@ -6796,7 +5886,7 @@ html, body {
       optionsHtml += '<optgroup label="USTADHS / USTADHA">';
       ustadhsFaculty.forEach(t => {
         const isSel = (targetTeacherId && t.id === targetTeacherId) ? 'selected' : '';
-        const count = examCountForTeacher(t.id);
+        const count = t.total_exams;
         optionsHtml += `<option value="${t.id}" ${isSel}>${esc(t.name)} (${count} Exam${count === 1 ? '' : 's'})</option>`;
       });
       optionsHtml += '</optgroup>';
@@ -6813,8 +5903,6 @@ html, body {
         </select>
       </div>
 
-      ${AMISScheduleExport.toolbarButtonHtml()}
-
       <a href="index.html" class="btn-action btn-back" title="Back to Home">
         <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
         Back Home
@@ -6823,7 +5911,7 @@ html, body {
   }
 
   function renderFacultyView(selectedTid = 'ALL_FACULTY') {
-    let targetTeachers = FACULTY_ROSTER_DATA.filter(t => examCountForTeacher(t.id) > 0);
+    let targetTeachers = FACULTY_ROSTER_DATA.filter(t => t.total_exams > 0);
     if (selectedTid && selectedTid !== 'ALL_FACULTY') {
       targetTeachers = targetTeachers.filter(t => t.id === selectedTid);
     } else {
@@ -6838,22 +5926,22 @@ html, body {
     }
 
     const masterSlots = [
-      { time: '07:30 AM – 07:45 AM', mins: '15 MIN', type: 'break', label: 'GENERAL ASSEMBLY', shift_group: 'f2f' },
-      { time: '08:00 AM – 09:00 AM', mins: '60 MIN', type: 'exam', slot_num: 1, shift_group: 'f2f' },
-      { time: '09:00 AM – 10:00 AM', mins: '60 MIN', type: 'exam', slot_num: 2, shift_group: 'f2f' },
-      { time: '10:00 AM – 10:25 AM', mins: '25 MIN', type: 'break', label: 'RECESS', shift_group: 'f2f' },
-      { time: '10:25 AM – 11:25 AM', mins: '60 MIN', type: 'exam', slot_num: 3, shift_group: 'f2f' },
+      { time: '07:30 AM – 07:45 AM', mins: '15 min.', type: 'break', label: 'GENERAL ASSEMBLY', shift_group: 'f2f' },
+      { time: '08:00 AM – 09:00 AM', mins: '60 min.', type: 'exam', slot_num: 1, shift_group: 'f2f' },
+      { time: '09:00 AM – 10:00 AM', mins: '60 min.', type: 'exam', slot_num: 2, shift_group: 'f2f' },
+      { time: '10:00 AM – 10:25 AM', mins: '25 min.', type: 'break', label: 'RECESS', shift_group: 'f2f' },
+      { time: '10:25 AM – 11:25 AM', mins: '60 min.', type: 'exam', slot_num: 3, shift_group: 'f2f' },
       { time: '11:25 AM', mins: '--', type: 'break', label: 'FACE TO FACE DISMISSAL', shift_group: 'f2f' },
-      { time: '12:30 PM – 12:40 PM', mins: '10 MIN', type: 'break', label: 'GENERAL ASSEMBLY', shift_group: 'first' },
-      { time: '12:40 PM – 01:40 PM', mins: '60 MIN', type: 'exam', slot_num: 1, shift_tag: 'ODL1', shift_group: 'first' },
-      { time: '01:40 PM – 01:50 PM', mins: '10 MIN', type: 'break', label: 'TRANSITION - BREAK', shift_group: 'first' },
-      { time: '01:50 PM – 02:50 PM', mins: '60 MIN', type: 'exam', slot_num: 2, shift_tag: 'ODL1', shift_group: 'first' },
-      { time: '02:50 PM – 03:10 PM', mins: '20 MIN', type: 'break', label: 'TRANSITION - SALAH BREAK', shift_group: 'first' },
-      { time: '03:10 PM – 04:10 PM', mins: '60 MIN', type: 'exam', slot_num: 3, note: '3rd & 1st Subject · Mix of 1st & 2nd Shift', shift_tag: 'MIXED', shift_group: 'first' },
-      { time: '04:10 PM – 04:20 PM', mins: '10 MIN', type: 'break', label: 'TRANSITION', shift_group: 'second' },
-      { time: '04:20 PM – 05:20 PM', mins: '60 MIN', type: 'exam', slot_num: 2, shift_tag: 'ODL2', shift_group: 'second' },
-      { time: '05:20 PM – 05:30 PM', mins: '10 MIN', type: 'break', label: 'TRANSITION - BREAK', shift_group: 'second' },
-      { time: '05:30 PM – 06:30 PM', mins: '60 MIN', type: 'exam', slot_num: 3, shift_tag: 'ODL2', shift_group: 'second' },
+      { time: '12:30 PM – 12:40 PM', mins: '10 min.', type: 'break', label: 'GENERAL ASSEMBLY', shift_group: 'first' },
+      { time: '12:40 PM – 01:40 PM', mins: '60 min.', type: 'exam', slot_num: 1, shift_tag: 'ODL1', shift_group: 'first' },
+      { time: '01:40 PM – 01:50 PM', mins: '10 min.', type: 'break', label: 'TRANSITION - BREAK', shift_group: 'first' },
+      { time: '01:50 PM – 02:50 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'ODL1', shift_group: 'first' },
+      { time: '02:50 PM – 03:10 PM', mins: '20 min.', type: 'break', label: 'TRANSITION - SALAH BREAK', shift_group: 'first' },
+      { time: '03:10 PM – 04:10 PM', mins: '60 min.', type: 'exam', slot_num: 3, note: '3rd & 1st Subject · Mix of 1st & 2nd Shift', shift_tag: 'MIXED', shift_group: 'first' },
+      { time: '04:10 PM – 04:20 PM', mins: '10 min.', type: 'break', label: 'TRANSITION', shift_group: 'second' },
+      { time: '04:20 PM – 05:20 PM', mins: '60 min.', type: 'exam', slot_num: 2, shift_tag: 'ODL2', shift_group: 'second' },
+      { time: '05:20 PM – 05:30 PM', mins: '10 min.', type: 'break', label: 'TRANSITION - BREAK', shift_group: 'second' },
+      { time: '05:30 PM – 06:30 PM', mins: '60 min.', type: 'exam', slot_num: 3, shift_tag: 'ODL2', shift_group: 'second' },
       { time: '06:30 PM', mins: '--', type: 'break', label: 'DISMISSAL', shift_group: 'second' }
     ];
 
@@ -6861,30 +5949,26 @@ html, body {
     let fullHtml = '';
 
     targetTeachers.forEach(t => {
-      const tExams = EXAM_RECORDS.filter(e => (e.proctor_id || e.teacher_id) === t.id);
+      const tExams = EXAM_RECORDS.filter(e => e.teacher_id === t.id);
       const teacherName = t.name;
       const teacherDept = t.department;
-      const examDutyCount = tExams.length;
+      const examDutyCount = t.total_exams;
 
       fullHtml += `
-        <div class="timetable-sheet" id="sheet_${t.id}" data-export-kind="Faculty" data-export-name="${esc(teacherName)}">
-          <div class="school-header school-header--branded">
-            <div class="document-header-title">
+        <div class="timetable-sheet" id="sheet_${t.id}">
+          <div class="school-header">
+            <img src="amis_logo.png" alt="AMIS Logo" class="school-header-logo">
+            <div class="school-header-text">
+              <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
               <h2>TERM EXAM WEEK 2026 – 2027</h2>
               <p>FACULTY EXAMINATION TIMETABLE</p>
             </div>
-            <div class="document-header-school">
-              <img src="amis_logo.png" alt="AMIS school logo" class="school-header-logo">
-              <div class="document-header-arabic" lang="ar" dir="rtl">المدرسة المنورة الإسلامية</div>
-              <h1>AL MUNAWWARA ISLAMIC SCHOOL</h1>
-            </div>
-            <div class="document-header-balance" aria-hidden="true"></div>
           </div>
 
           <div class="teacher-banner">
             <span class="teacher-name-title">${esc(teacherName.toUpperCase())}</span>
             <div style="display:flex; align-items:center; gap:8px;">
-              ${AMISScheduleExport.controlsHtml()}
+              <span class="teacher-meta-tag">${esc(teacherDept)} • ${examDutyCount} Exam Duties • ✓ 0 Conflicts</span>
               <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
                 <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
                 <svg class="icon-compress" viewBox="0 0 24 24" style="display:none;"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
@@ -6892,15 +5976,10 @@ html, body {
             </div>
           </div>
 
-          <div class="mobile-scroll-hint" role="note">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59 3 13l4.41 4.41L8.83 16l-2-2H17v2l4-3-4-3v2H6.83l2-2-1.42-1.41z"/></svg>
-            Swipe left or right to view all exam days
-          </div>
           <div class="table-responsive-wrapper">
             <table class="timetable-grid">
               <thead>
                 <tr>
-                  <th class="col-shift">Shift</th>
                   <th class="col-time">Time</th>
                   <th class="col-mins">Minutes</th>
                   ${EXAM_DATES.map(d => `<th>${esc(d.header)}</th>`).join('')}
@@ -6910,26 +5989,11 @@ html, body {
       `;
 
       const activeRowspan = { 1: 0, 2: 0, 3: 0, 4: 0 };
-      const shiftLabels = {
-        f2f: 'F<br>A<br>C<br>E<br><br>T<br>O<br><br>F<br>A<br>C<br>E',
-        first: '1<br>S<br>T<br><br>S<br>H<br>I<br>F<br>T',
-        second: '2<br>N<br>D<br><br>S<br>H<br>I<br>F<br>T'
-      };
 
       masterSlots.forEach((slot, rowIdx) => {
-        const beginsShift = rowIdx === 0 || masterSlots[rowIdx - 1].shift_group !== slot.shift_group;
-        let shiftCellHtml = '';
-        if (beginsShift) {
-          let shiftRowspan = 1;
-          while (rowIdx + shiftRowspan < masterSlots.length && masterSlots[rowIdx + shiftRowspan].shift_group === slot.shift_group) {
-            shiftRowspan++;
-          }
-          shiftCellHtml = `<td class="cell-shift cell-shift--${slot.shift_group}" rowspan="${shiftRowspan}" aria-label="${slot.shift_group} shift"><span class="shift-stack">${shiftLabels[slot.shift_group]}</span></td>`;
-        }
         if (slot.type === 'break') {
           fullHtml += `
             <tr class="row-shift-${slot.shift_group}">
-              ${shiftCellHtml}
               <td class="cell-time"><span class="cell-time-val">${esc(slot.time)}</span></td>
               <td class="cell-mins">${esc(slot.mins)}</td>
           `;
@@ -6954,7 +6018,6 @@ html, body {
         } else {
           fullHtml += `
             <tr class="row-shift-${slot.shift_group}">
-              ${shiftCellHtml}
               <td class="cell-time">
                 <span class="cell-time-val">${esc(slot.time)}</span>
                 ${slot.note ? `<div class="cell-time-note">${esc(slot.note)}</div>` : ''}
@@ -6970,16 +6033,18 @@ html, body {
 
             const match = tExams.find(e => {
               if (e.day_number !== d.day_num && e.short_date !== d.short_date) return false;
-              return examStartsAtScheduleRow(e, slot.time, slot.slot_num);
+              if (e.time_slot === slot.time || e.time === slot.time) return true;
+              if (e.time_slot && e.time_slot.includes('–')) {
+                const sStart = e.time_slot.split('–')[0].trim();
+                const slStart = slot.time.split('–')[0].trim();
+                return sStart === slStart;
+              }
+              return false;
             });
 
             if (match) {
-              const displayedSubject = publicExamSubject(match);
-              const color = getSubjectColor(displayedSubject);
-              const genderChip = getExamGenderChip(match);
+              const color = getSubjectColor(match.subject);
               const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
-              const isAutomaticProctorCoverage = match.display_as_proctor_duty === true
-                || match.proctor_assignment_source !== 'SUBJECT_TEACHER';
               let calcRowspan = 1;
 
               if (is120) {
@@ -6995,19 +6060,11 @@ html, body {
               }
 
               fullHtml += `
-                <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
-                    ${isAutomaticProctorCoverage ? `
-                      <span class="cell-proctor-duty-label">PROCTOR - ${esc(match.proctor || match.teacher)}</span>
-                      <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                      <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                      ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
-                    ` : `
-                      <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                      <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                      ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
-                      <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
-                    `}
+                    <span class="cell-subject-sec">${esc(match.subject)}</span>
+                    <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
+                    <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} min.</span>
                   </div>
                 </td>
               `;
@@ -7066,7 +6123,6 @@ html, body {
     const query = (document.getElementById('rosterSearchInput') ? document.getElementById('rosterSearchInput').value : '').toLowerCase().trim();
 
     const filtered = FACULTY_ROSTER_DATA.filter(t => {
-      if (DUPLICATE_TEACHER_IDENTITY_IDS.has(t.id)) return false;
       const matchDept = (rosterDept === 'ALL') || 
                         (rosterDept === 'ISAL' && t.department.includes('ISAL')) ||
                         (rosterDept === 'High School' && t.department.includes('High School')) ||
@@ -7085,7 +6141,7 @@ html, body {
         <div class="roster-search-bar">
           <input type="text" id="rosterSearchInput" class="roster-search-input" placeholder="Search teacher, subject, or section..." value="${query}" oninput="renderRosterView()">
           <div class="roster-dept-group">
-            <button class="roster-dept-btn ${rosterDept === 'ALL' ? 'active' : ''}" onclick="setRosterDept('ALL')">All Faculty (${FACULTY_ROSTER_DATA.filter(t => !DUPLICATE_TEACHER_IDENTITY_IDS.has(t.id)).length})</button>
+            <button class="roster-dept-btn ${rosterDept === 'ALL' ? 'active' : ''}" onclick="setRosterDept('ALL')">All Faculty (${FACULTY_ROSTER_DATA.length})</button>
             <button class="roster-dept-btn ${rosterDept === 'ISAL' ? 'active' : ''}" onclick="setRosterDept('ISAL')">ISAL Faculty</button>
             <button class="roster-dept-btn ${rosterDept === 'High School' ? 'active' : ''}" onclick="setRosterDept('High School')">High School</button>
             <button class="roster-dept-btn ${rosterDept === 'Elementary' ? 'active' : ''}" onclick="setRosterDept('Elementary')">Elementary</button>
@@ -7094,19 +6150,17 @@ html, body {
 
         <div class="faculty-grid">
           ${filtered.length > 0 ? filtered.map(t => `
-            <div class="faculty-card ${INACTIVE_TEACHER_IDS.has(t.id) ? 'inactive-faculty' : ''}">
+            <div class="faculty-card">
               <div>
                 <div class="faculty-head">
                   <div>
                     <div class="faculty-name-title">${t.name}</div>
                     <span class="faculty-dept-tag">${t.department}</span>
                   </div>
-                  ${INACTIVE_TEACHER_IDS.has(t.id)
-                    ? '<span class="badge-resigned">Resigned / Inactive</span>'
-                    : '<span class="badge-conflict-free">✓ 0 Conflicts</span>'}
+                  <span class="badge-conflict-free">✓ 0 Conflicts</span>
                 </div>
 
-                <div class="assigned-subjects-title">${INACTIVE_TEACHER_IDS.has(t.id) ? 'Former Subject Assignments — Reference Only' : 'Assigned Subjects &amp; Load'} (${t.total_classes} Classes/wk • ${examCountForTeacher(t.id)} Active Proctor Duties):</div>
+                <div class="assigned-subjects-title">Assigned Subjects &amp; Load (${t.total_classes} Classes/wk • ${t.total_exams} Exams):</div>
                 <div class="subject-pill-list">
                   ${t.assignments.length > 0 ? t.assignments.map(a => `
                     <span class="subj-tag" title="${a.section} (${a.shift})">
@@ -7119,10 +6173,8 @@ html, body {
               </div>
 
               <div class="faculty-actions">
-                <a href="class-schedule.html?view=teacher&tchr=${t.id}" class="btn-link-action btn-link-sched">${INACTIVE_TEACHER_IDS.has(t.id) ? 'Former Weekly Load' : 'Weekly Schedule'}</a>
-                ${INACTIVE_TEACHER_IDS.has(t.id)
-                  ? '<a href="proctor-list.html?status=replacement" class="btn-link-action btn-link-exam">Replacement Required</a>'
-                  : `<button onclick="switchTab('FACULTY', '${t.id}')" class="btn-link-action btn-link-exam">Proctor Timetable (${examCountForTeacher(t.id)})</button>`}
+                <a href="class-schedule.html?view=teacher&tchr=${t.id}" class="btn-link-action btn-link-sched">Weekly Schedule</a>
+                <button onclick="switchTab('FACULTY', '${t.id}')" class="btn-link-action btn-link-exam">Exam Timetable (${t.total_exams})</button>
               </div>
             </div>
           `).join('') : '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#64748b; font-weight:700;">No faculty members matched your search.</div>'}
@@ -7169,7 +6221,6 @@ html, body {
 
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
-      closeSectionSidebar();
       const activeSheet = document.querySelector('.timetable-sheet.is-fullscreen');
       if (activeSheet) {
         const btn = activeSheet.querySelector('.btn-fullscreen');
@@ -7177,15 +6228,6 @@ html, body {
       }
     }
   });
-
-  // Never persist an open drawer across refresh or browser back/forward restore.
-  window.addEventListener('pageshow', closeSectionSidebar);
-  window.addEventListener('beforeunload', closeSectionSidebar);
-
-  // Expose renderers used by inline controls generated above.
-  window.renderSectionView = renderSectionView;
-  window.renderFacultyView = renderFacultyView;
-  window.renderRosterView = renderRosterView;
 
   init();
 })();
