@@ -349,6 +349,21 @@ def apply_authoritative_2nd_term_updates(records):
                 t = "Ustadha Samsida"
                 r["teacher_id"] = "tchr_samsida"
 
+        # 10. Reassignments from Teacher Monisa (not in her loads anymore per 2nd Term ELEM LOADs)
+        if t == "Teacher Monisa" or tid == "tchr_monisa":
+            if "HAKIM" in sec and (sub == "TLE" or "Panlipunan" in sub):
+                t = "Teacher Erica"
+                r["teacher_id"] = "tchr_erica"
+            elif "ABDUR RAHMAN" in sec and "Panlipunan" in sub:
+                t = "Teacher Erica"
+                r["teacher_id"] = "tchr_erica"
+            elif "USAYD" in sec and "Panlipunan" in sub:
+                t = "Teacher Erica"
+                r["teacher_id"] = "tchr_erica"
+            elif "HAMZA" in sec and "Panlipunan" in sub:
+                t = "Teacher Jenny"
+                r["teacher_id"] = "tchr_jenny"
+
         # Clean all related fields & remove proctors for 2nd term
         r["teacher"] = t
         r["subject_teacher"] = t
