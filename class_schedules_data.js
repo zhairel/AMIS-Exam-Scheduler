@@ -61432,20 +61432,20 @@ window.CLASS_SCHEDULES_DATA = [
             "source_cell": "N16"
           },
           "Tuesday": {
-            "raw": "Qur'an - Alim Dipatuan",
+            "raw": "Qur'an - Ustadha Samsida",
             "subject": "Qur'an",
-            "teacher": "Alim Dipatuan",
-            "teacher_id": "tchr_dipatuan",
+            "teacher": "Ustadha Samsida",
+            "teacher_id": "tchr_samsida",
             "is_break": false,
             "label": null,
             "source_sheet": "SHS",
             "source_cell": "O16"
           },
           "Wednesday": {
-            "raw": "Qur'an - Alim Dipatuan",
+            "raw": "Qur'an - Ustadha Samsida",
             "subject": "Qur'an",
-            "teacher": "Alim Dipatuan",
-            "teacher_id": "tchr_dipatuan",
+            "teacher": "Ustadha Samsida",
+            "teacher_id": "tchr_samsida",
             "is_break": false,
             "label": null,
             "source_sheet": "SHS",
@@ -63780,10 +63780,10 @@ window.CLASS_SCHEDULES_DATA = [
             "source_cell": "N25"
           },
           "Tuesday": {
-            "raw": "Qur'an - Alim Dipatuan",
+            "raw": "Qur'an - Ustadha Samsida",
             "subject": "Qur'an",
-            "teacher": "Alim Dipatuan",
-            "teacher_id": "tchr_dipatuan",
+            "teacher": "Ustadha Samsida",
+            "teacher_id": "tchr_samsida",
             "is_break": false,
             "label": null,
             "source_sheet": "SHS",

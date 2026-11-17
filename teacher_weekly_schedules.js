@@ -2863,45 +2863,6 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "day": "Thursday",
         "subject": "Qur'an",
         "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_12_suhayb_ar_rumi",
-        "section_name": "GRADE 12 - SUHAYB AR-RUMI",
-        "department": "Senior High School",
-        "grade_level": "Grade 12",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 – 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Tuesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_12_suhayb_ar_rumi",
-        "section_name": "GRADE 12 - SUHAYB AR-RUMI",
-        "department": "Senior High School",
-        "grade_level": "Grade 12",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 – 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Wednesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_12_abu_musa_al_ashari",
-        "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
-        "department": "Senior High School",
-        "grade_level": "Grade 12",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
       }
     ],
     "total_classes": 5,
@@ -40811,6 +40772,55 @@ window.TEACHER_WEEKLY_SCHEDULES = {
           "Wednesday": null,
           "Thursday": null
         }
+      }
+    ]
+  },
+  "tchr_samsida": {
+    "id": "tchr_samsida",
+    "teacher_id": "tchr_samsida",
+    "name": "Ustadha Samsida",
+    "teacher_name": "Ustadha Samsida",
+    "canonical_name": "Ustadha Samsida",
+    "department": "ISAL Faculty",
+    "periods": [
+      {
+        "section_id": "sec_grade_12_suhayb_ar_rumi",
+        "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+        "department": "Senior High School",
+        "grade_level": "Grade 12",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 – 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Qur'an",
+        "raw_label": "Qur'an"
+      },
+      {
+        "section_id": "sec_grade_12_suhayb_ar_rumi",
+        "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+        "department": "Senior High School",
+        "grade_level": "Grade 12",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 – 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "Qur'an",
+        "raw_label": "Qur'an"
+      },
+      {
+        "section_id": "sec_grade_12_abu_musa_al_ashari",
+        "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "department": "Senior High School",
+        "grade_level": "Grade 12",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 – 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "Qur'an",
+        "raw_label": "Qur'an"
       }
     ]
   }
