@@ -59417,7 +59417,7 @@ window.CLASS_SCHEDULES_DATA = [
         "is_break": true,
         "days": {
           "Sunday": {
-            "raw": "RECESS",
+            "raw": "REffective Communication - Effective Communication - ECESS",
             "subject": "RECESS",
             "teacher": null,
             "teacher_id": null,
@@ -59427,7 +59427,7 @@ window.CLASS_SCHEDULES_DATA = [
             "source_cell": "D10"
           },
           "Monday": {
-            "raw": "RECESS",
+            "raw": "REffective Communication - Effective Communication - ECESS",
             "subject": "RECESS",
             "teacher": null,
             "teacher_id": null,
@@ -59437,7 +59437,7 @@ window.CLASS_SCHEDULES_DATA = [
             "source_cell": "E10"
           },
           "Tuesday": {
-            "raw": "RECESS",
+            "raw": "REffective Communication - Effective Communication - ECESS",
             "subject": "RECESS",
             "teacher": null,
             "teacher_id": null,
@@ -59447,7 +59447,7 @@ window.CLASS_SCHEDULES_DATA = [
             "source_cell": "F10"
           },
           "Wednesday": {
-            "raw": "RECESS",
+            "raw": "REffective Communication - Effective Communication - ECESS",
             "subject": "RECESS",
             "teacher": null,
             "teacher_id": null,
@@ -59457,7 +59457,7 @@ window.CLASS_SCHEDULES_DATA = [
             "source_cell": "G10"
           },
           "Thursday": {
-            "raw": "RECESS",
+            "raw": "REffective Communication - Effective Communication - ECESS",
             "subject": "RECESS",
             "teacher": null,
             "teacher_id": null,
@@ -59674,15 +59674,15 @@ window.CLASS_SCHEDULES_DATA = [
         "minutes": "45 min.",
         "is_merged_all_days": true,
         "label": null,
-        "subject": "EC",
+        "subject": "Effective Communication - EC",
         "subject_id": "subj_ec",
         "teacher": "Teacher Nadzra",
         "teacher_id": "tchr_nadzra",
         "is_break": false,
         "days": {
           "Sunday": {
-            "raw": "EC - Tchr.  Nadzra",
-            "subject": "EC",
+            "raw": "Effective Communication - Effective Communication - EC - Tchr.  Nadzra",
+            "subject": "Effective Communication - EC",
             "teacher": "Teacher Nadzra",
             "teacher_id": "tchr_nadzra",
             "is_break": false,
@@ -59691,8 +59691,8 @@ window.CLASS_SCHEDULES_DATA = [
             "source_cell": "D14"
           },
           "Monday": {
-            "raw": "EC - Tchr.  Nadzra",
-            "subject": "EC",
+            "raw": "Effective Communication - Effective Communication - EC - Tchr.  Nadzra",
+            "subject": "Effective Communication - EC",
             "teacher": "Teacher Nadzra",
             "teacher_id": "tchr_nadzra",
             "is_break": false,
@@ -59701,8 +59701,8 @@ window.CLASS_SCHEDULES_DATA = [
             "source_cell": "E14"
           },
           "Tuesday": {
-            "raw": "EC - Tchr.  Nadzra",
-            "subject": "EC",
+            "raw": "Effective Communication - Effective Communication - EC - Tchr.  Nadzra",
+            "subject": "Effective Communication - EC",
             "teacher": "Teacher Nadzra",
             "teacher_id": "tchr_nadzra",
             "is_break": false,
@@ -59711,8 +59711,8 @@ window.CLASS_SCHEDULES_DATA = [
             "source_cell": "F14"
           },
           "Wednesday": {
-            "raw": "EC - Tchr.  Nadzra",
-            "subject": "EC",
+            "raw": "Effective Communication - Effective Communication - EC - Tchr.  Nadzra",
+            "subject": "Effective Communication - EC",
             "teacher": "Teacher Nadzra",
             "teacher_id": "tchr_nadzra",
             "is_break": false,
@@ -59721,8 +59721,8 @@ window.CLASS_SCHEDULES_DATA = [
             "source_cell": "G14"
           },
           "Thursday": {
-            "raw": "EC - Tchr.  Nadzra",
-            "subject": "EC",
+            "raw": "Effective Communication - Effective Communication - EC - Tchr.  Nadzra",
+            "subject": "Effective Communication - EC",
             "teacher": "Teacher Nadzra",
             "teacher_id": "tchr_nadzra",
             "is_break": false,
@@ -62559,8 +62559,8 @@ window.CLASS_SCHEDULES_DATA = [
             "source_cell": "D25"
           },
           "Monday": {
-            "raw": "EC - Tchr.  Nadzra",
-            "subject": "EC",
+            "raw": "Effective Communication - Effective Communication - EC - Tchr.  Nadzra",
+            "subject": "Effective Communication - EC",
             "teacher": "Teacher Nadzra",
             "teacher_id": "tchr_nadzra",
             "is_break": false,
@@ -62569,8 +62569,8 @@ window.CLASS_SCHEDULES_DATA = [
             "source_cell": "E25"
           },
           "Tuesday": {
-            "raw": "EC - Tchr.  Nadzra",
-            "subject": "EC",
+            "raw": "Effective Communication - Effective Communication - EC - Tchr.  Nadzra",
+            "subject": "Effective Communication - EC",
             "teacher": "Teacher Nadzra",
             "teacher_id": "tchr_nadzra",
             "is_break": false,
@@ -62806,15 +62806,15 @@ window.CLASS_SCHEDULES_DATA = [
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
-        "subject": "EC",
+        "subject": "Effective Communication - EC",
         "subject_id": "subj_ec",
         "teacher": "Teacher Nadzra",
         "teacher_id": "tchr_nadzra",
         "is_break": false,
         "days": {
           "Sunday": {
-            "raw": "EC - Tchr.  Nadzra",
-            "subject": "EC",
+            "raw": "Effective Communication - Effective Communication - EC - Tchr.  Nadzra",
+            "subject": "Effective Communication - EC",
             "teacher": "Teacher Nadzra",
             "teacher_id": "tchr_nadzra",
             "is_break": false,
@@ -64878,8 +64878,8 @@ window.CLASS_SCHEDULES_DATA = [
             "merge_group": "official-merge:sec_grade_11_2nd_shift_boys:source:E36:G36"
           },
           "Thursday": {
-            "raw": "EC - Tchr.  Nadzra",
-            "subject": "EC",
+            "raw": "Effective Communication - Effective Communication - EC - Tchr.  Nadzra",
+            "subject": "Effective Communication - EC",
             "teacher": "Teacher Nadzra",
             "teacher_id": "tchr_nadzra",
             "is_break": false,
@@ -64990,8 +64990,8 @@ window.CLASS_SCHEDULES_DATA = [
             "source_cell": "E38"
           },
           "Tuesday": {
-            "raw": "EC - Tchr.  Nadzra",
-            "subject": "EC",
+            "raw": "Effective Communication - Effective Communication - EC - Tchr.  Nadzra",
+            "subject": "Effective Communication - EC",
             "teacher": "Teacher Nadzra",
             "teacher_id": "tchr_nadzra",
             "is_break": false,
@@ -65095,15 +65095,15 @@ window.CLASS_SCHEDULES_DATA = [
         "minutes": "40 min.",
         "is_merged_all_days": false,
         "label": null,
-        "subject": "EC",
+        "subject": "Effective Communication - EC",
         "subject_id": "subj_ec",
         "teacher": "Teacher Nadzra",
         "teacher_id": "tchr_nadzra",
         "is_break": false,
         "days": {
           "Sunday": {
-            "raw": "EC - Tchr.  Nadzra",
-            "subject": "EC",
+            "raw": "Effective Communication - Effective Communication - EC - Tchr.  Nadzra",
+            "subject": "Effective Communication - EC",
             "teacher": "Teacher Nadzra",
             "teacher_id": "tchr_nadzra",
             "is_break": false,

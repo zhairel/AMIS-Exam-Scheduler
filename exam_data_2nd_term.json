@@ -1082,7 +1082,7 @@
     "modality": "F2F",
     "gender": "MIXED",
     "subject_id": "subj_ec",
-    "subject": "EC",
+    "subject": "Effective Communication - EC",
     "teacher_id": "tchr_nadzra",
     "teacher": "Teacher Nadzra",
     "duration_minutes": 60,
@@ -1101,7 +1101,8 @@
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "proctor_department": "High School Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "SUBJECT_TEACHER"
+    "proctor_pool": "SUBJECT_TEACHER",
+    "subject_clean": "Effective Communication - EC"
   },
   {
     "section_id": "sec_grade_12_suhayb_ar_rumi",
@@ -17044,7 +17045,7 @@
     "modality": "ODL",
     "gender": "MALE",
     "subject_id": "subj_ec",
-    "subject": "EC",
+    "subject": "Effective Communication - EC",
     "teacher_id": "tchr_nadzra",
     "teacher": "Teacher Nadzra",
     "duration_minutes": 60,
@@ -17063,7 +17064,8 @@
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "proctor_department": "High School Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "SUBJECT_TEACHER"
+    "proctor_pool": "SUBJECT_TEACHER",
+    "subject_clean": "Effective Communication - EC"
   },
   {
     "section_id": "sec_grade_12_abu_musa_al_ashari",
@@ -24036,7 +24038,7 @@
     "modality": "ODL",
     "gender": "FEMALE",
     "subject_id": "subj_ec",
-    "subject": "EC",
+    "subject": "Effective Communication - EC",
     "teacher_id": "tchr_nadzra",
     "teacher": "Teacher Nadzra",
     "duration_minutes": 60,
@@ -24055,7 +24057,8 @@
     "proctor_assignment_source": "SUBJECT_TEACHER",
     "proctor_department": "High School Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "SUBJECT_TEACHER"
+    "proctor_pool": "SUBJECT_TEACHER",
+    "subject_clean": "Effective Communication - EC"
   },
   {
     "id": "exam_524",

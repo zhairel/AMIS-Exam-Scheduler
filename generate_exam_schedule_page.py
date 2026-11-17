@@ -686,8 +686,8 @@ html, body {{
 }}
 
 .timetable-grid tbody td.cell-break {{
-  background: var(--break-bg);
-  color: var(--break-text);
+  background: #334155;
+  color: #ffffff;
   font-weight: 800;
   font-size: 11.5px;
   letter-spacing: 0.05em;
@@ -710,8 +710,8 @@ html, body {{
   font-weight: 850 !important;
 }}
 .timetable-grid tbody tr.row-shift-f2f td.cell-break {{
-  background: rgba(16, 185, 129, 0.06) !important;
-  color: #065f46 !important;
+  background: #047857 !important;
+  color: #ffffff !important;
   font-weight: 800 !important;
 }}
 .timetable-grid tbody tr.row-shift-f2f td.cell-empty {{
@@ -729,8 +729,8 @@ html, body {{
   font-weight: 850 !important;
 }}
 .timetable-grid tbody tr.row-shift-first td.cell-break {{
-  background: rgba(37, 99, 235, 0.06) !important;
-  color: #1e40af !important;
+  background: #1d4ed8 !important;
+  color: #ffffff !important;
   font-weight: 800 !important;
 }}
 .timetable-grid tbody tr.row-shift-first td.cell-empty {{
@@ -748,8 +748,8 @@ html, body {{
   font-weight: 850 !important;
 }}
 .timetable-grid tbody tr.row-shift-second td.cell-break {{
-  background: rgba(245, 158, 11, 0.06) !important;
-  color: #92400e !important;
+  background: #b45309 !important;
+  color: #ffffff !important;
   font-weight: 800 !important;
 }}
 .timetable-grid tbody tr.row-shift-second td.cell-empty {{

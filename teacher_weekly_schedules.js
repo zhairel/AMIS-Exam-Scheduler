@@ -1,4 +1,4 @@
-window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
+window.TEACHER_WEEKLY_SCHEDULES = {
   "tchr_ali": {
     "id": "tchr_ali",
     "teacher_id": "tchr_ali",
@@ -27931,7 +27931,7 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
-        "subject": "EC",
+        "subject": "Effective Communication - EC",
         "raw_label": "EC"
       },
       {
@@ -27944,7 +27944,7 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "day": "Monday",
-        "subject": "EC",
+        "subject": "Effective Communication - EC",
         "raw_label": "EC"
       },
       {
@@ -27957,7 +27957,7 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
-        "subject": "EC",
+        "subject": "Effective Communication - EC",
         "raw_label": "EC"
       },
       {
@@ -27970,7 +27970,7 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
-        "subject": "EC",
+        "subject": "Effective Communication - EC",
         "raw_label": "EC"
       },
       {
@@ -27983,7 +27983,7 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "12:40 – 1:25 PM",
         "minutes": "45 min.",
         "day": "Thursday",
-        "subject": "EC",
+        "subject": "Effective Communication - EC",
         "raw_label": "EC"
       },
       {
@@ -27996,7 +27996,7 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
-        "subject": "EC",
+        "subject": "Effective Communication - EC",
         "raw_label": "EC"
       },
       {
@@ -28009,7 +28009,7 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "01:30 – 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
-        "subject": "EC",
+        "subject": "Effective Communication - EC",
         "raw_label": "EC"
       },
       {
@@ -28022,7 +28022,7 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "03:00 – 03:40 PM",
         "minutes": "40 min.",
         "day": "Sunday",
-        "subject": "EC",
+        "subject": "Effective Communication - EC",
         "raw_label": "EC"
       },
       {
@@ -28035,7 +28035,7 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "3:00 – 3:30 PM",
         "minutes": "30 min.",
         "day": "Thursday",
-        "subject": "EC",
+        "subject": "Effective Communication - EC",
         "raw_label": "EC"
       },
       {
@@ -28048,7 +28048,7 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "3:40 – 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
-        "subject": "EC",
+        "subject": "Effective Communication - EC",
         "raw_label": "EC"
       },
       {
@@ -28061,7 +28061,7 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
         "time": "4:30 – 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
-        "subject": "EC",
+        "subject": "Effective Communication - EC",
         "raw_label": "EC"
       }
     ],
@@ -40815,4 +40815,3 @@ window.AMIS_TEACHER_WEEKLY_SCHEDULES = {
     ]
   }
 };
-const AMIS_TEACHER_WEEKLY_SCHEDULES = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
