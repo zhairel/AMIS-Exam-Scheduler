@@ -1073,7 +1073,13 @@ body.no-navbar {
       if (gVal && r.grade !== gVal) return false;
       if (tVal && r.teacher !== tVal) return false;
       if (mVal && r.modality !== mVal) return false;
-      if (shVal && r.shift !== shVal) return false;
+      if (shVal) {
+        const rShift = (r.shift || '').toUpperCase();
+        if (shVal === 'Day / F2F' && !rShift.includes('F2F')) return false;
+        if (shVal === '1st Shift' && !rShift.includes('1ST')) return false;
+        if (shVal === '2nd Shift' && !rShift.includes('2ND')) return false;
+        if (!['Day / F2F', '1st Shift', '2nd Shift'].includes(shVal) && r.shift !== shVal) return false;
+      }
       if (secVal && r.section !== secVal) return false;
       if (genVal && r.gender !== genVal) return false;
       if (q) {
