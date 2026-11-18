@@ -408,7 +408,9 @@ for teacher_info in clean_teachers:
         'assignments': teacher_assignments
     })
 
-# Post-process Ustadha Saliha Grade 2 GMRC to morning shift
+# Post-process Ustadha Saliha Grade 2 GMRC:
+# User request: Move Grade 2 Saeed and Grade 2 Aasim (2nd shift) to 03:10 PM - 04:10 PM (2nd shift start slot)
+# and move 1st shift subject (Talha) out of 03:10 PM to 1st shift slot (Day 4 12:40 PM - 01:40 PM)
 for e in final_exam_records:
     if e.get('teacher_id') == 'tchr_saliha' and e.get('subject') == 'GMRC':
         if 'SAEED' in e.get('section_name', ''):
@@ -420,10 +422,10 @@ for e in final_exam_records:
             e['slots_spanned'] = 1
             e['start_slot_index'] = 0
             e['end_slot_index'] = 0
-            e['start_m'] = 480
-            e['end_m'] = 540
-            e['time_slot'] = '08:00 AM – 09:00 AM'
-            e['time'] = '08:00 AM – 09:00 AM'
+            e['start_m'] = 910
+            e['end_m'] = 970
+            e['time_slot'] = '03:10 PM – 04:10 PM'
+            e['time'] = '03:10 PM – 04:10 PM'
         elif 'AASIM' in e.get('section_name', ''):
             e['day_number'] = 4
             e['date'] = 'Sunday, December 6, 2026'
@@ -433,10 +435,23 @@ for e in final_exam_records:
             e['slots_spanned'] = 1
             e['start_slot_index'] = 0
             e['end_slot_index'] = 0
-            e['start_m'] = 480
-            e['end_m'] = 540
-            e['time_slot'] = '08:00 AM – 09:00 AM'
-            e['time'] = '08:00 AM – 09:00 AM'
+            e['start_m'] = 910
+            e['end_m'] = 970
+            e['time_slot'] = '03:10 PM – 04:10 PM'
+            e['time'] = '03:10 PM – 04:10 PM'
+        elif 'TALHA' in e.get('section_name', ''):
+            e['day_number'] = 4
+            e['date'] = 'Sunday, December 6, 2026'
+            e['short_date'] = 'Dec 6'
+            e['day_name'] = 'Sunday'
+            e['slot_number'] = 1
+            e['slots_spanned'] = 1
+            e['start_slot_index'] = 0
+            e['end_slot_index'] = 0
+            e['start_m'] = 760
+            e['end_m'] = 820
+            e['time_slot'] = '12:40 PM – 01:40 PM'
+            e['time'] = '12:40 PM – 01:40 PM'
 
 # Post-process Teacher Nadzra Grade 9 & 10 Filipino to 1st shift / morning
 for e in final_exam_records:
