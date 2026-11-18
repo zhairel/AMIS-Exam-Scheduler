@@ -7006,15 +7006,13 @@ html, body {
               return;
             }
 
-            const match = secExams.find(e => {
+            const matches = secExams.filter(e => {
               if (e.day_number !== d.day_num && e.short_date !== d.short_date) return false;
               return examStartsAtScheduleRow(e, row.time, row.slot_num);
             });
 
-            if (match) {
-              const displayedSubject = publicExamSubject(match);
-              const color = getSubjectColor(displayedSubject);
-              const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
+            if (matches.length > 0) {
+              const is120 = matches.some(m => m.duration_minutes === 120 || m.slots_spanned === 2);
               let calcRowspan = 1;
 
               if (is120) {
@@ -7029,15 +7027,41 @@ html, body {
                 activeRowspan[d.day_num] = calcRowspan - 1;
               }
 
-              fullHtml += `
-                <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
-                  <div class="cell-class-inner">
-                    <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                    <span class="cell-teacher-name">${esc(match.subject_teacher || match.teacher)}</span>
-                    <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
-                  </div>
-                </td>
-              `;
+              if (matches.length === 1) {
+                const match = matches[0];
+                const displayedSubject = publicExamSubject(match);
+                const color = getSubjectColor(displayedSubject);
+
+                fullHtml += `
+                  <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                    <div class="cell-class-inner">
+                      <span class="cell-subject-sec">${esc(displayedSubject)}</span>
+                      <span class="cell-teacher-name">${esc(match.subject_teacher || match.teacher)}</span>
+                      <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
+                    </div>
+                  </td>
+                `;
+              } else {
+                const firstColor = getSubjectColor(publicExamSubject(matches[0]));
+                fullHtml += `
+                  <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:#f8fafc; border-color:#cbd5e1; padding:6px; box-shadow:inset 6px 0 0 ${firstColor.accent || firstColor.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                    <div style="display:flex; flex-direction:column; gap:6px; width:100%;">
+                      ${matches.map(m => {
+                        const mSubject = publicExamSubject(m);
+                        const mColor = getSubjectColor(mSubject);
+                        const mIs120 = m.duration_minutes === 120 || m.slots_spanned === 2;
+                        return `
+                          <div class="cell-class-inner" style="background:${mColor.bg}; border:1px solid ${mColor.border}; border-left:4px solid ${mColor.accent || mColor.text}; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
+                            <span class="cell-subject-sec" style="font-size:13.5px; color:${mColor.text};">${esc(mSubject)}</span>
+                            <span class="cell-teacher-name" style="font-size:11.5px;">${esc(m.subject_teacher || m.teacher)}</span>
+                            <span class="cell-duration-badge ${mIs120 ? 'badge-120' : ''}" style="font-size:9.5px; padding:2px 6px;">${m.duration_minutes || 60} MIN</span>
+                          </div>
+                        `;
+                      }).join('')}
+                    </div>
+                  </td>
+                `;
+              }
             } else {
               fullHtml += `<td class="cell-empty"></td>`;
             }
@@ -7639,18 +7663,13 @@ html, body {
               return;
             }
 
-            const match = tExams.find(e => {
+            const matches = tExams.filter(e => {
               if (e.day_number !== d.day_num && e.short_date !== d.short_date) return false;
               return examStartsAtScheduleRow(e, slot.time, slot.slot_num);
             });
 
-            if (match) {
-              const displayedSubject = publicExamSubject(match);
-              const color = getSubjectColor(displayedSubject);
-              const genderChip = getExamGenderChip(match);
-              const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
-              const isAutomaticProctorCoverage = match.display_as_proctor_duty === true
-                || match.proctor_assignment_source !== 'SUBJECT_TEACHER';
+            if (matches.length > 0) {
+              const is120 = matches.some(m => m.duration_minutes === 120 || m.slots_spanned === 2);
               let calcRowspan = 1;
 
               if (is120) {
@@ -7665,26 +7684,58 @@ html, body {
                 activeRowspan[d.day_num] = calcRowspan - 1;
               }
 
-              const isHighlight = (facultySubjectFilter !== 'ALL' && normSub(match.subject) === facultySubjectFilter) ||
-                                  (facultySubjectQuery.trim() && (match.subject || '').toLowerCase().includes(facultySubjectQuery.toLowerCase().trim()));
+              const isHighlight = matches.some(m =>
+                (facultySubjectFilter !== 'ALL' && normSub(m.subject) === facultySubjectFilter) ||
+                (facultySubjectQuery.trim() && (m.subject || '').toLowerCase().includes(facultySubjectQuery.toLowerCase().trim()))
+              );
 
-              fullHtml += `
-                <td class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
-                  <div class="cell-class-inner">
-                    ${isAutomaticProctorCoverage ? `
-                      
-                      <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                      <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                      ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
-                    ` : `
-                      <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                      <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                      ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
-                      <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
-                    `}
-                  </div>
-                </td>
-              `;
+              if (matches.length === 1) {
+                const match = matches[0];
+                const displayedSubject = publicExamSubject(match);
+                const color = getSubjectColor(displayedSubject);
+                const genderChip = getExamGenderChip(match);
+                const isAutomaticProctorCoverage = match.display_as_proctor_duty === true
+                  || match.proctor_assignment_source !== 'SUBJECT_TEACHER';
+
+                fullHtml += `
+                  <td class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                    <div class="cell-class-inner">
+                      ${isAutomaticProctorCoverage ? `
+                        <span class="cell-subject-sec">${esc(displayedSubject)}</span>
+                        <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
+                        ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
+                      ` : `
+                        <span class="cell-subject-sec">${esc(displayedSubject)}</span>
+                        <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
+                        ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
+                        <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
+                      `}
+                    </div>
+                  </td>
+                `;
+              } else {
+                const firstColor = getSubjectColor(publicExamSubject(matches[0]));
+                fullHtml += `
+                  <td class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:#f8fafc; border-color:#cbd5e1; padding:6px; box-shadow:inset 6px 0 0 ${firstColor.accent || firstColor.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                    <div style="display:flex; flex-direction:column; gap:6px; width:100%;">
+                      ${matches.map(m => {
+                        const mSubject = publicExamSubject(m);
+                        const mColor = getSubjectColor(mSubject);
+                        const mGenderChip = getExamGenderChip(m);
+                        const mIs120 = m.duration_minutes === 120 || m.slots_spanned === 2;
+                        return `
+                          <div class="cell-class-inner" style="background:${mColor.bg}; border:1px solid ${mColor.border}; border-left:4px solid ${mColor.accent || mColor.text}; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
+                            <span class="cell-subject-sec" style="font-size:13.5px; color:${mColor.text};">${esc(mSubject)}</span>
+                            <span class="cell-section-name" style="font-size:11.5px;">${esc(cleanSectionName(m.section_name))}</span>
+                            ${mGenderChip ? `<span class="gender-chip ${mGenderChip.className}" style="font-size:9.5px; padding:1px 6px;">${mGenderChip.label}</span>` : ''}
+                            <span class="cell-duration-badge ${mIs120 ? 'badge-120' : ''}" style="font-size:9.5px; padding:2px 6px;">${m.duration_minutes || 60} MIN</span>
+                          </div>
+                        `;
+                      }).join('')}
+                    </div>
+                  </td>
+                `;
+              }
             } else {
               fullHtml += `<td class="cell-empty"></td>`;
             }
