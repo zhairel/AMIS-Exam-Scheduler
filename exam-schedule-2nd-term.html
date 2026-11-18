@@ -1239,6 +1239,261 @@ html, body {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+
+/* Faculty Load Counters & Missing Subject Detector Styles */
+.faculty-summary-bar {
+  background: #ffffff;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.faculty-stats-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.faculty-stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink-secondary);
+}
+
+.faculty-stat-num {
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--brand-deep);
+}
+
+.faculty-filter-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-pill-btn {
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 800;
+  border: 1.5px solid var(--line);
+  background: #f8fafc;
+  color: var(--ink-secondary);
+  cursor: pointer;
+  transition: all 160ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.filter-pill-btn:hover {
+  background: #f1f5f9;
+  border-color: var(--line-strong);
+}
+
+.filter-pill-btn.active {
+  background: var(--brand-deep);
+  color: #ffffff;
+  border-color: var(--brand-deep);
+  box-shadow: 0 2px 8px rgba(6, 78, 59, 0.2);
+}
+
+.filter-pill-btn.active-missing {
+  background: #dc2626;
+  color: #ffffff;
+  border-color: #b91c1c;
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.25);
+}
+
+.filter-pill-btn.active-complete {
+  background: #16a34a;
+  color: #ffffff;
+  border-color: #15803d;
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.25);
+}
+
+/* Teacher Banner Load Stats */
+.teacher-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.teacher-dept-pill {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.teacher-load-stats-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.badge-load-count {
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.badge-exam-count {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.badge-status-complete {
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  color: #14532d;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.badge-status-missing {
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  color: #991b1b;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  animation: pulse-missing 2s infinite ease-in-out;
+}
+
+@keyframes pulse-missing {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+/* Missing Subjects Detection Box */
+.missing-subjects-alert {
+  background: #fffbeb;
+  border: 1.5px solid #fde68a;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin: 12px 0 16px 0;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.08);
+}
+
+.missing-alert-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #92400e;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.missing-alert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 10px;
+}
+
+.missing-card {
+  background: #ffffff;
+  border: 1.5px solid #fcd34d;
+  border-radius: 6px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.missing-card-subj {
+  font-weight: 900;
+  font-size: 13px;
+  color: #1e293b;
+}
+
+.missing-card-sec {
+  font-size: 11.5px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.missing-card-status {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-top: 5px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.missing-card-status.status-reassigned {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde047;
+}
+
+.missing-card-status.status-unscheduled {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+.complete-load-banner {
+  background: #f0fdf4;
+  border: 1.5px solid #bbf7d0;
+  border-radius: 6px;
+  padding: 8px 14px;
+  margin: 10px 0 14px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #166534;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.subj-tag.subj-tag--missing {
+  background: #fee2e2 !important;
+  border-color: #fca5a5 !important;
+  color: #991b1b !important;
+}
+.subj-tag.subj-tag--missing .check-icon {
+  display: none;
+}
+
 /* Tab 3: Faculty Roster & Assigned Subject Verification Styles */
 .roster-container {
   width: 100%;
@@ -5251,6 +5506,7 @@ html, body {
 
   let currentTab = 'SECTION';
   let rosterDept = 'ALL';
+  let facultyCoverageFilter = 'ALL';
   let sectionSubjectQuery = '';
   let sectionSubjectSearchTimer = null;
   let selectedGrade = 'ALL';
@@ -5916,10 +6172,125 @@ html, body {
     return /^(ustadh|ustadha|alim)\b/i.test((name || '').trim());
   }
 
+  function cleanTokens(sec) {
+    if (!sec) return [];
+    const s = sec.toLowerCase().replace(/\(.*?\)/g, ' ').replace(/[^a-z0-9]/g, ' ');
+    const stop = new Set(['grade', 'class', 'schedule', 'shift', 'first', 'second', '1st', '2nd', 'f2f', 'face', 'to', 'mix', 'mixed', 'girls', 'boys', 'abu', 'ibn', 'bin', 'al', 'as', 'ar', 'ad', 'an', 'at', 'az']);
+    return s.split(/\s+/).filter(w => !stop.has(w) && w.length > 1);
+  }
+
+  function normSub(sub) {
+    if (!sub) return '';
+    const s = sub.toLowerCase().trim();
+    if (s.includes('panlipunan') || s === 'ap' || s.includes('social science')) return 'ap';
+    if (s.includes('makabansa')) return 'makabansa';
+    if (s.includes('math')) return 'math';
+    if (s.includes('physics')) return 'physics';
+    if (s.includes('bio')) return 'biology';
+    if (s.includes('science')) return 'science';
+    if (s.includes('filipino') || s.includes('pagsulat') || s.includes('pfpl')) return 'filipino';
+    if (s.includes('arabic')) return 'arabic';
+    if (s.includes('qur')) return 'quran';
+    if (s.includes('shaf')) return 'shaf';
+    if (s.includes('gmrc') || s.includes('values') || s.includes('esp')) return 'gmrc';
+    if (s.includes('tle') || s.includes('tvl')) return 'tle';
+    if (s.includes('mapeh') || s.includes('pe')) return 'mapeh';
+    if (s.includes('english') || s.includes('reading') || s.includes('literacy')) return 'english';
+    if (s.includes('ec') || s.includes('effective') || s.includes('komunikasyon')) return 'ec';
+    if (s.includes('cpar')) return 'cpar';
+    if (s.includes('ucsp')) return 'ucsp';
+    if (s.includes('pskp') || s.includes('pananaliksik')) return 'pskp';
+    if (s.includes('lcs') || s.includes('literature')) return 'lcs';
+    return s;
+  }
+
+  function getTeacherLoadAudit(teacher, allExams) {
+    const tExams = allExams.filter(e => (e.teacher_id || e.subject_teacher_id) === teacher.id);
+    const assignments = teacher.assignments || [];
+    const missing = [];
+    const scheduled = [];
+
+    assignments.forEach(a => {
+      const aSub = normSub(a.subject);
+      const aTokens = cleanTokens(a.section);
+      const isF2F = (a.section || '').toLowerCase().includes('face');
+      const aGradeMatch = (a.section || '').match(/\b\d+\b/);
+      const aGrade = aGradeMatch ? aGradeMatch[0] : '';
+
+      let matchedExam = tExams.find(e => {
+        const eSub = normSub(e.subject);
+        const eTokens = cleanTokens(e.section_name);
+        const isEF2F = (e.section_name || '').toLowerCase().includes('face');
+        const eGradeMatch = (e.section_name || '').match(/\b\d+\b/);
+        const eGrade = eGradeMatch ? eGradeMatch[0] : '';
+
+        if (isF2F && isEF2F && aGrade && eGrade && aGrade === eGrade && aSub === eSub) {
+          return true;
+        }
+        return aSub === eSub && aTokens.some(tok => eTokens.includes(tok));
+      });
+
+      if (matchedExam) {
+        scheduled.push({ assignment: a, exam: matchedExam });
+      } else {
+        // Find where it is scheduled
+        let assignedElsewhere = null;
+        for (const e of allExams) {
+          const eSub = normSub(e.subject);
+          const eTokens = cleanTokens(e.section_name);
+          const isEF2F = (e.section_name || '').toLowerCase().includes('face');
+          const eGradeMatch = (e.section_name || '').match(/\b\d+\b/);
+          const eGrade = eGradeMatch ? eGradeMatch[0] : '';
+
+          const isMatch = (isF2F && isEF2F && aGrade && eGrade && aGrade === eGrade && aSub === eSub) ||
+                          (aSub === eSub && aTokens.some(tok => eTokens.includes(tok)));
+          if (isMatch) {
+            assignedElsewhere = e.teacher || e.subject_teacher;
+            break;
+          }
+        }
+        missing.push({
+          subject: a.subject,
+          section: a.section,
+          shift: a.shift,
+          assignedElsewhere: assignedElsewhere
+        });
+      }
+    });
+
+    return {
+      totalLoads: assignments.length,
+      scheduledExams: tExams.length,
+      matchedAssignments: scheduled.length,
+      missingCount: missing.length,
+      missingItems: missing,
+      isComplete: missing.length === 0
+    };
+  }
+
+  function setFacultyCoverageFilter(filterMode) {
+    facultyCoverageFilter = filterMode;
+    const select = document.getElementById('teacherSelect');
+    const selectedTid = select ? select.value : 'ALL_FACULTY';
+    renderFacultyToolbar(selectedTid);
+    renderFacultyView(selectedTid);
+  }
+  window.setFacultyCoverageFilter = setFacultyCoverageFilter;
+
   function renderFacultyToolbar(targetTeacherId) {
     const teachersWithExams = FACULTY_ROSTER_DATA.filter(t => examCountForTeacher(t.id) > 0);
     const academicTeachers = teachersWithExams.filter(t => !isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
     const ustadhsFaculty = teachersWithExams.filter(t => isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
+
+    let totalFaculty = teachersWithExams.length;
+    let missingFacultyCount = 0;
+    let completeFacultyCount = 0;
+
+    teachersWithExams.forEach(t => {
+      const audit = getTeacherLoadAudit(t, EXAM_RECORDS);
+      if (audit.isComplete) completeFacultyCount++;
+      else missingFacultyCount++;
+    });
 
     let optionsHtml = '<option value="ALL_FACULTY">All Staff / Faculty (Print All Timetables)</option>';
 
@@ -5927,8 +6298,9 @@ html, body {
       optionsHtml += '<optgroup label="TEACHERS">';
       academicTeachers.forEach(t => {
         const isSel = (targetTeacherId && t.id === targetTeacherId) ? 'selected' : '';
-        const count = examCountForTeacher(t.id);
-        optionsHtml += `<option value="${t.id}" ${isSel}>${esc(t.name)} (${count} Exam${count === 1 ? '' : 's'})</option>`;
+        const audit = getTeacherLoadAudit(t, EXAM_RECORDS);
+        const statusLabel = audit.missingCount > 0 ? ` [⚠️ ${audit.missingCount} Missing]` : ' [✓ Complete]';
+        optionsHtml += `<option value="${t.id}" ${isSel}>${esc(t.name)} (${audit.scheduledExams} Exams / ${audit.totalLoads} Loads${statusLabel})</option>`;
       });
       optionsHtml += '</optgroup>';
     }
@@ -5939,8 +6311,9 @@ html, body {
       optionsHtml += '<optgroup label="USTADHS / USTADHA">';
       ustadhsFaculty.forEach(t => {
         const isSel = (targetTeacherId && t.id === targetTeacherId) ? 'selected' : '';
-        const count = examCountForTeacher(t.id);
-        optionsHtml += `<option value="${t.id}" ${isSel}>${esc(t.name)} (${count} Exam${count === 1 ? '' : 's'})</option>`;
+        const audit = getTeacherLoadAudit(t, EXAM_RECORDS);
+        const statusLabel = audit.missingCount > 0 ? ` [⚠️ ${audit.missingCount} Missing]` : ' [✓ Complete]';
+        optionsHtml += `<option value="${t.id}" ${isSel}>${esc(t.name)} (${audit.scheduledExams} Exams / ${audit.totalLoads} Loads${statusLabel})</option>`;
       });
       optionsHtml += '</optgroup>';
     }
@@ -5956,6 +6329,18 @@ html, body {
         </select>
       </div>
 
+      <div class="faculty-filter-pills" style="margin-left:4px;">
+        <button class="filter-pill-btn ${facultyCoverageFilter === 'ALL' ? 'active' : ''}" onclick="setFacultyCoverageFilter('ALL')">
+          All Faculty (${totalFaculty})
+        </button>
+        <button class="filter-pill-btn ${facultyCoverageFilter === 'MISSING' ? 'active-missing' : ''}" onclick="setFacultyCoverageFilter('MISSING')" title="Filter teachers with unscheduled load subjects">
+          ⚠️ Missing Subjects (${missingFacultyCount})
+        </button>
+        <button class="filter-pill-btn ${facultyCoverageFilter === 'COMPLETE' ? 'active-complete' : ''}" onclick="setFacultyCoverageFilter('COMPLETE')" title="Filter teachers with 100% scheduled loads">
+          ✓ Complete (${completeFacultyCount})
+        </button>
+      </div>
+
       ${AMISScheduleExport.toolbarButtonHtml()}
 
       <a href="index.html" class="btn-action btn-back" title="Back to Home">
@@ -5966,17 +6351,56 @@ html, body {
   }
 
   function renderFacultyView(selectedTid = 'ALL_FACULTY') {
-    let targetTeachers = FACULTY_ROSTER_DATA.filter(t => examCountForTeacher(t.id) > 0);
+    let allAvailableTeachers = FACULTY_ROSTER_DATA.filter(t => examCountForTeacher(t.id) > 0);
+    const academic = allAvailableTeachers.filter(t => !isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
+    const asatidz = allAvailableTeachers.filter(t => isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
+    allAvailableTeachers = [...academic, ...asatidz];
+
+    // Compute audits for summary bar
+    let totalFacultyCount = allAvailableTeachers.length;
+    let missingFacultyCount = 0;
+    let completeFacultyCount = 0;
+    let totalTeachingLoads = 0;
+    let totalScheduledExams = 0;
+
+    allAvailableTeachers.forEach(t => {
+      const a = getTeacherLoadAudit(t, EXAM_RECORDS);
+      totalTeachingLoads += a.totalLoads;
+      totalScheduledExams += a.scheduledExams;
+      if (a.isComplete) completeFacultyCount++;
+      else missingFacultyCount++;
+    });
+
+    let targetTeachers = allAvailableTeachers;
     if (selectedTid && selectedTid !== 'ALL_FACULTY') {
       targetTeachers = targetTeachers.filter(t => t.id === selectedTid);
     } else {
-      const academic = targetTeachers.filter(t => !isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
-      const asatidz = targetTeachers.filter(t => isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
-      targetTeachers = [...academic, ...asatidz];
+      if (facultyCoverageFilter === 'MISSING') {
+        targetTeachers = targetTeachers.filter(t => !getTeacherLoadAudit(t, EXAM_RECORDS).isComplete);
+      } else if (facultyCoverageFilter === 'COMPLETE') {
+        targetTeachers = targetTeachers.filter(t => getTeacherLoadAudit(t, EXAM_RECORDS).isComplete);
+      }
     }
 
+    const summaryBarHtml = `
+      <div class="faculty-summary-bar">
+        <div class="faculty-stats-group">
+          <span class="faculty-stat-pill">Faculty: <span class="faculty-stat-num">${totalFacultyCount}</span></span>
+          <span class="faculty-stat-pill">Total Teaching Loads: <span class="faculty-stat-num">${totalTeachingLoads}</span></span>
+          <span class="faculty-stat-pill">Scheduled Exams: <span class="faculty-stat-num">${totalScheduledExams}</span></span>
+          <span class="faculty-stat-pill">Fully Scheduled: <span class="faculty-stat-num" style="color:#16a34a;">${completeFacultyCount}</span></span>
+          <span class="faculty-stat-pill">With Missing Subjects: <span class="faculty-stat-num" style="color:#dc2626;">${missingFacultyCount}</span></span>
+        </div>
+        <div class="faculty-filter-pills">
+          <button class="filter-pill-btn ${facultyCoverageFilter === 'ALL' ? 'active' : ''}" onclick="setFacultyCoverageFilter('ALL')">All Faculty (${totalFacultyCount})</button>
+          <button class="filter-pill-btn ${facultyCoverageFilter === 'MISSING' ? 'active-missing' : ''}" onclick="setFacultyCoverageFilter('MISSING')">⚠️ Missing Subjects (${missingFacultyCount})</button>
+          <button class="filter-pill-btn ${facultyCoverageFilter === 'COMPLETE' ? 'active-complete' : ''}" onclick="setFacultyCoverageFilter('COMPLETE')">✓ Complete (${completeFacultyCount})</button>
+        </div>
+      </div>
+    `;
+
     if (targetTeachers.length === 0) {
-      sheetsContainer.innerHTML = '<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">No faculty exam assignments found.</div>';
+      sheetsContainer.innerHTML = summaryBarHtml + '<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">No faculty match the selected filter.</div>';
       return;
     }
 
@@ -6001,13 +6425,14 @@ html, body {
     ];
 
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-    let fullHtml = '';
+    let fullHtml = summaryBarHtml;
 
     targetTeachers.forEach(t => {
       const tExams = EXAM_RECORDS.filter(e => (e.teacher_id || e.subject_teacher_id) === t.id);
       const teacherName = t.name;
       const teacherDept = t.department;
       const examDutyCount = tExams.length;
+      const audit = getTeacherLoadAudit(t, EXAM_RECORDS);
 
       fullHtml += `
         <div class="timetable-sheet" id="sheet_${t.id}" data-export-kind="Faculty" data-export-name="${esc(teacherName)}">
@@ -6025,7 +6450,17 @@ html, body {
           </div>
 
           <div class="teacher-banner">
-            <span class="teacher-name-title">${esc(teacherName.toUpperCase())}</span>
+            <div class="teacher-banner-left">
+              <span class="teacher-name-title">${esc(teacherName.toUpperCase())}</span>
+              <span class="teacher-dept-pill">${esc(teacherDept)}</span>
+              <div class="teacher-load-stats-wrap">
+                <span class="badge-load-count">Total Load: <strong>${audit.totalLoads}</strong> Classes</span>
+                <span class="badge-exam-count">Scheduled Exams: <strong>${examDutyCount}</strong></span>
+                ${audit.isComplete
+                  ? `<span class="badge-status-complete">✓ Complete (All Loads Scheduled)</span>`
+                  : `<span class="badge-status-missing">⚠️ ${audit.missingCount} Missing Subject${audit.missingCount > 1 ? 's' : ''}</span>`}
+              </div>
+            </div>
             <div style="display:flex; align-items:center; gap:8px;">
               ${AMISScheduleExport.controlsHtml()}
               <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
@@ -6034,6 +6469,31 @@ html, body {
               </button>
             </div>
           </div>
+
+          ${audit.missingCount > 0 ? `
+            <div class="missing-subjects-alert">
+              <div class="missing-alert-header">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+                <span>Detected Missing Subject(s) in Exam Schedule (${audit.missingCount} of ${audit.totalLoads} loads not on this timetable)</span>
+              </div>
+              <div class="missing-alert-grid">
+                ${audit.missingItems.map(m => `
+                  <div class="missing-card">
+                    <span class="missing-card-subj">${esc(m.subject)}</span>
+                    <span class="missing-card-sec">${esc(m.section)} ${m.shift ? `• ${esc(m.shift)}` : ''}</span>
+                    <span class="missing-card-status ${m.assignedElsewhere ? 'status-reassigned' : 'status-unscheduled'}">
+                      ${m.assignedElsewhere ? `Scheduled under: <strong>${esc(m.assignedElsewhere)}</strong>` : '⚠️ No Exam Scheduled in System'}
+                    </span>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          ` : `
+            <div class="complete-load-banner">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Verified Complete: All ${audit.totalLoads} assigned subjects for ${esc(teacherName)} are confirmed and scheduled in this timetable.</span>
+            </div>
+          `}
 
           <div class="mobile-scroll-hint" role="note">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59 3 13l4.41 4.41L8.83 16l-2-2H17v2l4-3-4-3v2H6.83l2-2-1.42-1.41z"/></svg>
@@ -6141,7 +6601,6 @@ html, body {
                 <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                   <div class="cell-class-inner">
                     ${isAutomaticProctorCoverage ? `
-                      
                       <span class="cell-subject-sec">${esc(displayedSubject)}</span>
                       <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
                       ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
@@ -6249,16 +6708,40 @@ html, body {
                     : '<span class="badge-conflict-free">✓ 0 Conflicts</span>'}
                 </div>
 
-                <div class="assigned-subjects-title">${INACTIVE_TEACHER_IDS.has(t.id) ? 'Former Subject Assignments — Reference Only' : 'Assigned Subjects &amp; Load'} (${t.total_classes} Classes/wk • ${examCountForTeacher(t.id)} Exam Sessions):</div>
-                <div class="subject-pill-list">
-                  ${t.assignments.length > 0 ? t.assignments.map(a => `
-                    <span class="subj-tag" title="${a.section} (${a.shift})">
-                      <span class="check-icon">✓</span>
-                      <span>${a.subject}</span>
-                      <span style="font-size:10px; color:#64748b;">• ${a.section.replace('CLASS SCHEDULE', '').replace('GRADE', 'G').trim()}</span>
-                    </span>
-                  `).join('') : '<span style="font-size:12px; color:#94a3b8; font-style:italic;">No active weekly classes</span>'}
-                </div>
+                ${(() => {
+                  const audit = getTeacherLoadAudit(t, EXAM_RECORDS);
+                  const missingTitles = new Set(audit.missingItems.map(m => m.subject + '|||' + m.section));
+                  return `
+                    <div class="assigned-subjects-title">
+                      ${INACTIVE_TEACHER_IDS.has(t.id) ? 'Former Subject Assignments — Reference Only' : 'Assigned Subjects &amp; Load'}
+                      (${audit.totalLoads} Classes • ${audit.scheduledExams} Exams ${audit.missingCount > 0 ? `<span style="color:#dc2626; font-weight:800;">• ⚠️ ${audit.missingCount} Missing in Exams</span>` : '<span style="color:#16a34a; font-weight:800;">• ✓ All Scheduled</span>'}):
+                    </div>
+                    <div class="subject-pill-list">
+                      ${t.assignments.length > 0 ? t.assignments.map(a => {
+                        const isMissing = missingTitles.has(a.subject + '|||' + a.section);
+                        if (isMissing) {
+                          const missingInfo = audit.missingItems.find(m => m.subject === a.subject && m.section === a.section);
+                          const extraNote = missingInfo && missingInfo.assignedElsewhere ? `Scheduled under: ${missingInfo.assignedElsewhere}` : 'No exam scheduled';
+                          return `
+                            <span class="subj-tag subj-tag--missing" title="MISSING in this teacher\'s exam schedule! (${extraNote})">
+                              <span style="font-weight:900;">⚠️</span>
+                              <span>${esc(a.subject)}</span>
+                              <span style="font-size:10px; opacity:0.85;">• ${esc(a.section.replace('CLASS SCHEDULE', '').replace('GRADE', 'G').trim())}</span>
+                              <span style="font-size:9.5px; font-weight:800; background:rgba(0,0,0,0.08); padding:1px 5px; border-radius:3px;">[MISSING]</span>
+                            </span>
+                          `;
+                        }
+                        return `
+                          <span class="subj-tag" title="${esc(a.section)} (${esc(a.shift)})">
+                            <span class="check-icon">✓</span>
+                            <span>${esc(a.subject)}</span>
+                            <span style="font-size:10px; color:#64748b;">• ${esc(a.section.replace('CLASS SCHEDULE', '').replace('GRADE', 'G').trim())}</span>
+                          </span>
+                        `;
+                      }).join('') : '<span style="font-size:12px; color:#94a3b8; font-style:italic;">No active weekly classes</span>'}
+                    </div>
+                  `;
+                })()}
               </div>
 
               <div class="faculty-actions">
