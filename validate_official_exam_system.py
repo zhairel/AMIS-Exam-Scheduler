@@ -101,11 +101,23 @@ samsuddin_exams = [e for e in exams if e['teacher'] == 'Alim Samsuddin']
 assert len(samsuddin_exams) == 18, f"Expected 18 exams for Alim Samsuddin, got {len(samsuddin_exams)}"
 print(f"[PASS] Specific teachers load count verified: Teacher Arvin (17), Teacher Nadzra (11), Sir Mohaymen (14), Alim Samsuddin (18).")
 
-# 7. Strictly 60 minutes duration and slots_spanned check
+# 7. Duration verification: Math (Grade 6-10, Gen Math 11) is 120m, all others 60m
+math_120_count = 0
+standard_60_count = 0
 for e in exams:
-    assert e['duration_minutes'] == 60, f"Exam {e['id']} duration is {e['duration_minutes']} (expected 60)"
-    assert e['slots_spanned'] == 1, f"Exam {e['id']} slots_spanned is {e['slots_spanned']} (expected 1)"
-print(f"[PASS] Strict 60-minute duration: All {len(exams)} examinations are strictly 60 minutes.")
+    if e['duration_minutes'] == 120:
+        assert e['slots_spanned'] == 2, f"Exam {e['id']} 120m should span 2 slots"
+        assert any(m in e['subject'] for m in ['Math', 'Mathematics']), f"Non-math exam {e['id']} marked 120m"
+        math_120_count += 1
+    elif e['duration_minutes'] == 60:
+        assert e['slots_spanned'] == 1, f"Exam {e['id']} 60m should span 1 slot"
+        standard_60_count += 1
+    else:
+        raise AssertionError(f"Unexpected duration {e['duration_minutes']} for {e['id']}")
+
+assert math_120_count == 27, f"Expected 27 Math 120m exams, got {math_120_count}"
+assert standard_60_count == 612, f"Expected 612 standard 60m exams, got {standard_60_count}"
+print(f"[PASS] Duration verification: 27 Math exams restored to 120 minutes (2 slots), and 612 examinations strictly 60 minutes.")
 
 # 8. Check proctor physical collisions & zero teacher overlapping
 proctor_conflicts = []
