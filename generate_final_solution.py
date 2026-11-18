@@ -474,14 +474,14 @@ for e in final_exam_records:
             e['date'] = 'Sunday, December 6, 2026'
             e['short_date'] = 'Dec 6'
             e['day_name'] = 'Sunday'
-            e['slot_number'] = 3
+            e['slot_number'] = 1
             e['slots_spanned'] = 1
-            e['start_slot_index'] = 2
-            e['end_slot_index'] = 2
-            e['start_m'] = 625
-            e['end_m'] = 685
-            e['time_slot'] = '10:25 AM – 11:25 AM'
-            e['time'] = '10:25 AM – 11:25 AM'
+            e['start_slot_index'] = 0
+            e['end_slot_index'] = 0
+            e['start_m'] = 910
+            e['end_m'] = 970
+            e['time_slot'] = '03:10 PM – 04:10 PM'
+            e['time'] = '03:10 PM – 04:10 PM'
 
 print(f"Total final exam records: {len(final_exam_records)}")
 print(f"Total teachers in final roster: {len(final_roster_data)}")
