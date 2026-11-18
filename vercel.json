@@ -2,16 +2,32 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/", "destination": "/maintenance", "permanent": false },
+    { "source": "/exam-schedule-2nd-term", "destination": "/maintenance", "permanent": false },
+    { "source": "/exam-schedule-2nd-term.html", "destination": "/maintenance", "permanent": false },
+    { "source": "/grade-calendar-view-2nd-term", "destination": "/maintenance", "permanent": false },
+    { "source": "/grade-calendar-view-2nd-term.html", "destination": "/maintenance", "permanent": false },
+    { "source": "/index.html", "destination": "/maintenance", "permanent": false },
+    { "source": "/index", "destination": "/maintenance", "permanent": false },
+    { "source": "/class-schedule", "destination": "/maintenance", "permanent": false },
+    { "source": "/class-schedule.html", "destination": "/maintenance", "permanent": false },
+    { "source": "/admin", "destination": "/maintenance", "permanent": false },
+    { "source": "/admin.html", "destination": "/maintenance", "permanent": false },
+    { "source": "/loads-schedule", "destination": "/maintenance", "permanent": false },
+    { "source": "/loads-schedule.html", "destination": "/maintenance", "permanent": false },
+    { "source": "/((?!maintenance|amis_logo\\.png|logo\\.png).*)", "destination": "/maintenance", "permanent": false }
+  ],
   "rewrites": [
-    { "source": "/amis_logo.png", "destination": "/amis_logo.png" },
-    { "source": "/logo.png", "destination": "/logo.png" },
-    { "source": "/(.*)", "destination": "/maintenance.html" }
+    { "source": "/maintenance", "destination": "/maintenance.html" }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },
+        { "key": "Cache-Control", "value": "no-store, no-cache, must-revalidate, max-age=0" },
+        { "key": "Pragma", "value": "no-cache" },
+        { "key": "Expires", "value": "0" },
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
       ]

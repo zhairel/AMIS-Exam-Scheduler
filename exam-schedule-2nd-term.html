@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>
+  if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+    window.location.replace('/maintenance');
+  }
+</script>
 <title>AMIS — Official 2nd Term Exam Week &amp; Faculty Roster (NEW)</title>
 
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
