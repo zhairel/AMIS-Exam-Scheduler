@@ -1,4 +1,4 @@
-window.TEACHER_WEEKLY_SCHEDULES = {
+const AMIS_TEACHER_WEEKLY_SCHEDULES = {
   "tchr_ali": {
     "id": "tchr_ali",
     "teacher_id": "tchr_ali",
@@ -14,7 +14,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Arabic",
@@ -27,7 +27,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -40,7 +40,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Arabic",
@@ -53,7 +53,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -66,7 +66,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 3,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Arabic4",
@@ -79,7 +79,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Arabic",
@@ -92,7 +92,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Arabic",
@@ -105,7 +105,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Arabic",
@@ -118,7 +118,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Arabic Ust. Ali",
@@ -131,7 +131,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Arabic",
@@ -144,7 +144,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Arabic",
@@ -157,7 +157,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Arabic",
@@ -170,7 +170,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Arabic",
@@ -235,7 +235,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Arabic",
@@ -248,7 +248,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Arabic",
@@ -261,7 +261,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -274,7 +274,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -287,7 +287,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Arabic",
@@ -300,7 +300,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Arabic",
@@ -313,7 +313,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Arabic",
@@ -326,7 +326,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Arabic",
@@ -342,7 +342,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -399,7 +399,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -471,7 +471,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -543,7 +543,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -600,7 +600,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -627,7 +627,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -771,7 +771,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -829,7 +829,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -842,7 +842,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "SHAF",
@@ -855,7 +855,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "SHAF",
@@ -868,7 +868,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -881,7 +881,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "SHAF",
@@ -894,7 +894,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "SHAF",
@@ -907,7 +907,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -920,7 +920,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -933,7 +933,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -946,7 +946,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -959,7 +959,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "SHAF",
@@ -972,7 +972,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 3,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "SHAF4",
@@ -985,7 +985,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 3,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "SHAF4",
@@ -998,7 +998,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "SHAF",
@@ -1011,7 +1011,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -1024,7 +1024,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -1037,7 +1037,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "SHAF",
@@ -1050,7 +1050,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "SHAF",
@@ -1063,7 +1063,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -1076,7 +1076,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -1089,7 +1089,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -1102,7 +1102,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "SHAF",
@@ -1115,7 +1115,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "SHAF",
@@ -1128,7 +1128,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -1141,7 +1141,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "SHAF",
@@ -1154,7 +1154,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "SHAF",
@@ -1167,7 +1167,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -1182,7 +1182,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -1269,7 +1269,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -1311,7 +1311,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -1383,7 +1383,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -1470,7 +1470,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -1542,7 +1542,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -1599,7 +1599,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -1626,7 +1626,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -1665,1029 +1665,6 @@ window.TEACHER_WEEKLY_SCHEDULES = {
             "has_conflict": false
           },
           "Thursday": null
-        }
-      }
-    ]
-  },
-  "tchr_abdul_karim": {
-    "id": "tchr_abdul_karim",
-    "teacher_id": "tchr_abdul_karim",
-    "name": "Alim Abdul Karim",
-    "teacher_name": "Alim Abdul Karim",
-    "canonical_name": "Alim Abdul Karim",
-    "department": "ISAL Faculty",
-    "periods": [
-      {
-        "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
-        "section_name": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
-        "section_name": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
-        "section_name": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
-        "section_name": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
-        "section_name": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 7,
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
-        "section_name": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 7,
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
-        "section_name": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 5,
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
-        "section_name": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 5,
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
-        "section_name": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 6,
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
-        "section_name": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 6,
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
-        "section_name": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
-        "section_name": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
-        "section_name": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 7,
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
-        "section_name": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 7,
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
-        "section_name": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 5,
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
-        "section_name": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 5,
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
-        "section_name": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 6,
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
-        "section_name": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 6,
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
-        "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      },
-      {
-        "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
-        "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 6,
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      }
-    ],
-    "total_classes": 20,
-    "total_teaching_periods": 20,
-    "subjects": [
-      "Arabic",
-      "SHAF"
-    ],
-    "rows": [
-      {
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-            "section_short": "G1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-            "section_short": "G1 - ALI IBN ABI TALIB(1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-            "section_short": "G1 - ALI IBN ABI TALIB(1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-            "section_short": "G1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-            "section_short": "G5 - HAMZA IBN ABDUL (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-            "section_short": "G1 - SUHAYB AR-RUMI (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-            "section_short": "G2 - SAEED IBN ZAYD (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-            "section_short": "G1 - SUHAYB AR-RUMI (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-            "section_short": "G2 - SAEED IBN ZAYD (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": null
-        }
-      },
-      {
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-            "section_short": "G2 - AASIM IBN THABIT (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-            "section_short": "G1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": null,
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-            "section_short": "G1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-            "section_short": "G2 - AASIM IBN THABIT (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-            "section_short": "G2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-            "section_short": "G3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-            "section_short": "G2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-            "section_short": "G5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-            "section_short": "G3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-            "section_short": "G2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": null,
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-            "section_short": "G2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": null,
-          "Thursday": null
-        }
-      }
-    ]
-  },
-  "tchr_abdulwahab": {
-    "id": "tchr_abdulwahab",
-    "teacher_id": "tchr_abdulwahab",
-    "name": "Alim Abdulwahab",
-    "teacher_name": "Alim Abdulwahab",
-    "canonical_name": "Alim Abdulwahab",
-    "department": "ISAL Faculty",
-    "periods": [
-      {
-        "section_id": "sec_grade_9_10_girls_face_to_face",
-        "section_name": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "department": "Junior High School",
-        "grade_level": "Grade 9 & 10",
-        "shift": "F2F",
-        "period_num": 10,
-        "time": "1:25 – 2:10 PM",
-        "minutes": "45 min.",
-        "day": "Wednesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_9_10_girls_face_to_face",
-        "section_name": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "department": "Junior High School",
-        "grade_level": "Grade 9 & 10",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 – 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Monday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_9_10_boys_face_to_face",
-        "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "department": "Junior High School",
-        "grade_level": "Grade 9 & 10",
-        "shift": "F2F",
-        "period_num": 4,
-        "time": "9:05 – 9:45 AM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_9_10_boys_face_to_face",
-        "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "department": "Junior High School",
-        "grade_level": "Grade 9 & 10",
-        "shift": "F2F",
-        "period_num": 4,
-        "time": "9:05 – 9:45 AM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
-        "section_name": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "department": "Junior High School",
-        "grade_level": "Grade 9",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_10_utbah_ibn_ghazwan_1st_shift_girls",
-        "section_name": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-        "department": "Junior High School",
-        "grade_level": "Grade 10",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_9_abu_dharr_al_ghifarri_2nd_shift_boys",
-        "section_name": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-        "department": "Junior High School",
-        "grade_level": "Grade 9",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 3,
-        "time": "3:40 – 4:20 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_9_abu_jandal_ibn_suhayl_2nd_shift_girls",
-        "section_name": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-        "department": "Junior High School",
-        "grade_level": "Grade 9",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 3,
-        "time": "3:40 – 4:20 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_10_abu_ayyub_al_ansari_2nd_shift_boys",
-        "section_name": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-        "department": "Junior High School",
-        "grade_level": "Grade 10",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 3,
-        "time": "3:40 – 4:20 PM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_11_1st_shift_girls",
-        "section_name": "GRADE 11 (1ST SHIFT GIRLS)",
-        "department": "Senior High School",
-        "grade_level": "Grade 11",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_11_2nd_shift_boys",
-        "section_name": "GRADE 11 (2ND SHIFT BOYS)",
-        "department": "Senior High School",
-        "grade_level": "Grade 11",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 4,
-        "time": "3:40 – 4:20 PM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      }
-    ],
-    "total_classes": 11,
-    "total_teaching_periods": 11,
-    "subjects": [
-      "Qur'an"
-    ],
-    "rows": [
-      {
-        "time": "1:25 – 2:10 PM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-            "section_short": "G9 & 10 GIRLS (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": null
-        }
-      },
-      {
-        "time": "2:15 – 3:00 PM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": null,
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-            "section_short": "G9 & 10 GIRLS (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": null
-        }
-      },
-      {
-        "time": "9:05 – 9:45 AM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": null,
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-            "section_short": "G9 & 10 BOYS (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": null,
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-            "section_short": "G9 & 10 BOYS (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": null
-        }
-      },
-      {
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-            "section_short": "G10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-            "section_short": "G9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 11 (1ST SHIFT GIRLS)",
-            "section_short": "G11 (1ST SHIFT GIRLS)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "3:40 – 4:20 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": null,
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-            "section_short": "G10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-            "section_short": "G9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 11 (2ND SHIFT BOYS)",
-            "section_short": "G11 (2ND SHIFT BOYS)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-            "section_short": "G9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
         }
       }
     ]
@@ -2707,7 +1684,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -2720,7 +1697,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -2733,7 +1710,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "SHAF",
@@ -2748,7 +1725,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -2775,7 +1752,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -2802,7 +1779,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -2845,7 +1822,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Qur'an",
@@ -2858,9 +1835,48 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Thursday",
+        "subject": "Qur'an",
+        "raw_label": "Qur'an"
+      },
+      {
+        "section_id": "sec_grade_12_suhayb_ar_rumi",
+        "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+        "department": "Senior High School",
+        "grade_level": "Grade 12",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 \u2013 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "Qur'an",
+        "raw_label": "Qur'an"
+      },
+      {
+        "section_id": "sec_grade_12_suhayb_ar_rumi",
+        "section_name": "GRADE 12 - SUHAYB AR-RUMI",
+        "department": "Senior High School",
+        "grade_level": "Grade 12",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 \u2013 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "Qur'an",
+        "raw_label": "Qur'an"
+      },
+      {
+        "section_id": "sec_grade_12_abu_musa_al_ashari",
+        "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
+        "department": "Senior High School",
+        "grade_level": "Grade 12",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
         "subject": "Qur'an",
         "raw_label": "Qur'an"
       }
@@ -2872,7 +1888,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -2944,7 +1960,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -2987,7 +2003,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -3000,7 +2016,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "SHAF",
@@ -3013,7 +2029,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "SHAF",
@@ -3026,7 +2042,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "SHAF",
@@ -3039,7 +2055,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -3052,7 +2068,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -3065,7 +2081,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "SHAF",
@@ -3078,7 +2094,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "SHAF",
@@ -3091,7 +2107,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "SHAF",
@@ -3104,7 +2120,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -3117,7 +2133,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "SHAF",
@@ -3130,7 +2146,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "SHAF",
@@ -3143,7 +2159,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -3156,7 +2172,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -3169,7 +2185,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Arabic",
@@ -3182,7 +2198,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Arabic",
@@ -3195,7 +2211,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "SHAF",
@@ -3208,7 +2224,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -3221,7 +2237,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -3234,7 +2250,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "SHAF",
@@ -3247,7 +2263,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "SHAF",
@@ -3260,7 +2276,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Arabic",
@@ -3273,7 +2289,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -3286,7 +2302,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Math",
@@ -3325,7 +2341,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -3338,7 +2354,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Arabic",
@@ -3354,7 +2370,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -3441,7 +2457,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -3498,7 +2514,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -3555,7 +2571,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -3597,7 +2613,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -3684,7 +2700,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -3741,7 +2757,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -3783,7 +2799,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -3810,7 +2826,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -3895,7 +2911,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Qur'an",
@@ -3908,7 +2924,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Hadith",
@@ -3921,7 +2937,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -3934,7 +2950,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "SHAF3",
@@ -3947,7 +2963,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "SHAF3",
@@ -3960,7 +2976,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -3973,7 +2989,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Arabic",
@@ -3986,7 +3002,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "SHAF",
@@ -3999,7 +3015,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -4012,7 +3028,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Qur'an4",
@@ -4025,7 +3041,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Qur'an",
@@ -4038,7 +3054,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "SHAF5",
@@ -4051,7 +3067,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "SHAF5",
@@ -4064,7 +3080,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Arabic5",
@@ -4077,7 +3093,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -4090,7 +3106,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "SHAF 5",
@@ -4103,7 +3119,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -4116,7 +3132,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Qur'an",
@@ -4129,7 +3145,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Qur'an",
@@ -4142,7 +3158,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -4155,7 +3171,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "SHAF",
@@ -4177,7 +3193,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -4264,7 +3280,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -4336,7 +3352,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -4363,7 +3379,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -4405,7 +3421,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -4462,7 +3478,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -4534,7 +3550,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -4561,7 +3577,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -4585,854 +3601,6 @@ window.TEACHER_WEEKLY_SCHEDULES = {
           },
           "Wednesday": null,
           "Thursday": null
-        }
-      }
-    ]
-  },
-  "tchr_hainur": {
-    "id": "tchr_hainur",
-    "teacher_id": "tchr_hainur",
-    "name": "Ustadha Hainur",
-    "teacher_name": "Ustadha Hainur",
-    "canonical_name": "Ustadha Hainur",
-    "department": "ISAL Faculty",
-    "periods": [
-      {
-        "section_id": "sec_kinder_2_abu_bakr_as_sideeq_1st_shift",
-        "section_name": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Kinder 2",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_kinder_2_uthman_ibn_affan_1st_shift",
-        "section_name": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Kinder 2",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_k2_abdullah_ibn_mas_ud_2nd_shift",
-        "section_name": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Kinder 2",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 6,
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_k2_abdullah_ibn_mas_ud_2nd_shift",
-        "section_name": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Kinder 2",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 6,
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Hadith",
-        "raw_label": "Hadith"
-      },
-      {
-        "section_id": "sec_k2_umar_ibn_al_khattab_2nd_shift",
-        "section_name": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Kinder 2",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 4,
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_k2_umar_ibn_al_khattab_2nd_shift",
-        "section_name": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Kinder 2",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 4,
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "Hadith",
-        "raw_label": "Hadith"
-      },
-      {
-        "section_id": "sec_k1_husain_ibn_ali_2nd_shift",
-        "section_name": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Kinder 1",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 5,
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_k1_husain_ibn_ali_2nd_shift",
-        "section_name": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Kinder 1",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 5,
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "Hadith",
-        "raw_label": "Hadith"
-      },
-      {
-        "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
-        "section_name": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      },
-      {
-        "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
-        "section_name": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
-        "section_name": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      },
-      {
-        "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
-        "section_name": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 6,
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
-        "section_name": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 3,
-        "time": "3:40 – 4:20 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
-        "section_name": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 5,
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      },
-      {
-        "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
-        "section_name": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 5,
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
-        "section_name": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 7,
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      },
-      {
-        "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
-        "section_name": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      },
-      {
-        "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
-        "section_name": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 6,
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      },
-      {
-        "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
-        "section_name": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 5,
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      },
-      {
-        "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
-        "section_name": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 3,
-        "time": "3:40 – 4:20 PM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      },
-      {
-        "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
-        "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
-        "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
-        "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
-        "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
-        "section_name": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 3,
-        "time": "3:40 – 4:20 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
-        "section_name": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 3,
-        "time": "3:40 – 4:20 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "SHAF",
-        "raw_label": "SHAF"
-      },
-      {
-        "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
-        "section_name": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-        "department": "Junior High School",
-        "grade_level": "Grade 9",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      }
-    ],
-    "total_classes": 27,
-    "total_teaching_periods": 27,
-    "subjects": [
-      "Arabic",
-      "Hadith",
-      "Qur'an",
-      "SHAF"
-    ],
-    "rows": [
-      {
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "Kinder 2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
-            "section_short": "K2 ABU BAKR AS-SIDEEQ (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": null,
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "Kinder 2 UTHMAN IBN AFFAN (1ST SHIFT)",
-            "section_short": "K2 UTHMAN IBN AFFAN (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-            "section_short": "G1 - ALI IBN ABI TALIB(1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-            "section_short": "G2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
-            "section_short": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-            "section_short": "G1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-            "section_short": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Hadith",
-            "label": "Hadith",
-            "section": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-            "section_short": "K1 - HUSAIN IBN ALI (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Hadith",
-            "label": "Hadith",
-            "section": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
-            "section_short": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
-            "section_short": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-            "section_short": "G2 - SAEED IBN ZAYD (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Hadith",
-            "label": "Hadith",
-            "section": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
-            "section_short": "K2 - UMAR IBN AL-KHATTAB (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-            "section_short": "G1 - SUHAYB AR-RUMI (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-            "section_short": "G1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-            "section_short": "G5 - HAMZA IBN ABDUL (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-            "section_short": "G5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
-            "section_short": "G5 - HAMZA IBN ABDUL (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-            "section_short": "G5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-            "section_short": "G1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": null,
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-            "section_short": "G9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-            "section_short": "G2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-            "section_short": "G1 - ALI IBN ABI TALIB(1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-            "section_short": "G1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "3:40 – 4:20 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-            "section_short": "G5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": null,
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "SHAF",
-            "label": "SHAF",
-            "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-            "section_short": "G5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-            "section_short": "G2 - AASIM IBN THABIT (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-            "section_short": "G1 - SUHAYB AR-RUMI (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
         }
       }
     ]
@@ -5452,7 +3620,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 4,
-        "time": "8:25 – 9:10 AM",
+        "time": "8:25 \u2013 9:10 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Qur'an",
@@ -5465,7 +3633,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 4,
-        "time": "8:25 – 9:10 AM",
+        "time": "8:25 \u2013 9:10 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Qur'an",
@@ -5478,7 +3646,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 3,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Qur'an",
@@ -5491,7 +3659,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 3,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Qur'an",
@@ -5504,7 +3672,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Qur'an",
@@ -5517,7 +3685,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Qur'an",
@@ -5530,7 +3698,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Qur'an",
@@ -5543,7 +3711,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Qur'an",
@@ -5556,7 +3724,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Qur'an",
@@ -5569,7 +3737,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Qur'an",
@@ -5582,7 +3750,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Qur'an",
@@ -5595,7 +3763,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Qur'an",
@@ -5608,7 +3776,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Qur'an",
@@ -5621,7 +3789,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Qur'an",
@@ -5634,7 +3802,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Qur'an",
@@ -5647,7 +3815,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Qur'an",
@@ -5660,7 +3828,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Qur'an",
@@ -5673,7 +3841,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Qur'an",
@@ -5686,7 +3854,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Qur'an",
@@ -5699,7 +3867,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Qur'an",
@@ -5712,7 +3880,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Qur'an",
@@ -5726,7 +3894,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "8:25 – 9:10 AM",
+        "time": "8:25 \u2013 9:10 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -5768,7 +3936,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -5840,7 +4008,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -5867,7 +4035,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -5939,7 +4107,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -5981,7 +4149,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -6023,7 +4191,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -6065,7 +4233,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -6107,7 +4275,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -6165,7 +4333,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Arabic",
@@ -6178,7 +4346,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -6191,7 +4359,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Arabic",
@@ -6204,7 +4372,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -6217,7 +4385,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Arabic",
@@ -6230,7 +4398,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -6269,7 +4437,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Arabic",
@@ -6282,7 +4450,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Arabic",
@@ -6295,7 +4463,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Arabic",
@@ -6308,7 +4476,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Arabic",
@@ -6321,7 +4489,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 1,
-        "time": "2:20 – 3:00 PM",
+        "time": "2:20 \u2013 3:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Arabic",
@@ -6335,7 +4503,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -6392,7 +4560,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -6419,7 +4587,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -6461,7 +4629,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -6530,7 +4698,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -6572,7 +4740,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -6599,7 +4767,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:20 – 3:00 PM",
+        "time": "2:20 \u2013 3:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -6627,997 +4795,6 @@ window.TEACHER_WEEKLY_SCHEDULES = {
       }
     ]
   },
-  "tchr_obaydah": {
-    "id": "tchr_obaydah",
-    "teacher_id": "tchr_obaydah",
-    "name": "Ustadh Obaydah",
-    "teacher_name": "Ustadh Obaydah",
-    "canonical_name": "Ustadh Obaydah",
-    "department": "ISAL Faculty",
-    "periods": [
-      {
-        "section_id": "sec_grade_1_face_to_face",
-        "section_name": "GRADE 1 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 – 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Monday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_1_face_to_face",
-        "section_name": "GRADE 1 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 – 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Wednesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_2_face_to_face",
-        "section_name": "GRADE 2 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "F2F",
-        "period_num": 7,
-        "time": "10:45:11:30 AM",
-        "minutes": "45 min.",
-        "day": "Sunday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_2_face_to_face",
-        "section_name": "GRADE 2 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "F2F",
-        "period_num": 7,
-        "time": "10:45:11:30 AM",
-        "minutes": "45 min.",
-        "day": "Monday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      },
-      {
-        "section_id": "sec_grade_2_face_to_face",
-        "section_name": "GRADE 2 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "F2F",
-        "period_num": 7,
-        "time": "10:45:11:30 AM",
-        "minutes": "45 min.",
-        "day": "Tuesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_2_face_to_face",
-        "section_name": "GRADE 2 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "F2F",
-        "period_num": 7,
-        "time": "10:45:11:30 AM",
-        "minutes": "45 min.",
-        "day": "Wednesday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      },
-      {
-        "section_id": "sec_grade_2_face_to_face",
-        "section_name": "GRADE 2 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "F2F",
-        "period_num": 7,
-        "time": "10:45:11:30 AM",
-        "minutes": "45 min.",
-        "day": "Thursday",
-        "subject": "Arabic",
-        "raw_label": "Arabic"
-      },
-      {
-        "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
-        "section_name": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 6,
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
-        "section_name": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
-        "section_name": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 7,
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
-        "section_name": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 5,
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_3_face_to_face",
-        "section_name": "GRADE 3 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "F2F",
-        "period_num": 10,
-        "time": "1:25 – 2:10 PM",
-        "minutes": "45 min.",
-        "day": "Monday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_3_face_to_face",
-        "section_name": "GRADE 3 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "F2F",
-        "period_num": 10,
-        "time": "1:25 – 2:10 PM",
-        "minutes": "45 min.",
-        "day": "Wednesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_3_habib_ibn_zayd_al_ansari_1st_shift_girls",
-        "section_name": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 6,
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_3_ammar_ibn_yasir_1st_shift_boys",
-        "section_name": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_3_salman_al_farsi_1st_shift_mix",
-        "section_name": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_3_zayd_ibn_haritha_2nd_shift_girls",
-        "section_name": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 5,
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_3_thabit_ibn_qays_2nd_shift_boys",
-        "section_name": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 7,
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_3_as_ad_ibn_zurarah_2nd_shift_mix",
-        "section_name": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 5,
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_4_face_to_face",
-        "section_name": "GRADE 4 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 4",
-        "shift": "F2F",
-        "period_num": 9,
-        "time": "12:40 – 1:25 PM",
-        "minutes": "45 min.",
-        "day": "Monday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_4_face_to_face",
-        "section_name": "GRADE 4 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 4",
-        "shift": "F2F",
-        "period_num": 9,
-        "time": "12:40 – 1:25 PM",
-        "minutes": "45 min.",
-        "day": "Wednesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
-        "section_name": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 4",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
-        "section_name": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 4",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 6,
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
-        "section_name": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 4",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 5,
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
-        "section_name": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 4",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 7,
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_5_face_to_face",
-        "section_name": "GRADE 5 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "F2F",
-        "period_num": 3,
-        "time": "8:25 – 9:05 AM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_5_face_to_face",
-        "section_name": "GRADE 5 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "F2F",
-        "period_num": 3,
-        "time": "8:25 – 9:05 AM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_5_ayyash_ibn_abi_rabi_ah_1st_shift",
-        "section_name": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 3,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "Qur'an5",
-        "raw_label": "Qur'an5"
-      },
-      {
-        "section_id": "sec_grade_5_ja_far_ibn_abi_talib_2nd_shift_mix",
-        "section_name": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 5,
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Monday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_6_dihya_ibn_khalifah_2nd_shift_girls",
-        "section_name": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
-        "department": "Elementary",
-        "grade_level": "Grade 6",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 3,
-        "time": "3:40 – 4:20 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      }
-    ],
-    "total_classes": 30,
-    "total_teaching_periods": 30,
-    "subjects": [
-      "Arabic",
-      "Qur'an",
-      "Qur'an5"
-    ],
-    "rows": [
-      {
-        "time": "2:15 – 3:00 PM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": null,
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 1 (FACE TO FACE)",
-            "section_short": "G1 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": null,
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 1 (FACE TO FACE)",
-            "section_short": "G1 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": null
-        }
-      },
-      {
-        "time": "10:45:11:30 AM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 2 (FACE TO FACE)",
-            "section_short": "G2 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 2 (FACE TO FACE)",
-            "section_short": "G2 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 2 (FACE TO FACE)",
-            "section_short": "G2 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 2 (FACE TO FACE)",
-            "section_short": "G2 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Arabic",
-            "label": "Arabic",
-            "section": "GRADE 2 (FACE TO FACE)",
-            "section_short": "G2 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "02:20 – 03:00 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-            "section_short": "G3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": null,
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
-            "section_short": "G4 - HAKIM IBN HAZM(1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": null,
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-            "section_short": "G2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "12:40 – 01:20 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
-            "section_short": "G3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-            "section_short": "G2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "5:20 – 6:00 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
-            "section_short": "G3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
-            "section_short": "G5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
-            "section_short": "G4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": null,
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-            "section_short": "G2 - SAEED IBN ZAYD (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "4:30 – 5:10 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-            "section_short": "G3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
-            "section_short": "G4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-            "section_short": "G2 - AASIM IBN THABIT (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": null,
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-            "section_short": "G3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "1:25 – 2:10 PM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": null,
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 3 (FACE TO FACE)",
-            "section_short": "G3 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": null,
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 3 (FACE TO FACE)",
-            "section_short": "G3 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": null
-        }
-      },
-      {
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an5",
-            "label": "Qur'an5",
-            "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-            "section_short": "G5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Monday": null,
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
-            "section_short": "G4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": null,
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-            "section_short": "G3 - SALMAN AL FARSI (1ST SHIFT) MIX",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      },
-      {
-        "time": "12:40 – 1:25 PM",
-        "minutes": "45 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": null,
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 4 (FACE TO FACE)",
-            "section_short": "G4 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": null,
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 4 (FACE TO FACE)",
-            "section_short": "G4 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": null
-        }
-      },
-      {
-        "time": "8:25 – 9:05 AM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": null,
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 5 (FACE TO FACE)",
-            "section_short": "G5 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": null,
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 5 (FACE TO FACE)",
-            "section_short": "G5 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          },
-          "Thursday": null
-        }
-      },
-      {
-        "time": "3:40 – 4:20 PM",
-        "minutes": "40 min.",
-        "is_break": false,
-        "days": {
-          "Sunday": null,
-          "Monday": null,
-          "Tuesday": null,
-          "Wednesday": null,
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Qur'an",
-            "label": "Qur'an",
-            "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
-            "section_short": "G6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#f3e8ff",
-              "border": "#d8b4fe",
-              "text": "#6b21a8"
-            },
-            "has_conflict": false
-          }
-        }
-      }
-    ]
-  },
   "tchr_saliha": {
     "id": "tchr_saliha",
     "teacher_id": "tchr_saliha",
@@ -7633,7 +4810,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 4,
-        "time": "8:25 – 9:10 AM",
+        "time": "8:25 \u2013 9:10 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Hadith",
@@ -7646,7 +4823,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 4,
-        "time": "8:25 – 9:10 AM",
+        "time": "8:25 \u2013 9:10 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Arabic",
@@ -7659,7 +4836,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 4,
-        "time": "8:25 – 9:10 AM",
+        "time": "8:25 \u2013 9:10 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Arabic",
@@ -7672,7 +4849,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Hadith",
@@ -7685,7 +4862,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Hadith",
@@ -7698,7 +4875,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 3,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Arabic",
@@ -7711,7 +4888,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 3,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Hadith",
@@ -7724,7 +4901,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 3,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -7737,7 +4914,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "GMRC",
@@ -7750,7 +4927,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "GMRC",
@@ -7763,7 +4940,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -7776,7 +4953,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "GMRC",
@@ -7789,7 +4966,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "GMRC",
@@ -7802,7 +4979,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "GMRC",
@@ -7815,7 +4992,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "GMRC",
@@ -7828,7 +5005,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -7841,7 +5018,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "GMRC",
@@ -7854,7 +5031,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "GMRC",
@@ -7867,7 +5044,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "GMRC",
@@ -7880,7 +5057,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -7893,7 +5070,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "GMRC",
@@ -7906,7 +5083,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "GMRC",
@@ -7919,7 +5096,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "GMRC",
@@ -7932,7 +5109,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "GMRC",
@@ -7945,7 +5122,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "GMRC",
@@ -7958,7 +5135,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -8023,7 +5200,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "GMRC3",
@@ -8036,7 +5213,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "GMRC5",
@@ -8049,7 +5226,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "GMRC",
@@ -8067,7 +5244,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "8:25 – 9:10 AM",
+        "time": "8:25 \u2013 9:10 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -8124,7 +5301,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -8181,7 +5358,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -8238,7 +5415,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -8310,7 +5487,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -8337,7 +5514,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -8409,7 +5586,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -8496,7 +5673,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -8655,7 +5832,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -8698,7 +5875,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "SHAF",
@@ -8711,7 +5888,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -8724,7 +5901,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "SHAF",
@@ -8737,7 +5914,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -8750,7 +5927,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "SHAF",
@@ -8763,7 +5940,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "SHAF",
@@ -8776,7 +5953,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "SHAF",
@@ -8789,7 +5966,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "SHAF",
@@ -8802,7 +5979,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "SHAF",
@@ -8815,7 +5992,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "SHAF",
@@ -8828,7 +6005,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "SHAF",
@@ -8841,7 +6018,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -8854,7 +6031,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "SHAF",
@@ -8867,7 +6044,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -8880,7 +6057,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "SHAF",
@@ -8893,7 +6070,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -8906,7 +6083,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -8945,7 +6122,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "SHAF",
@@ -8958,7 +6135,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "SHAF",
@@ -8971,7 +6148,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "SHAF",
@@ -8984,7 +6161,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -8997,7 +6174,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 1,
-        "time": "2:20 – 3:00 PM",
+        "time": "2:20 \u2013 3:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "SHAF",
@@ -9011,7 +6188,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -9083,7 +6260,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -9125,7 +6302,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -9167,7 +6344,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -9209,7 +6386,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -9266,7 +6443,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -9293,7 +6470,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -9335,7 +6512,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -9434,7 +6611,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -9476,7 +6653,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:20 – 3:00 PM",
+        "time": "2:20 \u2013 3:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -9519,7 +6696,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Arabic",
@@ -9532,7 +6709,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Arabic",
@@ -9545,7 +6722,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Arabic",
@@ -9558,7 +6735,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -9571,7 +6748,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Arabic",
@@ -9584,7 +6761,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Arabic",
@@ -9597,7 +6774,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "GMRC",
@@ -9610,7 +6787,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Arabic",
@@ -9623,7 +6800,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -9636,7 +6813,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Arabic",
@@ -9649,7 +6826,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Arabic",
@@ -9662,7 +6839,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -9675,7 +6852,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "GMRC",
@@ -9688,7 +6865,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Arabic",
@@ -9701,7 +6878,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -9714,7 +6891,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "GMRC",
@@ -9740,7 +6917,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "GMRC",
@@ -9753,7 +6930,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "GMRC",
@@ -9766,7 +6943,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "GMRC",
@@ -9779,7 +6956,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "GMRC",
@@ -9792,7 +6969,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "GMRC",
@@ -9805,7 +6982,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -9818,7 +6995,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "GMRC",
@@ -9870,7 +7047,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "GMRC",
@@ -9883,7 +7060,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "GMRC",
@@ -9896,7 +7073,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "GMRC",
@@ -9911,7 +7088,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -9968,7 +7145,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -10055,7 +7232,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -10112,7 +7289,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -10154,7 +7331,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -10241,7 +7418,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -10313,7 +7490,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -10442,7 +7619,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -10485,7 +7662,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Aral Math",
@@ -10498,7 +7675,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Aral Math",
@@ -10511,7 +7688,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Aral Math",
@@ -10524,7 +7701,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "MAPEH",
@@ -10537,7 +7714,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "MAPEH",
@@ -10550,7 +7727,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "MAPEH",
@@ -10563,7 +7740,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "MAPEH",
@@ -10576,7 +7753,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "MAPEH",
@@ -10589,7 +7766,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "MAPEH",
@@ -10602,7 +7779,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Aral Math",
@@ -10615,7 +7792,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "MAPEH",
@@ -10628,7 +7805,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MAPEH",
@@ -10641,7 +7818,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MAPEH",
@@ -10654,7 +7831,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "MAPEH",
@@ -10667,7 +7844,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "PE 12",
@@ -10680,7 +7857,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "PE 12",
@@ -10693,7 +7870,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "PE 12",
@@ -10706,7 +7883,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 7,
-        "time": "03:00 – 03:40 PM",
+        "time": "03:00 \u2013 03:40 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "PE 12",
@@ -10719,7 +7896,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 7,
-        "time": "03:00 – 03:40 PM",
+        "time": "03:00 \u2013 03:40 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "PE 12",
@@ -10735,7 +7912,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -10762,7 +7939,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -10789,7 +7966,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -10861,7 +8038,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -10918,7 +8095,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -10990,7 +8167,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -11017,7 +8194,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -11044,7 +8221,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -11071,7 +8248,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -11098,7 +8275,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "03:00 – 03:40 PM",
+        "time": "03:00 \u2013 03:40 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -11156,7 +8333,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "TLE",
@@ -11169,7 +8346,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "TLE",
@@ -11182,7 +8359,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "TLE",
@@ -11195,7 +8372,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "TLE",
@@ -11208,7 +8385,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "TLE",
@@ -11221,7 +8398,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "TLE",
@@ -11234,7 +8411,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "TLE",
@@ -11247,7 +8424,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "TLE",
@@ -11260,7 +8437,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "TLE",
@@ -11273,7 +8450,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "MAPEH",
@@ -11286,7 +8463,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "TLE",
@@ -11299,7 +8476,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "TLE",
@@ -11314,7 +8491,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -11371,7 +8548,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -11428,7 +8605,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -11470,7 +8647,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -11512,7 +8689,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -11555,7 +8732,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Sci",
@@ -11568,7 +8745,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Sci",
@@ -11581,7 +8758,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Sci",
@@ -11594,7 +8771,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Sci",
@@ -11607,7 +8784,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Sci",
@@ -11620,7 +8797,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Sci",
@@ -11633,7 +8810,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Prac. Res. 2",
@@ -11646,7 +8823,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Prac. Res. 2",
@@ -11659,7 +8836,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Prac. Res. 2",
@@ -11672,7 +8849,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Prac. Res. 2",
@@ -11685,7 +8862,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Prac. Res. 2",
@@ -11698,7 +8875,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Prac. Res. 2",
@@ -11776,7 +8953,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Gen. Physics 1",
@@ -11789,7 +8966,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Gen. Physics 1",
@@ -11802,7 +8979,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Gen. Physics 1",
@@ -11815,7 +8992,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Prac. Res. 2",
@@ -11828,7 +9005,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Prac. Res. 2",
@@ -11841,7 +9018,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Gen. Physics 1",
@@ -11854,7 +9031,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 7,
-        "time": "03:00 – 03:40 PM",
+        "time": "03:00 \u2013 03:40 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Prac. Res. 2",
@@ -11867,7 +9044,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 7,
-        "time": "03:00 – 03:40 PM",
+        "time": "03:00 \u2013 03:40 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Prac. Res. 2",
@@ -11880,7 +9057,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 9,
-        "time": "3:50 – 4:30 PM",
+        "time": "3:50 \u2013 4:30 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Prac. Res. 2",
@@ -11896,7 +9073,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -11968,7 +9145,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -12010,7 +9187,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -12052,7 +9229,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -12139,7 +9316,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -12253,7 +9430,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -12280,7 +9457,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -12337,7 +9514,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "03:00 – 03:40 PM",
+        "time": "03:00 \u2013 03:40 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -12379,7 +9556,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:50 – 4:30 PM",
+        "time": "3:50 \u2013 4:30 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -12422,7 +9599,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Science",
@@ -12435,7 +9612,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -12448,7 +9625,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Science",
@@ -12461,7 +9638,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -12474,7 +9651,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Science",
@@ -12487,7 +9664,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -12500,7 +9677,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Science",
@@ -12513,7 +9690,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Science",
@@ -12526,7 +9703,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -12539,7 +9716,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Science",
@@ -12552,7 +9729,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "TLE",
@@ -12565,7 +9742,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -12578,7 +9755,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -12591,7 +9768,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "TLE",
@@ -12604,7 +9781,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -12617,7 +9794,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Science",
@@ -12630,7 +9807,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "TLE",
@@ -12643,7 +9820,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -12656,7 +9833,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -12669,7 +9846,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "TLE",
@@ -12682,7 +9859,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Science",
@@ -12695,7 +9872,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Science",
@@ -12708,7 +9885,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -12721,7 +9898,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Science",
@@ -12734,7 +9911,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -12747,7 +9924,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Science",
@@ -12762,7 +9939,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -12849,7 +10026,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -12936,7 +10113,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -13023,7 +10200,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -13095,7 +10272,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -13167,7 +10344,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -13240,7 +10417,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -13253,7 +10430,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -13266,7 +10443,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -13279,7 +10456,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -13292,7 +10469,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -13305,7 +10482,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "ARAL Reading",
@@ -13318,7 +10495,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "ARAL Math",
@@ -13331,7 +10508,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -13344,7 +10521,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -13357,7 +10534,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -13370,7 +10547,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -13383,7 +10560,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -13396,7 +10573,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -13409,7 +10586,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -13422,7 +10599,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -13435,7 +10612,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -13448,7 +10625,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -13461,7 +10638,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -13474,7 +10651,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -13487,7 +10664,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -13500,7 +10677,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -13513,7 +10690,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -13526,7 +10703,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -13539,7 +10716,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -13552,7 +10729,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -13565,7 +10742,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "ARAL Program",
@@ -13578,7 +10755,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "ARAL Program",
@@ -13591,7 +10768,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "ARAL Program",
@@ -13630,7 +10807,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "TLE",
@@ -13643,7 +10820,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "ARAL Program",
@@ -13656,7 +10833,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "ARAL Program",
@@ -13669,7 +10846,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "TLE",
@@ -13682,7 +10859,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "TLE",
@@ -13695,7 +10872,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "TLE",
@@ -13708,7 +10885,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "TLE",
@@ -13728,7 +10905,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -13815,7 +10992,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -13842,7 +11019,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -13869,7 +11046,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -13941,7 +11118,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -13998,7 +11175,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -14055,7 +11232,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -14127,7 +11304,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -14214,7 +11391,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -14271,7 +11448,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -14370,7 +11547,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -14397,7 +11574,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -14455,7 +11632,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Circle Time 1",
@@ -14468,7 +11645,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Circle Time 1",
@@ -14481,7 +11658,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Circle Time 1",
@@ -14494,7 +11671,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Circle Time 1",
@@ -14507,7 +11684,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Circle Time 1",
@@ -14520,7 +11697,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "CT 2",
@@ -14533,7 +11710,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "CT 2",
@@ -14546,7 +11723,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "CT 1",
@@ -14559,7 +11736,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "CT 1",
@@ -14572,7 +11749,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "CT 1",
@@ -14585,7 +11762,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "CT 1",
@@ -14598,7 +11775,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 6,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "CT 2",
@@ -14611,7 +11788,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 6,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "CT 1",
@@ -14624,7 +11801,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 6,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "CT 2",
@@ -14640,7 +11817,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -14727,7 +11904,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -14769,7 +11946,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -14841,7 +12018,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -14914,7 +12091,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -14927,7 +12104,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -14940,7 +12117,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -14953,7 +12130,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -14966,7 +12143,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -14979,7 +12156,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -14992,7 +12169,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "MIL",
@@ -15005,7 +12182,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "MIL",
@@ -15018,7 +12195,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "MIL",
@@ -15031,7 +12208,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "MIL",
@@ -15044,7 +12221,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MIL",
@@ -15057,7 +12234,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "MIL",
@@ -15070,7 +12247,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MIL",
@@ -15083,7 +12260,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 9,
-        "time": "3:50 – 4:30 PM",
+        "time": "3:50 \u2013 4:30 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "MIL",
@@ -15098,7 +12275,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -15170,7 +12347,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -15212,7 +12389,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -15254,7 +12431,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -15341,7 +12518,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:50 – 4:30 PM",
+        "time": "3:50 \u2013 4:30 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -15449,7 +12626,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -15462,7 +12639,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -15475,7 +12652,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -15488,7 +12665,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -15501,7 +12678,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -15514,7 +12691,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -15527,7 +12704,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -15540,7 +12717,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -15553,7 +12730,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -15566,7 +12743,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Science",
@@ -15579,7 +12756,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -15592,7 +12769,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Math",
@@ -15605,7 +12782,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -15618,7 +12795,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -15631,7 +12808,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -15644,7 +12821,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -15657,7 +12834,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Math",
@@ -15670,7 +12847,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -15683,7 +12860,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -15696,7 +12873,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -15709,7 +12886,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -15722,7 +12899,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -15735,7 +12912,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -15748,7 +12925,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -15761,7 +12938,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -15774,7 +12951,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -15877,7 +13054,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -15949,7 +13126,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -16021,7 +13198,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -16063,7 +13240,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -16150,7 +13327,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -16237,7 +13414,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -16279,7 +13456,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -16367,7 +13544,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "MAPEH",
@@ -16406,7 +13583,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "MAPEH",
@@ -16419,7 +13596,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "MAPEH",
@@ -16432,7 +13609,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "MAPEH",
@@ -16445,7 +13622,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MAPEH",
@@ -16458,7 +13635,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "MAPEH",
@@ -16471,7 +13648,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "MAPEH",
@@ -16484,7 +13661,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "MAPEH",
@@ -16497,7 +13674,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "MAPEH",
@@ -16510,7 +13687,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "MAPEH",
@@ -16524,7 +13701,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -16593,7 +13770,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -16650,7 +13827,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -16677,7 +13854,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -16704,7 +13881,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -16731,7 +13908,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -16758,7 +13935,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -16816,7 +13993,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "MAPEH",
@@ -16829,7 +14006,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "MAPEH",
@@ -16842,7 +14019,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "MAPEH",
@@ -16855,7 +14032,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MAPEH",
@@ -16868,7 +14045,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MAPEH",
@@ -16881,7 +14058,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MAPEH",
@@ -16894,7 +14071,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MAPEH",
@@ -16907,7 +14084,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "TLE",
@@ -16920,7 +14097,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "TLE",
@@ -16933,7 +14110,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "TLE",
@@ -16946,7 +14123,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "TLE",
@@ -16959,7 +14136,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "TLE",
@@ -16972,7 +14149,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "TLE",
@@ -16985,7 +14162,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "TLE",
@@ -16998,7 +14175,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "TLE",
@@ -17011,7 +14188,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "TLE",
@@ -17024,7 +14201,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "TLE",
@@ -17037,7 +14214,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "TLE",
@@ -17050,7 +14227,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "TLE",
@@ -17063,7 +14240,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "TLE",
@@ -17076,7 +14253,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "TLE",
@@ -17091,7 +14268,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -17148,7 +14325,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -17205,7 +14382,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -17247,7 +14424,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -17289,7 +14466,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -17316,7 +14493,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -17373,7 +14550,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -17415,7 +14592,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -17472,7 +14649,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -17499,7 +14676,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -17542,7 +14719,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "GMRC",
@@ -17555,7 +14732,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -17568,7 +14745,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "GMRC",
@@ -17581,7 +14758,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "GMRC",
@@ -17594,7 +14771,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -17607,7 +14784,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "GMRC",
@@ -17620,7 +14797,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -17633,7 +14810,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "English",
@@ -17646,7 +14823,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -17659,7 +14836,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -17672,7 +14849,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "English",
@@ -17698,7 +14875,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "English",
@@ -17711,7 +14888,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "English",
@@ -17724,7 +14901,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -17737,7 +14914,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -17750,7 +14927,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "English",
@@ -17763,7 +14940,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -17776,7 +14953,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -17789,7 +14966,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -17802,7 +14979,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -17815,7 +14992,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -17828,7 +15005,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "English",
@@ -17841,7 +15018,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -17854,7 +15031,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -17867,7 +15044,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -17880,7 +15057,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -17893,7 +15070,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -17906,7 +15083,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -17921,7 +15098,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -17978,7 +15155,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -18035,7 +15212,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -18122,7 +15299,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -18179,7 +15356,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -18236,7 +15413,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -18335,7 +15512,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -18422,7 +15599,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -18480,7 +15657,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Eng3",
@@ -18493,7 +15670,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Fil3",
@@ -18506,7 +15683,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Eng3",
@@ -18519,7 +15696,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Fil3",
@@ -18532,7 +15709,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Makabansa3",
@@ -18545,7 +15722,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Makabansa3",
@@ -18558,7 +15735,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Fil3",
@@ -18571,7 +15748,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English 3",
@@ -18584,7 +15761,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -18597,7 +15774,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Makabansa",
@@ -18610,7 +15787,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Makabansa",
@@ -18623,7 +15800,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -18636,7 +15813,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Eng4",
@@ -18649,7 +15826,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "TLE4",
@@ -18662,7 +15839,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Eng4",
@@ -18675,7 +15852,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "TLE",
@@ -18688,7 +15865,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 3,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Fil5",
@@ -18701,7 +15878,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 3,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "TLE5",
@@ -18714,7 +15891,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Filipino",
@@ -18727,7 +15904,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "TLE",
@@ -18752,7 +15929,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -18824,7 +16001,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -18911,7 +16088,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -18938,7 +16115,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -19010,7 +16187,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -19082,7 +16259,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -19140,7 +16317,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -19153,7 +16330,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Science",
@@ -19166,7 +16343,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Science",
@@ -19179,7 +16356,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -19192,7 +16369,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Science",
@@ -19218,7 +16395,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Math",
@@ -19231,7 +16408,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -19244,7 +16421,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -19257,7 +16434,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -19270,7 +16447,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -19283,7 +16460,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Science",
@@ -19296,7 +16473,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -19309,7 +16486,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -19322,7 +16499,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -19335,7 +16512,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -19348,7 +16525,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -19361,7 +16538,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math3",
@@ -19374,7 +16551,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math3",
@@ -19387,7 +16564,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Science",
@@ -19400,7 +16577,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -19413,7 +16590,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -19426,7 +16603,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -19439,7 +16616,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Science",
@@ -19452,7 +16629,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -19465,7 +16642,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -19478,7 +16655,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -19491,7 +16668,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math3",
@@ -19504,7 +16681,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math3",
@@ -19521,7 +16698,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -19635,7 +16812,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -19692,7 +16869,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -19764,7 +16941,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -19836,7 +17013,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -19878,7 +17055,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -19950,7 +17127,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -20022,7 +17199,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -20080,7 +17257,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "English",
@@ -20093,7 +17270,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "English",
@@ -20106,7 +17283,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -20119,7 +17296,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -20132,7 +17309,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "English",
@@ -20145,7 +17322,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "HG",
@@ -20158,7 +17335,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Filipino",
@@ -20171,7 +17348,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -20184,7 +17361,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -20197,7 +17374,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -20210,7 +17387,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -20223,7 +17400,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -20236,7 +17413,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -20249,7 +17426,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -20262,7 +17439,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 3,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Eng5",
@@ -20275,7 +17452,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Eng5",
@@ -20288,7 +17465,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -20301,7 +17478,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -20314,7 +17491,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -20327,7 +17504,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -20340,7 +17517,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -20353,7 +17530,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "English",
@@ -20366,7 +17543,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -20379,7 +17556,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -20392,7 +17569,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -20405,7 +17582,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -20418,7 +17595,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "English",
@@ -20431,7 +17608,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -20444,7 +17621,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -20457,7 +17634,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "English",
@@ -20470,7 +17647,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -20483,7 +17660,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -20496,7 +17673,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -20509,7 +17686,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -20522,7 +17699,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "English",
@@ -20539,7 +17716,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -20626,7 +17803,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -20653,7 +17830,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -20725,7 +17902,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -20797,7 +17974,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -20884,7 +18061,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -20911,7 +18088,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -20983,7 +18160,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -21040,7 +18217,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -21097,7 +18274,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -21200,7 +18377,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -21213,7 +18390,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -21226,7 +18403,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -21239,7 +18416,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -21252,7 +18429,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -21265,7 +18442,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -21278,7 +18455,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Math",
@@ -21291,7 +18468,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -21304,7 +18481,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -21317,7 +18494,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -21330,7 +18507,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -21343,7 +18520,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -21356,7 +18533,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -21369,7 +18546,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -21382,7 +18559,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -21395,7 +18572,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -21408,7 +18585,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -21421,7 +18598,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -21434,7 +18611,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -21447,7 +18624,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -21460,7 +18637,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Gen Math",
@@ -21473,7 +18650,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Gen Math",
@@ -21486,7 +18663,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Gen Math",
@@ -21499,7 +18676,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Gen Math",
@@ -21512,7 +18689,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Gen Math/HR",
@@ -21525,7 +18702,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Gen Math",
@@ -21538,7 +18715,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 8,
-        "time": "03:00 – 03:40 PM",
+        "time": "03:00 \u2013 03:40 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Gen Math",
@@ -21551,7 +18728,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 9,
-        "time": "3:50 – 4:30 PM",
+        "time": "3:50 \u2013 4:30 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Gen Math",
@@ -21564,7 +18741,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Gen Math",
@@ -21577,7 +18754,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 8,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Gen Math",
@@ -21590,7 +18767,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 8,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Gen Math",
@@ -21606,7 +18783,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -21693,7 +18870,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -21780,7 +18957,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -21822,7 +18999,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -21879,7 +19056,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -21921,7 +19098,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -21993,7 +19170,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -22050,7 +19227,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -22137,7 +19314,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "03:00 – 03:40 PM",
+        "time": "03:00 \u2013 03:40 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -22164,7 +19341,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:50 – 4:30 PM",
+        "time": "3:50 \u2013 4:30 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -22207,7 +19384,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Circle Time 1",
@@ -22220,7 +19397,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Circle Time 1",
@@ -22233,7 +19410,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Circle Time 1",
@@ -22246,7 +19423,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Circle Time 1",
@@ -22259,7 +19436,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Circle Time 1",
@@ -22272,7 +19449,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "CT 2",
@@ -22285,7 +19462,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "CT 2",
@@ -22298,7 +19475,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Circle Time 1",
@@ -22311,7 +19488,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Circle Time 1",
@@ -22324,7 +19501,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 6,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Circle Time 1",
@@ -22337,7 +19514,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 6,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Circle Time 2",
@@ -22350,7 +19527,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 6,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Circle Time 1",
@@ -22363,7 +19540,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 6,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Circle Time 2",
@@ -22376,7 +19553,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 6,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Circle Time 1",
@@ -22389,7 +19566,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -22402,7 +19579,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -22415,7 +19592,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -22428,7 +19605,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -22441,7 +19618,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -22454,7 +19631,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -22467,7 +19644,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -22480,7 +19657,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -22493,7 +19670,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -22506,7 +19683,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -22519,7 +19696,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -22532,7 +19709,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -22550,7 +19727,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -22637,7 +19814,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -22724,7 +19901,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -22796,7 +19973,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -22883,7 +20060,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -22940,7 +20117,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -23028,7 +20205,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "ARAL Math",
@@ -23041,7 +20218,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "ARAL Math",
@@ -23054,7 +20231,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "ARAL Reading",
@@ -23067,7 +20244,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "ARAL Science",
@@ -23080,7 +20257,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "ARAL Math",
@@ -23093,7 +20270,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "ARAL Reading",
@@ -23106,7 +20283,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "ARAL Reading",
@@ -23119,7 +20296,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -23132,7 +20309,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Science",
@@ -23145,7 +20322,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Science",
@@ -23158,7 +20335,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -23171,7 +20348,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Science",
@@ -23184,7 +20361,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -23197,7 +20374,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Science",
@@ -23210,7 +20387,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Science",
@@ -23223,7 +20400,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -23236,7 +20413,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Science",
@@ -23253,7 +20430,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -23340,7 +20517,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -23382,7 +20559,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -23469,7 +20646,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -23572,7 +20749,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Reading and Literacy",
@@ -23585,7 +20762,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Reading and Literacy",
@@ -23598,7 +20775,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Reading and Literacy",
@@ -23611,7 +20788,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Reading and Literacy",
@@ -23624,7 +20801,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Reading and Literacy",
@@ -23676,7 +20853,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "R & L",
@@ -23689,7 +20866,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "R & L",
@@ -23702,7 +20879,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "ARAL Reading",
@@ -23715,7 +20892,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "ARAL Reading",
@@ -23728,7 +20905,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "R & L",
@@ -23741,7 +20918,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "R & L",
@@ -23754,7 +20931,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "R & L",
@@ -23767,7 +20944,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "R & L",
@@ -23780,7 +20957,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "ARAL Reading",
@@ -23793,7 +20970,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "ARAL Reading",
@@ -23806,7 +20983,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "R & L",
@@ -23819,7 +20996,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "R & L",
@@ -23832,7 +21009,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -23845,7 +21022,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -23858,7 +21035,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -23871,7 +21048,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -23884,7 +21061,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -23897,7 +21074,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -23914,7 +21091,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -24058,7 +21235,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -24145,7 +21322,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -24202,7 +21379,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -24274,7 +21451,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -24301,7 +21478,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -24358,7 +21535,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -24416,7 +21593,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 2,
-        "time": "07:40 – 7:50 AM",
+        "time": "07:40 \u2013 7:50 AM",
         "minutes": "10 min.",
         "day": "Sunday",
         "subject": "Meeting Time",
@@ -24429,7 +21606,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 2,
-        "time": "07:40 – 7:50 AM",
+        "time": "07:40 \u2013 7:50 AM",
         "minutes": "10 min.",
         "day": "Monday",
         "subject": "Meeting Time",
@@ -24442,7 +21619,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 2,
-        "time": "07:40 – 7:50 AM",
+        "time": "07:40 \u2013 7:50 AM",
         "minutes": "10 min.",
         "day": "Tuesday",
         "subject": "Meeting Time",
@@ -24455,7 +21632,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 2,
-        "time": "07:40 – 7:50 AM",
+        "time": "07:40 \u2013 7:50 AM",
         "minutes": "10 min.",
         "day": "Wednesday",
         "subject": "Meeting Time",
@@ -24468,7 +21645,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 2,
-        "time": "07:40 – 7:50 AM",
+        "time": "07:40 \u2013 7:50 AM",
         "minutes": "10 min.",
         "day": "Thursday",
         "subject": "Meeting Time",
@@ -24481,7 +21658,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 3,
-        "time": "7:50 – 8:25 AM",
+        "time": "7:50 \u2013 8:25 AM",
         "minutes": "35 min.",
         "day": "Sunday",
         "subject": "Circle Time 1",
@@ -24494,7 +21671,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 3,
-        "time": "7:50 – 8:25 AM",
+        "time": "7:50 \u2013 8:25 AM",
         "minutes": "35 min.",
         "day": "Monday",
         "subject": "Circle Time 1",
@@ -24507,7 +21684,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 3,
-        "time": "7:50 – 8:25 AM",
+        "time": "7:50 \u2013 8:25 AM",
         "minutes": "35 min.",
         "day": "Tuesday",
         "subject": "Circle Time 1",
@@ -24520,7 +21697,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 3,
-        "time": "7:50 – 8:25 AM",
+        "time": "7:50 \u2013 8:25 AM",
         "minutes": "35 min.",
         "day": "Wednesday",
         "subject": "Circle Time 1",
@@ -24533,7 +21710,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 3,
-        "time": "7:50 – 8:25 AM",
+        "time": "7:50 \u2013 8:25 AM",
         "minutes": "35 min.",
         "day": "Thursday",
         "subject": "Circle Time 1",
@@ -24546,7 +21723,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 6,
-        "time": "9:30 – 10:15 AM",
+        "time": "9:30 \u2013 10:15 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Circle Time 2",
@@ -24559,7 +21736,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 6,
-        "time": "9:30 – 10:15 AM",
+        "time": "9:30 \u2013 10:15 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Circle Time 2",
@@ -24572,7 +21749,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 6,
-        "time": "9:30 – 10:15 AM",
+        "time": "9:30 \u2013 10:15 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Circle Time 2",
@@ -24585,7 +21762,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 6,
-        "time": "9:30 – 10:15 AM",
+        "time": "9:30 \u2013 10:15 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Circle Time 2",
@@ -24598,7 +21775,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 6,
-        "time": "9:30 – 10:15 AM",
+        "time": "9:30 \u2013 10:15 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Circle Time 2",
@@ -24611,7 +21788,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 7,
-        "time": "10:15 – 10:30 AM",
+        "time": "10:15 \u2013 10:30 AM",
         "minutes": "15 min.",
         "day": "Sunday",
         "subject": "Wrap-Up Time",
@@ -24624,7 +21801,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 7,
-        "time": "10:15 – 10:30 AM",
+        "time": "10:15 \u2013 10:30 AM",
         "minutes": "15 min.",
         "day": "Monday",
         "subject": "Wrap-Up Time",
@@ -24637,7 +21814,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 7,
-        "time": "10:15 – 10:30 AM",
+        "time": "10:15 \u2013 10:30 AM",
         "minutes": "15 min.",
         "day": "Tuesday",
         "subject": "Wrap-Up Time",
@@ -24650,7 +21827,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 7,
-        "time": "10:15 – 10:30 AM",
+        "time": "10:15 \u2013 10:30 AM",
         "minutes": "15 min.",
         "day": "Wednesday",
         "subject": "Wrap-Up Time",
@@ -24663,7 +21840,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "F2F",
         "period_num": 7,
-        "time": "10:15 – 10:30 AM",
+        "time": "10:15 \u2013 10:30 AM",
         "minutes": "15 min.",
         "day": "Thursday",
         "subject": "Wrap-Up Time",
@@ -24676,7 +21853,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 2,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Circle Time 1",
@@ -24689,7 +21866,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 2,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Circle Time 1",
@@ -24702,7 +21879,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 2,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Circle Time 1",
@@ -24715,7 +21892,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 2,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Circle Time 1",
@@ -24728,7 +21905,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 2,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Circle Time 1",
@@ -24741,7 +21918,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "CT 2",
@@ -24754,7 +21931,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "CT 2",
@@ -24767,7 +21944,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "MAPEH",
@@ -24780,7 +21957,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "MAPEH",
@@ -24793,7 +21970,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "MAPEH",
@@ -24806,7 +21983,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "MAPEH",
@@ -24819,7 +21996,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "MAPEH",
@@ -24832,7 +22009,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "AP",
@@ -24852,7 +22029,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "07:40 – 7:50 AM",
+        "time": "07:40 \u2013 7:50 AM",
         "minutes": "10 min.",
         "is_break": false,
         "days": {
@@ -24939,7 +22116,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "7:50 – 8:25 AM",
+        "time": "7:50 \u2013 8:25 AM",
         "minutes": "35 min.",
         "is_break": false,
         "days": {
@@ -25026,7 +22203,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "9:30 – 10:15 AM",
+        "time": "9:30 \u2013 10:15 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -25113,7 +22290,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:15 – 10:30 AM",
+        "time": "10:15 \u2013 10:30 AM",
         "minutes": "15 min.",
         "is_break": false,
         "days": {
@@ -25200,7 +22377,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -25287,7 +22464,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -25329,7 +22506,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -25371,7 +22548,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -25398,7 +22575,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -25440,7 +22617,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -25483,7 +22660,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "English",
@@ -25496,7 +22673,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "English",
@@ -25509,7 +22686,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -25522,7 +22699,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -25535,7 +22712,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "English",
@@ -25548,7 +22725,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "HG",
@@ -25561,7 +22738,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "ARAL Reading",
@@ -25574,7 +22751,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "ARAL Reading",
@@ -25587,7 +22764,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "ARAL Reading",
@@ -25600,7 +22777,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -25613,7 +22790,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -25626,7 +22803,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "ARAL Reading",
@@ -25639,7 +22816,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -25652,7 +22829,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -25665,7 +22842,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "ARAL Reading",
@@ -25678,7 +22855,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Aral Reading",
@@ -25691,7 +22868,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -25704,7 +22881,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -25717,7 +22894,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -25730,7 +22907,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -25743,7 +22920,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "ARAL Reading",
@@ -25756,7 +22933,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -25769,7 +22946,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -25782,7 +22959,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -25795,7 +22972,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -25808,7 +22985,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "English",
@@ -25821,7 +22998,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -25834,7 +23011,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -25847,7 +23024,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -25860,7 +23037,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -25873,7 +23050,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -25886,7 +23063,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -25899,7 +23076,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -25912,7 +23089,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -25929,7 +23106,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -26016,7 +23193,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -26043,7 +23220,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -26100,7 +23277,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -26157,7 +23334,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -26244,7 +23421,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -26301,7 +23478,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -26373,7 +23550,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -26430,7 +23607,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -26517,7 +23694,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -26575,7 +23752,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "MAKABANSA",
@@ -26588,7 +23765,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "MAKABANSA",
@@ -26601,7 +23778,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "MAKABANSA",
@@ -26614,7 +23791,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "MAKABANSA",
@@ -26627,7 +23804,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MAKABANSA",
@@ -26640,7 +23817,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Makabansa",
@@ -26653,7 +23830,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Makabansa",
@@ -26666,7 +23843,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Makabansa",
@@ -26679,7 +23856,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Makabansa",
@@ -26692,7 +23869,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Makabansa",
@@ -26705,7 +23882,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Makabansa",
@@ -26718,7 +23895,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "AP",
@@ -26731,7 +23908,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "TLE",
@@ -26744,7 +23921,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "AP",
@@ -26757,7 +23934,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "TLE",
@@ -26770,7 +23947,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "AP",
@@ -26796,7 +23973,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "HG",
@@ -26809,7 +23986,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "AP",
@@ -26822,7 +23999,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "TLE",
@@ -26835,7 +24012,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "FIL",
@@ -26848,7 +24025,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "AP",
@@ -26861,7 +24038,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "FIL",
@@ -26874,7 +24051,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "TLE",
@@ -26887,7 +24064,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "AP4",
@@ -26900,7 +24077,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "TLE",
@@ -26913,7 +24090,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "AP",
@@ -26926,7 +24103,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "AP",
@@ -26939,7 +24116,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "TLE",
@@ -26952,7 +24129,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "AP",
@@ -26965,7 +24142,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "AP",
@@ -26978,7 +24155,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "AP",
@@ -26991,7 +24168,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "AP",
@@ -27011,7 +24188,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -27098,7 +24275,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -27170,7 +24347,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -27242,7 +24419,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -27299,7 +24476,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -27413,7 +24590,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -27440,7 +24617,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -27527,7 +24704,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -27554,7 +24731,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -27642,7 +24819,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Filipino",
@@ -27655,7 +24832,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Filipino",
@@ -27668,7 +24845,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -27681,7 +24858,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -27694,7 +24871,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "HG",
@@ -27707,7 +24884,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Filipino",
@@ -27720,7 +24897,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -27733,7 +24910,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -27746,7 +24923,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -27759,7 +24936,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -27772,7 +24949,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -27785,7 +24962,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Filipino",
@@ -27798,7 +24975,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -27811,7 +24988,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Filipino",
@@ -27824,7 +25001,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -27837,7 +25014,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Filipino",
@@ -27850,7 +25027,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -27863,7 +25040,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -27876,7 +25053,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Filipino",
@@ -27889,10 +25066,10 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
-        "subject": "Effective Communication - EC",
+        "subject": "EC",
         "raw_label": "EC"
       },
       {
@@ -27902,10 +25079,10 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Monday",
-        "subject": "Effective Communication - EC",
+        "subject": "EC",
         "raw_label": "EC"
       },
       {
@@ -27915,10 +25092,10 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
-        "subject": "Effective Communication - EC",
+        "subject": "EC",
         "raw_label": "EC"
       },
       {
@@ -27928,10 +25105,10 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
-        "subject": "Effective Communication - EC",
+        "subject": "EC",
         "raw_label": "EC"
       },
       {
@@ -27941,10 +25118,10 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Thursday",
-        "subject": "Effective Communication - EC",
+        "subject": "EC",
         "raw_label": "EC"
       },
       {
@@ -27954,10 +25131,10 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
-        "subject": "Effective Communication - EC",
+        "subject": "EC",
         "raw_label": "EC"
       },
       {
@@ -27967,10 +25144,10 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
-        "subject": "Effective Communication - EC",
+        "subject": "EC",
         "raw_label": "EC"
       },
       {
@@ -27980,10 +25157,10 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 8,
-        "time": "03:00 – 03:40 PM",
+        "time": "03:00 \u2013 03:40 PM",
         "minutes": "40 min.",
         "day": "Sunday",
-        "subject": "Effective Communication - EC",
+        "subject": "EC",
         "raw_label": "EC"
       },
       {
@@ -27993,10 +25170,10 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 2,
-        "time": "3:00 – 3:30 PM",
+        "time": "3:00 \u2013 3:30 PM",
         "minutes": "30 min.",
         "day": "Thursday",
-        "subject": "Effective Communication - EC",
+        "subject": "EC",
         "raw_label": "EC"
       },
       {
@@ -28006,10 +25183,10 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
-        "subject": "Effective Communication - EC",
+        "subject": "EC",
         "raw_label": "EC"
       },
       {
@@ -28019,10 +25196,10 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 6,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
-        "subject": "Effective Communication - EC",
+        "subject": "EC",
         "raw_label": "EC"
       }
     ],
@@ -28035,7 +25212,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -28107,7 +25284,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -28194,7 +25371,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -28266,7 +25443,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -28323,7 +25500,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -28380,7 +25557,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -28422,7 +25599,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -28509,7 +25686,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -28551,7 +25728,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "03:00 – 03:40 PM",
+        "time": "03:00 \u2013 03:40 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -28578,7 +25755,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:00 – 3:30 PM",
+        "time": "3:00 \u2013 3:30 PM",
         "minutes": "30 min.",
         "is_break": false,
         "days": {
@@ -28621,7 +25798,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "ESP",
@@ -28634,7 +25811,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "ESP",
@@ -28647,7 +25824,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "ESP",
@@ -28660,7 +25837,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "ESP",
@@ -28673,7 +25850,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "ESP",
@@ -28686,7 +25863,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "ESP",
@@ -28699,7 +25876,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "ESP",
@@ -28712,7 +25889,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "ESP",
@@ -28725,7 +25902,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "ESP",
@@ -28738,7 +25915,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "ESP",
@@ -28751,7 +25928,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "ESP",
@@ -28764,7 +25941,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "21st Lit.",
@@ -28777,7 +25954,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "21st Lit.",
@@ -28790,7 +25967,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "21st Lit.",
@@ -28803,7 +25980,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "21st Lit.",
@@ -28816,7 +25993,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "21st Lit.",
@@ -28829,7 +26006,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "21st Lit.",
@@ -28842,7 +26019,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "21st Lit.",
@@ -28855,7 +26032,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 9,
-        "time": "3:50 – 4:30 PM",
+        "time": "3:50 \u2013 4:30 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "21st Lit.",
@@ -28870,7 +26047,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -28927,7 +26104,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -28984,7 +26161,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -29026,7 +26203,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -29053,7 +26230,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -29095,7 +26272,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -29182,7 +26359,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -29224,7 +26401,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:50 – 4:30 PM",
+        "time": "3:50 \u2013 4:30 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -29267,7 +26444,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "English",
@@ -29280,7 +26457,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "ENGLISH",
@@ -29293,7 +26470,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "ENGLISH",
@@ -29306,7 +26483,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "ENGLISH",
@@ -29319,7 +26496,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "ENGLISH",
@@ -29397,7 +26574,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -29410,7 +26587,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "English",
@@ -29423,7 +26600,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -29436,7 +26613,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -29449,7 +26626,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "English",
@@ -29462,7 +26639,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -29475,7 +26652,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -29488,7 +26665,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "English",
@@ -29501,7 +26678,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "English",
@@ -29514,7 +26691,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -29527,7 +26704,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "LCS",
@@ -29540,7 +26717,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "LCS",
@@ -29553,7 +26730,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "LCS",
@@ -29566,7 +26743,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "LCS",
@@ -29579,7 +26756,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "LCS",
@@ -29592,7 +26769,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "LCS",
@@ -29605,7 +26782,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "LCS",
@@ -29618,7 +26795,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "LCS",
@@ -29631,7 +26808,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 1,
-        "time": "2:20 – 3:00 PM",
+        "time": "2:20 \u2013 3:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "LCS",
@@ -29644,7 +26821,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 8,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "LCS",
@@ -29660,7 +26837,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -29834,7 +27011,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -29906,7 +27083,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -29978,7 +27155,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -30035,7 +27212,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -30122,7 +27299,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -30179,7 +27356,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:20 – 3:00 PM",
+        "time": "2:20 \u2013 3:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -30222,7 +27399,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "MAKABANSA",
@@ -30235,7 +27412,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "MAKABANSA",
@@ -30248,7 +27425,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "MAKABANSA",
@@ -30261,7 +27438,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "MAKABANSA",
@@ -30274,7 +27451,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "MAKABANSA",
@@ -30287,7 +27464,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Makabansa",
@@ -30300,7 +27477,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Makabansa",
@@ -30313,7 +27490,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Makabansa",
@@ -30326,7 +27503,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Makabansa",
@@ -30339,7 +27516,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Makabansa",
@@ -30352,7 +27529,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Makabansa",
@@ -30365,7 +27542,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Makabansa",
@@ -30378,7 +27555,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Makabansa",
@@ -30443,7 +27620,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "English",
@@ -30456,7 +27633,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "English",
@@ -30469,7 +27646,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "English",
@@ -30482,7 +27659,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "English",
@@ -30495,7 +27672,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "English",
@@ -30508,7 +27685,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Filipino",
@@ -30521,7 +27698,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Filipino",
@@ -30534,7 +27711,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "AP",
@@ -30547,7 +27724,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "AP",
@@ -30560,7 +27737,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "AP",
@@ -30573,7 +27750,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "MAPEH",
@@ -30586,7 +27763,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "MAPEH",
@@ -30605,7 +27782,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -30692,7 +27869,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -30764,7 +27941,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -30821,7 +27998,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -30935,7 +28112,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -31022,7 +28199,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -31079,7 +28256,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -31152,7 +28329,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Filipino",
@@ -31165,7 +28342,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Filipino",
@@ -31178,7 +28355,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -31191,7 +28368,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -31204,7 +28381,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -31217,7 +28394,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -31230,7 +28407,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -31243,7 +28420,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -31256,7 +28433,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -31269,7 +28446,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -31282,7 +28459,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -31295,7 +28472,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -31308,7 +28485,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -31321,7 +28498,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Filipino",
@@ -31334,7 +28511,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Filipino",
@@ -31347,7 +28524,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -31360,7 +28537,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -31373,7 +28550,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "HG",
@@ -31386,7 +28563,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "AP",
@@ -31399,7 +28576,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "AP",
@@ -31412,7 +28589,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "AP",
@@ -31425,7 +28602,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Fil",
@@ -31438,7 +28615,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "AP",
@@ -31451,7 +28628,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -31468,7 +28645,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -31555,7 +28732,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -31597,7 +28774,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -31669,7 +28846,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -31711,7 +28888,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -31753,7 +28930,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -31840,7 +29017,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -31928,7 +29105,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Sci",
@@ -31941,7 +29118,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Sci",
@@ -31954,7 +29131,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Sci",
@@ -31967,7 +29144,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Sci",
@@ -31980,7 +29157,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Sci",
@@ -31993,7 +29170,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Sci",
@@ -32006,7 +29183,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Sci",
@@ -32019,7 +29196,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Aral.Sci",
@@ -32032,7 +29209,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Sci",
@@ -32045,7 +29222,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Sci",
@@ -32058,7 +29235,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Sci",
@@ -32071,7 +29248,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Sci",
@@ -32084,7 +29261,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Sci",
@@ -32097,7 +29274,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Sci",
@@ -32110,7 +29287,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Sci",
@@ -32123,7 +29300,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Sci",
@@ -32136,7 +29313,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Gen Bio 1",
@@ -32149,7 +29326,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Gen Bio 1",
@@ -32162,7 +29339,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Gen Bio 1",
@@ -32175,7 +29352,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Gen Bio 1",
@@ -32188,7 +29365,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Gen Bio 1",
@@ -32201,7 +29378,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Gen Bio 1",
@@ -32214,7 +29391,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Gen Bio 1",
@@ -32227,7 +29404,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Gen Bio 1",
@@ -32240,7 +29417,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Gen Bio 1",
@@ -32253,7 +29430,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Gen Bio 1",
@@ -32266,7 +29443,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Gen Bio 1",
@@ -32279,7 +29456,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Gen Bio 1",
@@ -32292,7 +29469,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Gen Bio 1",
@@ -32305,7 +29482,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Gen Bio 1",
@@ -32318,7 +29495,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 12",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Gen Bio 1",
@@ -32331,7 +29508,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 1,
-        "time": "2:20 – 3:00 PM",
+        "time": "2:20 \u2013 3:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Gen Bio 1",
@@ -32344,7 +29521,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 1,
-        "time": "2:20 – 3:00 PM",
+        "time": "2:20 \u2013 3:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Gen Bio 1",
@@ -32357,7 +29534,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 6,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Gen Bio 1",
@@ -32373,7 +29550,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -32460,7 +29637,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -32547,7 +29724,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -32634,7 +29811,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -32676,7 +29853,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -32733,7 +29910,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -32820,7 +29997,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -32847,7 +30024,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:20 – 3:00 PM",
+        "time": "2:20 \u2013 3:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -32970,7 +30147,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -32983,7 +30160,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Science",
@@ -32996,7 +30173,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Science",
@@ -33009,7 +30186,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -33022,7 +30199,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Science",
@@ -33035,7 +30212,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Sci",
@@ -33048,7 +30225,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Sci",
@@ -33061,7 +30238,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Sci",
@@ -33074,7 +30251,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Sci",
@@ -33087,7 +30264,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Sci",
@@ -33100,7 +30277,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Sci",
@@ -33113,7 +30290,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Sci",
@@ -33126,7 +30303,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Sci",
@@ -33139,7 +30316,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Sci",
@@ -33152,7 +30329,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Sci",
@@ -33165,7 +30342,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Gen Science",
@@ -33178,7 +30355,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Gen Science",
@@ -33191,7 +30368,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Gen Science",
@@ -33204,7 +30381,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Gen Science",
@@ -33217,7 +30394,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Gen Science",
@@ -33230,7 +30407,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Gen Bio 1",
@@ -33243,7 +30420,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Gen Bio 1",
@@ -33256,7 +30433,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Gen Bio 1",
@@ -33269,7 +30446,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 8,
-        "time": "03:00 – 03:40 PM",
+        "time": "03:00 \u2013 03:40 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Gen Science",
@@ -33282,7 +30459,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 8,
-        "time": "03:00 – 03:40 PM",
+        "time": "03:00 \u2013 03:40 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Gen Science",
@@ -33295,7 +30472,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 8,
-        "time": "03:00 – 03:40 PM",
+        "time": "03:00 \u2013 03:40 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Gen Science",
@@ -33308,7 +30485,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Gen Science",
@@ -33321,7 +30498,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 6,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Gen Science",
@@ -33334,7 +30511,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 8,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Gen Science",
@@ -33438,7 +30615,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -33525,7 +30702,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -33597,7 +30774,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -33654,7 +30831,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -33711,7 +30888,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -33768,7 +30945,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -33855,7 +31032,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -33912,7 +31089,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "03:00 – 03:40 PM",
+        "time": "03:00 \u2013 03:40 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -33985,7 +31162,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "HG",
@@ -33998,7 +31175,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Language",
@@ -34011,7 +31188,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Language",
@@ -34024,7 +31201,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Language",
@@ -34037,7 +31214,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Language",
@@ -34050,7 +31227,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Language",
@@ -34063,7 +31240,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Arabic",
@@ -34076,7 +31253,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Arabic",
@@ -34089,7 +31266,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 11,
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Arabic",
@@ -34102,7 +31279,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "GMRC",
@@ -34115,7 +31292,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -34128,7 +31305,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Language",
@@ -34141,7 +31318,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Language",
@@ -34154,7 +31331,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Language",
@@ -34167,7 +31344,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Language",
@@ -34180,7 +31357,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "GMRC",
@@ -34193,7 +31370,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -34206,7 +31383,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Language",
@@ -34219,7 +31396,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Language",
@@ -34232,7 +31409,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Language",
@@ -34245,7 +31422,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Language",
@@ -34258,7 +31435,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "GMRC",
@@ -34271,7 +31448,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -34284,7 +31461,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "GMRC",
@@ -34297,7 +31474,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "GMRC",
@@ -34310,7 +31487,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "GMRC",
@@ -34323,7 +31500,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "GMRC",
@@ -34336,7 +31513,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "GMRC",
@@ -34349,7 +31526,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 3,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "GMRC4",
@@ -34362,7 +31539,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "GMRC",
@@ -34375,7 +31552,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "GMRC",
@@ -34388,7 +31565,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "GMRC",
@@ -34406,7 +31583,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -34433,7 +31610,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -34520,7 +31697,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:15 – 3:00 PM",
+        "time": "2:15 \u2013 3:00 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -34577,7 +31754,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -34664,7 +31841,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -34721,7 +31898,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -34808,7 +31985,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -34850,7 +32027,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -34922,7 +32099,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -34964,7 +32141,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -34991,7 +32168,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -35034,7 +32211,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Sci3",
@@ -35047,7 +32224,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Sci3",
@@ -35060,7 +32237,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -35073,7 +32250,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Science",
@@ -35086,7 +32263,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math4",
@@ -35099,7 +32276,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math4",
@@ -35112,7 +32289,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Sci4",
@@ -35125,7 +32302,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Sci4",
@@ -35138,7 +32315,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -35151,7 +32328,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -35164,7 +32341,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Science 4",
@@ -35177,7 +32354,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Science 4",
@@ -35190,7 +32367,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Sci5",
@@ -35203,7 +32380,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Sci5",
@@ -35216,7 +32393,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 3,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "MAPEH5",
@@ -35229,7 +32406,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math5",
@@ -35242,7 +32419,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math5",
@@ -35255,7 +32432,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "AP5",
@@ -35268,7 +32445,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "MAPEH",
@@ -35281,7 +32458,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "MATH",
@@ -35294,7 +32471,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "AP",
@@ -35307,7 +32484,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "MATH",
@@ -35320,7 +32497,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -35333,7 +32510,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 5",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -35346,7 +32523,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -35359,7 +32536,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -35385,7 +32562,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -35442,7 +32619,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -35529,7 +32706,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -35601,7 +32778,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -35688,7 +32865,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -35775,7 +32952,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -35863,7 +33040,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Soc.Sci",
@@ -35876,7 +33053,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Soc.Sci",
@@ -35889,7 +33066,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Soc.Sci",
@@ -35902,7 +33079,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Soc.Sci",
@@ -35915,7 +33092,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "HG",
@@ -35928,7 +33105,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Soc.Sci",
@@ -35941,7 +33118,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Soc.Sci",
@@ -35954,7 +33131,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Soc.Sci",
@@ -35967,7 +33144,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Soc.Sci",
@@ -35980,7 +33157,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Soc.Sci",
@@ -35993,7 +33170,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Soc.Sci",
@@ -36006,7 +33183,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Soc.Sci",
@@ -36019,7 +33196,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Soc.Sci",
@@ -36032,7 +33209,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Soc.Sci",
@@ -36045,7 +33222,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Soc.Sci",
@@ -36058,7 +33235,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Soc.Sci",
@@ -36071,7 +33248,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Soc.Sci",
@@ -36084,7 +33261,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Soc.Sci",
@@ -36097,7 +33274,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "PSKP",
@@ -36110,7 +33287,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "PSKP",
@@ -36123,7 +33300,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "PSKP",
@@ -36136,7 +33313,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "PSKP",
@@ -36149,7 +33326,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "PSKP",
@@ -36162,7 +33339,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "PSKP",
@@ -36175,7 +33352,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "PSKP",
@@ -36188,7 +33365,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "PSKP",
@@ -36201,7 +33378,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 4,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "PSKP 11",
@@ -36214,7 +33391,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 6,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "PSKP 11",
@@ -36227,7 +33404,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 11",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 6,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "PSKP 11",
@@ -36244,7 +33421,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -36316,7 +33493,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -36403,7 +33580,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -36445,7 +33622,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -36472,7 +33649,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -36544,7 +33721,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -36586,7 +33763,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -36658,7 +33835,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -36745,7 +33922,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -36803,7 +33980,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -36816,7 +33993,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -36829,7 +34006,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -36842,7 +34019,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -36855,7 +34032,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -36868,7 +34045,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Filipino",
@@ -36881,7 +34058,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Filipino",
@@ -36894,7 +34071,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -36907,7 +34084,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -36920,7 +34097,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -36933,7 +34110,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Filipino",
@@ -36946,7 +34123,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -36959,7 +34136,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -36972,7 +34149,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -36985,7 +34162,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Filipino",
@@ -36998,7 +34175,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -37011,7 +34188,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -37024,7 +34201,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -37037,7 +34214,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -37050,7 +34227,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -37063,7 +34240,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Math",
@@ -37076,7 +34253,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -37089,7 +34266,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Filipino",
@@ -37102,7 +34279,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -37117,7 +34294,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -37204,7 +34381,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -37291,7 +34468,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -37363,7 +34540,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -37435,7 +34612,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -37507,7 +34684,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -37565,7 +34742,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "HG",
@@ -37578,7 +34755,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Filipino",
@@ -37591,7 +34768,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -37604,7 +34781,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -37617,7 +34794,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 2,
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -37630,7 +34807,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Filipino",
@@ -37643,7 +34820,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -37656,7 +34833,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -37669,7 +34846,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7 & 8",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -37682,7 +34859,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Soc.Sci",
@@ -37695,7 +34872,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Soc.Sci",
@@ -37708,7 +34885,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Soc.Sci",
@@ -37721,7 +34898,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Soc.Sci",
@@ -37734,7 +34911,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Soc.Sci",
@@ -37747,7 +34924,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Soc.Sci",
@@ -37760,7 +34937,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Soc.Sci",
@@ -37773,7 +34950,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9 & 10",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Soc.Sci",
@@ -37786,7 +34963,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Filipino",
@@ -37799,7 +34976,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -37812,7 +34989,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Filipino",
@@ -37825,7 +35002,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -37838,7 +35015,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Filipino",
@@ -37851,7 +35028,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Soc.Sci",
@@ -37864,7 +35041,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Soc.Sci",
@@ -37877,7 +35054,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Filipino",
@@ -37890,7 +35067,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 7",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Filipino",
@@ -37903,7 +35080,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Filipino",
@@ -37916,7 +35093,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -37929,7 +35106,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Soc.Sci",
@@ -37942,7 +35119,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 9",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Soc.Sci",
@@ -37955,7 +35132,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 10",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Soc.Sci",
@@ -37971,7 +35148,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "7:40 – 8:25 AM",
+        "time": "7:40 \u2013 8:25 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -38058,7 +35235,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -38130,7 +35307,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -38202,7 +35379,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -38274,7 +35451,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -38361,7 +35538,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -38403,7 +35580,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -38475,7 +35652,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -38517,7 +35694,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -38560,7 +35737,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Values Ed.",
@@ -38573,7 +35750,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Values Ed.",
@@ -38586,7 +35763,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 8",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Values Ed.",
@@ -38600,7 +35777,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -38627,7 +35804,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -38654,7 +35831,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -38697,7 +35874,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "Circle Time 1",
@@ -38710,7 +35887,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Circle Time 1",
@@ -38723,7 +35900,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Circle Time 1",
@@ -38736,7 +35913,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Circle Time 1",
@@ -38749,7 +35926,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Circle Time 1",
@@ -38762,7 +35939,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "CT 2",
@@ -38775,7 +35952,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "CT 2",
@@ -38788,7 +35965,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 2,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Circle Time 1",
@@ -38801,7 +35978,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 2,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Circle Time 1",
@@ -38814,7 +35991,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 2,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Circle Time 1",
@@ -38827,7 +36004,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 2,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Circle Time 1",
@@ -38840,7 +36017,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 2,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Circle Time 1",
@@ -38853,7 +36030,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 5,
-        "time": "2:10 – 2:55 PM",
+        "time": "2:10 \u2013 2:55 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Circle Time 2",
@@ -38866,7 +36043,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 5,
-        "time": "2:10 – 2:55 PM",
+        "time": "2:10 \u2013 2:55 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Circle Time 2",
@@ -38879,7 +36056,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 5,
-        "time": "2:10 – 2:55 PM",
+        "time": "2:10 \u2013 2:55 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Circle Time 2",
@@ -38892,7 +36069,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 5,
-        "time": "2:10 – 2:55 PM",
+        "time": "2:10 \u2013 2:55 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Circle Time 2",
@@ -38905,7 +36082,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Kinder 1",
         "shift": "F2F",
         "period_num": 5,
-        "time": "2:10 – 2:55 PM",
+        "time": "2:10 \u2013 2:55 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Circle Time 2",
@@ -38918,7 +36095,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Math",
@@ -38931,7 +36108,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Math",
@@ -38944,7 +36121,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Math",
@@ -38957,7 +36134,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Math",
@@ -38970,7 +36147,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 1",
         "shift": "F2F",
         "period_num": 6,
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Math",
@@ -39009,7 +36186,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "MAKABANSA",
@@ -39022,7 +36199,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "MAKABANSA",
@@ -39035,7 +36212,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "MAKABANSA",
@@ -39048,7 +36225,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "MAKABANSA",
@@ -39061,7 +36238,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "F2F",
         "period_num": 3,
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MAKABANSA",
@@ -39074,7 +36251,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "Science",
@@ -39087,7 +36264,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Monday",
         "subject": "Science",
@@ -39100,7 +36277,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Tuesday",
         "subject": "Science",
@@ -39113,7 +36290,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "Science",
@@ -39126,7 +36303,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 10,
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "day": "Thursday",
         "subject": "Science",
@@ -39146,7 +36323,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -39233,7 +36410,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -39275,7 +36452,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -39362,7 +36539,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "2:10 – 2:55 PM",
+        "time": "2:10 \u2013 2:55 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -39449,7 +36626,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "10:00 – 10:45 AM",
+        "time": "10:00 \u2013 10:45 AM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -39578,7 +36755,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "8:25 – 9:05 AM",
+        "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -39665,7 +36842,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "1:25 – 2:10 PM",
+        "time": "1:25 \u2013 2:10 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -39768,7 +36945,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "MAKABANSA Tchr. Zara",
@@ -39781,7 +36958,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MAKABANSA Tchr. Zara",
@@ -39794,7 +36971,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "MAKABANSA Tchr. Zara",
@@ -39807,7 +36984,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MAKABANSA Tchr. Zara",
@@ -39820,7 +36997,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "MAKABANSA Tchr. Zara",
@@ -39833,7 +37010,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 7,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "MAKABANSA Tchr. Zara",
@@ -39846,7 +37023,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "MAKABANSA Tchr. Zara",
@@ -39859,7 +37036,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MAKABANSA Tchr. Zara",
@@ -39872,7 +37049,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "MAPEH Tchr. Zara",
@@ -39885,7 +37062,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "MAPEH Tchr. Zara",
@@ -39898,7 +37075,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "MAPEH Tchr. Zara",
@@ -39911,7 +37088,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "MAPEH Tchr. Zara",
@@ -39924,7 +37101,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "MAPEH Tchr. Zara",
@@ -39937,7 +37114,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "MAPEH Tchr. Zara",
@@ -39952,7 +37129,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -40009,7 +37186,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -40066,7 +37243,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -40108,7 +37285,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -40150,7 +37327,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -40207,7 +37384,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -40250,7 +37427,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "Makabansa",
@@ -40263,7 +37440,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Makabansa",
@@ -40276,7 +37453,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -40289,7 +37466,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 2",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Filipino",
@@ -40302,7 +37479,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 3",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "GMRC",
@@ -40315,7 +37492,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 2,
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "day": "Tuesday",
         "subject": "Fil4",
@@ -40328,7 +37505,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 3,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "MAPEH4",
@@ -40341,7 +37518,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "MAPEH",
@@ -40354,7 +37531,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 4",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 3,
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Filipino",
@@ -40367,7 +37544,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 4,
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "day": "Monday",
         "subject": "AP",
@@ -40380,7 +37557,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Sunday",
         "subject": "AP",
@@ -40393,7 +37570,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "F2F",
         "period_num": 9,
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "day": "Wednesday",
         "subject": "AP",
@@ -40406,7 +37583,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 6,
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Fil",
@@ -40419,7 +37596,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 1ST SHIFT",
         "period_num": 4,
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "day": "Thursday",
         "subject": "Fil",
@@ -40432,7 +37609,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         "grade_level": "Grade 6",
         "shift": "ODL - 2ND SHIFT",
         "period_num": 5,
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "day": "Sunday",
         "subject": "MAPEH",
@@ -40453,7 +37630,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     ],
     "rows": [
       {
-        "time": "02:20 – 03:00 PM",
+        "time": "02:20 \u2013 03:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -40510,7 +37687,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "4:30 – 5:10 PM",
+        "time": "4:30 \u2013 5:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -40552,7 +37729,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "01:30 – 02:10 PM",
+        "time": "01:30 \u2013 02:10 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -40609,7 +37786,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 01:20 PM",
+        "time": "12:40 \u2013 01:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -40636,7 +37813,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "3:40 – 4:20 PM",
+        "time": "3:40 \u2013 4:20 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -40678,7 +37855,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "9:05 – 9:45 AM",
+        "time": "9:05 \u2013 9:45 AM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -40705,7 +37882,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "12:40 – 1:25 PM",
+        "time": "12:40 \u2013 1:25 PM",
         "minutes": "45 min.",
         "is_break": false,
         "days": {
@@ -40747,7 +37924,7 @@ window.TEACHER_WEEKLY_SCHEDULES = {
         }
       },
       {
-        "time": "5:20 – 6:00 PM",
+        "time": "5:20 \u2013 6:00 PM",
         "minutes": "40 min.",
         "is_break": false,
         "days": {
@@ -40775,6 +37952,1771 @@ window.TEACHER_WEEKLY_SCHEDULES = {
       }
     ]
   },
+  "tchr_jeyra_mae": {
+    "id": "tchr_jeyra_mae",
+    "teacher_id": "tchr_jeyra_mae",
+    "name": "Teacher Anna",
+    "teacher_name": "Teacher Anna",
+    "canonical_name": "Teacher Anna",
+    "department": "Elementary Faculty",
+    "periods": [
+      {
+        "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
+        "section_name": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 PM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
+        "section_name": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
+        "section_name": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 PM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_4_hakim_ibn_hazm_1st_shift",
+        "section_name": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
+        "section_name": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 7,
+        "time": "5:20 \u2013 6:00 PM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_4_az_zubair_ibn_al_awwaam_2nd_shift",
+        "section_name": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 7,
+        "time": "5:20 \u2013 6:00 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
+        "section_name": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 3,
+        "time": "3:40 \u2013 4:20 PM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_4_ikrimah_ibn_abi_jahl_2nd_shift",
+        "section_name": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 4",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 3,
+        "time": "3:40 \u2013 4:20 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
+        "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 PM",
+        "minutes": "40 min.",
+        "day": "Sunday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
+        "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
+        "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 6,
+        "time": "02:20 \u2013 03:00 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "TLE",
+        "raw_label": "TLE"
+      },
+      {
+        "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
+        "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Sunday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
+        "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
+        "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "TLE",
+        "raw_label": "TLE"
+      },
+      {
+        "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
+        "section_name": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 7,
+        "time": "5:20 \u2013 6:00 PM",
+        "minutes": "40 min.",
+        "day": "Sunday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
+        "section_name": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 7,
+        "time": "5:20 \u2013 6:00 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
+        "section_name": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 7,
+        "time": "5:20 \u2013 6:00 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "TLE",
+        "raw_label": "TLE"
+      },
+      {
+        "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
+        "section_name": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 \u2013 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Sunday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
+        "section_name": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 \u2013 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
+        "section_name": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 \u2013 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "TLE",
+        "raw_label": "TLE"
+      },
+      {
+        "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
+        "section_name": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
+        "section_name": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
+        "section_name": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 PM",
+        "minutes": "40 min.",
+        "day": "Sunday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_6_abbas_ibn_abd_al_muttalib_1st_shift",
+        "section_name": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
+        "section_name": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 3,
+        "time": "3:40 \u2013 4:20 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "Science",
+        "raw_label": "Science"
+      },
+      {
+        "section_id": "sec_grade_6_khaleed_ibn_waleed_2nd_shift",
+        "section_name": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 6",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 3,
+        "time": "3:40 \u2013 4:20 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "Science",
+        "raw_label": "Science"
+      }
+    ],
+    "total_classes": 26,
+    "total_teaching_periods": 26,
+    "subjects": [
+      "Science",
+      "TLE"
+    ],
+    "rows": [
+      {
+        "time": "02:20 \u2013 03:00 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+            "section_short": "G5 - HAMZA IBN ABDUL (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+            "section_short": "G4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+            "section_short": "G5 - HAMZA IBN ABDUL (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+            "section_short": "G4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "TLE",
+            "label": "TLE",
+            "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+            "section_short": "G5 - HAMZA IBN ABDUL (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#fae8ff",
+              "border": "#f0abfc",
+              "text": "#86198f"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "12:40 \u2013 01:20 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+            "section_short": "G6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+            "section_short": "G4 - HAKIM IBN HAZM(1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+            "section_short": "G6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
+            "section_short": "G4 - HAKIM IBN HAZM(1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+            "section_short": "G6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "5:20 \u2013 6:00 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+            "section_short": "G5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+            "section_short": "G4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+            "section_short": "G5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+            "section_short": "G4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "TLE",
+            "label": "TLE",
+            "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+            "section_short": "G5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#fae8ff",
+              "border": "#f0abfc",
+              "text": "#86198f"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "3:40 \u2013 4:20 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": null,
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+            "section_short": "G4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+            "section_short": "G4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+            "section_short": "G6 - KHALEED IBN WALEED (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
+            "section_short": "G6 - KHALEED IBN WALEED (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+            "section_short": "G5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Monday": null,
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+            "section_short": "G6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+            "section_short": "G5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "TLE",
+            "label": "TLE",
+            "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+            "section_short": "G5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#fae8ff",
+              "border": "#f0abfc",
+              "text": "#86198f"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "4:30 \u2013 5:10 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+            "section_short": "G5 - AL HARITH BIN AWF (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "Science",
+            "label": "Science",
+            "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+            "section_short": "G5 - AL HARITH BIN AWF (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#ccfbf1",
+              "border": "#5eead4",
+              "text": "#0f766e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "TLE",
+            "label": "TLE",
+            "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+            "section_short": "G5 - AL HARITH BIN AWF (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#fae8ff",
+              "border": "#f0abfc",
+              "text": "#86198f"
+            },
+            "has_conflict": false
+          }
+        }
+      }
+    ]
+  },
+  "tchr_erica": {
+    "id": "tchr_erica",
+    "teacher_id": "tchr_erica",
+    "name": "Teacher Erica",
+    "teacher_name": "Teacher Erica",
+    "canonical_name": "Teacher Erica",
+    "department": "Elementary Faculty",
+    "periods": []
+  },
+  "tchr_jayra": {
+    "id": "tchr_jayra",
+    "teacher_id": "tchr_jayra",
+    "name": "Teacher Jayra",
+    "teacher_name": "Teacher Jayra",
+    "canonical_name": "Teacher Jayra",
+    "department": "High School Faculty",
+    "periods": [
+      {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 \u2013 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Sunday",
+        "subject": "GMRC",
+        "raw_label": "GMRC"
+      },
+      {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 \u2013 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "GMRC",
+        "raw_label": "GMRC"
+      },
+      {
+        "section_id": "sec_grade_5_face_to_face",
+        "section_name": "GRADE 5 (FACE TO FACE)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "F2F",
+        "period_num": 3,
+        "time": "8:25 \u2013 9:05 AM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "GMRC",
+        "raw_label": "GMRC"
+      },
+      {
+        "section_id": "sec_grade_5_hamza_ibn_abdul_1st_shift",
+        "section_name": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "GMRC",
+        "raw_label": "GMRC"
+      },
+      {
+        "section_id": "sec_grade_5_muhammad_ibn_maslamah_1st_shift",
+        "section_name": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "GMRC",
+        "raw_label": "GMRC"
+      },
+      {
+        "section_id": "sec_grade_5_mus_ab_ibn_abdul_mutalib_2nd_shift",
+        "section_name": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 3,
+        "time": "3:40 \u2013 4:20 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "GMRC",
+        "raw_label": "GMRC"
+      },
+      {
+        "section_id": "sec_grade_5_al_harith_bin_awf_2nd_shift",
+        "section_name": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Grade 5",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 \u2013 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "GMRC",
+        "raw_label": "GMRC"
+      },
+      {
+        "section_id": "sec_grade_7_8_girls_face_to_face",
+        "section_name": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 7 & 8",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_8_girls_face_to_face",
+        "section_name": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 7 & 8",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_8_girls_face_to_face",
+        "section_name": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 7 & 8",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_8_girls_face_to_face",
+        "section_name": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 7 & 8",
+        "shift": "F2F",
+        "period_num": 6,
+        "time": "10:00 \u2013 10:45 AM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_8_girls_face_to_face",
+        "section_name": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 7 & 8",
+        "shift": "F2F",
+        "period_num": 7,
+        "time": "10:45:11:30 AM",
+        "minutes": "45 min.",
+        "day": "Sunday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_8_boys_face_to_face",
+        "section_name": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 7 & 8",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 \u2013 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Sunday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_8_boys_face_to_face",
+        "section_name": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 7 & 8",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 \u2013 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Monday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_8_boys_face_to_face",
+        "section_name": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 7 & 8",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 \u2013 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Tuesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_8_boys_face_to_face",
+        "section_name": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 7 & 8",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 \u2013 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Wednesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_8_boys_face_to_face",
+        "section_name": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "department": "Junior High School",
+        "grade_level": "Grade 7 & 8",
+        "shift": "F2F",
+        "period_num": 11,
+        "time": "2:15 \u2013 3:00 PM",
+        "minutes": "45 min.",
+        "day": "Thursday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
+        "section_name": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "department": "Junior High School",
+        "grade_level": "Grade 7",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Sunday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_usama_ibn_zayd_1st_shift_girls",
+        "section_name": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+        "department": "Junior High School",
+        "grade_level": "Grade 7",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
+        "section_name": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "department": "Junior High School",
+        "grade_level": "Grade 7",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 PM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_abu_sufyan_ibn_al_harith_1st_shift_boys",
+        "section_name": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+        "department": "Junior High School",
+        "grade_level": "Grade 7",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 2,
+        "time": "12:40 \u2013 01:20 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
+        "section_name": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "department": "Junior High School",
+        "grade_level": "Grade 8",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_8_sa_ad_ibn_mua_dh_1st_shift_girls",
+        "section_name": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+        "department": "Junior High School",
+        "grade_level": "Grade 8",
+        "shift": "ODL - 1ST SHIFT",
+        "period_num": 4,
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
+        "section_name": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "department": "Junior High School",
+        "grade_level": "Grade 7",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 3,
+        "time": "3:40 \u2013 4:20 PM",
+        "minutes": "40 min.",
+        "day": "Sunday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_7_anas_ibn_malik_2nd_shift_mix",
+        "section_name": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+        "department": "Junior High School",
+        "grade_level": "Grade 7",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 3,
+        "time": "3:40 \u2013 4:20 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
+        "section_name": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "department": "Junior High School",
+        "grade_level": "Grade 8",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 \u2013 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Monday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_8_mu_adh_ibn_jabal_2nd_shift_boys",
+        "section_name": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+        "department": "Junior High School",
+        "grade_level": "Grade 8",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 5,
+        "time": "4:30 \u2013 5:10 PM",
+        "minutes": "40 min.",
+        "day": "Wednesday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
+        "section_name": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "department": "Junior High School",
+        "grade_level": "Grade 8",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 7,
+        "time": "5:20 \u2013 6:00 PM",
+        "minutes": "40 min.",
+        "day": "Sunday",
+        "subject": "English",
+        "raw_label": "English"
+      },
+      {
+        "section_id": "sec_grade_8_nuaym_ibn_mas_ud_2nd_shift_mix",
+        "section_name": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+        "department": "Junior High School",
+        "grade_level": "Grade 8",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 7,
+        "time": "5:20 \u2013 6:00 PM",
+        "minutes": "40 min.",
+        "day": "Tuesday",
+        "subject": "English",
+        "raw_label": "English"
+      }
+    ],
+    "total_classes": 29,
+    "total_teaching_periods": 29,
+    "subjects": [
+      "English",
+      "GMRC"
+    ],
+    "rows": [
+      {
+        "time": "8:25 \u2013 9:05 AM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "label": "GMRC",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
+          },
+          "Monday": null,
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "label": "GMRC",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": null,
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "label": "GMRC",
+            "section": "GRADE 5 (FACE TO FACE)",
+            "section_short": "G5 (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "12:40 \u2013 01:20 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": null,
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+            "section_short": "G7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": null,
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+            "section_short": "G7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "label": "GMRC",
+            "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
+            "section_short": "G5 - HAMZA IBN ABDUL (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "01:30 \u2013 02:10 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+            "section_short": "G7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+            "section_short": "G7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "label": "GMRC",
+            "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+            "section_short": "G5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+            "section_short": "G8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+            "section_short": "G8 - SA'AD IBN MUA'DH (1ST SHIFT) - GIRLS",
+            "modality": "ODL - 1ST SHIFT",
+            "shift": "ODL - 1ST SHIFT",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "3:40 \u2013 4:20 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+            "section_short": "G7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Monday": null,
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+            "section_short": "G7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": null,
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "label": "GMRC",
+            "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+            "section_short": "G5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "4:30 \u2013 5:10 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": null,
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+            "section_short": "G8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "GMRC",
+            "label": "GMRC",
+            "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
+            "section_short": "G5 - AL HARITH BIN AWF (2ND SHIFT)",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#dcfce7",
+              "border": "#86efac",
+              "text": "#166534"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+            "section_short": "G8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": null
+        }
+      },
+      {
+        "time": "10:00 \u2013 10:45 AM",
+        "minutes": "45 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": null,
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+            "section_short": "G7 & 8 GIRLS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+            "section_short": "G7 & 8 GIRLS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+            "section_short": "G7 & 8 GIRLS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+            "section_short": "G7 & 8 GIRLS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "10:45:11:30 AM",
+        "minutes": "45 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+            "section_short": "G7 & 8 GIRLS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
+        }
+      },
+      {
+        "time": "2:15 \u2013 3:00 PM",
+        "minutes": "45 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+            "section_short": "G7 & 8 BOYS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Monday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+            "section_short": "G7 & 8 BOYS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+            "section_short": "G7 & 8 BOYS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+            "section_short": "G7 & 8 BOYS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Thursday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+            "section_short": "G7 & 8 BOYS (FACE TO FACE)",
+            "modality": "F2F",
+            "shift": "F2F",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          }
+        }
+      },
+      {
+        "time": "5:20 \u2013 6:00 PM",
+        "minutes": "40 min.",
+        "is_break": false,
+        "days": {
+          "Sunday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+            "section_short": "G8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Monday": null,
+          "Tuesday": {
+            "occupied": true,
+            "is_class": true,
+            "subject": "English",
+            "label": "English",
+            "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+            "section_short": "G8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
+            "modality": "ODL - 2ND SHIFT",
+            "shift": "ODL - 2ND SHIFT",
+            "color": {
+              "bg": "#fef3c7",
+              "border": "#fde047",
+              "text": "#854d0e"
+            },
+            "has_conflict": false
+          },
+          "Wednesday": null,
+          "Thursday": null
+        }
+      }
+    ]
+  },
   "tchr_samsida": {
     "id": "tchr_samsida",
     "teacher_id": "tchr_samsida",
@@ -40782,46 +39724,17 @@ window.TEACHER_WEEKLY_SCHEDULES = {
     "teacher_name": "Ustadha Samsida",
     "canonical_name": "Ustadha Samsida",
     "department": "ISAL Faculty",
-    "periods": [
-      {
-        "section_id": "sec_grade_12_suhayb_ar_rumi",
-        "section_name": "GRADE 12 - SUHAYB AR-RUMI",
-        "department": "Senior High School",
-        "grade_level": "Grade 12",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 – 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Tuesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_12_suhayb_ar_rumi",
-        "section_name": "GRADE 12 - SUHAYB AR-RUMI",
-        "department": "Senior High School",
-        "grade_level": "Grade 12",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 – 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Wednesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      },
-      {
-        "section_id": "sec_grade_12_abu_musa_al_ashari",
-        "section_name": "GRADE 12 - ABU MUSA AL-ASHARI",
-        "department": "Senior High School",
-        "grade_level": "Grade 12",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 – 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "Qur'an",
-        "raw_label": "Qur'an"
-      }
-    ]
+    "periods": []
+  },
+  "tchr_nawawi": {
+    "id": "tchr_nawawi",
+    "teacher_id": "tchr_nawawi",
+    "name": "Ustadh Laurel/Nawawi",
+    "teacher_name": "Ustadh Laurel/Nawawi",
+    "canonical_name": "Ustadh Laurel/Nawawi",
+    "department": "ISAL Faculty",
+    "periods": []
   }
 };
+
+window.AMIS_TEACHER_WEEKLY_SCHEDULES = AMIS_TEACHER_WEEKLY_SCHEDULES;
