@@ -8061,71 +8061,131 @@ html, body {
         const beginsShift = rowIdx === 0 || masterSlots[rowIdx - 1].shift_group !== slot.shift_group;
         let shiftCellHtml = '';
         if (beginsShift) {
-          const shiftRowCount = masterSlots.filter(s => s.shift_group === slot.shift_group).length;
-          shiftCellHtml = `<td class="cell-shift" rowspan="${shiftRowCount}">${shiftLabels[slot.shift_group]}</td>`;
+          let shiftRowspan = 1;
+          while (rowIdx + shiftRowspan < masterSlots.length && masterSlots[rowIdx + shiftRowspan].shift_group === slot.shift_group) {
+            shiftRowspan++;
+          }
+          shiftCellHtml = `<td class="cell-shift cell-shift--${slot.shift_group}" rowspan="${shiftRowspan}" aria-label="${slot.shift_group} shift"><span class="shift-stack">${shiftLabels[slot.shift_group]}</span></td>`;
         }
-
         if (slot.type === 'break') {
           fullHtml += `
-            <tr class="row-break">
+            <tr class="row-shift-${slot.shift_group}">
               ${shiftCellHtml}
-              <td class="cell-time">${slot.time}</td>
-              <td class="cell-mins">${slot.mins}</td>
-              <td class="cell-break-banner" colspan="4">${slot.label}</td>
-            </tr>
+              <td class="cell-time"><span class="cell-time-val">${esc(slot.time)}</span></td>
+              <td class="cell-mins">${esc(slot.mins)}</td>
           `;
-          return;
-        }
 
-        let rowCells = '';
-        EXAM_DATES.forEach(d => {
-          if (activeRowspan[d.day_num] > 0) {
-            activeRowspan[d.day_num]--;
-            return;
+          let currentSpan = 0;
+          EXAM_DATES.forEach(d => {
+            if (activeRowspan[d.day_num] > 0) {
+              if (currentSpan > 0) {
+                fullHtml += `<td colspan="${currentSpan}" class="cell-break">${esc(slot.label)}</td>`;
+                currentSpan = 0;
+              }
+              activeRowspan[d.day_num]--;
+            } else {
+              currentSpan++;
+            }
+          });
+          if (currentSpan > 0) {
+            fullHtml += `<td colspan="${currentSpan}" class="cell-break">${esc(slot.label)}</td>`;
           }
 
-          const slotExams = tExams.filter(e => e.day_num === d.day_num && e.time_slot === slot.time);
+          fullHtml += `</tr>`;
+        } else {
+          fullHtml += `
+            <tr class="row-shift-${slot.shift_group}">
+              ${shiftCellHtml}
+              <td class="cell-time">
+                <span class="cell-time-val">${esc(slot.time)}</span>
+                ${slot.note ? `<div class="cell-time-note">${esc(slot.note)}</div>` : ''}
+              </td>
+              <td class="cell-mins">${esc(slot.mins)}</td>
+          `;
 
-          if (slotExams.length === 0) {
-            rowCells += `<td class="cell-empty">--</td>`;
-          } else {
-            const examCardsHtml = slotExams.map(ex => {
-              const subColor = getSubjectColor(ex.subject);
-              const isF2F = (ex.section_name || '').toLowerCase().includes('face');
-              const audCls = isF2F ? 'tag-f2f' : 'tag-odl';
-              const audText = isF2F ? 'F2F' : 'ODL';
-              const isHighlight = (facultySubjectFilter !== 'ALL' && normSub(ex.subject) === facultySubjectFilter) ||
-                                  (facultySubjectQuery.trim() && (ex.subject || '').toLowerCase().includes(facultySubjectQuery.toLowerCase().trim()));
+          EXAM_DATES.forEach(d => {
+            if (activeRowspan[d.day_num] > 0) {
+              activeRowspan[d.day_num]--;
+              return;
+            }
 
-              return `
-                <div class="exam-card-inner ${isHighlight ? 'highlight-subject-slot' : ''}" style="border-left: 4px solid ${subColor};">
-                  <div class="exam-card-subject" style="color: ${subColor};">${esc(ex.subject)}</div>
-                  <div class="exam-card-section">${esc(ex.section_name)}</div>
-                  <div class="exam-card-meta">
-                    <span class="exam-tag ${audCls}">${audText}</span>
-                    <span class="exam-tag tag-mins">${ex.duration_minutes || 60} MIN</span>
+            const match = tExams.find(e => {
+              if (e.day_number !== d.day_num && e.short_date !== d.short_date) return false;
+              return examStartsAtScheduleRow(e, slot.time, slot.slot_num);
+            });
+
+            if (match) {
+              const displayedSubject = publicExamSubject(match);
+              const color = getSubjectColor(displayedSubject);
+              const genderChip = getExamGenderChip(match);
+              const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
+              const isAutomaticProctorCoverage = match.display_as_proctor_duty === true
+                || match.proctor_assignment_source !== 'SUBJECT_TEACHER';
+              let calcRowspan = 1;
+
+              if (is120) {
+                let nextExamIdx = -1;
+                for (let nextIdx = rowIdx + 1; nextIdx < masterSlots.length; nextIdx++) {
+                  if (masterSlots[nextIdx].type === 'exam') {
+                    nextExamIdx = nextIdx;
+                    break;
+                  }
+                }
+                calcRowspan = nextExamIdx > -1 ? (nextExamIdx - rowIdx + 1) : 1;
+                activeRowspan[d.day_num] = calcRowspan - 1;
+              }
+
+              const isHighlight = (facultySubjectFilter !== 'ALL' && normSub(match.subject) === facultySubjectFilter) ||
+                                  (facultySubjectQuery.trim() && (match.subject || '').toLowerCase().includes(facultySubjectQuery.toLowerCase().trim()));
+
+              fullHtml += `
+                <td class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                  <div class="cell-class-inner">
+                    ${isAutomaticProctorCoverage ? `
+                      
+                      <span class="cell-subject-sec">${esc(displayedSubject)}</span>
+                      <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
+                      ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
+                    ` : `
+                      <span class="cell-subject-sec">${esc(displayedSubject)}</span>
+                      <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
+                      ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
+                      <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
+                    `}
                   </div>
-                </div>
+                </td>
               `;
-            }).join('');
+            } else {
+              fullHtml += `<td class="cell-empty"></td>`;
+            }
+          });
 
-            rowCells += `<td class="cell-exam-slot">${examCardsHtml}</td>`;
-          }
-        });
-
-        fullHtml += `
-          <tr>
-            ${shiftCellHtml}
-            <td class="cell-time">${slot.time}</td>
-            <td class="cell-mins">${slot.mins}</td>
-            ${rowCells}
-          </tr>
-        `;
+          fullHtml += `</tr>`;
+        }
       });
 
       fullHtml += `
               </tbody>
             </table>
+          </div>
+
+          <div class="sheet-footer">
+            <div class="legend-strip">
+              <span style="font-weight: 800; color: var(--ink);">Subject Keys:</span>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#f3e8ff; border-color:#d8b4fe;"></span> Arabic / Qur'an / Islamic</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#dcfce7; border-color:#86efac;"></span> GMRC / Values / ESP</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#e0f2fe; border-color:#7dd3fc;"></span> Mathematics</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ccfbf1; border-color:#5eead4;"></span> Science / Biology / Physics</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fef3c7; border-color:#fde047;"></span> English / Reading / LCS / EC</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#ffedd5; border-color:#fdba74;"></span> Filipino / AP / Makabansa / PSKP</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fae8ff; border-color:#f0abfc;"></span> MAPEH / TLE / TVL / PE</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#e0e7ff; border-color:#a5b4fc;"></span> Research / MIL</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fee2e2; border-color:#fca5a5;"></span> Oral &amp; Written Exam</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#fef9c3; border-color:#fef08a;"></span> ARAL Program</div>
+            </div>
+            <div>
+              Generated: <strong>${todayStr}</strong>
+            </div>
           </div>
         </div>
       `;
