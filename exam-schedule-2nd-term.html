@@ -7675,37 +7675,11 @@ html, body {
       if (matchedExam) {
         scheduled.push({ assignment: a, exam: matchedExam });
       } else {
-        let assignedElsewhere = null;
-        for (const e of allExams) {
-          if ((e.teacher_id || e.subject_teacher_id) === teacher.id) continue;
-          const eSub = normSub(e.subject);
-          const eTokens = cleanTokens(e.section_name);
-          const isEF2F = (e.section_name || '').toLowerCase().includes('face');
-          const eGradeMatch = (e.section_name || '').match(/\b(12|11|10|9|8|7|6|5|4|3|2|1)\b/);
-          const eGrade = eGradeMatch ? eGradeMatch[0] : '';
-          const eBoys = (e.section_name || '').toLowerCase().includes('boy');
-          const eGirls = (e.section_name || '').toLowerCase().includes('girl');
-          const genderMatch = (!aBoys && !aGirls) || (aBoys && eBoys) || (aGirls && eGirls);
-
-          let isMatch = false;
-          if (aSub === eSub) {
-            if (isF2F && isEF2F && aGrade && eGrade && aGrade === eGrade && genderMatch) {
-              isMatch = true;
-            } else if (aTokens.length > 0 && aTokens.some(tok => eTokens.includes(tok)) && genderMatch) {
-              isMatch = true;
-            }
-          }
-          if (isMatch) {
-            assignedElsewhere = e.teacher || e.subject_teacher;
-            break;
-          }
-        }
         missing.push({
           subject: a.subject,
           section: a.section,
           shift: a.shift,
-          raw: a.raw,
-          assignedElsewhere: assignedElsewhere
+          raw: a.raw
         });
       }
     });
@@ -8018,9 +7992,7 @@ html, body {
                         </label>
                       </div>
                       <span class="missing-card-sec">${esc(m.section)} ${m.shift ? `• ${esc(m.shift)}` : ''}</span>
-                      <span class="missing-card-status ${m.assignedElsewhere ? 'status-reassigned' : 'status-unscheduled'}">
-                        ${m.assignedElsewhere ? `Scheduled under: <strong>${esc(m.assignedElsewhere)}</strong>` : '⚠️ No Exam Scheduled in System'}
-                      </span>
+                      <span class="missing-card-status status-unscheduled">⚠️ No Exam in System (Remedial / Load Only)</span>
                     </div>
                   `;
                 }).join('')}
@@ -8190,10 +8162,8 @@ html, body {
                       ${t.assignments.length > 0 ? t.assignments.map(a => {
                         const isMissing = missingSet.has(a.raw) || missingSet.has(a.subject + '|||' + a.section);
                         if (isMissing) {
-                          const missingInfo = audit.missingItems.find(m => m.raw === a.raw || (m.subject === a.subject && m.section === a.section));
-                          const extraNote = missingInfo && missingInfo.assignedElsewhere ? `Scheduled under: ${missingInfo.assignedElsewhere}` : 'No exam scheduled';
                           return `
-                            <span class="subj-tag subj-tag--missing" title="MISSING in this teacher\'s exam schedule! (${extraNote})">
+                            <span class="subj-tag subj-tag--missing" title="No exam slot scheduled in this exam timetable">
                               <span style="font-weight:900;">⚠️</span>
                               <span>${esc(a.subject)}</span>
                               <span style="font-size:10px; opacity:0.85;">• ${esc(a.section.replace('CLASS SCHEDULE', '').replace('GRADE', 'G').trim())}</span>
