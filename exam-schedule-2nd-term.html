@@ -2028,6 +2028,130 @@ html, body {
     display: none !important;
   }
 }
+
+/* Subject Filter & Interactive Check Tracking */
+.missing-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.check-subject-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+  user-select: none;
+  transition: all 140ms ease;
+}
+.check-subject-label:hover {
+  background: #e2e8f0;
+  border-color: #94a3b8;
+}
+.check-subject-label input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: #16a34a;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+}
+
+.missing-card.is-checked-card {
+  background: #f0fdf4 !important;
+  border-color: #86efac !important;
+  opacity: 0.9;
+}
+.missing-card.is-checked-card .missing-card-subj {
+  color: #166534 !important;
+  text-decoration: line-through;
+}
+.missing-card.is-checked-card .check-subject-label {
+  background: #dcfce7 !important;
+  border-color: #86efac !important;
+  color: #166534 !important;
+}
+
+.filter-search-input {
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 6px 28px 6px 10px;
+  border: 1.5px solid #cbd5e1;
+  font-size: 12.5px;
+  height: 36px;
+  width: 220px;
+  transition: all 160ms ease;
+}
+.filter-search-input:focus {
+  outline: none;
+  border-color: var(--brand-deep);
+  box-shadow: 0 0 0 3px rgba(6, 78, 59, 0.15);
+  width: 260px;
+}
+.clear-search-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+.clear-search-btn:hover {
+  color: #0f172a;
+}
+
+.highlight-subject-slot {
+  box-shadow: 0 0 0 3.5px #f59e0b !important;
+  border-color: #d97706 !important;
+  background: #fffbeb !important;
+  position: relative;
+  z-index: 2;
+  animation: pulseSlotGlow 1.6s infinite alternate ease-in-out;
+}
+@keyframes pulseSlotGlow {
+  from { box-shadow: 0 0 0 3px #f59e0b; }
+  to { box-shadow: 0 0 0 6px #fbbf24; }
+}
+
+.missing-filter-toggle-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+}
+.missing-filter-btn {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+  cursor: pointer;
+  transition: all 120ms ease;
+}
+.missing-filter-btn:hover {
+  background: #f8fafc;
+}
+.missing-filter-btn.active {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+}
+
 </style>
 </head>
 <body>
@@ -2123,7 +2247,7 @@ html, body {
     "assignments": [
       {
         "subject": "Makabansa",
-        "section": "GRADE 3 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Makabansa 3 (F2F)"
       },
@@ -2141,7 +2265,7 @@ html, body {
       },
       {
         "subject": "Science",
-        "section": "GRADE  6  FACE TO FACE",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Science 6 (F2F)"
       },
@@ -2186,7 +2310,7 @@ html, body {
       },
       {
         "subject": "Math",
-        "section": "GRADE  6  FACE TO FACE",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Math 6 (F2F)"
       },
@@ -2234,14 +2358,14 @@ html, body {
       },
       {
         "subject": "ARAL Program",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
         "raw": "Aral Program 1 \u2013 Sa'ad"
       },
       {
         "subject": "Reading & Literacy",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
         "raw": "Reading & Literacy 1 \u2013 Sa'ad"
       },
       {
@@ -2272,14 +2396,14 @@ html, body {
     "department": "Elementary Faculty",
     "assignments": [
       {
-        "subject": "ARAL Program",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Araling Panlipunan 5 (F2F)"
       },
       {
         "subject": "Filipino",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Filipino 4 (F2F)"
       },
@@ -2302,8 +2426,8 @@ html, body {
         "raw": "Makabansa 1 (F2F)"
       },
       {
-        "subject": "General",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "subject": "English",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "English 4 (F2F)"
       },
@@ -2320,13 +2444,13 @@ html, body {
         "raw": "Filipino 4 \u2013 Ikrimah"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 5 \u2013 Al Harith"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 5 \u2013 Mus'ab"
@@ -2342,7 +2466,7 @@ html, body {
     "assignments": [
       {
         "subject": "Science",
-        "section": "GRADE 3 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Science 3 (F2F)"
       },
@@ -2378,7 +2502,7 @@ html, body {
       },
       {
         "subject": "Math",
-        "section": "GRADE 3 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Math 3 (F2F)"
       },
@@ -2435,7 +2559,7 @@ html, body {
       },
       {
         "subject": "GMRC",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "GMRC 4 (F2F)"
       },
@@ -2489,8 +2613,8 @@ html, body {
       },
       {
         "subject": "Language",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
         "raw": "Language 1 \u2013 Sa'ad"
       },
       {
@@ -2507,8 +2631,8 @@ html, body {
       },
       {
         "subject": "GMRC",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
         "raw": "GMRC 1 \u2013 Sa'ad"
       },
       {
@@ -2609,36 +2733,36 @@ html, body {
     "assignments": [
       {
         "subject": "Math",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Math 4 (F2F)"
       },
       {
         "subject": "ARAL Program",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Aral Program 4 (F2F)"
       },
       {
         "subject": "ARAL Program",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Aral Program 5 (F2F)"
       },
       {
         "subject": "TLE",
-        "section": "GRADE  6  FACE TO FACE",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "TLE 6 (F2F)"
       },
       {
         "subject": "ARAL Program",
-        "section": "GRADE  6  FACE TO FACE",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Aral Program 6 (F2F)"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 4 \u2013 Hakim"
@@ -2663,12 +2787,12 @@ html, body {
       },
       {
         "subject": "Aral Reading",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Aral Reading 4 (F2F)"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 4 \u2013 Abdur Rahman"
@@ -2686,13 +2810,13 @@ html, body {
         "raw": "Math 4 \u2013 Ikrimah"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 4 \u2013 Hassan"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 4 \u2013 Az Zubair"
@@ -2737,7 +2861,7 @@ html, body {
         "raw": "Filipino 3 \u2013 Habib"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 4 \u2013 Ikrimah"
@@ -2776,7 +2900,7 @@ html, body {
         "raw": "Circle Time 1 \u2013 K2 (F2F) [Assistant]"
       },
       {
-        "subject": "General",
+        "subject": "ISAL",
         "section": "ISAL \u2013 K2 (F2F) [Assistant]",
         "shift": "SPECIAL",
         "raw": "ISAL \u2013 K2 (F2F) [Assistant]"
@@ -2789,7 +2913,7 @@ html, body {
       },
       {
         "subject": "Science",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Science 4 (F2F)"
       },
@@ -2801,7 +2925,7 @@ html, body {
       },
       {
         "subject": "Science",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Science 5 (F2F)"
       },
@@ -2824,7 +2948,7 @@ html, body {
         "raw": "Aral Math 3"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 6 \u2013 Dihya"
@@ -2837,8 +2961,8 @@ html, body {
       },
       {
         "subject": "Makabansa",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
         "raw": "Makabansa 1 \u2013 Sa'ad"
       }
     ],
@@ -2888,8 +3012,8 @@ html, body {
       },
       {
         "subject": "Math",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
         "raw": "Math 1 \u2013 Sa'ad"
       },
       {
@@ -2932,19 +3056,19 @@ html, body {
     "department": "Elementary Faculty",
     "assignments": [
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "English 2 (F2F)"
       },
       {
-        "subject": "General",
-        "section": "GRADE 3 (FACE TO FACE)",
+        "subject": "English",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "English 3 (F2F)"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 2 \u2013 Talha"
@@ -2956,13 +3080,13 @@ html, body {
         "raw": "Aral Reading 2 \u2013 Talha"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 2 \u2013 Amr"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "Grade 3 - HABIB IBN ZAYD AL-ANSARI (1ST SHIFT) - GIRLS",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 3 \u2013 Habib"
@@ -2980,13 +3104,13 @@ html, body {
         "raw": "Aral Reading 2 (F2F)"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 3 -AMMAR IBN YASIR (1ST SHIFT) - BOYS",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 3 \u2013 Ammar"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 3 - ZAYD IBN HARITHA (2ND SHIFT) - GIRLS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 3 \u2013 Zayd"
@@ -2998,19 +3122,19 @@ html, body {
         "raw": "Aral Reading 2 \u2013 Saeed"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 2 \u2013 Saeed"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 3 - THABIT IBN QAYS (2ND SHIFT) - BOYS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 3 \u2013 Thabit"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 2 \u2013 Aasim"
@@ -3049,7 +3173,7 @@ html, body {
         "raw": "Science 3 \u2013 Salman"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 5 \u2013 Ayyash"
@@ -3067,13 +3191,13 @@ html, body {
         "raw": "Science 4 \u2013 Usayd"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 5 \u2013 Ayyash"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 5 \u2013 Hamza"
@@ -3085,7 +3209,7 @@ html, body {
         "raw": "Math 5 \u2013 Hamza"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 5 \u2013 Hamza"
@@ -3142,79 +3266,79 @@ html, body {
     "department": "Elementary Faculty",
     "assignments": [
       {
-        "subject": "General",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "subject": "English",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "English 5 (F2F)"
       },
       {
-        "subject": "General",
-        "section": "GRADE  6  FACE TO FACE",
+        "subject": "English",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "English 6 (F2F)"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 5 \u2013 Muhammad"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 6 \u2013 Abdullah"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 6 \u2013 Abbas"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 5 \u2013 Hamza"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 5 - AYYASH IBN ABI RABI'AH(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 5 \u2013 Ayyash"
       },
       {
         "subject": "Filipino",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Filipino 5 (F2F)"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 5 \u2013 Al Harith"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 6 \u2013 Khaleed"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 5 \u2013 Mus'ab"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 6 \u2013 Dihya"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 5 - JA'FAR IBN ABI TALIB (2ND SHIFT) - MIX",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 5 \u2013 Ja'far"
@@ -3329,12 +3453,12 @@ html, body {
     "assignments": [
       {
         "subject": "Filipino",
-        "section": "GRADE 3 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Filipino 3 (F2F)"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 4 \u2013 Abdur Rahman"
@@ -3346,13 +3470,13 @@ html, body {
         "raw": "Filipino 4 \u2013 Usayd"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 4 \u2013 Usayd"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 4 \u2013 Hakim"
@@ -3370,7 +3494,7 @@ html, body {
         "raw": "TLE 4 \u2013 Hakim"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 4 \u2013 Usayd"
@@ -3394,7 +3518,7 @@ html, body {
         "raw": "Filipino 4 \u2013 Az Zubair"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 4 -HASSAN IBN THABIT (2ND SHIFT) - MIX",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 4 \u2013 Hassan"
@@ -3418,7 +3542,7 @@ html, body {
         "raw": "Filipino 2 \u2013 Saeed"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 6 - DIHYA IBN KHALIFAH (2ND SHIFT) GIRLS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 6 \u2013 Dihya"
@@ -3445,14 +3569,14 @@ html, body {
     "department": "Elementary Faculty",
     "assignments": [
       {
-        "subject": "ARAL Program",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Araling Panlipunan 4 (F2F)"
       },
       {
         "subject": "TLE",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "TLE 4 (F2F)"
       },
@@ -3487,13 +3611,13 @@ html, body {
         "raw": "Filipino 4 \u2013 Abdur Rahman"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 4 \u2013 Hassan"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 5 \u2013 Mus'ab"
@@ -3505,7 +3629,7 @@ html, body {
         "raw": "TLE 4 \u2013 Az Zubair"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 4 \u2013 Ikrimah"
@@ -3529,13 +3653,13 @@ html, body {
         "raw": "Makabansa 2 \u2013 Saeed"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 5 \u2013 Al Harith"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 4 \u2013 Az Zubair"
@@ -3574,7 +3698,7 @@ html, body {
         "raw": "Wrap-Up Time \u2013 K2 (F2F)"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 3 - SALMAN AL FARSI (1ST SHIFT) MIX",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 3 \u2013 Salman"
@@ -3586,19 +3710,19 @@ html, body {
         "raw": "Filipino 3 \u2013 Salman"
       },
       {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "subject": "MAPEH",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "MAPEH 5 (F2F)"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 5 \u2013 Muhammad"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 5 \u2013 Hamza"
@@ -3610,7 +3734,7 @@ html, body {
         "raw": "Filipino 6 \u2013 Abbas"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 5 \u2013 Muhammad"
@@ -3638,24 +3762,24 @@ html, body {
     "assignments": [
       {
         "subject": "Filipino",
-        "section": "GRADE  6  FACE TO FACE",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Filipino 6 (F2F)"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 6 \u2013 Abdullah"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 5 \u2013 Hamza"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 6 \u2013 Abbas"
@@ -3673,7 +3797,7 @@ html, body {
         "raw": "TLE 5 \u2013 Ayyash"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 4 - USAYD IBN HUDHAYR (1ST SHIFT) - MIX",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 4 \u2013 Usayd"
@@ -3691,7 +3815,7 @@ html, body {
         "raw": "TLE 4 \u2013 Usayd"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 6 \u2013 Khaleed"
@@ -3709,7 +3833,7 @@ html, body {
         "raw": "Filipino 6 \u2013 Dihya"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 3 \u2013 As'ad"
@@ -3737,14 +3861,14 @@ html, body {
     "assignments": [
       {
         "subject": "Science",
-        "section": "Science 7 & 8 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Science 7 & 8 (Boys)"
       },
       {
         "subject": "Science",
-        "section": "Science 7 & 8 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Science 7 & 8 (Girls)"
       },
       {
@@ -3755,8 +3879,8 @@ html, body {
       },
       {
         "subject": "General Biology 2",
-        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
-        "shift": "ODL - 1ST SHIFT",
+        "section": "General Biology 2 \u2013 Grade 12 (ODL)",
+        "shift": "ODL",
         "raw": "General Biology 2 \u2013 Grade 12 (ODL)"
       },
       {
@@ -3767,8 +3891,8 @@ html, body {
       },
       {
         "subject": "General Biology 2",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "General Biology 2 \u2013 Grade 11 (2nd Shift ODL)",
+        "shift": "ODL",
         "raw": "General Biology 2 \u2013 Grade 11 (2nd Shift ODL)"
       },
       {
@@ -3794,7 +3918,7 @@ html, body {
     "assignments": [
       {
         "subject": "TLE",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "TLE 5 (F2F)"
       },
@@ -3806,13 +3930,13 @@ html, body {
       },
       {
         "subject": "TLE",
-        "section": "TLE 7 & 8 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "TLE 7 & 8 (Boys)"
       },
       {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "subject": "MAPEH",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "MAPEH 4 (F2F)"
       },
@@ -3823,15 +3947,15 @@ html, body {
         "raw": "TLE 7 \u2013 Usama"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 4 \u2013 Abdur Rahman"
       },
       {
         "subject": "TLE",
-        "section": "TLE 7 & 8 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "TLE 7 & 8 (Girls)"
       },
       {
@@ -3841,7 +3965,7 @@ html, body {
         "raw": "TLE 8 \u2013 Sa'ad"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 4 - HAKIM IBN HAZM(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 4 \u2013 Hakim"
@@ -3853,7 +3977,7 @@ html, body {
         "raw": "TLE 8 \u2013 Nuaym"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 4 - AZ ZUBAIR IBN AL AWWAAM (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 4 \u2013 Az Zubair"
@@ -3871,7 +3995,7 @@ html, body {
         "raw": "TLE 8 \u2013 Mu'adh"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 4 - IKRIMAH IBN ABI JAHL (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 4 \u2013 Ikrimah"
@@ -3887,13 +4011,13 @@ html, body {
     "assignments": [
       {
         "subject": "Math",
-        "section": "Math 7 & 8 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Math 7 & 8 (Boys)"
       },
       {
         "subject": "Math",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Math 5 (F2F)"
       },
@@ -3905,8 +4029,8 @@ html, body {
       },
       {
         "subject": "Math",
-        "section": "Math 7 & 8 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Math 7 & 8 (Girls)"
       },
       {
@@ -3950,25 +4074,25 @@ html, body {
     "assignments": [
       {
         "subject": "Homeroom Guidance",
-        "section": "Homeroom Guidance \u2013 Grades 7 & 8 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Homeroom Guidance \u2013 Grades 7 & 8 (Boys)"
       },
       {
-        "subject": "Science",
-        "section": "Social Science 7 & 8 (Boys)",
-        "shift": "ODL",
+        "subject": "Social Science",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Social Science 7 & 8 (Boys)"
       },
       {
-        "subject": "Science",
-        "section": "Social Science 7 & 8 (Girls)",
-        "shift": "ODL",
+        "subject": "Social Science",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Social Science 7 & 8 (Girls)"
       },
       {
-        "subject": "ARAL Program",
-        "section": "GRADE  6  FACE TO FACE",
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Araling Panlipunan 6 (F2F)"
       },
@@ -3979,13 +4103,13 @@ html, body {
         "raw": "PSKP 11 (F2F)"
       },
       {
-        "subject": "Science",
+        "subject": "Social Science",
         "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Social Science 7 \u2013 Abu Sufyan"
       },
       {
-        "subject": "Science",
+        "subject": "Social Science",
         "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Social Science 8 \u2013 Sa'ad"
@@ -3997,25 +4121,25 @@ html, body {
         "raw": "PSKP 11 (ODL)"
       },
       {
-        "subject": "Science",
+        "subject": "Social Science",
         "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Social Science 7 \u2013 Usama"
       },
       {
-        "subject": "Science",
+        "subject": "Social Science",
         "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
         "shift": "ODL - 2ND SHIFT",
         "raw": "Social Science 7 \u2013 Anas"
       },
       {
-        "subject": "Science",
+        "subject": "Social Science",
         "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
         "shift": "ODL - 2ND SHIFT",
         "raw": "Social Science 8 \u2013 Nuaym"
       },
       {
-        "subject": "Science",
+        "subject": "Social Science",
         "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "Social Science 8 \u2013 Mu'adh"
@@ -4031,8 +4155,8 @@ html, body {
     "assignments": [
       {
         "subject": "TLE",
-        "section": "TLE 9 & 10 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "TLE 9 & 10 (Boys)"
       },
       {
@@ -4042,8 +4166,8 @@ html, body {
         "raw": "TLE 10 \u2013 Utbah"
       },
       {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "subject": "MAPEH",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "MAPEH 4 (F2F)"
       },
@@ -4055,8 +4179,8 @@ html, body {
       },
       {
         "subject": "TLE",
-        "section": "TLE 9 & 10 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "TLE 9 & 10 (Girls)"
       },
       {
@@ -4087,37 +4211,37 @@ html, body {
     "department": "High School Faculty",
     "assignments": [
       {
-        "subject": "Araling Panlipunan",
-        "section": "MAPEH 7 & 8 (Girls)",
-        "shift": "ODL",
+        "subject": "MAPEH",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "MAPEH 7 & 8 (Girls)"
       },
       {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE  6  FACE TO FACE",
+        "subject": "MAPEH",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "MAPEH 6 (F2F)"
       },
       {
         "subject": "TLE",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "TLE 5 (F2F)"
       },
       {
-        "subject": "Araling Panlipunan",
-        "section": "MAPEH 7 & 8 (Boys)",
-        "shift": "ODL",
+        "subject": "MAPEH",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "MAPEH 7 & 8 (Boys)"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 7 \u2013 Usama"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 8 \u2013 Sa'ad"
@@ -4129,19 +4253,19 @@ html, body {
         "raw": "Makabansa 3 \u2013 Habib"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 6 - ABDULLAH IBN SALAAM (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 6 \u2013 Abdullah"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 7 \u2013 Abu Sufyan"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 6 - ABBAS IBN ABD AL-MUTTALIB (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 6 \u2013 Abbas"
@@ -4153,7 +4277,7 @@ html, body {
         "raw": "Makabansa 3 \u2013 Ammar"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 8 \u2013 Nuaym"
@@ -4165,13 +4289,13 @@ html, body {
         "raw": "Makabansa 3 \u2013 Thabit"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 6 - KHALEED IBN WALEED (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 6 \u2013 Khaleed"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 8 \u2013 Mu'adh"
@@ -4183,7 +4307,7 @@ html, body {
         "raw": "Makabansa 3 \u2013 Zayd"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 7 \u2013 Anas"
@@ -4199,42 +4323,42 @@ html, body {
     "assignments": [
       {
         "subject": "Homeroom Guidance",
-        "section": "Homeroom Guidance \u2013 Grades 7 & 8 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Homeroom Guidance \u2013 Grades 7 & 8 (Girls)"
       },
       {
         "subject": "Filipino",
-        "section": "Filipino 7 & 8 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Filipino 7 & 8 (Girls)"
       },
       {
         "subject": "Filipino",
-        "section": "Filipino 7 & 8 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Filipino 7 & 8 (Boys)"
       },
       {
-        "subject": "Science",
-        "section": "Social Science 9 & 10 (Girls)",
-        "shift": "ODL",
+        "subject": "Social Science",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Social Science 9 & 10 (Girls)"
       },
       {
-        "subject": "Science",
-        "section": "Social Science 9 & 10 (Boys)",
-        "shift": "ODL",
+        "subject": "Social Science",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Social Science 9 & 10 (Boys)"
       },
       {
-        "subject": "Science",
+        "subject": "Social Science",
         "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Social Science 9 \u2013 Abu Hurayrah"
       },
       {
-        "subject": "Science",
+        "subject": "Social Science",
         "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Social Science 10 \u2013 Utbah"
@@ -4270,13 +4394,13 @@ html, body {
         "raw": "Filipino 7 \u2013 Anas"
       },
       {
-        "subject": "Science",
+        "subject": "Social Science",
         "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "Social Science 9 \u2013 Abu Jandal"
       },
       {
-        "subject": "Science",
+        "subject": "Social Science",
         "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "Social Science 10 \u2013 Abu Ayyub"
@@ -4288,7 +4412,7 @@ html, body {
         "raw": "Filipino 8 \u2013 Mu'adh"
       },
       {
-        "subject": "Science",
+        "subject": "Social Science",
         "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "Social Science 9 \u2013 Abu Dharr"
@@ -4304,8 +4428,8 @@ html, body {
     "assignments": [
       {
         "subject": "Math",
-        "section": "Math 9 & 10 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Math 9 & 10 (Girls)"
       },
       {
@@ -4334,8 +4458,8 @@ html, body {
       },
       {
         "subject": "Math",
-        "section": "Math 9 & 10 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Math 9 & 10 (Boys)"
       },
       {
@@ -4373,14 +4497,14 @@ html, body {
     "assignments": [
       {
         "subject": "GMRC",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "GMRC 5 (F2F)"
       },
       {
-        "subject": "General",
-        "section": "English 7 & 8 (Girls)",
-        "shift": "ODL",
+        "subject": "English",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "English 7 & 8 (Girls)"
       },
       {
@@ -4390,7 +4514,7 @@ html, body {
         "raw": "GMRC 7 \u2013 Usama"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 7 - ABU SUFYAN IBN AL-HARITH (1ST SHIFT) BOYS",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 7 \u2013 Abu Sufyan"
@@ -4402,7 +4526,7 @@ html, body {
         "raw": "GMRC 5 \u2013 Hamza"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 7 - USAMA IBN ZAYD (1ST SHIFT) GIRLS",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 7 \u2013 Usama"
@@ -4414,25 +4538,25 @@ html, body {
         "raw": "GMRC 5 \u2013 Muhammad"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 8 \u2013 Sa'ad"
       },
       {
-        "subject": "General",
-        "section": "English 7 & 8 (Boys)",
-        "shift": "ODL",
+        "subject": "English",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "English 7 & 8 (Boys)"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 7 - ANAS IBN MALIK (2ND SHIFT) - MIX",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 7 \u2013 Anas"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 8 - MU'ADH IBN JABAL (2ND SHIFT) - BOYS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 8 \u2013 Mu'adh"
@@ -4450,7 +4574,7 @@ html, body {
         "raw": "GMRC 5 \u2013 Al Harith"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 8 - NUAYM IBN MAS'UD (2ND SHIFT) MIX",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 7 \u2013 Nuaym"
@@ -4466,32 +4590,32 @@ html, body {
     "assignments": [
       {
         "subject": "Homeroom Guidance",
-        "section": "Homeroom Guidance \u2013 Grades 9 & 10 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Homeroom Guidance \u2013 Grades 9 & 10 (Boys)"
       },
       {
         "subject": "Filipino",
-        "section": "Filipino 9 & 10 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Filipino 9 & 10 (Boys)"
       },
       {
         "subject": "Filipino",
-        "section": "Filipino 9 & 10 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Filipino 9 & 10 (Girls)"
       },
       {
-        "subject": "Circle Time",
+        "subject": "Effective Communication",
         "section": "GRADE 11 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Effective Communication 11 (F2F)"
       },
       {
-        "subject": "Circle Time",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT",
+        "subject": "Effective Communication",
+        "section": "Effective Communication 11 (1st Shift ODL)",
+        "shift": "ODL",
         "raw": "Effective Communication 11 (1st Shift ODL)"
       },
       {
@@ -4507,9 +4631,9 @@ html, body {
         "raw": "Filipino 9 \u2013 Abu Hurayrah"
       },
       {
-        "subject": "Circle Time",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT",
+        "subject": "Effective Communication",
+        "section": "Effective Communication 11 (2nd Shift ODL)",
+        "shift": "ODL",
         "raw": "Effective Communication 11 (2nd Shift ODL)"
       },
       {
@@ -4592,7 +4716,7 @@ html, body {
     "assignments": [
       {
         "subject": "General Physics 2",
-        "section": "GRADE 12 - SUHAYB AR-RUMI",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Physics 2 \u2013 Suhayb Ar-Rumi (F2F)"
       },
@@ -4642,9 +4766,9 @@ html, body {
         "raw": "Homeroom Guidance \u2013 Grade 9 Advisory"
       },
       {
-        "subject": "General",
-        "section": "English 9 & 10 (Girls)",
-        "shift": "ODL",
+        "subject": "English",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "English 9 & 10 (Girls)"
       },
       {
@@ -4654,49 +4778,49 @@ html, body {
         "raw": "LCS 11 (F2F)"
       },
       {
-        "subject": "General",
-        "section": "English 9 & 10 (Boys)",
-        "shift": "ODL",
+        "subject": "English",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "English 9 & 10 (Boys)"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 10 \u2013 Utbah"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
         "shift": "ODL - 1ST SHIFT",
         "raw": "English 9 \u2013 Abu Hurayrah"
       },
       {
         "subject": "21st Century Literature (LCS)",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT",
+        "section": "LCS 11 (1st Shift ODL)",
+        "shift": "ODL",
         "raw": "LCS 11 (1st Shift ODL)"
       },
       {
         "subject": "21st Century Literature (LCS)",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "LCS 11 (2nd Shift ODL)",
+        "shift": "ODL",
         "raw": "LCS 11 (2nd Shift ODL)"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 9 \u2013 Abu Dharr"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 10 \u2013 Abu Ayyub"
       },
       {
-        "subject": "General",
+        "subject": "English",
         "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "English 9 \u2013 Abu Jandal"
@@ -4718,14 +4842,14 @@ html, body {
       },
       {
         "subject": "Values Education (ESP)",
-        "section": "Values Education (ESP) 9 & 10 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Values Education (ESP) 9 & 10 (Girls)"
       },
       {
         "subject": "Values Education (ESP)",
-        "section": "Values Education (ESP) 9 & 10 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Values Education (ESP) 9 & 10 (Boys)"
       },
       {
@@ -4774,9 +4898,9 @@ html, body {
     "department": "High School Faculty",
     "assignments": [
       {
-        "subject": "Araling Panlipunan",
-        "section": "MAPEH 9 & 10 (Boys)",
-        "shift": "ODL",
+        "subject": "MAPEH",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "MAPEH 9 & 10 (Boys)"
       },
       {
@@ -4792,7 +4916,7 @@ html, body {
         "raw": "Aral Math \u2013 Grades 7 & 8 (Boys)"
       },
       {
-        "subject": "Physical Education",
+        "subject": "PE 12",
         "section": "GRADE 12 - SUHAYB AR-RUMI",
         "shift": "F2F",
         "raw": "PE 12 \u2013 Suhayb Ar-Rumi (F2F)"
@@ -4804,19 +4928,19 @@ html, body {
         "raw": "Aral Math \u2013 Grades 9 & 10 (Boys)"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 10 - UTBAH IBN GHAZWAN (1ST SHIFT) GIRLS",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 10 \u2013 Utbah"
       },
       {
-        "subject": "Araling Panlipunan",
-        "section": "MAPEH 9 & 10 (Girls)",
-        "shift": "ODL",
+        "subject": "MAPEH",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "MAPEH 9 & 10 (Girls)"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 9 \u2013 Abu Hurayrah"
@@ -4834,19 +4958,19 @@ html, body {
         "raw": "Aral Math \u2013 Grades 7 & 8 (Girls)"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 9 - ABU JANDAL IBN SUHAYL (2ND SHIFT) GIRLS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 9 \u2013 Abu Jandal"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 10 - ABU AYYUB AL-ANSARI (2ND SHIFT) BOYS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 10 \u2013 Abu Ayyub"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 9 \u2013 Abu Dharr"
@@ -4868,20 +4992,20 @@ html, body {
       },
       {
         "subject": "Science",
-        "section": "Science 9 & 10 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Science 9 & 10 (Boys)"
       },
       {
         "subject": "Science",
-        "section": "Science 9 & 10 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Science 9 & 10 (Girls)"
       },
       {
         "subject": "General Biology 2",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT",
+        "section": "General Biology 2 \u2013 Grade 11 (1st Shift ODL)",
+        "shift": "ODL",
         "raw": "General Biology 2 \u2013 Grade 11 (1st Shift ODL)"
       },
       {
@@ -4931,8 +5055,8 @@ html, body {
     "assignments": [
       {
         "subject": "TLE",
-        "section": "TLE 7 & 8 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "TLE 7 & 8 (Boys)"
       },
       {
@@ -4963,61 +5087,61 @@ html, body {
     "department": "High School Faculty",
     "assignments": [
       {
-        "subject": "ARAL Program",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "subject": "Araling Panlipunan",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Araling Panlipunan 5 (F2F)"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 5 \u2013 Hamza"
       },
       {
-        "subject": "Araling Panlipunan",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "subject": "MAPEH",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "MAPEH 5 (F2F)"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 5 - MUHAMMAD IBN MASLAMAH (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 5 \u2013 Muhammad"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 5 - HAMZA IBN ABDUL (1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "MAPEH 5 \u2013 Hamza"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 5 \u2013 Muhammad"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 5 \u2013 Mus'ab"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 5 - AL HARITH BIN AWF (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 5 \u2013 Al Harith"
       },
       {
-        "subject": "Araling Panlipunan",
+        "subject": "MAPEH",
         "section": "GRADE 5 - MUS'AB IBN ABDUL MUTALIB (2ND SHIFT)",
         "shift": "ODL - 2ND SHIFT",
         "raw": "MAPEH 5 \u2013 Mus'ab"
       },
       {
-        "subject": "ARAL Program",
+        "subject": "Araling Panlipunan",
         "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
         "shift": "ODL - 1ST SHIFT",
         "raw": "Araling Panlipunan 5 \u2013 Al Harith"
@@ -5039,8 +5163,8 @@ html, body {
       },
       {
         "subject": "Arabic",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT",
+        "section": "Arabic 11 (1st Shift Girls ODL)",
+        "shift": "ODL",
         "raw": "Arabic 11 (1st Shift Girls ODL)"
       },
       {
@@ -5051,26 +5175,26 @@ html, body {
       },
       {
         "subject": "Arabic",
-        "section": "Arabic 9 & 10 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Arabic 9 & 10 (Girls)"
       },
       {
         "subject": "Arabic",
-        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
-        "shift": "ODL - 1ST SHIFT",
+        "section": "Arabic 12 (ODL)",
+        "shift": "ODL",
         "raw": "Arabic 12 (ODL)"
       },
       {
         "subject": "Arabic",
-        "section": "Arabic 9 & 10 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Arabic 9 & 10 (Boys)"
       },
       {
         "subject": "Arabic",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "Arabic 11 (2nd Shift Boys ODL)",
+        "shift": "ODL",
         "raw": "Arabic 11 (2nd Shift Boys ODL)"
       },
       {
@@ -5150,8 +5274,8 @@ html, body {
       },
       {
         "subject": "SHAF",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
         "raw": "SHAF 1 \u2013 Sa'ad"
       },
       {
@@ -5183,20 +5307,20 @@ html, body {
     "assignments": [
       {
         "subject": "GMRC",
-        "section": "GMRC 7 & 8 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "GMRC 7 & 8 (Girls)"
       },
       {
         "subject": "GMRC",
-        "section": "GRADE  6  FACE TO FACE",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "GMRC 6 (F2F)"
       },
       {
         "subject": "GMRC",
-        "section": "GMRC 7 & 8 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "GMRC 7 & 8 (Boys)"
       },
       {
@@ -5207,7 +5331,7 @@ html, body {
       },
       {
         "subject": "Arabic",
-        "section": "GRADE 3 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Arabic 3 (F2F)"
       },
@@ -5342,8 +5466,8 @@ html, body {
     "assignments": [
       {
         "subject": "Qur'an",
-        "section": "Qur'an 9 & 10 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Qur'an 9 & 10 (Boys)"
       },
       {
@@ -5360,14 +5484,14 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT",
+        "section": "Qur'an 11 (1st Shift ODL)",
+        "shift": "ODL",
         "raw": "Qur'an 11 (1st Shift ODL)"
       },
       {
         "subject": "Qur'an",
-        "section": "Qur'an 9 & 10 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Qur'an 9 & 10 (Girls)"
       },
       {
@@ -5390,8 +5514,8 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "Qur'an 11 (2nd Shift ODL)",
+        "shift": "ODL",
         "raw": "Qur'an 11 (2nd Shift ODL)"
       },
       {
@@ -5411,13 +5535,13 @@ html, body {
     "assignments": [
       {
         "subject": "SHAF",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "SHAF 4 (F2F)"
       },
       {
         "subject": "SHAF",
-        "section": "GRADE  6  FACE TO FACE",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "SHAF 6 (F2F)"
       },
@@ -5516,7 +5640,7 @@ html, body {
       },
       {
         "subject": "GMRC",
-        "section": "GRADE 3 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "GMRC 3 (F2F)"
       },
@@ -5603,8 +5727,8 @@ html, body {
       },
       {
         "subject": "SHAF",
-        "section": "SHAF 9 & 10 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "SHAF 9 & 10 (Boys)"
       },
       {
@@ -5621,26 +5745,26 @@ html, body {
       },
       {
         "subject": "SHAF",
-        "section": "SHAF 7 & 8 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "SHAF 7 & 8 (Girls)"
       },
       {
         "subject": "SHAF",
-        "section": "SHAF 9 & 10 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "SHAF 9 & 10 (Girls)"
       },
       {
         "subject": "SHAF",
-        "section": "GRADE 12 - ABU MUSA AL-ASHARI",
-        "shift": "ODL - 1ST SHIFT",
+        "section": "SHAF 12 (ODL)",
+        "shift": "ODL",
         "raw": "SHAF 12 (ODL)"
       },
       {
         "subject": "SHAF",
-        "section": "SHAF 7 & 8 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "SHAF 7 & 8 (Boys)"
       },
       {
@@ -5651,8 +5775,8 @@ html, body {
       },
       {
         "subject": "SHAF",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "SHAF 11 (2nd Shift ODL)",
+        "shift": "ODL",
         "raw": "SHAF 11 (2nd Shift ODL)"
       },
       {
@@ -5663,8 +5787,8 @@ html, body {
       },
       {
         "subject": "SHAF",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT",
+        "section": "SHAF 11 (1st Shift ODL)",
+        "shift": "ODL",
         "raw": "SHAF 11 (1st Shift ODL)"
       },
       {
@@ -5714,25 +5838,25 @@ html, body {
     "assignments": [
       {
         "subject": "Arabic",
-        "section": "Arabic 7 & 8 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Arabic 7 & 8 (Boys)"
       },
       {
         "subject": "Arabic",
-        "section": "Arabic 7 & 8 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Arabic 7 & 8 (Girls)"
       },
       {
         "subject": "Arabic",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Arabic 4 (F2F)"
       },
       {
         "subject": "Arabic",
-        "section": "GRADE  6  FACE TO FACE",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Arabic 6 (F2F)"
       },
@@ -5873,7 +5997,7 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Qur'an 4 (F2F)"
       },
@@ -5921,8 +6045,8 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "GRADE 12 - SUHAYB AR-RUMI",
-        "shift": "F2F",
+        "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
+        "shift": "ODL - 2ND SHIFT",
         "raw": "Qur'an 12 \u2013 Suhayb"
       },
       {
@@ -5975,8 +6099,8 @@ html, body {
       },
       {
         "subject": "Arabic",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
         "raw": "Arabic 1 \u2013 Sa'ad"
       },
       {
@@ -6008,8 +6132,8 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "Qur'an 7 & 8 (Girls)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Qur'an 7 & 8 (Girls)"
       },
       {
@@ -6038,8 +6162,8 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "Qur'an 7 & 8 (Boys)",
-        "shift": "ODL",
+        "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
+        "shift": "F2F",
         "raw": "Qur'an 7 & 8 (Boys)"
       },
       {
@@ -6125,7 +6249,7 @@ html, body {
     "assignments": [
       {
         "subject": "Qur'an",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Qur'an 5 (F2F)"
       },
@@ -6215,8 +6339,8 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
         "raw": "Qur'an 1 \u2013 Sa'ad"
       }
     ],
@@ -6230,7 +6354,7 @@ html, body {
     "assignments": [
       {
         "subject": "Arabic",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Arabic 5 (F2F)"
       },
@@ -6248,7 +6372,7 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "GRADE  6  FACE TO FACE",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Qur'an 6 (F2F)"
       },
@@ -6266,7 +6390,7 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "GRADE 3 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Qur'an 3 (F2F)"
       },
@@ -6353,13 +6477,13 @@ html, body {
     "assignments": [
       {
         "subject": "Math",
-        "section": "GRADE  6  FACE TO FACE",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Math 6 (F2F)"
       },
       {
         "subject": "SHAF",
-        "section": "GRADE 3 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "SHAF 3 (F2F)"
       },
@@ -6377,7 +6501,7 @@ html, body {
       },
       {
         "subject": "SHAF",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "SHAF 5 (F2F)"
       },
@@ -6488,7 +6612,7 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "GRADE 3 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Qur'an 3 (F2F)"
       },
@@ -6530,7 +6654,7 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "GRADE 4 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Qur'an 4 (F2F)"
       },
@@ -6560,7 +6684,7 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "GRADE 5 (FACE TO FACE)",
+        "section": "GRADE 2 (FACE TO FACE)",
         "shift": "F2F",
         "raw": "Qur'an 5 (F2F)"
       },
@@ -6635,14 +6759,14 @@ html, body {
       },
       {
         "subject": "Qur'an",
-        "section": "GRADE 11 (1ST SHIFT GIRLS)",
-        "shift": "ODL - 1ST SHIFT",
+        "section": "Qur'an 11 (1st Shift Girls ODL)",
+        "shift": "ODL",
         "raw": "Qur'an 11 (1st Shift Girls ODL)"
       },
       {
         "subject": "Qur'an",
-        "section": "GRADE 11 (2ND SHIFT BOYS)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "Qur'an 11 (2nd Shift Boys ODL)",
+        "shift": "ODL",
         "raw": "Qur'an 11 (2nd Shift Boys ODL)"
       }
     ],
@@ -6668,8 +6792,8 @@ html, body {
       },
       {
         "subject": "SHAF",
-        "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "shift": "ODL - 2ND SHIFT",
+        "section": "GRADE 8 - SA'AD IBN MUA'DH (1ST SHIFT) - MIX",
+        "shift": "ODL - 1ST SHIFT",
         "raw": "SHAF 1 \u2013 Sa'ad (2nd Shift ODL)"
       },
       {
@@ -6733,6 +6857,10 @@ html, body {
   let currentTab = 'SECTION';
   let rosterDept = 'ALL';
   let facultyCoverageFilter = 'ALL';
+  let facultySubjectFilter = 'ALL';
+  let facultySubjectQuery = '';
+  let facultySubjectSearchTimer = null;
+  let facultyCheckFilter = 'ALL';
   let sectionSubjectQuery = '';
   let sectionSubjectSearchTimer = null;
   let selectedGrade = 'ALL';
@@ -7398,35 +7526,113 @@ html, body {
     return /^(ustadh|ustadha|alim)\b/i.test((name || '').trim());
   }
 
+    function getTrackedSubjects() {
+    try {
+      return JSON.parse(localStorage.getItem('AMIS_TRACKED_SUBJECTS') || '{}');
+    } catch(e) { return {}; }
+  }
+
+  function toggleSubjectTrack(trackKey, isChecked) {
+    const tracked = getTrackedSubjects();
+    if (isChecked) {
+      tracked[trackKey] = true;
+    } else {
+      delete tracked[trackKey];
+    }
+    try {
+      localStorage.setItem('AMIS_TRACKED_SUBJECTS', JSON.stringify(tracked));
+    } catch(e) {}
+
+    const cards = document.querySelectorAll(`[data-track-key="${trackKey}"]`);
+    cards.forEach(card => {
+      const cb = card.querySelector('input[type="checkbox"]');
+      if (cb) cb.checked = isChecked;
+      const txt = card.querySelector('.check-subject-text');
+      if (txt) txt.textContent = isChecked ? '✓ Tracked' : 'Check Subject';
+      card.classList.toggle('is-checked-card', isChecked);
+    });
+
+    const select = document.getElementById('teacherSelect');
+    const selectedTid = select ? select.value : 'ALL_FACULTY';
+    renderFacultyToolbar(selectedTid);
+  }
+  window.toggleSubjectTrack = toggleSubjectTrack;
+
+  function setFacultyCheckFilter(mode) {
+    facultyCheckFilter = mode;
+    const select = document.getElementById('teacherSelect');
+    const selectedTid = select ? select.value : 'ALL_FACULTY';
+    renderFacultyView(selectedTid);
+  }
+  window.setFacultyCheckFilter = setFacultyCheckFilter;
+
+  function setFacultySubjectFilter(sub) {
+    facultySubjectFilter = sub;
+    const select = document.getElementById('teacherSelect');
+    const selectedTid = select ? select.value : 'ALL_FACULTY';
+    renderFacultyToolbar(selectedTid);
+    renderFacultyView(selectedTid);
+  }
+  window.setFacultySubjectFilter = setFacultySubjectFilter;
+
+  function onFacultySubjectSearchInput(query) {
+    facultySubjectQuery = query;
+    clearTimeout(facultySubjectSearchTimer);
+    facultySubjectSearchTimer = setTimeout(() => {
+      const select = document.getElementById('teacherSelect');
+      const selectedTid = select ? select.value : 'ALL_FACULTY';
+      renderFacultyView(selectedTid);
+    }, 250);
+  }
+  window.onFacultySubjectSearchInput = onFacultySubjectSearchInput;
+
+  function clearFacultySubjectSearch() {
+    facultySubjectQuery = '';
+    const input = document.getElementById('facultySubjectSearch');
+    if (input) input.value = '';
+    const select = document.getElementById('teacherSelect');
+    const selectedTid = select ? select.value : 'ALL_FACULTY';
+    renderFacultyView(selectedTid);
+  }
+  window.clearFacultySubjectSearch = clearFacultySubjectSearch;
+
   function cleanTokens(sec) {
     if (!sec) return [];
     const s = sec.toLowerCase().replace(/\(.*?\)/g, ' ').replace(/[^a-z0-9]/g, ' ');
-    const stop = new Set(['grade', 'class', 'schedule', 'shift', 'first', 'second', '1st', '2nd', 'f2f', 'face', 'to', 'mix', 'mixed', 'girls', 'boys', 'abu', 'ibn', 'bin', 'al', 'as', 'ar', 'ad', 'an', 'at', 'az']);
+    const stop = new Set(['grade', 'class', 'schedule', 'shift', 'first', 'second', '1st', '2nd', 'f2f', 'face', 'to', 'mix', 'mixed', 'girls', 'boys', 'abu', 'ibn', 'bin', 'al', 'as', 'ar', 'ad', 'an', 'at', 'az', 'the', 'and']);
     return s.split(/\s+/).filter(w => !stop.has(w) && w.length > 1);
   }
 
   function normSub(sub) {
     if (!sub) return '';
     const s = sub.toLowerCase().trim();
-    if (s.includes('panlipunan') || s === 'ap' || s.includes('social science')) return 'ap';
+    if (s.includes('panlipunan') || s === 'ap' || s.includes('social science') || s.includes('social studies') || s.includes('kasaysayan')) return 'ap';
     if (s.includes('makabansa')) return 'makabansa';
-    if (s.includes('math')) return 'math';
+    if (s.includes('aral math')) return 'aral_math';
+    if (s.includes('aral reading')) return 'aral_reading';
+    if (s.includes('aral science')) return 'aral_science';
+    if (s.includes('aral program') || s === 'aral') return 'aral';
+    if (s.includes('reading & literacy') || s.includes('reading and literacy') || s.includes('r & l')) return 'english';
+    if (s.includes('english')) return 'english';
+    if (s.includes('math') || s.includes('gen math')) return 'math';
     if (s.includes('physics')) return 'physics';
     if (s.includes('bio')) return 'biology';
     if (s.includes('science')) return 'science';
     if (s.includes('filipino') || s.includes('pagsulat') || s.includes('pfpl')) return 'filipino';
-    if (s.includes('arabic')) return 'arabic';
-    if (s.includes('qur')) return 'quran';
-    if (s.includes('shaf')) return 'shaf';
-    if (s.includes('gmrc') || s.includes('values') || s.includes('esp')) return 'gmrc';
-    if (s.includes('tle') || s.includes('tvl')) return 'tle';
-    if (s.includes('mapeh') || s.includes('pe')) return 'mapeh';
-    if (s.includes('english') || s.includes('reading') || s.includes('literacy')) return 'english';
-    if (s.includes('ec') || s.includes('effective') || s.includes('komunikasyon')) return 'ec';
+    if (s.includes('pananaliksik') || s.includes('pskp')) return 'pskp';
+    if (s.includes('effective communication') || s.includes('ec') || s.includes('komunikasyon')) return 'ec';
     if (s.includes('cpar')) return 'cpar';
     if (s.includes('ucsp')) return 'ucsp';
-    if (s.includes('pskp') || s.includes('pananaliksik')) return 'pskp';
     if (s.includes('lcs') || s.includes('literature')) return 'lcs';
+    if (s.includes('mapeh') || s.includes('pe') || s.includes('physical education')) return 'mapeh';
+    if (s.includes('tle') || s.includes('tvl') || s.includes('entrepreneurship')) return 'tle';
+    if (s.includes('gmrc') || s.includes('values') || s.includes('esp')) return 'gmrc';
+    if (s.includes('arabic')) return 'arabic';
+    if (s.includes('qur')) return 'quran';
+    if (s.includes('hadith')) return 'hadith';
+    if (s.includes('shaf') || s.includes('seerah') || s.includes('sirah') || s.includes('aqeedah') || s.includes('fiqh') || s.includes('tawheed')) return 'shaf';
+    if (s.includes('circle time') || s.includes('ct')) return 'circle_time';
+    if (s.includes('language')) return 'language';
     return s;
   }
 
@@ -7437,39 +7643,58 @@ html, body {
     const scheduled = [];
 
     assignments.forEach(a => {
-      const aSub = normSub(a.subject);
+      const aSub = normSub(a.subject || a.raw);
       const aTokens = cleanTokens(a.section);
-      const isF2F = (a.section || '').toLowerCase().includes('face');
-      const aGradeMatch = (a.section || '').match(/\b\d+\b/);
+      const isF2F = (a.section || '').toLowerCase().includes('face') || (a.shift || '').toUpperCase() === 'F2F' || (a.raw || '').toLowerCase().includes('f2f');
+      const aGradeMatch = (a.section || a.raw || '').match(/\b(12|11|10|9|8|7|6|5|4|3|2|1)\b/);
       const aGrade = aGradeMatch ? aGradeMatch[0] : '';
+      const aBoys = (a.section || a.raw || '').toLowerCase().includes('boy');
+      const aGirls = (a.section || a.raw || '').toLowerCase().includes('girl');
 
       let matchedExam = tExams.find(e => {
         const eSub = normSub(e.subject);
         const eTokens = cleanTokens(e.section_name);
         const isEF2F = (e.section_name || '').toLowerCase().includes('face');
-        const eGradeMatch = (e.section_name || '').match(/\b\d+\b/);
+        const eGradeMatch = (e.section_name || '').match(/\b(12|11|10|9|8|7|6|5|4|3|2|1)\b/);
         const eGrade = eGradeMatch ? eGradeMatch[0] : '';
+        const eBoys = (e.section_name || '').toLowerCase().includes('boy');
+        const eGirls = (e.section_name || '').toLowerCase().includes('girl');
+        const genderMatch = (!aBoys && !aGirls) || (aBoys && eBoys) || (aGirls && eGirls);
 
-        if (isF2F && isEF2F && aGrade && eGrade && aGrade === eGrade && aSub === eSub) {
-          return true;
+        if (aSub === eSub) {
+          if (isF2F && isEF2F && aGrade && eGrade && aGrade === eGrade && genderMatch) {
+            return true;
+          }
+          if (aTokens.length > 0 && aTokens.some(tok => eTokens.includes(tok)) && genderMatch) {
+            return true;
+          }
         }
-        return aSub === eSub && aTokens.some(tok => eTokens.includes(tok));
+        return false;
       });
 
       if (matchedExam) {
         scheduled.push({ assignment: a, exam: matchedExam });
       } else {
-        // Find where it is scheduled
         let assignedElsewhere = null;
         for (const e of allExams) {
+          if ((e.teacher_id || e.subject_teacher_id) === teacher.id) continue;
           const eSub = normSub(e.subject);
           const eTokens = cleanTokens(e.section_name);
           const isEF2F = (e.section_name || '').toLowerCase().includes('face');
-          const eGradeMatch = (e.section_name || '').match(/\b\d+\b/);
+          const eGradeMatch = (e.section_name || '').match(/\b(12|11|10|9|8|7|6|5|4|3|2|1)\b/);
           const eGrade = eGradeMatch ? eGradeMatch[0] : '';
+          const eBoys = (e.section_name || '').toLowerCase().includes('boy');
+          const eGirls = (e.section_name || '').toLowerCase().includes('girl');
+          const genderMatch = (!aBoys && !aGirls) || (aBoys && eBoys) || (aGirls && eGirls);
 
-          const isMatch = (isF2F && isEF2F && aGrade && eGrade && aGrade === eGrade && aSub === eSub) ||
-                          (aSub === eSub && aTokens.some(tok => eTokens.includes(tok)));
+          let isMatch = false;
+          if (aSub === eSub) {
+            if (isF2F && isEF2F && aGrade && eGrade && aGrade === eGrade && genderMatch) {
+              isMatch = true;
+            } else if (aTokens.length > 0 && aTokens.some(tok => eTokens.includes(tok)) && genderMatch) {
+              isMatch = true;
+            }
+          }
           if (isMatch) {
             assignedElsewhere = e.teacher || e.subject_teacher;
             break;
@@ -7479,6 +7704,7 @@ html, body {
           subject: a.subject,
           section: a.section,
           shift: a.shift,
+          raw: a.raw,
           assignedElsewhere: assignedElsewhere
         });
       }
@@ -7493,6 +7719,7 @@ html, body {
       isComplete: missing.length === 0
     };
   }
+  window.getTeacherLoadAudit = getTeacherLoadAudit;
 
   function setFacultyCoverageFilter(filterMode) {
     facultyCoverageFilter = filterMode;
@@ -7503,7 +7730,7 @@ html, body {
   }
   window.setFacultyCoverageFilter = setFacultyCoverageFilter;
 
-  function renderFacultyToolbar(targetTeacherId) {
+    function renderFacultyToolbar(targetTeacherId) {
     const teachersWithExams = FACULTY_ROSTER_DATA.filter(t => examCountForTeacher(t.id) > 0);
     const academicTeachers = teachersWithExams.filter(t => !isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
     const ustadhsFaculty = teachersWithExams.filter(t => isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
@@ -7544,6 +7771,24 @@ html, body {
       optionsHtml += '</optgroup>';
     }
 
+    const subjectOptions = [
+      { val: 'ALL', label: 'All Subjects (All Loads)' },
+      { val: 'mapeh', label: 'MAPEH / Physical Education (PE)' },
+      { val: 'math', label: 'Math / Gen Math / Aral Math' },
+      { val: 'science', label: 'Science / Gen Science / Biology / Physics' },
+      { val: 'english', label: 'English / Reading & Literacy / Aral Reading' },
+      { val: 'filipino', label: 'Filipino / Pananaliksik / Pagsulat' },
+      { val: 'ap', label: 'Araling Panlipunan / Social Science / AP' },
+      { val: 'gmrc', label: 'GMRC / Values Education (ESP)' },
+      { val: 'tle', label: 'TLE / TVL' },
+      { val: 'makabansa', label: 'Makabansa' },
+      { val: 'arabic', label: 'Arabic' },
+      { val: 'quran', label: "Qur'an" },
+      { val: 'shaf', label: 'SHAF / Hadith / Islamic Studies' },
+      { val: 'circle_time', label: 'Circle Time / Language' },
+      { val: 'ec', label: 'Effective Communication / SHS Core' }
+    ];
+
     toolbarControls.innerHTML = `
       <div class="filter-group">
         <span class="filter-label">
@@ -7553,6 +7798,26 @@ html, body {
         <select id="teacherSelect" class="filter-select" onchange="renderFacultyView(this.value)">
           ${optionsHtml}
         </select>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-label">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+          Subject:
+        </span>
+        <select id="facultySubjectFilter" class="filter-select" onchange="setFacultySubjectFilter(this.value)" title="Check & filter by subject across faculty">
+          ${subjectOptions.map(opt => `<option value="${opt.val}" ${facultySubjectFilter === opt.val ? 'selected' : ''}>${opt.label}</option>`).join('')}
+        </select>
+      </div>
+
+      <div class="filter-group search-filter-group" style="position:relative;">
+        <input type="text" id="facultySubjectSearch" class="filter-search-input"
+          placeholder="🔍 Track subject (e.g. MAPEH, Math 4, GMRC)..."
+          value="${esc(facultySubjectQuery)}"
+          oninput="onFacultySubjectSearchInput(this.value)"
+          title="Type subject name or section to track across faculty"
+        />
+        ${facultySubjectQuery ? `<button class="clear-search-btn" onclick="clearFacultySubjectSearch()" title="Clear search">&times;</button>` : ''}
       </div>
 
       <div class="faculty-filter-pills" style="margin-left:4px;">
@@ -7608,6 +7873,27 @@ html, body {
       }
     }
 
+    // Filter by subject
+    if (facultySubjectFilter !== 'ALL') {
+      targetTeachers = targetTeachers.filter(t => {
+        const hasLoadSub = (t.assignments || []).some(a => normSub(a.subject || a.raw) === facultySubjectFilter);
+        const hasExamSub = EXAM_RECORDS.some(e => (e.teacher_id || e.subject_teacher_id) === t.id && normSub(e.subject) === facultySubjectFilter);
+        return hasLoadSub || hasExamSub;
+      });
+    }
+
+    // Filter by subject search query
+    if (facultySubjectQuery.trim()) {
+      const q = facultySubjectQuery.toLowerCase().trim();
+      targetTeachers = targetTeachers.filter(t => {
+        const hasLoadMatch = (t.assignments || []).some(a => (a.subject || '').toLowerCase().includes(q) || (a.section || '').toLowerCase().includes(q) || (a.raw || '').toLowerCase().includes(q));
+        const hasExamMatch = EXAM_RECORDS.some(e => (e.teacher_id || e.subject_teacher_id) === t.id && ((e.subject || '').toLowerCase().includes(q) || (e.section_name || '').toLowerCase().includes(q)));
+        return hasLoadMatch || hasExamMatch || (t.name || '').toLowerCase().includes(q);
+      });
+    }
+
+    const trackedSubjects = getTrackedSubjects();
+
     const summaryBarHtml = `
       <div class="faculty-summary-bar">
         <div class="faculty-stats-group">
@@ -7616,6 +7902,8 @@ html, body {
           <span class="faculty-stat-pill">Scheduled Exams: <span class="faculty-stat-num">${totalScheduledExams}</span></span>
           <span class="faculty-stat-pill">Fully Scheduled: <span class="faculty-stat-num" style="color:#16a34a;">${completeFacultyCount}</span></span>
           <span class="faculty-stat-pill">With Missing Subjects: <span class="faculty-stat-num" style="color:#dc2626;">${missingFacultyCount}</span></span>
+          ${facultySubjectFilter !== 'ALL' ? `<span class="faculty-stat-pill" style="background:#e0f2fe; color:#0369a1; padding:3px 8px; border-radius:4px;">Filter: ${esc(facultySubjectFilter.toUpperCase())} (${targetTeachers.length} Faculty)</span>` : ''}
+          ${facultySubjectQuery ? `<span class="faculty-stat-pill" style="background:#fef3c7; color:#92400e; padding:3px 8px; border-radius:4px;">Search: "${esc(facultySubjectQuery)}"</span>` : ''}
         </div>
         <div class="faculty-filter-pills">
           <button class="filter-pill-btn ${facultyCoverageFilter === 'ALL' ? 'active' : ''}" onclick="setFacultyCoverageFilter('ALL')">All Faculty (${totalFacultyCount})</button>
@@ -7626,7 +7914,7 @@ html, body {
     `;
 
     if (targetTeachers.length === 0) {
-      sheetsContainer.innerHTML = summaryBarHtml + '<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">No faculty match the selected filter.</div>';
+      sheetsContainer.innerHTML = summaryBarHtml + '<div style="text-align:center; padding:50px; color:#64748b; font-weight:700;">No faculty match the selected subject or coverage filter.</div>';
       return;
     }
 
@@ -7659,6 +7947,20 @@ html, body {
       const teacherDept = t.department;
       const examDutyCount = tExams.length;
       const audit = getTeacherLoadAudit(t, EXAM_RECORDS);
+
+      let displayedMissing = audit.missingItems;
+      if (facultySubjectFilter !== 'ALL') {
+        displayedMissing = displayedMissing.filter(m => normSub(m.subject || m.raw) === facultySubjectFilter);
+      }
+      if (facultySubjectQuery.trim()) {
+        const q = facultySubjectQuery.toLowerCase().trim();
+        displayedMissing = displayedMissing.filter(m => (m.subject || '').toLowerCase().includes(q) || (m.section || '').toLowerCase().includes(q) || (m.raw || '').toLowerCase().includes(q));
+      }
+
+      let trackedCountInTeacher = displayedMissing.filter(m => {
+        const key = `${t.id}_${m.subject}_${m.section}`.replace(/[^a-zA-Z0-9_-]/g, '_');
+        return !!trackedSubjects[key];
+      }).length;
 
       fullHtml += `
         <div class="timetable-sheet" id="sheet_${t.id}" data-export-kind="Faculty" data-export-name="${esc(teacherName)}">
@@ -7700,18 +8002,28 @@ html, body {
             <div class="missing-subjects-alert">
               <div class="missing-alert-header">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
-                <span>Detected Missing Subject(s) in Exam Schedule (${audit.missingCount} of ${audit.totalLoads} loads not on this timetable)</span>
+                <span>Detected Missing Subject(s) in Exam Schedule (${audit.missingCount} of ${audit.totalLoads} loads not on this timetable) · <strong>${trackedCountInTeacher} of ${displayedMissing.length} Tracked</strong></span>
               </div>
               <div class="missing-alert-grid">
-                ${audit.missingItems.map(m => `
-                  <div class="missing-card">
-                    <span class="missing-card-subj">${esc(m.subject)}</span>
-                    <span class="missing-card-sec">${esc(m.section)} ${m.shift ? `• ${esc(m.shift)}` : ''}</span>
-                    <span class="missing-card-status ${m.assignedElsewhere ? 'status-reassigned' : 'status-unscheduled'}">
-                      ${m.assignedElsewhere ? `Scheduled under: <strong>${esc(m.assignedElsewhere)}</strong>` : '⚠️ No Exam Scheduled in System'}
-                    </span>
-                  </div>
-                `).join('')}
+                ${displayedMissing.map(m => {
+                  const key = `${t.id}_${m.subject}_${m.section}`.replace(/[^a-zA-Z0-9_-]/g, '_');
+                  const isChecked = !!trackedSubjects[key];
+                  return `
+                    <div class="missing-card ${isChecked ? 'is-checked-card' : ''}" data-track-key="${esc(key)}">
+                      <div class="missing-card-top">
+                        <span class="missing-card-subj">${esc(m.subject)}</span>
+                        <label class="check-subject-label" title="Click checkbox to mark subject as checked/tracked">
+                          <input type="checkbox" ${isChecked ? 'checked' : ''} onchange="toggleSubjectTrack('${esc(key)}', this.checked)">
+                          <span class="check-subject-text">${isChecked ? '✓ Tracked' : 'Check Subject'}</span>
+                        </label>
+                      </div>
+                      <span class="missing-card-sec">${esc(m.section)} ${m.shift ? `• ${esc(m.shift)}` : ''}</span>
+                      <span class="missing-card-status ${m.assignedElsewhere ? 'status-reassigned' : 'status-unscheduled'}">
+                        ${m.assignedElsewhere ? `Scheduled under: <strong>${esc(m.assignedElsewhere)}</strong>` : '⚠️ No Exam Scheduled in System'}
+                      </span>
+                    </div>
+                  `;
+                }).join('')}
               </div>
             </div>
           ` : `
@@ -7749,145 +8061,77 @@ html, body {
         const beginsShift = rowIdx === 0 || masterSlots[rowIdx - 1].shift_group !== slot.shift_group;
         let shiftCellHtml = '';
         if (beginsShift) {
-          let shiftRowspan = 1;
-          while (rowIdx + shiftRowspan < masterSlots.length && masterSlots[rowIdx + shiftRowspan].shift_group === slot.shift_group) {
-            shiftRowspan++;
-          }
-          shiftCellHtml = `<td class="cell-shift cell-shift--${slot.shift_group}" rowspan="${shiftRowspan}" aria-label="${slot.shift_group} shift"><span class="shift-stack">${shiftLabels[slot.shift_group]}</span></td>`;
+          const shiftRowCount = masterSlots.filter(s => s.shift_group === slot.shift_group).length;
+          shiftCellHtml = `<td class="cell-shift" rowspan="${shiftRowCount}">${shiftLabels[slot.shift_group]}</td>`;
         }
+
         if (slot.type === 'break') {
           fullHtml += `
-            <tr class="row-shift-${slot.shift_group}">
+            <tr class="row-break">
               ${shiftCellHtml}
-              <td class="cell-time"><span class="cell-time-val">${esc(slot.time)}</span></td>
-              <td class="cell-mins">${esc(slot.mins)}</td>
+              <td class="cell-time">${slot.time}</td>
+              <td class="cell-mins">${slot.mins}</td>
+              <td class="cell-break-banner" colspan="4">${slot.label}</td>
+            </tr>
           `;
+          return;
+        }
 
-          let currentSpan = 0;
-          EXAM_DATES.forEach(d => {
-            if (activeRowspan[d.day_num] > 0) {
-              if (currentSpan > 0) {
-                fullHtml += `<td colspan="${currentSpan}" class="cell-break">${esc(slot.label)}</td>`;
-                currentSpan = 0;
-              }
-              activeRowspan[d.day_num]--;
-            } else {
-              currentSpan++;
-            }
-          });
-          if (currentSpan > 0) {
-            fullHtml += `<td colspan="${currentSpan}" class="cell-break">${esc(slot.label)}</td>`;
+        let rowCells = '';
+        EXAM_DATES.forEach(d => {
+          if (activeRowspan[d.day_num] > 0) {
+            activeRowspan[d.day_num]--;
+            return;
           }
 
-          fullHtml += `</tr>`;
-        } else {
-          fullHtml += `
-            <tr class="row-shift-${slot.shift_group}">
-              ${shiftCellHtml}
-              <td class="cell-time">
-                <span class="cell-time-val">${esc(slot.time)}</span>
-                ${slot.note ? `<div class="cell-time-note">${esc(slot.note)}</div>` : ''}
-              </td>
-              <td class="cell-mins">${esc(slot.mins)}</td>
-          `;
+          const slotExams = tExams.filter(e => e.day_num === d.day_num && e.time_slot === slot.time);
 
-          EXAM_DATES.forEach(d => {
-            if (activeRowspan[d.day_num] > 0) {
-              activeRowspan[d.day_num]--;
-              return;
-            }
+          if (slotExams.length === 0) {
+            rowCells += `<td class="cell-empty">--</td>`;
+          } else {
+            const examCardsHtml = slotExams.map(ex => {
+              const subColor = getSubjectColor(ex.subject);
+              const isF2F = (ex.section_name || '').toLowerCase().includes('face');
+              const audCls = isF2F ? 'tag-f2f' : 'tag-odl';
+              const audText = isF2F ? 'F2F' : 'ODL';
+              const isHighlight = (facultySubjectFilter !== 'ALL' && normSub(ex.subject) === facultySubjectFilter) ||
+                                  (facultySubjectQuery.trim() && (ex.subject || '').toLowerCase().includes(facultySubjectQuery.toLowerCase().trim()));
 
-            const match = tExams.find(e => {
-              if (e.day_number !== d.day_num && e.short_date !== d.short_date) return false;
-              return examStartsAtScheduleRow(e, slot.time, slot.slot_num);
-            });
-
-            if (match) {
-              const displayedSubject = publicExamSubject(match);
-              const color = getSubjectColor(displayedSubject);
-              const genderChip = getExamGenderChip(match);
-              const is120 = match.duration_minutes === 120 || match.slots_spanned === 2;
-              const isAutomaticProctorCoverage = match.display_as_proctor_duty === true
-                || match.proctor_assignment_source !== 'SUBJECT_TEACHER';
-              let calcRowspan = 1;
-
-              if (is120) {
-                let nextExamIdx = -1;
-                for (let nextIdx = rowIdx + 1; nextIdx < masterSlots.length; nextIdx++) {
-                  if (masterSlots[nextIdx].type === 'exam') {
-                    nextExamIdx = nextIdx;
-                    break;
-                  }
-                }
-                calcRowspan = nextExamIdx > -1 ? (nextExamIdx - rowIdx + 1) : 1;
-                activeRowspan[d.day_num] = calcRowspan - 1;
-              }
-
-              fullHtml += `
-                <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
-                  <div class="cell-class-inner">
-                    ${isAutomaticProctorCoverage ? `
-                      <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                      <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                      ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
-                    ` : `
-                      <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                      <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                      ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
-                      <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
-                    `}
+              return `
+                <div class="exam-card-inner ${isHighlight ? 'highlight-subject-slot' : ''}" style="border-left: 4px solid ${subColor};">
+                  <div class="exam-card-subject" style="color: ${subColor};">${esc(ex.subject)}</div>
+                  <div class="exam-card-section">${esc(ex.section_name)}</div>
+                  <div class="exam-card-meta">
+                    <span class="exam-tag ${audCls}">${audText}</span>
+                    <span class="exam-tag tag-mins">${ex.duration_minutes || 60} MIN</span>
                   </div>
-                </td>
+                </div>
               `;
-            } else {
-              fullHtml += `<td class="cell-empty"></td>`;
-            }
-          });
+            }).join('');
 
-          fullHtml += `</tr>`;
-        }
+            rowCells += `<td class="cell-exam-slot">${examCardsHtml}</td>`;
+          }
+        });
+
+        fullHtml += `
+          <tr>
+            ${shiftCellHtml}
+            <td class="cell-time">${slot.time}</td>
+            <td class="cell-mins">${slot.mins}</td>
+            ${rowCells}
+          </tr>
+        `;
       });
 
       fullHtml += `
               </tbody>
             </table>
           </div>
-
-          <div class="sheet-footer">
-            <div class="legend-strip">
-              <span style="font-weight: 800; color: var(--ink);">Subject Keys:</span>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#f3e8ff; border-color:#d8b4fe;"></span> Arabic / Qur'an / Islamic</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#dcfce7; border-color:#86efac;"></span> GMRC / Values / ESP</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#e0f2fe; border-color:#7dd3fc;"></span> Mathematics</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#ccfbf1; border-color:#5eead4;"></span> Science / Biology / Physics</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#fef3c7; border-color:#fde047;"></span> English / Reading / LCS / EC</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#ffedd5; border-color:#fdba74;"></span> Filipino / AP / Makabansa / PSKP</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#fae8ff; border-color:#f0abfc;"></span> MAPEH / TLE / TVL / PE</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#e0e7ff; border-color:#a5b4fc;"></span> Research / MIL</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#fee2e2; border-color:#fca5a5;"></span> Oral &amp; Written Exam</div>
-              <div class="legend-box"><span class="legend-color-dot" style="background:#fef9c3; border-color:#fef08a;"></span> ARAL Program</div>
-            </div>
-            <div>
-              Generated: <strong>${todayStr}</strong>
-            </div>
-          </div>
         </div>
       `;
     });
 
     sheetsContainer.innerHTML = fullHtml;
-  }
-
-  // -------------------------------------------------------------
-  // TAB 3: FACULTY ROSTER & ASSIGNED SUBJECT VERIFICATION
-  // -------------------------------------------------------------
-  function renderRosterToolbar() {
-    toolbarControls.innerHTML = `
-      <a href="index.html" class="btn-action btn-back" title="Back to Home">
-        <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-        Back Home
-      </a>
-    `;
   }
 
   function renderRosterView() {
@@ -7936,7 +8180,7 @@ html, body {
 
                 ${(() => {
                   const audit = getTeacherLoadAudit(t, EXAM_RECORDS);
-                  const missingTitles = new Set(audit.missingItems.map(m => m.subject + '|||' + m.section));
+                  const missingSet = new Set(audit.missingItems.flatMap(m => [m.raw, m.subject + '|||' + m.section]));
                   return `
                     <div class="assigned-subjects-title">
                       ${INACTIVE_TEACHER_IDS.has(t.id) ? 'Former Subject Assignments — Reference Only' : 'Assigned Subjects &amp; Load'}
@@ -7944,9 +8188,9 @@ html, body {
                     </div>
                     <div class="subject-pill-list">
                       ${t.assignments.length > 0 ? t.assignments.map(a => {
-                        const isMissing = missingTitles.has(a.subject + '|||' + a.section);
+                        const isMissing = missingSet.has(a.raw) || missingSet.has(a.subject + '|||' + a.section);
                         if (isMissing) {
-                          const missingInfo = audit.missingItems.find(m => m.subject === a.subject && m.section === a.section);
+                          const missingInfo = audit.missingItems.find(m => m.raw === a.raw || (m.subject === a.subject && m.section === a.section));
                           const extraNote = missingInfo && missingInfo.assignedElsewhere ? `Scheduled under: ${missingInfo.assignedElsewhere}` : 'No exam scheduled';
                           return `
                             <span class="subj-tag subj-tag--missing" title="MISSING in this teacher\'s exam schedule! (${extraNote})">
