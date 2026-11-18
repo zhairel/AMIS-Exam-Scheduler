@@ -408,6 +408,36 @@ for teacher_info in clean_teachers:
         'assignments': teacher_assignments
     })
 
+# Post-process Ustadha Saliha Grade 2 GMRC to morning shift
+for e in final_exam_records:
+    if e.get('teacher_id') == 'tchr_saliha' and e.get('subject') == 'GMRC':
+        if 'SAEED' in e.get('section_name', ''):
+            e['day_number'] = 1
+            e['date'] = 'Tuesday, December 1, 2026'
+            e['short_date'] = 'Dec 1'
+            e['day_name'] = 'Tuesday'
+            e['slot_number'] = 1
+            e['slots_spanned'] = 1
+            e['start_slot_index'] = 0
+            e['end_slot_index'] = 0
+            e['start_m'] = 480
+            e['end_m'] = 540
+            e['time_slot'] = '08:00 AM – 09:00 AM'
+            e['time'] = '08:00 AM – 09:00 AM'
+        elif 'AASIM' in e.get('section_name', ''):
+            e['day_number'] = 4
+            e['date'] = 'Sunday, December 6, 2026'
+            e['short_date'] = 'Dec 6'
+            e['day_name'] = 'Sunday'
+            e['slot_number'] = 1
+            e['slots_spanned'] = 1
+            e['start_slot_index'] = 0
+            e['end_slot_index'] = 0
+            e['start_m'] = 480
+            e['end_m'] = 540
+            e['time_slot'] = '08:00 AM – 09:00 AM'
+            e['time'] = '08:00 AM – 09:00 AM'
+
 print(f"Total final exam records: {len(final_exam_records)}")
 print(f"Total teachers in final roster: {len(final_roster_data)}")
 total_loads = sum(len(t['assignments']) for t in final_roster_data)
