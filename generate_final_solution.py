@@ -438,6 +438,36 @@ for e in final_exam_records:
             e['time_slot'] = '08:00 AM – 09:00 AM'
             e['time'] = '08:00 AM – 09:00 AM'
 
+# Post-process Teacher Nadzra Grade 9 & 10 Filipino to 1st shift / morning
+for e in final_exam_records:
+    if e.get('teacher_id') == 'tchr_nadzra' and e.get('subject') == 'Filipino':
+        if 'JANDAL' in e.get('section_name', ''):
+            e['day_number'] = 1
+            e['date'] = 'Tuesday, December 1, 2026'
+            e['short_date'] = 'Dec 1'
+            e['day_name'] = 'Tuesday'
+            e['slot_number'] = 2
+            e['slots_spanned'] = 1
+            e['start_slot_index'] = 1
+            e['end_slot_index'] = 1
+            e['start_m'] = 830
+            e['end_m'] = 890
+            e['time_slot'] = '01:50 PM – 02:50 PM'
+            e['time'] = '01:50 PM – 02:50 PM'
+        elif 'AYYUB' in e.get('section_name', ''):
+            e['day_number'] = 4
+            e['date'] = 'Sunday, December 6, 2026'
+            e['short_date'] = 'Dec 6'
+            e['day_name'] = 'Sunday'
+            e['slot_number'] = 3
+            e['slots_spanned'] = 1
+            e['start_slot_index'] = 2
+            e['end_slot_index'] = 2
+            e['start_m'] = 625
+            e['end_m'] = 685
+            e['time_slot'] = '10:25 AM – 11:25 AM'
+            e['time'] = '10:25 AM – 11:25 AM'
+
 print(f"Total final exam records: {len(final_exam_records)}")
 print(f"Total teachers in final roster: {len(final_roster_data)}")
 total_loads = sum(len(t['assignments']) for t in final_roster_data)
