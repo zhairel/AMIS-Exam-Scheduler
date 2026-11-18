@@ -6667,6 +6667,13 @@ html, body {
     return record.proctor_id || record.teacher_id || record.subject_teacher_id || '';
   }
 
+  function isFaceToFace(record) {
+    if (!record) return false;
+    const sec = String(record.section_name || record.section || '').toLowerCase();
+    const mod = String(record.modality || record.shift || '').toLowerCase();
+    return sec.includes('face') || sec.includes('f2f') || mod === 'f2f';
+  }
+
   function strictScheduleConflicts() {
     const conflicts = [];
     const overlaps = (left, right) =>
@@ -6683,12 +6690,26 @@ html, body {
         const leftTeacherId = activeScheduleTeacherId(left);
         const rightTeacherId = activeScheduleTeacherId(right);
         const sameTeacher = leftTeacherId && leftTeacherId === rightTeacherId;
-        const sameCohort =
-          left.grade_level === right.grade_level
+
+        // Physical teacher conflict:
+        // 1) Both in-person F2F in different classrooms
+        // 2) Simultaneous in-person F2F and Online proctoring
+        // Multi-class online proctoring within ODL is standard practice for combined virtual sessions.
+        const physicalTeacherOverlap = sameTeacher && (
+          (isFaceToFace(left) && isFaceToFace(right) && (left.section_id || left.section_name) !== (right.section_id || right.section_name))
+          || (isFaceToFace(left) !== isFaceToFace(right))
+        );
+
+        // Cohort conflict: Same student cohort taking two exams simultaneously
+        // (Excludes Kindergarten combined dual-subject schedule, e.g. Hadith and Arabic)
+        const isKinderDual = String(left.grade_level || '').toLowerCase().includes('kinder') && String(right.grade_level || '').toLowerCase().includes('kinder');
+        const sameCohort = !isKinderDual
+          && left.grade_level === right.grade_level
           && left.modality === right.modality
           && (left.section_id || left.section_name) === (right.section_id || right.section_name)
           && String(left.gender || 'NONE') === String(right.gender || 'NONE');
-        if (sameTeacher || sameCohort) conflicts.push([left.id, right.id]);
+
+        if (physicalTeacherOverlap || sameCohort) conflicts.push([left.id, right.id]);
       }
     }
     return conflicts;
