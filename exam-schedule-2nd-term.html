@@ -2156,26 +2156,45 @@ html, body {
    DRAG-AND-DROP SUBJECT CELLS & SCHEDULE EDITOR STYLES
    ========================================================================== */
 
-.cell-class-inner {
+/* Locked / Read-Only Mode (Default) */
+body:not(.admin-edit-unlocked) #dragEditorToolbar {
+  display: none !important;
+}
+body:not(.admin-edit-unlocked) .cell-class-inner {
+  cursor: default !important;
+}
+body:not(.admin-edit-unlocked) .cell-class-inner:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+body:not(.admin-edit-unlocked) .cell-drag-indicator {
+  display: none !important;
+}
+
+/* Admin Unlocked Mode (Activated via '5' + Passcode) */
+body.admin-edit-unlocked #dragEditorToolbar {
+  display: flex !important;
+}
+body.admin-edit-unlocked .cell-class-inner {
   position: relative;
-  cursor: grab;
+  cursor: grab !important;
   user-select: none;
   transition: transform 140ms ease, box-shadow 140ms ease, opacity 140ms ease;
 }
-.cell-class-inner:active {
-  cursor: grabbing;
+body.admin-edit-unlocked .cell-class-inner:active {
+  cursor: grabbing !important;
 }
-.cell-class-inner:hover {
-  transform: translateY(-2px);
+body.admin-edit-unlocked .cell-class-inner:hover {
+  transform: translateY(-2px) !important;
   box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12) !important;
 }
-.cell-class-inner.is-dragging {
+body.admin-edit-unlocked .cell-class-inner.is-dragging {
   opacity: 0.35 !important;
   transform: scale(0.96) !important;
   border-style: dashed !important;
   box-shadow: none !important;
 }
-.cell-class-inner.is-selected {
+body.admin-edit-unlocked .cell-class-inner.is-selected {
   outline: 3px solid #2563eb !important;
   outline-offset: 1px;
   box-shadow: 0 0 14px rgba(37, 99, 235, 0.5) !important;
@@ -2198,28 +2217,182 @@ html, body {
   letter-spacing: -1px;
   transition: opacity 120ms ease;
 }
-.cell-class-inner:hover .cell-drag-indicator {
+body.admin-edit-unlocked .cell-class-inner:hover .cell-drag-indicator {
   opacity: 0.95;
 }
 
-/* Drop targets */
+/* Drop targets & Live Conflict/Free Previews */
 [data-drop-zone] {
-  transition: background-color 150ms ease, outline 150ms ease;
+  position: relative !important;
+  transition: background-color 140ms ease, outline 140ms ease, box-shadow 140ms ease;
 }
-[data-drop-zone].drop-zone-potential {
-  background-color: rgba(241, 245, 249, 0.7);
+
+body.admin-edit-unlocked [data-drop-zone].drop-zone-source {
+  opacity: 0.45 !important;
+  outline: 2px dashed #94a3b8 !important;
+  outline-offset: -2px;
 }
-[data-drop-zone].drop-zone-active {
-  background-color: #ecfdf5 !important;
-  outline: 2.5px dashed #059669 !important;
+
+body.admin-edit-unlocked [data-drop-zone].drop-preview-free {
+  background-color: #f0fdf4 !important;
+  outline: 2px dashed #16a34a !important;
   outline-offset: -2px;
   cursor: copy !important;
 }
-[data-drop-zone].drop-zone-swap {
+
+body.admin-edit-unlocked [data-drop-zone].drop-preview-conflict {
+  background-color: #fef2f2 !important;
+  outline: 2px dashed #dc2626 !important;
+  outline-offset: -2px;
+  cursor: not-allowed !important;
+}
+
+body.admin-edit-unlocked [data-drop-zone].drop-preview-swap-ok {
   background-color: #eff6ff !important;
-  outline: 2.5px dashed #2563eb !important;
+  outline: 2px dashed #2563eb !important;
   outline-offset: -2px;
   cursor: alias !important;
+}
+
+body.admin-edit-unlocked [data-drop-zone].drop-preview-swap-conflict {
+  background-color: #fff1f2 !important;
+  outline: 2px dashed #e11d48 !important;
+  outline-offset: -2px;
+  cursor: not-allowed !important;
+}
+
+/* Hover active states */
+body.admin-edit-unlocked [data-drop-zone].drop-zone-active.drop-preview-free {
+  background-color: #dcfce7 !important;
+  outline: 3px solid #15803d !important;
+  box-shadow: inset 0 0 14px rgba(22, 163, 74, 0.28) !important;
+}
+
+body.admin-edit-unlocked [data-drop-zone].drop-zone-active.drop-preview-conflict {
+  background-color: #fee2e2 !important;
+  outline: 3px solid #b91c1c !important;
+  box-shadow: inset 0 0 14px rgba(220, 38, 38, 0.32) !important;
+}
+
+body.admin-edit-unlocked [data-drop-zone].drop-zone-swap.drop-preview-swap-ok {
+  background-color: #dbeafe !important;
+  outline: 3px solid #1d4ed8 !important;
+  box-shadow: inset 0 0 14px rgba(37, 99, 235, 0.28) !important;
+}
+
+body.admin-edit-unlocked [data-drop-zone].drop-zone-swap.drop-preview-swap-conflict {
+  background-color: #ffe4e6 !important;
+  outline: 3px solid #be123c !important;
+  box-shadow: inset 0 0 14px rgba(225, 29, 72, 0.32) !important;
+}
+
+/* Empty Cell Live Text Hints */
+body.admin-edit-unlocked [data-drop-zone].cell-empty.drop-preview-free::after {
+  content: "FREE";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 11px;
+  font-weight: 800;
+  color: #15803d;
+  letter-spacing: 0.5px;
+}
+
+body.admin-edit-unlocked [data-drop-zone].cell-empty.drop-preview-conflict::after {
+  content: "CONFLICT";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 10px;
+  font-weight: 800;
+  color: #dc2626;
+  letter-spacing: 0.5px;
+}
+
+/* Floating Status Badges that appear on cells */
+.cell-drop-badge {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 2px 7px;
+  border-radius: 9999px;
+  font-size: 9.5px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  z-index: 25;
+  pointer-events: none;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.2);
+  animation: badgePopIn 130ms cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+}
+@keyframes badgePopIn {
+  0% { transform: scale(0.65); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.cell-drop-badge.badge-free {
+  background: #15803d;
+  color: #ffffff;
+  border: 1px solid #166534;
+}
+
+.cell-drop-badge.badge-conflict {
+  background: #dc2626;
+  color: #ffffff;
+  border: 1px solid #991b1b;
+}
+
+.cell-drop-badge.badge-swap-ok {
+  background: #2563eb;
+  color: #ffffff;
+  border: 1px solid #1d4ed8;
+}
+
+.cell-drop-badge.badge-swap-conflict {
+  background: #e11d48;
+  color: #ffffff;
+  border: 1px solid #9f1239;
+}
+
+.cell-drop-badge.badge-current {
+  background: #64748b;
+  color: #ffffff;
+  border: 1px solid #475569;
+}
+
+/* Header Lock Indicator Pill */
+.lock-indicator-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 140ms ease;
+  user-select: none;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
+}
+.lock-indicator-pill:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  color: #0f172a;
+}
+body.admin-edit-unlocked .lock-indicator-pill {
+  background: #ecfdf5;
+  color: #065f46;
+  border-color: #a7f3d0;
 }
 
 /* Drag Editor Toolbar */
@@ -2228,7 +2401,7 @@ html, body {
   border: 1px solid #cbd5e1;
   border-top: none;
   padding: 10px 18px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -2396,6 +2569,163 @@ html, body {
   color: #ffffff;
 }
 
+/* Admin Login Modal */
+.admin-login-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  padding: 16px;
+  animation: fadeInModal 160ms ease;
+}
+@keyframes fadeInModal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.admin-login-card {
+  background: #ffffff;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+  padding: 28px 24px;
+  border: 1px solid #e2e8f0;
+  animation: popUpModal 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes popUpModal {
+  from { transform: scale(0.94) translateY(10px); opacity: 0; }
+  to { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.admin-login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.admin-lock-icon-wrap {
+  width: 56px;
+  height: 56px;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px auto;
+}
+.admin-login-header h2 {
+  font-size: 19px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+.admin-login-header p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.admin-input-group {
+  margin-bottom: 18px;
+}
+.admin-input-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.admin-password-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.admin-password-wrap input {
+  width: 100%;
+  padding: 10px 42px 10px 14px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #0f172a;
+  outline: none;
+  transition: all 150ms ease;
+}
+.admin-password-wrap input:focus {
+  border-color: #059669;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.18);
+}
+.btn-toggle-pass {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #64748b;
+  padding: 4px;
+}
+.admin-login-error {
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.admin-modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.btn-modal-cancel {
+  flex: 1;
+  padding: 10px 14px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: #475569;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+.btn-modal-cancel:hover {
+  background: #e2e8f0;
+}
+.btn-modal-unlock {
+  flex: 1.5;
+  padding: 10px 14px;
+  background: #064e3b;
+  border: 1px solid #064e3b;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+.btn-modal-unlock:hover {
+  background: #043d2e;
+}
+
+.admin-modal-hint {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 11.5px;
+  color: #94a3b8;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 12px;
+}
+.admin-modal-hint strong {
+  color: #0f172a;
+}
+
 </style>
 </head>
 <body>
@@ -2435,20 +2765,23 @@ html, body {
   <div class="badge-anti-conflict-top" id="antiConflictBadge">
     <span style="color:#059669; font-weight:900;">✓</span> Anti-Conflict Guard Active: 0 Conflicts
   </div>
+  <div class="lock-indicator-pill" id="lockIndicatorPill" onclick="scheduleEditor.toggleLock()" title="Press '5' on keyboard anytime to toggle edit lock">
+    <span id="lockPillIcon"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="vertical-align:-1px;"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg></span> <span id="lockPillText">Read-Only (Press 5 to Edit)</span>
+  </div>
 </nav>
 
-<!-- Drag-to-Edit Master Toolbar -->
+<!-- Drag-to-Edit Master Toolbar (Visible only when unlocked) -->
 <div class="drag-editor-toolbar" id="dragEditorToolbar">
   <div class="drag-editor-left">
     <div class="drag-mode-badge" id="dragModeBadge">
-      <span class="drag-icon">✋</span> <strong>Drag-to-Edit Active</strong>
+      <span class="drag-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="vertical-align:-2px;"><path d="M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2l-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z"/></svg></span> <strong>Drag-to-Edit Active (Admin)</strong>
     </div>
     <span class="drag-hint">Drag any subject cell to reschedule or swap • Or click a cell to select &amp; place</span>
   </div>
   <div class="drag-editor-right">
     <div class="drag-stats-group">
       <span class="drag-stat-pill" id="dragEditCountPill">0 manual edits</span>
-      <span class="drag-stat-pill clear" id="dragConflictPill">✓ 0 Clashes</span>
+      <span class="drag-stat-pill clear" id="dragConflictPill">0 Clashes</span>
     </div>
     <div class="drag-actions-group">
       <button class="btn-drag-action" id="btnUndo" onclick="scheduleEditor.undo()" title="Undo (Ctrl+Z)" disabled>
@@ -2470,6 +2803,42 @@ html, body {
       <button class="btn-drag-action btn-danger" onclick="scheduleEditor.resetToDefault()" title="Reset all changes back to base clean schedule">
         ↺ Reset
       </button>
+      <button class="btn-drag-action btn-danger" onclick="scheduleEditor.logout()" title="Lock timetable and return to Read-Only mode (Press 5)">
+        <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+        Lock (Press 5)
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Admin Login Modal for Timetable Editing -->
+<div id="adminLoginModal" class="admin-login-modal-overlay" style="display:none;" onclick="if(event.target === this) scheduleEditor.closeLoginModal()">
+  <div class="admin-login-card">
+    <div class="admin-login-header">
+      <div class="admin-lock-icon-wrap">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="#064e3b"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+      </div>
+      <h2>Timetable Admin Unlock</h2>
+      <p>Enter administrator passcode to enable manual subject cell dragging.</p>
+    </div>
+    <form id="adminUnlockForm" onsubmit="event.preventDefault(); scheduleEditor.verifyLogin();">
+      <div class="admin-input-group">
+        <label for="adminPasscodeInput">Passcode</label>
+        <div class="admin-password-wrap">
+          <input type="password" id="adminPasscodeInput" placeholder="Enter admin passcode (hint: amis2026)" autocomplete="current-password" required>
+          <button type="button" class="btn-toggle-pass" onclick="scheduleEditor.togglePasscodeVisibility()" title="Show/Hide passcode">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" style="vertical-align:-2px;"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+          </button>
+        </div>
+        <div id="adminLoginError" class="admin-login-error" style="display:none;"></div>
+      </div>
+      <div class="admin-modal-actions">
+        <button type="button" class="btn-modal-cancel" onclick="scheduleEditor.closeLoginModal()">Cancel</button>
+        <button type="submit" class="btn-modal-unlock">Unlock Drag Editor</button>
+      </div>
+    </form>
+    <div class="admin-modal-hint">
+      Shortcut: Press <strong>5</strong> on your keyboard to toggle lock/unlock anytime.
     </div>
   </div>
 </div>
@@ -7043,14 +7412,25 @@ html, body {
   }
 
   window.scheduleEditor = {
+    isEditUnlocked: false,
     draggedExamId: null,
     selectedExamId: null,
+    holdTimer: null,
     undoStack: [],
     redoStack: [],
     baseRecords: null,
     toastTimeout: null,
 
     init: function() {
+      // Check session authentication
+      try {
+        const auth = sessionStorage.getItem('AMIS_ADMIN_EDIT_AUTH');
+        this.isEditUnlocked = auth === '1';
+        document.body.classList.toggle('admin-edit-unlocked', this.isEditUnlocked);
+      } catch (e) {
+        this.isEditUnlocked = false;
+      }
+
       try {
         const saved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
         if (saved) {
@@ -7074,7 +7454,17 @@ html, body {
 
     setupKeyboardShortcuts: function() {
       window.addEventListener('keydown', (e) => {
-        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+        // If user is currently typing in an input or textarea, let them type normally!
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) return;
+
+        // Press '5' anywhere to toggle Admin Lock / Unlock
+        if (e.key === '5') {
+          e.preventDefault();
+          this.toggleLock();
+          return;
+        }
+
+        if (!this.isEditUnlocked) return;
 
         if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') {
           e.preventDefault();
@@ -7087,9 +7477,357 @@ html, body {
           this.deselect();
         }
       });
+
+      window.addEventListener('pointerup', () => {
+        if (this.holdTimer) clearTimeout(this.holdTimer);
+        if (!this.draggedExamId && !this.selectedExamId) {
+          this.clearDropTargetHighlights();
+        }
+      });
+    },
+
+    toggleLock: function() {
+      if (this.isEditUnlocked) {
+        this.logout();
+      } else {
+        this.openLoginModal();
+      }
+    },
+
+    openLoginModal: function() {
+      const modal = document.getElementById('adminLoginModal');
+      const passInput = document.getElementById('adminPasscodeInput');
+      const errEl = document.getElementById('adminLoginError');
+      if (errEl) errEl.style.display = 'none';
+      if (passInput) {
+        passInput.value = '';
+        passInput.type = 'password';
+      }
+      if (modal) modal.style.display = 'flex';
+      setTimeout(() => { if (passInput) passInput.focus(); }, 60);
+    },
+
+    closeLoginModal: function() {
+      const modal = document.getElementById('adminLoginModal');
+      if (modal) modal.style.display = 'none';
+    },
+
+    togglePasscodeVisibility: function() {
+      const passInput = document.getElementById('adminPasscodeInput');
+      if (!passInput) return;
+      passInput.type = passInput.type === 'text' ? 'password' : 'text';
+    },
+
+    verifyLogin: function() {
+      const passInput = document.getElementById('adminPasscodeInput');
+      const errEl = document.getElementById('adminLoginError');
+      const val = passInput ? passInput.value.trim() : '';
+
+      const validPasscodes = ['amis2026', 'admin', '2026', '5555', '123456'];
+      const customPass = localStorage.getItem('AMIS_ADMIN_PASSWORD');
+      if (customPass) validPasscodes.push(customPass.trim());
+
+      if (validPasscodes.includes(val)) {
+        sessionStorage.setItem('AMIS_ADMIN_EDIT_AUTH', '1');
+        this.isEditUnlocked = true;
+        document.body.classList.add('admin-edit-unlocked');
+        this.closeLoginModal();
+        this.updateUI();
+
+        const teacherSelect = document.getElementById('teacherSelect');
+        const selectedTid = teacherSelect ? teacherSelect.value : 'ALL_FACULTY';
+        if (currentTab === 'FACULTY') renderFacultyView(selectedTid);
+        else if (currentTab === 'SECTION') renderSectionView();
+
+        this.showToast("Admin Edit Mode UNLOCKED. You can now drag subject cells. Press '5' to lock/logout.");
+      } else {
+        if (errEl) {
+          errEl.textContent = 'Incorrect passcode. Try again (hint: amis2026).';
+          errEl.style.display = 'block';
+        }
+        if (passInput) {
+          passInput.focus();
+          passInput.select();
+        }
+      }
+    },
+
+    logout: function() {
+      sessionStorage.removeItem('AMIS_ADMIN_EDIT_AUTH');
+      this.isEditUnlocked = false;
+      document.body.classList.remove('admin-edit-unlocked');
+      this.deselect();
+      this.updateUI();
+
+      const teacherSelect = document.getElementById('teacherSelect');
+      const selectedTid = teacherSelect ? teacherSelect.value : 'ALL_FACULTY';
+      if (currentTab === 'FACULTY') renderFacultyView(selectedTid);
+      else if (currentTab === 'SECTION') renderSectionView();
+
+      this.showToast("Logged out. Timetable locked in Read-Only mode.");
+    },
+
+    evaluateDropTarget: function(sourceExam, targetCell) {
+      if (!sourceExam || !targetCell) return null;
+
+      const targetDayNum = Number(targetCell.getAttribute('data-day-num'));
+      const targetRowTime = targetCell.getAttribute('data-row-time');
+      const targetSlotNum = Number(targetCell.getAttribute('data-slot-num'));
+      const targetTeacherId = targetCell.getAttribute('data-teacher-id');
+      const targetSectionId = targetCell.getAttribute('data-section-id');
+      const dropZoneType = targetCell.getAttribute('data-drop-zone');
+
+      const srcTeacherId = activeScheduleTeacherId(sourceExam);
+      const isSrc120 = sourceExam.duration_minutes === 120 || sourceExam.slots_spanned === 2;
+
+      // 1. Current slot check
+      const isCurrentSection = dropZoneType === 'section'
+        && sourceExam.section_id === targetSectionId
+        && Number(sourceExam.day_number) === targetDayNum
+        && examStartsAtScheduleRow(sourceExam, targetRowTime, targetSlotNum);
+
+      const isCurrentFaculty = dropZoneType === 'faculty'
+        && srcTeacherId === targetTeacherId
+        && Number(sourceExam.day_number) === targetDayNum
+        && examStartsAtScheduleRow(sourceExam, targetRowTime, targetSlotNum);
+
+      if (isCurrentSection || isCurrentFaculty) {
+        return { status: 'CURRENT', label: 'CURRENT', reason: 'Current slot' };
+      }
+
+      // 2. Cross-timetable restrictions
+      if (dropZoneType === 'section' && targetSectionId && targetSectionId !== sourceExam.section_id) {
+        return { status: 'CONFLICT', label: 'OTHER SEC', reason: 'Different section timetable' };
+      }
+      if (dropZoneType === 'faculty' && targetTeacherId && targetTeacherId !== srcTeacherId) {
+        return { status: 'CONFLICT', label: 'OTHER TCHR', reason: 'Different teacher timetable' };
+      }
+
+      // 3. Find if target cell already has exams
+      let targetExams = [];
+      if (dropZoneType === 'section' && targetSectionId) {
+        targetExams = EXAM_RECORDS.filter(e =>
+          e.section_id === targetSectionId &&
+          Number(e.day_number) === targetDayNum &&
+          examStartsAtScheduleRow(e, targetRowTime, targetSlotNum) &&
+          e.id !== sourceExam.id
+        );
+      } else if (dropZoneType === 'faculty' && targetTeacherId) {
+        targetExams = EXAM_RECORDS.filter(e =>
+          (e.teacher_id === targetTeacherId || e.subject_teacher_id === targetTeacherId || e.proctor_id === targetTeacherId) &&
+          Number(e.day_number) === targetDayNum &&
+          examStartsAtScheduleRow(e, targetRowTime, targetSlotNum) &&
+          e.id !== sourceExam.id
+        );
+      }
+
+      const sameCohort = (a, b) => {
+        if (!a || !b) return false;
+        const isKinderDual = String(a.grade_level || '').toLowerCase().includes('kinder') && String(b.grade_level || '').toLowerCase().includes('kinder');
+        return !isKinderDual
+          && a.grade_level === b.grade_level
+          && (a.section_id || a.section_name) === (b.section_id || b.section_name)
+          && String(a.gender || 'NONE') === String(b.gender || 'NONE');
+      };
+
+      if (targetExams.length > 0) {
+        // SWAP EVALUATION
+        const targetExam = targetExams[0];
+        
+        // Check source at target slot
+        const srcTeacherBusy = EXAM_RECORDS.find(e =>
+          e.id !== sourceExam.id &&
+          e.id !== targetExam.id &&
+          activeScheduleTeacherId(e) === srcTeacherId &&
+          Number(e.day_number) === Number(targetExam.day_number) &&
+          Number(e.start_m) < Number(targetExam.end_m) &&
+          Number(targetExam.start_m) < Number(e.end_m)
+        );
+        if (srcTeacherBusy) {
+          const tName = sourceExam.subject_teacher || sourceExam.teacher || 'Teacher';
+          return { status: 'SWAP_CONFLICT', label: 'SWAP CLASH', reason: `${tName} busy on Day ${targetExam.day_number}` };
+        }
+
+        const srcSectionBusy = EXAM_RECORDS.find(e =>
+          e.id !== sourceExam.id &&
+          e.id !== targetExam.id &&
+          sameCohort(e, sourceExam) &&
+          Number(e.day_number) === Number(targetExam.day_number) &&
+          Number(e.start_m) < Number(targetExam.end_m) &&
+          Number(targetExam.start_m) < Number(e.end_m)
+        );
+        if (srcSectionBusy) {
+          return { status: 'SWAP_CONFLICT', label: 'SWAP CLASH', reason: `Section busy on Day ${targetExam.day_number}` };
+        }
+
+        // Check target at source slot
+        const targetTeacherIdVal = activeScheduleTeacherId(targetExam);
+        const targetTeacherBusy = EXAM_RECORDS.find(e =>
+          e.id !== sourceExam.id &&
+          e.id !== targetExam.id &&
+          activeScheduleTeacherId(e) === targetTeacherIdVal &&
+          Number(e.day_number) === Number(sourceExam.day_number) &&
+          Number(e.start_m) < Number(sourceExam.end_m) &&
+          Number(sourceExam.start_m) < Number(e.end_m)
+        );
+        if (targetTeacherBusy) {
+          const tName = targetExam.subject_teacher || targetExam.teacher || 'Teacher';
+          return { status: 'SWAP_CONFLICT', label: 'SWAP CLASH', reason: `${tName} busy on Day ${sourceExam.day_number}` };
+        }
+
+        const targetSectionBusy = EXAM_RECORDS.find(e =>
+          e.id !== sourceExam.id &&
+          e.id !== targetExam.id &&
+          sameCohort(e, targetExam) &&
+          Number(e.day_number) === Number(sourceExam.day_number) &&
+          Number(e.start_m) < Number(sourceExam.end_m) &&
+          Number(sourceExam.start_m) < Number(e.end_m)
+        );
+        if (targetSectionBusy) {
+          return { status: 'SWAP_CONFLICT', label: 'SWAP CLASH', reason: `Section busy on Day ${sourceExam.day_number}` };
+        }
+
+        return { status: 'SWAP_OK', label: 'SWAP OK', reason: `Swap with ${publicExamSubject(targetExam)}` };
+      } else {
+        // MOVE EVALUATION (Empty slot)
+        let newStartM = 0;
+        let newEndM = 0;
+
+        if (isSrc120) {
+          if (targetRowTime.includes('08:00 AM') || targetRowTime.includes('09:00 AM')) {
+            newStartM = 480; newEndM = 600;
+          } else if (targetRowTime.includes('12:40 PM') || targetRowTime.includes('01:50 PM')) {
+            newStartM = 760; newEndM = 890;
+          } else if (targetRowTime.includes('04:20 PM') || targetRowTime.includes('05:30 PM')) {
+            newStartM = 980; newEndM = 1110;
+          } else {
+            const [sStr, eStr] = (targetRowTime || '').split(/\s*[–—-]\s*/);
+            newStartM = parseTimeToMin(sStr);
+            newEndM = parseTimeToMin(eStr);
+          }
+        } else {
+          const [sStr, eStr] = (targetRowTime || '').split(/\s*[–—-]\s*/);
+          newStartM = parseTimeToMin(sStr);
+          newEndM = parseTimeToMin(eStr);
+        }
+
+        if (newEndM <= newStartM) {
+          newEndM = newStartM + 60;
+        }
+
+        // Check teacher clash
+        const teacherClash = EXAM_RECORDS.find(e =>
+          e.id !== sourceExam.id &&
+          activeScheduleTeacherId(e) === srcTeacherId &&
+          Number(e.day_number) === targetDayNum &&
+          Number(e.start_m) < newEndM &&
+          newStartM < Number(e.end_m)
+        );
+        if (teacherClash) {
+          const tName = sourceExam.subject_teacher || sourceExam.teacher || 'Teacher';
+          return { status: 'CONFLICT', label: 'CONFLICT', reason: `${tName} busy (${teacherClash.section_name || 'other class'})` };
+        }
+
+        // Check section clash
+        const sectionClash = EXAM_RECORDS.find(e =>
+          e.id !== sourceExam.id &&
+          sameCohort(e, sourceExam) &&
+          Number(e.day_number) === targetDayNum &&
+          Number(e.start_m) < newEndM &&
+          newStartM < Number(e.end_m)
+        );
+        if (sectionClash) {
+          return { status: 'CONFLICT', label: 'CONFLICT', reason: `Section has exam (${publicExamSubject(sectionClash)})` };
+        }
+
+        return { status: 'FREE', label: 'FREE', reason: 'Available slot' };
+      }
+    },
+
+    highlightDropTargets: function(sourceExamId) {
+      this.clearDropTargetHighlights();
+      const sourceExam = EXAM_RECORDS.find(e => e.id === sourceExamId);
+      if (!sourceExam) return;
+
+      const cells = document.querySelectorAll('[data-drop-zone]');
+      cells.forEach(cell => {
+        const evalResult = this.evaluateDropTarget(sourceExam, cell);
+        if (!evalResult) return;
+
+        cell.setAttribute('data-drop-status', evalResult.status);
+
+        if (evalResult.status === 'CURRENT') {
+          cell.classList.add('drop-zone-source');
+        } else if (evalResult.status === 'FREE') {
+          cell.classList.add('drop-preview-free');
+          const badge = document.createElement('div');
+          badge.className = 'cell-drop-badge badge-free';
+          badge.textContent = 'FREE';
+          badge.title = evalResult.reason;
+          cell.appendChild(badge);
+        } else if (evalResult.status === 'CONFLICT') {
+          cell.classList.add('drop-preview-conflict');
+          const badge = document.createElement('div');
+          badge.className = 'cell-drop-badge badge-conflict';
+          badge.textContent = 'CONFLICT';
+          badge.title = evalResult.reason;
+          cell.appendChild(badge);
+        } else if (evalResult.status === 'SWAP_OK') {
+          cell.classList.add('drop-preview-swap-ok');
+          const badge = document.createElement('div');
+          badge.className = 'cell-drop-badge badge-swap-ok';
+          badge.textContent = 'SWAP OK';
+          badge.title = evalResult.reason;
+          cell.appendChild(badge);
+        } else if (evalResult.status === 'SWAP_CONFLICT') {
+          cell.classList.add('drop-preview-swap-conflict');
+          const badge = document.createElement('div');
+          badge.className = 'cell-drop-badge badge-swap-conflict';
+          badge.textContent = 'SWAP CLASH';
+          badge.title = evalResult.reason;
+          cell.appendChild(badge);
+        }
+      });
+    },
+
+    clearDropTargetHighlights: function() {
+      document.querySelectorAll('[data-drop-zone]').forEach(cell => {
+        cell.classList.remove(
+          'drop-zone-potential',
+          'drop-zone-active',
+          'drop-zone-swap',
+          'drop-zone-source',
+          'drop-preview-free',
+          'drop-preview-conflict',
+          'drop-preview-swap-ok',
+          'drop-preview-swap-conflict'
+        );
+        cell.removeAttribute('data-drop-status');
+        cell.querySelectorAll('.cell-drop-badge').forEach(b => b.remove());
+      });
+    },
+
+    handlePointerDown: function(ev, examId) {
+      if (!this.isEditUnlocked) return;
+      if (this.holdTimer) clearTimeout(this.holdTimer);
+      this.holdTimer = setTimeout(() => {
+        this.highlightDropTargets(examId);
+      }, 90);
+    },
+
+    handlePointerUp: function(ev) {
+      if (this.holdTimer) clearTimeout(this.holdTimer);
+      if (!this.draggedExamId && !this.selectedExamId) {
+        this.clearDropTargetHighlights();
+      }
     },
 
     handleDragStart: function(ev) {
+      if (!this.isEditUnlocked) {
+        if (ev && ev.preventDefault) ev.preventDefault();
+        return;
+      }
+      if (this.holdTimer) clearTimeout(this.holdTimer);
       const el = ev.currentTarget;
       const examId = el.getAttribute('data-exam-id');
       if (!examId) return;
@@ -7099,24 +7837,34 @@ html, body {
       ev.dataTransfer.setData('text/plain', examId);
       ev.dataTransfer.effectAllowed = 'move';
 
-      document.querySelectorAll('[data-drop-zone]').forEach(zone => {
-        zone.classList.add('drop-zone-potential');
-      });
+      this.highlightDropTargets(examId);
     },
 
     handleDragEnd: function(ev) {
+      if (this.holdTimer) clearTimeout(this.holdTimer);
       const el = ev.currentTarget;
       el.classList.remove('is-dragging');
       this.draggedExamId = null;
-      document.querySelectorAll('.drop-zone-potential, .drop-zone-active, .drop-zone-swap').forEach(zone => {
-        zone.classList.remove('drop-zone-potential', 'drop-zone-active', 'drop-zone-swap');
-      });
+      if (!this.selectedExamId) {
+        this.clearDropTargetHighlights();
+      }
     },
 
     handleDragOver: function(ev) {
+      if (!this.isEditUnlocked) {
+        if (ev && ev.preventDefault) ev.preventDefault();
+        return;
+      }
       ev.preventDefault();
-      ev.dataTransfer.dropEffect = 'move';
       const cell = ev.currentTarget;
+      const status = cell.getAttribute('data-drop-status');
+
+      if (status === 'CONFLICT' || status === 'SWAP_CONFLICT') {
+        ev.dataTransfer.dropEffect = 'none';
+      } else {
+        ev.dataTransfer.dropEffect = 'move';
+      }
+
       if (cell.classList.contains('cell-empty')) {
         cell.classList.add('drop-zone-active');
         cell.classList.remove('drop-zone-swap');
@@ -7132,12 +7880,24 @@ html, body {
     },
 
     handleDrop: function(ev) {
+      if (!this.isEditUnlocked) {
+        if (ev && ev.preventDefault) ev.preventDefault();
+        return;
+      }
       ev.preventDefault();
+      if (this.holdTimer) clearTimeout(this.holdTimer);
       const cell = ev.currentTarget;
-      cell.classList.remove('drop-zone-active', 'drop-zone-swap', 'drop-zone-potential');
-      
       const examId = ev.dataTransfer.getData('text/plain') || this.draggedExamId;
+      
+      const status = cell.getAttribute('data-drop-status');
+      this.clearDropTargetHighlights();
+
       if (!examId) return;
+
+      if (status === 'CONFLICT' || status === 'SWAP_CONFLICT') {
+        this.showToast("Cannot drop here: Target slot has a schedule conflict. Please choose a green FREE slot.");
+        return;
+      }
 
       const targetDayNum = Number(cell.getAttribute('data-day-num'));
       const targetRowTime = cell.getAttribute('data-row-time');
@@ -7158,6 +7918,7 @@ html, body {
     },
 
     handleExamCardClick: function(ev, examId) {
+      if (!this.isEditUnlocked) return;
       ev.stopPropagation();
       if (this.selectedExamId === examId) {
         this.deselect();
@@ -7170,15 +7931,23 @@ html, body {
 
       const exam = EXAM_RECORDS.find(e => e.id === examId);
       const subName = exam ? publicExamSubject(exam) : 'Subject';
-      this.showToast(`Selected "${subName}". Click any target slot to move, or click another subject to swap.`, "Cancel", () => this.deselect());
+      this.highlightDropTargets(examId);
+      this.showToast(`Selected "${subName}". Click any green FREE slot to move, or blue SWAP slot to swap.`, "Cancel", () => this.deselect());
     },
 
     handleCellClick: function(ev) {
-      if (!this.selectedExamId) return;
+      if (!this.isEditUnlocked || !this.selectedExamId) return;
       const cell = ev.currentTarget;
       if (!cell.hasAttribute('data-drop-zone')) return;
 
       const examId = this.selectedExamId;
+      const status = cell.getAttribute('data-drop-status');
+
+      if (status === 'CONFLICT' || status === 'SWAP_CONFLICT') {
+        this.showToast("Cannot place here: Slot has a schedule conflict. Please click a green FREE or blue SWAP slot.");
+        return;
+      }
+
       const targetDayNum = Number(cell.getAttribute('data-day-num'));
       const targetRowTime = cell.getAttribute('data-row-time');
       const targetSlotNum = Number(cell.getAttribute('data-slot-num'));
@@ -7203,6 +7972,7 @@ html, body {
       if (this.selectedExamId) {
         document.querySelectorAll('.cell-class-inner.is-selected').forEach(el => el.classList.remove('is-selected'));
         this.selectedExamId = null;
+        this.clearDropTargetHighlights();
         this.hideToast();
       }
     },
@@ -7371,7 +8141,7 @@ html, body {
       }
 
       const conflicts = strictScheduleConflicts();
-      const clashMsg = conflicts.length > 0 ? ` (⚠️ ${conflicts.length} conflict detected)` : ' (✓ 0 clashes)';
+      const clashMsg = conflicts.length > 0 ? ` (! ${conflicts.length} conflict${conflicts.length === 1 ? '' : 's'} detected)` : ' (0 clashes)';
       this.showToast(toastMsg + clashMsg, "Undo", () => this.undo());
     },
 
@@ -7534,10 +8304,23 @@ html, body {
       if (clashPill) {
         if (conflicts.length === 0) {
           clashPill.className = 'drag-stat-pill clear';
-          clashPill.innerHTML = '✓ 0 Clashes';
+          clashPill.textContent = '0 Clashes';
         } else {
           clashPill.className = 'drag-stat-pill clash';
-          clashPill.innerHTML = `⚠️ ${conflicts.length} Clash${conflicts.length === 1 ? '' : 'es'}`;
+          clashPill.textContent = `! ${conflicts.length} Clash${conflicts.length === 1 ? '' : 'es'}`;
+        }
+      }
+
+      // Update Header Lock Indicator Pill
+      const lockPillIcon = document.getElementById('lockPillIcon');
+      const lockPillText = document.getElementById('lockPillText');
+      if (lockPillIcon && lockPillText) {
+        if (this.isEditUnlocked) {
+          lockPillIcon.innerHTML = `<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="vertical-align:-1px;"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"/></svg>`;
+          lockPillText.textContent = 'Admin Edit Mode (Press 5 to Lock)';
+        } else {
+          lockPillIcon.innerHTML = `<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="vertical-align:-1px;"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>`;
+          lockPillText.textContent = 'Read-Only (Press 5 to Edit)';
         }
       }
     },
@@ -7839,6 +8622,7 @@ html, body {
       `;
 
       const activeRowspan = { 1: 0, 2: 0, 3: 0, 4: 0 };
+      const isUnlocked = Boolean(window.scheduleEditor && window.scheduleEditor.isEditUnlocked);
 
       const secShiftGroup = isF2F ? 'f2f' : (isODL2 ? 'second' : 'first');
 
@@ -7922,15 +8706,17 @@ html, body {
                       onclick="scheduleEditor.handleCellClick(event)"
                       style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                     <div class="cell-class-inner"
-                         draggable="true"
+                         draggable="${isUnlocked ? 'true' : 'false'}"
                          data-exam-id="${match.id}"
                          data-section-id="${sec.id}"
                          data-teacher-id="${match.teacher_id || match.subject_teacher_id}"
                          ondragstart="scheduleEditor.handleDragStart(event)"
                          ondragend="scheduleEditor.handleDragEnd(event)"
+                         onpointerdown="scheduleEditor.handlePointerDown(event, '${match.id}')"
+                         onpointerup="scheduleEditor.handlePointerUp(event)"
                          onclick="scheduleEditor.handleExamCardClick(event, '${match.id}')"
-                         title="Drag to reschedule/swap slot. Click to select.">
-                      <div class="cell-drag-indicator" title="Drag Handle">⠿</div>
+                         title="${isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : ''}">
+                      ${isUnlocked ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
                       <span class="cell-subject-sec">${esc(displayedSubject)}</span>
                       <span class="cell-teacher-name">${esc(match.subject_teacher || match.teacher)}</span>
                       <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
@@ -7961,16 +8747,18 @@ html, body {
                         const mIs120 = m.duration_minutes === 120 || m.slots_spanned === 2;
                         return `
                           <div class="cell-class-inner"
-                               draggable="true"
+                               draggable="${isUnlocked ? 'true' : 'false'}"
                                data-exam-id="${m.id}"
                                data-section-id="${sec.id}"
                                data-teacher-id="${m.teacher_id || m.subject_teacher_id}"
                                ondragstart="scheduleEditor.handleDragStart(event)"
                                ondragend="scheduleEditor.handleDragEnd(event)"
+                               onpointerdown="scheduleEditor.handlePointerDown(event, '${m.id}')"
+                               onpointerup="scheduleEditor.handlePointerUp(event)"
                                onclick="scheduleEditor.handleExamCardClick(event, '${m.id}')"
-                               title="Drag to reschedule/swap slot. Click to select."
+                               title="${isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : ''}"
                                style="background:${mColor.bg}; border:1px solid ${mColor.border}; border-left:4px solid ${mColor.accent || mColor.text}; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
-                            <div class="cell-drag-indicator" title="Drag Handle">⠿</div>
+                            ${isUnlocked ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
                             <span class="cell-subject-sec" style="font-size:13.5px; color:${mColor.text};">${esc(mSubject)}</span>
                             <span class="cell-teacher-name" style="font-size:11.5px;">${esc(m.subject_teacher || m.teacher)}</span>
                             <span class="cell-duration-badge ${mIs120 ? 'badge-120' : ''}" style="font-size:9.5px; padding:2px 6px;">${m.duration_minutes || 60} MIN</span>
@@ -7996,7 +8784,7 @@ html, body {
                     ondragleave="scheduleEditor.handleDragLeave(event)"
                     ondrop="scheduleEditor.handleDrop(event)"
                     onclick="scheduleEditor.handleCellClick(event)"
-                    title="Drop subject here to move">
+                    title="${isUnlocked ? 'Drop subject here to move' : ''}">
                 </td>
               `;
             }
@@ -8540,6 +9328,7 @@ html, body {
       `;
 
       const activeRowspan = { 1: 0, 2: 0, 3: 0, 4: 0 };
+      const isUnlocked = Boolean(window.scheduleEditor && window.scheduleEditor.isEditUnlocked);
       const shiftLabels = {
         f2f: 'F<br>A<br>C<br>E<br><br>T<br>O<br><br>F<br>A<br>C<br>E',
         first: '1<br>S<br>T<br><br>S<br>H<br>I<br>F<br>T',
@@ -8648,15 +9437,17 @@ html, body {
                       onclick="scheduleEditor.handleCellClick(event)"
                       style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                     <div class="cell-class-inner"
-                         draggable="true"
+                         draggable="${isUnlocked ? 'true' : 'false'}"
                          data-exam-id="${match.id}"
                          data-teacher-id="${t.id}"
                          data-section-id="${match.section_id}"
                          ondragstart="scheduleEditor.handleDragStart(event)"
                          ondragend="scheduleEditor.handleDragEnd(event)"
+                         onpointerdown="scheduleEditor.handlePointerDown(event, '${match.id}')"
+                         onpointerup="scheduleEditor.handlePointerUp(event)"
                          onclick="scheduleEditor.handleExamCardClick(event, '${match.id}')"
-                         title="Drag to reschedule/swap slot. Click to select.">
-                      <div class="cell-drag-indicator" title="Drag Handle">⠿</div>
+                         title="${isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : ''}">
+                      ${isUnlocked ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
                       ${isAutomaticProctorCoverage ? `
                         <span class="cell-subject-sec">${esc(displayedSubject)}</span>
                         <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
@@ -8695,16 +9486,18 @@ html, body {
                         const mIs120 = m.duration_minutes === 120 || m.slots_spanned === 2;
                         return `
                           <div class="cell-class-inner"
-                               draggable="true"
+                               draggable="${isUnlocked ? 'true' : 'false'}"
                                data-exam-id="${m.id}"
                                data-teacher-id="${t.id}"
                                data-section-id="${m.section_id}"
                                ondragstart="scheduleEditor.handleDragStart(event)"
                                ondragend="scheduleEditor.handleDragEnd(event)"
+                               onpointerdown="scheduleEditor.handlePointerDown(event, '${m.id}')"
+                               onpointerup="scheduleEditor.handlePointerUp(event)"
                                onclick="scheduleEditor.handleExamCardClick(event, '${m.id}')"
-                               title="Drag to reschedule/swap slot. Click to select."
+                               title="${isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : ''}"
                                style="background:${mColor.bg}; border:1px solid ${mColor.border}; border-left:4px solid ${mColor.accent || mColor.text}; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
-                            <div class="cell-drag-indicator" title="Drag Handle">⠿</div>
+                            ${isUnlocked ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
                             <span class="cell-subject-sec" style="font-size:13.5px; color:${mColor.text};">${esc(mSubject)}</span>
                             <span class="cell-section-name" style="font-size:11.5px;">${esc(cleanSectionName(m.section_name))}</span>
                             ${mGenderChip ? `<span class="gender-chip ${mGenderChip.className}" style="font-size:9.5px; padding:1px 6px;">${mGenderChip.label}</span>` : ''}
@@ -8731,7 +9524,7 @@ html, body {
                     ondragleave="scheduleEditor.handleDragLeave(event)"
                     ondrop="scheduleEditor.handleDrop(event)"
                     onclick="scheduleEditor.handleCellClick(event)"
-                    title="Drop subject here to move">
+                    title="${isUnlocked ? 'Drop subject here to move' : ''}">
                 </td>
               `;
             }
