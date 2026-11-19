@@ -2248,15 +2248,15 @@ body.admin-edit-unlocked [data-drop-zone].drop-preview-conflict {
 }
 
 body.admin-edit-unlocked [data-drop-zone].drop-preview-swap-ok {
-  background-color: #eff6ff !important;
-  outline: 2px dashed #2563eb !important;
+  background-color: #f0fdf4 !important;
+  outline: 2px dashed #16a34a !important;
   outline-offset: -2px;
-  cursor: alias !important;
+  cursor: pointer !important;
 }
 
 body.admin-edit-unlocked [data-drop-zone].drop-preview-swap-conflict {
   background-color: #fff1f2 !important;
-  outline: 2px dashed #e11d48 !important;
+  outline: 2px dashed #dc2626 !important;
   outline-offset: -2px;
   cursor: not-allowed !important;
 }
@@ -2275,20 +2275,20 @@ body.admin-edit-unlocked [data-drop-zone].drop-zone-active.drop-preview-conflict
 }
 
 body.admin-edit-unlocked [data-drop-zone].drop-zone-swap.drop-preview-swap-ok {
-  background-color: #dbeafe !important;
-  outline: 3px solid #1d4ed8 !important;
-  box-shadow: inset 0 0 14px rgba(37, 99, 235, 0.28) !important;
+  background-color: #dcfce7 !important;
+  outline: 3px solid #15803d !important;
+  box-shadow: inset 0 0 14px rgba(22, 163, 74, 0.28) !important;
 }
 
 body.admin-edit-unlocked [data-drop-zone].drop-zone-swap.drop-preview-swap-conflict {
-  background-color: #ffe4e6 !important;
-  outline: 3px solid #be123c !important;
-  box-shadow: inset 0 0 14px rgba(225, 29, 72, 0.32) !important;
+  background-color: #fee2e2 !important;
+  outline: 3px solid #b91c1c !important;
+  box-shadow: inset 0 0 14px rgba(220, 38, 38, 0.32) !important;
 }
 
 /* Empty Cell Live Text Hints */
 body.admin-edit-unlocked [data-drop-zone].cell-empty.drop-preview-free::after {
-  content: "FREE";
+  content: "VACANT";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2351,15 +2351,15 @@ body.admin-edit-unlocked [data-drop-zone].cell-empty.drop-preview-conflict::afte
 }
 
 .cell-drop-badge.badge-swap-ok {
-  background: #2563eb;
+  background: #15803d;
   color: #ffffff;
-  border: 1px solid #1d4ed8;
+  border: 1px solid #166534;
 }
 
 .cell-drop-badge.badge-swap-conflict {
-  background: #e11d48;
+  background: #dc2626;
   color: #ffffff;
-  border: 1px solid #9f1239;
+  border: 1px solid #991b1b;
 }
 
 .cell-drop-badge.badge-current {
@@ -7932,7 +7932,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
         );
         if (srcTeacherBusy) {
           const tName = sourceExam.subject_teacher || sourceExam.teacher || 'Teacher';
-          return { status: 'SWAP_CONFLICT', label: 'SWAP CLASH', reason: `${tName} busy on Day ${targetExam.day_number}` };
+          return { status: 'SWAP_CONFLICT', label: 'CANNOT SWAP', reason: `Cannot swap: ${tName} busy on Day ${targetExam.day_number}` };
         }
 
         const srcSectionBusy = EXAM_RECORDS.find(e =>
@@ -7944,7 +7944,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
           Number(targetExam.start_m) < Number(e.end_m)
         );
         if (srcSectionBusy) {
-          return { status: 'SWAP_CONFLICT', label: 'SWAP CLASH', reason: `Section busy on Day ${targetExam.day_number}` };
+          return { status: 'SWAP_CONFLICT', label: 'CANNOT SWAP', reason: `Cannot swap: Section busy on Day ${targetExam.day_number}` };
         }
 
         // Check target at source slot
@@ -7959,7 +7959,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
         );
         if (targetTeacherBusy) {
           const tName = targetExam.subject_teacher || targetExam.teacher || 'Teacher';
-          return { status: 'SWAP_CONFLICT', label: 'SWAP CLASH', reason: `${tName} busy on Day ${sourceExam.day_number}` };
+          return { status: 'SWAP_CONFLICT', label: 'CANNOT SWAP', reason: `Cannot swap: ${tName} busy on Day ${sourceExam.day_number}` };
         }
 
         const targetSectionBusy = EXAM_RECORDS.find(e =>
@@ -7971,10 +7971,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
           Number(sourceExam.start_m) < Number(e.end_m)
         );
         if (targetSectionBusy) {
-          return { status: 'SWAP_CONFLICT', label: 'SWAP CLASH', reason: `Section busy on Day ${sourceExam.day_number}` };
+          return { status: 'SWAP_CONFLICT', label: 'CANNOT SWAP', reason: `Cannot swap: Section busy on Day ${sourceExam.day_number}` };
         }
 
-        return { status: 'SWAP_OK', label: 'SWAP OK', reason: `Swap with ${publicExamSubject(targetExam)}` };
+        return { status: 'SWAP_OK', label: 'SWAP OK', reason: `Safe to swap with ${publicExamSubject(targetExam)}` };
       } else {
         // MOVE EVALUATION (Empty slot)
         let newStartM = 0;
@@ -8027,7 +8027,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
           return { status: 'CONFLICT', label: 'CONFLICT', reason: `Section has exam (${publicExamSubject(sectionClash)})` };
         }
 
-        return { status: 'FREE', label: 'FREE', reason: 'Available slot' };
+        return { status: 'FREE', label: 'VACANT', reason: 'Available vacant slot' };
       }
     },
 
@@ -8049,7 +8049,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
           cell.classList.add('drop-preview-free');
           const badge = document.createElement('div');
           badge.className = 'cell-drop-badge badge-free';
-          badge.textContent = 'FREE';
+          badge.textContent = 'VACANT';
           badge.title = evalResult.reason;
           cell.appendChild(badge);
         } else if (evalResult.status === 'CONFLICT') {
@@ -8070,7 +8070,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
           cell.classList.add('drop-preview-swap-conflict');
           const badge = document.createElement('div');
           badge.className = 'cell-drop-badge badge-swap-conflict';
-          badge.textContent = 'SWAP CLASH';
+          badge.textContent = 'CANNOT SWAP';
           badge.title = evalResult.reason;
           cell.appendChild(badge);
         }
@@ -8182,7 +8182,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
       if (!examId) return;
 
       if (status === 'CONFLICT' || status === 'SWAP_CONFLICT') {
-        this.showToast("Cannot drop here: Target slot has a schedule conflict. Please choose a green FREE slot.");
+        this.showToast("Cannot drop here: Target slot has a conflict (RED). Please choose a green VACANT or SWAP OK slot.");
         return;
       }
 
@@ -8219,7 +8219,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
       const exam = EXAM_RECORDS.find(e => e.id === examId);
       const subName = exam ? publicExamSubject(exam) : 'Subject';
       this.highlightDropTargets(examId);
-      this.showToast(`Selected "${subName}". Click any green FREE slot to move, or blue SWAP slot to swap.`, "Cancel", () => this.deselect());
+      this.showToast(`Selected "${subName}". Click any green VACANT slot to move, or green SWAP OK slot to swap.`, "Cancel", () => this.deselect());
     },
 
     handleCellClick: function(ev) {
@@ -8231,7 +8231,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
       const status = cell.getAttribute('data-drop-status');
 
       if (status === 'CONFLICT' || status === 'SWAP_CONFLICT') {
-        this.showToast("Cannot place here: Slot has a schedule conflict. Please click a green FREE or blue SWAP slot.");
+        this.showToast("Cannot place here: Slot has a conflict (RED). Please click a green VACANT or SWAP OK slot.");
         return;
       }
 
