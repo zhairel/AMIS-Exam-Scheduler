@@ -2356,25 +2356,36 @@ body.admin-edit-unlocked [data-drop-zone].cell-empty.drop-preview-conflict::afte
   position: absolute;
   top: 3px;
   right: 4px;
+  max-width: 95%;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3px;
-  padding: 2px 7px;
-  border-radius: 9999px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+  padding: 3px 8px;
+  border-radius: 6px;
   font-size: 9.5px;
   font-weight: 800;
   line-height: 1.2;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
   z-index: 25;
   pointer-events: none;
-  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.2);
+  box-shadow: 0 3px 8px rgba(15, 23, 42, 0.28);
   animation: badgePopIn 130ms cubic-bezier(0.16, 1, 0.3, 1);
-  white-space: nowrap;
+  text-align: right;
+  word-break: break-word;
+}
+.cell-drop-badge .badge-title {
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+.cell-drop-badge .badge-desc {
+  font-size: 8.5px;
+  font-weight: 700;
+  opacity: 0.95;
+  max-width: 140px;
 }
 @keyframes badgePopIn {
-  0% { transform: scale(0.65); opacity: 0; }
+  0% { transform: scale(0.75); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }
 }
 
@@ -2406,6 +2417,51 @@ body.admin-edit-unlocked [data-drop-zone].cell-empty.drop-preview-conflict::afte
   background: #64748b;
   color: #ffffff;
   border: 1px solid #475569;
+}
+
+/* Floating Live Drag Conflict Banner */
+.drag-conflict-live-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 22px;
+  border-radius: 9999px;
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.38), 0 0 0 1px rgba(255, 255, 255, 0.12);
+  z-index: 999999;
+  pointer-events: none;
+  transition: all 120ms ease;
+  max-width: 92vw;
+  text-align: center;
+}
+.drag-conflict-live-banner.banner-conflict {
+  background: #991b1b;
+  border: 1.5px solid #f87171;
+  box-shadow: 0 10px 32px rgba(185, 28, 28, 0.5);
+}
+.drag-conflict-live-banner.banner-success {
+  background: #14532d;
+  border: 1.5px solid #4ade80;
+  box-shadow: 0 10px 32px rgba(22, 101, 52, 0.5);
+}
+.drag-conflict-live-banner .banner-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+  font-weight: 900;
+  font-size: 12px;
+  flex-shrink: 0;
 }
 
 /* Red Warning Cells for Existing Timetable Conflicts */
@@ -3140,6 +3196,12 @@ body.admin-edit-unlocked .lock-indicator-pill {
   <span id="toastMessage" class="toast-message"></span>
   <button id="toastActionBtn" class="toast-action-btn" style="display:none;"></button>
   <button class="toast-close-btn" onclick="scheduleEditor.hideToast()" title="Dismiss">&times;</button>
+</div>
+
+<!-- Floating Live Drag Conflict Banner -->
+<div id="dragConflictLiveBanner" class="drag-conflict-live-banner" style="display:none;">
+  <span class="banner-icon" id="dragLiveBannerIcon">!</span>
+  <span class="banner-text" id="dragLiveBannerText">Hover over any slot to inspect conflicts</span>
 </div>
 
 <div class="section-workspace sidebar-hidden" id="sectionWorkspace" style="padding-left: 0 !important;">
@@ -7903,7 +7965,12 @@ body.admin-edit-unlocked .lock-indicator-pill {
         );
         if (srcTeacherBusy) {
           const tName = sourceExam.subject_teacher || sourceExam.teacher || 'Teacher';
-          return { status: 'SWAP_CONFLICT', label: 'CANNOT SWAP', reason: `Cannot swap: ${tName} busy on Day ${targetExam.day_number}` };
+          return {
+            status: 'SWAP_CONFLICT',
+            label: 'CANNOT SWAP',
+            shortReason: `${tName.replace('Teacher ', 'Tchr. ').replace('Ustadh ', 'Ust. ')} busy`,
+            reason: `Cannot swap: ${tName} already teaching on Day ${targetExam.day_number}`
+          };
         }
 
         const srcSectionBusy = EXAM_RECORDS.find(e =>
@@ -7915,7 +7982,13 @@ body.admin-edit-unlocked .lock-indicator-pill {
           Number(targetExam.start_m) < Number(e.end_m)
         );
         if (srcSectionBusy) {
-          return { status: 'SWAP_CONFLICT', label: 'CANNOT SWAP', reason: `Cannot swap: Section busy on Day ${targetExam.day_number}` };
+          const sName = cleanSectionName(sourceExam.section_name || 'Section');
+          return {
+            status: 'SWAP_CONFLICT',
+            label: 'CANNOT SWAP',
+            shortReason: `${sName} has ${publicExamSubject(srcSectionBusy)}`,
+            reason: `Cannot swap: ${sName} already taking ${publicExamSubject(srcSectionBusy)} on Day ${targetExam.day_number}`
+          };
         }
 
         // Check target at source slot
@@ -7930,7 +8003,12 @@ body.admin-edit-unlocked .lock-indicator-pill {
         );
         if (targetTeacherBusy) {
           const tName = targetExam.subject_teacher || targetExam.teacher || 'Teacher';
-          return { status: 'SWAP_CONFLICT', label: 'CANNOT SWAP', reason: `Cannot swap: ${tName} busy on Day ${sourceExam.day_number}` };
+          return {
+            status: 'SWAP_CONFLICT',
+            label: 'CANNOT SWAP',
+            shortReason: `${tName.replace('Teacher ', 'Tchr. ').replace('Ustadh ', 'Ust. ')} busy`,
+            reason: `Cannot swap: ${tName} already teaching on Day ${sourceExam.day_number}`
+          };
         }
 
         const targetSectionBusy = EXAM_RECORDS.find(e =>
@@ -7942,10 +8020,21 @@ body.admin-edit-unlocked .lock-indicator-pill {
           Number(sourceExam.start_m) < Number(e.end_m)
         );
         if (targetSectionBusy) {
-          return { status: 'SWAP_CONFLICT', label: 'CANNOT SWAP', reason: `Cannot swap: Section busy on Day ${sourceExam.day_number}` };
+          const sName = cleanSectionName(targetExam.section_name || 'Section');
+          return {
+            status: 'SWAP_CONFLICT',
+            label: 'CANNOT SWAP',
+            shortReason: `${sName} has ${publicExamSubject(targetSectionBusy)}`,
+            reason: `Cannot swap: ${sName} already taking ${publicExamSubject(targetSectionBusy)} on Day ${sourceExam.day_number}`
+          };
         }
 
-        return { status: 'SWAP_OK', label: 'SWAP OK', reason: `Safe to swap with ${publicExamSubject(targetExam)}` };
+        return {
+          status: 'SWAP_OK',
+          label: 'SWAP OK',
+          shortReason: `Swap with ${publicExamSubject(targetExam)}`,
+          reason: `Safe to swap with ${publicExamSubject(targetExam)}`
+        };
       } else {
         // MOVE EVALUATION (Empty slot)
         let newStartM = 0;
@@ -7983,7 +8072,13 @@ body.admin-edit-unlocked .lock-indicator-pill {
         );
         if (teacherClash) {
           const tName = sourceExam.subject_teacher || sourceExam.teacher || 'Teacher';
-          return { status: 'CONFLICT', label: 'CONFLICT', reason: `${tName} busy (${teacherClash.section_name || 'other class'})` };
+          const oSec = cleanSectionName(teacherClash.section_name || 'other class');
+          return {
+            status: 'CONFLICT',
+            label: 'CONFLICT',
+            shortReason: `${tName.replace('Teacher ', 'Tchr. ').replace('Ustadh ', 'Ust. ')} in ${oSec}`,
+            reason: `${tName} is already teaching in ${oSec} (${publicExamSubject(teacherClash)})`
+          };
         }
 
         // Check section clash
@@ -7995,11 +8090,41 @@ body.admin-edit-unlocked .lock-indicator-pill {
           newStartM < Number(e.end_m)
         );
         if (sectionClash) {
-          return { status: 'CONFLICT', label: 'CONFLICT', reason: `Section has exam (${publicExamSubject(sectionClash)})` };
+          const sName = cleanSectionName(sourceExam.section_name || 'Section');
+          const tName = sectionClash.subject_teacher || sectionClash.teacher || '';
+          return {
+            status: 'CONFLICT',
+            label: 'CONFLICT',
+            shortReason: `${sName} has ${publicExamSubject(sectionClash)}`,
+            reason: `${sName} is already scheduled for ${publicExamSubject(sectionClash)}${tName ? ` (${tName})` : ''}`
+          };
         }
 
-        return { status: 'FREE', label: 'VACANT', reason: 'Available vacant slot' };
+        return {
+          status: 'FREE',
+          label: 'VACANT',
+          shortReason: 'Available',
+          reason: 'Available vacant slot'
+        };
       }
+    },
+
+    showLiveDragBanner: function(text, type) {
+      const banner = document.getElementById('dragConflictLiveBanner');
+      const textEl = document.getElementById('dragLiveBannerText');
+      const iconEl = document.getElementById('dragLiveBannerIcon');
+      if (!banner || !textEl) return;
+      textEl.textContent = text;
+      banner.className = 'drag-conflict-live-banner ' + (type || '');
+      if (iconEl) {
+        iconEl.textContent = type === 'banner-conflict' ? '!' : (type === 'banner-success' ? '✓' : 'ℹ');
+      }
+      banner.style.display = 'inline-flex';
+    },
+
+    hideLiveDragBanner: function() {
+      const banner = document.getElementById('dragConflictLiveBanner');
+      if (banner) banner.style.display = 'none';
     },
 
     highlightDropTargets: function(sourceExamId) {
@@ -8007,12 +8132,17 @@ body.admin-edit-unlocked .lock-indicator-pill {
       const sourceExam = EXAM_RECORDS.find(e => e.id === sourceExamId);
       if (!sourceExam) return;
 
+      const subName = publicExamSubject(sourceExam);
+      const secName = cleanSectionName(sourceExam.section_name || sourceExam.section || '');
+      this.showLiveDragBanner(`Holding: ${subName} (${secName}) • Hover or drag over slots to see conflict reasons`, '');
+
       const cells = document.querySelectorAll('[data-drop-zone]');
       cells.forEach(cell => {
         const evalResult = this.evaluateDropTarget(sourceExam, cell);
         if (!evalResult) return;
 
         cell.setAttribute('data-drop-status', evalResult.status);
+        cell.setAttribute('data-drop-reason', evalResult.reason);
 
         if (evalResult.status === 'CURRENT') {
           cell.classList.add('drop-zone-source');
@@ -8020,35 +8150,36 @@ body.admin-edit-unlocked .lock-indicator-pill {
           cell.classList.add('drop-preview-free');
           const badge = document.createElement('div');
           badge.className = 'cell-drop-badge badge-free';
-          badge.textContent = 'VACANT';
-          badge.title = evalResult.reason;
+          badge.setAttribute('data-reason', evalResult.reason);
+          badge.innerHTML = `<span class="badge-title">VACANT</span>`;
           cell.appendChild(badge);
         } else if (evalResult.status === 'CONFLICT') {
           cell.classList.add('drop-preview-conflict');
           const badge = document.createElement('div');
           badge.className = 'cell-drop-badge badge-conflict';
-          badge.textContent = 'CONFLICT';
-          badge.title = evalResult.reason;
+          badge.setAttribute('data-reason', evalResult.reason);
+          badge.innerHTML = `<span class="badge-title">CONFLICT</span><span class="badge-desc">${evalResult.shortReason || evalResult.reason}</span>`;
           cell.appendChild(badge);
         } else if (evalResult.status === 'SWAP_OK') {
           cell.classList.add('drop-preview-swap-ok');
           const badge = document.createElement('div');
           badge.className = 'cell-drop-badge badge-swap-ok';
-          badge.textContent = 'SWAP OK';
-          badge.title = evalResult.reason;
+          badge.setAttribute('data-reason', evalResult.reason);
+          badge.innerHTML = `<span class="badge-title">SWAP OK</span><span class="badge-desc">${evalResult.shortReason || ''}</span>`;
           cell.appendChild(badge);
         } else if (evalResult.status === 'SWAP_CONFLICT') {
           cell.classList.add('drop-preview-swap-conflict');
           const badge = document.createElement('div');
           badge.className = 'cell-drop-badge badge-swap-conflict';
-          badge.textContent = 'CANNOT SWAP';
-          badge.title = evalResult.reason;
+          badge.setAttribute('data-reason', evalResult.reason);
+          badge.innerHTML = `<span class="badge-title">CANNOT SWAP</span><span class="badge-desc">${evalResult.shortReason || evalResult.reason}</span>`;
           cell.appendChild(badge);
         }
       });
     },
 
     clearDropTargetHighlights: function() {
+      this.hideLiveDragBanner();
       document.querySelectorAll('[data-drop-zone]').forEach(cell => {
         cell.classList.remove(
           'drop-zone-potential',
@@ -8061,6 +8192,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
           'drop-preview-swap-conflict'
         );
         cell.removeAttribute('data-drop-status');
+        cell.removeAttribute('data-drop-reason');
         cell.querySelectorAll('.cell-drop-badge').forEach(b => b.remove());
       });
     },
@@ -8077,6 +8209,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
       if (this.holdTimer) clearTimeout(this.holdTimer);
       if (!this.draggedExamId && !this.selectedExamId) {
         this.clearDropTargetHighlights();
+        this.hideLiveDragBanner();
       }
     },
 
@@ -8103,6 +8236,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
       const el = ev.currentTarget;
       el.classList.remove('is-dragging');
       this.draggedExamId = null;
+      this.hideLiveDragBanner();
       if (!this.selectedExamId) {
         this.clearDropTargetHighlights();
       }
@@ -8116,11 +8250,17 @@ body.admin-edit-unlocked .lock-indicator-pill {
       ev.preventDefault();
       const cell = ev.currentTarget;
       const status = cell.getAttribute('data-drop-status');
+      const reason = cell.getAttribute('data-drop-reason');
 
       if (status === 'CONFLICT' || status === 'SWAP_CONFLICT') {
         ev.dataTransfer.dropEffect = 'none';
-      } else {
+        this.showLiveDragBanner('! ' + (reason || 'Conflict: Slot cannot be used'), 'banner-conflict');
+      } else if (status === 'SWAP_OK') {
         ev.dataTransfer.dropEffect = 'move';
+        this.showLiveDragBanner('✓ ' + (reason || 'Safe to swap with this slot'), 'banner-success');
+      } else if (status === 'FREE') {
+        ev.dataTransfer.dropEffect = 'move';
+        this.showLiveDragBanner('✓ Vacant slot: Safe to move here', 'banner-success');
       }
 
       if (cell.classList.contains('cell-empty')) {
