@@ -2368,6 +2368,209 @@ body.admin-edit-unlocked [data-drop-zone].cell-empty.drop-preview-conflict::afte
   border: 1px solid #475569;
 }
 
+/* Red Warning Cells for Existing Timetable Conflicts */
+td.cell-conflict-clash {
+  background: #fff1f2 !important;
+  outline: 3px solid #dc2626 !important;
+  outline-offset: -2px;
+  box-shadow: inset 0 0 10px rgba(220, 38, 38, 0.18), 0 0 14px rgba(220, 38, 38, 0.3) !important;
+  position: relative !important;
+  animation: pulseClashCell 2.2s infinite ease-in-out;
+}
+@keyframes pulseClashCell {
+  0%, 100% {
+    outline-color: #dc2626;
+    box-shadow: inset 0 0 8px rgba(220, 38, 38, 0.2), 0 0 10px rgba(220, 38, 38, 0.25);
+  }
+  50% {
+    outline-color: #b91c1c;
+    box-shadow: inset 0 0 16px rgba(185, 28, 28, 0.35), 0 0 18px rgba(220, 38, 38, 0.45);
+  }
+}
+
+.cell-clash-alert-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: #dc2626;
+  color: #ffffff;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+}
+
+.cell-class-inner.card-has-clash {
+  border: 1.5px solid #ef4444 !important;
+  box-shadow: 0 2px 6px rgba(220, 38, 38, 0.2) !important;
+}
+
+.badge-card-clash-pill {
+  display: inline-block;
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #f87171;
+  font-size: 9px;
+  font-weight: 900;
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+
+/* Flash animation when jumping directly to a conflicting cell */
+@keyframes flashConflictCell {
+  0% { transform: scale(1); outline: 5px solid #e11d48; box-shadow: 0 0 30px #e11d48; }
+  50% { transform: scale(1.03); outline: 6px solid #fb7185; box-shadow: 0 0 40px #fb7185; }
+  100% { transform: scale(1); outline: 3px solid #dc2626; box-shadow: 0 0 12px rgba(220, 38, 38, 0.35); }
+}
+.flash-conflict-target {
+  animation: flashConflictCell 1.2s 3 ease-in-out !important;
+  z-index: 100 !important;
+  position: relative !important;
+}
+
+/* Conflict Inspector Modal Styles */
+.conflict-inspector-card {
+  max-width: 680px !important;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+.conflict-inspector-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+.conflict-header-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.conflict-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #fee2e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.conflict-inspector-body {
+  padding: 16px 24px;
+  overflow-y: auto;
+  max-height: calc(85vh - 150px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.conflict-inspector-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  border-top: 1px solid #e2e8f0;
+  background: #f8fafc;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.conflict-footer-hint {
+  font-size: 11.5px;
+  color: #64748b;
+}
+
+.conflict-group-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.conflict-group-header {
+  background: #f8fafc;
+  padding: 10px 14px;
+  font-weight: 800;
+  font-size: 13px;
+  color: #0f172a;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.conflict-group-badge {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  font-size: 10.5px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 9999px;
+}
+.conflict-item-row {
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+.conflict-item-row:last-child {
+  border-bottom: none;
+}
+.conflict-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.conflict-item-slot {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1e293b;
+}
+.conflict-item-details {
+  font-size: 11.5px;
+  color: #b91c1c;
+  font-weight: 600;
+}
+.btn-jump-clash {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 120ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.btn-jump-clash:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.btn-clash-jump {
+  background: #fee2e2 !important;
+  color: #991b1b !important;
+  border: 1.5px solid #fca5a5 !important;
+}
+.btn-clash-jump:hover {
+  background: #fecaca !important;
+  border-color: #f87171 !important;
+  color: #7f1d1d !important;
+}
+
 /* Header Lock Indicator Pill */
 .lock-indicator-pill {
   display: inline-flex;
@@ -2762,7 +2965,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
     </button>
   </div>
 
-  <div class="badge-anti-conflict-top" id="antiConflictBadge">
+  <div class="badge-anti-conflict-top" id="antiConflictBadge" onclick="scheduleEditor.openConflictInspector()" style="cursor:pointer;" title="Click to view all conflicting cells and jump directly to them">
     <span style="color:#059669; font-weight:900;">✓</span> Anti-Conflict Guard Active: 0 Conflicts
   </div>
   <div class="lock-indicator-pill" id="lockIndicatorPill" onclick="scheduleEditor.toggleLock()" title="Press '5' on keyboard anytime to toggle edit lock">
@@ -2781,9 +2984,13 @@ body.admin-edit-unlocked .lock-indicator-pill {
   <div class="drag-editor-right">
     <div class="drag-stats-group">
       <span class="drag-stat-pill" id="dragEditCountPill">0 manual edits</span>
-      <span class="drag-stat-pill clear" id="dragConflictPill">0 Clashes</span>
+      <span class="drag-stat-pill clear" id="dragConflictPill" onclick="scheduleEditor.openConflictInspector()" style="cursor:pointer;" title="Click to view all conflicting cells">0 Clashes</span>
     </div>
     <div class="drag-actions-group">
+      <button class="btn-drag-action btn-clash-jump" id="btnClashJump" onclick="scheduleEditor.jumpToNextConflict()" title="Jump directly to conflicting cells on the timetable" style="display:none;">
+        <svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.5L20.5 19h-17L12 5.5zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+        <span id="clashJumpText">Find Clashes</span>
+      </button>
       <button class="btn-drag-action" id="btnUndo" onclick="scheduleEditor.undo()" title="Undo (Ctrl+Z)" disabled>
         <svg viewBox="0 0 24 24"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.22 3.16-1.98 5.12-1.98 3.77 0 6.9 2.61 7.7 6.13l2.42-.8C21.48 10.87 17.38 8 12.5 8z"/></svg>
         Undo
@@ -2839,6 +3046,31 @@ body.admin-edit-unlocked .lock-indicator-pill {
     </form>
     <div class="admin-modal-hint">
       Shortcut: Press <strong>5</strong> on your keyboard to toggle lock/unlock anytime.
+    </div>
+  </div>
+</div>
+
+<!-- Conflict Inspector Modal -->
+<div id="conflictInspectorModal" class="admin-login-modal-overlay" style="display:none;" onclick="if(event.target === this) scheduleEditor.closeConflictInspector()">
+  <div class="admin-login-card conflict-inspector-card">
+    <div class="conflict-inspector-header">
+      <div class="conflict-header-title-wrap">
+        <div class="conflict-icon-wrap">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="#dc2626"><path d="M12 2L1 21h22L12 2zm0 3.5L20.5 19h-17L12 5.5zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+        </div>
+        <div>
+          <h2 id="conflictModalTitle" style="margin:0; font-size:18px; color:#0f172a;">Conflict Inspector</h2>
+          <p id="conflictModalSubtitle" style="margin:2px 0 0; font-size:12.5px; color:#64748b;">Review and jump directly to overlapping schedule cells</p>
+        </div>
+      </div>
+      <button type="button" class="btn-modal-cancel" style="padding:4px 10px; font-size:16px; border-radius:8px; line-height:1;" onclick="scheduleEditor.closeConflictInspector()" title="Close">&times;</button>
+    </div>
+    <div id="conflictInspectorList" class="conflict-inspector-body">
+      <!-- Dynamically filled with clash items and direct jump buttons -->
+    </div>
+    <div class="conflict-inspector-footer">
+      <span class="conflict-footer-hint">Click <strong>View on Timetable</strong> to jump to that red-highlighted cell.</span>
+      <button type="button" class="btn-modal-cancel" onclick="scheduleEditor.closeConflictInspector()">Close</button>
     </div>
   </div>
 </div>
@@ -7368,7 +7600,25 @@ body.admin-edit-unlocked .lock-indicator-pill {
           && String(left.gender || 'NONE') === String(right.gender || 'NONE');
 
         if (isTeacherOverlap || sameCohort) {
-          conflicts.push([left.id, right.id]);
+          const item = [left.id, right.id];
+          item.left = left;
+          item.right = right;
+          item.leftId = left.id;
+          item.rightId = right.id;
+          item.isTeacherOverlap = Boolean(isTeacherOverlap);
+          item.sameCohort = Boolean(sameCohort);
+          item.dayNumber = Number(left.day_number);
+          item.timeSlot = left.time_slot || left.time || '';
+          item.sectionId = left.section_id || right.section_id;
+          item.sectionName = left.section_name || right.section_name || left.grade_level || '';
+          item.teacherId = leftTeacherId || rightTeacherId;
+          item.teacherName = left.subject_teacher || left.teacher || right.subject_teacher || right.teacher || '';
+          item.leftSubject = publicExamSubject(left);
+          item.rightSubject = publicExamSubject(right);
+          item.reason = isTeacherOverlap
+            ? `Teacher overlap: ${item.teacherName} double-scheduled with ${item.leftSubject} and ${item.rightSubject}`
+            : `Section clash: ${item.sectionName} taking ${item.leftSubject} and ${item.rightSubject} at the same time`;
+          conflicts.push(item);
           if (isTeacherOverlap) teacherClashCount++;
           if (sameCohort) sectionClashCount++;
         }
@@ -7379,17 +7629,54 @@ body.admin-edit-unlocked .lock-indicator-pill {
     return conflicts;
   }
 
+  function getScheduleConflictMap() {
+    const conflicts = strictScheduleConflicts();
+    const map = new Map();
+    const sectionClashCounts = new Map();
+    const teacherClashCounts = new Map();
+
+    conflicts.forEach(c => {
+      if (!map.has(c.leftId)) map.set(c.leftId, []);
+      if (!map.has(c.rightId)) map.set(c.rightId, []);
+      map.get(c.leftId).push(c);
+      map.get(c.rightId).push(c);
+
+      if (c.sameCohort && c.sectionId) {
+        sectionClashCounts.set(c.sectionId, (sectionClashCounts.get(c.sectionId) || 0) + 1);
+      }
+      if (c.isTeacherOverlap && c.teacherId) {
+        teacherClashCounts.set(c.teacherId, (teacherClashCounts.get(c.teacherId) || 0) + 1);
+      }
+    });
+
+    return { conflicts, map, sectionClashCounts, teacherClashCounts };
+  }
+
   function updateAntiConflictBadge() {
     const badge = document.getElementById('antiConflictBadge');
-    if (!badge) return;
     const conflicts = strictScheduleConflicts();
     const conflictCount = conflicts.length;
     const isClear = conflictCount === 0;
-    const detail = isClear ? '0 Conflicts' : `${conflicts.teacherCount || 0} Teacher, ${conflicts.sectionCount || 0} Section Clash`;
-    badge.innerHTML = `<span style="color:${isClear ? '#059669' : '#dc2626'}; font-weight:900;">${isClear ? '✓' : '!'}</span> Anti-Conflict Guard Active: ${detail}`;
-    badge.style.color = isClear ? '#047857' : '#b91c1c';
-    badge.style.background = isClear ? '#ecfdf5' : '#fef2f2';
-    badge.style.borderColor = isClear ? '#a7f3d0' : '#fecaca';
+
+    if (badge) {
+      const detail = isClear ? '0 Conflicts' : `${conflicts.teacherCount || 0} Teacher, ${conflicts.sectionCount || 0} Section Clash`;
+      badge.innerHTML = `<span style="color:${isClear ? '#059669' : '#dc2626'}; font-weight:900;">${isClear ? '✓' : '!'}</span> Anti-Conflict Guard Active: ${detail} ${isClear ? '' : '<span style="font-size:10px; margin-left:6px; text-decoration:underline; font-weight:800;">[Inspect]</span>'}`;
+      badge.style.color = isClear ? '#047857' : '#b91c1c';
+      badge.style.background = isClear ? '#ecfdf5' : '#fef2f2';
+      badge.style.borderColor = isClear ? '#a7f3d0' : '#fecaca';
+      badge.title = isClear ? 'No conflicts detected' : `Click to view all ${conflictCount} conflicting cells and jump directly to them`;
+    }
+
+    const btnJump = document.getElementById('btnClashJump');
+    const clashJumpText = document.getElementById('clashJumpText');
+    if (btnJump) {
+      if (conflictCount > 0) {
+        btnJump.style.display = 'inline-flex';
+        if (clashJumpText) clashJumpText.textContent = `Inspect ${conflictCount} Clash${conflictCount === 1 ? '' : 'es'}`;
+      } else {
+        btnJump.style.display = 'none';
+      }
+    }
 
     if (window.scheduleEditor && window.scheduleEditor.updateUI) {
       window.scheduleEditor.updateUI();
@@ -8355,6 +8642,148 @@ body.admin-edit-unlocked .lock-indicator-pill {
     hideToast: function() {
       const toast = document.getElementById('scheduleEditorToast');
       if (toast) toast.style.display = 'none';
+    },
+
+    openConflictInspector: function() {
+      const modal = document.getElementById('conflictInspectorModal');
+      const listEl = document.getElementById('conflictInspectorList');
+      const titleEl = document.getElementById('conflictModalTitle');
+      const subtitleEl = document.getElementById('conflictModalSubtitle');
+      if (!modal || !listEl) return;
+
+      const { conflicts } = getScheduleConflictMap();
+      if (conflicts.length === 0) {
+        listEl.innerHTML = `
+          <div style="text-align:center; padding:36px 20px; color:#15803d;">
+            <div style="width:48px; height:48px; border-radius:50%; background:#dcfce7; display:inline-flex; align-items:center; justify-content:center; margin-bottom:12px;">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="#16a34a"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <h3 style="margin:0; font-size:16px; font-weight:800; color:#166534;">Zero Conflicts Detected</h3>
+            <p style="margin:6px 0 0; font-size:12.5px; color:#475569;">All exams are cleanly scheduled with no overlapping student sections or teachers.</p>
+          </div>
+        `;
+        if (titleEl) titleEl.textContent = 'Conflict Inspector (All Clear)';
+        if (subtitleEl) subtitleEl.textContent = 'No schedule clashes found';
+        modal.style.display = 'flex';
+        return;
+      }
+
+      if (titleEl) titleEl.textContent = `Conflict Inspector (${conflicts.length} Clashes Found)`;
+      if (subtitleEl) subtitleEl.textContent = `${conflicts.teacherCount || 0} Teacher overlap(s), ${conflicts.sectionCount || 0} Section overlap(s)`;
+
+      // Group conflicts by Section or Teacher
+      const groups = new Map();
+      conflicts.forEach(c => {
+        const groupKey = c.sameCohort ? `Section: ${c.sectionName}` : `Teacher: ${c.teacherName}`;
+        if (!groups.has(groupKey)) {
+          groups.set(groupKey, {
+            title: groupKey,
+            isSection: c.sameCohort,
+            sectionId: c.sectionId,
+            teacherId: c.teacherId,
+            items: []
+          });
+        }
+        groups.get(groupKey).items.push(c);
+      });
+
+      let html = '';
+      groups.forEach(g => {
+        html += `
+          <div class="conflict-group-box">
+            <div class="conflict-group-header">
+              <span>${esc(g.title)}</span>
+              <span class="conflict-group-badge">${g.items.length} ${g.items.length === 1 ? 'Clash' : 'Clashes'}</span>
+            </div>
+            <div>
+              ${g.items.map(c => {
+                const dayNum = c.dayNumber;
+                const timeStr = c.timeSlot || (c.left ? c.left.time : '');
+                const targetCellId = g.isSection
+                  ? `cell_sec_${c.sectionId}_d${dayNum}_s${c.left.slot_number || 1}`
+                  : `cell_fac_${c.teacherId}_d${dayNum}_s${c.left.slot_number || 1}`;
+                return `
+                  <div class="conflict-item-row">
+                    <div class="conflict-item-info">
+                      <div class="conflict-item-slot">Day ${dayNum} &bull; ${esc(timeStr)}</div>
+                      <div class="conflict-item-details">
+                        ${esc(c.leftSubject)} &times; ${esc(c.rightSubject)}
+                      </div>
+                      <div style="font-size:11px; color:#64748b;">${esc(c.reason)}</div>
+                    </div>
+                    <button type="button" class="btn-jump-clash" onclick="scheduleEditor.jumpToConflict('${c.sectionId || ''}', '${c.teacherId || ''}', '${targetCellId}', ${dayNum})">
+                      <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                      View on Timetable
+                    </button>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </div>
+        `;
+      });
+
+      listEl.innerHTML = html;
+      modal.style.display = 'flex';
+    },
+
+    closeConflictInspector: function() {
+      const modal = document.getElementById('conflictInspectorModal');
+      if (modal) modal.style.display = 'none';
+    },
+
+    conflictIndex: 0,
+    jumpToNextConflict: function() {
+      const { conflicts } = getScheduleConflictMap();
+      if (conflicts.length === 0) {
+        this.showToast("No conflicts found! All exams are clear.");
+        return;
+      }
+      if (this.conflictIndex >= conflicts.length) this.conflictIndex = 0;
+      const c = conflicts[this.conflictIndex];
+      this.conflictIndex++;
+      const dayNum = c.dayNumber;
+      const targetCellId = c.sameCohort
+        ? `cell_sec_${c.sectionId}_d${dayNum}_s${c.left.slot_number || 1}`
+        : `cell_fac_${c.teacherId}_d${dayNum}_s${c.left.slot_number || 1}`;
+      this.jumpToConflict(c.sectionId || '', c.teacherId || '', targetCellId, dayNum);
+    },
+
+    jumpToConflict: function(sectionId, teacherId, targetCellId, dayNum) {
+      this.closeConflictInspector();
+
+      if (sectionId) {
+        if (currentTab !== 'SECTION') switchTab('SECTION');
+        selectedSectionId = sectionId;
+        const secObj = SECTIONS_DATA.find(s => s.id === sectionId);
+        if (secObj && selectedGrade !== 'ALL' && selectedGrade !== secObj.grade_level) {
+          selectedGrade = secObj.grade_level;
+        }
+        renderSectionToolbar();
+        renderSectionView();
+      } else if (teacherId) {
+        if (currentTab !== 'FACULTY') switchTab('FACULTY', teacherId);
+        else renderFacultyView(teacherId);
+        const sel = document.getElementById('teacherSelect');
+        if (sel) sel.value = teacherId;
+      }
+
+      setTimeout(() => {
+        let el = document.getElementById(targetCellId);
+        if (!el) {
+          el = document.querySelector('.cell-conflict-clash');
+        }
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+          el.classList.remove('flash-conflict-target');
+          void el.offsetWidth;
+          el.classList.add('flash-conflict-target');
+          setTimeout(() => el.classList.remove('flash-conflict-target'), 4000);
+          this.showToast("Jumped to conflicting cell. Drag one subject to an empty slot to resolve.");
+        } else {
+          this.showToast("Conflict location opened on timetable.");
+        }
+      }, 120);
     }
   };
 
@@ -8427,6 +8856,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
   function renderSectionToolbar() {
     const rawGrades = [...new Set(SECTIONS_DATA.map(s => s.grade_level).filter(Boolean))].sort(compareGradeLevels);
     const filteredSections = getGradeFilteredSections();
+    const { sectionClashCounts } = getScheduleConflictMap();
 
     toolbarControls.innerHTML = `
       <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
@@ -8434,9 +8864,13 @@ body.admin-edit-unlocked .lock-indicator-pill {
           <option value="ALL" ${selectedGrade === 'ALL' ? 'selected' : ''}>All Grade Levels (${SECTIONS_DATA.length} Sections)</option>
           ${rawGrades.map(g => `<option value="${esc(g)}" ${selectedGrade === g ? 'selected' : ''}>${esc(gradeDisplayName(g))}</option>`).join('')}
         </select>
-        <select class="select-filter" id="sectionSelectFilter" onchange="selectSectionTab(this.value)" style="background:#ffffff; color:#0f172a; font-weight:700; border-radius:8px; padding:6px 10px; border:1px solid #cbd5e1; font-size:12.5px; height:36px; cursor:pointer; max-width:240px;" title="Filter by Section">
+        <select class="select-filter" id="sectionSelectFilter" onchange="selectSectionTab(this.value)" style="background:#ffffff; color:#0f172a; font-weight:700; border-radius:8px; padding:6px 10px; border:1px solid #cbd5e1; font-size:12.5px; height:36px; cursor:pointer; max-width:280px;" title="Filter by Section">
           <option value="ALL_GROUP" ${selectedSectionId === 'ALL_GROUP' ? 'selected' : ''}>All Sections ${selectedGrade !== 'ALL' ? 'in ' + gradeDisplayName(selectedGrade) : ''}</option>
-          ${filteredSections.map(s => `<option value="${esc(s.id)}" ${selectedSectionId === s.id ? 'selected' : ''}>${esc(s.section_name)}</option>`).join('')}
+          ${filteredSections.map(s => {
+            const clashCnt = sectionClashCounts.get(s.id) || 0;
+            const clashBadge = clashCnt > 0 ? ` [! ${clashCnt} CLASH${clashCnt === 1 ? '' : 'ES'}]` : '';
+            return `<option value="${esc(s.id)}" ${selectedSectionId === s.id ? 'selected' : ''} style="${clashCnt > 0 ? 'font-weight:800; color:#b91c1c;' : ''}">${esc(s.section_name)}${clashBadge}</option>`;
+          }).join('')}
         </select>
         <input type="search" id="subjectSearchInput" placeholder="Search subject..." value="${esc(sectionSubjectQuery)}" oninput="onSubjectSearch(this.value)" style="background:#ffffff; color:#0f172a; border-radius:8px; padding:6px 10px; border:1px solid #cbd5e1; font-size:12.5px; width:160px; height:36px;">
         ${AMISScheduleExport.toolbarButtonHtml()}
@@ -8511,6 +8945,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
 
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     let fullHtml = '';
+    const { map: clashMap } = getScheduleConflictMap();
 
     if (subjectQuery) {
       const targetSectionIds = new Set(targetSections.map(section => section.id));
@@ -8669,6 +9104,11 @@ body.admin-edit-unlocked .lock-indicator-pill {
               return examStartsAtScheduleRow(e, row.time, row.slot_num);
             });
 
+            const cellId = `cell_sec_${sec.id}_d${d.day_num}_s${row.slot_num}`;
+            const hasSectionStackConflict = matches.length > 1;
+            const hasExamClash = matches.some(m => clashMap.has(m.id));
+            const hasConflict = hasSectionStackConflict || hasExamClash;
+
             if (matches.length > 0) {
               const is120 = matches.some(m => m.duration_minutes === 120 || m.slots_spanned === 2);
               let calcRowspan = 1;
@@ -8689,9 +9129,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
                 const match = matches[0];
                 const displayedSubject = publicExamSubject(match);
                 const color = getSubjectColor(displayedSubject);
+                const isClashing = hasConflict;
 
                 fullHtml += `
-                  <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
+                  <td id="${cellId}" class="cell-class ${isClashing ? 'cell-conflict-clash' : ''}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
                       data-drop-zone="section"
                       data-section-id="${sec.id}"
                       data-day-num="${d.day_num}"
@@ -8704,8 +9145,14 @@ body.admin-edit-unlocked .lock-indicator-pill {
                       ondragleave="scheduleEditor.handleDragLeave(event)"
                       ondrop="scheduleEditor.handleDrop(event)"
                       onclick="scheduleEditor.handleCellClick(event)"
-                      style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
-                    <div class="cell-class-inner"
+                      style="${isClashing ? '' : `background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text};`} ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                    ${isClashing ? `
+                      <div class="cell-clash-alert-banner">
+                        <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 3.5L20.5 19h-17L12 5.5zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+                        CONFLICT DETECTED
+                      </div>
+                    ` : ''}
+                    <div class="cell-class-inner ${isClashing ? 'card-has-clash' : ''}"
                          draggable="${isUnlocked ? 'true' : 'false'}"
                          data-exam-id="${match.id}"
                          data-section-id="${sec.id}"
@@ -8715,18 +9162,21 @@ body.admin-edit-unlocked .lock-indicator-pill {
                          onpointerdown="scheduleEditor.handlePointerDown(event, '${match.id}')"
                          onpointerup="scheduleEditor.handlePointerUp(event)"
                          onclick="scheduleEditor.handleExamCardClick(event, '${match.id}')"
-                         title="${isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : ''}">
+                         title="${isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : ''}"
+                         style="${isClashing ? `background:${color.bg}; border:1.5px solid #ef4444; border-left:5px solid #dc2626; border-radius:6px; color:${color.text};` : ''}">
                       ${isUnlocked ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
                       <span class="cell-subject-sec">${esc(displayedSubject)}</span>
                       <span class="cell-teacher-name">${esc(match.subject_teacher || match.teacher)}</span>
-                      <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
+                      <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
+                        <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
+                        ${isClashing ? '<span class="badge-card-clash-pill">CLASH IN THIS SLOT</span>' : ''}
+                      </div>
                     </div>
                   </td>
                 `;
               } else {
-                const firstColor = getSubjectColor(publicExamSubject(matches[0]));
                 fullHtml += `
-                  <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
+                  <td id="${cellId}" class="cell-class cell-conflict-clash" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
                       data-drop-zone="section"
                       data-section-id="${sec.id}"
                       data-day-num="${d.day_num}"
@@ -8739,14 +9189,18 @@ body.admin-edit-unlocked .lock-indicator-pill {
                       ondragleave="scheduleEditor.handleDragLeave(event)"
                       ondrop="scheduleEditor.handleDrop(event)"
                       onclick="scheduleEditor.handleCellClick(event)"
-                      style="background:#f8fafc; border-color:#cbd5e1; padding:6px; box-shadow:inset 6px 0 0 ${firstColor.accent || firstColor.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                      style="padding:6px; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                    <div class="cell-clash-alert-banner">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 3.5L20.5 19h-17L12 5.5zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+                      ${matches.length} EXAMS CLASHING IN THIS SLOT
+                    </div>
                     <div style="display:flex; flex-direction:column; gap:6px; width:100%;">
                       ${matches.map(m => {
                         const mSubject = publicExamSubject(m);
                         const mColor = getSubjectColor(mSubject);
                         const mIs120 = m.duration_minutes === 120 || m.slots_spanned === 2;
                         return `
-                          <div class="cell-class-inner"
+                          <div class="cell-class-inner card-has-clash"
                                draggable="${isUnlocked ? 'true' : 'false'}"
                                data-exam-id="${m.id}"
                                data-section-id="${sec.id}"
@@ -8757,11 +9211,14 @@ body.admin-edit-unlocked .lock-indicator-pill {
                                onpointerup="scheduleEditor.handlePointerUp(event)"
                                onclick="scheduleEditor.handleExamCardClick(event, '${m.id}')"
                                title="${isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : ''}"
-                               style="background:${mColor.bg}; border:1px solid ${mColor.border}; border-left:4px solid ${mColor.accent || mColor.text}; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
+                               style="background:${mColor.bg}; border:1.5px solid #ef4444; border-left:5px solid #dc2626; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 3px rgba(220,38,38,0.2);">
                             ${isUnlocked ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
                             <span class="cell-subject-sec" style="font-size:13.5px; color:${mColor.text};">${esc(mSubject)}</span>
                             <span class="cell-teacher-name" style="font-size:11.5px;">${esc(m.subject_teacher || m.teacher)}</span>
-                            <span class="cell-duration-badge ${mIs120 ? 'badge-120' : ''}" style="font-size:9.5px; padding:2px 6px;">${m.duration_minutes || 60} MIN</span>
+                            <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
+                              <span class="cell-duration-badge ${mIs120 ? 'badge-120' : ''}" style="font-size:9.5px; padding:2px 6px;">${m.duration_minutes || 60} MIN</span>
+                              <span class="badge-card-clash-pill">OVERLAPPING EXAM</span>
+                            </div>
                           </div>
                         `;
                       }).join('')}
@@ -8771,7 +9228,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
               }
             } else {
               fullHtml += `
-                <td class="cell-empty"
+                <td id="${cellId}" class="cell-empty"
                     data-drop-zone="section"
                     data-section-id="${sec.id}"
                     data-day-num="${d.day_num}"
@@ -9049,6 +9506,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
     const academicTeachers = teachersWithExams.filter(t => !isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
     const ustadhsFaculty = teachersWithExams.filter(t => isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
 
+    const { teacherClashCounts } = getScheduleConflictMap();
     let totalFaculty = teachersWithExams.length;
     let missingFacultyCount = 0;
     let completeFacultyCount = 0;
@@ -9066,8 +9524,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
       academicTeachers.forEach(t => {
         const isSel = (targetTeacherId && t.id === targetTeacherId) ? 'selected' : '';
         const audit = getTeacherLoadAudit(t, EXAM_RECORDS);
-        const statusLabel = audit.missingCount > 0 ? ` [⚠️ ${audit.missingCount} Missing]` : ' [✓ Complete]';
-        optionsHtml += `<option value="${t.id}" ${isSel}>${esc(t.name)} (${audit.scheduledExams} Exams / ${audit.totalLoads} Loads${statusLabel})</option>`;
+        const clashCnt = teacherClashCounts.get(t.id) || 0;
+        const clashBadge = clashCnt > 0 ? ` [! ${clashCnt} CLASH${clashCnt === 1 ? '' : 'ES'}]` : '';
+        const statusLabel = audit.missingCount > 0 ? ` [! ${audit.missingCount} Missing]` : ' [Complete]';
+        optionsHtml += `<option value="${t.id}" ${isSel} style="${clashCnt > 0 ? 'font-weight:800; color:#b91c1c;' : ''}">${esc(t.name)} (${audit.scheduledExams} Exams / ${audit.totalLoads} Loads${statusLabel}${clashBadge})</option>`;
       });
       optionsHtml += '</optgroup>';
     }
@@ -9079,8 +9539,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
       ustadhsFaculty.forEach(t => {
         const isSel = (targetTeacherId && t.id === targetTeacherId) ? 'selected' : '';
         const audit = getTeacherLoadAudit(t, EXAM_RECORDS);
-        const statusLabel = audit.missingCount > 0 ? ` [⚠️ ${audit.missingCount} Missing]` : ' [✓ Complete]';
-        optionsHtml += `<option value="${t.id}" ${isSel}>${esc(t.name)} (${audit.scheduledExams} Exams / ${audit.totalLoads} Loads${statusLabel})</option>`;
+        const clashCnt = teacherClashCounts.get(t.id) || 0;
+        const clashBadge = clashCnt > 0 ? ` [! ${clashCnt} CLASH${clashCnt === 1 ? '' : 'ES'}]` : '';
+        const statusLabel = audit.missingCount > 0 ? ` [! ${audit.missingCount} Missing]` : ' [Complete]';
+        optionsHtml += `<option value="${t.id}" ${isSel} style="${clashCnt > 0 ? 'font-weight:800; color:#b91c1c;' : ''}">${esc(t.name)} (${audit.scheduledExams} Exams / ${audit.totalLoads} Loads${statusLabel}${clashBadge})</option>`;
       });
       optionsHtml += '</optgroup>';
     }
@@ -9126,7 +9588,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
 
       <div class="filter-group search-filter-group" style="position:relative;">
         <input type="text" id="facultySubjectSearch" class="filter-search-input"
-          placeholder="🔍 Track subject (e.g. MAPEH, Math 4, GMRC)..."
+          placeholder="Track subject (e.g. MAPEH, Math 4, GMRC)..."
           value="${esc(facultySubjectQuery)}"
           oninput="onFacultySubjectSearchInput(this.value)"
           title="Type subject name or section to track across faculty"
@@ -9139,7 +9601,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
           All Faculty (${totalFaculty})
         </button>
         <button class="filter-pill-btn ${facultyCoverageFilter === 'MISSING' ? 'active-missing' : ''}" onclick="setFacultyCoverageFilter('MISSING')" title="Filter teachers with unscheduled load subjects">
-          ⚠️ Missing Subjects (${missingFacultyCount})
+          ! Missing Subjects (${missingFacultyCount})
         </button>
         <button class="filter-pill-btn ${facultyCoverageFilter === 'COMPLETE' ? 'active-complete' : ''}" onclick="setFacultyCoverageFilter('COMPLETE')" title="Filter teachers with 100% scheduled loads">
           ✓ Complete (${completeFacultyCount})
@@ -9221,7 +9683,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
         </div>
         <div class="faculty-filter-pills">
           <button class="filter-pill-btn ${facultyCoverageFilter === 'ALL' ? 'active' : ''}" onclick="setFacultyCoverageFilter('ALL')">All Faculty (${totalFacultyCount})</button>
-          <button class="filter-pill-btn ${facultyCoverageFilter === 'MISSING' ? 'active-missing' : ''}" onclick="setFacultyCoverageFilter('MISSING')">⚠️ Missing Subjects (${missingFacultyCount})</button>
+          <button class="filter-pill-btn ${facultyCoverageFilter === 'MISSING' ? 'active-missing' : ''}" onclick="setFacultyCoverageFilter('MISSING')">! Missing Subjects (${missingFacultyCount})</button>
           <button class="filter-pill-btn ${facultyCoverageFilter === 'COMPLETE' ? 'active-complete' : ''}" onclick="setFacultyCoverageFilter('COMPLETE')">✓ Complete (${completeFacultyCount})</button>
         </div>
       </div>
@@ -9254,6 +9716,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
 
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     let fullHtml = summaryBarHtml;
+    const { map: clashMap } = getScheduleConflictMap();
 
     targetTeachers.forEach(t => {
       const tExams = EXAM_RECORDS.filter(e => (e.teacher_id || e.subject_teacher_id) === t.id);
@@ -9392,6 +9855,11 @@ body.admin-edit-unlocked .lock-indicator-pill {
               return examStartsAtScheduleRow(e, slot.time, slot.slot_num);
             });
 
+            const cellId = `cell_fac_${t.id}_d${d.day_num}_s${slot.slot_num}`;
+            const hasTeacherStackConflict = matches.length > 1;
+            const hasExamClash = matches.some(m => clashMap.has(m.id));
+            const hasConflict = hasTeacherStackConflict || hasExamClash;
+
             if (matches.length > 0) {
               const is120 = matches.some(m => m.duration_minutes === 120 || m.slots_spanned === 2);
               let calcRowspan = 1;
@@ -9420,9 +9888,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
                 const genderChip = getExamGenderChip(match);
                 const isAutomaticProctorCoverage = match.display_as_proctor_duty === true
                   || match.proctor_assignment_source !== 'SUBJECT_TEACHER';
+                const isClashing = hasConflict;
 
                 fullHtml += `
-                  <td class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
+                  <td id="${cellId}" class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''} ${isClashing ? 'cell-conflict-clash' : ''}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
                       data-drop-zone="faculty"
                       data-teacher-id="${t.id}"
                       data-day-num="${d.day_num}"
@@ -9435,8 +9904,14 @@ body.admin-edit-unlocked .lock-indicator-pill {
                       ondragleave="scheduleEditor.handleDragLeave(event)"
                       ondrop="scheduleEditor.handleDrop(event)"
                       onclick="scheduleEditor.handleCellClick(event)"
-                      style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
-                    <div class="cell-class-inner"
+                      style="${isClashing ? '' : `background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text};`} ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                    ${isClashing ? `
+                      <div class="cell-clash-alert-banner">
+                        <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 3.5L20.5 19h-17L12 5.5zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+                        TEACHER CLASH DETECTED
+                      </div>
+                    ` : ''}
+                    <div class="cell-class-inner ${isClashing ? 'card-has-clash' : ''}"
                          draggable="${isUnlocked ? 'true' : 'false'}"
                          data-exam-id="${match.id}"
                          data-teacher-id="${t.id}"
@@ -9446,7 +9921,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
                          onpointerdown="scheduleEditor.handlePointerDown(event, '${match.id}')"
                          onpointerup="scheduleEditor.handlePointerUp(event)"
                          onclick="scheduleEditor.handleExamCardClick(event, '${match.id}')"
-                         title="${isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : ''}">
+                         title="${isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : ''}"
+                         style="${isClashing ? `background:${color.bg}; border:1.5px solid #ef4444; border-left:5px solid #dc2626; border-radius:6px; color:${color.text};` : ''}">
                       ${isUnlocked ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
                       ${isAutomaticProctorCoverage ? `
                         <span class="cell-subject-sec">${esc(displayedSubject)}</span>
@@ -9458,13 +9934,13 @@ body.admin-edit-unlocked .lock-indicator-pill {
                         ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
                         <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
                       `}
+                      ${isClashing ? '<span class="badge-card-clash-pill">TEACHER CLASH</span>' : ''}
                     </div>
                   </td>
                 `;
               } else {
-                const firstColor = getSubjectColor(publicExamSubject(matches[0]));
                 fullHtml += `
-                  <td class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
+                  <td id="${cellId}" class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''} cell-conflict-clash" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
                       data-drop-zone="faculty"
                       data-teacher-id="${t.id}"
                       data-day-num="${d.day_num}"
@@ -9477,7 +9953,11 @@ body.admin-edit-unlocked .lock-indicator-pill {
                       ondragleave="scheduleEditor.handleDragLeave(event)"
                       ondrop="scheduleEditor.handleDrop(event)"
                       onclick="scheduleEditor.handleCellClick(event)"
-                      style="background:#f8fafc; border-color:#cbd5e1; padding:6px; box-shadow:inset 6px 0 0 ${firstColor.accent || firstColor.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                      style="padding:6px; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                    <div class="cell-clash-alert-banner">
+                      <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 3.5L20.5 19h-17L12 5.5zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+                      ${matches.length} CONFLICTING EXAM DUTIES
+                    </div>
                     <div style="display:flex; flex-direction:column; gap:6px; width:100%;">
                       ${matches.map(m => {
                         const mSubject = publicExamSubject(m);
@@ -9485,7 +9965,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
                         const mGenderChip = getExamGenderChip(m);
                         const mIs120 = m.duration_minutes === 120 || m.slots_spanned === 2;
                         return `
-                          <div class="cell-class-inner"
+                          <div class="cell-class-inner card-has-clash"
                                draggable="${isUnlocked ? 'true' : 'false'}"
                                data-exam-id="${m.id}"
                                data-teacher-id="${t.id}"
@@ -9496,12 +9976,15 @@ body.admin-edit-unlocked .lock-indicator-pill {
                                onpointerup="scheduleEditor.handlePointerUp(event)"
                                onclick="scheduleEditor.handleExamCardClick(event, '${m.id}')"
                                title="${isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : ''}"
-                               style="background:${mColor.bg}; border:1px solid ${mColor.border}; border-left:4px solid ${mColor.accent || mColor.text}; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
+                               style="background:${mColor.bg}; border:1.5px solid #ef4444; border-left:5px solid #dc2626; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 3px rgba(220,38,38,0.2);">
                             ${isUnlocked ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
                             <span class="cell-subject-sec" style="font-size:13.5px; color:${mColor.text};">${esc(mSubject)}</span>
                             <span class="cell-section-name" style="font-size:11.5px;">${esc(cleanSectionName(m.section_name))}</span>
-                            ${mGenderChip ? `<span class="gender-chip ${mGenderChip.className}" style="font-size:9.5px; padding:1px 6px;">${mGenderChip.label}</span>` : ''}
-                            <span class="cell-duration-badge ${mIs120 ? 'badge-120' : ''}" style="font-size:9.5px; padding:2px 6px;">${m.duration_minutes || 60} MIN</span>
+                            <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
+                              ${mGenderChip ? `<span class="gender-chip ${mGenderChip.className}" style="font-size:9.5px; padding:1px 6px;">${mGenderChip.label}</span>` : ''}
+                              <span class="cell-duration-badge ${mIs120 ? 'badge-120' : ''}" style="font-size:9.5px; padding:2px 6px;">${m.duration_minutes || 60} MIN</span>
+                              <span class="badge-card-clash-pill">OVERLAPPING DUTY</span>
+                            </div>
                           </div>
                         `;
                       }).join('')}
@@ -9511,7 +9994,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
               }
             } else {
               fullHtml += `
-                <td class="cell-empty"
+                <td id="${cellId}" class="cell-empty"
                     data-drop-zone="faculty"
                     data-teacher-id="${t.id}"
                     data-day-num="${d.day_num}"
@@ -9614,7 +10097,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
                   return `
                     <div class="assigned-subjects-title">
                       ${INACTIVE_TEACHER_IDS.has(t.id) ? 'Former Subject Assignments — Reference Only' : 'Assigned Subjects &amp; Load'}
-                      (${audit.totalLoads} Classes • ${audit.scheduledExams} Exams ${audit.missingCount > 0 ? `<span style="color:#dc2626; font-weight:800;">• ⚠️ ${audit.missingCount} Missing in Exams</span>` : '<span style="color:#16a34a; font-weight:800;">• ✓ All Scheduled</span>'}):
+                      (${audit.totalLoads} Classes • ${audit.scheduledExams} Exams ${audit.missingCount > 0 ? `<span style="color:#dc2626; font-weight:800;">• [! ${audit.missingCount} Missing in Exams]</span>` : '<span style="color:#16a34a; font-weight:800;">• [All Scheduled]</span>'}):
                     </div>
                     <div class="subject-pill-list">
                       ${t.assignments.length > 0 ? t.assignments.map(a => {
@@ -9622,7 +10105,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
                         if (isMissing) {
                           return `
                             <span class="subj-tag subj-tag--missing" title="No exam slot scheduled in this exam timetable">
-                              <span style="font-weight:900;">⚠️</span>
+                              <span style="font-weight:900;">!</span>
                               <span>${esc(a.subject)}</span>
                               <span style="font-size:10px; opacity:0.85;">• ${esc(a.section.replace('CLASS SCHEDULE', '').replace('GRADE', 'G').trim())}</span>
                               <span style="font-size:9.5px; font-weight:800; background:rgba(0,0,0,0.08); padding:1px 5px; border-radius:3px;">[MISSING]</span>
