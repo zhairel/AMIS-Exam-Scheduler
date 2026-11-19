@@ -3047,6 +3047,18 @@ body.admin-edit-unlocked .lock-indicator-pill {
         <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
         Download JSON
       </button>
+      <button class="btn-drag-action" onclick="scheduleEditor.copyScheduleJSON()" title="Copy active schedule JSON to clipboard to commit to live server">
+        <svg viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+        Copy JSON
+      </button>
+      <button class="btn-drag-action" onclick="scheduleEditor.importSchedulePrompt()" title="Import schedule JSON directly onto this laptop">
+        <svg viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>
+        Import JSON
+      </button>
+      <button class="btn-drag-action" onclick="scheduleEditor.forceSyncServer()" title="Discard local browser cache and reload fresh live server schedule">
+        <svg viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+        Sync Server
+      </button>
       <button class="btn-drag-action btn-danger" onclick="scheduleEditor.resetToDefault()" title="Reset all changes back to base clean schedule">
         ↺ Reset
       </button>
@@ -7645,17 +7657,25 @@ body.admin-edit-unlocked .lock-indicator-pill {
       }
 
       try {
-        const saved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
-        if (saved) {
-          let parsed = JSON.parse(saved);
-          if (Array.isArray(parsed) && parsed.length > 0) {
-            parsed = parsed.filter(e => {
-              const s = (e.subject || '').toLowerCase().trim();
-              if (s.includes('panlipunan')) return true;
-              return !s.includes('aral');
-            });
-            EXAM_RECORDS = parsed;
-            console.log('[ScheduleEditor] Loaded custom schedule from localStorage (' + parsed.length + ' exams)');
+        const CURRENT_VERSION = '20261119_v5_sync';
+        const cachedVer = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
+        if (cachedVer !== CURRENT_VERSION) {
+          localStorage.removeItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
+          localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', CURRENT_VERSION);
+          console.log('[ScheduleEditor] Reset stale cache to live server version ' + CURRENT_VERSION);
+        } else {
+          const saved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
+          if (saved) {
+            let parsed = JSON.parse(saved);
+            if (Array.isArray(parsed) && parsed.length > 0) {
+              parsed = parsed.filter(e => {
+                const s = (e.subject || '').toLowerCase().trim();
+                if (s.includes('panlipunan')) return true;
+                return !s.includes('aral');
+              });
+              EXAM_RECORDS = parsed;
+              console.log('[ScheduleEditor] Loaded custom schedule from localStorage (' + parsed.length + ' exams)');
+            }
           }
         }
       } catch (e) {
@@ -8540,6 +8560,63 @@ body.admin-edit-unlocked .lock-indicator-pill {
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
       this.showToast("Downloaded exam_data_2nd_term.json!");
+    },
+
+    copyScheduleJSON: function() {
+      const jsonStr = JSON.stringify(EXAM_RECORDS, null, 2);
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(jsonStr).then(() => {
+          this.showToast("✓ Schedule JSON copied to clipboard! Paste it to save to repository.");
+        }).catch(() => {
+          this.downloadJSON();
+        });
+      } else {
+        this.downloadJSON();
+      }
+    },
+
+    importSchedulePrompt: function() {
+      const input = prompt("Paste schedule JSON array below to import onto this device:");
+      if (!input) return;
+      try {
+        const parsed = JSON.parse(input);
+        if (Array.isArray(parsed) && parsed.length > 50) {
+          EXAM_RECORDS = parsed;
+          localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', '20261119_v5_sync');
+          localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
+          this.afterMutation("Imported schedule data successfully");
+          this.showToast("✓ Imported schedule loaded! Clashes recalculated.");
+        } else {
+          alert("Invalid schedule format. Expected JSON array of exam records.");
+        }
+      } catch (err) {
+        alert("Failed to parse JSON: " + err.message);
+      }
+    },
+
+    forceSyncServer: async function() {
+      if (!confirm("Discard all local edits on this browser and re-fetch the official live schedule from the server?")) return;
+      localStorage.removeItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
+      localStorage.removeItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
+      this.showToast("Fetching live official schedule from server...", null);
+      try {
+        const eResp = await fetch('exam_data_2nd_term.json?v=' + Date.now());
+        if (eResp.ok) {
+          EXAM_RECORDS = await eResp.json();
+          this.baseRecords = JSON.parse(JSON.stringify(EXAM_RECORDS));
+          this.undoStack = [];
+          this.redoStack = [];
+          this.updateUI();
+          updateAntiConflictBadge();
+          const teacherSelect = document.getElementById('teacherSelect');
+          const selectedTid = teacherSelect ? teacherSelect.value : 'ALL_FACULTY';
+          if (currentTab === 'FACULTY') renderFacultyView(selectedTid);
+          else if (currentTab === 'SECTION') renderSectionView();
+          this.showToast("✓ Synchronized with official live server schedule!");
+        }
+      } catch (e) {
+        this.showToast("Error syncing with server: " + e.message);
+      }
     },
 
     updateUI: function() {
