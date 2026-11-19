@@ -7672,7 +7672,16 @@ body.admin-edit-unlocked .lock-indicator-pill {
       try {
         const CURRENT_VERSION = '20261119_v6_realtime';
         const saved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
-        if (saved) {
+        const localModTime = Number(localStorage.getItem('AMIS_2ND_TERM_LAST_MODIFIED')) || 0;
+
+        // If we already loaded a newer live schedule from /api/save-schedule, sync it to localStorage
+        if (this.lastSavedTimestamp > localModTime && EXAM_RECORDS && EXAM_RECORDS.length > 50) {
+          try {
+            localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
+            localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(this.lastSavedTimestamp));
+            localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', CURRENT_VERSION);
+          } catch (e) {}
+        } else if (saved) {
           let parsed = JSON.parse(saved);
           if (Array.isArray(parsed) && parsed.length > 50) {
             parsed = parsed.filter(e => {
@@ -7680,11 +7689,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
               if (s.includes('panlipunan')) return true;
               return !s.includes('aral');
             });
-            EXAM_RECORDS = parsed;
-            console.log('[ScheduleEditor] Loaded custom schedule from browser storage (' + parsed.length + ' exams)');
-            
-            // Auto-save existing custom schedule to server so server receives it immediately!
-            this.performServerAutoSave();
+            if (this.schedulesDiffer(EXAM_RECORDS, parsed)) {
+              EXAM_RECORDS = parsed;
+              this.performServerAutoSave();
+            }
           }
         } else {
           localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', CURRENT_VERSION);
@@ -8486,6 +8494,19 @@ body.admin-edit-unlocked .lock-indicator-pill {
       }
     },
 
+    schedulesDiffer: function(a, b) {
+      if (!a || !b) return true;
+      if (a.length !== b.length) return true;
+      for (let i = 0; i < a.length; i++) {
+        const ea = a[i];
+        const eb = b[i];
+        if (ea.id !== eb.id || Number(ea.day_number) !== Number(eb.day_number) || ea.time_slot !== eb.time_slot || (ea.subject_teacher_id || ea.teacher_id) !== (eb.subject_teacher_id || eb.teacher_id)) {
+          return true;
+        }
+      }
+      return false;
+    },
+
     startRealtimeSync: function() {
       if (this.realtimeSyncTimer) clearInterval(this.realtimeSyncTimer);
 
@@ -8498,14 +8519,16 @@ body.admin-edit-unlocked .lock-indicator-pill {
           const data = await resp.json();
           if (data && data.ok && Array.isArray(data.schedule) && data.schedule.length > 50) {
             const serverTime = Number(data.updated_at) || 0;
-            if (serverTime > this.lastSavedTimestamp && this.lastSavedTimestamp > 0) {
+            const isDiff = this.schedulesDiffer(EXAM_RECORDS, data.schedule);
+
+            if (isDiff && (serverTime >= this.lastSavedTimestamp || this.lastSavedTimestamp === 0)) {
               this.isSyncing = true;
               EXAM_RECORDS = data.schedule;
-              this.lastSavedTimestamp = serverTime;
+              this.lastSavedTimestamp = Math.max(serverTime, Date.now());
 
               try {
                 localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
-                localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(serverTime));
+                localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(this.lastSavedTimestamp));
               } catch (err) {}
 
               this.updateUI();
@@ -8519,8 +8542,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
               this.updateAutoSaveIndicator('synced');
               setTimeout(() => this.updateAutoSaveIndicator('saved'), 2000);
               this.isSyncing = false;
-              console.log('[RealtimeSync] Synchronized latest schedule from server (timestamp: ' + serverTime + ')');
-            } else if (this.lastSavedTimestamp === 0 && serverTime > 0) {
+              console.log('[RealtimeSync] Auto-applied latest live schedule (' + EXAM_RECORDS.length + ' exams, timestamp: ' + this.lastSavedTimestamp + ')');
+            } else if (!isDiff && serverTime > this.lastSavedTimestamp) {
               this.lastSavedTimestamp = serverTime;
             }
           }
@@ -8529,11 +8552,34 @@ body.admin-edit-unlocked .lock-indicator-pill {
         }
       };
 
-      this.realtimeSyncTimer = setInterval(checkSync, 4000);
+      // Poll every 1500ms (1.5 seconds) for real-time responsiveness
+      this.realtimeSyncTimer = setInterval(checkSync, 1500);
 
+      // Instant sync on window focus and visibility change
+      window.addEventListener('focus', checkSync);
       document.addEventListener('visibilitychange', () => {
         if (document.visibilityState === 'visible') {
           checkSync();
+        }
+      });
+
+      // Instant sync across tabs on same device via storage event
+      window.addEventListener('storage', (e) => {
+        if (e.key === 'AMIS_2ND_TERM_CUSTOM_SCHEDULE' && e.newValue) {
+          try {
+            const parsed = JSON.parse(e.newValue);
+            if (Array.isArray(parsed) && parsed.length > 50 && this.schedulesDiffer(EXAM_RECORDS, parsed)) {
+              EXAM_RECORDS = parsed;
+              this.updateUI();
+              updateAntiConflictBadge();
+              const teacherSelect = document.getElementById('teacherSelect');
+              const selectedTid = teacherSelect ? teacherSelect.value : 'ALL_FACULTY';
+              if (currentTab === 'FACULTY') renderFacultyView(selectedTid);
+              else if (currentTab === 'SECTION') renderSectionView();
+              this.updateAutoSaveIndicator('synced');
+              setTimeout(() => this.updateAutoSaveIndicator('saved'), 2000);
+            }
+          } catch (err) {}
         }
       });
     },
@@ -9022,9 +9068,26 @@ body.admin-edit-unlocked .lock-indicator-pill {
     }
 
     try {
-      const eResp = await fetch('exam_data_2nd_term.json?v=' + Date.now());
-      if (eResp.ok) EXAM_RECORDS = await eResp.json();
-      else if (window.AMIS_EXAM_DATA) EXAM_RECORDS = window.AMIS_EXAM_DATA;
+      let liveLoaded = false;
+      try {
+        const liveResp = await fetch('/api/save-schedule?t=' + Date.now());
+        if (liveResp.ok) {
+          const liveData = await liveResp.json();
+          if (liveData && liveData.ok && Array.isArray(liveData.schedule) && liveData.schedule.length > 50) {
+            EXAM_RECORDS = liveData.schedule;
+            liveLoaded = true;
+            if (window.scheduleEditor) {
+              window.scheduleEditor.lastSavedTimestamp = Number(liveData.updated_at) || Date.now();
+            }
+          }
+        }
+      } catch (err) {}
+
+      if (!liveLoaded) {
+        const eResp = await fetch('exam_data_2nd_term.json?v=' + Date.now());
+        if (eResp.ok) EXAM_RECORDS = await eResp.json();
+        else if (window.AMIS_EXAM_DATA) EXAM_RECORDS = window.AMIS_EXAM_DATA;
+      }
     } catch (e) {
       if (window.AMIS_EXAM_DATA) EXAM_RECORDS = window.AMIS_EXAM_DATA;
     }

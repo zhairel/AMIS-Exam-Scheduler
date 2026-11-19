@@ -1,7 +1,35 @@
 'use strict';
 
+const fs = require('fs');
+const path = require('path');
+
 let inMemorySchedule = null;
 let inMemoryUpdatedAt = 0;
+
+function tryLoadScheduleFromDisk() {
+  const tmpPath = '/tmp/amis_exam_schedule.json';
+  if (fs.existsSync(tmpPath)) {
+    try {
+      const content = JSON.parse(fs.readFileSync(tmpPath, 'utf8'));
+      if (content && Array.isArray(content.schedule) && content.schedule.length > 50) {
+        inMemorySchedule = content.schedule;
+        inMemoryUpdatedAt = Number(content.updated_at) || fs.statSync(tmpPath).mtimeMs;
+        return;
+      }
+    } catch (e) {}
+  }
+
+  const staticPath = path.join(__dirname, '../exam_data_2nd_term.json');
+  if (fs.existsSync(staticPath)) {
+    try {
+      const staticData = JSON.parse(fs.readFileSync(staticPath, 'utf8'));
+      if (Array.isArray(staticData) && staticData.length > 50) {
+        inMemorySchedule = staticData;
+        inMemoryUpdatedAt = fs.statSync(staticPath).mtimeMs;
+      }
+    } catch (e) {}
+  }
+}
 
 module.exports = async function saveScheduleHandler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -39,6 +67,14 @@ module.exports = async function saveScheduleHandler(req, res) {
       inMemorySchedule = exams;
       inMemoryUpdatedAt = updatedAt;
 
+      // Write to /tmp for durability across warm executions
+      try {
+        fs.writeFileSync('/tmp/amis_exam_schedule.json', JSON.stringify({
+          schedule: exams,
+          updated_at: updatedAt
+        }), 'utf8');
+      } catch (e) {}
+
       return res.status(200).json({
         ok: true,
         status: 'success',
@@ -52,12 +88,16 @@ module.exports = async function saveScheduleHandler(req, res) {
   }
 
   if (req.method === 'GET') {
+    if (!inMemorySchedule || inMemorySchedule.length < 50) {
+      tryLoadScheduleFromDisk();
+    }
+
     if (inMemorySchedule && inMemorySchedule.length > 0) {
       return res.status(200).json({
         ok: true,
         status: 'success',
         count: inMemorySchedule.length,
-        updated_at: inMemoryUpdatedAt,
+        updated_at: inMemoryUpdatedAt || Date.now(),
         schedule: inMemorySchedule
       });
     }
