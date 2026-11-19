@@ -8340,8 +8340,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
       const reason = cell.getAttribute('data-drop-reason');
 
       if (status === 'CONFLICT' || status === 'SWAP_CONFLICT') {
-        ev.dataTransfer.dropEffect = 'none';
-        this.showLiveDragBanner('! ' + (reason || 'Conflict: Slot cannot be used'), 'banner-conflict');
+        ev.dataTransfer.dropEffect = 'move';
+        this.showLiveDragBanner('! ' + (reason || 'Conflict: Drop to force move and adjust other teacher'), 'banner-conflict');
       } else if (status === 'SWAP_OK') {
         ev.dataTransfer.dropEffect = 'move';
         this.showLiveDragBanner('✓ ' + (reason || 'Safe to swap with this slot'), 'banner-success');
@@ -8381,7 +8381,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
 
       if (status === 'CONFLICT' || status === 'SWAP_CONFLICT') {
         const reason = cell.getAttribute('data-drop-reason') || 'Schedule clash detected';
-        const allowForce = confirm();
+        const allowForce = confirm("Target slot has a conflict:\n" + reason + "\n\nForce move anyway? You can adjust the other conflicting teacher afterwards.");
         if (!allowForce) return;
       }
 
@@ -8431,7 +8431,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
 
       if (status === 'CONFLICT' || status === 'SWAP_CONFLICT') {
         const reason = cell.getAttribute('data-drop-reason') || 'Schedule clash detected';
-        const allowForce = confirm();
+        const allowForce = confirm("Target slot has a conflict:\n" + reason + "\n\nForce move anyway? You can adjust the other conflicting teacher afterwards.");
         if (!allowForce) return;
       }
 
