@@ -2,6 +2,10 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/maintenance", "destination": "/exam-schedule-2nd-term", "permanent": false },
+    { "source": "/maintenance.html", "destination": "/exam-schedule-2nd-term", "permanent": false }
+  ],
   "rewrites": [
     { "source": "/amis_exam_calendar/:match*", "destination": "/:match*" },
     { "source": "/loads-schedule", "destination": "/loads-schedule.html" },
@@ -21,7 +25,9 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate, max-age=0" },
+        { "key": "Pragma", "value": "no-cache" },
+        { "key": "Expires", "value": "0" },
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "X-Frame-Options", "value": "DENY" },
         { "key": "X-XSS-Protection", "value": "1; mode=block" }
