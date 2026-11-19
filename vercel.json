@@ -2,34 +2,29 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    { "source": "/", "destination": "/maintenance", "permanent": false },
-    { "source": "/exam-schedule-2nd-term", "destination": "/maintenance", "permanent": false },
-    { "source": "/exam-schedule-2nd-term.html", "destination": "/maintenance", "permanent": false },
-    { "source": "/grade-calendar-view-2nd-term", "destination": "/maintenance", "permanent": false },
-    { "source": "/grade-calendar-view-2nd-term.html", "destination": "/maintenance", "permanent": false },
-    { "source": "/index.html", "destination": "/maintenance", "permanent": false },
-    { "source": "/index", "destination": "/maintenance", "permanent": false },
-    { "source": "/class-schedule", "destination": "/maintenance", "permanent": false },
-    { "source": "/class-schedule.html", "destination": "/maintenance", "permanent": false },
-    { "source": "/admin", "destination": "/maintenance", "permanent": false },
-    { "source": "/admin.html", "destination": "/maintenance", "permanent": false },
-    { "source": "/loads-schedule", "destination": "/maintenance", "permanent": false },
-    { "source": "/loads-schedule.html", "destination": "/maintenance", "permanent": false },
-    { "source": "/((?!maintenance|amis_logo\\.png|logo\\.png).*)", "destination": "/maintenance", "permanent": false }
-  ],
   "rewrites": [
-    { "source": "/maintenance", "destination": "/maintenance.html" }
+    { "source": "/amis_exam_calendar/:match*", "destination": "/:match*" },
+    { "source": "/loads-schedule", "destination": "/loads-schedule.html" },
+    { "source": "/loads_schedule", "destination": "/loads_schedule/index.html" },
+    { "source": "/loads_schedule/:match*", "destination": "/loads_schedule/:match*" },
+    { "source": "/exam-schedule-2nd-term", "destination": "/exam-schedule-2nd-term.html" },
+    { "source": "/grade-calendar-view-2nd-term", "destination": "/grade-calendar-view-2nd-term.html" },
+    { "source": "/faculty-timetable/exam", "destination": "/faculty-timetable-exam.html" },
+    { "source": "/proctor-list", "destination": "/proctor-list.html" },
+    { "source": "/admin", "destination": "/admin.html" },
+    { "source": "/class-schedule-manage", "destination": "/class-schedule-manage.html" },
+    { "source": "/class-schedule-manage/create", "destination": "/class-schedule/create" },
+    { "source": "/class-schedule-manage/edit", "destination": "/class-schedule/edit" },
+    { "source": "/class-schedule/:id/edit", "destination": "/class-schedule/edit" }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "no-store, no-cache, must-revalidate, max-age=0" },
-        { "key": "Pragma", "value": "no-cache" },
-        { "key": "Expires", "value": "0" },
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
         { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
       ]
     }
   ]
