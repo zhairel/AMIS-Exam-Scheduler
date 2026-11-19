@@ -2152,6 +2152,250 @@ html, body {
   border-color: #0f172a;
 }
 
+/* ==========================================================================
+   DRAG-AND-DROP SUBJECT CELLS & SCHEDULE EDITOR STYLES
+   ========================================================================== */
+
+.cell-class-inner {
+  position: relative;
+  cursor: grab;
+  user-select: none;
+  transition: transform 140ms ease, box-shadow 140ms ease, opacity 140ms ease;
+}
+.cell-class-inner:active {
+  cursor: grabbing;
+}
+.cell-class-inner:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12) !important;
+}
+.cell-class-inner.is-dragging {
+  opacity: 0.35 !important;
+  transform: scale(0.96) !important;
+  border-style: dashed !important;
+  box-shadow: none !important;
+}
+.cell-class-inner.is-selected {
+  outline: 3px solid #2563eb !important;
+  outline-offset: 1px;
+  box-shadow: 0 0 14px rgba(37, 99, 235, 0.5) !important;
+  animation: pulseSelected 1.2s infinite alternate ease-in-out;
+}
+@keyframes pulseSelected {
+  from { outline-color: #2563eb; }
+  to { outline-color: #93c5fd; }
+}
+
+.cell-drag-indicator {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  font-size: 11px;
+  line-height: 1;
+  color: inherit;
+  opacity: 0.45;
+  pointer-events: none;
+  letter-spacing: -1px;
+  transition: opacity 120ms ease;
+}
+.cell-class-inner:hover .cell-drag-indicator {
+  opacity: 0.95;
+}
+
+/* Drop targets */
+[data-drop-zone] {
+  transition: background-color 150ms ease, outline 150ms ease;
+}
+[data-drop-zone].drop-zone-potential {
+  background-color: rgba(241, 245, 249, 0.7);
+}
+[data-drop-zone].drop-zone-active {
+  background-color: #ecfdf5 !important;
+  outline: 2.5px dashed #059669 !important;
+  outline-offset: -2px;
+  cursor: copy !important;
+}
+[data-drop-zone].drop-zone-swap {
+  background-color: #eff6ff !important;
+  outline: 2.5px dashed #2563eb !important;
+  outline-offset: -2px;
+  cursor: alias !important;
+}
+
+/* Drag Editor Toolbar */
+.drag-editor-toolbar {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-top: none;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  font-size: 12.5px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.drag-editor-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.drag-mode-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  padding: 4px 11px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+.drag-hint {
+  color: #64748b;
+  font-size: 12px;
+}
+.drag-editor-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.drag-stats-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.drag-stat-pill {
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  transition: all 150ms ease;
+}
+.drag-stat-pill.clear {
+  background: #ecfdf5;
+  color: #065f46;
+  border-color: #a7f3d0;
+}
+.drag-stat-pill.clash {
+  background: #fef2f2;
+  color: #991b1b;
+  border-color: #fecaca;
+  animation: pulseClash 1.4s infinite alternate;
+}
+@keyframes pulseClash {
+  from { border-color: #fca5a5; }
+  to { border-color: #dc2626; box-shadow: 0 0 8px rgba(220, 38, 38, 0.3); }
+}
+
+.drag-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-drag-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #1e293b;
+  padding: 5px 11px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 120ms ease;
+  user-select: none;
+}
+.btn-drag-action:hover:not(:disabled) {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  color: #0f172a;
+}
+.btn-drag-action:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.btn-drag-action svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+.btn-drag-action.btn-save-server {
+  background: #064e3b;
+  color: #ffffff;
+  border-color: #064e3b;
+}
+.btn-drag-action.btn-save-server:hover:not(:disabled) {
+  background: #043d2e;
+}
+.btn-drag-action.btn-danger {
+  color: #b91c1c;
+  border-color: #fca5a5;
+}
+.btn-drag-action.btn-danger:hover {
+  background: #fef2f2;
+}
+
+/* Floating Toast */
+.editor-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 99999;
+  animation: slideToastIn 200ms ease;
+}
+@keyframes slideToastIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.toast-action-btn {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.toast-action-btn:hover {
+  background: #1d4ed8;
+}
+.toast-close-btn {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+.toast-close-btn:hover {
+  color: #ffffff;
+}
+
 </style>
 </head>
 <body>
@@ -2192,6 +2436,50 @@ html, body {
     <span style="color:#059669; font-weight:900;">✓</span> Anti-Conflict Guard Active: 0 Conflicts
   </div>
 </nav>
+
+<!-- Drag-to-Edit Master Toolbar -->
+<div class="drag-editor-toolbar" id="dragEditorToolbar">
+  <div class="drag-editor-left">
+    <div class="drag-mode-badge" id="dragModeBadge">
+      <span class="drag-icon">✋</span> <strong>Drag-to-Edit Active</strong>
+    </div>
+    <span class="drag-hint">Drag any subject cell to reschedule or swap • Or click a cell to select &amp; place</span>
+  </div>
+  <div class="drag-editor-right">
+    <div class="drag-stats-group">
+      <span class="drag-stat-pill" id="dragEditCountPill">0 manual edits</span>
+      <span class="drag-stat-pill clear" id="dragConflictPill">✓ 0 Clashes</span>
+    </div>
+    <div class="drag-actions-group">
+      <button class="btn-drag-action" id="btnUndo" onclick="scheduleEditor.undo()" title="Undo (Ctrl+Z)" disabled>
+        <svg viewBox="0 0 24 24"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.22 3.16-1.98 5.12-1.98 3.77 0 6.9 2.61 7.7 6.13l2.42-.8C21.48 10.87 17.38 8 12.5 8z"/></svg>
+        Undo
+      </button>
+      <button class="btn-drag-action" id="btnRedo" onclick="scheduleEditor.redo()" title="Redo (Ctrl+Y)" disabled>
+        <svg viewBox="0 0 24 24"><path d="M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.88 0-8.98 2.87-10.12 7.72l2.42.8C4.6 12.99 7.73 10.38 11.5 10.38c1.96 0 3.73.76 5.12 1.98L13 16h9V7l-3.6 3.6z"/></svg>
+        Redo
+      </button>
+      <button class="btn-drag-action btn-save-server" id="btnSaveServer" onclick="scheduleEditor.saveToServer()" title="Save changes directly to project files on server">
+        <svg viewBox="0 0 24 24"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
+        Save to Server
+      </button>
+      <button class="btn-drag-action" onclick="scheduleEditor.downloadJSON()" title="Download updated exam data JSON">
+        <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+        Download JSON
+      </button>
+      <button class="btn-drag-action btn-danger" onclick="scheduleEditor.resetToDefault()" title="Reset all changes back to base clean schedule">
+        ↺ Reset
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Floating Toast -->
+<div id="scheduleEditorToast" class="editor-toast" style="display:none;">
+  <span id="toastMessage" class="toast-message"></span>
+  <button id="toastActionBtn" class="toast-action-btn" style="display:none;"></button>
+  <button class="toast-close-btn" onclick="scheduleEditor.hideToast()" title="Dismiss">&times;</button>
+</div>
 
 <div class="section-workspace sidebar-hidden" id="sectionWorkspace" style="padding-left: 0 !important;">
   <div class="section-workspace-content">
@@ -6682,6 +6970,9 @@ html, body {
 
   function strictScheduleConflicts() {
     const conflicts = [];
+    let teacherClashCount = 0;
+    let sectionClashCount = 0;
+
     const overlaps = (left, right) =>
       Number(left.day_number) === Number(right.day_number)
       && Number(left.start_m) < Number(right.end_m)
@@ -6697,40 +6988,592 @@ html, body {
         const rightTeacherId = activeScheduleTeacherId(right);
         const sameTeacher = leftTeacherId && leftTeacherId === rightTeacherId;
 
-        // Physical teacher conflict:
-        // 1) Both in-person F2F in different classrooms
-        // 2) Simultaneous in-person F2F and Online proctoring
-        // Multi-class online proctoring within ODL is standard practice for combined virtual sessions.
-        const physicalTeacherOverlap = sameTeacher && (
-          (isFaceToFace(left) && isFaceToFace(right) && (left.section_id || left.section_name) !== (right.section_id || right.section_name))
-          || (isFaceToFace(left) !== isFaceToFace(right))
-        );
+        // Unstacked physical or virtual teacher overlap
+        const isTeacherOverlap = sameTeacher;
 
-        // Cohort conflict: Same student cohort taking two exams simultaneously
-        // (Excludes Kindergarten combined dual-subject schedule, e.g. Hadith and Arabic)
+        // Cohort conflict: Same student section taking two exams simultaneously
         const isKinderDual = String(left.grade_level || '').toLowerCase().includes('kinder') && String(right.grade_level || '').toLowerCase().includes('kinder');
         const sameCohort = !isKinderDual
           && left.grade_level === right.grade_level
-          && left.modality === right.modality
           && (left.section_id || left.section_name) === (right.section_id || right.section_name)
           && String(left.gender || 'NONE') === String(right.gender || 'NONE');
 
-        if (physicalTeacherOverlap || sameCohort) conflicts.push([left.id, right.id]);
+        if (isTeacherOverlap || sameCohort) {
+          conflicts.push([left.id, right.id]);
+          if (isTeacherOverlap) teacherClashCount++;
+          if (sameCohort) sectionClashCount++;
+        }
       }
     }
+    conflicts.teacherCount = teacherClashCount;
+    conflicts.sectionCount = sectionClashCount;
     return conflicts;
   }
 
   function updateAntiConflictBadge() {
     const badge = document.getElementById('antiConflictBadge');
     if (!badge) return;
-    const conflictCount = strictScheduleConflicts().length;
+    const conflicts = strictScheduleConflicts();
+    const conflictCount = conflicts.length;
     const isClear = conflictCount === 0;
-    badge.innerHTML = `<span style="color:${isClear ? '#059669' : '#dc2626'}; font-weight:900;">${isClear ? '✓' : '!'}</span> Anti-Conflict Guard Active: ${conflictCount} Conflict${conflictCount === 1 ? '' : 's'}`;
+    const detail = isClear ? '0 Conflicts' : `${conflicts.teacherCount || 0} Teacher, ${conflicts.sectionCount || 0} Section Clash`;
+    badge.innerHTML = `<span style="color:${isClear ? '#059669' : '#dc2626'}; font-weight:900;">${isClear ? '✓' : '!'}</span> Anti-Conflict Guard Active: ${detail}`;
     badge.style.color = isClear ? '#047857' : '#b91c1c';
     badge.style.background = isClear ? '#ecfdf5' : '#fef2f2';
     badge.style.borderColor = isClear ? '#a7f3d0' : '#fecaca';
+
+    if (window.scheduleEditor && window.scheduleEditor.updateUI) {
+      window.scheduleEditor.updateUI();
+    }
   }
+
+  function parseTimeToMin(timeStr) {
+    if (!timeStr) return 0;
+    const match = timeStr.trim().match(/^(\d{1,2}):(\d{2})\s*(AM|PM)?$/i);
+    if (!match) return 0;
+    let [_, h, m, meridiem] = match;
+    h = parseInt(h, 10);
+    m = parseInt(m, 10);
+    if (meridiem) {
+      meridiem = meridiem.toUpperCase();
+      if (meridiem === 'PM' && h < 12) h += 12;
+      if (meridiem === 'AM' && h === 12) h = 0;
+    }
+    return h * 60 + m;
+  }
+
+  window.scheduleEditor = {
+    draggedExamId: null,
+    selectedExamId: null,
+    undoStack: [],
+    redoStack: [],
+    baseRecords: null,
+    toastTimeout: null,
+
+    init: function() {
+      try {
+        const saved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            EXAM_RECORDS = parsed;
+            console.log('[ScheduleEditor] Loaded custom schedule from localStorage (' + parsed.length + ' exams)');
+          }
+        }
+      } catch (e) {
+        console.warn('Could not read custom schedule', e);
+      }
+      
+      if (!this.baseRecords && EXAM_RECORDS && EXAM_RECORDS.length > 0) {
+        this.baseRecords = JSON.parse(JSON.stringify(EXAM_RECORDS));
+      }
+
+      this.updateUI();
+      this.setupKeyboardShortcuts();
+    },
+
+    setupKeyboardShortcuts: function() {
+      window.addEventListener('keydown', (e) => {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') {
+          e.preventDefault();
+          if (e.shiftKey) this.redo();
+          else this.undo();
+        } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'y') {
+          e.preventDefault();
+          this.redo();
+        } else if (e.key === 'Escape') {
+          this.deselect();
+        }
+      });
+    },
+
+    handleDragStart: function(ev) {
+      const el = ev.currentTarget;
+      const examId = el.getAttribute('data-exam-id');
+      if (!examId) return;
+
+      this.draggedExamId = examId;
+      el.classList.add('is-dragging');
+      ev.dataTransfer.setData('text/plain', examId);
+      ev.dataTransfer.effectAllowed = 'move';
+
+      document.querySelectorAll('[data-drop-zone]').forEach(zone => {
+        zone.classList.add('drop-zone-potential');
+      });
+    },
+
+    handleDragEnd: function(ev) {
+      const el = ev.currentTarget;
+      el.classList.remove('is-dragging');
+      this.draggedExamId = null;
+      document.querySelectorAll('.drop-zone-potential, .drop-zone-active, .drop-zone-swap').forEach(zone => {
+        zone.classList.remove('drop-zone-potential', 'drop-zone-active', 'drop-zone-swap');
+      });
+    },
+
+    handleDragOver: function(ev) {
+      ev.preventDefault();
+      ev.dataTransfer.dropEffect = 'move';
+      const cell = ev.currentTarget;
+      if (cell.classList.contains('cell-empty')) {
+        cell.classList.add('drop-zone-active');
+        cell.classList.remove('drop-zone-swap');
+      } else {
+        cell.classList.add('drop-zone-swap');
+        cell.classList.remove('drop-zone-active');
+      }
+    },
+
+    handleDragLeave: function(ev) {
+      const cell = ev.currentTarget;
+      cell.classList.remove('drop-zone-active', 'drop-zone-swap');
+    },
+
+    handleDrop: function(ev) {
+      ev.preventDefault();
+      const cell = ev.currentTarget;
+      cell.classList.remove('drop-zone-active', 'drop-zone-swap', 'drop-zone-potential');
+      
+      const examId = ev.dataTransfer.getData('text/plain') || this.draggedExamId;
+      if (!examId) return;
+
+      const targetDayNum = Number(cell.getAttribute('data-day-num'));
+      const targetRowTime = cell.getAttribute('data-row-time');
+      const targetSlotNum = Number(cell.getAttribute('data-slot-num'));
+      const targetTeacherId = cell.getAttribute('data-teacher-id');
+      const targetSectionId = cell.getAttribute('data-section-id');
+      const dropZoneType = cell.getAttribute('data-drop-zone');
+
+      this.executeMoveOrSwap({
+        sourceExamId: examId,
+        targetDayNum,
+        targetRowTime,
+        targetSlotNum,
+        targetTeacherId,
+        targetSectionId,
+        dropZoneType
+      });
+    },
+
+    handleExamCardClick: function(ev, examId) {
+      ev.stopPropagation();
+      if (this.selectedExamId === examId) {
+        this.deselect();
+        return;
+      }
+      this.deselect();
+      this.selectedExamId = examId;
+      const card = document.querySelector(`[data-exam-id="${examId}"]`);
+      if (card) card.classList.add('is-selected');
+
+      const exam = EXAM_RECORDS.find(e => e.id === examId);
+      const subName = exam ? publicExamSubject(exam) : 'Subject';
+      this.showToast(`Selected "${subName}". Click any target slot to move, or click another subject to swap.`, "Cancel", () => this.deselect());
+    },
+
+    handleCellClick: function(ev) {
+      if (!this.selectedExamId) return;
+      const cell = ev.currentTarget;
+      if (!cell.hasAttribute('data-drop-zone')) return;
+
+      const examId = this.selectedExamId;
+      const targetDayNum = Number(cell.getAttribute('data-day-num'));
+      const targetRowTime = cell.getAttribute('data-row-time');
+      const targetSlotNum = Number(cell.getAttribute('data-slot-num'));
+      const targetTeacherId = cell.getAttribute('data-teacher-id');
+      const targetSectionId = cell.getAttribute('data-section-id');
+      const dropZoneType = cell.getAttribute('data-drop-zone');
+
+      this.deselect();
+
+      this.executeMoveOrSwap({
+        sourceExamId: examId,
+        targetDayNum,
+        targetRowTime,
+        targetSlotNum,
+        targetTeacherId,
+        targetSectionId,
+        dropZoneType
+      });
+    },
+
+    deselect: function() {
+      if (this.selectedExamId) {
+        document.querySelectorAll('.cell-class-inner.is-selected').forEach(el => el.classList.remove('is-selected'));
+        this.selectedExamId = null;
+        this.hideToast();
+      }
+    },
+
+    executeMoveOrSwap: function(params) {
+      const { sourceExamId, targetDayNum, targetRowTime, targetSlotNum, targetTeacherId, targetSectionId, dropZoneType } = params;
+      const sourceExam = EXAM_RECORDS.find(e => e.id === sourceExamId);
+      if (!sourceExam) return;
+
+      // Check if target cell already has an exam
+      let targetExam = null;
+      if (dropZoneType === 'faculty' && targetTeacherId) {
+        const match = EXAM_RECORDS.find(e => 
+          (e.teacher_id === targetTeacherId || e.subject_teacher_id === targetTeacherId) &&
+          Number(e.day_number) === targetDayNum &&
+          examStartsAtScheduleRow(e, targetRowTime, targetSlotNum) &&
+          e.id !== sourceExamId
+        );
+        if (match) targetExam = match;
+      } else if (dropZoneType === 'section' && targetSectionId) {
+        const match = EXAM_RECORDS.find(e => 
+          e.section_id === targetSectionId &&
+          Number(e.day_number) === targetDayNum &&
+          examStartsAtScheduleRow(e, targetRowTime, targetSlotNum) &&
+          e.id !== sourceExamId
+        );
+        if (match) targetExam = match;
+      }
+
+      const dateObj = EXAM_DATES.find(d => d.day_num === targetDayNum) || EXAM_DATES[0];
+
+      if (targetExam) {
+        // SWAP Action
+        const prevSource = { ...sourceExam };
+        const prevTarget = { ...targetExam };
+
+        const tempDay = sourceExam.day_number;
+        const tempDate = sourceExam.date;
+        const tempShortDate = sourceExam.short_date;
+        const tempDayName = sourceExam.day_name;
+        const tempTimeSlot = sourceExam.time_slot;
+        const tempTime = sourceExam.time;
+        const tempSlotNum = sourceExam.slot_number;
+        const tempStartM = sourceExam.start_m;
+        const tempEndM = sourceExam.end_m;
+        const tempStartSlot = sourceExam.start_slot_index;
+        const tempEndSlot = sourceExam.end_slot_index;
+
+        sourceExam.day_number = targetExam.day_number;
+        sourceExam.date = targetExam.date;
+        sourceExam.short_date = targetExam.short_date;
+        sourceExam.day_name = targetExam.day_name;
+        sourceExam.time_slot = targetExam.time_slot;
+        sourceExam.time = targetExam.time;
+        sourceExam.slot_number = targetExam.slot_number;
+        sourceExam.start_m = targetExam.start_m;
+        sourceExam.end_m = targetExam.end_m;
+        sourceExam.start_slot_index = targetExam.start_slot_index;
+        sourceExam.end_slot_index = targetExam.end_slot_index;
+
+        targetExam.day_number = tempDay;
+        targetExam.date = tempDate;
+        targetExam.short_date = tempShortDate;
+        targetExam.day_name = tempDayName;
+        targetExam.time_slot = tempTimeSlot;
+        targetExam.time = tempTime;
+        targetExam.slot_number = tempSlotNum;
+        targetExam.start_m = tempStartM;
+        targetExam.end_m = tempEndM;
+        targetExam.start_slot_index = tempStartSlot;
+        targetExam.end_slot_index = tempEndSlot;
+
+        this.undoStack.push({
+          type: 'swap',
+          sourceId: sourceExam.id,
+          targetId: targetExam.id,
+          prevSource,
+          prevTarget
+        });
+        this.redoStack = [];
+
+        this.afterMutation(`Swapped ${publicExamSubject(sourceExam)} with ${publicExamSubject(targetExam)}`);
+      } else {
+        // MOVE Action
+        const prevSource = { ...sourceExam };
+
+        sourceExam.day_number = targetDayNum;
+        sourceExam.date = dateObj.date_str;
+        sourceExam.short_date = dateObj.short_date;
+        sourceExam.day_name = dateObj.day_name;
+
+        const is120 = sourceExam.duration_minutes === 120 || sourceExam.slots_spanned === 2;
+        if (is120) {
+          if (targetRowTime.includes('08:00 AM') || targetRowTime.includes('09:00 AM')) {
+            sourceExam.time_slot = '08:00 AM – 10:00 AM';
+            sourceExam.time = '08:00 AM – 10:00 AM';
+            sourceExam.slot_number = 1;
+            sourceExam.start_m = 480;
+            sourceExam.end_m = 600;
+            sourceExam.start_slot_index = 0;
+            sourceExam.end_slot_index = 1;
+          } else if (targetRowTime.includes('12:40 PM') || targetRowTime.includes('01:50 PM')) {
+            sourceExam.time_slot = '12:40 PM – 02:50 PM';
+            sourceExam.time = '12:40 PM – 02:50 PM';
+            sourceExam.slot_number = 1;
+            sourceExam.start_m = 760;
+            sourceExam.end_m = 890;
+            sourceExam.start_slot_index = 3;
+            sourceExam.end_slot_index = 4;
+          } else if (targetRowTime.includes('04:20 PM') || targetRowTime.includes('05:30 PM')) {
+            sourceExam.time_slot = '04:20 PM – 06:30 PM';
+            sourceExam.time = '04:20 PM – 06:30 PM';
+            sourceExam.slot_number = 2;
+            sourceExam.start_m = 980;
+            sourceExam.end_m = 1110;
+            sourceExam.start_slot_index = 6;
+            sourceExam.end_slot_index = 7;
+          } else {
+            sourceExam.time_slot = targetRowTime;
+            sourceExam.time = targetRowTime;
+            sourceExam.slot_number = targetSlotNum;
+            const [sStr, eStr] = targetRowTime.split(/\s*[–—-]\s*/);
+            if (sStr && eStr) {
+              sourceExam.start_m = parseTimeToMin(sStr);
+              sourceExam.end_m = parseTimeToMin(eStr);
+            }
+          }
+        } else {
+          sourceExam.time_slot = targetRowTime;
+          sourceExam.time = targetRowTime;
+          sourceExam.slot_number = targetSlotNum;
+          const [sStr, eStr] = targetRowTime.split(/\s*[–—-]\s*/);
+          if (sStr && eStr) {
+            sourceExam.start_m = parseTimeToMin(sStr);
+            sourceExam.end_m = parseTimeToMin(eStr);
+          }
+        }
+
+        this.undoStack.push({
+          type: 'move',
+          sourceId: sourceExam.id,
+          prevSource
+        });
+        this.redoStack = [];
+
+        this.afterMutation(`Moved ${publicExamSubject(sourceExam)} to Day ${targetDayNum} • ${sourceExam.time_slot}`);
+      }
+    },
+
+    afterMutation: function(toastMsg) {
+      try {
+        localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
+      } catch (e) {
+        console.warn('localStorage full or disabled', e);
+      }
+
+      this.updateUI();
+      updateAntiConflictBadge();
+
+      const teacherSelect = document.getElementById('teacherSelect');
+      const selectedTid = teacherSelect ? teacherSelect.value : 'ALL_FACULTY';
+      if (currentTab === 'FACULTY') {
+        renderFacultyView(selectedTid);
+      } else if (currentTab === 'SECTION') {
+        renderSectionView();
+      }
+
+      const conflicts = strictScheduleConflicts();
+      const clashMsg = conflicts.length > 0 ? ` (⚠️ ${conflicts.length} conflict detected)` : ' (✓ 0 clashes)';
+      this.showToast(toastMsg + clashMsg, "Undo", () => this.undo());
+    },
+
+    undo: function() {
+      if (this.undoStack.length === 0) return;
+      const action = this.undoStack.pop();
+
+      if (action.type === 'move') {
+        const exam = EXAM_RECORDS.find(e => e.id === action.sourceId);
+        if (exam) {
+          const currentExam = { ...exam };
+          Object.assign(exam, action.prevSource);
+          this.redoStack.push({ type: 'move', sourceId: exam.id, prevSource: currentExam });
+        }
+      } else if (action.type === 'swap') {
+        const examA = EXAM_RECORDS.find(e => e.id === action.sourceId);
+        const examB = EXAM_RECORDS.find(e => e.id === action.targetId);
+        if (examA && examB) {
+          const curA = { ...examA };
+          const curB = { ...examB };
+          Object.assign(examA, action.prevSource);
+          Object.assign(examB, action.prevTarget);
+          this.redoStack.push({ type: 'swap', sourceId: examA.id, targetId: examB.id, prevSource: curA, prevTarget: curB });
+        }
+      }
+
+      try {
+        localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
+      } catch (e) {}
+
+      this.updateUI();
+      updateAntiConflictBadge();
+      const teacherSelect = document.getElementById('teacherSelect');
+      const selectedTid = teacherSelect ? teacherSelect.value : 'ALL_FACULTY';
+      if (currentTab === 'FACULTY') renderFacultyView(selectedTid);
+      else if (currentTab === 'SECTION') renderSectionView();
+      this.showToast("Action undone", "Redo", () => this.redo());
+    },
+
+    redo: function() {
+      if (this.redoStack.length === 0) return;
+      const action = this.redoStack.pop();
+
+      if (action.type === 'move') {
+        const exam = EXAM_RECORDS.find(e => e.id === action.sourceId);
+        if (exam) {
+          const currentExam = { ...exam };
+          Object.assign(exam, action.prevSource);
+          this.undoStack.push({ type: 'move', sourceId: exam.id, prevSource: currentExam });
+        }
+      } else if (action.type === 'swap') {
+        const examA = EXAM_RECORDS.find(e => e.id === action.sourceId);
+        const examB = EXAM_RECORDS.find(e => e.id === action.targetId);
+        if (examA && examB) {
+          const curA = { ...examA };
+          const curB = { ...examB };
+          Object.assign(examA, action.prevSource);
+          Object.assign(examB, action.prevTarget);
+          this.undoStack.push({ type: 'swap', sourceId: examA.id, targetId: examB.id, prevSource: curA, prevTarget: curB });
+        }
+      }
+
+      try {
+        localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
+      } catch (e) {}
+
+      this.updateUI();
+      updateAntiConflictBadge();
+      const teacherSelect = document.getElementById('teacherSelect');
+      const selectedTid = teacherSelect ? teacherSelect.value : 'ALL_FACULTY';
+      if (currentTab === 'FACULTY') renderFacultyView(selectedTid);
+      else if (currentTab === 'SECTION') renderSectionView();
+      this.showToast("Action redone", "Undo", () => this.undo());
+    },
+
+    resetToDefault: function() {
+      if (!confirm("Are you sure you want to reset all manual drag changes back to the base clean timetable?")) return;
+      localStorage.removeItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
+      if (this.baseRecords) {
+        EXAM_RECORDS = JSON.parse(JSON.stringify(this.baseRecords));
+      }
+      this.undoStack = [];
+      this.redoStack = [];
+      this.updateUI();
+      updateAntiConflictBadge();
+      const teacherSelect = document.getElementById('teacherSelect');
+      const selectedTid = teacherSelect ? teacherSelect.value : 'ALL_FACULTY';
+      if (currentTab === 'FACULTY') renderFacultyView(selectedTid);
+      else if (currentTab === 'SECTION') renderSectionView();
+      this.showToast("Timetable reset to original base schedule.");
+    },
+
+    saveToServer: async function() {
+      const btn = document.getElementById('btnSaveServer');
+      if (btn) btn.disabled = true;
+      this.showToast("Saving changes to server...", null);
+      try {
+        const resp = await fetch('/api/save-schedule', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(EXAM_RECORDS)
+        });
+        if (resp.ok) {
+          const res = await resp.json();
+          this.showToast("✓ Successfully saved to project files on server!", null);
+        } else {
+          throw new Error("Server returned " + resp.status);
+        }
+      } catch (e) {
+        console.warn("Save to server endpoint not available, falling back to download JSON:", e);
+        this.showToast("Local server API not reachable. Downloading JSON backup to your computer...", null);
+        this.downloadJSON();
+      } finally {
+        if (btn) btn.disabled = false;
+        this.updateUI();
+      }
+    },
+
+    downloadJSON: function() {
+      const jsonStr = JSON.stringify(EXAM_RECORDS, null, 2);
+      const blob = new Blob([jsonStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'exam_data_2nd_term.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      this.showToast("Downloaded exam_data_2nd_term.json!");
+    },
+
+    updateUI: function() {
+      const btnUndo = document.getElementById('btnUndo');
+      const btnRedo = document.getElementById('btnRedo');
+      const countPill = document.getElementById('dragEditCountPill');
+      const clashPill = document.getElementById('dragConflictPill');
+
+      if (btnUndo) btnUndo.disabled = this.undoStack.length === 0;
+      if (btnRedo) btnRedo.disabled = this.redoStack.length === 0;
+
+      let diffCount = 0;
+      if (this.baseRecords && EXAM_RECORDS) {
+        const baseMap = new Map(this.baseRecords.map(e => [e.id, `${e.day_number}_${e.time_slot}`]));
+        EXAM_RECORDS.forEach(e => {
+          if (baseMap.get(e.id) !== `${e.day_number}_${e.time_slot}`) diffCount++;
+        });
+      } else {
+        diffCount = this.undoStack.length;
+      }
+
+      if (countPill) {
+        countPill.textContent = diffCount === 0 ? '0 manual edits' : `${diffCount} manual edit${diffCount === 1 ? '' : 's'}`;
+        countPill.style.fontWeight = diffCount > 0 ? '800' : '600';
+        countPill.style.color = diffCount > 0 ? '#1e3a8a' : '#475569';
+        countPill.style.background = diffCount > 0 ? '#dbeafe' : '#f1f5f9';
+      }
+
+      const conflicts = strictScheduleConflicts();
+      if (clashPill) {
+        if (conflicts.length === 0) {
+          clashPill.className = 'drag-stat-pill clear';
+          clashPill.innerHTML = '✓ 0 Clashes';
+        } else {
+          clashPill.className = 'drag-stat-pill clash';
+          clashPill.innerHTML = `⚠️ ${conflicts.length} Clash${conflicts.length === 1 ? '' : 'es'}`;
+        }
+      }
+    },
+
+    showToast: function(message, actionLabel, actionCb) {
+      const toast = document.getElementById('scheduleEditorToast');
+      const msgEl = document.getElementById('toastMessage');
+      const actBtn = document.getElementById('toastActionBtn');
+      if (!toast || !msgEl) return;
+
+      if (this.toastTimeout) clearTimeout(this.toastTimeout);
+
+      msgEl.textContent = message;
+      if (actionLabel && actionCb) {
+        actBtn.textContent = actionLabel;
+        actBtn.style.display = 'inline-block';
+        actBtn.onclick = (e) => {
+          e.stopPropagation();
+          actionCb();
+          this.hideToast();
+        };
+      } else {
+        actBtn.style.display = 'none';
+      }
+
+      toast.style.display = 'flex';
+      this.toastTimeout = setTimeout(() => {
+        this.hideToast();
+      }, 6000);
+    },
+
+    hideToast: function() {
+      const toast = document.getElementById('scheduleEditorToast');
+      if (toast) toast.style.display = 'none';
+    }
+  };
 
   async function init() {
     try {
@@ -6755,6 +7598,10 @@ html, body {
       else if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
     } catch (e) {
       if (window.AMIS_TEACHER_WEEKLY_SCHEDULES) ALL_TEACHERS_DATA = window.AMIS_TEACHER_WEEKLY_SCHEDULES;
+    }
+
+    if (window.scheduleEditor && window.scheduleEditor.init) {
+      window.scheduleEditor.init();
     }
 
     updateAntiConflictBadge();
@@ -7060,8 +7907,30 @@ html, body {
                 const color = getSubjectColor(displayedSubject);
 
                 fullHtml += `
-                  <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
-                    <div class="cell-class-inner">
+                  <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
+                      data-drop-zone="section"
+                      data-section-id="${sec.id}"
+                      data-day-num="${d.day_num}"
+                      data-date-str="${esc(d.date_str)}"
+                      data-short-date="${esc(d.short_date)}"
+                      data-row-time="${esc(row.time)}"
+                      data-slot-num="${row.slot_num}"
+                      data-shift-group="${secShiftGroup}"
+                      ondragover="scheduleEditor.handleDragOver(event)"
+                      ondragleave="scheduleEditor.handleDragLeave(event)"
+                      ondrop="scheduleEditor.handleDrop(event)"
+                      onclick="scheduleEditor.handleCellClick(event)"
+                      style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                    <div class="cell-class-inner"
+                         draggable="true"
+                         data-exam-id="${match.id}"
+                         data-section-id="${sec.id}"
+                         data-teacher-id="${match.teacher_id || match.subject_teacher_id}"
+                         ondragstart="scheduleEditor.handleDragStart(event)"
+                         ondragend="scheduleEditor.handleDragEnd(event)"
+                         onclick="scheduleEditor.handleExamCardClick(event, '${match.id}')"
+                         title="Drag to reschedule/swap slot. Click to select.">
+                      <div class="cell-drag-indicator" title="Drag Handle">⠿</div>
                       <span class="cell-subject-sec">${esc(displayedSubject)}</span>
                       <span class="cell-teacher-name">${esc(match.subject_teacher || match.teacher)}</span>
                       <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
@@ -7071,14 +7940,37 @@ html, body {
               } else {
                 const firstColor = getSubjectColor(publicExamSubject(matches[0]));
                 fullHtml += `
-                  <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:#f8fafc; border-color:#cbd5e1; padding:6px; box-shadow:inset 6px 0 0 ${firstColor.accent || firstColor.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                  <td class="cell-class" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
+                      data-drop-zone="section"
+                      data-section-id="${sec.id}"
+                      data-day-num="${d.day_num}"
+                      data-date-str="${esc(d.date_str)}"
+                      data-short-date="${esc(d.short_date)}"
+                      data-row-time="${esc(row.time)}"
+                      data-slot-num="${row.slot_num}"
+                      data-shift-group="${secShiftGroup}"
+                      ondragover="scheduleEditor.handleDragOver(event)"
+                      ondragleave="scheduleEditor.handleDragLeave(event)"
+                      ondrop="scheduleEditor.handleDrop(event)"
+                      onclick="scheduleEditor.handleCellClick(event)"
+                      style="background:#f8fafc; border-color:#cbd5e1; padding:6px; box-shadow:inset 6px 0 0 ${firstColor.accent || firstColor.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                     <div style="display:flex; flex-direction:column; gap:6px; width:100%;">
                       ${matches.map(m => {
                         const mSubject = publicExamSubject(m);
                         const mColor = getSubjectColor(mSubject);
                         const mIs120 = m.duration_minutes === 120 || m.slots_spanned === 2;
                         return `
-                          <div class="cell-class-inner" style="background:${mColor.bg}; border:1px solid ${mColor.border}; border-left:4px solid ${mColor.accent || mColor.text}; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
+                          <div class="cell-class-inner"
+                               draggable="true"
+                               data-exam-id="${m.id}"
+                               data-section-id="${sec.id}"
+                               data-teacher-id="${m.teacher_id || m.subject_teacher_id}"
+                               ondragstart="scheduleEditor.handleDragStart(event)"
+                               ondragend="scheduleEditor.handleDragEnd(event)"
+                               onclick="scheduleEditor.handleExamCardClick(event, '${m.id}')"
+                               title="Drag to reschedule/swap slot. Click to select."
+                               style="background:${mColor.bg}; border:1px solid ${mColor.border}; border-left:4px solid ${mColor.accent || mColor.text}; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
+                            <div class="cell-drag-indicator" title="Drag Handle">⠿</div>
                             <span class="cell-subject-sec" style="font-size:13.5px; color:${mColor.text};">${esc(mSubject)}</span>
                             <span class="cell-teacher-name" style="font-size:11.5px;">${esc(m.subject_teacher || m.teacher)}</span>
                             <span class="cell-duration-badge ${mIs120 ? 'badge-120' : ''}" style="font-size:9.5px; padding:2px 6px;">${m.duration_minutes || 60} MIN</span>
@@ -7090,7 +7982,23 @@ html, body {
                 `;
               }
             } else {
-              fullHtml += `<td class="cell-empty"></td>`;
+              fullHtml += `
+                <td class="cell-empty"
+                    data-drop-zone="section"
+                    data-section-id="${sec.id}"
+                    data-day-num="${d.day_num}"
+                    data-date-str="${esc(d.date_str)}"
+                    data-short-date="${esc(d.short_date)}"
+                    data-row-time="${esc(row.time)}"
+                    data-slot-num="${row.slot_num}"
+                    data-shift-group="${secShiftGroup}"
+                    ondragover="scheduleEditor.handleDragOver(event)"
+                    ondragleave="scheduleEditor.handleDragLeave(event)"
+                    ondrop="scheduleEditor.handleDrop(event)"
+                    onclick="scheduleEditor.handleCellClick(event)"
+                    title="Drop subject here to move">
+                </td>
+              `;
             }
           });
 
@@ -7725,8 +8633,30 @@ html, body {
                   || match.proctor_assignment_source !== 'SUBJECT_TEACHER';
 
                 fullHtml += `
-                  <td class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
-                    <div class="cell-class-inner">
+                  <td class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
+                      data-drop-zone="faculty"
+                      data-teacher-id="${t.id}"
+                      data-day-num="${d.day_num}"
+                      data-date-str="${esc(d.date_str)}"
+                      data-short-date="${esc(d.short_date)}"
+                      data-row-time="${esc(slot.time)}"
+                      data-slot-num="${slot.slot_num}"
+                      data-shift-group="${slot.shift_group}"
+                      ondragover="scheduleEditor.handleDragOver(event)"
+                      ondragleave="scheduleEditor.handleDragLeave(event)"
+                      ondrop="scheduleEditor.handleDrop(event)"
+                      onclick="scheduleEditor.handleCellClick(event)"
+                      style="background:${color.bg}; border-color:${color.border}; color:${color.text}; box-shadow:inset 6px 0 0 ${color.accent || color.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                    <div class="cell-class-inner"
+                         draggable="true"
+                         data-exam-id="${match.id}"
+                         data-teacher-id="${t.id}"
+                         data-section-id="${match.section_id}"
+                         ondragstart="scheduleEditor.handleDragStart(event)"
+                         ondragend="scheduleEditor.handleDragEnd(event)"
+                         onclick="scheduleEditor.handleExamCardClick(event, '${match.id}')"
+                         title="Drag to reschedule/swap slot. Click to select.">
+                      <div class="cell-drag-indicator" title="Drag Handle">⠿</div>
                       ${isAutomaticProctorCoverage ? `
                         <span class="cell-subject-sec">${esc(displayedSubject)}</span>
                         <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
@@ -7743,7 +8673,20 @@ html, body {
               } else {
                 const firstColor = getSubjectColor(publicExamSubject(matches[0]));
                 fullHtml += `
-                  <td class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''} style="background:#f8fafc; border-color:#cbd5e1; padding:6px; box-shadow:inset 6px 0 0 ${firstColor.accent || firstColor.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
+                  <td class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
+                      data-drop-zone="faculty"
+                      data-teacher-id="${t.id}"
+                      data-day-num="${d.day_num}"
+                      data-date-str="${esc(d.date_str)}"
+                      data-short-date="${esc(d.short_date)}"
+                      data-row-time="${esc(slot.time)}"
+                      data-slot-num="${slot.slot_num}"
+                      data-shift-group="${slot.shift_group}"
+                      ondragover="scheduleEditor.handleDragOver(event)"
+                      ondragleave="scheduleEditor.handleDragLeave(event)"
+                      ondrop="scheduleEditor.handleDrop(event)"
+                      onclick="scheduleEditor.handleCellClick(event)"
+                      style="background:#f8fafc; border-color:#cbd5e1; padding:6px; box-shadow:inset 6px 0 0 ${firstColor.accent || firstColor.text}; ${calcRowspan > 1 ? 'vertical-align:middle;' : ''}">
                     <div style="display:flex; flex-direction:column; gap:6px; width:100%;">
                       ${matches.map(m => {
                         const mSubject = publicExamSubject(m);
@@ -7751,7 +8694,17 @@ html, body {
                         const mGenderChip = getExamGenderChip(m);
                         const mIs120 = m.duration_minutes === 120 || m.slots_spanned === 2;
                         return `
-                          <div class="cell-class-inner" style="background:${mColor.bg}; border:1px solid ${mColor.border}; border-left:4px solid ${mColor.accent || mColor.text}; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
+                          <div class="cell-class-inner"
+                               draggable="true"
+                               data-exam-id="${m.id}"
+                               data-teacher-id="${t.id}"
+                               data-section-id="${m.section_id}"
+                               ondragstart="scheduleEditor.handleDragStart(event)"
+                               ondragend="scheduleEditor.handleDragEnd(event)"
+                               onclick="scheduleEditor.handleExamCardClick(event, '${m.id}')"
+                               title="Drag to reschedule/swap slot. Click to select."
+                               style="background:${mColor.bg}; border:1px solid ${mColor.border}; border-left:4px solid ${mColor.accent || mColor.text}; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
+                            <div class="cell-drag-indicator" title="Drag Handle">⠿</div>
                             <span class="cell-subject-sec" style="font-size:13.5px; color:${mColor.text};">${esc(mSubject)}</span>
                             <span class="cell-section-name" style="font-size:11.5px;">${esc(cleanSectionName(m.section_name))}</span>
                             ${mGenderChip ? `<span class="gender-chip ${mGenderChip.className}" style="font-size:9.5px; padding:1px 6px;">${mGenderChip.label}</span>` : ''}
@@ -7764,7 +8717,23 @@ html, body {
                 `;
               }
             } else {
-              fullHtml += `<td class="cell-empty"></td>`;
+              fullHtml += `
+                <td class="cell-empty"
+                    data-drop-zone="faculty"
+                    data-teacher-id="${t.id}"
+                    data-day-num="${d.day_num}"
+                    data-date-str="${esc(d.date_str)}"
+                    data-short-date="${esc(d.short_date)}"
+                    data-row-time="${esc(slot.time)}"
+                    data-slot-num="${slot.slot_num}"
+                    data-shift-group="${slot.shift_group}"
+                    ondragover="scheduleEditor.handleDragOver(event)"
+                    ondragleave="scheduleEditor.handleDragLeave(event)"
+                    ondrop="scheduleEditor.handleDrop(event)"
+                    onclick="scheduleEditor.handleCellClick(event)"
+                    title="Drop subject here to move">
+                </td>
+              `;
             }
           });
 

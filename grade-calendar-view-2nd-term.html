@@ -949,12 +949,22 @@ body.no-navbar {
   async function init() {
     let records = [];
     try {
-      const resp = await fetch('exam_data_2nd_term.json?v=' + Date.now());
-      if (resp.ok) {
-        records = await resp.json();
+      const customSaved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
+      if (customSaved) {
+        const parsed = JSON.parse(customSaved);
+        if (Array.isArray(parsed) && parsed.length > 0) records = parsed;
       }
-    } catch (e) {
-      console.warn('Fetch failed:', e);
+    } catch (e) {}
+
+    if (!records || records.length === 0) {
+      try {
+        const resp = await fetch('exam_data_2nd_term.json?v=' + Date.now());
+        if (resp.ok) {
+          records = await resp.json();
+        }
+      } catch (e) {
+        console.warn('Fetch failed:', e);
+      }
     }
     if (!records || records.length === 0) {
       const saved = AMISExamEngine.loadScheduleFromStorage();
