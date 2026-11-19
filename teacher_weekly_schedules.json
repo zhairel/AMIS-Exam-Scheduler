@@ -7656,45 +7656,6 @@
     "department": "High School Faculty",
     "periods": [
       {
-        "section_id": "sec_grade_7_8_girls_face_to_face",
-        "section_name": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-        "department": "Junior High School",
-        "grade_level": "Grade 7 & 8",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Monday",
-        "subject": "Aral Math",
-        "raw_label": "Aral Math"
-      },
-      {
-        "section_id": "sec_grade_7_8_boys_face_to_face",
-        "section_name": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "department": "Junior High School",
-        "grade_level": "Grade 7 & 8",
-        "shift": "F2F",
-        "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "Aral Math",
-        "raw_label": "Aral Math"
-      },
-      {
-        "section_id": "sec_grade_9_10_girls_face_to_face",
-        "section_name": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-        "department": "Junior High School",
-        "grade_level": "Grade 9 & 10",
-        "shift": "F2F",
-        "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "day": "Tuesday",
-        "subject": "Aral Math",
-        "raw_label": "Aral Math"
-      },
-      {
         "section_id": "sec_grade_9_10_girls_face_to_face",
         "section_name": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
         "department": "Junior High School",
@@ -7771,19 +7732,6 @@
         "day": "Thursday",
         "subject": "MAPEH",
         "raw_label": "MAPEH"
-      },
-      {
-        "section_id": "sec_grade_9_10_boys_face_to_face",
-        "section_name": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-        "department": "Junior High School",
-        "grade_level": "Grade 9 & 10",
-        "shift": "F2F",
-        "period_num": 9,
-        "time": "12:40 \u2013 1:25 PM",
-        "minutes": "45 min.",
-        "day": "Monday",
-        "subject": "Aral Math",
-        "raw_label": "Aral Math"
       },
       {
         "section_id": "sec_grade_9_abu_hurayrah_1st_shift_girls",
@@ -7903,10 +7851,9 @@
         "raw_label": "PE 12"
       }
     ],
-    "total_classes": 19,
-    "total_teaching_periods": 19,
+    "total_classes": 15,
+    "total_teaching_periods": 15,
     "subjects": [
-      "Aral Math",
       "MAPEH",
       "PE 12"
     ],
@@ -7917,22 +7864,7 @@
         "is_break": false,
         "days": {
           "Sunday": null,
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Aral Math",
-            "label": "Aral Math",
-            "section": "GRADE 7 & 8 GIRLS (FACE TO FACE)",
-            "section_short": "G7 & 8 GIRLS (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#e0f2fe",
-              "border": "#7dd3fc",
-              "text": "#0369a1"
-            },
-            "has_conflict": false
-          },
+          "Monday": null,
           "Tuesday": null,
           "Wednesday": null,
           "Thursday": null
@@ -7943,22 +7875,7 @@
         "minutes": "40 min.",
         "is_break": false,
         "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Aral Math",
-            "label": "Aral Math",
-            "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-            "section_short": "G7 & 8 BOYS (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#e0f2fe",
-              "border": "#7dd3fc",
-              "text": "#0369a1"
-            },
-            "has_conflict": false
-          },
+          "Sunday": null,
           "Monday": null,
           "Tuesday": null,
           "Wednesday": null,
@@ -7987,22 +7904,7 @@
             "has_conflict": false
           },
           "Monday": null,
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Aral Math",
-            "label": "Aral Math",
-            "section": "GRADE 9 & 10 GIRLS (FACE TO FACE)",
-            "section_short": "G9 & 10 GIRLS (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#e0f2fe",
-              "border": "#7dd3fc",
-              "text": "#0369a1"
-            },
-            "has_conflict": false
-          },
+          "Tuesday": null,
           "Wednesday": {
             "occupied": true,
             "is_class": true,
@@ -8115,22 +8017,7 @@
             },
             "has_conflict": false
           },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Aral Math",
-            "label": "Aral Math",
-            "section": "GRADE 9 & 10 BOYS (FACE TO FACE)",
-            "section_short": "G9 & 10 BOYS (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#e0f2fe",
-              "border": "#7dd3fc",
-              "text": "#0369a1"
-            },
-            "has_conflict": false
-          },
+          "Monday": null,
           "Tuesday": {
             "occupied": true,
             "is_class": true,
@@ -10476,32 +10363,6 @@
         "raw_label": "Math"
       },
       {
-        "section_id": "sec_grade_4_face_to_face",
-        "section_name": "GRADE 4 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 4",
-        "shift": "F2F",
-        "period_num": 4,
-        "time": "9:05 \u2013 9:45 AM",
-        "minutes": "40 min.",
-        "day": "Sunday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
-      },
-      {
-        "section_id": "sec_grade_4_face_to_face",
-        "section_name": "GRADE 4 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 4",
-        "shift": "F2F",
-        "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
-        "minutes": "45 min.",
-        "day": "Tuesday",
-        "subject": "ARAL Math",
-        "raw_label": "ARAL Math"
-      },
-      {
         "section_id": "sec_grade_4_abdur_rahman_ibn_awf_1st_shift",
         "section_name": "GRADE 4 - ABDUR RAHMAN IBN AWF (1ST SHIFT)",
         "department": "Elementary",
@@ -10734,45 +10595,6 @@
         "day": "Wednesday",
         "subject": "English",
         "raw_label": "English"
-      },
-      {
-        "section_id": "sec_grade_5_face_to_face",
-        "section_name": "GRADE 5 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "F2F",
-        "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "day": "Sunday",
-        "subject": "ARAL Program",
-        "raw_label": "ARAL Program"
-      },
-      {
-        "section_id": "sec_grade_5_face_to_face",
-        "section_name": "GRADE 5 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "F2F",
-        "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "day": "Tuesday",
-        "subject": "ARAL Program",
-        "raw_label": "ARAL Program"
-      },
-      {
-        "section_id": "sec_grade_5_face_to_face",
-        "section_name": "GRADE 5 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 5",
-        "shift": "F2F",
-        "period_num": 6,
-        "time": "10:00 \u2013 10:45 AM",
-        "minutes": "45 min.",
-        "day": "Thursday",
-        "subject": "ARAL Program",
-        "raw_label": "ARAL Program"
       },
       {
         "section_id": "sec_grade_6_face_to_face",
@@ -10786,19 +10608,6 @@
         "day": "Monday",
         "subject": "TLE",
         "raw_label": "TLE"
-      },
-      {
-        "section_id": "sec_grade_6_face_to_face",
-        "section_name": "GRADE  6  FACE TO FACE",
-        "department": "Elementary",
-        "grade_level": "Grade 6",
-        "shift": "F2F",
-        "period_num": 7,
-        "time": "10:45:11:30 AM",
-        "minutes": "45 min.",
-        "day": "Wednesday",
-        "subject": "Aral",
-        "raw_label": "Aral"
       },
       {
         "section_id": "sec_grade_6_face_to_face",
@@ -10812,32 +10621,6 @@
         "day": "Thursday",
         "subject": "TLE",
         "raw_label": "TLE"
-      },
-      {
-        "section_id": "sec_grade_6_face_to_face",
-        "section_name": "GRADE  6  FACE TO FACE",
-        "department": "Elementary",
-        "grade_level": "Grade 6",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Wednesday",
-        "subject": "ARAL Program",
-        "raw_label": "ARAL Program"
-      },
-      {
-        "section_id": "sec_grade_6_face_to_face",
-        "section_name": "GRADE  6  FACE TO FACE",
-        "department": "Elementary",
-        "grade_level": "Grade 6",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Thursday",
-        "subject": "ARAL Program",
-        "raw_label": "ARAL Program"
       },
       {
         "section_id": "sec_grade_6_abdullah_ibn_salaam_1st_shift",
@@ -10892,13 +10675,9 @@
         "raw_label": "TLE"
       }
     ],
-    "total_classes": 37,
-    "total_teaching_periods": 37,
+    "total_classes": 29,
+    "total_teaching_periods": 29,
     "subjects": [
-      "ARAL Math",
-      "ARAL Program",
-      "ARAL Reading",
-      "Aral",
       "English",
       "Math",
       "TLE"
@@ -10996,22 +10775,7 @@
         "minutes": "40 min.",
         "is_break": false,
         "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 4 (FACE TO FACE)",
-            "section_short": "G4 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          },
+          "Sunday": null,
           "Monday": null,
           "Tuesday": null,
           "Wednesday": null,
@@ -11025,22 +10789,7 @@
         "days": {
           "Sunday": null,
           "Monday": null,
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Math",
-            "label": "ARAL Math",
-            "section": "GRADE 4 (FACE TO FACE)",
-            "section_short": "G4 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#e0f2fe",
-              "border": "#7dd3fc",
-              "text": "#0369a1"
-            },
-            "has_conflict": false
-          },
+          "Tuesday": null,
           "Wednesday": null,
           "Thursday": null
         }
@@ -11452,56 +11201,11 @@
         "minutes": "45 min.",
         "is_break": false,
         "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Program",
-            "label": "ARAL Program",
-            "section": "GRADE 5 (FACE TO FACE)",
-            "section_short": "G5 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f1f5f9",
-              "border": "#cbd5e1",
-              "text": "#334155"
-            },
-            "has_conflict": false
-          },
+          "Sunday": null,
           "Monday": null,
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Program",
-            "label": "ARAL Program",
-            "section": "GRADE 5 (FACE TO FACE)",
-            "section_short": "G5 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f1f5f9",
-              "border": "#cbd5e1",
-              "text": "#334155"
-            },
-            "has_conflict": false
-          },
+          "Tuesday": null,
           "Wednesday": null,
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Program",
-            "label": "ARAL Program",
-            "section": "GRADE 5 (FACE TO FACE)",
-            "section_short": "G5 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f1f5f9",
-              "border": "#cbd5e1",
-              "text": "#334155"
-            },
-            "has_conflict": false
-          }
+          "Thursday": null
         }
       },
       {
@@ -11527,22 +11231,7 @@
             "has_conflict": false
           },
           "Tuesday": null,
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Aral",
-            "label": "Aral",
-            "section": "GRADE  6  FACE TO FACE",
-            "section_short": "G 6  FACE TO FACE",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f1f5f9",
-              "border": "#cbd5e1",
-              "text": "#334155"
-            },
-            "has_conflict": false
-          },
+          "Wednesday": null,
           "Thursday": null
         }
       },
@@ -11581,38 +11270,8 @@
           "Sunday": null,
           "Monday": null,
           "Tuesday": null,
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Program",
-            "label": "ARAL Program",
-            "section": "GRADE  6  FACE TO FACE",
-            "section_short": "G 6  FACE TO FACE",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f1f5f9",
-              "border": "#cbd5e1",
-              "text": "#334155"
-            },
-            "has_conflict": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Program",
-            "label": "ARAL Program",
-            "section": "GRADE  6  FACE TO FACE",
-            "section_short": "G 6  FACE TO FACE",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#f1f5f9",
-              "border": "#cbd5e1",
-              "text": "#334155"
-            },
-            "has_conflict": false
-          }
+          "Wednesday": null,
+          "Thursday": null
         }
       }
     ]
@@ -20199,97 +19858,6 @@
     "department": "Elementary Faculty",
     "periods": [
       {
-        "section_id": "sec_grade_2_face_to_face",
-        "section_name": "GRADE 2 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "F2F",
-        "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
-        "minutes": "45 min.",
-        "day": "Monday",
-        "subject": "ARAL Math",
-        "raw_label": "ARAL Math"
-      },
-      {
-        "section_id": "sec_grade_2_face_to_face",
-        "section_name": "GRADE 2 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "F2F",
-        "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
-        "minutes": "45 min.",
-        "day": "Wednesday",
-        "subject": "ARAL Math",
-        "raw_label": "ARAL Math"
-      },
-      {
-        "section_id": "sec_grade_3_face_to_face",
-        "section_name": "GRADE 3 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "F2F",
-        "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
-        "minutes": "45 min.",
-        "day": "Sunday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
-      },
-      {
-        "section_id": "sec_grade_3_face_to_face",
-        "section_name": "GRADE 3 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "F2F",
-        "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
-        "minutes": "45 min.",
-        "day": "Tuesday",
-        "subject": "ARAL Science",
-        "raw_label": "ARAL Science"
-      },
-      {
-        "section_id": "sec_grade_3_face_to_face",
-        "section_name": "GRADE 3 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "F2F",
-        "period_num": 10,
-        "time": "1:25 \u2013 2:10 PM",
-        "minutes": "45 min.",
-        "day": "Thursday",
-        "subject": "ARAL Math",
-        "raw_label": "ARAL Math"
-      },
-      {
-        "section_id": "sec_grade_3_face_to_face",
-        "section_name": "GRADE 3 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Sunday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
-      },
-      {
-        "section_id": "sec_grade_3_face_to_face",
-        "section_name": "GRADE 3 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 3",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Tuesday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
-      },
-      {
         "section_id": "sec_grade_4_face_to_face",
         "section_name": "GRADE 4 (FACE TO FACE)",
         "department": "Elementary",
@@ -20420,12 +19988,9 @@
         "raw_label": "Science"
       }
     ],
-    "total_classes": 17,
-    "total_teaching_periods": 17,
+    "total_classes": 10,
+    "total_teaching_periods": 10,
     "subjects": [
-      "ARAL Math",
-      "ARAL Reading",
-      "ARAL Science",
       "Science"
     ],
     "rows": [
@@ -20434,86 +19999,11 @@
         "minutes": "45 min.",
         "is_break": false,
         "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 3 (FACE TO FACE)",
-            "section_short": "G3 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          },
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Math",
-            "label": "ARAL Math",
-            "section": "GRADE 2 (FACE TO FACE)",
-            "section_short": "G2 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#e0f2fe",
-              "border": "#7dd3fc",
-              "text": "#0369a1"
-            },
-            "has_conflict": false
-          },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Science",
-            "label": "ARAL Science",
-            "section": "GRADE 3 (FACE TO FACE)",
-            "section_short": "G3 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#ccfbf1",
-              "border": "#5eead4",
-              "text": "#0f766e"
-            },
-            "has_conflict": false
-          },
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Math",
-            "label": "ARAL Math",
-            "section": "GRADE 2 (FACE TO FACE)",
-            "section_short": "G2 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#e0f2fe",
-              "border": "#7dd3fc",
-              "text": "#0369a1"
-            },
-            "has_conflict": false
-          },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Math",
-            "label": "ARAL Math",
-            "section": "GRADE 3 (FACE TO FACE)",
-            "section_short": "G3 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#e0f2fe",
-              "border": "#7dd3fc",
-              "text": "#0369a1"
-            },
-            "has_conflict": false
-          }
+          "Sunday": null,
+          "Monday": null,
+          "Tuesday": null,
+          "Wednesday": null,
+          "Thursday": null
         }
       },
       {
@@ -20521,39 +20011,9 @@
         "minutes": "45 min.",
         "is_break": false,
         "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 3 (FACE TO FACE)",
-            "section_short": "G3 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          },
+          "Sunday": null,
           "Monday": null,
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 3 (FACE TO FACE)",
-            "section_short": "G3 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          },
+          "Tuesday": null,
           "Wednesday": null,
           "Thursday": null
         }
@@ -20808,45 +20268,6 @@
         "raw_label": "Reading and Literacy"
       },
       {
-        "section_id": "sec_grade_1_face_to_face",
-        "section_name": "GRADE 1 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "F2F",
-        "period_num": 7,
-        "time": "10:45:11:30 AM",
-        "minutes": "45 min.",
-        "day": "Sunday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
-      },
-      {
-        "section_id": "sec_grade_1_face_to_face",
-        "section_name": "GRADE 1 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "F2F",
-        "period_num": 7,
-        "time": "10:45:11:30 AM",
-        "minutes": "45 min.",
-        "day": "Tuesday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
-      },
-      {
-        "section_id": "sec_grade_1_face_to_face",
-        "section_name": "GRADE 1 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "F2F",
-        "period_num": 7,
-        "time": "10:45:11:30 AM",
-        "minutes": "45 min.",
-        "day": "Thursday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
-      },
-      {
         "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
         "section_name": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
         "department": "Elementary",
@@ -20871,32 +20292,6 @@
         "day": "Wednesday",
         "subject": "R & L",
         "raw_label": "R & L"
-      },
-      {
-        "section_id": "sec_grade_1_hudhayfah_ibn_al_yam_1st_shift",
-        "section_name": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 6,
-        "time": "02:20 \u2013 03:00 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
-      },
-      {
-        "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
-        "section_name": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
       },
       {
         "section_id": "sec_grade_1_ali_ibn_abi_talib_1st_shift",
@@ -20949,32 +20344,6 @@
         "day": "Wednesday",
         "subject": "R & L",
         "raw_label": "R & L"
-      },
-      {
-        "section_id": "sec_grade_1_suhayb_ar_rumi_2nd_shift",
-        "section_name": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
-      },
-      {
-        "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
-        "section_name": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
-        "minutes": "40 min.",
-        "day": "Wednesday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
       },
       {
         "section_id": "sec_grade_1_sa_ad_ibn_abi_waqqaas_2nd_shift",
@@ -21081,10 +20450,9 @@
         "raw_label": "Math"
       }
     ],
-    "total_classes": 26,
-    "total_teaching_periods": 26,
+    "total_classes": 19,
+    "total_teaching_periods": 19,
     "subjects": [
-      "ARAL Reading",
       "Math",
       "R & L",
       "Reading and Literacy"
@@ -21182,56 +20550,11 @@
         "minutes": "45 min.",
         "is_break": false,
         "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 1 (FACE TO FACE)",
-            "section_short": "G1 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          },
+          "Sunday": null,
           "Monday": null,
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 1 (FACE TO FACE)",
-            "section_short": "G1 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          },
+          "Tuesday": null,
           "Wednesday": null,
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 1 (FACE TO FACE)",
-            "section_short": "G1 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          }
+          "Thursday": null
         }
       },
       {
@@ -21303,22 +20626,7 @@
             },
             "has_conflict": false
           },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-            "section_short": "G1 - HUDHAYFAH IBN AL-YAM (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          }
+          "Thursday": null
         }
       },
       {
@@ -21360,22 +20668,7 @@
             "has_conflict": false
           },
           "Wednesday": null,
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 1 - ALI IBN ABI TALIB(1ST SHIFT)",
-            "section_short": "G1 - ALI IBN ABI TALIB(1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          }
+          "Thursday": null
         }
       },
       {
@@ -21432,22 +20725,7 @@
             },
             "has_conflict": false
           },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 1 - SUHAYB AR-RUMI (2ND SHIFT)",
-            "section_short": "G1 - SUHAYB AR-RUMI (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          }
+          "Thursday": null
         }
       },
       {
@@ -21458,22 +20736,7 @@
           "Sunday": null,
           "Monday": null,
           "Tuesday": null,
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-            "section_short": "G1 - SA'AD IBN ABI WAQQAAS (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          },
+          "Wednesday": null,
           "Thursday": null
         }
       },
@@ -22732,45 +21995,6 @@
         "raw_label": "HG"
       },
       {
-        "section_id": "sec_grade_2_face_to_face",
-        "section_name": "GRADE 2 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Sunday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
-      },
-      {
-        "section_id": "sec_grade_2_face_to_face",
-        "section_name": "GRADE 2 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Tuesday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
-      },
-      {
-        "section_id": "sec_grade_2_face_to_face",
-        "section_name": "GRADE 2 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "F2F",
-        "period_num": 11,
-        "time": "2:15 \u2013 3:00 PM",
-        "minutes": "45 min.",
-        "day": "Thursday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
-      },
-      {
         "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
         "section_name": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
         "department": "Elementary",
@@ -22797,19 +22021,6 @@
         "raw_label": "English"
       },
       {
-        "section_id": "sec_grade_2_talha_ibn_ubaydullah_1st_shift",
-        "section_name": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 2,
-        "time": "12:40 \u2013 01:20 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
-      },
-      {
         "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
         "section_name": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
         "department": "Elementary",
@@ -22834,32 +22045,6 @@
         "day": "Tuesday",
         "subject": "English",
         "raw_label": "English"
-      },
-      {
-        "section_id": "sec_grade_2_amr_ibn_al_jamuh_1st_shift",
-        "section_name": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 1ST SHIFT",
-        "period_num": 4,
-        "time": "01:30 \u2013 02:10 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
-      },
-      {
-        "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
-        "section_name": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 3,
-        "time": "3:40 \u2013 4:20 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "Aral Reading",
-        "raw_label": "Aral Reading"
       },
       {
         "section_id": "sec_grade_2_saeed_ibn_zayd_2nd_shift",
@@ -22912,19 +22097,6 @@
         "day": "Tuesday",
         "subject": "English",
         "raw_label": "English"
-      },
-      {
-        "section_id": "sec_grade_2_aasim_ibn_thabit_2nd_shift",
-        "section_name": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-        "department": "Elementary",
-        "grade_level": "Grade 2",
-        "shift": "ODL - 2ND SHIFT",
-        "period_num": 7,
-        "time": "5:20 \u2013 6:00 PM",
-        "minutes": "40 min.",
-        "day": "Thursday",
-        "subject": "ARAL Reading",
-        "raw_label": "ARAL Reading"
       },
       {
         "section_id": "sec_grade_3_face_to_face",
@@ -23096,11 +22268,9 @@
         "raw_label": "English"
       }
     ],
-    "total_classes": 34,
-    "total_teaching_periods": 34,
+    "total_classes": 27,
+    "total_teaching_periods": 27,
     "subjects": [
-      "ARAL Reading",
-      "Aral Reading",
       "English",
       "HG"
     ],
@@ -23224,56 +22394,11 @@
         "minutes": "45 min.",
         "is_break": false,
         "days": {
-          "Sunday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 2 (FACE TO FACE)",
-            "section_short": "G2 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          },
+          "Sunday": null,
           "Monday": null,
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 2 (FACE TO FACE)",
-            "section_short": "G2 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          },
+          "Tuesday": null,
           "Wednesday": null,
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 2 (FACE TO FACE)",
-            "section_short": "G2 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          }
+          "Thursday": null
         }
       },
       {
@@ -23315,22 +22440,7 @@
             },
             "has_conflict": false
           },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-            "section_short": "G2 - TALHA IBN UBAYDULLAH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          }
+          "Thursday": null
         }
       },
       {
@@ -23402,22 +22512,7 @@
             },
             "has_conflict": false
           },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-            "section_short": "G2 - AMR IBN AL-JAMUH (1ST SHIFT)",
-            "modality": "ODL - 1ST SHIFT",
-            "shift": "ODL - 1ST SHIFT",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          }
+          "Thursday": null
         }
       },
       {
@@ -23459,22 +22554,7 @@
             },
             "has_conflict": false
           },
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Aral Reading",
-            "label": "Aral Reading",
-            "section": "GRADE 2 - SAEED IBN ZAYD (2ND SHIFT)",
-            "section_short": "G2 - SAEED IBN ZAYD (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          }
+          "Thursday": null
         }
       },
       {
@@ -23588,22 +22668,7 @@
             "has_conflict": false
           },
           "Wednesday": null,
-          "Thursday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Reading",
-            "label": "ARAL Reading",
-            "section": "GRADE 2 - AASIM IBN THABIT (2ND SHIFT)",
-            "section_short": "G2 - AASIM IBN THABIT (2ND SHIFT)",
-            "modality": "ODL - 2ND SHIFT",
-            "shift": "ODL - 2ND SHIFT",
-            "color": {
-              "bg": "#fef3c7",
-              "border": "#fde047",
-              "text": "#854d0e"
-            },
-            "has_conflict": false
-          }
+          "Thursday": null
         }
       },
       {
@@ -29198,19 +28263,6 @@
         "period_num": 3,
         "time": "8:25 \u2013 9:05 AM",
         "minutes": "40 min.",
-        "day": "Tuesday",
-        "subject": "Aral.Sci",
-        "raw_label": "Aral.Sci"
-      },
-      {
-        "section_id": "sec_grade_7_8_boys_face_to_face",
-        "section_name": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-        "department": "Junior High School",
-        "grade_level": "Grade 7 & 8",
-        "shift": "F2F",
-        "period_num": 3,
-        "time": "8:25 \u2013 9:05 AM",
-        "minutes": "40 min.",
         "day": "Wednesday",
         "subject": "Sci",
         "raw_label": "Sci"
@@ -29541,10 +28593,9 @@
         "raw_label": "Gen Bio 1"
       }
     ],
-    "total_classes": 34,
-    "total_teaching_periods": 34,
+    "total_classes": 33,
+    "total_teaching_periods": 33,
     "subjects": [
-      "Aral.Sci",
       "Gen Bio 1",
       "Sci"
     ],
@@ -29673,22 +28724,7 @@
             },
             "has_conflict": false
           },
-          "Tuesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "Aral.Sci",
-            "label": "Aral.Sci",
-            "section": "GRADE 7 & 8 BOYS (FACE TO FACE)",
-            "section_short": "G7 & 8 BOYS (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#ccfbf1",
-              "border": "#5eead4",
-              "text": "#0f766e"
-            },
-            "has_conflict": false
-          },
+          "Tuesday": null,
           "Wednesday": {
             "occupied": true,
             "is_class": true,
@@ -36154,32 +35190,6 @@
         "raw_label": "Math"
       },
       {
-        "section_id": "sec_grade_1_face_to_face",
-        "section_name": "GRADE 1 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "F2F",
-        "period_num": 7,
-        "time": "10:45:11:30 AM",
-        "minutes": "45 min.",
-        "day": "Monday",
-        "subject": "ARAL Math",
-        "raw_label": "ARAL Math"
-      },
-      {
-        "section_id": "sec_grade_1_face_to_face",
-        "section_name": "GRADE 1 (FACE TO FACE)",
-        "department": "Elementary",
-        "grade_level": "Grade 1",
-        "shift": "F2F",
-        "period_num": 7,
-        "time": "10:45:11:30 AM",
-        "minutes": "45 min.",
-        "day": "Wednesday",
-        "subject": "ARAL Math",
-        "raw_label": "ARAL Math"
-      },
-      {
         "section_id": "sec_grade_3_face_to_face",
         "section_name": "GRADE 3 (FACE TO FACE)",
         "department": "Elementary",
@@ -36310,10 +35320,9 @@
         "raw_label": "Science"
       }
     ],
-    "total_classes": 34,
-    "total_teaching_periods": 34,
+    "total_classes": 32,
+    "total_teaching_periods": 32,
     "subjects": [
-      "ARAL Math",
       "CT 2",
       "Circle Time 1",
       "Circle Time 2",
@@ -36718,39 +35727,9 @@
         "is_break": false,
         "days": {
           "Sunday": null,
-          "Monday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Math",
-            "label": "ARAL Math",
-            "section": "GRADE 1 (FACE TO FACE)",
-            "section_short": "G1 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#e0f2fe",
-              "border": "#7dd3fc",
-              "text": "#0369a1"
-            },
-            "has_conflict": false
-          },
+          "Monday": null,
           "Tuesday": null,
-          "Wednesday": {
-            "occupied": true,
-            "is_class": true,
-            "subject": "ARAL Math",
-            "label": "ARAL Math",
-            "section": "GRADE 1 (FACE TO FACE)",
-            "section_short": "G1 (FACE TO FACE)",
-            "modality": "F2F",
-            "shift": "F2F",
-            "color": {
-              "bg": "#e0f2fe",
-              "border": "#7dd3fc",
-              "text": "#0369a1"
-            },
-            "has_conflict": false
-          },
+          "Wednesday": null,
           "Thursday": null
         }
       },
@@ -38777,7 +37756,10 @@
     "teacher_name": "Teacher Erica",
     "canonical_name": "Teacher Erica",
     "department": "Elementary Faculty",
-    "periods": []
+    "periods": [],
+    "subjects": [],
+    "total_classes": 0,
+    "total_teaching_periods": 0
   },
   "tchr_jayra": {
     "id": "tchr_jayra",
@@ -39724,7 +38706,10 @@
     "teacher_name": "Ustadha Samsida",
     "canonical_name": "Ustadha Samsida",
     "department": "ISAL Faculty",
-    "periods": []
+    "periods": [],
+    "subjects": [],
+    "total_classes": 0,
+    "total_teaching_periods": 0
   },
   "tchr_nawawi": {
     "id": "tchr_nawawi",
@@ -39733,6 +38718,9 @@
     "teacher_name": "Ustadh Laurel/Nawawi",
     "canonical_name": "Ustadh Laurel/Nawawi",
     "department": "ISAL Faculty",
-    "periods": []
+    "periods": [],
+    "subjects": [],
+    "total_classes": 0,
+    "total_teaching_periods": 0
   }
 }
