@@ -2484,6 +2484,45 @@ td.cell-conflict-clash {
   }
 }
 
+/* Yellow Warning Borderline for Duplicate Subject in Section */
+td.cell-duplicate-subject {
+  outline: 3.5px solid #eab308 !important;
+  outline-offset: -2px !important;
+  box-shadow: inset 0 0 10px rgba(234, 179, 8, 0.28), 0 0 12px rgba(234, 179, 8, 0.4) !important;
+  position: relative !important;
+  animation: pulseDuplicateWarning 2.4s infinite ease-in-out;
+}
+@keyframes pulseDuplicateWarning {
+  0%, 100% {
+    outline-color: #eab308;
+    box-shadow: inset 0 0 8px rgba(234, 179, 8, 0.22), 0 0 10px rgba(234, 179, 8, 0.32);
+  }
+  50% {
+    outline-color: #ca8a04;
+    box-shadow: inset 0 0 14px rgba(202, 138, 4, 0.38), 0 0 16px rgba(234, 179, 8, 0.52);
+  }
+}
+
+.cell-duplicate-alert-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #854d0e;
+  background: #fef9c3;
+  border: 1px solid #facc15;
+  padding: 2.5px 5px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  box-shadow: 0 1px 3px rgba(161, 98, 7, 0.15);
+  line-height: 1.2;
+  user-select: none;
+}
+
 .cell-clash-alert-banner {
   display: flex;
   align-items: center;
@@ -3094,6 +3133,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
       <button class="btn-drag-action btn-clash-jump" id="btnClashJump" onclick="scheduleEditor.jumpToNextConflict()" title="Jump directly to conflicting cells on the timetable" style="display:none;">
         <svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.5L20.5 19h-17L12 5.5zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
         <span id="clashJumpText">Find Clashes</span>
+      </button>
+      <button class="btn-drag-action btn-duplicate-jump" id="btnDuplicateJump" onclick="scheduleEditor.jumpToNextDuplicate()" title="Jump directly to duplicate subject warnings on the timetable" style="display:none; background:#fef9c3; color:#854d0e; border:1px solid #facc15; font-weight:800;">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+        <span id="duplicateJumpText">Find Duplicates</span>
       </button>
       <button class="btn-drag-action" id="btnUndo" onclick="scheduleEditor.undo()" title="Undo (Ctrl+Z)" disabled>
         <svg viewBox="0 0 24 24"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.22 3.16-1.98 5.12-1.98 3.77 0 6.9 2.61 7.7 6.13l2.42-.8C21.48 10.87 17.38 8 12.5 8z"/></svg>
@@ -7660,19 +7703,50 @@ body.admin-edit-unlocked .lock-indicator-pill {
     return { conflicts, map, sectionClashCounts, teacherClashCounts };
   }
 
+  function getDuplicateSubjectMap() {
+    const secSubjectExams = {};
+    EXAM_RECORDS.forEach(e => {
+      const secId = e.section_id || e.section || "";
+      const normSubj = (publicExamSubject(e) || "").trim().toLowerCase();
+      if (!secId || !normSubj) return;
+      const key = `${secId}:::${normSubj}`;
+      if (!secSubjectExams[key]) secSubjectExams[key] = [];
+      secSubjectExams[key].push(e);
+    });
+
+    const map = new Map();
+    for (const key in secSubjectExams) {
+      const list = secSubjectExams[key];
+      if (list.length > 1) {
+        list.forEach(ex => {
+          map.set(ex.id, {
+            count: list.length,
+            subject: publicExamSubject(ex),
+            section: ex.section_name || ex.section || ""
+          });
+        });
+      }
+    }
+    return { map, totalCount: map.size };
+  }
+
   function updateAntiConflictBadge() {
     const badge = document.getElementById('antiConflictBadge');
     const conflicts = strictScheduleConflicts();
     const conflictCount = conflicts.length;
     const isClear = conflictCount === 0;
+    const { map: dupMap, totalCount: dupCount } = getDuplicateSubjectMap();
 
     if (badge) {
       const detail = isClear ? '0 Conflicts' : `${conflicts.teacherCount || 0} Teacher, ${conflicts.sectionCount || 0} Section Clash`;
-      badge.innerHTML = `<span style="color:${isClear ? '#059669' : '#dc2626'}; font-weight:900;">${isClear ? '✓' : '!'}</span> Anti-Conflict Guard Active: ${detail} ${isClear ? '' : '<span style="font-size:10px; margin-left:6px; text-decoration:underline; font-weight:800;">[Inspect]</span>'}`;
+      const dupPill = dupCount > 0
+        ? `<span style="display:inline-flex; align-items:center; gap:4px; margin-left:8px; padding:2px 8px; border-radius:12px; background:#fef9c3; color:#854d0e; border:1px solid #facc15; font-size:11px; font-weight:800;" title="${dupCount} duplicate subject exams detected in sections">${dupCount} Duplicates</span>`
+        : '';
+      badge.innerHTML = `<span style="color:${isClear ? '#059669' : '#dc2626'}; font-weight:900;">${isClear ? '✓' : '!'}</span> Anti-Conflict Guard Active: ${detail} ${dupPill} ${isClear ? '' : '<span style="font-size:10px; margin-left:6px; text-decoration:underline; font-weight:800;">[Inspect]</span>'}`;
       badge.style.color = isClear ? '#047857' : '#b91c1c';
       badge.style.background = isClear ? '#ecfdf5' : '#fef2f2';
       badge.style.borderColor = isClear ? '#a7f3d0' : '#fecaca';
-      badge.title = isClear ? 'No conflicts detected' : `Click to view all ${conflictCount} conflicting cells and jump directly to them`;
+      badge.title = isClear ? (dupCount > 0 ? `${dupCount} duplicate subjects in sections` : 'No conflicts detected') : `Click to view all ${conflictCount} conflicting cells and jump directly to them`;
     }
 
     const btnJump = document.getElementById('btnClashJump');
@@ -7683,6 +7757,17 @@ body.admin-edit-unlocked .lock-indicator-pill {
         if (clashJumpText) clashJumpText.textContent = `Inspect ${conflictCount} Clash${conflictCount === 1 ? '' : 'es'}`;
       } else {
         btnJump.style.display = 'none';
+      }
+    }
+
+    const btnDupJump = document.getElementById('btnDuplicateJump');
+    const dupJumpText = document.getElementById('duplicateJumpText');
+    if (btnDupJump) {
+      if (dupCount > 0) {
+        btnDupJump.style.display = 'inline-flex';
+        if (dupJumpText) dupJumpText.textContent = `${dupCount} Duplicates`;
+      } else {
+        btnDupJump.style.display = 'none';
       }
     }
 
@@ -7717,6 +7802,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
     toastTimeout: null,
     autoSaveTimer: null,
     isSaving: false,
+    hasPendingSave: false,
+    currentDuplicateIndex: -1,
     isSyncing: false,
     lastSavedTimestamp: 0,
     realtimeSyncTimer: null,
@@ -8521,7 +8608,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
     },
 
     afterMutation: function(toastMsg) {
-      this.autoSave();
+      // Force instant auto-save immediately to both browser localStorage and backend server
+      this.autoSave(true);
 
       this.updateUI();
       updateAntiConflictBadge();
@@ -8536,10 +8624,27 @@ body.admin-edit-unlocked .lock-indicator-pill {
 
       const conflicts = strictScheduleConflicts();
       const clashMsg = conflicts.length > 0 ? ` (! ${conflicts.length} conflict${conflicts.length === 1 ? '' : 's'} detected)` : ' (0 clashes)';
-      this.showToast(toastMsg + clashMsg, "Undo", () => this.undo());
+      this.showToast(toastMsg + clashMsg + " - Auto-Saved", "Undo", () => this.undo());
     },
 
-    autoSave: function() {
+    jumpToNextDuplicate: function() {
+      const dupCells = Array.from(document.querySelectorAll('.cell-duplicate-subject'));
+      if (dupCells.length === 0) {
+        this.showToast('No duplicate subject warnings found in the current view.');
+        return;
+      }
+      if (typeof this.currentDuplicateIndex !== 'number') this.currentDuplicateIndex = -1;
+      this.currentDuplicateIndex = (this.currentDuplicateIndex + 1) % dupCells.length;
+      const target = dupCells[this.currentDuplicateIndex];
+      target.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+      target.classList.remove('flash-conflict-target');
+      void target.offsetWidth;
+      target.classList.add('flash-conflict-target');
+      setTimeout(() => target.classList.remove('flash-conflict-target'), 3500);
+      this.showToast(`Showing duplicate subject warning (${this.currentDuplicateIndex + 1} of ${dupCells.length})`);
+    },
+
+    autoSave: function(forceImmediate = false) {
       // 1. Instantly persist to browser storage
       const now = Date.now();
       try {
@@ -8552,16 +8657,26 @@ body.admin-edit-unlocked .lock-indicator-pill {
       // 2. Visual status indicator -> Saving...
       this.updateAutoSaveIndicator('saving');
 
-      // 3. Debounce background network save (350ms)
-      if (this.autoSaveTimer) clearTimeout(this.autoSaveTimer);
-      this.autoSaveTimer = setTimeout(() => {
+      // 3. Network save: If forceImmediate, execute immediately (0ms delay), else short debounce (120ms)
+      if (forceImmediate) {
+        if (this.autoSaveTimer) clearTimeout(this.autoSaveTimer);
         this.performServerAutoSave();
-      }, 350);
+      } else {
+        if (this.autoSaveTimer) clearTimeout(this.autoSaveTimer);
+        this.autoSaveTimer = setTimeout(() => {
+          this.performServerAutoSave();
+        }, 120);
+      }
     },
 
     performServerAutoSave: async function() {
-      if (this.isSaving) return;
+      if (this.isSaving) {
+        // Queue next save so that rapid successive mutations are never lost
+        this.hasPendingSave = true;
+        return;
+      }
       this.isSaving = true;
+      this.hasPendingSave = false;
       const now = Date.now();
       try {
         const resp = await fetch('/api/save-schedule', {
@@ -8580,9 +8695,14 @@ body.admin-edit-unlocked .lock-indicator-pill {
           this.updateAutoSaveIndicator('local');
         }
       } catch (err) {
+        console.warn('Server auto-save error:', err);
         this.updateAutoSaveIndicator('local');
       } finally {
         this.isSaving = false;
+        if (this.hasPendingSave) {
+          this.hasPendingSave = false;
+          this.performServerAutoSave();
+        }
       }
     },
 
@@ -8791,7 +8911,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
         this.redoStack.push({ type: 'delete', exam: action.exam, index: insertIdx });
       }
 
-      this.autoSave();
+      this.autoSave(true);
       this.updateUI();
       updateAntiConflictBadge();
       const teacherSelect = document.getElementById('teacherSelect');
@@ -8830,7 +8950,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
         }
       }
 
-      this.autoSave();
+      this.autoSave(true);
       this.updateUI();
       updateAntiConflictBadge();
       const teacherSelect = document.getElementById('teacherSelect');
@@ -8849,7 +8969,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
       }
       this.undoStack = [];
       this.redoStack = [];
-      this.autoSave();
+      this.autoSave(true);
       this.updateUI();
       updateAntiConflictBadge();
       const teacherSelect = document.getElementById('teacherSelect');
@@ -9374,6 +9494,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
     const todayStr = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     let fullHtml = '';
     const { map: clashMap } = getScheduleConflictMap();
+    const { map: dupMap } = getDuplicateSubjectMap();
 
     if (subjectQuery) {
       const targetSectionIds = new Set(targetSections.map(section => section.id));
@@ -9536,6 +9657,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
             const hasSectionStackConflict = matches.length > 1;
             const hasExamClash = matches.some(m => clashMap.has(m.id));
             const hasConflict = hasSectionStackConflict || hasExamClash;
+            const hasAnyDuplicate = matches.some(m => dupMap.has(m.id));
 
             if (matches.length > 0) {
               const is120 = matches.some(m => m.duration_minutes === 120 || m.slots_spanned === 2);
@@ -9558,9 +9680,11 @@ body.admin-edit-unlocked .lock-indicator-pill {
                 const displayedSubject = publicExamSubject(match);
                 const color = getSubjectColor(displayedSubject);
                 const isClashing = hasConflict;
+                const isDuplicateSubject = dupMap.has(match.id);
+                const dupInfo = isDuplicateSubject ? dupMap.get(match.id) : null;
 
                 fullHtml += `
-                  <td id="${cellId}" class="cell-class ${isClashing ? 'cell-conflict-clash' : ''}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
+                  <td id="${cellId}" class="cell-class ${isClashing ? 'cell-conflict-clash' : (isDuplicateSubject ? 'cell-duplicate-subject' : '')}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
                       data-drop-zone="section"
                       data-section-id="${sec.id}"
                       data-day-num="${d.day_num}"
@@ -9578,6 +9702,18 @@ body.admin-edit-unlocked .lock-indicator-pill {
                       <div class="cell-clash-alert-banner">
                         <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 3.5L20.5 19h-17L12 5.5zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
                         CONFLICT DETECTED
+                      </div>
+                    ` : ''}
+                    ${isDuplicateSubject ? `
+                      <div class="cell-duplicate-alert-banner" title="Warning: Duplicate Subject! ${esc(displayedSubject)} is scheduled ${dupInfo.count} times for this section.">
+                        <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+                        <span>DUPLICATE (${dupInfo.count}X)</span>
+                      </div>
+                    ` : ''}
+                    ${isDuplicateSubject ? `
+                      <div class="cell-duplicate-alert-banner" title="Warning: Duplicate Subject! ${esc(displayedSubject)} is scheduled ${dupInfo.count} times in this section.">
+                        <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+                        <span>DUPLICATE (${dupInfo.count}X)</span>
                       </div>
                     ` : ''}
                     <div class="cell-class-inner ${isClashing ? 'card-has-clash' : ''}"
@@ -9605,7 +9741,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
                 `;
               } else {
                 fullHtml += `
-                  <td id="${cellId}" class="cell-class cell-conflict-clash" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
+                  <td id="${cellId}" class="cell-class ${hasConflict ? 'cell-conflict-clash' : (hasAnyDuplicate ? 'cell-duplicate-subject' : '')}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
                       data-drop-zone="section"
                       data-section-id="${sec.id}"
                       data-day-num="${d.day_num}"
@@ -9628,6 +9764,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
                         const mSubject = publicExamSubject(m);
                         const mColor = getSubjectColor(mSubject);
                         const mIs120 = m.duration_minutes === 120 || m.slots_spanned === 2;
+                        const mIsDup = dupMap.has(m.id);
+                        const mDupInfo = mIsDup ? dupMap.get(m.id) : null;
                         return `
                           <div class="cell-class-inner card-has-clash"
                                draggable="${isUnlocked ? 'true' : 'false'}"
@@ -9643,6 +9781,12 @@ body.admin-edit-unlocked .lock-indicator-pill {
                                style="background:${mColor.bg}; border:1.5px solid #ef4444; border-left:5px solid #dc2626; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 3px rgba(220,38,38,0.2);">
                             ${isUnlocked ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
                             <button type="button" class="btn-card-delete" onclick="scheduleEditor.deleteExam(event, '${m.id}')" title="Delete subject from timetable" aria-label="Delete subject">&times;</button>
+                            ${mIsDup ? `
+                              <div class="cell-duplicate-alert-banner" style="margin-bottom:3px; padding:1.5px 5px; font-size:9.5px;" title="Warning: Duplicate subject! ${esc(mSubject)} appears ${mDupInfo.count} times in this section.">
+                                <svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+                                <span>DUPLICATE (${mDupInfo.count}X)</span>
+                              </div>
+                            ` : ''}
                             <span class="cell-subject-sec" style="font-size:13.5px; color:${mColor.text};">${esc(mSubject)}</span>
                             <span class="cell-teacher-name" style="font-size:11.5px;">${esc(m.subject_teacher || m.teacher)}</span>
                             <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
@@ -10078,6 +10222,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
         targetTeachers = targetTeachers.filter(t => getTeacherLoadAudit(t, EXAM_RECORDS).isComplete);
       }
     }
+    const { map: dupMap } = getDuplicateSubjectMap();
 
     // Filter by subject
     if (facultySubjectFilter !== 'ALL') {
@@ -10319,9 +10464,11 @@ body.admin-edit-unlocked .lock-indicator-pill {
                 const isAutomaticProctorCoverage = match.display_as_proctor_duty === true
                   || match.proctor_assignment_source !== 'SUBJECT_TEACHER';
                 const isClashing = hasConflict;
+                const isDuplicateSubject = dupMap.has(match.id);
+                const dupInfo = isDuplicateSubject ? dupMap.get(match.id) : null;
 
                 fullHtml += `
-                  <td id="${cellId}" class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''} ${isClashing ? 'cell-conflict-clash' : ''}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
+                  <td id="${cellId}" class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''} ${isClashing ? 'cell-conflict-clash' : (isDuplicateSubject ? 'cell-duplicate-subject' : '')}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
                       data-drop-zone="faculty"
                       data-teacher-id="${t.id}"
                       data-day-num="${d.day_num}"
