@@ -8380,8 +8380,9 @@ body.admin-edit-unlocked .lock-indicator-pill {
       if (!examId) return;
 
       if (status === 'CONFLICT' || status === 'SWAP_CONFLICT') {
-        this.showToast("Cannot drop here: Target slot has a conflict (RED). Please choose a green VACANT or SWAP OK slot.");
-        return;
+        const reason = cell.getAttribute('data-drop-reason') || 'Schedule clash detected';
+        const allowForce = confirm();
+        if (!allowForce) return;
       }
 
       const targetDayNum = Number(cell.getAttribute('data-day-num'));
@@ -8429,8 +8430,9 @@ body.admin-edit-unlocked .lock-indicator-pill {
       const status = cell.getAttribute('data-drop-status');
 
       if (status === 'CONFLICT' || status === 'SWAP_CONFLICT') {
-        this.showToast("Cannot place here: Slot has a conflict (RED). Please click a green VACANT or SWAP OK slot.");
-        return;
+        const reason = cell.getAttribute('data-drop-reason') || 'Schedule clash detected';
+        const allowForce = confirm();
+        if (!allowForce) return;
       }
 
       const targetDayNum = Number(cell.getAttribute('data-day-num'));
