@@ -3068,6 +3068,179 @@ body.admin-edit-unlocked .lock-indicator-pill {
   color: #0f172a;
 }
 
+/* Section Exam Schedule Locks & Auto-Lock Badges */
+.btn-lock-sec-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #ffffff;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 140ms ease;
+}
+.btn-lock-sec-toggle:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+.btn-lock-sec-toggle.is-sec-locked {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: #f59e0b;
+}
+.btn-lock-sec-toggle.is-sec-locked:hover {
+  background: #fde68a;
+  border-color: #d97706;
+}
+
+.section-locked-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  color: #92400e;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.section-locked-banner svg {
+  flex-shrink: 0;
+}
+
+.badge-card-sec-locked {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #facc15;
+  font-size: 9px;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  box-shadow: 0 1px 2px rgba(180, 83, 9, 0.12);
+}
+
+.cell-class-inner.card-sec-locked {
+  cursor: default !important;
+}
+.cell-class-inner.card-sec-locked:hover {
+  cursor: default !important;
+  transform: none !important;
+}
+.cell-class-inner.card-sec-locked .cell-drag-indicator,
+.cell-class-inner.card-sec-locked .btn-card-delete {
+  display: none !important;
+}
+
+/* Section Lock Modal Styling */
+.section-lock-card {
+  max-width: 820px !important;
+}
+.section-lock-table-wrap {
+  max-height: 58vh;
+  overflow-y: auto;
+  padding: 8px 16px;
+}
+.section-lock-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  border-radius: 6px;
+  transition: background 120ms ease;
+}
+.section-lock-row:hover {
+  background: #f8fafc;
+}
+.section-lock-row.is-locked {
+  background: #fffbeb;
+  border-bottom-color: #fef3c7;
+}
+.section-lock-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+.section-lock-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+}
+.section-lock-grade-badge {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: #e2e8f0;
+  color: #334155;
+}
+.section-lock-shift-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+.section-lock-subject-count {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 600;
+}
+.section-lock-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-sec-lock-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #334155;
+  transition: all 120ms ease;
+}
+.btn-sec-lock-action:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+.btn-sec-lock-action.action-unlock {
+  background: #ecfdf5;
+  color: #065f46;
+  border-color: #a7f3d0;
+}
+.btn-sec-lock-action.action-unlock:hover {
+  background: #d1fae5;
+  border-color: #6ee7b7;
+}
+.btn-sec-lock-action.action-lock {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: #f59e0b;
+}
+.btn-sec-lock-action.action-lock:hover {
+  background: #fde68a;
+  border-color: #d97706;
+}
+
 </style>
 </head>
 <body>
@@ -3141,6 +3314,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
       <button class="btn-drag-action btn-duplicate-jump" id="btnDuplicateJump" onclick="scheduleEditor.openDuplicateChecker()" title="Open Duplicate Subject Checker (Shareable Report)" style="display:inline-flex; background:#fef9c3; color:#854d0e; border:1px solid #facc15; font-weight:800;">
         <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
         <span id="duplicateJumpText">Duplicate Checker</span>
+      </button>
+      <button class="btn-drag-action btn-section-locks" id="btnSectionLocks" onclick="scheduleEditor.openSectionLockModal()" title="Manage Section Exam Schedule Locks" style="display:inline-flex; background:#f8fafc; color:#334155; border:1px solid #cbd5e1; font-weight:800;">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+        <span id="sectionLocksBtnText">Section Locks (0)</span>
       </button>
       <button class="btn-drag-action" id="btnUndo" onclick="scheduleEditor.undo()" title="Undo (Ctrl+Z)" disabled>
         <svg viewBox="0 0 24 24"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.22 3.16-1.98 5.12-1.98 3.77 0 6.9 2.61 7.7 6.13l2.42-.8C21.48 10.87 17.38 8 12.5 8z"/></svg>
@@ -3265,6 +3442,45 @@ body.admin-edit-unlocked .lock-indicator-pill {
     <div class="conflict-inspector-footer" style="background:#f8fafc;">
       <span class="conflict-footer-hint">Click <strong>Section View</strong> or <strong>Faculty View</strong> to jump directly to that cell.</span>
       <button type="button" class="btn-modal-cancel" onclick="scheduleEditor.closeDuplicateChecker()">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Section Exam Schedule Locks Modal -->
+<div id="sectionLockModal" class="admin-login-modal-overlay" style="display:none;" onclick="if(event.target === this) scheduleEditor.closeSectionLockModal()">
+  <div class="admin-login-card conflict-inspector-card section-lock-card">
+    <div class="conflict-inspector-header" style="background:#fffdf7;">
+      <div class="conflict-header-title-wrap">
+        <div class="conflict-icon-wrap" style="background:#fef3c7;">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="#b45309"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+        </div>
+        <div>
+          <h2 style="margin:0; font-size:18px; color:#0f172a; font-weight:800;">Section Exam Schedule Locks</h2>
+          <p id="sectionLockCounts" style="margin:2px 0 0; font-size:12px; color:#64748b;">Locking a section auto-locks its subjects across both Section &amp; Faculty timetables</p>
+        </div>
+      </div>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <button type="button" class="btn-action" onclick="scheduleEditor.lockAllSections()" style="display:inline-flex; align-items:center; gap:5px; padding:6px 12px; border-radius:8px; background:#fef3c7; color:#92400e; border:1px solid #f59e0b; font-weight:800; font-size:12px; cursor:pointer;" title="Lock all section exam schedules">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          Lock All
+        </button>
+        <button type="button" class="btn-action" onclick="scheduleEditor.unlockAllSections()" style="display:inline-flex; align-items:center; gap:5px; padding:6px 12px; border-radius:8px; background:#ecfdf5; color:#065f46; border:1px solid #a7f3d0; font-weight:800; font-size:12px; cursor:pointer;" title="Unlock all section exam schedules">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"/></svg>
+          Unlock All
+        </button>
+        <button type="button" class="btn-modal-cancel" style="padding:4px 10px; font-size:18px; border-radius:8px; line-height:1;" onclick="scheduleEditor.closeSectionLockModal()" title="Close">&times;</button>
+      </div>
+    </div>
+    <div style="padding:10px 16px; background:#ffffff; border-bottom:1px solid #e2e8f0; display:flex; align-items:center; gap:10px;">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="#64748b"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+      <input type="text" id="sectionLockSearch" placeholder="Search section by name or grade (e.g. K2, Grade 7, Abu Bakr, Boys)..." oninput="scheduleEditor.renderSectionLockModalList(this.value)" style="flex:1; border:none; outline:none; font-size:13px; font-weight:600; color:#0f172a;">
+    </div>
+    <div id="sectionLockList" class="section-lock-table-wrap">
+      <!-- Dynamically filled with section rows -->
+    </div>
+    <div class="conflict-inspector-footer" style="background:#f8fafc;">
+      <span class="conflict-footer-hint">Auto-locking is section-specific ("depende po"). Unlocked sections remain fully editable.</span>
+      <button type="button" class="btn-modal-cancel" onclick="scheduleEditor.closeSectionLockModal()">Close</button>
     </div>
   </div>
 </div>
@@ -7854,8 +8070,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
     isSyncing: false,
     lastSavedTimestamp: 0,
     realtimeSyncTimer: null,
+    lockedSectionIds: new Set(),
 
     init: function() {
+      this.loadLockedSections();
       // Check session authentication
       try {
         const auth = sessionStorage.getItem('AMIS_ADMIN_EDIT_AUTH');
@@ -8056,6 +8274,9 @@ body.admin-edit-unlocked .lock-indicator-pill {
       if (dropZoneType === 'faculty' && targetTeacherId && targetTeacherId !== srcTeacherId) {
         return { status: 'CONFLICT', label: 'OTHER TCHR', reason: 'Different teacher timetable' };
       }
+      if (dropZoneType === 'section' && targetSectionId && this.isSectionLocked(targetSectionId)) {
+        return { status: 'CONFLICT', label: 'SEC LOCKED', reason: 'Target section exam schedule is locked' };
+      }
 
       // 3. Find if target cell already has exams
       let targetExams = [];
@@ -8087,6 +8308,15 @@ body.admin-edit-unlocked .lock-indicator-pill {
       if (targetExams.length > 0) {
         // SWAP EVALUATION
         const targetExam = targetExams[0];
+        if (targetExam && this.isSectionLocked(targetExam.section_id)) {
+          const sName = cleanSectionName(targetExam.section_name || 'Target Section');
+          return {
+            status: 'SWAP_CONFLICT',
+            label: 'CANNOT SWAP',
+            shortReason: `${sName} locked`,
+            reason: `Cannot swap: ${sName} is locked`
+          };
+        }
         
         // Check source at target slot
         const srcTeacherBusy = EXAM_RECORDS.find(e =>
@@ -8333,6 +8563,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
 
     handlePointerDown: function(ev, examId) {
       if (!this.isEditUnlocked) return;
+      const exam = EXAM_RECORDS.find(e => e.id === examId);
+      if (exam && this.isSectionLocked(exam.section_id)) return;
       if (this.holdTimer) clearTimeout(this.holdTimer);
       this.holdTimer = setTimeout(() => {
         this.highlightDropTargets(examId);
@@ -8356,6 +8588,14 @@ body.admin-edit-unlocked .lock-indicator-pill {
       const el = ev.currentTarget;
       const examId = el.getAttribute('data-exam-id');
       if (!examId) return;
+
+      const exam = EXAM_RECORDS.find(e => e.id === examId);
+      if (exam && this.isSectionLocked(exam.section_id)) {
+        if (ev && ev.preventDefault) ev.preventDefault();
+        const sName = cleanSectionName(exam.section_name || 'Section');
+        this.showToast(`Cannot move "${publicExamSubject(exam)}": Section "${sName}" is locked.`);
+        return;
+      }
 
       this.draggedExamId = examId;
       el.classList.add('is-dragging');
@@ -8426,6 +8666,20 @@ body.admin-edit-unlocked .lock-indicator-pill {
 
       if (!examId) return;
 
+      const exam = EXAM_RECORDS.find(e => e.id === examId);
+      if (exam && this.isSectionLocked(exam.section_id)) {
+        const sName = cleanSectionName(exam.section_name || 'Section');
+        this.showToast(`Cannot move: Section "${sName}" is locked.`);
+        return;
+      }
+
+      const targetSectionId = cell.getAttribute('data-section-id');
+      const dropZoneType = cell.getAttribute('data-drop-zone');
+      if (dropZoneType === 'section' && targetSectionId && this.isSectionLocked(targetSectionId)) {
+        this.showToast("Cannot drop into locked section timetable.");
+        return;
+      }
+
       if (status === 'CONFLICT' || status === 'SWAP_CONFLICT') {
         const reason = cell.getAttribute('data-drop-reason') || 'Schedule clash detected';
         const allowForce = confirm("Target slot has a conflict:\n" + reason + "\n\nForce move anyway? You can adjust the other conflicting teacher afterwards.");
@@ -8436,9 +8690,6 @@ body.admin-edit-unlocked .lock-indicator-pill {
       const targetRowTime = cell.getAttribute('data-row-time');
       const targetSlotNum = Number(cell.getAttribute('data-slot-num'));
       const targetTeacherId = cell.getAttribute('data-teacher-id');
-      const targetSectionId = cell.getAttribute('data-section-id');
-      const dropZoneType = cell.getAttribute('data-drop-zone');
-
       this.executeMoveOrSwap({
         sourceExamId: examId,
         targetDayNum,
@@ -8453,6 +8704,12 @@ body.admin-edit-unlocked .lock-indicator-pill {
     handleExamCardClick: function(ev, examId) {
       if (!this.isEditUnlocked) return;
       ev.stopPropagation();
+      const exam = EXAM_RECORDS.find(e => e.id === examId);
+      if (exam && this.isSectionLocked(exam.section_id)) {
+        const sName = cleanSectionName(exam.section_name || 'Section');
+        this.showToast(`"${publicExamSubject(exam)}" is locked because Section "${sName}" is locked.`);
+        return;
+      }
       if (this.selectedExamId === examId) {
         this.deselect();
         return;
@@ -8462,7 +8719,6 @@ body.admin-edit-unlocked .lock-indicator-pill {
       const card = document.querySelector(`[data-exam-id="${examId}"]`);
       if (card) card.classList.add('is-selected');
 
-      const exam = EXAM_RECORDS.find(e => e.id === examId);
       const subName = exam ? publicExamSubject(exam) : 'Subject';
       this.highlightDropTargets(examId);
       this.showToast(`Selected "${subName}". Click any green VACANT slot to move, or green SWAP OK slot to swap.`, "Cancel", () => this.deselect());
@@ -8733,7 +8989,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             schedule: EXAM_RECORDS,
-            updated_at: now
+            updated_at: now,
+            locked_sections: this.lockedSectionIds ? [...this.lockedSectionIds] : []
           })
         });
         if (resp.ok) {
@@ -8826,7 +9083,11 @@ body.admin-edit-unlocked .lock-indicator-pill {
           const resp = await fetch('/api/save-schedule?t=' + Date.now());
           if (!resp.ok) return;
           const data = await resp.json();
-          if (data && data.ok && Array.isArray(data.schedule) && data.schedule.length > 50) {
+          if (data && data.ok) {
+            if (Array.isArray(data.locked_sections)) {
+              this.syncLockedSectionsFromServer(data.locked_sections);
+            }
+            if (Array.isArray(data.schedule) && data.schedule.length > 50) {
             const serverTime = Number(data.updated_at) || 0;
             const isDiff = this.schedulesDiffer(EXAM_RECORDS, data.schedule);
 
@@ -8856,9 +9117,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
               this.lastSavedTimestamp = serverTime;
             }
           }
-        } catch (e) {
-          // Silent catch during background poll
         }
+      } catch (e) {
+        // Silent catch during background poll
+      }
       };
 
       // Poll every 1500ms (1.5 seconds) for real-time responsiveness
@@ -8909,6 +9171,11 @@ body.admin-edit-unlocked .lock-indicator-pill {
       }
       const exam = EXAM_RECORDS.find(e => e.id === examId);
       if (!exam) return;
+      if (this.isSectionLocked(exam.section_id)) {
+        const sName = cleanSectionName(exam.section_name || exam.section || 'Section');
+        this.showToast(`Cannot delete "${publicExamSubject(exam)}": Section "${sName}" is locked.`);
+        return;
+      }
       const subName = publicExamSubject(exam);
       const teacherName = exam.subject_teacher || exam.teacher || 'Teacher';
       const secName = cleanSectionName(exam.section_name || exam.section || 'Section');
@@ -9099,10 +9366,15 @@ body.admin-edit-unlocked .lock-indicator-pill {
           const apiResp = await fetch('/api/save-schedule?t=' + Date.now());
           if (apiResp.ok) {
             const data = await apiResp.json();
-            if (data && data.ok && Array.isArray(data.schedule) && data.schedule.length > 50) {
-              EXAM_RECORDS = data.schedule;
-              this.lastSavedTimestamp = Number(data.updated_at) || Date.now();
-              fetched = true;
+            if (data && data.ok) {
+              if (Array.isArray(data.locked_sections)) {
+                this.applyLockedSections(data.locked_sections);
+              }
+              if (Array.isArray(data.schedule) && data.schedule.length > 50) {
+                EXAM_RECORDS = data.schedule;
+                this.lastSavedTimestamp = Number(data.updated_at) || Date.now();
+                fetched = true;
+              }
             }
           }
         } catch (err) {}
@@ -9190,6 +9462,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
           lockPillText.textContent = 'Read-Only (Press 5 to Edit)';
         }
       }
+
+      this.updateSectionLockPills();
     },
 
     showToast: function(message, actionLabel, actionCb) {
@@ -9566,6 +9840,207 @@ body.admin-edit-unlocked .lock-indicator-pill {
           this.showToast("Conflict location opened on timetable.");
         }
       }, 120);
+    },
+
+    // --- SECTION LOCK MANAGEMENT ---
+    isSectionLocked: function(sectionId) {
+      if (!sectionId || !this.lockedSectionIds) return false;
+      return this.lockedSectionIds.has(sectionId);
+    },
+
+    toggleSectionLock: function(sectionId) {
+      if (!sectionId) return;
+      if (!this.lockedSectionIds) this.lockedSectionIds = new Set();
+      const isLocked = this.lockedSectionIds.has(sectionId);
+      if (isLocked) {
+        this.lockedSectionIds.delete(sectionId);
+      } else {
+        this.lockedSectionIds.add(sectionId);
+      }
+      this.saveLockedSections();
+      const sec = (window.SECTIONS_DATA || []).find(s => s.id === sectionId);
+      const secName = sec ? sec.section_name : sectionId;
+      const stateStr = isLocked ? 'UNLOCKED' : 'LOCKED';
+      this.showToast(`Section "${secName}" is now ${stateStr}.`);
+      this.refreshViewsAfterLockChange();
+    },
+
+    lockAllSections: function() {
+      if (!this.lockedSectionIds) this.lockedSectionIds = new Set();
+      const sections = window.SECTIONS_DATA || [];
+      sections.forEach(s => {
+        if (s.id) this.lockedSectionIds.add(s.id);
+      });
+      this.saveLockedSections();
+      this.showToast(`All ${sections.length} section schedules are now LOCKED.`);
+      this.refreshViewsAfterLockChange();
+      this.renderSectionLockModalList();
+    },
+
+    unlockAllSections: function() {
+      if (!this.lockedSectionIds) this.lockedSectionIds = new Set();
+      this.lockedSectionIds.clear();
+      this.saveLockedSections();
+      this.showToast('All section schedules are now UNLOCKED.');
+      this.refreshViewsAfterLockChange();
+      this.renderSectionLockModalList();
+    },
+
+    saveLockedSections: function() {
+      if (!this.lockedSectionIds) this.lockedSectionIds = new Set();
+      const arr = [...this.lockedSectionIds];
+      try {
+        localStorage.setItem('AMIS_LOCKED_SECTIONS', JSON.stringify(arr));
+      } catch (e) {}
+      this.performServerAutoSave();
+    },
+
+    loadLockedSections: function() {
+      try {
+        const saved = localStorage.getItem('AMIS_LOCKED_SECTIONS');
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed)) {
+            this.lockedSectionIds = new Set(parsed);
+          }
+        }
+      } catch (e) {}
+    },
+
+    applyLockedSections: function(lockedArr) {
+      if (Array.isArray(lockedArr)) {
+        this.lockedSectionIds = new Set(lockedArr);
+        try {
+          localStorage.setItem('AMIS_LOCKED_SECTIONS', JSON.stringify(lockedArr));
+        } catch (e) {}
+        this.updateSectionLockPills();
+      }
+    },
+
+    syncLockedSectionsFromServer: function(lockedArr) {
+      if (!Array.isArray(lockedArr)) return;
+      if (!this.lockedSectionIds) this.lockedSectionIds = new Set();
+      let diff = false;
+      if (this.lockedSectionIds.size !== lockedArr.length) {
+        diff = true;
+      } else {
+        for (const id of lockedArr) {
+          if (!this.lockedSectionIds.has(id)) {
+            diff = true;
+            break;
+          }
+        }
+      }
+      if (diff) {
+        this.lockedSectionIds = new Set(lockedArr);
+        try {
+          localStorage.setItem('AMIS_LOCKED_SECTIONS', JSON.stringify(lockedArr));
+        } catch (e) {}
+        this.refreshViewsAfterLockChange();
+      }
+    },
+
+    refreshViewsAfterLockChange: function() {
+      this.updateSectionLockPills();
+      const teacherSelect = document.getElementById('teacherSelect');
+      const selectedTid = teacherSelect ? teacherSelect.value : 'ALL_FACULTY';
+      if (currentTab === 'FACULTY') {
+        renderFacultyView(selectedTid);
+        renderFacultyToolbar();
+      } else if (currentTab === 'SECTION') {
+        renderSectionView();
+        renderSectionToolbar();
+      }
+    },
+
+    updateSectionLockPills: function() {
+      const count = this.lockedSectionIds ? this.lockedSectionIds.size : 0;
+      const btn = document.getElementById('sectionLocksBtnText');
+      if (btn) btn.textContent = `Section Locks (${count})`;
+    },
+
+    openSectionLockModal: function() {
+      const modal = document.getElementById('sectionLockModal');
+      if (!modal) return;
+      this.renderSectionLockModalList();
+      modal.style.display = 'flex';
+      setTimeout(() => {
+        const input = document.getElementById('sectionLockSearch');
+        if (input) input.focus();
+      }, 60);
+    },
+
+    closeSectionLockModal: function() {
+      const modal = document.getElementById('sectionLockModal');
+      if (modal) modal.style.display = 'none';
+    },
+
+    renderSectionLockModalList: function(query = '') {
+      const listEl = document.getElementById('sectionLockList');
+      const countEl = document.getElementById('sectionLockCounts');
+      if (!listEl) return;
+
+      const q = (query || (document.getElementById('sectionLockSearch') ? document.getElementById('sectionLockSearch').value : '')).toLowerCase().trim();
+      const sections = window.SECTIONS_DATA || [];
+      const total = sections.length;
+      const lockedCount = this.lockedSectionIds ? this.lockedSectionIds.size : 0;
+
+      if (countEl) {
+        countEl.textContent = `Locked: ${lockedCount} of ${total} Sections (${total - lockedCount} Unlocked)`;
+      }
+
+      let filtered = sections;
+      if (q) {
+        filtered = sections.filter(s => 
+          (s.section_name || '').toLowerCase().includes(q) ||
+          (s.grade_level || '').toLowerCase().includes(q) ||
+          (s.shift || '').toLowerCase().includes(q)
+        );
+      }
+
+      if (filtered.length === 0) {
+        listEl.innerHTML = `<div style="text-align:center; padding:30px; color:#64748b;">No sections match "${esc(q)}".</div>`;
+        return;
+      }
+
+      const examCounts = {};
+      EXAM_RECORDS.forEach(e => {
+        if (e.section_id) {
+          examCounts[e.section_id] = (examCounts[e.section_id] || 0) + 1;
+        }
+      });
+
+      let html = '';
+      filtered.forEach(sec => {
+        const isLocked = this.isSectionLocked(sec.id);
+        const subCount = examCounts[sec.id] || 0;
+        const gLevel = sec.grade_level || 'Grade';
+        const shift = sec.shift || 'Shift';
+
+        html += `
+          <div class="section-lock-row ${isLocked ? 'is-locked' : ''}">
+            <div class="section-lock-info">
+              <span class="section-lock-grade-badge">${esc(gLevel)}</span>
+              <div>
+                <div class="section-lock-name">${esc(sec.section_name)}</div>
+                <div style="display:flex; align-items:center; gap:6px; margin-top:2px;">
+                  <span class="section-lock-shift-badge">${esc(shift)}</span>
+                  <span class="section-lock-subject-count">• ${subCount} subjects scheduled</span>
+                  ${isLocked ? '<span class="badge-card-sec-locked" style="font-size:8.5px; padding:0 4px;">LOCKED</span>' : ''}
+                </div>
+              </div>
+            </div>
+            <div class="section-lock-actions">
+              <button type="button" class="btn-sec-lock-action ${isLocked ? 'action-unlock' : 'action-lock'}" onclick="scheduleEditor.toggleSectionLock('${sec.id}'); scheduleEditor.renderSectionLockModalList();">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="${isLocked ? 'M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z' : 'M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z'}"/></svg>
+                ${isLocked ? 'Unlock' : 'Lock'}
+              </button>
+            </div>
+          </div>
+        `;
+      });
+
+      listEl.innerHTML = html;
     }
   };
 
@@ -9584,11 +10059,16 @@ body.admin-edit-unlocked .lock-indicator-pill {
         const liveResp = await fetch('/api/save-schedule?t=' + Date.now());
         if (liveResp.ok) {
           const liveData = await liveResp.json();
-          if (liveData && liveData.ok && Array.isArray(liveData.schedule) && liveData.schedule.length > 50) {
-            EXAM_RECORDS = liveData.schedule;
-            liveLoaded = true;
-            if (window.scheduleEditor) {
-              window.scheduleEditor.lastSavedTimestamp = Number(liveData.updated_at) || Date.now();
+          if (liveData && liveData.ok) {
+            if (window.scheduleEditor && Array.isArray(liveData.locked_sections)) {
+              window.scheduleEditor.applyLockedSections(liveData.locked_sections);
+            }
+            if (Array.isArray(liveData.schedule) && liveData.schedule.length > 50) {
+              EXAM_RECORDS = liveData.schedule;
+              liveLoaded = true;
+              if (window.scheduleEditor) {
+                window.scheduleEditor.lastSavedTimestamp = Number(liveData.updated_at) || Date.now();
+              }
             }
           }
         }
@@ -9676,6 +10156,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
         <button type="button" class="btn-action" onclick="scheduleEditor.openDuplicateChecker()" title="Open Duplicate Subject Checker (Shareable Report)" style="background:#fef9c3; color:#854d0e; border:1px solid #facc15; font-weight:800; display:inline-flex; align-items:center; gap:5px; height:36px; padding:0 12px; border-radius:8px; cursor:pointer; font-size:12.5px;">
           <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
           <span>Duplicate Checker</span>
+        </button>
+        <button type="button" class="btn-action" onclick="scheduleEditor.openSectionLockModal()" title="Manage Section Exam Schedule Locks" style="background:${(window.scheduleEditor && window.scheduleEditor.lockedSectionIds && window.scheduleEditor.lockedSectionIds.size > 0) ? '#fef3c7' : '#f8fafc'}; color:${(window.scheduleEditor && window.scheduleEditor.lockedSectionIds && window.scheduleEditor.lockedSectionIds.size > 0) ? '#92400e' : '#334155'}; border:1px solid ${(window.scheduleEditor && window.scheduleEditor.lockedSectionIds && window.scheduleEditor.lockedSectionIds.size > 0) ? '#f59e0b' : '#cbd5e1'}; font-weight:800; display:inline-flex; align-items:center; gap:5px; height:36px; padding:0 12px; border-radius:8px; cursor:pointer; font-size:12.5px;">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          <span>Section Locks (${(window.scheduleEditor && window.scheduleEditor.lockedSectionIds) ? window.scheduleEditor.lockedSectionIds.size : 0})</span>
         </button>
         ${AMISScheduleExport.toolbarButtonHtml()}
         <a href="index.html" class="btn-action btn-back" title="Back to Home">
@@ -9818,6 +10302,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
         ? allSecExams.filter(e => subjectMatchesQuery(publicExamSubject(e), subjectQuery))
         : allSecExams;
       const totalSubjectCount = secExams.length;
+      const isSecLocked = Boolean(window.scheduleEditor && window.scheduleEditor.isSectionLocked(sec.id));
 
       fullHtml += `
         <div class="timetable-sheet" id="sheet_${sec.id}" data-export-kind="Section" data-export-name="${esc(sec.section_name)}">
@@ -9837,6 +10322,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
           <div class="teacher-banner">
             <span class="teacher-name-title">${esc(sec.section_name.toUpperCase())}</span>
             <div style="display:flex; align-items:center; gap:8px;">
+              <button type="button" class="btn-lock-sec-toggle ${isSecLocked ? 'is-sec-locked' : ''}" onclick="scheduleEditor.toggleSectionLock('${sec.id}')" title="${isSecLocked ? 'Click to Unlock this section exam schedule' : 'Click to Lock this section exam schedule'}">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="vertical-align:-1px;"><path d="${isSecLocked ? 'M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z' : 'M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z'}"/></svg>
+                <span>${isSecLocked ? 'Locked' : 'Lock Section'}</span>
+              </button>
               ${AMISScheduleExport.controlsHtml()}
               <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
                 <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
@@ -9844,6 +10333,13 @@ body.admin-edit-unlocked .lock-indicator-pill {
               </button>
             </div>
           </div>
+
+          ${isSecLocked ? `
+            <div class="section-locked-banner" role="status">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+              <span>Section Locked: Exam schedule for ${esc(sec.section_name)} is locked. Editing and dragging are disabled.</span>
+            </div>
+          ` : ''}
 
           <div class="mobile-scroll-hint" role="note">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 8.59 3 13l4.41 4.41L8.83 16l-2-2H17v2l4-3-4-3v2H6.83l2-2-1.42-1.41z"/></svg>
@@ -9956,7 +10452,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
                   }
                 }
 
-                fullHtml += `
+                    const canDragExam = isUnlocked && !isSecLocked;
+                    fullHtml += `
                   <td id="${cellId}" class="cell-class ${isClashing ? 'cell-conflict-clash' : (isDuplicateSubject ? 'cell-duplicate-subject' : '')}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
                       data-drop-zone="section"
                       data-section-id="${sec.id}"
@@ -9989,8 +10486,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
                         <span>DUPLICATE (${dupInfo.count}X)</span>
                       </div>
                     ` : ''}
-                    <div class="cell-class-inner ${isClashing ? 'card-has-clash' : ''}"
-                         draggable="${isUnlocked ? 'true' : 'false'}"
+                    <div class="cell-class-inner ${isClashing ? 'card-has-clash' : ''} ${isSecLocked ? 'card-sec-locked' : ''}"
+                         draggable="${canDragExam ? 'true' : 'false'}"
                          data-exam-id="${match.id}"
                          data-section-id="${sec.id}"
                          data-teacher-id="${match.teacher_id || match.subject_teacher_id}"
@@ -9999,20 +10496,22 @@ body.admin-edit-unlocked .lock-indicator-pill {
                          onpointerdown="scheduleEditor.handlePointerDown(event, '${match.id}')"
                          onpointerup="scheduleEditor.handlePointerUp(event)"
                          onclick="scheduleEditor.handleExamCardClick(event, '${match.id}')"
-                         title="${isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : ''}"
+                         title="${isSecLocked ? 'Locked (Section Exam Schedule is locked)' : (isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : '')}"
                          style="${isClashing ? `background:${color.bg}; border:1.5px solid #ef4444; border-left:5px solid #dc2626; border-radius:6px; color:${color.text};` : ''}">
-                      ${isUnlocked ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
-                      <button type="button" class="btn-card-delete" onclick="scheduleEditor.deleteExam(event, '${match.id}')" title="Delete subject from timetable" aria-label="Delete subject">&times;</button>
+                      ${canDragExam ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
+                      ${canDragExam ? `<button type="button" class="btn-card-delete" onclick="scheduleEditor.deleteExam(event, '${match.id}')" title="Delete subject from timetable" aria-label="Delete subject">&times;</button>` : ''}
                       <span class="cell-subject-sec">${esc(displayedSubject)}</span>
                       <span class="cell-teacher-name">${esc(match.subject_teacher || match.teacher)}</span>
                       <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
                         <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
+                        ${isSecLocked ? '<span class="badge-card-sec-locked" title="Section Exam Schedule is locked">LOCKED</span>' : ''}
                         ${isClashing ? `<span class="badge-card-clash-pill" title="${esc(clashBannerText)}">${clashPillText}</span>` : ''}
                       </div>
                     </div>
                   </td>
                 `;
               } else {
+                const canDragExam = isUnlocked && !isSecLocked;
                 fullHtml += `
                   <td id="${cellId}" class="cell-class ${hasConflict ? 'cell-conflict-clash' : (hasAnyDuplicate ? 'cell-duplicate-subject' : '')}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
                       data-drop-zone="section"
@@ -10040,8 +10539,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
                         const mIsDup = dupMap.has(m.id);
                         const mDupInfo = mIsDup ? dupMap.get(m.id) : null;
                         return `
-                          <div class="cell-class-inner card-has-clash"
-                               draggable="${isUnlocked ? 'true' : 'false'}"
+                          <div class="cell-class-inner card-has-clash ${isSecLocked ? 'card-sec-locked' : ''}"
+                               draggable="${canDragExam ? 'true' : 'false'}"
                                data-exam-id="${m.id}"
                                data-section-id="${sec.id}"
                                data-teacher-id="${m.teacher_id || m.subject_teacher_id}"
@@ -10050,10 +10549,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
                                onpointerdown="scheduleEditor.handlePointerDown(event, '${m.id}')"
                                onpointerup="scheduleEditor.handlePointerUp(event)"
                                onclick="scheduleEditor.handleExamCardClick(event, '${m.id}')"
-                               title="${isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : ''}"
+                               title="${isSecLocked ? 'Locked (Section Exam Schedule is locked)' : (isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : '')}"
                                style="background:${mColor.bg}; border:1.5px solid #ef4444; border-left:5px solid #dc2626; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 3px rgba(220,38,38,0.2);">
-                            ${isUnlocked ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
-                            <button type="button" class="btn-card-delete" onclick="scheduleEditor.deleteExam(event, '${m.id}')" title="Delete subject from timetable" aria-label="Delete subject">&times;</button>
+                            ${canDragExam ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
+                            ${canDragExam ? `<button type="button" class="btn-card-delete" onclick="scheduleEditor.deleteExam(event, '${m.id}')" title="Delete subject from timetable" aria-label="Delete subject">&times;</button>` : ''}
                             ${mIsDup ? `
                               <div class="cell-duplicate-alert-banner" style="margin-bottom:3px; padding:1.5px 5px; font-size:9.5px;" title="Warning: Duplicate subject! ${esc(mSubject)} appears ${mDupInfo.count} times in this section.">
                                 <svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
@@ -10064,6 +10563,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
                             <span class="cell-teacher-name" style="font-size:11.5px;">${esc(m.subject_teacher || m.teacher)}</span>
                             <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
                               <span class="cell-duration-badge ${mIs120 ? 'badge-120' : ''}" style="font-size:9.5px; padding:2px 6px;">${m.duration_minutes || 60} MIN</span>
+                              ${isSecLocked ? '<span class="badge-card-sec-locked" title="Section Exam Schedule is locked">LOCKED</span>' : ''}
                               <span class="badge-card-clash-pill">OVERLAPPING EXAM</span>
                             </div>
                           </div>
@@ -10460,6 +10960,11 @@ body.admin-edit-unlocked .lock-indicator-pill {
         <span>Duplicate Checker</span>
       </button>
 
+      <button type="button" class="btn-action" onclick="scheduleEditor.openSectionLockModal()" title="Manage Section Exam Schedule Locks" style="background:${(window.scheduleEditor && window.scheduleEditor.lockedSectionIds && window.scheduleEditor.lockedSectionIds.size > 0) ? '#fef3c7' : '#f8fafc'}; color:${(window.scheduleEditor && window.scheduleEditor.lockedSectionIds && window.scheduleEditor.lockedSectionIds.size > 0) ? '#92400e' : '#334155'}; border:1px solid ${(window.scheduleEditor && window.scheduleEditor.lockedSectionIds && window.scheduleEditor.lockedSectionIds.size > 0) ? '#f59e0b' : '#cbd5e1'}; font-weight:800; display:inline-flex; align-items:center; gap:5px; height:36px; padding:0 12px; border-radius:8px; cursor:pointer; font-size:12.5px;">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+        <span>Section Locks (${(window.scheduleEditor && window.scheduleEditor.lockedSectionIds) ? window.scheduleEditor.lockedSectionIds.size : 0})</span>
+      </button>
+
       ${AMISScheduleExport.toolbarButtonHtml()}
 
       <a href="index.html" class="btn-action btn-back" title="Back to Home">
@@ -10762,6 +11267,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
                   }
                 }
 
+                const isCardSecLocked = Boolean(window.scheduleEditor && window.scheduleEditor.isSectionLocked(match.section_id));
+                const canDragThisCard = isUnlocked && !isCardSecLocked;
                 fullHtml += `
                   <td id="${cellId}" class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''} ${isClashing ? 'cell-conflict-clash' : (isDuplicateSubject ? 'cell-duplicate-subject' : '')}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
                       data-drop-zone="faculty"
@@ -10783,8 +11290,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
                         ${clashBannerText}
                       </div>
                     ` : ''}
-                    <div class="cell-class-inner ${isClashing ? 'card-has-clash' : ''}"
-                         draggable="${isUnlocked ? 'true' : 'false'}"
+                    <div class="cell-class-inner ${isClashing ? 'card-has-clash' : ''} ${isCardSecLocked ? 'card-sec-locked' : ''}"
+                         draggable="${canDragThisCard ? 'true' : 'false'}"
                          data-exam-id="${match.id}"
                          data-teacher-id="${t.id}"
                          data-section-id="${match.section_id}"
@@ -10793,21 +11300,27 @@ body.admin-edit-unlocked .lock-indicator-pill {
                          onpointerdown="scheduleEditor.handlePointerDown(event, '${match.id}')"
                          onpointerup="scheduleEditor.handlePointerUp(event)"
                          onclick="scheduleEditor.handleExamCardClick(event, '${match.id}')"
-                         title="${isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : ''}"
+                         title="${isCardSecLocked ? 'Auto-locked (Section Exam Schedule is locked)' : (isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : '')}"
                          style="${isClashing ? `background:${color.bg}; border:1.5px solid #ef4444; border-left:5px solid #dc2626; border-radius:6px; color:${color.text};` : ''}">
-                      ${isUnlocked ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
-                      <button type="button" class="btn-card-delete" onclick="scheduleEditor.deleteExam(event, '${match.id}')" title="Delete subject from timetable" aria-label="Delete subject">&times;</button>
+                      ${canDragThisCard ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
+                      ${canDragThisCard ? `<button type="button" class="btn-card-delete" onclick="scheduleEditor.deleteExam(event, '${match.id}')" title="Delete subject from timetable" aria-label="Delete subject">&times;</button>` : ''}
                       ${isAutomaticProctorCoverage ? `
                         <span class="cell-subject-sec">${esc(displayedSubject)}</span>
                         <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                        ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
+                        <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
+                          ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
+                          ${isCardSecLocked ? '<span class="badge-card-sec-locked" title="Auto-locked: Section exam schedule is locked">LOCKED</span>' : ''}
+                        </div>
                       ` : `
                         <span class="cell-subject-sec">${esc(displayedSubject)}</span>
                         <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
-                        ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
-                        <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
+                        <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
+                          ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
+                          <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
+                          ${isCardSecLocked ? '<span class="badge-card-sec-locked" title="Auto-locked: Section exam schedule is locked">LOCKED</span>' : ''}
+                        </div>
                       `}
-                      ${isClashing ? '<span class="badge-card-clash-pill" title="${esc(clashBannerText)}">${clashPillText}</span>' : ''}
+                      ${isClashing ? `<span class="badge-card-clash-pill" title="${esc(clashBannerText)}">${clashPillText}</span>` : ''}
                     </div>
                   </td>
                 `;
@@ -10837,9 +11350,11 @@ body.admin-edit-unlocked .lock-indicator-pill {
                         const mColor = getSubjectColor(mSubject);
                         const mGenderChip = getExamGenderChip(m);
                         const mIs120 = m.duration_minutes === 120 || m.slots_spanned === 2;
+                        const isMultiCardSecLocked = Boolean(window.scheduleEditor && window.scheduleEditor.isSectionLocked(m.section_id));
+                        const canDragThisMultiCard = isUnlocked && !isMultiCardSecLocked;
                         return `
-                          <div class="cell-class-inner card-has-clash"
-                               draggable="${isUnlocked ? 'true' : 'false'}"
+                          <div class="cell-class-inner card-has-clash ${isMultiCardSecLocked ? 'card-sec-locked' : ''}"
+                               draggable="${canDragThisMultiCard ? 'true' : 'false'}"
                                data-exam-id="${m.id}"
                                data-teacher-id="${t.id}"
                                data-section-id="${m.section_id}"
@@ -10848,15 +11363,16 @@ body.admin-edit-unlocked .lock-indicator-pill {
                                onpointerdown="scheduleEditor.handlePointerDown(event, '${m.id}')"
                                onpointerup="scheduleEditor.handlePointerUp(event)"
                                onclick="scheduleEditor.handleExamCardClick(event, '${m.id}')"
-                               title="${isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : ''}"
+                               title="${isMultiCardSecLocked ? 'Auto-locked (Section Exam Schedule is locked)' : (isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : '')}"
                                style="background:${mColor.bg}; border:1.5px solid #ef4444; border-left:5px solid #dc2626; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 3px rgba(220,38,38,0.2);">
-                            ${isUnlocked ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
-                            <button type="button" class="btn-card-delete" onclick="scheduleEditor.deleteExam(event, '${m.id}')" title="Delete subject from timetable" aria-label="Delete subject">&times;</button>
+                            ${canDragThisMultiCard ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
+                            ${canDragThisMultiCard ? `<button type="button" class="btn-card-delete" onclick="scheduleEditor.deleteExam(event, '${m.id}')" title="Delete subject from timetable" aria-label="Delete subject">&times;</button>` : ''}
                             <span class="cell-subject-sec" style="font-size:13.5px; color:${mColor.text};">${esc(mSubject)}</span>
                             <span class="cell-section-name" style="font-size:11.5px;">${esc(cleanSectionName(m.section_name))}</span>
                             <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
                               ${mGenderChip ? `<span class="gender-chip ${mGenderChip.className}" style="font-size:9.5px; padding:1px 6px;">${mGenderChip.label}</span>` : ''}
                               <span class="cell-duration-badge ${mIs120 ? 'badge-120' : ''}" style="font-size:9.5px; padding:2px 6px;">${m.duration_minutes || 60} MIN</span>
+                              ${isMultiCardSecLocked ? '<span class="badge-card-sec-locked" title="Auto-locked: Section exam schedule is locked">LOCKED</span>' : ''}
                               <span class="badge-card-clash-pill">OVERLAPPING DUTY</span>
                             </div>
                           </div>

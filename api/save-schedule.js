@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 let inMemorySchedule = null;
+let inMemoryLockedSections = [];
 let inMemoryUpdatedAt = 0;
 
 function tryLoadScheduleFromDisk() {
@@ -14,6 +15,9 @@ function tryLoadScheduleFromDisk() {
       if (content && Array.isArray(content.schedule) && content.schedule.length > 50) {
         inMemorySchedule = content.schedule;
         inMemoryUpdatedAt = Number(content.updated_at) || fs.statSync(tmpPath).mtimeMs;
+        if (Array.isArray(content.locked_sections)) {
+          inMemoryLockedSections = content.locked_sections;
+        }
         return;
       }
     } catch (e) {}
@@ -57,28 +61,40 @@ module.exports = async function saveScheduleHandler(req, res) {
         if (body.updated_at) updatedAt = Number(body.updated_at);
       }
 
-      if (!exams || !Array.isArray(exams) || exams.length < 50) {
+      if ((!exams || !Array.isArray(exams) || exams.length < 50) && (!body || !Array.isArray(body.locked_sections))) {
         return res.status(400).json({
           ok: false,
-          error: 'Invalid exam data payload: expected array of >= 50 exams'
+          error: 'Invalid payload: expected schedule array (>= 50) or locked_sections array'
         });
       }
 
-      inMemorySchedule = exams;
-      inMemoryUpdatedAt = updatedAt;
+      if (exams && Array.isArray(exams) && exams.length >= 50) {
+        inMemorySchedule = exams;
+        inMemoryUpdatedAt = updatedAt;
+      }
+
+      if (body && Array.isArray(body.locked_sections)) {
+        inMemoryLockedSections = body.locked_sections;
+      }
+
+      if (!inMemorySchedule) {
+        tryLoadScheduleFromDisk();
+      }
 
       // Write to /tmp for durability across warm executions
       try {
         fs.writeFileSync('/tmp/amis_exam_schedule.json', JSON.stringify({
-          schedule: exams,
-          updated_at: updatedAt
+          schedule: inMemorySchedule,
+          updated_at: inMemoryUpdatedAt,
+          locked_sections: inMemoryLockedSections
         }), 'utf8');
       } catch (e) {}
 
       return res.status(200).json({
         ok: true,
         status: 'success',
-        count: exams.length,
+        count: inMemorySchedule ? inMemorySchedule.length : 0,
+        locked_sections_count: inMemoryLockedSections.length,
         updated_at: inMemoryUpdatedAt,
         message: 'Saved to Vercel realtime store'
       });
@@ -98,7 +114,8 @@ module.exports = async function saveScheduleHandler(req, res) {
         status: 'success',
         count: inMemorySchedule.length,
         updated_at: inMemoryUpdatedAt || Date.now(),
-        schedule: inMemorySchedule
+        schedule: inMemorySchedule,
+        locked_sections: inMemoryLockedSections || []
       });
     }
 
@@ -107,7 +124,8 @@ module.exports = async function saveScheduleHandler(req, res) {
       status: 'success',
       count: 0,
       updated_at: 0,
-      schedule: null
+      schedule: null,
+      locked_sections: []
     });
   }
 

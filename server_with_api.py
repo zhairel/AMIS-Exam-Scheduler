@@ -34,6 +34,15 @@ class AMISHandler(http.server.SimpleHTTPRequestHandler):
                 with open(target_json, "r", encoding="utf-8") as f:
                     exams = json.load(f)
 
+                locked_file = os.path.join(DIRECTORY, "locked_sections.json")
+                locked_sections = []
+                if os.path.exists(locked_file):
+                    try:
+                        with open(locked_file, "r", encoding="utf-8") as lf:
+                            locked_sections = json.load(lf)
+                    except:
+                        pass
+
                 self.send_response(200)
                 self.send_header("Content-Type", "application/json")
                 self.send_header("Access-Control-Allow-Origin", "*")
@@ -43,7 +52,8 @@ class AMISHandler(http.server.SimpleHTTPRequestHandler):
                     "status": "success",
                     "count": len(exams),
                     "updated_at": LAST_SCHEDULE_UPDATED_AT,
-                    "schedule": exams
+                    "schedule": exams,
+                    "locked_sections": locked_sections
                 }
                 self.wfile.write(json.dumps(res).encode('utf-8'))
             except Exception as e:
@@ -78,30 +88,39 @@ class AMISHandler(http.server.SimpleHTTPRequestHandler):
                         except (ValueError, TypeError):
                             pass
 
-                if not isinstance(data, list) or len(data) < 50:
-                    raise ValueError(f"Invalid exam data payload: expected array of >= 50 exams, got {len(data) if isinstance(data, list) else type(data)}")
+                has_schedule = isinstance(data, list) and len(data) >= 50
+                has_locked = isinstance(body, dict) and "locked_sections" in body and isinstance(body["locked_sections"], list)
 
-                json_str = json.dumps(data, indent=2)
-                js_str = f"window.AMIS_EXAM_DATA = {json_str};\n"
+                if not has_schedule and not has_locked:
+                    raise ValueError("Invalid payload: expected schedule array (>= 50) or locked_sections array")
 
-                # Write to current directory
-                target_json = os.path.join(DIRECTORY, "exam_data_2nd_term.json")
-                target_js = os.path.join(DIRECTORY, "exam_data_2nd_term.js")
-                with open(target_json, "w", encoding="utf-8") as f:
-                    f.write(json_str)
-                with open(target_js, "w", encoding="utf-8") as f:
-                    f.write(js_str)
+                if has_schedule:
+                    json_str = json.dumps(data, indent=2)
+                    js_str = f"window.AMIS_EXAM_DATA = {json_str};\n"
 
-                # Sync to parent workspace if different
-                parent_dir = os.path.dirname(DIRECTORY)
-                parent_json = os.path.join(parent_dir, "exam_data_2nd_term.json")
-                parent_js = os.path.join(parent_dir, "exam_data_2nd_term.js")
-                if os.path.exists(parent_json):
-                    with open(parent_json, "w", encoding="utf-8") as f:
+                    # Write to current directory
+                    target_json = os.path.join(DIRECTORY, "exam_data_2nd_term.json")
+                    target_js = os.path.join(DIRECTORY, "exam_data_2nd_term.js")
+                    with open(target_json, "w", encoding="utf-8") as f:
                         f.write(json_str)
-                if os.path.exists(parent_js):
-                    with open(parent_js, "w", encoding="utf-8") as f:
+                    with open(target_js, "w", encoding="utf-8") as f:
                         f.write(js_str)
+
+                    # Sync to parent workspace if different
+                    parent_dir = os.path.dirname(DIRECTORY)
+                    parent_json = os.path.join(parent_dir, "exam_data_2nd_term.json")
+                    parent_js = os.path.join(parent_dir, "exam_data_2nd_term.js")
+                    if os.path.exists(parent_json):
+                        with open(parent_json, "w", encoding="utf-8") as f:
+                            f.write(json_str)
+                    if os.path.exists(parent_js):
+                        with open(parent_js, "w", encoding="utf-8") as f:
+                            f.write(js_str)
+
+                if has_locked:
+                    locked_file = os.path.join(DIRECTORY, "locked_sections.json")
+                    with open(locked_file, "w", encoding="utf-8") as lf:
+                        json.dump(body["locked_sections"], lf, indent=2)
 
                 LAST_SCHEDULE_UPDATED_AT = max(updated_at, int(time.time() * 1000))
 
@@ -112,12 +131,15 @@ class AMISHandler(http.server.SimpleHTTPRequestHandler):
                 response = {
                     "ok": True,
                     "status": "success",
-                    "count": len(data),
+                    "count": len(data) if isinstance(data, list) else 0,
+                    "locked_sections_count": len(body["locked_sections"]) if has_locked else 0,
                     "updated_at": LAST_SCHEDULE_UPDATED_AT,
                     "message": "Saved to server successfully"
                 }
                 self.wfile.write(json.dumps(response).encode('utf-8'))
-                print(f"[API] Successfully saved {len(data)} exam records to disk (timestamp: {LAST_SCHEDULE_UPDATED_AT}).")
+                records_count = len(data) if isinstance(data, list) else 0
+                locks_count = len(body["locked_sections"]) if has_locked else 0
+                print(f"[API] Successfully saved {records_count} exam records and {locks_count} locked sections to disk (timestamp: {LAST_SCHEDULE_UPDATED_AT}).")
             except Exception as e:
                 self.send_response(500)
                 self.send_header("Content-Type", "application/json")
