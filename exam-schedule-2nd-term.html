@@ -3008,6 +3008,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
   <div class="badge-anti-conflict-top" id="antiConflictBadge" onclick="scheduleEditor.openConflictInspector()" style="cursor:pointer;" title="Click to view all conflicting cells and jump directly to them">
     <span style="color:#059669; font-weight:900;">✓</span> Anti-Conflict Guard Active: 0 Conflicts
   </div>
+  <div class="auto-save-pill" id="autoSaveTopPill" onclick="scheduleEditor.forceSyncServer()" title="Click to refresh realtime schedule from server" style="display:inline-flex; align-items:center; gap:6px; padding:5px 12px; border-radius:9999px; font-size:11.5px; font-weight:700; cursor:pointer; border:1px solid #a7f3d0; background:#ecfdf5; color:#065f46; transition:all 140ms ease; user-select:none;">
+    <span id="autoSaveTopIcon" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#10b981;"></span>
+    <span id="autoSaveTopText">Auto-Saved</span>
+  </div>
   <div class="lock-indicator-pill" id="lockIndicatorPill" onclick="scheduleEditor.toggleLock()" title="Press '5' on keyboard anytime to toggle edit lock">
     <span id="lockPillIcon"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="vertical-align:-1px;"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg></span> <span id="lockPillText">Read-Only (Press 5 to Edit)</span>
   </div>
@@ -3025,6 +3029,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
     <div class="drag-stats-group">
       <span class="drag-stat-pill" id="dragEditCountPill">0 manual edits</span>
       <span class="drag-stat-pill clear" id="dragConflictPill" onclick="scheduleEditor.openConflictInspector()" style="cursor:pointer;" title="Click to view all conflicting cells">0 Clashes</span>
+      <span class="drag-stat-pill" id="autoSaveToolbarPill" style="display:inline-flex; align-items:center; gap:5px; font-weight:700; color:#065f46; background:#ecfdf5; border:1px solid #a7f3d0;" title="Realtime schedule synchronization status">
+        <span id="autoSaveToolbarDot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#10b981;"></span>
+        <span id="autoSaveToolbarText">Auto-Saved</span>
+      </span>
     </div>
     <div class="drag-actions-group">
       <button class="btn-drag-action btn-clash-jump" id="btnClashJump" onclick="scheduleEditor.jumpToNextConflict()" title="Jump directly to conflicting cells on the timetable" style="display:none;">
@@ -7645,6 +7653,11 @@ body.admin-edit-unlocked .lock-indicator-pill {
     redoStack: [],
     baseRecords: null,
     toastTimeout: null,
+    autoSaveTimer: null,
+    isSaving: false,
+    isSyncing: false,
+    lastSavedTimestamp: 0,
+    realtimeSyncTimer: null,
 
     init: function() {
       // Check session authentication
@@ -7657,26 +7670,24 @@ body.admin-edit-unlocked .lock-indicator-pill {
       }
 
       try {
-        const CURRENT_VERSION = '20261119_v5_sync';
-        const cachedVer = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
-        if (cachedVer !== CURRENT_VERSION) {
-          localStorage.removeItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
-          localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', CURRENT_VERSION);
-          console.log('[ScheduleEditor] Reset stale cache to live server version ' + CURRENT_VERSION);
-        } else {
-          const saved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
-          if (saved) {
-            let parsed = JSON.parse(saved);
-            if (Array.isArray(parsed) && parsed.length > 0) {
-              parsed = parsed.filter(e => {
-                const s = (e.subject || '').toLowerCase().trim();
-                if (s.includes('panlipunan')) return true;
-                return !s.includes('aral');
-              });
-              EXAM_RECORDS = parsed;
-              console.log('[ScheduleEditor] Loaded custom schedule from localStorage (' + parsed.length + ' exams)');
-            }
+        const CURRENT_VERSION = '20261119_v6_realtime';
+        const saved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
+        if (saved) {
+          let parsed = JSON.parse(saved);
+          if (Array.isArray(parsed) && parsed.length > 50) {
+            parsed = parsed.filter(e => {
+              const s = (e.subject || '').toLowerCase().trim();
+              if (s.includes('panlipunan')) return true;
+              return !s.includes('aral');
+            });
+            EXAM_RECORDS = parsed;
+            console.log('[ScheduleEditor] Loaded custom schedule from browser storage (' + parsed.length + ' exams)');
+            
+            // Auto-save existing custom schedule to server so server receives it immediately!
+            this.performServerAutoSave();
           }
+        } else {
+          localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', CURRENT_VERSION);
         }
       } catch (e) {
         console.warn('Could not read custom schedule', e);
@@ -7688,6 +7699,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
 
       this.updateUI();
       this.setupKeyboardShortcuts();
+      this.startRealtimeSync();
     },
 
     setupKeyboardShortcuts: function() {
@@ -8361,11 +8373,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
     },
 
     afterMutation: function(toastMsg) {
-      try {
-        localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
-      } catch (e) {
-        console.warn('localStorage full or disabled', e);
-      }
+      this.autoSave();
 
       this.updateUI();
       updateAntiConflictBadge();
@@ -8381,6 +8389,153 @@ body.admin-edit-unlocked .lock-indicator-pill {
       const conflicts = strictScheduleConflicts();
       const clashMsg = conflicts.length > 0 ? ` (! ${conflicts.length} conflict${conflicts.length === 1 ? '' : 's'} detected)` : ' (0 clashes)';
       this.showToast(toastMsg + clashMsg, "Undo", () => this.undo());
+    },
+
+    autoSave: function() {
+      // 1. Instantly persist to browser storage
+      const now = Date.now();
+      try {
+        localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
+        localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(now));
+      } catch (e) {
+        console.warn('localStorage full or disabled', e);
+      }
+
+      // 2. Visual status indicator -> Saving...
+      this.updateAutoSaveIndicator('saving');
+
+      // 3. Debounce background network save (350ms)
+      if (this.autoSaveTimer) clearTimeout(this.autoSaveTimer);
+      this.autoSaveTimer = setTimeout(() => {
+        this.performServerAutoSave();
+      }, 350);
+    },
+
+    performServerAutoSave: async function() {
+      if (this.isSaving) return;
+      this.isSaving = true;
+      const now = Date.now();
+      try {
+        const resp = await fetch('/api/save-schedule', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            schedule: EXAM_RECORDS,
+            updated_at: now
+          })
+        });
+        if (resp.ok) {
+          this.lastSavedTimestamp = now;
+          localStorage.setItem('AMIS_2ND_TERM_LAST_SERVER_SYNC', String(now));
+          this.updateAutoSaveIndicator('saved');
+        } else {
+          this.updateAutoSaveIndicator('local');
+        }
+      } catch (err) {
+        this.updateAutoSaveIndicator('local');
+      } finally {
+        this.isSaving = false;
+      }
+    },
+
+    updateAutoSaveIndicator: function(status) {
+      const topDot = document.getElementById('autoSaveTopIcon');
+      const topText = document.getElementById('autoSaveTopText');
+      const topPill = document.getElementById('autoSaveTopPill');
+
+      const toolDot = document.getElementById('autoSaveToolbarDot');
+      const toolText = document.getElementById('autoSaveToolbarText');
+      const toolPill = document.getElementById('autoSaveToolbarPill');
+
+      let color = '#10b981';
+      let text = 'Auto-Saved';
+      let bg = '#ecfdf5';
+      let border = '#a7f3d0';
+
+      if (status === 'saving') {
+        color = '#f59e0b';
+        text = 'Saving...';
+        bg = '#fffbeb';
+        border = '#fde68a';
+      } else if (status === 'synced') {
+        color = '#2563eb';
+        text = 'Realtime Synced';
+        bg = '#eff6ff';
+        border = '#bfdbfe';
+      } else if (status === 'local') {
+        color = '#0891b2';
+        text = 'Saved in Browser';
+        bg = '#ecfeff';
+        border = '#a5f3fc';
+      }
+
+      if (topDot) topDot.style.background = color;
+      if (topText) topText.textContent = text;
+      if (topPill) {
+        topPill.style.background = bg;
+        topPill.style.borderColor = border;
+        topPill.style.color = color === '#10b981' ? '#065f46' : color;
+      }
+
+      if (toolDot) toolDot.style.background = color;
+      if (toolText) toolText.textContent = text;
+      if (toolPill) {
+        toolPill.style.background = bg;
+        toolPill.style.borderColor = border;
+        toolPill.style.color = color === '#10b981' ? '#065f46' : color;
+      }
+    },
+
+    startRealtimeSync: function() {
+      if (this.realtimeSyncTimer) clearInterval(this.realtimeSyncTimer);
+
+      const checkSync = async () => {
+        if (this.draggedExamId || this.selectedExamId || this.isSaving || this.isSyncing) return;
+
+        try {
+          const resp = await fetch('/api/save-schedule?t=' + Date.now());
+          if (!resp.ok) return;
+          const data = await resp.json();
+          if (data && data.ok && Array.isArray(data.schedule) && data.schedule.length > 50) {
+            const serverTime = Number(data.updated_at) || 0;
+            if (serverTime > this.lastSavedTimestamp && this.lastSavedTimestamp > 0) {
+              this.isSyncing = true;
+              EXAM_RECORDS = data.schedule;
+              this.lastSavedTimestamp = serverTime;
+
+              try {
+                localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
+                localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(serverTime));
+              } catch (err) {}
+
+              this.updateUI();
+              updateAntiConflictBadge();
+
+              const teacherSelect = document.getElementById('teacherSelect');
+              const selectedTid = teacherSelect ? teacherSelect.value : 'ALL_FACULTY';
+              if (currentTab === 'FACULTY') renderFacultyView(selectedTid);
+              else if (currentTab === 'SECTION') renderSectionView();
+
+              this.updateAutoSaveIndicator('synced');
+              setTimeout(() => this.updateAutoSaveIndicator('saved'), 2000);
+              this.isSyncing = false;
+              console.log('[RealtimeSync] Synchronized latest schedule from server (timestamp: ' + serverTime + ')');
+            } else if (this.lastSavedTimestamp === 0 && serverTime > 0) {
+              this.lastSavedTimestamp = serverTime;
+            }
+          }
+        } catch (e) {
+          // Silent catch during background poll
+        }
+      };
+
+      this.realtimeSyncTimer = setInterval(checkSync, 4000);
+
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+          checkSync();
+        }
+      });
     },
 
     deleteExam: function(ev, examId) {
@@ -8450,10 +8605,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
         this.redoStack.push({ type: 'delete', exam: action.exam, index: insertIdx });
       }
 
-      try {
-        localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
-      } catch (e) {}
-
+      this.autoSave();
       this.updateUI();
       updateAntiConflictBadge();
       const teacherSelect = document.getElementById('teacherSelect');
@@ -8492,10 +8644,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
         }
       }
 
-      try {
-        localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
-      } catch (e) {}
-
+      this.autoSave();
       this.updateUI();
       updateAntiConflictBadge();
       const teacherSelect = document.getElementById('teacherSelect');
@@ -8508,11 +8657,13 @@ body.admin-edit-unlocked .lock-indicator-pill {
     resetToDefault: function() {
       if (!confirm("Are you sure you want to reset all manual drag changes back to the base clean timetable?")) return;
       localStorage.removeItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
+      localStorage.removeItem('AMIS_2ND_TERM_LAST_MODIFIED');
       if (this.baseRecords) {
         EXAM_RECORDS = JSON.parse(JSON.stringify(this.baseRecords));
       }
       this.undoStack = [];
       this.redoStack = [];
+      this.autoSave();
       this.updateUI();
       updateAntiConflictBadge();
       const teacherSelect = document.getElementById('teacherSelect');
@@ -8527,17 +8678,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
       if (btn) btn.disabled = true;
       this.showToast("Saving changes to server...", null);
       try {
-        const resp = await fetch('/api/save-schedule', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(EXAM_RECORDS)
-        });
-        if (resp.ok) {
-          const res = await resp.json();
-          this.showToast("✓ Successfully saved to project files on server!", null);
-        } else {
-          throw new Error("Server returned " + resp.status);
-        }
+        await this.performServerAutoSave();
+        this.showToast("✓ Successfully saved to project files on server!", null);
       } catch (e) {
         console.warn("Save to server endpoint not available, falling back to download JSON:", e);
         this.showToast("Local server API not reachable. Downloading JSON backup to your computer...", null);
@@ -8582,8 +8724,6 @@ body.admin-edit-unlocked .lock-indicator-pill {
         const parsed = JSON.parse(input);
         if (Array.isArray(parsed) && parsed.length > 50) {
           EXAM_RECORDS = parsed;
-          localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', '20261119_v5_sync');
-          localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
           this.afterMutation("Imported schedule data successfully");
           this.showToast("✓ Imported schedule loaded! Clashes recalculated.");
         } else {
@@ -8595,14 +8735,36 @@ body.admin-edit-unlocked .lock-indicator-pill {
     },
 
     forceSyncServer: async function() {
-      if (!confirm("Discard all local edits on this browser and re-fetch the official live schedule from the server?")) return;
-      localStorage.removeItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
-      localStorage.removeItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
       this.showToast("Fetching live official schedule from server...", null);
+      this.updateAutoSaveIndicator('saving');
       try {
-        const eResp = await fetch('exam_data_2nd_term.json?v=' + Date.now());
-        if (eResp.ok) {
-          EXAM_RECORDS = await eResp.json();
+        let fetched = false;
+        // Try /api/save-schedule first
+        try {
+          const apiResp = await fetch('/api/save-schedule?t=' + Date.now());
+          if (apiResp.ok) {
+            const data = await apiResp.json();
+            if (data && data.ok && Array.isArray(data.schedule) && data.schedule.length > 50) {
+              EXAM_RECORDS = data.schedule;
+              this.lastSavedTimestamp = Number(data.updated_at) || Date.now();
+              fetched = true;
+            }
+          }
+        } catch (err) {}
+
+        // Fallback to static exam_data_2nd_term.json
+        if (!fetched) {
+          const eResp = await fetch('exam_data_2nd_term.json?v=' + Date.now());
+          if (eResp.ok) {
+            EXAM_RECORDS = await eResp.json();
+            this.lastSavedTimestamp = Date.now();
+            fetched = true;
+          }
+        }
+
+        if (fetched) {
+          localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
+          localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(this.lastSavedTimestamp));
           this.baseRecords = JSON.parse(JSON.stringify(EXAM_RECORDS));
           this.undoStack = [];
           this.redoStack = [];
@@ -8612,10 +8774,15 @@ body.admin-edit-unlocked .lock-indicator-pill {
           const selectedTid = teacherSelect ? teacherSelect.value : 'ALL_FACULTY';
           if (currentTab === 'FACULTY') renderFacultyView(selectedTid);
           else if (currentTab === 'SECTION') renderSectionView();
+          this.updateAutoSaveIndicator('synced');
+          setTimeout(() => this.updateAutoSaveIndicator('saved'), 2000);
           this.showToast("✓ Synchronized with official live server schedule!");
+        } else {
+          throw new Error("Unable to reach server");
         }
       } catch (e) {
         this.showToast("Error syncing with server: " + e.message);
+        this.updateAutoSaveIndicator('local');
       }
     },
 

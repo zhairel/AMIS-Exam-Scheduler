@@ -3,23 +3,83 @@ import http.server
 import json
 import os
 import sys
+import time
 
 PORT = 3000
 DIRECTORY = os.path.dirname(os.path.abspath(__file__))
+LAST_SCHEDULE_UPDATED_AT = int(time.time() * 1000)
 
 class AMISHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=DIRECTORY, **kwargs)
 
+    def do_GET(self):
+        global LAST_SCHEDULE_UPDATED_AT
+        clean_path = self.path.split('?')[0].rstrip('/')
+        if clean_path in ("/api/save-schedule", "/api/schedule-state", "/api/schedule-sync"):
+            try:
+                target_json = os.path.join(DIRECTORY, "exam_data_2nd_term.json")
+                if not os.path.exists(target_json):
+                    self.send_response(404)
+                    self.send_header("Content-Type", "application/json")
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.end_headers()
+                    self.wfile.write(json.dumps({"ok": False, "error": "Schedule file not found"}).encode('utf-8'))
+                    return
+
+                mtime = int(os.path.getmtime(target_json) * 1000)
+                if mtime > LAST_SCHEDULE_UPDATED_AT:
+                    LAST_SCHEDULE_UPDATED_AT = mtime
+
+                with open(target_json, "r", encoding="utf-8") as f:
+                    exams = json.load(f)
+
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                res = {
+                    "ok": True,
+                    "status": "success",
+                    "count": len(exams),
+                    "updated_at": LAST_SCHEDULE_UPDATED_AT,
+                    "schedule": exams
+                }
+                self.wfile.write(json.dumps(res).encode('utf-8'))
+            except Exception as e:
+                self.send_response(500)
+                self.send_header("Content-Type", "application/json")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                self.wfile.write(json.dumps({"ok": False, "error": str(e)}).encode('utf-8'))
+            return
+
+        super().do_GET()
+
     def do_POST(self):
-        if self.path == "/api/save-schedule":
+        global LAST_SCHEDULE_UPDATED_AT
+        clean_path = self.path.split('?')[0].rstrip('/')
+        if clean_path in ("/api/save-schedule", "/api/schedule-sync"):
             try:
                 content_len = int(self.headers.get('Content-Length', 0))
                 post_body = self.rfile.read(content_len)
-                data = json.loads(post_body.decode('utf-8'))
-                
-                if not isinstance(data, list) or len(data) < 100:
-                    raise ValueError(f"Invalid exam data payload: expected array of >= 100 exams, got {len(data) if isinstance(data, list) else type(data)}")
+                body = json.loads(post_body.decode('utf-8'))
+
+                data = None
+                updated_at = int(time.time() * 1000)
+
+                if isinstance(body, list):
+                    data = body
+                elif isinstance(body, dict):
+                    data = body.get("schedule") or body.get("data")
+                    if body.get("updated_at"):
+                        try:
+                            updated_at = int(body.get("updated_at"))
+                        except (ValueError, TypeError):
+                            pass
+
+                if not isinstance(data, list) or len(data) < 50:
+                    raise ValueError(f"Invalid exam data payload: expected array of >= 50 exams, got {len(data) if isinstance(data, list) else type(data)}")
 
                 json_str = json.dumps(data, indent=2)
                 js_str = f"window.AMIS_EXAM_DATA = {json_str};\n"
@@ -43,19 +103,27 @@ class AMISHandler(http.server.SimpleHTTPRequestHandler):
                     with open(parent_js, "w", encoding="utf-8") as f:
                         f.write(js_str)
 
+                LAST_SCHEDULE_UPDATED_AT = max(updated_at, int(time.time() * 1000))
+
                 self.send_response(200)
                 self.send_header("Content-Type", "application/json")
                 self.send_header("Access-Control-Allow-Origin", "*")
                 self.end_headers()
-                response = {"status": "success", "count": len(data), "message": "Saved to server successfully"}
+                response = {
+                    "ok": True,
+                    "status": "success",
+                    "count": len(data),
+                    "updated_at": LAST_SCHEDULE_UPDATED_AT,
+                    "message": "Saved to server successfully"
+                }
                 self.wfile.write(json.dumps(response).encode('utf-8'))
-                print(f"[API] Successfully saved {len(data)} exam records to disk.")
+                print(f"[API] Successfully saved {len(data)} exam records to disk (timestamp: {LAST_SCHEDULE_UPDATED_AT}).")
             except Exception as e:
                 self.send_response(500)
                 self.send_header("Content-Type", "application/json")
                 self.send_header("Access-Control-Allow-Origin", "*")
                 self.end_headers()
-                self.wfile.write(json.dumps({"status": "error", "message": str(e)}).encode('utf-8'))
+                self.wfile.write(json.dumps({"ok": False, "status": "error", "message": str(e)}).encode('utf-8'))
                 print(f"[API] Error saving schedule: {e}")
         else:
             self.send_response(404)
