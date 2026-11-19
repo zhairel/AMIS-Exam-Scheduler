@@ -7078,10 +7078,23 @@
         "day": "Thursday",
         "subject": "GMRC",
         "raw_label": "GMRC"
+      },
+      {
+        "section_id": "sec_k2_abdullah_ibn_mas_ud_2nd_shift",
+        "section_name": "K2 - ABDULLAH IBN MAS'UD (2ND SHIFT)",
+        "department": "Elementary",
+        "grade_level": "Kinder 2",
+        "shift": "ODL - 2ND SHIFT",
+        "period_num": 7,
+        "time": "5:20 – 6:00 PM",
+        "minutes": "40 min.",
+        "day": "Thursday",
+        "subject": "Hadith",
+        "raw_label": "Hadith"
       }
     ],
-    "total_classes": 30,
-    "total_teaching_periods": 30,
+    "total_classes": 19,
+    "total_teaching_periods": 31,
     "subjects": [
       "Arabic",
       "GMRC"
