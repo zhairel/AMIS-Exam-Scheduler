@@ -2760,7 +2760,11 @@ td.cell-duplicate-subject {
   border-color: #94a3b8;
   color: #0f172a;
 }
+body:not(.admin-edit-unlocked) .lock-indicator-pill {
+  display: none !important;
+}
 body.admin-edit-unlocked .lock-indicator-pill {
+  display: inline-flex !important;
   background: #ecfdf5;
   color: #065f46;
   border-color: #a7f3d0;
@@ -3098,6 +3102,22 @@ body.admin-edit-unlocked .lock-indicator-pill {
 }
 
 /* Section Exam Schedule Locks & Auto-Lock Badges */
+body:not(.admin-edit-unlocked) .btn-lock-sec-toggle,
+body:not(.admin-edit-unlocked) .section-locked-banner,
+body:not(.admin-edit-unlocked) .badge-card-sec-locked {
+  display: none !important;
+}
+
+body.admin-edit-unlocked .btn-lock-sec-toggle {
+  display: inline-flex !important;
+}
+body.admin-edit-unlocked .section-locked-banner {
+  display: flex !important;
+}
+body.admin-edit-unlocked .badge-card-sec-locked {
+  display: inline-flex !important;
+}
+
 .btn-lock-sec-toggle {
   display: inline-flex;
   align-items: center;
@@ -3428,8 +3448,8 @@ body.admin-edit-unlocked .lock-indicator-pill {
     <span id="autoSaveTopIcon" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#10b981;"></span>
     <span id="autoSaveTopText">Auto-Saved</span>
   </div>
-  <div class="lock-indicator-pill" id="lockIndicatorPill" onclick="scheduleEditor.toggleLock()" title="Press '5' on keyboard anytime to toggle edit lock">
-    <span id="lockPillIcon"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="vertical-align:-1px;"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg></span> <span id="lockPillText">Read-Only (Press 5 to Edit)</span>
+  <div class="lock-indicator-pill" id="lockIndicatorPill" onclick="scheduleEditor.toggleLock()" title="Click to lock admin edit mode">
+    <span id="lockPillIcon"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="vertical-align:-1px;"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"/></svg></span> <span id="lockPillText">Admin Edit Mode (Click to Lock)</span>
   </div>
 </nav>
 
@@ -3533,7 +3553,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
       </div>
     </form>
     <div class="admin-modal-hint">
-      Shortcut: Press <strong>5</strong> on your keyboard to toggle lock/unlock anytime.
+      Shortcut: Press <strong>5</strong> on keyboard (or tap header 5 times on touch devices) to toggle lock anytime.
     </div>
   </div>
 </div>
@@ -3626,9 +3646,12 @@ body.admin-edit-unlocked .lock-indicator-pill {
     <div id="sectionLockList" class="section-lock-table-wrap">
       <!-- Dynamically filled with section rows -->
     </div>
-    <div class="conflict-inspector-footer" style="background:#f8fafc;">
+    <div class="conflict-inspector-footer" style="background:#f8fafc; display:flex; justify-content:space-between; align-items:center;">
       <span class="conflict-footer-hint">Auto-locking is section-specific ("depende po"). Unlocked sections remain fully editable.</span>
-      <button type="button" class="btn-modal-cancel" onclick="scheduleEditor.closeSectionLockModal()">Close</button>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <button type="button" class="btn-modal-cancel" onclick="scheduleEditor.logout(); scheduleEditor.closeSectionLockModal();" style="color:#b91c1c; border-color:#fca5a5; background:#fef2f2; font-weight:700;">Lock Admin Mode</button>
+        <button type="button" class="btn-modal-cancel" onclick="scheduleEditor.closeSectionLockModal()">Close</button>
+      </div>
     </div>
   </div>
 </div>
@@ -8302,7 +8325,36 @@ body.admin-edit-unlocked .lock-indicator-pill {
 
       this.updateUI();
       this.setupKeyboardShortcuts();
+      this.setup5PressDetector();
       this.startRealtimeSync();
+    },
+
+    setup5PressDetector: function() {
+      let tapCount = 0;
+      let lastTapTime = 0;
+      const handle5Press = () => {
+        const now = Date.now();
+        if (now - lastTapTime > 2500) {
+          tapCount = 0;
+        }
+        lastTapTime = now;
+        tapCount++;
+        if (tapCount >= 5) {
+          tapCount = 0;
+          if (this.isEditUnlocked) {
+            this.openSectionLockModal();
+          } else {
+            this.openLoginModal();
+          }
+        }
+      };
+
+      document.addEventListener('click', (e) => {
+        const brandMatch = e.target.closest('.brand-title, .brand-logo, .brand-text, .school-header-logo, .document-header-school, #autoSaveTopPill, #antiConflictBadge');
+        if (brandMatch) {
+          handle5Press();
+        }
+      });
     },
 
     setupKeyboardShortcuts: function() {
@@ -8310,10 +8362,20 @@ body.admin-edit-unlocked .lock-indicator-pill {
         // If user is currently typing in an input or textarea, let them type normally!
         if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) return;
 
-        // Press '5' anywhere to toggle Admin Lock / Unlock
-        if (e.key === '5') {
+        // Press '5' anywhere to trigger lock appearance / Section Locks modal
+        if (e.key === '5' || e.code === 'Digit5' || e.code === 'Numpad5') {
           e.preventDefault();
-          this.toggleLock();
+          if (this.isEditUnlocked) {
+            this.openSectionLockModal();
+          } else {
+            this.openLoginModal();
+          }
+          return;
+        }
+
+        if ((e.shiftKey || e.altKey) && (e.key === '5' || e.code === 'Digit5' || e.code === 'Numpad5')) {
+          e.preventDefault();
+          this.logout();
           return;
         }
 
@@ -8376,7 +8438,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
       const errEl = document.getElementById('adminLoginError');
       const val = passInput ? passInput.value.trim() : '';
 
-      const validPasscodes = ['amis2026', 'admin', '2026', '5555', '123456'];
+      const validPasscodes = ['amis2026', 'admin', '2026', '5555', '5', '123456'];
       const customPass = localStorage.getItem('AMIS_ADMIN_PASSWORD');
       if (customPass) validPasscodes.push(customPass.trim());
 
@@ -8392,7 +8454,7 @@ body.admin-edit-unlocked .lock-indicator-pill {
         if (currentTab === 'FACULTY') renderFacultyView(selectedTid);
         else if (currentTab === 'SECTION') renderSectionView();
 
-        this.showToast("Admin Edit Mode UNLOCKED. You can now drag subject cells. Press '5' to lock/logout.");
+        this.showToast("Admin Edit Mode UNLOCKED. Press '5' to manage Section Locks or click lock pill to lock.");
       } else {
         if (errEl) {
           errEl.textContent = 'Incorrect passcode. Try again (hint: amis2026).';
@@ -10109,10 +10171,10 @@ body.admin-edit-unlocked .lock-indicator-pill {
       if (lockPillIcon && lockPillText) {
         if (this.isEditUnlocked) {
           lockPillIcon.innerHTML = `<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="vertical-align:-1px;"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"/></svg>`;
-          lockPillText.textContent = 'Admin Edit Mode (Press 5 to Lock)';
+          lockPillText.textContent = 'Admin Edit Mode (Click to Lock)';
         } else {
           lockPillIcon.innerHTML = `<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="vertical-align:-1px;"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>`;
-          lockPillText.textContent = 'Read-Only (Press 5 to Edit)';
+          lockPillText.textContent = 'Read-Only Mode';
         }
       }
 
