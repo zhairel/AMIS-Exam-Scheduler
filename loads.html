@@ -427,7 +427,7 @@
         <span>Grades: <strong id="sumGradesCount">14</strong></span>
         <span>Sections: <strong id="sumSectionsCount">64</strong></span>
         <span>Teachers &amp; ISAL: <strong id="sumTeachersCount">48</strong></span>
-        <span>Scheduled Subjects: <strong class="summary-ok" id="sumScheduledCount">✓ 604</strong></span>
+        <span>Scheduled Subjects: <strong class="summary-ok" id="sumScheduledCount">✓ 602</strong></span>
         <span>Missing Subjects: <strong id="sumMissingCount" class="summary-ok">0</strong></span>
       </div>
       <div id="syncStatusText" style="font-size:12px; color:#059669; font-weight:700;">✓ Synchronized with 2nd Term Exam Schedule</div>
@@ -1757,12 +1757,6 @@
     "department": "Elementary Faculty",
     "assignments": [
       {
-        "subject": "Meeting Time",
-        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
-        "shift": "F2F",
-        "raw": "Meeting Time \u2013 KINDER 2 CLASS SCHEDULE (F2F)"
-      },
-      {
         "subject": "Circle Time 1",
         "section": "KINDER 2 CLASS SCHEDULE (F2F)",
         "shift": "F2F",
@@ -1827,12 +1821,6 @@
         "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
         "shift": "ODL - 2ND SHIFT",
         "raw": "Makabansa \u2013 GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX"
-      },
-      {
-        "subject": "Wrap-Up Time",
-        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
-        "shift": "F2F",
-        "raw": "Wrap-Up Time \u2013 KINDER 2 CLASS SCHEDULE (F2F)"
       }
     ]
   },
@@ -4494,7 +4482,7 @@
       if (!s) return false;
       if (s.includes('homeroom') || s === 'hg' || s.startsWith('hg ')) return true;
       if (s.includes('aral reading') || s.includes('aral math') || s.includes('aral science') || s.includes('aral program') || s === 'aral') return true;
-      if (s.includes('- assist') || s.includes('assist teacher')) return true;
+      if (s.includes('- assist') || s.includes('assist teacher') || s.includes('meeting time') || s.includes('wrap-up time') || s.includes('wrap up time')) return true;
       return false;
     }
 
@@ -5009,7 +4997,7 @@
 
       try {
         let loaded = false;
-        const CURRENT_VERSION = '20261120_v8_all_64_sections_complete';
+        const CURRENT_VERSION = '20261120_v9_k2_clean';
         const savedVersion = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
         const localSaved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
         if (savedVersion === CURRENT_VERSION && localSaved) {

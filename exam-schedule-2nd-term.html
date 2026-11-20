@@ -5191,12 +5191,6 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
     "department": "Elementary Faculty",
     "assignments": [
       {
-        "subject": "Meeting Time",
-        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
-        "shift": "F2F",
-        "raw": "Meeting Time \u2013 KINDER 2 CLASS SCHEDULE (F2F)"
-      },
-      {
         "subject": "Circle Time 1",
         "section": "KINDER 2 CLASS SCHEDULE (F2F)",
         "shift": "F2F",
@@ -5261,12 +5255,6 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         "section": "GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX",
         "shift": "ODL - 2ND SHIFT",
         "raw": "Makabansa \u2013 GRADE 3 - AS'AD IBN ZURARAH (2ND SHIFT) MIX"
-      },
-      {
-        "subject": "Wrap-Up Time",
-        "section": "KINDER 2 CLASS SCHEDULE (F2F)",
-        "shift": "F2F",
-        "raw": "Wrap-Up Time \u2013 KINDER 2 CLASS SCHEDULE (F2F)"
       }
     ]
   },
@@ -8447,7 +8435,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       }
 
       try {
-        const CURRENT_VERSION = '20261120_v8_all_64_sections_complete';
+        const CURRENT_VERSION = '20261120_v9_k2_clean';
         const savedVersion = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
         const saved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
         const localModTime = Number(localStorage.getItem('AMIS_2ND_TERM_LAST_MODIFIED')) || 0;
@@ -9616,7 +9604,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       if (!s) return false;
       if (s.includes('homeroom') || s === 'hg' || s.startsWith('hg ')) return true;
       if (s.includes('aral reading') || s.includes('aral math') || s.includes('aral science') || s.includes('aral program') || s === 'aral') return true;
-      if (s.includes('- assist') || s.includes('assist teacher')) return true;
+      if (s.includes('- assist') || s.includes('assist teacher') || s.includes('meeting time') || s.includes('wrap-up time') || s.includes('wrap up time')) return true;
       return false;
     },
 
@@ -12518,7 +12506,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
     if (!s) return false;
     if (s.includes('homeroom') || s === 'hg' || s.startsWith('hg ')) return true;
     if (s.includes('aral reading') || s.includes('aral math') || s.includes('aral science') || s.includes('aral program') || s === 'aral') return true;
-    if (s.includes('- assist') || s.includes('assist teacher')) return true;
+    if (s.includes('- assist') || s.includes('assist teacher') || s.includes('meeting time') || s.includes('wrap-up time') || s.includes('wrap up time')) return true;
     return false;
   }
 
