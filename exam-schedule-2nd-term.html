@@ -3405,6 +3405,52 @@ body.admin-edit-unlocked .badge-card-sec-locked {
   transform: translateY(-1px);
 }
 
+/* Empty Cell Add Subject (+) Button & Hover Styling */
+body.admin-edit-unlocked td.cell-empty {
+  cursor: pointer !important;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  transition: all 120ms ease;
+}
+body.admin-edit-unlocked td.cell-empty:hover {
+  background: #f0fdf4 !important;
+  outline: 2px dashed #10b981 !important;
+  box-shadow: inset 0 0 10px rgba(16, 185, 129, 0.15) !important;
+}
+.cell-empty-add-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #059669;
+  border: 1.5px dashed #10b981;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.35;
+  transition: all 120ms ease;
+  user-select: none;
+  pointer-events: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+}
+body.admin-edit-unlocked td.cell-empty:hover .cell-empty-add-btn {
+  opacity: 1;
+  background: #059669;
+  color: #ffffff;
+  border-style: solid;
+  border-color: #047857;
+  transform: scale(1.15);
+  box-shadow: 0 3px 8px rgba(5, 150, 105, 0.35);
+}
+body:not(.admin-edit-unlocked) .cell-empty-add-btn {
+  display: none !important;
+}
+
 </style>
 </head>
 <body>
@@ -3686,6 +3732,91 @@ body.admin-edit-unlocked .badge-card-sec-locked {
       <span class="conflict-footer-hint" style="color:#64748b;">Applying an auto-adjustment safely moves all involved subjects in one atomic step. Undo anytime via Ctrl+Z.</span>
       <button type="button" class="btn-modal-cancel" onclick="scheduleEditor.closeAutoAdjustModal()">Close</button>
     </div>
+  </div>
+</div>
+
+<!-- Add New Subject to Timetable Modal -->
+<div id="addSubjectModal" class="admin-login-modal-overlay" style="display:none;" onclick="if(event.target === this) scheduleEditor.closeAddSubjectModal()">
+  <div class="admin-login-card conflict-inspector-card" style="max-width:620px !important;">
+    <div class="conflict-inspector-header" style="background:linear-gradient(135deg, #059669 0%, #047857 100%); color:#ffffff; padding:16px 20px;">
+      <div class="conflict-header-title-wrap">
+        <div class="conflict-icon-wrap" style="background:rgba(255,255,255,0.22); color:#ffffff;">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        </div>
+        <div>
+          <h2 style="margin:0; font-size:18px; color:#ffffff; font-weight:800;">Add Subject to Timetable</h2>
+          <p id="addSubjectContextText" style="margin:2px 0 0; font-size:12px; color:#d1fae5;">Select subject and assigned teacher for this slot</p>
+        </div>
+      </div>
+      <button type="button" class="btn-modal-cancel" style="padding:4px 10px; font-size:18px; border-radius:8px; line-height:1; color:#ffffff; background:rgba(255,255,255,0.2); border:none;" onclick="scheduleEditor.closeAddSubjectModal()" title="Close">&times;</button>
+    </div>
+
+    <form id="addSubjectForm" onsubmit="event.preventDefault(); scheduleEditor.confirmAddSubject();" style="padding:16px 20px; display:flex; flex-direction:column; gap:14px;">
+      <!-- Slot Info Banner -->
+      <div id="addSubjectSlotBanner" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:10px 14px; font-size:12.5px; color:#334155; display:flex; flex-direction:column; gap:3px;">
+      </div>
+
+      <!-- Section Selection -->
+      <div class="admin-input-group" id="addSubjectSectionGroup">
+        <label for="addSubjectSectionSelect" style="font-weight:700; font-size:12px; color:#334155; margin-bottom:4px; display:block;">Target Section</label>
+        <select id="addSubjectSectionSelect" onchange="scheduleEditor.handleAddSubjectSectionChange()" style="width:100%; padding:8px 12px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; font-weight:600; color:#0f172a; background:#ffffff;">
+        </select>
+      </div>
+
+      <!-- Subject Selection -->
+      <div class="admin-input-group">
+        <label for="addSubjectSelect" style="font-weight:700; font-size:12px; color:#334155; margin-bottom:4px; display:flex; justify-content:space-between; align-items:center;">
+          <span>Subject</span>
+          <span style="font-size:11px; font-weight:600; color:#059669;">Auto-links assigned teacher</span>
+        </label>
+        <select id="addSubjectSelect" onchange="scheduleEditor.handleAddSubjectChange()" required style="width:100%; padding:8px 12px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; font-weight:700; color:#0f172a; background:#ffffff;">
+        </select>
+      </div>
+
+      <!-- Custom Subject Input (if "CUSTOM" is chosen) -->
+      <div class="admin-input-group" id="addSubjectCustomGroup" style="display:none;">
+        <label for="addSubjectCustomInput" style="font-weight:700; font-size:12px; color:#334155; margin-bottom:4px; display:block;">Custom Subject Name</label>
+        <input type="text" id="addSubjectCustomInput" placeholder="Enter custom subject name..." oninput="scheduleEditor.updateAddSubjectLiveConflict()" style="width:100%; padding:8px 12px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; font-weight:600; color:#0f172a;">
+      </div>
+
+      <!-- Teacher Selection (Dropdown linked to subject) -->
+      <div class="admin-input-group">
+        <label for="addSubjectTeacherSelect" style="font-weight:700; font-size:12px; color:#334155; margin-bottom:4px; display:flex; justify-content:space-between; align-items:center;">
+          <span>Assigned Teacher</span>
+          <span id="addSubjectTeacherAutoBadge" style="font-size:11px; font-weight:700; color:#0284c7;">Auto-linked</span>
+        </label>
+        <select id="addSubjectTeacherSelect" onchange="scheduleEditor.handleAddSubjectTeacherChange()" required style="width:100%; padding:8px 12px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; font-weight:700; color:#0f172a; background:#ffffff;">
+        </select>
+      </div>
+
+      <!-- Duration Selection (auto pick 60 mins default) -->
+      <div class="admin-input-group">
+        <label style="font-weight:700; font-size:12px; color:#334155; margin-bottom:4px; display:block;">Exam Duration (Auto-picked: 60 mins)</label>
+        <div style="display:flex; gap:16px; align-items:center;">
+          <label style="display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700; color:#0f172a; cursor:pointer;">
+            <input type="radio" name="addSubjectDuration" value="60" checked onchange="scheduleEditor.updateAddSubjectLiveConflict()">
+            <span>60 Minutes (Standard Single Slot)</span>
+          </label>
+          <label style="display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700; color:#0f172a; cursor:pointer;">
+            <input type="radio" name="addSubjectDuration" value="120" onchange="scheduleEditor.updateAddSubjectLiveConflict()">
+            <span>120 Minutes (Double Slot)</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Live Conflict Preview Alert Box -->
+      <div id="addSubjectConflictAlert" style="display:none; padding:10px 14px; border-radius:6px; font-size:12.5px; font-weight:600;">
+      </div>
+
+      <!-- Footer Actions -->
+      <div class="conflict-inspector-footer" style="padding:14px 0 0; background:transparent; border-top:1px solid #e2e8f0; display:flex; justify-content:flex-end; gap:8px;">
+        <button type="button" class="btn-modal-cancel" onclick="scheduleEditor.closeAddSubjectModal()">Cancel</button>
+        <button type="submit" id="btnSubmitAddSubject" class="btn-action" style="padding:8px 18px; border-radius:8px; background:#059669; color:#ffffff; border:none; font-weight:800; font-size:13px; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+          Add Subject to Timetable
+        </button>
+      </div>
+    </form>
   </div>
 </div>
 
@@ -9386,10 +9517,414 @@ body.admin-edit-unlocked .badge-card-sec-locked {
       this.showToast(`Selected "${subName}". Click any green VACANT slot to move, or green SWAP OK slot to swap.`, "Cancel", () => this.deselect());
     },
 
+    getSectionSubjectTeacherPairs: function(sectionName, sectionId) {
+      const pairs = [];
+      const seen = new Set();
+      const normSec = (sectionName || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+      // 1. From FACULTY_ROSTER_DATA
+      if (Array.isArray(FACULTY_ROSTER_DATA)) {
+        FACULTY_ROSTER_DATA.forEach(t => {
+          if (!Array.isArray(t.assignments)) return;
+          t.assignments.forEach(asg => {
+            const normAsg = (asg.section || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+            if (normAsg && normSec && (normAsg === normSec || normAsg.includes(normSec) || normSec.includes(normAsg))) {
+              const sub = (asg.subject || '').trim();
+              if (sub && !seen.has(sub.toLowerCase())) {
+                seen.add(sub.toLowerCase());
+                pairs.push({
+                  subject: sub,
+                  teacher_id: t.id,
+                  teacher_name: t.name
+                });
+              }
+            }
+          });
+        });
+      }
+
+      // 2. From EXAM_RECORDS
+      EXAM_RECORDS.forEach(e => {
+        const normE = (e.section_name || e.section || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+        if ((normE && normSec && (normE === normSec || normE.includes(normSec) || normSec.includes(normE))) || (sectionId && e.section_id === sectionId)) {
+          const sub = (e.subject || '').trim();
+          if (sub && !seen.has(sub.toLowerCase())) {
+            seen.add(sub.toLowerCase());
+            pairs.push({
+              subject: sub,
+              teacher_id: e.teacher_id || e.subject_teacher_id || '',
+              teacher_name: e.subject_teacher || e.teacher || ''
+            });
+          }
+        }
+      });
+
+      return pairs;
+    },
+
+    openAddSubjectModal: function(cell) {
+      if (!this.isEditUnlocked) return;
+      const zone = cell.getAttribute('data-drop-zone') || 'section';
+      const secId = cell.getAttribute('data-section-id') || '';
+      const tId = cell.getAttribute('data-teacher-id') || '';
+      const dayNum = Number(cell.getAttribute('data-day-num')) || 1;
+      const dateStr = cell.getAttribute('data-date-str') || '';
+      const shortDate = cell.getAttribute('data-short-date') || '';
+      const rowTime = cell.getAttribute('data-row-time') || '';
+      const slotNum = Number(cell.getAttribute('data-slot-num')) || 1;
+      const shiftGroup = cell.getAttribute('data-shift-group') || 'first';
+
+      if (secId && this.isSectionLocked(secId)) {
+        this.showToast("Cannot add subject: This section's exam schedule is locked.");
+        return;
+      }
+
+      this._addContext = {
+        zone,
+        secId,
+        tId,
+        dayNum,
+        dateStr,
+        shortDate,
+        rowTime,
+        slotNum,
+        shiftGroup
+      };
+
+      // Populate Section Select
+      const secSelect = document.getElementById('addSubjectSectionSelect');
+      if (secSelect) {
+        let secOptions = '';
+        SECTIONS_DATA.forEach(s => {
+          const isSelected = s.id === secId;
+          secOptions += `<option value="${esc(s.id)}" ${isSelected ? 'selected' : ''}>${esc(s.section_name)}</option>`;
+        });
+        secSelect.innerHTML = secOptions;
+      }
+
+      // Populate Teacher Select
+      const teacherSelect = document.getElementById('addSubjectTeacherSelect');
+      if (teacherSelect) {
+        const sortedTeachers = [...FACULTY_ROSTER_DATA]
+          .filter(t => !DUPLICATE_TEACHER_IDENTITY_IDS.has(t.id))
+          .sort((a, b) => a.name.localeCompare(b.name));
+        let teacherOptions = '<option value="">-- Choose Teacher --</option>';
+        sortedTeachers.forEach(t => {
+          const isSelected = t.id === tId;
+          teacherOptions += `<option value="${esc(t.id)}" data-name="${esc(t.name)}" ${isSelected ? 'selected' : ''}>${esc(t.name)} (${esc(t.department || 'Faculty')})</option>`;
+        });
+        teacherSelect.innerHTML = teacherOptions;
+      }
+
+      // Populate Subjects for this section
+      const activeSecId = secSelect ? secSelect.value : secId;
+      this.populateAddSubjectOptions(activeSecId, tId);
+
+      // Auto pick 60 mins duration default
+      const duration60 = document.querySelector('input[name="addSubjectDuration"][value="60"]');
+      if (duration60) duration60.checked = true;
+
+      // Update Slot Info Banner
+      const banner = document.getElementById('addSubjectSlotBanner');
+      const ctxSecObj = SECTIONS_DATA.find(s => s.id === activeSecId);
+      const secTitle = ctxSecObj ? ctxSecObj.section_name : 'Selected Section';
+      if (banner) {
+        banner.innerHTML = `
+          <div style="font-size:13px; font-weight:800; color:#0f172a;">${esc(secTitle)}</div>
+          <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; color:#475569; font-size:12px;">
+            <span>Day ${dayNum} (${esc(shortDate || dateStr)})</span>
+            <span>&bull;</span>
+            <span style="font-weight:700; color:#059669;">${esc(rowTime)}</span>
+            <span>&bull;</span>
+            <span style="text-transform:uppercase;">Shift: ${esc(shiftGroup)}</span>
+          </div>
+        `;
+      }
+
+      // Trigger change to auto-link
+      this.handleAddSubjectChange();
+
+      // Show Modal
+      const modal = document.getElementById('addSubjectModal');
+      if (modal) modal.style.display = 'flex';
+    },
+
+    closeAddSubjectModal: function() {
+      const modal = document.getElementById('addSubjectModal');
+      if (modal) modal.style.display = 'none';
+      this._addContext = null;
+    },
+
+    populateAddSubjectOptions: function(secId, preferredTeacherId) {
+      const subSelect = document.getElementById('addSubjectSelect');
+      if (!subSelect) return;
+
+      const sec = SECTIONS_DATA.find(s => s.id === secId);
+      const pairs = this.getSectionSubjectTeacherPairs(sec ? sec.section_name : '', secId);
+
+      let html = '';
+      if (pairs.length > 0) {
+        html += '<optgroup label="Assigned Subjects for this Section">';
+        pairs.forEach((p, idx) => {
+          const isPreferred = preferredTeacherId && p.teacher_id === preferredTeacherId;
+          html += `<option value="${esc(p.subject)}" data-teacher-id="${esc(p.teacher_id)}" data-teacher-name="${esc(p.teacher_name)}" ${isPreferred || (!preferredTeacherId && idx === 0) ? 'selected' : ''}>${esc(p.subject)} (Assigned: ${esc(p.teacher_name)})</option>`;
+        });
+        html += '</optgroup>';
+      }
+
+      const standardSubjects = [
+        "Filipino", "English", "Math", "Science", "Araling Panlipunan", "Makabansa",
+        "MAPEH", "TLE", "Qur'an", "Arabic", "GMRC", "Islamic Values", "Hadith",
+        "Reading & Literacy", "Computer"
+      ];
+      const assignedNames = new Set(pairs.map(p => p.subject.toLowerCase()));
+      const otherSubs = standardSubjects.filter(s => !assignedNames.has(s.toLowerCase()));
+
+      if (otherSubs.length > 0) {
+        html += '<optgroup label="Other School Subjects">';
+        otherSubs.forEach(s => {
+          html += `<option value="${esc(s)}">${esc(s)}</option>`;
+        });
+        html += '</optgroup>';
+      }
+
+      html += '<optgroup label="Custom">';
+      html += '<option value="__CUSTOM__">[Type Custom Subject Name...]</option>';
+      html += '</optgroup>';
+
+      subSelect.innerHTML = html;
+    },
+
+    handleAddSubjectSectionChange: function() {
+      const secSelect = document.getElementById('addSubjectSectionSelect');
+      if (!secSelect) return;
+      const secId = secSelect.value;
+      if (this._addContext) this._addContext.secId = secId;
+
+      this.populateAddSubjectOptions(secId);
+      this.handleAddSubjectChange();
+
+      // Update banner
+      const banner = document.getElementById('addSubjectSlotBanner');
+      const ctxSecObj = SECTIONS_DATA.find(s => s.id === secId);
+      const secTitle = ctxSecObj ? ctxSecObj.section_name : 'Selected Section';
+      const ctx = this._addContext || {};
+      if (banner) {
+        banner.innerHTML = `
+          <div style="font-size:13px; font-weight:800; color:#0f172a;">${esc(secTitle)}</div>
+          <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; color:#475569; font-size:12px;">
+            <span>Day ${ctx.dayNum || 1} (${esc(ctx.shortDate || ctx.dateStr || '')})</span>
+            <span>&bull;</span>
+            <span style="font-weight:700; color:#059669;">${esc(ctx.rowTime || '')}</span>
+            <span>&bull;</span>
+            <span style="text-transform:uppercase;">Shift: ${esc(ctx.shiftGroup || '')}</span>
+          </div>
+        `;
+      }
+    },
+
+    handleAddSubjectChange: function() {
+      const subSelect = document.getElementById('addSubjectSelect');
+      const teacherSelect = document.getElementById('addSubjectTeacherSelect');
+      const customGroup = document.getElementById('addSubjectCustomGroup');
+      const autoBadge = document.getElementById('addSubjectTeacherAutoBadge');
+      if (!subSelect) return;
+
+      const val = subSelect.value;
+      if (val === '__CUSTOM__') {
+        if (customGroup) customGroup.style.display = 'block';
+        if (autoBadge) {
+          autoBadge.textContent = 'Select teacher below';
+          autoBadge.style.color = '#475569';
+        }
+      } else {
+        if (customGroup) customGroup.style.display = 'none';
+        const opt = subSelect.options[subSelect.selectedIndex];
+        const linkedTid = opt ? opt.getAttribute('data-teacher-id') : null;
+        const linkedTname = opt ? opt.getAttribute('data-teacher-name') : null;
+
+        if (linkedTid && teacherSelect) {
+          teacherSelect.value = linkedTid;
+          if (autoBadge) {
+            autoBadge.textContent = 'Auto-linked: ' + (linkedTname || 'Assigned Teacher');
+            autoBadge.style.color = '#059669';
+          }
+        } else if (teacherSelect) {
+          const secSelect = document.getElementById('addSubjectSectionSelect');
+          const secId = secSelect ? secSelect.value : (this._addContext ? this._addContext.secId : '');
+          const sec = SECTIONS_DATA.find(s => s.id === secId);
+          const pairs = this.getSectionSubjectTeacherPairs(sec ? sec.section_name : '', secId);
+          const matched = pairs.find(p => p.subject.toLowerCase() === val.toLowerCase());
+          if (matched && matched.teacher_id) {
+            teacherSelect.value = matched.teacher_id;
+            if (autoBadge) {
+              autoBadge.textContent = 'Auto-linked: ' + matched.teacher_name;
+              autoBadge.style.color = '#059669';
+            }
+          }
+        }
+      }
+      this.updateAddSubjectLiveConflict();
+    },
+
+    handleAddSubjectTeacherChange: function() {
+      const autoBadge = document.getElementById('addSubjectTeacherAutoBadge');
+      if (autoBadge) {
+        autoBadge.textContent = 'Manual teacher selected';
+        autoBadge.style.color = '#475569';
+      }
+      this.updateAddSubjectLiveConflict();
+    },
+
+    updateAddSubjectLiveConflict: function() {
+      const teacherSelect = document.getElementById('addSubjectTeacherSelect');
+      const alertBox = document.getElementById('addSubjectConflictAlert');
+      const ctx = this._addContext;
+      if (!alertBox) return;
+      if (!ctx || !teacherSelect || !teacherSelect.value) {
+        alertBox.style.display = 'none';
+        return;
+      }
+
+      const tId = teacherSelect.value;
+      const opt = teacherSelect.options[teacherSelect.selectedIndex];
+      const tName = opt ? opt.getAttribute('data-name') : 'Selected Teacher';
+      const duration = document.querySelector('input[name="addSubjectDuration"]:checked')?.value || '60';
+
+      const secSelect = document.getElementById('addSubjectSectionSelect');
+      const curSecId = secSelect ? secSelect.value : ctx.secId;
+
+      const clash = EXAM_RECORDS.find(e =>
+        (e.teacher_id === tId || e.subject_teacher_id === tId) &&
+        Number(e.day_number) === ctx.dayNum &&
+        e.time_slot === ctx.rowTime &&
+        e.section_id !== curSecId
+      );
+
+      alertBox.style.display = 'block';
+      if (clash) {
+        alertBox.style.background = '#fef2f2';
+        alertBox.style.color = '#991b1b';
+        alertBox.style.border = '1px solid #fca5a5';
+        alertBox.innerHTML = `<strong>Conflict Warning:</strong> ${esc(tName)} already has an exam duty in <strong>${esc(cleanSectionName(clash.section_name || clash.section))}</strong> at this time slot (${esc(ctx.rowTime)}). You can still proceed if adjusting afterwards.`;
+      } else {
+        alertBox.style.background = '#ecfdf5';
+        alertBox.style.color = '#065f46';
+        alertBox.style.border = '1px solid #a7f3d0';
+        alertBox.innerHTML = `<strong>Conflict-Free:</strong> ${esc(tName)} is completely available in this time slot (0 clashes detected). Duration: ${duration} mins.`;
+      }
+    },
+
+    confirmAddSubject: function() {
+      const ctx = this._addContext;
+      if (!ctx) return;
+
+      const secSelect = document.getElementById('addSubjectSectionSelect');
+      const subSelect = document.getElementById('addSubjectSelect');
+      const customInput = document.getElementById('addSubjectCustomInput');
+      const teacherSelect = document.getElementById('addSubjectTeacherSelect');
+      const duration = document.querySelector('input[name="addSubjectDuration"]:checked')?.value || '60';
+
+      const secId = secSelect ? secSelect.value : ctx.secId;
+      if (this.isSectionLocked(secId)) {
+        this.showToast("Cannot add subject: This section's exam schedule is locked.");
+        return;
+      }
+
+      let subjectName = '';
+      if (subSelect) {
+        if (subSelect.value === '__CUSTOM__') {
+          subjectName = customInput ? customInput.value.trim() : '';
+        } else {
+          subjectName = subSelect.value.trim();
+        }
+      }
+      if (!subjectName) {
+        alert('Please enter or select a subject name.');
+        return;
+      }
+
+      const tId = teacherSelect ? teacherSelect.value : '';
+      const tOpt = teacherSelect ? teacherSelect.options[teacherSelect.selectedIndex] : null;
+      const tName = tOpt ? tOpt.getAttribute('data-name') : 'Teacher';
+      if (!tId) {
+        alert('Please select an assigned teacher.');
+        return;
+      }
+
+      const secObj = SECTIONS_DATA.find(s => s.id === secId) || {
+        id: secId,
+        section_name: 'Section',
+        grade_level: '',
+        shift: ctx.shiftGroup === 'f2f' ? 'F2F' : (ctx.shiftGroup === 'second' ? 'ODL - 2ND SHIFT' : 'ODL - 1ST SHIFT')
+      };
+
+      const newId = 'exam_add_' + Date.now();
+      const newExam = {
+        id: newId,
+        exam_term: '2nd Term',
+        day_number: ctx.dayNum,
+        date: ctx.dateStr || '',
+        date_str: ctx.dateStr || '',
+        short_date: ctx.shortDate || '',
+        day_name: ctx.dateStr ? ctx.dateStr.split(',')[0].trim() : '',
+        slot_number: ctx.slotNum,
+        slots_spanned: Number(duration) === 120 ? 2 : 1,
+        time_slot: ctx.rowTime,
+        time_slot_label: ctx.rowTime,
+        time: ctx.rowTime,
+        start_time: ctx.rowTime.split('–')[0].split('-')[0].trim(),
+        end_time: ctx.rowTime.includes('–') ? ctx.rowTime.split('–')[1].trim() : (ctx.rowTime.includes('-') ? ctx.rowTime.split('-')[1].trim() : ''),
+        section_id: secObj.id,
+        section: secObj.section_name,
+        section_name: secObj.section_name,
+        department: secObj.department || 'Elementary',
+        grade: secObj.grade_level || '',
+        grade_level: secObj.grade_level || '',
+        shift: secObj.shift || (ctx.shiftGroup === 'f2f' ? 'F2F' : (ctx.shiftGroup === 'second' ? 'ODL - 2ND SHIFT' : 'ODL - 1ST SHIFT')),
+        modality: secObj.shift === 'F2F' ? 'F2F' : 'ODL',
+        gender: 'MIXED',
+        subject_id: 'subj_' + subjectName.toLowerCase().replace(/[^a-z0-9]/g, '_'),
+        subject: subjectName,
+        teacher_id: tId,
+        teacher: tName,
+        duration_minutes: Number(duration),
+        teacher_status: 'VERIFIED',
+        subject_teacher: tName,
+        subject_teacher_id: tId,
+        subject_teacher_active: true,
+        replacement_teacher_required: false,
+        subject_teacher_status: 'ACTIVE_VERIFIED',
+        active_subject_teacher: tName,
+        active_subject_teacher_id: tId,
+        proctor: tName,
+        proctor_id: tId,
+        proctor_status: 'ACTIVE_ASSIGNED',
+        proctor_assignment_source: 'SUBJECT_TEACHER',
+        proctor_department: 'Faculty',
+        proctor_conflict_status: 'CLEAR',
+        proctor_pool: 'SUBJECT_TEACHER'
+      };
+
+      EXAM_RECORDS.push(newExam);
+      this.undoStack.push({ type: 'add', exam: newExam });
+      this.redoStack = [];
+
+      this.closeAddSubjectModal();
+      this.afterMutation(`Added "${subjectName}" (${cleanSectionName(secObj.section_name)} • ${tName})`);
+    },
+
     handleCellClick: function(ev) {
-      if (!this.isEditUnlocked || !this.selectedExamId) return;
+      if (!this.isEditUnlocked) return;
       const cell = ev.currentTarget;
-      if (!cell.hasAttribute('data-drop-zone')) return;
+      if (!cell || !cell.hasAttribute('data-drop-zone')) return;
+
+      if (!this.selectedExamId) {
+        if (cell.classList.contains('cell-empty')) {
+          this.openAddSubjectModal(cell);
+        }
+        return;
+      }
 
       const examId = this.selectedExamId;
       const status = cell.getAttribute('data-drop-status');
@@ -9917,6 +10452,12 @@ body.admin-edit-unlocked .badge-card-sec-locked {
           prevSecondarySource: curSs,
           prevSecondaryTarget: curSt
         });
+      } else if (action.type === 'add') {
+        const idx = EXAM_RECORDS.findIndex(e => e.id === action.exam.id);
+        if (idx !== -1) {
+          const [removed] = EXAM_RECORDS.splice(idx, 1);
+          this.redoStack.push({ type: 'add', exam: removed });
+        }
       }
 
       this.autoSave(true);
@@ -9979,6 +10520,9 @@ body.admin-edit-unlocked .badge-card-sec-locked {
           prevSecondarySource: curSs,
           prevSecondaryTarget: curSt
         });
+      } else if (action.type === 'add') {
+        EXAM_RECORDS.push(action.exam);
+        this.undoStack.push({ type: 'add', exam: action.exam });
       }
 
       this.autoSave(true);
@@ -11305,7 +11849,8 @@ body.admin-edit-unlocked .badge-card-sec-locked {
                     ondragleave="scheduleEditor.handleDragLeave(event)"
                     ondrop="scheduleEditor.handleDrop(event)"
                     onclick="scheduleEditor.handleCellClick(event)"
-                    title="${isUnlocked ? 'Drop subject here to move' : ''}">
+                    title="${isUnlocked ? 'Click + to Add Subject, or drag/drop here' : ''}">
+                  ${isUnlocked ? '<div class="cell-empty-add-btn" title="Click + to Add Subject" aria-label="Add Subject">+</div>' : ''}
                 </td>
               `;
             }
@@ -12120,7 +12665,8 @@ body.admin-edit-unlocked .badge-card-sec-locked {
                     ondragleave="scheduleEditor.handleDragLeave(event)"
                     ondrop="scheduleEditor.handleDrop(event)"
                     onclick="scheduleEditor.handleCellClick(event)"
-                    title="${isUnlocked ? 'Drop subject here to move' : ''}">
+                    title="${isUnlocked ? 'Click + to Add Subject, or drag/drop here' : ''}">
+                  ${isUnlocked ? '<div class="cell-empty-add-btn" title="Click + to Add Subject" aria-label="Add Subject">+</div>' : ''}
                 </td>
               `;
             }
