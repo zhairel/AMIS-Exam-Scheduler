@@ -8,6 +8,7 @@
   ],
   "rewrites": [
     { "source": "/amis_exam_calendar/:match*", "destination": "/:match*" },
+    { "source": "/loads", "destination": "/loads.html" },
     { "source": "/loads-schedule", "destination": "/loads-schedule.html" },
     { "source": "/loads_schedule", "destination": "/loads_schedule/index.html" },
     { "source": "/loads_schedule/:match*", "destination": "/loads_schedule/:match*" },
