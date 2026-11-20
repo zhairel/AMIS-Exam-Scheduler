@@ -1330,6 +1330,13 @@ html, body {
   box-shadow: 0 2px 8px rgba(22, 163, 74, 0.25);
 }
 
+.filter-pill-btn.active-duplicate {
+  background: #d97706 !important;
+  color: #ffffff !important;
+  border-color: #b45309 !important;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.25) !important;
+}
+
 /* Teacher Banner Load Stats */
 .teacher-banner-left {
   display: flex;
@@ -2554,6 +2561,39 @@ td.cell-duplicate-subject {
   box-shadow: 0 1px 3px rgba(161, 98, 7, 0.15);
   line-height: 1.2;
   user-select: none;
+  cursor: pointer;
+}
+
+.badge-card-duplicate-pill {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.badge-status-duplicate {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.badge-status-duplicate:hover {
+  background: #fde68a;
+  color: #78350f;
 }
 
 .cell-clash-alert-banner {
@@ -8303,29 +8343,105 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
 
   function getDuplicateSubjectMap() {
     const secSubjectExams = {};
+    const teacherSecSubjectExams = {};
+    const map = new Map();
+    const teacherDuplicateMap = new Map();
+    const sectionDuplicateMap = new Map();
+
     EXAM_RECORDS.forEach(e => {
       const secId = e.section_id || e.section || "";
       const normSubj = (publicExamSubject(e) || "").trim().toLowerCase();
-      if (!secId || !normSubj) return;
-      const key = `${secId}:::${normSubj}`;
-      if (!secSubjectExams[key]) secSubjectExams[key] = [];
-      secSubjectExams[key].push(e);
+      const tid = e.teacher_id || e.subject_teacher_id || "";
+      const cleanSecName = (e.section_name || e.section || "").trim().toLowerCase();
+
+      if (secId && normSubj) {
+        const secKey = `${secId}:::${normSubj}`;
+        if (!secSubjectExams[secKey]) secSubjectExams[secKey] = [];
+        secSubjectExams[secKey].push(e);
+      }
+
+      if (tid && normSubj && (secId || cleanSecName)) {
+        const targetSec = secId || cleanSecName;
+        const tchrKey = `${tid}:::${targetSec}:::${normSubj}`;
+        if (!teacherSecSubjectExams[tchrKey]) teacherSecSubjectExams[tchrKey] = [];
+        teacherSecSubjectExams[tchrKey].push(e);
+      }
     });
 
-    const map = new Map();
     for (const key in secSubjectExams) {
       const list = secSubjectExams[key];
       if (list.length > 1) {
         list.forEach(ex => {
-          map.set(ex.id, {
+          const tid = ex.teacher_id || ex.subject_teacher_id || "";
+          const sid = ex.section_id || ex.section || "";
+          const existing = map.get(ex.id) || {
             count: list.length,
             subject: publicExamSubject(ex),
-            section: ex.section_name || ex.section || ""
-          });
+            section: ex.section_name || ex.section || "",
+            sectionId: sid,
+            teacher: ex.teacher || ex.subject_teacher || "",
+            teacherId: tid,
+            duplicateWith: list.filter(other => other.id !== ex.id),
+            inSection: true,
+            inFaculty: false
+          };
+          existing.count = Math.max(existing.count, list.length);
+          existing.inSection = true;
+          map.set(ex.id, existing);
+
+          if (tid) {
+            if (!teacherDuplicateMap.has(tid)) teacherDuplicateMap.set(tid, new Set());
+            teacherDuplicateMap.get(tid).add(ex.id);
+          }
+          if (sid) {
+            if (!sectionDuplicateMap.has(sid)) sectionDuplicateMap.set(sid, new Set());
+            sectionDuplicateMap.get(sid).add(ex.id);
+          }
         });
       }
     }
-    return { map, totalCount: map.size };
+
+    for (const key in teacherSecSubjectExams) {
+      const list = teacherSecSubjectExams[key];
+      if (list.length > 1) {
+        list.forEach(ex => {
+          const tid = ex.teacher_id || ex.subject_teacher_id || "";
+          const sid = ex.section_id || ex.section || "";
+          const existing = map.get(ex.id) || {
+            count: list.length,
+            subject: publicExamSubject(ex),
+            section: ex.section_name || ex.section || "",
+            sectionId: sid,
+            teacher: ex.teacher || ex.subject_teacher || "",
+            teacherId: tid,
+            duplicateWith: list.filter(other => other.id !== ex.id),
+            inSection: false,
+            inFaculty: true
+          };
+          existing.count = Math.max(existing.count, list.length);
+          existing.inFaculty = true;
+          map.set(ex.id, existing);
+
+          if (tid) {
+            if (!teacherDuplicateMap.has(tid)) teacherDuplicateMap.set(tid, new Set());
+            teacherDuplicateMap.get(tid).add(ex.id);
+          }
+          if (sid) {
+            if (!sectionDuplicateMap.has(sid)) sectionDuplicateMap.set(sid, new Set());
+            sectionDuplicateMap.get(sid).add(ex.id);
+          }
+        });
+      }
+    }
+
+    return {
+      map,
+      totalCount: map.size,
+      teacherDuplicateMap,
+      sectionDuplicateMap,
+      duplicateFacultyCount: teacherDuplicateMap.size,
+      duplicateSectionCount: sectionDuplicateMap.size
+    };
   }
 
   function updateAntiConflictBadge() {
@@ -8333,18 +8449,19 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
     const conflicts = strictScheduleConflicts();
     const conflictCount = conflicts.length;
     const isClear = conflictCount === 0;
-    const { map: dupMap, totalCount: dupCount } = getDuplicateSubjectMap();
+    const { map: dupMap, totalCount: dupCount, duplicateFacultyCount } = getDuplicateSubjectMap();
 
     if (badge) {
       const detail = isClear ? '0 Conflicts' : `${conflicts.teacherCount || 0} Teacher, ${conflicts.sectionCount || 0} Section Clash`;
+      const dupLabel = duplicateFacultyCount > 0 ? `${dupCount} Duplicates (${duplicateFacultyCount} Faculty)` : `${dupCount} Duplicates`;
       const dupPill = dupCount > 0
-        ? `<span onclick="scheduleEditor.openDuplicateChecker()" style="display:inline-flex; align-items:center; gap:4px; margin-left:8px; padding:2px 8px; border-radius:12px; background:#fef9c3; color:#854d0e; border:1px solid #facc15; font-size:11px; font-weight:800; cursor:pointer;" title="Click to open Duplicate Subject Checker">${dupCount} Duplicates [Check]</span>`
+        ? `<span onclick="scheduleEditor.openDuplicateChecker()" style="display:inline-flex; align-items:center; gap:4px; margin-left:8px; padding:2px 8px; border-radius:12px; background:#fef9c3; color:#854d0e; border:1px solid #facc15; font-size:11px; font-weight:800; cursor:pointer;" title="Click to open Duplicate Subject Checker">${dupLabel} [Check]</span>`
         : `<span onclick="scheduleEditor.openDuplicateChecker()" style="display:inline-flex; align-items:center; gap:4px; margin-left:8px; padding:2px 8px; border-radius:12px; background:#ecfdf5; color:#047857; border:1px solid #a7f3d0; font-size:11px; font-weight:800; cursor:pointer;" title="Click to open Duplicate Subject Checker">0 Duplicates [Check]</span>`;
       badge.innerHTML = `<span style="color:${isClear ? '#059669' : '#dc2626'}; font-weight:900;">${isClear ? '✓' : '!'}</span> Anti-Conflict Guard Active: ${detail} ${dupPill} ${isClear ? '' : '<span style="font-size:10px; margin-left:6px; text-decoration:underline; font-weight:800;">[Inspect]</span>'}`;
       badge.style.color = isClear ? '#047857' : '#b91c1c';
       badge.style.background = isClear ? '#ecfdf5' : '#fef2f2';
       badge.style.borderColor = isClear ? '#a7f3d0' : '#fecaca';
-      badge.title = isClear ? (dupCount > 0 ? `${dupCount} duplicate subjects in sections` : 'No conflicts detected') : `Click to view all ${conflictCount} conflicting cells and jump directly to them`;
+      badge.title = isClear ? (dupCount > 0 ? `${dupCount} duplicate subjects in faculty & sections` : 'No conflicts detected') : `Click to view all ${conflictCount} conflicting cells and jump directly to them`;
     }
 
     const btnJump = document.getElementById('btnClashJump');
@@ -9793,7 +9910,22 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
 
       const secSelect = document.getElementById('addSubjectSectionSelect');
       const curSecId = secSelect ? secSelect.value : ctx.secId;
+      const curSecObj = SECTIONS_DATA.find(s => s.id === curSecId);
+      const curSecName = curSecObj ? curSecObj.section_name : 'Selected Section';
 
+      // Resolve subject name
+      const subSelect = document.getElementById('addSubjectSelect');
+      const customInput = document.getElementById('addSubjectCustomInput');
+      let subjectName = '';
+      if (subSelect) {
+        if (subSelect.value === '__CUSTOM__') {
+          subjectName = customInput ? customInput.value.trim() : '';
+        } else {
+          subjectName = subSelect.value;
+        }
+      }
+
+      // Check Teacher Time Clash
       const clash = EXAM_RECORDS.find(e =>
         (e.teacher_id === tId || e.subject_teacher_id === tId) &&
         Number(e.day_number) === ctx.dayNum &&
@@ -9801,17 +9933,58 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         e.section_id !== curSecId
       );
 
+      // Check Duplicate Subject in Section or Faculty Timetable
+      const normInputSub = (subjectName || '').trim().toLowerCase();
+      let dupSectionExam = null;
+      let dupTeacherExam = null;
+      if (normInputSub) {
+        dupSectionExam = EXAM_RECORDS.find(e =>
+          (e.section_id === curSecId || (cleanTokens(e.section_name).join(' ') === cleanTokens(curSecName).join(' '))) &&
+          (publicExamSubject(e) || '').trim().toLowerCase() === normInputSub
+        );
+        if (tId) {
+          dupTeacherExam = EXAM_RECORDS.find(e =>
+            (e.teacher_id === tId || e.subject_teacher_id === tId) &&
+            (e.section_id === curSecId || (cleanTokens(e.section_name).join(' ') === cleanTokens(curSecName).join(' '))) &&
+            (publicExamSubject(e) || '').trim().toLowerCase() === normInputSub
+          );
+        }
+      }
+
       alertBox.style.display = 'block';
+
+      let clashHtml = '';
+      if (clash) {
+        clashHtml = `<div><strong>Conflict Warning:</strong> ${esc(tName)} already has an exam duty in <strong>${esc(cleanSectionName(clash.section_name || clash.section))}</strong> at this time slot (${esc(ctx.rowTime)}).</div>`;
+      }
+
+      let dupHtml = '';
+      if (dupTeacherExam) {
+        dupHtml = `<div style="margin-top:${clash ? '6px' : '0'}; padding:5px 8px; border-radius:6px; background:#fef9c3; border:1px solid #fde047; color:#854d0e; font-size:11.5px; line-height:1.4;">
+          <strong>Duplicate Warning:</strong> ${esc(tName)} already has an exam for <strong>${esc(subjectName)}</strong> in ${esc(cleanSectionName(curSecName))} on Day ${dupTeacherExam.day_number} (${esc(dupTeacherExam.time_slot)}). Adding another will create a duplicate subject in the timetable.
+        </div>`;
+      } else if (dupSectionExam) {
+        const otherT = dupSectionExam.teacher || dupSectionExam.subject_teacher || 'Teacher';
+        dupHtml = `<div style="margin-top:${clash ? '6px' : '0'}; padding:5px 8px; border-radius:6px; background:#fef9c3; border:1px solid #fde047; color:#854d0e; font-size:11.5px; line-height:1.4;">
+          <strong>Duplicate Warning:</strong> <strong>${esc(subjectName)}</strong> is already scheduled in ${esc(cleanSectionName(curSecName))} on Day ${dupSectionExam.day_number} (${esc(dupSectionExam.time_slot)}) with ${esc(otherT)}.
+        </div>`;
+      }
+
       if (clash) {
         alertBox.style.background = '#fef2f2';
         alertBox.style.color = '#991b1b';
         alertBox.style.border = '1px solid #fca5a5';
-        alertBox.innerHTML = `<strong>Conflict Warning:</strong> ${esc(tName)} already has an exam duty in <strong>${esc(cleanSectionName(clash.section_name || clash.section))}</strong> at this time slot (${esc(ctx.rowTime)}). You can still proceed if adjusting afterwards.`;
+        alertBox.innerHTML = clashHtml + dupHtml;
+      } else if (dupHtml) {
+        alertBox.style.background = '#fffdf7';
+        alertBox.style.color = '#854d0e';
+        alertBox.style.border = '1px solid #fde047';
+        alertBox.innerHTML = `<div style="margin-bottom:4px; font-weight:700; color:#15803d; display:flex; align-items:center; gap:4px;"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>${esc(tName)} is time-slot conflict-free (${duration} mins).</div>` + dupHtml;
       } else {
         alertBox.style.background = '#ecfdf5';
         alertBox.style.color = '#065f46';
         alertBox.style.border = '1px solid #a7f3d0';
-        alertBox.innerHTML = `<strong>Conflict-Free:</strong> ${esc(tName)} is completely available in this time slot (0 clashes detected). Duration: ${duration} mins.`;
+        alertBox.innerHTML = `<strong>Conflict-Free &amp; Duplicate-Free:</strong> ${esc(tName)} is available in this time slot (0 clashes detected, 0 duplicates). Duration: ${duration} mins.`;
       }
     },
 
@@ -10845,13 +11018,44 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       if (modal) modal.style.display = 'none';
     },
 
-    openDuplicateChecker: function() {
+    openDuplicateChecker: function(filterType, filterEntityId) {
       const modal = document.getElementById('duplicateCheckerModal');
       const listEl = document.getElementById('duplicateCheckerList');
       const titleEl = document.getElementById('duplicateModalTitle');
       const subtitleEl = document.getElementById('duplicateModalSubtitle');
       if (!modal || !listEl) return;
 
+      const { map: dupMap, teacherDuplicateMap, sectionDuplicateMap, duplicateFacultyCount, duplicateSectionCount } = getDuplicateSubjectMap();
+
+      // Build Faculty Duplicate Groups
+      const facultyDupGroups = [];
+      FACULTY_ROSTER_DATA.forEach(t => {
+        const dupExamIds = teacherDuplicateMap.get(t.id);
+        if (!dupExamIds || dupExamIds.size === 0) return;
+        const exams = EXAM_RECORDS.filter(e => dupExamIds.has(e.id));
+        if (exams.length === 0) return;
+
+        // Group by subject for this teacher
+        const subMap = {};
+        exams.forEach(e => {
+          const s = publicExamSubject(e);
+          if (!subMap[s]) subMap[s] = [];
+          subMap[s].push(e);
+        });
+
+        for (const subj in subMap) {
+          facultyDupGroups.push({
+            teacher: t.name,
+            teacherId: t.id,
+            department: t.department || 'Faculty',
+            subject: subj,
+            count: subMap[subj].length,
+            exams: subMap[subj]
+          });
+        }
+      });
+
+      // Build Section Duplicate Groups
       const secSubjectExams = {};
       EXAM_RECORDS.forEach(e => {
         const secId = e.section_id || e.section || '';
@@ -10862,11 +11066,11 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         secSubjectExams[key].push(e);
       });
 
-      const dupGroups = [];
+      const sectionDupGroups = [];
       for (const key in secSubjectExams) {
         const list = secSubjectExams[key];
         if (list.length > 1) {
-          dupGroups.push({
+          sectionDupGroups.push({
             section: list[0].section_name || list[0].section || 'Section',
             sectionId: list[0].section_id,
             subject: publicExamSubject(list[0]),
@@ -10876,7 +11080,11 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         }
       }
 
-      if (dupGroups.length === 0) {
+      const totalFacultyDups = facultyDupGroups.length;
+      const totalSectionDups = sectionDupGroups.length;
+      const totalDupCount = dupMap.size;
+
+      if (totalDupCount === 0) {
         listEl.innerHTML = `
           <div style="text-align:center; padding:36px 20px; color:#15803d;">
             <div style="width:52px; height:52px; border-radius:50%; background:#dcfce7; display:inline-flex; align-items:center; justify-content:center; margin-bottom:12px;">
@@ -10893,58 +11101,168 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
           </div>
         `;
         if (titleEl) titleEl.textContent = 'Duplicate Subject Checker (All Clear)';
-        if (subtitleEl) subtitleEl.textContent = '0 duplicate subjects found across all sections & faculty';
+        if (subtitleEl) subtitleEl.textContent = '0 duplicate subjects found across all faculty & sections';
         modal.style.display = 'flex';
         return;
       }
 
-      if (titleEl) titleEl.textContent = `Duplicate Subject Checker (${dupGroups.length} Found)`;
-      if (subtitleEl) subtitleEl.textContent = `${dupGroups.length} section(s) have multiple exams scheduled for the same subject`;
+      if (titleEl) titleEl.textContent = `Duplicate Subject Checker (${totalDupCount} Entries)`;
+      if (subtitleEl) subtitleEl.textContent = `${totalFacultyDups} Faculty duplicate case(s) & ${totalSectionDups} Section duplicate case(s)`;
 
-      let html = '';
-      dupGroups.forEach((g, gIdx) => {
+      let html = `
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px; padding:4px 0; border-bottom:1px solid #e2e8f0; flex-wrap:wrap;">
+          <span style="font-size:12px; font-weight:700; color:#475569;">Scope:</span>
+          <button type="button" class="filter-pill-btn active" id="btnDupTabAll" onclick="scheduleEditor.setDuplicateModalTab('all')" style="padding:3px 10px; font-size:11.5px;">All Duplicates (${totalDupCount})</button>
+          <button type="button" class="filter-pill-btn" id="btnDupTabFaculty" onclick="scheduleEditor.setDuplicateModalTab('faculty')" style="padding:3px 10px; font-size:11.5px;">Faculty Timetables (${totalFacultyDups})</button>
+          <button type="button" class="filter-pill-btn" id="btnDupTabSection" onclick="scheduleEditor.setDuplicateModalTab('section')" style="padding:3px 10px; font-size:11.5px;">Section Schedules (${totalSectionDups})</button>
+        </div>
+        <div id="duplicateModalContent">
+      `;
+
+      // Render Faculty Duplicates
+      if (facultyDupGroups.length > 0) {
         html += `
-          <div class="conflict-group-box" style="border-left:4px solid #f59e0b; background:#fffdf7; padding:12px 14px; border-radius:8px; border:1px solid #fef3c7; border-left:4px solid #f59e0b;">
-            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; flex-wrap:wrap; gap:6px;">
-              <div>
-                <div style="font-size:13.5px; font-weight:800; color:#0f172a;">${esc(g.section)}</div>
-                <div style="font-size:12px; font-weight:700; color:#b45309;">Subject: ${esc(g.subject)} (${g.count} entries)</div>
-              </div>
-              <span style="background:#fef3c7; color:#92400e; font-size:11px; font-weight:800; padding:2px 8px; border-radius:12px; border:1px solid #fde68a;">DUPLICATE (${g.count}X)</span>
+          <div class="dup-tab-section-block" data-dup-scope="faculty" style="margin-bottom:18px;">
+            <div style="display:flex; align-items:center; gap:6px; margin-bottom:8px; font-size:12px; font-weight:800; color:#b45309; text-transform:uppercase; letter-spacing:0.04em;">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              Faculty Exam Timetable Duplicates (${facultyDupGroups.length})
             </div>
-            <div style="display:flex; flex-direction:column; gap:6px;">
-              ${g.exams.map((ex, exIdx) => {
-                const tchr = ex.teacher || ex.subject_teacher || 'Teacher';
-                const tid = ex.teacher_id || ex.subject_teacher_id || '';
-                return `
-                  <div style="display:flex; align-items:center; justify-content:space-between; background:#ffffff; padding:8px 10px; border-radius:6px; border:1px solid #e2e8f0; flex-wrap:wrap; gap:8px;">
-                    <div>
-                      <span style="font-size:12px; font-weight:800; color:#1e293b;">Entry #${exIdx + 1}: Day ${ex.day_number} (${esc(ex.short_date || '')}) • ${esc(ex.time_slot || '')}</span>
-                      <div style="font-size:11.5px; color:#64748b;">Teacher: <strong>${esc(tchr)}</strong></div>
-                    </div>
-                    <div style="display:flex; align-items:center; gap:6px;">
-                      <button type="button" class="btn-conflict-jump" onclick="scheduleEditor.jumpToDuplicateExam('${ex.id}', 'section', '${ex.section_id}')" title="View in Section Exam Schedule">
-                        Section View
-                      </button>
-                      ${tid ? `
-                        <button type="button" class="btn-conflict-jump" style="background:#eff6ff; color:#1d4ed8; border-color:#bfdbfe;" onclick="scheduleEditor.jumpToDuplicateExam('${ex.id}', 'faculty', '${tid}')" title="View in Faculty Timetable">
+            <div style="display:flex; flex-direction:column; gap:10px;">
+        `;
+        facultyDupGroups.forEach(g => {
+          html += `
+            <div class="conflict-group-box" style="border-left:4px solid #f59e0b; background:#fffdf7; padding:12px 14px; border-radius:8px; border:1px solid #fef3c7; border-left:4px solid #f59e0b;">
+              <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; flex-wrap:wrap; gap:6px;">
+                <div>
+                  <div style="font-size:13.5px; font-weight:800; color:#0f172a;">${esc(g.teacher)} <span style="font-size:11px; font-weight:600; color:#64748b;">(${esc(g.department)})</span></div>
+                  <div style="font-size:12px; font-weight:700; color:#b45309;">Subject: ${esc(g.subject)} (${g.count} entries)</div>
+                </div>
+                <span style="background:#fef3c7; color:#92400e; font-size:11px; font-weight:800; padding:2px 8px; border-radius:12px; border:1px solid #fde68a;">FACULTY DUPLICATE (${g.count}X)</span>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:6px;">
+                ${g.exams.map((ex, exIdx) => {
+                  const secName = ex.section_name || ex.section || 'Section';
+                  return `
+                    <div style="display:flex; align-items:center; justify-content:space-between; background:#ffffff; padding:8px 10px; border-radius:6px; border:1px solid #e2e8f0; flex-wrap:wrap; gap:8px;">
+                      <div>
+                        <span style="font-size:12px; font-weight:800; color:#1e293b;">Entry #${exIdx + 1}: Day ${ex.day_number} (${esc(ex.short_date || '')}) &bull; ${esc(ex.time_slot || '')}</span>
+                        <div style="font-size:11.5px; color:#64748b;">Section: <strong>${esc(cleanSectionName(secName))}</strong></div>
+                      </div>
+                      <div style="display:flex; align-items:center; gap:6px;">
+                        <button type="button" class="btn-conflict-jump" style="background:#eff6ff; color:#1d4ed8; border-color:#bfdbfe;" onclick="scheduleEditor.jumpToDuplicateExam('${ex.id}', 'faculty', '${g.teacherId}')" title="View in Faculty Timetable">
                           Faculty View
                         </button>
-                      ` : ''}
-                      <button type="button" class="btn-modal-cancel" style="padding:4px 8px; font-size:11px; background:#fef2f2; color:#b91c1c; border-color:#fecaca;" onclick="scheduleEditor.deleteDuplicateFromModal(event, '${ex.id}')" title="Delete this duplicate exam">
-                        Delete
-                      </button>
+                        ${ex.section_id ? `
+                          <button type="button" class="btn-conflict-jump" onclick="scheduleEditor.jumpToDuplicateExam('${ex.id}', 'section', '${ex.section_id}')" title="View in Section Exam Schedule">
+                            Section View
+                          </button>
+                        ` : ''}
+                        <button type="button" class="btn-modal-cancel" style="padding:4px 8px; font-size:11px; background:#fef2f2; color:#b91c1c; border-color:#fecaca;" onclick="scheduleEditor.deleteDuplicateFromModal(event, '${ex.id}')" title="Delete this duplicate exam">
+                          Delete
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                `;
-              }).join('')}
+                  `;
+                }).join('')}
+              </div>
+            </div>
+          `;
+        });
+        html += `
             </div>
           </div>
         `;
-      });
+      }
 
+      // Render Section Duplicates
+      if (sectionDupGroups.length > 0) {
+        html += `
+          <div class="dup-tab-section-block" data-dup-scope="section" style="margin-bottom:18px;">
+            <div style="display:flex; align-items:center; gap:6px; margin-bottom:8px; font-size:12px; font-weight:800; color:#b45309; text-transform:uppercase; letter-spacing:0.04em;">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+              Section Exam Schedule Duplicates (${sectionDupGroups.length})
+            </div>
+            <div style="display:flex; flex-direction:column; gap:10px;">
+        `;
+        sectionDupGroups.forEach(g => {
+          html += `
+            <div class="conflict-group-box" style="border-left:4px solid #f59e0b; background:#fffdf7; padding:12px 14px; border-radius:8px; border:1px solid #fef3c7; border-left:4px solid #f59e0b;">
+              <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; flex-wrap:wrap; gap:6px;">
+                <div>
+                  <div style="font-size:13.5px; font-weight:800; color:#0f172a;">${esc(g.section)}</div>
+                  <div style="font-size:12px; font-weight:700; color:#b45309;">Subject: ${esc(g.subject)} (${g.count} entries)</div>
+                </div>
+                <span style="background:#fef3c7; color:#92400e; font-size:11px; font-weight:800; padding:2px 8px; border-radius:12px; border:1px solid #fde68a;">SECTION DUPLICATE (${g.count}X)</span>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:6px;">
+                ${g.exams.map((ex, exIdx) => {
+                  const tchr = ex.teacher || ex.subject_teacher || 'Teacher';
+                  const tid = ex.teacher_id || ex.subject_teacher_id || '';
+                  return `
+                    <div style="display:flex; align-items:center; justify-content:space-between; background:#ffffff; padding:8px 10px; border-radius:6px; border:1px solid #e2e8f0; flex-wrap:wrap; gap:8px;">
+                      <div>
+                        <span style="font-size:12px; font-weight:800; color:#1e293b;">Entry #${exIdx + 1}: Day ${ex.day_number} (${esc(ex.short_date || '')}) &bull; ${esc(ex.time_slot || '')}</span>
+                        <div style="font-size:11.5px; color:#64748b;">Teacher: <strong>${esc(tchr)}</strong></div>
+                      </div>
+                      <div style="display:flex; align-items:center; gap:6px;">
+                        <button type="button" class="btn-conflict-jump" onclick="scheduleEditor.jumpToDuplicateExam('${ex.id}', 'section', '${ex.section_id}')" title="View in Section Exam Schedule">
+                          Section View
+                        </button>
+                        ${tid ? `
+                          <button type="button" class="btn-conflict-jump" style="background:#eff6ff; color:#1d4ed8; border-color:#bfdbfe;" onclick="scheduleEditor.jumpToDuplicateExam('${ex.id}', 'faculty', '${tid}')" title="View in Faculty Timetable">
+                            Faculty View
+                          </button>
+                        ` : ''}
+                        <button type="button" class="btn-modal-cancel" style="padding:4px 8px; font-size:11px; background:#fef2f2; color:#b91c1c; border-color:#fecaca;" onclick="scheduleEditor.deleteDuplicateFromModal(event, '${ex.id}')" title="Delete this duplicate exam">
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  `;
+                }).join('')}
+              </div>
+            </div>
+          `;
+        });
+        html += `
+            </div>
+          </div>
+        `;
+      }
+
+      html += `</div>`;
       listEl.innerHTML = html;
+
+      if (filterType === 'faculty') {
+        this.setDuplicateModalTab('faculty');
+      } else if (filterType === 'section') {
+        this.setDuplicateModalTab('section');
+      } else {
+        this.setDuplicateModalTab('all');
+      }
+
       modal.style.display = 'flex';
+    },
+
+    setDuplicateModalTab: function(tabName) {
+      const btnAll = document.getElementById('btnDupTabAll');
+      const btnFac = document.getElementById('btnDupTabFaculty');
+      const btnSec = document.getElementById('btnDupTabSection');
+      if (btnAll) btnAll.className = 'filter-pill-btn' + (tabName === 'all' ? ' active' : '');
+      if (btnFac) btnFac.className = 'filter-pill-btn' + (tabName === 'faculty' ? ' active' : '');
+      if (btnSec) btnSec.className = 'filter-pill-btn' + (tabName === 'section' ? ' active' : '');
+
+      const blocks = document.querySelectorAll('.dup-tab-section-block');
+      blocks.forEach(b => {
+        const scope = b.getAttribute('data-dup-scope');
+        if (tabName === 'all') {
+          b.style.display = 'block';
+        } else if (tabName === scope) {
+          b.style.display = 'block';
+        } else {
+          b.style.display = 'none';
+        }
+      });
     },
 
     closeDuplicateChecker: function() {
@@ -10953,48 +11271,57 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
     },
 
     copyDuplicateReport: function() {
-      const secSubjectExams = {};
-      EXAM_RECORDS.forEach(e => {
-        const secId = e.section_id || e.section || '';
-        const normSubj = (publicExamSubject(e) || '').trim().toLowerCase();
-        if (!secId || !normSubj) return;
-        const key = `${secId}:::${normSubj}`;
-        if (!secSubjectExams[key]) secSubjectExams[key] = [];
-        secSubjectExams[key].push(e);
-      });
-
-      const dupGroups = [];
-      for (const key in secSubjectExams) {
-        const list = secSubjectExams[key];
-        if (list.length > 1) {
-          dupGroups.push({
-            section: list[0].section_name || list[0].section || 'Section',
-            subject: publicExamSubject(list[0]),
-            count: list.length,
-            exams: list
-          });
-        }
-      }
-
+      const { map: dupMap, teacherDuplicateMap } = getDuplicateSubjectMap();
       const nowStr = new Date().toLocaleString();
       let report = `AMIS OFFICIAL 2ND TERM EXAM - DUPLICATE SUBJECT REPORT\n`;
       report += `Generated: ${nowStr}\n`;
       report += `Schedule URL: https://amis-exam-scheduler.vercel.app/exam-schedule-2nd-term\n\n`;
 
-      if (dupGroups.length === 0) {
+      if (dupMap.size === 0) {
         report += `STATUS: ALL CLEAR (0 Duplicate Subjects)\n`;
         report += `Both Section Exam Schedules and Faculty Exam Timetables are 100% clean with no duplicate exam bookings.\n`;
       } else {
-        report += `STATUS: ${dupGroups.length} DUPLICATE CASES FOUND\n\n`;
-        dupGroups.forEach((g, idx) => {
-          report += `${idx + 1}. Section: ${g.section}\n`;
-          report += `   Subject: ${g.subject} (${g.count} entries)\n`;
-          g.exams.forEach((ex, eIdx) => {
-            const t = ex.teacher || ex.subject_teacher || 'Teacher';
-            report += `   - Entry #${eIdx + 1}: Day ${ex.day_number} (${ex.short_date || ''}) | ${ex.time_slot} | Teacher: ${t}\n`;
+        report += `STATUS: ${dupMap.size} DUPLICATE ENTRIES FOUND (${teacherDuplicateMap.size} FACULTY TIMETABLES)\n\n`;
+
+        if (teacherDuplicateMap.size > 0) {
+          report += `--- FACULTY TIMETABLE DUPLICATES ---\n`;
+          let fIdx = 1;
+          FACULTY_ROSTER_DATA.forEach(t => {
+            const dupIds = teacherDuplicateMap.get(t.id);
+            if (!dupIds || dupIds.size === 0) return;
+            const tExams = EXAM_RECORDS.filter(e => dupIds.has(e.id));
+            report += `${fIdx++}. Teacher: ${t.name} (${t.department})\n`;
+            tExams.forEach(ex => {
+              report += `   - ${publicExamSubject(ex)} | Section: ${ex.section_name || ex.section} | Day ${ex.day_number} (${ex.short_date || ''}) | ${ex.time_slot}\n`;
+            });
+            report += `\n`;
           });
-          report += `\n`;
+        }
+
+        report += `--- SECTION SCHEDULE DUPLICATES ---\n`;
+        const secSubjectExams = {};
+        EXAM_RECORDS.forEach(e => {
+          const secId = e.section_id || e.section || '';
+          const normSubj = (publicExamSubject(e) || '').trim().toLowerCase();
+          if (!secId || !normSubj) return;
+          const key = `${secId}:::${normSubj}`;
+          if (!secSubjectExams[key]) secSubjectExams[key] = [];
+          secSubjectExams[key].push(e);
         });
+
+        let sIdx = 1;
+        for (const key in secSubjectExams) {
+          const list = secSubjectExams[key];
+          if (list.length > 1) {
+            report += `${sIdx++}. Section: ${list[0].section_name || list[0].section}\n`;
+            report += `   Subject: ${publicExamSubject(list[0])} (${list.length} entries)\n`;
+            list.forEach((ex, eIdx) => {
+              const t = ex.teacher || ex.subject_teacher || 'Teacher';
+              report += `   - Entry #${eIdx + 1}: Day ${ex.day_number} (${ex.short_date || ''}) | ${ex.time_slot} | Teacher: ${t}\n`;
+            });
+            report += `\n`;
+          }
+        }
       }
 
       if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -12116,6 +12443,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
     const ustadhsFaculty = teachersWithExams.filter(t => isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
 
     const { teacherClashCounts } = getScheduleConflictMap();
+    const { teacherDuplicateMap, duplicateFacultyCount, totalCount: dupCount } = getDuplicateSubjectMap();
     let totalFaculty = teachersWithExams.length;
     let missingFacultyCount = 0;
     let completeFacultyCount = 0;
@@ -12134,9 +12462,11 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         const isSel = (targetTeacherId && t.id === targetTeacherId) ? 'selected' : '';
         const audit = getTeacherLoadAudit(t, EXAM_RECORDS);
         const clashCnt = teacherClashCounts.get(t.id) || 0;
+        const dupCnt = (teacherDuplicateMap.get(t.id) || new Set()).size;
         const clashBadge = clashCnt > 0 ? ` [! ${clashCnt} CLASH${clashCnt === 1 ? '' : 'ES'}]` : '';
+        const dupBadge = dupCnt > 0 ? ` [! ${dupCnt} DUP]` : '';
         const statusLabel = audit.missingCount > 0 ? ` [! ${audit.missingCount} Missing]` : ' [Complete]';
-        optionsHtml += `<option value="${t.id}" ${isSel} style="${clashCnt > 0 ? 'font-weight:800; color:#b91c1c;' : ''}">${esc(t.name)} (${audit.scheduledExams} Exams / ${audit.totalLoads} Loads${statusLabel}${clashBadge})</option>`;
+        optionsHtml += `<option value="${t.id}" ${isSel} style="${(clashCnt > 0 || dupCnt > 0) ? 'font-weight:800; color:' + (clashCnt > 0 ? '#b91c1c' : '#b45309') + ';' : ''}">${esc(t.name)} (${audit.scheduledExams} Exams / ${audit.totalLoads} Loads${statusLabel}${clashBadge}${dupBadge})</option>`;
       });
       optionsHtml += '</optgroup>';
     }
@@ -12149,9 +12479,11 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         const isSel = (targetTeacherId && t.id === targetTeacherId) ? 'selected' : '';
         const audit = getTeacherLoadAudit(t, EXAM_RECORDS);
         const clashCnt = teacherClashCounts.get(t.id) || 0;
+        const dupCnt = (teacherDuplicateMap.get(t.id) || new Set()).size;
         const clashBadge = clashCnt > 0 ? ` [! ${clashCnt} CLASH${clashCnt === 1 ? '' : 'ES'}]` : '';
+        const dupBadge = dupCnt > 0 ? ` [! ${dupCnt} DUP]` : '';
         const statusLabel = audit.missingCount > 0 ? ` [! ${audit.missingCount} Missing]` : ' [Complete]';
-        optionsHtml += `<option value="${t.id}" ${isSel} style="${clashCnt > 0 ? 'font-weight:800; color:#b91c1c;' : ''}">${esc(t.name)} (${audit.scheduledExams} Exams / ${audit.totalLoads} Loads${statusLabel}${clashBadge})</option>`;
+        optionsHtml += `<option value="${t.id}" ${isSel} style="${(clashCnt > 0 || dupCnt > 0) ? 'font-weight:800; color:' + (clashCnt > 0 ? '#b91c1c' : '#b45309') + ';' : ''}">${esc(t.name)} (${audit.scheduledExams} Exams / ${audit.totalLoads} Loads${statusLabel}${clashBadge}${dupBadge})</option>`;
       });
       optionsHtml += '</optgroup>';
     }
@@ -12215,11 +12547,14 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         <button class="filter-pill-btn ${facultyCoverageFilter === 'COMPLETE' ? 'active-complete' : ''}" onclick="setFacultyCoverageFilter('COMPLETE')" title="Filter teachers with 100% scheduled loads">
           ✓ Complete (${completeFacultyCount})
         </button>
+        <button class="filter-pill-btn ${facultyCoverageFilter === 'DUPLICATE' ? 'active-duplicate' : ''}" onclick="setFacultyCoverageFilter('DUPLICATE')" title="Filter teachers with duplicate subjects in exam timetable">
+          ! Duplicate Subjects (${duplicateFacultyCount})
+        </button>
       </div>
 
-      <button type="button" class="btn-action" onclick="scheduleEditor.openDuplicateChecker()" title="Open Duplicate Subject Checker (Shareable Report)" style="background:#fef9c3; color:#854d0e; border:1px solid #facc15; font-weight:800; display:inline-flex; align-items:center; gap:5px; height:36px; padding:0 12px; border-radius:8px; cursor:pointer; font-size:12.5px;">
+      <button type="button" class="btn-action" onclick="scheduleEditor.openDuplicateChecker('faculty')" title="Open Duplicate Subject Checker (Shareable Report)" style="background:${dupCount > 0 ? '#fef3c7' : '#f8fafc'}; color:${dupCount > 0 ? '#854d0e' : '#334155'}; border:1px solid ${dupCount > 0 ? '#facc15' : '#cbd5e1'}; font-weight:800; display:inline-flex; align-items:center; gap:5px; height:36px; padding:0 12px; border-radius:8px; cursor:pointer; font-size:12.5px;">
         <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
-        <span>Duplicate Checker</span>
+        <span>Duplicate Checker (${dupCount})</span>
       </button>
 
       <button type="button" class="btn-action" onclick="scheduleEditor.openSectionLockModal()" title="Manage Section Exam Schedule Locks" style="background:${(window.scheduleEditor && window.scheduleEditor.lockedSectionIds && window.scheduleEditor.lockedSectionIds.size > 0) ? '#fef3c7' : '#f8fafc'}; color:${(window.scheduleEditor && window.scheduleEditor.lockedSectionIds && window.scheduleEditor.lockedSectionIds.size > 0) ? '#92400e' : '#334155'}; border:1px solid ${(window.scheduleEditor && window.scheduleEditor.lockedSectionIds && window.scheduleEditor.lockedSectionIds.size > 0) ? '#f59e0b' : '#cbd5e1'}; font-weight:800; display:inline-flex; align-items:center; gap:5px; height:36px; padding:0 12px; border-radius:8px; cursor:pointer; font-size:12.5px;">
@@ -12257,6 +12592,8 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       else missingFacultyCount++;
     });
 
+    const { map: dupMap, teacherDuplicateMap, duplicateFacultyCount } = getDuplicateSubjectMap();
+
     let targetTeachers = allAvailableTeachers;
     if (selectedTid && selectedTid !== 'ALL_FACULTY') {
       targetTeachers = targetTeachers.filter(t => t.id === selectedTid);
@@ -12265,9 +12602,10 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         targetTeachers = targetTeachers.filter(t => !getTeacherLoadAudit(t, EXAM_RECORDS).isComplete);
       } else if (facultyCoverageFilter === 'COMPLETE') {
         targetTeachers = targetTeachers.filter(t => getTeacherLoadAudit(t, EXAM_RECORDS).isComplete);
+      } else if (facultyCoverageFilter === 'DUPLICATE') {
+        targetTeachers = targetTeachers.filter(t => (teacherDuplicateMap.get(t.id) || new Set()).size > 0);
       }
     }
-    const { map: dupMap } = getDuplicateSubjectMap();
 
     // Filter by subject
     if (facultySubjectFilter !== 'ALL') {
@@ -12298,6 +12636,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
           <span class="faculty-stat-pill">Scheduled Exams: <span class="faculty-stat-num">${totalScheduledExams}</span></span>
           <span class="faculty-stat-pill">Fully Scheduled: <span class="faculty-stat-num" style="color:#16a34a;">${completeFacultyCount}</span></span>
           <span class="faculty-stat-pill">With Missing Subjects: <span class="faculty-stat-num" style="color:#dc2626;">${missingFacultyCount}</span></span>
+          <span class="faculty-stat-pill" style="${duplicateFacultyCount > 0 ? 'background:#fef3c7; color:#92400e; border:1px solid #fde68a;' : ''}">With Duplicate Subjects: <span class="faculty-stat-num" style="color:${duplicateFacultyCount > 0 ? '#b45309' : '#16a34a'};">${duplicateFacultyCount}</span></span>
           ${facultySubjectFilter !== 'ALL' ? `<span class="faculty-stat-pill" style="background:#e0f2fe; color:#0369a1; padding:3px 8px; border-radius:4px;">Filter: ${esc(facultySubjectFilter.toUpperCase())} (${targetTeachers.length} Faculty)</span>` : ''}
           ${facultySubjectQuery ? `<span class="faculty-stat-pill" style="background:#fef3c7; color:#92400e; padding:3px 8px; border-radius:4px;">Search: "${esc(facultySubjectQuery)}"</span>` : ''}
         </div>
@@ -12305,6 +12644,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
           <button class="filter-pill-btn ${facultyCoverageFilter === 'ALL' ? 'active' : ''}" onclick="setFacultyCoverageFilter('ALL')">All Faculty (${totalFacultyCount})</button>
           <button class="filter-pill-btn ${facultyCoverageFilter === 'MISSING' ? 'active-missing' : ''}" onclick="setFacultyCoverageFilter('MISSING')">! Missing Subjects (${missingFacultyCount})</button>
           <button class="filter-pill-btn ${facultyCoverageFilter === 'COMPLETE' ? 'active-complete' : ''}" onclick="setFacultyCoverageFilter('COMPLETE')">✓ Complete (${completeFacultyCount})</button>
+          <button class="filter-pill-btn ${facultyCoverageFilter === 'DUPLICATE' ? 'active-duplicate' : ''}" onclick="setFacultyCoverageFilter('DUPLICATE')">! Duplicate Subjects (${duplicateFacultyCount})</button>
         </div>
       </div>
     `;
@@ -12344,6 +12684,8 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       const teacherDept = t.department;
       const examDutyCount = tExams.length;
       const audit = getTeacherLoadAudit(t, EXAM_RECORDS);
+      const tDupSet = teacherDuplicateMap.get(t.id) || new Set();
+      const tDupCount = tDupSet.size;
 
       let displayedMissing = audit.missingItems;
       if (facultySubjectFilter !== 'ALL') {
@@ -12381,7 +12723,16 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
               <div class="teacher-load-stats-wrap">
                 <span class="badge-load-count">Total Load: <strong>${audit.totalLoads}</strong> Classes</span>
                 <span class="badge-exam-count">Scheduled Exams: <strong>${examDutyCount}</strong></span>
-                <span class="badge-status-complete">✓ Complete (All Loads Scheduled)</span>
+                ${audit.isComplete
+                  ? '<span class="badge-status-complete">✓ Complete (All Loads Scheduled)</span>'
+                  : `<span class="badge-status-missing" style="background:#fef2f2; color:#b91c1c; border:1px solid #fecaca; font-weight:800; padding:2px 8px; border-radius:12px; font-size:11.5px;">! Missing: ${audit.missingCount} Subject(s)</span>`
+                }
+                ${tDupCount > 0 ? `
+                  <span class="badge-status-duplicate" onclick="scheduleEditor.openDuplicateChecker('faculty', '${t.id}')" title="Click to view duplicate subjects in this teacher's timetable">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+                    Duplicate: ${tDupCount} Subject Duty (${tDupCount}x)
+                  </span>
+                ` : ''}
               </div>
             </div>
             <div style="display:flex; align-items:center; gap:8px;">
@@ -12551,7 +12902,12 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
                         <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 3.5L20.5 19h-17L12 5.5zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
                         ${clashBannerText}
                       </div>
-                    ` : ''}
+                    ` : (isDuplicateSubject ? `
+                      <div class="cell-duplicate-alert-banner" title="Warning: Duplicate Subject! ${esc(displayedSubject)} is scheduled ${dupInfo.count} times for ${esc(dupInfo.section)}." onclick="scheduleEditor.openDuplicateChecker('faculty', '${t.id}')">
+                        <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+                        <span>DUPLICATE (${dupInfo.count}X)</span>
+                      </div>
+                    ` : '')}
                     <div class="cell-class-inner ${isClashing ? 'card-has-clash' : ''} ${isCardSecLocked ? 'card-sec-locked' : ''}"
                          draggable="${canDragThisCard ? 'true' : 'false'}"
                          data-exam-id="${match.id}"
@@ -12563,7 +12919,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
                          onpointerup="scheduleEditor.handlePointerUp(event)"
                          onclick="scheduleEditor.handleExamCardClick(event, '${match.id}')"
                          title="${isCardSecLocked ? 'Auto-locked (Section Exam Schedule is locked)' : (isUnlocked ? 'Drag to reschedule/swap slot. Click to select.' : '')}"
-                         style="${isClashing ? `background:${color.bg}; border:1.5px solid #ef4444; border-left:5px solid #dc2626; border-radius:6px; color:${color.text};` : ''}">
+                         style="${isClashing ? `background:${color.bg}; border:1.5px solid #ef4444; border-left:5px solid #dc2626; border-radius:6px; color:${color.text};` : (isDuplicateSubject ? `background:${color.bg}; border:1.5px solid #f59e0b; border-left:5px solid #d97706; border-radius:6px; color:${color.text}; box-shadow:0 0 0 2px rgba(245,158,11,0.2);` : '')}">
                       ${canDragThisCard ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
                       ${canDragThisCard ? `<button type="button" class="btn-card-delete" onclick="scheduleEditor.deleteExam(event, '${match.id}')" title="Delete subject from timetable" aria-label="Delete subject">&times;</button>` : ''}
                       ${isAutomaticProctorCoverage ? `
@@ -12572,6 +12928,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
                         <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
                           ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
                           ${isCardSecLocked ? '<span class="badge-card-sec-locked" title="Auto-locked: Section exam schedule is locked">LOCKED</span>' : ''}
+                          ${isDuplicateSubject ? `<span class="badge-card-duplicate-pill" title="Duplicate subject in ${esc(dupInfo.section)} (${dupInfo.count} entries)">DUPLICATE (${dupInfo.count}X)</span>` : ''}
                         </div>
                       ` : `
                         <span class="cell-subject-sec">${esc(displayedSubject)}</span>
@@ -12580,6 +12937,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
                           ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
                           <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
                           ${isCardSecLocked ? '<span class="badge-card-sec-locked" title="Auto-locked: Section exam schedule is locked">LOCKED</span>' : ''}
+                          ${isDuplicateSubject ? `<span class="badge-card-duplicate-pill" title="Duplicate subject in ${esc(dupInfo.section)} (${dupInfo.count} entries)">DUPLICATE (${dupInfo.count}X)</span>` : ''}
                         </div>
                       `}
                       ${isClashing ? `
@@ -12593,7 +12951,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
                 `;
               } else {
                 fullHtml += `
-                  <td id="${cellId}" class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''} cell-conflict-clash" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
+                  <td id="${cellId}" class="cell-class ${isHighlight ? 'highlight-subject-slot' : ''} ${hasConflict ? 'cell-conflict-clash' : (matches.some(m => dupMap.has(m.id)) ? 'cell-duplicate-subject' : '')}" ${calcRowspan > 1 ? `rowspan="${calcRowspan}"` : ''}
                       data-drop-zone="faculty"
                       data-teacher-id="${t.id}"
                       data-day-num="${d.day_num}"
@@ -12619,6 +12977,8 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
                         const mIs120 = m.duration_minutes === 120 || m.slots_spanned === 2;
                         const isMultiCardSecLocked = Boolean(window.scheduleEditor && window.scheduleEditor.isSectionLocked(m.section_id));
                         const canDragThisMultiCard = isUnlocked && !isMultiCardSecLocked;
+                        const mIsDup = dupMap.has(m.id);
+                        const mDupInfo = mIsDup ? dupMap.get(m.id) : null;
                         return `
                           <div class="cell-class-inner card-has-clash ${isMultiCardSecLocked ? 'card-sec-locked' : ''}"
                                draggable="${canDragThisMultiCard ? 'true' : 'false'}"
@@ -12634,12 +12994,19 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
                                style="background:${mColor.bg}; border:1.5px solid #ef4444; border-left:5px solid #dc2626; border-radius:6px; padding:6px 4px; color:${mColor.text}; width:100%; box-shadow:0 1px 3px rgba(220,38,38,0.2);">
                             ${canDragThisMultiCard ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
                             ${canDragThisMultiCard ? `<button type="button" class="btn-card-delete" onclick="scheduleEditor.deleteExam(event, '${m.id}')" title="Delete subject from timetable" aria-label="Delete subject">&times;</button>` : ''}
+                            ${mIsDup ? `
+                              <div class="cell-duplicate-alert-banner" style="margin-bottom:3px; padding:1.5px 5px; font-size:9.5px;" title="Warning: Duplicate subject! ${esc(mSubject)} appears ${mDupInfo.count} times in ${esc(mDupInfo.section)}." onclick="scheduleEditor.openDuplicateChecker('faculty', '${t.id}')">
+                                <svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+                                <span>DUPLICATE (${mDupInfo.count}X)</span>
+                              </div>
+                            ` : ''}
                             <span class="cell-subject-sec" style="font-size:13.5px; color:${mColor.text};">${esc(mSubject)}</span>
                             <span class="cell-section-name" style="font-size:11.5px;">${esc(cleanSectionName(m.section_name))}</span>
                             <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
                               ${mGenderChip ? `<span class="gender-chip ${mGenderChip.className}" style="font-size:9.5px; padding:1px 6px;">${mGenderChip.label}</span>` : ''}
                               <span class="cell-duration-badge ${mIs120 ? 'badge-120' : ''}" style="font-size:9.5px; padding:2px 6px;">${m.duration_minutes || 60} MIN</span>
                               ${isMultiCardSecLocked ? '<span class="badge-card-sec-locked" title="Auto-locked: Section exam schedule is locked">LOCKED</span>' : ''}
+                              ${mIsDup ? `<span class="badge-card-duplicate-pill" style="font-size:9.5px; padding:1px 5px;" title="Duplicate subject in ${esc(mDupInfo.section)} (${mDupInfo.count} entries)">DUPLICATE (${mDupInfo.count}X)</span>` : ''}
                               <span class="badge-card-clash-pill">OVERLAPPING DUTY</span>
                               ${!isMultiCardSecLocked ? `<button type="button" class="btn-card-auto-adjust" onclick="scheduleEditor.openAutoAdjustModal(event, '${m.id}')" title="Auto-adjust schedule to resolve conflict">Auto-Adjust</button>` : ''}
                             </div>
