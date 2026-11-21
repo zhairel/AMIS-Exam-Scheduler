@@ -2678,6 +2678,24 @@
         "section": "GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS",
         "shift": "ODL - 2ND SHIFT",
         "raw": "Filipino \u2013 GRADE 9 - ABU DHARR AL GHIFARRI (2ND SHIFT) BOYS"
+      },
+      {
+        "subject": "Mabisang Komunikasyon",
+        "section": "GRADE 11 (FACE TO FACE)",
+        "shift": "F2F",
+        "raw": "Mabisang Komunikasyon \u2013 GRADE 11 (FACE TO FACE)"
+      },
+      {
+        "subject": "Mabisang Komunikasyon",
+        "section": "GRADE 11 (1ST SHIFT GIRLS)",
+        "shift": "ODL - 1ST SHIFT",
+        "raw": "Mabisang Komunikasyon \u2013 GRADE 11 (1ST SHIFT GIRLS)"
+      },
+      {
+        "subject": "Mabisang Komunikasyon",
+        "section": "GRADE 11 (2ND SHIFT BOYS)",
+        "shift": "ODL - 2ND SHIFT",
+        "raw": "Mabisang Komunikasyon \u2013 GRADE 11 (2ND SHIFT BOYS)"
       }
     ]
   },
@@ -4506,7 +4524,8 @@
       if (s.includes('science')) return 'science';
       if (s.includes('filipino') || s.includes('pagsulat') || s.includes('pfpl')) return 'filipino';
       if (s.includes('pananaliksik') || s.includes('pskp')) return 'pskp';
-      if (s.includes('effective communication') || s.includes('ec') || s.includes('komunikasyon')) return 'ec';
+      if (s.includes('mabisang') || s.includes('komunikasyon')) return 'mabisang';
+      if (s.includes('effective communication') || s.includes('ec')) return 'ec';
       if (s.includes('cpar')) return 'cpar';
       if (s.includes('ucsp')) return 'ucsp';
       if (s.includes('lcs') || s.includes('literature') || s.includes('life and career')) return 'lcs';
@@ -4997,7 +5016,7 @@
 
       try {
         let loaded = false;
-        const CURRENT_VERSION = '20261121_v14_lcs_norhaima_gen2_120m';
+        const CURRENT_VERSION = '20261121_v15_mabisang';
         const savedVersion = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
         const localSaved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
         if (savedVersion === CURRENT_VERSION && localSaved) {
