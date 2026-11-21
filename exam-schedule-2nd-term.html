@@ -6213,10 +6213,10 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         "raw": "English \u2013 GRADE 9 & 10 GIRLS (FACE TO FACE)"
       },
       {
-        "subject": "21st Century Literature 11",
+        "subject": "Life and Career Skills (LCS)",
         "section": "GRADE 11 (FACE TO FACE)",
         "shift": "F2F",
-        "raw": "21st Century Literature 11 \u2013 GRADE 11 (FACE TO FACE)"
+        "raw": "Life and Career Skills (LCS) \u2013 GRADE 11 (FACE TO FACE)"
       },
       {
         "subject": "English",
@@ -6237,16 +6237,16 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         "raw": "English \u2013 GRADE 9 - ABU HURAYRAH (1ST SHIFT) GIRLS"
       },
       {
-        "subject": "21st Century Literature 11",
+        "subject": "Life and Career Skills (LCS)",
         "section": "GRADE 11 (1ST SHIFT GIRLS)",
         "shift": "ODL - 1ST SHIFT",
-        "raw": "21st Century Literature 11 \u2013 GRADE 11 (1ST SHIFT GIRLS)"
+        "raw": "Life and Career Skills (LCS) \u2013 GRADE 11 (1ST SHIFT GIRLS)"
       },
       {
-        "subject": "21st Century Literature 11",
+        "subject": "Life and Career Skills (LCS)",
         "section": "GRADE 11 (2ND SHIFT BOYS)",
         "shift": "ODL - 2ND SHIFT",
-        "raw": "21st Century Literature 11 \u2013 GRADE 11 (2ND SHIFT BOYS)"
+        "raw": "Life and Career Skills (LCS) \u2013 GRADE 11 (2ND SHIFT BOYS)"
       },
       {
         "subject": "English",
@@ -8435,7 +8435,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       }
 
       try {
-        const CURRENT_VERSION = '20261120_v9_k2_clean';
+        const CURRENT_VERSION = '20261121_v11_gen2_120m';
         const savedVersion = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
         const saved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
         const localModTime = Number(localStorage.getItem('AMIS_2ND_TERM_LAST_MODIFIED')) || 0;
@@ -12488,7 +12488,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
     if (s.includes('effective communication') || s.includes('ec') || s.includes('komunikasyon')) return 'ec';
     if (s.includes('cpar')) return 'cpar';
     if (s.includes('ucsp')) return 'ucsp';
-    if (s.includes('lcs') || s.includes('literature')) return 'lcs';
+    if (s.includes('lcs') || s.includes('literature') || s.includes('life and career')) return 'lcs';
     if (s.includes('mapeh') || s.includes('pe') || s.includes('physical education')) return 'mapeh';
     if (s.includes('tle') || s.includes('tvl') || s.includes('entrepreneurship')) return 'tle';
     if (s.includes('gmrc') || s.includes('values') || s.includes('esp')) return 'gmrc';
