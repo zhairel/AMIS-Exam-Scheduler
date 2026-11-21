@@ -8435,16 +8435,18 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       }
 
       try {
-        const CURRENT_VERSION = '20261121_v11_gen2_120m';
+        const CURRENT_VERSION = '20261121_v14_lcs_norhaima_gen2_120m';
         const savedVersion = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
         const saved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
         const localModTime = Number(localStorage.getItem('AMIS_2ND_TERM_LAST_MODIFIED')) || 0;
 
-        if (savedVersion !== CURRENT_VERSION && EXAM_RECORDS && EXAM_RECORDS.length > 50) {
+        if (savedVersion !== CURRENT_VERSION) {
           try {
-            localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
-            localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(Date.now()));
             localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', CURRENT_VERSION);
+            if (EXAM_RECORDS && EXAM_RECORDS.length > 50) {
+              localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
+              localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(this.lastSavedTimestamp || Date.now()));
+            }
           } catch (e) {}
         } else if (this.lastSavedTimestamp > localModTime && EXAM_RECORDS && EXAM_RECORDS.length > 50) {
           try {
@@ -8452,7 +8454,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
             localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(this.lastSavedTimestamp));
             localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', CURRENT_VERSION);
           } catch (e) {}
-        } else if (saved) {
+        } else if (this.isEditUnlocked && saved) {
           let parsed = JSON.parse(saved);
           if (Array.isArray(parsed) && parsed.length > 50) {
             parsed = parsed.filter(e => {
@@ -8463,7 +8465,6 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
             });
             if (this.schedulesDiffer(EXAM_RECORDS, parsed)) {
               EXAM_RECORDS = parsed;
-              this.performServerAutoSave();
             }
           }
         } else {
@@ -10606,7 +10607,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       for (let i = 0; i < a.length; i++) {
         const ea = a[i];
         const eb = b[i];
-        if (ea.id !== eb.id || Number(ea.day_number) !== Number(eb.day_number) || ea.time_slot !== eb.time_slot || (ea.subject_teacher_id || ea.teacher_id) !== (eb.subject_teacher_id || eb.teacher_id)) {
+        if (ea.id !== eb.id || Number(ea.day_number) !== Number(eb.day_number) || ea.time_slot !== eb.time_slot || (ea.subject_teacher_id || ea.teacher_id) !== (eb.subject_teacher_id || eb.teacher_id) || ea.subject !== eb.subject || Number(ea.slots_spanned) !== Number(eb.slots_spanned)) {
           return true;
         }
       }

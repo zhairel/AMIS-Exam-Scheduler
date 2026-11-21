@@ -8,30 +8,40 @@ let inMemoryLockedSections = [];
 let inMemoryUpdatedAt = 0;
 
 function tryLoadScheduleFromDisk() {
-  const tmpPath = '/tmp/amis_exam_schedule.json';
-  if (fs.existsSync(tmpPath)) {
+  const staticPath = path.join(__dirname, '../exam_data_2nd_term.json');
+  let staticMtime = 0;
+  let staticSchedule = null;
+  if (fs.existsSync(staticPath)) {
     try {
-      const content = JSON.parse(fs.readFileSync(tmpPath, 'utf8'));
-      if (content && Array.isArray(content.schedule) && content.schedule.length > 50) {
-        inMemorySchedule = content.schedule;
-        inMemoryUpdatedAt = Number(content.updated_at) || fs.statSync(tmpPath).mtimeMs;
-        if (Array.isArray(content.locked_sections)) {
-          inMemoryLockedSections = content.locked_sections;
-        }
-        return;
+      staticMtime = fs.statSync(staticPath).mtimeMs;
+      const staticData = JSON.parse(fs.readFileSync(staticPath, 'utf8'));
+      if (Array.isArray(staticData) && staticData.length > 50) {
+        staticSchedule = staticData;
       }
     } catch (e) {}
   }
 
-  const staticPath = path.join(__dirname, '../exam_data_2nd_term.json');
-  if (fs.existsSync(staticPath)) {
+  const tmpPath = '/tmp/amis_exam_schedule.json';
+  if (fs.existsSync(tmpPath)) {
     try {
-      const staticData = JSON.parse(fs.readFileSync(staticPath, 'utf8'));
-      if (Array.isArray(staticData) && staticData.length > 50) {
-        inMemorySchedule = staticData;
-        inMemoryUpdatedAt = fs.statSync(staticPath).mtimeMs;
+      const tmpMtime = fs.statSync(tmpPath).mtimeMs;
+      if (tmpMtime >= staticMtime) {
+        const content = JSON.parse(fs.readFileSync(tmpPath, 'utf8'));
+        if (content && Array.isArray(content.schedule) && content.schedule.length > 50) {
+          inMemorySchedule = content.schedule;
+          inMemoryUpdatedAt = Number(content.updated_at) || tmpMtime;
+          if (Array.isArray(content.locked_sections)) {
+            inMemoryLockedSections = content.locked_sections;
+          }
+          return;
+        }
       }
     } catch (e) {}
+  }
+
+  if (staticSchedule) {
+    inMemorySchedule = staticSchedule;
+    inMemoryUpdatedAt = staticMtime || Date.now();
   }
 }
 
@@ -104,7 +114,13 @@ module.exports = async function saveScheduleHandler(req, res) {
   }
 
   if (req.method === 'GET') {
-    if (!inMemorySchedule || inMemorySchedule.length < 50) {
+    const staticPath = path.join(__dirname, '../exam_data_2nd_term.json');
+    let staticMtime = 0;
+    if (fs.existsSync(staticPath)) {
+      try { staticMtime = fs.statSync(staticPath).mtimeMs; } catch (e) {}
+    }
+
+    if (!inMemorySchedule || inMemorySchedule.length < 50 || (staticMtime > inMemoryUpdatedAt)) {
       tryLoadScheduleFromDisk();
     }
 

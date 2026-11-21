@@ -4997,7 +4997,7 @@
 
       try {
         let loaded = false;
-        const CURRENT_VERSION = '20261121_v11_gen2_120m';
+        const CURRENT_VERSION = '20261121_v14_lcs_norhaima_gen2_120m';
         const savedVersion = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
         const localSaved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
         if (savedVersion === CURRENT_VERSION && localSaved) {
@@ -5011,6 +5011,10 @@
           const eResp = await fetch('exam_data_2nd_term.json?v=' + Date.now());
           if (eResp.ok) {
             EXAM_RECORDS = await eResp.json();
+            try {
+              localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', CURRENT_VERSION);
+              localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
+            } catch (e) {}
           }
         }
       } catch (e) {}
