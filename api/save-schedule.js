@@ -101,7 +101,17 @@ module.exports = async function saveScheduleHandler(req, res) {
         tryLoadScheduleFromDisk();
       }
 
-      // Write to /tmp for durability across warm executions
+      // 1. Write to static disk files if writable on server/host
+      try {
+        const staticPath = path.join(__dirname, '../exam_data_2nd_term.json');
+        if (fs.existsSync(staticPath) && inMemorySchedule) {
+          fs.writeFileSync(staticPath, JSON.stringify(inMemorySchedule, null, 2), 'utf8');
+          const staticJsPath = path.join(__dirname, '../exam_data_2nd_term.js');
+          fs.writeFileSync(staticJsPath, 'window.EXAM_DATA_2ND_TERM = ' + JSON.stringify(inMemorySchedule, null, 2) + ';\n', 'utf8');
+        }
+      } catch (e) {}
+
+      // 2. Write to /tmp for durability across warm executions
       try {
         fs.writeFileSync('/tmp/amis_exam_schedule.json', JSON.stringify({
           version: CURRENT_SCHEDULE_VERSION,

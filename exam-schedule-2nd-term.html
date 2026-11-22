@@ -3600,9 +3600,9 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         <svg viewBox="0 0 24 24"><path d="M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.88 0-8.98 2.87-10.12 7.72l2.42.8C4.6 12.99 7.73 10.38 11.5 10.38c1.96 0 3.73.76 5.12 1.98L13 16h9V7l-3.6 3.6z"/></svg>
         Redo
       </button>
-      <button class="btn-drag-action btn-save-server" id="btnSaveServer" onclick="scheduleEditor.saveToServer()" title="Save changes directly to project files on server">
+      <button class="btn-drag-action btn-save-server" id="btnSaveServer" onclick="scheduleEditor.saveToServer()" title="Force save active timetable to server & cloud store immediately">
         <svg viewBox="0 0 24 24"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
-        Save to Server
+        Force Save Now
       </button>
       <button class="btn-drag-action" onclick="scheduleEditor.downloadJSON()" title="Download updated exam data JSON">
         <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
@@ -8500,13 +8500,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
               localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(Date.now()));
             }
           } catch (e) {}
-        } else if (this.lastSavedTimestamp > localModTime && EXAM_RECORDS && EXAM_RECORDS.length > 50) {
-          try {
-            localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
-            localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(this.lastSavedTimestamp));
-            localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', CURRENT_VERSION);
-          } catch (e) {}
-        } else if (this.isEditUnlocked && saved) {
+        } else if (saved) {
           let parsed = JSON.parse(saved);
           if (Array.isArray(parsed) && parsed.length > 50) {
             parsed = parsed.filter(e => {
@@ -8515,8 +8509,15 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
               if (s.includes('homeroom') || s === 'hg') return false;
               return !s.includes('aral');
             });
-            if (this.schedulesDiffer(EXAM_RECORDS, parsed)) {
+            if (localModTime >= this.lastSavedTimestamp || this.lastSavedTimestamp === 0) {
               EXAM_RECORDS = parsed;
+              this.lastSavedTimestamp = localModTime;
+              this.autoSave(true);
+            } else if (this.schedulesDiffer(EXAM_RECORDS, parsed)) {
+              try {
+                localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
+                localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(this.lastSavedTimestamp));
+              } catch (e) {}
             }
           }
         } else {
@@ -10583,7 +10584,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
 
       const conflicts = strictScheduleConflicts();
       const clashMsg = conflicts.length > 0 ? ` (! ${conflicts.length} conflict${conflicts.length === 1 ? '' : 's'} detected)` : ' (0 clashes)';
-      this.showToast(toastMsg + clashMsg + " - Auto-Saved", "Undo", () => this.undo());
+      this.showToast(toastMsg + clashMsg + " • Force Auto-Saved", "Undo", () => this.undo());
     },
 
     jumpToNextDuplicate: function() {
@@ -10604,11 +10605,12 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
     },
 
     autoSave: function(forceImmediate = false) {
-      // 1. Instantly persist to browser storage
+      // 1. Instantly persist to browser storage with current version
       const now = Date.now();
       try {
         localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
         localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(now));
+        localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', '20261122_v19_proctor_black');
       } catch (e) {
         console.warn('localStorage full or disabled', e);
       }
@@ -10616,7 +10618,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       // 2. Visual status indicator -> Saving...
       this.updateAutoSaveIndicator('saving');
 
-      // 3. Network save: If forceImmediate, execute immediately (0ms delay), else short debounce (120ms)
+      // 3. Network save: If forceImmediate, execute immediately (0ms delay), else short debounce (100ms)
       if (forceImmediate) {
         if (this.autoSaveTimer) clearTimeout(this.autoSaveTimer);
         this.performServerAutoSave();
@@ -10624,8 +10626,29 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         if (this.autoSaveTimer) clearTimeout(this.autoSaveTimer);
         this.autoSaveTimer = setTimeout(() => {
           this.performServerAutoSave();
-        }, 120);
+        }, 100);
       }
+    },
+
+    forceSaveBeacon: function() {
+      const now = Date.now();
+      try {
+        localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
+        localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(now));
+        localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', '20261122_v19_proctor_black');
+      } catch (e) {}
+
+      try {
+        const payload = JSON.stringify({
+          schedule: EXAM_RECORDS,
+          updated_at: now,
+          version: '20261122_v19_proctor_black',
+          locked_sections: this.lockedSectionIds ? [...this.lockedSectionIds] : []
+        });
+        if (navigator.sendBeacon) {
+          navigator.sendBeacon('/api/save-schedule', new Blob([payload], { type: 'application/json' }));
+        }
+      } catch (e) {}
     },
 
     performServerAutoSave: async function() {
@@ -10641,9 +10664,11 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         const resp = await fetch('/api/save-schedule', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
+          keepalive: true,
           body: JSON.stringify({
             schedule: EXAM_RECORDS,
             updated_at: now,
+            version: '20261122_v19_proctor_black',
             locked_sections: this.lockedSectionIds ? [...this.lockedSectionIds] : []
           })
         });
@@ -10676,23 +10701,23 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       const toolPill = document.getElementById('autoSaveToolbarPill');
 
       let color = '#10b981';
-      let text = 'Auto-Saved';
+      let text = '✓ Force Auto-Saved';
       let bg = '#ecfdf5';
       let border = '#a7f3d0';
 
       if (status === 'saving') {
         color = '#f59e0b';
-        text = 'Saving...';
+        text = 'Saving to Server...';
         bg = '#fffbeb';
         border = '#fde68a';
       } else if (status === 'synced') {
         color = '#2563eb';
-        text = 'Realtime Synced';
+        text = '✓ Realtime Synced';
         bg = '#eff6ff';
         border = '#bfdbfe';
       } else if (status === 'local') {
         color = '#0891b2';
-        text = 'Saved in Browser';
+        text = '✓ Saved in Browser';
         bg = '#ecfeff';
         border = '#a5f3fc';
       }
@@ -10741,7 +10766,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
             if (Array.isArray(data.locked_sections)) {
               this.syncLockedSectionsFromServer(data.locked_sections);
             }
-            if (data.version === '20261122_v18_fix_shifts_kinder' && Array.isArray(data.schedule) && data.schedule.length > 50) {
+            if (Array.isArray(data.schedule) && data.schedule.length > 50) {
             const serverTime = Number(data.updated_at) || 0;
             const isDiff = this.schedulesDiffer(EXAM_RECORDS, data.schedule);
 
@@ -11922,16 +11947,14 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         const liveResp = await fetch('/api/save-schedule?t=' + Date.now());
         if (liveResp.ok) {
           const liveData = await liveResp.json();
-          if (liveData && liveData.ok && liveData.version === '20261122_v18_fix_shifts_kinder') {
+          if (liveData && liveData.ok && Array.isArray(liveData.schedule) && liveData.schedule.length > 50) {
             if (window.scheduleEditor && Array.isArray(liveData.locked_sections)) {
               window.scheduleEditor.applyLockedSections(liveData.locked_sections);
             }
-            if (Array.isArray(liveData.schedule) && liveData.schedule.length > 50) {
-              EXAM_RECORDS = liveData.schedule;
-              liveLoaded = true;
-              if (window.scheduleEditor) {
-                window.scheduleEditor.lastSavedTimestamp = Number(liveData.updated_at) || Date.now();
-              }
+            EXAM_RECORDS = liveData.schedule;
+            liveLoaded = true;
+            if (window.scheduleEditor) {
+              window.scheduleEditor.lastSavedTimestamp = Number(liveData.updated_at) || Date.now();
             }
           }
         }
@@ -13503,7 +13526,22 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
 
   // Never persist an open drawer across refresh or browser back/forward restore.
   window.addEventListener('pageshow', closeSectionSidebar);
-  window.addEventListener('beforeunload', closeSectionSidebar);
+  window.addEventListener('beforeunload', () => {
+    closeSectionSidebar();
+    if (window.scheduleEditor && typeof window.scheduleEditor.forceSaveBeacon === 'function') {
+      window.scheduleEditor.forceSaveBeacon();
+    }
+  });
+  window.addEventListener('pagehide', () => {
+    if (window.scheduleEditor && typeof window.scheduleEditor.forceSaveBeacon === 'function') {
+      window.scheduleEditor.forceSaveBeacon();
+    }
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden' && window.scheduleEditor && typeof window.scheduleEditor.forceSaveBeacon === 'function') {
+      window.scheduleEditor.forceSaveBeacon();
+    }
+  });
 
   // Expose renderers used by inline controls generated above.
   window.renderSectionView = renderSectionView;

@@ -960,7 +960,7 @@ body.no-navbar {
   }
 
   async function init() {
-    const CURRENT_VERSION = '20261122_v18_fix_shifts_kinder';
+    const CURRENT_VERSION = '20261122_v19_proctor_black';
     let records = [];
     try {
       const savedVersion = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
@@ -976,6 +976,18 @@ body.no-navbar {
         }
       }
     } catch (e) {}
+
+    if (!records || records.length === 0) {
+      try {
+        const liveResp = await fetch('/api/save-schedule?t=' + Date.now());
+        if (liveResp.ok) {
+          const liveData = await liveResp.json();
+          if (liveData && liveData.ok && Array.isArray(liveData.schedule) && liveData.schedule.length > 50) {
+            records = liveData.schedule;
+          }
+        }
+      } catch (e) {}
+    }
 
     if (!records || records.length === 0) {
       try {
