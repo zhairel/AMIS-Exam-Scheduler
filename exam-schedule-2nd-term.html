@@ -20,7 +20,7 @@
 
 <!-- Embedded Master Datasets with Cache-Busting -->
 <script src="class_schedules_data.js?v=20261117_2"></script>
-<script src="exam_data_2nd_term.js?v=20261122_v18"></script>
+<script src="exam_data_2nd_term.js?v=20261122_v19_proctor_black"></script>
 <script src="teacher_weekly_schedules.js?v=20261117_2"></script>
 
 <style>
@@ -1154,6 +1154,25 @@ html, body {
   line-height: 1.2;
   font-weight: 950;
   letter-spacing: 0.09em;
+}
+
+/* Jet Black Cells for PROCTOR Duties */
+.cell-class[style*="background:#000000"] .cell-section-name,
+.cell-class[style*="background: #000000"] .cell-section-name,
+.cell-class[style*="background:#0f172a"] .cell-section-name,
+.cell-class[style*="background: #0f172a"] .cell-section-name,
+.cell-class[style*="background:#000000"] .cell-teacher-name,
+.cell-class[style*="background: #000000"] .cell-teacher-name {
+  color: #f1f5f9 !important;
+}
+
+.cell-class[style*="background:#000000"] .cell-subject-sec,
+.cell-class[style*="background: #000000"] .cell-subject-sec,
+.cell-class[style*="background:#0f172a"] .cell-subject-sec,
+.cell-class[style*="background: #0f172a"] .cell-subject-sec {
+  color: #ffffff !important;
+  font-weight: 950 !important;
+  letter-spacing: 0.04em !important;
 }
 
 .gender-chip {
@@ -7960,6 +7979,11 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
   function getSubjectColor(subj) {
     const s = (subj || '').toLowerCase().trim();
 
+    // 0. PROCTOR Duty (Solid Jet Black)
+    if (s.includes('proctor')) {
+      return { bg: '#000000', border: '#334155', text: '#ffffff', accent: '#000000' };
+    }
+
     // 1. Islamic Studies & Arabic (Purple / Violet)
     if (s.includes('arabic') || s.includes("qur'an") || s.includes('quran') || s.includes('hadith') || s.includes('shaf') || s.includes('islamic') || s.includes('fiqh') || s.includes('aqeedah') || s.includes('seerah')) {
       return { bg: '#f5f3ff', border: '#a78bfa', text: '#3b0764', accent: '#7c3aed' };
@@ -8197,10 +8221,16 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
 
         // Cohort conflict: Same student section taking two exams simultaneously
         const isKinderDual = String(left.grade_level || '').toLowerCase().includes('kinder') && String(right.grade_level || '').toLowerCase().includes('kinder');
+        const isProctorDutyOverlap = Boolean(
+          (left.subject && left.subject.toLowerCase().includes('proctor')) ||
+          (right.subject && right.subject.toLowerCase().includes('proctor')) ||
+          left.is_proctor || right.is_proctor ||
+          left.display_as_proctor_duty || right.display_as_proctor_duty
+        );
 
         // Unstacked physical or virtual teacher overlap (combined Kinder ODL pairs are allowed)
         const isTeacherOverlap = sameTeacher && !isKinderDual;
-        const sameCohort = !isKinderDual
+        const sameCohort = !isKinderDual && !isProctorDutyOverlap
           && left.grade_level === right.grade_level
           && (left.section_id || left.section_name) === (right.section_id || right.section_name)
           && String(left.gender || 'NONE') === String(right.gender || 'NONE');
@@ -8268,6 +8298,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
     EXAM_RECORDS.forEach(e => {
       const secId = e.section_id || e.section || "";
       const normSubj = (publicExamSubject(e) || "").trim().toLowerCase();
+      if (normSubj.includes('proctor')) return;
       const tid = e.teacher_id || e.subject_teacher_id || "";
       const cleanSecName = (e.section_name || e.section || "").trim().toLowerCase();
 
@@ -8453,7 +8484,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       }
 
       try {
-        const CURRENT_VERSION = '20261122_v18_fix_shifts_kinder';
+        const CURRENT_VERSION = '20261122_v19_proctor_black';
         const savedVersion = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
         const saved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
         const localModTime = Number(localStorage.getItem('AMIS_2ND_TERM_LAST_MODIFIED')) || 0;
@@ -9856,14 +9887,14 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       const academicStandardSubjects = [
         "Filipino", "English", "Math", "Science", "Araling Panlipunan", "Makabansa",
         "MAPEH", "TLE", "GMRC", "Reading & Literacy", "Gen Bio 2",
-        "Circle Time 1", "Circle Time 2", "Meeting Time", "Wrap-Up Time"
+        "Circle Time 1", "Circle Time 2", "Meeting Time", "Wrap-Up Time", "PROCTOR"
       ];
       const isalStandardSubjects = [
-        "Arabic", "Qur'an", "Hadith", "SHAF", "GMRC"
+        "Arabic", "Qur'an", "Hadith", "SHAF", "GMRC", "PROCTOR"
       ];
       const standardSubjects = cat === 'ISAL'
         ? isalStandardSubjects
-        : (cat === 'TEACHER' ? academicStandardSubjects : [...academicStandardSubjects, "Arabic", "Qur'an", "Hadith", "SHAF"]);
+        : (cat === 'TEACHER' ? academicStandardSubjects : [...academicStandardSubjects, "Arabic", "Qur'an", "Hadith", "SHAF", "PROCTOR"]);
 
       const assignedNames = new Set(pairs.map(p => p.subject.toLowerCase()));
       const otherSubs = standardSubjects.filter(s => !assignedNames.has(s.toLowerCase()));
@@ -10033,7 +10064,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       const normInputSub = (subjectName || '').trim().toLowerCase();
       let dupSectionExam = null;
       let dupTeacherExam = null;
-      if (normInputSub) {
+      if (normInputSub && !normInputSub.includes('proctor')) {
         dupSectionExam = EXAM_RECORDS.find(e =>
           (e.section_id === curSecId || (cleanTokens(e.section_name).join(' ') === cleanTokens(curSecName).join(' '))) &&
           ((publicExamSubject(e) || '').trim().toLowerCase() === normInputSub || normSub(publicExamSubject(e)) === normSub(subjectName))
@@ -12232,10 +12263,15 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
               return;
             }
 
-            const matches = secExams.filter(e => {
+            let matches = secExams.filter(e => {
               if (e.day_number !== d.day_num && e.short_date !== d.short_date) return false;
               return examStartsAtScheduleRow(e, row.time, row.slot_num);
             });
+
+            // If a slot has both a student exam and a proctor duty, section view displays the student exam
+            if (matches.length > 1 && matches.some(m => !((m.subject || '').toLowerCase().includes('proctor')))) {
+              matches = matches.filter(m => !((m.subject || '').toLowerCase().includes('proctor')));
+            }
 
             const cellId = `cell_sec_${sec.id}_d${d.day_num}_s${row.slot_num}`;
             const hasSectionStackConflict = matches.length > 1;
@@ -12262,7 +12298,11 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
               if (matches.length === 1) {
                 const match = matches[0];
                 const displayedSubject = publicExamSubject(match);
-                const color = getSubjectColor(displayedSubject);
+                const isProctor = (displayedSubject || '').toLowerCase().includes('proctor') || match.is_proctor === true || match.display_as_proctor_duty === true;
+                let color = getSubjectColor(displayedSubject);
+                if (isProctor) {
+                  color = { bg: '#000000', border: '#334155', text: '#ffffff', accent: '#000000' };
+                }
                 const isClashing = hasConflict;
                 const isDuplicateSubject = dupMap.has(match.id);
                 const dupInfo = isDuplicateSubject ? dupMap.get(match.id) : null;
@@ -12332,8 +12372,8 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
                          style="${isClashing ? `background:${color.bg}; border:1.5px solid #ef4444; border-left:5px solid #dc2626; border-radius:6px; color:${color.text};` : ''}">
                       ${canDragExam ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
                       ${canDragExam ? `<button type="button" class="btn-card-delete" onclick="scheduleEditor.deleteExam(event, '${match.id}')" title="Delete subject from timetable" aria-label="Delete subject">&times;</button>` : ''}
-                      <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                      <span class="cell-teacher-name">${esc(match.subject_teacher || match.teacher)}</span>
+                      <span class="cell-subject-sec" style="${isProctor ? 'color:#ffffff; font-weight:950;' : ''}">${esc(displayedSubject)}</span>
+                      <span class="cell-teacher-name" style="${isProctor ? 'color:#f1f5f9;' : ''}">${esc(match.subject_teacher || match.teacher)}</span>
                       <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
                         <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
                         ${isSecLocked ? '<span class="badge-card-sec-locked" title="Section Exam Schedule is locked">LOCKED</span>' : ''}
@@ -12451,6 +12491,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
               <div class="legend-box"><span class="legend-color-dot" style="background:#e0e7ff; border-color:#a5b4fc;"></span> Research / MIL</div>
               <div class="legend-box"><span class="legend-color-dot" style="background:#fee2e2; border-color:#fca5a5;"></span> Oral &amp; Written Exam</div>
               <div class="legend-box"><span class="legend-color-dot" style="background:#fef9c3; border-color:#fef08a;"></span> ARAL Program</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#000000; border-color:#334155;"></span> PROCTOR (Duty)</div>
             </div>
             <div>
               Generated: <strong>${todayStr}</strong>
@@ -13095,7 +13136,11 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
               if (matches.length === 1) {
                 const match = matches[0];
                 const displayedSubject = publicExamSubject(match);
-                const color = getSubjectColor(displayedSubject);
+                const isProctor = (displayedSubject || '').toLowerCase().includes('proctor') || match.is_proctor === true || match.display_as_proctor_duty === true;
+                let color = getSubjectColor(displayedSubject);
+                if (isProctor) {
+                  color = { bg: '#000000', border: '#334155', text: '#ffffff', accent: '#000000' };
+                }
                 const genderChip = getExamGenderChip(match);
                 const isAutomaticProctorCoverage = match.display_as_proctor_duty === true
                   || match.proctor_assignment_source !== 'SUBJECT_TEACHER';
@@ -13163,16 +13208,16 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
                       ${canDragThisCard ? '<div class="cell-drag-indicator" title="Drag Handle"><svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" style="vertical-align:-1px;"><path d="M9 5a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4zm-6 6a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z"/></svg></div>' : ''}
                       ${canDragThisCard ? `<button type="button" class="btn-card-delete" onclick="scheduleEditor.deleteExam(event, '${match.id}')" title="Delete subject from timetable" aria-label="Delete subject">&times;</button>` : ''}
                       ${isAutomaticProctorCoverage ? `
-                        <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                        <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
+                        <span class="cell-subject-sec" style="${isProctor ? 'color:#ffffff; font-weight:950;' : ''}">${esc(displayedSubject)}</span>
+                        <span class="cell-section-name" style="${isProctor ? 'color:#f1f5f9;' : ''}">${esc(cleanSectionName(match.section_name))}</span>
                         <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
                           ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
                           ${isCardSecLocked ? '<span class="badge-card-sec-locked" title="Auto-locked: Section exam schedule is locked">LOCKED</span>' : ''}
                           ${isDuplicateSubject ? `<span class="badge-card-duplicate-pill" title="Duplicate subject in ${esc(dupInfo.section)} (${dupInfo.count} entries)">DUPLICATE (${dupInfo.count}X)</span>` : ''}
                         </div>
                       ` : `
-                        <span class="cell-subject-sec">${esc(displayedSubject)}</span>
-                        <span class="cell-section-name">${esc(cleanSectionName(match.section_name))}</span>
+                        <span class="cell-subject-sec" style="${isProctor ? 'color:#ffffff; font-weight:950;' : ''}">${esc(displayedSubject)}</span>
+                        <span class="cell-section-name" style="${isProctor ? 'color:#f1f5f9;' : ''}">${esc(cleanSectionName(match.section_name))}</span>
                         <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
                           ${genderChip ? `<span class="gender-chip ${genderChip.className}">${genderChip.label}</span>` : ''}
                           <span class="cell-duration-badge ${is120 ? 'badge-120' : ''}">${match.duration_minutes || 60} MIN</span>
@@ -13305,6 +13350,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
               <div class="legend-box"><span class="legend-color-dot" style="background:#e0e7ff; border-color:#a5b4fc;"></span> Research / MIL</div>
               <div class="legend-box"><span class="legend-color-dot" style="background:#fee2e2; border-color:#fca5a5;"></span> Oral &amp; Written Exam</div>
               <div class="legend-box"><span class="legend-color-dot" style="background:#fef9c3; border-color:#fef08a;"></span> ARAL Program</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#000000; border-color:#334155;"></span> PROCTOR (Duty)</div>
             </div>
             <div>
               Generated: <strong>${todayStr}</strong>

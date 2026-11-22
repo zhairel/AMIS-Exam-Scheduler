@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="xlsx.full.min.js"></script>
-<script src="exam_data_2nd_term.js?v=20261122_v18"></script>
+<script src="exam_data_2nd_term.js?v=20261122_v19_proctor_black"></script>
 <script src="exam-parser.js"></script>
 <script src="html2canvas.min.js"></script>
 <style>
@@ -531,6 +531,19 @@ option.dropdown-divider-line {
   background: linear-gradient(135deg, #ffffff 65%, #fffbeb 100%);
   border-color: #cbd5e1;
   border-left-color: #d97706;
+}
+.cal-event-card.proctor {
+  background: #000000 !important;
+  border-color: #334155 !important;
+  border-left-color: #000000 !important;
+  color: #ffffff !important;
+}
+.cal-event-card.proctor .cal-event-sub {
+  color: #ffffff !important;
+}
+.cal-event-card.proctor .cal-sec-name,
+.cal-event-card.proctor .cal-grade-title {
+  color: #f1f5f9 !important;
 }
 
 .cal-event-top-row {
@@ -1189,7 +1202,8 @@ body.no-navbar {
                         <td class="slot-cell">
                           <div class="slot-events-list">
                             ${cellExams.map(ex => {
-                              let typeClass = ex.modality === 'F2F' ? 'f2f' : (ex.shift.includes('2nd') ? 'odl2' : 'odl1');
+                              let isProctorEx = (ex.subject || '').toLowerCase().includes('proctor') || ex.is_proctor === true || ex.display_as_proctor_duty === true;
+                              let typeClass = isProctorEx ? 'proctor' : (ex.modality === 'F2F' ? 'f2f' : (ex.shift.includes('2nd') ? 'odl2' : 'odl1'));
                               return `
                                 <div class="cal-event-card ${typeClass}">
                                   <div class="cal-event-top-row">
@@ -1404,7 +1418,8 @@ body.no-navbar {
                           <td class="slot-cell">
                             <div class="slot-events-list">
                               ${cellExams.map(ex => {
-                                let typeClass = ex.modality === 'F2F' ? 'f2f' : ((ex.shift || '').toUpperCase().includes('2ND') ? 'odl2' : 'odl1');
+                                let isProctorEx = (ex.subject || '').toLowerCase().includes('proctor') || ex.is_proctor === true || ex.display_as_proctor_duty === true;
+                                let typeClass = isProctorEx ? 'proctor' : (ex.modality === 'F2F' ? 'f2f' : ((ex.shift || '').toUpperCase().includes('2ND') ? 'odl2' : 'odl1'));
                                 return `
                                   <div class="cal-event-card ${typeClass}">
                                     <div class="cal-event-top-row">

@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const CURRENT_SCHEDULE_VERSION = '20261122_v18_fix_shifts_kinder';
+const CURRENT_SCHEDULE_VERSION = '20261122_v19_proctor_black';
 
 let inMemorySchedule = null;
 let inMemoryLockedSections = [];

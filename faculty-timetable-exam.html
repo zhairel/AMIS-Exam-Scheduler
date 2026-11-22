@@ -747,6 +747,22 @@ html, body {
   line-height: 1.2;
 }
 
+/* Jet Black Cells for PROCTOR Duties */
+.cell-class[style*="background:#000000"] .cell-section-name,
+.cell-class[style*="background: #000000"] .cell-section-name,
+.cell-class[style*="background:#0f172a"] .cell-section-name,
+.cell-class[style*="background: #0f172a"] .cell-section-name {
+  color: #f1f5f9 !important;
+}
+
+.cell-class[style*="background:#000000"] .cell-subject-sec,
+.cell-class[style*="background: #000000"] .cell-subject-sec,
+.cell-class[style*="background:#0f172a"] .cell-subject-sec,
+.cell-class[style*="background: #0f172a"] .cell-subject-sec {
+  color: #ffffff !important;
+  font-weight: 950 !important;
+}
+
 .gender-chip {
   display: inline-flex;
   align-items: center;
@@ -1051,6 +1067,11 @@ html, body {
 
   function getSubjectColor(subj) {
     const s = (subj || '').toLowerCase().trim();
+
+    // 0. PROCTOR Duty (Solid Jet Black)
+    if (s.includes('proctor')) {
+      return { bg: '#000000', border: '#334155', text: '#ffffff' };
+    }
 
     // 1. Islamic Studies & Arabic (Purple / Violet)
     if (s.includes('arabic') || s.includes("qur'an") || s.includes('quran') || s.includes('hadith') || s.includes('shaf') || s.includes('islamic') || s.includes('fiqh') || s.includes('aqeedah') || s.includes('seerah')) {
@@ -1551,6 +1572,7 @@ html, body {
               <div class="legend-box"><span class="legend-color-dot" style="background:#e0e7ff; border-color:#a5b4fc;"></span> Research / MIL</div>
               <div class="legend-box"><span class="legend-color-dot" style="background:#fee2e2; border-color:#fca5a5;"></span> Oral &amp; Written Exam</div>
               <div class="legend-box"><span class="legend-color-dot" style="background:#fef9c3; border-color:#fef08a;"></span> ARAL Program</div>
+              <div class="legend-box"><span class="legend-color-dot" style="background:#000000; border-color:#334155;"></span> PROCTOR (Duty)</div>
             </div>
             <div>
               Generated: <strong>${todayStr}</strong>
