@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="xlsx.full.min.js"></script>
-<script src="exam_data_2nd_term.js?v=20261121_v17"></script>
+<script src="exam_data_2nd_term.js?v=20261122_v18"></script>
 <script src="exam-parser.js"></script>
 <script src="html2canvas.min.js"></script>
 <style>
@@ -947,14 +947,20 @@ body.no-navbar {
   }
 
   async function init() {
-    const CURRENT_VERSION = '20261121_v17_laurel_nof';
+    const CURRENT_VERSION = '20261122_v18_fix_shifts_kinder';
     let records = [];
     try {
       const savedVersion = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
-      const customSaved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
-      if (savedVersion === CURRENT_VERSION && customSaved) {
-        const parsed = JSON.parse(customSaved);
-        if (Array.isArray(parsed) && parsed.length > 0) records = parsed;
+      if (savedVersion !== CURRENT_VERSION) {
+        localStorage.removeItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
+        localStorage.removeItem('AMIS_2ND_TERM_LAST_MODIFIED');
+        localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', CURRENT_VERSION);
+      } else {
+        const customSaved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
+        if (customSaved) {
+          const parsed = JSON.parse(customSaved);
+          if (Array.isArray(parsed) && parsed.length > 0) records = parsed;
+        }
       }
     } catch (e) {}
 

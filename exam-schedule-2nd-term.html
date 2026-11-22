@@ -20,7 +20,7 @@
 
 <!-- Embedded Master Datasets with Cache-Busting -->
 <script src="class_schedules_data.js?v=20261117_2"></script>
-<script src="exam_data_2nd_term.js?v=20261119_60m"></script>
+<script src="exam_data_2nd_term.js?v=20261122_v18"></script>
 <script src="teacher_weekly_schedules.js?v=20261117_2"></script>
 
 <style>
@@ -8453,17 +8453,20 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       }
 
       try {
-        const CURRENT_VERSION = '20261121_v17_laurel_nof';
+        const CURRENT_VERSION = '20261122_v18_fix_shifts_kinder';
         const savedVersion = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
         const saved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
         const localModTime = Number(localStorage.getItem('AMIS_2ND_TERM_LAST_MODIFIED')) || 0;
 
         if (savedVersion !== CURRENT_VERSION) {
           try {
+            localStorage.removeItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
+            localStorage.removeItem('AMIS_2ND_TERM_LAST_MODIFIED');
             localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', CURRENT_VERSION);
-            if (EXAM_RECORDS && EXAM_RECORDS.length > 50) {
+            if (window.AMIS_EXAM_DATA && window.AMIS_EXAM_DATA.length > 50) {
+              EXAM_RECORDS = JSON.parse(JSON.stringify(window.AMIS_EXAM_DATA));
               localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
-              localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(this.lastSavedTimestamp || Date.now()));
+              localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(Date.now()));
             }
           } catch (e) {}
         } else if (this.lastSavedTimestamp > localModTime && EXAM_RECORDS && EXAM_RECORDS.length > 50) {
@@ -9082,6 +9085,40 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       }
       if (dropZoneType === 'section' && targetSectionId && this.isSectionLocked(targetSectionId)) {
         return { status: 'CONFLICT', label: 'SEC LOCKED', reason: 'Target section exam schedule is locked' };
+      }
+
+      // 2b. Shift boundary guard (Prevents exams from being dropped into non-existent section rows in Faculty view)
+      const secShift = String(sourceExam.shift || '').toUpperCase();
+      const secNameUpper = String(sourceExam.section_name || sourceExam.section || '').toUpperCase();
+      const gLevel = String(sourceExam.grade_level || '').toLowerCase();
+      const isK1 = gLevel.includes('kinder 1') || gLevel === 'k1' || secNameUpper.includes('KINDER 1');
+      const isF2F = secShift.includes('F2F') || secNameUpper.includes('F2F') || secNameUpper.includes('FACE TO FACE');
+      const isODL2 = secShift.includes('2ND SHIFT') || secNameUpper.includes('2ND SHIFT') || secShift.includes('ODL - 2ND');
+      const isODL1 = (secShift.includes('1ST SHIFT') || secNameUpper.includes('1ST SHIFT') || secShift.includes('ODL - 1ST')) && !isODL2;
+
+      let isAllowedShiftSlot = true;
+      let allowedShiftLabel = '';
+      if (isK1 && isF2F) {
+        isAllowedShiftSlot = targetRowTime.includes('12:40 PM') || targetRowTime.includes('01:50 PM');
+        allowedShiftLabel = '12:40 PM – 02:50 PM (Afternoon only)';
+      } else if (isF2F) {
+        isAllowedShiftSlot = targetRowTime.includes('08:00 AM') || targetRowTime.includes('09:00 AM') || targetRowTime.includes('10:25 AM');
+        allowedShiftLabel = '08:00 AM – 11:25 AM (Morning only)';
+      } else if (isODL2) {
+        isAllowedShiftSlot = targetRowTime.includes('03:10 PM') || targetRowTime.includes('04:20 PM') || targetRowTime.includes('05:30 PM');
+        allowedShiftLabel = '03:10 PM – 06:30 PM (2nd Shift only)';
+      } else if (isODL1) {
+        isAllowedShiftSlot = targetRowTime.includes('12:40 PM') || targetRowTime.includes('01:50 PM') || targetRowTime.includes('03:10 PM');
+        allowedShiftLabel = '12:40 PM – 04:10 PM (1st Shift only)';
+      }
+
+      if (!isAllowedShiftSlot) {
+        return {
+          status: 'CONFLICT',
+          label: 'WRONG SHIFT',
+          shortReason: 'Outside section shift hours',
+          reason: `Cannot move to ${targetRowTime}: ${cleanSectionName(sourceExam.section_name || 'Section')} only operates during ${allowedShiftLabel}. Moving here would make the subject invisible in the section schedule.`
+        };
       }
 
       // 3. Find if target cell already has exams
@@ -10331,6 +10368,28 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       const sourceExam = EXAM_RECORDS.find(e => e.id === sourceExamId);
       if (!sourceExam) return;
 
+      const isShiftValid = (exam, timeStr) => {
+        if (!exam || !timeStr) return true;
+        const sShift = String(exam.shift || '').toUpperCase();
+        const sName = String(exam.section_name || exam.section || '').toUpperCase();
+        const gl = String(exam.grade_level || '').toLowerCase();
+        const k1 = gl.includes('kinder 1') || gl === 'k1' || sName.includes('KINDER 1');
+        const f2f = sShift.includes('F2F') || sName.includes('F2F') || sName.includes('FACE TO FACE');
+        const odl2 = sShift.includes('2ND SHIFT') || sName.includes('2ND SHIFT') || sShift.includes('ODL - 2ND');
+        const odl1 = (sShift.includes('1ST SHIFT') || sName.includes('1ST SHIFT') || sShift.includes('ODL - 1ST')) && !odl2;
+
+        if (k1 && f2f) return timeStr.includes('12:40 PM') || timeStr.includes('01:50 PM');
+        if (f2f) return timeStr.includes('08:00 AM') || timeStr.includes('09:00 AM') || timeStr.includes('10:25 AM');
+        if (odl2) return timeStr.includes('03:10 PM') || timeStr.includes('04:20 PM') || timeStr.includes('05:30 PM');
+        if (odl1) return timeStr.includes('12:40 PM') || timeStr.includes('01:50 PM') || timeStr.includes('03:10 PM');
+        return true;
+      };
+
+      if (!isShiftValid(sourceExam, targetRowTime)) {
+        this.showToast(`Cannot move: "${targetRowTime}" is outside ${cleanSectionName(sourceExam.section_name)}'s shift hours.`);
+        return;
+      }
+
       // Check if target cell already has an exam
       let targetExam = null;
       if (dropZoneType === 'faculty' && targetTeacherId) {
@@ -10349,6 +10408,11 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
           e.id !== sourceExamId
         );
         if (match) targetExam = match;
+      }
+
+      if (targetExam && !isShiftValid(targetExam, sourceExam.time_slot)) {
+        this.showToast(`Cannot swap: "${sourceExam.time_slot}" is outside ${cleanSectionName(targetExam.section_name)}'s shift hours.`);
+        return;
       }
 
       const dateObj = EXAM_DATES.find(d => d.day_num === targetDayNum) || EXAM_DATES[0];
@@ -10646,7 +10710,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
             if (Array.isArray(data.locked_sections)) {
               this.syncLockedSectionsFromServer(data.locked_sections);
             }
-            if (Array.isArray(data.schedule) && data.schedule.length > 50) {
+            if (data.version === '20261122_v18_fix_shifts_kinder' && Array.isArray(data.schedule) && data.schedule.length > 50) {
             const serverTime = Number(data.updated_at) || 0;
             const isDiff = this.schedulesDiffer(EXAM_RECORDS, data.schedule);
 
@@ -11827,7 +11891,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         const liveResp = await fetch('/api/save-schedule?t=' + Date.now());
         if (liveResp.ok) {
           const liveData = await liveResp.json();
-          if (liveData && liveData.ok) {
+          if (liveData && liveData.ok && liveData.version === '20261122_v18_fix_shifts_kinder') {
             if (window.scheduleEditor && Array.isArray(liveData.locked_sections)) {
               window.scheduleEditor.applyLockedSections(liveData.locked_sections);
             }

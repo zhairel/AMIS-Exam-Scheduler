@@ -3,9 +3,12 @@
 const fs = require('fs');
 const path = require('path');
 
+const CURRENT_SCHEDULE_VERSION = '20261122_v18_fix_shifts_kinder';
+
 let inMemorySchedule = null;
 let inMemoryLockedSections = [];
 let inMemoryUpdatedAt = 0;
+let inMemoryVersion = CURRENT_SCHEDULE_VERSION;
 
 function tryLoadScheduleFromDisk() {
   const staticPath = path.join(__dirname, '../exam_data_2nd_term.json');
@@ -25,16 +28,21 @@ function tryLoadScheduleFromDisk() {
   if (fs.existsSync(tmpPath)) {
     try {
       const tmpMtime = fs.statSync(tmpPath).mtimeMs;
-      if (tmpMtime >= staticMtime) {
-        const content = JSON.parse(fs.readFileSync(tmpPath, 'utf8'));
-        if (content && Array.isArray(content.schedule) && content.schedule.length > 50) {
+      const content = JSON.parse(fs.readFileSync(tmpPath, 'utf8'));
+      // Only accept tmp cache if version matches current release
+      if (content && content.version === CURRENT_SCHEDULE_VERSION && Array.isArray(content.schedule) && content.schedule.length > 50) {
+        if (tmpMtime >= staticMtime) {
           inMemorySchedule = content.schedule;
           inMemoryUpdatedAt = Number(content.updated_at) || tmpMtime;
+          inMemoryVersion = CURRENT_SCHEDULE_VERSION;
           if (Array.isArray(content.locked_sections)) {
             inMemoryLockedSections = content.locked_sections;
           }
           return;
         }
+      } else {
+        // Discard stale or mismatched version tmp cache
+        try { fs.unlinkSync(tmpPath); } catch (e) {}
       }
     } catch (e) {}
   }
@@ -42,6 +50,7 @@ function tryLoadScheduleFromDisk() {
   if (staticSchedule) {
     inMemorySchedule = staticSchedule;
     inMemoryUpdatedAt = staticMtime || Date.now();
+    inMemoryVersion = CURRENT_SCHEDULE_VERSION;
   }
 }
 
@@ -81,6 +90,7 @@ module.exports = async function saveScheduleHandler(req, res) {
       if (exams && Array.isArray(exams) && exams.length >= 50) {
         inMemorySchedule = exams;
         inMemoryUpdatedAt = updatedAt;
+        inMemoryVersion = CURRENT_SCHEDULE_VERSION;
       }
 
       if (body && Array.isArray(body.locked_sections)) {
@@ -94,6 +104,7 @@ module.exports = async function saveScheduleHandler(req, res) {
       // Write to /tmp for durability across warm executions
       try {
         fs.writeFileSync('/tmp/amis_exam_schedule.json', JSON.stringify({
+          version: CURRENT_SCHEDULE_VERSION,
           schedule: inMemorySchedule,
           updated_at: inMemoryUpdatedAt,
           locked_sections: inMemoryLockedSections
@@ -103,6 +114,7 @@ module.exports = async function saveScheduleHandler(req, res) {
       return res.status(200).json({
         ok: true,
         status: 'success',
+        version: CURRENT_SCHEDULE_VERSION,
         count: inMemorySchedule ? inMemorySchedule.length : 0,
         locked_sections_count: inMemoryLockedSections.length,
         updated_at: inMemoryUpdatedAt,
@@ -120,7 +132,7 @@ module.exports = async function saveScheduleHandler(req, res) {
       try { staticMtime = fs.statSync(staticPath).mtimeMs; } catch (e) {}
     }
 
-    if (!inMemorySchedule || inMemorySchedule.length < 50 || (staticMtime > inMemoryUpdatedAt)) {
+    if (!inMemorySchedule || inMemorySchedule.length < 50 || inMemoryVersion !== CURRENT_SCHEDULE_VERSION || (staticMtime > inMemoryUpdatedAt)) {
       tryLoadScheduleFromDisk();
     }
 
@@ -128,6 +140,7 @@ module.exports = async function saveScheduleHandler(req, res) {
       return res.status(200).json({
         ok: true,
         status: 'success',
+        version: CURRENT_SCHEDULE_VERSION,
         count: inMemorySchedule.length,
         updated_at: inMemoryUpdatedAt || Date.now(),
         schedule: inMemorySchedule,
@@ -138,6 +151,7 @@ module.exports = async function saveScheduleHandler(req, res) {
     return res.status(200).json({
       ok: true,
       status: 'success',
+      version: CURRENT_SCHEDULE_VERSION,
       count: 0,
       updated_at: 0,
       schedule: null,

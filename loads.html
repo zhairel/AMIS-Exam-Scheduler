@@ -5016,14 +5016,20 @@
 
       try {
         let loaded = false;
-        const CURRENT_VERSION = '20261121_v17_laurel_nof';
+        const CURRENT_VERSION = '20261122_v18_fix_shifts_kinder';
         const savedVersion = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
-        const localSaved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
-        if (savedVersion === CURRENT_VERSION && localSaved) {
-          const parsed = JSON.parse(localSaved);
-          if (Array.isArray(parsed) && parsed.length > 50) {
-            EXAM_RECORDS = parsed;
-            loaded = true;
+        if (savedVersion !== CURRENT_VERSION) {
+          localStorage.removeItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
+          localStorage.removeItem('AMIS_2ND_TERM_LAST_MODIFIED');
+          localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', CURRENT_VERSION);
+        } else {
+          const localSaved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
+          if (localSaved) {
+            const parsed = JSON.parse(localSaved);
+            if (Array.isArray(parsed) && parsed.length > 50) {
+              EXAM_RECORDS = parsed;
+              loaded = true;
+            }
           }
         }
         if (!loaded) {
