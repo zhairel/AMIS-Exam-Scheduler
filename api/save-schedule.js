@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const CURRENT_SCHEDULE_VERSION = '20261122_v19_proctor_black';
+const CURRENT_SCHEDULE_VERSION = '20261122_v20_force_autosave_k1_fix';
 
 let inMemorySchedule = null;
 let inMemoryLockedSections = [];
