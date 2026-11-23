@@ -20,7 +20,7 @@
 
 <!-- Embedded Master Datasets with Cache-Busting -->
 <script src="class_schedules_data.js?v=20261117_2"></script>
-<script src="exam_data_2nd_term.js?v=20261123_v21_remove_saliha_proctor"></script>
+<script src="exam_data_2nd_term.js?v=20261123_v22_restore_saliha_proctor"></script>
 <script src="teacher_weekly_schedules.js?v=20261117_2"></script>
 
 <style>
@@ -8484,7 +8484,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       }
 
       try {
-        const CURRENT_VERSION = '20261123_v21_remove_saliha_proctor';
+        const CURRENT_VERSION = '20261123_v22_restore_saliha_proctor';
         const savedVersion = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
         const saved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
         const localModTime = Number(localStorage.getItem('AMIS_2ND_TERM_LAST_MODIFIED')) || 0;
@@ -10610,7 +10610,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       try {
         localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
         localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(now));
-        localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', '20261123_v21_remove_saliha_proctor');
+        localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', '20261123_v22_restore_saliha_proctor');
       } catch (e) {
         console.warn('localStorage full or disabled', e);
       }
@@ -10635,14 +10635,14 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       try {
         localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
         localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(now));
-        localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', '20261123_v21_remove_saliha_proctor');
+        localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', '20261123_v22_restore_saliha_proctor');
       } catch (e) {}
 
       try {
         const payload = JSON.stringify({
           schedule: EXAM_RECORDS,
           updated_at: now,
-          version: '20261123_v21_remove_saliha_proctor',
+          version: '20261123_v22_restore_saliha_proctor',
           locked_sections: this.lockedSectionIds ? [...this.lockedSectionIds] : []
         });
         if (navigator.sendBeacon) {
@@ -10668,7 +10668,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
           body: JSON.stringify({
             schedule: EXAM_RECORDS,
             updated_at: now,
-            version: '20261123_v21_remove_saliha_proctor',
+            version: '20261123_v22_restore_saliha_proctor',
             locked_sections: this.lockedSectionIds ? [...this.lockedSectionIds] : []
           })
         });

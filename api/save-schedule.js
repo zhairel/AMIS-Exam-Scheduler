@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const CURRENT_SCHEDULE_VERSION = '20261123_v21_remove_saliha_proctor';
+const CURRENT_SCHEDULE_VERSION = '20261123_v22_restore_saliha_proctor';
 
 let inMemorySchedule = null;
 let inMemoryLockedSections = [];
