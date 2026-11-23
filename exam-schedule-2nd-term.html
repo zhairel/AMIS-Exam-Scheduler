@@ -12075,6 +12075,7 @@ body:not(.admin-edit-unlocked) td.cell-empty:hover {
   // TAB 1: SECTION EXAM SCHEDULES
   // -------------------------------------------------------------
   function renderSectionToolbar() {
+    const isUnlocked = Boolean(window.scheduleEditor && window.scheduleEditor.isEditUnlocked);
     const rawGrades = [...new Set(SECTIONS_DATA.map(s => s.grade_level).filter(Boolean))].sort(compareGradeLevels);
     const filteredSections = getGradeFilteredSections();
     const { sectionClashCounts } = getScheduleConflictMap();
@@ -12799,6 +12800,7 @@ body:not(.admin-edit-unlocked) td.cell-empty:hover {
   window.setFacultyCoverageFilter = setFacultyCoverageFilter;
 
     function renderFacultyToolbar(targetTeacherId) {
+    const isUnlocked = Boolean(window.scheduleEditor && window.scheduleEditor.isEditUnlocked);
     const teachersWithExams = FACULTY_ROSTER_DATA.filter(t => examCountForTeacher(t.id) > 0);
     const academicTeachers = teachersWithExams.filter(t => !isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
     const ustadhsFaculty = teachersWithExams.filter(t => isUstadhFaculty(t.name)).sort((a, b) => a.name.localeCompare(b.name));
