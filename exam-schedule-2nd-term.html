@@ -8511,26 +8511,12 @@ body:not(.admin-edit-unlocked) td.cell-empty:hover {
 
     init: function() {
       this.loadLockedSections();
-      // Determine if admin editing is explicitly authorized via query param (?admin=1 or ?edit=1)
-      const urlParams = new URLSearchParams(window.location.search);
-      const isExplicitAdminUrl = (urlParams.get('admin') === '1' || urlParams.get('edit') === '1');
-      const isExplicitViewOnly = (urlParams.get('viewonly') === '1') || (window.self !== window.top);
-
-      // Force strictly read-only for public visitors, iframes, and without explicit admin URL
-      if (isExplicitViewOnly || !isExplicitAdminUrl) {
-        try {
-          sessionStorage.removeItem('AMIS_ADMIN_EDIT_AUTH');
-          localStorage.removeItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
-          localStorage.removeItem('AMIS_2ND_TERM_LAST_MODIFIED');
-        } catch (e) {}
+      // Check session authentication (unlocked via '5' press or passcode)
+      try {
+        const auth = sessionStorage.getItem('AMIS_ADMIN_EDIT_AUTH');
+        this.isEditUnlocked = (auth === '1');
+      } catch (e) {
         this.isEditUnlocked = false;
-      } else {
-        try {
-          const auth = sessionStorage.getItem('AMIS_ADMIN_EDIT_AUTH');
-          this.isEditUnlocked = (auth === '1');
-        } catch (e) {
-          this.isEditUnlocked = false;
-        }
       }
       document.body.classList.toggle('admin-edit-unlocked', this.isEditUnlocked);
 
@@ -8589,9 +8575,6 @@ body:not(.admin-edit-unlocked) td.cell-empty:hover {
     },
 
     setup5PressDetector: function() {
-      const urlParams = new URLSearchParams(window.location.search);
-      const allowAdminTrigger = (urlParams.get('admin') === '1' || urlParams.get('edit') === '1') && (window.self === window.top);
-      if (!allowAdminTrigger) return;
       let tapCount = 0;
       let lastTapTime = 0;
       const handle5Press = () => {
@@ -8624,11 +8607,8 @@ body:not(.admin-edit-unlocked) td.cell-empty:hover {
         // If user is currently typing in an input or textarea, let them type normally!
         if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) return;
 
-        // Press '5' anywhere to trigger lock appearance / Section Locks modal (only if admin query param is set)
+        // Press '5' anywhere to trigger lock appearance / Section Locks modal
         if (e.key === '5' || e.code === 'Digit5' || e.code === 'Numpad5') {
-          const urlParams = new URLSearchParams(window.location.search);
-          const allowAdminTrigger = (urlParams.get('admin') === '1' || urlParams.get('edit') === '1') && (window.self === window.top);
-          if (!allowAdminTrigger) return;
           e.preventDefault();
           if (this.isEditUnlocked) {
             this.openSectionLockModal();
@@ -12108,7 +12088,7 @@ body:not(.admin-edit-unlocked) td.cell-empty:hover {
         </button>
         ` : ''}
         ${AMISScheduleExport.toolbarButtonHtml()}
-        <a href="index.html" class="btn-action btn-back" title="Back to Home">
+        <a href="/" class="btn-action btn-back" title="Back to Home">
           <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
           Back Home
         </a>
@@ -12931,7 +12911,7 @@ body:not(.admin-edit-unlocked) td.cell-empty:hover {
 
       ${AMISScheduleExport.toolbarButtonHtml()}
 
-      <a href="index.html" class="btn-action btn-back" title="Back to Home">
+      <a href="/" class="btn-action btn-back" title="Back to Home">
         <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
         Back Home
       </a>
