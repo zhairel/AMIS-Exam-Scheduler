@@ -5774,8 +5774,8 @@
     "shift": "ODL - 2ND SHIFT",
     "modality": "ODL",
     "gender": "MIXED",
-    "subject_id": "subj_proctor",
-    "subject": "PROCTOR",
+    "subject_id": "subj_gmrc",
+    "subject": "GMRC",
     "teacher_id": "tchr_saliha",
     "teacher": "Ustadha Saliha",
     "duration_minutes": 60,
@@ -5794,9 +5794,9 @@
     "proctor_assignment_source": "PROCTOR_DUTY",
     "proctor_department": "ISAL Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "FACULTY_PROCTOR",
-    "is_proctor": true,
-    "display_as_proctor_duty": true
+    "proctor_pool": "SUBJECT_TEACHER",
+    "is_proctor": false,
+    "display_as_proctor_duty": false
   },
   {
     "id": "exam_603",
@@ -26203,8 +26203,8 @@
     "shift": "ODL - 2ND SHIFT",
     "modality": "ODL",
     "gender": "",
-    "subject_id": "subj_proctor",
-    "subject": "PROCTOR",
+    "subject_id": "subj_gmrc",
+    "subject": "GMRC",
     "teacher_id": "tchr_saliha",
     "teacher": "Ustadha Saliha",
     "duration_minutes": 60,
@@ -26223,9 +26223,9 @@
     "proctor_assignment_source": "PROCTOR_DUTY",
     "proctor_department": "ISAL Faculty",
     "proctor_conflict_status": "CLEAR",
-    "proctor_pool": "FACULTY_PROCTOR",
-    "is_proctor": true,
-    "display_as_proctor_duty": true
+    "proctor_pool": "SUBJECT_TEACHER",
+    "is_proctor": false,
+    "display_as_proctor_duty": false
   },
   {
     "id": "exam_212",

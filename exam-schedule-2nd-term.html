@@ -20,7 +20,7 @@
 
 <!-- Embedded Master Datasets with Cache-Busting -->
 <script src="class_schedules_data.js?v=20261117_2"></script>
-<script src="exam_data_2nd_term.js?v=20261123_v22_restore_saliha_proctor"></script>
+<script src="exam_data_2nd_term.js?v=20261123_v23_saliha_gmrc_normal_design"></script>
 <script src="teacher_weekly_schedules.js?v=20261117_2"></script>
 
 <style>
@@ -2253,6 +2253,11 @@ body.admin-edit-unlocked .cell-class-inner:hover .cell-drag-indicator {
 }
 
 .btn-card-delete {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+body.admin-edit-unlocked .btn-card-delete {
   position: absolute !important;
   top: 3px !important;
   right: 3px !important;
@@ -2274,8 +2279,10 @@ body.admin-edit-unlocked .cell-class-inner:hover .cell-drag-indicator {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.22) !important;
   transition: all 120ms ease !important;
   z-index: 10 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
 }
-.cell-class-inner:hover .btn-card-delete {
+body.admin-edit-unlocked .cell-class-inner:hover .btn-card-delete {
   opacity: 1 !important;
   background: #dc2626 !important;
   color: #ffffff !important;
@@ -2283,7 +2290,7 @@ body.admin-edit-unlocked .cell-class-inner:hover .cell-drag-indicator {
   transform: scale(1.18) !important;
   box-shadow: 0 2px 6px rgba(220, 38, 38, 0.45) !important;
 }
-.btn-card-delete:hover {
+body.admin-edit-unlocked .btn-card-delete:hover {
   opacity: 1 !important;
   background: #b91c1c !important;
   color: #ffffff !important;
@@ -3506,8 +3513,30 @@ body.admin-edit-unlocked td.cell-empty:hover .cell-empty-add-btn {
   transform: scale(1.15);
   box-shadow: 0 3px 8px rgba(5, 150, 105, 0.35);
 }
-body:not(.admin-edit-unlocked) .cell-empty-add-btn {
+body:not(.admin-edit-unlocked) .btn-card-delete,
+body:not(.admin-edit-unlocked) .cell-empty-add-btn,
+body:not(.admin-edit-unlocked) .cell-drag-indicator,
+body:not(.admin-edit-unlocked) .btn-lock-sec-toggle,
+body:not(.admin-edit-unlocked) #dragEditorToolbar,
+body:not(.admin-edit-unlocked) .cell-duplicate-alert-banner {
   display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
+body:not(.admin-edit-unlocked) .cell-class-inner {
+  cursor: default !important;
+  user-select: text !important;
+}
+body:not(.admin-edit-unlocked) .cell-class-inner:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+body:not(.admin-edit-unlocked) td.cell-empty:hover {
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  cursor: default !important;
 }
 
 </style>
@@ -8474,17 +8503,29 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
 
     init: function() {
       this.loadLockedSections();
-      // Check session authentication
-      try {
-        const auth = sessionStorage.getItem('AMIS_ADMIN_EDIT_AUTH');
-        this.isEditUnlocked = auth === '1';
-        document.body.classList.toggle('admin-edit-unlocked', this.isEditUnlocked);
-      } catch (e) {
+      // Determine if admin editing is explicitly authorized via query param (?admin=1 or ?edit=1)
+      const urlParams = new URLSearchParams(window.location.search);
+      const isExplicitAdminUrl = (urlParams.get('admin') === '1' || urlParams.get('edit') === '1');
+      const isExplicitViewOnly = (urlParams.get('viewonly') === '1') || (window.self !== window.top);
+
+      // Force strictly read-only for public visitors, iframes, and without explicit admin URL
+      if (isExplicitViewOnly || !isExplicitAdminUrl) {
+        try {
+          sessionStorage.removeItem('AMIS_ADMIN_EDIT_AUTH');
+        } catch (e) {}
         this.isEditUnlocked = false;
+      } else {
+        try {
+          const auth = sessionStorage.getItem('AMIS_ADMIN_EDIT_AUTH');
+          this.isEditUnlocked = (auth === '1');
+        } catch (e) {
+          this.isEditUnlocked = false;
+        }
       }
+      document.body.classList.toggle('admin-edit-unlocked', this.isEditUnlocked);
 
       try {
-        const CURRENT_VERSION = '20261123_v22_restore_saliha_proctor';
+        const CURRENT_VERSION = '20261123_v23_saliha_gmrc_normal_design';
         const savedVersion = localStorage.getItem('AMIS_2ND_TERM_SCHEDULE_VERSION');
         const saved = localStorage.getItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE');
         const localModTime = Number(localStorage.getItem('AMIS_2ND_TERM_LAST_MODIFIED')) || 0;
@@ -8538,6 +8579,9 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
     },
 
     setup5PressDetector: function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const allowAdminTrigger = (urlParams.get('admin') === '1' || urlParams.get('edit') === '1') && (window.self === window.top);
+      if (!allowAdminTrigger) return;
       let tapCount = 0;
       let lastTapTime = 0;
       const handle5Press = () => {
@@ -8570,8 +8614,11 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
         // If user is currently typing in an input or textarea, let them type normally!
         if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) return;
 
-        // Press '5' anywhere to trigger lock appearance / Section Locks modal
+        // Press '5' anywhere to trigger lock appearance / Section Locks modal (only if admin query param is set)
         if (e.key === '5' || e.code === 'Digit5' || e.code === 'Numpad5') {
+          const urlParams = new URLSearchParams(window.location.search);
+          const allowAdminTrigger = (urlParams.get('admin') === '1' || urlParams.get('edit') === '1') && (window.self === window.top);
+          if (!allowAdminTrigger) return;
           e.preventDefault();
           if (this.isEditUnlocked) {
             this.openSectionLockModal();
@@ -10610,7 +10657,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       try {
         localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
         localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(now));
-        localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', '20261123_v22_restore_saliha_proctor');
+        localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', '20261123_v23_saliha_gmrc_normal_design');
       } catch (e) {
         console.warn('localStorage full or disabled', e);
       }
@@ -10635,14 +10682,14 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
       try {
         localStorage.setItem('AMIS_2ND_TERM_CUSTOM_SCHEDULE', JSON.stringify(EXAM_RECORDS));
         localStorage.setItem('AMIS_2ND_TERM_LAST_MODIFIED', String(now));
-        localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', '20261123_v22_restore_saliha_proctor');
+        localStorage.setItem('AMIS_2ND_TERM_SCHEDULE_VERSION', '20261123_v23_saliha_gmrc_normal_design');
       } catch (e) {}
 
       try {
         const payload = JSON.stringify({
           schedule: EXAM_RECORDS,
           updated_at: now,
-          version: '20261123_v22_restore_saliha_proctor',
+          version: '20261123_v23_saliha_gmrc_normal_design',
           locked_sections: this.lockedSectionIds ? [...this.lockedSectionIds] : []
         });
         if (navigator.sendBeacon) {
@@ -10668,7 +10715,7 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
           body: JSON.stringify({
             schedule: EXAM_RECORDS,
             updated_at: now,
-            version: '20261123_v22_restore_saliha_proctor',
+            version: '20261123_v23_saliha_gmrc_normal_design',
             locked_sections: this.lockedSectionIds ? [...this.lockedSectionIds] : []
           })
         });
@@ -12208,10 +12255,12 @@ body:not(.admin-edit-unlocked) .cell-empty-add-btn {
           <div class="teacher-banner">
             <span class="teacher-name-title">${esc(sec.section_name.toUpperCase())}</span>
             <div style="display:flex; align-items:center; gap:8px;">
+              ${isUnlocked ? `
               <button type="button" class="btn-lock-sec-toggle ${isSecLocked ? 'is-sec-locked' : ''}" onclick="scheduleEditor.toggleSectionLock('${sec.id}')" title="${isSecLocked ? 'Click to Unlock this section exam schedule' : 'Click to Lock this section exam schedule'}">
                 <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="vertical-align:-1px;"><path d="${isSecLocked ? 'M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z' : 'M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z'}"/></svg>
                 <span>${isSecLocked ? 'Locked' : 'Lock Section'}</span>
               </button>
+              ` : ''}
               ${AMISScheduleExport.controlsHtml()}
               <button class="btn-fullscreen" onclick="toggleFullscreenSheet(this)" title="Fullscreen Table" aria-label="Toggle Fullscreen">
                 <svg class="icon-expand" viewBox="0 0 24 24" style="display:inline-block;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
