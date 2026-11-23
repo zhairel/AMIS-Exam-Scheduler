@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const CURRENT_SCHEDULE_VERSION = '20261123_v23_saliha_gmrc_normal_design';
+const CURRENT_SCHEDULE_VERSION = '20261123_v24_saliha_gmrc_clean_sync';
 
 let inMemorySchedule = null;
 let inMemoryLockedSections = [];
